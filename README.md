@@ -20,3 +20,5 @@ This repository is to store the code to fetch the Logos of Legitimate domains, a
 
 ├── tranco
 │   ├── CSV file containing the top 1 million domains
+
+```
