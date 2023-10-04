@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" /> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+  <meta content="Coderthemes" name="author">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+  <script type="text/javascript" src="https://idiotbox.club/flashphoner/js/flashphoner.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://idiotbox.club/flashphoner/css/flashphoner.bundle.min.css">
+
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <!-- Plugins css -->
+  <link href="assets/css/flatpickr.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/flatpickr.min.css"></noscript>
+  <link href="assets/css/selectize.bootstrap3.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/selectize.bootstrap3.css"></noscript>
+  <style>@charset "UTF-8";@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap);:root{--bs-blue:#4a81d4;--bs-indigo:#675aa9;--bs-purple:#6658dd;--bs-pink:#f672a7;--bs-red:#f1556c;--bs-orange:#fd7e14;--bs-yellow:#f7b84b;--bs-green:#1abc9c;--bs-teal:#02a8b5;--bs-cyan:#4fc6e1;--bs-white:#fff;--bs-gray:#98a6ad;--bs-gray-dark:#343a40;--bs-gray-100:#f7f8f9;--bs-gray-200:#eceff1;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#98a6ad;--bs-gray-700:#6c757d;--bs-gray-800:#343a40;--bs-gray-900:#323a46;--bs-primary:#6658dd;--bs-secondary:#6c757d;--bs-success:#1abc9c;--bs-info:#4fc6e1;--bs-warning:#f7b84b;--bs-danger:#f1556c;--bs-light:#eceff1;--bs-dark:#323a46;--bs-pink:#f672a7;--bs-blue:#4a81d4;--bs-primary-rgb:102,88,221;--bs-secondary-rgb:108,117,125;--bs-success-rgb:26,188,156;--bs-info-rgb:79,198,225;--bs-warning-rgb:247,184,75;--bs-danger-rgb:241,85,108;--bs-light-rgb:236,239,241;--bs-dark-rgb:50,58,70;--bs-pink-rgb:246,114,167;--bs-blue-rgb:74,129,212;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-body-color-rgb:108,117,125;--bs-body-bg-rgb:245,245,245;--bs-font-sans-serif:"Roboto",sans-serif;--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family:Roboto,sans-serif;--bs-body-font-size:0.875rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#6c757d;--bs-body-bg:#f5f5f5}*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}body{padding-right:0!important;padding-left:0!important}body.loading{visibility:hidden;opacity:0}</style><link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
+  <style>@charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Nunito:400,600,700,900);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap);html{position:relative;min-height:100%}body{overflow-x:hidden}@media (max-width:991.98px){body{overflow-x:hidden;padding-bottom:80px}}@media print{body{padding:0;margin:0}}@media screen and (-webkit-min-device-pixel-ratio:0){}</style><link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/app.min.css"></noscript>
+  <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/icons.min.css"></noscript>
+  <style>body{touch-action:none}body{touch-action:none}body{font-family:Helvetica, sans-serif !important}body{background:#ededed}body{overflow:auto !important}@media (max-width: 991px){body{}}</style><link href="assets/css/themes.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/themes.css"></noscript>
+  <style>body{touch-action:none}body{touch-action:none}body{padding-bottom:0 !important}</style><link href="assets/css/login.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/login.css"></noscript>
+
+  <!-- <script src="assets/js/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script> -->
+
+  <!-- Vendor js -->
+  <script src="assets/js/vendor.min.js"></script>
+  <script src="assets/js/flatpickr.min.js"></script>
+  <script src="assets/js/selectize.min.js"></script>
+  <script src="assets/js/app.min.js"></script>
+
+  <!-- <script type="text/javascript">
+    document.addEventListener('touchmove', function (event) {
+      event = event.originalEvent || event;
+      if (event.scale !== 1) {  event.preventDefault(); }
+    }, { passive: false });
+    </script> -->
+
+  <!-- <script src="assets/js/js.js"></script> -->
+
+  <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+  <script src="https://wchat.freshchat.com/js/widget.js" defer></script>
+<style>:root{touch-action:pan-x pan-y;height:100%}</style><link rel="stylesheet" href="styles.bdf5a0bb453e92628d5f.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.bdf5a0bb453e92628d5f.css"></noscript></head>
+
+<body class="loading" data-layout="{&quot;mode&quot;: &quot;light&quot;, &quot;width&quot;: &quot;fluid&quot;, &quot;menuPosition&quot;: &quot;fixed&quot;, &quot;sidebar&quot;: { &quot;color&quot;: &quot;light&quot;, &quot;size&quot;: &quot;default&quot;, &quot;showuser&quot;: false}, &quot;topbar&quot;: {&quot;color&quot;: &quot;dark&quot;}, &quot;showRightSidebarOnPageLoad&quot;: true}">
+  <app-root></app-root>
+<script src="runtime.a96dc1248c01b948af73.js" defer></script><script src="polyfills.561689ed6ea46c403758.js" defer></script><script src="scripts.fa41562432bda5f1aa7c.js" defer></script><script src="main.5b673561f43d1155e84c.js" defer></script>
+
+</body></html>

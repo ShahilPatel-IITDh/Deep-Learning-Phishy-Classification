@@ -1,0 +1,370 @@
+<!DOCTYPE html><html lang="en"><head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <meta charset="utf-8">
+  <title></title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+  <link rel="shortcut icon" href="favicon.ico">
+  <script>window.prerenderReady = false;</script>
+  <script>
+    setTimeout(() => { // Timeout to be sure that the body is created
+      const userAgent = window.navigator.userAgent;
+      if (userAgent.includes('Firefox/')) {
+          showMessage('Firefox/', 63); // Firefox >= 63
+      } else if (userAgent.includes('Edg/')) {
+          showMessage('Edg/', 80); // Edge (Chromium) >= 80
+      } else if (userAgent.includes('Chrome/')) {
+          showMessage('Chrome/', 66); // Chrome >= 66
+      } else if (userAgent.includes('Version/')) {
+          showMessage('Version/', 11); // Safari >= 11
+      }
+
+      function showMessage(browser, minimalVersion) {
+        const agent = userAgent.split(browser)[1];
+        const version = agent.split('.')[0];
+        if (version < minimalVersion) {
+          const body = document.getElementsByTagName('body')[0];
+          if (body) {
+            body.style.backgroundColor = '#ffffff';
+            const text = document.createElement('div');
+            text.innerHTML = `<div style="padding: 10px">
+              <h2 style="font-size: 1.3em; color: #000000;">Please upgrade your browser and OS version</h2>
+              <p style="margin-bottom: 40px; color: #000000">For the best experience using our website please upgrade to a newer web browser and OS version</p>
+              <h2 style="font-size: 1.3em; color: #000000;">Por favor atualiza seu navegador e a mais recente versão do Sistema Operativo</h2>
+              <p style="margin-bottom: 40px; color: #000000">Por melhor experiência ao usar o nosso site por favor atualiza o teu dispositivo para a mais recente versão do navegador e do Sistema Operativo</p>
+              <h2 style="font-size: 1.3em; color: #000000;">Tafadhali pata toleo jipya la browser yako na toleo la OS</h2>
+              <p style="color: #000000">Kwa matumizi bora zaidi ya tovuti yetu tafadhali pata toleo jipya la browser na toleo la OS</p>
+              </div>`;
+            body.appendChild(text)
+          }
+        }
+      }
+    }, 2000)
+  </script>
+
+  <!--no pwa-->
+<style>@import url(//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin,latin-ext);
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*!
+ * Materialize v0.100.2 (http://materializecss.com)
+ * Copyright 2014-2017 Materialize
+ * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
+ *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}@font-face{font-family:"Roboto";src:local(Roboto Thin),url('Roboto-Thin.634a882cd277ed33.woff2') format("woff2"),url('Roboto-Thin.5ba1658a8ee4d031.woff') format("woff");font-weight:100}@font-face{font-family:"Roboto";src:local(Roboto Light),url('Roboto-Light.fe852181f10ba289.woff2') format("woff2"),url('Roboto-Light.201862a39410e642.woff') format("woff");font-weight:300}@font-face{font-family:"Roboto";src:local(Roboto Regular),url('Roboto-Regular.03f8db3c3da62e90.woff2') format("woff2"),url('Roboto-Regular.fb9e4e04f73c4e3c.woff') format("woff");font-weight:400}@font-face{font-family:"Roboto";src:local(Roboto Medium),url('Roboto-Medium.ca5d4532c7174117.woff2') format("woff2"),url('Roboto-Medium.6ce1c82504b2a9a8.woff') format("woff");font-weight:500}@font-face{font-family:"Roboto";src:local(Roboto Bold),url('Roboto-Bold.d85e4fca0959a13c.woff2') format("woff2"),url('Roboto-Bold.089fa2ccdbefc435.woff') format("woff");font-weight:700}html{line-height:1.5;font-family:"Roboto", sans-serif;font-weight:normal;color:rgba(0,0,0,0.87)}@media only screen and (min-width: 0){html{font-size:14px}}@media only screen and (min-width: 992px){html{font-size:14.5px}}@media only screen and (min-width: 1200px){html{font-size:15px}}/*!
+ * Waves v0.6.0
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
+ * https://github.com/fians/Waves/blob/master/LICENSE
+ *//*!
+ * Default mobile-first, responsive styling for pickadate.js
+ * Demo: http://amsul.github.io/pickadate.js
+ */
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@charset "UTF-8";
+
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+
+/* srch page start*/
+
+/* srch page end*/
+
+/* Header Search Bar  */
+
+/* e-sport page start*/
+
+/* e-sport page end*/
+
+/* cup-view start*/
+
+/* cup-view end*/
+/* slide-card start*/
+
+/* slide-card end*/
+
+/*fixture table start */
+
+/* fixture table end */
+/* fixture detail start*/
+
+/* fixture detail end*/
+/* fixture detail modal start*/
+/* fixture detail modal end*/
+/* fixture detail masonry style start*/
+
+/* fixture detail masonry style end*/
+/*search page detail*/
+
+/*search page detail end*/
+/* country page start*/
+
+/* country page end*/
+/* season page start*/
+
+/* season page end*/
+/* today events page start*/
+
+/* today events page end */
+/* antrepost page start*/
+
+/* antrepost page end*/
+/*antrepost card start*/
+/*antrepost card end*/
+/*jackpot page (daha sonra optimize edilecek)*/
+
+/* cup-view page start*/
+
+/* cup-view page end*/
+
+/* live detail page start*/
+
+/* live detail page end*/
+/* livebet calendar start */
+
+/* livebet calendar end */
+/*options*/
+body {
+  min-width: 1024px;
+}
+
+/* 
+	class info
+	rt-sbr-n  = right sidebar none
+	rt-sbr-b  = right-sidebar big 
+	lt-sbr-m  = left sidebar mini
+	btsp-lt   = betslip left
+	empty-cmr = container main left full width
+	static    = containerfluid width 1280px
+	scroll-view = horizontal scroll will appear
+
+	container-fluid de static classı varsa container genişliği max 1280px olur
+	1366px altında container, container-90, static.container-fluid 100% olur
+	1280px altında left sidebar küçülür right sidebarın büyümesine izin verilmez
+	1024px altında responsive desteği verilmez altda yatay scroll çıkar
+	1700px in üstünde bet typelar 3 lü gösterilir
+	spor sayfasında eğer card lar açıksa ve container mainin sağındaysa bet typelar 1700 ün üstündede 2 li gösterilir
+	.
+	.
+	.
+
+*/
+
+/*#container-fluid #right-sidebar {
+  height:100%;
+  .bet-slip-master {position:sticky;top:60px;z-index:99;}
+  //.bet-slip .coupon-container {max-height:500px;overflow-x:hidden;overflow-y:auto;display:block;}
+}*/
+/* left sidebar big menu start */
+
+/* left sidebar big menu end */
+/* left sidebar mini menu start */
+
+/* left sidebar mini menu end */
+/*container style*/
+@media screen and (min-width:993px) {
+  /* trader bazlı yazılacak
+  #container-fluid {width:90%;margin-left:auto;margin-right:auto;}
+  .container {width:90%;margin:0 auto;max-width:initial;}
+  .casino-detail-cntr {width:90%;}
+  */
+}
+body {
+  background: #000;
+}
+
+/*
+ *  Owl Carousel - Core
+ */
+
+/* No Js */
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+
+/*
+Using formula solid
+$primary: #FF0000;
+$home: #00003c;
+$away: #ff0000;
+$cl: #000000;
+$base: #FFFFFF;
+*/
+/*
+    Enable dark or light logo based on base color
+*/
+
+body {
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.3px;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* css tooltip */
+
+/* New loading icon */
+:root {
+  --sk-size: 40px;
+}
+
+/************************************************
+* Dashboard Color Variables
+*************************************************/
+/* left sidebar mini menu start */
+
+/* cup-view start*/
+
+/* cup-view end*/
+/* betbooster*/
+
+body {
+  background-color: #120378;
+}
+body *::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+body *::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+body *::-webkit-scrollbar-thumb {
+  background: #E1E1E1;
+  border: 5px none #fff;
+  border-radius: 50px;
+}
+body *::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+body *::-webkit-scrollbar-thumb:active {
+  background: #000;
+}
+body *::-webkit-scrollbar-track {
+  background: #666;
+  border: 5px none #fff;
+  border-radius: 50px;
+}
+body *::-webkit-scrollbar-track:hover {
+  background: #666;
+}
+body *::-webkit-scrollbar-track:active {
+  background: #343434;
+}
+body *::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* range */
+
+/* checkbox */
+
+/* switch */
+
+/* loader */
+
+/* modul */
+
+/* fixture table */
+
+/* fixture detail page start*/
+
+/* fixture detail page end*/
+/* modal */
+
+/* country page start*/
+
+/* country page end*/
+/* season page start*/
+/* season page end*/
+/* e-sport page start*/
+
+/* e-sport page end*/
+/* search page start*/
+
+/* srch page end*/
+/* today events page start*/
+
+/* today events page end */
+/* antrepost page start*/
+
+/* antrepost page end */
+/*antrepost card start*/
+
+/*antrepost card end*/
+  
+</style><link rel="stylesheet" href="styles.a368ae697c4101d2.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.a368ae697c4101d2.css"></noscript></head>
+<body>
+  <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+<script src="runtime.7b1114ef1ff08a7f.js" type="module"></script><script src="polyfills.9cd0e1b7adc8c76d.js" type="module"></script><script src="scripts.815d44a80c83f6b8.js" defer></script><script src="main.45db1e02f9e29bed.js" type="module"></script>
+
+</body></html><!-- Tue Sep 26 2023 22:29:35 GMT+0300 (GMT+03:00) -->

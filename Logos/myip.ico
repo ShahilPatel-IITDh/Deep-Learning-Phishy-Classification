@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MyIP.la - A Simple IP Address And IP Geolocation API</title>
+    <meta name="keywords" content="ip location api, geo ip api, locate ip php, ip to city api, buy ip database" />
+    <meta name="description" content="ip.la A Simple Public IP Address And IP Geolocation API, easy enough to integrate into any application in seconds.">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="//fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <style type="text/css">body,h1,h2,h3,h4,h5,h6,p{color:#4c4c4c;font-family:Raleway,sans-serif}.jumbotron p{font-family:Raleway,sans-serif}body{background-color:#fff}h1,h2,h3,h4,h5,h6{color:#a2a0a0!important;font-family:Raleway,sans-serif;line-height:1.1}h1{font-size:3.8em}h2{font-size:2.2em;margin-bottom:1em}h3{font-size:2em;font-size:1.7em}header{height:10em;margin-bottom:2em;margin-top:1em}table{margin-top:2em}code{background-color:#fff;font-size:.8em;color:#323232}p{line-height:1.5em}li,p{font-size:1.3em;color:#767676}ul{margin-left:2em;margin-right:2em;text-align:justify}li{margin-bottom:1em}.try{padding-top:2em}.try .jumbotron p{margin-bottom:2em}.try br{line-height:.2!important}.examples h3{margin-bottom:1em;margin-top:1em}.libraries h2{margin-top:1em}footer{margin-bottom:3em;margin-top:2em;text-align:center}</style>
+    <style type="text/css">code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:0 0;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="row">
+            <div style="float:left;">
+                <h1>MyIP.la</h1>
+                <h2 class="hidden-xs hidden-sm">A Simple Public IP Address And IP Geolocation API</h2>
+            </div>
+            <div style="float:right;margin-top:30px;">
+                Current IP: 14.139.150.66 [India Karnataka ]
+            </div>
+        </div>
+
+        <div class="why row">
+            <div class="col-xs-12">
+                <h2>Why use?</h2>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-10">
+                        <p>
+                            Do you need to get the public IP address or IP Geolocation programmatically? Do you have the requirements to obtain the servers’ public IP address? Do you need to get the location of your servers? Whatever the reason,sometimes a public IP address and IP Geolocation API are useful.
+                        </p>
+                        <p>
+                            You should use <b>MyIP.la</b> because:
+                        <ul>
+                            <li>You can initiate requests without any limit.</li>
+                            <li>You can get the english or chinese location data.</li>
+                            <li>Does not record the visitor information.</li>
+                            <li>Lastly, <b>MyIP.la</b> is sponsored by <a href="https://www.ipip.net/">IPIP.NET</a> and will exist in long-term stability, please feel free to use it.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="api row">
+            <div class="col-xs-12">
+                <h2>API Usage</h2>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-11">
+                        <p>
+                            Using <b>MyIP.la</b> is ridiculously simple.  You have two options. Address location support English and Chinese.
+                            You can get your public IP directly (in plain text), you can get your
+                            public IP in JSON format.
+                        </p>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <td>-</td>
+                                    <td>API URI</td>
+                                    <td width="50px">Type</td>
+                                    <td>Sample Output (IPv4)</td>
+                                    <td>Sample Output (IPv6)</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>get IP</td>
+                                    <td><code>https://api.myip.la</code></td>
+                                    <td><code>text</code></td>
+                                    <td><code>8.8.8.8</code></td>
+                                    <td>2001:4860:4860::8888</td>
+                                </tr>
+                                <tr>
+                                    <td>get XFF(X-Forwarded-For)</td>
+                                    <td><code>https://api.myip.la/xff</code></td>
+                                    <td><code>text</code></td>
+                                    <td><code>8.8.8.8</code></td>
+                                    <td>2001:4860:4860::8888</td>
+                                </tr>
+                                <tr>
+                                    <td>get IP Location(English)</td>
+                                    <td><code>https://api.myip.la/en?json</code></td>
+                                    <td><code>json</code></td>
+                                    <td><pre>{
+    "ip":"172.104.94.100",
+    "location":{
+        "country_code":"JP",
+        "country_name":"Japan",
+        "province":"Tokyo",
+        "city":"Shinagawa",
+        "latitude":"35.6130514",
+        "longitude":"139.7344198"
+    }
+}</pre></td>
+                                    <td><pre>{
+  "ip": "2001:19f0:7001:5607:5400:1ff:fec7:13a9",
+  "location": {
+    "city": "Tokyo",
+    "country_code": "JP",
+    "country_name": "Japan",
+    "latitude": "35.709026",
+    "longitude": "139.731993",
+    "province": "Tokyo"
+  }
+}</pre></td>
+                                </tr>
+                                <tr>
+                                    <td>get IP Location(Chinese Simplified)</td>
+                                    <td><code>https://api.myip.la/cn?json</code></td>
+                                    <td><code>json</code></td>
+                                    <td><pre>{
+    "ip":"172.104.94.100",
+    "location":{
+        "country_code":"JP",
+        "country_name":"日本",
+        "province":"东京都",
+        "city":"品川区",
+        "latitude":"35.6130514",
+        "longitude":"139.7344198"
+    }
+}</pre></td><td><pre>{
+  "ip": "2001:19f0:7001:5607:5400:1ff:fec7:13a9",
+  "location": {
+    "city": "东京",
+    "country_code": "JP",
+    "country_name": "日本",
+    "latitude": "35.709026",
+    "longitude": "139.731993",
+    "province": "东京都"
+  }
+}</pre></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-responsive" style="margin-top:20px;">
+                            <p>Gets the information for the request.</p>
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <td>-</td>
+                                    <td>API URI</td>
+                                    <td width="150px">Type</td>
+                                    <td>Sample Output</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>get Request Header</td>
+                                    <td><code>https://api.myip.la/header</code></td>
+                                    <td><code>text</code></td>
+                                    <td><pre>GET /header HTTP/1.1
+Host: api.myip.la
+Accept: */*
+User-Agent: curl/7.54.0</pre></td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="examples row">
+            <div class="col-xs-12">
+                <h2>Examples</h2>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-10">
+                        <p>
+                            This section contains some common usage patterns from a variety of programming languages.
+                            <a href="mailto:frk@ipip.net" >Email me!</a>
+                        </p>
+                        <h3>Bash</h3>
+                        <pre class="language-bash"><code>#!/bin/bash
+
+ip=$(curl -s https://api.myip.la)
+echo "My public IP address is: $ip"</code></pre>
+
+                        <h3>Python</h3>
+                        <pre class="language-python"><code># This example requires the requests library be installed.  You can learn more
+# about the Requests library here: http://docs.python-requests.org/en/latest/
+from requests import get
+
+ip = get('https://api.myip.la').text
+print('My public IP address is: {}'.format(ip))</code></pre>
+
+                        <h3>Ruby</h3>
+                        <pre class="language-ruby"><code>require "net/http"
+
+ip = Net::HTTP.get(URI("https://api.myip.la"))
+puts "My public IP Address is: " + ip</code></pre>
+
+                        <h3>PHP</h3>
+                        <pre class="language-php"><code>&lt;?php
+    $ip = file_get_contents('https://api.myip.la');
+    echo "My public IP address is: " . $ip;
+?&gt;</code></pre>
+
+                        <h3>Java</h3>
+                        <pre class="language-java"><code>try (java.util.Scanner s = new java.util.Scanner(new java.net.URL("https://api.myip.la").openStream(), "UTF-8").useDelimiter("\\A")) {
+    System.out.println("My current IP address is " + s.next());
+} catch (java.io.IOException e) {
+    e.printStackTrace();
+}
+</code></pre>
+
+                        <h3>Perl</h3>
+                        <pre class="language-perl"><code>use strict;
+use warnings;
+use LWP::UserAgent;
+
+my $ua = new LWP::UserAgent();
+my $ip = $ua-&gt;get('https://api.myip.la')-&gt;content;
+print 'My public IP address is: '. $ip;</code></pre>
+
+                        <h3>C#</h3>
+                        <pre class="language-csharp"><code>var httpClient = new HttpClient();
+var ip = await httpClient.GetStringAsync("https://api.myip.la");
+Console.WriteLine($"My public IP address is: {ip}");</code></pre>
+
+                        <h3>NodeJS</h3>
+                        <pre class="language-javascript"><code>var http = require('http');
+
+http.get({'host': 'api.myip.la', 'port': 80, 'path': '/'}, function(resp) {
+  resp.on('data', function(ip) {
+    console.log("My public IP address is: " + ip);
+  });
+});</code></pre>
+
+                        <h3>Go</h3>
+                        <pre class="language-go"><code>package main
+
+import (
+        "io/ioutil"
+        "net/http"
+        "os"
+)
+
+func main() {
+        res, _ := http.Get("https://api.myip.la")
+        ip, _ := ioutil.ReadAll(res.Body)
+        os.Stdout.Write(ip)
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="//cdn.ipip.net/frontend/code/prism.js"></script>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 style="margin-bottom:0;">Connection</h2>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-10">
+                        <h3>Request-Header</h3>
+                        <pre>GET / HTTP/1.0
+Host: www.myip.la
+Accept: */*
+Accept-Encoding: gzip, deflate
+Connection: close
+User-Agent: python-requests/2.31.0
+X-Client-Ip: 14.139.150.66
+X-Real-Ip: 14.139.150.66
+
+</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p style="text-align:center;font-size:14px;">© 2018 - 2023 <a target="_blank" href="https://www.ipip.net/">IPIP.net</a> </p>
+        </footer>
+    </div>
+</body>
+</html>

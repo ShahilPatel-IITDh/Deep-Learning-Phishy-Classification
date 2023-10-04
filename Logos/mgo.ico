@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" cvd="1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/VUDU4.ico">
+  <link rel="manifest" href="./assets/manifest.json" />
+  <title>Vudu is not available in your region.</title>
+  <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+  <style type="text/css">
+    @font-face {
+        font-family: 'proximaNova';
+        src: url("./assets/proxima_nova_reg.otf") format("opentype");
+    }
+    html{
+      flex-grow: 0;
+      background-color: #171c20;
+      color: #999999;
+      font-family: "proximaNova", sans-serif;
+    }
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90vh;
+    }
+    img{
+      width: 440px;
+      height: 440px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .copy{
+      height: 34px;
+      flex-grow: 0;
+      font-size: 28px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.21;
+      letter-spacing: normal;
+      text-align: center;
+      color: #fff;
+      margin-top: 32px;
+    }
+    @media screen and (max-width: 760px) {
+      img {
+        width: 283px;
+        height: 287px;
+      }
+      .copy{
+        font-size: 20px;
+      }
+    }
+    /* handle for small Screen */
+    @media screen and (max-width: 300px) {
+      img {
+        width: 270px;
+        height: 210px;
+      }
+      .copy{
+        font-size: 15px;
+      }
+    }
+  </style>
+  
+  <body>
+    <div id="accessblock_logo">
+      <img src="./assets/vudu-illustration.svg">
+      <div class="copy">Vudu is not available in your region.</div>
+    </div>
+    <span id="cvd_extension_svg_filter" hidden="">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter x="0" y="0" width="99999" height="99999" id="cvd_extension_0">
+            <fecolormatrix id="cvd_matrix_0" type="matrix" values="
+                1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></fecolormatrix>
+          </filter>
+          <filter x="0" y="0" width="99999" height="99999" id="cvd_extension_1">
+            <fecolormatrix id="cvd_matrix_1" type="matrix" values="1 0 0 0 0 0.012599999999999945 0.9835 0.0037999999999999996 0 0 0.007879999999999998 -0.01022 1.0024 0 0 0 0 0 1 0"></fecolormatrix>
+          </filter>
+        </defs>
+      </svg>
+    </span>
+  </body>
+</html>

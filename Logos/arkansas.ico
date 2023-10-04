@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation request</title>
+        <style>
+            html {
+                background-color: #f1f1f1;
+                
+            }
+            body {
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                background-color: #ffffff;
+                max-width: 620px;
+                margin: 50px auto 0px;
+                padding: 20px 30px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 50px rgb(212, 212, 212);
+            }
+            h1 {
+                font-size: 2rem;
+                line-height: 2.3rem;
+            }
+            form {
+                
+            }
+            input[type=text] {
+                font-size: 2rem;
+                padding: 5px 10px;
+                outline: none;
+                color: #c7c7c7;
+                border: solid 1px #c7c7c7;
+                border-radius: 5px;
+                vertical-align: bottom;
+            }
+            input[type=submit] {
+                background-color: blue;
+                color: #ffffff;
+                outline: none;
+                border: solid 1px darkblue;
+                height: 50px;
+                padding: 15px 20px;
+                font-weight: bold;
+                cursor: hand;
+                cursor: pointer;
+            }
+            .instrux {
+                font-size: 1rem;
+                color: #666666;
+            }
+            .note {
+                font-size: .9rem;
+                color: darkred;
+            }
+            .validation {
+                font-size: .9rem;
+                margin-top: 20px;
+                padding-top: 10px;
+                border-top: solid 1px #c7c7c7;
+            }
+            .validation span {
+                color: goldenrod;
+            }
+            .chrome_websiteIP_right {
+                font-size: .8rem;
+            }
+        </style>    
+    </head>
+    <body>
+        <header>
+            <h1>User validation required to continue.</h1>
+        </header>
+        <main>
+            <p></p>Please type the text you see in the image into the text box and submit <!--(Log ID: 18af8abbf4d-67f124ea)--></p>
+            <img src="/captcha.gif">
+            <form name="input" action="/captcha_resp" method="POST" enctype="application/x-www-form-urlencoded">
+                <input type="text" name="captcha_resp_txt" />
+                <input type="submit" value="Submit" />
+            </form>
+            <p class="instrux">[ Refresh the page to generate a new image. ]</p>
+            <section class="note">
+                <p>Note:</p>
+                <ul>
+                    <li>If you get here while trying to submit a form, you may have to re-submit the form.</li>
+                    <li>Access to this domain may need the browser to have javascript and cookie support enabled. </li>
+                </ul>
+            </section>
+            
+        </main>
+    </body>
+</html>
+<br><em>Validation needed due to : <b><font color=yellow>Policy constraints</font></b></em><br><em>Number of attempts left : <b><font color=yellow>5</font></b></em>                                                                                            

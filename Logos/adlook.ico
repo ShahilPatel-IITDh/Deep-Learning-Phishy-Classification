@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en" data-wf-page="5dd3a96977520f18004a8819" data-wf-site="5dd3a96977520fbdbb4a8818">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adlook.me — умеем монетизировать сайты</title>
+    <!-- Kapcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Style -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(87315990, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/87315990" style="position:absolute; left:-9999px;" alt="icon" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1714123-cUCm8"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1714123-cUCm8" style="position:fixed; left:-999px;" alt="icon"/></noscript>
+
+    
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/faviconNew-2.png" />
+    <link rel="apple-touch-icon" href="images/faviconNew-2.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/faviconNew-2.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/faviconNew-2.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/faviconNew-2.png">
+
+    <!-- Keywords -->
+    <meta name="description"
+        content="Лучшая партнерская программа для монетизации вашего сайта с помощью медийной рекламы." />
+    <meta name="keywords"
+        content="реклама видео, монетизация сайта, партнерская программа, монетизация мобильного трафика, мобильная видеореклама, интернет видеореклама, видеореклама для сайта">
+
+    <!-- OG -->
+    <meta property="og:title" content="Adlook.me | Реклама для вашего сайта" />
+    <meta property="og:description"
+        content="Лучшая партнерская программа для монетизации вашего сайта с помощью медийной рекламы." />
+    <meta property="og:image" content="https://publishers.adlook.me/images/faviconNew-2-link.png" />
+    <meta property="og:image:width" content="160">
+    <meta property="og:iamge:height" content="160">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://publishers.adlook.me" />
+    <meta name="robots" content="all">
+    <meta name="yandex-verification" content="87f9c9c20f361165" />
+
+    <!-- Owl -->
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl.theme.default.min.css">
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Scroll -->
+    <script src="js/scroll.js"></script>
+
+    <!-- Modal video -->
+    <link rel="stylesheet" href="style/videotube.css">
+    <script src="js/videotube.min.js"></script>
+    
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="registrationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="close-cross">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form class="form add-site-form col-md-12" id="addForm">
+                        <div class="form-name">
+                            Подключение
+                        </div>
+                        <div class="input-cont">
+                            <div class="relative" id="name-container">
+                                <input class="form-input " type="text" name="name" id="name" autocomplete="off"
+                                    placeholder=" ">
+                                <label for="name" class="form-input-label">Ваше имя</label>
+                            </div>
+                            <div class="relative" id="email-container">
+                                <input class="form-input" type="text" name="email" id="email" autocomplete="off"
+                                    placeholder=" ">
+                                <label for="email" class="form-input-label">Почта для кабинета</label>
+                            </div>
+                            <div class="relative" id="web-container">
+                                <input class="form-input" type="text" name="website" id="website" autocomplete="off"
+                                    placeholder=" ">
+                                <label for="website" class="form-input-label">Адрес вашего сайта</label>
+                            </div>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6Lfrx7EZAAAAADGyp8xTIhit91cXHJuNRO6Fker0"></div>
+                        <div id="personal-data-cont" class="personal-data-cont">
+                            <input type="checkbox" id="personal-data" checked>
+                            <label class="personal-data-check" for="personal-data" onclick="perDataClick()"></label>
+                            <div class="personal-data-name"><a id="policy" href="terms.html" target="_blank"
+                                    style="text-decoration: none;">Согласен на обработку персональных данных и с
+                                    условиями пользовательского соглашения</a></div>
+                        </div>
+                        <button onclick="btnFormSend()" class="btn btn-mini btn-ready" data-action="">
+                            <div id="btn-name-1" class="btn-name">подключить сайт</div>
+                            <div class="sq">
+                                <div class="rec-btn-1"><img src="images/strelka.svg" alt="icon"></div>
+                            </div>
+                        </button>
+                    </form>
+                    <div id="gratitude" class="gratitude col-md-12 hidden">
+                        <div class="gr-main-text">Спасибо!</div>
+                        <div class="gr-sub-text">Данные успешно отправлены. <br> Мы скоро свяжемся с вами!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="scroll-stick" id="stick">Scroll
+            <div class="sq" style="top: 5px;">
+                <div class="rec-scroll-1"></div>
+                <div class="rec-scroll-2"></div>
+                <div class="rec-scroll-3"></div>
+                <div class="rec-scroll-4"></div>
+                <div class="rec-scroll-5"></div>
+            </div>
+        </div>
+        <div class="head-container">
+            <div class="col-md-3 col-lg-3 logo-container">
+                <a class="logo-link" href="https://publishers.adlook.me">
+                    <img class="logo logo-icon" src="images/Logo.svg" width="36px" height="36px" alt="logo">
+                    <img class="logo logo-text" height="25px" src="images/logo-word-2.svg" alt="logo">
+                    <img src="images/logo-mob.svg" alt="logo" class="logo-mobile">
+                </a>
+            </div>
+            <div class=" col-md-5 col-lg-5" style="display: flex; justify-content: flex-end;">
+                <div class="login">
+                    <a href="http://dash.adlook.me/#/access/login" style="margin: auto; text-align: center;"
+                        target="_blank">
+                        <img src="images/lk.svg" alt="icon" class="login-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 disp-none">
+                <div class="mini-container" id="mini-container">
+                    <div style="display: flex;">
+                        <div class="first-plus" id="first-plus">
+                            <div class="black-plus-one"></div>
+                            <div class="black-plus-two"></div>
+                        </div>
+                        <div class="second-plus" id="second-plus">
+                            <div class="black-plus-one"></div>
+                            <div class="black-plus-two"></div>
+                        </div>
+                    </div>
+                    <div class="mini-container-text">
+                        Платформа для паблишеров
+                    </div>
+                    <a class="btn btn-mini" data-bs-toggle="modal" data-bs-target="#registrationModal">
+                        <div class="btn-name">подключить сайт</div>
+                        <div class="sq">
+                            <div class="rec-btn-1"><img src="images/strelka.svg" alt="icon"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="small-block disp-none" id="small-block">
+                <a class="btn btn-mini" data-bs-toggle="modal" data-bs-target="#registrationModal">
+                    <div class="btn-name">подключить сайт</div>
+                    <div class="sq">
+                        <div class="rec-btn-1"><img src="images/strelka.svg" alt="icon"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h1 class="main-text col-md-10">
+            Умеем монетизировать сайты
+        </h1>
+
+        <div class="mini-pluses col-sm-7 col-md-7 col-lg-12">
+            <div class=" mini-plus" style="display: flex;">
+                <img src="images/qvadro.svg" alt="icon" id="mini-plus-2" class="cubic-rot">
+                <div class="fast">Быстрые выплаты</div>
+            </div>
+            <div class=" mini-plus" style="display: flex;">
+                <img src="images/cubic-1.svg" alt="icon" id="mini-plus-3" class="cubic-rot">
+                <div class="fast">Легко установить</div>
+                <div style="opacity: 0; font-family: Montserrat-regular;">s</div>
+            </div>
+            <div class=" mini-plus" style="display: flex;">
+                <img src="images/cubic-2.svg" alt="icon" id="mini-plus-1" class="cubic-rot">
+                <div class="fast">Стабильный доход</div>
+            </div>
+        </div>
+
+        <div class="calc col-sm-12 col-md-12" id="calculator">
+            <div class="calc__header">
+                <div class="calc-title col-xl-8 col-lg-9">Узнайте, сколько сможет зарабатывать ваш сайт с&nbsp;помощью рекламы
+                    <!-- <p class="correction">*при установке всех наших инструментов</p> -->
+                </div>
+                <a href="https://youtu.be/GEXm6LzaWko" class="calc__header-btn tube">
+                    <div class="calc__header-btn__inner">
+                        <p class="calc__header-btn__inner__title">Смотреть</p>
+                        <div class="calc__header-btn__inner__icon">
+                            <svg class="calc__header-btn__inner__icon-play">
+                                <use xlink:href="#player-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="calc-outer">
+                <div class="calc-name">КАЛЬКУЛЯТОР
+                    <img src="images/calc.svg" alt="icon" style="margin-left: 100px;" class="calc-img" id="calc-img">
+                </div>
+                <div class="calc-inner">
+                    <!-- danger-calc -->
+                    <div class="relative">
+                        <input id="domen-input" class="domen-input " placeholder=" ">
+                        <label for="domen-input" class="domen-input-label">Адрес вашего сайта</label>
+                    </div>
+                    <div class="calc-items-cont">
+                        <div class="calc-item">
+                            <div class="check-box">
+                                <input class="check-box-input" type="checkbox" id="check2" checked>
+                                <label for="check2"></label>
+                            </div>
+                            <div class="check-text">
+                                Видео
+                            </div>
+                        </div>
+                        <div class="calc-item">
+                            <div class="check-box">
+                                <input class="check-box-input" type="checkbox" id="check3" checked>
+                                <label for="check3"></label>
+                            </div>
+                            <div class="check-text">
+                                Баннер
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total-earnings">
+                        <div id="earnings" class="earnings">
+                            <div id="earnings-count" class="earnings-count">0</div>
+                            <div class="earnings-currency">₽/мес</div>
+                        </div>
+                        <div id="earnings-name" class="earnings-name hidden">
+                            минимальный гарантированный доход с одного места
+                        </div>
+                        <div id="choose-format" class="choose-format hidden">Выберите формат</div>
+                    </div>
+                    <div class="space-between calc-btn-md">
+                        <button class="btn btn-ready btn-calculate" onclick="calculate()" type="submit">
+                            <div class="btn-name">Рассчитать</div>
+                            <div class="sq">
+                                <div id="rec-calc-xs" class="rec-btn-1">
+                                    <div class="rec-btn-2" id="rec-calc-xs-2"></div>
+                                    <div class="rec-btn-3" id="rec-calc-xs-3"></div>
+                                    <div class="rec-btn-4" id="rec-calc-xs-4"></div>
+                                    <div class="rec-btn-5" id="rec-calc-xs-5"></div>
+                                    <div class="rec-btn-6" id="rec-calc-xs-6"></div>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="unique">
+                            <div id="unique-count-cont" class="hidden">
+                                <div id="unique-count" class="">0</div>уникальных посетителей в сутки
+                            </div>
+                            <div id="not-info" class=" hidden">Недостаточно информации о сайте</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tools col-md-12">
+            <div class="tools-name col-md-7 col-xl-5 col-lg-6">
+                <div style="width: auto;">Инструменты</div>
+                <div class="sq sq-rotate" id="sq-rotate">
+                    <div class="rec-cross-1"></div>
+                    <div class="rec-cross-2"></div>
+                    <div class="rec-cross-3"></div>
+                    <div class="rec-cross-4"></div>
+                    <div class="rec-cross-5"></div>
+                    <div class="rec-cross-6"></div>
+                    <div class="rec-cross-7"></div>
+                    <div class="rec-cross-8"></div>
+                    <div class="rec-cross-9"></div>
+                </div>
+            </div>
+
+            <div class="space-between disp-block tools-m-b">
+                <div class="item">
+                    <div class="type-one">
+                        <div class="rec-1-1">
+                            <div class="rec-1-2"></div>
+                        </div>
+                        <div class="rec-1-3"></div>
+                        <div class="rec-1-4"></div>
+                    </div>
+                    <div class="item-name">
+                        Display
+                    </div>
+
+                    <div class="item-description">
+                        Баннерная реклама в выбранном блоке на сайте. Стандартные размеры: 240х400, 300х250, 300х600, 728х90
+                        <!-- <p class="correction-size">*240х400, 300х250, 300х600, 728х90</p> -->
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="type-two">
+                        <div class="rec-2-1">
+                            <div class="rec-2-2"></div>
+                            <div class="rec-2-3"></div>
+                            <div class="rec-2-4"></div>
+                            <div class="rec-2-5"></div>
+                            <div class="rec-2-6"></div>
+                            <div class="rec-2-7"></div>
+                        </div>
+                    </div>
+
+                    <div class="item-name">
+                        Overlay
+                    </div>
+
+                    <div class="item-description">
+                        Устанавливается в любое место сайта, видео фиксируется в нужной части страницы и&nbsp;движется вместе с прокруткой. Есть крестик для&nbsp;закрытия, нет экрана прогрузки рекламы.
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-between disp-block">
+                <div class="item">
+                    <div class="type-tree">
+                        <div class="rec-3-1"></div>
+                        <div class="rec-3-2"></div>
+                        <div class="rec-3-3"></div>
+                        <div class="rec-3-4"></div>
+                        <div class="rec-3-5"></div>
+                        <div class="rec-3-6">
+                            <div class="rec-3-7">
+                                <div class="rec-3-8"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-name">
+                        IBV
+                    </div>
+
+                    <div class="item-description">
+                        In-Banner-Video, видеореклама в статичном дисплейном формате. Прибыльнее обычных Display форматов за счёт видеокреативов.
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="type-four">
+                        <div class="rec-4-1"></div>
+                        <div class="rec-4-2"></div>
+                        <div class="rec-4-3">
+                            <div class="rec-4-4">
+                                <div class="rec-4-5"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-name">
+                        Fly-ROLL
+                    </div>
+
+                    <div class="item-description">
+                        Устанавливается в любое место сайта, видео фиксируется в нужной части страницы и&nbsp;движется вместе с прокруткой. Есть крестик для&nbsp;закрытия, нет экрана прогрузки рекламы.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pluses col-md-12">
+            <div class="pluses-name-cont">
+                <div class="pluses-name col-md-11 col-lg-9 col-xl-6">Работать с Adlook <br> очень просто </div>
+                <div class="sq advantages-plus plus-rotate" id="plus-rotate">
+                    <div class="rec-plus-one"></div>
+                    <div class="rec-plus-two"></div>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center;">
+
+                <!-- Bullet slider -->
+
+                <div class="blog-slider">
+                    <div class="blog-slider__wrp swiper-wrapper">
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="images/help.svg" alt="icon">
+                            </div>
+                            <div class="blog-slider__content">
+                                <div class="blog-slider__title">Поддержка 24/7</div>
+                                <div class="blog-slider__text">
+                                    Помощь в установке кода<br>Подбор лучшей стратегии монетизации
+                                    <br>Ответы на любые вопросы и днём и ночью
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="images/stat.svg" alt="icon">
+                            </div>
+                            <div class="blog-slider__content">
+                                <div class="blog-slider__title">Статистика Real-Time</div>
+                                <div class="blog-slider__text">Лучшая AdTech архитектура на рынке с
+                                    up-time
+                                    данных в 2 минуты </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="images/volume.svg" alt="icon">
+                            </div>
+                            <div class="blog-slider__content">
+                                <div class="blog-slider__title">Никакого звука</div>
+                                <div class="blog-slider__text">
+                                    Запуск видео формата без звука <br>
+                                    С нами вы забудете об этом навсегда
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="images/refer.svg" alt="icon">
+                            </div>
+                            <div class="blog-slider__content">
+                                <div class="blog-slider__title">Реферальная программа</div>
+                                <div class="blog-slider__text">У вас есть коллеги по&nbsp;цеху? <br> 
+                                    Приглашайте их подключиться к Adlook —&nbsp;получайте до 100% их месячного дохода от нашего сотрудничества</div>
+                            </div>
+                        </div>
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="images/500.svg" alt="icon">
+                            </div>
+                            <div class="blog-slider__content">
+                                <div class="blog-slider__title">Удобные выплаты</div>
+                                <div class="blog-slider__text">
+                                    Еженедельные выплаты от 500 рублей <br>
+                                    Возможно, даже быстрее, чем у Yandex
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slider__pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback -->
+        <!-- <div class="feedback col-md-12">
+            <div style="display: flex;">
+                <div class="feedback-title">Отзывы клиентов</div>
+            </div>
+
+            <div id="js-carousel1" class="owl-carousel owl-carousel-feedback">
+                <div class="feedback-card carousel-item">
+                    <div class="feedback-card-header">
+                        <img src="images/face.png" alt="" class="feedback-img">
+                        <div class="feedback-card-info">
+                            <span class="feedback-card-name">Вася Пупкин</span>
+                            <span class="feedback-card-post">Исполнительный директор</span>
+                            <img src="images/stars.svg" alt="stars" class="feedback-card-stars">
+                        </div>
+                    </div>
+                    <div class="feedback-card-body">
+                        <div class="quote">
+                            “
+                        </div>
+                        <div class="feedback-card-text">
+                            <p class="feedback-p">Устанавливается в любое место сайта, видео фиксируется в нужной
+                                части
+                                страницы и движется
+                                вместе с прокруткой. Есть крестик для закрытия, нет экрана прогрузки рекламы.</p>
+                            <a href="#" class="feedback-card-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback-card carousel-item">
+                    <div class="feedback-card-header">
+                        <img src="images/face-2.png" alt="" class="feedback-img">
+                        <div class="feedback-card-info">
+                            <span class="feedback-card-name">Вася Пупкин</span>
+                            <span class="feedback-card-post">Исполнительный директор</span>
+                            <img src="images/stars.svg" alt="stars" class="feedback-card-stars">
+                        </div>
+                    </div>
+                    <div class="feedback-card-body">
+                        <div class="quote">
+                            “
+                        </div>
+                        <div class="feedback-card-text">
+                            <p class="feedback-p">Устанавливается в любое место сайта, видео фиксируется в нужной
+                                части
+                                страницы и движется
+                                вместе с прокруткой. Есть крестик для закрытия, нет экрана прогрузки рекламы.</p>
+                            <a href="#" class="feedback-card-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback-card carousel-item">
+                    <div class="feedback-card-header">
+                        <img src="images/face-3.png" alt="" class="feedback-img">
+                        <div class="feedback-card-info">
+                            <span class="feedback-card-name">Вася Пупкин</span>
+                            <span class="feedback-card-post">Исполнительный директор</span>
+                            <img src="images/stars.svg" alt="stars" class="feedback-card-stars">
+                        </div>
+                    </div>
+                    <div class="feedback-card-body">
+                        <div class="quote">
+                            “
+                        </div>
+                        <div class="feedback-card-text">
+                            <p class="feedback-p">Устанавливается в любое место сайта, видео фиксируется в нужной
+                                части
+                                страницы и движется
+                                вместе с прокруткой. Есть крестик для закрытия, нет экрана прогрузки рекламы.</p>
+                            <a href="#" class="feedback-card-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback-card carousel-item">
+                    <div class="feedback-card-header">
+                        <img src="images/face.png" alt="" class="feedback-img">
+                        <div class="feedback-card-info">
+                            <span class="feedback-card-name">Вася Пупкин</span>
+                            <span class="feedback-card-post">Исполнительный директор</span>
+                            <img src="images/stars.svg" alt="stars" class="feedback-card-stars">
+                        </div>
+                    </div>
+                    <div class="feedback-card-body">
+                        <div class="quote">
+                            “
+                        </div>
+                        <div class="feedback-card-text">
+                            <p class="feedback-p">Устанавливается в любое место сайта, видео фиксируется в нужной
+                                части
+                                страницы и движется
+                                вместе с прокруткой. Есть крестик для закрытия, нет экрана прогрузки рекламы.</p>
+                            <a href="#" class="feedback-card-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+
+        <div class="publ" id="publ">
+            <div class="publ__header">
+                <h2 class="publ__title">Что говорят <br> <span>наши</span> паблишеры</h2>
+
+            <div class="publ__btns-mob">
+                <div class="swiper-button-prev prev-slider2">
+                    <img src="images/strelka.svg" alt="icon" class="publ__btns__prev">
+                </div>
+                <div class="swiper-button-next next-slider2">
+                    <img src="images/strelka.svg" alt="icon" class="publ__btns__next">
+                </div>
+            </div>
+            </div>
+            
+
+            <div class="publ__wrap swiper-container2">
+                <div class="publ__wrap__inner swiper-wrapper">
+                    <div class="publ__wrap__inner__slide swiper-slide">
+                        <img src="images/parther-1.svg" alt="logo" class="publ__wrap__inner__slide__logo publ__parther-1">
+                        <p class="publ__wrap__inner__slide__text">«Мы остались довольны новым источником дохода и форматом fly-roll»</p>
+                        <a href="https://vc.ru/s/adlook_me/466439-case-10-kak-my-protestirovali-fly-roll-reklamu-na-portale-kolesa-ru-i-ustanovili-dolgosrochnoe-sotrudnichestvo" class="publ__wrap__inner__slide__link" target="_blank">Читайте полный кейс</a>
+                    </div>
+
+                    <div class="publ__wrap__inner__slide swiper-slide">
+                        <img src="images/parther-3.svg" alt="logo" class="publ__wrap__inner__slide__logo publ__parther-2">
+                        <p class="publ__wrap__inner__slide__text">«Будем встраивать Adlook и в другие свои проекты»</p>
+                        <a href="https://vc.ru/s/adlook_me/464772-case-9-o-tom-kak-byl-sozdan-onlayn-kinoteatr-specialno-dlya-testirovaniya-monetizacii-ot-adlook-me" class="publ__wrap__inner__slide__link" target="_blank">Читайте полный кейс</a>
+                    </div>
+
+                    <div class="publ__wrap__inner__slide swiper-slide">
+                        <img src="images/parther-2.png" alt="logo" class="publ__wrap__inner__slide__logo publ__parther-3">
+                        <p class="publ__wrap__inner__slide__text">«Adlook берет на себя всю работу. Мы спокойно концентрируемся на других задачах»</p>
+                        <a href="https://vc.ru/s/adlook_me/461860-case-8-pro-sotrudnichestvo-s-ucoz-odnim-iz-samyh-krupnyh-konstruktorov-saytov-v-rossii" class="publ__wrap__inner__slide__link" target="_blank">Читайте полный кейс</a>
+                    </div>
+
+                    <div class="publ__wrap__inner__slide swiper-slide">
+                        <img src="images/parther-4.png" alt="logo" class="publ__wrap__inner__slide__logo publ__parther-4">
+                        <p class="publ__wrap__inner__slide__text"> «Кто-то приходит, кто-то уходит, но с Adlook мы — стабильно»</p>
+                        <a href="https://vc.ru/s/adlook_me/461736-case-7-kak-my-stali-odnim-iz-osnovnyh-instrumentov-monetizacii-portala-o-pogode-sredi-50-drugih-servisov" class="publ__wrap__inner__slide__link" target="_blank">Читайте полный кейс</a>
+                    </div>
+
+                    <div class="publ__wrap__inner__slide swiper-slide">
+                        <img src="images/math100.png" alt="logo" class="publ__wrap__inner__slide__logo publ__parther-5">
+                        <p class="publ__wrap__inner__slide__text">«Один ваш плеер иногда приносил больше, чем вся реклама Яндекса»</p>
+                        <a href="https://vc.ru/s/adlook_me/461147-case-5-kak-odin-pleer-adlook-me-prines-deneg-bolshe-chem-vsya-reklama-ot-yandeksa" class="publ__wrap__inner__slide__link" target="_blank">Читайте полный кейс</a>
+                    </div>
+
+                    <div class="publ__wrap__inner__slide swiper-slide">
+                        <img src="images/parther-6.png" alt="logo" class="publ__wrap__inner__slide__logo publ__parther-6">
+                        <p class="publ__wrap__inner__slide__text">«Использую Adlook параллельно с другими сетками. Несколько сеток монетизируют сайт лучше. Иногда вы обгоняете другие сервисы по размеру выплат»</p>
+                        <a href="https://vc.ru/s/adlook_me/461157-case-6-kak-pablisher-ustanovil-nash-pleer-v-dopolnenie-k-drugomu-servisu-i-stal-zarabatyvat-v-2-raza-bolshe" class="publ__wrap__inner__slide__link" target="_blank">Читайте полный кейс</a>
+                    </div>
+
+                    <div class="publ__wrap__inner__slide swiper-slide">
+                        <img src="images/igis-2.png" alt="logo" class="publ__wrap__inner__slide__logo publ__parther-7">
+                        <p class="publ__wrap__inner__slide__text">«Adlook отвечает всем требованиям взаимовыгодного сотрудничества»</p>
+                        <a href="https://vc.ru/s/adlook_me/460470-case-4-o-monetizacii-sayta-s-pochti-3-millionami-posetiteley-ezhemesyachno" class="publ__wrap__inner__slide__link" target="_blank">Читайте полный кейс</a>
+                    </div>
+
+                    <div class="publ__wrap__inner__slide swiper-slide">
+                        <img src="images/parther-8.png" alt="logo" class="publ__wrap__inner__slide__logo publ__parther-8">
+                        <p class="publ__wrap__inner__slide__text">«Все из вашей команды очень отзывчивы. Моментально на связи. Это огромный плюс и замечательное отличие среди других подобных компаний. Возникающие проблемы оперативно решаете на всех уровнях и регионах. Вы всегда идёте навстречу и предлагаете альтернативы. Отдельный респект за постоянный рабочий код»</p>
+                        <a href="https://vc.ru/s/adlook_me/453537-case-3-kak-my-uberegli-reklamnye-pleery-ot-politiki-v-fevrale-2022-go" class="publ__wrap__inner__slide__link" target="_blank">Читайте полный кейс</a>
+                    </div>
+
+                    <div class="publ__wrap__inner__slide swiper-slide">
+                        <img src="images/parther-9.svg" alt="logo" class="publ__wrap__inner__slide__logo publ__parther-9">
+                        <p class="publ__wrap__inner__slide__text">«Я получаю деньги без кучи бумаг, бюрократии, сложной волокиты. В других компаниях приходилось заключать большое количество договоров. В итоге затраты времени и нервов даже не окупились: выхлоп от рекламы был меньше, чем у вас. В adlook.me очень упрощена эта процедура, и это огромный плюс»</p>
+                        <a href="https://vc.ru/s/adlook_me/452183-case-2-kak-my-pobedili-bumazhnuyu-volokitu-i-sdelali-vyplaty-maksimalno-komfortnymi" class="publ__wrap__inner__slide__link" target="_blank">Читайте полный кейс</a>
+                    </div>
+
+                    <div class="publ__wrap__inner__slide swiper-slide">
+                        <img src="images/parther-10.png" alt="logo" class="publ__wrap__inner__slide__logo publ__parther-10">
+                        <p class="publ__wrap__inner__slide__text">«Adlook.me действительно нам помог. Ребята смогли монетизировать сайт лучше, чем другие платформы, получить больше прибыли. Деньги в свою очередь пошли на развитие сервиса. Это помогает нам держаться на плаву»</p>
+                        <a href="https://vc.ru/s/adlook_me/444826-case-1-kak-my-obespechivaem-dostoynuyu-monetizaciyu-dazhe-v-krizis" class="publ__wrap__inner__slide__link" target="_blank">Читайте полный кейс</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="faq col-md-12">
+            <div class="faq-name">FAQ
+                <img class="faq-img" src="images/faq-arrow.svg" alt="icon" id="bold-arrow-1">
+            </div>
+            <div class="faq-cont faq-accordion">
+                <button class="btn faq-btn faq-accordion-control" id="collapse31" type="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <div class="faq-btn-name">Кто мы?</div>
+                    <img src="images/cubic-arrow-down.svg" class="cubic-arrow-down faq-icon" alt="icon">
+                    <!-- <img src="images/cubic-arrow-down.svg" class="cubic-arrow-up hidden" alt=""> -->
+                </button>
+                <div class="faq-accordion-content" aria-hidden="true">
+                    <div class="faq-accordion-content-text">
+                        Мы — SSP платформа, которая помогает зарабатывать владельцам сайтов и рекламодателям уже c 2018 года. Создаём клиентский сервис для владельцев площадок и помогаем монетизировать сайты с помощью
+                        медийной рекламы.<br><br>
+
+                        Наша система работает по протоколу oRTB (Real Time Bidding). Протокол направлен на максимизацию прибыли владельца площадки путём проведения аукциона по продаже рекламного места по самой высокой цене. Скорость проведения аукциона — всего 150 ms.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cont faq-accordion">
+                <button id="collapse54" class="btn faq-accordion-control faq-btn" type="button"aria-expanded="false" aria-controls="collapseExample">
+                    <div class="faq-btn-name">Почему мы?</div>
+                    <img src="images/cubic-arrow-down.svg" class="cubic-arrow-down faq-icon" alt="icon">
+                    <!-- <img src="images/cubic-arrow-down.svg" class="cubic-arrow-up hidden" alt=""> -->
+                </button>
+                <div class="faq-accordion-content">
+                    <div class="faq-accordion-content-text">
+                        
+                        За 4 года мы выплатили владельцам сайтов более 150 млн. рублей и показали более 3 млрд. рекламных роликов.
+                        
+                        Бесперебойная работа сервиса обеспечена 28 серверами в 5 странах мира. <br><br>
+                        
+                        
+                        В нашем штате работает 21 специалист, и каждый из них обеспечивает стабильной поддержкой и помощью в любых вопросах. <br>
+                        
+                        
+                        Мы сотрудничаем с такими крупными ресурсами как: Kolesa.ru, RBKGames.com,
+                        Santa-Secret.ru, Sport-express.ru и т.д. <br><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cont faq-accordion">
+                <button id="collapse32" class="btn faq-accordion-control faq-btn" type="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <div class="faq-btn-name">Каким будет ваш доход?</div>
+                    <img src="images/cubic-arrow-down.svg" class="cubic-arrow-down faq-icon" alt="icon">
+                    <!-- <img src="images/cubic-arrow-down.svg" class="cubic-arrow-up hidden" alt=""> -->
+                </button>
+                <div class="faq-accordion-content">
+                    <div class="faq-accordion-content-text">
+                        Доход от монетизации зависит от качества трафика вашего сайта. <br>
+                        Минимальную сумму дохода вы можете проверить с помощью нашего онлайн-калькулятора. <br><br>Качественный трафик значительно увеличивает сумму дохода, как правило, в 2-3 раза от минимального расчёта онлайн-калькулятора. <br>
+                        На увеличение дохода также может повлиять количество форматов рекламы, установленных на сайте.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cont faq-accordion">
+                <button id="collapse33"  class="btn faq-accordion-control faq-btn" type="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <div class="faq-btn-name">Как начать с нами работать?</div>
+                    <img src="images/cubic-arrow-down.svg" class="cubic-arrow-down faq-icon" alt="icon">
+                    <!-- <img src="images/cubic-arrow-down.svg" class="cubic-arrow-up hidden" alt=""> -->
+                </button>
+                <div class="faq-accordion-content">
+                    <div class="faq-accordion-content-text">
+                        1. Зарегистрироваться на нашем сайте adlook.me. Быстрая регистрация за 2 минуты. <br><br>
+
+                        2. Персональный менеджер выпишет вам рекламный код и пришлёт его на электронную почту.<br><br>
+
+                        3. Установите наш код на сайт (напрямую через html или с помощью плагина).<br>
+                        Установленный код делает запрос на нашу биржу. Система в автоматическом режиме по протоколу
+                        OpenRTB ищет для вашей аудитории подходящего рекламодателя.<br><br>
+
+                        4. В личном кабинете будет отражена полная статистика вашего заработка от сотрудничества с
+                        нами.<br><br>
+
+                        5. Вы с лёгкостью можете совмещать как несколько форматов рекламы, так и коды других платформ.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cont faq-accordion">
+                <button id="collapse34" class="btn faq-accordion-control faq-btn" type="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <div class="faq-btn-name">Как получить выплаты?</div>
+                    <img src="images/cubic-arrow-down.svg" class="cubic-arrow-down faq-icon" alt="icon">
+                    <!-- <img src="images/cubic-arrow-down.svg" class="cubic-arrow-up hidden" alt=""> -->
+                </button>
+                <div class="faq-accordion-content">
+                    <div class="faq-accordion-content-text">
+                        Вознаграждение выплачивается в течение 15 дней (net–15) за предыдущий месяц работы. <br><br>
+                        Выплаты происходят на электронные деньги, банковскую карту или на расчётный счёт при заключении договора.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cont faq-accordion">
+                <button id="collapse39" class="btn faq-accordion-control faq-btn" type="button"  aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <div class="faq-btn-name">Кто наши рекламодатели?</div>
+                    <img src="images/cubic-arrow-down.svg" class="cubic-arrow-down faq-icon" alt="icon">
+                    <!-- <img src="images/cubic-arrow-down.svg" class="cubic-arrow-up hidden" alt=""> -->
+                </button>
+                <div class="faq-accordion-content">
+                    <div class="faq-accordion-content-text">
+                        Мы работаем только с белыми и чистыми площадками согласно политике Brand Safety. <br><br>
+                        Дорожим и следим за репутацией брендов. В числе наших рекламодателей: 
+                        Яндекс; в числе брендов: OZON, Сбербанк, Ситимобил, TELE2 и др.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cont faq-accordion">
+                <button id="collapse23" class="btn faq-accordion-control faq-btn" type="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <div class="faq-btn-name">Уже есть Яндекс или был Google?</div>
+                    <img src="images/cubic-arrow-down.svg" class="cubic-arrow-down faq-icon" alt="icon">
+                    <!-- <img src="images/cubic-arrow-down.svg" class="cubic-arrow-up hidden" alt=""> -->
+                </button>
+                <div class="faq-accordion-content">
+                    <div class="faq-accordion-content-text">
+                        Партнёрство сильнее конкуренции, поэтому мы предлагаем дополнительную монетизацию вашего сайта,
+                        которая не мешает текущему доходу, а наоборот, увеличит его. <br><br>
+
+                        Яндекс и Google по-разному определяют ценность вашей аудитории. Это даёт вам
+                        возможность получить от сотрудничества с нами дополнительный доход.<br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cont faq-accordion">
+                <button id="collapse25" class="btn faq-accordion-control faq-btn" type="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <div class="faq-btn-name">Оптимизация трафика</div>
+                    <img src="images/cubic-arrow-down.svg" class="cubic-arrow-down faq-icon" alt="icon">
+                    <!-- <img src="images/cubic-arrow-down.svg" class="cubic-arrow-up hidden" alt=""> -->
+                </button>
+                <div class="faq-accordion-content">
+                    <div class="faq-accordion-content-text">
+                        
+                        После установки нашего кода в течение 3 дней наша система оптимизации перебирает всех рекламодателей, чтобы выбрать наиболее подходящего вашей аудитории. Поэтому важно устанавливать код минимум на трое суток.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cont faq-accordion">
+                <button id="collapse28" class="btn faq-accordion-control faq-btn" type="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <div class="faq-btn-name">Что такое oRTB, SSP и DSP?</div>
+                    <img src="images/cubic-arrow-down.svg" class="cubic-arrow-down faq-icon" alt="icon">
+                    <!-- <img src="images/cubic-arrow-down.svg" class="cubic-arrow-up hidden" alt=""> -->
+                </button>
+                <div class="faq-accordion-content">
+                    <div class="faq-accordion-content-text">
+                        Open Real-Time Bidding (oRTB) — алгоритм продажи и покупки рекламных показов по принципу
+                        аукциона в реальном времени. Он позволяет максимизировать доход от показа рекламы, поскольку
+                        автоматически выбирает наиболее выгодное из предложений рекламодателей. <br><br>
+
+                        SSP (Supply Side Platform) — это технологическая платформа, которая представляет интересы
+                        площадки и выставляет инвентарь на аукцион.<br><br>
+
+                        DSP (Demand Side Platform) — технологическая система организации рекламодателей, которая принимает запросы с SSP и делает ставки для покупки инвентаря на аукционе. DSP может включать управление несколькими
+                        рекламными сетями и рекламными биржами, а также обмен данными в интересах рекламодателя в цифровой экосистеме oRTB.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cont faq-accordion">
+                <button id="collapse29" class="btn faq-accordion-control faq-btn" type="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <div class="faq-btn-name">Остались вопросы?</div>
+                    <img src="images/cubic-arrow-down.svg" class="cubic-arrow-down faq-icon" alt="icon">
+                    <!-- <img src="images/cubic-arrow-down.svg" class="cubic-arrow-up hidden" alt=""> -->
+                </button>
+                <div class="faq-accordion-content">
+                    <div class="faq-accordion-content-text">
+                        Свяжитесь с нами, и мы с радостью ответим на интересующие вас вопросы: <br><br>
+                        <p>Почта: <a class="footer-link" href="mailto:support@adlook.me" style="display: block;">support@adlook.me </a></p>
+                        <p>Телеграмм: <a class="footer-link" href="https://t.me/adlook" style="display: block;">@adlook</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="trust col-md-12" id="trust">
+                <div class="trust-name">
+                    <div class="container">нам доверяют</div>
+                </div>
+                <!-- Slider -->
+                <div id="js-carousel" class=" owl-carousel">
+                    
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://allmed.pro/drugs/toviaz"><img class="trust-img allmed-logo-mob"
+                                src="images/allmed.jpeg" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://www.kolesa.ru/article/ne-tech-a-raspylyat-pochemu-perestaet-rabotat-forsunka-benzinovogo-dvigatelya"><img class="trust-img colesa-logo-mob"
+                                src="images/colesa.jpeg" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://math100.ru"><img class="trust-img math-logo-mob"
+                                src="images/math100.png" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://gid-minecraft.ru"><img class="trust-img grid-mine-logo-mob"
+                                src="images/gid_mine.png" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://ucoz.ru"><img class="trust-img ucoz-logo-mob"
+                                src="images/logo-ucoz.png" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://igis.ru"><img class="trust-img igis-logo-mob"
+                                src="images/igis-2.png" alt=""></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://oxy.cloud"><img class="trust-img oxy-logo-mob"
+                                src="images/oxy.jpg" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://betweenx.com"><img class="trust-img between-logo-mob"
+                                src="images/between.jpeg" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://buzzoola.com/ru"><img class="trust-img buzzoola-logo-mob"
+                                src="images/buzzoola.jpeg" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://getintent.com"><img class="trust-img getinternet-logo-mob"
+                                src="images/getintent.jpeg" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://mars.media"><img class="trust-img mars-logo-mob"
+                                src="images/mars.jpeg" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://mediatoday.ru"><img class="trust-img mediatoday-logo-mob"
+                                src="images/mediatoday.jpeg" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://malokacha.com"><img class="trust-img malo-logo-mob"
+                                src="images/malo.png" alt=""></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://mgid.com"><img class="trust-img mgid-logo-mob"
+                                src="images/mgid.jpeg" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://moevideo.club"><img class="trust-img movevideo-logo-mob"
+                                src="images/moe_video.jpeg" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://sape.ru"><img class="trust-img sape-logo-mob"
+                                src="images/sape.png" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://utraff.com"><img class="trust-img umg-logo-mob"
+                                src="images/umg.png" alt="icon"></a>
+                    </div>
+                    <div class="trust-item carousel-item">
+                        <a class="slider-a" target="_blank" href="https://vadideo.com"><img class="trust-img vadideo-logo-mob"
+                                src="images/vadideo.jpeg" alt="icon"></a>
+                    </div>
+                </div>
+
+                <!-- Blogs -->
+                <div class="useful">
+                    <h2 class="useful__title">Наши блоги</h2>
+                    <div class="useful__wrap">
+                        <div class="useful__wrap__item">
+                            <div class="useful__wrap__item__header">
+                                <img src="images/logo-vc.png" alt="image" class="useful__wrap__item__header__photo logo-vc">
+                                <!-- <div class="useful__wrap__item__header__date">17 Ноября</div> -->
+                            </div>
+                            <p class="useful__wrap__item__description">Наш блог на VC</p>
+                            <a href="https://vc.ru/s/adlook_me"  target="_blank" class="useful__wrap__item__btn">Перейти</a>
+                        </div>
+                        <div class="useful__wrap__item">
+                            <div class="useful__wrap__item__header">
+                                <img src="images/logo-dzen.png" alt="image" class="useful__wrap__item__header__photo logo-dzen">
+                                <!-- <div class="useful__wrap__item__header__date">5 января</div> -->
+                            </div>
+                            <p class="useful__wrap__item__description">Наш блог на Дзене</p>
+                            <a href="https://dzen.ru/adlook" target="_blank" class="useful__wrap__item__btn">Перейти</a>
+                        </div>
+                        <div class="useful__wrap__item">
+                            <div class="useful__wrap__item__header">
+                                <img src="images/logo-sostav.svg" alt="image" class="useful__wrap__item__header__photo logo-sostav">
+                                <!-- <div class="useful__wrap__item__header__date">2 февраля</div> -->
+                            </div>
+                            <p class="useful__wrap__item__description">Наш блог на Sostav.ru</p>
+                            <a href="https://www.sostav.ru/blogs/239662" target="_blank" class="useful__wrap__item__btn">Перейти</a>
+                        </div>
+                        <div class="useful__wrap__item">
+                            <div class="useful__wrap__item__header">
+                                <img src="images/logo-pikabu.png" alt="image" class="useful__wrap__item__header__photo logo-pikabu">
+                                <!-- <div class="useful__wrap__item__header__date">5 января</div> -->
+                            </div>
+                            <p class="useful__wrap__item__description">Наш блог на Pikabu</p>
+                            <a href="https://pikabu.ru/@ADlook" target="_blank" class="useful__wrap__item__btn">Перейти</a>
+                        </div>
+                        <div class="useful__wrap__item">
+                            <div class="useful__wrap__item__header">
+                                <img src="images/logo-youtube.svg" alt="image" class="useful__wrap__item__header__photo logo-youtube">
+                                <!-- <div class="useful__wrap__item__header__date">2 февраля</div> -->
+                            </div>
+                            <p class="useful__wrap__item__description">Наш youtube-канал</p>
+                            <a href="https://www.youtube.com/channel/UClr-VQ087RdWkC-qP2WjMzQ" target="_blank" class="useful__wrap__item__btn">Перейти</a>
+                        </div>
+                        <div class="useful__wrap__item">
+                            <div class="useful__wrap__item__header">
+                                <img src="images/logo-telegram.png" alt="image" class="useful__wrap__item__header__photo logo-telegram">
+                                <!-- <div class="useful__wrap__item__header__date">2 февраля</div> -->
+                            </div>
+                            <p class="useful__wrap__item__description">Наш telegram-канал</p>
+                            <a href="https://t.me/adlook_me" target="_blank" class="useful__wrap__item__btn">Перейти</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="useful useful-media">
+                    <h2 class="useful__title">СМИ о нас</h2>
+                    <div class="useful__wrap">
+                        <div class="useful__wrap__item">
+                            <div class="useful__wrap__item__header">
+                                <img src="images/logo-tadviser.png" alt="image" class="useful__wrap__item__header__photo logo-tadviser">
+                                <div class="useful__wrap__item__header__date">05 сентября</div>
+                            </div>
+                            <p class="useful__wrap__item__description">Как российский стартап вырос до конкуренции с «Google» и «Яндекс»</p>
+                            <a href="https://www.tadviser.ru/index.php/Новости:Как_российский_стартап_вырос_до_конкуренции_с_Google_и_Яндекс" target="_blank" class="useful__wrap__item__btn">Перейти</a>
+                        </div>
+                        <div class="useful__wrap__item">
+                            <div class="useful__wrap__item__header">
+                                <img src="images/logo-cnews.svg" alt="image" class="useful__wrap__item__header__photo logo-cnews">
+                                <div class="useful__wrap__item__header__date">08 февраля</div>
+                            </div>
+                            <p class="useful__wrap__item__description">Новость о нашей платформе на&nbsp;CNews</p>
+                            <a href="https://www.cnews.ru/news/line/2021-02-08_itstartap_adlookme_vybral_1cloud" target="_blank" class="useful__wrap__item__btn">Перейти</a>
+                        </div>
+                        <div class="useful__wrap__item">
+                            <div class="useful__wrap__item__header">
+                                <img src="images/logo-dp.png" alt="image" class="useful__wrap__item__header__photo logo-dp">
+                                <div class="useful__wrap__item__header__date">21 сентября</div>
+                            </div>
+                            <p class="useful__wrap__item__description">Об участии в конкурсе Биржа ИТ-стартапов от Делового Петербурга</p>
+                            <a href="https://www.dp.ru/a/2022/09/21/V_Peterburge_sostojalsja_fi" target="_blank" class="useful__wrap__item__btn">Перейти</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div style="display: flex; flex-direction: column; align-items: center;">
+
+                    <img src="images/bold-arrow.svg" class="bold-arrow" alt="icon" id="bold-arrow-2">
+
+                    <div class="connect">
+                        Подключение
+                    </div>
+                    <div class="ready">
+                        Готовы зарабатывать?
+                    </div>
+                    
+                    <a id="btn-connect" class="btn btn-mini btn-ready" data-bs-toggle="modal"
+                    data-bs-target="#registrationModal">
+                        <div class="btn-name btn-name-low">подключить сайт</div>
+                        <div class="sq">
+                            <div class="rec-btn-1"><img src="images/strelka.svg" alt="icon"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="btn-cont col-md-12" id="btn-cont">
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-block">
+            <div class="space-between">
+                <div class="footer-item">
+                    <a href="mailto:support@adlook.me" class="footer-link">
+                        <img class="footer-item-img" src="images/Mail-notification.svg" alt="icon">
+                        <div class="footer-item-text">support@adlook.me</div>
+                    </a>
+                </div>
+                <div class="footer-item">
+                    <a href="tel:+79817514619" class="footer-link">
+                        <img class="footer-item-img" src="images/iPhone-X.svg" alt="icon">
+                        <div class="footer-item-text">+7-981-751-46-19</div>
+                    </a>
+                </div>
+            </div>
+            <div class="space-between">
+                <div class="footer-item">
+                    <a href="skype:live:.cid.ee270e9c7f11304c" class="footer-link">
+                        <img class="footer-item-img" src="images/skype-3 1.svg" alt="icon">
+                        <div class="footer-item-text">Support adlook.me</div>
+                    </a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://t.me/adlook" class="footer-link">
+                        <img class="footer-item-img" src="images/Telegram_2019_Logo.svg" alt="icon">
+                        <div class="footer-item-text">@adlook</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function btnFormSend() {
+            setTimeout(btnFormSendDone, 5000);
+        }
+
+        function btnFormSendDone() {
+            const doneForm = document.getElementById("gratitude");
+
+            if (doneForm.classList.contains("hidden")) {
+                console.log("Ошибка")
+            } else {
+                cnv_pixel();
+                console.log("Done")
+            }
+        }
+    </script>
+    
+    <script>
+        var wrapUrlWithClickId=(function(){"use strict";function n(n,r){var e;void 0===r&&(r="uclick");var u=null===(e=n.match(/\?.+?$/))||void 0===e?void 0:e[0];return u?Array.from(u.matchAll(new RegExp("[?&](clickid|"+r+")=([^=&]*)","g"))).map((function(n){return{name:n[1],value:n[2]}})):[]}function r(n){var r=n();return 0===r.length?{}:r.reduce((function(n,r){var e;return Object.assign(n,((e={})[r.name]=""+r.value,e))}),{})}function e(e){void 0===e&&(e="uclick");var u,i,t=r((function(){return(function(n){return void 0===n&&(n="uclick"),Array.from(document.cookie.matchAll(new RegExp("(?:^|; )(clickid|"+n+")=([^;]*)","g"))).map((function(n){return{name:n[1],value:n[2]}}))})(e)})),c=r((function(){return n(document.referrer,e)})),a=r((function(){return n(document.location.search,e)}));return(u=[e,"clickid"],i=[t,c,a],u.reduce((function(n,r){return n.concat(i.map((function(n){return[r,n]})))}),[])).map((function(n){return{name:n[0],value:n[1][n[0]]}})).find((function(n){return n.value}))||null}function u(n,r,e){var u=n.replace(new RegExp(r+"=[^=&]*","g"),r+"="+e);return-1!==u.indexOf(r)?u:(function(n,r,e){var u=n.trim(),i=r+"="+e;return-1===u.indexOf("?")?u+"?"+i:u.endsWith("?")?""+u+i:u+"&"+i})(n,r,e)}return function(n,r){void 0===r&&(r="uclick");var i=e(r);return null===i?n:n.includes("cnv_id")?i.name===r?u(n,i.name,i.value):i.value?u(n,"cnv_id",i.value):n:u(n,i.name,i.value)}})();
+    
+        function cnv_pixel(){
+            var img = document.createElement('img');
+            img.src = wrapUrlWithClickId('https://kopi-znaniya.online/click.php?cnv_id=OPTIONAL&payout=OPTIONAL');
+            img.referrerPolicy = 'no-referrer-when-downgrade';
+        }
+    </script>
+   
+    <svg display="none">
+        <symbol id="player-icon" viewBox="0 0 8 10">
+            <g>
+                <path d="M7.38086 4.99567L0.366363 9.04549L0.366363 0.945845L7.38086 4.99567Z"/>
+            </g>
+        </symbol>
+    </svg>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+	<script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+</html>

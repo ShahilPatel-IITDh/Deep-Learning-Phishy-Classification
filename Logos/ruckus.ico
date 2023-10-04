@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- NREUM FIXME -->
+
+    <meta name="viewport" content="width=device-width, maximum-scale=5.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+
+    <title>Log in to RUCKUS One</title>
+    <link rel="stylesheet" media="all" href="/assets/toastr-f9a2b09d84a21c552d50b4ccdfeca476b3806226d2ff765bf30411df9f5e5101.css" />
+
+
+    <meta name="description" content="We are evolving today's communications landscape to meet challenges and explore exciting new opportunities" />
+
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style type="text/css">
+    html, body { height: 100%; font-size: 16px; box-sizing: border-box;}
+    *, *:before, *:after { padding:0;margin:0; box-sizing: inherit;}
+    ::selection{ background-color: #ffb870; color: #171818;}
+
+    a:link,a:visited,a:hover:before,a:focus:before,
+    a:hover:after,a:focus:after,nav a:hover {text-decoration: none;}
+    a:link,a:visited{color: #FFFFFF;}
+    a:hover{text-decoration: underline;}
+    a:focus{outline: none 0px; color: #FFFFFF; text-decoration: underline;}
+
+    body.noWebp {
+        background-image: -webkit-image-set(
+                url("/assets/background-image-be071a9d96f5f1df2ed338b19e236e55468da28a4dcadea1534ae9963070b052.webp") 1x);
+        background-image: image-set(
+                url("/assets/background-image-7fe317cad75eafa539a6008fc607b617e16ddbd20bebabf118fba803c4bc4911.png") 1x);
+    }
+    body.noWebp > header > img {
+        content: url("/assets/Ruckus_logo_white-orange-58f1db11a2a1163a305260745197837dd6630afb7b16d2e9080ac78c1754f294.png");
+    }
+
+    body {
+      background-image: url("/assets/background-image-7fe317cad75eafa539a6008fc607b617e16ddbd20bebabf118fba803c4bc4911.png");
+      background-image: -webkit-image-set(
+        url("/assets/background-image-be071a9d96f5f1df2ed338b19e236e55468da28a4dcadea1534ae9963070b052.webp") 1x,
+        url("/assets/background-image@2x-3b6d1b63ea8e096a2064b9b11d615bbc1514218f8d28fd473cb4b75c66aeeba9.webp") 2x,
+        url("/assets/background-image@3x-f4aaa768b1e78aa1116779ce56976b99fbe2b861c5b8a7021125f483616d0b6e.webp") 3x);
+      background-image: image-set(
+        url("/assets/background-image-be071a9d96f5f1df2ed338b19e236e55468da28a4dcadea1534ae9963070b052.webp") 1x,
+        url("/assets/background-image@2x-3b6d1b63ea8e096a2064b9b11d615bbc1514218f8d28fd473cb4b75c66aeeba9.webp") 2x,
+        url("/assets/background-image@3x-f4aaa768b1e78aa1116779ce56976b99fbe2b861c5b8a7021125f483616d0b6e.webp") 3x);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+
+      background-color: #333333;
+      overflow-x: hidden;
+      padding: 0 15px;
+
+      font-family: "Open Sans", "Roboto", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header {
+      width: 50%;
+      padding: 10px;
+    }
+    header .logo-commscope{
+      width: 244px;
+      height: 92px;
+    }
+    header article{
+      color: #FFFFFF;
+      font-size: 1rem;
+      line-height: 1.25rem;
+
+      width: 320px;
+      height: 110px;
+    }
+    header h2{
+      color: #FFFFFF;
+      font-size: 1.5rem;
+      font-weight: 400;
+
+      margin: 20px 0;
+    }
+
+    main {
+      position: relative;
+      width: 420px;
+      min-height: 580px;
+      padding: 70px 60px 30px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.24);
+      background-color: rgba(0, 0, 0, 0.56);
+
+      display: flex;
+      flex-direction: column;
+    }
+    main h1 {
+      color: #FFFFFF;
+      font-size: 2rem;
+      font-weight: 400;
+
+      margin: 0 0 10px;
+    }
+    main .error-message {
+      background-color: #EB4536;
+      color: #FFFFFF;
+      font-size: 0.9rem;
+      line-height: 1.25rem;
+      text-align: center;
+
+      margin: 0 0 5px;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+
+      background-color: rgba(0, 0, 0, 0.56);
+
+      color: rgba(228, 228, 228, 0.9);
+      text-align: center;
+      line-height: 1.4rem;
+    }
+    footer .addl { display: inline-block;}
+    footer .copyright {
+      font-weight: 300;
+      font-size: 0.8rem;
+    }
+
+    .form-control-input { position: relative;}
+    .form-control-input > input:-webkit-autofill { background: rgba(70, 90, 126, 0.4);}
+    .form-control-input > input:autofill { background: rgba(70, 90, 126, 0.4);}
+    .form-control-input > input {
+      color-scheme: dark;
+      border: none;
+      background-color: transparent;
+      padding: 16px 8px 0;
+      border-bottom: rgba(132, 137, 139, 0.4);
+      border-bottom-style: solid;
+      border-bottom-width: 1.3px;
+      width: 100%;
+      height: 54px;
+      z-index: 1;
+    }
+
+    .form-control-input > input:hover {
+      background-color: rgba(228, 228, 228, 0.35);
+      border-bottom: #333;
+      border-bottom-style: solid;
+      border-bottom-width: 1.3px;
+    }
+
+    .form-control-input > input::placeholder {
+      color: rgba(228, 228, 228, 0); /* A invisible placeholder for :placeholder-shown */
+      position: absolute;
+      font-size: 0.9rem;
+      top: 17px;
+      font-family: "Open Sans", "Roboto", sans-serif;
+    }
+
+    .form-control-input > input:focus {
+      background-color: transparent;
+      border-bottom: #ffb870;
+      border-bottom-style: solid;
+      border-bottom-width: 1.3px;
+      caret-color: #ffb870;
+      outline: none;
+      transition: all 0.3s;
+    }
+
+    .form-control-input > input + label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 16px 8px;
+      font-size: 0.9rem;
+      color: rgba(228, 228, 228, 1);
+      transition: all 0.3s;
+      user-select: none;
+    }
+
+    .form-control-input > input:focus + label,
+    .form-control-input > input:not(:placeholder-shown) + label {
+      font-size: 0.75rem;
+      transform: translateY(-8px);
+      transition: all 0.3s;
+      color: rgba(228, 228, 228, 0.7);
+    }
+
+    .form-control-select {
+      width: 100%;
+      margin: 15px 0;
+      text-align: right;
+      color: #F7F7F7;
+      font-size: 0.9rem;
+      line-height: 1.25rem;
+    }
+    .form-control-select > select {
+      color-scheme: dark;
+      margin-left: 5px;
+      padding: 5px;
+      background-color: transparent;
+      color: #FFFFFF;
+      border: 0;
+    }
+    .form-control-select > select > option {
+      background-color: #FFFFFF;
+      color: #333333;
+      font-size: 0.9rem;
+    }
+
+    #eye {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 22px;
+      text-align: center;
+      margin: 19px 7px;
+      cursor: pointer;
+      color: rgba(228, 228, 228, 0.7);
+    }
+    #eye.fa-eye-slash { color: rgba(228, 228, 228, 1);}
+
+    .btn-login {
+      background: #EC7100;
+      border-radius: 6px;
+      border: 0;
+
+      display: block;
+      width: 100%;
+      height: 32px;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      color: #FFFFFF;
+
+      text-align: center;
+      cursor: pointer;
+    }
+    .btn-login:hover { background: #9B3F05;}
+    .btn-login:active { border: 1px solid #9B3F05;}
+
+    .btn-login:disabled {
+      background: #C4C4C4;
+      color: #F8F8FA;
+      border: 0;
+      cursor: wait;
+    }
+    .forgot-password, .cloud-status {
+      font-size: 0.9rem;
+      line-height: 2rem;
+      color: #FFFFFF;
+    }
+    .forgot-password { width: 120px;}
+    .cloud-status { flex: 1;}
+
+    main > form { flex: 1;}
+
+    .cloud-status > .status::before {
+      margin-left: 10px;
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: rgba(228, 228, 228, 0);
+    }
+
+    .cloud-status > .status.operational::before { background-color: #23AB36;}
+    .cloud-status > .status.issue::before { background-color: #F9C34B;}
+    .cloud-status > .status.error::before { background-color: #ED1C24;}
+
+    @media (max-width: 767.98px) {
+      body {
+        padding: 0;
+        height: auto;
+        flex-direction: column;
+      }
+      header { width: auto;}
+      header article, header h2 { display: none;}
+      main {
+        width: 100%;
+        max-width: 420px;
+        min-height: 420px;
+        padding: 20px 40px 0;
+      }
+      footer {
+        position: relative;
+        margin: 15px 0;
+      }
+    }
+    /* Safari CSS hack*/
+    @media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) {
+      .form-control-input > input:-webkit-autofill {
+        -webkit-box-shadow:0 0 0 50px rgb(40, 45, 68) inset;
+        -webkit-text-fill-color: #fff;
+      }
+    }}
+    </style>
+
+  </head>
+
+  <header>
+    <img
+      alt="Ruckus Wireless Logo"
+      class="logo-commscope"
+      src="/assets/Ruckus_logo_white-orange-58f1db11a2a1163a305260745197837dd6630afb7b16d2e9080ac78c1754f294.png"
+      srcset="/assets/Ruckus_logo_white-orange-122209ca1a26711f622070ad614f1ab23c9c6ba95977c8d3234cbd94149e06f7.webp 1x, /assets/Ruckus_logo_white-orange-59f2b154f79225092c167046406b5b4d7b5d6777ba435639ad23438965e637d2.svg 2x"
+    />
+    <h2>Our Networked Future</h2>
+    <article>
+      We are evolving today's communications
+      landscape to meet challenges and explore
+      exciting new opportunities
+    </article>
+  </header>
+  <main>
+    <h1>RUCKUS One</h1>
+
+    <div class="error-message"></div>
+
+    
+<form class="form-signin" role="form" action="/login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="WCXwPQEq39FiNAZYOadWo5XkYWvcrICyXcbrnzoqE1D5LyK43sglSeqlypUj5G0MMO31z+b1rIG3rU72D4p/mA==" autocomplete="off" />
+
+  <div class="form-control-input">
+    <input placeholder="Email" class="form-control" type="text" autofocus="autofocus" name="user[username]" id="user_username" />
+
+    <label for="user_username">Email</label>
+  </div>
+
+  <p>
+    <input value="/oauth/authorize?layout=one_login&amp;response_type=code&amp;client_id=d03c36a8cf749bff72ffe2d866f48e479b0f34fe224b13348a0aaa3604ba3eb9&amp;scope=public&amp;state=HF1zOUu2Hp-KDuElbsRONbjic1T3pPIO2oEiINfbm68%3D&amp;redirect_uri=https://ruckus.cloud/idm_callback" autocomplete="off" type="hidden" name="user[referer]" id="user_referer" />
+  </p>
+  <div class="form-control-input">
+    <input placeholder="Password" class="form-control" type="password" name="user[password]" id="user_password" />
+    <label for="user_password">Password</label>
+    <i class="fa-regular fa-eye" id="eye"></i>
+  </div>
+
+  <div class="form-control-select">
+      <label for="region">Region</label>
+
+
+      <select name="user[region]" id="user_region"><option selected="selected" value="us">US</option>
+<option value="eu">EU</option>
+<option value="as">AS</option></select>
+  </div>
+
+  <input type="submit" name="commit" value="Log in" class="button btn-login" target="_parent" data-disable-with="Log in" />
+
+</form>
+<div class="cloud-status">
+  <a class="forgot-password" href="https://support.ruckuswireless.com/forgot_password?app_url_id=7">Forgot password</a>
+  <br/>
+  <a target="_blank" class="forgot-password" href="https://status.ruckus.cloud/">
+    RUCKUS One cloud status
+</a></div>
+
+<div id="referer" style="display:none"></div>
+
+
+
+
+  </main>
+
+  <footer>
+  <p class="copyright">
+    &copy; 2023 CommScope, Inc. All Rights Reserved.
+    <span class="addl">
+      <a href="https://www.commscope.com/about-us/terms">Terms of Use</a> |
+      <a href="https://www.commscope.com/about-us/privacy-statement">Privacy Policy</a> |
+      <a href="https://www.commscope.com/accessibility/">Accessibility</a> |
+      <a href="https://www.commscope.com/contact-us/contact-ruckus/">Support</a>
+      | 20230830.2_108650
+    </span>
+  </p>
+</footer>
+
+<script type="text/javascript">
+    window.setTimeout(
+        function() {
+            document.location.reload(true);
+        }, 1800000
+    );
+</script>
+
+
+  <script src="/assets/application-4868dd6e12e9cd8eee74f9d17669ad834db0e29c152e671e6e222c5f5516130d.js"></script>
+  
+  <script>
+      // Google's official recommendation for how to detect a specific webp feature
+      function check_webp_feature(feature, callback) {
+          var kTestImages = {
+              lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
+              lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",
+              alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",
+              animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"
+          };
+          var img = new Image();
+          img.onload = function () {
+              var result = (img.width > 0) && (img.height > 0);
+              callback(feature, result);
+          };
+          img.onerror = function () {
+              callback(feature, false);
+          };
+          img.src = "data:image/webp;base64," + kTestImages[feature];
+      }
+
+      check_webp_feature('alpha', function(feature, isSupported){
+          if (!isSupported) {
+              document.querySelector('body').classList.add('noWebp')
+          }
+      })
+
+
+      $(function() {
+          if ($(window).width() > 640) {
+              if ($('.form-signin').outerHeight() < $('.login-messages').outerHeight()) {
+                  $('.form-signin fieldset').css({'min-height': $('.login-messages').innerHeight() + 'px'});
+              }
+          }
+          $('#read_notice').on('click', function() {
+              $('#notice').show(300);
+              $(this).hide();
+          });
+      });
+  </script>
+  <script>
+(function($) {
+  $(':submit').click(function(evt) {
+    var btn = $(this),
+        form = btn.parents('form')[0];
+    evt.preventDefault();
+    btn.prop('disabled', true).val('Working ...');
+    setTimeout(function() {
+      form.submit();
+    }, 20);
+  });
+
+  if($("#referer").text() === "true" ) {
+    $(':submit').click(function() {
+      $('#waitModal').bind('opened', function() {
+        $(".form-signin").submit();
+      });
+      $('#waitModal').foundation('reveal', 'open');
+      var timer = 9;
+      var textArray = { 6: "Generating kumo trial...", 5: "Registering your code...", 4: "Generating licenses...", 1: "Sending serial number to cloud...", 0: "Finalizing your registration..." };
+      setInterval(function() {
+        timer = timer - 1;
+        if (timer < 0) timer = 0;
+        if (textArray[timer] !== undefined) {
+          $("#progress-text").text(textArray[timer]);
+        }
+      }, 5000);
+    });
+  }
+})(jQuery);
+</script>
+
+
+  <div id="referer" style="display: none"></div>
+
+  <script>
+  (function () {
+    'use strict';
+    // Show password text
+    const user_password = document.querySelector('#user_password');
+    const eye = document.querySelector('#eye');
+    eye.addEventListener('click', function(){
+      this.classList.toggle('fa-eye-slash');
+      this.classList.toggle('fa-eye');
+      const current_type = user_password.getAttribute('type');
+      user_password.setAttribute('type', current_type === 'password' ? 'text' : 'password');
+    });
+
+    // Disable submit button
+    const form_signin = document.querySelector('.form-signin');
+    const submit_btn = document.querySelector('.form-signin .btn-login');
+    form_signin.addEventListener('submit', function(evt){
+      submit_btn.value = 'Working ...';
+      submit_btn.disabled = true;
+
+      setTimeout(function () {
+        form_signin.submit()
+      }, 20);
+
+      evt.preventDefault();
+      return;
+    });
+  })();
+  </script>
+</html>
+

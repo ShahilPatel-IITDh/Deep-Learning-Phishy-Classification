@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gransy Anycast - Global DNS Anycast Provider</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/themekit/css/style.css">
+    <link rel="stylesheet" href="/themekit/css/glide.css">
+    <link rel="stylesheet" href="/themekit/css/magnific-popup.css">
+    <link rel="stylesheet" href="/themekit/css/content-box.css">
+    <link rel="stylesheet" href="/themekit/css/media-box.css">
+    <link rel="stylesheet" href="/themekit/css/contact-form.css">
+    <link rel="stylesheet" href="/skin.css">
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-transparent light align-right" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="/">
+                    <img class="logo-default scroll-hide" src="/media/logo.png" alt="logo">
+                    <img class="logo-retina scroll-hide" src="/media/logo.png" alt="logo">
+                    <img class="logo-default scroll-show" src="/media/logo.png" alt="logo">
+                    <img class="logo-retina scroll-show" src="/media/logo.png" alt="logo">
+                </a>
+            </div>
+            <i class="menu-btn"></i>
+            <div class="menu-cnt">
+                <ul id="main-menu">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul>
+                            <li><a href="/managed-anycast/">Managed Anycast</a></li>
+                            <li><a href="/secondary-anycast/">Secondary Anycast</a></li>
+                            <li><a href="/tld-anycast/">Anycast for TLDs</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Network</a>
+                        <ul>
+                            <li><a href="/locations/">Locations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Contacts</a>
+                        <ul>
+                            <li><a href="/about-us/">About Us</a></li>
+                            <li><a href="/news/">News</a></li>
+                            <li><a href="/contact/">Contact</a></li>
+                            <li><a href="/faq/">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://anycastdns.app">Login</a>
+                    </li>
+                    <li>
+                        <a href="/register/">Register</a>
+                    </li>
+                </ul>
+                <div class="menu-right">
+                    <ul class="lan-menu">
+                        <li>
+                            <a><img src="/media/en.png" alt="lang">EN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="section-image ken-burn-center section-home-slider light" data-parallax="scroll" data-image-src="/map.png">
+            <div class="container">
+                <hr class="space">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul class="slider" data-options="type:slider,perView:1,arrows:true,nav:true,autoplay:3500" data-anima="fade-right" data-time="2000">
+                            <li>
+                                <h1>The Best Way To Manage Your DNS</h1>
+                                <a class="img-box" href="/#">
+                                    <img src="/slide-1.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <h1>Make your domains faster globally</h1>
+                                <a class="img-box" href="/#">
+                                    <img src="/slide-2.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <h1>Detailed statistics for analyze</h1>
+                                <a class="img-box" href="/#">
+                                    <img src="/slide-3.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="grid-list gap-18" data-columns="1" data-columns-md="3" data-columns-sm="3" data-columns-xs="1">
+                                    <div class="grid-box">
+                                        <div class="grid-item">
+                                            <div class="counter counter-vertical counter-icon" data-anima="fade-right" data-time="3000">
+                                                <div>
+                                                    <h3>Nodes</h3>
+                                                    <div class="value">
+                                                        <span data-to="66" data-speed="5000">66</span>
+                                                        <span>+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="counter counter-vertical counter-icon" data-anima="fade-right" data-time="3000">
+                                                <div>
+                                                    <h3>Global Latence</h3>
+                                                    <div class="value">
+                                                        <span data-to="19" data-speed="5000">19</span>
+                                                        <span>ms</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="counter counter-vertical counter-icon" data-anima="fade-right" data-time="3000">
+                                                <div>
+                                                    <h3>Countries</h3>
+                                                    <div class="value">
+                                                        <span data-to="41" data-speed="5000">41</span>
+                                                        <span>+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8" data-anima="fade-right" data-time="4000">
+                                <h2><span>Free</span> trial  </h2>
+                                <p>
+                                    We are offering one month free trial. Test our network and enjoy the speed.
+                                </p>
+                                <a href="/register/" class="btn btn-sm">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="space">
+                <hr class="space">
+            </div>
+        </section>
+        <section class="section-base section-color section-overflow-top">
+            <div class="container">
+                <div class="grid-list" data-columns="3" data-columns-md="1">
+                    <div class="grid-box">
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="/managed-anycast/">
+                                <a href="/managed-anycast/" class="img-box"><img src="/price-1.png" alt=""></a>
+                                <div class="caption">
+                                    <h2>By Domain</h2>
+                                    <div class="cnt-info">
+                                        <div><span>Single domain</span><span>$5</span></div>
+                                        <div><span>Up to 10 domains</span><span>$20</span></div>
+                                        <div><span>Up to 100 domains</span><span>$100</span></div>
+                                    </div>
+                                    <p>
+					These plans are designed for small business and end-users customers, with DNS service for small number of domain names, with fixed prices and unlimited query processing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="/secondary-anycast/">
+                                <a href="/secondary-anycast/" class="img-box"><img src="/price-2.png" alt=""></a>
+                                <div class="caption">
+                                    <h2>By Queries</h2>
+                                    <div class="cnt-info">
+                                        <div><span>Milion queries</span><span>$5</span></div>
+                                        <div><span>100M queries</span><span>$50</span></div>
+                                        <div><span>Unlimited queries</span><span>$1500</span></div>
+                                    </div>
+                                    <p>
+					These plans are dedicated for hosting companies and ISPs, for big number of domain names. Company can connect our Anycast service to DNS infrastructure with AXFR support
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="/tld-anycast/">
+                                <a href="/tld-anycast/" class="img-box"><img src="/price-3.png" alt=""></a>
+                                <div class="caption">
+                                    <h2>For TLDs</h2>
+                                    <div class="cnt-info">
+                                        <div><span>Special Offer</span><span>On request</span></div>
+                                        <div><span>Domains</span><span>Unlimited</span></div>
+                                        <div><span>Queries</span><span>Unlimited</span></div>
+                                    </div>
+                                    <p>
+					We support a TLD bussiness developed carefully together with registries. We understand ccTLD and gTLD bussiness and we can provide AnycastDNS with special discounts
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row row-fit-lg" data-anima="fade-bottom" data-time="1000">
+                    <div class="col-lg-6">
+                        <ul class="slider light" data-options="arrows:false,nav:false">
+                            <li>
+                                <a class="img-box img-box-caption lightbox" href="/metro.png" data-lightbox-anima="fade-top">
+                                    <img src="/metro.png" alt="">
+                                    <span>Average latence 24ms</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>Our values and goals</h2>
+                            <p>About us</p>
+                        </div>
+                        <p>
+	    			Our goal is to develop Anycast network with low latency and high availability for anybody around the world and to offer fully automated high-level services to our customers worldwide.
+                        </p>
+                        <div class="box-sign">
+                            <b>Jan Horák</b>
+                            <span>Founder &amp; CEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-image light" data-parallax="scroll" data-image-src="/theme-2.png">
+            <div class="container">
+                <div class="row" data-anima="fade-bottom" data-time="1000">
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>The best DNS service</h2>
+                            <p>About us</p>
+                        </div>
+                        <p>
+			    Our expertise and experience in BGP engineering and domain management for hundred thousands customers allow us to provide a maximum quality with our DNS services
+                        </p>
+                        <a href="/#" class="btn-text active">All services</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="grid-list gap-40" data-columns="2" data-columns-xs="1">
+                            <div class="grid-box">
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-pen"></i>
+                                        <div class="caption">
+                                            <h3>Simple</h3>
+                                            <p>DNS Management</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-security-camera"></i>
+                                        <div class="caption">
+                                            <h3>Secure</h3>
+                                            <p>DNSSEC, TSIG, ..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-gears"></i>
+                                        <div class="caption">
+                                            <h3>Technology</h3>
+                                            <p>Statistics & Analytics</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-data-refresh"></i>
+                                        <div class="caption">
+                                            <h3>Availability</h3>
+                                            <p>HA & Low Latence</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-support"></i>
+                                        <div class="caption">
+                                            <h3>Premium team</h3>
+                                            <p>24/7 NOC</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-coins"></i>
+                                        <div class="caption">
+                                            <h3>No Money</h3>
+                                            <p>Ready for trial?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-base">
+            <div class="container">
+                <div class="row align-items-center" data-anima="fade-bottom" data-time="1000">
+                    <div class="col-lg-6">
+                        <img src="/anycast_dashboard.png" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>Innovative dashboard</h2>
+                            <p>Analytics tools</p>
+                        </div>
+                        <p>
+			    Everything that you need from DNS servers, you will find available in our innovative dashboard: all logs, filters by domain, GeoIP, node, and many others, complete statistics... We also incorporated powerful tools for analyzing DNS data that will uncover attackers, errors, bugs, and many more.
+                        </p>
+                        <a href="/dashboard/" class="btn btn-xs">Learn more</a>
+                    </div>
+                </div>
+                <hr class="space-sm">
+                <hr class="space visible-md">
+                <div class="row align-items-center" data-anima="fade-bottom" data-time="1000">
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>Available everywhere</h2>
+                            <p>Worldwide ready</p>
+                        </div>
+                        <p>
+			    By using our Anycast service, we make your domain name to respond fast, wherever is hosted in the world. We make them fast and global - no matter if you are in South America, Africa, North America, Europe, Asia or Australia.
+                        </p>
+                        <a href="/locations/" class="btn btn-border btn-xs">Learn more</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="/anycast_geo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <i class="scroll-top-btn scroll-top show"></i>
+    <footer class="light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>Gransy s.r.o.</h3>
+                    <p>Professional solution for DNS services!</p>
+                    <div class="icon-links icon-social icon-links-grid social-colors">
+                        <a class="facebook" href="https://www.facebook.com/gransycom"><i class="icon-facebook"></i></a>
+                        <a class="twitter" href="https://www.linkedin.com/company/gransy-s-r-o-/"><i class="icon-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Resources</h3>
+                    <ul class="icon-list icon-line">
+                        <li><a href="/managed-anycast/">Plans & Pricing</a></li>
+                        <li><a href="/about-us/">About Us</a></li>
+                        <li><a href="/managed-anycast/">Our Services</a></li>
+                        <li><a href="/contact/">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="text-list text-list-line">
+                        <li><b>Address</b><hr><p>Borivojova 35, 130 00, Prague</p></li>
+                        <li><b>Email</b><hr><p>info@anycastdns.cz</p></li>
+                        <li><b>Phone</b><hr><p>+420.732954549</p></li>
+                        <li><b>Opening hours</b><hr><p>9am-5pm Mon - Fri</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container">
+                <span>© 2020 Gransy - Your Domain Partner! Template Handmade by <a href="https://schiocco.com" target="_blank">schiocco.com</a>.</span>
+                <span><a href="/contact/">Contact us</a></span>
+            </div>
+        </div>
+        <link rel="stylesheet" href="/themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="/themekit/scripts/jquery.min.js"></script>
+        <script src="/themekit/scripts/main.js"></script>
+        <script src="/themekit/scripts/parallax.min.js"></script>
+        <script src="/themekit/scripts/glide.min.js"></script>
+        <script src="/themekit/scripts/custom.js"></script>
+        <script src="/themekit/scripts/progress.js"></script>
+        <script src="/themekit/scripts/tab-accordion.js"></script>
+        <script src="/themekit/scripts/magnific-popup.min.js"></script>
+        <script src="/themekit/scripts/imagesloaded.min.js"></script>
+        <script src="/themekit/scripts/isotope.min.js"></script>
+    </footer>
+</body>
+</html>

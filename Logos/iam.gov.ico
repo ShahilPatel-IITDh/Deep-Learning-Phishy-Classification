@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>النفاذ الوطني الموحد</title>
+  <meta name="description" content="IAM">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.min.css?v=1.0">
+</head>
+
+<body>
+
+  <div class="o-page">
+    <div class="container-fluid u-p-zero">
+  <header class="c-navbar u-mb-large">
+        <a class="c-navbar__brand u-ml-medium" href="#">
+            <img src="/img/logo.png" width="128" />
+        </a>
+        <img src="/img/vision2030-grey.svg" width="128" class="u-opacity-heavy u-ml-auto u-hidden-down@mobile" />
+
+        <!-- Navigation items -->
+        <nav class="c-navbar__nav collapse u-border-bottom" id="main-nav">
+          <ul class="c-navbar__nav-list">
+              <!--li class="c-navbar__nav-item">
+                <a class="c-navbar__nav-link" href="/ar/index.html"><i class="feather icon-home"></i> الرئيسية</a>
+              </li>
+			  <li class="c-navbar__nav-item">
+				<a class="c-navbar__nav-link " href="https://www.moi.gov.sa/wps/portal/static/register/"><i class="feather icon-user"></i> حساب جديد</a>
+              </li>
+			  <li class="c-navbar__nav-item">
+				<a class="c-navbar__nav-link " href="/idpinit/login?lang=ar"><i class="feather icon-log-in"></i> تسجيل الدخول</a>
+			  </li-->
+			  <li class="c-navbar__nav-item">
+				<a class="c-navbar__nav-link " href="?lang=en"><i class="feather icon-globe"></i> English</a>
+			  </li>
+          </ul>
+        </nav>
+        <!-- // Navigation items  -->
+		<button class="c-navbar__nav-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+            <i class="feather icon-menu"></i>
+        </button>
+      </header>
+    </div>
+
+    <div class="container">
+		
+		<div id="bnfInfo" class="row u-justify-center"> </div>
+	  
+		<div class="conts_forms">
+			<div id="auth_sequence" style="display:none"></div>
+						
+			<div class="row u-justify-center">
+				<div class="col-md-8">
+					<div id="errors" class="c-alert c-alert--danger alert u-mb-medium hide">
+					   <span class="c-alert__icon">
+						 <i class="feather icon-slash"></i>
+					   </span>
+					   <div class="c-alert__content">
+						 <h4 id="errorMessage" class="c-alert__title u-color-danger"></h4>
+					   </div>
+					</div>
+			   </div>
+		   </div>
+		   
+		</div>
+		
+		<div id="content"> </div>
+		
+    </div><!-- // .container -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <footer class="c-footer u-mt-large u-justify-between">
+            <div class="o-media">
+              <div class="o-media__img u-ml-small">
+                <div class="c-avatar">
+                  <img class="c-avatar__img" src="/img/NIC-logo.png" alt="NIC-logo">
+                </div>
+              </div>
+
+              <div class="o-media__content u-mt-small">
+                <p>تطوير وتشغيل</p>
+                <h5 class="u-color-secondary">مركز المعلومات الوطني</h5>
+				<p>النفاذ الوطني الموحد جميع الحقوق محفوظة © 2023</p>
+              </div>
+            </div>
+            <nav>
+              <a class="c-footer__link" href="/idpinit/ar/splist.jsp">الرئيسية</a>
+              <a class="c-footer__link" href="/ar/about.html">حول</a>
+              <a class="c-footer__link" href="/ar/contact.html">اتصل بنا</a>
+              <a class="c-footer__link" href="/ar/terms.html">الشروط والأحكام</a>
+              <a class="c-footer__link" href="/ar/help.html">المساعدة والدعم</a> 
+			 <a class="c-footer__link" href="/ar/privacy.html">سياسة الخصوصية</a>
+            </nav>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div><!-- // .o-page -->
+
+  <!-- Main JavaScript -->
+  <script type="text/javascript" src="/js/script.min.js"></script>
+  <!--script type="text/javascript" src="/js/script.min.js"></script-->
+	<script type='text/javascript' src='/js/mustache.js'></script>
+	<script type='text/javascript' src='/js/templates/desktop_ar.js'></script>
+	<script type='text/javascript' src='/js/authMapping.js'></script>
+	<script type='text/javascript' src='/js/engine.js'></script>
+
+	<!--script type='text/javascript' src='/js/iam_events.js'></script-->
+
+	<script type='text/javascript' src='/js/auth.js'></script>
+	<script type="text/javascript" src="/js/common.js"></script>
+	<script type="text/javascript" src="/js/idauth_errors_ar.js"></script>
+	<script type="text/javascript" src="/js/idauth.js"></script>
+	<!--script type="text/javascript" src="/js/idauth_custom.js"></script-->
+	<script type="text/javascript" src="/js/authMethods_ar.js"></script>
+
+	<!-- jquery validation libs -->
+	<!-- script type="text/javascript" src="/js/jquery.validate.js"></script-->
+
+	<!--script type="text/javascript" src="/js/idauth_check.js"></script> 
+	<script type="text/javascript" src="/js/bioauth.js"></script>
+	<script type="text/javascript" src="/js/ie-extension.js"></script-->
+
+	<!--script type="text/javascript" src="/js/jquery.slicknav.js"></script-->
+	<!--script type="text/javascript" src="/js/slick.js"></script-->
+	<!--script type="text/javascript" src="/js/tabs.js"></script-->
+	<!--script type="text/javascript" src="/js/jquery.atooltip.js"></script-->
+	<noscript><meta http-equiv="Refresh" content="0; URL=/jsdisabled.htm"></noscript>
+	<script>
+	var serviceURL="process";
+	</script>
+  
+		
+<!-- spinner -->
+<div id="spinner" class="overlayWrapper u-m-0" style="
+    position: fixed;
+    display: none;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+    cursor: pointer;
+    ">
+     <div class="overlayBG"></div>
+           <div id="loading" class="overlayContainerOuter" style="
+    padding: 0 auto;
+    text-align: center;
+    padding-top: 20%;
+">
+               <div class="overlayContainerInner u-p-medium" style="
+    background-color: white;
+">
+                   <div class="spinnerContent">
+                       
+                      
+                       <div class="modalDetails">
+                           <div class="loading_msg">
+           <img alt="" src="/images/en/loader.gif"><br>
+جاري المعالجة ، نرجو الإنتظار ...      </div>                                 
+                       </div>
+                   </div>
+               </div>
+           </div>
+   </div>
+<!-- spinner -->
+	
+	<div id="browserErrorsOverlay" class="overlayWrapper" style="display:none;">
+      <div class="overlayBG"></div>
+            <div class="overlayContainerOuter"  >
+                <div class="overlayContainerInner" >
+                    <div id="browserErrorsOverlayContent" class="overlayContent" style="width: 630px;text-align: center; !important;" >
+                        <div >
+                            <a href="#" class="overlayClose overlayClose_iconed" onclick="javascript:closeOverlay();"></a>
+                        </div>
+                        <h2 >
+                        	<img src="/images/moi_logo_rtl.gif" width="500" style="border-style:none;"/>
+                        </h2>
+                        <hr>
+                       
+                        <div class="modalDetails">
+						<p class="disclaimerright error_dir" dir="rtl">
+						عذراً, المتصفح المستخدم لديك قديم أو غير مدعوم. لذلك يتوجب عليك تحديث متصفحك لآخر إصدار حتى تتمكن من استخدام الخدمات المتوفرة بالموقع.
+						</p>
+						<br/>
+						<br/>
+						<br/>
+                     </div>
+                 </div>
+            </div>
+         </div>
+     </div>
+		
+</body>
+
+</html><script>var data={  "steps" : [ "REMOTE_AUTH", "USER_INFORMATION", "BP_SUCCESS" ]};displayBreadCrumb(data);</script><script>jsonData='';authenticate();</script>

@@ -1,0 +1,111 @@
+
+<html>
+<head>
+    <title>Zulily | Go fun Shopping. Save Big.</title>
+    <meta name="pageName" content="BLOCKED by cq"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
+    <meta name="visitorId" content="b4b292d287b94f51fefe013d6f583dc0"/>
+    <meta name="eid" content=""/>
+    <meta name="cid" content=""/>
+    <meta name="autoLogin" content="">
+</head>
+<body>
+<script  src="https://cfcdn-skin.zulily.com/js/cache/44b76983360a25ce3f3de9b1a44c0f67.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cfcdn-skin.zulily.com/csscache/9881433f3da5fe2ad55fd6d6353e8855.css" />
+
+<style type="text/css">
+    #blocked-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        background-color: #d7d7d7;
+    }
+
+    #blocked-content {
+        max-width: 390px;
+        padding: 40px;
+        background-color: #ffffff;
+        margin: auto;
+    }
+
+    @media (min-width: 391px) {
+        #blocked-content {
+            border-radius: 8px;
+        }
+    }
+
+    #copyable-codes {
+        border: none;
+        background: none;
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    #details-box {
+        border: 1px solid #d7d7d7;
+        border-radius: 4px;
+        padding: 8px;
+        margin-top: 32px;
+        cursor: pointer;
+    }
+
+    #copyable-codes {
+        color: #707070;
+        margin-bottom: 8px;
+    }
+
+    #copy-codes-label {
+        color: #1667d9;
+        font-weight: normal;
+    }
+
+    #cs-email {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-family: Belltown-Bold, Helvetica, Arial, sans-serif;
+        font-size: 2.4rem;
+        margin-top: 0;
+    }
+</style>
+<div id="blocked-container">
+    <div id="blocked-content">
+        <h1 class="discovery-purple">Our system is telling us you might be a bot</h1>
+        <p>We’ve blocked access to Zulily just to be safe. If this is a mistake, please email Customer Support and we’ll
+            make
+            things right again.</p>
+        <p><strong>Email Customer Support:</strong></p>
+        <p id="cs-email">
+            <a href="mailto:service@zulily.com?subject=Blocked by ZU_CQ&amp;body=USER BOT BLOCK%0D%0AIP:14.139.150.66%0D%0AUsername:%0D%0AUserID:%0D%0A#########ADD ANY COMMENTS BELOW THIS LINE#########%0D%0A">service@zulily.com</a>
+        </p>
+                    <div id="details-box">
+                <div id="copyable-codes" type="text">ZU_CQ 14.139.150.66</div>
+                <div id="copy-codes-label">tap to copy details</div>
+            </div>
+            </div>
+</div>
+<script>
+  (function ($) {
+    function copyCustomerServiceCodes(text) {
+      var $temp = $('<input>');
+      $('body').append($temp);
+      $temp.val(text).select();
+      document.execCommand('copy');
+      $temp.remove();
+    }
+
+    $(document).ready(function () {
+      var copyableCodesText = $('#copyable-codes').text()
+      tracker.trackFailure('Site App Blocked', copyableCodesText)
+      $('#details-box').click(function () {
+        copyCustomerServiceCodes(copyableCodesText);
+      });
+    });
+
+  })(jQuery)
+</script>
+</body>
+</html>

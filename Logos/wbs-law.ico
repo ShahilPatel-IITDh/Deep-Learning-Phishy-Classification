@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="de-DE" data-fa-size="fa-regular">
+	<head><meta charset="utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.v="1.2.3",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.src).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{let r=arguments[0][e];delete arguments[0][e],arguments[0][t(e)]=r})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
+</script>
+
+		<title>WBS.LEGAL | Rechtsanwälte bundesweit</title><style id="rocket-critical-css">ul{box-sizing:border-box}.wp-block-spacer{clear:both}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#FF3C1F;--bs-secondary:#6c757d;--bs-success:#54BD92;--bs-info:#83BCFF;--bs-warning:#FFF385;--bs-danger:#FF6F86;--bs-light:#FBEDEA;--bs-dark:#3B424E;--bs-primary-rgb:255, 60, 31;--bs-secondary-rgb:108, 117, 125;--bs-success-rgb:84, 189, 146;--bs-info-rgb:131, 188, 255;--bs-warning-rgb:255, 243, 133;--bs-danger-rgb:255, 111, 134;--bs-light-rgb:251, 237, 234;--bs-dark-rgb:59, 66, 78;--bs-white-rgb:255, 255, 255;--bs-black-rgb:0, 0, 0;--bs-body-color-rgb:59, 66, 78;--bs-body-bg-rgb:255, 255, 255;--bs-font-sans-serif:"Formular", sans-serif;--bs-font-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.6;--bs-body-color:#3B424E;--bs-body-bg:#fff;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, 0.175);--bs-border-radius:0.25rem;--bs-border-radius-sm:0.25rem;--bs-border-radius-lg:0.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-2xl:2rem;--bs-border-radius-pill:50rem;--bs-link-color:#FF3C1F;--bs-link-hover-color:#eb1e00;--bs-code-color:#d63384;--bs-highlight-bg:#fff3cd}*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%}hr{margin:1rem 0;color:inherit;border:0;border-top:1px solid;opacity:0.25}h5,h2,h1{margin-top:0;margin-bottom:1rem;font-weight:500;line-height:1.25}h1{font-size:calc(1.425rem + 2.1vw)}@media (min-width:1200px){h1{font-size:3rem}}h2{font-size:calc(1.325rem + 0.9vw)}@media (min-width:1200px){h2{font-size:2rem}}h5{font-size:1.25rem}p{margin-top:0;margin-bottom:1rem}ul{padding-left:2rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}strong{font-weight:500}a{color:var(--bs-link-color);text-decoration:underline}img,svg{vertical-align:middle}label{display:inline-block}button{border-radius:0}input,button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button{text-transform:none}button,[type=button],[type=submit]{-webkit-appearance:button}::-moz-focus-inner{padding:0;border-style:none}::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-text,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}::file-selector-button{font:inherit;-webkit-appearance:button}iframe{border:0}.lead{font-size:1.25rem;font-weight:300}.list-inline{padding-left:0;list-style:none}.list-inline-item{display:inline-block}.list-inline-item:not(:last-child){margin-right:0.5rem}.img-fluid{max-width:100%;height:auto}.container,.container-fluid,.container-lg{--bs-gutter-x:1.5rem;--bs-gutter-y:0;width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container-lg,.container{max-width:960px}}@media (min-width:1200px){.container-lg,.container{max-width:1140px}}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))}.row>*{-ms-flex-negative:0;flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-top:var(--bs-gutter-y)}.col{-webkit-box-flex:1;-ms-flex:1 0 0%;flex:1 0 0%}.col-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-12{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.g-0{--bs-gutter-x:0}.g-0{--bs-gutter-y:0}@media (min-width:768px){.col-md-6{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}}@media (min-width:992px){.col-lg-4{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.33333333%}}.form-control{display:block;width:100%;padding:0.375rem 0.75rem;font-size:1rem;font-weight:400;line-height:1.6;color:#3B424E;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:0.25rem}.form-control::-webkit-date-and-time-value{height:1.6em}.form-control::-webkit-input-placeholder{color:#6c757d;opacity:1}.form-control::-moz-placeholder{color:#6c757d;opacity:1}.form-control:-ms-input-placeholder{color:#6c757d;opacity:1}.form-control::-ms-input-placeholder{color:#6c757d;opacity:1}.form-control::-webkit-file-upload-button{padding:0.375rem 0.75rem;margin:-0.375rem -0.75rem;-webkit-margin-end:0.75rem;margin-inline-end:0.75rem;color:#3B424E;background-color:#e9ecef;border-color:inherit;border-style:solid;border-width:0;border-inline-end-width:1px;border-radius:0}.btn{--bs-btn-padding-x:0.75rem;--bs-btn-padding-y:0.375rem;--bs-btn-font-family:;--bs-btn-font-size:1rem;--bs-btn-font-weight:400;--bs-btn-line-height:1.6;--bs-btn-color:#3B424E;--bs-btn-bg:transparent;--bs-btn-border-width:1px;--bs-btn-border-color:transparent;--bs-btn-border-radius:0.25rem;--bs-btn-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);--bs-btn-disabled-opacity:0.65;--bs-btn-focus-box-shadow:0 0 0 0 rgba(var(--bs-btn-focus-shadow-rgb), .5);display:inline-block;padding:var(--bs-btn-padding-y) var(--bs-btn-padding-x);font-family:var(--bs-btn-font-family);font-size:var(--bs-btn-font-size);font-weight:var(--bs-btn-font-weight);line-height:var(--bs-btn-line-height);color:var(--bs-btn-color);text-align:center;text-decoration:none;vertical-align:middle;border:var(--bs-btn-border-width) solid var(--bs-btn-border-color);border-radius:var(--bs-btn-border-radius);background-color:var(--bs-btn-bg)}.btn-primary{--bs-btn-color:#fff;--bs-btn-bg:#FF3C1F;--bs-btn-border-color:#FF3C1F;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#d9331a;--bs-btn-hover-border-color:#cc3019;--bs-btn-focus-shadow-rgb:255, 89, 65;--bs-btn-active-color:#fff;--bs-btn-active-bg:#cc3019;--bs-btn-active-border-color:#bf2d17;--bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);--bs-btn-disabled-color:#fff;--bs-btn-disabled-bg:#FF3C1F;--bs-btn-disabled-border-color:#FF3C1F}.btn-outline-primary{--bs-btn-color:#FF3C1F;--bs-btn-border-color:#FF3C1F;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#FF3C1F;--bs-btn-hover-border-color:#FF3C1F;--bs-btn-focus-shadow-rgb:255, 60, 31;--bs-btn-active-color:#fff;--bs-btn-active-bg:#FF3C1F;--bs-btn-active-border-color:#FF3C1F;--bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);--bs-btn-disabled-color:#FF3C1F;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:#FF3C1F;--bs-gradient:none}.btn-lg{--bs-btn-padding-y:0.5rem;--bs-btn-padding-x:1rem;--bs-btn-font-size:1.25rem;--bs-btn-border-radius:0.5rem}.fade:not(.show){opacity:0}.collapse:not(.show){display:none}.dropdown{position:relative}.dropdown-toggle{white-space:nowrap}.dropdown-toggle::after{display:inline-block;margin-left:0.255em;vertical-align:0.255em;content:"";border-top:0.3em solid;border-right:0.3em solid transparent;border-bottom:0;border-left:0.3em solid transparent}.dropdown-menu{--bs-dropdown-min-width:10rem;--bs-dropdown-padding-x:0;--bs-dropdown-padding-y:0.5rem;--bs-dropdown-spacer:0.125rem;--bs-dropdown-font-size:1rem;--bs-dropdown-color:#3B424E;--bs-dropdown-bg:#fff;--bs-dropdown-border-color:var(--bs-border-color-translucent);--bs-dropdown-border-radius:0.25rem;--bs-dropdown-border-width:1px;--bs-dropdown-inner-border-radius:calc(0.25rem - 1px);--bs-dropdown-divider-bg:var(--bs-border-color-translucent);--bs-dropdown-divider-margin-y:0.5rem;--bs-dropdown-box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15);--bs-dropdown-link-color:#212529;--bs-dropdown-link-hover-color:#1e2125;--bs-dropdown-link-hover-bg:#e9ecef;--bs-dropdown-link-active-color:#fff;--bs-dropdown-link-active-bg:#FF3C1F;--bs-dropdown-link-disabled-color:#adb5bd;--bs-dropdown-item-padding-x:1rem;--bs-dropdown-item-padding-y:0.25rem;--bs-dropdown-header-color:#6c757d;--bs-dropdown-header-padding-x:1rem;--bs-dropdown-header-padding-y:0.5rem;position:absolute;z-index:1000;display:none;min-width:var(--bs-dropdown-min-width);padding:var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);margin:0;font-size:var(--bs-dropdown-font-size);color:var(--bs-dropdown-color);text-align:left;list-style:none;background-color:var(--bs-dropdown-bg);background-clip:padding-box;border:var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);border-radius:var(--bs-dropdown-border-radius)}.dropdown-divider{height:0;margin:var(--bs-dropdown-divider-margin-y) 0;overflow:hidden;border-top:1px solid var(--bs-dropdown-divider-bg);opacity:1}.dropdown-item{display:block;width:100%;padding:var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);clear:both;font-weight:400;color:var(--bs-dropdown-link-color);text-align:inherit;text-decoration:none;white-space:nowrap;background-color:transparent;border:0}.dropdown-item-text{display:block;padding:var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);color:var(--bs-dropdown-link-color)}.nav-link{display:block;padding:var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);font-size:var(--bs-nav-link-font-size);font-weight:var(--bs-nav-link-font-weight);color:var(--bs-nav-link-color);text-decoration:none}.navbar{--bs-navbar-padding-x:0;--bs-navbar-padding-y:0.5rem;--bs-navbar-color:rgba(0, 0, 0, 0.55);--bs-navbar-hover-color:rgba(0, 0, 0, 0.7);--bs-navbar-disabled-color:rgba(0, 0, 0, 0.3);--bs-navbar-active-color:rgba(0, 0, 0, 0.9);--bs-navbar-brand-padding-y:0.3rem;--bs-navbar-brand-margin-end:1rem;--bs-navbar-brand-font-size:1.25rem;--bs-navbar-brand-color:rgba(0, 0, 0, 0.9);--bs-navbar-brand-hover-color:rgba(0, 0, 0, 0.9);--bs-navbar-nav-link-padding-x:0.5rem;--bs-navbar-toggler-padding-y:0.25rem;--bs-navbar-toggler-padding-x:0.75rem;--bs-navbar-toggler-font-size:1.25rem;--bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");--bs-navbar-toggler-border-color:rgba(0, 0, 0, 0.1);--bs-navbar-toggler-border-radius:0.25rem;--bs-navbar-toggler-focus-width:0;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)}.navbar>.container-lg{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:inherit;flex-wrap:inherit;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.navbar-brand{padding-top:var(--bs-navbar-brand-padding-y);padding-bottom:var(--bs-navbar-brand-padding-y);margin-right:var(--bs-navbar-brand-margin-end);font-size:var(--bs-navbar-brand-font-size);color:var(--bs-navbar-brand-color);text-decoration:none;white-space:nowrap}.navbar-nav{--bs-nav-link-padding-x:0;--bs-nav-link-padding-y:0.5rem;--bs-nav-link-font-weight:;--bs-nav-link-color:var(--bs-navbar-color);--bs-nav-link-hover-color:var(--bs-navbar-hover-color);--bs-nav-link-disabled-color:var(--bs-navbar-disabled-color);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .dropdown-menu{position:static}.navbar-collapse{-ms-flex-preferred-size:100%;flex-basis:100%;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media (min-width:992px){.navbar-expand-lg{-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-lg .navbar-nav{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:var(--bs-navbar-nav-link-padding-x);padding-left:var(--bs-navbar-nav-link-padding-x)}.navbar-expand-lg .navbar-collapse{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}}.btn-close{-webkit-box-sizing:content-box;box-sizing:content-box;width:1em;height:1em;padding:0.25em 0.25em;color:#000;background:transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;border:0;border-radius:0.25rem;opacity:0.5}.modal{--bs-modal-zindex:1055;--bs-modal-width:500px;--bs-modal-padding:1rem;--bs-modal-margin:0.5rem;--bs-modal-color:;--bs-modal-bg:#fff;--bs-modal-border-color:var(--bs-border-color-translucent);--bs-modal-border-width:1px;--bs-modal-border-radius:0.5rem;--bs-modal-box-shadow:0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);--bs-modal-inner-border-radius:calc(0.5rem - 1px);--bs-modal-header-padding-x:1rem;--bs-modal-header-padding-y:1rem;--bs-modal-header-padding:1rem 1rem;--bs-modal-header-border-color:var(--bs-border-color);--bs-modal-header-border-width:1px;--bs-modal-title-line-height:1.6;--bs-modal-footer-gap:0.5rem;--bs-modal-footer-bg:;--bs-modal-footer-border-color:var(--bs-border-color);--bs-modal-footer-border-width:1px;position:fixed;top:0;left:0;z-index:var(--bs-modal-zindex);display:none;width:100%;height:100%;overflow-x:hidden;overflow-y:auto;outline:0}.modal-dialog{position:relative;width:auto;margin:var(--bs-modal-margin)}.modal.fade .modal-dialog{-webkit-transform:translate(0,-50px);transform:translate(0,-50px)}.modal-dialog-centered{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;min-height:calc(100% - var(--bs-modal-margin) * 2)}.modal-content{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;color:var(--bs-modal-color);background-color:var(--bs-modal-bg);background-clip:padding-box;border:var(--bs-modal-border-width) solid var(--bs-modal-border-color);border-radius:var(--bs-modal-border-radius);outline:0}.modal-header{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-negative:0;flex-shrink:0;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:var(--bs-modal-header-padding);border-bottom:var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);border-top-left-radius:var(--bs-modal-inner-border-radius);border-top-right-radius:var(--bs-modal-inner-border-radius)}.modal-header .btn-close{padding:calc(var(--bs-modal-header-padding-y) * .5) calc(var(--bs-modal-header-padding-x) * .5);margin:calc(var(--bs-modal-header-padding-y) * -.5) calc(var(--bs-modal-header-padding-x) * -.5) calc(var(--bs-modal-header-padding-y) * -.5) auto}.modal-title{margin-bottom:0;line-height:var(--bs-modal-title-line-height)}.modal-body{position:relative;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;padding:var(--bs-modal-padding)}@media (min-width:576px){.modal{--bs-modal-margin:1.75rem;--bs-modal-box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15)}.modal-dialog{max-width:var(--bs-modal-width);margin-right:auto;margin-left:auto}}@media (min-width:992px){.modal-xl{--bs-modal-width:800px}}@media (min-width:1200px){.modal-xl{--bs-modal-width:1140px}}.ratio{position:relative;width:100%}.ratio::before{display:block;padding-top:var(--bs-aspect-ratio);content:""}.ratio>*{position:absolute;top:0;left:0;width:100%;height:100%}.ratio-16x9{--bs-aspect-ratio:calc(9 / 16 * 100%)}.stretched-link::after{position:absolute;top:0;right:0;bottom:0;left:0;z-index:1;content:""}.d-block{display:block!important}.d-none{display:none!important}@media (min-width:576px){.d-sm-inline-block{display:inline-block!important}}@media (min-width:768px){.d-md-inline-block{display:inline-block!important}}@media (min-width:992px){.d-lg-inline-block{display:inline-block!important}.d-lg-none{display:none!important}}@media (min-width:1200px){.d-xl-inline-block{display:inline-block!important}}.list-icon li::before{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block;font-style:normal;font-variant:normal;line-height:1;content:"";font-family:"Font Awesome 6 Pro";font-weight:400;text-rendering:auto;text-align:center}.gform_wrapper .gfield input[type=text]{display:block;width:100%;padding:0.375rem 0.75rem;font-size:1rem;font-weight:400;line-height:1.6;color:#3B424E;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:0.25rem}.gform_wrapper .gfield input[type=text]::-webkit-date-and-time-value{height:1.6em}.gform_wrapper .gfield input[type=text]::-webkit-input-placeholder{color:#6c757d;opacity:1}.gform_wrapper .gfield input[type=text]::-moz-placeholder{color:#6c757d;opacity:1}.gform_wrapper .gfield input[type=text]:-ms-input-placeholder{color:#6c757d;opacity:1}.gform_wrapper .gfield input[type=text]::-ms-input-placeholder{color:#6c757d;opacity:1}.gform_wrapper .gfield input[type=text]::-webkit-file-upload-button{padding:0.375rem 0.75rem;margin:-0.375rem -0.75rem;-webkit-margin-end:0.75rem;margin-inline-end:0.75rem;color:#3B424E;background-color:#e9ecef;border-color:inherit;border-style:solid;border-width:0;border-inline-end-width:1px;border-radius:0}html{font-size:16px}html{position:relative;min-height:100%}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.sr-only{display:none}@media (max-width:767.98px){h1{font-size:2rem}h2{font-size:1.75rem}h5{font-size:1rem}}@media (max-width:575.98px){a{word-break:break-all}}.btn:not([class*=btn-outline]){border-color:transparent!important}.btn[type=button]{-webkit-appearance:none;-moz-appearance:none;appearance:none}.btn .icon:first-child:not(:last-child){margin-right:0.5rem}.btn-white{--bs-btn-color:#000;--bs-btn-bg:#fff;--bs-btn-border-color:#fff;--bs-btn-hover-color:#000;--bs-btn-hover-bg:white;--bs-btn-hover-border-color:white;--bs-btn-focus-shadow-rgb:217, 217, 217;--bs-btn-active-color:#000;--bs-btn-active-bg:white;--bs-btn-active-border-color:white;--bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);--bs-btn-disabled-color:#000;--bs-btn-disabled-bg:#fff;--bs-btn-disabled-border-color:#fff}.dropdown-menu{border:none;-webkit-box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15);box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15)}.dropdown-menu .dropdown-item{color:#3B424E}@media (max-width:991.98px){#navigation .dropdown-menu{-webkit-box-shadow:none;box-shadow:none;padding:0;margin:0;border-radius:0}}.form-search{display:-webkit-box;display:-ms-flexbox;display:flex}.form-search .btn{margin-left:1rem}.icon{display:inline-block;font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;-webkit-font-smoothing:antialiased}.icon svg{vertical-align:top;height:1em;width:1em;fill:currentColor}.list-buttons{margin-top:-1rem}.list-buttons li{margin-top:1rem}.list-icon{list-style:none;padding:0}.list-icon li{position:relative;padding-left:1.25rem;margin:0}.list-icon li:not(:last-child){margin-bottom:0.25rem}.list-icon li::before{position:absolute;left:0;top:0.375rem;font-size:0.875em;color:#6c757d;width:1rem;height:1rem;line-height:1.6rem;background-size:auto 1em;background-position:center;background-repeat:no-repeat}.list-icon.list-icon-check li::before{background-image:url('data:image/svg+xml;utf8,')}.mega-menu .icon svg path{fill:currentColor}@media (max-width:991.98px){.mega-menu{position:relative}.mega-menu>ul.dropdown-menu{border:none}.mega-menu>ul.dropdown-menu .dropdown-item{color:rgba(0,0,0,0.55);font-size:0.875rem}.mega-menu>ul.dropdown-menu>li.pre-row .dropdown-menu{position:relative;top:auto;left:auto;display:block;padding:0;margin:0;background:none;border:none;border-radius:0;-webkit-box-shadow:none;box-shadow:none}.mega-menu>ul.dropdown-menu>li.pre-row>ul.dropdown-menu li[class*=col-]{padding:0}.mega-menu>ul.dropdown-menu>li.pre-row>ul.dropdown-menu li[class*=col-]>ul.dropdown-menu .dropdown-item{padding:0.5rem 1rem}}@media (min-width:992px){.mega-menu{position:static}.mega-menu>ul.dropdown-menu{left:0;right:0;margin:0;padding:1.5rem 0;-webkit-box-shadow:0 1rem 2rem -1rem rgba(0,0,0,0.15);box-shadow:0 1rem 2rem -1rem rgba(0,0,0,0.15)}.mega-menu>ul.dropdown-menu>li.pre-row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-right:auto;margin-left:auto}}@media (min-width:992px) and (min-width:992px){.mega-menu>ul.dropdown-menu>li.pre-row{max-width:960px}}@media (min-width:992px) and (min-width:1200px){.mega-menu>ul.dropdown-menu>li.pre-row{max-width:1140px}}@media (min-width:992px) and (min-width:1400px){.mega-menu>ul.dropdown-menu>li.pre-row{max-width:1320px}}@media (min-width:992px){.mega-menu>ul.dropdown-menu>li.pre-row+.pre-row{margin-top:1.5rem}.mega-menu>ul.dropdown-menu>li.pre-row+.pre-row .dropdown-item{font-size:1rem!important;font-weight:400!important;text-decoration:underline}}@media (min-width:992px){.mega-menu>ul.dropdown-menu>li.pre-row .dropdown-menu{position:relative;top:auto;left:auto;display:block;padding:0;margin:0;background:none;border:none;border-radius:0;-webkit-box-shadow:none;box-shadow:none}}@media (min-width:992px){.mega-menu>ul.dropdown-menu>li.pre-row>ul.dropdown-menu{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x));width:auto}.mega-menu>ul.dropdown-menu>li.pre-row>ul.dropdown-menu li[class*=col-]>ul.dropdown-menu .dropdown-item{padding:0.5rem;font-size:1.125rem;font-weight:500;background:#fff}.mega-menu>ul.dropdown-menu>li.pre-row>ul.dropdown-menu li[class*=col-]>ul.dropdown-menu .dropdown-item .icon{margin-right:0.5rem}.mega-menu>ul.dropdown-menu>li.pre-row>ul.dropdown-menu li[class*=col-]>ul.dropdown-menu .dropdown-item-text{padding-left:0;padding-right:0}}.ratio{margin-bottom:1rem}iframe{display:block}hr.hr-divider{margin-top:0.5rem;margin-bottom:0.5rem;border-color:transparent;color:transparent}hr.hr-lg{margin-top:1.5rem;margin-bottom:1.5rem}#content>*:not(.container):not(.block):not(.wp-block-columns):not(.wp-block-group){margin-left:auto;margin-right:auto}@media (min-width:576px){#content>*:not(.container):not(.block):not(.wp-block-columns):not(.wp-block-group){max-width:516px}}@media (min-width:768px){#content>*:not(.container):not(.block):not(.wp-block-columns):not(.wp-block-group){max-width:696px}}@media (min-width:992px){#content>*:not(.container):not(.block):not(.wp-block-columns):not(.wp-block-group){max-width:936px}}@media (min-width:1200px){#content>*:not(.container):not(.block):not(.wp-block-columns):not(.wp-block-group){max-width:1116px}}@media (max-width:575.98px){#content>*:not(.container):not(.block):not(.wp-block-columns):not(.wp-block-group){max-width:calc(100% - 24px)}}.block{position:relative;padding:2rem 0;margin:2rem 0;background-repeat:no-repeat;background-size:cover;background-position:center bottom}.wp-block-spacer{display:none}.block.hero{padding:0;margin:0;background:#FBEDEA}.block.hero .col-image{padding:0;text-align:center;height:100%}.block.hero .col-image img{height:100%;width:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center}@media (max-width:767.98px){.block.hero .col-image img{max-height:50vh}}.block.hero .col-text{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}@media (max-width:575.98px){.block.hero .col-text{padding-top:2rem;padding-bottom:2rem}}@media (min-width:576px) and (max-width:767.98px){.block.hero .col-text{padding-top:2rem;padding-bottom:2rem}}@media (min-width:768px) and (max-width:991.98px){.block.hero .col-text{padding-top:3rem;padding-bottom:3rem}}@media (min-width:992px) and (max-width:1199.98px){.block.hero .col-text{padding-top:3rem;padding-bottom:3rem}}@media (min-width:1200px) and (max-width:1399.98px){.block.hero .col-text{padding-top:4rem;padding-bottom:4rem}}.block.hero .col-text>:last-child{margin-bottom:0}.block.hero .hero-title{margin:0 0 1rem 0}.block.hero .hero-intro{margin:0 0 1rem 0}.block.hero .hero-intro>:last-child{margin-bottom:0}@media (min-width:576px){.block.hero .hero-intro .list-icon-check li{background:#fff;padding:0.33rem 1.5rem 0.33rem 2.5rem;display:table;border-radius:1rem}.block.hero .hero-intro .list-icon-check li:not(:last-child){margin-bottom:1rem}.block.hero .hero-intro .list-icon-check li::before{top:0.66rem;left:1rem}}.block.hero .hero-scroll{display:-webkit-box;display:-ms-flexbox;display:flex;position:absolute;left:50%;bottom:12.5%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);background:#fff;-webkit-box-shadow:0 0.125rem 0.25rem rgba(0,0,0,0.075);box-shadow:0 0.125rem 0.25rem rgba(0,0,0,0.075);padding:1rem;border-radius:2rem;color:#3B424E}@media (max-width:767.98px){.block.hero .hero-scroll{display:none}}.block.hero .list-rating{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media (max-width:991.98px){.block.hero .list-rating{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.block.hero .list-rating li:not(:last-child){margin:0 0 0.5rem 0}}.block.hero .list-rating li{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.block.hero .list-rating li strong{margin-right:0.5rem}.block.hero .list-rating .icon{color:#FF3C1F}@media (min-width:992px){.block.hero .list-rating .icon{margin-left:0.25rem}}.block.hero .list-rating img{max-height:1.5rem;width:auto;margin-left:0.5rem}@media (min-width:992px){.block.hero .list-rating img{max-height:2.5rem}}.block.hero.layout-lg .container-fluid{padding:0}.block.hero.layout-lg .hero-title{color:#FF3C1F}@media (min-width:1200px){.block.hero.layout-lg .hero-title{font-size:4.5rem}}@media (max-width:991.98px) and (max-width:575.98px){.block.hero.layout-lg .col-text{padding:2rem}}@media (max-width:991.98px) and (min-width:576px) and (max-width:767.98px){.block.hero.layout-lg .col-text{padding:2rem}}@media (max-width:991.98px) and (min-width:768px) and (max-width:991.98px){.block.hero.layout-lg .col-text{padding:3rem}}@media (max-width:991.98px) and (min-width:992px) and (max-width:1199.98px){.block.hero.layout-lg .col-text{padding:3rem}}@media (max-width:991.98px) and (min-width:1200px) and (max-width:1399.98px){.block.hero.layout-lg .col-text{padding:4rem}}@media (max-width:991.98px) and (min-width:1400px){.block.hero.layout-lg .col-text{padding:4rem}}@media (max-width:575.98px){.block.hero.layout-lg .col-text{padding-left:2rem;padding-right:2rem}}@media (min-width:576px) and (max-width:767.98px){.block.hero.layout-lg .col-text{padding-left:2rem;padding-right:2rem}}@media (min-width:768px) and (max-width:991.98px){.block.hero.layout-lg .col-text{padding-left:3rem;padding-right:3rem}}@media (min-width:992px) and (max-width:1199.98px){.block.hero.layout-lg .col-text{padding-left:3rem;padding-right:3rem}}@media (min-width:1200px) and (max-width:1399.98px){.block.hero.layout-lg .col-text{padding-left:4rem;padding-right:4rem}}@media (max-width:575.98px){.block.hero.layout-lg .col-text{padding-top:4rem;padding-bottom:4rem}}@media (min-width:576px) and (max-width:767.98px){.block.hero.layout-lg .col-text{padding-top:4rem;padding-bottom:4rem}}@media (min-width:768px) and (max-width:991.98px){.block.hero.layout-lg .col-text{padding-top:6rem;padding-bottom:6rem}}@media (min-width:992px) and (max-width:1199.98px){.block.hero.layout-lg .col-text{padding-top:6rem;padding-bottom:6rem}}@media (min-width:1200px) and (max-width:1399.98px){.block.hero.layout-lg .col-text{padding-top:8rem;padding-bottom:8rem}}#topbar{position:relative;background:#3B424E;color:#fff;font-size:0.875rem}@media (max-width:575.98px){#topbar{padding-top:0.25rem;padding-bottom:0.25rem}}@media (min-width:576px) and (max-width:767.98px){#topbar{padding-top:0.25rem;padding-bottom:0.25rem}}@media (min-width:768px) and (max-width:991.98px){#topbar{padding-top:0.375rem;padding-bottom:0.375rem}}@media (min-width:992px) and (max-width:1199.98px){#topbar{padding-top:0.375rem;padding-bottom:0.375rem}}@media (min-width:1200px) and (max-width:1399.98px){#topbar{padding-top:0.5rem;padding-bottom:0.5rem}}@media (min-width:768px){#topbar{text-align:center}}#topbar p{margin-bottom:0}#topbar a{color:#fff;text-decoration:none}#header{background:#fff;border-bottom:1px solid transparent;position:relative;z-index:9999994}@media (min-width:1200px){#header{padding:0.5rem 0}}@media (min-width:992px){#header .navbar-nav>.nav-item:not(:last-child){margin-right:0.5rem}}@media (min-width:992px){#header .navbar-nav .nav-link.nav-link-has-extra{position:relative}#header .navbar-nav .nav-link.nav-link-has-extra::after{content:"";width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #6c757d;vertical-align:middle;display:inline-block;margin-left:0.5rem}}#header .navbar-brand{margin:0;padding:0;font-size:inherit;width:auto}#header .navbar-brand img{width:auto}@media (max-width:991.98px){#header .navbar-brand img{max-height:4rem}}@media (min-width:992px){#header .navbar-brand img{max-height:5rem}}@media (max-width:991.98px){#header .navbar-collapse{padding-top:1.5rem}}@media (min-width:992px){#header .navbar-collapse{margin-left:1.5rem}}#header .navbar-collapse .navbar-mobile-search{padding-top:1.5rem}#header .navbar-buttons{margin:0 0 0 auto}@media (min-width:992px){#header .navbar-buttons{margin:0 0 0 auto;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}}#header .navbar-buttons .list-buttons{margin:0}#header .navbar-buttons .list-buttons li{margin:0}#header .navbar-buttons .list-buttons li:not(:last-child){margin-right:1rem}@media (max-width:1199.98px){#header .navbar-buttons .list-buttons .btn-primary .icon{margin:0}}@media (max-width:1399.98px){#header .navbar-buttons .list-buttons .btn-outline-primary .icon{margin:0}}#header .navbar-search-collapse .dropdown-toggle::after{content:none}#header .navbar-search-collapse .dropdown-menu{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);margin-top:1rem;border:none;-webkit-box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15);box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15);padding:1rem;min-width:20rem}@media (max-width:991.98px){.dropdown-item{color:#3B424E;font-size:0.875rem}.nav-item .nav-link{color:#3B424E}.nav-item>.nav-link-extra{position:absolute;right:0;top:0;padding:0.25rem 0.75rem;font-size:1.25rem}}.gform_wrapper h2{font-size:1.5rem}.gform_wrapper .gform_validation_container{display:none}.gform_wrapper .gform_heading{margin-bottom:1.5rem;display:none}.gform_wrapper .gform_heading>:last-child{margin-bottom:0}.gform_wrapper .gform_heading .gform_description{display:block}.gform_wrapper .gform_fields .gfield{-ms-flex-negative:0;flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-top:var(--bs-gutter-y)}.gform_wrapper .gform_fields .gfield:not(:last-child){margin-bottom:1.5rem}.gform_wrapper .gform_fields .gfield>:last-child{margin-bottom:0}.gform_wrapper .gfield_label{margin-bottom:0.25rem;font-weight:500;font-size:1rem}.gform_wrapper .top_label .gfield_label{margin-bottom:0.5rem}.gform_wrapper .gfield_description{display:block;color:#6c757d;font-size:0.875em}.gform_wrapper .field_description_below .gfield_description{margin-top:0.25rem;margin-bottom:0}.gform_wrapper .gform_footer>:last-child{margin-bottom:0}.gfield.gform_hidden{display:none;margin-bottom:0}.gfield:not([class*=col]){width:100%}</style>
+
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://www.wbs.legal/wp-content/themes/xcore/img/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://www.wbs.legal/wp-content/themes/xcore/img/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="194x194" href="https://www.wbs.legal/wp-content/themes/xcore/img/favicons/favicon-194x194.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="https://www.wbs.legal/wp-content/themes/xcore/img/favicons/android-chrome-192x192.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/https://www.wbs.legal/wp-content/themes/xcore/img/faviconsfavicon-16x16.png">
+		<link rel="mask-icon" href="https://www.wbs.legal/wp-content/themes/xcore/img/favicons/safari-pinned-tab.svg" color="#ff0000">
+		<meta name="msapplication-TileColor" content="#ff0000">
+		<meta name="msapplication-TileImage" content="https://www.wbs.legal/wp-content/themes/xcore/img/favicons/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="05AXjzquX"></script>
+		<script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
+
+		<script type="rocketlazyloadscript">
+    dataLayer = [{
+        'pageType': 'Sonstige'
+    }];
+
+    </script>
+
+    
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MB24NH4');</script>
+
+		<!-- TrustBox script -->
+		<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.wbs.legal/wp-content/cache/min/1/bootstrap/v5/tp.widget.bootstrap.min.js?ver=1695812361" async></script>
+		<!-- End TrustBox script -->
+
+		<!-- Matomo Tag Manager -->
+		<script type="rocketlazyloadscript">
+			var _mtm = window._mtm = window._mtm || [];
+			_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.async=true; g.src='https://analytics.wbslaw.de/js/container_Ahjgzd1R.js'; s.parentNode.insertBefore(g,s);
+		</script>
+		<!-- End Matomo Tag Manager -->
+		<style>
+			
+			a.wp-block-button__link.has-primary-background-color.has-background.wp-element-button {
+				--bs-btn-color: #fff !important;
+				--bs-btn-border-color: white !important;
+				--bs-btn-hover-color: #fff !important;
+				--bs-btn-hover-border-color: #161616 !important;
+				--bs-btn-focus-shadow-rgb: 255, 89, 65;
+				--bs-btn-active-color: #fff !important;
+				--bs-btn-active-border-color: #161616 !important;
+				--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+				--bs-btn-disabled-color: #fff !important;
+				font-size: 1.25rem;
+				padding: 0.75rem 4rem !important;
+				border-radius: 3rem;
+			}
+		</style>
+		<script>
+			// (optional) additional configs for the Smart Data Protector
+			uc.reloadOnOptIn('BJz7qNsdj-7'); // reload page on YouTube opt-in
+		</script>
+<script src="https://static.heyflow.app/widget/v2.0.5/iframe.2.0.5.js"></script>
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <!-- Start VWO Common Smartcode -->
+    <script type="rocketlazyloadscript" data-cfasync="false" data-rocket-type='text/javascript'>
+        var _vwo_clicks = 10;
+    </script>
+    <!-- End VWO Common Smartcode -->
+        <!-- Start VWO Async Smartcode -->
+    <script type="rocketlazyloadscript" data-cfasync="false" data-rocket-type='text/javascript'>
+    /* Fix: wp-rocket (application/ld+json) */
+    window._vwo_code = window._vwo_code || (function(){
+    var account_id= 741593,
+    settings_tolerance= 2000,
+    library_tolerance= 2500,
+    use_existing_jquery= false,
+    is_spa=1,
+    hide_element='body',
+    /* DO NOT EDIT BELOW THIS LINE */
+    f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
+    window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+    </script>
+    <!-- End VWO Async Smartcode -->
+    
+	<!-- This site is optimized with the Yoast SEO plugin v21.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Ihre Kanzlei für Internetrecht und Medienrecht: WBS.LEGAL (ehemals Wilde Beuger Solmecke) - Bundesweit aktiv - Wir helfen Ihnen gerne!" />
+	<link rel="canonical" href="https://www.wbs.legal/" />
+	<meta property="og:locale" content="de_DE" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="WBS.LEGAL | Rechtsanwälte bundesweit" />
+	<meta property="og:description" content="Ihre Kanzlei für Internetrecht und Medienrecht: WBS.LEGAL (ehemals Wilde Beuger Solmecke) - Bundesweit aktiv - Wir helfen Ihnen gerne!" />
+	<meta property="og:url" content="https://www.wbs.legal/" />
+	<meta property="og:site_name" content="WBS.LEGAL" />
+	<meta property="article:publisher" content="https://www.facebook.com/wbs.legal" />
+	<meta property="article:modified_time" content="2023-09-26T10:06:10+00:00" />
+	<meta property="og:image" content="https://www.wbs.legal/wp-content/uploads/2022/10/WBS-LEGAL-Partner.webp" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@solmecke" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.wbs.legal/","url":"https://www.wbs.legal/","name":"WBS.LEGAL | Rechtsanwälte bundesweit","isPartOf":{"@id":"https://www.wbs.legal/#website"},"about":{"@id":"https://www.wbs.legal/#organization"},"primaryImageOfPage":{"@id":"https://www.wbs.legal/#primaryimage"},"image":{"@id":"https://www.wbs.legal/#primaryimage"},"thumbnailUrl":"https://www.wbs.legal/wp-content/uploads/2022/10/WBS-LEGAL-Partner.webp","datePublished":"2017-10-19T10:21:06+00:00","dateModified":"2023-09-26T10:06:10+00:00","description":"Ihre Kanzlei für Internetrecht und Medienrecht: WBS.LEGAL (ehemals Wilde Beuger Solmecke) - Bundesweit aktiv - Wir helfen Ihnen gerne!","breadcrumb":{"@id":"https://www.wbs.legal/#breadcrumb"},"inLanguage":"de-DE","potentialAction":[{"@type":"ReadAction","target":["https://www.wbs.legal/"]}]},{"@type":"ImageObject","inLanguage":"de-DE","@id":"https://www.wbs.legal/#primaryimage","url":"https://www.wbs.legal/wp-content/uploads/2022/10/WBS-LEGAL-Partner.webp","contentUrl":"https://www.wbs.legal/wp-content/uploads/2022/10/WBS-LEGAL-Partner.webp","width":800,"height":533},{"@type":"BreadcrumbList","@id":"https://www.wbs.legal/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.wbs.legal/#website","url":"https://www.wbs.legal/","name":"WBS.LEGAL","description":"Kanzlei für Medien – E-Commerce – Internet","publisher":{"@id":"https://www.wbs.legal/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.wbs.legal/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"de-DE"},{"@type":"Organization","@id":"https://www.wbs.legal/#organization","name":"WBS.LEGAL","url":"https://www.wbs.legal/","logo":{"@type":"ImageObject","inLanguage":"de-DE","@id":"https://www.wbs.legal/#/schema/logo/image/","url":"https://www.wbs.legal/wp-content/uploads/2022/10/WBS-Logo-Schriftzug.png","contentUrl":"https://www.wbs.legal/wp-content/uploads/2022/10/WBS-Logo-Schriftzug.png","width":1000,"height":128,"caption":"WBS.LEGAL"},"image":{"@id":"https://www.wbs.legal/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/wbs.legal","https://twitter.com/solmecke","https://www.instagram.com/wbs.legal/","https://www.linkedin.com/company/wilde-beuger-solmecke-rechtsanwlte/"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//js.hs-scripts.com' />
+
+<link rel='preload'  href='https://www.wbs.legal/wp-includes/css/dist/block-library/style.min.css?ver=6.3.1' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #FF3C1F;--wp--preset--color--secondary: #ffe2c7;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 1280px;--wp--style--global--wide-size: 1280px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 3rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child:first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child:last-child { margin-block-end: 0; }body { --wp--style--block-gap: 3rem; }:where(body .is-layout-flow)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-flow)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-flow)  > *{margin-block-start: 3rem;margin-block-end: 0;}:where(body .is-layout-constrained)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-constrained)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-constrained)  > *{margin-block-start: 3rem;margin-block-end: 0;}:where(body .is-layout-flex) {gap: 3rem;}:where(body .is-layout-grid) {gap: 3rem;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);line-height: 1.5;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='preload'  href='https://www.wbs.legal/wp-content/cache/min/1/wp-content/themes/xcore/style.css?ver=1692776414' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  type='text/css' media='all' />
+<link rel='preload'  href='https://www.wbs.legal/wp-content/themes/xcore/_/css/tiny-slider.min.css?ver=1593758594' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  type='text/css' media='all' />
+<link rel='preload'  href='https://www.wbs.legal/wp-content/themes/xcore/_/css/jquery.fancybox.min.css?ver=1664252245' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  type='text/css' media='all' />
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' defer='defer' data-rocket-src='https://www.wbs.legal/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.14' id='gform_json-js'></script>
+<script type='text/javascript' id='gform_gravityforms-js-extra'>
+/* <![CDATA[ */
+var gf_global = {"gf_currency_config":{"name":"Euro","symbol_left":"","symbol_right":"&#8364;","symbol_padding":" ","thousand_separator":".","decimal_separator":",","decimals":2,"code":"EUR"},"base_url":"https:\/\/www.wbs.legal\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.wbs.legal\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"1f3d91067781e7792165d755c55b0419","strings":{"newRowAdded":"Neue Zeile hinzugef\u00fcgt.","rowRemoved":"Zeile entfernt","formSaved":"Das Formular wurde gespeichert. Der Inhalt beinhaltet den Link zum Zur\u00fcckkehren und Vervollst\u00e4ndigen des Formulars."}};
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Di","wednesday":"Mi","thursday":"Do","friday":"Fr","saturday":"Sa","sunday":"So"},"months":{"january":"Januar","february":"Februar","march":"M\u00e4rz","april":"April","may":"Mai","june":"Juni","july":"Juli","august":"August","september":"September","october":"Oktober","november":"November","december":"Dezember"},"firstDay":1,"iconText":"Datum ausw\u00e4hlen"}};
+var gf_legacy_multi = {"8":""};
+var gform_gravityforms = {"strings":{"invalid_file_extension":"Dieser Dateityp kann nicht hochgeladen werden. Zul\u00e4ssig sind die folgenden:","delete_file":"Diese Datei l\u00f6schen","in_progress":"In Bearbeitung","file_exceeds_limit":"Maximale Dateigr\u00f6\u00dfe \u00fcberschritten","illegal_extension":"Dateityp nicht zul\u00e4ssig.","max_reached":"Maximale Dateianzahl erreicht","unknown_error":"Ein Problem ist beim Speichern der Datei auf dem Server aufgetreten.","currently_uploading":"Bitte warte bis alle Dateien vollst\u00e4ndig hochgeladen wurden.","cancel":"Abbrechen","cancel_upload":"Upload abbrechen","cancelled":"Abgebrochen"},"vars":{"images_url":"https:\/\/www.wbs.legal\/wp-content\/plugins\/gravityforms\/images"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" id="gform_gravityforms-js-before" data-rocket-type="text/javascript">
+
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' defer='defer' data-rocket-src='https://www.wbs.legal/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.14' id='gform_gravityforms-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' defer='defer' data-rocket-src='https://www.wbs.legal/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=59d951b75d934ae23e0ea7f9776264aa' id='gform_gravityforms_utils-js'></script>
+<link rel="https://api.w.org/" href="https://www.wbs.legal/wp-json/" /><link rel="alternate" type="application/json" href="https://www.wbs.legal/wp-json/wp/v2/pages/5" /><link rel="alternate" type="application/json+oembed" href="https://www.wbs.legal/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wbs.legal%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.wbs.legal/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wbs.legal%2F&#038;format=xml" />
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    (function(d,p,v,t,r,a,c,k,z) {
+        (d['_dpvt'] = d['_dpvt'] || []).push(['option', 'trackUrl', a], ['option', 'doNotTrack', c]);
+        d[t]=function(){d['_dpvt'].push(arguments)};
+        k=p.createElement(v);k.async=!0;k.src=r;
+        z=p.getElementsByTagName(v)[0];z.parentNode.insertBefore(k,z);
+    })(window,document,'script','dpvt','https://www.wbs.legal/wp-content/plugins/dotsunited-post-view-tracker/js/track.min.js?v=0.1.0','https://www.wbs.legal/dotsunited-post-view-tracker',false);
+</script>
+		<meta property="fb:pages" content="284958828196971" />
+		<meta name="google-site-verification" content="-dAlReVOm2lwxmG1NkMBszVAYv445ERrxzUTLvB02So" />	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		var ajaxurl = 'https://www.wbs.legal/wp-admin/admin-ajax.php';
+	</script>
+	    <script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+        (function ($) {
+            $(function () {
+                if ('object' != typeof FWP) {
+                    return;
+                }
+                FWP.hooks.addFilter('facetwp/flyout/flyout_html', function (flyout_html) {
+                    var html = `
+					<button onclick="FWP.reset()">Reset</button>
+				`;
+                    return flyout_html.replace('{content}', '{content}' + html);
+                });
+            });
+        })(jQuery);
+    });</script>
+    		<style type="text/css" id="wp-custom-css">
+			/* _custom.scss */
+.buttonhighlight a{
+    background: #ff3c1f;
+    color: #fff;
+    padding: 2.6rem 2rem !important;
+    border-radius: 0.5rem;
+	border-color: #ff3c1f;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 15%);
+    margin-bottom: -10px !important;
+    margin-top: 30px;
+}
+@media (max-width: 576px) {
+	html #uc-banner-centered { top: 9rem !important; -webkit-transform: translateX(-50%); transform: translateX(-50%); max-height: 75vh !important; }
+	html #uc-banner-centered .uc-banner-content .uc-banner-text { max-height: 20vh!important; min-height: 20vh; margin: 20px 0; }
+}
+#usercentrics-button .uc-banner-content { background-color: #FF3C1F !important; }
+.block.logos .card-logo img { height: 3rem; }
+.wp-block-columns .col-md-8 .gratuity-calculator > .container { padding: 0; }
+html .shariff-buttons { margin-top: -0.5rem !important; }
+html .shariff-buttons .shariff-button { margin-top: 0.5rem !important; }
+.wp-block-buttons { margin-bottom: 1rem; }
+.col-lg-9 > .wp-block-buttons .wp-block-button__link { border-radius: 0.25rem !important; }
+.block.hero.hero-slider .tns-outer { height: 100%; }
+.block.hero.hero-slider .tns-outer .tns-ovh { height: 100%; padding-bottom: 0; padding-right: 0; max-width: unset; margin: 0 0 0 -1rem; }
+.block.hero.hero-slider .tns-outer .tns-ovh .tns-inner { height: 100%; }
+.block.hero.hero-slider .tns-outer .tns-ovh .tns-inner .tiny-slider  { height: 100%; }
+@media (min-width: 1400px) {
+	.block.hero.hero-slider .col-text { padding-top: 4rem; padding-bottom: 4rem; }
+}
+
+/* OPTIMIZED DATA LEAK CHECKER FORM */
+.gform_wrapper.data-leak-checker { box-shadow: none; border-radius: 0; padding: 0; background: transparent; border: none; }
+.gform_wrapper.data-leak-checker #data-leak { background: #ff3c1f; color: #fff; padding: 2rem 1rem !important; border-radius: 0.5rem; text-align: center; box-shadow: 0 1rem 3rem rgb(0 0 0 / 15%); margin-bottom: 3rem !important; }
+.gform_wrapper.data-leak-checker #data-leak .form-group { max-width: 32rem; margin: 0 auto; }
+.gform_wrapper.data-leak-checker #data-leak .form-label { font-size: 1.5rem; }
+.gform_wrapper.data-leak-checker #data-leak .form-label .gfield_required { color: rgba(255 255 255 / 50%); }
+.gform_wrapper.data-leak-checker #data-leak p { margin: 0; }
+.gform_wrapper.data-leak-checker #data-leak p.hint { margin: 0 0 2rem 0 !important; }
+.gform_wrapper.data-leak-checker #data-leak p small { margin-top: 1rem; display: block; color: rgba(255 255 255 / 75%) !important; }
+.gform_wrapper.data-leak-checker #data-leak .form-control { font-size: 1.5rem; margin: 1.5rem 0; text-align: center; border-radius: 2rem; border: none; box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 25%); }
+.gform_wrapper.data-leak-checker #data-leak .btn { font-size: 1.25rem; padding: 0.75rem 4rem; border-radius: 3rem; border: 1px solid #fff !important; }
+.gform_wrapper .gform_fields .gfield--width-half {
+    width: 50%;
+}
+
+.block.gratuity-calculator .gratuity-calculator-form{
+	background: #ff3c1f;
+    color: #fff;
+    padding: 2.6rem 2rem !important;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 15%);
+    margin-bottom: 3rem !important;
+	margin-top: 20px;
+}
+
+.block.gratuity-calculator .gratuity-calculator-form .btn.btn-primary {
+    border: 1px solid #fff !important;}
+
+
+.highlight_form .gform_wrapper{
+	background: #ff3c1f;
+    color: #fff;
+    padding: 2.6rem 2rem !important;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 15%);
+    margin-bottom: 3rem !important;
+	margin-top: 20px;
+}
+
+.highlight_form .gform_wrapper a{
+	color:#fff;}
+
+.highlight_form .gform_wrapper .gform_footer {
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: inline-block;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: center;
+    width: 100%;
+}
+
+.highlight_form .gform_wrapper .gfield_label .gfield_required {
+    padding-left: 0.25rem;
+    color: #f4f4f4;
+}
+
+.highlight_form .gform_wrapper .btn.btn-primary, .highlight_form .gform_wrapper .button.gform_button {
+    border: 1px solid #fff !important; color: #000; background: #fff;}
+
+.wbs-block-timeline .timeline .timeline__item .timeline__content {
+	padding: 10px 5px 5px 10px;}
+
+.steps .row > div:nth-child(1){width: 10%; flex: 0.1; -webkit-box-flex: 0.1;}
+.steps .row > div:nth-child(2){width: 90%; flex: 0.9; -webkit-box-flex: 0.9;}
+.steps p {
+    margin-block-start: 16px;
+}
+.steps .row {     align-items: center;}
+
+@media only screen and (max-width: 700px) {
+	
+.steps .row > div:nth-child(1){width: 18%; flex: 0.18; -webkit-box-flex: 0.18;}
+.steps .row > div:nth-child(2){width: 82%; flex: 0.82; -webkit-box-flex: 0.82;}
+.steps p {
+    margin-block-start: 16px;
+}
+.steps .row {     align-items: flex-start;}
+}
+
+/* fancybox cookie-Hinweis */
+.uc-embedding-wrapper h3{
+	color: var(--fancybox-content-color, #374151);
+}
+.uc-embedding-wrapper p{
+	color: var(--fancybox-content-color, #374151);
+}
+.uc-embedding-wrapper span{
+	color: var(--fancybox-content-color, #374151);
+}
+
+
+
+@media (min-width: 768px) {
+	.mobilshow {
+		display: none;
+	}
+	.mobilhide {
+		display: block;
+	}
+}
+
+@media (max-width: 768px) {
+	.mobilshow {
+		display: block;
+	}
+	.mobilhide {
+		display: none;
+	}
+}
+
+.background-beige, .bg {
+	background-color:#fbedea;
+	padding: 25px;
+}
+.background-wbs-grey {
+	background-color: #3B424E;
+}
+
+.gform_anchor::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100px;
+    margin: -100px 0 0;
+}
+
+.pt-1r {
+	padding-top: 1rem;	
+}
+
+.nopadding{padding: 0px;}
+
+.wp-block-columns[style*="width"] { width: auto !important; }		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script type="rocketlazyloadscript">
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script>	</head>
+
+	<body class="home page-template-default page page-id-5 is-block-editor">
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB24NH4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+		<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+		<div id="wrapper">
+				<section id="topbar">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p>Soforthilfe vom Anwalt: Jetzt Kontakt aufnehmen</p>
+				</div>
+				<div class="col-auto">
+					<a href="https://www.wbs.legal/kontakt/" class="stretched-link">
+						<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M264.6 70.63l176 168c4.75 4.531 7.438 10.81 7.438 17.38s-2.688 12.84-7.438 17.38l-176 168c-9.594 9.125-24.78 8.781-33.94-.8125c-9.156-9.5-8.812-24.75 .8125-33.94l132.7-126.6H24.01c-13.25 0-24.01-10.76-24.01-24.01s10.76-23.99 24.01-23.99h340.1l-132.7-126.6C221.8 96.23 221.5 80.98 230.6 71.45C239.8 61.85 254.1 61.51 264.6 70.63z"/></svg></i>					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<header id="header" class="header-sticky">
+    <nav class="navbar navbar-light navbar-expand-lg" id="navigation">
+        <div class="container-lg">
+
+            <a class="navbar-brand" href="https://www.wbs.legal" title="WBS.LEGAL">
+                <img src="https://www.wbs.legal/wp-content/themes/xcore/_/img/logo/logo-mark.svg" alt="WBS.LEGAL" class="skip-lazy" width="80" height="80"/>
+            </a>
+
+            <div class="navbar-buttons">
+                <ul class="list-inline list-buttons">
+                    <li class="list-inline-item d-none d-lg-inline-block">
+                        <div class="navbar-search-collapse">
+                            <div class="dropdown">
+                                <a class="btn btn-white dropdown-toggle" href="#" id="dropdownMenuSearch" data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504.1 471l-134-134C399.1 301.5 415.1 256.8 415.1 208c0-114.9-93.13-208-208-208S-.0002 93.13-.0002 208S93.12 416 207.1 416c48.79 0 93.55-16.91 129-45.04l134 134C475.7 509.7 481.9 512 488 512s12.28-2.344 16.97-7.031C514.3 495.6 514.3 480.4 504.1 471zM48 208c0-88.22 71.78-160 160-160s160 71.78 160 160s-71.78 160-160 160S48 296.2 48 208z"/></svg></i>                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
+                                    <li>
+										<form role="search" method="get" class="form-search" action="https://www.wbs.legal/">
+	<input class="form-control" name="s" type="search" placeholder="Was suchen Sie?" value="">
+	<button class="btn btn-outline-primary" type="submit">
+		<i class="fa-regular fa-search"></i>
+		Suchen	</button>
+</form>                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="/kontakt/" class="btn btn-icon btn-outline-primary">
+							<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M480.3 320.3L382.1 278.2c-21.41-9.281-46.64-3.109-61.2 14.95l-27.44 33.5c-44.78-25.75-82.29-63.25-108-107.1l33.55-27.48c17.91-14.62 24.09-39.7 15.02-61.05L191.7 31.53c-10.16-23.2-35.34-35.86-59.87-30.19l-91.25 21.06C16.7 27.86 0 48.83 0 73.39c0 241.9 196.7 438.6 438.6 438.6c24.56 0 45.53-16.69 50.1-40.53l21.06-91.34C516.4 355.5 503.6 330.3 480.3 320.3zM463.9 369.3l-21.09 91.41c-.4687 1.1-2.109 3.281-4.219 3.281c-215.4 0-390.6-175.2-390.6-390.6c0-2.094 1.297-3.734 3.344-4.203l91.34-21.08c.3125-.0781 .6406-.1094 .9531-.1094c1.734 0 3.359 1.047 4.047 2.609l42.14 98.33c.75 1.766 .25 3.828-1.25 5.062L139.8 193.1c-8.625 7.062-11.25 19.14-6.344 29.14c33.01 67.23 88.26 122.5 155.5 155.5c9.1 4.906 22.09 2.281 29.16-6.344l40.01-48.87c1.109-1.406 3.187-1.938 4.922-1.125l98.26 42.09C463.2 365.2 464.3 367.3 463.9 369.3z"/></svg></i>                            <span class="d-none d-md-inline-block d-lg-none d-xxl-inline-block"><span class="wbs-hotline-number tracking_tn" style="white-space:nowrap">0221 / 951 563 0</span></span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="/kontakt/" class="btn btn-primary">
+							<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"/></svg></i>                            <span class="d-none d-sm-inline-block d-lg-none d-xl-inline-block">Gratis Ersteinschätzung</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item d-lg-none">
+                        <button class="btn btn-icon btn-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 88C0 74.75 10.75 64 24 64H424C437.3 64 448 74.75 448 88C448 101.3 437.3 112 424 112H24C10.75 112 0 101.3 0 88zM64 248C64 234.7 74.75 224 88 224H488C501.3 224 512 234.7 512 248C512 261.3 501.3 272 488 272H88C74.75 272 64 261.3 64 248zM424 432H24C10.75 432 0 421.3 0 408C0 394.7 10.75 384 24 384H424C437.3 384 448 394.7 448 408C448 421.3 437.3 432 424 432z"/></svg></i>                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="navbarNav" class="navbar-collapse collapse">
+				<ul id="menu-haupt-navigation-top-navigation" class="navbar-nav navbar-menu ml-auto"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-62466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-62466 nav-item mega-menu"><a class="nav-link-has-extra nav-link" title="Tätigkeitsgebiete" href="#" id="menu-item-dropdown-62466" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tätigkeitsgebiete</a><a class="nav-link nav-link-extra d-lg-none" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M362.7 203.9l-159.1 144c-6.125 5.469-15.31 5.469-21.44 0L21.29 203.9C14.73 197.1 14.2 187.9 20.1 181.3C26.38 174.4 36.5 174.5 42.73 180.1L192 314.5l149.3-134.4c6.594-5.877 16.69-5.361 22.62 1.188C369.8 187.9 369.3 197.1 362.7 203.9z"/></svg></i></a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-62442" class="pre-row">
+	<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-62443" class="col-12 col-lg-4">
+		<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2776" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2776 nav-item"><a class="dropdown-item" title=" Medienrecht" href="/medienrecht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 5v14h20V5H2Zm17.5 11.5h-15v-9h15v9Z" fill="#343A40"/><path d="m14.3 12-3-2.5h-1v5h.9l3.1-2.5Z" fill="#343A40"/></svg></i> Medienrecht</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3416 nav-item"><a class="dropdown-item" title=" Markenrecht" href="https://www.wbs.legal/markenrecht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 4.5 19.5 7v3L11 18.46 5.53 13 14 4.5h3ZM18 2h-5L2 13l9 9 11-11V6l-4-4Z" fill="#343A40"/><path d="M15.49 10.27c.9775 0 1.77-.7925 1.77-1.77s-.7925-1.77-1.77-1.77-1.77.7924-1.77 1.77c0 .9775.7925 1.77 1.77 1.77Z" fill="#343A40"/></svg></i> Markenrecht</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3751 nav-item"><a class="dropdown-item" title=" Verkehrsrecht" href="https://www.wbs.legal/verkehrsrecht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 15c.8284 0 1.5-.6716 1.5-1.5S7.3284 12 6.5 12 5 12.6716 5 13.5 5.6716 15 6.5 15Z" fill="#343A40"/><path d="M17.5 15c.8284 0 1.5-.6716 1.5-1.5s-.6716-1.5-1.5-1.5-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5Z" fill="#343A40"/><path d="M15.9 20.3c0 .9.8 1.7 1.7 1.7.9 0 1.6-.7 1.6-1.6V19h-3.3v1.3Z" fill="#343A40"/><path d="M4.9 20.3c0 .9.8 1.7 1.7 1.7.9 0 1.6-.7 1.6-1.6V19H4.9v1.3Z" fill="#343A40"/><path d="m20.5 9-1.8-7H5.2L3.5 9 2 10v8h20v-8l-1.5-1ZM17 4.2 18.2 9H5.7L7 4.2h10ZM4.2 15.8V11h15.5v4.8H4.2Z" fill="#343A40"/></svg></i> Verkehrsrecht</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3255 nav-item"><a class="dropdown-item" title=" Wettbewerbsrecht" href="https://www.wbs.legal/wettbewerbsrecht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.1 8h-2.9l2.5 2.5v.5H2v2h15.7v.5L15.2 16h2.9l4-4-4-4Z" fill="#343A40"/><path d="m4.2 15 1.5 1.5v.5H2v2h3.7v.5L3.2 22H6l4-4-3-3H4.2Z" fill="#343A40"/><path d="M9.6 7.5 8.1 9h2.8l3-3-4-4H7.1l2.5 2.5V5H2v2h7.6v.5Z" fill="#343A40"/></svg></i> Wettbewerbsrecht</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-67426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67426 nav-item"><a class="dropdown-item" title=" Sportrecht" href="/sportrecht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 4v5H4V4h5Zm2-2H2v9h9V2Z" fill="#343A40"/><path d="M17.5 4a2.5 2.5 0 1 1 0 4.9999A2.5 2.5 0 0 1 17.5 4Zm0-2a4.4896 4.4896 0 0 0-4.1601 2.7764A4.49 4.49 0 0 0 13 6.5a4.5 4.5 0 1 0 9 0A4.5 4.5 0 0 0 17.5 2Z" fill="#343A40"/><path d="M9 15v5H4v-5h5Zm2-2H2v9h9v-9Z" fill="#343A40"/><path d="M20 15v5h-5v-5h5Zm2-2h-9v9h9v-9Z" fill="#343A40"/></svg></i> Sportrecht</a></li>
+		</ul>
+</li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-62445" class="col-12 col-lg-4">
+		<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2952 nav-item"><a class="dropdown-item" title=" Urheberrecht" href="https://www.wbs.legal/urheberrecht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.4 13.6h2.4c-.1 1.1-.7 2-1.5 2.7-.9.7-2 1.1-3.1 1-1.4.1-2.7-.5-3.7-1.5-.9-1.1-1.4-2.4-1.3-3.8-.1-1.4.4-2.8 1.3-3.9.9-1 2.3-1.6 3.7-1.5 1.1 0 2.1.3 3 1 .8.6 1.3 1.5 1.4 2.5h-2.3c-.2-.9-1.1-1.6-2.1-1.4-1.7 0-2.6 1.1-2.6 3.3 0 .8.2 1.7.6 2.4.5.6 1.2.9 2 .9 1.1.1 2.1-.7 2.2-1.7Z" fill="#343A40"/><path d="M12 4.2c4.3 0 7.8 3.5 7.8 7.8s-3.5 7.8-7.8 7.8-7.7-3.5-7.8-7.8c0-4.3 3.5-7.8 7.8-7.8ZM12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2Z" fill="#343A40"/></svg></i> Urheberrecht</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2797" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2797 nav-item"><a class="dropdown-item" title=" Arbeitsrecht" href="https://www.wbs.legal/arbeitsrecht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3788 11.7899 9.3777 14.4836l.5474 2.4392 12.0012-2.6937-.5475-2.4392Z" fill="#343A40"/><path d="M15.5 19.5h-10v-15h10V11H18V2H3v20h15v-5h-2.5v2.5Z" fill="#343A40"/><path d="M14 6H7v2h7V6Z" fill="#343A40"/><path d="M10.9 10H7v2h3.9v-2Z" fill="#343A40"/></svg></i> Arbeitsrecht</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-784 nav-item"><a class="dropdown-item" title=" IT- und Internet-Recht" href="https://www.wbs.legal/it-und-internet-recht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c-1.9 0-3.5 1.6-3.5 3.5S10.1 21 12 21s3.5-1.6 3.5-3.5S13.9 14 12 14Zm0 5c-.8 0-1.5-.7-1.5-1.5S11.2 16 12 16s1.5.7 1.5 1.5S12.8 19 12 19Z" fill="#343A40"/><path d="m1.8 7 1.9 2c4.6-4.5 11.9-4.5 16.6 0l1.9-2C16.5 1.5 7.5 1.5 1.8 7Z" fill="#343A40"/><path d="M17.7 10.7c-1.9-1.5-4.4-2.2-6.8-1.9-2.5.2-4.7 1.4-6.2 3.4l2 1.6c2.3-2.9 6.5-3.4 9.4-1.1.4.3.8.7 1.1 1.1l2-1.6c-.4-.6-.9-1.1-1.5-1.5Z" fill="#343A40"/></svg></i> IT- und Internet-Recht</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63438" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-63438 nav-item"><a class="dropdown-item" title=" Datenschutzrecht" href="/it-und-internet-recht/datenschutzrecht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 19.5H2V22h20v-2.5Z" fill="#343A40"/><path d="M18.4 10h-2.5v8.4h2.5V10Z" fill="#343A40"/><path d="M8 10H5.5v8.4H8V10Z" fill="#343A40"/><path d="M13.3 10h-2.5v8.4h2.5V10Z" fill="#343A40"/><path d="m21 6.3-9-5-9 5V9h18V6.3Zm-3.6.7H6.7v-.4L12 3.7l5.4 3V7Z" fill="#343A40"/></svg></i> Datenschutzrecht</a></li>
+		</ul>
+</li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-62446" class="col-12 col-lg-4">
+		<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-62444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62444 nav-item"><a class="dropdown-item" title=" Lebensmittelrecht" href="/lebensmittelrecht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 4v5H4V4h5Zm2-2H2v9h9V2Z" fill="#343A40"/><path d="M17.5 4a2.5 2.5 0 1 1 0 4.9999A2.5 2.5 0 0 1 17.5 4Zm0-2a4.4896 4.4896 0 0 0-4.1601 2.7764A4.49 4.49 0 0 0 13 6.5a4.5 4.5 0 1 0 9 0A4.5 4.5 0 0 0 17.5 2Z" fill="#343A40"/><path d="M9 15v5H4v-5h5Zm2-2H2v9h9v-9Z" fill="#343A40"/><path d="M20 15v5h-5v-5h5Zm2-2h-9v9h9v-9Z" fill="#343A40"/></svg></i> Lebensmittelrecht</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319 nav-item"><a class="dropdown-item" title=" Designrecht" href="https://www.wbs.legal/designrecht-geschmacksmusterrecht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.7 16c-1.2 0-2.1.9-2.1 2.1 0 1.7 2 1.5.6 3.6-.1 0-.2.1-.2.2.2.5 3.7-.7 3.7-3.8.1-1.2-.9-2.1-2-2.1Z" fill="#343A40"/><path d="m6.7 14 .6-6.2V2H4v5.8l.7 6.2h2Z" fill="#343A40"/><path d="M12 2v20h9V2h-9Zm2 18V4h5v2h-3v2h3v3h-2v2h2v3h-3v2h3v2h-5Z" fill="#343A40"/></svg></i> Designrecht</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3952 nav-item"><a class="dropdown-item" title=" Gesellschaftsrecht" href="https://www.wbs.legal/handelsrecht-gesellschaftsrecht/"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 6v11H8v2h8v-2h-3V5.6l8.3-1.8-.6-2.4L2.5 5.3 3 7.7 11 6Z" fill="#343A40"/><path d="M19 20H5v2h14v-2Z" fill="#343A40"/><path d="M20 7v1.4c0 .9-.7 1.6-1.5 1.7-.8-.1-1.5-.8-1.5-1.8V7h-2v1.3c-.1 2 1.5 3.7 3.5 3.8 2-.1 3.5-1.8 3.5-3.7V7h-2Z" fill="#343A40"/><path d="M9 11.3V10H7v1.4c0 .9-.7 1.6-1.5 1.7-.8-.1-1.5-.8-1.5-1.8V10H2v1.3c-.1 2 1.5 3.7 3.5 3.8 2-.1 3.6-1.8 3.5-3.8Z" fill="#343A40"/></svg></i> Gesellschaftsrecht</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-67402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67402 nav-item"><a class="dropdown-item" title=" Einvernehmliche Scheidung" href="https://www.wbs.legal/familienrecht/einvernehmliche-scheidung/"><i class="icon  icon-md"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 224c26.53 0 48-21.47 48-48S282.5 128 256 128S208 149.5 208 176S229.5 224 256 224zM288 256H224C197.5 256 176 277.5 176 304V384c0 17.67 14.33 32 32 32v64c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-64c17.67 0 32-14.33 32-32V304C336 277.5 314.5 256 288 256zM288 368H224v-64h64V368zM384 128c35.38 0 64-28.62 64-64s-28.62-64-64-64s-64 28.62-64 64S348.6 128 384 128zM128 128c35.38 0 64-28.62 64-64S163.4 0 128 0S64 28.62 64 64S92.63 128 128 128zM80 224c0-8.822 7.178-16 16-16h87.12C178.7 198.2 176 187.5 176 176c0-4.561 .6107-8.963 1.347-13.32C171.8 161.1 166.1 160 160 160H96C60.65 160 32 188.7 32 224v96c0 17.67 14.33 32 32 32v136C64 501.3 74.75 512 88 512s24-10.75 24-24V352h32V304h-64V224zM505.5 343.2l-39.08-136.8C458.6 178.9 433.5 160 404.9 160h-41.86c-10.08 0-19.34 3.043-27.95 7.299C335.4 170.2 336 173 336 176c0 11.46-2.699 22.19-7.121 32h76.05c7.145 0 13.42 4.734 15.38 11.6L453.6 336H368V384h32v104c0 13.25 10.75 24 24 24S448 501.3 448 488V384h26.78C496 384 511.4 363.7 505.5 343.2z"/></svg></i> Einvernehmliche Scheidung</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-62448" class="pre-row">
+	<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-62449" class="col-12 col-lg-4">
+		<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-62452" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62452 nav-item"><a class="dropdown-item" title="Alle Themengebiete im Überblick" href="/taetigkeitsgebiete/">Alle Themengebiete im Überblick</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<div class="dropdown-divider"></div>
+</li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63440" class="pre-row">
+	<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63441" class="col-12 col-lg-4"></li>
+	</ul>
+</li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63425" class="pre-row">
+	<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63424" class="col-12 col-lg-4">
+		<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63432" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-63432 nav-item"><span class="dropdown-item-text"><i class="icon  icon-md"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 1 0 8.8314 14.6912l-1.7615-.9357a8.0058 8.0058 0 0 1-10.9187 3.264 8.0052 8.0052 0 0 1-.1845-13.9347A8.0055 8.0055 0 0 1 12 3.9947V2Z" fill="#343A40"/><path d="m7 10.019 1.7678-1.7678 3.4335 3.4336L19.0849 4.5l1.799 1.736-7.9291 8.264H11.481L7 10.019Z" fill="#343A40"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20 16.5h-4v-2h6v6h-2v-4Z" fill="#343A40"/></svg></i>  <span style="font-size: 1.125rem;"><strong> Weitere Top-Themen:</strong></span></span></li>
+		</ul>
+</li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63443" class="col-12 col-lg-4">
+		<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-63426 nav-item"><a class="dropdown-item" title="Facebook Datenleak" href="https://www.wbs.legal/i/dl-facebook/">Facebook Datenleak</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63428" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-63428 nav-item"><a class="dropdown-item" title="Deezer Datenleak" href="https://www.wbs.legal/lp/deezer-datenleck/">Deezer Datenleak</a></li>
+		</ul>
+</li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63444" class="col-12 col-lg-4">
+		<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-62466" role="menu">
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63429" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-63429 nav-item"><a class="dropdown-item" title="Filesharing" href="/urheberrecht/abmahnung-filesharing/">Filesharing</a></li>
+			<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-63427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-63427 nav-item"><a class="dropdown-item" title="Abfindungsrechner" href="https://www.wbs.legal/arbeitsrecht/kuendigung/abfindung/abfindungsrechner/">Abfindungsrechner</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-878" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-878 nav-item"><a class="nav-link" title="News" href="https://www.wbs.legal/news/">News</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-880" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-880 nav-item"><a class="nav-link" title="Kanzlei" href="https://www.wbs.legal/kanzlei-anwaelte/">Kanzlei</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-47241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47241 nav-item"><a class="nav-link" title="Karriere" href="https://www.wbs.legal/karriere/">Karriere</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-911" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-911 nav-item"><a class="nav-link" title="Presse &#038; Publikationen" href="https://www.wbs.legal/presse-publikationen/">Presse &#038; Publikationen</a></li>
+</ul>
+                <div class="navbar-mobile-search d-block d-lg-none">
+					<form role="search" method="get" class="form-search" action="https://www.wbs.legal/">
+	<input class="form-control" name="s" type="search" placeholder="Was suchen Sie?" value="">
+	<button class="btn btn-outline-primary" type="submit">
+		<i class="fa-regular fa-search"></i>
+		Suchen	</button>
+</form>                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+<div id="page">
+	<div id="content">
+		
+    <div id="hero-block_be80397814f790a69f27501a177fc28a" class="block hero layout-lg">
+        <div class="container-fluid">
+            <div class="block-inner">
+					<div class="row g-0">
+					<div class="col-12 col-md-6">
+				<div class="col-image">
+											<img decoding="async" fetchpriority="high" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20930%20814'%3E%3C/svg%3E" alt="" width="930" height="814" class="img-fluid" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2022/10/wbs-legal-koeln-1.jpeg"/><noscript><img decoding="async" fetchpriority="high" src="https://www.wbs.legal/wp-content/uploads/2022/10/wbs-legal-koeln-1.jpeg" alt="" width="930" height="814" class="img-fluid"/></noscript>
+										</div>
+			</div>
+			
+		<div class="col-12 col-md-6">
+			<div class="col-text">
+									<h1 id="wbs-legal" class="hero-title">WBS.LEGAL</h1>
+										<div class="hero-intro"><p class="lead">Ihre Kanzlei für Medien,<br />
+E-Commerce und Internet.</p>
+<hr class="hr-divider" />
+	<a class="btn btn-primary btn-lg" href="/kontakt/">
+	Gratis Ersteinschätzung	</a>
+	
+<hr class="hr-divider hr-lg" />
+<ul class="list-icon list-icon-check">
+<li>bundesweit renommierte Kanzlei</li>
+<li>30 Jahre Erfahrung</li>
+<li>schnell und verlässlich</li>
+</ul>
+<hr class="hr-divider hr-lg" />
+</div>
+											<ul class="list-inline list-rating">
+							<li class="list-inline-item">
+								<strong>Hervorragend</strong> <strong>4.8</strong> <i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg></i><i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg></i><i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg></i><i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg></i><i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg></i>							</li>
+							<li class="list-inline-item">
+								<strong>3100+</strong> Bewertungen <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2096%2040'%3E%3C/svg%3E" alt="Google" width="96" height="40" data-lazy-src="https://www.wbs.legal/wp-content/themes/xcore/_/img/google-logo.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/themes/xcore/_/img/google-logo.png" alt="Google" width="96" height="40"/></noscript>
+							</li>
+						</ul>
+									</div>
+		</div>
+	</div>
+
+			<a href="#" data-action="scroll-to-next-block" class="hero-scroll">
+			<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M377.4 296.6l-168 176C204.8 477.3 198.6 480 192 480s-12.84-2.688-17.38-7.438l-168-176C-2.5 286.1-2.156 271.8 7.438 262.6c9.5-9.156 24.75-8.812 33.94 .8125L168 396.1V56.02c0-13.25 10.75-24.01 23.1-24.01S216 42.77 216 56.02v340.1l126.6-132.7c9.156-9.625 24.41-9.969 33.94-.8125C386.2 271.8 386.5 286.1 377.4 296.6z"></path></svg></i>		</a>
+		            </div>
+        </div>
+    </div>
+
+
+
+			<div id="wir-arbeiten-schnell-und-sind-stets-fuer-sie-erreichbar" class="wp-block-columns  wp-block-columns-" style="">
+				<div class="container">
+					<div class="row g-4">
+													<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style=""></div>
+							</div>
+														<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="">
+<h2 class="wp-block-heading has-text-align-center" id="wir-arbeiten-schnell-und-sind-stets-fuer-sie-erreichbar">Seit über 30 Jahren im Medien- und Urheberrecht zu Hause</h2>
+</div>
+							</div>
+														<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style=""></div>
+							</div>
+												</div>
+				</div>
+			</div>
+			
+
+			<div class="wp-block-columns  wp-block-columns-" style="">
+				<div class="container">
+					<div class="row g-4">
+													<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<h4 id="bundesweit-aktiv" class="wp-block-heading">Bundesweit aktiv</h4>
+
+
+
+<p>Während wir unseren Hauptsitz in der Medienhauptstadt Köln haben, sind wir für Sie bundesweit im Einsatz und von überall erreichbar. Sie können sich bei uns über das <a href="https://www.wbs.legal/kontakt/">Kontaktformular</a> oder telefonisch unter <strong><span class="wbs-hotline-number tracking_tn" style="white-space:nowrap">0221 / 951 563 0</span> (Beratung bundesweit)</strong> melden.</p>
+</div>
+							</div>
+														<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<h4 id="hochqualifizierte-anwaelte" class="wp-block-heading">Hochqualifizierte Anwälte</h4>
+
+
+
+<p>Unsere inzwischen über 30-jährige Branchen- und Praxiserfahrung garantiert Ihnen eine professionelle, zukunftsorientierte und fachübergreifende Beratung. Mit unternehmerischem Denken und Freude am Anwaltsberuf entwickeln wir gemeinsam und in enger Absprache mit Ihnen Ihre ideale Strategie und die maßgeschneiderte Lösung für Ihr Anliegen.</p>
+</div>
+							</div>
+														<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<h4 id="stets-fuer-sie-erreichbar" class="wp-block-heading">Stets für Sie erreichbar</h4>
+
+
+
+<p>Sie haben eine Abmahnung, eine Kündigung oder eine andere unerfreuliche Nachricht erhalten und müssen schnell reagieren? Wir melden uns zeitnah zurück und arbeiten schnell mit allen Fristen im Blick. Sie können uns 365 Tage im Jahr 24 Stunden am Tag über unser <a href="https://www.wbs.legal/kontakt/">Kontaktformular</a> oder telefonisch unter <strong><span class="wbs-hotline-number tracking_tn" style="white-space:nowrap">0221 / 951 563 0</span> (Beratung bundesweit)</strong> erreichen.</p>
+</div>
+							</div>
+												</div>
+				</div>
+			</div>
+			
+
+			<div id="box-block_a847ca5ccc49535c6ca86b7e2a37f6e2" class="wp-block-columns  wp-block-columns-" style="">
+				<div class="container">
+					<div class="row g-4">
+													<div class="col-md-4">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style=""><i class="fa-regular fa-wbs-check icon-md"><!-- FA ICON --></i>
+
+
+
+<h2 id="aktuelle-themen-im-schnellcheck" class="wp-block-heading">Aktuelle Themen im Schnellcheck</h2>
+
+
+
+<p>Direkt und kostenlos können Sie hier zu aktuellen Themen prüfen, ob sich ein Verfahren lohnt.</p>
+</div>
+							</div>
+														<div class="col-md-8">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="">
+<div id="box-block_a847ca5ccc49535c6ca86b7e2a37f6e2" class="block box">
+	<div class="container">
+		<div class="block-inner">
+								<div class="tiny-slider tiny-teaser tiny-eq" data-tiny-slider="{&quot;lazyload&quot;:false,&quot;autoplay&quot;:false,&quot;autoplayButtonOutput&quot;:false,&quot;autoplayTimeout&quot;:&quot;6000&quot;,&quot;mouseDrag&quot;:true,&quot;touch&quot;:true,&quot;nav&quot;:true,&quot;navPosition&quot;:&quot;bottom&quot;,&quot;controls&quot;:true,&quot;items&quot;:2.5,&quot;gutter&quot;:24,&quot;responsive&quot;:&quot;box-2&quot;,&quot;controlsText&quot;:[&quot;&lt;i class=\&quot;fa-regular fa-angle-left\&quot;&gt;&lt;\/i&gt;&quot;,&quot;&lt;i class=\&quot;fa-regular fa-angle-right\&quot;&gt;&lt;\/i&gt;&quot;]}">
+													<div class="item">
+									<div class="card card-box h-100 card-layout-img-top card-hover">
+					<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20429%20215'%3E%3C/svg%3E" alt="" width="429" height="215" class="img-fluid card-img-top" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2023/02/deezer-2.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/uploads/2023/02/deezer-2.png" alt="" width="429" height="215" class="img-fluid card-img-top"/></noscript>
+			
+		<div class="card-body">
+							<p class="h5 card-title">
+											<span>Deezer-Datenleck</span>
+										</p>
+
+								<p class="card-text"></p><p>Steht Ihnen Schadensersatz zu? 14 Millionen Betroffene Deutsche! Jetzt checken.</p>
+
+						</div>
+
+					<div class="card-footer">
+				<a href="https://www.wbs.legal/lp/deezer-datenleck/" class="btn btn-primary btn-sm stretched-link">
+					Zu unserem Schnellcheck				</a>
+			</div>
+				</div>
+							</div>
+														<div class="item">
+									<div class="card card-box h-100 card-layout-img-top card-hover">
+					<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20429%20215'%3E%3C/svg%3E" alt="" width="429" height="215" class="img-fluid card-img-top" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2022/11/Facebook-Datenleak-Check.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/uploads/2022/11/Facebook-Datenleak-Check.png" alt="" width="429" height="215" class="img-fluid card-img-top"/></noscript>
+			
+		<div class="card-body">
+							<p class="h5 card-title">
+											<span>Facebook-Datenleck</span>
+										</p>
+
+								<p class="card-text"></p><p>Sind Sie betroffen? Jetzt über unser kostenfreies Tool checken.</p>
+
+						</div>
+
+					<div class="card-footer">
+				<a href="https://www.wbs.legal/i/dl-facebook/" class="btn btn-primary btn-sm stretched-link">
+					Zu unserem Schnellcheck				</a>
+			</div>
+				</div>
+							</div>
+														<div class="item">
+									<div class="card card-box h-100 card-layout-img-top card-hover">
+					<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20429%20215'%3E%3C/svg%3E" alt="" width="429" height="215" class="img-fluid card-img-top" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2023/03/Verpackungschecker.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/uploads/2023/03/Verpackungschecker.png" alt="" width="429" height="215" class="img-fluid card-img-top"/></noscript>
+			
+		<div class="card-body">
+							<p class="h5 card-title">
+											<span>Verpackungs-Checker</span>
+										</p>
+
+								<p class="card-text"></p><p>Prüfen Sie sofort, ob Ihre Produktverpackung rechtlich angreifbar sein könnte.</p>
+
+						</div>
+
+					<div class="card-footer">
+				<a href="https://heyflow.id/verpackungs-checker#start" class="btn btn-primary btn-sm stretched-link">
+					Zu unserem Schnellcheck				</a>
+			</div>
+				</div>
+							</div>
+														<div class="item">
+									<div class="card card-box h-100 card-layout-img-top card-hover">
+					<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20429%20215'%3E%3C/svg%3E" alt="" width="429" height="215" class="img-fluid card-img-top" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2022/11/Kuendigungsschutzklage-Check.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/uploads/2022/11/Kuendigungsschutzklage-Check.png" alt="" width="429" height="215" class="img-fluid card-img-top"/></noscript>
+			
+		<div class="card-body">
+							<p class="h5 card-title">
+											<span>Kündigungsschutzklage</span>
+										</p>
+
+								<p class="card-text"></p><p>Prüfen Sie, ob Ihre Kündigung rechtmäßig ist.</p>
+
+						</div>
+
+					<div class="card-footer">
+				<a href="https://www.wbs.legal/i/kundigungsschutz-h/" class="btn btn-primary btn-sm stretched-link">
+					Zum Schnellcheck				</a>
+			</div>
+				</div>
+							</div>
+														<div class="item">
+									<div class="card card-box h-100 card-layout-img-top card-hover">
+					<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20429%20215'%3E%3C/svg%3E" alt="" width="429" height="215" class="img-fluid card-img-top" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2022/11/Online-Gluecksspiel-Check.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/uploads/2022/11/Online-Gluecksspiel-Check.png" alt="" width="429" height="215" class="img-fluid card-img-top"/></noscript>
+			
+		<div class="card-body">
+							<p class="h5 card-title">
+											<span>Verluste beim Online-Casino</span>
+										</p>
+
+								<p class="card-text"></p><p>Online Geld verzockt? Einsätze und Verluste zurückfordern!</p>
+
+						</div>
+
+					<div class="card-footer">
+				<a href="https://lp.wbs.legal/online-casino" class="btn btn-primary btn-sm stretched-link">
+					Zur Prüfung				</a>
+			</div>
+				</div>
+							</div>
+														<div class="item">
+									<div class="card card-box h-100 card-layout-img-top card-hover">
+					<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20429%20215'%3E%3C/svg%3E" alt="" width="429" height="215" class="img-fluid card-img-top" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2022/11/Verkehrsrecht-Check.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/uploads/2022/11/Verkehrsrecht-Check.png" alt="" width="429" height="215" class="img-fluid card-img-top"/></noscript>
+			
+		<div class="card-body">
+							<p class="h5 card-title">
+											<span>Von Bußgeld bis Unfall</span>
+										</p>
+
+								<p class="card-text"></p><p>Unsere Experten für Verkehrsrecht stehen für Sie bereit.</p>
+
+						</div>
+
+					<div class="card-footer">
+				<a href="https://www.wbs.legal/verkehrsrecht/#unser-leistungsspektrum-im-verkehrsrecht-umfasst-insbesondere" class="btn btn-primary btn-sm stretched-link">
+					Zu unseren Leistungen				</a>
+			</div>
+				</div>
+							</div>
+														<div class="item">
+									<div class="card card-box h-100 card-layout-img-top card-hover">
+					<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20429%20215'%3E%3C/svg%3E" alt="" width="429" height="215" class="img-fluid card-img-top" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2022/11/Website-Abmahncheck.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/uploads/2022/11/Website-Abmahncheck.png" alt="" width="429" height="215" class="img-fluid card-img-top"/></noscript>
+			
+		<div class="card-body">
+							<p class="h5 card-title">
+											<span>Abmahn-Check</span>
+										</p>
+
+								<p class="card-text"></p><p>Lassen Sie jetzt Ihre Website sofort und kostenfrei rechtlich prüfen.</p>
+
+						</div>
+
+					<div class="card-footer">
+				<a href="/abmahncheck/" class="btn btn-primary btn-sm stretched-link">
+					Zu unserem Schnellcheck				</a>
+			</div>
+				</div>
+							</div>
+												</div>
+							</div>
+	</div>
+</div></div>
+							</div>
+												</div>
+				</div>
+			</div>
+			
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+<div class="block cta block-call-to-action  align-full ">
+	<div class="container-fluid">
+		<div class="block-inner">
+			<div class="row g-0">
+				<div class="col-12 col-md-6">
+					<div class="col-img">
+						<img decoding="async" alt="" class="img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.wbs.legal/wp-content/themes/xcore/_/img/cta-placeholder.png"/><noscript><img decoding="async" alt="" class="img-fluid" src="https://www.wbs.legal/wp-content/themes/xcore/_/img/cta-placeholder.png"/></noscript>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div class="col-text">
+						<h3 id="soforthilfe-vom-anwalt" class="toc-hide">Soforthilfe vom Anwalt</h3>
+						<p>Sie brauchen rechtliche Beratung? Rufen Sie uns an für eine kostenlose Ersteinschätzung oder nutzen Sie unser Kontaktformular.</p>
+                        <ul class="list-inline list-buttons">
+                            <li class="list-inline-item">
+                                <a class="btn btn-primary" href="https://www.wbs.legal/kontakt/">Jetzt Kontakt aufnehmen</a>
+                            </li>
+                            <li class="list-inline-item">
+								oder                            </li>
+                            <li class="list-inline-item">
+								<a href="tel:+49-221-9515630" class="wbs-hotline-number btn btn-outline-primary" style="white-space:nowrap"><span  class="tracking_tn">0221 / 951 563 0</span></a>                            </li>
+                        </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="services-block_051e2a94894116aa466d579321b8e2ad" class="block services">
+	<div class="container">
+		<div class="block-inner">
+			<div class="row g-4">
+				<div class="col-12 col-md col-xl-9">
+							<h2 id="unsere-taetigkeitsgebiete" class="block-title">Unsere Tätigkeitsgebiete</h2>
+				<div class="block-intro">
+			<p>Das spezialisierte Rechtsanwalts-Team der Kanzlei WILDE BEUGER SOLMECKE findet für Sie zeitnahe, umfassende und passgenaue Lösungen. Unsere hochqualifizierten Anwälte beraten Sie bundesweit in den folgenden Rechtsbereichen:</p>
+		</div>
+				<hr class="hr-divider"/>
+						</div>
+
+									<div class="col-12 col-md-auto col-xl text-xl-end">
+						<a href="/taetigkeitsgebiete/" class="btn btn-primary">Alle Tätigkeitsgebiete</a>
+					</div>
+								</div>
+
+								<hr class="hr-divider"/>
+					
+					<ul class="list-inline list-services list-services-chips">
+													<li class="list-inline-item">
+								<a href="/medienrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 5v14h20V5H2Zm17.5 11.5h-15v-9h15v9Z" fill="#343A40"></path><path d="m14.3 12-3-2.5h-1v5h.9l3.1-2.5Z" fill="#343A40"></path></svg></i>Medienrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/markenrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 4.5 19.5 7v3L11 18.46 5.53 13 14 4.5h3ZM18 2h-5L2 13l9 9 11-11V6l-4-4Z" fill="#343A40"></path><path d="M15.49 10.27c.9775 0 1.77-.7925 1.77-1.77s-.7925-1.77-1.77-1.77-1.77.7924-1.77 1.77c0 .9775.7925 1.77 1.77 1.77Z" fill="#343A40"></path></svg></i>Markenrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/it-und-internet-recht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c-1.9 0-3.5 1.6-3.5 3.5S10.1 21 12 21s3.5-1.6 3.5-3.5S13.9 14 12 14Zm0 5c-.8 0-1.5-.7-1.5-1.5S11.2 16 12 16s1.5.7 1.5 1.5S12.8 19 12 19Z" fill="#343A40"></path><path d="m1.8 7 1.9 2c4.6-4.5 11.9-4.5 16.6 0l1.9-2C16.5 1.5 7.5 1.5 1.8 7Z" fill="#343A40"></path><path d="M17.7 10.7c-1.9-1.5-4.4-2.2-6.8-1.9-2.5.2-4.7 1.4-6.2 3.4l2 1.6c2.3-2.9 6.5-3.4 9.4-1.1.4.3.8.7 1.1 1.1l2-1.6c-.4-.6-.9-1.1-1.5-1.5Z" fill="#343A40"></path></svg></i>IT- und Internetrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/wettbewerbsrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.1 8h-2.9l2.5 2.5v.5H2v2h15.7v.5L15.2 16h2.9l4-4-4-4Z" fill="#343A40"></path><path d="m4.2 15 1.5 1.5v.5H2v2h3.7v.5L3.2 22H6l4-4-3-3H4.2Z" fill="#343A40"></path><path d="M9.6 7.5 8.1 9h2.8l3-3-4-4H7.1l2.5 2.5V5H2v2h7.6v.5Z" fill="#343A40"></path></svg></i>Wettbewerbsrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/urheberrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.4 13.6h2.4c-.1 1.1-.7 2-1.5 2.7-.9.7-2 1.1-3.1 1-1.4.1-2.7-.5-3.7-1.5-.9-1.1-1.4-2.4-1.3-3.8-.1-1.4.4-2.8 1.3-3.9.9-1 2.3-1.6 3.7-1.5 1.1 0 2.1.3 3 1 .8.6 1.3 1.5 1.4 2.5h-2.3c-.2-.9-1.1-1.6-2.1-1.4-1.7 0-2.6 1.1-2.6 3.3 0 .8.2 1.7.6 2.4.5.6 1.2.9 2 .9 1.1.1 2.1-.7 2.2-1.7Z" fill="#343A40"></path><path d="M12 4.2c4.3 0 7.8 3.5 7.8 7.8s-3.5 7.8-7.8 7.8-7.7-3.5-7.8-7.8c0-4.3 3.5-7.8 7.8-7.8ZM12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2Z" fill="#343A40"></path></svg></i>Urheberrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/arbeitsrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3788 11.7899 9.3777 14.4836l.5474 2.4392 12.0012-2.6937-.5475-2.4392Z" fill="#343A40"></path><path d="M15.5 19.5h-10v-15h10V11H18V2H3v20h15v-5h-2.5v2.5Z" fill="#343A40"></path><path d="M14 6H7v2h7V6Z" fill="#343A40"></path><path d="M10.9 10H7v2h3.9v-2Z" fill="#343A40"></path></svg></i>Arbeitsrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/verkehrsrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 15c.8284 0 1.5-.6716 1.5-1.5S7.3284 12 6.5 12 5 12.6716 5 13.5 5.6716 15 6.5 15Z" fill="#343A40"></path><path d="M17.5 15c.8284 0 1.5-.6716 1.5-1.5s-.6716-1.5-1.5-1.5-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5Z" fill="#343A40"></path><path d="M15.9 20.3c0 .9.8 1.7 1.7 1.7.9 0 1.6-.7 1.6-1.6V19h-3.3v1.3Z" fill="#343A40"></path><path d="M4.9 20.3c0 .9.8 1.7 1.7 1.7.9 0 1.6-.7 1.6-1.6V19H4.9v1.3Z" fill="#343A40"></path><path d="m20.5 9-1.8-7H5.2L3.5 9 2 10v8h20v-8l-1.5-1ZM17 4.2 18.2 9H5.7L7 4.2h10ZM4.2 15.8V11h15.5v4.8H4.2Z" fill="#343A40"></path></svg></i>Verkehrsrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/abofallen/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.8 17.2h-3.6V21h3.6v-3.8Z" fill="#343A40"></path><path d="M11 15.3h2l.6-6.1V3h-3.2v6.2l.6 6.1Z" fill="#343A40"></path><path d="M22 10.8h-4v2.5h4v-2.5Z" fill="#343A40"></path><path d="M6 10.8H2v2.5h4v-2.5Z" fill="#343A40"></path><path d="m18.9112 17.1511-1.7677 1.7677 3.1112 3.1112 1.7678-1.7677-3.1113-3.1112Z" fill="#343A40"></path><path d="M3.7512 1.955 1.9834 3.7228 5.0947 6.834l1.7677-1.7677L3.7512 1.955Z" fill="#343A40"></path><path d="m5.0762 17.1416-3.1113 3.1112 1.7678 1.7678 3.1112-3.1113-1.7677-1.7677Z" fill="#343A40"></path><path d="m20.267 1.9794-3.1112 3.1113 1.7677 1.7677 3.1113-3.1112-1.7678-1.7678Z" fill="#343A40"></path></svg></i>Abofallen</a>							</li>
+														<li class="list-inline-item">
+								<a href="/bankrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2Zm0 17.8c-4.3 0-7.8-3.5-7.8-7.8S7.7 4.2 12 4.2s7.8 3.5 7.8 7.8-3.5 7.8-7.8 7.8Z" fill="#343A40"></path><path d="M13.9 14c-.1.9-.8 1.5-1.7 1.4-1.1 0-1.8-.6-2-1.9h2.1l.3-1h-2.5v-.9h2.8l.3-1h-3c.2-1.3.9-2 2-2 .8-.1 1.5.5 1.6 1.3h2.1c-.1-.9-.5-1.7-1.2-2.3-.7-.6-1.6-.9-2.5-.9-1 0-2 .3-2.7 1-.7.8-1.2 1.8-1.3 2.8h-1l-.3 1H8v.9h-.9l-.3 1H8c.1 1.1.6 2.1 1.4 2.8.7.7 1.7 1 2.7 1 .9 0 1.9-.3 2.6-.9.7-.7 1.1-1.5 1.2-2.5h-2v.2Z" fill="#343A40"></path></svg></i>Bankrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/baurecht-immobilienrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m13.2 7.1 1.1-3.9-6.4-1.8-2.7 10.2 6.4 1.7 1-3.8L22 12l.7-2.4-9.5-2.5Zm-3.1 3.8-2.5-.7 1.7-6.3 2.5.7-1.7 6.3Z" fill="#343A40"></path><path d="M22 19.5H2V22h20v-2.5Z" fill="#343A40"></path><path d="M18 15.5H6V18h12v-2.5Z" fill="#343A40"></path></svg></i>Bau- und Immobilienrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/handelsrecht-gesellschaftsrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 6v11H8v2h8v-2h-3V5.6l8.3-1.8-.6-2.4L2.5 5.3 3 7.7 11 6Z" fill="#343A40"></path><path d="M19 20H5v2h14v-2Z" fill="#343A40"></path><path d="M20 7v1.4c0 .9-.7 1.6-1.5 1.7-.8-.1-1.5-.8-1.5-1.8V7h-2v1.3c-.1 2 1.5 3.7 3.5 3.8 2-.1 3.5-1.8 3.5-3.7V7h-2Z" fill="#343A40"></path><path d="M9 11.3V10H7v1.4c0 .9-.7 1.6-1.5 1.7-.8-.1-1.5-.8-1.5-1.8V10H2v1.3c-.1 2 1.5 3.7 3.5 3.8 2-.1 3.6-1.8 3.5-3.8Z" fill="#343A40"></path></svg></i>Handels- und Gesellschaftsrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/lebensmittelrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m16.4 2-2.5 9.9 1.6 1.8V22H18V2h-1.6Z" fill="#343A40"></path><path d="M9.5 8h-.7l-.3-6h-1l-.2 6h-.8L6 2H4.7v7.2l2.1 1V22h2.5V10.2l2-1V2H10l-.5 6Z" fill="#343A40"></path></svg></i>Lebensmittelrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/designrecht-geschmacksmusterrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.7 16c-1.2 0-2.1.9-2.1 2.1 0 1.7 2 1.5.6 3.6-.1 0-.2.1-.2.2.2.5 3.7-.7 3.7-3.8.1-1.2-.9-2.1-2-2.1Z" fill="#343A40"></path><path d="m6.7 14 .6-6.2V2H4v5.8l.7 6.2h2Z" fill="#343A40"></path><path d="M12 2v20h9V2h-9Zm2 18V4h5v2h-3v2h3v3h-2v2h2v3h-3v2h3v2h-5Z" fill="#343A40"></path></svg></i>Design- und Geschmacksmusterrecht</a>							</li>
+														<li class="list-inline-item">
+								<a href="/sportrecht/" class="btn btn-chips"><i class="icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 4v5H4V4h5Zm2-2H2v9h9V2Z" fill="#343A40"></path><path d="M17.5 4a2.5 2.5 0 1 1 0 4.9999A2.5 2.5 0 0 1 17.5 4Zm0-2a4.4896 4.4896 0 0 0-4.1601 2.7764A4.49 4.49 0 0 0 13 6.5a4.5 4.5 0 1 0 9 0A4.5 4.5 0 0 0 17.5 2Z" fill="#343A40"></path><path d="M9 15v5H4v-5h5Zm2-2H2v9h9v-9Z" fill="#343A40"></path><path d="M20 15v5h-5v-5h5Zm2-2h-9v9h9v-9Z" fill="#343A40"></path></svg></i>Sportrecht</a>							</li>
+												</ul>
+							</div>
+	</div>
+</div>
+
+			<div class="wp-block-columns  wp-block-columns-" style="background-color:#ff3d1f00">
+				<div class="container">
+					<div class="row g-4">
+													<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<h2 id="die-kanzlei-wbs-legal" class="wp-block-heading">Die Kanzlei WBS.LEGAL</h2>
+
+
+
+<p>Die Kanzlei WBS.LEGAL mit Hauptsitz im Herzen der Medienhauptstadt Köln gehört seit über 30 Jahren bundesweit zu den renommierten und führenden Kanzleien im Bereich des Medien- und Urheberrechts.</p>
+
+
+
+<p>Unser Team aus hochqualifizierten Anwälten ist darüber hinaus auf das IT- und Internetrecht, den Datenschutz, E-Commerce, das Wettbewerbs-, Marken- und Arbeitsrecht spezialisiert.</p>
+
+
+
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-primary-color has-text-color has-background wp-element-button" href="/kanzlei-anwaelte/" style="background-color:#ff3d1f00">Das Team kennenlernen</a></div>
+</div>
+</div>
+							</div>
+														<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img decoding="async" width="800" height="533" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20533'%3E%3C/svg%3E" alt="" class="wp-image-62530" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2022/10/WBS-LEGAL-Partner.webp"/><noscript><img decoding="async" width="800" height="533" src="https://www.wbs.legal/wp-content/uploads/2022/10/WBS-LEGAL-Partner.webp" alt="" class="wp-image-62530"/></noscript></figure>
+</div>
+							</div>
+												</div>
+				</div>
+			</div>
+			
+
+
+<div id="posts-block_f951a9cd5aa7a23a071bc26638a6881d" class="block posts">
+	<div class="container">
+		<div class="block-inner">
+			<div class="row g-4">
+				<div class="col-12 col-md col-xl-9">
+							<h2 id="wir-versorgen-sie-mit-den-aktuellsten-news-und-urteilen" class="block-title">Wir versorgen Sie mit den aktuellsten News und Urteilen</h2>
+						</div>
+
+				<div class="col-12 col-md-auto col-xl text-xl-end">
+					<a href="https://www.wbs.legal/news/" class="btn btn-outline-primary">Alle News</a>
+				</div>
+			</div>
+
+			<hr class="hr-divider"/>
+
+			<div class="row g-4">
+	<div class="col-12 col-md-6">
+	<div class="card card-post card-post-grid-overlay card-hover h-100 post-63731 post type-post status-publish format-standard has-post-thumbnail hentry category-datenschutzrecht">
+		<div class="img-overlay bg-filter bg-dark text-white">
+							<span class="badge bg-light">Neuester Artikel</span>
+				<img width="478" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20478%20300'%3E%3C/svg%3E" class="card-img-top wp-post-image" alt="" decoding="async" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2021/01/Facebook.jpg" /><noscript><img width="478" height="300" src="https://www.wbs.legal/wp-content/uploads/2021/01/Facebook.jpg" class="card-img-top wp-post-image" alt="" decoding="async" /></noscript>
+			<div class="card-img-overlay">
+				<h3 id="facebook-datenleck-erfolgreiche-urteile-der-kanzlei-wbs-legal" class="h5 card-title">
+					Facebook-Datenleck: Erfolgreiche Urteile der Kanzlei WBS.LEGAL				</h3>
+
+				<ul class="list-inline list-meta list-meta-sm">
+	<li class="list-inline-item list-meta-date">
+		04.09.2023	</li>
+</ul>			</div>
+		</div>
+
+		<div class="card-body">
+			<p>6 Millionen Nutzer in Deutschland sind von einem großen Datenleck bei Facebook betroffen. Bei den Daten handelt es sich um vollständige Nutzernamen, Geburtsdaten, E-Mail-Adressen, Telefonnummern und auch persönliche Angaben wie den Beziehungsstatus. Sind auch Sie vom Facebook-Datenleck betroffen? Dann melden Sie sich bei uns. Die Kanzlei WBS berät Sie gerne [&hellip;]</p>
+		</div>
+
+		<div class="card-footer">
+			<a href="https://www.wbs.legal/it-und-internet-recht/datenschutzrecht/facebook-datenleck-erfolgreiche-urteile-der-kanzlei-wbs-legal-63731/" title="Facebook-Datenleck: Erfolgreiche Urteile der Kanzlei WBS.LEGAL" class="btn btn-link stretched-link">
+				Mehr erfahren			</a>
+		</div>
+	</div>
+</div><div class="col-12 col-md-3">
+	<div class="card card-post card-post-grid-overlay card-hover h-100 post-69290 post type-post status-publish format-standard has-post-thumbnail hentry category-urheberrecht">
+		<div class="img-overlay bg-filter bg-dark text-white">
+			<img width="368" height="246" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20368%20246'%3E%3C/svg%3E" class="card-img-top wp-post-image" alt="" decoding="async" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2023/09/LG-Koeln-Ghostwriterin-hat-Anspruch-auf-Namensnennung.png" /><noscript><img width="368" height="246" src="https://www.wbs.legal/wp-content/uploads/2023/09/LG-Koeln-Ghostwriterin-hat-Anspruch-auf-Namensnennung.png" class="card-img-top wp-post-image" alt="" decoding="async" /></noscript>
+			<div class="card-img-overlay">
+				<h3 id="lg-koeln-ghostwriterin-hat-anspruch-auf-namensnennung" class="h5 card-title">
+					LG Köln: Ghostwriterin hat Anspruch auf Namensnennung				</h3>
+
+				<ul class="list-inline list-meta list-meta-sm">
+	<li class="list-inline-item list-meta-date">
+		28.09.2023	</li>
+</ul>			</div>
+		</div>
+
+		<div class="card-body">
+			<p>Ghostwriter erledigen ihre Arbeit häufig im Stillen. Was aber, wenn ein Ghostwriter Werbung für seine Arbeit möchte und auf eine Namensnennung besteht? Kann es eine Urheberrechtsverletzung darstellen, wenn ein Ghostwriter nicht in einem Buch genannt wird, das er für einen anderen geschrieben hat? Mit dieser Frage musste sich nun das [&hellip;]</p>
+		</div>
+
+		<div class="card-footer">
+			<a href="https://www.wbs.legal/urheberrecht/lg-koeln-ghostwriterin-hat-anspruch-auf-namensnennung-69290/" title="LG Köln: Ghostwriterin hat Anspruch auf Namensnennung" class="btn btn-link stretched-link">
+				Mehr erfahren			</a>
+		</div>
+	</div>
+</div><div class="col-12 col-md-3">
+	<div class="card card-post card-post-grid-overlay card-hover h-100 post-69281 post type-post status-publish format-standard has-post-thumbnail hentry category-wettbewerbsrecht">
+		<div class="img-overlay bg-filter bg-dark text-white">
+			<img width="368" height="246" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20368%20246'%3E%3C/svg%3E" class="card-img-top wp-post-image" alt="" decoding="async" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2023/09/OLG-Muenchen-Ordnungsgeld-wegen-Werbung-im-Website-Cache.png" /><noscript><img width="368" height="246" src="https://www.wbs.legal/wp-content/uploads/2023/09/OLG-Muenchen-Ordnungsgeld-wegen-Werbung-im-Website-Cache.png" class="card-img-top wp-post-image" alt="" decoding="async" /></noscript>
+			<div class="card-img-overlay">
+				<h3 id="olg-muenchen-ordnungsgeld-wegen-werbung-im-website-cache" class="h5 card-title">
+					OLG München: Ordnungsgeld wegen Werbung im Website-Cache				</h3>
+
+				<ul class="list-inline list-meta list-meta-sm">
+	<li class="list-inline-item list-meta-date">
+		28.09.2023	</li>
+</ul>			</div>
+		</div>
+
+		<div class="card-body">
+			<p>Kann ein Ordnungsgeld angeordnet werden, wenn ein technisch nicht versierter Schuldner untersagte Werbung im Website Cache belässt? Diese Frage hat nun das OLG München beantwortet. Dabei musste das Gericht beurteilen, ob technische Unkenntnis zu berücksichtigen ist, wenn es um die Pflichten aus einem Unterlassungstitel geht. Unkenntnis schützt nicht: Der Schuldner [&hellip;]</p>
+		</div>
+
+		<div class="card-footer">
+			<a href="https://www.wbs.legal/wettbewerbsrecht/olg-muenchen-ordnungsgeld-wegen-werbung-im-website-cache-69281/" title="OLG München: Ordnungsgeld wegen Werbung im Website-Cache" class="btn btn-link stretched-link">
+				Mehr erfahren			</a>
+		</div>
+	</div>
+</div></div>		</div>
+	</div>
+</div>
+
+
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div id="youtube-feed-block_92b27f6db29510e1fc7879c334e443c5" class="block youtube-feed">
+    <div class="container">
+        <div class="block-inner">
+            <div class="row g-4">
+                <div class="col-12 col-md col-xl-9">
+							<h2 id="sehen-sie-sich-unsere-neuesten-youtube-videos-an" class="block-title">Sehen Sie sich unsere neuesten YouTube-Videos an</h2>
+		                </div>
+
+                <div class="col-12 col-md-auto col-xl text-xl-end">
+                    <a href="https://www.youtube.com/c/KanzleiWBS" target="_blank" rel="nofollow noopener" class="btn btn-outline-primary">Zum WBS YouTube Kanal</a>
+                </div>
+            </div>
+
+            <hr class="hr-divider"/>
+
+			                <div class="row g-4">
+					                        <div class="col-12 col-md-6">
+                            <a href="https://www.youtube.com/watch?v=xKWE6ZX_tr0" data-bs-toggle="modal" data-title="Wand bunt streichen 🎨 Dürfen Mieter das? | WBS.LEGAL #shorts #mietrecht" data-video="https://www.youtube-nocookie.com/embed/xKWE6ZX_tr0" data-bs-target="#videoModal" class="media-link media-link-video stretched-link">
+                                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="img-fluid" data-lazy-src="https://img.youtube.com/vi/xKWE6ZX_tr0/maxresdefault.jpg"/><noscript><img decoding="async" src="https://img.youtube.com/vi/xKWE6ZX_tr0/maxresdefault.jpg" class="img-fluid"/></noscript>
+                            </a>
+                        </div>
+						                        <div class="col-12 col-md-6">
+                            <a href="https://www.youtube.com/watch?v=l5NVCl7Irww" data-bs-toggle="modal" data-title="Alkohol in der Schwangerschaft 🍷​🤰​ Ist das strafbar? | WBS.LEGAL #shorts #schwanger" data-video="https://www.youtube-nocookie.com/embed/l5NVCl7Irww" data-bs-target="#videoModal" class="media-link media-link-video stretched-link">
+                                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="img-fluid" data-lazy-src="https://img.youtube.com/vi/l5NVCl7Irww/maxresdefault.jpg"/><noscript><img decoding="async" src="https://img.youtube.com/vi/l5NVCl7Irww/maxresdefault.jpg" class="img-fluid"/></noscript>
+                            </a>
+                        </div>
+						                </div>
+				        </div>
+    </div>
+</div>
+
+
+<h2 id="das-sagen-unsere-mandanten-ueber-uns" class="wp-block-heading has-text-align-center">Das sagen unsere Mandanten über uns<br /></h2>
+
+
+<aside class="block wbs-block-testimonials mb-0 mt-0 bg-light my-72px align-full">
+	<div class="container-fluid">
+		<div class="block-inner">
+			<!-- ProvenExpert Bewertungssiegel -->
+			<div id="pewl"></div>
+			<script type="text/plain" data-usercentrics="Provenexpert">
+			const customScriptPE = document.createElement('script');
+			customScriptPE.src = 'https://www.provenexpert.com/widget/landing_wilde-beuger-solmecke-rechtsanwaelte.js?feedback=1&avatar=0&competence=1&style=white'; // Add source to your script
+			customScriptPE.type = 'module'; // Add type of your script
+			document.head.appendChild(customScriptPE);
+
+			const customStyle = document.createElement('style');
+			customStyle.href = 'https://www.provenexpert.com/css/widget_landing.css';
+			customStyle.type = 'text/css'; // Add type of your script
+			customStyle.media = 'screen,print'; // Add type of your script
+			customStyle.rel = 'stylesheet'; // Add type of your script
+			document.head.appendChild(customStyle);
+			</script>
+			<!-- ProvenExpert Bewertungssiegel Ende -->
+		</div>
+	</div>
+</aside>
+
+
+<div class="wp-block-group has-primary-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 id="bleiben-sie-mit-uns-in-kontakt-mit-unserem-kostenlosen-newsletter" class="wp-block-heading has-text-align-center has-text-color" style="color:#fbedea">Bleiben Sie mit uns in Kontakt &#8211; mit unserem kostenlosen Newsletter!</h2>
+
+
+
+<br />
+<br />
+
+
+			<div class="wp-block-columns  wp-block-columns-" style="">
+				<div class="container">
+					<div class="row g-4">
+													<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">			<div class="wp-block-columns  wp-block-columns-" style="">
+				<div class="container">
+					<div class="row g-4">
+													<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">			<div class="wp-block-columns  wp-block-columns-" style="">
+				<div class="container">
+					<div class="row g-4">
+													<div class="col-md-4">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="">
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2075%2075'%3E%3C/svg%3E" alt="" class="wp-image-63305" style="width:75px;height:75px" width="75" height="75" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2022/12/3.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/uploads/2022/12/3.png" alt="" class="wp-image-63305" style="width:75px;height:75px" width="75" height="75"/></noscript></figure>
+</div>
+							</div>
+														<div class="col-md-8">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="">
+<p class="has-text-align-left has-text-color" style="color:#fbedea"><strong>Juristische Entscheidungen</strong> <strong>verfolgen</strong></p>
+</div>
+							</div>
+												</div>
+				</div>
+			</div>
+			</div>
+							</div>
+														<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">			<div class="wp-block-columns  wp-container-101 wp-block-columns-" style="">
+				<div class="container">
+					<div class="row g-4">
+													<div class="col-md-4">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="">
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2075%2075'%3E%3C/svg%3E" alt="" class="wp-image-63306" style="width:75px;height:75px" width="75" height="75" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2022/12/2.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/uploads/2022/12/2.png" alt="" class="wp-image-63306" style="width:75px;height:75px" width="75" height="75"/></noscript></figure>
+</div>
+							</div>
+														<div class="col-md-8">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="">
+<p class="has-text-align-left has-text-color" style="color:#fbedea"><strong>Ihre Rechte kennenlernen</strong> <strong>&amp; durchsetzen</strong></p>
+</div>
+							</div>
+												</div>
+				</div>
+			</div>
+			</div>
+							</div>
+												</div>
+				</div>
+			</div>
+			</div>
+							</div>
+														<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">			<div class="wp-block-columns  wp-container-118 wp-block-columns-" style="">
+				<div class="container">
+					<div class="row g-4">
+													<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">			<div class="wp-block-columns  wp-container-121 wp-block-columns-" style="">
+				<div class="container">
+					<div class="row g-4">
+													<div class="col-md-4">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="">
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2075%2075'%3E%3C/svg%3E" alt="" class="wp-image-63307" style="width:75px;height:75px" width="75" height="75" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2022/12/5.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/uploads/2022/12/5.png" alt="" class="wp-image-63307" style="width:75px;height:75px" width="75" height="75"/></noscript></figure>
+</div>
+							</div>
+														<div class="col-md-8">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="">
+<p class="has-text-align-left has-text-color" style="color:#fbedea"><strong>Kurz &amp; knackig: Ein Wöchentlicher Rechtstipp</strong></p>
+</div>
+							</div>
+												</div>
+				</div>
+			</div>
+			</div>
+							</div>
+														<div class="col-12 col-md">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">			<div class="wp-block-columns  wp-container-127 wp-block-columns-" style="">
+				<div class="container">
+					<div class="row g-4">
+													<div class="col-md-4">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="">
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2075%2075'%3E%3C/svg%3E" alt="" class="wp-image-63308" style="width:75px;height:75px" width="75" height="75" data-lazy-src="https://www.wbs.legal/wp-content/uploads/2022/12/4.png"/><noscript><img decoding="async" src="https://www.wbs.legal/wp-content/uploads/2022/12/4.png" alt="" class="wp-image-63308" style="width:75px;height:75px" width="75" height="75"/></noscript></figure>
+</div>
+							</div>
+														<div class="col-md-8">
+								
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="">
+<p class="has-text-align-left has-text-color" style="color:#fbedea"><strong>Erfahren, wo Sie gerade Geld zurückholen können</strong></p>
+</div>
+							</div>
+												</div>
+				</div>
+			</div>
+			</div>
+							</div>
+												</div>
+				</div>
+			</div>
+			</div>
+							</div>
+												</div>
+				</div>
+			</div>
+<br />
+
+
+
+                <div class='gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_8'>
+                        <div class='gform_heading'>
+                            <h2 class="gform_title">Newsletter (kurz)</h2>
+                            <p class='gform_description'></p>
+                        </div><form method='post' enctype='multipart/form-data'  id='gform_8'  action='/' data-formid='8' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_8' class='gform_fields top_label form_sublabel_below description_below'><div id="field_8_3"  class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_8_3"><label class='gfield_label gform-field-label' for='input_8_3'>E-Mail<span class="gfield_required"><span class="gfield_required gfield_required_text">(erforderlich)</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_3' id='input_8_3' type='email' value='' class='large'   placeholder='E-Mail-Adresse eingeben...' aria-required="true" aria-invalid="false"  />
+                        </div></div><fieldset id="field_8_4"  class="gfield gfield--type-checkbox gfield--type-choice gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_8_4"><legend class='gfield_label gform-field-label gfield_label_before_complex'>Einwilligung<span class="gfield_required"><span class="gfield_required gfield_required_text">(erforderlich)</span></span></legend><div class='ginput_container ginput_container_checkbox'><div class='gfield_checkbox' id='input_8_4'><div class='gchoice gchoice_8_4_1'>
+								<input class='gfield-choice-input' name='input_4.1' type='checkbox'  value='Ich stimme der &lt;a href=&quot;/datenschutzerklaerung/#newsletter&quot; target=&quot;_blank&quot;&gt;Verarbeitung meiner Daten&lt;/a&gt; zu.'  id='choice_8_4_1'   />
+								<label for='choice_8_4_1' id='label_8_4_1' class='gform-field-label gform-field-label--type-inline'>Ich stimme der <a href="/datenschutzerklaerung/#newsletter" target="_blank">Verarbeitung meiner Daten</a> zu.</label>
+							</div></div></div></fieldset><div id="field_8_6"  class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_8_6"><div class='ginput_container ginput_container_text'><input name='input_6' id='input_8_6' type='hidden' class='gform_hidden'  aria-invalid="false" value='' /></div></div><div id="field_8_7"  class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_8_7"><div class='ginput_container ginput_container_text'><input name='input_7' id='input_8_7' type='hidden' class='gform_hidden'  aria-invalid="false" value='' /></div></div><div id="field_8_8"  class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_8_8"><div class='ginput_container ginput_container_text'><input name='input_8' id='input_8_8' type='hidden' class='gform_hidden'  aria-invalid="false" value='' /></div></div><div id="field_8_9"  class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_8_9"><div class='ginput_container ginput_container_text'><input name='input_9' id='input_8_9' type='hidden' class='gform_hidden'  aria-invalid="false" value='direct' /></div></div><div id="field_8_10"  class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below gfield_visibility_visible"  data-js-reload="field_8_10"><label class='gfield_label gform-field-label' for='input_8_10'>Email</label><div class='ginput_container'><input name='input_10' id='input_8_10' type='text' value='' autocomplete='new-password'/></div><div class='gfield_description' id='gfield_description_8_10'>Dieses Feld dient zur Validierung und sollte nicht verändert werden.</div></div></div></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_8' class='gform_button button' value='Newsletter abonnieren'  onclick='if(window["gf_submitting_8"]){return false;}  if( !jQuery("#gform_8")[0].checkValidity || jQuery("#gform_8")[0].checkValidity()){window["gf_submitting_8"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_8"]){return false;} if( !jQuery("#gform_8")[0].checkValidity || jQuery("#gform_8")[0].checkValidity()){window["gf_submitting_8"]=true;}  jQuery("#gform_8").trigger("submit",[true]); }' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_8' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='8' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_8' value='WyJbXSIsIjg2ZjgzNWI2MmJmMDQyZWMwY2FlNjE2YWFlNmM5NWY2Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_8' id='gform_target_page_number_8' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_8' id='gform_source_page_number_8' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+gform.initializeOnLoaded( function() {gformInitSpinner( 8, 'https://www.wbs.legal/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_8').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_8');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_8').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_8').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_8').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_8').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_8').val();gformInitSpinner( 8, 'https://www.wbs.legal/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [8, current_page]);window['gf_submitting_8'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_8').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [8]);window['gf_submitting_8'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_8').text());}, 50);}else{jQuery('#gform_8').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [8, current_page]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 8, currentPage: current_page } });} );} );
+});</script>
+
+</div>
+	</div>
+</div>
+
+							<footer id="footer">
+						<div class="container">
+		<div class="footer-top">
+			<div class="row g-4">
+				<div class="col-12 col-sm-6 col-lg-3">
+					<aside id="nav_menu-2" class=" widget widget_nav_menu"><p class="widget-header h5">Materialien &#038; Tools</p><div class="menu-materialien-tools-container"><ul id="menu-materialien-tools" class="menu"><li id="menu-item-38329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38329"><a href="https://www.wbs.legal/abmahncheck/">Abmahncheck</a></li>
+<li id="menu-item-38331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38331"><a href="https://www.wbs.legal/it-und-internet-recht/datenschutzrecht/datenschutzerklaerung/datenschutzgenerator/">Datenschutzgenerator</a></li>
+<li id="menu-item-64571" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64571"><a href="https://heyflow.id/verpackungs-checker#start">Verpackungs-Checker</a></li>
+<li id="menu-item-38330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38330"><a href="https://www.wbs.legal/urheberrecht/abmahnung-filesharing/faq/">FAQ zum Filesharing</a></li>
+<li id="menu-item-38334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38334"><a href="https://www.wbs.legal/urheberrecht/abmahnung-filesharing/abmahnkanzleien/waldorf-frommer/">FAQ zu Frommer Legal</a></li>
+<li id="menu-item-53195" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53195"><a href="https://www.wbs.legal/arbeitsrecht/kuendigung/abfindung/abfindungsrechner/">Abfindungsrechner</a></li>
+<li id="menu-item-49025" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49025"><a href="https://www.wbs.legal/bankrecht/kreditvertrag/#check">Check zum Widerrufsjoker</a></li>
+<li id="menu-item-45443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45443"><a href="https://www.wbs.legal/verkehrsrecht/abgasskandal/">Abgasskandal</a></li>
+<li id="menu-item-66765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66765"><a href="https://www.wbs.legal/verkehrsrecht/abgasskandal/thermofenster/">Thermofenster Rückerstattung</a></li>
+<li id="menu-item-38335" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38335"><a href="/verkehrsrecht/bussgeldverfahren/bussgeldkatalog/">Bußgeldkatalog</a></li>
+<li id="menu-item-38332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38332"><a href="https://www.wbs.legal/presse-publikationen/">Publikationen</a></li>
+<li id="menu-item-64389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64389"><a href="https://www.wbs.legal/aktuelle-datenlecks/">Aktuelle Datenlecks</a></li>
+</ul></div></aside>				</div>
+
+				<div class="col-12 col-sm-6 col-lg-3">
+					<aside id="nav_menu-3" class=" widget widget_nav_menu"><p class="widget-header h5">Wir vertreten Sie</p><div class="menu-wir-vertreten-sie-container"><ul id="menu-wir-vertreten-sie" class="menu"><li id="menu-item-38314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38314"><a href="/it-und-internet-recht/">IT Recht Kanzlei</a></li>
+<li id="menu-item-38315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38315"><a href="/urheberrecht/">Urheberrecht</a></li>
+<li id="menu-item-38318" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38318"><a href="/urheberrecht/abmahnung-filesharing/">Abmahnung Filesharing</a></li>
+<li id="menu-item-49811" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49811"><a href="/abmahnung/">Abmahnung unterschreiben</a></li>
+<li id="menu-item-49826" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49826"><a href="/unterlassungserklaerung/">Unterlassungserklärung</a></li>
+<li id="menu-item-64390" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64390"><a href="https://www.wbs.legal/medienrecht/persoenlichkeitsrecht/recht-am-bild/">Recht am eigenen Bild</a></li>
+<li id="menu-item-49026" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49026"><a href="/arbeitsrecht/anwalt/">Arbeitsrecht</a></li>
+<li id="menu-item-38317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38317"><a href="/it-und-internet-recht/datenschutzrecht/">Datenschutzrecht</a></li>
+<li id="menu-item-38324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38324"><a href="/markenrecht/">Markenrecht</a></li>
+<li id="menu-item-38325" class="more menu-item menu-item-type-custom menu-item-object-custom menu-item-38325"><a href="/taetigkeitsgebiete/">Alle Tätigkeitsgebiete ansehen</a></li>
+</ul></div></aside>				</div>
+
+				<div class="col-12 col-sm-6 col-lg-3">
+					<aside id="nav_menu-4" class=" widget widget_nav_menu"><p class="widget-header h5">Die Kanzlei</p><div class="menu-wbs-container"><ul id="menu-wbs" class="menu"><li id="menu-item-1841" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1841"><a href="https://www.wbs.legal/kanzlei-anwaelte/">Kanzlei</a></li>
+<li id="menu-item-994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-994"><a href="https://www.wbs.legal/taetigkeitsgebiete/">Tätigkeitsgebiete</a></li>
+<li id="menu-item-46794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46794"><a href="https://www.wbs.legal/karriere/">Karriere</a></li>
+<li id="menu-item-62295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62295"><a href="https://www.wbs.legal/presse-publikationen/">Presseanfragen</a></li>
+<li id="menu-item-2614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2614"><a href="https://www.wbs.legal/newsletter/">Newsletter</a></li>
+</ul></div></aside>				</div>
+
+				<div class="col-12 col-sm-6 col-lg-3">
+					<aside id="nav_menu-5" class=" widget widget_nav_menu"><p class="widget-header h5">Rechtliches</p><div class="menu-rechtliches-container"><ul id="menu-rechtliches" class="menu"><li id="menu-item-992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992"><a href="https://www.wbs.legal/impressum/">Impressum</a></li>
+<li id="menu-item-38905" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38905"><a href="https://www.wbs.legal/datenschutzerklaerung/">Datenschutzerklärung</a></li>
+<li id="menu-item-39222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39222"><a href="https://www.wbs.legal/cookies/">Cookies</a></li>
+</ul></div></aside>				</div>
+			</div>
+		</div>
+	</div>
+	
+<div class="container">
+	<div class="footer-bottom">
+		<div class="row g-4">
+			<div class="col-lg-6 order-lg-last text-lg-end">
+				<div class="footer-social">
+											<ul class="list-inline list-social">
+															<li class="list-inline-item">
+									<a href="https://www.youtube.com/KanzleiWBS" target="_blank" rel="nofollow noopener" title="YouTube">
+										<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></i>									</a>
+								</li>
+																<li class="list-inline-item">
+									<a href="https://www.instagram.com/recht2go/" target="_blank" rel="nofollow noopener" title="Instagram">
+										<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></i>									</a>
+								</li>
+																<li class="list-inline-item">
+									<a href="https://www.facebook.com/recht2go  " target="_blank" rel="nofollow noopener" title="Facebook">
+										<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></i>									</a>
+								</li>
+																<li class="list-inline-item">
+									<a href="https://twitter.com/solmecke" target="_blank" rel="nofollow noopener" title="Twitter">
+										<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></i>									</a>
+								</li>
+																<li class="list-inline-item">
+									<a href="https://www.linkedin.com/company/wilde-beuger-solmecke-rechtsanw%C3%A4lte/" target="_blank" rel="nofollow noopener" title="LinkedIn">
+										<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></i>									</a>
+								</li>
+																<li class="list-inline-item">
+									<a href="https://discordapp.com/invite/vcCCvdz" target="_blank" rel="nofollow noopener" title="Discord">
+										<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg></i>									</a>
+								</li>
+																<li class="list-inline-item">
+									<a href="https://www.wbs.legal/feed" target="_blank" rel="nofollow noopener" title="RSS">
+										<i class="icon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M25 32.05C12.05 31.18 .5833 41.77 .0208 55.02c-.5469 13.25 9.734 24.44 22.98 24.97C222.5 88.36 391.7 257.5 400 457C400.6 469.9 411.2 480 423.1 480c.3438 0 .6718 0 1.016-.0313c13.25-.5312 23.53-11.72 22.98-24.97C438.6 231.1 248.9 41.39 25 32.05zM25.57 176.1c-13.16-.7187-24.66 9.156-25.51 22.37C-.8071 211.7 9.223 223.1 22.44 223.9c120.1 7.875 225.7 112.7 233.6 233.6C256.9 470.3 267.4 480 279.1 480c.5313 0 1.062-.0313 1.594-.0625c13.22-.8437 23.25-12.28 22.39-25.5C294.6 310.3 169.7 185.4 25.57 176.1zM63.1 351.9c-16.38 0-32.75 6.314-45.25 18.81c-24.99 24.99-24.99 65.51 0 90.5C31.25 473.8 47.62 480 63.1 480s32.76-6.25 45.26-18.75c24.99-24.99 24.99-65.51 0-90.5C96.76 358.3 80.38 351.9 63.1 351.9zM75.32 427.3c-4.078 4.078-8.838 4.687-11.31 4.687s-7.234-.6093-11.31-4.687c-4.076-4.078-4.685-8.836-4.685-11.31c0-2.476 .6094-7.234 4.687-11.31c4.078-4.078 8.838-4.687 11.31-4.687s7.234 .6093 11.31 4.687c4.078 4.078 4.685 8.836 4.685 11.31C80 418.5 79.4 423.2 75.32 427.3z"/></svg></i>									</a>
+								</li>
+														</ul>
+										</div>
+			</div>
+
+			<div class="col-lg-6 order-lg-first">
+				<div class="footer-brand">
+					<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="WBS.LEGAL" data-lazy-src="https://www.wbs.legal/wp-content/themes/xcore/_/img/logo/logo-type.svg"/><noscript><img src="https://www.wbs.legal/wp-content/themes/xcore/_/img/logo/logo-type.svg" alt="WBS.LEGAL"/></noscript>
+					<p>&copy; 2023 WILDE BEUGER SOLMECKE Rechtsanwälte Partnerschaft mbB</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>				</footer>
+						</div>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+			<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-xl modal-video">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="videoModalLabel"></h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="ratio ratio-16x9">
+						<iframe allowfullscreen autoplay></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel='preload'  href='https://www.wbs.legal/wp-content/plugins/shariff/css/shariff.min.css?ver=4.6.9' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"  type='text/css' media='all' />
+<style id='core-block-supports-inline-css' type='text/css'>
+.wp-container-4.wp-container-4,.wp-container-11.wp-container-11,.wp-container-17.wp-container-17,.wp-container-23.wp-container-23,.wp-container-29.wp-container-29,.wp-container-35.wp-container-35,.wp-container-39.wp-container-39,.wp-container-42.wp-container-42,.wp-container-48.wp-container-48,.wp-container-55.wp-container-55,.wp-container-61.wp-container-61,.wp-container-65.wp-container-65,.wp-container-68.wp-container-68,.wp-container-74.wp-container-74,.wp-container-79.wp-container-79,.wp-container-82.wp-container-82,.wp-container-88.wp-container-88,.wp-container-92.wp-container-92,.wp-container-95.wp-container-95,.wp-container-101.wp-container-101,.wp-container-108.wp-container-108,.wp-container-114.wp-container-114,.wp-container-118.wp-container-118,.wp-container-121.wp-container-121,.wp-container-127.wp-container-127{flex-wrap:nowrap;}
+</style>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-content/cache/min/1/5349043.js?ver=1695812362' id='leadin-scriptloader-js-js' defer></script>
+<script id="rocket-browser-checker-js-after" type="text/javascript">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/it-und-internet-recht\/datenschutzrecht\/datenschutzerklaerung\/datenschutzgenerator\/|\/kanzlei-anwaelte\/|\/lp\/facebook-datenleck\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.wbs.legal","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script id="rocket-preload-links-js-after" type="text/javascript">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-content/themes/xcore/_/js/bootstrap.bundle.min.js?ver=1634645712' id='bootstrap-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-content/themes/xcore/_/js/tiny-slider.min.js?ver=1593758594' id='tiny-slider-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-content/themes/xcore/_/js/jquery.fancybox.min.js?ver=1664252235' id='fancybox-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-content/themes/xcore/_/js/mobile-detect.min.js?ver=1593758594' id='mobile-detect-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-content/cache/min/1/wp-content/themes/xcore/_/js/browser-detect.umd.js?ver=1695812362' id='browser-detect-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-content/themes/xcore/_/js/clamp.min.js?ver=1593758594' id='clamp-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-content/cache/min/1/wp-content/themes/xcore/_/js/fb-leak-checker.js?ver=1695812362' id='fb-leak-checker-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-content/cache/min/1/wp-content/themes/xcore/_/js/scripts.js?ver=1695812362' id='scripts-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-content/cache/min/1/wp-content/plugins/wp-vgwort/js/views/front/lazy-load-marker.js?ver=1695812362' id='wpvgw-lazy-load-marker-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca' id='wp-dom-ready-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1' id='wp-hooks-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef' id='wp-i18n-js'></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after" data-rocket-type="text/javascript">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='wp-a11y-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2023-08-29 18:29:34+0000","generator":"GlotPress\/4.0.0-alpha.7","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"de"},"Notifications":["Benachrichtigungen"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-includes/js/dist/a11y.min.js?ver=7032343a947cfccf5608' id='wp-a11y-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' defer='defer' data-rocket-src='https://www.wbs.legal/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.7.14' id='gform_placeholder-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' defer='defer' data-rocket-src='https://www.wbs.legal/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=4ef53fe41c14a48b294541d9fc37387e' id='gform_gravityforms_theme_vendors-js'></script>
+<script type='text/javascript' id='gform_gravityforms_theme-js-extra'>
+/* <![CDATA[ */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"1f3d91067781e7792165d755c55b0419"}}},"hmr_dev":"","public_path":"https:\/\/www.wbs.legal\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' defer='defer' data-rocket-src='https://www.wbs.legal/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=f4d12a887a23a8c5755fd2b956bc8fcf' id='gform_gravityforms_theme-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-rocket-src='https://www.wbs.legal/wp-content/plugins/shariff/js/shariff-popup.min.js?ver=4.6.9' id='shariff_popup-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 8) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+});</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+gform.initializeOnLoaded( function() {jQuery(document).trigger('gform_post_render', [8, 1]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 8, currentPage: 1 } });} );
+});</script>
+<noscript><img src="https://vg01.met.vgwort.de/na/e2c0421e32b54b478d06b5043bdd26ad" width="1" height="1" alt="" class="wpvgw-marker-image" loading="eager" data-no-lazy="1" referrerpolicy="no-referrer-when-downgrade" style="display:none;" /></noscript><div id="wpvgw-marker" data-src="https://vg01.met.vgwort.de/na/e2c0421e32b54b478d06b5043bdd26ad" style="display:none;"></div><script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.wbs.legal/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>	<script>"use strict";function wprRemoveCPCSS(){var preload_stylesheets=document.querySelectorAll('link[data-rocket-async="style"][rel="preload"]');if(preload_stylesheets&&0<preload_stylesheets.length)for(var stylesheet_index=0;stylesheet_index<preload_stylesheets.length;stylesheet_index++){var media=preload_stylesheets[stylesheet_index].getAttribute("media")||"all";if(window.matchMedia(media).matches)return void setTimeout(wprRemoveCPCSS,200)}var elem=document.getElementById("rocket-critical-css");elem&&"remove"in elem&&elem.remove()}window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link rel='stylesheet' id='wp-block-library-css' href='https://www.wbs.legal/wp-includes/css/dist/block-library/style.min.css?ver=6.3.1' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='theme-css' href='https://www.wbs.legal/wp-content/cache/min/1/wp-content/themes/xcore/style.css?ver=1692776414' type='text/css' media='all' /><link rel='stylesheet' id='tiny-slider-css' href='https://www.wbs.legal/wp-content/themes/xcore/_/css/tiny-slider.min.css?ver=1593758594' type='text/css' media='all' /><link rel='stylesheet' id='fancybox-css' href='https://www.wbs.legal/wp-content/themes/xcore/_/css/jquery.fancybox.min.css?ver=1664252245' type='text/css' media='all' /><link rel='stylesheet' id='shariffcss-css' href='https://www.wbs.legal/wp-content/plugins/shariff/css/shariff.min.css?ver=4.6.9' type='text/css' media='all' /></noscript></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1696366446 -->

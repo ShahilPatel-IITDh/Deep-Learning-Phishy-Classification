@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/ico" href="/public/favicon.ico" />
+    <title>Bloomberg Law - Product Log In</title>
+    <meta name="description" content="Sign in to Bloomberg Law for access to our comprehensive legal research software." />
+    <script type="text/javascript">
+      let environment
+      const betaHosts = ["beta"]
+      const devHosts = ["local", "dev"]
+
+      const newRelicScript = `<script src="/login/helpers/newrelic.js"><\/script>`
+      if(!devHosts.some(host => location.hostname.includes(host))) {
+        document.write(newRelicScript)
+      }
+
+      if (betaHosts.some(host => location.hostname.includes(host))) { environment = '-q' }
+      else if (devHosts.some(host => location.hostname.includes(host))) { environment = '-d' }
+      else { environment = '' }
+      const authWidgetScript = `<script id="auth-widget" src="https://essential${environment}.bloombergindustry.com/widget/script/latest/widget.js"><\/script>`
+      document.write(authWidgetScript)
+
+      const authWidget = document.getElementById("auth-widget")
+      authWidget.addEventListener("error", function handleError() {
+        const target = window.location.host
+        let scheme = 'https'
+        if(target.includes("local")) {scheme = 'http'}
+      
+        //Redirect to old login flow if there is an error downloading Auth Widget from CDN
+        window.location = `https://essential${environment}.bloombergindustry.com?url=${encodeURIComponent(`https://wsauth${environment}.bloombergindustry.com/wsauth/blawauth?target=${scheme}://${target}/start`)}`
+      })
+    </script>
+    <link rel="stylesheet" href="/login/styles/index.css" />
+    <link rel="stylesheet" href="/login/styles/crescent.css" />
+    <link rel="stylesheet" href="/login/styles/_button.css" />
+    <style>
+      body,
+      html {
+        background-color: #000 !important;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .bbthat-wrapper {
+        display: none;
+      }
+
+      .main,
+      .footer {
+        max-width: 1440px;
+        margin: 0 auto 0;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      ::-webkit-scrollbar-track {
+          background: #FFFFFF;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #777c7f;
+      }
+
+      .main .law-section,
+      .main .auth-section {
+        display: flex;
+        flex-direction: column;
+      }
+      .main .law-section {
+        background: url('images/law-background.jpg');
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        align-items: center;
+      }
+      .main .law-message {
+        text-align: center;
+        width: 387px;
+        padding: 0;
+        margin: 50px;
+      }
+      .main .law-call-to-action {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .main .law-call-to-action-highlight {
+        color: #00D2B3;
+      }
+      .main .law-header {
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 122.6%;
+        margin: 0 0 10px 0;
+        margin-top: 50px;
+      }
+      .main .law-text {
+        margin-top: 20px;
+      }
+      .main .law-text p {
+        font-size: 22px;
+        font-weight: 100;
+        line-height: 20px;
+      }
+      .main .law-footer {
+        max-width: 1440px;
+        font-size: 12px;
+        align-items: center;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 32px;
+      }
+      .main .law-footer a {
+        color: #fff;
+        margin-right: 12px;
+      }
+
+      .main .law-footer a,
+      .main .law-footer a:active,
+      .main .law-footer a:hover {
+        background-color: none;
+      }
+
+      .main .auth-section {
+        background-color: var(--color-background);
+        align-items: center;
+      }
+      .main .notice {
+        display: none;
+      }
+      .main .notice-message {
+        width: 500px;
+      }
+      .main .notice-header {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 0 0 16px 0;
+      }
+      .main .notice-cta {
+        font-size: 1rem;
+        font-weight: 500;
+        background-color: #000;
+        border-radius: 4px;
+      }
+      .main a.notice-cta,
+      .main a.notice-cta:visited,
+      .main a.notice-cta:active {
+        color:  #00D2B3;
+        text-decoration: none;
+      }
+      .main .auth-component {
+        flex-grow: 1;
+        padding: 0 10px;
+        max-width: 500px;
+      }
+      .blaw-m-button {
+        background: #00D2B3 !important;
+        color: #000 !important;
+      }
+      .blaw-m-button:hover {
+        background: #398069 !important;
+      }
+      @media (min-height: 860px) {
+        .main {
+          height: calc(100vh - 30px);
+        }
+      }
+      @media (max-width: 1140px) {
+        .main {
+          height: 100%;
+        }
+      }
+      @media (min-width: 1140px){
+        .bbthat-wrapper {
+          display: initial;
+          background: #000;
+        }
+        .main {
+          display: flex;
+          align-items: stretch;
+          flex-direction: row;
+        }
+        .main .law-section {
+          overflow: hidden;
+          width: 58.5%;
+          align-items: baseline;
+        }
+        .main .notice {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          color: #fff;
+          height: 126px;
+          width: 100%;
+          padding: 27px 32px;
+          background: linear-gradient(91.96deg, #000000 10.05%, rgba(0, 0, 0, 0) 80%), url('images/notice-background.jpg') center;
+          background-size: cover, auto 90%;
+        }
+        .main .law-message {
+          position: relative;
+          left: 10%;
+          width: 390px;
+          margin-top: 20vh;
+          text-align: left;
+          flex-grow: 1;
+          padding: 0;
+        }
+        .main .law-text-links {
+          display: flex;
+          margin-top: 60px;
+        }
+        .main .law-text-links a {
+          margin-right: 16px;
+        }
+        .main .law-text-links a:last-child {
+          margin-right: 0;
+        }
+        .main .auth-section {
+          width: 41.5%;
+          min-width: 514px;
+        }
+        .main .auth-component {
+          max-width: none;
+          padding: 50px 16% 0;
+        }
+        .main .law-footer {
+          left: 10%;
+          align-self: flex-end;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 0 32px;
+          margin-left: 50px;
+          font-size: 10px;
+        }
+        .main .c-footer {
+          margin-right: 100px;
+        }
+      }
+
+    </style>
+    <link rel="stylesheet" href="/login/that/that.css" />
+    <script type="text/javascript">
+      let adobeAnalyticsSrc = location.hostname === 'bloomberglaw.com' || location.hostname === 'www.bloomberglaw.com' ? '//assets.adobedtm.com/f9bd92b5e0bc/73c68639dca4/launch-68da376e09ba.min.js' : '//assets.adobedtm.com/f9bd92b5e0bc/73c68639dca4/launch-9a23800f0cb1-staging.min.js'
+      const adobeAnalyticsScript = `<script src="${adobeAnalyticsSrc}"><\/script>`
+      document.write(adobeAnalyticsScript)
+    </script>
+    <script src="/login/helpers/trackers.js"></script>
+    <script type="text/javascript">
+      initializeDataLayer()
+    </script>
+    <script type="text/javascript">
+      !function(){"use strict";!function(e,t){var r=e.amplitude||{_q:[],_iq:[]};if(r.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var n=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,r){return function(n){e._q.push({name:t,args:Array.prototype.slice.call(r,0),resolve:n})}},o=function(e,t,r){e[t]=function(){if(r)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))}}},i=function(e){for(var t=0;t<y.length;t++)o(e,y[t],!1);for(var r=0;r<g.length;r++)o(e,g[r],!0)};r.invoked=!0;var c=t.createElement("script");c.type="text/javascript",c.integrity="sha384-lyGcqRAilM5YOiZT3ktByF3Mv52pltOelJ66zwfcAZ/4s8cB1sSo7yMF2XWh+bzX",c.crossOrigin="anonymous",c.async=!0,c.src="https://cdn.amplitude.com/libs/analytics-browser-1.6.8-min.js.gz",c.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var a=t.getElementsByTagName("script")[0];a.parentNode.insertBefore(c,a);for(var u=function(){return this._q=[],this},l=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],p=0;p<l.length;p++)n(u,l[p]);r.Identify=u;for(var d=function(){return this._q=[],this},v=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],f=0;f<v.length;f++)n(d,v[f]);r.Revenue=d;var y=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset"],g=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];i(r),r.createInstance=function(){var e=r._iq.push({_q:[]})-1;return i(r._iq[e]),r._iq[e]},e.amplitude=r}}(window,document)}();
+      const token = location.hostname === 'bloomberglaw.com' || location.hostname === 'www.bloomberglaw.com' ? '1e1ad7505970cfda0d7c016085cafe2a' : '3d8b8ba9d78634dbf8a667fcec511e5d'
+      amplitude.init(token, null, {serverUrl: 'https://a.blaw.com/2/httpapi'});
+      let identify = new amplitude.Identify();
+      amplitude.identify(identify);
+    </script>
+  </head>
+  <body class="moonfish" data-theme="crescent" data-color-scheme="light">
+    <section class="bbthat-wrapper">
+      <div id="bbthat" class="bbthat"></div>
+    </section>
+    <div class="main">
+      <section class="law-section">
+        <div class="law-message">
+          <div class="law-call-to-action">
+            <span class="law-call-to-action-highlight">Not a BLAW Subscriber?</span>
+            <span>Discover what you’re missing.</span>
+          </div>
+          <h1 class="law-header">One price, one platform,<br />unlimited benefits</h1>
+          <div class="law-text">
+            <p>&mdash; Breaking news and analysis</p>
+            <p>&mdash; Primary and secondary sources</p>
+            <p>&mdash; Time-saving practice tools</p>
+            <div class="law-text-links">
+              <a href="https://pro.bloomberglaw.com/request-demo-legal-research/?trackingcode=BLAW22108759&utm_medium=referral&utm_source=mainblawlogin" class="m-button primary blaw-m-button" id="request-demo-btn">Request Demo</a>
+              <a href="https://pro.bloomberglaw.com/the-complete-legal-research-resource/?trackingcode=BLAW22108720&utm_medium=referral&utm_source=mainblawlogin" class="m-button secondary" id="learn-more-btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="law-footer">
+          <div class="c-footer">© 2023 Bloomberg Industry Group, Inc. All Rights Reserved</div>
+          <div class="law-footer-nav">
+            <nav>
+              <a href="http://www.bloombergindustry.com/terms-of-service-subscription-products">Terms of Service</a>
+              <a href="https://www.bloombergindustry.com/privacy-policy">Privacy Policy</a>
+              <a href="https://www.bloombergindustry.com/copyright-and-usage-guidelines-copyright/">Copyright</a>
+              <a href="http://www.bloombergindustry.com/accessibility/">Accessibility</a>
+              <!-- <a>Help</a> -->
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="auth-section">
+        <div class="notice">
+          <div class="notice-message">
+            <h4 class="notice-header">Looking for Bloomberg Law News?</h4>
+            <a class="notice-cta" href="https://news.bloomberglaw.com" id="read-now-btn">Read Now</a>
+          </div>
+        </div>
+        <div class="auth-component">
+          <indg-login vertical="true"></indg-login>
+        </div>
+      </section>
+    </div>
+    <script>
+      fetch('/login/that/that.htm')
+        .then(res => res.text())
+        .then(html => {
+          const el = document.getElementById('bbthat')
+          el.innerHTML = html
+
+          const script = document.createElement('script')
+          script.src = '/login/that/that.js'
+          document.head.appendChild(script)
+        })
+      .catch(console.error)
+    </script>
+    <script type="text/javascript">
+      loginPageTrackingSetUp();
+    </script>
+    <script type="text/javascript">_satellite.pageBottom();</script>
+  </body>
+</html>

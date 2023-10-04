@@ -1,0 +1,782 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+	<html class="ModernFontStyles" lang="en-US">
+	<head>
+		<title>Microsoft OneNote | The digital note-taking app for your devices</title>
+		<meta charset="utf-8" />
+		<meta name="application-name" content="Microsoft OneNote | The digital note-taking app for your devices"/>
+		<meta name="msapplication-TileColor"/>
+
+
+
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+		<meta name="apple-itunes-app" content="app-id=410395246">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="theme-color" content="#7321a6">
+
+
+		
+
+			<link rel="shortcut icon" href="https://site-cdn.onenote.net/161692640456_Images/FavIcon_OneNote.ico" />
+	<link rel="mask-icon" href="https://site-cdn.onenote.net/161692640456_Images/home/new/pinIcon.svg" color="#5c2e91">
+
+
+		<style>.UnifiedHeaderUIFont { font-size: 14px; font-family: 'Segoe UI','Segoe UI Web','Segoe UI Web Regular','Segoe UI Symbol','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif; }.FooterUIFont { font-size: 9pt; font-family: 'Segoe UI Semi Light','Segoe UI Light','Segoe UI Web Light','Segoe UI','Segoe UI Web',Arial,Verdana,sans-serif }</style><style>.AppTileUIFont { font-size: 9pt; font-family: 'Segoe UI','Segoe UI Web','Segoe UI Web Regular','Segoe UI Symbol','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif; }</style><style>.swLoadingText, .swLoadingErrorText{  font-family: 'Segoe UI Light','Segoe UI Web Light','Segoe UI','Segoe UI Web',Arial,Verdana,sans-serif; }</style>		<link type="text/css" rel="stylesheet" href="https://site-cdn.onenote.net/161692640456_Styles/en-US/OfficeBrowserFeedback.css" />
+	<link type="text/css" rel="stylesheet" href="https://site-cdn.onenote.net/161692640456_Styles/en-US/SiteIntl.css" />
+	<!--[if gte IE 9]
+		<style type="text/css">
+			.gradient
+			{
+				filter: none;
+			}
+		</style>
+	<![endif]-->
+
+
+				<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.min.js" integrity="sha384-LVoNJ6yst/aLxKvxwp6s2GAabqPczfWh6xzm38S/YtjUyZ+3aTKOnD/OJVGYLZDl" crossorigin="anonymous"></script>
+
+
+		
+
+
+
+	<meta name="Description" content="Get the OneNote app for free on your tablet, phone, and computer, so you can capture your ideas and to-do lists in one place wherever you are. Or try OneNote with Office for free.">
+
+	
+	<meta property="og:url" content="https://www.onenote.com/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Microsoft OneNote">
+	<meta property="og:description" content="Write, sketch and explore big ideas, then see where they take you.">
+	<meta property="og:image" content="https://site-cdn.onenote.net/161692640456_Images/home/new/hero.png">
+
+	
+	<meta name="twitter:card" content="photo">
+	<meta name="twitter:site" content="@msonenote">
+	<meta name="twitter:creator" content="@msonenote">
+	<meta name="twitter:title" content="Microsoft OneNote">
+	<meta name="twitter:description" content="Write, sketch and explore big ideas, then see where they take you.">
+	<meta name="twitter:image:src" content="https://site-cdn.onenote.net/161692640456_Images/home/new/hero.png">
+	<meta name="twitter:domain" content="https://www.onenote.com">
+
+	<script>
+		var collab8x3 = "https://site-cdn.onenote.net/161692640456_Images/home/new/Collab_8x3_v2.jpg";
+		var collab4x3 = "https://site-cdn.onenote.net/161692640456_Images/home/new/Collab_4x3_v2.jpg";
+		var office8x3 = "https://site-cdn.onenote.net/161692640456_Images/home/new/Office_8x3.jpg";
+		var office4x3 = "https://site-cdn.onenote.net/161692640456_Images/home/new/Office_4x3.jpg";
+		var Experiments = {"SiteShowPlatformsAboveInfoPanels":"False","SiteShowInfoPanels":"False","NotebookIntroPageExperiment":"NotebookIntro.Treatment2","UpgradePageDownloadButtonExperiment":"Upgrade.UpgradeFreeButton","FreBeforeAfterSigninExperiment":"SigninBeforeFre"};
+	</script>
+
+	<link href="https://site-cdn.onenote.net/161692640456_Styles/en-US/Modern.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+	
+
+	<style>
+			main > header:first-child > figure{
+				background-image: url("https://site-cdn.onenote.net/161692640456_Images/home/new/hero.png");
+											  }
+
+			#HeroImage.ElementDirectionMirror::before {
+				content: " ";
+				-webkit-transform: translateX(50%) scaleX(-1);
+				transform: translateX(50%) scaleX(-1);
+				-ms-transform: translateX(50%) scaleX(-1);
+				position: absolute;
+				width: 100vw;
+				top: 0;
+				right: 50%;
+				z-index: -1;
+				background-image: url("https://site-cdn.onenote.net/161692640456_Images/home/new/hero.png");
+				bottom: 0;
+				background-size: auto 100%;
+				background-position: center center;
+			  }
+
+			/* Font Faces */
+			@font-face{
+				font-family: 'SegoeUI';
+				font-style: normal;
+				font-weight: 400;
+				src: local("Segoe UI"), local("SegoeUI"), local("Segoe"), local("Segoe WP"), url('../segoeui.eot?#iefix') format('embedded-opentype'), url('../segoeui.woff') format('woff');
+					   }
+			@font-face{
+				font-family: 'SegoeUI';
+				font-style: normal;
+				font-weight: 300;
+				src: local("Segoe UI Light"), local("SegoeUI-Light"), local("Segoe WP Light"), url('../segoeuil.eot?#iefix') format('embedded-opentype'), url('../segoeuil.woff') format('woff');
+					   }
+
+			.BigButton
+			{
+				display: block;
+			}
+			.SmallButton
+			{
+				display: none;
+			}
+			@media screen and (max-width:623px)
+			{
+				.BigButton
+				{
+					display: none;
+				}
+				.SmallButton
+				{
+					display: block;
+				}
+			}
+
+	</style>
+
+	<script src="https://site-cdn.onenote.net/161692640456_Scripts/newhome/layout.js"></script>
+	<script src="https://site-cdn.onenote.net/161692640456_Scripts/newhome/scroll.js"></script>
+
+
+		<script>
+			var SessionId = "3d672751-623c-4550-8f3b-233ab2d46459";
+			var CorrelationId = "13814968-e101-4271-a46e-923d52553544";
+			var DefaultSignInEnabled = true;
+		</script>
+
+
+		
+
+			<script type="text/javascript">
+				function calculatePageLoadTime() {
+					// Do nothing
+				}
+			</script>
+	</head>
+
+
+	<body onload="calculatePageLoadTime()" class="unsupported  ModernFontStyles home" id="top">
+
+		<header class="sticky">
+		<nav>
+			<h2>
+				<div class="logo onenote">
+					<a aria-hidden="true" tabindex="-1" role="button" id="h_logoLinkOverride" href="/">
+						<svg focusable="false">
+								<use xlink:href="#logoOneNote"></use>
+						</svg>
+					</a>
+				</div>
+			</h2>
+				<ul>
+					<li><a tabindex="-1" role="button" id="DownloadContentInSharedHeader" href="/" class=" unsupported">Download</a></li>
+				</ul>
+		</nav>
+	</header>
+	<hr />
+	<header>
+		<nav>
+				<h1>
+					<div class="logo microsoft">
+						<a role="button" id="MicrosoftLogo" aria-label="Microsoft.com" href="https://officeredir.microsoft.com/r/rlidMsCom/?clid=1033">
+							<svg focusable="false">
+								<use xlink:href="#logoMicrosoft"></use>
+							</svg>
+						</a>
+					</div>
+				</h1>
+							<ul class="bordered">
+					<li><a href="/" role="button" id="h_download">Download</a></li>
+					<li><a href="https://www.onenote.com/notebooks" role="button" id="h_sign">Sign In</a></li>
+						<li class="hide-for-small"><a href="https://aka.ms/onenote-get-office?clcid=0x409" role="button" id="h_BuyOfficeButton">Buy Office</a></li>
+				</ul>
+		</nav>
+	</header>
+	<hr />
+
+
+	
+
+
+
+	<main role="main">
+	<header id="HeroHomePageHeader" role="region">
+		<hgroup class="content">
+			<div id="playVideoContent">
+				<h1>Ideas take shape <span>in OneNote</span></h1>
+				<p class="BigButton action  unsupported">
+					<a href="/" class="BigButton  unsupported" role="button" id="MainCarouselDownloadButton">Download the app</a>
+				</p>
+				<p class="SmallButton action  unsupported">
+					<a href="/" class="BigButton  unsupported" role="button" id="MainCarouselDownloadButton">Download</a>
+				</p>
+			</div>
+		</hgroup>
+
+		<figure id="HeroImage" class="">
+		</figure>
+
+		<hr/>
+	</header>
+
+		<section class="text-right">
+			<header role="region">
+				<h2>Create your way</h2>
+			</header>
+			<p>Do you scribble great ideas on napkins and sticky notes? Is precise filing more your style? OneNote&#39;s got you covered whatever way you shape your thoughts. Type, write or draw with the free form feel of pen to paper. Search and clip from the web to picture ideas.</p>
+			<figure class="image">
+				<img src="https://site-cdn.onenote.net/161692640456_Images/home/new/Create_4x3_v2.png" width="100%" alt="A tablet showing OneNote on Windows 10"/>
+			</figure>
+			<hr/>
+		</section>
+		<section class="image-full-bleed color-inverse SectionTextRight">
+			<header role="region">
+				<h2>Collaborate with anyone</h2>
+			</header>
+			<p>Your team is conquering the idea of the century. Your family is planning the menu for a big reunion. Stay on the same page and in sync wherever you are.</p>
+			<figure class="image">
+				<img id="CollabImage" src="https://site-cdn.onenote.net/161692640456_Images/home/new/Collab_8x3_v2.jpg" class="" width="100%" alt="Photo of a person using OneNote on a tablet for work"/>
+			</figure>
+			<hr/>
+		</section>
+		<section class="SectionTextRight">
+			<header role="region">
+				<h2>Think with ink</h2>
+			</header>
+			<p>Ready. Set. Draw. A stylus or fingertip is the only tool you need. Take handwritten notes and convert them to typed text later. Highlight what&#39;s important and express ideas with colors or shapes.</p>
+			<figure class="image">
+				<img src="https://site-cdn.onenote.net/161692640456_Images/home/new/Ink_4x3.png" width="100%" class="" alt="Bright colors drawn by a Surface Pen"/>
+			</figure>
+			<hr/>
+		</section>
+		<section class="text-right color-full-bleed">
+			<header role="region">
+				<h2>Access from anywhere</h2>
+			</header>
+			<p>Take note. It&#39;s easy to pull up your content from anywhere, even if you&#39;re offline. Start on your laptop then update notes on your phone. OneNote works on any device or platform.</p>
+			<figure class="image">
+				<img src="https://site-cdn.onenote.net/161692640456_Images/home/new/Access_4x3_v2.png" width="100%" alt="Photo of OneNote displayed on iPad, iPhone and Apple Watch"/>
+			</figure>
+			<hr/>
+		</section>
+		<section class="color-full-bleed columns" id="platforms">
+			<br/>
+			<br/>
+			<ul class="">
+				<li>
+					<div aria-hidden="true" class="icon-svg">
+						<svg focusable="false">
+							<use xlink:href="#windows"></use>
+						</svg>
+					</div>
+					<h4>Windows</h4>
+					<p>
+						<small>
+								<a id="Windows32Anchor" aria-label="Desktop" href="/download">Desktop</a>
+
+							<a id="WindowsStoreAnchor" aria-label="Tablet" href="https://officeredir.microsoft.com/r/rlidOneNoteWindowsStore/?clid=1033" oncontextmenu="return false">Tablet</a>
+						</small>
+					</p>
+				</li>
+				<li>
+					<div aria-hidden="true" class="icon-svg">
+						<svg focusable="false">
+							<use xlink:href="#apple"></use>
+						</svg>
+					</div>
+					<h4 tabindex="-1">Apple</h4>
+					<p>
+						<small>
+								<a id="MacAnchor" aria-label="Mac" href="https://go.microsoft.com/fwlink/?LinkId=390970&amp;clcid=0x409">Mac</a>
+
+								<a id="iPadAnchor" aria-label="iPad" href="https://go.microsoft.com/fwlink/?LinkId=618396&amp;clcid=0x409">iPad</a>
+
+								<a id="iPhoneAnchor" aria-label="iPhone" href="https://go.microsoft.com/fwlink/?LinkId=618395&amp;clcid=0x409">iPhone</a>
+
+								<a id="appleWatchAnchor" aria-label="Watch" href="https://go.microsoft.com/fwlink/?LinkId=786846&amp;clcid=0x409">Watch</a>
+
+						</small>
+					</p>
+				</li>
+				<li>
+					<div aria-hidden="true" class="icon-svg">
+						<svg focusable="false">
+							<use xlink:href="#android"></use>
+						</svg>
+					</div>
+					<h4>Android</h4>
+					<p>
+						<small>
+								<a id="AndroidAnchor" aria-label="Tablet" href="https://officeredir.microsoft.com/r/rlidOneNoteGPlay/?clid=1033">Tablet</a>
+
+								<a id="AndroidAnchorPhone" aria-label="Phone" href="https://officeredir.microsoft.com/r/rlidOneNoteGPlay/?clid=1033">Phone</a>
+
+								<a id="AndroidAnchorWear" aria-label="Wear" href="https://officeredir.microsoft.com/r/rlidOneNoteGPlay/?clid=1033">Wear</a>
+
+						</small>
+					</p>
+				</li>
+				<li>
+					<div aria-hidden="true" class="icon-svg">
+						<svg focusable="false">
+							<use xlink:href="#web"></use>
+						</svg>
+					</div>
+					<h4>Web</h4>
+					<p>
+						<small>
+							<a id="WebAnchor" aria-label="All Devices" href="https://www.onenote.com/notebooks">All Devices</a>
+							<a id="ChromeAnchor" class="ChromeDownload" aria-label="Chromebook" href="https://chrome.google.com/webstore/detail/ciniambnphakdoflgeamacamhfllbkmo">Chromebook</a>
+						</small>
+					</p>
+				</li>
+			</ul>
+			<hr/>
+		</section>
+		<section class="image-full-bleed color-inverse SectionTextRight" id="betterWithOffice">
+			<header role="region">
+				<h2>Better with Office</h2>
+			</header>
+			<p>OneNote is a member of the Office family you already know. Shape notes with points pulled from Outlook email, or embed an Excel table. Get more done with all your favorite Office apps working together.
+				<br/>
+				<br/>
+				<svg focusable="false">
+					<use xlink:href="#logoOffice"></use>
+				</svg>
+			</p>
+			<figure class="image"><img id="betterWithOfficeImage" src="https://site-cdn.onenote.net/161692640456_Images/home/new/Office_4x3.jpg" class="" width="100%" alt="Photo of an Office building"/></figure>
+			<hr/>
+		</section>
+	<section class="text-right">
+		<header role="region">
+			<h2>Connect in the classroom</h2>
+		</header>
+		<p>
+			Bring students together in a collaborative space or give individual support in private notebooks. And no more print handouts. You can organize lessons and distribute assignments from a central content library.
+		</p>
+		<p>
+			<a role="button" id="DiscoverClassNotebook" href="https://www.onenote.com/classnotebook" title="" class="button">Discover Class Notebook</a>
+		</p>
+		<figure class="image">
+			<img src="https://site-cdn.onenote.net/161692640456_Images/home/new/Edu_4x3_v2.png" width="100%" class=""
+			     alt="Photo of OneNote displayed on a Surface Book"/>
+		</figure>
+		<hr/>
+	</section>
+
+
+
+
+<section class="columns footerlinks" id="links">
+	<ul class="">
+		<li class="align-right icons-only">
+			<a id="BlogLink" href="https://officeredir.microsoft.com/r/rlidOneNoteBlog/?clid=1033" title="Blog">
+				<div aria-hidden="true" class="icon-svg">
+					<svg focusable="false">
+						<use xlink:href="#blog"></use>
+					</svg>
+				</div>
+				<span class="hide">Blog</span>
+			</a>
+			<a id="FacebookLink" href="https://officeredir.microsoft.com/r/rlidOneNoteFacebook/?clid=1033" title="Facebook">
+				<div aria-hidden="true" class="icon-svg">
+					<svg focusable="false">
+						<use xlink:href="#facebook"></use>
+					</svg>
+				</div>
+				<span class="hide">Facebook</span>
+			</a>
+			<a id="TwitterLink" href="https://officeredir.microsoft.com/r/rlidOneNoteTwitter/?clid=1033" title="Twitter">
+				<div aria-hidden="true" class="icon-svg">
+					<svg focusable="false">
+						<use xlink:href="#twitter"></use>
+					</svg>
+				</div>
+				<span class="hide">Twitter</span>
+			</a>
+		</li>
+		<li>
+			<h4>Useful Links</h4>
+			<p>
+				<small>
+						<a id="DeveloperLink" aria-label="Developers" href="https://dev.onenote.com/">Developers</a>
+
+						<a id="GetOfficeLink" aria-label="Get Office" href="https://aka.ms/onenote-get-office?clcid=0x409">Get Office</a>
+
+					<a id="SharedHeaderFeedbackLink" aria-label="Send Feedback" href="javascript:Feedback.ShowTool(&#39;OneNoteSite&#39;, 1033)">Send Feedback</a>
+				</small>
+			</p>
+		</li>
+		<li>
+			<h4>Service</h4>
+			<p>
+				<small>
+						<a id="ClipperInstallPageLink" aria-label="OneNote Clipper" href="https://www.onenote.com/clipper">OneNote Clipper</a>
+
+						<a id="EmailSettingsLink" aria-label="Email to OneNote" href="https://www.onenote.com/EmailToOneNote">Email to OneNote</a>
+
+						<a id="OfficeLensAppLink" aria-label="Office Lens" href="https://www.onenote.com/get/officelens">Office Lens</a>
+
+						<a id="FeaturedAppsLink" aria-label="Featured Apps" href="https://www.onenote.com/apps">Featured Apps</a>
+
+				</small>
+			</p>
+		</li>
+		<li>
+			<h4>Support</h4>
+			<p>
+				<small>
+						<a id="OneNoteHelp" aria-label="OneNote Help" href="https://go.microsoft.com/fwlink/?LinkId=786847&amp;clcid=0x409">OneNote Help</a>
+
+						<a id="CommunityForum" aria-label="Community Forum" href="https://go.microsoft.com/fwlink/?LinkId=786849&amp;clcid=0x409">Community Forum</a>
+
+					<a id="ContactSupport" aria-label="Contact Support" target="_blank" href="https://go.microsoft.com/fwlink/?LinkId=786850&amp;clcid=0x409">Contact Support</a>
+				</small>
+			</p>
+		</li>
+	</ul>
+	<hr />
+</section>
+	</main>
+
+
+
+
+
+
+		<footer id="footer" class="page-footer">
+		<nav>
+			<ul class="footer-links">
+					<li class="world-wide-link">
+						<small>
+							<a id="f_ww" href="//store.office.com/worldwide.aspx?rs=en%2DUS&amp;returnURL=https%3A%2F%2Fwww%2Eonenote%2Ecom%2F%3F404%26public%3D1&amp;cmapid=5" title=Change Language>
+								<svg>
+									<use xlink:href="#globe"></use>
+								</svg>
+								Change Language
+							</a>
+						</small>
+					</li>
+				<li>
+					<small><a id="f_link0" href="//go.microsoft.com/fwlink/p/?LinkId=316968" title="">Privacy &amp; Cookies</a></small>
+				</li>
+				<li>
+					<small><a id="f_link1" href="//go.microsoft.com/fwlink/p/?LinkId=316967" title="">Legal</a></small>
+				</li>
+					<li>
+						<small><a id="f_link2" href="//go.microsoft.com/fwlink/p/?LinkId=316970" title="">Trademarks</a></small>
+					</li>
+									<li>
+						<small>&copy; 2023 Microsoft.com</small>
+					</li>
+							</ul>
+		</nav>
+	</footer>
+
+
+		<script type="text/javascript" src="https://site-cdn.onenote.net/161692640456_Scripts/cookiecompliance.js"></script>
+		<script src="https://site-cdn.onenote.net/161692640456_Scripts/Feedback.js"></script>
+	<script src="https://site-cdn.onenote.net/161692640456_Scripts/CommonDiagnostics.js"></script>
+		<script type="text/javascript">
+			var g_msaReturnUrl = "https://www.onenote.com/notebooks?auth=1\u0026nf=1";var g_orgIdReturnUrl = "https://www.onenote.com/notebooks?auth=2\u0026nf=1";var g_signupUrl = "https://signup.live.com/signup.aspx?mkt=en%2DUS\u0026wreply=https%3A%2F%2Fwww%2Eonenote%2Ecom%2F%3F404%26public%3D1%26s%3D2%26auth%3D1%26nf%3D1\u0026wa=wsignin1.0\u0026lw=1\u0026fl=easi2\u0026id=290444";var g_msaPasswordResetUrl = "https://account.live.com/ResetPassword.aspx?mkt=en%2DUS\u0026wreply=https%3A%2F%2Fwww%2Eonenote%2Ecom%2F%3F404%26public%3D1%26s%3D3%26auth%3D1%26nf%3D1";var g_msaLoginUrl = "https://login.live.com/login.srf?wa=wsignin1.0\u0026rpsnv=16\u0026ct=1696271688\u0026rver=7.5.2146.0\u0026wp=MBI_SSL\u0026wreply=https:%2F%2Fwww.onenote.com%2Fauthredir%3Furl%3Dhttps%253a%252f%252fwww.onenote.com%253a443%252fnotebooks%253fauth%253d1%2526nf%253d1%26hurl%3DlG6WExdq76WKr%252fF7EYwN0vFtsyykNqsakbo5jp%252bT8CU%253d.m6ouEzXATQgsn3x3noPQwKXBh3K%252bvneBULwQUJRs6Bc%253d%26ipt%3D0%26si%3D1%26wctx%3D45adfe1b-6c6a-4c9c-9414-f1de70cef670\u0026lc=1033\u0026id=290444\u0026cbcxt=8";var g_hrdIframeUrl = "https://odc.officeapps.live.com/odc/emailhrd?lcid=1033\u0026syslcid=1033\u0026uilcid=1033\u0026app=8\u0026a=1\u0026p=11\u0026hm=0\u0026ver=16\u0026fpEnabled=1";var g_orgIdLoginUrl = "https://login.microsoftonline.com/common/oauth2/authorize?response_mode=form_post\u0026response_type=id_token+code\u0026scope=openid\u0026msafed=0\u0026nonce=c38b86c7-22b6-43ff-874a-66f1ad5a0fe8.638318684885933390\u0026state=https%3a%2f%2fwww.onenote.com%2fnotebooks%3fauth%3d2%26nf%3d1\u0026client_id=2d4d3d8e-2be3-4bef-9f87-7875a61c29de\u0026redirect_uri=https%3a%2f%2fwww.onenote.com%2fauth%2fsignin";var g_authType = "NotAuthenticated";var g_fullScreenHrd = "false";var g_hrdOverride = null;var g_useNewRedirectUrlOverride = false;var g_preferredIdpForDefaultSignIn = 1;var g_appId = "2d4d3d8e-2be3-4bef-9f87-7875a61c29de";var g_defaultSignInEnabled = false;var g_defaultSignInFixEnabled = false;var g_defaultSignInAadHost = "https://login.microsoftonline.com";;
+		</script>
+	<script>
+		var OrigRefCookieName = "OrigRef";
+		var OrigRefCookieValue = "Uri=https%3a%2f%2fwww.onenote.com%2f%3f404%26public%3d1; path=/";
+	</script>
+	<script src="https://site-cdn.onenote.net/161692640456_Scripts/DefaultSignIn.min.js" type="text/javascript"></script>
+	<script src="https://site-cdn.onenote.net/161692640456_Scripts/home.js" type="text/javascript"></script>
+	<script type="text/javascript"> RegisterHRDListener(); </script>
+	<script type="text/javascript">	
+		function htmlDecode(input) {
+            var doc = new DOMParser().parseFromString(input, "text/html");
+            return doc.documentElement.textContent;
+        }
+		// Feedback Tool localized strings:
+		var Feedback;
+		(function (Feedback) {
+			(function (Constants) {
+				(function (Urls) {
+					Urls.ImageRoot = "https://site-cdn.onenote.net/161692640456_Images/";
+				})(Constants.Urls || (Constants.Urls = {}));
+				var Urls = Constants.Urls;
+				(function (Strings) {
+					Strings.CommentPlaceholder = "Please type in your comment";
+					Strings.DontLike = htmlDecode("I don&#39;t like something");
+					Strings.FeedbackOverall = "What kind of feedback do you have?";
+					Strings.FeedbackTitle = "Feedback";
+					Strings.IncludeScreenshot = "Include screenshot";
+					Strings.Like = "I like something";
+					Strings.PrivacyStatement = "Privacy Statement";
+					Strings.Submit = "Submit";
+					Strings.Suggestion = "I have a suggestion";
+					Strings.WhatLike = "What did you like?";
+					Strings.WhatDontLike = "What did you not like?";
+					Strings.WhatSuggest = "What do you suggest?";
+				})(Constants.Strings || (Constants.Strings = {}));
+				var Strings = Constants.Urls;
+			})(Feedback.Constants || (Feedback.Constants = {}));
+			var Constants = Feedback.Constants;
+		})(Feedback || (Feedback = {}));
+	</script>
+		<script type="text/JavaScript">
+			var varSegmentation = 0;
+			var varClickTracking = 1;
+			var varCustomerTracking = 1;
+			var varAutoFirePV = 1;
+			var varCustomerCookies = "ICAM";
+			var Route = "12271";
+			var Ctrl = "SD100";
+			document.write("<script type='text/javascript' src='" + (window.location.protocol) + "//c.microsoft.com/ms.js'" + "'><\/script>");
+		</script>
+		<noscript><img alt="" width="1" height="1" src="https://c.microsoft.com/trans_pixel.aspx"/></noscript>
+
+	<!--[if lt IE 10]><!-->
+	<script src="https://site-cdn.onenote.net/161692640456_Scripts/newhome/polyfill.classlist.min.js"></script>
+	<!--<![endif]-->
+	<script src="https://site-cdn.onenote.net/161692640456_Scripts/PublicSite.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		// Set the uls category string from the value set in the view bag.
+		// This value is declared and consumed in BrowserUls.ts.
+		ulsCategoryStringSetInCshtml = "OneNoteSite";
+	</script>
+
+
+	
+
+		<!-- Inline SVG sprite / Least Important Elements / Used for Cross browser support and especially for IE9+ -->
+	<!-- SVG References: http://fvsch.com/code/svg-icons/how-to/ AND http://fvsch.com/code/svg-icons/symbol-sprite/ -->
+	<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none">
+		<symbol viewBox="0 0 34 34" id="apple">
+			<path d="M26.9,21.8c-0.9-1.3-1.3-2.7-1.3-4.3c0-1.5,0.4-2.8,1.3-4c0.5-0.7,1.2-1.4,2.2-2.3c-0.7-0.8-1.3-1.5-2-1.9 C25.9,8.4,24.5,8,22.9,8c-0.9,0-2.1,0.2-3.4,0.7c-1.3,0.4-2.2,0.7-2.8,0.7c-0.4,0-1.3-0.2-2.7-0.6c-1.4-0.4-2.5-0.6-3.4-0.6 c-2.2,0-4.1,0.9-5.5,2.8C3.7,12.8,3,15.2,3,18.2c0,3.2,1,6.4,2.8,9.8c1.9,3.3,3.8,5,5.8,5c0.6,0,1.5-0.2,2.6-0.7 c1-0.4,2-0.6,2.8-0.6c0.8,0,1.8,0.2,2.9,0.6c1.2,0.4,2.1,0.6,2.7,0.6c1.6,0,3.3-1.3,5-3.8c1.1-1.7,1.9-3.3,2.4-4.9 C28.9,23.9,27.8,23.1,26.9,21.8z M22,1.7c0-0.1,0-0.2,0-0.3c0-0.1-0.1-0.2-0.1-0.4c-2.1,0.5-3.6,1.3-4.5,2.6S16,6.3,16,8 c0.8-0.1,1.5-0.2,1.9-0.3c0.6-0.2,1.3-0.6,1.9-1.2c0.8-0.7,1.3-1.5,1.7-2.4C21.8,3.2,22,2.4,22,1.7L22,1.7z"></path>
+		</symbol>
+		<symbol viewBox="0 0 34 34" id="windows">
+			<path d="M14,18v12L1,28V6l13-2v12H1v2H14z M16,18v12.3L33,33V1L16,3.7V16h17v2H16z"></path>
+		</symbol>
+		<symbol viewBox="0 0 34 34" id="web">
+			<path d="M17,1C8.2,1,1,8.2,1,17s7.2,16,16,16s16-7.2,16-16S25.8,1,17,1z M29.6,11h-5.2c-0.6-3-1.6-5.5-2.9-7.3 C25.1,5,28,7.6,29.6,11z M23,17c0,1.4-0.1,2.7-0.3,4H11.3c-0.2-1.3-0.3-2.6-0.3-4s0.1-2.7,0.3-4h11.4C22.9,14.3,23,15.6,23,17z M17,31c-2.1,0-4.3-3.2-5.4-8h10.7C21.3,27.8,19.1,31,17,31z M11.6,11c1-4.8,3.2-8,5.4-8s4.3,3.2,5.4,8H11.6z M12.5,3.7 C11.2,5.5,10.2,8,9.6,11H4.4C6,7.6,8.9,5,12.5,3.7z M3.6,13h5.7C9.1,14.3,9,15.6,9,17s0.1,2.7,0.3,4H3.6C3.2,19.7,3,18.4,3,17 S3.2,14.3,3.6,13z M4.4,23h5.2c0.6,3,1.6,5.5,2.9,7.3C8.9,29,6,26.4,4.4,23z M21.5,30.3c1.3-1.8,2.3-4.3,2.9-7.3h5.2 C28,26.4,25.1,29,21.5,30.3z M30.4,21h-5.7c0.2-1.3,0.3-2.6,0.3-4s-0.1-2.7-0.3-4h5.7c0.4,1.3,0.6,2.6,0.6,4S30.8,19.7,30.4,21z"></path>
+		</symbol>
+		<symbol viewBox="0 0 34 34" id="android">
+			<path d="M28.5,11.5c-1.1,0-2,0.9-2,2v8c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2v-8C30.5,12.4,29.6,11.5,28.5,11.5z"></path>
+			<path d="M5.5,11.5c-1.1,0-2,0.9-2,2v8c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2v-8C7.5,12.4,6.6,11.5,5.5,11.5z"></path>
+			<path d="M8.5,24.5c0,1.1,0.9,2,2,2h1v4c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2v-4h3v4c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2v-4h1 c1.1,0,2-0.9,2-2v-13h-17V24.5z"></path>
+			<path d="M8.6,10.5h16.9c-0.3-2.3-1.6-4.3-3.4-5.6l1.3-1.9c0.3-0.5,0.2-1.1-0.3-1.4c-0.5-0.3-1.1-0.2-1.4,0.3L20.3,4 c-0.9-0.3-1.8-0.5-2.8-0.5h-1c-1,0-1.9,0.2-2.8,0.5l-1.4-2.1c-0.3-0.5-0.9-0.6-1.4-0.3c-0.5,0.3-0.6,0.9-0.3,1.4l1.3,1.9 C10.1,6.2,8.8,8.2,8.6,10.5z M13.5,8.5c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1s1,0.4,1,1C14.5,8.1,14.1,8.5,13.5,8.5z M20.5,8.5 c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1s1,0.4,1,1C21.5,8.1,21.1,8.5,20.5,8.5z"></path>
+		</symbol>
+		<symbol viewBox="-8 8 34 34" id="twitter">
+			<path d="M21,16c1.9-0.9,3-3,3-4c-1.1,1-4,2-4,2c-1.2-1-2.2-2-5-2c-3.4,0-7,2-7,6v2 c-4.7,0.3-9.8-3.8-13-7c0,0-3,4.2,2,9c-0.9,0.4-3-1-3-1c0,4.5,5,7,5,7h-3c2.2,4.8,6,5,6,5s-0.7,1.9-9,2c0,0,4.1,3,10,3 c12.7,0,18.7-10,19-19v-1c0,0,3-1.8,3-3C25,15,22.9,16.2,21,16z"></path>
+		</symbol>
+		<symbol viewBox="-8 8 34 34" id="facebook">
+			<path d="M12,41V25h4l1-5h-5v-4c0-0.7,0-2,2-2h3V9h-4c-5.8,0-8,4-8,7v4H2v5h3v16H12z"></path>
+		</symbol>
+		<symbol viewBox="-8 8 34 34" id="blog">
+			<path d="M12,32.1c0-6-4-11-9-11c-1,0-2.2-1.9-2-3c0.3-1.4,1.5-2.2,3-2c7.4,1.5,13,8.1,13,16c0,1-1,2-2,2 C13.4,34.1,12,33.1,12,32.1z"></path>
+			<path d="M20,32.1c0.4-10.1-7.1-18.4-17-19c-1.2-0.6-2.1-1.7-2-3c0.2-1.2,1.3-2.1,3-2 c11.8,1.4,21,11.6,21,24c0,1-1,2-2,2C21.4,34.1,20.4,33,20,32.1z"></path>
+			<path d="M-7,32.1c0,4.4,2,8,8,8c4,0,8-2,8-8s-5.1-8-5-8c-0.1,0-3.1-1-3,2c-0.1,3,2.9,4,3,6s-1,3-3,3s-3-1-3-3 v-12c0-1.9-1-3-3-3c-1,0-2,1.1-2,2V32.1z"></path>
+		</symbol>
+	</svg>
+	<!-- Microsoft Logo / OneNote Logo -->
+	<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none" version="1.1">
+		<symbol width="106px" height="24px" viewBox="0 0 106 24" id="logoOneNote">
+			<style type="text/css">
+				.onenoteLogoPurple {
+					fill: #7E2EA6;
+				}
+
+				.onenoteLogoWhite {
+					fill: #FFFFFF;
+				}
+			</style>
+			<title>OneNote w 24px icon v2</title>
+			<desc>Created with Sketch.</desc>
+			<path id="OneNote---Flat_x2C_-Not-PixelPerf" class="onenoteLogoPurple" d="M36.5,18.2c-2,0-3.6-0.7-4.8-2s-1.8-3-1.8-5.1c0-2.3,0.6-4,1.8-5.4
+	c1.2-1.3,2.9-2,5-2c1.9,0,3.5,0.7,4.7,2s1.8,3,1.8,5.1c0,2.3-0.6,4.1-1.8,5.4S38.5,18.2,36.5,18.2L36.5,18.2z M36.6,5.2
+	c-1.5,0-2.7,0.5-3.6,1.6s-1.4,2.5-1.4,4.2s0.4,3.1,1.3,4.2s2.1,1.6,3.5,1.6c1.5,0,2.7-0.5,3.6-1.5s1.3-2.4,1.3-4.2S40.9,7.8,40,6.8
+	S38.1,5.2,36.6,5.2L36.6,5.2z M53.5,18h-1.6v-5.7c0-2.1-0.8-3.2-2.3-3.2c-0.8,0-1.5,0.3-2,0.9s-0.8,1.4-0.8,2.3V18h-1.6V8h1.6v1.7
+	l0,0c0.8-1.3,1.8-1.9,3.3-1.9c1.1,0,1.9,0.4,2.5,1.1s0.9,1.7,0.9,3.1C53.5,12,53.5,18,53.5,18z M64.1,13.4H57c0,1.1,0.3,2,0.9,2.6
+	c0.6,0.6,1.4,0.9,2.4,0.9c1.1,0,2.2-0.4,3.1-1.1v1.5c-0.9,0.6-2,1-3.5,1c-1.4,0-2.5-0.5-3.3-1.4s-1.2-2.2-1.2-3.8s0.4-2.8,1.3-3.8
+	s2-1.5,3.3-1.5s2.3,0.4,3,1.3s1.1,2,1.1,3.5V13.4z M62.4,12c0-0.9-0.2-1.6-0.7-2.2S60.7,9,59.9,9S58.5,9.3,58,9.8s-0.9,1.2-1,2.1
+	h5.4V12z M77.5,18h-2L68.3,6.8c-0.2-0.3-0.3-0.6-0.4-0.9h-0.1c0.1,0.3,0.1,0.9,0.1,1.9V18h-1.6V4h2.1l7,11c0.3,0.5,0.5,0.8,0.6,0.9
+	l0,0c-0.1-0.4-0.1-1.1-0.1-2.1V4h1.6V18z M84.6,18.2c-1.5,0-2.7-0.5-3.5-1.4s-1.3-2.2-1.3-3.7c0-1.7,0.5-3,1.4-3.9s2.2-1.4,3.7-1.4
+	s2.7,0.5,3.5,1.4s1.3,2.2,1.3,3.8s-0.5,2.9-1.4,3.8S86.1,18.2,84.6,18.2L84.6,18.2z M84.7,9.1c-1,0-1.8,0.3-2.4,1s-0.9,1.7-0.9,2.9
+	s0.3,2.1,0.9,2.8s1.4,1,2.4,1s1.8-0.3,2.4-1S88,14.3,88,13s-0.3-2.2-0.8-2.9S85.8,9.1,84.7,9.1L84.7,9.1z M96.3,17.9
+	c-0.4,0.2-0.9,0.3-1.5,0.3c-1.8,0-2.6-1-2.6-2.9V9.4h-1.7V8h1.7V5.6L93.8,5v3h2.5v1.4h-2.5V15c0,0.7,0.1,1.1,0.3,1.4
+	s0.6,0.4,1.1,0.4c0.4,0,0.8-0.1,1-0.3L96.3,17.9L96.3,17.9z M105.8,13.4h-7.1c0,1.1,0.3,2,0.9,2.6s1.4,0.9,2.4,0.9
+	c1.1,0,2.2-0.4,3.1-1.1v1.5c-0.9,0.6-2,1-3.5,1c-1.4,0-2.5-0.5-3.3-1.4s-1.2-2.2-1.2-3.8s0.4-2.8,1.3-3.8s2-1.5,3.3-1.5
+	s2.3,0.4,3,1.3s1.1,2,1.1,3.5C105.8,12.6,105.8,13.4,105.8,13.4z M104.2,12c0-0.9-0.2-1.6-0.7-2.2s-1-0.8-1.8-0.8s-1.4,0.3-1.9,0.8
+	s-0.9,1.2-1,2.1h5.4V12z"></path>
+			<g>
+				<rect x="21" y="16" class="onenoteLogoWhite" width="2" height="4"></rect>
+				<rect x="21" y="11" class="onenoteLogoWhite" width="2" height="4"></rect>
+				<polygon class="onenoteLogoWhite" points="23,9 23,5 20,5 20,3 14,3 14,6 19,6 19,7 14,7 14,9 19,9 19,10 14,10 14,12 19,12 19,13 14,13 14,15
+		19,15 19,16 14,16 14,18 19,18 19,19 14,19 14,22 20,22 20,21 20,20 20,10 23,10 23,10 	"></polygon>
+				<polygon class="onenoteLogoWhite" points="9,13 6,7 4,7 4,17 6,17 6,11 9,17 11,17 11,7 9,7 	"></polygon>
+				<rect x="14" y="12" class="onenoteLogoPurple" width="5" height="1"></rect>
+				<rect x="14" y="15" class="onenoteLogoPurple" width="5" height="1"></rect>
+				<rect x="14" y="6" class="onenoteLogoPurple" width="5" height="1"></rect>
+				<rect x="14" y="9" class="onenoteLogoPurple" width="5" height="1"></rect>
+				<path class="onenoteLogoPurple" d="M23,4h-2V3c0-0.6-0.4-1-1-1h-6v1h6v2h3v4v1h-3v10v1v1h-6v1h6c0.6,0,1-0.4,1-1v-1h2c0.6,0,1-0.4,1-1V10V5
+		C24,4.4,23.6,4,23,4z M23,20h-2v-4h2V20z M23,15h-2v-4h2V15z"></path>
+				<polygon class="onenoteLogoPurple" points="14,0 0,3 0,21 14,24 	"></polygon>
+				<polygon class="onenoteLogoWhite" points="11,17 9,17 6,11 6,17 4,17 4,7 6,7 9,13 9,7 11,7 	"></polygon>
+				<rect x="14" y="18" class="onenoteLogoPurple" width="5" height="1"></rect>
+			</g>
+		</symbol>
+
+		<symbol width="106px" height="24px" viewBox="0 0 106 24" id="logoOneNoteOldPurple">
+			<style type="text/css">
+				.onenoteLogoOldPurple {
+					fill: #7719AA;
+				}
+
+				.onenoteLogoWhite {
+					fill: #FFFFFF;
+				}
+			</style>
+			<title>OneNote w 24px icon v2</title>
+			<desc>Created with Sketch.</desc>
+			<path id="OneNote---Flat_x2C_-Not-PixelPerf" class="onenoteLogoOldPurple" d="M36.5,18.2c-2,0-3.6-0.7-4.8-2s-1.8-3-1.8-5.1c0-2.3,0.6-4,1.8-5.4
+	c1.2-1.3,2.9-2,5-2c1.9,0,3.5,0.7,4.7,2s1.8,3,1.8,5.1c0,2.3-0.6,4.1-1.8,5.4S38.5,18.2,36.5,18.2L36.5,18.2z M36.6,5.2
+	c-1.5,0-2.7,0.5-3.6,1.6s-1.4,2.5-1.4,4.2s0.4,3.1,1.3,4.2s2.1,1.6,3.5,1.6c1.5,0,2.7-0.5,3.6-1.5s1.3-2.4,1.3-4.2S40.9,7.8,40,6.8
+	S38.1,5.2,36.6,5.2L36.6,5.2z M53.5,18h-1.6v-5.7c0-2.1-0.8-3.2-2.3-3.2c-0.8,0-1.5,0.3-2,0.9s-0.8,1.4-0.8,2.3V18h-1.6V8h1.6v1.7
+	l0,0c0.8-1.3,1.8-1.9,3.3-1.9c1.1,0,1.9,0.4,2.5,1.1s0.9,1.7,0.9,3.1C53.5,12,53.5,18,53.5,18z M64.1,13.4H57c0,1.1,0.3,2,0.9,2.6
+	c0.6,0.6,1.4,0.9,2.4,0.9c1.1,0,2.2-0.4,3.1-1.1v1.5c-0.9,0.6-2,1-3.5,1c-1.4,0-2.5-0.5-3.3-1.4s-1.2-2.2-1.2-3.8s0.4-2.8,1.3-3.8
+	s2-1.5,3.3-1.5s2.3,0.4,3,1.3s1.1,2,1.1,3.5V13.4z M62.4,12c0-0.9-0.2-1.6-0.7-2.2S60.7,9,59.9,9S58.5,9.3,58,9.8s-0.9,1.2-1,2.1
+	h5.4V12z M77.5,18h-2L68.3,6.8c-0.2-0.3-0.3-0.6-0.4-0.9h-0.1c0.1,0.3,0.1,0.9,0.1,1.9V18h-1.6V4h2.1l7,11c0.3,0.5,0.5,0.8,0.6,0.9
+	l0,0c-0.1-0.4-0.1-1.1-0.1-2.1V4h1.6V18z M84.6,18.2c-1.5,0-2.7-0.5-3.5-1.4s-1.3-2.2-1.3-3.7c0-1.7,0.5-3,1.4-3.9s2.2-1.4,3.7-1.4
+	s2.7,0.5,3.5,1.4s1.3,2.2,1.3,3.8s-0.5,2.9-1.4,3.8S86.1,18.2,84.6,18.2L84.6,18.2z M84.7,9.1c-1,0-1.8,0.3-2.4,1s-0.9,1.7-0.9,2.9
+	s0.3,2.1,0.9,2.8s1.4,1,2.4,1s1.8-0.3,2.4-1S88,14.3,88,13s-0.3-2.2-0.8-2.9S85.8,9.1,84.7,9.1L84.7,9.1z M96.3,17.9
+	c-0.4,0.2-0.9,0.3-1.5,0.3c-1.8,0-2.6-1-2.6-2.9V9.4h-1.7V8h1.7V5.6L93.8,5v3h2.5v1.4h-2.5V15c0,0.7,0.1,1.1,0.3,1.4
+	s0.6,0.4,1.1,0.4c0.4,0,0.8-0.1,1-0.3L96.3,17.9L96.3,17.9z M105.8,13.4h-7.1c0,1.1,0.3,2,0.9,2.6s1.4,0.9,2.4,0.9
+	c1.1,0,2.2-0.4,3.1-1.1v1.5c-0.9,0.6-2,1-3.5,1c-1.4,0-2.5-0.5-3.3-1.4s-1.2-2.2-1.2-3.8s0.4-2.8,1.3-3.8s2-1.5,3.3-1.5
+	s2.3,0.4,3,1.3s1.1,2,1.1,3.5C105.8,12.6,105.8,13.4,105.8,13.4z M104.2,12c0-0.9-0.2-1.6-0.7-2.2s-1-0.8-1.8-0.8s-1.4,0.3-1.9,0.8
+	s-0.9,1.2-1,2.1h5.4V12z"></path>
+			<g>
+				<rect x="21" y="16" class="onenoteLogoWhite" width="2" height="4"></rect>
+				<rect x="21" y="11" class="onenoteLogoWhite" width="2" height="4"></rect>
+				<polygon class="onenoteLogoWhite" points="23,9 23,5 20,5 20,3 14,3 14,6 19,6 19,7 14,7 14,9 19,9 19,10 14,10 14,12 19,12 19,13 14,13 14,15
+		19,15 19,16 14,16 14,18 19,18 19,19 14,19 14,22 20,22 20,21 20,20 20,10 23,10 23,10 	"></polygon>
+				<polygon class="onenoteLogoWhite" points="9,13 6,7 4,7 4,17 6,17 6,11 9,17 11,17 11,7 9,7 	"></polygon>
+				<rect x="14" y="12" class="onenoteLogoOldPurple" width="5" height="1"></rect>
+				<rect x="14" y="15" class="onenoteLogoOldPurple" width="5" height="1"></rect>
+				<rect x="14" y="6" class="onenoteLogoOldPurple" width="5" height="1"></rect>
+				<rect x="14" y="9" class="onenoteLogoOldPurple" width="5" height="1"></rect>
+				<path class="onenoteLogoOldPurple" d="M23,4h-2V3c0-0.6-0.4-1-1-1h-6v1h6v2h3v4v1h-3v10v1v1h-6v1h6c0.6,0,1-0.4,1-1v-1h2c0.6,0,1-0.4,1-1V10V5
+		C24,4.4,23.6,4,23,4z M23,20h-2v-4h2V20z M23,15h-2v-4h2V15z"></path>
+				<polygon class="onenoteLogoOldPurple" points="14,0 0,3 0,21 14,24 	"></polygon>
+				<polygon class="onenoteLogoWhite" points="11,17 9,17 6,11 6,17 4,17 4,7 6,7 9,13 9,7 11,7 	"></polygon>
+				<rect x="14" y="18" class="onenoteLogoOldPurple" width="5" height="1"></rect>
+			</g>
+		</symbol>
+
+		<symbol viewBox="0 0 111 23" height="24" id="logoMicrosoft">
+			<style type="text/css">
+				.st0 {
+					fill: #FFFFFF;
+				}
+
+				.st1 {
+					fill: #F05125;
+				}
+
+				.st2 {
+					fill: #7FBB42;
+				}
+
+				.st3 {
+					fill: #33A0DA;
+				}
+
+				.st4 {
+					fill: #FDB813;
+				}
+			</style>
+			<path class="st0" d="M45.3,4v14.2h-2.5V7.1l0,0l-4.4,11.1h-1.6L32.3,7.1l0,0v11.1H30V4h3.5l4.1,10.5h0.1L42,4H45.3z M47.4,5.1
+	c0-0.4,0.1-0.7,0.4-1s0.6-0.4,1-0.4s0.8,0.1,1.1,0.4s0.4,0.6,0.4,1s-0.1,0.7-0.4,1c-0.3,0.3-0.6,0.4-1,0.4s-0.8-0.1-1-0.4
+	C47.5,5.8,47.4,5.5,47.4,5.1z M50.1,8v10.2h-2.4V8H50.1z M57.3,16.5c0.4,0,0.7-0.1,1.2-0.2c0.4-0.2,0.8-0.4,1.2-0.7v2.2
+	c-0.4,0.2-0.8,0.4-1.3,0.5s-1,0.2-1.6,0.2c-1.5,0-2.7-0.5-3.7-1.4c-0.9-0.9-1.4-2.2-1.4-3.6c0-1.6,0.5-3,1.4-4
+	c1-1.1,2.3-1.6,4.1-1.6c0.4,0,0.9,0.1,1.4,0.2s0.8,0.2,1.1,0.4v2.3c-0.4-0.3-0.7-0.5-1.1-0.6S57.8,10,57.4,10
+	c-0.9,0-1.7,0.3-2.3,0.9s-0.9,1.4-0.9,2.5c0,1,0.3,1.8,0.8,2.4C55.6,16.2,56.4,16.5,57.3,16.5z M66.5,7.9c0.2,0,0.4,0,0.5,0
+	S67.3,8,67.4,8v2.4c-0.1-0.1-0.3-0.2-0.6-0.3C66.6,10,66.3,10,65.9,10c-0.6,0-1.1,0.2-1.5,0.7S63.8,12,63.8,13v5.1h-2.4V8h2.4v1.6
+	l0,0c0.2-0.6,0.5-1,1-1.3C65.4,8,65.9,7.9,66.5,7.9z M67.6,13.3c0-1.7,0.5-3,1.4-4c1-1,2.3-1.5,4-1.5c1.6,0,2.8,0.5,3.7,1.4
+	c0.9,0.9,1.3,2.2,1.3,3.8c0,1.7-0.5,3-1.4,3.9c-1,1-2.2,1.5-3.9,1.5c-1.6,0-2.8-0.5-3.8-1.4C68,16.2,67.6,14.9,67.6,13.3z
+	 M70.1,13.2c0,1.1,0.2,1.9,0.7,2.4c0.5,0.6,1.2,0.8,2.1,0.8s1.5-0.3,2-0.8c0.5-0.6,0.7-1.4,0.7-2.5s-0.2-1.9-0.7-2.5s-1.1-0.8-2-0.8
+	s-1.6,0.3-2,0.9C70.3,11.3,70.1,12.1,70.1,13.2z M81.6,10.7c0,0.3,0.1,0.6,0.3,0.8c0.2,0.2,0.7,0.4,1.4,0.7c1,0.4,1.6,0.8,2,1.3
+	s0.6,1.1,0.6,1.7c0,1-0.4,1.7-1.1,2.3s-1.7,0.9-3,0.9c-0.4,0-0.9-0.1-1.4-0.2s-0.9-0.2-1.3-0.4v-2.4c0.4,0.3,0.9,0.5,1.4,0.7
+	s1,0.3,1.4,0.3c0.5,0,0.9-0.1,1.2-0.2c0.3-0.2,0.4-0.4,0.4-0.8c0-0.3-0.1-0.6-0.4-0.8s-0.8-0.5-1.5-0.8c-0.9-0.4-1.5-0.8-1.9-1.2
+	c-0.4-0.5-0.6-1.1-0.6-1.8c0-0.9,0.4-1.7,1.1-2.3s1.7-0.9,2.8-0.9c0.4,0,0.8,0,1.2,0.1C84.6,7.8,85,7.9,85.3,8v2.3
+	c-0.3-0.2-0.7-0.4-1.1-0.5c-0.4-0.2-0.8-0.2-1.3-0.2s-0.8,0.1-1.1,0.3C81.7,10.2,81.6,10.4,81.6,10.7z M87,13.3c0-1.7,0.5-3,1.4-4
+	c1-1,2.3-1.5,4-1.5c1.6,0,2.8,0.5,3.7,1.4c0.9,0.9,1.3,2.2,1.3,3.8c0,1.7-0.5,3-1.4,3.9c-1,1-2.2,1.5-3.9,1.5
+	c-1.6,0-2.8-0.5-3.8-1.4C87.5,16.2,87,14.9,87,13.3z M89.5,13.2c0,1.1,0.2,1.9,0.7,2.4c0.5,0.6,1.2,0.8,2.1,0.8s1.5-0.3,2-0.8
+	c0.5-0.6,0.7-1.4,0.7-2.5s-0.2-1.9-0.7-2.5s-1.1-0.8-2-0.8s-1.6,0.3-2,0.9C89.7,11.3,89.5,12.1,89.5,13.2z M105.4,10h-3.6v8.2h-2.4
+	V10h-1.7V8h1.7V6.6c0-1.1,0.3-1.9,1-2.6s1.6-1,2.7-1c0.3,0,0.5,0,0.8,0c0.2,0,0.4,0.1,0.6,0.1v2.1c-0.1,0-0.2-0.1-0.4-0.2
+	c-0.2-0.1-0.4-0.1-0.7-0.1c-0.5,0-0.9,0.2-1.2,0.5s-0.4,0.8-0.4,1.4V8h3.6V5.7l2.4-0.7v3h2.4v2h-2.4v4.8c0,0.6,0.1,1.1,0.3,1.3
+	c0.2,0.3,0.6,0.4,1.1,0.4c0.1,0,0.3,0,0.5-0.1s0.4-0.1,0.5-0.2v2c-0.2,0.1-0.4,0.2-0.8,0.2s-0.7,0.1-1,0.1c-1,0-1.8-0.3-2.3-0.8
+	s-0.8-1.3-0.8-2.4V10H105.4z"></path>
+			<g>
+				<rect class="st1" width="11" height="11"></rect>
+				<rect x="12" class="st2" width="11" height="11"></rect>
+				<rect y="12" class="st3" width="11" height="11"></rect>
+				<rect x="12" y="12" class="st4" width="11" height="11"></rect>
+			</g>
+		</symbol>
+
+		<symbol viewBox="0 0 111 35" style="enable-background:new 0 0 111 35;" id="logoOffice">
+			<style type="text/css">
+				.officeLogoColor {
+					fill: #D63F26;
+				}
+			</style>
+			<g>
+				<path class="officeLogoColor" d="M59.7,17.3c0,2.2-0.4,4.2-1.2,5.9c-0.8,1.7-2,3-3.5,3.9s-3.3,1.4-5.3,1.4c-1.9,0-3.6-0.4-5.1-1.3
+		c-1.6-1-2.7-2.2-3.6-3.9s-1.2-3.5-1.2-5.5c0-2.2,0.4-4.2,1.2-5.9s2-3,3.6-3.9C46.2,7.2,48,6.7,50,6.7c1.9,0,3.5,0.4,5,1.3
+		c1.5,0.9,2.6,2.1,3.4,3.7C59.3,13.4,59.7,15.2,59.7,17.3z M57.1,17.6c0-2.7-0.6-4.9-1.9-6.4c-1.3-1.5-3.1-2.3-5.3-2.3
+		c-1.4,0-2.7,0.4-3.9,1.1c-1.1,0.7-2,1.8-2.6,3.1s-0.9,2.8-0.9,4.5s0.3,3.2,0.9,4.5c0.6,1.3,1.5,2.3,2.6,3s2.4,1.1,3.8,1.1
+		c2.3,0,4.1-0.8,5.5-2.3C56.4,22.4,57.1,20.3,57.1,17.6z" />
+				<path class="officeLogoColor" d="M70.2,8c-0.5-0.3-1-0.4-1.6-0.4c-1.7,0-2.5,1.1-2.5,3.2v2.3h3.5v2h-3.5V28h-2.4V15.1h-2.5v-2h2.5v-2.4
+		c0-1.5,0.4-2.8,1.3-3.7s2-1.4,3.4-1.4c0.7,0,1.3,0.1,1.7,0.3L70.2,8L70.2,8z" />
+				<path class="officeLogoColor" d="M78.5,8c-0.5-0.3-1-0.4-1.6-0.4c-1.7,0-2.5,1.1-2.5,3.2v2.3h3.5v2h-3.5V28H72V15.1h-2.5v-2H72v-2.4
+		c0-1.5,0.4-2.8,1.3-3.7s2-1.4,3.4-1.4c0.7,0,1.3,0.1,1.7,0.3L78.5,8L78.5,8z" />
+				<path class="officeLogoColor" d="M82.9,7.7c0,0.4-0.2,0.8-0.5,1.1s-0.7,0.4-1.1,0.4s-0.8-0.1-1.1-0.4c-0.3-0.3-0.5-0.7-0.5-1.1
+		c0-0.4,0.1-0.8,0.4-1.1c0.3-0.3,0.7-0.5,1.1-0.5s0.8,0.2,1.1,0.5C82.7,6.9,82.9,7.3,82.9,7.7z M82.5,28.1h-2.4v-15h2.4V28.1z" />
+				<path class="officeLogoColor" d="M96.2,27.4c-1.2,0.7-2.5,1.1-4.1,1.1c-1.4,0-2.6-0.3-3.7-0.9s-1.9-1.5-2.5-2.7S85,22.5,85,21
+		c0-2.5,0.7-4.5,2.1-6s3.3-2.3,5.7-2.3c1.3,0,2.5,0.3,3.5,0.8V16c-1.1-0.8-2.3-1.2-3.6-1.2c-1.6,0-2.8,0.6-3.8,1.7s-1.5,2.5-1.5,4.3
+		c0,1.7,0.5,3.1,1.4,4.1s2.2,1.5,3.7,1.5c1.3,0,2.5-0.4,3.7-1.3C96.2,25.1,96.2,27.4,96.2,27.4z" />
+				<path class="officeLogoColor" d="M110.9,21.2h-10.6c0,1.7,0.5,3,1.3,3.9c0.9,0.9,2,1.3,3.5,1.3c1.7,0,3.2-0.5,4.6-1.6V27c-1.3,1-3,1.4-5.2,1.4
+		c-2.1,0-3.8-0.7-5-2.1s-1.8-3.3-1.8-5.7c0-1.5,0.3-2.8,0.9-4.1c0.6-1.2,1.4-2.2,2.5-2.8c1.1-0.7,2.2-1,3.5-1c1.9,0,3.5,0.6,4.5,1.9
+		c1.1,1.3,1.6,3,1.6,5.3v1.3H110.9z M108.5,19.1c0-1.4-0.4-2.5-1-3.2c-0.6-0.8-1.6-1.1-2.7-1.1s-2.1,0.4-2.9,1.2
+		c-0.8,0.8-1.3,1.9-1.5,3.2h8.1V19.1z" />
+			</g>
+			<polygon class="officeLogoColor"
+					 points="29,32 29,32 29,3 19,0 0,7 0,7 0,28 6,26 6,9 19,6 19,31 0,28 19,35 19,35 29,32 " />
+		</symbol>
+		<symbol viewBox="0 0 22 22" id="globe">
+			<path d="M11,1c5.4,0,10,4.6,10,10s-4.6,10-10,10C5.6,21,1,16.4,1,11S5.6,1,11,1z M11,19.8c2.7,0,5.4-1.3,7-3.5 c0.3-0.3,0.4-0.4,0.2-0.8c-0.1-0.3-0.2-0.6-0.2-0.9c0-0.5,0.2-1.1,0.1-1.5c-0.1-0.4-0.6-0.8-0.5-1.2c0.2-0.9-0.5-0.6-1-1l0.1,0 c-0.4,0.1-0.7,0.4-1.2,0.3l0-0.1c-0.5,0.1-1.6,0.2-1.7-0.5c-0.1-0.1-0.4-0.2-0.4-0.4l0.1-0.1c-0.2,0-0.3-0.1-0.3-0.3 c0.1,0.1,0.1,0.1,0.2,0L13,9.3c0.2-0.5,0.1-0.7,0.2-1.2c0-0.4,0.2-0.6,0.5-0.8c0.3-0.2,0.5-0.5,0.7-0.8c0.1-0.2,0.5-0.8,0.7-0.8 c0.9-0.1,1.8-0.1,2.7-0.3C17.4,5,17,4.6,16.6,4.3c-0.3-0.3-1.2,0-1.2,0.6c0,0.1,0,0.1,0.1,0.2c-0.1,0.2-0.3,0.4-0.6,0.4 c-0.4,0.1-0.8-0.1-1.2,0.1c-0.3-0.4,0.2-0.8-0.2-1.1l1.7-0.5c-0.1-0.4-0.5-0.5-0.9-0.5V3.3l0.5-0.1c-3.3-1.6-7.4-1-10,1.6 c0.4,0,0.6,0.4,0.9,0.7c0.4,0.4,0.4-0.1,0.5-0.2C6.7,4.7,6.5,4.6,6.3,4c0.7-0.4,1.1,0,1.5,0.6c0.4-0.5,1.1,0,1.5,0.3 C10.2,5.6,8,5.6,8,6l0.6,0.2C8.3,6.4,8,6.6,7.7,6.8l0,0.2c-0.4,0.2-0.9,0.2-1,0.7l0-0.3c-0.2,0,0,0.1-0.1,0.2L6.6,7.4 c0.1,0.1,0.1,0.3,0.2,0.4c0,0.1-0.2,0.1-0.2,0.1c0,0,0,0,0.1,0c-0.1,0-0.5,0.3-0.6,0.3C5.8,8.5,6,9,5.9,9.3 C5.7,8.7,5.1,8.5,4.4,8.6l0.2,0.1C4,8.7,3.4,8.6,3.3,9.3C3.1,10.5,4.4,10.1,5,9.8c-0.1,0.3-0.3,0.5-0.4,0.8c0.3,0,0.5-0.1,0.7,0.1 c0.3,0.3,0.6,0.7,1,0.9c-0.4,0.4-0.8-0.1-1.1-0.3c0,0,0,0.1,0,0.1c-0.2-0.4-0.2-0.6-0.7-0.6c-0.8-0.1-1.7-0.5-2.3-1 c-0.2,3.5,1.3,7,4.5,8.7c-0.2-0.8,0.4-1.5,0.2-2.3c-0.2-0.8-1.3-2.2-0.9-3.1l-0.1-0.1c0.3-0.6,0.6-0.8,0.5-1.5 c0.3,0.1,0.3-0.1,0.5-0.4c0.2-0.2,0.6-0.3,0.9-0.3c0.3,0,1.2,0.2,1.2,0.6c0.4,0.1,0.6,0.4,0.9,0.5c0.5,0.1,1,0.4,1.4,0.7 c0.6,0.4,2,1.1,1.3,1.9c-0.2,0.2,0,0.8-0.3,1.1c-0.3,0.5-1.2,0.5-1.4,1c-0.1,0.4-0.3,0.8-0.7,1C10,18,9.9,17.8,9.6,17.6 c0,0.1,0,0.1,0,0.1c0.3,0.5-0.3,1.4-0.6,1.8C9.6,19.7,10.3,19.8,11,19.8z M5.8,9.6C6.3,9.6,6.7,9.9,7,10c-0.3,0-0.6,0-0.9-0.1 C5.8,9.7,5.6,9.8,5.3,9.8C5.5,9.7,5.7,9.6,5.8,9.6z M7.2,10.1c0.3,0,0.5,0,0.7,0.1c-0.3,0.1-0.6,0.2-0.9,0.1 C7.1,10.2,7.1,10.1,7.2,10.1C7.4,10.1,7.1,10.1,7.2,10.1z M17.8,5.5c0,0.1,0,0.1,0,0.1c0,0,0.1,0,0.1,0L17.8,5.5z M18.4,6.4 c-0.2-0.3-0.4-0.5-0.6-0.8C17.8,6.1,17.9,6.3,18.4,6.4C18.4,6.3,18.4,6.4,18.4,6.4z"></path>
+		</symbol>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none">
+		<symbol id="playButtonIcon" viewBox="0 0 11.5 15.7">
+			<path d="M0,0l11.2,7.9L0,15.7V0z M1.1,2.2v11.4l8.2-5.7L1.1,2.2z"></path>
+		</symbol>
+	</svg>
+
+
+	</body>
+
+</html>

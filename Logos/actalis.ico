@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head id="head"><title>
+	Soluzioni per la sicurezza del tuo business | Actalis.com
+</title><meta name="description" content="Actalis è Certification Authority qualificata eIDAS per erogazione servizi certificati e riconosciuta in tutto il mondo per l'emissione di certificati SSL Server" /> 
+<meta charset="UTF-8" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport" />
+<meta name="PTRG" content="42" />
+<meta name="theme-color" content="#" /><!-- da definire-->
+<!-- <link rel="apple-touch-icon-precomposed" type="image/png" sizes="180x180" href="/Actaliscom/media/apple-touch-icon/180.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="152x152" href="/Actaliscom/media/apple-touch-icon/152.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/Actaliscom/media/apple-touch-icon/144.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="120x120" href="/Actaliscom/media/apple-touch-icon/120.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/Actaliscom/media/apple-touch-icon/114.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="76x76" href="/Actaliscom/media/apple-touch-icon/76.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/Actaliscom/media/apple-touch-icon/72.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="60x60" href="/Actaliscom/media/apple-touch-icon/60.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" href="/Actaliscom/media/apple-touch-icon/57.png">
+<link href="/Actaliscom/media/icons/favicon.ico" type="image/x-icon" rel="shortcut icon"> 
+<link href="/Actaliscom/media/icons/favicon.ico" type="image/x-icon" rel="icon"> -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+<script data-cookieconsent="ignore" type="text/javascript">
+window.dataLayer = window.dataLayer || [];
+dataLayer = [{
+    'environment': 'prod', 
+    'platform': 'site', 
+    'lang': 'it'
+}];
+</script>
+
+<!-- Google Tag Manager -->
+<script data-cookieconsent="ignore" type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KS9TWN6');</script>
+<!-- End Google Tag Manager -->
+
+<!-- jQuery 3.6.0 -->
+<script src="https://mediacdn.aruba.it/MediaCDNRepository/files/9a/9a4da963-a747-4078-9b71-86963f3e27af.js" type="text/javascript"></script>
+
+<!-- Popper.JS -->
+<script src="https://mediacdn.aruba.it/MediaCDNRepository/files/38/38da4ce2-85cc-4b9b-8b34-746472850324.js" type="text/javascript"></script>
+
+<!-- bootstrap 4.5 JS -->
+<script src="https://mediacdn.aruba.it/MediaCDNRepository/files/ac/aca31bb2-8d8e-44b0-ab01-9dea6201f0a1.js" type="text/javascript"></script>
+
+<!-- Swiper JS -->
+<script src="/CMSScripts/Custom/swiper-bundle.min.js" type="text/javascript"></script>
+
+<!-- Actalis JS -->
+<script src="/CMSScripts/Custom/actalis.js?v=102" type="text/javascript"></script>
+
+<!-- cookies directive -->
+<script src="https://mediacdn.aruba.it/MediaCDNRepository/files/07/07f7afcb-88da-47e8-a61f-2ffab5d1fe47.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  window.isDesignMode = false;
+  window.viewMode = 'LiveSite';
+</script>
+
+<script type="text/javascript">
+  var thirdPartyScripts = Array();
+</script>
+
+
+<!-- bootstrap 4.5 CSS-->
+<link href="https://mediacdn.aruba.it/MediaCDNRepository/files/39/39d662cf-6d87-49a8-8810-8e9e9c5b51a8.css" rel="stylesheet" />
+
+<!-- Aruba Design System CSS -->
+<!-- <link href="https://mediacdn.aruba.it/MediaCDNRepository/files/6c/6cfd6430-0fa7-4172-b3f4-833493373e30.css" rel="stylesheet" /> -->
+<link href="/CMSPages/GetResource.ashx?stylesheetname=swiperCSS&amp;v=102" rel="stylesheet" />
+<link href="/CMSPages/GetResource.ashx?stylesheetname=actalis-style&amp;v=102" rel="stylesheet" />
+<meta name="google-site-verification" content="gtMAp43_h5LHDD1BhkFya3pzEgb01rdnoWrWITl3Xuw" /> 
+<link href="/Actaliscom/media/icons/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+<link href="/Actaliscom/media/icons/favicon.ico" type="image/x-icon" rel="icon" />
+<style>
+.page-hero {
+    background-image: url('/images/homepage/hero-homepage.aspx');
+}
+
+.section-solutions-background {
+    background-image: url('/images/ssl-certificates/bg-ssl.aspx');
+}
+
+.section-aruba-datacenter-bg {
+    background-image: url('/images/aruba-datacenter.aspx');
+}
+
+.homepage-solution-bg-1 {
+    background-image: url('/images/homepage/homepage-box-1.aspx');
+}
+
+.homepage-solution-bg-2 {
+    background-image: url('/images/homepage/homepage-box-2.aspx');
+}
+
+.homepage-solution-bg-3 {
+    background-image: url('/images/homepage/homepage-box-3.aspx');
+}
+
+.homepage-solution-bg-4 {
+    background-image: url('/images/homepage/homepage-box-4.aspx');
+}
+</style></head>
+<body class="LTR Unknown ITIT ContentBody">
+     <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS9TWN6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="/it/home.aspx/actaliscom/media/icons/favicon.aspx" id="form">
+<input type="hidden" name="__CMSCsrfToken" id="__CMSCsrfToken" value="KR1kfvc8sKoX0BY4F9gVeVisD7gHIfKi5FD/TStX9r1J6jJDIzFkwniQfP96sqBGR6XpoNYHnBT+LtGlpc4/75ZKa3Lu2VhGnYEN+6ZvXLI=" />
+
+
+<input type="hidden" name="lng" id="lng" value="it-IT" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvt7FfUXzZD5sR-AbZjpIXTFugqwM1qzD64EkfDtGQAufe1DhDgsduiLLOV_CgqQMAdYBFsAxyGrhBocTghNxkiVSfy3GiJEwnrl4r4VJqY1ZlGCncdrc7KF133IhmUGxjvICHfj6kgwEXRBWrX_sKAY1&amp;t=5d0a842b" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "language": "it",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDebuggingEnabled": false,
+  "applicationUrl": "/",
+  "isDialog": false,
+  "isRTL": "false"
+};
+
+//]]>
+</script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+    
+    <div id="ctxM">
+
+</div>
+    
+
+    <header id="main-header">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-first">
+                        <a href="#" class="mobile-menu-opener left action--show-mobile-menu-left"><img src="/images/icons/icons-24-basic-menu.aspx" /></a>
+                        <div class="logo-container">
+                            <a href="/"><img class="logo-actalis" src="/images/logo-actalis.aspx" alt="Actalis" /></a>
+                        </div>
+                        <div class="header-menu-container">
+                            <ul>
+
+<li>
+<div id="language-switch-dropdown" class="dropdown">
+  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="/images/icons/icons-24-domini.aspx" alt="" /> Italian
+  </a>
+                                      
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" title="English" href="/home.aspx">English</a><a class="dropdown-item" title="Italian" href="/it/home.aspx">Italian</a>
+</div>
+</div>
+</li><li><a href="/support.aspx"><img alt="" src="/images/icons/icons-24-notifications-question-circle.aspx" /> Supporto</a>
+
+
+
+</li><li><a href="https://webmail.pec.actalis.it/" target="_blank"><img alt="" src="/images/icons/pec-webmail.aspx" /> Webmail PEC</a>
+
+
+
+</li><li><div class="dropdown"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" id="dropdownMenuLoginLink" role="button"><img alt="" src="/images/icons/icons-24-user.aspx" /> Login </a>
+<div aria-labelledby="dropdownMenuLoginLink" class="dropdown-menu" style=""><a class="dropdown-item" href="https://extwebra.actalis.it/portal/login">Area Clienti</a> <a class="dropdown-item" href="https://login.actalis.com">Shop SSL</a></div>
+</div>
+
+
+
+
+</li></ul>
+                        </div>
+                        <a href="#" class="mobile-menu-opener right action--show-mobile-menu-right"><img src="/images/icons/icons-24-basic-user-grey.aspx" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="header-second">
+            <div class="main-menu-container">
+              <ul class="main-menu">
+	<li><a class="link-dropdown" href="#">Soluzioni Enterprise</a>
+
+	<div class="mega-menu">
+	<div class="mega-menu-wrapper">
+	<div class="container-xxl">
+	<div class="row">
+	<div class="col-md-12 col-lg-12">
+	<h2><a href="/it/soluzioni-enterprise.aspx">Soluzioni Enterprise</a></h2>
+
+	<ul class="mega-menu-inner-links cols-four">
+		<li><a href="/electronic-and-digital-signatures.aspx"><span>Firma elettronica digitale</span> </a>
+
+		<p><a href="/electronic-and-digital-signatures.aspx">Semplifica, in sicurezza, i processi e le pratiche aziendali</a></p>
+		</li>
+		<li><a href="/s-mime-certificates.aspx"><span>Certificati S/MIME</span> </a>
+		<p><a href="/s-mime-certificates.aspx">Proteggi gli account email e le comunicazioni aziendali</a></p>
+		</li>
+		<li><a href="/public-key-infrastructure.aspx"><span>Public Key Infrastructure (PKI)</span> </a>
+		<p><a href="/public-key-infrastructure.aspx">Autonomia nella gestione centralizzata dei certificati</a></p>
+		</li>
+		<li><a href="/ssl-certificates.aspx"><span>Certificati SSL</span> </a>
+		<p><a href="/ssl-certificates.aspx">Proteggi lo scambio di dati all&#39;interno del sito web dell&#39;organizzazione</a></p>
+		</li>
+		<li><a href="/code-signing-certificates.aspx"><span>Code Signing</span> </a>
+		<p><a href="/code-signing-certificates.aspx">Autenticità e affidabilità in una firma: garantisci l&#39;integrità e la sicurezza delle tue componenti software</a></p>
+		</li>
+		<li><a href="/digital-identity.aspx"><span>Identità digitale</span> </a>
+		<p><a href="/digital-identity.aspx">Gestisci i tuoi accessi online in sicurezza, tutela i tuoi dati e i tuoi messaggi</a></p>
+		</li>
+		<li><a href="/it/posta-elettronica-certificata.aspx"><span>Posta elettronica certificata</span> </a>
+		<p><a href="/it/posta-elettronica-certificata.aspx">Semplifica lo scambio di messaggi email certificati.</a></p>
+		<a href="/it/posta-elettronica-certificata.aspx"> </a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</li>
+	<li><a href="/partner-program.aspx">Partner</a></li>
+	<li><a href="/company.aspx">Azienda</a></li>
+	<li><a href="/news.aspx">News</a></li>
+	<li><a href="/contact-us.aspx">Contatti</a></li>
+</ul>
+
+<div class="header-cta-container"><a class="btn btn-header" href="https://shop.actalis.com/store/it-it/">Shop SSL</a></div>
+
+
+
+
+
+            </div>
+        </div>
+    </header>
+
+    <div id="menu-mobile-side-left" class="menu-mobile-side left">
+        <div class="menu-wrap">
+            <div class="menu-head"><a class="menu-close-icon action--close-mobile-menu" href="#"><img alt="" src="/images/icons/icons-24-basic-close.aspx" /></a>
+<h1>Actalis</h1>
+</div>
+
+
+
+
+<div class="menu-container"><div class="menu-container">
+<ul class="main-menu" id="mobile-menu-collapse">
+	<li><a class="link-dropdown collapsed" data-target="#mobile-menu-collapse-enterprise" data-toggle="collapse" href="#">Soluzioni Enterprise</a>
+	<div class="mobile-menu-collapse collapse" data-parent="#mobile-menu-collapse" id="mobile-menu-collapse-enterprise">
+	<ul>
+		<li><a href="/it/soluzioni-enterprise.aspx">Soluzioni Enterprise</a></li>
+		<li><a href="/electronic-and-digital-signatures.aspx">Firma elettronica digitale</a></li>
+		<li><a href="/s-mime-certificates.aspx">Certificati S/MIME</a></li>
+		<li><a href="/public-key-infrastructure.aspx">Public Key Infrastructure (PKI)</a></li>
+		<li><a href="/ssl-certificates.aspx">Certificati SSL</a></li>
+		<li><a href="/code-signing-certificates.aspx">Code Signing</a></li>
+		<li><a href="/digital-identity.aspx">Identità digitale</a></li>
+		<li><a href="/it/posta-elettronica-certificata.aspx">Posta elettronica certificata</a></li>
+	</ul>
+	</div>
+	</li>
+	<li><a href="/partner-program.aspx">Partner</a></li>
+	<li><a href="/company.aspx">Azienda</a></li>
+	<li><a href="/news.aspx">News</a></li>
+	<li><a href="/contact-us.aspx">Contatti</a></li>
+</ul>
+<a class="btn btn-header" href="https://shop.actalis.com/store/it-it/">Shop SSL</a></div>
+
+
+
+
+</div>
+        </div>
+        <div class="menu-backdrop action--close-mobile-menu"></div>
+    </div>
+
+    <div id="menu-mobile-side-right" class="menu-mobile-side right">
+        <div class="menu-wrap">
+            <div class="menu-head">
+                <a href="#" class="menu-close-icon action--close-mobile-menu"><img src="/images/icons/icons-24-basic-close.aspx" alt="" /></a>
+                <h1>Login</h1>
+            </div>
+            <div class="menu-container">
+                <ul id="mobile-right-menu-collapse" class="main-menu">
+                  <li><a href="https://extwebra.actalis.it/portal/login">Area Clienti</a>
+
+
+
+</li><li><a href="https://login.actalis.com/auth/realms/actalis/protocol/openid-connect/auth?response_type=code&amp;client_id=actalis-area-clienti&amp;redirect_uri=https%3A%2F%2Fshop.actalis.com%2Fstore%2Fit%2Fsso%2Flogin&amp;state=3f1cd627-ca18-48dd-80fe-c04255fa116d&amp;login=true&amp;scope=openid&amp;kc_locale=it">Shop SSL</a>
+
+
+
+</li>                    <li class="wb-top">
+                        <a href="#" class="link-dropdown collapsed" data-toggle="collapse" data-target="#mobile-menu-collapse-lang"><img src="/images/icons/icons-24-domini-grey.aspx" /> <span>Italian</span></a>
+                        <div id="mobile-menu-collapse-lang" class="mobile-menu-collapse collapse" data-parent="#mobile-right-menu-collapse">
+                            <ul><li><a title="English" href="/home.aspx">English</a></li><li><a title="Italian" href="/it/home.aspx">Italian</a></li>
+                            </ul>
+                        </div>
+                    </li><li class="wb-top wb-bottom"><a href="/support.aspx"><img src="/images/icons/icons-24-notifications-question-circle-grey.aspx" /> Supporto</a>
+
+
+
+</li><li class="wb-bottom"><a href="https://webmail.pec.actalis.it/" target="_blank"><img alt="" src="/images/icons/pec-webmail.aspx" /> Webmail PEC</a>
+
+
+
+</li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-backdrop action--close-mobile-menu"></div>
+    </div>
+
+
+
+
+<main id="main-container">
+      
+<section class="relative with-opacity-hero-home container-homepage-three-box">
+<div class="with-background-hero-home">&nbsp;</div>
+
+<div class="swiper-container homepage-three-box action--homepage-three-box">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="inner-slide">
+<div class="slide-inner-bg">&nbsp;</div>
+
+<div class="content">
+<div class="slide-inner-head">
+<h2>Shop SSL</h2>
+
+<p><b>Proteggi il tuo sito e i suoi visitatori con certificati SSL<br />
+adatti a ogni tipo di esigenza</b>.</p>
+
+<hr /></div>
+
+<div class="inner-content">
+<p>L&#39;offerta Actalis comprende Certificati SSL di classe DV, OV ed EV, disponibili per il dominio singolo, in versione multidominio, o in grado di proteggere tutti i tuoi sottodomini (escluso EV).</p>
+</div>
+
+<div class="btn-container"><a class="btn btn-default text-uppercase" href="https://shop.actalis.com/store/it-it/">Visita lo shop SSL</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="inner-slide">
+<div class="slide-inner-bg">&nbsp;</div>
+
+<div class="content">
+<div class="slide-inner-head">
+<h2>Partner Program</h2>
+
+<p><b>Aumenta il tuo business con la rivendita dei<br />
+certificati SSL e di Code Signing di Actalis</b>.</p>
+
+<hr /></div>
+
+<div class="inner-content">
+<p>Oltre a specifici strumenti finalizzati alla gestione dei certificati, mettiamo a disposizione dei nostri reseller vantaggi di tipo economico, di supporto tecnico e di marketing, differenziati sulla base di 4 livelli (Tiers), associati ai volumi di vendita.</p>
+</div>
+
+<div class="btn-container"><a class="btn btn-default text-uppercase" href="/it/programma-partner.aspx">Approfitta di vantaggi esclusivi</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="inner-slide">
+<div class="slide-inner-bg">&nbsp;</div>
+
+<div class="content">
+<div class="slide-inner-head">
+<h2>Soluzioni Enterprise</h2>
+
+<p><b>Modernizza i processi aziendali grazie alla gestione<br />
+automatizzata dei certificati</b>.</p>
+
+<hr /></div>
+
+<div class="inner-content">
+<p>I nostri esperti in ambito Trust Services sono a disposizione per definire e progettare soluzioni personalizzate, partendo dalle specifiche esigenze e requisiti indicati da aziende di ogni settore e business.</p>
+</div>
+
+<div class="btn-container"><a class="btn btn-default text-uppercase" href="/it/soluzioni-enterprise.aspx">Scopri le soluzioni Actalis</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="swiper-pagination homepage-three-box-pagination" id="homepage-three-box-pagination">&nbsp;</div>
+</section>
+
+<div class="container-button-slide d-block d-md-none"><button class="text-left uppercase slide-to-button" data-slide-to="0" type="button">Shop<br />
+SSL</button><button class="uppercase slide-to-button" data-slide-to="1" type="button">Partner<br />
+Program</button><button class="uppercase slide-to-button text-right" data-slide-to="2" type="button">Soluzioni<br />
+Enterprise</button></div>
+
+
+
+
+<section class="banner-under-hero-area  pt-5 pb-5 bg-blue-actalis">
+<div class="container">
+<div class="row">
+<div class="flex-row flex-wrap col-xl-10 offset-xl-1 d-flex justify-content-center align-items-center">
+<div class="width-10perc"><img alt="Certification Authority" class="d-none d-sm-block" src="/images/homepage/certification-authority.aspx" width="44px" /></div>
+
+<div class="pl-4 pr-5  width-70perc">
+<div class="d-flex">
+<div class="d-block d-md-none mr-3"><img alt="Certification Authority" src="/images/homepage/certification-authority.aspx" width="30px" /></div>
+
+<div>
+<h6 class="text-white bold">Certification Authority europea e membro del CAB Forum</h6>
+</div>
+</div>
+
+<p class="mb-0 text-white mt-1">Actalis è una Certification Authority leader in Europa, qualificata secondo il regolamento eIDAS per l&#39;erogazione di servizi certificati, riconosciuta in tutto il mondo per l&#39;emissione di certificati SSL server.</p>
+</div>
+
+<div class="width-20perc"><a class="btn btn-default" href="/it/azienda.aspx">Maggiori dettagli</a></div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+<section class="section with-background-light-blue">
+<div class="container-xxl">
+<div class="row">
+<div class="col-12">
+<div class="content centered text-center">
+<h1>Soluzioni per la sicurezza del tuo business</h1>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="swiper-container homepage-carousel-first action--homepage-carousel-first">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="inner-slide homepage-solution-bg-1">
+<div class="slide-inner-bg">&nbsp;</div>
+
+<div class="content">
+<div class="slide-inner-head">
+<h3>Automation per i certificati SSL</h3>
+</div>
+
+<div class="inner-content">
+<p>Interfaccia dedicata alle enterprise e processi automatizzati di emissione e rinnovo certificati SSL grazie al protocollo ACME.</p>
+</div>
+
+<div class="btn-container"><a class="btn btn-default text-uppercase" href="/ssl-certificates.aspx">MAGGIORI DETTAGLI</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="inner-slide homepage-solution-bg-2">
+<div class="slide-inner-bg">&nbsp;</div>
+
+<div class="content">
+<div class="slide-inner-head">
+<h3>Soluzioni di firma conformi all&#39;eIDAS</h3>
+</div>
+
+<div class="inner-content">
+<p>Dematerializzazione delle procedure aziendali in conformità alle normative europee grazie ai più moderni servizi di Firma Elettronica e Digitale.</p>
+</div>
+
+<div class="btn-container"><a class="btn btn-default text-uppercase" href="/electronic-and-digital-signatures.aspx">MAGGIORI DETTAGLI</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="inner-slide homepage-solution-bg-3">
+<div class="slide-inner-bg">&nbsp;</div>
+
+<div class="content">
+<div class="slide-inner-head">
+<h3>Infrastrutture PKI private</h3>
+</div>
+
+<div class="inner-content">
+<p>Implementazione di infrastrutture personalizzate per l&#39;utilizzo autonomo del sistema di crittografia a chiave pubblica.</p>
+</div>
+
+<div class="btn-container"><a class="btn btn-default text-uppercase" href="/public-key-infrastructure.aspx">MAGGIORI DETTAGLI</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="inner-slide homepage-solution-bg-4">
+<div class="slide-inner-bg">&nbsp;</div>
+
+<div class="content">
+<div class="slide-inner-head">
+<h3>Digital identity e autenticazione</h3>
+</div>
+
+<div class="inner-content">
+<p>Sicurezza negli accessi agli ambienti fisici e virtuali grazie a tecnologie basate sulla certificazione e su livelli multipli di autenticazione.</p>
+</div>
+
+<div class="btn-container"><a class="btn btn-default text-uppercase" href="/digital-identity.aspx">MAGGIORI DETTAGLI</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="swiper-pagination homepage-carousel-first-pagination" id="homepage-carousel-first-pagination">&nbsp;</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="section with-background section-solutions-background">
+<div class="container-xxl">
+<div class="row">
+<div class="col-12 content">
+<h2 class="text-white text-center">Perché scegliere Actalis</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12 box-white">
+<div class="card card-section">
+<div class="card-body content">
+<h3 class="text-center">Con milioni di utenti siamo la prima Certification Authority europea</h3>
+
+<p class="text-center mw-864 mb-44">In oltre venti anni di attività come <strong>Certification Authority</strong> abbiamo servito decine di milioni di utenti con i nostri servizi certificati raggiungendo <strong>il primato a livello europeo</strong> (dati Netcraft).</p>
+
+<div class="row">
+<div class="col-md-4 text-center">
+<h2 class="text-brand mb-16">62,4 milioni</h2>
+
+<h4 class="text-strong">Certificati digitali di autenticazione personale emessi</h4>
+</div>
+
+<div class="col-md-4 text-center">
+<h2 class="text-brand mb-16">480,000</h2>
+
+<h4 class="text-strong">Certificati SSL attivi</h4>
+</div>
+
+<div class="col-md-4 text-center">
+<h2 class="text-brand mb-16">310,000</h2>
+
+<h4 class="text-strong">Certificati di firma attivi</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="homepage-grid-why">
+<div class="box item1">
+<div class="card card-section">
+<div class="homepage-why-box">
+<div class="box-content">
+<div class="card-header">
+<h3>Flessibilità e personalizzazione sono nel nostro DNA</h3>
+</div>
+
+<div class="card-body content"><strong>La mission di Actalis</strong> è da sempre quella di incontrare le <strong>esigenze di tutte le tipologie</strong> di clientela servite, offrendo prodotti e servizi rivolti ad un&rsquo;utenza business, sia pubblica che privata.</div>
+</div>
+
+<div class="box-image"><img alt="Flessibilità e personalizzazione sono nel nostro DNA" class="card-image image-top" src="/images/homepage/homepage-box-mission.aspx" /></div>
+</div>
+</div>
+</div>
+
+<div class="box item2">
+<div class="card card-section">
+<div class="homepage-why-box">
+<div class="box-content">
+<div class="card-header">
+<h3>Siamo qualificati eIDAS e facciamo parte del CAB Forum</h3>
+</div>
+
+<div class="card-body content">Siamo l&#39;unica Certification Authority italiana <strong>membro del CAB Forum</strong>, qualificata secondo il regolamento <strong>eIDAS</strong> per l&#39;erogazione di servizi certificati oltre ad essere riconosciuta <strong>Qualified Trust Service Provider</strong> nella OBE Directory per la fornitura di <strong>QWAC</strong> e <strong>QSEALc</strong> services nell&#39;ambito della PSD2.</div>
+</div>
+
+<div class="box-image"><img alt="Siamo qualificati eIDAS e facciamo parte del CAB Forum" class="card-image image-right" src="/images/homepage/homepage-box-authority.aspx" /></div>
+</div>
+</div>
+</div>
+
+<div class="box item3">
+<div class="card card-section">
+<div class="homepage-why-box">
+<div class="box-content">
+<div class="card-header">
+<h3>Tutti i nostri professionisti di Trust Services sono certificati nel framework ITIL</h3>
+</div>
+
+<div class="card-body content">Tutto il ciclo di vita della soluzione, dal primo contatto, alla fase di implementazione, fino all&#39;esercizio operativo è seguito da professionisti di servizi certificati, la cui qualifica in ambito <strong>Information Technology Infrastructure Library (ITIL)</strong> costituisce un&#39;ulteriore garanzia in termini di gestione dei processi.</div>
+</div>
+
+<div class="box-image"><img alt="Tutti i nostri professionisti di Trust Services sono certificati nel framework ITIL" class="card-image image-right" src="/images/homepage/homepage-box-itil.aspx" /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="section with-background-left section-aruba-datacenter-bg">
+<div class="container-xxl">
+<div class="row">
+<div class="col-xl-4 offset-xl-8">
+<div class="card card-section">
+<div class="card-body content">
+<h2>Esperienza, solidità e data center Rating 4 del <span class="text-brand">Gruppo Aruba</span></h2>
+
+<p>La nostra solidità è garantita dall&#39;essere parte del Gruppo Aruba, società leader in Italia per domini, hosting e PEC, con clienti serviti in tutto il mondo tramite il brand Aruba Cloud, oltre che Registro ufficiale dell&#39;estensione &quot;.cloud&quot;. L&#39;infrastruttura tecnologica di Aruba ci consente di fare affidamento su data center con attestazione di conformità ai massimi livelli di resilienza e qualità infrastrutturale (Rating 4 ANSI/TIA 942).</p>
+<a class="btn btn-default" href="https://www.datacenter.it/home.aspx" target="_blank">Scopri di più sui nostri Data Center</a></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="section with-background-light-blue">
+<div class="container-xxl">
+<div class="row">
+<div class="col-12">
+<div class="content centered text-center">
+<h2>Certificazioni, accreditamenti e conformità</h2>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="swiper-container homepage-carousel-certificazioni action--homepage-carousel-certificazioni">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="card card-section with-shadow content">
+<div class="card-body d-flex flex-column justify-content-between p-46 text-center">
+<h3>Certificazione<br class="d-none d-md-block" />
+ISO 9001</h3>
+
+<div><a class="btn btn-default" href="/it/azienda.aspx#compliance">Maggiori dettagli</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="card card-section with-shadow content">
+<div class="card-body d-flex flex-column justify-content-between p-46 text-center">
+<h3>Certificazione<br class="d-none d-md-block" />
+ISO 27001</h3>
+
+<div><a class="btn btn-default" href="/it/azienda.aspx#compliance">Maggiori dettagli</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="card card-section with-shadow content">
+<div class="card-body d-flex flex-column justify-content-between p-46 text-center">
+<h3>Certificazione<br class="d-none d-md-block" />
+ISO 37001</h3>
+
+<div><a class="btn btn-default" href="/it/azienda.aspx#compliance">Maggiori dettagli</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="card card-section with-shadow content">
+<div class="card-body d-flex flex-column justify-content-between p-46 text-center">
+<h3>Certificazione<br class="d-none d-md-block" />
+ISO 45001</h3>
+
+<div><a class="btn btn-default" href="/it/azienda.aspx#compliance">Maggiori dettagli</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="card card-section with-shadow content">
+<div class="card-body d-flex flex-column justify-content-between p-46 text-center">
+<h3>Rating 4<br class="d-none d-md-block" />
+ANSI/TIA-942</h3>
+
+<div><a class="btn btn-default" href="/it/azienda.aspx#compliance">Maggiori dettagli</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="card card-section with-shadow content">
+<div class="card-body d-flex flex-column justify-content-between p-46 text-center">
+<h3>Accreditamento eIDAS</h3>
+
+<div><a class="btn btn-default" href="/it/azienda.aspx#compliance">Maggiori dettagli</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="card card-section with-shadow content">
+<div class="card-body d-flex flex-column justify-content-between p-46 text-center">
+<h3>Membership CAB Forum</h3>
+
+<div><a class="btn btn-default" href="/it/azienda.aspx#compliance">Maggiori dettagli</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="card card-section with-shadow content">
+<div class="card-body d-flex flex-column justify-content-between p-46 text-center">
+<h3>Cloud Signature Consortium</h3>
+
+<div><a class="btn btn-default" href="/it/azienda.aspx#compliance">Maggiori dettagli</a></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="card card-section with-shadow content">
+<div class="card-body d-flex flex-column justify-content-between p-46 text-center">
+<h3>Conformità PSD2</h3>
+
+<div><a class="btn btn-default" href="/it/azienda.aspx#compliance">Maggiori dettagli</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="swiper-pagination homepage-carousel-first-pagination" id="homepage-carousel-certificazioni-pagination">&nbsp;</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+</main>
+
+
+
+    <footer id="main-footer">
+        <div class="footer-main-menu">
+            <div class="footer-main-menu-col">
+                <h3 class="collapsed" data-target="#footer-menu-collapse-company" data-toggle="collapse">Azienda</h3>
+
+<ul class="collapse" data-parent="#main-footer" id="footer-menu-collapse-company">
+	<li><a href="/company.aspx">Actalis</a></li>
+	<li><a href="/news.aspx">News</a></li>
+	<li><a href="/contact-us.aspx">Contatti</a></li>
+</ul>
+
+
+
+
+
+            </div>
+
+            <div class="footer-main-menu-col">
+                <h3 aria-expanded="true" data-target="#footer-menu-collapse-solutions" data-toggle="collapse">Soluzioni</h3>
+
+<ul class="collapse" data-parent="#main-footer" id="footer-menu-collapse-solutions" style="">
+	<li><a href="/it/soluzioni-enterprise.aspx">Soluzioni enterprise</a></li>
+	<li><a href="/electronic-and-digital-signatures.aspx">Firma Elettronica e Digitale</a></li>
+	<li><a href="/ssl-certificates.aspx">Certificati SSL</a></li>
+	<li><a href="/it/mpki.aspx">Enterprise RA</a></li>
+	<li><a href="/s-mime-certificates.aspx">Certificati S/MIME</a></li>
+	<li><a href="/code-signing-certificates.aspx">Certificati per Code Signing</a></li>
+	<li><a href="/public-key-infrastructure.aspx">Infrastrutture PKI</a></li>
+	<li><a href="/digital-identity.aspx">Identità Digitale</a></li>
+	<li><a href="/it/posta-elettronica-certificata.aspx">Posta elettronica certificata</a></li>
+	<li><a href="/partner-program.aspx">Programma Partner</a></li>
+	<li><a href="https://shop.actalis.com/store/it-it/">Shop SSL</a></li>
+</ul>
+
+
+
+
+
+            </div>
+
+            <div class="footer-main-menu-col">
+                <h3 class="collapsed" data-target="#footer-menu-collapse-resources" data-toggle="collapse">Risorse</h3>
+
+<ul class="collapse" data-parent="#main-footer" id="footer-menu-collapse-resources">
+	<li><a href="https://extwebra.actalis.it/portal/login">Area Clienti</a></li>
+	<li><a href="/support.aspx">Supporto</a></li>
+	<li><a href="https://guide.actalis.com/it/certificati-ssl/gestione.aspx" target="_blank">Guide</a></li>
+</ul>
+
+
+
+
+
+            </div>
+
+            <div class="footer-main-menu-col">
+                <h3 class="collapsed" data-target="#footer-menu-collapse-legal" data-toggle="collapse">Compliance</h3>
+
+<ul class="collapse" data-parent="#main-footer" id="footer-menu-collapse-legal">
+	<li><a href="https://www.actalis.it/area-download.aspx">Documentazione</a></li>
+	<li><a href="https://www.actalis.it/documenti-it/it_privacy_policy_actalis.pdf">Privacy policy</a></li>
+	<li><a href="/cookie-policy.aspx">Informativa sull&#39;uso dei cookie</a></li>
+	<li><a href="javascript: Cookiebot.renew()">Personalizza cookie</a></li>
+	<li><a href="/it/informazioni-precontrattuali.aspx">Informazioni precontrattuali</a></li>
+	<li><a href="https://www.aruba.it/documents/tc-files/it/18_policy_prevenzione_corruzione.aspx">Policy Prevenzione della corruzione</a></li>
+	<!-- li><a href="https://www.aruba.it/whistleblowing">Segnala illecito</a></li -->
+</ul>
+</ul>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-12">
+                        <p>ACTALIS S.p.A. Società per Azioni a Socio Unico Registro Imprese di Bergamo N&deg; 03358520967 - R.E.A. 436479 - C.F: 03358520967 - P.IVA: 03358520967 - Cap. Soc. &euro; 6.300.000,00 i.v.<br />
+Copyright &copy; ACTALIS S.p.A. Tutti i diritti sono riservati</p>
+
+<p>Dal 23 Luglio 2018 è attiva <a href="https://conciliaweb.agcom.it/conciliaweb/" target="_blank">ConciliaWeb</a>, la piattaforma telematica di AgCom con cui presentare domande di conciliazione bonaria alle controversie tra utenti e operatori.</p>
+
+<p>La Domanda di Conciliazione può essere inviata anche tramite piattaforma ODR di cui al regolamento UE n. 524/2013, gestita dalla Commissione Europea e raggiungibile al <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage" target="_blank">seguente link</a>.</p>
+
+<div class="aruba-footer-logo"><a href="https://www.aruba.it/chisiamo.aspx" target="_blank">an <svg version="1.1" viewbox="0 0 445 125" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+<title></title>
+<desc>Created with Sketch.</desc> <g fill="none" fill-rule="evenodd" id="Symbols" stroke="none" stroke-width="1"> <g id="Arubait"> <g id="aruba-it"> <g fill="#E35205" id="outside" transform="translate(0.000100, 0.000500)"> <path d="M30.9415,74.672 L35.2795,74.672 C36.4185,74.672 37.6385,74.76 38.9075,74.932 C40.1035,76.026 40.6645,76.694 40.8745,76.967 C40.9775,77.125 41.5865,78.111 42.8615,81.038 C43.6615,82.88 44.1225,84.587 44.1915,85.966 C44.2695,87.53 44.1125,89.074 43.7245,90.549 C43.3375,92.023 42.6295,93.581 41.6225,95.175 C40.4445,97.039 39.4385,98.027 38.8015,98.528 C37.9745,99.178 37.0485,99.656 36.0495,99.95 C35.7215,100.046 35.4105,100.094 35.1015,100.094 C34.8665,100.094 34.6335,100.066 34.3905,100.008 C32.6195,99.592 30.8815,99.066 29.2235,98.443 C27.7345,97.886 27.0635,97.416 26.8435,97.24 C25.9325,96.513 25.0205,95.813 24.1145,95.145 C23.9965,93.751 23.8875,91.511 23.8875,87.981 C23.8875,85.099 24.2925,82.469 25.0905,80.163 C25.5455,78.847 26.6265,77.426 28.2355,76.02 C29.2795,75.546 30.1705,75.102 30.9415,74.672 L30.9415,74.672 Z M55.6885,45.88 C55.2125,45.88 54.7295,45.909 54.2515,45.967 C50.3465,46.46 47.0935,48.675 45.2215,52.018 C44.4375,51.791 43.6175,51.571 42.7575,51.356 C39.1165,50.445 36.1255,49.921 33.6165,49.752 C33.1385,49.719 32.6425,49.703 32.1495,49.703 C29.4055,49.703 26.5575,50.217 23.6845,51.231 C21.3755,52.045 19.3405,52.818 17.6365,53.527 C15.3305,54.488 13.2445,55.689 11.4325,57.096 C8.8725,59.089 6.8825,61.983 5.3425,65.946 C4.4595,68.213 3.6415,70.294 2.8845,72.185 C1.7885,74.924 1.0595,78.051 0.7185,81.479 C0.4525,84.13 0.2485,86.647 0.1125,88.955 C-0.0375,91.488 -0.0375,94.059 0.1125,96.593 C0.3395,100.456 1.4515,103.913 3.4185,106.861 L6.4825,111.458 C8.1965,114.031 10.7605,116.465 14.1015,118.693 C17.6175,121.037 20.6245,122.357 23.5665,122.844 C25.1465,123.108 27.3495,123.442 30.1025,123.835 C32.5935,124.191 34.7205,124.363 36.6065,124.363 C37.3305,124.363 38.0345,124.337 38.6965,124.286 C41.6625,124.058 44.7275,123.11 47.8005,121.471 C48.3785,121.163 48.9465,120.835 49.5015,120.487 C51.7035,123.044 54.7495,124.505 58.0875,124.505 C62.2105,124.505 67.5255,122.004 68.9365,114.953 C69.3575,112.841 69.4685,109.952 69.3075,105.286 C69.1825,101.691 69.0555,94.734 68.9295,84.604 C68.7985,74.239 68.5975,67.088 68.3305,63.347 C67.9735,58.355 67.4105,55.378 66.3855,53.072 C64.4095,48.633 60.3115,45.88 55.6885,45.88 L55.6885,45.88 Z" id="Fill-1"></path> <path d="M80.3295,48.0724 C78.3595,48.0724 76.4545,48.5914 74.6675,49.6144 C71.1275,51.6414 68.7575,55.3694 68.3275,59.5854 L68.1645,61.1784 C68.1375,61.4484 68.1235,61.7194 68.1235,61.9904 L68.1235,62.9594 C68.1235,63.0704 68.1265,63.1814 68.1305,63.2924 C69.3385,92.2974 70.1235,109.7504 70.2755,112.0014 C70.7285,118.8564 74.0985,121.9354 76.8455,123.3104 C78.4315,124.1024 80.1065,124.5024 81.8315,124.5024 C85.1235,124.5024 88.2825,122.9804 90.4985,120.3254 C93.0085,117.3064 93.6725,113.5364 93.4695,103.5044 C93.3435,97.3864 93.2795,90.8104 93.2795,83.9554 C93.2795,79.7984 93.2705,77.2334 93.2295,75.4984 C93.7875,74.6774 94.5165,73.9104 95.3985,73.2174 C95.9955,72.7484 96.8415,72.4014 97.9115,72.1874 C98.7455,72.0204 99.4895,71.9354 100.1165,71.9354 C100.5065,71.9354 100.7555,71.9684 100.8955,71.9964 C101.1855,72.0544 101.2505,72.1144 101.3485,72.2024 C103.2755,73.9574 104.6855,75.0714 105.9145,75.8084 C106.1985,75.9794 106.7255,76.3164 107.5885,76.9314 C110.1115,78.7364 112.7445,79.6554 115.4045,79.6554 C118.9145,79.6554 122.2465,78.0074 124.5465,75.1334 C126.6935,72.4504 127.6045,69.0504 127.1105,65.5604 C126.5765,61.8654 124.4145,58.6704 121.0195,56.5444 C120.6525,56.3164 119.8415,55.7644 118.3445,54.5214 C115.6465,52.2824 112.6335,50.7114 109.3855,49.8504 C106.8475,49.1774 103.9385,48.7544 100.7415,48.5934 C100.1635,48.5634 99.5775,48.5494 98.9975,48.5494 C96.0985,48.5494 93.1705,48.9124 90.2955,49.6304 C89.3825,49.8584 88.5025,50.1304 87.6555,50.4454 C85.6915,48.9194 83.1535,48.0724 80.3295,48.0724" id="Fill-3"></path> <path d="M145.265,41.8722 C142.542,41.8722 139.827,42.7902 137.197,44.6012 L136.877,44.8202 C135.755,45.5922 134.849,46.6382 134.244,47.8582 L134.071,48.2062 C129.809,56.8012 127.536,62.2932 126.7,66.0132 C125.986,69.1912 125.428,72.5892 125.04,76.1132 C124.64,79.7572 124.494,83.0552 124.608,85.9152 C124.775,90.0862 126.122,94.0782 128.61,97.7822 C130.807,101.0552 133.36,103.6662 136.196,105.5392 C138.419,107.0092 140.749,108.2842 143.116,109.3262 C146.2,110.6852 149.343,111.3762 152.452,111.3762 L159.496,111.3762 C163.272,111.3762 166.06,111.1192 168.271,110.5652 C170.751,109.9462 173.544,108.6042 177.321,106.2152 C181.684,103.4582 184.809,100.0382 186.605,96.0532 C187.908,93.1632 188.899,90.0902 189.551,86.9212 C190.188,83.8062 190.511,80.1662 190.511,76.0972 C190.511,71.5422 189.363,66.1172 187.098,59.9702 C184.275,52.3152 181.622,47.5732 176.411,45.9772 C175.118,45.5822 173.791,45.3842 172.457,45.3842 C170.051,45.3842 167.681,46.0172 165.412,47.2652 C163.115,48.5282 161.296,50.5302 160.292,52.9002 C159.34,55.1502 158.643,58.8202 160.735,63.5222 C161.677,65.6422 162.822,68.0842 164.137,70.7772 C164.768,72.0732 165.09,73.6722 165.09,75.5222 C165.09,78.1242 164.897,80.4062 164.533,82.1192 C164.098,84.1482 163.712,84.8512 163.708,84.8572 C163.663,84.9352 163.233,85.6392 161.821,86.9422 C161.305,87.4182 160.681,87.7502 159.916,87.9552 C158.449,88.3492 157.139,88.5392 155.905,88.5392 C154.772,88.5392 153.68,88.3752 152.566,88.0392 C151.701,87.7782 150.904,87.3612 150.19,86.7982 C149.545,86.2902 149.24,85.9322 149.117,85.7672 C149.016,85.4262 148.768,84.4102 148.604,82.2702 C148.43,80.0072 148.596,77.8752 149.098,75.9322 C149.76,73.3642 150.664,70.6412 151.786,67.8382 C153.044,64.6902 153.657,63.6312 153.763,63.4572 C155.43,61.1492 156.45,58.6992 156.789,56.1842 C157.183,53.2242 156.68,50.3572 155.334,47.8842 C153.274,44.1142 149.513,41.8722 145.265,41.8722" id="Fill-5"></path> <path d="M219.8212,74.839 C221.0892,74.667 222.3092,74.579 223.4492,74.579 L227.7872,74.579 C228.5582,75.008 229.4492,75.452 230.4922,75.926 C232.1032,77.335 233.1842,78.756 233.6392,80.07 C234.4362,82.376 234.8412,85.006 234.8412,87.887 C234.8412,91.407 234.7332,93.652 234.6152,95.051 C233.7022,95.724 232.7902,96.424 231.8902,97.144 C231.6712,97.319 230.9932,97.793 229.5062,98.35 C227.8422,98.974 226.1052,99.501 224.3412,99.915 C224.0932,99.974 223.8602,100.002 223.6242,100.002 C223.3202,100.002 223.0132,99.955 222.6862,99.859 C221.6782,99.563 220.7552,99.085 219.9292,98.436 C219.2892,97.933 218.2852,96.947 217.1072,95.082 C216.0982,93.485 215.3922,91.93 215.0052,90.457 C214.6152,88.979 214.4592,87.439 214.5382,85.874 C214.6072,84.491 215.0672,82.788 215.8692,80.944 C217.1442,78.01 217.7552,77.027 217.8542,76.875 C218.0612,76.605 218.6202,75.936 219.8212,74.839 M202.6712,0 C199.9692,0 197.4682,0.901 195.4382,2.608 C192.4042,5.16 191.8972,8.357 191.5822,11.967 C191.2422,15.862 191.0422,23.031 190.9492,34.528 C190.7922,54.086 190.5632,60.944 190.3982,63.254 C190.1312,66.995 189.9292,74.148 189.8002,84.51 C189.6742,94.612 189.5462,101.571 189.4222,105.195 C189.2592,109.861 189.3702,112.754 189.7922,114.861 C191.1982,121.909 196.5152,124.413 200.6412,124.413 C203.9762,124.413 207.0222,122.953 209.2252,120.393 C209.7822,120.741 210.3512,121.07 210.9302,121.38 C214.0052,123.019 217.0712,123.965 220.0392,124.193 C220.6962,124.243 221.3972,124.269 222.1202,124.269 C224.0102,124.269 226.1382,124.097 228.6252,123.742 C231.4672,123.336 233.6082,123.011 235.1742,122.749 C238.1032,122.264 241.1112,120.945 244.6272,118.6 C247.9632,116.378 250.5272,113.943 252.2452,111.365 L255.3132,106.766 C257.2792,103.813 258.3882,100.36 258.6162,96.496 C258.7642,93.964 258.7642,91.398 258.6162,88.865 C258.4802,86.567 258.2772,84.053 258.0102,81.386 C257.6672,77.955 256.9392,74.83 255.8462,72.094 C255.0892,70.203 254.2702,68.123 253.3872,65.853 C251.8422,61.884 249.8522,58.993 247.3012,57.007 C245.4872,55.596 243.4002,54.395 241.0942,53.435 C239.4072,52.733 237.3732,51.96 235.0462,51.138 C232.1732,50.124 229.3212,49.61 226.5672,49.61 C226.0832,49.61 225.5952,49.627 225.1172,49.658 C222.6022,49.828 219.6122,50.353 215.9702,51.263 C215.3482,51.419 214.7462,51.577 214.1642,51.739 C214.2042,48.381 214.2652,44.196 214.3562,38.986 C214.7022,19.058 214.9752,15.505 215.0502,14.891 C215.6622,9.994 214.1342,3.817 208.0122,1.163 C206.2182,0.389 204.4252,0 202.6712,0" id="Fill-7"></path> <path d="M289.347,74.6725 L293.686,74.6725 C294.826,74.6725 296.045,74.7595 297.314,74.9325 C298.512,76.0275 299.073,76.6955 299.281,76.9665 C299.382,77.1235 299.992,78.1085 301.265,81.0365 C302.068,82.8815 302.529,84.5865 302.597,85.9645 C302.675,87.5335 302.519,89.0745 302.131,90.5445 C301.743,92.0235 301.036,93.5795 300.029,95.1735 C298.851,97.0395 297.845,98.0265 297.208,98.5265 C296.38,99.1785 295.455,99.6565 294.456,99.9505 C294.125,100.0475 293.817,100.0945 293.511,100.0945 C293.276,100.0945 293.043,100.0665 292.799,100.0095 C291.026,99.5915 289.287,99.0655 287.63,98.4435 C286.141,97.8855 285.466,97.4145 285.245,97.2365 C284.337,96.5125 283.426,95.8135 282.52,95.1445 C282.403,93.7545 282.294,91.5135 282.294,87.9805 C282.294,85.0995 282.699,82.4685 283.496,80.1605 C283.951,78.8475 285.033,77.4255 286.642,76.0195 C287.686,75.5455 288.576,75.1015 289.347,74.6725 M314.102,45.8785 C313.615,45.8785 313.119,45.9095 312.631,45.9705 C308.746,46.4605 305.497,48.6745 303.626,52.0175 C302.844,51.7915 302.025,51.5705 301.165,51.3565 C297.523,50.4455 294.533,49.9215 292.023,49.7525 C291.538,49.7195 291.051,49.7035 290.566,49.7035 C287.812,49.7035 284.959,50.2175 282.089,51.2315 C279.773,52.0485 277.738,52.8215 276.041,53.5275 C273.735,54.4895 271.649,55.6905 269.837,57.0975 C267.281,59.0885 265.29,61.9815 263.748,65.9435 C262.865,68.2155 262.046,70.2965 261.289,72.1875 C260.196,74.9205 259.467,78.0475 259.124,81.4785 C258.855,84.1665 258.651,86.6855 258.519,88.9605 C258.368,91.4875 258.368,94.0585 258.519,96.5925 C258.744,100.4535 259.856,103.9115 261.825,106.8605 L264.889,111.4575 C266.603,114.0315 269.167,116.4675 272.51,118.6945 C276.023,121.0365 279.03,122.3555 281.97,122.8435 C283.55,123.1075 285.753,123.4415 288.509,123.8355 C290.994,124.1905 293.121,124.3635 295.012,124.3635 C295.736,124.3635 296.439,124.3375 297.102,124.2855 C300.068,124.0575 303.132,123.1105 306.205,121.4715 C306.784,121.1635 307.352,120.8355 307.909,120.4865 C310.109,123.0435 313.157,124.5055 316.494,124.5055 C320.613,124.5055 325.925,122.0055 327.342,114.9595 C327.763,112.8395 327.873,109.9535 327.713,105.2885 C327.588,101.6705 327.464,94.9045 327.334,84.6035 C327.204,74.2605 327.003,67.1095 326.737,63.3485 C326.378,58.3495 325.815,55.3735 324.79,53.0695 C322.818,48.6335 318.722,45.8785 314.102,45.8785" id="Fill-9"></path> <path d="M341.3363,94.4909 C340.3903,94.4909 339.4383,94.6589 338.5263,95.0009 L336.5003,95.7609 C329.9723,98.2089 327.7913,102.3979 327.1113,105.4809 C326.6093,107.7299 326.5003,109.9109 326.7913,111.9429 C327.1483,114.4439 328.6963,119.0309 335.0393,121.6679 C337.1463,122.5479 339.2703,122.9959 341.3413,122.9959 C342.8473,122.9959 344.3203,122.7589 345.7213,122.2919 C348.5593,121.3459 350.9063,119.7799 352.6923,117.6389 C355.2633,114.5489 356.1713,110.5189 355.1893,106.5749 C354.3793,103.3459 352.5083,100.6119 349.7743,98.6539 C348.8843,98.0209 348.0463,97.5019 347.2333,97.0839 C346.8363,96.6509 346.3883,96.2579 345.8943,95.9149 C344.5363,94.9749 342.9433,94.4909 341.3363,94.4909" id="Fill-11"></path> <path d="M367.9662,19.2604 C364.9472,19.2604 362.1272,20.0684 359.5822,21.6594 C356.9312,23.3164 354.9232,25.6034 353.7792,28.2714 C353.0282,30.0284 352.5302,31.9684 352.3032,34.0384 C352.1392,35.4994 352.0542,36.9534 352.0542,38.3394 C352.0542,40.8454 352.5852,43.1784 353.6332,45.2724 C354.1952,46.3954 354.8452,47.5124 355.5672,48.5944 C356.2372,49.6004 357.1502,50.8214 358.3532,52.3244 L358.5942,52.6274 C358.6972,52.7564 358.8042,52.8824 358.9152,53.0044 C358.6862,54.1124 358.5702,55.2954 358.5702,56.5474 C358.5702,58.6014 358.8712,60.6124 359.4652,62.5414 C361.4182,86.7064 362.5002,100.0874 362.6282,101.6144 C363.1562,107.9534 366.7982,110.9304 368.9222,112.1414 C370.8732,113.2594 372.9362,113.8294 375.0372,113.8294 C377.0712,113.8294 379.0702,113.2754 380.8192,112.2254 C382.7032,111.0934 385.9482,108.3314 386.5302,102.5374 C386.6632,101.2224 386.8142,99.7294 384.8152,77.7294 C383.0912,58.7834 382.6432,54.8684 382.4452,53.5744 C382.2932,52.5954 382.0382,51.6164 381.6802,50.6694 C382.4882,49.5394 383.2142,48.2344 383.8642,46.7484 C385.3772,43.2884 386.0242,39.8474 385.7882,36.5164 C385.5612,33.3604 384.7282,30.4464 383.3092,27.8474 C381.4342,24.4104 378.5492,21.9034 374.9652,20.5964 C372.4862,19.6964 370.1992,19.2604 367.9662,19.2604" id="Fill-13"></path> <path d="M416.0423,6.3893 C412.7783,6.3893 409.6103,7.7613 407.1203,10.2503 C403.9373,13.4343 403.0773,17.5713 403.2853,28.6943 C403.3583,32.6153 403.4633,36.5963 403.6003,40.5983 C392.4563,41.5753 391.2983,42.2463 389.5663,43.2513 C385.6163,45.5453 383.3513,49.3083 383.3513,53.5763 C383.3513,55.9593 384.1513,58.2953 385.6053,60.1533 C386.9403,61.8613 389.4623,64.0013 393.8913,64.5013 C394.5553,64.5773 395.3183,64.6153 396.2133,64.6153 C397.9343,64.6153 400.2523,64.4763 403.4013,64.1833 C403.4573,68.0723 403.5303,73.1063 403.6203,79.1143 C403.8933,97.5323 403.8293,103.6483 403.7293,105.5353 C403.4583,110.5743 404.0413,114.0353 405.6213,116.7563 C407.9153,120.7063 411.6083,122.9723 415.7553,122.9723 C418.7083,122.9723 422.9243,121.7973 426.2333,116.1973 C428.1813,112.9033 428.7713,108.3713 428.4093,99.4773 C428.1613,93.3893 428.0993,84.5923 428.2253,73.3283 C428.2733,68.9863 428.3123,65.4613 428.3413,62.6973 C428.6623,62.6943 428.9873,62.6933 429.3153,62.6933 C434.7633,62.6933 438.9153,61.0953 441.6563,57.9443 C446.2203,52.7073 445.1803,46.6603 442.1233,42.9913 C440.4213,40.9483 437.2363,38.5113 431.7363,38.5113 C431.5003,38.5113 431.2603,38.5153 431.0163,38.5253 C430.2393,38.5553 429.3263,38.5973 428.2803,38.6533 C428.2613,37.8343 428.2423,36.9253 428.2253,35.9173 C428.0873,28.3473 427.8763,23.2503 427.5623,19.8733 C427.3983,18.1193 427.1053,15.8243 426.2663,13.6673 C424.7243,9.7003 421.6313,7.0943 417.7803,6.5173 C417.1873,6.4313 416.6123,6.3893 416.0423,6.3893" id="Fill-15"></path> </g> <g fill="#FFFFFF" id="inside" transform="translate(7.999950, 8.000029)"> <path d="M9.53025,69.5469708 C8.44025,72.6959708 7.88725,76.2069708 7.88725,79.9809708 C7.88725,83.8699708 8.01325,86.9059708 8.26125,89.0049708 C8.46225,90.7259708 9.02425,91.9179708 9.93025,92.5509708 C11.22325,93.4579708 12.53825,94.4439708 13.84125,95.4839708 C14.98825,96.4029708 16.52725,97.2279708 18.41425,97.9349708 C20.39125,98.6759708 22.45825,99.3019708 24.55625,99.7959708 C26.46125,100.244971 28.39525,100.185971 30.30625,99.6259708 C32.28425,99.0439708 34.11325,98.0999708 35.74425,96.8179708 C37.39025,95.5249708 38.95225,93.7179708 40.38625,91.4469708 C41.82925,89.1619708 42.86425,86.8519708 43.46225,84.5829708 C44.05825,82.3149708 44.30025,79.9529708 44.18125,77.5639708 C44.06225,75.2009708 43.39425,72.6039708 42.19625,69.8449708 C40.66525,66.3309708 39.77925,64.8389708 39.30425,64.2069708 C38.60025,63.2679708 37.56825,62.1769708 36.23625,60.9649708 C35.04825,59.8849708 33.74025,59.2549708 32.24225,59.0409708 C30.52725,58.7969708 28.85725,58.6729708 27.28025,58.6729708 L22.48825,58.6729708 C20.96325,58.6729708 20.22225,58.9529708 19.86925,59.1879708 C19.05125,59.7339708 17.77825,60.3789708 15.97925,61.1549708 C12.73325,63.7399708 10.56325,66.5629708 9.53025,69.5469708 M50.08825,108.505971 C49.13925,108.505971 47.80425,108.095971 46.82925,106.142971 C46.44225,105.369971 46.04625,103.663971 45.93525,97.3929708 L41.60625,102.081971 C39.96725,103.859971 38.09225,105.316971 36.03525,106.412971 C33.94425,107.528971 31.93925,108.166971 30.07725,108.309971 C28.29025,108.448971 26.05425,108.317971 23.23425,107.915971 C20.54825,107.531971 18.40825,107.207971 16.87425,106.951971 C15.11625,106.660971 13.04325,105.706971 10.53925,104.036971 C8.08225,102.399971 6.26525,100.711971 5.13925,99.0209708 L2.07225,94.4209708 C0.90525,92.6719708 0.24125,90.5509708 0.09825,88.1189708 C-0.03275,85.8999708 -0.03275,83.6479708 0.09825,81.4249708 C0.22725,79.2349708 0.42225,76.8279708 0.67825,74.2729708 C0.94625,71.5939708 1.49525,69.1989708 2.31225,67.1569708 C3.07725,65.2449708 3.90525,63.1409708 4.79825,60.8449708 C5.80125,58.2669708 6.95925,56.4899708 8.34125,55.4139708 C9.59225,54.4419708 11.06325,53.5999708 12.71125,52.9129708 C14.27925,52.2599708 16.17525,51.5409708 18.34725,50.7749708 C20.70125,49.9439708 22.96725,49.5899708 25.07925,49.7349708 C27.08125,49.8689708 29.68525,50.3349708 32.81825,51.1179708 C35.97425,51.9059708 38.52725,52.7829708 40.40825,53.7229708 C41.65425,54.3469708 42.77025,55.1179708 43.74625,56.0259708 C43.61025,54.8479708 43.50025,53.8009708 43.41925,52.8989708 C43.27025,51.2789708 43.42925,49.8299708 43.89125,48.5959708 C44.46825,47.0609708 45.64925,46.1069708 47.21725,45.9089708 C48.89225,45.7059708 50.29925,46.5799708 51.07425,48.3209708 C51.67125,49.6629708 52.07625,52.0749708 52.35025,55.9159708 C52.60625,59.5019708 52.80125,66.4959708 52.92925,76.7039708 C53.05625,86.8829708 53.18425,93.9009708 53.31225,97.5619708 C53.44525,101.418971 53.37225,103.976971 53.09225,105.382971 C52.54825,108.099971 50.97625,108.505971 50.08825,108.505971" id="Fill-17"></path> <path d="M73.83155,108.503071 C73.36555,108.503071 72.89055,108.389071 72.42555,108.156071 C71.13355,107.510071 70.42355,105.975071 70.25755,103.463071 C70.12855,101.544071 69.41455,85.9520708 68.12355,54.9600708 L68.12355,53.9910708 L68.28655,52.3980708 C68.44655,50.8260708 69.27155,49.3430708 70.64355,48.5580708 C71.20955,48.2330708 71.76955,48.0730708 72.32955,48.0730708 C73.54955,48.0730708 74.85655,48.4460708 75.41555,49.5910708 C76.23555,51.2720708 76.14655,53.7240708 76.32455,54.3750708 C76.60955,54.0830708 76.95155,53.7240708 77.35955,53.2810708 C79.08955,51.4080708 81.40155,50.1010708 84.23255,49.3930708 C86.92055,48.7220708 89.64755,48.4480708 92.33755,48.5830708 C94.97955,48.7160708 97.33355,49.0530708 99.33555,49.5840708 C101.50755,50.1600708 103.50555,51.2420708 105.23555,52.6780708 C106.65455,53.8560708 107.84455,54.7460708 108.77355,55.3250708 C110.18355,56.2080708 110.99555,57.3370708 111.18955,58.6830708 C111.37355,59.9860708 111.06655,61.1780708 110.30055,62.1350708 C109.29455,63.3920708 108.17055,63.6560708 107.40455,63.6560708 C106.43455,63.6560708 105.39655,63.2510708 104.23255,62.4180708 C103.36855,61.8020708 102.62755,61.3080708 102.03155,60.9500708 C101.29555,60.5080708 100.21455,59.6350708 98.72755,58.2820708 C97.51555,57.1810708 96.11955,56.4840708 94.46055,56.1520708 C92.74755,55.8100708 90.68955,55.8750708 88.34055,56.3430708 C86.02955,56.8060708 84.04955,57.6760708 82.45655,58.9270708 C80.80855,60.2220708 79.43755,61.7100708 78.38355,63.3500708 C77.57455,64.6080708 77.24455,65.2060708 77.11055,65.4750708 C77.25755,66.6440708 77.27955,69.2770708 77.27955,75.9560708 C77.27955,82.8770708 77.34455,89.5090708 77.47055,95.6670708 C77.65755,104.849071 76.99455,106.434071 76.35755,107.199071 C75.64155,108.057071 74.75255,108.503071 73.83155,108.503071" id="Fill-19"></path> <path d="M151.49665,95.3770708 L144.45265,95.3770708 C142.46065,95.3770708 140.40365,94.9150708 138.33765,94.0030708 C136.38565,93.1450708 134.45565,92.0880708 132.60465,90.8630708 C130.65665,89.5770708 128.85565,87.7120708 127.25065,85.3210708 C125.60065,82.8640708 124.70865,80.2650708 124.60165,77.5970708 C124.50365,75.1340708 124.63565,72.2380708 124.99265,68.9880708 C125.34765,65.7620708 125.85565,62.6590708 126.50565,59.7670708 C127.17765,56.7790708 129.37965,51.5440708 133.23865,43.7600708 L133.41165,43.4120708 L133.73265,43.1910708 C135.02165,42.3040708 136.17765,41.8730708 137.26565,41.8730708 C138.57965,41.8730708 139.66065,42.5240708 140.30765,43.7080708 C140.84465,44.6960708 141.03065,45.8420708 140.86065,47.1170708 C140.69765,48.3250708 140.15465,49.5700708 139.24465,50.8200708 C138.77065,51.4720708 137.88465,53.0500708 136.35765,56.8670708 C135.11065,59.9850708 134.09965,63.0350708 133.35165,65.9330708 C132.62965,68.7310708 132.38565,71.7420708 132.62765,74.8820708 C132.92365,78.7410708 133.53165,80.5730708 133.98965,81.4310708 C134.65565,82.6810708 135.74765,83.9080708 137.23465,85.0790708 C138.74065,86.2670708 140.42765,87.1480708 142.25065,87.6970708 C145.98565,88.8260708 149.74865,88.8200708 153.98265,87.6840708 C156.00265,87.1440708 157.77365,86.1810708 159.24765,84.8200708 C160.79265,83.3940708 161.92465,82.0750708 162.61265,80.9000708 C163.29365,79.7390708 163.87965,78.0190708 164.35665,75.7860708 C164.84365,73.5030708 165.09065,70.7230708 165.09065,67.5230708 C165.09065,64.4480708 164.49665,61.6710708 163.32565,59.2670708 C162.05065,56.6560708 160.94665,54.3010708 160.04465,52.2710708 C158.32765,48.4110708 160.32765,46.7920708 161.26765,46.2750708 C162.90565,45.3740708 164.52065,45.1550708 166.06865,45.6270708 C167.33665,46.0150708 168.88065,47.3870708 171.59165,54.7370708 C173.52865,59.9950708 174.51165,64.4900708 174.51165,68.0980708 C174.51165,71.6310708 174.24265,74.7310708 173.71465,77.3120708 C173.18265,79.9020708 172.37465,82.4100708 171.31165,84.7660708 C170.17165,87.2970708 168.06265,89.5470708 165.04365,91.4550708 C162.10265,93.3160708 159.90565,94.4120708 158.32865,94.8050708 C156.79165,95.1900708 154.55665,95.3770708 151.49665,95.3770708" id="Fill-21"></path> <path d="M215.44975,58.5792708 C213.87275,58.5792708 212.20275,58.7032708 210.48675,58.9482708 C208.98775,59.1622708 207.68075,59.7922708 206.49175,60.8722708 C205.16375,62.0802708 204.13175,63.1712708 203.42475,64.1132708 C202.94775,64.7502708 202.05775,66.2462708 200.53475,69.7522708 C199.33375,72.5102708 198.66575,75.1072708 198.54875,77.4712708 C198.42775,79.8602708 198.66975,82.2212708 199.26775,84.4892708 C199.86275,86.7562708 200.89775,89.0652708 202.34275,91.3532708 C203.77775,93.6262708 205.33975,95.4332708 206.98475,96.7252708 C208.61475,98.0062708 210.44375,98.9512708 212.42175,99.5312708 C214.33275,100.095271 216.26775,100.152271 218.17175,99.7032708 C220.26775,99.2102708 222.33475,98.5842708 224.31475,97.8412708 C226.20075,97.1342708 227.73875,96.3092708 228.88775,95.3912708 C230.18475,94.3532708 231.50175,93.3672708 232.79875,92.4582708 C233.70475,91.8242708 234.26575,90.6312708 234.46975,88.9122708 C234.71675,86.7982708 234.84175,83.7622708 234.84175,79.8882708 C234.84175,76.1132708 234.28875,72.6032708 233.19875,69.4532708 C232.16675,66.4712708 229.99675,63.6492708 226.74975,61.0622708 C224.95075,60.2852708 223.67675,59.6402708 222.85775,59.0932708 C222.50775,58.8592708 221.76675,58.5792708 220.24175,58.5792708 L215.44975,58.5792708 Z M192.64075,108.413271 C191.75175,108.413271 190.17875,108.007271 189.63675,105.289271 C189.35475,103.883271 189.28275,101.325271 189.41775,97.4692708 C189.54375,93.7932708 189.67275,86.7742708 189.80075,76.6102708 C189.92775,66.4072708 190.12175,59.4132708 190.37875,55.8232708 C190.62975,52.2992708 190.82175,42.4642708 190.94975,26.5922708 C191.14675,1.94327075 191.81375,1.38227075 192.58675,0.732270755 C193.32475,0.111270755 194.66075,-0.432729245 196.82975,0.502270755 C198.10975,1.05827075 199.54375,2.44327075 199.11275,5.89827075 C198.86475,7.88527075 198.61075,16.2792708 198.35775,30.8472708 C198.10475,45.3602708 198.03975,54.0792708 198.16275,56.7662708 C199.31575,55.4882708 200.70975,54.4352708 202.32075,53.6292708 C204.19975,52.6902708 206.75375,51.8132708 209.91075,51.0242708 C213.04375,50.2412708 215.64675,49.7762708 217.64875,49.6412708 C219.76075,49.5002708 222.02675,49.8502708 224.38275,50.6822708 C226.56675,51.4532708 228.46375,52.1722708 230.01775,52.8202708 C231.66875,53.5072708 233.13775,54.3492708 234.38675,55.3202708 C235.76675,56.3942708 236.92675,58.1712708 237.93075,60.7512708 C238.82375,63.0472708 239.65275,65.1512708 240.41775,67.0642708 C241.23175,69.1012708 241.78175,71.4962708 242.05075,74.1802708 C242.30475,76.7362708 242.50075,79.1422708 242.63075,81.3322708 C242.76075,83.5552708 242.76075,85.8062708 242.63075,88.0252708 C242.48675,90.4562708 241.82275,92.5772708 240.65775,94.3272708 L237.58975,98.9272708 C236.45975,100.622271 234.64275,102.309271 232.18975,103.944271 C229.68475,105.614271 227.61275,106.567271 225.85275,106.859271 C224.35175,107.110271 222.27175,107.426271 219.49575,107.823271 C216.67075,108.225271 214.43175,108.354271 212.64975,108.216271 C210.79175,108.074271 208.78675,107.436271 206.69375,106.320271 C204.63775,105.224271 202.76275,103.767271 201.12275,101.988271 L196.79475,97.2992708 C196.68375,103.567271 196.28775,105.274271 195.89975,106.050271 C194.92275,108.003271 193.58875,108.413271 192.64075,108.413271 L192.64075,108.413271 Z" id="Fill-23"></path> <path d="M267.93605,69.5469708 C266.84705,72.6969708 266.29405,76.2079708 266.29405,79.9809708 C266.29405,83.8719708 266.41905,86.9079708 266.66605,89.0059708 C266.86905,90.7249708 267.43005,91.9179708 268.33605,92.5509708 C269.62705,93.4569708 270.94305,94.4429708 272.24705,95.4839708 C273.39605,96.4029708 274.93405,97.2279708 276.82105,97.9349708 C278.79805,98.6759708 280.86505,99.3019708 282.96205,99.7959708 C284.86905,100.245971 286.80105,100.187971 288.71305,99.6259708 C290.69105,99.0439708 292.52105,98.0999708 294.15105,96.8179708 C295.79705,95.5249708 297.35905,93.7179708 298.79205,91.4469708 C300.23705,89.1599708 301.27205,86.8509708 301.86805,84.5829708 C302.46505,82.3149708 302.70705,79.9539708 302.58705,77.5649708 C302.46905,75.2029708 301.80105,72.6059708 300.60105,69.8449708 C299.07305,66.3329708 298.18605,64.8399708 297.71005,64.2059708 C297.00605,63.2679708 295.97405,62.1779708 294.64305,60.9649708 C293.45505,59.8849708 292.14705,59.2549708 290.64805,59.0409708 C288.93405,58.7969708 287.26405,58.6729708 285.68605,58.6729708 L280.89405,58.6729708 C279.36905,58.6729708 278.62805,58.9529708 278.27605,59.1879708 C277.45705,59.7339708 276.18305,60.3789708 274.38605,61.1549708 C271.14005,63.7389708 268.97005,66.5619708 267.93605,69.5469708 L267.93605,69.5469708 Z M308.49505,108.505971 C307.54605,108.505971 306.21105,108.095971 305.23605,106.142971 C304.84805,105.370971 304.45305,103.664971 304.34105,97.3929708 L300.01305,102.081971 C298.37305,103.859971 296.49805,105.316971 294.44105,106.412971 C292.34905,107.528971 290.34505,108.166971 288.48505,108.309971 C286.70105,108.447971 284.46205,108.318971 281.64005,107.915971 C278.95005,107.531971 276.81005,107.207971 275.28105,106.951971 C273.52205,106.659971 271.45005,105.706971 268.94605,104.036971 C266.48805,102.399971 264.67105,100.711971 263.54505,99.0209708 L260.47905,94.4209708 C259.31105,92.6709708 258.64705,90.5499708 258.50505,88.1179708 C258.37305,85.8999708 258.37305,83.6479708 258.50505,81.4249708 C258.63105,79.2579708 258.82705,76.8519708 259.08505,74.2739708 C259.35305,71.5919708 259.90205,69.1969708 260.71805,67.1569708 C261.48305,65.2449708 262.31105,63.1409708 263.20405,60.8459708 C264.20705,58.2659708 265.36705,56.4889708 266.74805,55.4139708 C267.99805,54.4429708 269.46705,53.6009708 271.11705,52.9139708 C272.68305,52.2609708 274.58005,51.5419708 276.75305,50.7749708 C279.10705,49.9439708 281.37105,49.5939708 283.48605,49.7349708 C285.48905,49.8689708 288.09205,50.3349708 291.22505,51.1179708 C294.38005,51.9069708 296.93405,52.7829708 298.81505,53.7229708 C300.06105,54.3469708 301.17705,55.1179708 302.15305,56.0259708 C302.01705,54.8569708 301.90805,53.8109708 301.82505,52.8999708 C301.67605,51.2779708 301.83505,49.8299708 302.29805,48.5959708 C302.87405,47.0609708 304.05405,46.1069708 305.62405,45.9089708 C307.29405,45.6999708 308.70705,46.5799708 309.48105,48.3209708 C310.07705,49.6609708 310.48205,52.0729708 310.75705,55.9149708 C311.01305,59.5249708 311.20705,66.5179708 311.33505,76.7039708 C311.46505,87.0559708 311.59005,93.8789708 311.71805,97.5619708 C311.85005,101.417971 311.77905,103.974971 311.49905,105.381971 C310.95305,108.100971 309.38205,108.505971 308.49505,108.505971 L308.49505,108.505971 Z" id="Fill-25"></path> <path d="M333.34135,106.996271 C332.33135,106.996271 331.25135,106.758271 330.11135,106.282271 C328.06335,105.430271 326.91835,104.262271 326.71035,102.809271 C326.55735,101.738271 326.62935,100.525271 326.92435,99.2042708 C327.29735,97.5122708 328.73335,96.2182708 331.31135,95.2512708 L333.33735,94.4912708 L333.33735,95.5752708 C333.72535,95.6122708 334.11335,95.6792708 334.50035,95.7752708 C335.21335,95.9552708 336.04335,96.3942708 337.11635,97.1592708 C338.30635,98.0112708 339.08235,99.1372708 339.42635,100.508271 C339.79635,101.995271 339.49335,103.380271 338.54935,104.515271 C337.73035,105.497271 336.59935,106.233271 335.18735,106.704271 C334.60235,106.899271 333.98635,106.996271 333.34135,106.996271" id="Fill-27"></path> <path d="M360.42625,33.2525708 C361.09325,33.5615708 361.61325,33.4655708 362.15025,33.2315708 L362.14925,33.2315708 C362.14225,33.2315708 362.44925,33.0015708 362.92425,31.9665708 C363.31325,31.1135708 363.46525,30.3235708 363.37425,29.6205708 C363.26825,28.8085708 363.06425,28.1065708 362.76525,27.5355708 C362.54625,27.1155708 362.27125,26.8495708 361.89825,26.6965708 C360.99425,26.3275708 360.29125,26.2175708 359.67225,26.6415708 C359.41025,26.8215708 359.24225,27.0075708 359.16225,27.2085708 C359.03225,27.5315708 358.95525,27.9185708 358.93325,28.3565708 C358.90125,28.9405708 358.88725,29.5025708 358.88725,30.0515708 C358.88725,30.4775708 358.92925,30.8275708 359.01125,31.0915708 C359.10225,31.3895708 359.24225,31.6915708 359.43125,31.9965708 C359.56025,32.2085708 359.83525,32.5905708 360.42625,33.2525708 M361.22025,40.6555708 C360.00725,40.6555708 358.65825,40.3615708 357.21125,39.7815708 L356.84525,39.6345708 L356.59925,39.3265708 C355.55625,38.0235708 354.75625,36.9565708 354.22225,36.1555708 C353.68325,35.3475708 353.20025,34.5195708 352.78725,33.6935708 C352.30025,32.7195708 352.05425,31.5915708 352.05425,30.3395708 C352.05425,29.2545708 352.12125,28.1025708 352.25525,26.9145708 C352.39725,25.6275708 352.69325,24.4515708 353.13325,23.4235708 C353.63725,22.2475708 354.54225,21.2445708 355.82525,20.4425708 C358.24625,18.9275708 360.95825,18.9265708 364.22425,20.1125708 C365.97825,20.7525708 367.34425,21.9515708 368.28625,23.6785708 C369.15325,25.2665708 369.66425,27.0845708 369.80825,29.0815708 C369.95125,31.1095708 369.52425,33.2815708 368.53625,35.5405708 C367.46225,37.9945708 366.24525,39.4485708 364.81525,39.9855708 C363.62625,40.4305708 362.41725,40.6555708 361.22025,40.6555708 M367.03725,97.8305708 C366.42225,97.8305708 365.70125,97.6595708 364.88325,97.1905708 C363.54025,96.4255708 362.77125,94.9975708 362.60025,92.9475708 C362.47225,91.4195708 361.39325,78.0755708 359.36025,52.9125708 C358.83625,51.5305708 358.57125,50.0635708 358.57125,48.5475708 C358.57125,46.7725708 358.92925,45.4625708 359.66725,44.5425708 C360.22225,43.8495708 361.27625,43.0225708 363.13725,43.0225708 C364.18925,43.0225708 366.03025,43.5115708 366.53625,46.7845708 C366.79825,48.4955708 367.55425,56.2365708 368.84825,70.4535708 C370.57625,89.4825708 370.65925,92.8565708 370.57125,93.7385708 C370.39325,95.5085708 369.76425,96.7285708 368.70125,97.3665708 C368.28725,97.6155708 367.72925,97.8305708 367.03725,97.8305708" id="Fill-29"></path> <path d="M407.75535,106.972771 C406.88035,106.972771 405.61135,106.585771 404.54035,104.740771 C403.79935,103.463771 403.53735,101.309771 403.71735,97.9647708 C403.87435,95.0337708 403.84135,85.9587708 403.61935,70.9947708 C403.43135,58.3647708 403.31735,50.2747708 403.29035,47.7617708 C402.59735,47.6587708 400.93635,47.5807708 397.08035,47.9797708 C391.68135,48.5397708 388.31835,48.7277708 386.78835,48.5527708 C383.68635,48.2017708 383.35135,46.3547708 383.35135,45.5767708 C383.35135,44.6137708 383.73835,43.2417708 385.58335,42.1707708 C386.19035,41.8187708 387.30335,41.1727708 403.89235,39.9687708 C403.60735,33.4457708 403.40235,26.9187708 403.28435,20.5447708 L403.28435,20.5447708 C403.09535,10.4517708 403.95635,8.72877075 404.77735,7.90777075 C406.24835,6.43677075 407.66335,6.29377075 408.59735,6.43077075 C410.76535,6.75477075 411.32935,9.73877075 411.59635,12.6157708 C411.88935,15.7597708 412.09435,20.8117708 412.22635,28.0597708 C412.35735,35.3977708 412.53535,37.9557708 412.64935,38.8457708 C413.07035,38.9327708 414.05635,39.0377708 416.19135,38.9047708 C419.22235,38.7157708 421.61935,38.5857708 423.31835,38.5197708 C425.47235,38.4377708 427.02935,38.9747708 427.97835,40.1127708 C428.51235,40.7537708 429.54735,42.4837708 427.62135,44.6937708 C426.45035,46.0387708 424.38835,46.6937708 421.31635,46.6937708 C418.79035,46.6937708 416.42535,46.7727708 414.28535,46.9297708 C413.22635,47.0077708 412.67835,47.1477708 412.41535,47.2427708 C412.40335,48.8757708 412.34435,54.5497708 412.22635,65.2397708 C412.09835,76.6477708 412.16235,85.5847708 412.41635,91.8037708 C412.77135,100.522771 412.03035,102.969771 411.34635,104.127771 C410.62435,105.348771 409.46735,106.972771 407.75535,106.972771" id="Fill-31"></path> </g> </g> </g> </g> </svg> company</a></div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    
+    
+<script>
+  
+  (function (d, s, id, uri) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement(s); js.id = id;
+    js.onload = function () {
+      //console.log("External sticky bar JS file loaded");
+      try {
+        arubaStickyInit('actalis', 'it-IT');      
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    js.src = uri;
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'aruba-sticky-loader', 'https://mediacdn.aruba.it/MediaCDNRepository/files/f4/f4757400-4fe4-42e7-b1b1-092c60b7ce5e.js'));
+  //}(document, 'script', 'aruba-sticky-loader', 'https://staging.mediacdn.aruba.it/MediaCDNRepository/files/f4/f4757400-4fe4-42e7-b1b1-092c60b7ce5e.js'));  
+  //}(document, 'script', 'aruba-sticky-loader', 'https://dev.mediacdn.aruba.it/MediaCDNRepository/files/f4/f4757400-4fe4-42e7-b1b1-092c60b7ce5e.js'));  
+  //}(document, 'script', 'aruba-sticky-loader', 'https://dev.actalis.com/CMSScripts/Custom/stickybar_test.js'));  
+  /*
+DEV: https://dev.actalis.com/CMSScripts/Custom/stickybar_test.js
+PROD: https://mediacdn.aruba.it/MediaCDNRepository/files/f4/f4757400-4fe4-42e7-b1b1-092c60b7ce5e.js
+*/
+  
+  /*
+(function (d, s, id, uri) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) { return; }
+js = d.createElement(s); js.id = id;
+js.onload = function () {
+try {
+ArubaFibraStickyInit();
+} catch (error) {
+console.log(error);
+}
+};
+js.src = uri;
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'aruba-fibra-sticky-loader', 'https://mediacdn.aruba.it/MediaCDNRepository/files/2c/2cabd61c-e4a7-45b6-8af2-c2a2799e0cb9.js'));
+
+function ArubaFibraStickyInit() {
+
+var ArubaFibraStickyComponent = new ArubaFibraStickyBar({
+googleAnalyticsOptions: {
+eventCategory: 'assistenza_sticky',
+eventAction: 'click',
+eventLabel: 'Click su cta stickybar'
+},
+viewAfterScroll: 0,
+//footerEl:'#footer',
+hideOnFooter: true,
+debug: false,
+highlightEffect: true,
+highlightEffectSpeed: 5,
+highlightEffectColor: 'rgba(255, 255, 255, 0.5)'
+});
+
+}
+*/
+</script><script type="text/javascript">  
+  //Piwik - Matomo -->
+  function startPiwik() {
+    window['_paq'] = window['_paq'] || [];
+    window['_paq'].push(["setDomains", ["*.assistenza.aruba.it"]]);
+    window['_paq'].push(['trackPageView']);
+    window['_paq'].push(['enableLinkTracking']);
+    (function() {
+      var u="//wa.aruba.it/";
+      window['_paq'].push(['setTrackerUrl', u+'piwik.php']);
+      window['_paq'].push(['setSiteId', '47']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  }		
+  startPiwik();
+  //End Piwik - Matomo Code -->
+</script>
+
+<script type="text/plain" data-cookieconsent="statistics">
+  //Crazyegg -->
+  function startCrazyegg() {
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0060/4408.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  }   
+  
+  startCrazyegg();
+  //End Crazyegg -->
+</script><!-- begin usabilla live embed code IT -->
+<script type="text/javascript">window.lightningjs||function(n){var e="lightningjs";function t(e,t){var r,i,a,o,d,c;return t&&(t+=(/\?/.test(t)?"&":"?")+"lv=1"),n[e]||(r=window,i=document,a=e,o=i.location.protocol,d="load",c=0,function(){n[a]=function(){var t=arguments,i=this,o=++c,d=i&&i!=r&&i.id||0;function s(){return s.id=o,n[a].apply(s,arguments)}return(e.s=e.s||[]).push([o,d,t]),s.then=function(n,t,r){var i=e.fh[o]=e.fh[o]||[],a=e.eh[o]=e.eh[o]||[],d=e.ph[o]=e.ph[o]||[];return n&&i.push(n),t&&a.push(t),r&&d.push(r),s},s};var e=n[a]._={};function s(){e.P(d),e.w=1,n[a]("_load")}e.fh={},e.eh={},e.ph={},e.l=t?t.replace(/^\/\//,("https:"==o?o:"http:")+"//"):t,e.p={0:+new Date},e.P=function(n){e.p[n]=new Date-e.p[0]},e.w&&s(),r.addEventListener?r.addEventListener(d,s,!1):r.attachEvent("onload",s);var l=function(){function n(){return["<!DOCTYPE ",o,"><",o,"><head></head><",t,"><",r,' src="',e.l,'"></',r,"></",t,"></",o,">"].join("")}var t="body",r="script",o="html",d=i[t];if(!d)return setTimeout(l,100);e.P(1);var c,s=i.createElement("div"),h=s.appendChild(i.createElement("div")),u=i.createElement("iframe");s.style.display="none",d.insertBefore(s,d.firstChild).id="lightningjs-"+a,u.frameBorder="0",u.id="lightningjs-frame-"+a,/MSIE[ ]+6/.test(navigator.userAgent)&&(u.src="javascript:false"),u.allowTransparency="true",h.appendChild(u);try{u.contentWindow.document.open()}catch(n){e.domain=i.domain,c="javascript:var d=document.open();d.domain='"+i.domain+"';",u.src=c+"void(0);"}try{var p=u.contentWindow.document;p.write(n()),p.close()}catch(e){u.src=c+'d.write("'+n().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}e.P(2)};e.l&&l()}()),n[e].lv="1",n[e]}var r=window.lightningjs=t(e);r.require=t,r.modules=n}({});window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/f46f32801d95.js");</script>
+<!-- end usabilla live embed code --></form>
+</body>
+</html>
+</ul></div></div></footer>  <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="SA0sJj5BVRr/tFmuYggi75UpV7qp3eVt2BkepWmDgyzuRwOHP4KK8XY7BrYtU0XoC51YSOR5AgjC2Ul3dud7LpBj9s1citdCWslTkf9K04fvMGus4SR5OLofB2NkZVcZZvR+j+woR9J0LA4zGQCxW32L0QX9IVi/Z5aHCqlo1SxTo6SeZnQwrgTB/nDwUWGjvUptzR6JIJ00suVgSqNQjdbmYT1feo46WeZiBFNlxF8/97f0xHWtmI/7xQobGO6kIhbFOo9Bkp7dTQp3pWJIbmUHt2L3hu/H76pmpN6kVLILRzmL4k5d+zJgDaV5is4g8hSCMzCiAleaHvqbbyVxGxE/0ZSOlfX0FkkBTRuEkcZM9YZFH1Jde5h+jHn4na+Zi+LL+38vprdQI7nrZC7yUn39VSYnm34rexl4K/TlKqqGHAN7JltGK4cCPu+1zJCz2+ywPQY58YFVnrie+y/Gy4+n1V8UX7DegaBYSbCeNYfs8o1l7x2LqIMMygeeFyT7ev+5pRdXHNmcRzYUjac96CyNfNSt9JPi3hqwcPd/EZpOk7T/nkyZ7ldO9eXFgX0+FFhaiHY/K2cZ5w/k2pYjI1jn6benUwDH2Ttmb9h+BXo1HWwxBcD2flnojQ8qHHrqWTuJDAafih4/xa66BG5iQZBVpaihO1U99qk+ArLArouLwihuH9LKTsqjWhsOYaKrIHtQbHI/QN4ylaFDWLgUNONtDO0SehaKsTcUCisPZ54VM/t4fs/A4iBhWlcZYkwcp88f03fBcov9uTxgibdE72wfMwkX2vdqgEpV2Ae4kXA1qvvwBGu/PRsewL4bSWGnAkEMcFPoLDieoi7BVg9dp1jM2zG0a959BGoKtFWUOyw=" />
+  <script type="text/javascript">
+      //<![CDATA[
+      if (window.WebForm_InitCallback) {
+        __theFormPostData = '';
+        __theFormPostCollection = new Array();
+        window.WebForm_InitCallback();
+      }
+      //]]>
+    </script>
+  </form></body></html>

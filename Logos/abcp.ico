@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Robot Check Redirector</title>
+<meta http-equiv="Cache-Control" content="no-cache">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<meta name="Document-state" content="Dynamic">
+<meta name="Resource-type" content="document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+function checkTheRobot() {
+    var myurl = window.location.href.toString();
+    var mycheckurl = "http://recaptcha.antibot.4mycar.ru";
+    var myparams = "/?cngx=1&original_url=";
+    var newurl = mycheckurl.concat(myparams,myurl);
+    setTimeout(function(){ window.location.href = newurl ; } , 5000)
+}
+
+</script>
+<title></title>
+</head>
+<body onload="checkTheRobot();" style="font-family: Arial, Sans-Serif; background:#cef0fa">
+
+<p><br></p>
+<center>
+<img border="0" src="https://cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif">&nbsp;
+<img border="0" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/img/loading.gif">&nbsp;
+<img border="0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.0.5/loading.gif">&nbsp;
+<img border="0" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/fancybox_loading@2x.gif">&nbsp;
+<img border="0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.1/images/ajax-loader.gif">&nbsp;
+<img border="0" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/fancybox_loading@2x.gif">&nbsp;
+<img border="0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.0.5/loading.gif">&nbsp;
+<img border="0" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/img/loading.gif">&nbsp;
+<img border="0" src="https://cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif">&nbsp;
+
+<p>You will be redirected to Robot Checker. Please enable Javascript in browser.</p>
+</center>
+</body>
+</html>

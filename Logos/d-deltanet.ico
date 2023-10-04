@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!Doctype html>
+<html>
+<head>
+<meta charset="shift-jis">
+<meta name="description" content="データロボ サイトセブンは、全国パチンコホールのパチンコ・パチスロ出玉推移グラフや大当り履歴をはじめとする詳細な出玉情報、機種の攻略情報を提供しています。" />
+<meta name="keywords" content="パチンコ,パチスロ,攻略法,出玉,出玉推移,大当り履歴,出玉情報,データロボサイトセブン" >
+<link rel="canonical"  href="https://www.d-deltanet.com/pc/Top.do"/>
+<title>パチンコ・パチスロ情報満載のデータロボ サイトセブン</title>
+<link rel="shortcut icon" href="contents/common/images/layout/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" href="contents/css/s7/base.css" />
+<link rel="stylesheet" href="contents/js/s7/jquery.bxslider/top-slider.css" />
+<script src="contents/js/s7/jquery-1.10.0.min.js"></script>
+<script src="contents/js/s7/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script src="contents/js/s7/jquery.bxslider/jquery.easing.1.3.js"></script>
+<script>
+      var ua = navigator.userAgent;
+      if((ua.indexOf("iPhone") > 0) | (ua.indexOf("Android") > 0)){
+              if(confirm("当サイトはPC専用サイトです。スマートフォンサイトへ移動しますか？")){
+            	  window.location.href="https://m.site777.jp";
+              }
+      }
+  	/* h1タグ設定 */
+  	$(function() {
+  		$('.h_text').html("パチンコ・パチスロ情報サイトならデータロボ サイトセブン");
+  	});
+
+
+	/* Top Slider */
+	$(function() {
+		/* 広告バナー数を取得 */
+		var bannerCnt = $('.top-slider li').length;
+		if(bannerCnt != '0'){
+			/* トップ広告バナーのスライダーとインプレッションカウント設定 */
+			if(bannerCnt != '1'){
+				var sliderObj =$('.top-slider').bxSlider({
+					infiniteLoop : true,
+					useCSS : false,
+					hideControlOnEnd : true,
+					easing : 'easeOutBounce',
+					speed : 1200,
+
+					auto : true,
+					onSlideAfter: function(){
+						//現在の表示ページ数を取得
+						var nowPage = $('#top-visual .bx-pager-item .active').text();
+						//次のバナーへ移動
+						sliderObj.startAuto();
+					}
+				});
+			}
+		}
+	});
+	/* Pop Mecha */
+	$(function() {
+		$('.mecha-slider').bxSlider({
+			hideControlOnEnd : true
+		});
+	});
+
+    $(function(){
+    	$('img.top_slot_img').each(function() {
+    		$(this).one('error', function() {
+    			$(this).attr('src','contents/html/contents/common/images/mecha2/s/printing.jpg');
+    		});
+    		this.src = this.src;
+    	});
+    });
+    $(function(){
+    	$('img.top_pachi_img').each(function() {
+    		$(this).one('error', function() {
+    			$(this).attr('src','contents/html/contents/common/images/mecha2/p/printing.jpg');
+    		});
+    		this.src = this.src;
+    	});
+    });
+
+</script>
+<!-- Analytics : 全ページ適用 -->
+<script type="text/javascript">
+	function calledFunc(str) {
+		location.href = "HallSearch.do?action=HallSelectLink.do"
+		return false;
+	}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-57RSXPP');</script>
+<!-- End Google Tag Manager --></head>
+    <body id="basic">
+
+        <link rel="shortcut icon" href="contents/common/images/layout/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="contents/css/s7/base.css" type="text/css" rel="stylesheet">
+<!-- Analytics : 全ページ適用 -->
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57RSXPP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="header">
+    <div id="header-content">
+
+        <h1 id="logo"><a href="Top.do"><img src="contents/images/s7/logo.png" alt="データロボサイトセブン" /></a></h1>
+
+        <div class="header-link">
+            <ul class="sub">
+            <li class="about"><a href="contents/html/about.html">はじめての方へ</a></li>
+            <li class="regist"><a href="MypageRegistMailAddress.do">新規マイページ作成</a></li>
+            <li class="pay-regist"><a href="contents/html/regist.html">有料会員登録</a></li>
+                <li class="pay-login"><a href="contents/html/login.html">有料会員ログイン</a></li>
+            <li class="faq"><a href="contents/html/faq.html">FAQ</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div><!-- //#header -->
+<!-- h1タグのためのスペース -->
+<div  style="background-color:#004DA0;">
+<h1 class="h_text" ></h1>
+</div>
+<div id="g-nav">
+<ul class="clear ">
+<li><a href="Top.do">HOME</a></li>
+    <li><a href="HallSearch.do?action=HallSelectLink.do">ホール検索</a></li>
+        <li><a href="ModelTop.do">機種情報</a></li>
+    <li><a href="YugiHiroba.do">みんなの遊技広場</a></li>
+    <li class="mobile"><a href="contents/html/about.html#spm">モバイル・スマホ</a></li>
+    <li class="search">
+            <form method="get" action="https://www.google.co.jp/search">
+                <input type="text" name="q" id="s_filed" value="" />
+                <input type="image" src="contents/images/s7/btn-search.png" alt="検索" name="btng" id="s_btn" value="検索" />
+                <input type="hidden" name="hl" value="ja" />
+                <input type="hidden" name="as_sitesearch" value="https://www.d-deltanet.com/pc/" />
+                <input type="hidden" name="ie" value="shift_jis" />
+                <input type="hidden" name="oe" value="shift_jis" />
+            </form>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="contents/common/js/update/head_banner.js"></script><div id="wrap">
+        <div id="state" class="clear">
+                    <p class="log">
+                        <a href="MypageLoginPre.do">マイページログイン</a>
+                    </p>
+                </div>
+            <div id="container" class="clear">
+                <!-- トップページの左フレーム -->
+<div id="content">
+
+    <div id="top-visual">
+        <ul class="top-slider">
+<li>
+<a href="https://site777.tv/scAuthSiteSevenPlugin/lp/a/" target="_blank" > 
+<img src="contents/images/ad_banner/pc_top/20201022163548264282.jpg" art="201022_サイトセブンTV④">
+</a>
+<input type="hidden" id="banner1" value="201022_サイトセブンTV④">
+</li>
+<li>
+<a href="contents/html/about.html" target="_self" > 
+<img src="contents/images/ad_banner/pc_top/20181024171454940051.jpg" art="181024_データロボサイトセブンとは">
+</a>
+<input type="hidden" id="banner2" value="181024_データロボサイトセブンとは">
+</li>
+</ul>
+
+    </div>
+    <!-- //#top-visual -->
+
+    <script type="text/javascript"
+        src="contents/js/s7/update/maintenance/maintenance.js"></script>
+
+    <div id="map-search">
+        <div class="content-box">
+            <p class="tt">
+                <span>ホール検索（出玉情報）</span>
+            </p>
+            <div class="ct">
+                <p class="total">
+                    全国<span id="hallCount">1928</span>店加盟
+                </p>
+                <div class="jp-map">
+                    <img src="contents/images/s7/jp-map.png">
+                </div>
+                <div class="area">
+                    <dl>
+                        <dt>北海道・東北</dt>
+                        <dd>
+                            <a href="HallMapSearch.do?prefecturecode=01">北海道</a>
+                            <a href="HallMapSearch.do?prefecturecode=02">青森</a>
+                            <a href="HallMapSearch.do?prefecturecode=05">秋田</a>
+                            <a href="HallMapSearch.do?prefecturecode=06">山形</a>
+                            <a href="HallMapSearch.do?prefecturecode=03">岩手</a>
+                            <a href="HallMapSearch.do?prefecturecode=04">宮城</a>
+                            <a href="HallMapSearch.do?prefecturecode=07">福島</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>関東</dt>
+                        <dd>
+                            <a href="HallMapSearch.do?prefecturecode=13">東京</a>
+                            <a href="HallMapSearch.do?prefecturecode=14">神奈川</a>
+                            <a href="HallMapSearch.do?prefecturecode=11">埼玉</a>
+                            <a href="HallMapSearch.do?prefecturecode=12">千葉</a>
+                            <a href="HallMapSearch.do?prefecturecode=09">栃木</a>
+                            <a href="HallMapSearch.do?prefecturecode=08">茨城</a>
+                            <a href="HallMapSearch.do?prefecturecode=10">群馬</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>中部・北陸</dt>
+                        <dd>
+                            <a href="HallMapSearch.do?prefecturecode=23">愛知</a>
+                            <a href="HallMapSearch.do?prefecturecode=21">岐阜</a>
+                            <a href="HallMapSearch.do?prefecturecode=22">静岡</a>
+                            <a href="HallMapSearch.do?prefecturecode=24">三重</a>
+                            <a href="HallMapSearch.do?prefecturecode=15">新潟</a>
+                            <a href="HallMapSearch.do?prefecturecode=19">山梨</a>
+                            <a href="HallMapSearch.do?prefecturecode=20">長野</a>
+                            <a href="HallMapSearch.do?prefecturecode=17">石川</a>
+                            <a href="HallMapSearch.do?prefecturecode=16">富山</a>
+                            <a href="HallMapSearch.do?prefecturecode=18">福井</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>近畿</dt>
+                        <dd>
+                            <a href="HallMapSearch.do?prefecturecode=27">大阪</a>
+                            <a href="HallMapSearch.do?prefecturecode=28">兵庫</a>
+                            <a href="HallMapSearch.do?prefecturecode=26">京都</a>
+                            <a href="HallMapSearch.do?prefecturecode=25">滋賀</a>
+                            <a href="HallMapSearch.do?prefecturecode=29">奈良</a>
+                            <a href="HallMapSearch.do?prefecturecode=30">和歌山</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>中国・四国</dt>
+                        <dd>
+                            <a href="HallMapSearch.do?prefecturecode=33">岡山</a>
+                            <a href="HallMapSearch.do?prefecturecode=34">広島</a>
+                            <a href="HallMapSearch.do?prefecturecode=31">鳥取</a>
+                            <a href="HallMapSearch.do?prefecturecode=32">島根</a>
+                            <a href="HallMapSearch.do?prefecturecode=35">山口</a>
+                            <a href="HallMapSearch.do?prefecturecode=37">香川</a>
+                            <a href="HallMapSearch.do?prefecturecode=36">徳島</a>
+                            <a href="HallMapSearch.do?prefecturecode=38">愛媛</a>
+                            <a href="HallMapSearch.do?prefecturecode=39">高知</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>九州・沖縄</dt>
+                        <dd>
+                            <a href="HallMapSearch.do?prefecturecode=40">福岡</a>
+                            <a href="HallMapSearch.do?prefecturecode=41">佐賀</a>
+                            <a href="HallMapSearch.do?prefecturecode=42">長崎</a>
+                            <a href="HallMapSearch.do?prefecturecode=43">熊本</a>
+                            <a href="HallMapSearch.do?prefecturecode=44">大分</a>
+                            <a href="HallMapSearch.do?prefecturecode=45">宮崎</a>
+                            <a href="HallMapSearch.do?prefecturecode=46">鹿児島</a>
+                            <a href="HallMapSearch.do?prefecturecode=47">沖縄</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <span class="bt"></span>
+        </div>
+    </div>
+    <!-- //#map-search -->
+
+    <div class="btn-basic mod-mb15px">
+        <p>
+            <a href="FreeDataOpenHallList.do?cpn=1">本日の無料公開ホールはこちら</a>
+        </p>
+    </div>
+    <!-- パチスロ人気機種 -->
+    <div id='pop-slot' class='pop-mecha'><div class='content-box'><p class='tt'><span>パチスロ人気機種 BEST10</span></p><div class='ct clear'><ul class='mecha-slider'>
+<li>
+<a href='ModelSpec.do?modelcode=120010&kindcode=03'><img id="kyotaiImg120010" class="top_slot_img" src='contents/html/contents/common/images/mecha2/s/120010.jpg' alt=''>
+<span>マイジャグラーV
+</span>
+</a>
+<a href='ModelSpec.do?modelcode=120122&kindcode=03'><img id="kyotaiImg120122" class="top_slot_img" src='contents/html/contents/common/images/mecha2/s/120122.jpg' alt=''>
+<span>Lスマスロ北斗の拳
+</span>
+</a>
+<a href='ModelSpec.do?modelcode=119916&kindcode=03'><img id="kyotaiImg119916" class="top_slot_img" src='contents/html/contents/common/images/mecha2/s/119916.jpg' alt=''>
+<span>SアイムジャグラーＥＸ
+</span>
+</a>
+<a href='ModelSpec.do?modelcode=120073&kindcode=03'><img id="kyotaiImg120073" class="top_slot_img" src='contents/html/contents/common/images/mecha2/s/120073.jpg' alt=''>
+<span>パチスロ　甲鉄城のカバネリ
+</span>
+</a>
+<a href='ModelSpec.do?modelcode=120110&kindcode=03'><img id="kyotaiImg120110" class="top_slot_img" src='contents/html/contents/common/images/mecha2/s/120110.jpg' alt=''>
+<span>沖ドキ！ＧＯＬＤ-30
+</span>
+</a>
+</li>
+
+<li>
+<a href='ModelSpec.do?modelcode=120125&kindcode=03'><img id="kyotaiImg120125" class="top_slot_img" src='contents/html/contents/common/images/mecha2/s/120125.jpg' alt=''>
+<span>キングハナハナ-30
+</span>
+</a>
+<a href='ModelSpec.do?modelcode=120025&kindcode=03'><img id="kyotaiImg120025" class="top_slot_img" src='contents/html/contents/common/images/mecha2/s/120025.jpg' alt=''>
+<span>ハナハナホウオウ～天翔～-30
+</span>
+</a>
+<a href='ModelSpec.do?modelcode=120141&kindcode=03'><img id="kyotaiImg120141" class="top_slot_img" src='contents/html/contents/common/images/mecha2/s/120141.jpg' alt=''>
+<span>ゴーゴージャグラー３
+</span>
+</a>
+<a href='ModelSpec.do?modelcode=120164&kindcode=03'><img id="kyotaiImg120164" class="top_slot_img" src='contents/html/contents/common/images/mecha2/s/120164.jpg' alt=''>
+<span>Lエヴァンゲリオン ～未来への創造～
+</span>
+</a>
+<a href='ModelSpec.do?modelcode=120103&kindcode=03'><img id="kyotaiImg120103" class="top_slot_img" src='contents/html/contents/common/images/mecha2/s/120103.jpg' alt=''>
+<span>Lパチスロ革命機ヴァルヴレイヴ
+</span>
+</a>
+</li>
+</ul></div><span class='bt'></span></div></div>
+    <!-- パチンコ人気機種 -->
+    <div id='pop-pachi' class='pop-mecha'><div class='content-box'><p class='tt'><span>パチンコ人気機種 BEST10</span></p><div class='ct clear'><ul class='mecha-slider'>
+<li>
+<a href='ModelSpec.do?modelcode=025665&kindcode=01'><img id="kyotaiImg025665" class="top_pachi_img" src='contents/html/contents/common/images/mecha2/p/025665.jpg' alt=''><span>P新世紀エヴァンゲリオン１５　未来への咆哮</span></a>
+<a href='ModelSpec.do?modelcode=025895&kindcode=01'><img id="kyotaiImg025895" class="top_pachi_img" src='contents/html/contents/common/images/mecha2/p/025895.jpg' alt=''><span>PF.機動戦士ガンダムＳＥＥＤ S</span></a>
+<a href='ModelSpec.do?modelcode=025677&kindcode=01'><img id="kyotaiImg025677" class="top_pachi_img" src='contents/html/contents/common/images/mecha2/p/025677.jpg' alt=''><span>P Re：ゼロから始める異世界生活 鬼がかりｖｅｒ．M08</span></a>
+<a href='ModelSpec.do?modelcode=025834&kindcode=01'><img id="kyotaiImg025834" class="top_pachi_img" src='contents/html/contents/common/images/mecha2/p/025834.jpg' alt=''><span>P大海物語５ MTE2</span></a>
+<a href='ModelSpec.do?modelcode=025489&kindcode=01'><img id="kyotaiImg025489" class="top_pachi_img" src='contents/html/contents/common/images/mecha2/p/025489.jpg' alt=''><span>P海物語E (P大海物語４スペシャル)</span></a>
+</li>
+
+<li>
+<a href='ModelSpec.do?modelcode=025913&kindcode=01'><img id="kyotaiImg025913" class="top_pachi_img" src='contents/html/contents/common/images/mecha2/p/025913.jpg' alt=''><span>eぱちんこソードアート・オンラインK12</span></a>
+<a href='ModelSpec.do?modelcode=025856&kindcode=01'><img id="kyotaiImg025856" class="top_pachi_img" src='contents/html/contents/common/images/mecha2/p/025856.jpg' alt=''><span>PF.炎炎ノ消防隊G</span></a>
+<a href='ModelSpec.do?modelcode=025606&kindcode=01'><img id="kyotaiImg025606" class="top_pachi_img" src='contents/html/contents/common/images/mecha2/p/025606.jpg' alt=''><span>PF.機動戦士ガンダムユニコーンb</span></a>
+<a href='ModelSpec.do?modelcode=025914&kindcode=01'><img id="kyotaiImg025914" class="top_pachi_img" src='contents/html/contents/common/images/mecha2/p/025914.jpg' alt=''><span>PF.かぐや様は告らせたいR</span></a>
+<a href='ModelSpec.do?modelcode=025867&kindcode=01'><img id="kyotaiImg025867" class="top_pachi_img" src='contents/html/contents/common/images/mecha2/p/025867.jpg' alt=''><span>P北斗の拳暴凶星SFPA</span></a>
+</li>
+</ul></div><span class='bt'></span></div></div>
+
+    <div class="mecha-links">
+        <p>
+            <a href="ModelNumBest10.do">&#62;&#62;設置台数</a>
+        </p>
+        <p>
+            <a href="HallNumBest10.do">&#62;&#62;設置ホール数</a>
+        </p>
+        <p>
+            <a href="ModelLatest.do">&#62;&#62;最新機種情報はこちら</a>
+        </p>
+        <p>
+            <a href="NewMechaCal.do">&#62;&#62;新台導入カレンダー</a>
+        </p>
+    </div>
+
+    <!-- みんなの遊技広場 -->
+    <div id="yugi-widget"><div class='content-box'><p class='tt'><span>みんなの遊技広場</span></p><div class='ct'><a href='Toukou.do?tno=120455'><dl><dt><img src='avatar/00003_2.png' alt=''></dt><dd><ul><li class='mecha-name'>S ＳＬＯＴまどか前後編</li><li class='num'>ゲーム数：<span>10,364</span>最高出玉：<span>5,360</span></li><li class='com'>コメント：</li><li class='user'>&#64;ヤス&#65288;LV41&#65289;</li></ul><p class='stamp'>スタンプ：--</p></dd></dl></a>
+<a href='Toukou.do?tno=120454'><dl><dt><img src='avatar/00003_2.png' alt=''></dt><dd><ul><li class='mecha-name'>Lスマスロ北斗の拳</li><li class='num'>ゲーム数：<span>4,101</span>最高出玉：<span>8,827</span></li><li class='com'>コメント：75連チャンで昇天！</li><li class='user'>&#64;マコピー&#65288;LV30&#65289;</li></ul><p class='stamp'>スタンプ：--</p></dd></dl></a>
+<a href='Toukou.do?tno=120453'><dl><dt><img src='avatar/00001_2.png' alt=''></dt><dd><ul><li class='mecha-name'>Sパチスロ傷物語</li><li class='num'>ゲーム数：<span>2,493</span>最高出玉：<span>355</span></li><li class='com'>コメント：</li><li class='user'>&#64;未設定&#65288;LV9&#65289;</li></ul><p class='stamp'>スタンプ：1</p></dd></dl></a>
+<a href='Toukou.do?tno=120452'><dl><dt><img src='avatar/00001_2.png' alt=''></dt><dd><ul><li class='mecha-name'>Sパチスロ傷物語</li><li class='num'>ゲーム数：<span>5,048</span>最高出玉：<span>4,032</span></li><li class='com'>コメント：</li><li class='user'>&#64;未設定&#65288;LV9&#65289;</li></ul><p class='stamp'>スタンプ：--</p></dd></dl></a>
+<a href='Toukou.do?tno=120451'><dl><dt><img src='avatar/00001_2.png' alt=''></dt><dd><ul><li class='mecha-name'>Lスマスロ北斗の拳</li><li class='num'>ゲーム数：<span>7,159</span>最高出玉：<span>3,432</span></li><li class='com'>コメント：</li><li class='user'>&#64;未設定&#65288;LV9&#65289;</li></ul><p class='stamp'>スタンプ：--</p></dd></dl></a>
+<a href='Toukou.do?tno=120450'><dl><dt><img src='avatar/00001_2.png' alt=''></dt><dd><ul><li class='mecha-name'>SアイムジャグラーＥＸ</li><li class='num'>ゲーム数：<span>8,484</span>最高出玉：<span>3,394</span></li><li class='com'>コメント：ブドウ5.8</li><li class='user'>&#64;名無し&#65288;LV42&#65289;</li></ul><p class='stamp'>スタンプ：--</p></dd></dl></a>
+<a href='Toukou.do?tno=120449'><dl><dt><img src='avatar/00001_2.png' alt=''></dt><dd><ul><li class='mecha-name'>SアイムジャグラーＥＸ</li><li class='num'>ゲーム数：<span>6,655</span>最高出玉：<span>2,942</span></li><li class='com'>コメント：ブドウ5.5</li><li class='user'>&#64;名無し&#65288;LV42&#65289;</li></ul><p class='stamp'>スタンプ：--</p></dd></dl></a>
+<a href='Toukou.do?tno=120448'><dl><dt><img src='avatar/00001_2.png' alt=''></dt><dd><ul><li class='mecha-name'>Sキングハナハナ-30</li><li class='num'>ゲーム数：<span>10,903</span>最高出玉：<span>--</span></li><li class='com'>コメント：</li><li class='user'>&#64;未設定&#65288;LV25&#65289;</li></ul><p class='stamp'>スタンプ：--</p></dd></dl></a>
+<a href='Toukou.do?tno=120447'><dl><dt><img src='avatar/00001_2.png' alt=''></dt><dd><ul><li class='mecha-name'>PAスーパー海物語ＩＮ沖縄５ YBA</li><li class='num'>スタート数：<span>652</span>最高出玉：<span>19,420</span></li><li class='com'>コメント：</li><li class='user'>&#64;だーたけ&#65288;LV36&#65289;</li></ul><p class='stamp'>スタンプ：--</p></dd></dl></a>
+<a href='Toukou.do?tno=120446'><dl><dt><img src='avatar/20001_2.png' alt=''></dt><dd><ul><li class='mecha-name'>SアイムジャグラーＥＸ</li><li class='num'>ゲーム数：<span>7,368</span>最高出玉：<span>2,373</span></li><li class='com'>コメント：</li><li class='user'>&#64;名無し&#65288;LV21&#65289;</li></ul><p class='stamp'>スタンプ：1</p></dd></dl></a>
+<a href='YugiHiroba.do' class='end'>みんなの遊技広場はこちら</a></div><span class='bt'></span></div></div><!-- //#yuhi-widget -->
+
+</div>
+<!-- //#content -->
+<script>
+$(function() {
+	/* ダイレクトリンクの初期値 */
+	initDirectLink();
+});
+	// 種別コードを保管
+	var shuCdList = new Array();
+
+	/* Cookieの取得 */
+	function getCookie(c_name) {
+		var st = "";
+		var ed = "";
+		if (document.cookie.length > 0) {
+			// クッキーの値を取り出す
+			st = document.cookie.lastIndexOf(c_name + "=");
+			if (st != -1) {
+				st = st + c_name.length + 1;
+				ed = document.cookie.indexOf(";", st);
+				if (ed == -1)
+					ed = document.cookie.length;
+				// 値をデコードして返す
+				return unescape(document.cookie.substring(st, ed));
+			}
+		}
+		return "";
+	}
+
+	/* ダイレクトリンク押下時の処理 */
+	function onDirectLink() {
+		// 選択チェック
+		var errMsg = '';
+		if ($('#sel_pmc_dl').val() == '') {
+			errMsg = 'ホール名を選択してください。\n';
+		}
+		if ($('#sel_mdc_dl').val() == '') {
+			errMsg += '機種名を選択してください。\n';
+		}
+		if (errMsg != '') {
+			alert(errMsg);
+			return;
+		}
+
+		// Cookieに選択中の値を保存
+		var deferred = setCookie();
+
+		deferred.done(function(){
+
+			// 種別により遷移先を変更
+			if (shuCdList[$('#sel_mdc_dl').val()] == '01') {
+				document.HallDedamaActionForm.kindcode.value = '01';
+			} else if (shuCdList[$('#sel_mdc_dl').val()] == '03') {
+				document.HallDedamaActionForm.kindcode.value = '03';
+			}
+			
+				document.HallDedamaActionForm.forward.value = "LIST";
+			
+
+			document.HallDedamaActionForm.submit();
+		});
+
+	}
+
+	/* Cookieに選択中の値を保存 */
+	function setCookie() {
+
+		var deferred = new $.Deferred();
+
+		$.ajax({
+	        url : 'CommonSetCookie.do?key=pmc_dl&key=mdc_dl&value='
+	        		+ $('#sel_pmc_dl').val() + '&value=' + $('#sel_mdc_dl').val(),
+	        type : 'GET',
+	        async : true,
+	        timeout : '10000',
+	        error : function(xhr, status, e) {
+        		console.log(xhr, status, e);
+	        }
+		}).always(function(){
+			deferred.resolve();
+		});
+
+		return deferred;
+
+	}
+
+	/* ダイレクトリンクの初期選択 */
+	function initDirectLink() {
+		var pmcDl = getCookie('pmc_dl');
+		var mdcDl = getCookie('mdc_dl');
+		if (pmcDl && mdcDl && $('#sel_pmc_dl') && $('#sel_mdc_dl')) {
+			if ($("#sel_pmc_dl option[value=" + pmcDl + "]").size()) {
+				$('#sel_pmc_dl').val(pmcDl);
+			}
+			if ($("#sel_mdc_dl option[value=" + mdcDl + "]").size()) {
+				$('#sel_mdc_dl').val(mdcDl);
+			}
+		}
+	}
+
+	// マイホール
+	var subWinName = "myhall";
+	var subWinParam = "width=360,height=450,menubar=no,location=no,toolbar=no,resizable=yes";
+	var w_myhall = null;
+	function myhall_click(phmembCd) {
+		  w_myhall = window.open("MypageMyHallConfirm.do?hallcode=" + phmembCd,subWinName, subWinParam);
+		  w_myhall.focus();
+		}
+	//処理後の表示切替
+	function myhall_after_kaijyo_sidebar(phmembCd) {
+		var delElement = document.getElementById('myhall_' + phmembCd);
+		delElement.parentNode.removeChild(delElement);
+
+		var hlListchild = document.getElementById('myhallList').childNodes;
+		var childFlg = 0;
+		for (var i = 0, len = hlListchild.length; i < len; i++) {
+		    if (hlListchild[i].nodeName == 'LI'){
+		    	childFlg = 1;
+		       break;
+		    }
+		}
+		if (childFlg == 0) {
+			var addElement = document.getElementById('emptyMyhall');
+			addElement = document.createElement('li');
+			addElement.id = 'emptyMyhall';
+			addElement.innerHTML = '現在登録されているマイホールはありません。';
+			document.getElementById('myhallList').appendChild(addElement);
+		}
+	}
+	// マイホール登録/解除完了画面からの呼び出し（別ウィンドウから）
+	function myhall_after_toroku_sidebar(phmembCd, hallName, encryptPmc) {
+		var delElement = document.getElementById("emptyMyhall");
+		if (delElement != null) {
+			delElement.parentNode.removeChild(delElement);
+		}
+
+		var addElement = document.createElement('li');
+		addElement.id = 'myhall_' + phmembCd;
+		addElement.innerHTML = createHtmlForMyHall(phmembCd, hallName, encryptPmc);
+		addElement.className = "hlname";
+		document.getElementById("myhallList").appendChild(addElement);
+	}
+	// マイホール用の要素を作成する
+	function createHtmlForMyHall(phmembCd, hallName, encryptPmc) {
+		var ret = '';
+		
+		ret = ret + '<div style="float:left;padding: 4px 0"><a href="HallSelectLink.do?hallcode=' + phmembCd + '">';
+		ret = ret + hallName +  '</a></div>';
+		ret = ret + '<div style="clear:both;"></div>';
+		return ret;
+	}
+	// 画面遷移時、開いたままの場合は閉じる
+	onunload = function () {
+		if (w_myhall != null && w_myhall.closed == false) {
+			w_myhall.close();
+		}
+	};
+
+	// SSL
+	function doSsl(url) {
+		var loc = window.location.href;
+		var index = loc.lastIndexOf("/");
+		var sslUrl = (loc.slice(0,index) + "/" + url).replace("http://", "https://");
+		location.href = sslUrl;
+	}
+
+</script>
+<div id="sidebar">
+
+            <div class="btn-regist"><p><a href="MypageRegistMailAddress.do">新規マイページ作成はこちら</a></p></div>
+
+            <div class="rectangle"><script type="text/javascript" src="contents/js/s7/update/rectangle/rectangle.js"></script></div>
+            <script type="text/javascript" src="contents/js/s7/update/sidebn/sidebn.js"></script>
+
+            <div id="twitter-widget">
+                <a class="twitter-timeline" href="https://twitter.com/search?q=%E3%82%B5%E3%82%A4%E3%83%88%E3%82%BB%E3%83%96%E3%83%B3" data-widget-id="306574258606309377">サイトセブンに関するツイートはこちら</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div><!-- //#twitter-widget -->
+			<br><br>
+			スポンサーリンク
+			<div class="rectangle">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- データロボTOP2012 -->
+				<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-9563306601551311" data-ad-slot="1068136440"></ins>
+				<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			</div><!-- //.rectangle -->
+</div><!-- //#sidebar -->
+<script type="text/javascript" src="contents/js/s7/update/skyscraper/skyscraper-left.js"></script>
+    <script type="text/javascript" src="contents/js/s7/update/skyscraper/skyscraper-right.js"></script>
+</div>
+        </div>
+        <div id="footer" class="clear">
+	<div id="footer-content" style="text-align: left; line-height:1.2em;">
+
+		<dl>
+			<dt>データロボサイトセブン</dt>
+			<dd>
+				<ul>
+					<li><a href="Top.do">ホーム</a></li>
+					<li><a href="contents/html/about.html">はじめての方へ</a></li>
+					<li><a href="HallSearch.do?action=HallSelectLink.do">ホール検索</a></li>
+					<li><a href="ModelTop.do">機種情報</a></li>
+					<li><a href="YugiHiroba.do">みんなの遊技広場</a></li>
+					<li><a href="contents/html/about.html#spm">モバイル・スマホ</a></li>
+					</ul>
+			</dd>
+		</dl>
+<dl>
+			<dt>アカウント・有料会員</dt>
+			<dd>
+				<ul>
+                <li><a href="MypageRegistMailAddress.do">新規マイページ作成</a></li>
+					<li><a href="MypageLoginPre.do">マイページログイン</a></li>
+                <li><a href="contents/html/regist.html">有料会員登録</a></li>
+					<li><a href="contents/html/login.html">有料会員ログイン</a></li>
+                <li><a href="C1100.do?skskb=2">クレジットカード決済退会</a></li>
+                </ul>
+			</dd>
+		</dl>
+<dl>
+			<dt>総合案内</dt>
+			<dd>
+				<ul>
+					<li><a href="contents/html/rules.html">ご利用規約</a></li>
+					<li><a href="contents/html/cookie-policy.html">Cookieポリシー</a></li>
+					<li><a href="contents/html/privacy.html">プライバシーポリシー</a></li>
+					<li><a href="contents/html/faq.html">FAQ</a></li>
+					<li><a href="contents/html/sitemap.html">サイトマップ</a></li>
+                    <li><a href="contents/html/links.html">リンク</a></li>
+					<li><a href="https://customer.site7.jp/" target="_blank">お問い合わせ</a></li>
+					<li><a href="https://www.daikoku.co.jp/" target="_blank">運営会社</a></li>
+				</ul>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt>その他サービス</dt>
+			<dd>
+                <ul>
+                    <li><a href="https://site777.tv/?utm_source=d-deltanet.com&utm_medium=pcfooter&utm_content=top&utm_campaign=d-deltanet.com" target="_blank">パチ・スロ サイトセブンTV</a></li>
+                    <li><a href="https://shop.d-deltanet.com/pc/contents/html/point/index.html" target="_blank">サイトセブンポイントクラブ</a></li>
+                    <li><a href="contents/html/service/safety/index.html" target="_blank">サイトセブンセーフティ</a></li>
+                </ul>
+			</dd>
+		</dl>
+
+		<p id="dk-logo" ><a href="https://www.daikoku.co.jp/" target="blank"><img src="contents/images/s7/dk-logo.png" alt="DK"></a></p>
+		<p id="copy">
+		<small>&copy;DAIKOKU DENKI Co.,Ltd. All Rights Reserved.</small>
+		</p>
+
+	</div>
+
+</div><!-- //#footer -->
+<style>
+	.overlay-cookie-policy {
+		position: fixed;
+		top:50%;
+		left:50%;
+		z-index:10000;
+		transform: translate(-50%,-50%);
+	}
+
+	.overlay-cookie-policy-content {
+		padding:35px;
+		background: rgba(30,30,30,0.95);
+	}
+
+	.overlay-cookie-policy p {
+		color:white;
+		font-size: 16px;
+		line-height: 1.4;
+		text-align: center;
+	}
+
+	.overlay-cookie-policy .agree {
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	.overlay-cookie-policy .agree button {
+		padding:15px 35px;
+		background: none;
+		color:white;
+		font-size: 18px;
+		font-weight: bold;
+		border:2px solid white;
+	}
+</style>
+<input type="hidden" id="gid" value="PNWDPT0001"/>
+<script type="text/javascript">
+	$(function(){
+		$('.agree button').click(function(){
+
+			$('.overlay-cookie-policy').hide();
+			var deferred = new $.Deferred();
+
+			$.ajax({
+		        url : 'https://www.d-deltanet.com/pc/CommonSetCookie.do?key=cookie.policy.pc.agree&value=1686096451000',
+		        type : 'GET',
+		        async : true,
+		        timeout : '10000',
+		        error : function(xhr, status, e) {
+	        		console.log(xhr, status, e);
+		        }
+			}).always(function(){
+				deferred.resolve();
+			});
+		});
+		cookie_policy_load();
+	})
+
+	function cookie_policy_load() {
+		if (window.location.pathname.indexOf('/free/') == -1 &&
+				window.location.pathname.indexOf('/admin/') == -1 &&
+				window.location.host == 'www.d-deltanet.com') {
+
+			$('.overlay-cookie-policy').show();
+
+		}
+	}
+</script>
+
+<div class="overlay-cookie-policy" style="display: none;">
+	<div class="overlay-cookie-policy-content">
+		<p>サイトセブンでは、利便性向上やサイト改善のためにCookieを使用します。<br>
+		詳細は<a href="contents/html/cookie-policy.html" style="color:white;text-decoration: underline;">Cookieポリシー</a>をご参照ください。<br>
+		なお、ブラウザの設定でCookieを無効にすることも可能ですが、<br>
+		サイトの機能が十分にご利用いただく事が出来なくなります。</p>
+		<div class="agree">
+			<button>承諾する</button>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" class="microad_blade_track">
+<!--
+var microad_blade_jp = microad_blade_jp || { 'params' : new Array(), 'complete_map' : new Object() };
+(function() {
+var param = {'co_account_id' : '5066', 'group_id' : '', 'country_id' : '1', 'ver' : '2.1.0'};
+microad_blade_jp.params.push(param);
+
+var src = (location.protocol == 'https:')
+? 'https://d-track.send.microad.jp/js/blade_track_jp.js' : 'http://d-cache.microad.jp/js/blade_track_jp.js';
+
+var bs = document.createElement('script');
+bs.type = 'text/javascript'; bs.async = true;
+bs.charset = 'utf-8'; bs.src = src;
+
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(bs, s);
+})();
+-->
+</script>
+    </body>
+    </html>
+    

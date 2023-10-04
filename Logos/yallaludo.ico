@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="shortcut icon" href="img/icon_yallagame.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/ludo.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<script src="js/swiper.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<title>YALLA LUDO</title>
+	</head>
+	<body>
+		<header>
+			<img id="logo" src="img/logo.png" alt="">
+			<div class="btn-group drop-down">
+				<button type="button" class="btn btn-default btn_text">English</button>
+				<button type="button" class="btn btn-default  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+				 aria-expanded="false">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="#">English</a>
+					</li>
+					<li>
+						<a href="#">العربية</a>
+					</li>
+					<li>
+						<a href="#">Türkçe</a>
+					</li>
+					<li>
+						<a href="#">Bahasa Indonesia</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div id="main">
+			<p id="text1"></p>
+			<div id="phoneBox">
+				<img src="img/phone.png" alt="" id="phone">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/2.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/3.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="btn">
+				<div class="btns ios-btn" style="background-image:url(img/iOS-btn3.png);background-size:100% 100%;">
+					<!-- <p></p> -->
+				</div>
+				<div class="btns Android-btn" style="background-image:url(img/Android-btn3.png);background-size:100% 100%;">
+					<!-- <p></p> -->
+				</div>
+			</div>
+		</div>
+		<div id="fotter"><span class="copyRight"></span><span id='TermOfService' style="text-decoration: underline;">Terms
+				of service</span> & <span id='PrivacyPolicy' style="text-decoration: underline;">Privacy Policy</span></div>
+		<div id="RecordNumber">
+			<a id="ICP" href="http://beian.miit.gov.cn/">浙ICP备18030988号-3</a>
+		</div>
+		<script>
+			var date = new Date();
+			var nowYear = date .getFullYear();
+			var copyRight = "Copyright © 2016 - "+nowYear+" Yalla. All Rights Reserved "
+			$(".copyRight").html(copyRight)
+			var langType=1;
+			var obj = [{
+				type:1,
+				lan: "English",
+				theme: "Happy Hours, All in Yalla Ludo",
+				ios: "Apple Store",
+				Android: "Google Play",
+				fotter: "Yalla Technology FZ-LLC@2016-2020 Terms of service & Privacy Policy"
+			}, {
+				type:2,
+				lan: "العربية",
+				theme: "الأوقات السعيدة في يلا لودو",
+				ios: "Apple Store",
+				Android: "Google Play",
+				fotter: ""
+			}]
+			window.onload = function() {
+				var html = "";
+				for (var i = 0; i < obj.length; i++) {
+					html += "<li><a href='#'>" + obj[i].lan + "</a></li>";
+				}
+				$(".dropdown-menu").html(html);
+				setLan(obj[0]);
+				$(".btn_text").text(obj[0].lan);
+				$(".dropdown-menu").find('li').each(function() {
+					$(this).click(function() {
+						$(".btn_text").text($(this).text());
+						var index = parseInt($(this).index());
+						var msg = obj[index];
+						setLan(msg);
+					})
+				})
+
+				function setLan(msg) {
+					langType = msg.type;
+					$("#text1").text(msg.theme || obj[0].theme);
+					// $(".ios-btn p").text(msg.ios || obj[0].ios);
+					// $(".Android-btn p").text(msg.Android || obj[0].Android);
+					// $("#fotter").text(msg.fotter||obj[0].fotter);
+				}
+			}
+			// 1. enter 2 android 3 ios
+			function pointShare(actionType = 1) {
+    		    $.ajax({
+    		      url: "https://activity.yalla.games/Activity6/Statistic/Official",
+    		      type: "post",
+    		      headers: {
+    		        'Content-Type': 'application/json'
+    		      },
+    		      data: JSON.stringify({
+    		        'actionType':actionType
+    		      }),
+    		      dataType: "json",
+    		      success: function (res) {}
+    		    })
+    		}
+    		pointShare(1)
+			$(".ios-btn").click(function() {
+				pointShare(3)
+        		setTimeout(function() {
+					window.location.href = "https://itunes.apple.com/cn/app/yallagame-voice-chat-games/id1419536376?mt=8"
+        		}, 100)
+			})
+			$(".Android-btn").click(function() {
+				pointShare(2)
+        		setTimeout(function() {
+        		  window.location.href = "https://play.google.com/store/apps/details?id=com.yalla.yallagames"
+        		}, 100)
+			})
+			$("#TermOfService").click(function(){
+				if(langType==2)
+					window.location.href = "https://www.fyxtechhk.com/term/AR/TermOfService.html#TermsOfService";
+				else 
+					window.location.href = "https://www.fyxtechhk.com/term/EN/TermOfService.html#TermsOfService";
+				// window.location.href = "https://activitytest.yalla.games/front/privacy/TermOfService3.html#TermsOfService"
+			})
+			$("#PrivacyPolicy").click(function(){
+				if(langType==2)
+					window.location.href = "https://www.fyxtechhk.com/term/AR/TermOfService.html#PrivacyPolicy";
+				else
+					window.location.href = "https://www.fyxtechhk.com/term/EN/TermOfService.html#TermsOfService";
+				// window.location.href = "https://activitytest.yalla.games/front/privacy/TermOfService3.html#PrivacyPolicy"
+			})
+
+			var swiper = new Swiper('.swiper-container', {
+				loop: true,
+				observer: true,
+				autoplay: {
+					delay: 2000
+				},
+				autoplayDisableOnInteraction: false,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+
+		</script>
+		<script>
+            !(function () {
+			//判断是国内还是国外
+			var lang = navigator.language || navigator.userLanguage; //常规浏览器语言和IE浏览器
+			lang = lang.substr(0, 2); //截取lang前2位字符
+			if (lang == "zh") {
+			  $("#ICP").show()
+			} else {
+			  $("#ICP").hide()
+			}
+		  })();
+		</script>
+	</body>
+
+</html>

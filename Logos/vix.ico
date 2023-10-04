@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViX: Cine y TV Gratis en Español</title>
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+    body {
+      margin: 0;
+    }
+
+    .wrapper {
+      align-items: center;
+      background-image: radial-gradient(circle at 3.4% 5.4%, #050E2F 0%, #0A0D18 73%);
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      padding: 0 6%;
+      width: 100%;
+    }
+
+    .header-content {
+      height: 70px;
+      margin-bottom: 48px;
+      position: relative;
+      width: 189px;
+    }
+
+    .fill {
+      width: 100%;
+      height: 100%;
+    }
+
+    .text-content {
+      text-align: center;
+      width: 100%;
+    }
+
+    .description {
+      color: #F2F2F2;
+      font-family: 'Inter';
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    @media (min-width: 768px) {
+      .wrapper {
+        background-image: radial-gradient(circle at 3.4% 5.4%, #050E2F 0%, #0A0D18 42%);
+        padding: 0 21%;
+      }
+
+      .header-content {
+        margin-bottom: 32px;
+      }
+
+      .description {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .header-content {
+        height: 85px;
+        margin-bottom: 32px;
+        width: 229px;
+      }
+    }
+  </style>
+
+  <div class="wrapper">
+    <div class="header-content">
+      <img 
+        alt="Vix Logo"
+        class="fill"
+        objectFit="contain"
+        src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAyIiBoZWlnaHQ9IjExMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgeDE9Ii0xLjA3MyUiIHkxPSI1Ni44NzclIiB4Mj0iMTAzLjg5MSUiIHkyPSI1MC45NDYlIiBpZD0iYSI+PHN0b3Agc3RvcC1jb2xvcj0iI0ZGNUM3OCIgb2Zmc2V0PSIwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiNGRjg1NDIiIG9mZnNldD0iNTUuNzI5JSIvPjxzdG9wIHN0b3AtY29sb3I9IiNGRjZBMzAiIG9mZnNldD0iMTAwJSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgogIDxwYXRoIGQ9Ik0zNi40NjYgMS41NTRjMi4wMjQgMCAzLjUwNCAxLjA4OSAzLjk3IDMuMDMyTDYwLjc2IDc3LjU2OCA4MS4zMTUgNC41ODZjLjQ2Ny0xLjg2NiAxLjg2OC0zLjAzMiAzLjk3LTMuMDMyaDMzLjE3YzEuNTU3IDAgMi42NDcgMS41NTUgMi4xOCAzLjAzMkw4Ny45MzMgMTA4Ljk2OWMtLjYyMyAyLjAyLTIuMDI1IDMuMDMxLTQuMTI3IDMuMDMxSDM3LjA5Yy0yLjAyNSAwLTMuNTA0LS45MzMtNC4xMjctMy4wMzFMLjEwNCA0LjU4NmMtLjQ2Ny0xLjQuNy0zLjAzMiAyLjI1OC0zLjAzMmgzNC4xMDR6bTkwLjMyIDIwLjgzQzEyNi43ODYgMTAuMTA0IDEzNi45MDggMCAxNDkuMjExIDBjMTIuMzAyIDAgMjIuNDI0IDEwLjEwNCAyMi40MjQgMjIuMzg0IDAgMTIuMjgtMTAuMTIyIDIyLjM4NS0yMi40MjQgMjIuMzg1LTEyLjMwMyAwLTIyLjQyNS0xMC4xMDQtMjIuNDI1LTIyLjM4NXptNDIuNTEzIDg2LjM1MmMwIDEuODY1LTEuMjQ2IDMuMTg2LTMuMTkyIDMuMTg2aC0zMy43OTNjLTEuODY4IDAtMy4xOTItMS4yNDMtMy4xOTItMy4xODZWNTYuNTgzYzAtMS44NjUgMS4yNDYtMy4xODcgMy4xOTItMy4xODdoMzMuNzkzYzEuODY4IDAgMy4xOTIgMS4yNDQgMy4xOTIgMy4xODd2NTIuMTUzem0xMS41MjMtLjc3OCAzMS45MjUtNTEuMjItMzEuOTI1LTUxLjIyYy0xLjE2Ny0xLjg2NS0uMTU2LTMuOTY0IDIuMDI2LTMuOTY0aDM2LjEyOGMyLjQ5IDAgMy45Ny43NzggNS4wNiAyLjY0M2wxNy41MTkgMzAuNTQ2IDE3LjUyLTMwLjU0NmMxLjE2Ny0xLjg2NSAyLjU2OC0yLjY0MyA1LjA2MS0yLjY0M2gzNS4zNWMyLjE4IDAgMy4xOSAyLjAyMSAyLjAyMyAzLjk2NGwtMzEuOTI0IDUxLjIyIDMxLjkyNCA1MS4yMmMxLjA5MSAxLjg2Ni4xNTcgMy45NjQtMi4wMjMgMy45NjRoLTM2LjEzYy0yLjQ5IDAtMy45Ny0uNzc3LTUuMDYtMi42NDJsLTE3LjUyLTMwLjU0Ni0xNy41MTkgMzAuNTQ2Yy0xLjA4OSAxLjg2NS0yLjQ5IDIuNjQyLTUuMDYxIDIuNjQyaC0zNS4zNDhjLTIuMTgyIDAtMy4xOTMtMi4wMi0yLjAyNi0zLjk2NHoiIGZpbGw9InVybCgjYSkiIGZpbGwtcnVsZT0ibm9uemVybyIvPgo8L3N2Zz4='
+      />
+    </div>
+    <div class="text-content">
+      <p class="description">
+        Lo sentimos, pero ViX no está disponible en tu país.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<!--
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2023 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+		<meta name="description" content="Innogames.com - play online browser and mobile games for free! Choose between exciting strategy games, RPGs, and simulations. Start playing your favourite games now!">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="author" content="InnoGames">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@InnoGames">
+		<link rel="stylesheet" href="/typo3temp/assets/compressed/28381b60467c89beef81f021f9136648-eda5e24bcf148c3b887c285aa66b20d9.css.gzip?1695824473" media="all">
+		<link rel="stylesheet" href="/typo3temp/assets/compressed/merged-383241ad8f20179a772dbb204414d1bd-1f82ae2839c7e5f1acde814f039fa54c.css.gzip?1695824473" media="all">
+		<script>
+/*<![CDATA[*/
+/*klaro-configuration*/
+var style = document.createElement('style');
+document.head.appendChild(style);
+style.textContent = `
+	li.cm-purpose:first-child {
+	  display: none  !important;
+	}
+	.cookie-notice {
+	  z-index: 1001 !important;
+	}
+	@media (max-width: 375px) {
+		.tx-solr-searchbox {
+		  transform: translateY(-110vh);
+		  animation: slide-down 1s forwards;
+		}
+	}
+	@keyframes slide-up {
+	  0% {
+		transform: translateY(110vh);
+	  }
+	  100% {
+		transform: translateY(0vh);
+	  }
+	}
+	.cookie-notice {
+	  transform: translateY(110vh);
+	  animation: slide-up 1s forwards;
+	}
+`;
+var klaroConfig = {
+	noticeAsModal: false,
+	groupByPurpose: true,
+	hideLearnMore: false,
+	hideDeclineAll: false,
+	mustConsent: false,
+	htmlTexts: true,
+	embedded: false,
+	acceptAll: true,
+	cookieExpiresAfterDays: 31,
+	fallbackLang: 'en',
+	services: [
+		{
+			name: 'klaro',
+			title: 'Klaro',
+			description:
+				"<table class=\"purposeTable\" border=\"1\"><tbody><tr class=\"purposeTableRow\"><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Provider</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Purpose</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Storage duration</b></td></tr><tr class=\"purposeTableRow\"><td class=\"purposeProvider\" style=\"height: 23px;\"><a href=\"https://legal.innogames.com/portal/en/privacy\">Innogames</a></td><td class=\"purposeDescription\" style=\"height: 23px;\">We use a cookie to store your selection made in the cookie overlay.<br>The following cookies are set: klaro</td><td class=\"purposeDuration\" style=\"height: 23px;\">31 days</td></tr></tbody></table>",
+			required: true,
+			purposes: ['necessary'],
+			cookies: ['klaro'],
+		},
+		{
+			name: 'typo3_fe',
+			title: 'TYPO3',
+			description:
+				"<table class=\"purposeTable\" border=\"1\"><tbody><tr class=\"purposeTableRow\"><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Provider</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Purpose</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Storage duration</b></td></tr><tr class=\"purposeTableRow\"><td class=\"purposeProvider\" style=\"height: 23px;\"><a href=\"https://typo3.org/privacy-policy\">TYPO3</a></td><td class=\"purposeDescription\" style=\"height: 23px;\">The TYPO3 system sets a cookie to identify a user and save data like search settings and form data.<br>The following cookies are set: fe_typo_user</td><td class=\"purposeDuration\" style=\"height: 23px;\">Session</td></tr></tbody></table>",
+			required: true,
+			purposes: ['necessary'],
+			cookies: ['fe_typo_user'],
+		},
+		{
+			name: 'recaptcha',
+			title: 'Google reCAPTCHA',
+			description:
+				"<table class=\"purposeTable\" border=\"1\"><tbody><tr class=\"purposeTableRow\"><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Provider</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Purpose</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Storage duration</b></td></tr><tr class=\"purposeTableRow\"><td class=\"purposeProvider\" style=\"height: 23px;\"><a href=\"https://policies.google.com/privacy?hl=en-US\">Google reCAPTCHA</a></td><td class=\"purposeDescription\" style=\"height: 23px;\">We use cookies by Google reCAPTCHA to protect our contact forms from spam.<br>The following cookies are set: CONSENT, NID, DV, 1P_JAR</td><td class=\"purposeDuration\" style=\"height: 23px;\">19 years, 6 months, 10 minutes, 1 month</td></tr></tbody></table>",
+			required: true,
+			purposes: ['necessary'],
+			cookies: ['CONSENT', 'NID', 'DV', '1P_JAR'],
+		},
+		{
+			name: 'maps',
+			title: 'Google Maps',
+			description:
+				"<table class=\"purposeTable\" border=\"1\"><tbody><tr class=\"purposeTableRow\"><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Provider</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Purpose</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Storage duration</b></td></tr><tr class=\"purposeTableRow\"><td class=\"purposeProvider\" style=\"height: 23px;\"><a href=\"https://policies.google.com/privacy?hl=en-US\">Google Maps</a></td><td class=\"purposeDescription\" style=\"height: 23px;\">We use cookies by Google Maps to provide you with a map to our office locations.<br>The following cookies are set: CONSENT, NID, DV</td><td class=\"purposeDuration\" style=\"height: 23px;\">19 years, 6 months, 10 minutes</td></tr></tbody></table>",
+			purposes: ['functionality'],
+			cookies: ['1P_JAR'],
+			callback: function (consent, app) {
+				var elements = document.querySelectorAll('.maps-gdpr-message');
+				var mapEvent = document.getElementById('tx-dkdnewsevents-eventMaps-map');
+				var mapIframe = document.querySelectorAll('.map-iframe');
+				elements.forEach(function (item) {
+					item.style.display = consent ? 'none' : 'block';
+				});
+				if (mapEvent) {
+					mapEvent.style.display = consent ? 'block' : 'none';
+				}
+				if (mapIframe.length > 0) {
+					mapIframe.forEach(function (item) {
+						item.style.display = consent ? 'block' : 'none';
+					});
+				}
+			},
+		},
+		{
+			name: 'youtube',
+			title: 'YouTube',
+			description:
+				"<table class=\"purposeTable\" border=\"1\"><tbody><tr class=\"purposeTableRow\"><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Provider</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Purpose</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Storage duration</b></td></tr><tr class=\"purposeTableRow\"><td class=\"purposeProvider\" style=\"height: 23px;\"><a href=\"https://policies.google.com/privacy?hl=en-US\">YouTube</a></td><td class=\"purposeDescription\" style=\"height: 23px;\">We use cookies by YouTube to provide you with videos about the company.<br>The following cookies are set: CONSENT, NID, DV</td><td class=\"purposeDuration\" style=\"height: 23px;\">19 years, 6 months, 10 minutes</td></tr></tbody></table>",
+			purposes: ['functionality'],
+			cookies: [/^yt-.*$/],
+			callback: function (consent, app) {
+				var elements = document.querySelectorAll('.youtube-gdpr-message');
+				var youtubeIframe = document.querySelectorAll('.youtube-iframe');
+				elements.forEach(function (item) {
+					item.style.display = consent ? 'none' : 'block';
+				});
+				if (youtubeIframe.length > 0) {
+					youtubeIframe.forEach(function (item) {
+						item.style.display = consent ? 'block' : 'none';
+					});
+				}
+			},
+		},
+		{
+			name: 'facebook',
+			title: 'Facebook Pixel',
+			description:
+				"<table class=\"purposeTable\" border=\"1\"><tbody><tr class=\"purposeTableRow\"><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Provider</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Purpose</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Storage duration</b></td></tr><tr class=\"purposeTableRow\"><td class=\"purposeProvider\" style=\"height: 23px;\"><a href=\"https://www.facebook.com/full_data_use_policy\">Facebook Pixel</a></td><td class=\"purposeDescription\" style=\"height: 23px;\">We use cookies by Facebook Pixel to limit the number of times you see our job-related advertisements and measure the effectiveness of our job-related advertising campaigns on Facebook’s services.<br>The following cookies are set: _fbp, fr.</td><td class=\"purposeDuration\" style=\"height: 23px;\">3 months</td></tr></tbody></table>",
+			purposes: ['advertising'],
+			cookies: ['fbp', 'fr'],
+		},
+		{
+			name: 'plausible',
+			title: 'Plausible Analytics',
+			description:
+				"<table class=\"purposeTable\" border=\"1\"><tbody><tr class=\"purposeTableRow\"><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Provider</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Purpose</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Storage duration</b></td></tr><tr class=\"purposeTableRow\"><td class=\"purposeProvider\" style=\"height: 23px;\"><a href=\"https://plausible.io/data-policy\">Plausible Insights OU</a></td><td class=\"purposeDescription\" style=\"height: 23px;\">We use Plausible Analytics to measure the usage of our website. Plausible does not set cookies, does not store information in the browser and does not collect personal data. Random string generated from hashing IP address and user agent stored for 24 hours<br></td><td class=\"purposeDuration\" style=\"height: 23px;\"></td></tr></tbody></table>",
+			purposes: ['advertising'],
+		},
+		{
+			name: 'linkedin',
+			title: 'LinkedIn Insights',
+			description:
+				"<table class=\"purposeTable\" border=\"1\"><tbody><tr class=\"purposeTableRow\"><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Provider</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Purpose</b></td><td class=\"purposeTableTop\" style=\"height: 23px;\"><b>Storage duration</b></td></tr><tr class=\"purposeTableRow\"><td class=\"purposeProvider\" style=\"height: 23px;\"><a href=\"https://www.linkedin.com/legal/privacy-policy\">LinkedIn Insights</a></td><td class=\"purposeDescription\" style=\"height: 23px;\">We use cookies by LinkedIn Insights to limit the number of times you see our job-related advertisements and measure the effectiveness of our job-related advertising campaigns on Linkedin’s services.<br>The following cookies are set: bcookie, bscookie, lang, lidc, liscc, UserMatchHistory.</td><td class=\"purposeDuration\" style=\"height: 23px;\">2 years, 2 years, Session, 1 day, 1 year, 30 days</td></tr></tbody></table>",
+			purposes: ['advertising'],
+			cookies: ['bcookie', 'bscookie', 'lang', 'lidc', 'liscc', 'UserMatchHistory'],
+		},
+	],
+	translations: {
+		'en': {
+			acceptAll:
+				"Accept all",
+			acceptSelected:
+				"Accept selection",
+			decline:
+				"Only technically necessary",
+			purposes: {
+				necessary: {
+					title: "Strictly necessary cookies",
+					description:
+						"These cookies are essential in order to enable you to move around the website and use its features (such as accessing secure areas of the website or writing in a contact form). Without these cookies we cannot provide the website to you at all.",
+				},
+				functionality: {
+					title: "Functionality cookies",
+					description:
+						"These cookies allow the website to remember choices you make (such as your language or region). They are also used to provide services you have asked for (such as viewing an interactive map, , communicating in a live chat, or watching a video). The information these cookies collect may track your browsing activity on other websites.",
+				},
+				advertising: {
+					title: "Advertising cookies",
+					description:
+						"These cookies are used to limit the number of times you see our job-related advertisements and measure the effectiveness of our job-related advertising campaigns on the Internet. They are placed by advertising networks with InnoGames’ permission. They remember that you have visited our website and this information is shared with the advertising networks.",
+				},
+			},
+			consentNotice: {
+				learnMore:
+					"More info",
+				description:
+					"<h2>We value your privacy</h2> We use the following types of cookies on our website: strictly necessary cookies, functionality cookies and advertising cookies. You can also visit our website without setting cookies (strictly necessary cookies are excluded from this). The user experience on our website is more convenient with cookies. You can find more information about the cookies we use by clicking on \“More info\” and in our <a href=\"https://legal.innogames.com/portal/en/privacy\">Privacy policy</a>. By clicking \"Accept cookies\" you consent that we set the aforementioned cookies. You have a right to revoke your consent at any time.",
+			},
+			consentModal: {
+				title: "Privacy settings",
+				description:
+					"Please select a setting:",
+			},
+			close: "Back",
+			ok: "Accept all",
+			poweredBy: ' ',
+			save: "Save",
+			service: {
+				disableAll: {
+					title: "Activate or deactivate all services",
+					description:
+						"You can activate or deactivate all services with this button.",
+				},
+				required: {
+					description: ' ',
+					title: ' ',
+				},
+				purpose: ' ',
+			},
+		},
+	},
+};
+// Set variables for sidebar and accept preDef
+var necessary = 'Strictly necessary';
+var functionality = 'Functionality';
+var advertising = 'Advertising';
+/*]]>*/
+</script>
+		<title>Free Online Games - Play Strategy Games and RPG Online for free!</title>
+		<meta property="og:site_name" content="InnoGames">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<link rel="apple-touch-icon" sizes="192x192" href="/apple-icon.png">
+		<link rel="apple-touch-icon" sizes="192x192" href="/apple-icon-precomposed.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-144x144.png">
+		<link rel="icon" type="image/png" sizes="36x36" href="/android-icon-36x36.png">
+		<link rel="icon" type="image/png" sizes="48x48" href="/android-icon-48x48.png">
+		<link rel="icon" type="image/png" sizes="72x72" href="/android-icon-72x72.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/android-icon-96x96.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="msapplication-config" content="/browserconfig.xml">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<meta name="robots" content="index,follow">
+		<link rel="canonical" href="https://www.innogames.com/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556">
+		<link rel="alternate" hreflang="en-US" href="https://www.innogames.com/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556">
+		<link rel="alternate" hreflang="de-DE" href="https://www.innogames.com/de/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556">
+		<link rel="alternate" hreflang="fr-FR" href="https://www.innogames.com/fr/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556">
+		<link rel="alternate" hreflang="pl-PL" href="https://www.innogames.com/pl/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556">
+		<link rel="alternate" hreflang="nl-NL" href="https://www.innogames.com/nl/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556">
+		<link rel="alternate" hreflang="pt-PT" href="https://www.innogames.com/pt/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556">
+		<link rel="alternate" hreflang="ru-RU" href="https://www.innogames.com/ru/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556">
+		<link rel="alternate" hreflang="it-IT" href="https://www.innogames.com/it/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556">
+		<link rel="alternate" hreflang="es-ES" href="https://www.innogames.com/es/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556">
+		<link rel="alternate" hreflang="x-default" href="https://www.innogames.com/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> </head>
+	<body>
+		<div id="fix-mob-navscr">
+			<header class="mobile">
+				<div class="container-fluid head">
+					<div class="row"> <span class="col-xs-2 col-sm-2 col-md-2 mobile-nav"> <a class="nav" href="#"><img class="open svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-mobile-nav.svg" alt="open icon" ><img class="close svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-x-close.svg" alt="close icon"></a> </span> <span class="col-xs-8 col-sm-8 col-md-8 logo"> <a href="/" target="_self"><span><img src="/typo3conf/ext/innogames/Resources/Public/img/logo/innogames-logo.svg" alt="Logo"></span></a> </span> <span class="col-xs-2 col-sm-2 mobile-search"> <a class="search" href="#"><img class="open svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-search.svg" alt="open icon" ><img class="close svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-x-close.svg" alt="close icon"></a> </span> </div>
+					 </div>
+				 </header>
+			<header class="desktop">
+				<div class="container-fluid head">
+					<div class="row"> <span class="col col-lg-3 logo"> <a href="/" target="_self"><span><img src="/typo3conf/ext/innogames/Resources/Public/img/logo/innogames-logo.svg" alt="Logo"></span></a> </span>
+						<div id="mobile-nav">
+							<nav class="col col-lg-6">
+								<ul class="nav navbar-nav">
+									<li><a href="/games/all-games/" target="_self">Games</a><span>Games</span>
+										<ul class="drop">
+											<li><a href="/games/all-games/" target="_self">All Games</a><img src="/fileadmin/user_upload/Submenu_Images_ALL.jpg" width="525" height="215" loading="lazy" alt="Alle Games"></li>
+											<li><a href="/games/forge-of-empires/" target="_self">Forge Of Empires</a><img src="/fileadmin/user_upload/Submenu_Images_FOE.jpg" width="525" height="215" loading="lazy" alt="InnoGames Forge of Empires"></li>
+											<li><a href="/games/rise-of-cultures/" target="_self">Rise of Cultures</a><img src="/fileadmin/user_upload/images/games/ROC/ROC_Submenu_525x215.jpg" width="525" height="215" loading="lazy" alt></li>
+											<li><a href="/games/sunrise-village/" target="_self">Sunrise Village</a><img src="/fileadmin/user_upload/images/games/Sunrise_Village/525x215_-_Submenu_Image.jpg" width="525" height="215" loading="lazy" alt></li>
+											<li><a href="/games/elvenar/" target="_self">Elvenar</a><img src="/fileadmin/user_upload/Submenu_Images_ELV.jpg" width="525" height="215" loading="lazy" alt="InnoGames Elvenar"></li>
+											<li><a href="/games/grepolis/" target="_self">Grepolis</a><img src="/fileadmin/user_upload/Submenu_Images_GRE.jpg" width="525" height="215" loading="lazy" alt="InnoGames Grepolis"></li>
+											<li><a href="/games/tribal-wars/" target="_self">Tribal Wars</a><img src="/fileadmin/user_upload/Submenu_Images_TW.jpg" width="525" height="215" loading="lazy" alt="InnoGames Tribal Wars"></li>
+											<li><a href="/games/tribal-wars-2/" target="_self">Tribal Wars 2</a><img src="/fileadmin/user_upload/Submenu_Images_TW2.jpg" width="525" height="215" loading="lazy" alt="InnoGames Tribal Wars 2"></li>
+											<li><a href="/games/lost-survivors/" target="_self">Lost Survivors</a><img src="/fileadmin/user_upload/images/games/LS/525x215_-_Submenu_Image.jpg" width="525" height="215" loading="lazy" alt></li>
+											<li><a href="/games/the-west/" target="_self">The West</a><img src="/fileadmin/user_upload/Submenu_Images_WEST.jpg" width="525" height="215" loading="lazy" alt="InnoGames The West"></li>
+										</ul>
+									</li>
+									<li><a href="/company/about-us/" target="_self">Company</a><span>Company</span>
+										<ul class="drop">
+											<li><a href="/company/about-us/" target="_self">About us</a></li>
+											<li><a href="/company/about-us/#c1918" target="_self" rel="nofollow">Leadership Principles</a></li>
+											<li><a href="/company/about-us/#c1153" target="_self" rel="nofollow">Management</a></li>
+											<li><a href="/company/about-us/#c872" target="_self" rel="nofollow">History</a></li>
+											<li><a href="/company/sustainability/" target="_self">Sustainability</a></li>
+											<li><a href="https://tech.innogames.com/" target="_self">#InnoBlog</a></li>
+											<li><a href="/company/contact/" target="_self">Contact</a></li>
+											<li><a href="/partners/partnership-program/" target="_self">Partnership Program</a></li>
+										</ul>
+									</li>
+									<li><a href="/career/" target="_self">Career</a><span>Career</span>
+										<ul class="drop">
+											<li><a href="/career/#c924" target="_self" rel="nofollow">Faces of InnoGames</a></li>
+											<li><a href="/career/#c978" target="_self" rel="nofollow">Our Values</a></li>
+											<li><a href="/career/#c2470" target="_self" rel="nofollow">Why join us?</a></li>
+											<li><a href="/career/#c2019" target="_self" rel="nofollow">Career Paths</a></li>
+											<li><a href="/career/#c1757" target="_self" rel="nofollow">Career Starters</a></li>
+											<li><a href="/career/#c2022" target="_self" rel="nofollow">Welcome to Hamburg</a></li>
+											<li><a href="/career/#c926" target="_self" class="menu-item-highlighted" rel="nofollow">Open positions</a></li>
+											<li><a href="/career/#c2476" target="_self" rel="nofollow">FAQ</a></li>
+											<li><a href="/career/#c991" target="_self" rel="nofollow">Meet us here</a></li>
+										</ul>
+									</li>
+									<li><a href="/press/press-releases/" target="_self">Press</a><span>Press</span>
+										<ul class="drop">
+											<li><a href="/press/press-releases/" target="_self">Press Releases</a></li>
+											<li><a href="/press/press-releases/#c932" target="_self" rel="nofollow">Your PR Contacts</a></li>
+											<li><a href="/press/press-releases/#c933" target="_self" rel="nofollow">Press Kits</a></li>
+											<li><a href="/press/press-releases/#c935" target="_self" rel="nofollow">Media Reports</a></li>
+										</ul>
+									</li>
+									<li><a href="https://support.innogames.com" target="_blank" rel="noreferrer">Support</a><span>Support</span>
+										<ul class="drop">
+											<li><a href="/support/fancontentguideline/" target="_self">Fan Content Guideline</a></li>
+										</ul>
+									</li>
+								</ul>
+								 </nav>
+							<div class="col col-lg-3 extras">
+								<div id="header-lang"> <label class="selected" style="background-image:url(/typo3conf/ext/innogames/Resources/Public/img/flags/en.jpg);"> <span>English</span> </label>
+									<ul class="drop">
+										<li> <span class="langSelect" data-language="DE"> <a class="flag" style="background-image:url(/typo3conf/ext/innogames/Resources/Public/img/flags/de.jpg);" href="/de/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Deutsch</span> </a> </span> </li>
+										<li> <span class="langSelect" data-language="FR"> <a class="flag" style="background-image:url(/typo3conf/ext/innogames/Resources/Public/img/flags/fr.jpg);" href="/fr/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Français</span> </a> </span> </li>
+										<li> <span class="langSelect" data-language="PL"> <a class="flag" style="background-image:url(/typo3conf/ext/innogames/Resources/Public/img/flags/pl.jpg);" href="/pl/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Polski</span> </a> </span> </li>
+										<li> <span class="langSelect" data-language="NL"> <a class="flag" style="background-image:url(/typo3conf/ext/innogames/Resources/Public/img/flags/nl.jpg);" href="/nl/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Nederlands</span> </a> </span> </li>
+										<li> <span class="langSelect" data-language="PT"> <a class="flag" style="background-image:url(/typo3conf/ext/innogames/Resources/Public/img/flags/pt.jpg);" href="/pt/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Português brasileiro</span> </a> </span> </li>
+										<li> <span class="langSelect" data-language="RU"> <a class="flag" style="background-image:url(/typo3conf/ext/innogames/Resources/Public/img/flags/ru.jpg);" href="/ru/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Русский</span> </a> </span> </li>
+										<li> <span class="langSelect" data-language="IT"> <a class="flag" style="background-image:url(/typo3conf/ext/innogames/Resources/Public/img/flags/it.jpg);" href="/it/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Italiano</span> </a> </span> </li>
+										<li> <span class="langSelect" data-language="ES"> <a class="flag" style="background-image:url(/typo3conf/ext/innogames/Resources/Public/img/flags/es.jpg);" href="/es/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Español</span> </a> </span> </li>
+										 </ul>
+									 </div>
+								<div id="header-search">
+									<div id="c139" class="frame frame-default frame-type-list frame-layout-0">
+										<form method="get" id="form_kesearch_pi1" name="form_kesearch_pi1" action="//searchresults/" onsubmit="return false"> <input type="hidden" name="id" value="49"> <label for="header-search-input"><img class="svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-search.svg" alt="search icon"></label> <input id="header-search-input" type="text" name="tx_kesearch_pi1[sword]" value="" placeholder="Search"> <input id="kesearchpagenumber" type="hidden" name="tx_kesearch_pi1[page]" value="1"> <input id="resetFilters" type="hidden" name="tx_kesearch_pi1[resetFilters]" value="0"> <input id="sortByField" type="hidden" name="tx_kesearch_pi1[sortByField]" value=""> <input id="sortByDir" type="hidden" name="tx_kesearch_pi1[sortByDir]" value=""> </form>
+										 </div>
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </header>
+			<div class="container-fluid search">
+				<div id="search-results" class="row">
+					<div class="controls"> <label for="main-search-input"><img class="svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-search.svg" alt="search icon"></label> <input id="main-search-input" type="text" name="search" value="" placeholder="Search"> <a class="close" href="#"><img class="svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-x-close.svg" alt="close icon"></a> </div>
+					<div class="content"></div>
+					 </div>
+				 </div>
+			 </div>
+		<div id="page-content">
+			<div class="inno-e-slider-wrap desktop">
+				<div class="inno-e-slider slick-not-init" data-prev="previous" data-next="next" id="c117" >
+					<div class="inno-e-slide ">
+						<div class="inno-e-image">
+							<div class="top-layer inno-e-wrap">
+								<div class="inno-e-headline "><span class="h2 subline" >
+										<div>
+											<p><br><br> Lead your empire through the ages<br> in our strategy city builder Forge of Empires</p>
+										</div>
+									</span></div>
+								<a href="https://forgeofempires.com/?ref=igcom" target="_blank" class="inno-e-btn" rel="noreferrer"><span class="label">Play now!</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="Icon arrow right"></span></a></div>
+							<img loading="lazy" src="/fileadmin/user_upload/innogames_start_leaderboard_forge-of-empires_2000x600.jpg" height="600" width="2000" data-at2x="/fileadmin/_processed_/f/9/csm_innogames_start_leaderboard_forge-of-empires_2000x600_37e060d0c4.jpg" class='' alt="1" title="1" ></div>
+					</div>
+					<div class="inno-e-slide ">
+						<div class="inno-e-image">
+							<div class="top-layer inno-e-wrap">
+								<div class="inno-e-headline "><span class="h2 subline" >
+										<p><br><br> Dive into the cultures of mankind&nbsp;<br> Build epic cities and develop your civilization</p>
+									</span></div>
+								<a href="https://eu-play.riseofcultures.com/" target="_blank" class="inno-e-btn" rel="noreferrer"><span class="label">Play Now!</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="Icon arrow right"></span></a></div>
+							<img loading="lazy" src="/fileadmin/user_upload/ROC_GameTeaser_2000x600_nn.jpg" height="600" width="2000" data-at2x="/fileadmin/_processed_/d/e/csm_ROC_GameTeaser_2000x600_nn_060427bb68.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+					</div>
+					<div class="inno-e-slide ">
+						<div class="inno-e-image">
+							<div class="top-layer inno-e-wrap">
+								<div class="inno-e-headline "><span class="h2 subline" >
+										<p><br><br> Take care of your grandfather ‘s village</p>
+										<p>Explore a magnificient world and&nbsp;solve mysteries</p>
+									</span></div>
+								<a href="https://innogames.sng.link/A9bim/i3p3/ywpr" target="_blank" class="inno-e-btn" rel="noreferrer"><span class="label">Play Now!</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="Icon arrow right"></span></a></div>
+							<img loading="lazy" src="/fileadmin/user_upload/nn_2000x600_-_Fullwidth_slider_SV.jpg" height="600" width="2000" data-at2x="/fileadmin/_processed_/0/b/csm_nn_2000x600_-_Fullwidth_slider_SV_472f9b82d6.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+					</div>
+					<div class="inno-e-slide ">
+						<div class="inno-e-image">
+							<div class="top-layer inno-e-wrap">
+								<div class="inno-e-headline "><span class="h2 subline" >
+										<p><br><br> &nbsp;<br> &nbsp;</p>
+									</span></div>
+								<a href="/career/open-positions/" target="_self" class="inno-e-btn down page-scroll"><span class="label">Apply now!</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="Icon arrow right"></span></a></div>
+							<img loading="lazy" src="/fileadmin/user_upload/2000x600.jpg" height="600" width="2000" data-at2x="/fileadmin/_processed_/3/8/csm_2000x600_7551167119.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+					</div>
+				</div>
+				<div class="slider-overlay"></div>
+			</div>
+			<div class="inno-e-title inno-e-wrap " id="c118" >
+				<div class="inno-e-headline center ">
+					<h2>Our Games</h2>
+				</div>
+			</div>
+			<div class="inno-e-games inno-e-wrap " id="c2213" >
+				<div class="inno-e-2col img-both ">
+					<div class="row">
+						<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
+							<div class="inno-e-2x2 video-underlay" >
+								<div class="inno-e-image"><a href="https://forgeofempires.com/?ref=igcom" title="Play Forge of Empires" target="_blank" class="layer-btn" data-video="video1763" rel="noreferrer">
+										<div class="vb-table">
+											<div class="cell">
+												<div class="title"><span>City Building Strategy Game</span>
+													<h2 >Forge of Empires</h2>
+												</div>
+											</div>
+											<div class="cell"><span class="inno-e-btn"><span class="label">Play</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="icon right arrow"></span></span></div>
+										</div>
+									</a>
+									<div class="inno-e-video">
+										<div class="video-wrap">
+											<div class="inno-e-wrap">
+												<div id="contain_video1763" class="video-container video-full jp-video" role="application" data-types="mp4, m4v, ogv" aria-label="media player" data-id="video1763" data-video='{&quot;mp4&quot;:&quot;/fileadmin\/user_upload\/FoE_800x800.mp4&quot;}'>
+													<div class="jp-type-single">
+														<div id="video1763" class="jp-jplayer"></div>
+														<div class="jp-no-solution"><span>Update Required</span> To play the media you will need to update your browser to a recent version. </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<img loading="lazy" src="/fileadmin/user_upload/innogames_start_gametile_forge-of-empires_800x800.jpg" height="800" width="800" data-at2x="/fileadmin/_processed_/5/0/csm_innogames_start_gametile_forge-of-empires_800x800_109764cad7.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+							</div>
+							<div class="inno-e-2x2 video-underlay" >
+								<div class="inno-e-image"><a href="https://innogames.sng.link/A9bim/i3p3/ywpr" target="_blank" class="layer-btn" data-video="video1870" rel="noreferrer">
+										<div class="vb-table">
+											<div class="cell">
+												<div class="title"><span>Exploration and farming simulation</span>
+													<h2 >Sunrise Village</h2>
+												</div>
+											</div>
+											<div class="cell"><span class="inno-e-btn"><span class="label">Play</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="icon right arrow"></span></span></div>
+										</div>
+									</a>
+									<div class="inno-e-video">
+										<div class="video-wrap">
+											<div class="inno-e-wrap">
+												<div id="contain_video1870" class="video-container video-full jp-video" role="application" data-types="mp4, m4v, ogv" aria-label="media player" data-id="video1870" data-video='{&quot;mp4&quot;:&quot;/fileadmin\/user_upload\/images\/games\/Sunrise_Village\/MCD-8300_SV-TheProject_Ingame_800x800_nn_none.mp4&quot;}'>
+													<div class="jp-type-single">
+														<div id="video1870" class="jp-jplayer"></div>
+														<div class="jp-no-solution"><span>Update Required</span> To play the media you will need to update your browser to a recent version. </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<img loading="lazy" src="/fileadmin/user_upload/nn_800x800_Game_teaser_2_columns_static_SV.jpg" height="800" width="800" data-at2x="/fileadmin/_processed_/b/1/csm_nn_800x800_Game_teaser_2_columns_static_SV_350393d252.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+							</div>
+							<div class="inno-e-2x2 video-underlay" >
+								<div class="inno-e-image"><a href="https://grepolis.com/?ref=igcom" title="Play Grepolis" target="_blank" class="layer-btn" data-video="video1782" rel="noreferrer">
+										<div class="vb-table">
+											<div class="cell">
+												<div class="title"><span>Strategy MMO Game</span>
+													<h2 >Grepolis</h2>
+												</div>
+											</div>
+											<div class="cell"><span class="inno-e-btn"><span class="label">Play</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="icon right arrow"></span></span></div>
+										</div>
+									</a>
+									<div class="inno-e-video">
+										<div class="video-wrap">
+											<div class="inno-e-wrap">
+												<div id="contain_video1782" class="video-container video-full jp-video" role="application" data-types="mp4, m4v, ogv" aria-label="media player" data-id="video1782" data-video='{&quot;mp4&quot;:&quot;/fileadmin\/user_upload\/Grepolis_800x800.mp4&quot;}'>
+													<div class="jp-type-single">
+														<div id="video1782" class="jp-jplayer"></div>
+														<div class="jp-no-solution"><span>Update Required</span> To play the media you will need to update your browser to a recent version. </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<img loading="lazy" src="/fileadmin/user_upload/innogames_start_gametile_grepolis_800x800.jpg" height="800" width="800" data-at2x="/fileadmin/_processed_/e/a/csm_innogames_start_gametile_grepolis_800x800_fd1501d095.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+							</div>
+							<div class="inno-e-2x2 video-underlay" >
+								<div class="inno-e-image"><a href="http://un.lostsurvivors.com" target="_blank" class="layer-btn" data-video="video1860" rel="noreferrer">
+										<div class="vb-table">
+											<div class="cell">
+												<div class="title"><span>Tropical island simulation</span>
+													<h2 >Lost Survivors</h2>
+												</div>
+											</div>
+											<div class="cell"><span class="inno-e-btn"><span class="label">Play</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="icon right arrow"></span></span></div>
+										</div>
+									</a>
+									<div class="inno-e-video">
+										<div class="video-wrap">
+											<div class="inno-e-wrap">
+												<div id="contain_video1860" class="video-container video-full jp-video" role="application" data-types="mp4, m4v, ogv" aria-label="media player" data-id="video1860" data-video='{&quot;mp4&quot;:&quot;/fileadmin\/user_upload\/images\/games\/LS\/MCD-829_LS-NewBeginning_ingame_800x800_nn_none.mp4&quot;}'>
+													<div class="jp-type-single">
+														<div id="video1860" class="jp-jplayer"></div>
+														<div class="jp-no-solution"><span>Update Required</span> To play the media you will need to update your browser to a recent version. </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<img loading="lazy" src="/fileadmin/user_upload/LS_Triangles_800x800.jpg" height="800" width="800" data-at2x="/fileadmin/_processed_/a/f/csm_LS_Triangles_800x800_52bd00c97a.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+							</div>
+						</div>
+						<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
+							<div class="inno-e-2x2 video-underlay" >
+								<div class="inno-e-image"><a href="http://eu.riseofcultures.com" target="_blank" class="layer-btn" data-video="video1764" rel="noreferrer">
+										<div class="vb-table">
+											<div class="cell">
+												<div class="title"><span>Historic City Builder</span>
+													<h1 >Rise of Cultures</h1>
+												</div>
+											</div>
+											<div class="cell"><span class="inno-e-btn"><span class="label">Play</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="icon right arrow"></span></span></div>
+										</div>
+									</a>
+									<div class="inno-e-video">
+										<div class="video-wrap">
+											<div class="inno-e-wrap">
+												<div id="contain_video1764" class="video-container video-full jp-video" role="application" data-types="mp4, m4v, ogv" aria-label="media player" data-id="video1764" data-video='{&quot;mp4&quot;:&quot;/fileadmin\/user_upload\/images\/games\/ROC\/RoC-RisingIslands_Ingame_800x800_nn_none.mp4&quot;}'>
+													<div class="jp-type-single">
+														<div id="video1764" class="jp-jplayer"></div>
+														<div class="jp-no-solution"><span>Update Required</span> To play the media you will need to update your browser to a recent version. </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<img loading="lazy" src="/fileadmin/user_upload/images/games/ROC/ROC_innogames_start_gametile_RoC_800x800_marketcode.jpg" height="800" width="800" data-at2x="/fileadmin/_processed_/3/1/csm_ROC_innogames_start_gametile_RoC_800x800_marketcode_e1239b57be.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+							</div>
+							<div class="inno-e-2x2 video-underlay" >
+								<div class="inno-e-image"><a href="https://elvenar.com/?ref=igcom" title="Play Elvenar" target="_blank" class="layer-btn" data-video="video1781" rel="noreferrer">
+										<div class="vb-table">
+											<div class="cell">
+												<div class="title"><span>Fantasy City Builder</span>
+													<h2 >Elvenar</h2>
+												</div>
+											</div>
+											<div class="cell"><span class="inno-e-btn"><span class="label">Play</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="icon right arrow"></span></span></div>
+										</div>
+									</a>
+									<div class="inno-e-video">
+										<div class="video-wrap">
+											<div class="inno-e-wrap">
+												<div id="contain_video1781" class="video-container video-full jp-video" role="application" data-types="mp4, m4v, ogv" aria-label="media player" data-id="video1781" data-video='{&quot;mp4&quot;:&quot;/fileadmin\/user_upload\/Elvenar_800xx800.mp4&quot;}'>
+													<div class="jp-type-single">
+														<div id="video1781" class="jp-jplayer"></div>
+														<div class="jp-no-solution"><span>Update Required</span> To play the media you will need to update your browser to a recent version. </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<img loading="lazy" src="/fileadmin/user_upload/innogames_start_gametile_elvenar_800x800.jpg" height="800" width="800" data-at2x="/fileadmin/_processed_/d/3/csm_innogames_start_gametile_elvenar_800x800_3dc9bb9b8c.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+							</div>
+							<div class="inno-e-2x1 " >
+								<div class="inno-e-image"><a href="http://tribalwars.net/" target="_blank" class="layer-btn" rel="noreferrer">
+										<div class="description">
+											<p>Create great tribes, trade, recruit troops and conquer other villages. Strive for power and glory in Tribal Wars!</p>
+										</div>
+										<div class="vb-table">
+											<div class="cell">
+												<div class="title"><span>Classic Strategy MMO</span>
+													<h2 >Tribal Wars</h2>
+												</div>
+											</div>
+											<div class="cell"><span class="inno-e-btn"><span class="label">Play</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="icon right arrow"></span></span></div>
+										</div>
+									</a><img loading="lazy" src="/fileadmin/user_upload/innogames_start_gametile_tribal-wars-EN_800x400.jpg" height="400" width="800" data-at2x="/fileadmin/_processed_/0/6/csm_innogames_start_gametile_tribal-wars-EN_800x400_3c6da1b1da.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+							</div>
+							<div class="inno-e-2x2 video-underlay" >
+								<div class="inno-e-image"><a href="https://om.tribalwars2.com/tw2/en?ref=igcom" title="Play Tribal Wars 2" target="_blank" class="layer-btn" data-video="video1785" rel="noreferrer">
+										<div class="vb-table">
+											<div class="cell">
+												<div class="title"><span>Medieval MMO Game</span>
+													<h2 >Tribal Wars 2</h2>
+												</div>
+											</div>
+											<div class="cell"><span class="inno-e-btn"><span class="label">Play</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="icon right arrow"></span></span></div>
+										</div>
+									</a>
+									<div class="inno-e-video">
+										<div class="video-wrap">
+											<div class="inno-e-wrap">
+												<div id="contain_video1785" class="video-container video-full jp-video" role="application" data-types="mp4, m4v, ogv" aria-label="media player" data-id="video1785" data-video='{&quot;mp4&quot;:&quot;/fileadmin\/user_upload\/TW2_800xx800.mp4&quot;}'>
+													<div class="jp-type-single">
+														<div id="video1785" class="jp-jplayer"></div>
+														<div class="jp-no-solution"><span>Update Required</span> To play the media you will need to update your browser to a recent version. </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<img loading="lazy" src="/fileadmin/user_upload/innogames_start_gametile_tribal-wars-2_800x800.jpg" height="800" width="800" data-at2x="/fileadmin/_processed_/0/c/csm_innogames_start_gametile_tribal-wars-2_800x800_efd8028faf.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+							</div>
+							<div class="inno-e-2x1 " >
+								<div class="inno-e-image"><a href="http://om.the-west.net" target="_blank" class="layer-btn" rel="noreferrer">
+										<div class="description">
+											<p>Explore the Wild West, fight duels and experience exciting adventures with other players in our online game The West!</p>
+										</div>
+										<div class="vb-table">
+											<div class="cell">
+												<div class="title"><span>Cowboy Browser RPG</span>
+													<h2 >The West</h2>
+												</div>
+											</div>
+											<div class="cell"><span class="inno-e-btn"><span class="label">Play</span><span class="icon"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-arrow-right.svg" alt="icon right arrow"></span></span></div>
+										</div>
+									</a><img loading="lazy" src="/fileadmin/user_upload/innogames_start_gametile_the-west_800x400.jpg" height="400" width="800" data-at2x="/fileadmin/_processed_/a/e/csm_innogames_start_gametile_the-west_800x400_18f2b32720.jpg" class='' alt="InnoGames" title="InnoGames" ></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="inno-e-2col inno-e-wrap img-right " id="c122">
+				<div class="row">
+					<div class="col col-md-6 col-lg-6">
+						<div class="inno-e-headline " >
+							<h2 >Who we are</h2>
+						</div>
+						<div class="inno-e-text">
+							<p>InnoGames was founded in Stade, a mid-sized town near Hamburg, in 2007, when brothers Hendrik and Eike Klindworth and their friend Michael Zillmer decided to pursue their dream of creating innovative and engaging games. To do so, they took the bold step of dropping out of their studies. Today, the company they have built is one of Germany’s leading developers of mobile and browser games.<br><br> The purpose of InnoGames is clear: We are here to make great games for our players – with high quality virtual worlds that link millions of people around the world. Anywhere, anytime.<br><br> Do you want to build an empire that lasts through the ages, save your village and explore a spectacular world full of mysteries, or use the magnificent powers of the gods of ancient Greece to vanquish your foes? Then we have the right games for you! Enjoy thousands of hours of fun gameplay, high-end graphics, and seamless cross-platform play without having to pay for any of it. All our games are free to play without restrictions or time limits.<br><br> You like our games and want to play a role in their development? Check out our <a href="/career/#c926" target="_blank">vacancies</a> now. If your skills fit our needs and if you can identify with our company culture and our values, you could join a team of 350+ passionate people from over 40 nations, who are experts in their fields, open-minded, supportive, always interested in exchanging ideas and knowledge, and who enjoy celebrating their successes together.</p>
+						</div>
+					</div>
+					<div class="col col-md-6 col-lg-6 ">
+						<div class="inno-e-image"><img loading="lazy" src="/fileadmin/user_upload/innogames-who-we-are-2c-ti.jpg" height="800" width="800" data-at2x="/fileadmin/_processed_/a/5/csm_innogames-who-we-are-2c-ti_5305635bb9.jpg" class='' alt="1" title="1" ></div>
+					</div>
+				</div>
+			</div>
+			<div class="inno-e-4col inno-e-wrap" id="c124" >
+				<div class="row">
+					<div class="col col-sm-6 col-md-3 col-lg-3">
+						<div class="inno-e-image"><a href="/career/" target="_self" class="layer-btn">
+								<div class="centered-layer">
+									<div class="inno-e-headline center">
+										<h2 >Career</h2>
+									</div>
+									<div class="hex-label-icon">
+										<div class="hex-label-mask">
+											<div class="content-translator"><span class="label">More<span class="arr"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-arr.svg" alt="icon hexacon" ></span></span><span class="label hover"><span class="arr"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-arr.svg" alt="icon hexacon" ></span></span></div>
+										</div>
+										<img class="hexagon svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-outline.svg" alt="icon hexacon"></div>
+								</div>
+							</a><img loading="lazy" src="/fileadmin/user_upload/innogames-contentteaser-career.jpg" height="400" width="400" data-at2x="/fileadmin/_processed_/2/2/csm_innogames-contentteaser-career_5aca0b853d.jpg" class='' alt="1" title="1" ></div>
+					</div>
+					<div class="col col-sm-6 col-md-3 col-lg-3">
+						<div class="inno-e-image"><a href="/press/press-releases/" target="_self" class="layer-btn">
+								<div class="centered-layer">
+									<div class="inno-e-headline center">
+										<h2 >Press</h2>
+									</div>
+									<div class="hex-label-icon">
+										<div class="hex-label-mask">
+											<div class="content-translator"><span class="label">More<span class="arr"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-arr.svg" alt="icon hexacon" ></span></span><span class="label hover"><span class="arr"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-arr.svg" alt="icon hexacon" ></span></span></div>
+										</div>
+										<img class="hexagon svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-outline.svg" alt="icon hexacon"></div>
+								</div>
+							</a><img loading="lazy" src="/fileadmin/user_upload/innogames-contentteaser-press.jpg" height="400" width="400" data-at2x="/fileadmin/_processed_/7/4/csm_innogames-contentteaser-press_44835dfe26.jpg" class='' alt="1" title="1" ></div>
+					</div>
+					<div class="col col-sm-6 col-md-3 col-lg-3">
+						<div class="inno-e-image"><a href="/games/all-games/" target="_self" class="layer-btn">
+								<div class="centered-layer">
+									<div class="inno-e-headline center">
+										<h2 >Games</h2>
+									</div>
+									<div class="hex-label-icon">
+										<div class="hex-label-mask">
+											<div class="content-translator"><span class="label">More<span class="arr"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-arr.svg" alt="icon hexacon" ></span></span><span class="label hover"><span class="arr"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-arr.svg" alt="icon hexacon" ></span></span></div>
+										</div>
+										<img class="hexagon svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-outline.svg" alt="icon hexacon"></div>
+								</div>
+							</a><img loading="lazy" src="/fileadmin/user_upload/innogames-contentteaser-games.jpg" height="400" width="400" data-at2x="/fileadmin/_processed_/c/b/csm_innogames-contentteaser-games_3992daa547.jpg" class='' alt="1" title="1" ></div>
+					</div>
+					<div class="col col-sm-6 col-md-3 col-lg-3">
+						<div class="inno-e-image"><a href="/partners/partnership-program/" target="_self" class="layer-btn">
+								<div class="centered-layer">
+									<div class="inno-e-headline center">
+										<h2 >Partner</h2>
+									</div>
+									<div class="hex-label-icon">
+										<div class="hex-label-mask">
+											<div class="content-translator"><span class="label">More<span class="arr"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-arr.svg" alt="icon hexacon" ></span></span><span class="label hover"><span class="arr"><img class="arr svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-arr.svg" alt="icon hexacon" ></span></span></div>
+										</div>
+										<img class="hexagon svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/layout/icon-hexagon-outline.svg" alt="icon hexacon"></div>
+								</div>
+							</a><img loading="lazy" src="/fileadmin/user_upload/innogames-contentteaser-partner.jpg" height="400" width="400" data-at2x="/fileadmin/_processed_/0/2/csm_innogames-contentteaser-partner_4ceaa43207.jpg" class='' alt="1" title="1" ></div>
+					</div>
+				</div>
+			</div>
+			<div class="inno-e-title inno-e-wrap " id="c138" >
+				<div class="inno-e-headline center ">
+					<h1>INNOGAMES = FREE TO PLAY ONLINE GAMES FOR MOBILE &amp; BROWSER</h1>
+				</div>
+			</div>
+			<div class="inno-e-legal inno-e-wrap" id="c133" >
+				<div class="content-wrap">
+					<div class="inno-e-headline " >
+						<h2 class="subline" >WHAT DOES INNOGAMES OFFER PLAYERS?</h2>
+					</div>
+					<div class="inno-e-text rte">
+						<p>Millions of players from all around the globe already enjoy our immersive games – and it would make us proud if you joined them!<br> Most of our games are available for both mobile and browser and allow you to switch seamlessly for true cross-platform play that suits your gaming habits. On top of that, all our games are online games. Whether you’re looking to make new friends, negotiate, or battle, they offer something for everyone. And the best part? All our games are completely free to play!</p>
+					</div>
+				</div>
+			</div>
+			<div class="inno-e-legal inno-e-wrap" id="c134" >
+				<div class="content-wrap">
+					<div class="inno-e-headline " >
+						<h2 class="subline" >FUN GAMES FOR FREE!?</h2>
+					</div>
+					<div class="inno-e-text rte">
+						<p>Yes, all our games are free to play without restrictions or time limits. Some players, especially those with little spare time on their hands, nevertheless prefer to purchase in-game currency to gain advantages, such as speeding up certain processes. That’s how we pay for the development of our games. Still, we spend a lot of time every day making sure that such advantages are never the deciding factor for winning.</p>
+					</div>
+				</div>
+			</div>
+			<div class="inno-e-legal inno-e-wrap" id="c136" >
+				<div class="content-wrap">
+					<div class="inno-e-headline " >
+						<h2 class="subline" >9 GREAT GAMES ARE WAITING FOR YOU - THE CHOICE IS YOURS!</h2>
+					</div>
+					<div class="inno-e-text rte">
+						<ul>
+							<li><a href="/games/forge-of-empires/" target="_blank">Forge of Empires</a> – Lead your empire through the ages, fight intense PvP battles, and create your own metropolis in this multi award-winning strategy hit.</li>
+							<li><a href="/games/rise-of-cultures/" target="_blank">Rise of Cultures</a> – Build epic cities, explore a variety of cultures based on the historic development of ancient civilizations, and fight strategic PvE battles.</li>
+							<li><a href="/games/sunrise-village/" target="_blank">Sunrise Village</a> – Take care of your grandfather’s village and explore the magnificent world full of mysteries that need to be solved.</li>
+							<li><a href="/games/elvenar/" target="_blank">Elvenar</a> – Enter a beautiful fantasy world populated by elves and humans. Build gorgeous cities, gather resources to upgrade your city buildings, and explore the world in search of powerful relics and rare materials.</li>
+							<li><a href="/games/grepolis/" target="_blank">Grepolis</a> – Build glorious cities, forge mighty alliances, and harness the power of your favorite ancient Greek gods to defeat your enemies.</li>
+							<li><a href="/games/tribal-wars/" target="_blank">Tribal Wars</a> – Our very first game, which went on to become a real strategy classic. Create great tribes, trade, recruit troops, and conquer other villages.</li>
+							<li><a href="/games/tribal-wars-2/" target="_blank">Tribal Wars 2</a> – A worthy sequel to the original Tribal Wars.</li>
+							<li><a href="/games/lost-survivors/" target="_blank">Lost Survivors</a> – Build your camp on a tropical island, explore the world, and rescue all survivors.</li>
+							<li><a href="/games/the-west/" target="_blank">The West</a> – In this browser-only Cowboy RPG you will face the challenges of the legendary Wild West.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="inno-e-legal inno-e-wrap" id="c135" >
+				<div class="content-wrap">
+					<div class="inno-e-headline " >
+						<h2 class="subline" >WHAT DOES INNOGAMES OFFER EMPLOYEES?</h2>
+					</div>
+					<div class="inno-e-text rte">
+						<p>Working at InnoGames means shaping the gaming experience of millions of players while building your career and enjoying every day of it.</p>
+						<p>Some other things you should know about us an employer:</p>
+						<ul>
+							<li>We truly care about our employees, which is why we have received such honors as <a href="https://www.greatplacetowork.de/workplace/item/2938/innogames+gmbh" target="_blank" rel="noreferrer">Great Place to Work</a> and <a href="https://www.kununu.com/de/innogames1" target="_blank" rel="noreferrer">Top Company 2023</a>.</li>
+							<li>We take our <a href="/career/#c978" target="_blank">company values</a> seriously. They are anchored in all our processes and are the basis for all our decisions.</li>
+							<li>We celebrate diversity! Our employees come from over 40 nations. Different ways of seeing and doing things are a key source of innovation for InnoGames.</li>
+							<li>Our compensation is not only highly competitive, but also transparent. The great majority of our employees are paid based on <a href="https://newsroom.innogames.com/salary-transparency-innogames-ends-guesswork-about-salaries-in-the-german-gaming-industry#" target="_blank" rel="noreferrer">salary bands</a>. It means that you will receive fair compensation for your work, regardless of your gender or negotiation skills. - You can grow with us! We have our own internal education institute, the InnoVersity. Level up your skills and know-how in such areas as leadership, conflict management, design thinking or law during work hours and at no cost to you.</li>
+							<li>You like working from home? Our <a href="https://www.youtube.com/watch?v=I3fIF4cm4_k" target="_blank" rel="noreferrer">hybrid working model</a> provides you with plenty of opportunity to do so.</li>
+							<li>Our founders Hendrik and Eike Klindworth and Michael Zillmer are still running the company today. However, by now we are also part of <a href="https://www.mtg.com/" target="_blank" rel="noreferrer">Modern Times Group</a>. So, by working for us, you will also get a chance to work with, and learn from, other top gaming studios around the world.</li>
+							<li>Because we only have this one planet, we are a climate-neutral company. For more information about our efforts for the world around us, visit our <a href="/company/sustainability/" target="_blank">Sustainability</a> page.</li>
+						</ul>
+						<p>That’s not all, of course. Find out more about what kind of employer we are and what we can offer you on our <a href="/career/" target="_blank">Career</a> page!</p>
+					</div>
+				</div>
+			</div>
+			<div class="foot-spacer inno-e-wrap"></div>
+			 </div>
+		<footer> <span class="gdprResetButton""></span>
+			<div class="container-fluid">
+				<nav class="row">
+					<ul>
+						<li class="col-lg-3"><a href="/" target="_self">Games</a>
+							<ul class="drop">
+								<li><a href="/games/all-games/" target="_self">All Games</a></li>
+								<li><a href="/games/forge-of-empires/" target="_self">Forge Of Empires</a></li>
+								<li><a href="/games/rise-of-cultures/" target="_self">Rise of Cultures</a></li>
+								<li><a href="/games/sunrise-village/" target="_self">Sunrise Village</a></li>
+								<li><a href="/games/elvenar/" target="_self">Elvenar</a></li>
+								<li><a href="/games/grepolis/" target="_self">Grepolis</a></li>
+								<li><a href="/games/tribal-wars/" target="_self">Tribal Wars</a></li>
+								<li><a href="/games/tribal-wars-2/" target="_self">Tribal Wars 2</a></li>
+								<li><a href="/games/lost-survivors/" target="_self">Lost Survivors</a></li>
+								<li><a href="/games/the-west/" target="_self">The West</a></li>
+							</ul>
+						</li>
+						<li class="col-lg-3"><a href="/" target="_self">Company</a>
+							<ul class="drop">
+								<li><a href="/company/about-us/" target="_self">About us</a></li>
+								<li><a href="/company/about-us/#c1918" target="_self">Leadership Principles</a></li>
+								<li><a href="/company/about-us/#c1153" target="_self">Management</a></li>
+								<li><a href="/company/about-us/#c872" target="_self">History</a></li>
+								<li><a href="/company/sustainability/" target="_self">Sustainability</a></li>
+								<li><a href="https://tech.innogames.com/" target="_self">#InnoBlog</a></li>
+								<li><a href="/company/contact/" target="_self">Contact</a></li>
+								<li><a href="/partners/partnership-program/" target="_self">Partnership Program</a></li>
+							</ul>
+						</li>
+						<li class="col-lg-3"><a href="/" target="_self">Career</a>
+							<ul class="drop">
+								<li><a href="/career/#c924" target="_self">Faces of InnoGames</a></li>
+								<li><a href="/career/#c978" target="_self">Our Values</a></li>
+								<li><a href="/career/#c2470" target="_self">Why join us?</a></li>
+								<li><a href="/career/#c2019" target="_self">Career Paths</a></li>
+								<li><a href="/career/#c1757" target="_self">Career Starters</a></li>
+								<li><a href="/career/#c2022" target="_self">Welcome to Hamburg</a></li>
+								<li><a href="/career/#c926" target="_self">Open positions</a></li>
+								<li><a href="/career/#c2476" target="_self">FAQ</a></li>
+								<li><a href="/career/#c991" target="_self">Meet us here</a></li>
+							</ul>
+						</li>
+						<li class="col-lg-3"><a href="/" target="_self">Partners</a>
+							<ul class="drop">
+								<li><a href="/partners/partnership-program/" target="_self">Partnership Program</a></li>
+							</ul>
+						</li>
+						<li class="col-lg-3"><a href="/" target="_self">Press</a>
+							<ul class="drop">
+								<li><a href="/press/press-releases/" target="_self">Press Releases</a></li>
+								<li><a href="/press/press-releases/#c932" target="_self">Your PR Contacts</a></li>
+								<li><a href="/press/press-releases/#c933" target="_self">Press Kits</a></li>
+								<li><a href="/press/press-releases/#c935" target="_self">Media Reports</a></li>
+							</ul>
+						</li>
+					</ul>
+					 </nav>
+				<div class="row">
+					<div id="footer-lang">
+						<ul class="drop-up">
+							<li> <span class="langSelect" data-language="DE"> <a class="linked-language" href="/de/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>De</span> </a> </span> </li>
+							<li> <span class="langSelect" data-language="FR"> <a class="linked-language" href="/fr/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Fr</span> </a> </span> </li>
+							<li> <span class="langSelect" data-language="PL"> <a class="linked-language" href="/pl/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Pl</span> </a> </span> </li>
+							<li> <span class="langSelect" data-language="NL"> <a class="linked-language" href="/nl/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Nl</span> </a> </span> </li>
+							<li> <span class="langSelect" data-language="PT"> <a class="linked-language" href="/pt/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Pt</span> </a> </span> </li>
+							<li> <span class="langSelect" data-language="RU"> <a class="linked-language" href="/ru/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Ru</span> </a> </span> </li>
+							<li> <span class="langSelect" data-language="IT"> <a class="linked-language" href="/it/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>It</span> </a> </span> </li>
+							<li> <span class="langSelect" data-language="ES"> <a class="linked-language" href="/es/?ttrp782457=ttrp948159&amp;cHash=a3f8824a8958d569be87c96788431556"> <span>Es</span> </a> </span> </li>
+							 </ul>
+						 <label>Language selection:</label> <label class="selected"> <span>En</span> </label> </div>
+					<div id="footer-extras"> <span class="copyright">© 2023 InnoGames GmbH</span>
+						<ul class="legal">
+							<li><span><a href="https://legal.innogames.com/portal/en/imprint" target="_blank" rel="noreferrer">Legal Notice</a></span></li>
+							<li><span><a href="https://legal.innogames.com/portal/en/agb" target="_blank" rel="noreferrer">Terms of Service</a></span></li>
+							<li><span><a href="https://legal.innogames.com/portal/en/privacy" target="_blank" rel="noreferrer">Privacy Notice</a></span></li>
+						</ul>
+						 </div>
+					 </div>
+				<div class="row">
+					<ul id="social">
+						<li class="facebook"><a href="https://www.facebook.com/InnoGames" target="_blank" ><img class="svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/social/icon-hexagon-facebook.svg" alt="facebook icon"></a></li>
+						<li class="instagram"><a href="https://www.instagram.com/innogames/" target="_blank" ><img class="svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/social/icon-hexagon-instagram.svg" alt="instagram icon" ></a></li>
+						<li class="youtube"><a href="https://www.youtube.com/user/InnoGames" target="_blank" ><img class="svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/social/icon-hexagon-youtube.svg" alt="youtube icon"></a></li>
+						<li class="xing"><a href="https://www.xing.com/companies/innogamesgmbh" target="_blank" ><img class="svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/social/icon-hexagon-xing.svg" alt="xing icon"></a></li>
+						<li class="linkedin"><a href="https://www.linkedin.com/company/innogames-gmbh/" target="_blank" ><img class="svg-inject" src="/typo3conf/ext/innogames/Resources/Public/icons/social/icon-hexagon-linkedin.svg" alt="linkedin icon"></a></li>
+						 </ul>
+					 </div>
+				 </div>
+			 </footer>
+		<script src="/typo3temp/assets/compressed/merged-0659b81c25bc78f3dd2ce61657315747-62e28312bb0ff59a96f8b7ce4fc01bed.js.gzip?1695824473"></script>
+		<script src="/typo3conf/ext/dkd_gdpr/Resources/Public/JavaScript/Vendor/klaro/klaro-no-css.js?1695824438"></script>
+		<script src="/typo3temp/assets/compressed/merged-55d00aa57585e1f7294bf370e94199ca-2f3937a7ad72037e497c34e9b6db4b97.js.gzip?1695824473"></script>
+		 <span class="hidden applyBtnJobviteDev" ></span>
+		<script defer type="text/plain" data-name="plausible" data-domain="innogames.com" data-src="https://plausible.io/js/plausible.js"></script>
+		 </body>
+	 </html>

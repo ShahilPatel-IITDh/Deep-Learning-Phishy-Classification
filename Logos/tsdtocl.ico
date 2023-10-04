@@ -1,0 +1,8 @@
+<!doctype html>
+<html>
+<head>
+<script>
+!function(){var e="tsdtocl",t="!-#@",a=2;try{var n=function t(a,n){return n.namespace=e,n.id=a,parent.postMessage(JSON.stringify(n),"*"),n},r=function e(r,s,c){try{if(void 0===c||void 0===r||void 0===s)throw 0;var i=localStorage.getItem(s),o=i?i.split(t):[];if(-1!==o.indexOf(c))return n(r,{success:!0,wasAppended:!1});o.push(c);var d=o.slice(-a).join(t);localStorage.setItem(s,d);var u=localStorage.getItem(s);return n(r,{value:d,wasAppended:!0,success:u===d})}catch(e){return n(r,{success:!1})}},s=function t(a){var n;try{n=JSON.parse(a.data)}catch(e){}if(n&&n.namespace===e&&"append"===n.action)return r(n.id,n.key,n.value)};window.self!==window.top&&window.addEventListener("message",s,!1)}catch(e){}}();</script>
+</head>
+<body></body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Federal Register :: Request Access</title>
+
+  <style type="text/css">
+    body {
+      color: #363636;
+      border-top: 4px solid #fbb829;
+      margin: 0;
+      font-family: arial, sans-serif;
+    }
+
+    .container {
+      max-width: 976px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    div.dialog {
+      width: 25em;
+      padding: 0 4em;
+      margin: 3em auto 0 auto;
+    }
+    #main {
+      margin: 0 auto;
+      width: 960px;
+    }
+    .logo {
+      margin: 20px auto 10px;
+      width: 960px;
+    }
+    .logo .hgroup {
+      text-indent: -9999em;
+      overflow: hidden;
+      text-align: left;
+      background-repeat: no-repeat;
+
+      background-image: url('/assets/federalregister_masthead.svg');
+      background-position: 0 0;
+      background-clip: content-box;
+      width: 700px;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+    .logo .hgroup a {
+      display: block;
+      height: 100px;
+      width: 463px;
+    }
+    .nara-background-seal {
+      height: 442px;
+      left: 750px;
+      position: absolute;
+      top: -125px;
+      width: 442px;
+      z-index: -1;
+      background-clip: content-box;
+      background-image: url('/assets/Nara1985Seal.svg');
+      background-position: 0 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .nara-background-seal .nara-background-seal-fade {
+      background-image: -moz-linear-gradient(bottom, #fff, rgba(255,255,255,0));
+      background-image: -ms-linear-gradient(bottom, #fff, rgba(255,255,255,0));
+      background-image: -o-linear-gradient(bottom, #fff, rgba(255,255,255,0));
+      background-image: -webkit-linear-gradient(bottom, #fff, rgba(255,255,255,0));
+      background-image: linear-gradient(bottom, #fff, rgba(255,255,255,0));
+      background-repeat: repeat-x;
+      bottom: 0px;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0)', endColorstr='rgba(255, 255, 255, 1)', GradientType=1);
+      height: 351px;
+      position: absolute;
+      width: 442px;
+    }
+    
+    .main-title-bar {
+      clear: both;
+      text-align: right;
+      margin-bottom: 2em;
+    }
+    .main-title-bar .bar {
+      height: 25px;
+      display: inline-block;
+      background: #5797CE url('/assets/blue_title_bar.png') repeat-x scroll left top;
+    }
+    .main-title-bar .bar.left {
+      margin-left: -1999px;
+      padding-left: 1999px;
+    }
+    .main-title-bar h1 {
+      color: #5797CE;
+      font-size: 25.62890625px;
+      font-weight: 500;
+      font-family: "gesta-1","gesta-2", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      display: inline-block;
+      position: relative;
+      top: -2px;
+      height: 25px;
+      padding: 0 10px;
+      margin: 0 !important;
+    }
+    .main-title-bar .bar.right { width: 25px; }
+
+    h3 { color: #8a3737; }
+
+    div.info_warning {
+      background-color: #fcf8e3;
+      border: 1px solid #c09853;
+      padding: .5em;
+      margin-bottom: 30px;
+      float: none;
+      border-radius: 6px;
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px;
+      font-size: 105%;
+      border: 1px solid #ccc;
+    }
+    button:hover {
+      background-color: #dadada;
+      cursor: pointer;
+    }
+
+    p.small {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header" id="header_refresh">
+      <div class="header_wrapper">
+        <div class="logo">
+          <div class="hgroup official">
+            <hgroup>
+              <h1><a href="https://www.federalregister.gov/" title="Federal Register Home">The Federal Register</a></h1>
+              <h2>The Daily Journal of the United States Government</h2>
+            </hgroup>
+          </div>
+          <div class="nara-background-seal" unselectable="on">
+            <div class="nara-background-seal-fade"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="main">
+      <div class="main-title-bar">
+        <div class="bar left"></div>
+          <h1>Request Access</h1>
+        <div class="bar right"></div>
+      </div>
+
+      <div class="dialog">
+        <h3>Request Access</h3>
+        
+
+        <p>
+  Due to aggressive automated scraping of FederalRegister.gov and eCFR.gov, programmatic access to these sites is limited to access to our extensive developer APIs.
+</p>
+
+<p>
+  If you are human user receiving this message, we can add your IP address to a set of IPs that can access FederalRegister.gov &amp; eCFR.gov; complete the CAPTCHA (bot test) below and click "Request Access". This process will be necessary for each IP address you wish to access the site from, requests are valid for approximately one quarter (three months) after which the process may need to be repeated.
+</p>
+
+<form action="/request" method="post">
+  <script src="https://www.recaptcha.net/recaptcha/api.js" async defer ></script>
+<div data-sitekey="6LfpbQcUAAAAAMw_vbtM1IRqq7Dvf-AftcZHp_OK" class="g-recaptcha "></div>
+          <noscript>
+            <div>
+              <div style="width: 302px; height: 422px; position: relative;">
+                <div style="width: 302px; height: 422px; position: absolute;">
+                  <iframe
+                    src="https://www.recaptcha.net/recaptcha/api/fallback?k=6LfpbQcUAAAAAMw_vbtM1IRqq7Dvf-AftcZHp_OK"
+                    name="ReCAPTCHA"
+                    style="width: 302px; height: 422px; border-style: none; border: 0; overflow: hidden;">
+                  </iframe>
+                </div>
+              </div>
+              <div style="width: 300px; height: 60px; border-style: none;
+                bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;
+                background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+                <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                  class="g-recaptcha-response"
+                  style="width: 250px; height: 40px; border: 1px solid #c1c1c1;
+                  margin: 10px 25px; padding: 0px; resize: none;">
+                </textarea>
+              </div>
+            </div>
+          </noscript>
+
+  <button type="submit">Request Access for 14.139.150.66</button>
+</form>
+
+<p class="small">
+  <em>An official website of the United States government.</em>
+</p>
+
+<p class="small">
+  If you want to request a wider IP range, first request access for your current IP, and then use the "Site Feedback" button found in the lower left-hand side to make the request.
+</p>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

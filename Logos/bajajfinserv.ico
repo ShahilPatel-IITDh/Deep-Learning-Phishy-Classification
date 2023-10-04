@@ -1,0 +1,80 @@
+{
+  "theme_color": "#002a53",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "name": "Bajaj Finserv Web",
+  "short_name": "Bajaj Finserv Web",
+  "description": "Get instant approval on loans or shop on EMIs, get insurance cover, invest or check your relationship details - all with lesser data.",
+  "scope": "/",
+  "gcm_sender_id": "704850908358",
+  "icons": [
+    {
+      "purpose": "maskable",
+      "src": "https://cms-assets.bajajfinserv.in/is/image/bajajfinance/pwa_192x192px?scl=1&fmt=png-alpha",
+      "sizes": "193x193",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "src": "https://cms-assets.bajajfinserv.in/is/image/bajajfinance/pwa_192x192px?scl=1&fmt=png-alpha",
+      "sizes": "193x193",
+      "type": "image/png"
+    },      
+    {
+      "purpose": "any",
+      "src": "https://cms-assets.bajajfinserv.in/is/image/bajajfinance/pwa_512x512px?scl=1&fmt=png-alpha",
+      "sizes": "513x513",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "src": "https://cms-assets.bajajfinserv.in/is/image/bajajfinance/pwa_512x512px?scl=1&fmt=png-alpha",
+      "sizes": "513x513",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://cms-assets.bajajfinserv.in/is/image/bajajfinance/pwa-experience-home-page-v1?scl=1",
+      "sizes": "586x1041",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cms-assets.bajajfinserv.in/is/image/bajajfinance/pwa-experience-my-relations-v1?scl=1",
+      "sizes": "586x1041",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Personal Loan",
+      "url": "/personal-loan",
+      "icons": [
+        {
+          "src": "https://cms-assets.bajajfinserv.in/is/image/bajajfinance/generic-personal-loan-icon?scl=1&fmt=png-alpha",
+          "type": "image/png",
+          "sizes": "64x64"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    "finance",
+    "shopping",
+    "business"
+  ],
+  "related_applications": [{
+      "platform": "webapp",
+      "url": "https://www.bajajfinserv.in/manifest.json"
+    },
+    {
+        "platform": "play",
+        "id": "org.altruist.BajajExperia",
+        "url": "https://play.google.com/store/apps/details?id=org.altruist.BajajExperia"
+    }],
+  "launch_handler": {
+    "route_to": "existing-client",
+    "navigate_existing_client": "never"
+  }
+}

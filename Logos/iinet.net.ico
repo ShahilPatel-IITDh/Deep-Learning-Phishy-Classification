@@ -1,0 +1,68 @@
+<html>
+<head>
+    <script type="text/javascript">
+        var verifyCallback = function (response) {
+            captcha = document.getElementById('g-captcha-response');
+            f = document.getElementById('reCAPTCHA-form');
+            captcha.value = response
+            f.submit()
+        };
+        var onloadCallback = function () {
+            grecaptcha.render('recaptcha_element', {
+                'sitekey': "6LfN9KsZAAAAACDHQV87cCSiFFVzkcvEhtnMVepE",
+                'callback': verifyCallback,
+                'theme': 'dark'
+            });
+        };
+    </script>
+</head>
+<body>
+	    <!-- Header -->
+    <div class="error-header">
+        <div class="container">
+            <svg class="logo" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#E21D38"/>
+                <path d="M23.4486 26.3677C35.2324 27.3407 39.7729 30.584 39.5567 35.0164C39.3405 37.3948 37.0702 39.665 34.1513 39.8812C30.6919 40.0975 29.0703 38.692 28.0973 37.1785C27.2324 35.7732 26.2594 34.3677 25.2864 32.8542C25.0702 32.4218 24.6378 32.7461 24.3135 32.9624C23.5567 33.611 22.9081 34.3677 22.2594 35.0164C21.827 35.4488 21.9351 35.7732 22.0432 36.0974C22.6919 37.611 23.3405 39.1245 23.9891 40.5299C25.0702 41.1786 29.9351 42.0434 33.5027 41.7191C35.9891 41.5028 39.0161 40.5299 41.6108 38.692C44.0973 36.7462 45.9351 34.1516 46.2594 29.9353C46.3675 27.3407 45.9351 24.638 43.6648 22.1515C41.3945 19.6651 37.5026 17.611 29.6108 17.0705C30.0432 15.7732 30.3675 14.584 30.8 13.3948C35.5567 13.6111 39.7729 13.9353 43.3405 14.3678C43.6648 12.9623 43.7729 11.6651 44.0973 10.3678L43.1243 9.17856C41.2864 8.96238 39.5567 8.52993 37.6107 8.31375C35.1243 7.98939 32.5297 7.77321 29.7189 7.66503C27.881 12.8542 25.7188 19.4488 23.4486 26.3677V26.3677ZM20.3134 6.1516C19.4486 6.1516 18.2594 6.36778 16.3135 6.80022C12.0973 7.98939 6.90805 10.9084 6.36751 15.7732C6.25943 16.5299 6.25943 17.3948 6.15134 18.1516C4.96217 18.2596 3.88109 18.3677 2.80001 18.4759C2.69183 19.4488 2.69183 20.3137 2.58374 21.2867C3.66482 21.1786 4.7459 21.1786 5.93507 21.0704C5.71889 26.1516 5.93507 31.2326 6.36751 35.9893C6.4756 36.7462 6.47561 37.3948 6.47561 37.8272C6.36752 38.2596 5.6108 38.4759 4.52972 38.4759L5.93507 40.2056C10.0432 40.9623 15.2324 41.5028 20.7459 41.611V39.9894C17.5027 39.7731 15.9891 39.3407 15.773 38.692C15.5567 38.1515 15.5567 37.3948 15.4486 36.638C15.2324 31.665 15.1243 26.2596 15.2324 20.7462C17.0702 20.7462 18.9081 20.7462 20.7459 20.6381C21.7189 20.2056 22.5837 19.7732 23.4486 19.3407V17.5029C20.6378 17.5029 17.9351 17.611 15.2324 17.611C15.3405 15.3408 15.4486 13.1786 15.5567 11.1245C15.6649 9.7191 16.6378 8.7462 17.5027 8.7462C19.0162 8.63802 20.4215 9.28674 21.827 9.93537C22.5837 10.2596 23.3405 10.6921 24.0972 11.0164C24.4216 11.1245 24.854 11.2326 25.1783 10.9084C25.6108 10.3678 26.0432 9.82728 26.4757 9.39483C26.6918 9.07047 26.5837 8.85429 26.4757 8.7462C25.5027 7.98939 24.6378 7.34076 23.6648 6.58395C23.1242 6.15159 22.1513 6.1516 21.2864 6.1516C20.9621 6.04342 20.6378 6.1516 20.3134 6.1516" fill="white"/>
+            </svg>
+        </div>
+    </div>
+    <div class="error-body">
+        <h1>
+            Security Check
+        </h1>
+        <p class="error-type">
+            Please complete the security check before accessing www.iinet.net.au
+        </p>
+
+        <div class="security-check">
+            <form action="?" method="POST">
+                <div id="recaptcha_element"></div>
+            </form>
+            <form id="reCAPTCHA-form" action="" method="get">
+                <input type="hidden" id="g-captcha-response" name="ves_captcha_response" />
+                <input type="hidden" name="recaptcha_info" value="TDJaaGRtbGpiMjR1YVdOdi4xNjk2MjY1NzIyMTE4" />
+            </form>
+            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+            </script>
+        </div>
+
+        <div class="error-desc">
+            <h2>
+                Why do I need to perform the step?
+            </h2>
+            <p>
+                Completing this step ensures that you are a human and not a malicious bot.
+            </p>
+            <h2>
+                
+            </h2>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+        </div>
+    </div>
+</body>
+</html>

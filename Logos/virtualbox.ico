@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en-US">   <head>
+    <!-- # block head (placeholder in theme.html) -->
+        <!-- # block head (content inherited from layout.html) -->
+    <title>
+      Oracle VM VirtualBox
+    </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script>
+        if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+        </script><![endif]-->
+
+    <link rel="search"  href="/search" />
+    <link rel="help"  href="/wiki/TracGuide" />
+    <link rel="alternate"  href="/wiki/WikiStart?format=txt" title="Plain Text" type="text/x-trac-wiki" />
+    <link rel="start"  href="/wiki" />
+    <link rel="stylesheet"  href="/chrome/common/css/trac.css" type="text/css" />
+    <link rel="stylesheet"  href="/chrome/common/css/wiki.css" type="text/css" />
+    <link rel="icon"  href="/favicon.ico" type="image/x-icon" />
+    <noscript>
+      <style>
+        .trac-noscript { display: none !important }
+      </style>     </noscript>
+    <link type="application/opensearchdescription+xml" rel="search"
+          href="/search/opensearch"
+          title="Search Oracle VM VirtualBox"/>
+    <script src="/chrome/common/js/jquery.js"></script>
+    <script src="/chrome/common/js/jquery-migrate.js"></script>
+    <script src="/chrome/common/js/babel.js"></script>
+    <script src="/chrome/common/js/trac.js"></script>
+    <script src="/chrome/common/js/search.js"></script>
+    <script src="/chrome/common/js/folding.js"></script>
+    <script src="/chrome/common/js/wiki.js"></script>
+    <script>
+      jQuery(function($) {
+        $(".trac-autofocus").focus();
+        $(".trac-target-new").attr("target", "_blank");
+        if ($.ui) { /* is jquery-ui added? */
+          $(".trac-datepicker:not([readonly])")
+            .prop("autocomplete", "off").datepicker();
+          // Input current date when today is pressed.
+          var _goToToday = $.datepicker._gotoToday;
+          $.datepicker._gotoToday = function(id) {
+            _goToToday.call(this, id);
+            this._selectDate(id)
+          };
+          $(".trac-datetimepicker:not([readonly])")
+            .prop("autocomplete", "off").datetimepicker();
+          $("#main").addClass("trac-nodatetimehint");
+        }
+        $(".trac-disable").disableSubmit(".trac-disable-determinant");
+        setTimeout(function() { $(".trac-scroll").scrollToTop() }, 1);
+        $(".trac-disable-on-submit").disableOnSubmit();
+      });
+    </script>
+    <!--   # include 'site_head.html' (layout.html) -->
+
+<link rel="stylesheet" type="text/css" href="/chrome/site/style.css"/>
+
+<script>
+  jQuery(function($) {
+    var $ntg = $("#newticketguide");
+    if ($ntg.length)
+      $("#propertyform").prepend($ntg.detach());
+  });
+
+</script>    <!--   end of site_head.html -->
+    <!-- # endblock head (content inherited from layout.html) -->
+
+
+    <script>
+      jQuery(function($) {
+        wikiColumn($("#wikipage"));
+      });
+    </script>
+    <!-- # endblock head (placeholder in theme.html) -->
+  </head> 
+  <body>
+    <!-- # block body (content inherited from theme.html) -->
+    <!--   # include 'site_header.html' (theme.html) -->
+
+    <!-- Add site-specific header -->
+    <div id="vboxstring">
+      <img src="/graphics/vboxlogodown.png" alt="VirtualBox"/>
+    </div>
+    
+    <div id="vboxlinks">
+      <a href="/wiki/VirtualBox">About</a><br/>
+      <a href="/wiki/Screenshots">Screenshots</a><br/>
+      <a href="/wiki/Downloads">Downloads</a><br/>
+      <a href="/wiki/Documentation">Documentation</a><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;<a href="/wiki/End-user_documentation">End-user docs</a><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;<a href="/wiki/Technical_documentation">Technical docs</a><br/>
+      <a href="/wiki/Contributor_information">Contribute</a><br/>
+      <a href="/wiki/Community">Community</a><br/>
+    </div>
+    <div id="center">
+      <form style="text-align: right" action="/search" method="get">
+        <div>
+          <input id="vboxsearch" type="text" name="q" size="10" accesskey="f"
+            value="search..."
+            onblur="if(this.value=='') this.value='search...';"
+            onfocus="if(this.value=='search...') this.value='';"/>
+          <input type="hidden" name="wiki" value="on"/>
+          <input type="hidden" name="changeset" value="on"/>
+          <input type="hidden" name="ticket" value="on"/>
+        </div>
+      </form>
+    <!--   end of site_header.html -->
+
+    <div id="banner">
+      <div id="header">
+        <a id="logo"
+           href="https://www.virtualbox.org/">
+          <img  alt="Oracle VM VirtualBox" src="/graphics/vbox_logo2_gradient.png" /></a>
+
+
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18"
+                  value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+          <div id="metanav" class="nav">
+      <ul><li  class="first"><a href="/login">Login</a></li><li  class="last"><a href="/prefs">Preferences</a></li></ul>
+    </div>
+
+    </div>
+        <div id="mainnav" class="nav">
+      <ul><li  class="last first"><a href="/browser">Browse Source</a></li></ul>
+    </div>
+
+
+    <div id="main"
+         >
+
+<div id="pagepath" class="noprint">
+<a class="pathentry first" title="View WikiStart"
+   href="/wiki">wiki:</a><a href="/wiki/WikiStart"
+     title="View WikiStart"
+     class="pathentry">WikiStart</a></div>      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li  class="first"><a href="/wiki/WikiStart">Start Page</a></li>
+          <li ><a href="/wiki/TitleIndex">Index</a></li>
+          <li  class="last"><a href="/wiki/WikiStart?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+
+      
+
+      
+
+      <!-- # block content (placeholder in theme.html) -->
+    <div id="content" class="wiki narrow">
+
+      <div class="wikipage searchable">
+        <div id="wikipage" class="trac-content borderless"><h1 class="section" id="WelcometoVirtualBox.org">Welcome to VirtualBox.org!</h1>
+<div class="newsflash">
+<h3>News Flash</h3>
+<ul>
+
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+July 18th, 2023<br>VirtualBox 7.0.10 released!</b><br>
+Oracle today released a 7.0 maintenance release which improves stability and fixes regressions. See the
+<a href="https://www.virtualbox.org/wiki/Changelog-7.0#v10">Changelog</a> for details.
+</li>
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+July 18th, 2023<br>VirtualBox 6.1.46 released!</b><br>
+Oracle today released a 6.1 maintenance release which improves stability and fixes regressions. See the
+<a href="https://www.virtualbox.org/wiki/Changelog-6.1#v46">Changelog</a> for details.
+</li>
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+April 18th, 2023<br>VirtualBox 7.0.8 released!</b><br>
+Oracle today released a 7.0 maintenance release which improves stability and fixes regressions. See the
+<a href="https://www.virtualbox.org/wiki/Changelog-7.0#v8">Changelog</a> for details.
+</li>
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+April 18th, 2023<br>VirtualBox 6.1.44 released!</b><br>
+Oracle today released a 6.1 maintenance release which improves stability and fixes regressions. See the
+<a href="https://www.virtualbox.org/wiki/Changelog-6.1#v44">Changelog</a> for details.
+</li>
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+January 17th, 2023<br>VirtualBox 7.0.6 released!</b><br>
+Oracle today released a 7.0 maintenance release which improves stability and fixes regressions. See the
+<a href="https://www.virtualbox.org/wiki/Changelog-7.0#v6">Changelog</a> for details.
+</li>
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+January 17th, 2023<br>VirtualBox 6.1.42 released!</b><br>
+Oracle today released a 6.1 maintenance release which improves stability and fixes regressions. See the
+<a href="https://www.virtualbox.org/wiki/Changelog-6.1#v42">Changelog</a> for details.
+</li>
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+November 18th, 2022<br>VirtualBox 7.0.4 released!</b><br>
+Oracle today released a 7.0 maintenance release which improves stability and fixes regressions. See the
+<a href="https://www.virtualbox.org/wiki/Changelog-7.0#v4">Changelog</a> for details.
+</li>
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+October 20th, 2022<br>VirtualBox 7.0.2 released!</b><br>
+Oracle today released a 7.0 maintenance release which improves stability and fixes regressions. See the
+<a href="https://www.virtualbox.org/wiki/Changelog-7.0#v2">Changelog</a> for details.
+</li>
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+October 11th, 2022<br>VirtualBox 6.1.40 released!</b><br>
+Oracle today released a 6.1 maintenance release which improves stability and fixes regressions. See the
+<a href="https://www.virtualbox.org/wiki/Changelog-6.1#v40">Changelog</a> for details.
+</li>
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+October 10th, 2022<br>VirtualBox 7.0.0 released!</b><br>
+Oracle today released a significant new version of Oracle
+VM VirtualBox, its high performance, cross-platform virtualization software.
+<a href="https://www.virtualbox.org/wiki/Changelog-7.0#v00">Changelog</a> for details.
+</li>
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+September 2nd, 2022<br>VirtualBox 6.1.38 released!</b><br>
+Oracle today released a 6.1 maintenance release which improves stability and fixes regressions. See the
+<a href="https://www.virtualbox.org/wiki/Changelog-6.1#v38">Changelog</a> for details.
+</li>
+<li>
+<b><span style="background: #B00; color: #ffd; font-family: WarpSans, Arial; padding: 1px 3px">New</span>
+July 19th, 2022<br>VirtualBox 6.1.36 released!</b><br>
+Oracle today released a 6.1 maintenance release which improves stability and fixes regressions. See the
+<a href="https://www.virtualbox.org/wiki/Changelog-6.1#v36">Changelog</a> for details.
+</li>
+
+</ul>
+<b><a href="/wiki/News"> More information...</a></b>
+</div>
+<p>
+VirtualBox is a powerful x86 and AMD64/Intel64 <a class="wiki" href="/wiki/Virtualization">virtualization</a> product for enterprise as well as home use. Not only is VirtualBox an extremely feature rich, high performance product for enterprise customers, it is also the only professional solution that is freely available as Open Source Software under the terms of the GNU General Public License (GPL) version 3. See "<a class="wiki" href="/wiki/VirtualBox">About VirtualBox</a>" for an introduction.
+</p>
+<p>
+Presently, VirtualBox runs on Windows, Linux, macOS, and Solaris hosts and supports a large number of <a class="wiki" href="/wiki/Guest_OSes">guest operating systems</a> including but not limited to Windows (NT 4.0, 2000, XP, Server 2003, Vista, Windows 7, Windows 8, Windows 10), DOS/Windows 3.x, Linux (2.4, 2.6, 3.x and 4.x), Solaris and OpenSolaris, OS/2, and OpenBSD.
+</p>
+<p>
+VirtualBox is being actively developed with frequent releases and has an ever growing list of features, supported guest operating systems and platforms it runs on. VirtualBox is a community effort backed by a dedicated company: everyone is encouraged to contribute while Oracle ensures the product always meets professional quality criteria.
+</p>
+<p>
+<a href="/wiki/Downloads" style="padding:0; border:none"><img alt="/graphics/button70.png" src="/graphics/button70.png" style="margin-right:auto; display:block; margin-left:auto" title="Download VirtualBox 7.0" /></a>
+</p>
+<h3 class="section" id="Hotpicks:">Hot picks:</h3>
+<ul><li>Pre-built virtual machines for developers at <a class="ext-link" href="http://www.oracle.com/technetwork/community/developer-vm/index.html"><span class="icon">​</span>Oracle Tech Network</a> 
+</li><li><strong>Hyperbox</strong> Open-source Virtual Infrastructure Manager <a class="ext-link" href="https://github.com/hyperbox/hyperbox"><span class="icon">​</span>project site</a>
+</li><li><strong>phpVirtualBox</strong> AJAX web interface <a class="ext-link" href="https://phpvirtualbox.github.io/"><span class="icon">​</span>project site</a>
+</li></ul>
+
+<span style="clear:both; display:block"/>
+</div>
+        <div class="trac-modifiedby">
+          <span>
+            <a href="/wiki/WikiStart?action=diff&amp;version=473" title="Version 473 by galitsyn: 6.1.46 + 7.0.10">Last modified</a>
+ <a class="timeline" href="/timeline?from=2023-07-18T19%3A42%3A01Z&amp;precision=second" title="See timeline at Jul 18, 2023 7:42:01 PM">3 months ago</a>          </span>
+          <span class="trac-print">
+            Last modified on Jul 18, 2023 7:42:01 PM
+          </span>
+        </div>
+      </div>
+
+
+
+
+
+<div id="attachments">
+  <h3  class="foldable">
+    Attachments
+    <span class="trac-count">(1)</span></h3>
+  <div>
+    <ul>
+      <li>
+        <a href="/attachment/wiki/WikiStart/softpedia_award.gif" title="View attachment">softpedia_award.gif</a><a href="/raw-attachment/wiki/WikiStart/softpedia_award.gif"
+          class="trac-rawlink" title="Download">&#8203;</a>
+ (<span title="6415 bytes">6.3 KB</span>
+) - added by <span class="trac-author">Achim Hasenmueller</span> <a class="timeline" href="/timeline?from=2007-03-24T16%3A38%3A03Z&amp;precision=second" title="See timeline at Mar 24, 2007 4:38:03 PM">17 years ago</a>.
+        <q>Softpedia Award</q>
+      </li>
+    </ul>
+    <p>
+  Download all attachments as:
+  <a rel="nofollow" href="/zip-attachment/wiki/WikiStart/">.zip</a>
+</p>
+
+  </div>
+</div>
+<div class="trac-help">
+  <strong>Note:</strong>
+ See   <a href="/wiki/TracWiki">TracWiki</a>
+ for help on using the wiki.
+</div>
+    </div>
+        <!-- # block content (content inherited from layout.html) -->
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/WikiStart?format=txt"
+              class="">
+            Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    <!-- # endblock content (content inherited from layout.html) -->
+
+      <!-- # endblock content (placeholder in theme.html) -->
+    </div>
+
+    <div id="footer"><hr/>
+      <a id="tracpowered" href="https://trac.edgewall.org/"
+         ><img src="/chrome/common/trac_logo_mini.png" height="30"
+               width="107" alt="Trac Powered"/></a>
+      <p class="left">
+Powered by         <a href="/about"><strong>Trac 1.4.3.2</strong></a>
+        <br />
+ By         <a href="http://www.edgewall.org/">Edgewall Software</a>
+.      </p>
+      <p class="right"></p>
+    </div>
+    <!--   # include 'site_footer.html' (theme.html) -->
+
+</div><!-- center -->
+<div id="vboxfooter">
+  <p style="text-align:center">
+    <a href="https://www.oracle.com"><span style="background-image: url(/graphics/oracle-logo-new.svg); width: 100px; height: 24px; background-repeat: no-repeat; background-position: 0 11px; background-size: 100% 100%; display: inline-block"></span> &copy; 2023 Oracle</a><br/>
+    <a href="https://www.oracle.com/virtualization/virtualbox/resources.html">Contact</a> &ndash; <a href="https://www.oracle.com/html/privacy.html">Privacy policy</a> &ndash; <a href="https://www.oracle.com/html/terms.html">Terms of Use</a>
+  </p>
+</div>
+
+    <!--   end of site_footer.html -->
+    <!-- # endblock body (content inherited from theme.html) -->
+  </body> </html>

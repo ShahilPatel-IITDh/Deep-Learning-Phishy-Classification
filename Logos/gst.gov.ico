@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Goods & Services Tax (GST) | Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="GST, Ministry of Finance, Government of India, Tax, Goods and Service Tax, Indirect Tax, India" />
+<meta name="description" content="Goods And Services Tax" />
+<link rel="stylesheet" href="//static.gst.gov.in/uiassets/css/fwk/fa-bootstrap1.1.css">
+<link rel="stylesheet" href="//static.gst.gov.in/uiassets/css/staticapp1.2.css" title="app-css"/>
+</head>
+<body ng-app="myApp">
+<div data-ng-controller="headerCtrl">
+<header class="main-header ng-cloak">
+<div class="skip">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<ul class="skip list-inline">
+<li><a tabindex="-1" class="accessible" href="javascript:void(0)">Skip to Main Content</a></li>
+<li class="high-low"><i class="fa fa-adjust"></i></li>
+<li class="fresize f-up">A<sup>+</sup></li>
+<li class="fresize f-down">A<sup>-</sup></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row branding">
+<div class="col-xs-12">
+<a href="//www.gst.gov.in/" title="Goods and Services Tax Home">
+<img data-ng-src="{{servers.GST_STATIC_R1_URL}}/uiassets/images/Emblem_of_India-white.svg" class="logo" alt="Goods and Services Tax Home" onerror="this.data-ng-src='{{servers.GST_STATIC_R1_URL}}/uiassets/images/emblem.png'" width="35px" height="56px">
+</a>
+<h1 class="site-title"><a href="//www.gst.gov.in/">Goods and Services Tax</a></h1>
+<ul class="list-inline mlinks">
+<li ng-if="!udata">
+<a target="_self" href="//services.gst.gov.in/services/login"><i class="fa fa-sign-in"></i> Login</a>
+</li>
+<li ng-if="udata && udata.role == 'login'">
+<div class="dropdown">
+<a class="dropdown-toggle lang-dpwn" data-toggle="dropdown" aria-expanded="false" title="{{udata.bname}}" data-tooltip="true">
+<i class="fa fa-user"></i>
+<span data-ng-bind="(udata.bname.length > 20)? udata.bname.substr(0,19) : udata.bname"></span>
+</a>
+<ul class="dropdown-menu profile-dpdwn">
+<li>
+<p class="lst-log">Last Logged In at</p>
+<p class="lst-log-dt">
+<span data-ng-bind="udata.Llogin"></span>
+IST</p>
+</li>
+<li>
+<a target="_self" href='//services.gst.gov.in/services/auth/myprofile'> <i class="fa fa-user"></i> My Profile</a>
+</li>
+<li>
+<a target="_self" href='//services.gst.gov.in/services/auth/changepassword'> <i class="fa fa-unlock-alt"></i> Change Password</a>
+</li>
+<li>
+<a target="_self" href="//reg.gst.gov.in/registration/auth/register/dsc"> <i class="fa fa-check-square-o"></i> Register / Update DSC</a>
+</li>
+<li>
+<a target="_self" href='//services.gst.gov.in/services/logout'><i class="fa fa-sign-out"></i> Logout</a>
+</li>
+</ul>
+</div>
+</li>
+<li ng-if="udata && udata.role == 'panLogin'">
+<a target="_self" href="//services.gst.gov.in/services/logout"><i class="fa fa-sign-out"></i> Logout</a>
+</li>
+</ul>
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="sr-only">Toggle navigation</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<ng-include src="'/pages/common/menu.html'"></ng-include>
+</div> <div class="content-wrapper">
+<!-- <div id="dimmer"></div> -->
+<div class="container-fluid lbanner">
+<!-- <img class="hidden-xs" src="//static.gst.gov.in/uiassets/images/landing/banner_image1.jpg" style="width:100%" alt="main Img" >-->
+<div class="col-xs-12 lbanner-img-r1"></div>
+<div class="land-alerts" data-ng-controller="landingCtrl">
+<i style="padding-left: 18px;margin-top: 7px;" class="fa fa-bell" aria-hidden="true"></i>
+<p class="marquee" data-ng-bind-html="alerts"></p>
+</div>
+</div>
+<style>
+.impdates .dates-list li .square-box.b5 {
+background: #18436b;
+width: 120px;
+}
+.impdates .dates-list li .square-box.b6 {
+background: #6474a0;
+width: 230px;
+}
+@media screen and (min-width: 390px) and (max-width: 1200px) {
+.impdates .dates-list li {
+width: 100% !important;
+}
+.impdates .dates-list li .square-box.b1 {
+width: 100%;
+}
+.impdates .dates-list li .square-box.b2 {
+width: 100%;
+}
+.impdates .dates-list li .square-box.b3 {
+width: 100%;
+}
+.impdates .dates-list li .square-box.b4 {
+width: 100%;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+.impdates .dates-list li .square-box.b5 {
+width: 100%;
+}
+.impdates .dates-list li .square-box.b6 {
+width: 100%;
+}
+}
+.impdates .dates-list li .square-box {
+display: inline-block;
+float: left;
+width: 174px;
+height: 32px;
+}
+.impdates .dates-list li .square-content {
+font-size: 12px;
+font-weight: 600;
+}
+.haeding {
+font-size: 12px;
+font-weight: bold;
+}
+.headimp{
+margin-bottom: 19px;
+}
+.impdates .dates-list li {
+width: 49%;
+display: inline-block;
+background: #ddd;
+font-size: 14px;
+padding: 0px;
+font-family: tahoma;
+margin-top: -6px;
+border: 1px solid #4f4d498c;
+}
+.impdates .dates-list li .square-box.b1 {
+background: #1d867a;
+}
+.imp{
+font-weight: 600;
+font-size: 11px;
+text-align: center;
+margin-top: 7px;
+}
+.fa-info-circle{
+background: #fcf8e3;
+color: #1f1e1ecc;
+padding-left: 0px;
+}
+.rfd {
+font-size: 8px;
+}
+.refd{
+height: 35px;
+}
+.rfdtene{
+margin-left: -5px;
+font-size: -4px;
+}
+.eightenMonths{
+font-size: 6px;
+font-weight: 600;
+}
+.refundrfd{
+font-size: 8px;
+}
+.headoth{
+font-size: 11px;
+font-weight: 600;
+margin-bottom: 11px;
+}
+.fa-info-circle:before {
+content: "";
+background: #fff;
+color: #423838;
+font-size: 12px;
+}
+@media screen and (max-width: 768px) and (min-width: 320px){
+.impdates .dates-list li .square-box {
+width: 141px;
+}
+}
+@media screen and (max-width: 1199px){
+.impdates .dates-list li .square-content {
+margin-top: 7px;
+font-size: 10px;
+}
+}
+@media screen and (max-width: 768px){
+.refd {
+margin-top: 0px;
+}
+ul.lst > li > p:last-child{
+font-size: 8px;
+height: 2px;
+}
+}
+ul.lst > li > p:last-child{
+font-size: 8px;
+height: 2px;
+}
+@media screen and (max-width: 768px) and (min-width: 360px){
+.impdates .dates-list li .square-box {
+width: 161px;
+}
+}
+@media screen and (max-width: 768px) and (min-width: 375px){
+.impdates .dates-list li .square-box {
+width: 168px;
+}
+}
+</style>
+<div class="content-wrapper">
+<div class="l-widgets">
+<div class="container">
+<div class="row">
+<div class="col-md-5 col-sm-5 col-xs-12">
+<div class="col-md-5 col-sm-5 col-xs-5"><h4>News|Updates</h4></div>
+<div class="col-md-7 col-sm-7 col-xs-7" style="text-align: right">
+<h5 style="font-size: 14px"><a data-ng-href="//services.gst.gov.in/services/advisory/advisoryandreleases">Advisories </a></h5></div>
+<div class="row panels">
+<div class="col-xs-12">
+<div class="panel news">
+<div class="panel-body" data-ng-controller="newsCtrl" data-ng-init="getAllNews()">
+<div class="row" data-ng-if="newsList.length > 0" data-ng-repeat="item in newsList | limitTo : 3">
+<div class="col-sm-12">
+<p class="dt" data-ng-bind="item.date"></p>
+<p>
+<a data-popup="true" data-ng-if="item.IsExternal == 'Y'" target="_blank" data-ng-href="{{item.linkURl}}" title="{{item.title}}"
+data-ng-bind="item.title"></a>
+<a data-ng-if="item.IsExternal != 'Y' && item.linkURl" data-ng-href="{{item.linkURl}}" title="{{item.title}}" data-ng-bind="item.title"></a>
+<a data-ng-if="item.IsExternal != 'Y' && !item.linkURl" data-ng-href="//www.gst.gov.in/newsandupdates/read/{{item.id}}"
+title="{{item.title}}" data-ng-bind="item.title"></a>
+</p>
+</div>
+</div>
+<div class="row" data-ng-if="newsList.length > 0">
+<div class="col-sm-12">
+<p class="pull-right">
+<a href="//www.gst.gov.in/newsandupdates">
+View all
+<i class="fa fa-angle-double-right"></i>
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-7 col-sm-7 col-xs-12">
+<div class="row panels">
+<div class="col-xs-12">
+<h4>Popular help topics</h4>
+<div class="panel" style="border-bottom:none !important">
+<div class="panel-body">
+<div class="row">
+<div class="col-sm-6">
+<ul class="shrt-info">
+<li>
+<p>
+<i class="fa fa-arrow-circle-right"></i>
+<a target="_blank" href="//tutorial.gst.gov.in/userguide/compositionpoc/optforcomposition.htm">How can I Opt for Composition? </a>
+</p>
+</li>
+<li>
+<p>
+<i class="fa fa-arrow-circle-right"></i>
+<a target="_blank" href="//www.gst.gov.in/help/offlineutility">How can I use the Returns Offline tool? </a>
+</p>
+</li>
+<li>
+<p>
+<i class="fa fa-arrow-circle-right"></i>
+<a target="_blank" href="{{servers.GST_CONTENT_R1_URL}}/help/refund">How do I apply for refund?
+</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="col-sm-6">
+<ul class="shrt-info">
+<li>
+<p>
+<i class="fa fa-arrow-circle-right"></i>
+<a target="_blank" target="_blank" href="{{servers.GST_CONTENT_R1_URL}}/help/demandRecovery"> How do I file intimation about voluntary payment?</a>
+</p>
+</li>
+<li>
+<p>
+<i class="fa fa-arrow-circle-right"></i>
+<a target="_blank" href="{{servers.GST_CONTENT_R1_URL}}/help/appeal"> How to file an appeal?</a>
+</p>
+</li>
+<li>
+<p>
+<i class="fa fa-arrow-circle-right"></i>
+<a target="_blank" href="//www.gst.gov.in/help/enrollmentwithgst"> How do I register with GST? </a>
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row" style="border-bottom:2px solid #2ec9c1 !important">
+<div class="col-sm-4 col-xs-12">
+<p>
+<img src="//static.gst.gov.in/uiassets/images/icons/youtube_icon.png" alt="Youtube"> GST on
+<a data-popup="true" data-ng-href="https://www.youtube.com/channel/UCFYpOk92qurlO5t-Z_y-bOQ" href="https://www.youtube.com/channel/UCFYpOk92qurlO5t-Z_y-bOQ">Youtube
+<i class="fa fa-external-link-square"></i>
+</a>
+</p>
+</div>
+<div class="col-sm-4 col-xs-12">
+<div class="panel" style="background-color:#18436b; margin-bottom: 5px">
+<div class="panel-body" style="padding:5px" >
+<span style="color:#fff !important; font-size:12px">Help Desk Number:<br>
+1800-103-4786</span>
+</div>
+</div>
+</div>
+<div class="col-sm-4 col-xs-12">
+<div class="panel" style="background-color:#18436b; margin-bottom: 5px">
+<div class="panel-body" style="padding:5px">
+<span><a style="color:#fff !important; font-size:12px" onMouseOver="this.style.color='#17c4bb'" onMouseOut="this.style.color='#fff'" href="https://selfservice.gstsystem.in/">Lodge your Grievance using<br>self-service Help Desk Portal</a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="impdates">
+<div class="container">
+<div class="row">
+<div class="col-sm-5 col-xs-12">
+<div class="row panels">
+<div class="col-xs-12">
+<h4>Taxpayers (Normal/TDS/TCS)</h4>
+<div class="panel one">
+<div class="panel-body">
+<div class="row">
+<div class="col-sm-6">
+<ul class="shrt-info">
+<!-- <li>
+<p>
+<i class="fa fa-address-card icon"></i>
+<a href="//www.gst.gov.in/enroll">Enrolment
+status
+</a>
+</p>
+</li>-->
+<li>
+<p>
+<i class="fa fa-lock icon"></i>
+<a href="//reg.gst.gov.in/registration">Register Now
+</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="col-sm-6">
+<ul class="shrt-info">
+<li>
+<p>
+<i class="fa fa-user icon"></i>
+<a href="//services.gst.gov.in/services/locategstp">Find a GST Practitioner
+</a>
+</p>
+</li>
+<!--<li>
+<p>
+<i class="fa fa-credit-card icon"></i>
+Pay Tax
+</p>
+</li>-->
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12">
+<h4>GST Practitioners</h4>
+<div class="panel one">
+<div class="panel-body">
+<div class="row">
+<div class="col-sm-6">
+<ul class="shrt-info">
+<li>
+<p>
+<i class="fa fa-lock icon"></i>
+<a href="//reg.gst.gov.in/registration">Register Now
+</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="col-sm-6">
+<ul class="shrt-info">
+<li>
+<p>
+<i class="fa fa-user icon"></i>
+<a href="//services.gst.gov.in/services/searchtp">Find a Taxpayer</a>
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-7 col-xs-12" data-ng-controller="landingCtrl" data-ng-init="getDates()">
+<h4 class="headimp" style="width: 30%;float:left;">Upcoming Due Dates</h4>
+<a data-ng-href="#" style="margin-top: 10px; float: left;" ng-click="downloadUpcomingDueDatesInPDF()">(Download as PDF File)</a>
+<div class="row">
+<div class="col-sm-12 col-xs-12">
+<ul class="dates-list impul">
+<li data-ng-repeat="data in dataJson1 track by $index">
+<div class="row">
+<div class="col-xs-12">
+<div class="square-box b1">
+<div class="square-content">
+<span data-ng-bind="data.f"></span>
+<span ng-show="$index == 0">
+<i class="fa fa-info-circle" data-toggle="tooltip" title="Turnover exceeding 5 Cr or opted to file monthly return."></i>
+</span>
+<span ng-show="$index == 1">
+<i class="fa fa-info-circle" data-toggle="tooltip" title="Opted for quarterly filing as per QRMP scheme."></i>
+</span>
+<span ng-show="$index == 2">
+<i class="fa fa-info-circle" data-toggle="tooltip" title="Turnover exceeding 5 Cr or opted to file monthly return."></i>
+</span>
+<span ng-show="$index == 3">
+<i class="fa fa-info-circle" data-toggle="tooltip" title="Opted for quarterly filing as per QRMP scheme."></i>
+</span>
+<span ng-show="$index == 4">
+<i class="fa fa-info-circle" data-toggle="tooltip" title=" Opted for quarterly filing as per QRMP scheme."></i>
+</div>
+</div>
+<p class="imp" data-ng-bind="data.d"></p>
+</div>
+</div>
+</li>
+</ul>
+<h4 class="headoth">Others:</h4>
+<ul class="dates-list impul lst" style="margin-bottom: 40px;">
+<li data-ng-repeat="product in dataJson2">
+<div class="row">
+<div class="col-xs-12">
+<div class="square-box b1 refd">
+<div class="square-content">
+<span data-ng-bind="product.f"></span>
+</div>
+</div>
+<p data-ng-if="product.f != 'RFD-10'" class="imp" data-ng-bind="product.d"></p>
+<p data-ng-if="product.f == 'RFD-10'" style="font-size: 8px;margin-bottom: 1px;" class="imp" data-ng-bind="product.d"></p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer ng-controller = "footerCtrl">
+<div class="expbtn">
+<i ng-click="fexpand()" ng-class="{'fa-angle-up': expanded, 'fa-angle-down': !expanded}" class="fa"
+title="Expand/Collapse Footer"></i>
+</div>
+<div class="ifooter " id="demo">
+<ng-include src="'/pages/common/footer.html'">Loading...</ng-include>
+</div>
+</footer>
+<div title="Scroll to Top" class="back-to-top">
+<i class="fa fa-angle-up"></i>
+<p>Top</p>
+</div> <script src="//static.gst.gov.in/uiassets/javascripts/fwk/uiscripts.js"></script>
+<script src="//static.gst.gov.in/uiassets/javascripts/fwk/datepicker.min.1.4.js"></script>
+<script src="//static.gst.gov.in/uiassets/javascripts/common/common1.3.js"></script>
+<script>
+var server_urls = {
+"GST_CONTENT_R1_URL": "//www.gst.gov.in",
+"GST_SERVICES_R1_URL": "//services.gst.gov.in",
+"GST_REGISTRATION_R1_URL": "//reg.gst.gov.in",
+"GST_TUTORIAL_R1_URL": "//tutorial.gst.gov.in",
+"GST_STATIC_R1_URL": "//static.gst.gov.in",
+"GST_PAYMENTS_R1_URL": "//payment.gst.gov.in",
+"GST_RETURNS_R1_URL": "//return.gst.gov.in",
+"GST_REFUNDS_R1_URL" : "//refund.gst.gov.in",
+"REFUNDS_STATIC_URL" : "//refundstatic.gst.gov.in",
+"LAST_UPDATED_DATE" : "29-09-2023",
+"GST_NEWRET_STATIC_URL": "//dashret.gst.gov.in",
+"NAV_COMPONENT": "home",
+"GST_EINVOICE_URL" : "//einvoice.gst.gov.in",
+"STATIC_WEB": true
+}
+$().setServers(server_urls);
+</script>
+<script src="//static.gst.gov.in/uiassets/javascripts/fwk/angular-all1.0.js"></script>
+<script src="//static.gst.gov.in/uiassets/javascripts/common/directives1.6.js"></script>
+<script src="//static.gst.gov.in/uiassets/js/common/landing1.2.js"></script>
+<script src="//static.gst.gov.in/uiassets/javascripts/fwk/jquery.keyframes.min1.0.js"></script>
+</body>
+</html>
