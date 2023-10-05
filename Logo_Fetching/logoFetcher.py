@@ -5,32 +5,6 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import time
 
-# Selenium imports
-# from selenium import webdriver
-# from webdriver_manager.chrome import ChromeDriverManager
-# from selenium.common.exceptions import WebDriverException, TimeoutException, InvalidSessionIdException, NoSuchElementException
-
-
-# Specify the desired Chrome WebDriver version
-# chrome_version = '117.0.5938'
-
-# # Use ChromeDriverManager to automatically download and manage the Chrome WebDriver executable
-# webdriver_path = ChromeDriverManager(driver_version=chrome_version).install()
-
-# # Create Chrome options
-# chrome_options = webdriver.ChromeOptions()
-# chrome_options.add_argument('--ignore-certificate-errors')
-# chrome_options.add_argument('--incognito')
-# chrome_options.add_argument('--headless')
-# chrome_options.add_argument("--proxy-server=http://your-proxy-server:port")
-
-# # Create a Chrome WebDriver instance with the specified options
-# driver = webdriver.Chrome(
-#     options=chrome_options
-# )
-
-
-
 headers = {
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
 }
@@ -141,39 +115,6 @@ def scrape_Favicon(URL, Favicons_Directory, domain):
             file.write(f'Error processing {URL}: {e}' + '\n')
     
     return False
-
-
-# def scrape_Screenshot(url, screenshots_dir, domain):
-#     try:
-
-#         # Set a timeout for page loading (adjust as needed)
-#         driver.set_page_load_timeout(30)
-
-#         # Navigate to the URL
-#         driver.get(url)
-
-#         # Scroll to the bottom of the page to load all content (optional)
-#         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
-#         # Get the full page height
-#         full_page_height = driver.execute_script("return Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );")
-
-#         # Set the window size to match the full page height
-#         driver.set_window_size(driver.get_window_rect()['width'], full_page_height)
-
-#         # Save the screenshot to a file
-#         screenshot_file = os.path.join(screenshots_dir, f'{domain}.png')
-#         driver.save_screenshot(screenshot_file)
-
-#         # Close the browser
-#         driver.quit()
-
-#         return True
-
-#     except Exception as e:
-        
-#         print(f"Exception: {e}")
-#         return False
 
 if __name__ == '__main__':
 
