@@ -1,0 +1,179 @@
+{
+  "name": "OiNK",
+  "short_name": "OiNK",
+  "description": "OiNK - A social network for men",
+  "theme_color": "#191919",
+  "background_color": "#000000",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "window-control-overlay",
+    "minimal-ui",
+    "window-controls-overlay"
+  ],
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "id": "/",
+  "start_url": "/",
+  "handle_links": "preferred",
+  "prefer_related_applications": true,
+  "lang": "en-US",
+  "dir": "auto",
+  "iarc_rating_id": "451394c6-0b93-4b3f-a916-7f8bcfce48bb",
+  "permissions": [
+    "geolocation",
+    "notifications"
+  ],
+  "categories": [
+    "social",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "/app/img/48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/app/img/96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/app/img/192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/app/img/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/app/img/512x512maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/app/img/512x512.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/app/img/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "img/png",
+      "platform": "wide",
+      "label": "Loading OiNK..."
+    },
+    {
+      "src": "/app/img/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "img/png",
+      "platform": "wide",
+      "label": "You have to login to see the guys nearby..."
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Cruising",
+      "url": "https://www.nastykinkpigs.com/mobile/oink/",
+      "description": "Cruise who's nearby",
+      "icons": [
+        {        
+          "src": "/app/icons/favicon.ico?v=12",
+          "type": "image/x-icon"
+        }
+      ]
+    },
+    {
+      "name": "Mail",
+      "url": "https://www.nastykinkpigs.com/mobile/m_mail.php?mode=inbox",
+      "description": "Check your mail",
+      "icons": [
+        {
+          "src": "/app/icons/favicon.ico?v=12",
+          "type": "image/x-icon"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "url": "https://www.nastykinkpigs.com/mobile/contact.php",
+      "description": "Need help with something?",
+      "icons": [
+        {
+          "src": "/app/icons/favicon.ico?v=12",
+          "type": "image/x-icon"
+        }
+      ]
+    },
+    {
+      "name": "Logout",
+      "url": "https://www.nastykinkpigs.com/mobile/m_logout.php?action=member_logout",
+      "description": "Logout",
+      "icons": [
+        {
+          "src": "/app/icons/favicon.ico?v=12",
+          "type": "image/x-icon"
+        }
+      ]
+    },
+    {
+      "name": "Account Settings",
+      "url": "https://www.nastykinkpigs.com/mobile/pedit.php",
+      "description": "Update your account and profile",
+      "icons": [
+        {
+          "src": "/app/icons/favicon.ico?v=12",
+          "type": "image/x-icon"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.nastykinkpigs.nkpapp",
+      "id": "com.nastykinkpigs.nkpapp"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://testflight.apple.com/join/Zl4CDBd7",
+      "id": "com.nkpsmedia.nkpapp"
+    }
+  ],
+  "capture_links": "existing_client_event",
+  "url_handlers": [
+    {
+      "origin": "https://www.nastykinkpigs.com"
+    },
+{
+      "origin": "https://oinkmobile.com"
+    },
+    {
+      "origin": "https://*.nastykinkpigs.com"
+    }
+  ],
+	"launch_handler": {
+		"client_mode": "navigate-existing"
+	},
+  "scope_extensions": [
+    {
+      "origin": "https://*.nastykinkpigs.com"
+    },
+    {
+      "origin": "https://oinkmobile.com"
+    },
+    {
+      "origin": "https://nastykinkpigs.com"
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 600
+  }
+}
