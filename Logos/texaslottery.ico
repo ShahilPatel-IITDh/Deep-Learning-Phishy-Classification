@@ -1,0 +1,914 @@
+
+
+
+
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<title>Texas Lottery | Home</title>
+<meta name="description" content="Texas Lottery - Play the Games of Texas!" >
+<meta name="keywords" content="Texas Lottery, Powerball, Mega Millions, Lotto Texas, Texas Two Step, All or Nothing, Cash Five, Pick 3, Daily 4, Scratch Tickets" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="author" content="Texas Lottery">
+<link type="text/css" rel="stylesheet" href="/export/txlottery.org/resources/foundation.css" media="screen">
+<!-- Texas Lottery Styles -->
+<link type="text/css" rel="stylesheet" href="/export/txlottery.org/resources/custom.css" media="screen">
+<link type="text/css" rel="stylesheet" href="/export/txlottery.org/resources/fonts.css" media="screen" />
+<!-- Print Styles -->
+<link type="text/css" rel="stylesheet" href="/export/txlottery.org/resources/print.css" media="print" />
+<!-- additional toolkits -->
+<link type="text/css" rel="stylesheet" href="/export/txlottery.org/resources/browser_detect.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/export/txlottery.org/resources/jquery.rtResponsiveTables.css" media="screen" />
+<link rel="shortcut icon" href="/export/sites/lottery/favicon.ico" type="image/x-icon" />
+<link href="/export/sites/lottery/Images/icons/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="/export/sites/lottery/Images/icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="/export/sites/lottery/Images/icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="/export/sites/lottery/Images/icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="/export/sites/lottery/Images/icons/apple-touch-icon-167x167.png" rel="apple-touch-icon" sizes="167x167" />
+<link href="/export/sites/lottery/Images/icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="/export/sites/lottery/Images/icons/icon-hires.png" rel="icon" sizes="192x192" />
+<link href="/export/sites/lottery/Images/icons/icon-normal.png" rel="icon" sizes="128x128" />
+<meta name="google-site-verification" content="mEIkAMPvOOhxLNCZoky96valbLOhHxfniHRYER4Atdw" />
+
+
+</head>
+<body>
+
+<header>
+<a href="#content" class="skip">Skip to Main Content</a>
+
+
+
+
+
+<!-- Nav Bar -->
+<div data-sticky-container>
+<div class="title-bar sticky tlBlue" data-sticky data-options="marginTop:0;" data-sticky-on="small" style="width:100%" data-top-anchor="1">
+<button class="menu-icon float-left" type="button" data-open="menuLatestResults"></button>
+<div class="title-bar-title" style="margin-left:auto;margin-right:auto;text-align:center;"><a href="/export/sites/lottery/index.html"><img src="/export/sites/lottery/Images/texas_lottery_logo.svg" style="width:250px;" alt="Texas Lottery" title="Texas Lottery" id="TexasLottery" border="0" /></a></div>
+<button class="player-icon float-right" type="button" data-open="playerPanel"></button>
+</div>
+</div>
+<!-- popup launchpad menu and latest results -->
+<div class="reveal large" id="menuLatestResults" data-reveal>
+    <div class="grid-x grid-padding-x grid-padding-y">
+	    <div class="cell large-6">
+		<button class="texas-lottery-logo" type="button" onclick="window.location.href = '/index.html';"></button>
+		</div>
+		<div class="cell large-6">
+			<div id="searchBox">
+				<form method="post" action="/opencms/Misc/searchLottery.html">
+				<input type="text" title="search" placeholder="What are you searching for?" name="query" size="8" value="">
+		 		 
+				</input>
+			<input type="hidden" name="index" value="newIndex">
+			<input type="hidden" name="field" value="title">
+			<input type="hidden" name="field" value="keywords">
+			<input type="hidden" name="field" value="description">
+			<input type="hidden" name="field" value="content">
+			</form>
+			</div>
+		</div>
+	</div>
+
+  <div class="grid-x grid-padding-x grid-padding-y">
+	    <div class="cell large-6">
+			<ul class="accordion" data-accordion>
+			  <li class="accordion-item launchPadItem" data-accordion-item>
+				<a href="#" class="accordion-title launchPadItemLink">Draw Games</a>
+
+				<div class="accordion-content" data-tab-content>
+					<ul class="submenu">
+						<li><a href="/export/sites/lottery/Games/index.html">All Games</a></li>
+						<li><a href="/export/sites/lottery/Games/Powerball/index.html">Powerball<sup>&reg;</sup></a></li>
+						<li><a href="/export/sites/lottery/Games/Mega_Millions/index.html">Mega Millions<sup>&reg;</sup></a></li>
+						<li><a href="/export/sites/lottery/Games/Lotto_Texas/index.html">Lotto Texas<sup>&reg;</sup></a></li>
+						<li><a href="/export/sites/lottery/Games/Texas_Two_Step/index.html">Texas Two Step<sup>&reg;</sup></a></li>
+						<li><a href="/export/sites/lottery/Games/Pick_3/index.html">Pick 3&trade;</a></li>
+						<li><a href="/export/sites/lottery/Games/Daily_4/index.html">Daily 4&trade;</a></li>
+						<li><a href="/export/sites/lottery/Games/Cash_Five/index.html">Cash Five<sup>&reg;</sup></a></li>
+						<li><a href="/export/sites/lottery/Games/All_or_Nothing/index.html">All or Nothing&trade;</a></li>
+						<li><a class="submenuFeature" href="/export/sites/lottery/Games/Check_Your_Numbers.html">&bull; Check Your Numbers</a></li>
+						<li><a class="submenuFeature" href="/export/sites/lottery/Games/Web_Cast.html">&bull; Watch Drawings</a></li>
+						<li><a class="submenuFeature" href="/export/sites/lottery/Games/Lone_Star_Lineup/index.html">&bull; Lone Star Lineup<sup>&reg;</sup></a></li>
+						<li><a class="submenuFeature" href="/export/sites/lottery/Games/Quickticket/index.html">&bull; QUICKTICKET&trade;</a></li>
+						<li><a class="submenuFeature" href="/export/sites/lottery/Games/Receipt_Ticket/index.html">&bull; Receipt Ticket</a></li>
+						<li><a class="submenuFeature" href="/export/sites/lottery/Games/Drawing_Schedule/index.html">&bull; Drawings Schedule</a></li>
+					</ul>
+				</div>
+			  </li>
+			  <li class="accordion-item launchPadItem" data-accordion-item>
+				<a href="#" class="accordion-title launchPadItemLink">Scratch Tickets</a>
+
+				<div class="accordion-content" data-tab-content>
+					<ul class="submenu">
+						<li><a href="/export/sites/lottery/Games/Scratch_Offs/index.html">Games By Price Point</a></li>
+						<li><a href="/export/sites/lottery/Games/Scratch_Offs/all.html">Current Games List</a></li>
+						<li><a href="/export/sites/lottery/Games/Scratch_Offs/closing.html">Games Ending Soon</a></li>
+						<li><a href="/export/sites/lottery/Games/Scratch_Offs/expired.html">Closed Games</a></li>
+						<li><a class="submenuFeature" href="/opencms/Games/Scratch_Offs/Retailer_Locator.jsp">&bull; Scratch Tickets Locator</a></li>
+						<li><a class="submenuFeature" href="/export/sites/lottery/Games/Scratch_Offs/luckzone/index.html">&bull; Luck Zone</a></li>
+						<li><a class="submenuFeature" href="/export/sites/lottery/Games/Scratch_Offs/games_supporting_texas_veterans.html">&bull; Games Supporting Texas Veterans</a></li>
+						<li><a class="submenuFeature" href="/export/sites/lottery/Games/Scratch_Offs/promotional_games.html">&bull; Promotional Games</a></li>
+					</ul>
+				</div>
+			  </li>
+			  <li class="accordion-item launchPadItem" data-accordion-item>
+				<a href="#" class="accordion-title launchPadItemLink">Winners</a>
+
+				<div class="accordion-content" data-tab-content>
+					<ul class="submenu">
+						<li><a href="/export/sites/lottery/Winners/index.html">Latest Winners</a></li>
+						<li><a href="/export/sites/lottery/Winners/Claim_Your_Prize/index.html">Claim Your Prize</a></li>
+						<li><a href="/export/sites/lottery/Winners/Winners_Gallery/index.html">Winners Gallery</a></li>						
+					</ul>
+				</div>
+			  </li>
+			  <li class="accordion-item launchPadItem" data-accordion-item>
+				<a href="#" class="accordion-title launchPadItemLink">Retailers</a>
+
+				<div class="accordion-content" data-tab-content>
+					<ul class="submenu">
+						<li><a href="/export/sites/lottery/Retailers/index.html">Retailer Services</a></li>
+						<li><a href="https://tx-lsp.lotteryservices.com">Lottery Services Portal</a></li>
+						<li><a href="/export/sites/lottery/Retailers/Retailer_Manual.html">Retailer Manual</a></li>
+						<li><a href="/export/sites/lottery/Retailers/Retailer_Forms/index.html">Retailer Forms</a></li>
+						<li><a href="/export/sites/lottery/Retailers/Retailer_Benefits_x_Bonuses/index.html">Retailer Benefits</a></li>
+						<li><a href="/export/sites/lottery/Retailers/Retailer_Promotions/index.html">Retailer Promotions</a></li>
+						<li><a href="/export/sites/lottery/Retailers/Social_Media_Assets/index.html">Social Media Assets</a></li>
+					</ul>
+				</div>
+			  </li>
+			  <li class="accordion-item launchPadItem" data-accordion-item>
+				<a href="#" class="accordion-title launchPadItemLink">Media</a>
+
+				<div class="accordion-content" data-tab-content>
+					<ul class="submenu">
+						<li><a href="/export/sites/lottery/Media/index.html">Media Relations</a></li>
+						<li><a href="/export/sites/lottery/Media/News_Releases/index.html">News Releases</a></li>
+						<li><a href="/export/sites/lottery/Media/Video_Center/index.html">Video Center</a></li>
+						<li><a href="/export/sites/lottery/Media/Drawings_Satellite_Coordinates/index.html">Drawings Satellite Coordinates</a></li>
+
+					</ul>
+				</div>
+			  </li>
+			  <li class="accordion-item launchPadItem" data-accordion-item>
+				<a href="#" class="accordion-title launchPadItemLink">Social Responsibility</a>
+
+				<div class="accordion-content" data-tab-content>
+					<ul class="submenu">
+						<li><a href="/export/sites/lottery/Social_Responsibility/responsible_gambling/index.html">Responsible Gambling</a></li>
+						<li><a href="/export/sites/lottery/Social_Responsibility/texas_alert_programs.html">Texas Missing Persons Alert Programs</a></li>
+					</ul>
+				</div>
+			  </li>
+			  <li class="accordion-item launchPadItem" data-accordion-item>
+				<a href="#" class="accordion-title launchPadItemLink">Player Protection</a>
+
+				<div class="accordion-content" data-tab-content>
+					<ul class="submenu">
+						<li><a href="/export/sites/lottery/Player_Protection/Security_Spotlight.html">Security Spotlight</a></li>
+						<li><a href="/export/sites/lottery/Player_Protection/Sound_of_Winners.html">The Sound of Winners!</a></li>
+						<li><a href="/export/sites/lottery/Player_Protection/Lottery_Scams/index.html">Lottery Scams</a></li>
+						<li><a href="/export/sites/lottery/Player_Protection/mythbusters.html">Myth Busters </a></li>
+					</ul>
+				</div>
+			  </li>
+			  <li class="accordion-item launchPadItem" data-accordion-item>
+				<a href="#" class="accordion-title launchPadItemLink">About</a>
+
+				<div class="accordion-content" data-tab-content>
+					<ul class="submenu">
+						<li><a href="/export/sites/lottery/About_Us/index.html">Texas Lottery Commission</a></li>
+						<li><a href="/export/sites/lottery/Supporting_Education_and_Veterans/index.html">Supporting Education & Veterans</a></li>
+						<li><a href="/export/sites/lottery/About_Us/Core_Values/index.html">Our Core Values</a></li>
+						<li><a href="/export/sites/lottery/About_Us/Message_from_the_Executive_Director/index.html">Message from the Executive Director</a></li>
+						<li><a href="/export/sites/lottery/About_Us/The_Commissioners/index.html">The Commissioners</a></li>
+						<li><a href="/export/sites/lottery/About_Us/sunset_review.html">Sunset Review</a></li>
+						<li><a href="/export/sites/lottery/About_Us/Milestones/index.html">Commission History / Milestones</a></li>
+						<li><a href="/export/sites/lottery/About_Us/Meetings/index.html">Legal Notices / Meetings</a></li>
+						<li><a href="/export/sites/lottery/About_Us/Doing_Business_with_TLC/index.html">Doing Business with TLC</a></li>
+						<li><a href="/export/sites/lottery/About_Us/Publications/index.html">Publications</a></li>
+						<li><a href="/export/sites/lottery/About_Us/Publications/Audits.html">Audits</a></li>
+						<li><a href="/export/sites/lottery/About_Us/Employment_Opportunities/index.html">Employment Opportunities</a></li>
+						<li><a href="/export/sites/lottery/About_Us/Agency_Directory/index.html">Agency Directory</a></li>
+						<li><a href="https://www.txbingo.org">Charitable Bingo</a></li>
+					</ul>
+				</div>
+			  </li>
+				<li class="accordion-item launchPadItem" data-accordion-item>
+				<a href="#" class="accordion-title launchPadItemLink">En Español</a>
+
+				<div class="accordion-content" data-tab-content>
+					<ul class="submenu">
+						<li><a href="/export/sites/lottery/es/index.html">Bienvenido a la Lotería de Texas</a></li>
+						<li><a href="/export/sites/lottery/es/spanish_faq.html">Preguntas Frecuentes</a></li>
+						<li><a href="/export/sites/lottery/es/spanish_agencydirectory.html">Directorio de la Agencia</a></li>
+						<li><a href="/export/sites/lottery/es/spanish_claim_your_prize.html">¿Cómo y dónde reclamo mi premio?</a></li>
+						<li><a href="/export/sites/lottery/es/spanish_how_to_become_a_retailer.html">¿Quiere Vender Lotería?</a></li>
+						<li><a href="/export/sites/lottery/es/spanish_jobs.html">Oportunidades de Empleo</a></li>
+						<li><a href="/export/sites/lottery/es/spanish_public_information.html">Solicitud de Registros Abiertos</a></li>
+						<li><a href="/export/sites/lottery/es/spanish_support_education.html">Apoyando la Educación y a los Veteranos en Texas</a></li>
+					</ul>
+				</div>
+			  </li>
+			</ul>
+		</div>
+ 
+	<div class="cell large-6">
+	<!-- POWERBALL -->
+	<a class="black" href="/export/sites/lottery/Games/Powerball/index.html">
+	<div class="cell text-center">
+	<div class="homePageCell">
+        <div><img src="/export/sites/lottery/Images/latest_results/powerball.png" alt="Powerball logo" border="0" /></div>
+			<p>Est. Annuitized Jackpot for 10/07/2023:</p>
+			<h1>$1.40 Billion</h1>
+			<div><p>Est. Cash Value: <strong>$643.7 Million</strong></p></div>
+	</div>
+	</div>
+	</a> 
+	<!-- MEGA MILLIONS 
+	<a class="black" href="/export/sites/lottery/Games/Mega_Millions/index.html">
+	<div class="cell text-center">
+	<div class="homePageCell">
+        <div><img src="/export/sites/lottery/Images/latest_results/mega_millions.png" alt="Mega Millions logo" border="0" /></div>
+			<p>Est. Annuitized Jackpot for 10/06/2023:</p>
+			<h1>$350 Million</h1>
+			<div><p>Est. Cash Value: <strong>$155.9 Million</strong></p></div>
+	</div>
+	</div>
+	</a> -->
+	<!-- LOTTO TEXAS 
+	<a class="black" href="/export/sites/lottery/Games/Lotto_Texas/index.html">
+	<div class="cell text-center">
+	<div class="homePageCell">
+        <div><img src="/export/sites/lottery/Images/latest_results/lotto_texas.png" alt="Lotto Texas logo" border="0" /></div>
+			<p>Est. Annuitized Jackpot for 10/07/2023:</p>
+			<h1>$10 Million</h1>
+			<div><p>Est. Cash Value: <strong>$5.36 Million</strong></p></div>
+	</div>
+	</div>
+	</a> -->
+	<!-- TEXAS TWO STEP 
+	<a class="black" href="/export/sites/lottery/Games/Texas_Two_Step/index.html">
+	<div class="cell text-center">
+	<div class="homePageCell">
+        <div><img src="/export/sites/lottery/Images/latest_results/texas_two_step.png" alt="Texas Two Step logo" border="0" /></div>
+			<p>Advertised Jackpot for 10/05/2023:</p>
+			<h1>$1.45 Million</h1>
+			<div><p>&nbsp;</p></div>
+	</div>
+	</div>
+	</a> -->
+	
+	<div class="cell text-center" style="margin-top:50px;">
+	<div class="homePageCell">
+        <a href="/export/sites/lottery/Games/Quickticket/index.html"><img src="/export/sites/lottery/Images/module-quickticket.jpg" alt="QUICKTICKET" border="0" /></a>
+	</div>
+	</div>
+	
+    </div>
+	  
+</div>
+  
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!-- popup Player panel -->
+<div class="reveal large" id="playerPanel" data-reveal>
+  <div class="grid-x grid-padding-x grid-padding-y">
+	    <div class="cell large-6">
+		<button class="texas-lottery-logo" type="button" onclick="window.location.href = '/index.html';"></button>
+		</div>
+		<div class="cell large-6">
+			<h1>Player Area</h1>
+		</div>
+  </div>
+  <div class="grid-x grid-padding-x grid-padding-y">
+		<div class="cell large-6 text-center">
+		<div class="homePageCell">
+		<div><a href="/export/sites/lottery/Games/Check_Your_Numbers.html"><img src="/export/sites/lottery/Images/module-check-your-numbers.jpg" alt="Check Your Numbers" border="0" /></a></div>
+		</div>
+        </div>
+		<div class="cell large-6 text-center">
+		<div class="homePageCell">
+		<div><a href="/export/sites/lottery/Games/Scratch_Offs/luckzone/index.html"><img src="/export/sites/lottery/Images/module-luck-zone.jpg" alt="Luck Zone" border="0" /></a></div>
+		</div>
+		</div>
+	</div>
+	<div class="grid-x grid-padding-x grid-padding-y">
+		<div class="cell large-6 text-center">
+		<div class="homePageCell">
+		<div><a href="/export/sites/lottery/download_the_app.html"><img src="/export/sites/lottery/Images/module-download-the-app.jpg" alt="Download the App" border="0" /></a></div>
+		</div>
+		</div>
+		<div class="cell large-6 text-center">
+		<div class="homePageCell">
+		<div><a href="/export/sites/lottery/Winners/Claim_Your_Prize/index.html"><img src="/export/sites/lottery/Images/module-claim-your-prize.jpg" alt="Claim Your Prize" border="0" /></a></div>
+		</div>
+		</div>
+	</div>
+	<div class="grid-x grid-padding-x grid-padding-y">
+		<div class="cell large-6 text-center">
+		<div class="homePageCell">
+		<div><a href="/export/sites/lottery/Social_Responsibility/responsible_gambling/index.html"><img src="/export/sites/lottery/Images/module-play-responsibly.jpg" alt="Play Responsibly" border="0" /></a></div>
+		</div>
+		</div>
+		<div class="cell large-6 text-center">
+		<div class="homePageCell">
+		<div><a href="/export/sites/lottery/email_text_signup.html"><img src="/export/sites/lottery/Images/module-text-email-updates.jpg" alt="Signup for email or txt messages" border="0" /></a></div>
+		</div>
+		</div>
+		<div class="cell large-6 text-center">
+		<div class="homePageCell">
+		<div><a href="/export/sites/lottery/Events/index.html"><img src="/export/sites/lottery/Images/module-events.jpg" alt="Events" border="0" /></a></div>
+		</div>
+		</div>
+		<div class="cell large-6 text-center">
+		<div>
+		<div>&nbsp;</div>
+		</div>
+		</div>
+		<div class="cell large-12" style="text-align:center;">
+		<a href="http://www.facebook.com/TexasLottery"><img src="/export/sites/lottery/Images/svg_facebook.svg" border="0" alt="icon-facebook" style="width:40px;" /></a> <a href="http://www.twitter.com/TexasLottery"><img src="/export/sites/lottery/Images/svg_x.svg" border="0" alt="icon-x" style="width:40px;" /></a> <a href="http://www.youtube.com/TheTexasLottery"><img src="/export/sites/lottery/Images/svg_youtube.svg" border="0" alt="icon-youtube" style="width:40px;" /></a> <a href="http://www.instagram.com/texaslottery"><img src="/export/sites/lottery/Images/svg_instagram.svg" border="0" alt="icon-instagram" style="width:44px;" /></a> <a href="/export/sites/lottery/email_text_signup.html"><img src="/export/sites/lottery/Images/svg_email.svg" border="0" alt="icon-mail" style="width:40px;" /></a> <a href="/export/sites/lottery/rss/tlc_rss.html"><img src="/export/sites/lottery/Images/svg_rss.svg" border="0" alt="icon-rss" style="width:40px;"  /></a>
+		</div>
+		<div class="cell large-12" style="text-align:center;">
+		<p><a href="/export/sites/lottery/About_Us/Agency_Directory/">Contact Us</a> | <a href="/opencms/About_Us/Agency_Directory/Complaint_Form.jsp">File a Complaint</a> | <a href="/export/sites/lottery/FAQ/index.html">FAQ</a> | <a href="/export/sites/lottery/Supporting_Education_and_Veterans/index.html">Where the $ Goes</a></p>
+		</div>
+  </div>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
+
+
+
+<div class="grid-container full show-for-medium">
+<div id="submenu" class="grid-x">
+<div class="cell submenuBar"><span class="submenu"><a href="/export/sites/lottery/Games/index.html">Draw Games</a></span> <span class="submenu"><a href="/export/sites/lottery/Games/Scratch_Offs/index.html">Scratch Tickets</a></span> <span class="submenu"><a href="/export/sites/lottery/Winners/index.html">Winners</a></span> <span class="submenu"><a href="/export/sites/lottery/Retailers/index.html">Retailers</a></span> <span class="submenu"><a href="/export/sites/lottery/Media/index.html">Media</a></span> <span class="submenu"><a href="/export/sites/lottery/Social_Responsibility/index.html">Social Responsibility</a></span> <span class="submenu"><a href="/export/sites/lottery/Player_Protection/index.html">Player Protection</a></span><span class="submenu"><a href="/export/sites/lottery/About_Us/index.html">About</a></span> <span class="submenu"><a href="/export/sites/lottery/es/index.html">En Español</a></span> <span class="submenu"><a href="https://www.txbingo.org/export/sites/bingo/index.html"><img style="width:71px;height:28px;" src="/export/sites/lottery/Images/bingo-text-only.png" border="0" alt="Bingo" /></a></span></div>
+</div>
+</div>
+</header>
+
+<!-- slideshow container -->
+
+
+
+
+<div class="orbit" role="region" aria-label="Latest from the Texas Lottery" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;data-swipe:true;data-accessible:true;">
+  <div class="orbit-wrapper">
+    <div class="orbit-controls">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+    </div>
+    <ul class="orbit-container">
+	<li class="is-active orbit-slide">
+        <figure class="orbit-figure">
+                    <a href="/export/sites/lottery/Games/Mega_Millions/index.html"><img class="orbit-image" src="/export/sites/lottery/Images/slideshow/mm_branding.png" alt="Mega Millions" /></a>
+        </figure>
+    </li>
+	<li class="orbit-slide">
+        <figure class="orbit-figure">
+                    <a href="/export/sites/lottery/Games/Scratch_Offs/details.html_252700629.html"><img class="orbit-image" src="/export/sites/lottery/Images/slideshow/pink-diamonds.jpg" alt="pink diamonds" /></a>
+        </figure>
+    </li>
+    <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <a href="https://texas.secondchancebonuszone.com/vegaschallenge2023/home"><img class="orbit-image" src="/export/sites/lottery/Images/slideshow/5-Million-Vegas-Challenge.jpg" alt="5 Million Vegas Challenge" /></a>
+        </figure>
+    </li>
+	<li class="orbit-slide">
+        <figure class="orbit-figure">
+		<a href="/export/sites/lottery/Games/Lotto_Texas/index.html"><img class="orbit-image" src="/export/sites/lottery/Images/slideshow/lotto-texas-500-millionaires.jpg" alt="Lotto Texas" /></a>
+        </figure>
+    </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div id="GamesGrid" class="grid-container full">
+<div class="grid-x grid-padding-x grid-padding-y" >
+<div class="cell medium-6 large-3 text-center" >
+<a class="black" href="/export/sites/lottery/Games/Powerball/index.html">
+<div class="homePageCell">
+<div><img src="/export/sites/lottery/Images/latest_results/powerball.png" alt="Powerball logo" border="0" /></div>
+
+<p>Est. Annuitized Jackpot</p>
+<h1>$1.40 Billion</h1>
+
+<div class="callout small" style="background: red;"><p style="color: white; text-align: center;font-weight:bold;">☆&nbsp;JACKPOT ALERT&nbsp;☆</p></div>
+ 
+<p>Est. Cash Value: <strong>$643.7 Million</strong></p>
+<p>Next Draw: <strong>10/07/2023</strong></p>
+<hr />
+<p>Results for: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls">
+<li><span>9</span></li>
+<li><span>35</span></li>
+<li><span>54</span></li>
+<li><span>63</span></li>
+<li><span>64</span></li>
+<li><span class="powerball">1</span></li>
+</ol>
+<p>Power Play X <strong>2</strong></p>
+
+</div>
+</a>
+</div>
+<div class="cell medium-6 large-3 text-center" >
+<a class="black" href="/export/sites/lottery/Games/Mega_Millions/index.html">
+<div class="homePageCell">
+<div><img src="/export/sites/lottery/Images/latest_results/mega_millions.png" alt="Mega Millions logo" border="0" /></div>
+
+<p>Est. Annuitized Jackpot</p>
+<h1>$350 Million</h1>
+
+<div class="callout small" style="background: red;"><p style="color: white; text-align: center;font-weight:bold;">☆&nbsp;JACKPOT ALERT&nbsp;☆</p></div>
+
+<p>Est. Cash Value: <strong>$155.9 Million</strong></p>
+<p>Next Draw: <strong>10/06/2023</strong></p>
+<hr />
+<p>Results for: <strong>10/03/2023</strong></p>
+<ol class="winningNumberBalls">
+<li><span>3</span></li>
+<li><span>19</span></li>
+<li><span>32</span></li>
+<li><span>39</span></li>
+<li><span>59</span></li>
+<li><span class="megaball">24</span></li>
+</ol>
+<p>Megaplier X <strong>3</strong></p>
+
+</div>
+</a>
+</div>
+<div class="cell medium-6 large-3 text-center" >
+<a class="black" href="/export/sites/lottery/Games/Lotto_Texas/index.html">
+<div class="homePageCell">
+<div><img src="/export/sites/lottery/Images/latest_results/lotto_texas.png" alt="Lotto logo" border="0" /></div>
+		
+<p>Est. Annuitized Jackpot</p>
+<h1>$10 Million</h1>
+
+<p>Est. Cash Value: <strong>$5.36 Million</strong></p>
+<p>Next Draw: <strong>10/07/2023</strong></p>
+<hr />
+<p>Results for: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls">
+<li><span>10</span></li>
+<li><span>15</span></li>
+<li><span>27</span></li>
+<li><span>28</span></li>
+<li><span>31</span></li>
+<li><span>33</span></li>
+</ol>
+<p  class="show-for-medium">&nbsp;</p>
+
+</div>
+</a>
+</div>
+<div class="cell medium-6 large-3 text-center" >
+<a class="black" href="/export/sites/lottery/Games/Texas_Two_Step/index.html">
+<div class="homePageCell">
+<div><img src="/export/sites/lottery/Images/latest_results/texas_two_step.png" alt="TTS logo" border="0" /></div>
+
+<p>Advertised Jackpot</p>
+<h1>$1.45 Million</h1>
+
+<div class="callout small" style="background: red;"><p style="color: white; text-align: center;font-weight:bold;">☆&nbsp;JACKPOT ALERT&nbsp;☆</p></div>
+
+
+<p  class="show-for-medium">&nbsp;</p>
+<p>Next Draw: <strong>10/05/2023</strong></p>
+<hr />
+<p>Results for: <strong>10/02/2023</strong></p>
+<ol class="winningNumberBalls">
+<li><span>12</span></li>
+<li><span>24</span></li>
+<li><span>31</span></li>
+<li><span>32</span></li>
+<li><span class="bonusball">19</span></li>
+</ol>
+<p  class="show-for-medium">&nbsp;</p>
+
+</div>
+</a>
+</div>
+</div>
+<div class="grid-x grid-padding-x grid-padding-y" >
+<div class="cell medium-6 large-3 text-center" >
+<a class="black" href="/export/sites/lottery/Games/Pick_3/index.html">
+<div class="homePageCell">
+<div><img src="/export/sites/lottery/Images/latest_results/pick3.png" alt="Pick3 logo" border="0" /></div>  
+
+<p style="margin-bottom:0px;padding-bottom:0px;">Results for <strong>Morning</strong> Draw: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls" style="margin-bottom:2px;padding-bottom:0px;">
+<li><span>1</span></li>
+<li><span>1</span></li>
+<li><span>4</span></li>
+<li><span class="fireball">4</span></li>
+</ol> 
+
+<p style="margin-bottom:0px;padding-bottom:0px;">Results for <strong>Day</strong> Draw: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls" style="margin-bottom:2px;padding-bottom:0px;">
+<li><span>1</span></li>
+<li><span>7</span></li>
+<li><span>8</span></li>
+<li><span class="fireball">9</span></li>
+</ol> 
+
+<p style="margin-bottom:0px;padding-bottom:0px;">Results for <strong>Evening</strong> Draw: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls" style="margin-bottom:2px;padding-bottom:0px;">
+<li><span>0</span></li>
+<li><span>7</span></li>
+<li><span>2</span></li>
+<li><span class="fireball">6</span></li>
+</ol> 
+
+<p style="margin-bottom:0px;padding-bottom:0px;">Results for <strong>Night</strong> Draw: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls" style="margin-bottom:2px;padding-bottom:0px;">
+<li><span>1</span></li>
+<li><span>1</span></li>
+<li><span>9</span></li>
+<li><span class="fireball">2</span></li>
+</ol> 
+
+</div>
+</a>
+</div>
+<div class="cell medium-6 large-3 text-center" >
+<a class="black" href="/export/sites/lottery/Games/Daily_4/index.html">
+<div class="homePageCell">
+<div><img src="/export/sites/lottery/Images/latest_results/daily4.png" alt="Daily 4 logo" border="0" /></div>
+
+<p style="margin-bottom:0px;padding-bottom:0px;">Results for <strong>Morning</strong> Draw: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls" style="margin-bottom:2px;padding-bottom:0px;">
+<li><span>5</span></li>
+<li><span>2</span></li>
+<li><span>1</span></li>
+<li><span>3</span></li>
+<li><span class="fireball">8</span></li>
+</ol> 
+
+<p style="margin-bottom:0px;padding-bottom:0px;">Results for <strong>Day</strong> Draw: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls" style="margin-bottom:2px;padding-bottom:0px;">
+<li><span>3</span></li>
+<li><span>7</span></li>
+<li><span>5</span></li>
+<li><span>4</span></li>
+<li><span class="fireball">5</span></li>
+</ol> 
+
+<p style="margin-bottom:0px;padding-bottom:0px;">Results for <strong>Evening</strong> Draw: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls" style="margin-bottom:2px;padding-bottom:0px;">
+<li><span>7</span></li>
+<li><span>2</span></li>
+<li><span>0</span></li>
+<li><span>9</span></li>
+<li><span class="fireball">2</span></li>
+</ol> 
+
+<p style="margin-bottom:0px;padding-bottom:0px;">Results for <strong>Night</strong> Draw: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls" style="margin-bottom:2px;padding-bottom:0px;">
+<li><span>4</span></li>
+<li><span>1</span></li>
+<li><span>5</span></li>
+<li><span>5</span></li>
+<li><span class="fireball">2</span></li>
+</ol> 
+
+</div>
+</a>
+</div>
+<div class="cell medium-6 large-3 text-center" >
+<a class="black" href="/export/sites/lottery/Games/Cash_Five/index.html">
+<div class="homePageCell">
+<div><img src="/export/sites/lottery/Images/latest_results/cash_five.png" alt="Cash 5 logo" border="0" /></div>
+<p>Top Prize</p>
+<h1>$25,000</h1>
+<p  class="show-for-medium">&nbsp;</p>
+<p>Next Draw: <strong>10/05/2023</strong></p>
+<hr />
+<p>Results for: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls">
+<li><span>10</span></li>
+<li><span>12</span></li>
+<li><span>25</span></li>
+<li><span>26</span></li>
+<li><span>34</span></li>
+</ol>
+<p  class="show-for-medium">&nbsp;</p>
+</div>
+</a>
+</div>
+<div class="cell medium-6 large-3 text-center" >
+<a class="black" href="/export/sites/lottery/Games/All_or_Nothing/index.html">
+<div class="homePageCell">
+<div><img src="/export/sites/lottery/Images/latest_results/all_or_nothing.png" alt="All or Nothing logo" border="0" /></div>
+<p>Top Prize</p>
+<h1>$250,000</h1>
+<p  class="show-for-medium">&nbsp;</p>
+<p>Next Draw: <strong>Morning 10/05/2023</strong></p>  <hr />
+<p>Results for <strong>Night</strong> Draw: <strong>10/04/2023</strong></p>
+<ol class="winningNumberBalls"  style="margin-bottom:2px;padding-bottom:0px;">
+<li><span>2</span></li>
+<li><span>4</span></li>
+<li><span>8</span></li>
+<li><span>9</span></li>
+<li><span>10</span></li>
+<li><span>12</span></li><br />
+<li><span>13</span></li>
+<li><span>18</span></li>
+<li><span>21</span></li>
+<li><span>22</span></li>
+<li><span>23</span></li>
+<li><span>24</span></li>
+</ol>
+</div>
+</a>
+</div>
+</div>
+<div class="grid-x grid-padding-x grid-padding-y">
+<div class="cell large-6 text-center">
+<div class="homePageCell">
+<a href="/export/sites/lottery/Games/Scratch_Offs/index.html"><img src="/export/sites/lottery/Images/module-scratch-home.jpg" alt="Scratch games" border="0" /></a>
+</div>
+</div>
+<div class="cell large-6 text-center">
+<div class="homePageCell">
+<a href="/export/sites/lottery/Games/Scratch_Offs/luckzone/index.html"><img src="/export/sites/lottery/Images/module-luck-zone-home.jpg" alt="Scratch games" border="0" /></a>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Content Begins -->
+<div id="content" class="grid-container full">
+<div class="grid-x grid-padding-x grid-padding-y">
+<div class="large-12 cell">
+<a name="content" class="skipNav"></a>
+
+
+
+
+
+
+	  
+</div>
+</div>
+</div>
+<!-- Content Ends -->
+
+
+
+
+<!-- Promo grid -->
+<div id="PromoGrid" class="grid-container full">
+<div class="grid-x grid-padding-x grid-padding-y">
+  <div class="cell large-4 text-center">
+		<div class="homePageCell">
+		<div><a href="/export/sites/lottery/Games/Check_Your_Numbers.html"><img src="/export/sites/lottery/Images/module-check-your-numbers.jpg" alt="Check Your Numbers" border="0" /></a></div>
+		</div>
+  </div>
+  <div class="cell large-4 text-center">
+		<div class="homePageCell">
+			<div><a href="/export/sites/lottery/Games/Web_Cast.html"><img src="/export/sites/lottery/Images/module-watch-the-drawings.jpg" alt="Watch the Drawings" title="Lone Star Lineup" border="0" /></a></div>	
+		</div>
+  </div>
+  <div class="cell large-4 text-center">
+		<div class="homePageCell">
+		
+		<div><a href="/export/sites/lottery/download_the_app.html"><img src="/export/sites/lottery/Images/module-download-the-app.jpg" alt="Download the App" border="0" /></a></div>
+		
+		</div>
+  </div>
+</div>
+<div class="grid-x grid-padding-x grid-padding-y">
+  <div class="cell large-4 text-center">
+  <div class="homePageCell">
+	<div><a href="/opencms/Games/Scratch_Offs/Retailer_Locator.jsp"><img src="/export/sites/lottery/Images/module-scratch-ticket-locator.jpg" alt="Scratch Ticket Locator" border="0" /></a></div>
+  </div>
+  </div>
+  <div class="cell large-4 text-center">
+  <div class="homePageCell">
+	<div><a href="/export/sites/lottery/Games/Lone_Star_Lineup/index.html"><img src="/export/sites/lottery/Images/module-lone-star-lineup.jpg" alt="Lone Star Lineup" border="0" /></a></div>
+  </div>
+  </div>
+  <div class="cell large-4 text-center">
+  <div class="homePageCell">
+	<div><a href="/export/sites/lottery/Events/index.html"><img src="/export/sites/lottery/Images/module-events.jpg" border="0" alt="Events" /></a></div>
+  </div>
+  </div>
+</div>
+<div class="grid-x grid-padding-x grid-padding-y">
+  <div class="cell large-4 text-center">
+  <div class="homePageCell">
+	<div><a href="/export/sites/lottery/Games/Scratch_Offs/games_supporting_texas_veterans.html"><img src="/export/sites/lottery/Images/modules-supporting_texas_veterans.jpg" alt="Supporting Texas Veterans" border="0" /></a></div>
+  </div>
+  </div>
+  <div class="cell large-4 text-center">
+  <div class="homePageCell">
+	<div><a href="/export/sites/lottery/Winners/index.html"><img src="/export/sites/lottery/Images/modules-winners.jpg" alt="Winners" border="0" /></a></div>
+  </div>
+  </div>
+  <div class="cell large-4 text-center">
+  <div class="homePageCell">
+	<div><a href="/export/sites/lottery/Supporting_Education_and_Veterans/index.html"><img src="/export/sites/lottery/Images/module-supporting-education-veterans.jpg" border="0" alt="Supporting Education and Veterans" /></a></div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<div id="breadcrumb" class="grid-container full">
+<div class="grid-x show-for-medium">
+	    <div class="breadcrumb">
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/export/sites/lottery/">Texas Lottery</a>
+
+
+
+
+
+
+
+
+
+&nbsp;&raquo;&nbsp;
+
+Home
+
+
+        </div>
+</div>
+</div>
+
+<footer>
+
+
+
+
+
+
+
+
+<!-- footer area -->
+<div id="footer" class="grid-container full">
+<div class="grid-x grid-padding-x">
+<div class="medium-4 large-2 cell">
+<p class="footHead">Games</p>
+<ul>
+<li><a href="/export/sites/lottery/Games/Powerball/index.html">Powerball&reg;</a></li>
+<li><a href="/export/sites/lottery/Games/Mega_Millions/index.html">Mega Millions&reg;</a></li>
+<li><a href="/export/sites/lottery/Games/Lotto_Texas/index.html">Lotto Texas&reg;</a></li>
+<li><a href="/export/sites/lottery/Games/Texas_Two_Step/index.html">Texas Two Step&reg;</a></li>
+<li><a href="/export/sites/lottery/Games/All_or_Nothing/index.html">All or Nothing&trade;</a></li>
+<li><a href="/export/sites/lottery/Games/Pick_3/index.html">Pick 3&trade;</a></li>
+<li><a href="/export/sites/lottery/Games/Daily_4/index.html">Daily 4&trade;</a></li>
+<li><a href="/export/sites/lottery/Games/Cash_Five/index.html">Cash Five&reg;</a></li>
+<li><a href="/export/sites/lottery/Games/Scratch_Offs/index.html">Scratch Tickets</a></li>
+</ul>
+</div>
+<div class="medium-4 large-2 cell">
+<p class="footHead">Social Responsibility</p>
+<ul>
+<li><a href="/export/sites/lottery/Social_Responsibility/responsible_gambling/">Responsible Gambling</a></li>
+<li><a href="/export/sites/lottery/Social_Responsibility/texas_alert_programs.html">Texas Alert Programs</a></li>
+</ul>
+</div>
+<div class="medium-4 large-2 cell">
+<p class="footHead">Player Protection</p>
+<ul>
+<li><a href="/export/sites/lottery/Player_Protection/Security_Spotlight.html">Security Spotlight</a></li>
+<li><a href="/export/sites/lottery/Player_Protection/Sound_of_Winners.html">The Sound of Winners!</a></li>
+<li><a href="/export/sites/lottery/Player_Protection/Lottery_Scams/">Lottery Scams</a></li>
+<li><a href="/export/sites/lottery/Player_Protection/mythbusters.html">Myth Busters</a></li>
+</ul>
+</div>
+<div class="medium-4 large-2 cell">
+<p class="footHead">Connect</p>
+<ul>
+<li><a href="http://www.facebook.com/TexasLottery">Facebook</a></li>
+<li><a href="http://www.twitter.com/TexasLottery">X</a></li>
+<li><a href="http://www.youtube.com/TheTexasLottery">YouTube</a></li>
+<li><a href="http://www.instagram.com/texaslottery">Instagram</a></li>
+<li><a href="/export/sites/lottery/email_text_signup.html">Email / Text</a></li>
+<li><a href="/export/sites/lottery/rss/tlc_rss.html">RSS</a></li>
+<li><a href="/export/sites/lottery/download_the_app.html">Download the App</a></li>
+</ul>
+</div>
+<div class="medium-4 large-2 cell">
+<p class="footHead">Contact</p>
+<ul>
+<li><a href="/export/sites/lottery/About_Us/Agency_Directory/index.html">Agency Directory</a></li>
+<li><a href="/export/sites/lottery/About_Us/Agency_Directory/Key_Personnel_Phone_Directory.html">Key Personnel Phone Directory</a></li>
+<li><a href="/opencms/About_Us/Agency_Directory/Complaint_Form.jsp">Complaint Form</a></li>
+<li><a href="/opencms/About_Us/Agency_Directory/Email_Form.jsp">Send an Email</a></li>
+<li><a href="/export/sites/lottery/About_Us/Agency_Directory/Claim_Center_Locations.html">Claim Center Locations</a></li>
+<li><a href="/export/sites/lottery/About_Us/Agency_Directory/Public_Information_Request.html">Public Information Requests</a></li>
+<li><a href="/export/sites/lottery/email_text_signup.html">Unsubscribe</a></li>
+</ul>
+</div>
+<div class="medium-4 large-2 cell">
+<p class="footHead">Sections</p>
+<ul>
+<li><a href="/export/sites/lottery/Games/index.html">Games</a></li>
+<li><a href="/export/sites/lottery/Winners/index.html">Winners</a></li>
+<li><a href="/export/sites/lottery/Supporting_Education_and_Veterans/index.html">Supporting Education & Veterans</a></li>
+<li><a href="/export/sites/lottery/Sales_and_Revenue/index.html">Sales and Revenue</a></li>
+<li><a href="/export/sites/lottery/About_Us/index.html">About Us</a></li>
+<li><a href="/export/sites/lottery/Retailers/index.html">Retailers</a></li>
+<li><a href="/export/sites/lottery/Media/index.html">Media</a></li>
+<li><a href="/export/sites/lottery/Events/index.html">Events</a></li>
+<li><a href="/export/sites/lottery/FAQ/index.html">FAQ</a></li>
+<li><a href="/export/sites/lottery/es/index.html">En Espa&ntilde;ol</a></li>
+<li><a href="/export/sites/lottery/Smoking_and_Non-smoking_Locations/index.html">Smoking / Non-Smoking Locations</a></li>
+<li><a href="https://www.txbingo.org"><img src="/export/sites/lottery/Images/charitable_bingo_sm.png" border="0" alt="Charitable Bingo" /></a></li>
+</ul>
+</div>
+</div>
+<div class="grid-x grid-padding-x">
+<div class="large-12 cell text-center" style="margin-top:25px;">
+<p><a href="/export/sites/lottery/About_Us/Agency_Directory/">Contact Us</a> | <a href="/opencms/About_Us/Agency_Directory/Complaint_Form.jsp">File a Complaint</a> | <a href="/export/sites/lottery/Misc/ada.html">ADA</a> | <a href="/export/sites/lottery/Misc/Accessibility.html">Accessibility</a> | <a href="/export/sites/lottery/Misc/Privacy.html">Privacy Statement</a> | <a href="/opencms/Misc/Site_Map.html">Site Map</a> | <a href="/opencms/Social_Responsibility/responsible_gambling/resources.html">Play Responsibly</a> | <a href="/export/sites/lottery/Misc/social_media.html">Social Media Guidelines and Comment Statement</a> | <a href="/export/sites/lottery/Misc/linking_statement.html">Linking Statement</a></p>
+<p><a href="http://www.texas.gov/">Texas.gov</a> | <a href="http://www.texashomelandsecurity.com/">Texas Homeland Security</a> | <a href="https://www.tsl.texas.gov/trail/index.html">TRAIL Statewide Search</a> | <a href="/export/sites/lottery/Documents/compTexans.pdf">Compact with Texans</a> | <a href="https://comptroller.texas.gov/transparency/open-data/dashboards.php">Comptroller's "Where the Money Goes"</a> | <a href="http://publishingext.dir.texas.gov/portal/internal/resources/DocumentLibrary/State%20Website%20Linking%20and%20Privacy%20Policy.pdf">State Website Link &amp; Privacy Policy</a> | <a href="https://www.dshs.texas.gov/covid-19-home">COVID-19</a> | <a href="https://www.dshs.texas.gov/sa/FindingServices/ProblemGambling.shtm">Texas DSHS Problem Gambling</a></p>
+<p><a href="http://veterans.portal.texas.gov">Texas Veterans Portal</a>
+ | <a href="/export/sites/lottery/Social_Responsibility/texas_alert_programs.html">Texas Alert Programs</a>
+ | <a href="https://sao.fraud.texas.gov/">SAO Waste/Fraud Reporting</a></p>
+<p><a href="/export/sites/lottery/index.html"><img src="/export/sites/lottery/Images/logo_sm.png" width="127" height="162" alt="Texas Lottery logo" border="0" /></a></p>
+<p>Must be 18 years or older to purchase a ticket. <a href="/export/sites/lottery/Misc/copyright.html">Copyright &copy 2023</a>  Texas Lottery Commission.</p>
+<!-- 10/04/2023 at 11:21:27 PM -->
+</div>
+</div>
+</div> 
+</footer>
+
+<!-- Browser Detection -->
+<script src="/export/txlottery.org/resources/js/browser_detect.js"></script>
+<script type="text/javascript">
+<!--
+var displayPoweredBy = false;
+
+var notSupportedBrowsers = [{'os': 'Any', 'browser': 'MSIE', 'version': 8}, {'os': 'Any', 'browser': 'Firefox', 'version': 1}];
+// -->
+</script>
+
+<script src="/export/txlottery.org/resources/js/vendor/jquery.min.js"></script>
+<script src="/export/txlottery.org/resources/js/vendor/foundation.js"></script>
+<script src="/export/txlottery.org/resources/js/vendor/foundation.util.touch.js"></script>
+
+
+
+
+<div class="small reveal" style="background:#dc2630;" id="jackpotAlert" data-reveal>
+	<div style="margin:-16px;"><img style="width:100%;height:auto;" src="/export/sites/lottery/Images/jackpot_alert_header.png" border="0" alt="jackpot alert header" /></div>
+	<div style="margin-bottom:25px;">
+					
+					<div class="jackpotAlertLogo"><a href="/export/sites/lottery/Games/Powerball/index.html"><img src="/export/sites/lottery/Images/jackpot_alert_powerball.png" alt="Powerball logo" border="0" /></a></div>	
+				
+					<p style="text-align:center;color:#ffe500;">Current Est. Annuitized Jackpot for 10/07/2023:</p>				 
+				
+				<h1 style="text-align:center;color:#ffe500;">$1.40 Billion</h1> 
+			
+	</div>
+	
+	<button class="close-button" data-close aria-label="Close modal" type="button">
+		<span style="color:black;font-size:50px;" aria-hidden="true">&times;</span>
+	</button>
+</div>
+
+<script>
+      $(document).foundation();
+
+
+$('#jackpotAlert').foundation('open');
+</script>
+
+
+
+</body>
+</html>
