@@ -91,6 +91,8 @@ def capture_full_page_screenshot(url, output_file):
         # Log other exceptions
         logging.error(f"WebDriverException while processing URL: {url}. Error: {str(e)}")
 
+foundInputBox = 0
+notFoundInputBox = 0
 
 if __name__ == "__main__":    
     
@@ -131,12 +133,21 @@ if __name__ == "__main__":
                 result = detect_input_box(outputFile)
 
                 if result == -1:
+                    foundInputBox += 1
                     print("Input box detected.")
+
                 else:
+                    notFoundInputBox += 1
                     print("Input box not detected.")
-                    
+
 
             print(f"{counter}")
             print("----------------------------------\n")
 
+
         driver.quit()
+        
+    with open("contour-based-detection.txt", 'w') as file:
+        file.write("Total number of URLs processed: ", counter)
+        file.write("Total number of URLs with input boxes: ", foundInputBox)
+        file.write("Total number of URLs without input boxes: ", notFoundInputBox)
