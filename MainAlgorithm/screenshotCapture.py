@@ -1,23 +1,15 @@
-import os
-import csv
 import time
-import numpy as np
-import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import WebDriverException
-from urllib.parse import urlsplit
 from PIL import Image
 import io
-
-# Import the object_detection function from object_detection.py which will be used to detect the input box from the screenshot
-from UI_Detection import detect_input_box
 import logging
 
 # Configure logging
-logging.basicConfig(filename='error.log', level=logging.ERROR)
+logging.basicConfig(filename='ScreenshotError.log', level=logging.ERROR)
 
 # Set up Chrome options
 chrome_options = Options()
@@ -30,20 +22,9 @@ chrome_options.add_argument("--no-sandbox")
 # Disable the DevShmUsage
 chrome_options.add_argument("--disable-dev-shm-usage")
 
-# Install and Initialize WebDriver using webdriver_manager (This will not require to pre-download the chrome driver)
+# Install and Initialize WebDriver using webdriver_manager (This will not require pre-downloading the chrome driver)
 driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()), options=chrome_options)
 driver.maximize_window()
-
-inputCSV_File = os.path.join('..', 'URL_For_Testing', 'phishTankDatabase.csv')
-
-outputDir = os.path.join('screenshots')
-
-# Create the directory if it doesn't exist
-if not os.path.exists(outputDir):
-    os.makedirs(outputDir)
-
-counter = 0
-
 
 def capture_full_page_screenshot(url, output_file):
     try:
@@ -89,65 +70,10 @@ def capture_full_page_screenshot(url, output_file):
         logging.error(f"WebDriverException while processing URL: {url}. Error: {str(e)}")
     except Exception as e:
         # Log other exceptions
-        logging.error(f"WebDriverException while processing URL: {url}. Error: {str(e)}")
-
-foundInputBox = 0
-notFoundInputBox = 0
-
-if __name__ == "__main__":    
-    
-    # Open the CSV file containing the URLs
-    with open(inputCSV_File, 'r') as file:
-
-        reader = csv.reader(file)
-        
-        next(reader)  # Skip the header row
-        
-        for row in reader:
-            
-            counter += 1
-
-            # Remove the whitespace from the URL
-            url = row[1].strip()
-            print(url)
-
-            parsed_url = urlsplit(url)
-
-            # Extract the domain name from the netloc component
-            domain_name = parsed_url.netloc
-            # Remove "www." if present at the beginning
-            if domain_name.startswith("www."):
-                domain_name = domain_name[4:]
-
-            print("Domain name: ", domain_name)
-
-            outputFile = os.path.join(outputDir, f"{domain_name}.png")
-
-            # Capture the full-page screenshot
-            capture_full_page_screenshot(url, outputFile)
-
-            # Check if the output file exists before running UI detection
-            if os.path.isfile(outputFile):
-                
-                # Run UI detection code if the file exists
-                result = detect_input_box(outputFile)
-
-                if result == -1:
-                    foundInputBox += 1
-                    print("Input box detected.")
-
-                else:
-                    notFoundInputBox += 1
-                    print("Input box not detected.")
-
-
-            print(f"{counter}")
-            print("----------------------------------\n")
-
-
+        logging.error(f"Exception while processing URL: {url}. Error: {str(e)}")
+    finally:
         driver.quit()
-        
-    with open("contour-based-detection.txt", 'w') as file:
-        file.write("Total number of URLs processed: ", counter)
-        file.write("Total number of URLs with input boxes: ", foundInputBox)
-        file.write("Total number of URLs without input boxes: ", notFoundInputBox)
+
+# Example usage:
+# if __name__ == "__main__":
+#     capture_full_page_screenshot('https://example.com', 'output.png')

@@ -20,38 +20,38 @@ def detect_input_box(screenshot_file_path):
     # This requires investment of time and effort. I have also provided a quick and simple way to check if an input box is present in the screenshot. You can uncomment and use the code below if you want to quickly check if an input box is present in the screenshot.
 
     # Find contours in the thresholded image
-    contours, _ = cv2.findContours(thresholded_screenshot, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    # contours, _ = cv2.findContours(thresholded_screenshot, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
-    # Check if any contour resembles an input box
-    input_box_detected = False
+    # # Check if any contour resembles an input box
+    # input_box_detected = False
 
-    for contour in contours:
-        x, y, w, h = cv2.boundingRect(contour)
-        aspect_ratio = w / float(h)
+    # for contour in contours:
+    #     x, y, w, h = cv2.boundingRect(contour)
+    #     aspect_ratio = w / float(h)
 
-        # Adjust the ratios as per your requirements
-        if 0.5 <= aspect_ratio <= 2.0 and 50 <= w <= 300 and 10 <= h <= 100:
-            input_box_detected = True
-            break
+    #     # Adjust the ratios as per your requirements
+    #     if 0.5 <= aspect_ratio <= 2.0 and 50 <= w <= 300 and 10 <= h <= 100:
+    #         input_box_detected = True
+    #         break
 
-    if input_box_detected:
-        return -1  # Input box detected
+    # if input_box_detected:
+    #     return -1  # Input box detected
     
-    else:
-        return 1   # Input box not detected
+    # else:
+    #     return 1   # Input box not detected
     
 
     # For quick and simple checking use the code below
     
-    # # Use Tesseract OCR to extract text from the screenshot
-    # extracted_text = pytesseract.image_to_string(thresholded_screenshot)
+    # Use Tesseract OCR to extract text from the screenshot
+    extracted_text = pytesseract.image_to_string(thresholded_screenshot)
 
-    # # Check if the extracted text contains keywords indicating input boxes
-    # keywords = ["username", "Username", "USERNAME","password", "Password" ,"email", "Email", "e-mail", "E-mail","input", "Input", "textbox", "form", "signin", "Signin", "sign-in", "Sign-in", "login", "Login", "log-in", "Log-in"]
+    # Check if the extracted text contains keywords indicating input boxes
+    keywords = ["username", "Username", "USERNAME","password", "Password" ,"email", "Email", "e-mail", "E-mail","input", "Input", "textbox", "form", "signin", "Signin", "sign-in", "Sign-in", "login", "Login", "log-in", "Log-in"]
 
-    # for keyword in keywords:
-    #     if keyword in extracted_text.lower():
+    for keyword in keywords:
+        if keyword in extracted_text.lower():
 
-    #         return -1  # Input box detected
+            return -1  # Input box detected
 
-    # return 1  # Input box not detected
+    return 1  # Input box not detected
