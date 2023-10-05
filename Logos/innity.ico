@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    
+<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-TGQW58F');</script>
+
+<!-- End Google Tag Manager -->
+
+<!-- Google tag (gtag.js) --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-952181235"></script> 
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date()); 
+gtag('config', 'AW-952181235',{
+cookie_flags: 'max-age=7200;secure;samesite=none'
+});
+</script>
+
+<!-- Event snippet for PH Innity Website Lead Form Send Message Button conversion page In your html page, 
+add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
+<script> 
+function gtag_report_conversion(url) {
+    var callback = function () {if (typeof(url) != 'undefined') { window.location = url; } }; 
+        gtag('event', 'conversion', { 'send_to': 'AW-952181235/GPxACKCg8I4YEPPDhMYD', 'event_callback': callback }); 
+    return false; 
+} 
+</script>
+
+    <base href="https://www.innity.com/">
+    <title>404 Not Found</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="SHORTCUT ICON" href="img/innity.ico"> 
+    <link href="css/error.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <h3>Something went Wrong!</h3>
+        <h1>404</h1>
+        <p>Page not Found!</p>
+        <a href="https://www.innity.com/">&laquo; Back to home</a>
+    </div>
+
+</body>
+</html>
+

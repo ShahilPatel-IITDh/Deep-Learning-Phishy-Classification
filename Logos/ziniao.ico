@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="UTF-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta content="telephone=no" name="format-detection"/><meta property="og:image" content="/logo.png"/><link rel="shortcut icon" href="/favicon.ico"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-322215177"></script><script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-322215177');
+            </script><script>
+        function gtag_report_conversion(url) {
+          var callback = function () {};
+            gtag('event', 'conversion', {
+              'send_to': 'AW-322215177/QZQuCMu7rf4CEIm60pkB',
+            'event_callback': callback
+          });
+          return false;
+        }
+        </script><script async="">
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '619712535864809');
+          fbq('track', 'PageView');
+          </script><script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-322282142"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'AW-322282142');
+            </script><script>
+            function gtag_report_conversionZiniao(url) {
+              var callback = function () {};
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-322282142/py1BCM6Sp-oCEJ7F1pkB',
+                  'event_callback': callback
+              });
+              gtag('event', 'Sign_up_register_form', {'event_category': 'sign_up'});
+              return false;
+            }
+        </script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RKW9CWWNV1"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-RKW9CWWNV1');
+            </script><script async="">
+              (function (arr) {
+                arr.forEach(function (item) {
+                  if (item.hasOwnProperty('prepend')) {
+                    return;
+                  }
+                  Object.defineProperty(item, 'prepend', {
+                    configurable: true,
+                    enumerable: true,
+                    writable: true,
+                    value: function prepend() {
+                      var argArr = Array.prototype.slice.call(arguments),
+                        docFrag = document.createDocumentFragment();
+
+                      argArr.forEach(function (argItem) {
+                        var isNode = argItem instanceof Node;
+                        docFrag.appendChild(isNode ? argItem : document.createTextNode(String(argItem)));
+                      });
+
+                      this.insertBefore(docFrag, this.firstChild);
+                    }
+                  });
+                });
+              })([Element.prototype, Document.prototype, DocumentFragment.prototype]);
+              </script><script>
+(function(para) {
+  var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+            if(typeof(w['sensorsDataAnalytic201505']) !== 'undefined') {
+      return false;
+    }
+            w['sensorsDataAnalytic201505'] = n;
+            w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+            var ifs = ['track','quick','register','registerPage','registerOnce','clearAllRegister','trackSignup', 'trackAbtest', 'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile','identify','login','logout','trackLink', 'use'];
+            for (var i = 0; i < ifs.length; i++) {
+              w[n][ifs[i]] = w[n].call(null, ifs[i]);
+  }
+            if (!w[n]._t) {
+              x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+            x.async = 1;
+            x.src = p;
+            x.setAttribute('charset','UTF-8');
+            w[n].para = para;
+            y.parentNode.insertBefore(x, y);
+  }
+})({
+            sdk_url: '/sensorsdata.min.js',
+            name: 'sensors',
+            server_url:'//datasink.ziniao.com/sa?project=znbrowser',
+            is_track_single_page: false, // 单页面配置，默认开启，若页面中有锚点设计，需要将该配置删除，否则触发锚点会多触发 $pageview 事件
+            use_client_time:true,
+            show_log: false,
+            // send_type:'beacon',
+            heatmap: {
+            //是否开启点击图，default 表示开启，自动采集 $WebClick 事件，可以设置 'not_collect' 表示关闭。
+            clickmap:'default',
+            //是否开启触达注意力图，not_collect 表示关闭，不会自动采集 $WebStay 事件，可以设置 'default' 表示开启。
+            scroll_notice_map:'not_collect'
+  }
+})
+
+// sensors.quick('autoTrack');
+// sensors.use('PageLeave', { custom_props: { page_title: '我的标题' }, heartbeat_interval_time: 5 });
+
+</script><script>
+            var _hmt = _hmt || [];
+            (function () {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?a69620e5e71046365a43a0cc6a3fceeb";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(hm, s);
+            })();
+            </script><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="next-head-count" content="2"/><link rel="preload" href="/_next/static/css/4a2f1270da6cdbb90783.css" as="style"/><link rel="stylesheet" href="/_next/static/css/4a2f1270da6cdbb90783.css" data-n-g=""/><link rel="preload" href="/_next/static/css/1e6b76a6b88c333cb83d.css" as="style"/><link rel="stylesheet" href="/_next/static/css/1e6b76a6b88c333cb83d.css" data-n-g=""/><link rel="preload" href="/_next/static/css/8013830713e200cf8ced.css" as="style"/><link rel="stylesheet" href="/_next/static/css/8013830713e200cf8ced.css" data-n-p=""/><link rel="preload" href="/_next/static/css/3424565952eb131725af.css" as="style"/><link rel="stylesheet" href="/_next/static/css/3424565952eb131725af.css" data-n-p=""/><noscript data-n-css=""></noscript><link rel="preload" href="/_next/static/chunks/webpack-76734c9ca7a5dd760f4a.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework.d99d6172e6226ce70dc1.js" as="script"/><link rel="preload" href="/_next/static/chunks/fd50cd6158b26ab34704a5845c14856d7a499350.a2901f5524e64e690126.js" as="script"/><link rel="preload" href="/_next/static/chunks/e999d32315c3e46fbca33117893c84762a4d1ecb.834812bf6782ab8d0016.js" as="script"/><link rel="preload" href="/_next/static/chunks/f7a09a52836b944186cb0d930f707e19d89fdd4b.f2d85ddc075aa92dfb97.js" as="script"/><link rel="preload" href="/_next/static/chunks/71e5448967eda338266f12a5ea0a111357868130.0916159c861856bdf0d7.js" as="script"/><link rel="preload" href="/_next/static/chunks/7baebd52bad4057e270f386a2de5dace66ac301c.9012f8a4858359dc4250.js" as="script"/><link rel="preload" href="/_next/static/chunks/eafce0fd7ad4be7e3645084c257eab38ce9f2b75.1365d4b8231fb08db526.js" as="script"/><link rel="preload" href="/_next/static/chunks/030aceab3eddd861cae491487a42036546422339.1d3f34f774c0d76cfada.js" as="script"/><link rel="preload" href="/_next/static/chunks/b335080dc41fe31085fb045cb358eefeded0ffb9.96594f4bb8a861cc77f0.js" as="script"/><link rel="preload" href="/_next/static/chunks/c12999e17bde8d12e8c2561d6c5a7c37c4f0a6bf.edbb17e638e408918d84.js" as="script"/><link rel="preload" href="/_next/static/chunks/5eee943d09078ab33b05866234a946f6635c7f6f.16c72a356b40ff9a511f.js" as="script"/><link rel="preload" href="/_next/static/chunks/2a298818c9e144f24f5349553d5c1aeb3042c772.d2dedeb3d1c7808a74ec.js" as="script"/><link rel="preload" href="/_next/static/chunks/main-e1e56b569d9d6fa20f64.js" as="script"/><link rel="preload" href="/_next/static/chunks/8313d723.7b81181b759f114bbd22.js" as="script"/><link rel="preload" href="/_next/static/chunks/75fc9c18.da988ec7be5e0f7129bb.js" as="script"/><link rel="preload" href="/_next/static/chunks/08d97266e7e6690c3636dd20a018731a68054911.9c50ef569e5024f90e82.js" as="script"/><link rel="preload" href="/_next/static/chunks/82805bec3ad49ab46d0a8657208482968fe798c4.229088b4ede051ae1253.js" as="script"/><link rel="preload" href="/_next/static/chunks/e29a1526a8eb0563e4298246d9d5fd60e1fda37c.ece0a98b36fd57090740.js" as="script"/><link rel="preload" href="/_next/static/chunks/e29a1526a8eb0563e4298246d9d5fd60e1fda37c_CSS.ddce25b62cf34b951439.js" as="script"/><link rel="preload" href="/_next/static/chunks/0ae51fd0e7cde91860a4a08d4e3644101ba2fc4d.070474193596523dc88b.js" as="script"/><link rel="preload" href="/_next/static/chunks/e8e7003e264870b06b4ee5d2bd6524fba859f549.45d490cbf545af79210a.js" as="script"/><link rel="preload" href="/_next/static/chunks/358a6d346d87a0c91a866ecd5b4906030b693166.5c7c96d7083f542a1fcd.js" as="script"/><link rel="preload" href="/_next/static/chunks/d5c59454ae7f50a4e2d6055e5844d71eb58f9a02.8ab8953c053d1f1fa5a4.js" as="script"/><link rel="preload" href="/_next/static/chunks/97194e9e15bb67c11d0de422701012c9cad88dc2.40cc813e70fad351ae43.js" as="script"/><link rel="preload" href="/_next/static/chunks/00dd68d97d08f8a0459b69ce4116dbb5ca3a574b.7f9151317ad51837314c.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-314ebb4ac3f1e0697805.js" as="script"/><link rel="preload" href="/_next/static/chunks/29107295.1b22ad8d711ee5c89ab1.js" as="script"/><link rel="preload" href="/_next/static/chunks/db49ffa7f0b99706dec1eb437f8d3ca0b7cfe52b.1313bd87ff45e9a12887.js" as="script"/><link rel="preload" href="/_next/static/chunks/1a79fbe3a4b951e2d2bef7a651f6b1d0885ed6a6_CSS.093638bde8598decefe4.js" as="script"/><link rel="preload" href="/_next/static/chunks/fdd0f657a0e6fbb539d6ecd122ff571fba916064.6cdeff27e8dd7dc77826.js" as="script"/><link rel="preload" href="/_next/static/chunks/8af465bb20b1e7f4d924662567c9f117d1a26271.36cc29b4de0b7a41dbfd.js" as="script"/><link rel="preload" href="/_next/static/chunks/c0e6970945745b96491c0b09acb34689d0e7b4dc.f4d074bd92ac722d2f82.js" as="script"/><link rel="preload" href="/_next/static/chunks/9959d8d17c595ec17c7bf109dc2828c62c3ce45a.495e652c09f49c6bf0ea.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/index-4b16cd91871c719b86e7.js" as="script"/></head><body><a id="btnServiceIcon" href="/" style="display:none"></a><div id="__next"></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"cYzDc7QmBUMLdj8htHtye","runtimeConfig":{"ecoSystemUrlZiniao":"https://appstore.ziniao.com/","ecoSystemUrl":"https://appstore.superbrowser.com/"},"nextExport":true,"autoExport":true,"isFallback":false}</script><script nomodule="" src="/_next/static/chunks/polyfills-add512a114dec14b4f77.js"></script><script src="/_next/static/chunks/webpack-76734c9ca7a5dd760f4a.js" async=""></script><script src="/_next/static/chunks/framework.d99d6172e6226ce70dc1.js" async=""></script><script src="/_next/static/chunks/fd50cd6158b26ab34704a5845c14856d7a499350.a2901f5524e64e690126.js" async=""></script><script src="/_next/static/chunks/e999d32315c3e46fbca33117893c84762a4d1ecb.834812bf6782ab8d0016.js" async=""></script><script src="/_next/static/chunks/f7a09a52836b944186cb0d930f707e19d89fdd4b.f2d85ddc075aa92dfb97.js" async=""></script><script src="/_next/static/chunks/71e5448967eda338266f12a5ea0a111357868130.0916159c861856bdf0d7.js" async=""></script><script src="/_next/static/chunks/7baebd52bad4057e270f386a2de5dace66ac301c.9012f8a4858359dc4250.js" async=""></script><script src="/_next/static/chunks/eafce0fd7ad4be7e3645084c257eab38ce9f2b75.1365d4b8231fb08db526.js" async=""></script><script src="/_next/static/chunks/030aceab3eddd861cae491487a42036546422339.1d3f34f774c0d76cfada.js" async=""></script><script src="/_next/static/chunks/b335080dc41fe31085fb045cb358eefeded0ffb9.96594f4bb8a861cc77f0.js" async=""></script><script src="/_next/static/chunks/c12999e17bde8d12e8c2561d6c5a7c37c4f0a6bf.edbb17e638e408918d84.js" async=""></script><script src="/_next/static/chunks/5eee943d09078ab33b05866234a946f6635c7f6f.16c72a356b40ff9a511f.js" async=""></script><script src="/_next/static/chunks/2a298818c9e144f24f5349553d5c1aeb3042c772.d2dedeb3d1c7808a74ec.js" async=""></script><script src="/_next/static/chunks/main-e1e56b569d9d6fa20f64.js" async=""></script><script src="/_next/static/chunks/8313d723.7b81181b759f114bbd22.js" async=""></script><script src="/_next/static/chunks/75fc9c18.da988ec7be5e0f7129bb.js" async=""></script><script src="/_next/static/chunks/08d97266e7e6690c3636dd20a018731a68054911.9c50ef569e5024f90e82.js" async=""></script><script src="/_next/static/chunks/82805bec3ad49ab46d0a8657208482968fe798c4.229088b4ede051ae1253.js" async=""></script><script src="/_next/static/chunks/e29a1526a8eb0563e4298246d9d5fd60e1fda37c.ece0a98b36fd57090740.js" async=""></script><script src="/_next/static/chunks/e29a1526a8eb0563e4298246d9d5fd60e1fda37c_CSS.ddce25b62cf34b951439.js" async=""></script><script src="/_next/static/chunks/0ae51fd0e7cde91860a4a08d4e3644101ba2fc4d.070474193596523dc88b.js" async=""></script><script src="/_next/static/chunks/e8e7003e264870b06b4ee5d2bd6524fba859f549.45d490cbf545af79210a.js" async=""></script><script src="/_next/static/chunks/358a6d346d87a0c91a866ecd5b4906030b693166.5c7c96d7083f542a1fcd.js" async=""></script><script src="/_next/static/chunks/d5c59454ae7f50a4e2d6055e5844d71eb58f9a02.8ab8953c053d1f1fa5a4.js" async=""></script><script src="/_next/static/chunks/97194e9e15bb67c11d0de422701012c9cad88dc2.40cc813e70fad351ae43.js" async=""></script><script src="/_next/static/chunks/00dd68d97d08f8a0459b69ce4116dbb5ca3a574b.7f9151317ad51837314c.js" async=""></script><script src="/_next/static/chunks/pages/_app-314ebb4ac3f1e0697805.js" async=""></script><script src="/_next/static/chunks/29107295.1b22ad8d711ee5c89ab1.js" async=""></script><script src="/_next/static/chunks/db49ffa7f0b99706dec1eb437f8d3ca0b7cfe52b.1313bd87ff45e9a12887.js" async=""></script><script src="/_next/static/chunks/1a79fbe3a4b951e2d2bef7a651f6b1d0885ed6a6_CSS.093638bde8598decefe4.js" async=""></script><script src="/_next/static/chunks/fdd0f657a0e6fbb539d6ecd122ff571fba916064.6cdeff27e8dd7dc77826.js" async=""></script><script src="/_next/static/chunks/8af465bb20b1e7f4d924662567c9f117d1a26271.36cc29b4de0b7a41dbfd.js" async=""></script><script src="/_next/static/chunks/c0e6970945745b96491c0b09acb34689d0e7b4dc.f4d074bd92ac722d2f82.js" async=""></script><script src="/_next/static/chunks/9959d8d17c595ec17c7bf109dc2828c62c3ce45a.495e652c09f49c6bf0ea.js" async=""></script><script src="/_next/static/chunks/pages/index-4b16cd91871c719b86e7.js" async=""></script><script src="/_next/static/cYzDc7QmBUMLdj8htHtye/_buildManifest.js" async=""></script><script src="/_next/static/cYzDc7QmBUMLdj8htHtye/_ssgManifest.js" async=""></script></body></html>
