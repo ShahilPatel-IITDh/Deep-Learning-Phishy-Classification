@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta http-equiv="Cache-Control" content="max-age=3600"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="MAXSTORE, PAX SaaS">
+    <meta name="description" content="Leading the payment industry ecosystem">
+    <link rel="shortcut icon" href=""/>
+    <script>
+        (function () {
+            let PORTAL = "/portal";
+            let host = window.location.host;
+            let protocol = window.location.protocol;
+            if (!host.startsWith("www.")) {
+                window.location.replace(protocol + "//" + host + PORTAL);
+            }
+
+        })();
+    </script>
+</head>
+<body>
+<div id="root"></div>
+<script type="application/javascript">
+    window.__RESOURCE_VERSION__ = "_8297141194162245"
+</script>
+<script type="text/javascript" src="app.bundle.8e1753fb20edfd85dfbe.js?8e1753fb20edfd85dfbe"></script></body>
+</html>

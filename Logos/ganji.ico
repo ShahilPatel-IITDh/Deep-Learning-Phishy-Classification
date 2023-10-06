@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+<title>请输入验证码 ws:203.129.219.162</title>
+	<link rel="icon" href="data:;base64,=">
+	<link rel="stylesheet" type="text/css" href="/new_index.css"/>
+	<link rel="stylesheet" type="text/css" href="/easyui/easyui.css"/>
+	<script type="text/javascript" src="/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="/easyui/jquery.easyui.min.js"></script>
+
+</head>
+<body>
+	<div class="pop">
+		<p class="title">访问过于频繁，本次访问做以下验证码校验。（203.129.219.162）</p>
+		<div class="main">
+			<div class="code_img">
+				<span>请在五分钟内完成验证</span>
+			</div>
+			<div class="code_num">
+				<input type="button" class="btn_tj" id="btnSubmit"
+					 value="点击按钮进行验证">
+			</div>
+			<div class="toast_mess" id="errmsg"></div>
+			<div id="onlineBtn" style="text-align: center;"><a onclick="javascript:$('#dlg').dialog('open')">点我反馈</a></div>
+			<div id="ISDCaptcha"></div>
+		</div>
+
+		<div id="dlg" class="easyui-dialog" title="反馈内容" style="width:400px"
+			 data-options="
+				iconCls: 'icon-save',
+				toolbar: '#dlg-toolbar',
+				buttons: '#dlg-buttons',
+				modal: true,
+				closed: true
+			">
+		</div>
+		<div id="dlg-toolbar" style="padding:5px 0">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align:left;padding-left:2px;padding-bottom:5px">
+						<label>请输入联系方式：</label>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:left;padding-left:20px;padding-bottom:5px">
+						<input class="easyui-textbox" id="feedback-contact" data-options="prompt:'请输入手机号或者邮箱'" style="width:200px">
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:left;padding-left:2px;padding-bottom:5px">
+						<label>请输入反馈内容：</label>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:left;padding-left:20px">
+						<input class="easyui-textbox" id="feedback-content" data-options="multiline:true,prompt:'请填写问题描述，以便我们及时为您解决问题'" style="width:200px;height: 100px">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="dlg-buttons">
+			<a href="javascript:void(0)" class="easyui-linkbutton" onclick="feedback('验证码页面(geetest)反馈')">保存</a>
+			<a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:$('#dlg').dialog('close')">关闭</a>
+		</div>
+	</div>
+	<div class="footer">
+		©  <a href="http://www.ganji.com">ganji.com</a>
+			</div>
+<input type="hidden" id="sessionId" value="" />
+<input type="hidden" id="serialId" value="a4c285973f44640b3af0e7ce6dd412c4_0301f991cf6e442d88901ac327352747" />
+<input type="hidden" id="code" value="100" />
+<input type="hidden" id="sign" value="c80d0a28e950199f00e798f9c8df3fa3" />
+<input type="hidden" id="url" value="https://ganji.com/favicon.ico" />
+<input type="hidden" id="namespace" value="cloud_zhaopin_ganji_zhiweilist_pc1" />
+<input type="hidden" id="ip" value="203.129.219.162" />
+</body>
+<!--<script src="https://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>-->
+<script src="/gt.js"></script>
+<script type="text/javascript"
+		src="/feedback.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	//统计pv
+	pv();
+	
+	var namespace = $("#namespace").val();
+	var uuid = $("#uuid").val();
+	var url = $("#url").val();
+	var verify_code = $("#verify_code").val();
+	var ip = $("#ip").val();
+	var serialId = $("#serialId").val();
+	var code = $("#code").val();
+	var sign =$("#sign").val();
+	var status = 0;
+	var userId = "";
+
+    var handler = function (captchaObj) {
+        captchaObj.onReady(function(){
+            $("#wait").hide();
+        }).onSuccess(function(){
+            var result = captchaObj.getValidate();
+            if (!result) {
+                return alert('请完成验证');
+            }
+            respMessage = $.ajax({
+                url : "/antibot/geetest/checkcode.do",
+                data : {
+                    namespace : namespace,
+                    url : url,
+                    serialId:serialId,
+					status:status,
+                    userId:userId,
+                    geetest_challenge: result.geetest_challenge,
+                    geetest_validate: result.geetest_validate,
+                    geetest_seccode: result.geetest_seccode
+                },
+                type : "POST",
+                async : true,
+                success : function(results) {
+                    var parsedJson = jQuery.parseJSON(results);
+                    if (parsedJson.code === 0) {
+                        var redLocation = parsedJson.msg;
+                        if(redLocation.indexOf("http://")===-1 && redLocation.indexOf("https://")===-1){
+                            redLocation = "http://"+redLocation;
+                        }
+                        window.location.href = redLocation;
+                    } else {
+                        $("#errmsg").html(parsedJson.msg);
+
+                    }
+                }
+            });
+        }).onError(function(){
+            $("#errmsg").html("加载验证码异常");
+        });
+        btnSubmit.onclick = function(){
+            captchaObj.verify(); //显示验证码
+
+        }
+    };
+
+	respMessage = $.ajax({
+		url : "/antibot/geetest/register.do?t="+new Date().getTime(),
+		data :{serialId:serialId,code:code,sign:sign,url:url,namespace:namespace},
+		type : "POST",
+		async : true,
+		success : function(results) {
+			var parsedJson = jQuery.parseJSON(results);
+			if (parsedJson.code === 0 && parsedJson.data != null) {
+                var dataJson = jQuery.parseJSON(parsedJson.data);
+                status = dataJson.success;
+                userId = parsedJson.msg;
+				initGeetest({
+					gt: dataJson.gt,
+					challenge: dataJson.challenge,
+					new_captcha: dataJson.new_captcha,
+					offline: !dataJson.success,
+					product: "bind",
+					width: "100%"
+				}, handler);
+                //}
+			} else {
+			    if(parsedJson.data == null){
+                    $("#errmsg").html(parsedJson.msg);
+				}else{
+                    $("#errmsg").html(parsedJson.msg);
+                    var reLocation = parsedJson.data;
+                    if(reLocation.indexOf("http://")===-1 && reLocation.indexOf("https://")===-1){
+                        reLocation = "http://"+reLocation;
+                    }
+                    setInterval(function(){
+                        window.location.href = reLocation;
+                        }, 5000);
+
+				}
+
+				
+			}
+		}
+	});
+	
+	function pv () {  
+	    var params = {};
+	    if(document) {  
+	        params.domain = document.domain || '';   
+	        params.url = document.URL || '';   
+	        params.title = document.title || '';   
+	        params.referrer = document.referrer || '';   
+	    }
+	    if(window && window.screen) {  
+	        params.sh = window.screen.height || 0;  
+	        params.sw = window.screen.width || 0;  
+	        params.cd = window.screen.colorDepth || 0;  
+	    }
+	    if(navigator) {  
+	        params.lang = navigator.language || '';   
+	    }
+	    var date = new Date();  
+	    params.ltime = date.getTime() / 1000;  
+	    //拼接参数串  
+	    var args = '';   
+	    for(var i in params) {  
+	        if(args != '') {  
+	            args += '&';  
+	        }     
+	        args += i + '=' + encodeURIComponent(params[i]);  
+	    }
+	    var img = new Image(1, 1);   
+	    img.src = '/fwdata/load.gif?' + args;  
+	}
+});
+
+</script>
+</html>

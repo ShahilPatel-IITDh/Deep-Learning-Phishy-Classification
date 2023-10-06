@@ -1,0 +1,95 @@
+<html>
+<script type="text/javascript">
+    (function () {
+        var authUrl = '//capi.mcfr.ua';
+        var targetUrl = '//' + window.location.host;
+
+        sendRequest(authUrl + '/callback', onCallbackRequest)
+
+        function onCallbackRequest(data) {
+            if (data && data.guestKey && data.guestKey.length) {
+                sendRequestAuthSync(
+                    data.guestKey,
+                    function () {
+                        onAuthSyncError(data);
+                    }
+                )
+            }
+        }
+
+        function onAuthSyncError(data) {
+            if (data && data.cookies && data.cookies.length) {
+                for (var i = 0, maxi = data.cookies.length; i < maxi; i++) {
+                    document.cookie = data.cookies[i];
+
+                    if (i === data.cookies.length - 1) {
+                        window.location.reload();
+                    }
+                }
+            }
+        }
+
+        function sendRequestAuthSync(robin, onError) {
+            sendRequest(
+                targetUrl + '/_api/auth/logics/auth_sync?robin=' + robin,
+                function () {
+                    window.location.reload();
+                },
+                onError
+            );
+        }
+
+        function sendRequest(url, onSuccess, onError) {
+            var req = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+
+            req.withCredentials = true;
+            req.ontimeout = function () {
+                if (onError) {
+                    onError();
+                } else {
+                    window.location.reload();
+                }
+            };
+            req.onerror = function () {
+                if (onError) {
+                    onError();
+                } else {
+                    window.location.reload();
+                }
+            };
+            req.onreadystatechange = function () {
+                if (req.readyState !== 4) {
+                    return;
+                }
+
+                if (req.status === 200) {
+                    var data = processJson(req.responseText);
+
+                    if (onSuccess) {
+                        onSuccess(data);
+                    }
+                } else {
+                    if (onError) {
+                        onError();
+                    }
+                }
+            };
+
+            req.open('GET', 'https:' + url, true);
+            req.send();
+        }
+
+        function processJson(raw) {
+            try {
+                var parsed = JSON.parse(raw);
+
+                return parsed;
+            } catch (error) {
+                return null;
+            }
+        }
+    })();
+</script>
+
+</html>
+

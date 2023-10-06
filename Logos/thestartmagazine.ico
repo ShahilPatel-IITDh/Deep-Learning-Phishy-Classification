@@ -1,0 +1,478 @@
+<html><head><link rel="icon" href="/favicon.ico" type="image/x-icon"/><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=no"/><meta name="theme-color" content="#000000"/><!-- Preconnect to Google Fonts with DNS-prefetch and preconnect if DNS-prefetch is not supported--><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="DNS-prefetch" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/><link rel="DNS-prefetch" href="https://fonts.gstatic.com" crossorigin="crossorigin"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&amp;display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/><link rel="manifest" href="/manifest.json"/><script>if(typeof Object.assign!="function"){Object.defineProperty(Object,"assign",{value:function assign(target,varArgs){"use strict";if(target==null){throw new TypeError("Cannot convert undefined or null to object")}var to=Object(target);for(var index=1;index<arguments.length;index++){var nextSource=arguments[index];if(nextSource!=null){for(var nextKey in nextSource){if(Object.prototype.hasOwnProperty.call(nextSource,nextKey)){to[nextKey]=nextSource[nextKey]}}}}return to},writable:true,configurable:true})}
+
+function _defineProperty(e,t,r){return t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}function _typeof(e){return _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},_typeof(e)}function isObject(e){return e&&"object"===_typeof(e)&&!Array.isArray(e)}function mergeDeep(e){for(var t=arguments.length,r=new Array(t>1?t-1:0),o=1;o<t;o++)r[o-1]=arguments[o];if(!r.length)return e;var n=r.shift();if(isObject(e)&&isObject(n))for(var i in n)isObject(n[i])?(e[i]||Object.assign(e,_defineProperty({},i,{})),mergeDeep(e[i],n[i])):Object.assign(e,_defineProperty({},i,n[i]));return mergeDeep.apply(void 0,[e].concat(r))}</script><script>window.mgzUI = window.mgzUI || {};
+(function () {
+    window.setGlobals = function (name, obj) {
+        if (obj && name) {
+            window[name] = obj;
+        }
+    }
+
+    setGlobals('Globals', {"publisherId":"Taboola_newsplace-global-edition-en","key":"Taboola","userId":"crawler","retOrigUrl":true,"language":"en","analyticsUrl":"https://stat.thestartmagazine.com/mediaStatistics/v1.0/web","version":"1.80.0 - Tue Oct 03 2023 08:53:31 GMT+0000 (UTC)","settings":{},"pageId":"404"});
+    Globals.settings = Globals.settings || {};
+    Globals.features = Globals.features || {};
+    if (window.settings_override) {
+        Globals.hasSettingsOverriding = true;
+        Globals.settings = mergeDeep(Globals.settings, window.settings_override);
+    }
+
+    // Update the canonical URL in case it doesn't match the page URL.
+    const canonicalLinkEl = document.querySelector("link[rel=canonical]");
+    if (canonicalLinkEl && canonicalLinkEl.getAttribute('href') !== window.location.href) {
+        canonicalLinkEl.setAttribute('href', window.location.href || '');
+    }
+
+    // Counting user time on page from the earliest possible time
+    var shouldReportTimeOnPage = Globals.settings.time_on_page_enabled;
+    if (shouldReportTimeOnPage) {
+        window.mgzUI = window.mgzUI || {};
+        const isPerformanceSupported = window.performance && typeof window.performance.now === 'function';
+
+        /**
+        * If performance API is supported, will return time elapsed since page load in ms and truncate the number using the bitwise operator,
+         * Otherwise returns 0
+         * @returns {number}
+        */
+        function getPerformanceTimeMark() {
+            if (isPerformanceSupported) {
+                return performance.now() | 0;
+            } else {
+                return 0;
+            }
+        }
+
+        /**
+         Calculates the total time a user spent on the page,
+         and sends a time_on_page event.
+         */
+        function sendTimeOnPageEvent() {
+            const now = Date.now();
+            const performanceNow = getPerformanceTimeMark();
+            const timeOnPage = mgzUI.timeOnPage;
+            const EVENT_NAME = 'time_on_page';
+            let performanceData = {};
+
+            if (timeOnPage.startingTime) {
+                const totalTime = now - timeOnPage.startingTime;
+
+                // Only if performance API is supported, those values will be added to the data obj sent in the event.
+                if (isPerformanceSupported) {
+                    const performanceTotalTime = (performanceNow - timeOnPage.performanceStartingTime);
+
+                    performanceData = {
+                        performanceStartingTime: timeOnPage.performanceStartingTime,
+                        performanceEndTime: performanceNow,
+                        performanceTotalTime: performanceTotalTime
+                    }
+                }
+
+                const data = {
+                    startingTime: timeOnPage.startingTime,
+                    endTime: now,
+                    totalTime: totalTime,
+                    ...performanceData,
+
+                };
+
+                if (window.TRCImpl && navigator && typeof navigator.sendBeacon === 'function') {
+                    // When the 4th argument of this function is set to true, the event will be sent
+                    // using the navigator.sendBeacon API.
+                   TRCImpl.sendAbTestEvent(EVENT_NAME, data, noop, true);
+                } else if (window.AbFire && typeof window.AbFire.sendAbEvent === 'function') {
+                    // Try sending a regular HTTP GET request
+                    AbFire.sendAbEvent(EVENT_NAME, data);
+                }
+                timeOnPage.isActive = false;
+            }
+        }
+
+        /**
+         Assigns a starting timestamp and adds an event listener for when the user leaves the page
+         */
+        function reportTimeOnPage() {
+            mgzUI.timeOnPage = {
+                startingTime: null,
+                performanceStartingTime: null,
+                isActive: true
+            };
+
+            const timeOnPage = mgzUI.timeOnPage;
+            timeOnPage.startingTime = Date.now();
+            timeOnPage.performanceStartingTime = getPerformanceTimeMark();
+
+            window.addEventListener('visibilitychange', function () {
+                var isVisible = document.visibilityState === 'visible';
+                if (!isVisible) {
+                    sendTimeOnPageEvent();
+
+                } else if (!timeOnPage.isActive) {
+                    // Reset the timer when user comes back to the page and an event was sent previously.
+                    timeOnPage.startingTime = Date.now();
+                    timeOnPage.performanceStartingTime = getPerformanceTimeMark();
+                    timeOnPage.isActive = true;
+                }
+            })
+        }
+
+        reportTimeOnPage();
+    }
+})();
+</script><script src="https://cdn.taboola.com/magazine/Production-AP/1.80.0/scripts/mgz_head-1.80.0.min.js"></script><script>// define pubId only for article or video pages where can be taboola interstitial
+if (!Globals.isFeedPage) {
+    Globals.pubId = _.result(Globals.settings, 'article.additional_content.taboola_feed.publisher_id', _.result(Globals.settings, 'providers.Taboola.publisher_id', undefined));
+}
+
+// init dfp immediately in head section when render_gpt_in_head is true
+if (Globals.settings.render_gpt_in_head) {
+    if (window.mgzUI.shouldYieldbirdDisplay) {
+        mgzUI._dfpFailed = false;
+    } else {
+        window.dfpService.initDfpLoad();
+    }
+}
+
+console.log('version:', Globals.version);
+</script><!--For use in case we want interstitial that is not managed by GAM--><!--mixin interstitial()--><!--    div#interstitial--><!--        div.inner--><!--            div.top--><!--                div.close-button.btn(aria-label="Close ad" tabindex="1")--><!--                    div--><!--                        svg(viewBox="0 0 48 48" fill="#FFF")--><!--                            path(d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z")--><!--                            path(d="M0 0h48v48H0z" fill="none")--><!--                div.report-button.btn--><!--                    div.text--><!--                        img(src="https://www.gstatic.com/images/icons/material/system/2x/more_vert_white_48dp.png" alt="")--><!--                div.heading.btn--><!--                    div.text= 'Ad'--><!--            div.intersitial-ad-wrapper--><title>Error 404</title><style type="text/css">body {
+    overflow: hidden;
+}
+
+.feed-top-menu {
+    background-color: black;
+    display: block;
+    padding-top: 10px;
+    margin: 0;
+    text-align: center;
+    height: 4rem;
+    position: relative;
+    font-family: "Whitney";
+    font-weight: lighter;
+}
+
+.ct-icon-back {
+    background: url('https://cdn.taboola.com/magazine/static/themes/lean/assets/home-from-article.png') no-repeat 50% 50%;
+    background-size: contain;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    margin-left: 0.5rem;
+    float: left;
+    box-sizing: inherit;
+}
+
+.feed-top-menu p {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    color: #C5C5C5;
+    font-size: 1.1rem;
+    top: 0.21rem;
+    width: 50%;
+    margin-left: 25%
+}
+
+.ticker-box {
+    height: 2rem;
+    width: 100%;
+    overflow: hidden;
+    background-color: #B52628;
+    display: inline-block;
+}
+
+.ticker-scroller {
+    width: 1000%;
+    display: inline-block;
+}
+
+.ticker__text {
+    display: inline-block;
+    overflow: hidden;
+    animation: 8s linear infinite tick;
+    -webkit-animation: 8s linear infinite tick;
+    position: relative;
+    color: #F9F1EA;
+    font-family: "Whitney Medium";
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    line-height: 1;
+}
+
+.article-header {
+    height: 40%;
+    height: 40vh;
+    margin-top: 0.5rem;
+    width: 65%;
+    overflow: hidden;
+    background: url(https://cdn.taboola.com/magazine/static/themes/lean/assets/404_icon.png) center no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: 17.5%;
+    display: inline-block;
+}
+
+.article-arrow {
+    background: url(https://cdn.taboola.com/magazine/static/themes/lean/assets/swipe_down_icon.png) 50% 0 no-repeat;
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    margin: 10px auto;
+    margin-top: 5px;
+    left: -3px;
+    position: relative;
+}
+
+.article-header img {
+    max-height: 100%;
+    width: 90%;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    position: relative;
+}
+
+.centerd {
+    text-align: center;
+    position: relative;
+    margin: 0;
+    font-family: "Whitney";
+}
+
+.worry-box-text {
+    font-size: 1.4rem;
+    width: 80%;
+    max-width: 300px;
+    color: #323232;
+    font-family: "Whitney Medium";
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.9rem;
+    margin: 0 auto;
+    padding: 0.6rem;
+}
+
+.message-text {
+    min-height: 4rem;
+    max-width: 260px;
+    position: relative;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    font-family: "Whitney Book";
+    font-weight: 400;
+    border-bottom: 5px solid #1B98E0;
+}
+
+.feed-items-box {
+    font-family: "Whitney book";
+    height: 12rem;
+    width: 90%;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 auto;
+    color: #323232;
+}
+
+.feed-items-box__left {
+    width: 50%;
+    float: left;
+}
+
+.feed-items-box__right {
+    width: 50%;
+    float: right;
+}
+
+.img-box__left {
+    height: 6rem !important;
+    width: 100%;
+    float: left;
+    border-left-style: solid;
+    border-left-color: #1B98E0;
+}
+
+.img-box__right {
+    height: 6rem !important;
+    width: 100%;
+    float: right;
+    border-right-style: solid;
+    border-right-color: #1B98E0;
+}
+
+.img-box__left img {
+    width: 85%;
+    height: 6rem !important;
+    margin-left: 10%;
+}
+
+.img-box__right img {
+    width: 85%;
+    height: 6rem !important;
+    margin-left: 5%;
+}
+
+.feed-items-box-summary__left {
+    float: left;
+    width: 85%;
+    margin-left: 10%;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.feed-items-box-summary__right {
+    float: right;
+    width: 85%;
+    margin-right: 10%;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.feed-items-box-summary__right p {
+    margin: 0.5rem 0 0 0;
+}
+
+.feed-items-box-summary__left p {
+    margin: 0.5rem 0 0 0;
+}
+
+.object-fit_cover {
+    -o-object-fit: fill;
+    object-fit: fill;
+}
+
+img[class] {
+    width: 100%;
+}
+
+.image {
+    width: 85%;
+}
+
+.feed-top-menu .more-prev {
+    position: absolute;
+    left: 0;
+}
+
+.back-to-feed {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Whitney";
+    font-weight: normal;
+    border-bottom: 0.2rem solid #C43437;
+    display: table;
+    margin: 0 auto;
+}
+
+a {
+    color: #5E5E5E;
+    text-decoration: none;
+}
+
+@media screen
+and (max-device-width: 320px) {
+    html, body {
+        font-size: 12px;
+    }
+
+    body {
+        overflow: visible;
+    }
+
+    .message-text {
+        min-height: 4rem;
+        max-width: 260px;
+        position: relative;
+        margin: 0 auto;
+        font-size: 2.5rem;
+        font-family: "Whitney Book";
+        font-weight: 400;
+        border-bottom: 5px solid #1B98E0;
+    }
+
+    .feed-items-box {
+        height: 9rem;
+        width: 100%;
+        top: 1rem;
+    }
+
+    .back-to-feed {
+        position: relative;
+        top: 2.5rem;
+    }
+}
+
+@media screen
+and (max-device-width: 360px) {
+    .feed-items-box-summary__left {
+        -webkit-line-clamp: 3;
+    }
+
+    .feed-items-box-summary__right {
+        -webkit-line-clamp: 3;
+    }
+}
+
+@font-face {
+    font-family: "Whitney";
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.taboola.com/magazine/static/fonts/Whitney-Book-ProGkCy.woff2') format('woff2'),
+    url("https://cdn.taboola.com/magazine/static/fonts/Whitney-Book-ProGkCy.otf") format("opentype");
+
+}
+
+@font-face {
+    font-family: "Whitney";
+    font-weight: lighter;
+    font-style: normal;
+    src: url("https://cdn.taboola.com/magazine/static/fonts/Whitney-Light-ProGkCy.woff2") format("woff2"),
+    url("https://cdn.taboola.com/magazine/static/fonts/Whitney-Light-ProGkCy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Whitney Book";
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://cdn.taboola.com/magazine/static/fonts/Whitney-Book-ProGkCy.woff2") format("woff2"),
+    url("https://cdn.taboola.com/magazine/static/fonts/Whitney-Book-ProGkCy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Whitney Medium";
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://cdn.taboola.com/magazine/static/fonts/Whitney-Medium-ProGkCy.woff2") format("woff2"),
+    url("https://cdn.taboola.com/magazine/static/fonts/Whitney-Medium-ProGkCy.otf") format("opentype");
+}
+
+@keyframes tick {
+    from {
+        transform: translate3d(0, 0, 1px);
+    }
+    to {
+        transform: translate3d(-100%, 0, 1px)
+    }
+}
+
+@-webkit-keyframes tick {
+    0% {
+        -webkit-transform: translate3d(0, 0, 1px);
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 1px)
+    }
+}
+</style></head><body><script>if (Globals.pageViewParams) {
+    window.Env.init();
+}
+mgzUI.sendEvent404();
+</script><div class="feed-top-menu"><a class="more-prev" href="/feed/summary?userId=crawler&amp;language=en&amp;publisherId=Taboola_newsplace-global-edition-en&amp;key=Taboola"><i class="ct-icon-back"></i></a><p class="centered">OOPS! SOMETHING WENT WRONG</p></div><div class="article-header"></div><div class="message-text centerd">Page not found</div><div class="worry-box-text">Not to worry, there's plenty more to see</div><div class="article-arrow"></div><div class="feed-items-box"><a class="feed-items-box__left" href="https://www.thestartmagazine.com/article/de02b79e-eb1e-bb04-eea3-7a7958aabc58?userId=crawler&amp;language=en&amp;publisherId=Taboola_newsplace-global-edition-en&amp;key=Taboola"><div class="img-box__left"><div class="image"><img class="object-fit_cover" src="https://image.thestartmagazine.com/upload/d_magazineDefault.jpg,c_fill,g_face:auto,fl_lossy,q_70,w_480/v1696520374/reuters_tag:reuters.com%2C2023:newsml_LYNXMPEJ940NG:2.jpg"/></div></div><div class="feed-items-box-summary__left"><p>Analysis-Hunt for suspect jet engine parts spurs call for regulation</p></div></a><a class="feed-items-box__right" href="https://www.thestartmagazine.com/article/28f3d677-5e3f-6bf9-a467-470939734aa5?userId=crawler&amp;language=en&amp;publisherId=Taboola_newsplace-global-edition-en&amp;key=Taboola"><div class="img-box__right"><div class="image"><img class="object-fit_cover" src="https://image.thestartmagazine.com/fetch/d_magazineDefault.jpg,c_fill,g_face:auto,fl_lossy,q_70,w_480/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F231004155404-03-senator-dianne-feinstein-lies-in-state-video-synd-2.jpg"/></div></div><div class="feed-items-box-summary__right"><p>Dianne Feinstein, longtime California senator, remembered at funeral service</p></div></a></div></body></html>

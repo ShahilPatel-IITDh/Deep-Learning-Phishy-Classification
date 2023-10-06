@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>IPRIFY.COM -- IP Analytics and fraud prevention system</title>
+    <meta name="description"
+          content="See the IP address assigned to your device. Show my IP city, state, and country. What Is An IP Address? IPv4, IPv6, public IP explained."/>
+    <meta content="iprify.com" name="author"/>
+    <meta content="iprify.com" name="publisher"/>
+    <meta content="iprify.com" name="copyright"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="content-language" content="ru"/>
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <meta property="og:title"
+          content="IPRIFY.COM -- IP Analytics and fraud prevention system">
+    <meta property="og:description"
+          content="IPRIFY.COM -- IP Analytics and fraud prevention system">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="#">
+    <meta property="og:site_name"
+          content="IPRIFY.COM -- IP Analytics and fraud prevention system">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<main id="app">
+    <section class="information">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="tabl tabl-ip">
+                        <div class="tabl-up d-flex">
+                            <div class="tabl-up__left d-md-flex">
+                                <p class="my-ip">
+                                    My IP:
+                                </p>
+                                <p class="ip">
+                                    <template
+                                            v-if="info && info.ipInfo && info.ipInfo.traits && info.ipInfo.traits.ip_address">
+                                        {{ info.ipInfo.traits.ip_address }}
+                                    </template>
+                                    <!--185.194.143.29-->
+                                </p>
+                            </div>
+                            <!--a href="#" class="hide-ip">
+                                Hide IP
+                            </a-->
+                        </div>
+                        <div class="tabl-down">
+                            <ul>
+                                <li class="tabl-down__punkt d-flex">
+                                    <div class="name-ip__block">
+                                        <p class="name-ip">
+                                            Location:
+                                        </p>
+                                    </div>
+                                    <div class="tabl-img">
+                                        <template
+                                                v-if="info && info.ipInfo && info.ipInfo.country && info.ipInfo.country.code">
+                                            {{ info.ipInfo.country.code }}
+                                        </template>
+                                        <!--<img src="img/ip-icon1.png" alt="img">-->
+                                    </div>
+                                    <p class="ip-desc">
+                                        <template
+                                                v-if="info && info.ipInfo && info.ipInfo.country && info.ipInfo.country.names && info.ipInfo.country.names.en">
+                                            {{ info.ipInfo.country.names.en }},
+                                            <template v-if="info.ipInfo.city && info.ipInfo.city.en != ''">
+                                                {{ info.ipInfo.city.en }}
+                                            </template>
+                                            <template
+                                                    v-if="(!info.ipInfo.city || !info.ipInfo.city.en != '') && info.ipInfo.subdivision && info.ipInfo.subdivision.en != ''">
+                                                {{ info.ipInfo.subdivision.en }}
+                                            </template>
+                                        </template>
+                                        <span v-else>N/A</span>
+                                        <!--Germany (DE), <span>N/A</span>-->
+                                    </p>
+                                </li>
+                                <li class="tabl-down__punkt d-flex">
+                                    <div class="name-ip__block">
+                                        <p class="name-ip">
+                                            ISP:
+                                        </p>
+                                    </div>
+                                    <div class="tabl-img">
+                                        <img src="img/ip-icon2.png" alt="img">
+                                    </div>
+                                    <p class="ip-desc">
+                                        <template
+                                                v-if="info && info.ipInfo && info.ipInfo.traits && info.ipInfo.traits.isp">
+                                            {{ info.ipInfo.traits.isp }}
+                                        </template>
+                                        <span v-else>N/A</span>
+                                        <!--netcup GmbH-->
+                                    </p>
+                                </li>
+                                <li class="tabl-down__punkt d-flex">
+                                    <div class="name-ip__block">
+                                        <p class="name-ip">
+                                            Hostname:
+                                        </p>
+                                    </div>
+                                    <div class="tabl-img">
+                                        <img src="img/ip-icon3.png" alt="img">
+                                    </div>
+                                    <p class="ip-desc">
+                                        <template
+                                                v-if="info && info.ipInfo && info.ipInfo.traits && info.ipInfo.traits.domain">
+                                            {{ info.ipInfo.traits.domain }}
+                                        </template>
+                                        <span v-else>N/A</span>
+                                        <!--host.invalid-->
+                                    </p>
+                                </li>
+                                <li class="tabl-down__punkt d-flex">
+                                    <div class="name-ip__block">
+                                        <p class="name-ip">
+                                            OS:
+                                        </p>
+                                    </div>
+                                    <div class="tabl-img">
+                                        <!--<img src="img/ip-icon4.png" alt="img">-->
+                                    </div>
+                                    <p class="ip-desc">
+                                        <template v-if="info && info.os && info.os.browser">
+                                            {{ info.os.browser }}
+                                            <div class="little-info">
+                                                <template v-if="info.os.server">
+                                                    ({{ info.os.server }})
+                                                </template>
+                                                <template v-if="info.os.js">
+                                                    ({{ info.os.js }})
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <span v-else>N/A</span>
+                                        <!--Win7-->
+                                    </p>
+                                </li>
+                                <li class="tabl-down__punkt d-flex">
+                                    <div class="name-ip__block">
+                                        <p class="name-ip">
+                                            Browser:
+                                        </p>
+                                    </div>
+                                    <div class="tabl-img">
+                                        <!--<img src="img/ip-icon5.png" alt="img">-->
+                                    </div>
+                                    <p class="ip-desc">
+                                        <template v-if="info && info.browser && info.browser.browser">
+                                            {{ info.browser.browser }}
+                                            <div class="little-info" v-if="info.browser.js">({{ info.browser.js }})
+                                            </div>
+                                        </template>
+                                        <span v-else>N/A</span>
+                                        <!--Chrome 42.0-->
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="tabl tabl-ip"> <!-class: tabl-cloak-->
+                        <div class="tabl-up d-flex">
+                            <!--img src="img/icon1-1.svg" alt="img" class="tabl-up__face tabl-up__face-one">
+                            <img src="img/icon1-2.svg" alt="img" class="tabl-up__face tabl-up__face-two d-none">
+                            <img src="img/icon1-3.svg" alt="img" class="tabl-up__face tabl-up__face-three d-none"-->
+                            <div class="cloak-info">
+                                <p class="cloak-info__title">
+                                    Cloaking<!--: <span>100</span>%-->
+                                </p>
+                                <!--p class="cloak-info__text">
+                                    Too much is known about you!
+                                </p-->
+                            </div>
+                            <!--a href="#" class="tabl-cloak__but">
+                                <img src="img/question1.png" alt="question">
+                            </a-->
+                        </div>
+                        <div class="popup-problem">
+                            <p>
+
+                            </p>
+                        </div>
+                        <div class="tabl-down">
+                            <ul>
+                                <li class="tabl-down__punkt d-flex">
+                                    <div class="tabl-name__img">
+                                        <img src="img/cloak-icon1.png" alt="img">
+                                    </div>
+                                    <div class="name-ip__block">
+                                        <p class="name-ip">
+                                            DNS:
+                                        </p>
+                                    </div>
+                                    <div class="tabl-img">
+                                        <img src="img/cloak-icon5.png" alt="img">
+                                    </div>
+
+                                    <p class="ip-desc" :class="{ dnsleak:dnaLeakFirst }" @click="moveToDNSLeak">
+                                        <template v-if="dnaLeakFirst">
+                                            {{ dnaLeakFirst.ip }}
+                                            <sup class="little-info" v-if="this.dnsLeak && this.dnsLeak.length > 1">
+                                                {{ this.dnsLeak.length }}
+                                            </sup>
+
+                                            <template v-if="dnaLeakFirst.countryCode">
+                                                ({{ dnaLeakFirst.countryCode }})
+                                            </template>
+                                        </template>
+
+                                        <template v-if="dnsLeakIsLoading">Loading...</template>
+                                        <span v-if="!dnsLeakIsLoading && !dnaLeakFirst">N/A</span>
+                                    </p>
+                                </li>
+                                <li class="tabl-down__punkt d-flex">
+                                    <div class="tabl-name__img">
+                                        <img src="img/cloak-icon2.png" alt="img">
+                                    </div>
+                                    <div class="name-ip__block">
+                                        <p class="name-ip">
+                                            Proxy:
+                                        </p>
+                                    </div>
+                                    <div class="tabl-img">
+                                        <!--<img src="img/cloak-icon6.png" alt="img">-->
+                                    </div>
+                                    <p class="ip-desc">
+                                        <span>N/A</span>
+                                        <!--No-->
+                                    </p>
+                                </li>
+                                <li class="tabl-down__punkt d-flex">
+                                    <div class="tabl-name__img">
+                                        <img src="img/cloak-icon3.png" alt="img">
+                                    </div>
+                                    <div class="name-ip__block">
+                                        <p class="name-ip">
+                                            Anonymizer:
+                                        </p>
+                                    </div>
+                                    <div class="tabl-img">
+                                        <!--<img src="img/cloak-icon6.png" alt="img">-->
+                                    </div>
+                                    <p class="ip-desc">
+                                        <span>N/A</span>
+                                        <!--No-->
+                                    </p>
+                                </li>
+                                <li class="tabl-down__punkt d-flex">
+                                    <div class="tabl-name__img">
+                                        <img src="img/cloak-icon4.png" alt="img">
+                                    </div>
+                                    <div class="name-ip__block">
+                                        <p class="name-ip">
+                                            Blacklist:
+                                        </p>
+                                    </div>
+                                    <div class="tabl-img">
+                                        <!--<img src="img/cloak-icon6.png" alt="img">-->
+                                    </div>
+                                    <p class="ip-desc" :class="{ blacklist:blackListStat }" @click="moveToBlackList">
+                                        <template v-if="blackListStat">
+                                            {{ blackListStat.listedCount }} / {{ blackListStat.totalCount }}
+                                        </template>
+                                        <template v-if="blackListIsLoading">Loading...</template>
+                                        <span v-if="!blackListIsLoading && !blackListStat">N/A</span>
+                                    </p>
+                                </li>
+                                <li class="tabl-down__punkt d-flex">
+                                    <div class="tabl-name__img">
+                                        <!-img src="img/cloak-icon4.png" alt="img"-->
+                                    </div>
+                                    <div class="name-ip__block">
+                                        <p class="name-ip">
+                                            2-Way Ping:
+                                        </p>
+                                    </div>
+                                    <div class="tabl-img">
+                                        <!--<img src="img/cloak-icon6.png" alt="img">-->
+                                    </div>
+                                    <p class="ip-desc">
+                                        <template v-if="checkTunnelStatus">
+                                            {{ checkTunnelStatus }}
+                                        </template>
+                                        <template v-if="checkTunnelIsLoading">Loading...</template>
+                                        <span v-if="!checkTunnelIsLoading && !checkTunnelStatus">N/A</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="transition-version d-flex">
+                        <a href="#" class="lite active">
+                            Lite
+                        </a>
+                        <a href="#" class="extended">
+                            Extended version
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="version">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="version-panel version-panel__one">
+                        <div class="version-panel__info version-panel__info-one">
+                            <div class="version-left">
+                                <div class="panel panel-one">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/lite/icon100.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Location
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#" class="problem-a">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Country:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <template
+                                                            v-if="info && info.ipInfo && info.ipInfo.country && info.ipInfo.country.code">
+                                                        {{ info.ipInfo.country.code }}
+                                                    </template>
+                                                    <!--img src="img/lite/icon1.png" alt="img"-->
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.country && info.ipInfo.country.names && info.ipInfo.country.names.en">
+                                                    {{ info.ipInfo.country.names.en }}
+                                                    <template
+                                                            v-if="info.ipInfo.country.code">
+                                                        ({{ info.ipInfo.country.code }})
+                                                    </template>
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Continent:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon30.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.continent && info.ipInfo.continent.names && info.ipInfo.continent.names.en">
+                                                    {{ info.ipInfo.continent.names.en }}
+                                                    <template
+                                                            v-if="info.ipInfo.continent.code">
+                                                        ({{ info.ipInfo.continent.code }})
+                                                    </template>
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Region:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/lite/icon2.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.subdivision && info.ipInfo.subdivision.names && info.ipInfo.subdivision.names.en">
+                                                    {{ info.ipInfo.subdivision.names.en }}
+                                                    <template
+                                                            v-if="info.ipInfo.subdivision.code">
+                                                        ({{ info.ipInfo.subdivision.code }})
+                                                    </template>
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    City:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/lite/icon3.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.city && info.ipInfo.city.en">
+                                                    {{ info.ipInfo.city.en }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    ZIP:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/lite/icon4.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.postal">
+                                                    {{ info.ipInfo.postal }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Latitude:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon34.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.location && info.ipInfo.location.latitude">
+                                                    {{ info.ipInfo.location.latitude }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Longitude:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon34.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.location && info.ipInfo.location.longitude">
+                                                    {{ info.ipInfo.location.longitude }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Map:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon35.png" alt="img">
+                                                </div>
+                                                <a href="#" @click="showMap" class="panel-item__but panel-item__but_map"
+                                                   v-if="info && info.ipInfo && info.ipInfo.location && info.ipInfo.location.latitude && info.ipInfo.location.longitude">
+                                                    Show
+                                                </a>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+
+                                                <div style="display: none;">
+                                                    <div class="box-modal" id="exampleModal__map">
+                                                        <div class="box-modal_close arcticmodal-close">
+                                                            <span class="close"></span>
+                                                        </div>
+                                                        <iframe v-if="info && info.ipInfo && info.ipInfo.location && info.ipInfo.location.latitude && info.ipInfo.location.longitude"
+                                                                width="600" height="500" id="gmap_canvas"
+                                                                :src="'https://maps.google.com/maps?q='+info.ipInfo.location.latitude+'%20'+ info.ipInfo.location.longitude+'&t=&z=13&ie=UTF8&iwloc=&output=embed'"
+                                                                frameborder="0" scrolling="no" marginheight="0"
+                                                                marginwidth="0"></iframe>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-two">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/lite/icon101.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Language
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Header:
+                                                </p>
+                                                <div class="back d-flex">
+                                                    <p class="panel-item__desc"
+                                                       v-if="info && info.headers && info.headers['Accept-Language']"
+                                                       v-text="info.headers['Accept-Language'].join(' ')"></p>
+                                                    <p class="panel-item__desc na" v-else>
+                                                        N/A
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    JavaScript:
+                                                </p>
+                                                <div class="back d-flex">
+                                                    <p class="panel-item__desc"
+                                                       v-if="localInfo && localInfo.browser && localInfo.browser.languages && localInfo.browser.languages.all"
+                                                       v-text="localInfo.browser.languages.all.join(', ')"></p>
+                                                    <p class="panel-item__desc na" v-else>
+                                                        N/A
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-three">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/lite/icon102.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Time
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Time zone:
+                                                </p>
+                                                <div class="back d-flex">
+                                                    <div class="panel-item__img">
+                                                        <img src="img/lite/icon10.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc"
+                                                       v-if="info && info.ipInfo && info.ipInfo.location && info.ipInfo.location.time_zone">
+                                                        {{ info.ipInfo.location.time_zone }}
+                                                    </p>
+                                                    <p class="panel-item__desc na" v-else>
+                                                        N/A
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Local:
+                                                </p>
+                                                <div class="back d-flex">
+                                                    <div class="panel-item__img">
+                                                        <img src="img/lite/icon11.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc"
+                                                       v-if="info && info.ipTime && info.ipTime.server">
+                                                        {{ info.ipTime.server }}
+                                                    </p>
+                                                    <p class="panel-item__desc na" v-else>
+                                                        N/A
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    System:
+                                                </p>
+                                                <div class="back d-flex">
+                                                    <div class="panel-item__img">
+                                                        <img src="img/lite/icon11.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc"
+                                                       v-if="info && info.ipTime && info.ipTime.js">
+                                                        {{ info.ipTime.js }}
+                                                    </p>
+                                                    <p class="panel-item__desc na" v-else>
+                                                        N/A
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="version-right">
+                                <div class="panel panel-four panel-highlight">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/lite/icon103.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Browser
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Browser:
+                                                </p>
+                                                <div class="back d-flex">
+                                                    <p class="panel-item__desc"
+                                                       v-if="info && info.headers && info.headers['User-Agent']"
+                                                       v-text="info.headers['User-Agent'].join(' ')"></p>
+                                                    <p class="panel-item__desc na" v-else>
+                                                        N/A
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="panel-item last d-flex">
+                                                <p class="panel-item__name">
+                                                    JavaScript:
+                                                </p>
+                                                <div class="back d-flex">
+                                                    <p class="panel-item__desc"
+                                                       v-if="localInfo && localInfo.browser && localInfo.browser.ua">
+                                                        {{ localInfo.browser.ua }}
+                                                    </p>
+                                                    <p class="panel-item__desc na" v-else>
+                                                        N/A
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-five">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/lite/icon104.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Javascript
+                                        </p>
+                                        <div class="on d-flex">
+                                            <div class="on-img">
+                                                <img src="img/lite/icon14.png" alt="enabled" class="enabled">
+                                                <img src="img/lite/icon15.png" alt="enabled" class="disabled"
+                                                     :class="{'d-none': true}">
+                                            </div>
+                                            <p class="active">
+                                                enabled
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-nine">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/lite/icon108.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            WebRTC
+                                        </p>
+                                        <div class="on d-flex">
+                                            <div class="on-img">
+                                                <img src="img/lite/icon14.png" alt="enabled" class="enabled"
+                                                     :class="{'d-none': localWebrtcLeak.length == 0}">
+                                                <img src="img/lite/icon15.png" alt="enabled" class="disabled"
+                                                     :class="{'d-none': localWebrtcLeak.length != 0}">
+                                            </div>
+                                            <p class="active">
+                                                enabled
+                                            </p>
+                                        </div>
+                                        <a href="#" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    IP addresses:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/lite/icon16.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="localWebrtcLeak"
+                                                   v-text="localWebrtcLeak.join(', ')"></p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="more d-xl-flex">
+                            <p>
+                                Want to know more?
+                            </p>
+                            <a href="#">
+                                Use extended version
+                            </a>
+                        </div>
+                    </div>
+                    <div class="version-panel version-panel__two" :class="{ 'd-none': true }">
+                        <div class="version-panel__info version-panel__info-two">
+                            <div class="version-left">
+                                <div class="panel panel-ipfull">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/extended/icon101.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            IP address
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Hostname:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon1.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.traits && info.ipInfo.traits.domain">
+                                                    {{ info.ipInfo.traits.domain }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Reversed:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon1.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.reverseIP">
+                                                    {{ info.ipInfo.reverseIP }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    IP range:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon3.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.traits && info.ipInfo.traits.network">
+                                                    {{ info.ipInfo.traits.network }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    ASN:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon4.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.traits && info.ipInfo.traits.autonomous_system_number">
+                                                    {{ info.ipInfo.traits.autonomous_system_number }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    AS:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon5.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.traits && info.ipInfo.traits.autonomous_system_organization">
+                                                    {{ info.ipInfo.traits.autonomous_system_organization }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    ISP:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon4.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.traits && info.ipInfo.traits.isp">
+                                                    {{ info.ipInfo.traits.isp }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Organization:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon5.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.traits && info.ipInfo.traits.organization">
+                                                    {{ info.ipInfo.traits.organization }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Type:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon5.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.traits && info.ipInfo.traits.user_type">
+                                                    {{ info.ipInfo.traits.user_type }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-ports">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/extended/icon101.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Opened ports
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul v-if="ports">
+                                            <li class="panel-item d-flex" v-for="port in ports"
+                                                :key="port">
+                                                <p class="panel-item__name">
+                                                    {{ port }}
+                                                </p>
+                                                <p class="panel-item__desc" v-text="portToName(port)"></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-interactive">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/extended/icon102.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Interactive detection
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul>
+                                            <li class="panel-item d-md-flex">
+                                                <div class="panel-item__ip-one d-flex">
+                                                    <p class="panel-item__name bold">
+                                                        IP address:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon6.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc"
+                                                       v-if="info && info.ipInfo && info.ipInfo.traits && info.ipInfo.traits.ip_address">
+                                                        {{ info.ipInfo.traits.ip_address }}
+                                                    </p>
+                                                    <p class="panel-item__desc na" v-else>
+                                                        N/A
+                                                    </p>
+                                                </div>
+                                                <div class="panel-item__ip-two d-flex"
+                                                     v-if="info && info.ipInfo && info.ipInfo.country">
+                                                    <div class="panel-item__img panel-item__img-two"
+                                                         v-if="info.ipInfo.country.code">
+                                                        <!--img src="img/extended/icon7.png" alt="img"-->
+                                                        {{ info.ipInfo.country.code }}
+                                                    </div>
+                                                    <p class="panel-item__desc" v-if="info.ipInfo.country.names.en">
+                                                        {{ info.ipInfo.country.names.en }}
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    WebRTC:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon9.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="localWebrtcLeak"
+                                                   v-text="localWebrtcLeak.join(', ')"></p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <div class="ul-two d-flex">
+                                            <p class="ul-name">
+                                                DNS <span v-if="dnsLeakIsLoading">Loading...</span>
+                                            </p>
+                                        </div>
+                                        <ul>
+                                            <li class="panel-item d-flex" v-for="item in dnsLeak" :key="item.ip">
+                                                <p class="panel-item__name">
+                                                    {{ item.ip }}
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <!--img src="img/extended/icon7.png" alt="img"-->
+                                                    {{ item.countryCode }}
+                                                </div>
+                                                <p class="panel-item__desc" v-if="item.country && item.country.en">
+                                                    {{ item.country.en }}
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <div class="ul-two d-flex">
+                                            <p class="ul-name">
+                                                OS
+                                            </p>
+                                        </div>
+                                        <ul class="panel-item__os">
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Headers:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <!--img src="img/extended/icon12.png" alt="img"-->
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.os && info.os.browser">
+                                                    {{ info.os.browser }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    JavaScript:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <!--img src="img/extended/icon13.png" alt="img"-->
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.os && info.os.js">
+                                                    {{ info.os.js }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    TCP/IP:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <!--img src="img/extended/icon14.png" alt="img"-->
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.os && info.os.server">
+                                                    {{ info.os.server }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <div class="ul-two d-flex">
+                                            <p class="ul-name">
+                                                Language
+                                            </p>
+                                        </div>
+                                        <ul class="panel-item__lang">
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Header:
+                                                </p>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.headers && info.headers['Accept-Language']"
+                                                   v-text="info.headers['Accept-Language'].join(' ')"></p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    JavaScript:
+                                                </p>
+                                                <p class="panel-item__desc"
+                                                   v-if="localInfo && localInfo.browser && localInfo.browser.languages && localInfo.browser.languages.all"
+                                                   v-text="localInfo.browser.languages.all.join(', ')"></p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-screen">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/extended/icon103.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Screen
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <template v-if="localInfo && localInfo.browser && localInfo.browser.screen">
+                                            <ul>
+                                                <li class="panel-item d-flex">
+                                                    <p class="panel-item__name">
+                                                        colorDepth:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon18.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc">
+                                                        {{ valOrNA(localInfo.browser.screen.colorDepth) }}
+                                                    </p>
+                                                </li>
+                                                <li class="panel-item d-flex">
+                                                    <p class="panel-item__name">
+                                                        pixelDepth:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon18.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc">
+                                                        {{ valOrNA(localInfo.browser.screen.pixelDepth) }}
+                                                    </p>
+                                                </li>
+                                                <li class="panel-item d-flex">
+                                                    <p class="panel-item__name">
+                                                        height:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon19.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc">
+                                                        {{ valOrNA(localInfo.browser.screen.height) }}
+                                                    </p>
+                                                </li>
+                                                <li class="panel-item d-flex">
+                                                    <p class="panel-item__name">
+                                                        width:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon20.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc">
+                                                        {{ valOrNA(localInfo.browser.screen.width) }}
+                                                    </p>
+                                                </li>
+                                                <li class="panel-item d-flex">
+                                                    <p class="panel-item__name">
+                                                        availHeight:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon21.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc">
+                                                        {{ valOrNA(localInfo.browser.screen.availHeight) }}
+                                                    </p>
+                                                </li>
+                                                <li class="panel-item d-flex">
+                                                    <p class="panel-item__name">
+                                                        availWidth:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon22.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc">
+                                                        {{ valOrNA(localInfo.browser.screen.availWidth) }}
+                                                    </p>
+                                                </li>
+                                                <li class="panel-item d-flex">
+                                                    <p class="panel-item__name">
+                                                        top:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon23.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc">
+                                                        {{ valOrNA(localInfo.browser.screen.top) }}
+                                                    </p>
+                                                </li>
+                                                <li class="panel-item d-flex">
+                                                    <p class="panel-item__name">
+                                                        left:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon24.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc">
+                                                        {{ valOrNA(localInfo.browser.screen.left) }}
+                                                    </p>
+                                                </li>
+                                                <li class="panel-item d-flex">
+                                                    <p class="panel-item__name">
+                                                        availTop:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon25.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc">
+                                                        {{ valOrNA(localInfo.browser.screen.availTop) }}
+                                                    </p>
+                                                </li>
+                                                <li class="panel-item d-flex">
+                                                    <p class="panel-item__name">
+                                                        availLeft:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon26.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc">
+                                                        {{ valOrNA(localInfo.browser.screen.availLeft) }}
+                                                    </p>
+                                                </li>
+                                                <li class="panel-item d-flex">
+                                                    <p class="panel-item__name">
+                                                        window size:
+                                                    </p>
+                                                    <div class="panel-item__img">
+                                                        <img src="img/extended/icon27.png" alt="img">
+                                                    </div>
+                                                    <span class="panel-item__desc">
+                                                    {{localInfo.browser.screen.win.width}}x{{localInfo.browser.screen.win.height}}
+                                                    ({{localInfo.browser.screen.width}}x{{localInfo.browser.screen.height}})
+                                                </span>
+                                                </li>
+                                            </ul>
+                                        </template>
+                                    </div>
+                                </div>
+                                <div class="panel panel-headers">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/extended/icon104.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            HTTP headers
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul v-if="info && info.headers">
+                                            <li class="panel-item d-flex" v-for="(value, name) in info.headers"
+                                                :key="name">
+                                                <p class="panel-item__name">
+                                                    {{ name }}
+                                                </p>
+                                                <p class="panel-item__desc" v-text="value.join(' ')"></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-blacklist">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/extended/icon104.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Black list
+                                        </p>
+                                        <p class="info">
+                                            <template v-if="blackListStat">
+                                                {{ blackListStat.listedCount }} / {{ blackListStat.totalCount }}
+                                            </template>
+                                            <template v-if="blackListIsLoading">Loading...</template>
+                                            <template v-if="!blackListIsLoading && !blackListStat">N/A</template>
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul v-if="blackList && blackList.length > 0">
+                                            <li class="panel-item d-flex" v-for="item in blackList"
+                                                :key="item.list">
+                                                <p class="panel-item__name">
+                                                    {{ item.list }}
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/lite/icon15.png" v-if="item.listed">
+                                                    <img src="img/lite/icon14.png" v-else>
+                                                </div>
+                                                <p class="panel-item__desc" v-if="item.listed">{{ item.text }}</p>
+                                                <p class="panel-item__desc" v-else>not listed</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="version-right">
+                                <div class="panel panel-six">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/extended/icon106.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Location
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Country:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <template
+                                                            v-if="info && info.ipInfo && info.ipInfo.country && info.ipInfo.country.code">
+                                                        {{ info.ipInfo.country.code }}
+                                                    </template>
+                                                    <!--img src="img/lite/icon1.png" alt="img"-->
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.country && info.ipInfo.country.names && info.ipInfo.country.names.en">
+                                                    {{ info.ipInfo.country.names.en }}
+                                                    <template
+                                                            v-if="info.ipInfo.country.code">
+                                                        ({{ info.ipInfo.country.code }})
+                                                    </template>
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Continent:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon30.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.continent && info.ipInfo.continent.names && info.ipInfo.continent.names.en">
+                                                    {{ info.ipInfo.continent.names.en }}
+                                                    <template
+                                                            v-if="info.ipInfo.continent.code">
+                                                        ({{ info.ipInfo.continent.code }})
+                                                    </template>
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Region:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/lite/icon2.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.subdivision && info.ipInfo.subdivision.names && info.ipInfo.subdivision.names.en">
+                                                    {{ info.ipInfo.subdivision.names.en }}
+                                                    <template
+                                                            v-if="info.ipInfo.subdivision.code">
+                                                        ({{ info.ipInfo.subdivision.code }})
+                                                    </template>
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    City:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/lite/icon3.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.city && info.ipInfo.city.en">
+                                                    {{ info.ipInfo.city.en }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    ZIP:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/lite/icon4.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.postal">
+                                                    {{ info.ipInfo.postal }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Latitude:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon34.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.location && info.ipInfo.location.latitude">
+                                                    {{ info.ipInfo.location.latitude }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Longitude:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon34.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc"
+                                                   v-if="info && info.ipInfo && info.ipInfo.location && info.ipInfo.location.longitude">
+                                                    {{ info.ipInfo.location.longitude }}
+                                                </p>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Map:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon35.png" alt="img">
+                                                </div>
+                                                <a href="#" @click="showMap" class="panel-item__but panel-item__but_map"
+                                                   v-if="info && info.ipInfo && info.ipInfo.location && info.ipInfo.location.latitude && info.ipInfo.location.longitude">
+                                                    Show
+                                                </a>
+                                                <p class="panel-item__desc na" v-else>
+                                                    N/A
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-seven panel-highlight">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/lite/icon102.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Time
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Time zone:
+                                                </p>
+                                                <div class="back d-flex">
+                                                    <div class="panel-item__img">
+                                                        <img src="img/lite/icon10.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc"
+                                                       v-if="info && info.ipInfo && info.ipInfo.location && info.ipInfo.location.time_zone">
+                                                        {{ info.ipInfo.location.time_zone }}
+                                                    </p>
+                                                    <p class="panel-item__desc na" v-else>
+                                                        N/A
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Local:
+                                                </p>
+                                                <div class="back d-flex">
+                                                    <div class="panel-item__img">
+                                                        <img src="img/lite/icon11.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc"
+                                                       v-if="info && info.ipTime && info.ipTime.server">
+                                                        {{ info.ipTime.server }}
+                                                    </p>
+                                                    <p class="panel-item__desc na" v-else>
+                                                        N/A
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    System:
+                                                </p>
+                                                <div class="back d-flex">
+                                                    <div class="panel-item__img">
+                                                        <img src="img/lite/icon11.png" alt="img">
+                                                    </div>
+                                                    <p class="panel-item__desc"
+                                                       v-if="info && info.ipTime && info.ipTime.js">
+                                                        {{ info.ipTime.js }}
+                                                    </p>
+                                                    <p class="panel-item__desc na" v-else>
+                                                        N/A
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Sunrise:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon39.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc">
+                                                    N/A
+                                                </p>
+                                            </li>
+                                            <li class="panel-item d-flex">
+                                                <p class="panel-item__name">
+                                                    Sunset:
+                                                </p>
+                                                <div class="panel-item__img">
+                                                    <img src="img/extended/icon39.png" alt="img">
+                                                </div>
+                                                <p class="panel-item__desc">
+                                                    N/A
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-eight">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/extended/icon108.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Plugins
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul v-if="localInfo && localInfo.browser && localInfo.browser.plugins">
+                                            <li class="panel-item d-flex" v-for="v in localInfo.browser.plugins"
+                                                :key="v.name+v.filename">
+                                                <p class="panel-item__name">
+                                                    {{ v.name }}
+                                                </p>
+                                                <p class="panel-item__desc"
+                                                   v-text="v.description + ' (' + v.filename + ')'"></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-fp">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/extended/icon109.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Fingerprints
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul v-if="fp">
+                                            <li class="panel-item d-flex" v-for="v in fp"
+                                                :key="v.name">
+                                                <p class="panel-item__name">
+                                                    {{ v.name }}
+                                                </p>
+                                                <p class="panel-item__desc" v-text="v.value"></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-webglinfo">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/extended/icon109.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            GPU info
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat.
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul v-if="fpRaw && fpRaw.webgl && fpRaw.webgl.info">
+                                            <li class="panel-item d-flex" v-for="(value, name) in fpRaw.webgl.info"
+                                                :key="name">
+                                                <p class="panel-item__name">
+                                                    {{ name }}
+                                                </p>
+                                                <p class="panel-item__desc" v-text="value"></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel panel-fonts">
+                                    <div class="panel-up d-flex">
+                                        <div class="panel-img">
+                                            <img src="img/extended/icon109.png" alt="img">
+                                        </div>
+                                        <p class="panel__name">
+                                            Fonts
+                                        </p>
+                                        <div class="problem d-none">
+                                            <p>
+                                                Problem
+                                            </p>
+                                            <a href="#">
+                                                <img src="img/question2.png" alt="problem">
+                                            </a>
+                                        </div>
+                                        <p class="ok">
+                                            Ok
+                                        </p>
+                                        <a href="#!" class="open">
+                                            <img src="img/arrow.png" alt="arrow" class="up d-none">
+                                            <img src="img/arrow.png" alt="arrow" class="down">
+                                        </a>
+                                    </div>
+                                    <div class="popup-problem">
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="panel-down">
+                                        <ul v-if="fpRaw && fpRaw.fonts && fpRaw.fonts.list">
+                                            <li class="panel-item d-flex" v-for="value in fpRaw.fonts.list"
+                                                :key="value">
+                                                <p class="panel-item__desc" v-text="value"></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="more d-flex">
+                            <a href="#">
+                                Use lite version
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<section class="pre-footer">
+    <div class="slider d-md-none">
+        <div class="slide-one">
+            <img src="img/cat1.png" alt="cat">
+        </div>
+        <div class="slide-one">
+            <img src="img/cat2.png" alt="cat">
+        </div>
+        <div class="slide-one">
+            <img src="img/cat3.png" alt="cat">
+        </div>
+        <div class="slide-one">
+            <img src="img/cat4.png" alt="cat">
+        </div>
+        <div class="slide-one">
+            <img src="img/cat5.png" alt="cat">
+        </div>
+        <div class="slide-one">
+            <img src="img/cat6.png" alt="cat">
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js?v=2"></script>
+<script src="js/app.js?v=2"></script>
+</body>
+</html>
