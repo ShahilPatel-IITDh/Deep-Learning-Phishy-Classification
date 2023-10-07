@@ -12,6 +12,9 @@ import logging
 # Import the module to get the favicon of the website
 from getLogo import scrape_favicon
 
+# Check the logo similarity
+from logoSimilarity import detect_logo_similarity
+
 inputCSV_File = os.path.join('..', 'URL_For_Testing', 'phishTankDatabase.csv')
 screenShotDir = os.path.join('screenshots')
 faviconDir = os.path.join('favicons')
@@ -81,30 +84,38 @@ if __name__ == "__main__":
 
             logoFile = os.path.join(faviconDir, f"{domain_name}.ico")
 
+            logoDatabase = os.path.join('..', 'SampleLogos')
+
             # Check if the logo file exists before running logo similarity detection
             if os.path.isfile(logoFile):
                 
                 # Run logo similarity detection code if the file exists
 
-                # result = detect_logo_similarity(logoFile)
+                similarLogos = detect_logo_similarity(logoFile, logoDatabase)
 
-                if result == -1:
-                    print("Logo similarity detected.")
-                else:
+                if not similarLogos:  # Check if the dictionary is empty
                     print("Logo similarity not detected.")
 
+                else:
+                    print("Logo similarity detected:")
+                    for logo, similarity in similarLogos.items():
+                        with open(f"{domain_name}.txt", 'a') as file:
+                            file.write(f"Logo: {logo}, Similarity Score: {similarity:.2f}%\n")
+
+            else:
+                print(f"Logo doesn't exist for: {domain_name}")
 
             print(f"{counter}")
             print("----------------------------------\n")
 
 
-    with open("contour-based-detection.txt", 'w') as file:
-        file.write(f"Total number of URLs processed: {counter}\n")
-        file.write(f"Total number of URLs with input boxes: {foundInputBox}\n")
-        file.write(f"Total number of URLs without input boxes: {notFoundInputBox}\n")
-    
-
-    # with open("pytesseract-based-detection.txt", 'w') as file:
+    # with open("contour-based-detection.txt", 'w') as file:
     #     file.write(f"Total number of URLs processed: {counter}\n")
     #     file.write(f"Total number of URLs with input boxes: {foundInputBox}\n")
     #     file.write(f"Total number of URLs without input boxes: {notFoundInputBox}\n")
+    
+
+    with open("pytesseract-based-detection.txt", 'w') as file:
+        file.write(f"Total number of URLs processed: {counter}\n")
+        file.write(f"Total number of URLs with input boxes: {foundInputBox}\n")
+        file.write(f"Total number of URLs without input boxes: {notFoundInputBox}\n")
