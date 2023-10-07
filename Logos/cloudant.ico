@@ -1,0 +1,1912 @@
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    
+    
+    
+    
+    <meta charset="UTF-8"/>
+    <meta name="languageCode" content="en"/>
+    <meta name="countryCode" content="us"/>
+    <meta name="focusArea" content="Cloud - Automation - Instana"/>
+    <title>IBM Cloudant | IBM</title>
+    <link rel="icon" href="/content/dam/adobe-cms/default-images/favicon.svg"/>
+    
+    <meta name="description" content="IBM Cloudant is a JSON document database based on Apache CouchDB that offers independent serverless scaling of throughput capacity and storage. It is available as a fully managed service on IBM Cloud."/>
+    <meta name="template" content="product-overview"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="ibm.com.search.appid" content="casestudies"/>
+    <meta name="ibm.com.search.scopes" content="casestudies"/>
+    
+        
+            
+                <meta name="ibm.search.facet.field_keyword_01" content="Data AI,Security,Demo,Cloud - Public Cloud Platform,Watson Health,AI Apps Sustainability,Future Use,Systems Hardware,Consulting,Future Use 2,Future Use 3,Future Use 4,Miscellaneous,Ecosystem,Cloud - Automation,Blockchain,Red Hat,Kyndryl,Cross IBM"/>
+            
+                <meta name="ibm.search.facet.field_keyword_02" content="Quantum computing,Consulting services,Watson Health,Blockchain,IT Infrastructure,Cybersecurity,Operations,Cloud Computing,Automation,Analytics,Industries,Supply Chain,Services"/>
+            
+        
+    
+    <link rel="canonical" href="https://www.ibm.com/products/cloudant"/>
+    <style id="anti-flicker-style">
+        :not(:defined) {
+          visibility: hidden;
+        }
+    </style>
+    <script type="text/javascript" id="anti-flicker-script">
+        (async () => {
+          await customElements.whenDefined('dds-masthead-container');
+          document.getElementById('anti-flicker-style').remove();
+          document.getElementById('anti-flicker-script').remove();
+        })()
+    </script>
+    
+
+    <script type="text/javascript">
+    	var templateName = 'product\u002Doverview';
+
+        if(templateName === 'case-study'){
+        	 var taxonomylist = '';
+             var keys_vals = taxonomylist.split(",");
+            keys_vals.forEach(function (data,index) {
+                keys_vals[index] = keys_vals[index].substring(keys_vals[index].indexOf(":") + 1);
+            });
+            keys_vals.forEach(function (data,index) {
+                keys_vals[index] = keys_vals[index].substring((keys_vals[index].lastIndexOf('/'))+1).trim();
+            });
+            var meta  = document.createElement('meta');
+            var head  = document.getElementsByTagName('head')[0];
+            var contentList = keys_vals.toString();
+            var keywordIndex = 'ibm.search.facet.field_keyword_01';
+            if(contentList){
+                meta.name   = keywordIndex;
+                meta.content = contentList;
+                head.appendChild(meta);
+            }
+        }
+    </script>
+
+<!--    <script>
+      (function(s,t,a,n){s[t]||(s[t]=a,n=s[a]=function(){n.q.push(arguments)},
+      n.q=[],n.v=2,n.l=1*new Date)})(window,"InstanaEumObject","ineum");
+      ineum('reportingUrl', 'https://eum-orange-saas.instana.io');
+      ineum('key', 'QSUr0uqUS0m37yyre8ntkQ');
+      ineum('trackSessions');
+    </script>
+    <script defer crossorigin="anonymous" src="https://eum.instana.io/eum.min.js"></script>-->
+
+    
+        <link rel="alternate" hreflang="en-us" href="https://www.ibm.com/products/cloudant"/>
+    
+    <script type="text/javascript">
+        window.antiFlicker = {
+            active: true,
+            timeout: 3000
+        }
+    </script>
+    <script type="text/javascript">
+        var languageCode = document.getElementsByName('languageCode')[0].content;
+        var countryCode = document.getElementsByName('countryCode')[0].content;
+        var focusArea = document.getElementsByName('focusArea')[0].content;
+        /* Define digital data object based on _appInfo object */
+        window.digitalData = {
+            page: {
+                category: {
+                    primaryCategory: '',
+                },
+                pageInfo: {
+                    language: languageCode + '-' + countryCode,
+                    ibm: {
+                        siteID: 'MarketingAEM',
+                        country: countryCode,
+                        messaging: {
+                            routing: {
+                                focusArea: focusArea,
+                                languageCode: languageCode,
+                                regionCode: countryCode
+                            },
+                            translation: {
+                                languageCode: languageCode,
+                                regionCode: countryCode
+                            }
+                        },
+                        sections: 0,
+                        patterns: 0
+                    }
+                }
+            }
+        };
+    </script>
+    
+    
+        <meta property="og:url" content="https://www.ibm.com/products/cloudant"/>
+    
+        <meta property="og:type" content="website"/>
+    
+        <meta property="og:title" content="IBM Cloudant | IBM"/>
+    
+        <meta property="og:description" content="IBM Cloudant is a JSON document database based on Apache CouchDB that offers independent serverless scaling of throughput capacity and storage. It is available as a fully managed service on IBM Cloud."/>
+    
+        <meta property="og:image" content="https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/stock-assets/getty/image/photography/ef/05/_mg_2290-edit.jpg/_jcr_content/renditions/cq5dam.medium.1584.1584.jpeg"/>
+    
+        
+    
+
+    <script src="https://1.www.s81c.com/common/stats/ibm-common.js" type="text/javascript" async="async"></script>
+    <script src="https://s3.us.cloud-object-storage.appdomain.cloud/widget-registry/loader.js" type="application/javascript"></script>
+    
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/adobe-cms/clientlibs/clientlib-idlStylesCarbon.min.ACSHASHd7a318481961867a09f465809b89e965.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/adobe-cms/clientlibs/clientlib-idlStyles.min.ACSHASH397e40090c42250ddf162be2f0fd4f63.css" type="text/css">
+
+
+
+    
+    <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/plex.css"/>
+    <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/plex/sans.css"/>
+    
+    
+
+
+    
+    
+    
+
+    
+
+    
+    
+    
+
+
+
+    
+
+    
+
+
+</head>
+<body class="product-page content-page page basicpage publish" id="product-page-80ae272a80">
+
+
+
+    
+
+
+
+
+    
+
+
+
+    
+<div class="root container responsivegrid">
+
+    
+    
+    
+    <div id="container-7386c67ff2" class="cmp-container">
+        
+        <div class="masthead">
+
+
+
+
+
+
+
+
+<dds-masthead-container data-endpoint="/common/carbon-for-ibm-dotcom/translations/masthead-footer/v2.1" has-contact="false"></dds-masthead-container>
+
+
+
+<script src="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/2.0.0.alpha.61/masthead.min.js" type="module"></script>
+
+
+<script>
+    var json = "{\x22title\x22:\x22IBM Cloudant\x22,\x22url\x22:\x22https:\/\/www.ibm.com\/products\/cloudant\x22,\x22menuItems\x22:[{\x22title\x22:\x22Resources\x22,\x22url\x22:\x22https:\/\/www.ibm.com\/products\/cloudant\/resources\x22}]}";
+    document.querySelector('dds-masthead-container').l1Data = JSON.parse(json);
+    document.querySelector('.masthead').classList.add("hasNavigation");
+    document.documentElement.style.setProperty('--anker-navigation-spacing', '-6rem');
+</script>
+
+
+</div>
+<div class="leadspace-container container responsivegrid">
+
+    
+    
+    
+    <div id="leadspace-container-4c886d0e28" class="cmp-container">
+        
+        <div class="leadspace">
+    
+
+
+
+
+
+
+
+    
+    
+        <div class="bx--grid bx--no-gutter ">
+            <dds-leadspace type="left" size="medium" loadinganimation gradient-style-scheme="with-gradient">
+                
+                <dds-leadspace-heading id="leadspaceSimpleTitle">
+                    
+
+
+
+  
+    IBM Cloudant
+
+
+
+
+
+
+    
+
+
+                </dds-leadspace-heading>
+                
+                    <div class="leadspace__copy ">
+                        
+
+
+  
+  
+      The data layer for hyperscale, resilient and globally available applications—based on open-source Apache CouchDB
+  
+
+
+
+
+    
+
+
+                    </div>
+                    
+                        <dds-video-cta-container slot="action">
+                            <dds-button-group>
+                                
+
+
+
+
+    
+    
+    
+    
+    
+    <dds-button-cta href="https://www.ibm.com/cloud/free" target="_self" kind="primary" aria-label="Optional Primary Option" cta-type="local">
+        <span>Get a free 1 GB trial</span>
+        
+        
+    </dds-button-cta>
+    
+
+
+    
+    
+    
+    
+    
+    <dds-button-cta href="https://cloud.ibm.com/catalog/services/cloudant" target="_self" kind="tertiary" aria-label="Optional Secondary Option" cta-type="local">
+        <span>See pricing options</span>
+        
+        
+    </dds-button-cta>
+    
+
+
+
+                            </dds-button-group>
+                        </dds-video-cta-container>
+                    
+                
+                <dds-background-media mobile-position="bottom" opacity="100">
+                    
+                        
+    
+    <div class="bx--image ">
+        <picture>
+            
+            
+            
+                
+                    
+    <source media="(min-width: 1312px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/00/00/0600121_Getty_RF.component.xl-retina.ts=1686312853682.jpg/content/adobe-cms/us/en/products/cloudant/jcr:content/root/leadspace_container/leadspace"/>
+    <source media="(min-width: 1312px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/00/00/0600121_Getty_RF.component.xl.ts=1686312853682.jpg/content/adobe-cms/us/en/products/cloudant/jcr:content/root/leadspace_container/leadspace"/>
+    <source media="(min-width: 1056px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/00/00/0600121_Getty_RF.component.l-retina.ts=1686312853682.jpg/content/adobe-cms/us/en/products/cloudant/jcr:content/root/leadspace_container/leadspace"/>
+    <source media="(min-width: 1056px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/00/00/0600121_Getty_RF.component.l.ts=1686312853682.jpg/content/adobe-cms/us/en/products/cloudant/jcr:content/root/leadspace_container/leadspace"/>
+    <source media="(min-width: 672px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/00/00/0600121_Getty_RF.component.m-retina.ts=1686312853682.jpg/content/adobe-cms/us/en/products/cloudant/jcr:content/root/leadspace_container/leadspace"/>
+    <source media="(min-width: 672px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/00/00/0600121_Getty_RF.component.m.ts=1686312853682.jpg/content/adobe-cms/us/en/products/cloudant/jcr:content/root/leadspace_container/leadspace"/>
+    <source media="(min-width: 481px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/00/00/0600121_Getty_RF.component.s-retina.ts=1686312853682.jpg/content/adobe-cms/us/en/products/cloudant/jcr:content/root/leadspace_container/leadspace"/>
+    <source media="(min-width: 481px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/00/00/0600121_Getty_RF.component.s.ts=1686312853682.jpg/content/adobe-cms/us/en/products/cloudant/jcr:content/root/leadspace_container/leadspace"/>
+    <source media="(max-width: 480px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/00/00/0600121_Getty_RF.component.xs-retina.ts=1686312853682.jpg/content/adobe-cms/us/en/products/cloudant/jcr:content/root/leadspace_container/leadspace"/>
+    <source media="(max-width: 480px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/00/00/0600121_Getty_RF.component.xs.ts=1686312853682.jpg/content/adobe-cms/us/en/products/cloudant/jcr:content/root/leadspace_container/leadspace"/>
+
+                    
+                
+            
+            
+            <img id="image--1252886979" class="bx--image__img" src="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/00/00/0600121_Getty_RF.component.xl.ts=1686312853682.jpg/content/adobe-cms/us/en/products/cloudant/_jcr_content/root/leadspace_container/leadspace" alt="an illuminated cityscape and the waterway bisecting that city"/>
+        </picture>
+        
+    </div>
+
+
+                    
+                    
+                </dds-background-media>
+            </dds-leadspace>
+        </div>
+    
+</div>
+
+        
+    </div>
+
+</div>
+<div class="table-of-contents container responsivegrid">
+<dds-table-of-contents data-cmp-is="table-of-contents" data-autoid="dds--table-of-contents" class="cmp-table-of-contents" stickyoffset="96">
+    
+    
+    <div id="table-of-contents-29cb822fb6" class="cmp-table-of-contents">
+        
+        <div class="container responsivegrid">
+
+    
+    
+    
+    <div id="container-3d7611bca5" class="cmp-container">
+        
+        
+        
+    </div>
+
+</div>
+<div class="body container responsivegrid">
+
+    
+    
+    
+    <div id="body-9430681cfc" class="cmp-container">
+        
+        <div class="content-section-styled content-section container responsivegrid">
+
+
+
+    
+        <div class="bx--grid">
+            <div class="bx--row">
+                <div class="bx--col-lg-16 bx--no-gutter">
+                    <dds-video-container>
+                        <div class="bx--content-section" no-leading>
+                            
+                            
+                                
+
+    
+    
+    
+    <div id="container-8e920d868c" class="cmp-container">
+        
+        <div class="simple-narrative">
+<dds-content-block-simple data-autoid="dds--content-block-simple" class="simple-narrative-container" no-aside content-section-body>
+    <div slot="heading">
+        
+        
+  
+    <a data-title="Overview" name="Overview"></a>
+  
+
+        <dds-content-block-heading data-autoid="dds--content-block__heading" role="heading">
+            
+                
+
+
+  
+    <a data-title="Overview" name="Overview"></a>
+  
+
+
+
+    What is IBM Cloudant?
+
+
+
+
+
+    
+
+
+            
+        </dds-content-block-heading>
+    </div>
+    <dds-content-block-copy data-autoid="dds--content-block__copy" slot="copy" size="sm">
+        
+            <div class="cms-richtext" id="rich-text-a30ac74e65" data-dynamic-inner-content="description">
+    <p>A fully managed, distributed database optimized for heavy workloads and fast-growing web and mobile apps, IBM<sup>®</sup> Cloudant<sup>®</sup> is available as an IBM Cloud<sup>®</sup> service with a 99.99% SLA. Cloudant elastically scales throughput and storage, and its API and replication protocols are compatible with Apache CouchDB for hybrid or multicloud architectures.</p>
+ 
+    
+    
+    
+    
+
+</div>
+        
+    </dds-content-block-copy>
+    
+        
+        
+
+    <dds-video-player-container video-id="1_zk0da6y7" playing-mode="inline" slot="media"></dds-video-player-container>
+
+
+
+
+
+    
+
+
+    
+    
+    
+    
+    
+        
+        <dds-video-cta-container slot="footer">
+            <dds-text-cta cta-type="local" icon-placement="right" href="https://cloud.ibm.com/docs/Cloudant?topic=Cloudant-getting-started-with-cloudant&_ga=2.42518757.1165320250.1604321683-1614077795.1594908456" target="_blank" data-dynamic-properties="{&quot;ctaUrl&quot;:&quot;href&quot;}" data-dynamic-inner-content="ctaLabel">See product documentation
+                
+            </dds-text-cta>
+        </dds-video-cta-container>
+    
+    
+    
+
+
+    
+
+
+</dds-content-block-simple>
+<div horizontal-ruler>
+    
+    
+    
+    
+        <dds-hr></dds-hr>
+        
+    
+
+    
+
+
+</div></div>
+<div class="tabs bx--content-block">
+    <h2 data-autoid="dds--content-block__heading" class="bx--content-block__heading">
+        
+
+
+  
+    <a data-title="How it&#39;s used" name="How+it%27s+used"></a>
+  
+
+
+
+    How it's used
+
+
+
+
+
+    
+
+
+    </h2>
+    
+         <div>
+        
+
+<dds-tabs-extended-media section-heading="false">
+    
+        <dds-tab selected="true" label="Serverless web app and API"><div class="item-horizontal-with-media">
+<dds-content-item-horizontal-media align="right" data-autoid="dds--content-item-horizontal-media">
+    
+        
+            
+            
+
+
+
+
+    
+    
+        
+        
+        
+        
+        <dds-image id="image--61867736" alt="diagram showing serverless web application and API, as enabled by IBM Cloudant" slot="media" default-src="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-xl.ts=1686312856910.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799/image">
+            
+            
+                
+                    
+    <dds-image-item media="(min-width: 1312px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-xl-retina.ts=1686312856910.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1312px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-xl.ts=1686312856910.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1056px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-l-retina.ts=1686312856910.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1056px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-l.ts=1686312856910.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799/image"></dds-image-item>
+    <dds-image-item media="(min-width: 672px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-m-retina.ts=1686312856910.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799/image"></dds-image-item>
+    <dds-image-item media="(min-width: 672px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-m.ts=1686312856910.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799/image"></dds-image-item>
+    <dds-image-item media="(min-width: 481px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-s-retina.ts=1686312856910.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799/image"></dds-image-item>
+    <dds-image-item media="(min-width: 481px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-s.ts=1686312856910.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799/image"></dds-image-item>
+    <dds-image-item media="(max-width: 480px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-xs-retina.ts=1686312856910.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799/image"></dds-image-item>
+    <dds-image-item media="(max-width: 480px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-xs.ts=1686312856910.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799/image"></dds-image-item>
+
+                    
+                
+            
+        </dds-image>
+    
+
+    
+
+
+
+        
+        
+    
+    <dds-content-item-horizontal-eyebrow>
+        
+
+
+  
+  
+
+
+
+
+    
+
+
+    </dds-content-item-horizontal-eyebrow>
+    <dds-content-item-heading role="heading" aria-level="4" data-autoid="dds--content-item__heading" slot="heading">
+        
+
+
+
+  
+    Serverless web app and API
+
+
+
+
+
+
+    
+
+
+    </dds-content-item-heading>
+    <dds-content-item-horizontal-media-copy>
+        <dds-content-item-paragraph>
+            
+
+
+  
+  
+      In this tutorial, you’ll create a serverless web application by hosting static website content on GitHub Pages and implementing the application back end, using IBM Cloud Functions.
+  
+
+
+
+
+    
+
+
+        </dds-content-item-paragraph>
+    </dds-content-item-horizontal-media-copy>
+    <dds-link-list slot="footer" type="vertical">
+        
+    
+    
+        
+        <dds-video-cta-container>
+            <dds-link-list-item-cta aria-label="Pelajari lebih lanjut tentang perencanaan dan analisis keuangan" cta-type="local" href="https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-serverless-webapp" icon-placement="right" role="listitem" target="_blank">
+                View the tutorial
+                
+            </dds-link-list-item-cta>
+        </dds-video-cta-container>
+    
+    
+    
+
+
+
+        
+    </dds-link-list>
+</dds-content-item-horizontal-media>
+<div>
+    
+    
+    
+        <hr class="bx--hr"/>
+        
+    
+
+    
+
+    
+
+</div></div>
+</dds-tab>
+        
+    
+        
+        <dds-tab label="Mobile app with serverless"><div class="item-horizontal-with-media">
+<dds-content-item-horizontal-media align="right" data-autoid="dds--content-item-horizontal-media">
+    
+        
+            
+            
+
+
+
+
+    
+    
+        
+        
+        
+        
+        <dds-image id="image--72330484" alt="diagram showing mobile app with serverless, as enabled by IBM Cloud functionality" slot="media" default-src="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/3b/e4/diagram-mobile-app-serverless.component.item-horizontal-with-media-right-xl.ts=1686312857284.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799_c/image">
+            
+            
+                
+                    
+    <dds-image-item media="(min-width: 1312px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/3b/e4/diagram-mobile-app-serverless.component.item-horizontal-with-media-right-xl-retina.ts=1686312857284.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799_c/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1312px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/3b/e4/diagram-mobile-app-serverless.component.item-horizontal-with-media-right-xl.ts=1686312857284.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799_c/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1056px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/3b/e4/diagram-mobile-app-serverless.component.item-horizontal-with-media-right-l-retina.ts=1686312857284.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799_c/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1056px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/3b/e4/diagram-mobile-app-serverless.component.item-horizontal-with-media-right-l.ts=1686312857284.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799_c/image"></dds-image-item>
+    <dds-image-item media="(min-width: 672px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/3b/e4/diagram-mobile-app-serverless.component.item-horizontal-with-media-right-m-retina.ts=1686312857284.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799_c/image"></dds-image-item>
+    <dds-image-item media="(min-width: 672px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/3b/e4/diagram-mobile-app-serverless.component.item-horizontal-with-media-right-m.ts=1686312857284.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799_c/image"></dds-image-item>
+    <dds-image-item media="(min-width: 481px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/3b/e4/diagram-mobile-app-serverless.component.item-horizontal-with-media-right-s-retina.ts=1686312857284.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799_c/image"></dds-image-item>
+    <dds-image-item media="(min-width: 481px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/3b/e4/diagram-mobile-app-serverless.component.item-horizontal-with-media-right-s.ts=1686312857284.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799_c/image"></dds-image-item>
+    <dds-image-item media="(max-width: 480px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/3b/e4/diagram-mobile-app-serverless.component.item-horizontal-with-media-right-xs-retina.ts=1686312857284.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799_c/image"></dds-image-item>
+    <dds-image-item media="(max-width: 480px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/3b/e4/diagram-mobile-app-serverless.component.item-horizontal-with-media-right-xs.ts=1686312857284.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1623336303799_c/image"></dds-image-item>
+
+                    
+                
+            
+        </dds-image>
+    
+
+    
+
+
+
+        
+        
+    
+    <dds-content-item-horizontal-eyebrow>
+        
+
+
+  
+  
+
+
+
+
+    
+
+
+    </dds-content-item-horizontal-eyebrow>
+    <dds-content-item-heading role="heading" aria-level="4" data-autoid="dds--content-item__heading" slot="heading">
+        
+
+
+
+  
+    Mobile app with serverless
+
+
+
+
+
+
+    
+
+
+    </dds-content-item-heading>
+    <dds-content-item-horizontal-media-copy>
+        <dds-content-item-paragraph>
+            
+
+
+  
+  
+      In this tutorial, you'll learn how to use IBM Cloud Functions along with cognitive and data services to build a serverless back end for a mobile app.
+  
+
+
+
+
+    
+
+
+        </dds-content-item-paragraph>
+    </dds-content-item-horizontal-media-copy>
+    <dds-link-list slot="footer" type="vertical">
+        
+        
+    </dds-link-list>
+</dds-content-item-horizontal-media>
+<div>
+    
+    
+    
+        <hr class="bx--hr"/>
+        
+    
+
+    
+
+    
+
+</div></div>
+</dds-tab>
+    
+        
+        <dds-tab label="Find anomalies in IoT data"><div class="item-horizontal-with-media">
+<dds-content-item-horizontal-media align="right" data-autoid="dds--content-item-horizontal-media">
+    
+        
+            
+            
+
+
+
+
+    
+    
+        
+        
+        
+        
+        <dds-image id="image--1532486843" alt="diagram showing how to find anomalies in IoT data, using the IBM Watson IoT Platform" slot="media" default-src="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-xl.ts=1686312857695.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1671220708507/image">
+            
+            
+                
+                    
+    <dds-image-item media="(min-width: 1312px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-xl-retina.ts=1686312857695.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1671220708507/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1312px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-xl.ts=1686312857695.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1671220708507/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1056px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-l-retina.ts=1686312857695.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1671220708507/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1056px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-l.ts=1686312857695.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1671220708507/image"></dds-image-item>
+    <dds-image-item media="(min-width: 672px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-m-retina.ts=1686312857695.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1671220708507/image"></dds-image-item>
+    <dds-image-item media="(min-width: 672px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-m.ts=1686312857695.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1671220708507/image"></dds-image-item>
+    <dds-image-item media="(min-width: 481px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-s-retina.ts=1686312857695.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1671220708507/image"></dds-image-item>
+    <dds-image-item media="(min-width: 481px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-s.ts=1686312857695.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1671220708507/image"></dds-image-item>
+    <dds-image-item media="(max-width: 480px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-xs-retina.ts=1686312857695.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1671220708507/image"></dds-image-item>
+    <dds-image-item media="(max-width: 480px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a1/44/diagram-iot-data-architecture-and%20serverless-web.component.item-horizontal-with-media-right-xs.ts=1686312857695.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1671220708507/image"></dds-image-item>
+
+                    
+                
+            
+        </dds-image>
+    
+
+    
+
+
+
+        
+        
+    
+    <dds-content-item-horizontal-eyebrow>
+        
+
+
+  
+  
+
+
+
+
+    
+
+
+    </dds-content-item-horizontal-eyebrow>
+    <dds-content-item-heading role="heading" aria-level="4" data-autoid="dds--content-item__heading" slot="heading">
+        
+
+
+
+  
+    Find anomalies in IoT data
+
+
+
+
+
+
+    
+
+
+    </dds-content-item-heading>
+    <dds-content-item-horizontal-media-copy>
+        <dds-content-item-paragraph>
+            
+
+
+  
+  
+      This tutorial shows how to set up an IoT device and gather data in the IBM Watson IoT® Platform. Create visualizations and use advanced ML services to analyze historical data and detect anomalies.
+  
+
+
+
+
+    
+
+
+        </dds-content-item-paragraph>
+    </dds-content-item-horizontal-media-copy>
+    <dds-link-list slot="footer" type="vertical">
+        
+        
+    </dds-link-list>
+</dds-content-item-horizontal-media>
+<div>
+    
+    
+    
+        <hr class="bx--hr"/>
+        
+    
+
+    
+
+    
+
+</div></div>
+</dds-tab>
+    
+        
+        <dds-tab label="Open hybrid multicloud"><div class="item-horizontal-with-media">
+<dds-content-item-horizontal-media align="right" data-autoid="dds--content-item-horizontal-media">
+    
+        
+            
+            
+
+
+
+
+    
+    
+        
+        
+        
+        
+        <dds-image id="image-240813515" alt="diagram showing an open hybrid multicloud, as enabled by IBM Cloudant and Apache CouchDB" slot="media" default-src="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b3/1a/diagram-open-hybrid-multicloud.component.item-horizontal-with-media-right-xl.ts=1686312858050.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1678966226623/image">
+            
+            
+                
+                    
+    <dds-image-item media="(min-width: 1312px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b3/1a/diagram-open-hybrid-multicloud.component.item-horizontal-with-media-right-xl-retina.ts=1686312858050.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1678966226623/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1312px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b3/1a/diagram-open-hybrid-multicloud.component.item-horizontal-with-media-right-xl.ts=1686312858050.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1678966226623/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1056px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b3/1a/diagram-open-hybrid-multicloud.component.item-horizontal-with-media-right-l-retina.ts=1686312858050.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1678966226623/image"></dds-image-item>
+    <dds-image-item media="(min-width: 1056px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b3/1a/diagram-open-hybrid-multicloud.component.item-horizontal-with-media-right-l.ts=1686312858050.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1678966226623/image"></dds-image-item>
+    <dds-image-item media="(min-width: 672px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b3/1a/diagram-open-hybrid-multicloud.component.item-horizontal-with-media-right-m-retina.ts=1686312858050.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1678966226623/image"></dds-image-item>
+    <dds-image-item media="(min-width: 672px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b3/1a/diagram-open-hybrid-multicloud.component.item-horizontal-with-media-right-m.ts=1686312858050.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1678966226623/image"></dds-image-item>
+    <dds-image-item media="(min-width: 481px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b3/1a/diagram-open-hybrid-multicloud.component.item-horizontal-with-media-right-s-retina.ts=1686312858050.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1678966226623/image"></dds-image-item>
+    <dds-image-item media="(min-width: 481px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b3/1a/diagram-open-hybrid-multicloud.component.item-horizontal-with-media-right-s.ts=1686312858050.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1678966226623/image"></dds-image-item>
+    <dds-image-item media="(max-width: 480px) and (min-resolution: 192dpi)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b3/1a/diagram-open-hybrid-multicloud.component.item-horizontal-with-media-right-xs-retina.ts=1686312858050.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1678966226623/image"></dds-image-item>
+    <dds-image-item media="(max-width: 480px)" srcset="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b3/1a/diagram-open-hybrid-multicloud.component.item-horizontal-with-media-right-xs.ts=1686312858050.png/content/adobe-cms/us/en/products/cloudant/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/tabs_container_copy_/tabs-item/item_1678966226623/image"></dds-image-item>
+
+                    
+                
+            
+        </dds-image>
+    
+
+    
+
+
+
+        
+        
+    
+    <dds-content-item-horizontal-eyebrow>
+        
+
+
+  
+  
+
+
+
+
+    
+
+
+    </dds-content-item-horizontal-eyebrow>
+    <dds-content-item-heading role="heading" aria-level="4" data-autoid="dds--content-item__heading" slot="heading">
+        
+
+
+
+  
+    Open hybrid multicloud
+
+
+
+
+
+
+    
+
+
+    </dds-content-item-heading>
+    <dds-content-item-horizontal-media-copy>
+        <dds-content-item-paragraph>
+            
+
+
+  
+  
+      This tutorial shows how to pair the API and powerful replication protocol of Cloudant with Apache CouchDB in a hybrid cloud environment.
+  
+
+
+
+
+    
+
+
+        </dds-content-item-paragraph>
+    </dds-content-item-horizontal-media-copy>
+    <dds-link-list slot="footer" type="vertical">
+        
+    
+    
+        
+        <dds-video-cta-container>
+            <dds-link-list-item-cta aria-label="Pelajari lebih lanjut tentang perencanaan penjualan" cta-type="local" href="https://cloud.ibm.com/docs/Cloudant?topic=Cloudant-couchdb-and-cloudant" icon-placement="right" role="listitem" target="_blank">
+                View the tutorial
+                
+            </dds-link-list-item-cta>
+        </dds-video-cta-container>
+    
+    
+    
+
+
+
+        
+    </dds-link-list>
+</dds-content-item-horizontal-media>
+<div>
+    
+    
+    
+        <hr class="bx--hr"/>
+        
+    
+
+    
+
+    
+
+</div></div>
+</dds-tab>
+    
+</dds-tabs-extended-media>
+
+
+    </div>
+</div>
+<div class="cta-section">
+
+
+
+
+
+    
+  
+    <a data-title="Cloudant details" name="Cloudant+details"></a>
+  
+
+    <dds-cta-block content-section-body>
+        <dds-content-block-heading>
+            
+            
+
+
+  
+    <a data-title="Cloudant details" name="Cloudant+details"></a>
+  
+
+
+
+    Cloudant details
+
+
+
+
+
+    
+
+
+        </dds-content-block-heading>
+        
+        
+        
+
+    <dds-cta-block-item-row no-border>
+        
+
+    
+    
+    
+    <dds-cta-block-item>
+    
+    
+    
+    <dds-content-item-heading>
+        
+
+
+
+  
+    Serverless
+
+
+
+
+
+
+    
+
+
+    </dds-content-item-heading>
+    <dds-content-item-copy>
+        <dds-content-item-paragraph>
+            <div class="cms-richtext" id="rich-text-b87edff583" data-dynamic-inner-content="description">
+    <p>Instantly deploy an instance, create databases and independently scale throughput capacity and data storage to meet your application requirements.</p>
+ 
+    
+    
+    
+    
+
+</div>
+        </dds-content-item-paragraph>
+    </dds-content-item-copy>
+
+    
+    
+    
+    
+    
+
+
+
+    
+</dds-cta-block-item><dds-cta-block-item>
+    
+    
+    
+    <dds-content-item-heading>
+        
+
+
+
+  
+    Secure
+
+
+
+
+
+
+    
+
+
+    </dds-content-item-heading>
+    <dds-content-item-copy>
+        <dds-content-item-paragraph>
+            <div class="cms-richtext" id="rich-text-695db2e352" data-dynamic-inner-content="description">
+    <p>Encrypt all data, with optional user-defined encryption key management through IBM Key Protect, and integrate with IBM Identity and Access Management.</p>
+ 
+    
+    
+    
+    
+
+</div>
+        </dds-content-item-paragraph>
+    </dds-content-item-copy>
+
+    
+    
+    
+    
+    
+
+
+
+    
+</dds-cta-block-item><dds-cta-block-item>
+    
+    
+    
+    <dds-content-item-heading>
+        
+
+
+
+  
+    Global availability
+
+
+
+
+
+
+    
+
+
+    </dds-content-item-heading>
+    <dds-content-item-copy>
+        <dds-content-item-paragraph>
+            <div class="cms-richtext" id="rich-text-92bbcc5cc1" data-dynamic-inner-content="description">
+    <p>Get continuous availability as Cloudant distributes data across availability zones and 6 regions for app performance and disaster recovery requirements.</p>
+ 
+    
+    
+    
+    
+
+</div>
+        </dds-content-item-paragraph>
+    </dds-content-item-copy>
+
+    
+    
+    
+    
+    
+
+
+
+    
+</dds-cta-block-item>
+    
+
+
+    </dds-cta-block-item-row>
+
+    </dds-cta-block>
+</div>
+<div class="card-group-pictogram">
+    <div class="bx--content-block">
+        
+            <h2 data-autoid="dds--content-block__heading" class="bx--content-block__heading">
+                
+
+  
+    <a data-title="Languages" name="Languages"></a>
+  
+
+<span class="enhanced-title">Supported programming languages
+</span>
+
+
+
+    
+
+            </h2>
+        
+
+        
+
+        
+            
+                
+                    
+                        <caem-card-group grid-mode="border" cards-per-row="3" data-autoid="dds--card-group" style="--dds--card-group--cards-in-row:3">
+                            
+
+    
+    
+    
+    
+    
+        
+            
+            
+                
+                <caem-card color-scheme cta-type="none" data-autoid="caem--card" target="_self" pictogram-placement="top" size>
+                    <caem-card-heading aria-level="3" data-autoid="caem--card-heading" role="heading" slot="heading">
+                        
+                        Mobile for Android and iOS</caem-card-heading>
+                    <svg slot="pictogram" class="bx--card__pictogram" data-autoid="caem--card__pictogram" focusable="false" height="48" width="48" role="img">
+                        <use href="#mobile--devices"></use>
+                    </svg>
+                    <p>The Cloudant Sync library can store, index and query local JSON data on a mobile device and synchronize data between devices—all controlled by your app.</p>
+                    
+                    <div class="caem-card-svg-source">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="mobile--devices" viewBox="0 0 32 32"><path d="M8,28.5c-0.552,0-1-0.448-1-1s0.448-1,1-1s1,0.448,1,1S8.552,28.5,8,28.5z M31.36,31V1 c0-0.199-0.161-0.36-0.36-0.36H7C6.801,0.64,6.64,0.801,6.64,1v5.64H1C0.801,6.64,0.64,6.801,0.64,7v24 c0,0.199,0.161,0.36,0.36,0.36h30C31.199,31.36,31.36,31.199,31.36,31z M20.36,24.36h10.28v6.279H20.36V24.36z M15.36,24.36h4.28 v6.279h-4.28C15.36,30.639,15.36,24.36,15.36,24.36z M1.36,24.36h13.28v6.279H1.36V24.36z M20.36,11c0-0.199-0.161-0.36-0.36-0.36 h-4.64V7c0-0.199-0.161-0.36-0.36-0.36H7.359V1.36h23.28v22.28H20.36V11z M15.36,11.36h4.28v12.28h-4.28 C15.36,23.64,15.36,11.36,15.36,11.36z M1.36,7.36h13.28v16.28H1.36V7.36z"/></svg>
+                    </div>
+                </caem-card>
+            
+        
+    
+    
+    
+
+
+
+    
+        
+            
+            
+                
+                <caem-card color-scheme cta-type="none" data-autoid="caem--card" target="_self" pictogram-placement="top" size>
+                    <caem-card-heading aria-level="3" data-autoid="caem--card-heading" role="heading" slot="heading">
+                        
+                        Java</caem-card-heading>
+                    <svg slot="pictogram" class="bx--card__pictogram" data-autoid="caem--card__pictogram" focusable="false" height="48" width="48" role="img">
+                        <use href="#java"></use>
+                    </svg>
+                    <p>Java-cloudant is the official Cloudant NoSQL database for IBM Cloud® library for Java™. Get info on installing the library, plus details and examples.</p>
+                    
+                    <div class="caem-card-svg-source">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="java" viewBox="0 0 32 32"><path d="M4.632,8.771h1.12v8.344c0,0.504-0.126,0.91-0.378,1.219c-0.252,0.308-0.649,0.461-1.19,0.461H3.457v-0.993 h1.176L4.632,8.771L4.632,8.771z M5.192,7.078c-0.243,0-0.418-0.058-0.525-0.175S4.506,6.634,4.506,6.448V6.266 c0-0.187,0.054-0.338,0.161-0.455C4.774,5.694,4.95,5.636,5.192,5.636S5.61,5.694,5.717,5.811S5.878,6.08,5.878,6.266v0.182 c0,0.187-0.054,0.338-0.161,0.455S5.435,7.078,5.192,7.078z M13.382,15.996c-0.42,0-0.721-0.112-0.903-0.336 s-0.296-0.504-0.343-0.84h-0.07c-0.159,0.448-0.42,0.784-0.784,1.008s-0.798,0.336-1.302,0.336c-0.766,0-1.36-0.196-1.785-0.588 s-0.637-0.924-0.637-1.596c0-0.681,0.25-1.204,0.749-1.568c0.499-0.364,1.276-0.546,2.331-0.546h1.428v-0.714 c0-0.513-0.14-0.905-0.42-1.176S10.937,9.57,10.358,9.57c-0.439,0-0.805,0.098-1.099,0.294s-0.539,0.457-0.735,0.784l-0.672-0.63 C8.048,9.626,8.36,9.292,8.79,9.017c0.429-0.275,0.97-0.413,1.624-0.413c0.877,0,1.559,0.214,2.044,0.643s0.728,1.024,0.728,1.788 v3.967h0.826v0.994C14.012,15.996,13.382,15.996,13.382,15.996z M10.163,15.211c0.28,0,0.537-0.032,0.77-0.098 c0.233-0.065,0.434-0.159,0.602-0.28c0.168-0.121,0.299-0.261,0.392-0.42s0.14-0.331,0.14-0.518v-1.19h-1.484 c-0.644,0-1.113,0.093-1.407,0.28c-0.294,0.187-0.441,0.457-0.441,0.812v0.294c0,0.354,0.128,0.63,0.385,0.826 C9.376,15.114,9.724,15.211,10.163,15.211z M17.093,15.996l-2.534-7.224h1.12l1.26,3.584l0.784,2.464h0.069l0.784-2.464l1.288-3.584 h1.078l-2.548,7.224C18.394,15.996,17.093,15.996,17.093,15.996z M27.508,15.996c-0.42,0-0.721-0.112-0.902-0.336 c-0.183-0.224-0.297-0.504-0.344-0.84h-0.069c-0.159,0.448-0.42,0.784-0.784,1.008s-0.798,0.336-1.302,0.336 c-0.766,0-1.36-0.196-1.785-0.588s-0.637-0.924-0.637-1.596c0-0.681,0.249-1.204,0.749-1.568c0.499-0.364,1.275-0.546,2.33-0.546 h1.429v-0.714c0-0.513-0.141-0.905-0.42-1.176c-0.28-0.271-0.71-0.406-1.288-0.406c-0.439,0-0.806,0.098-1.1,0.294 s-0.539,0.457-0.734,0.784l-0.672-0.63c0.195-0.392,0.508-0.726,0.938-1.001s0.971-0.413,1.624-0.413 c0.877,0,1.559,0.214,2.044,0.643s0.729,1.024,0.729,1.788v3.967h0.825v0.994C28.139,15.996,27.508,15.996,27.508,15.996z M24.288,15.211c0.28,0,0.537-0.032,0.771-0.098c0.232-0.065,0.434-0.159,0.602-0.28c0.168-0.121,0.299-0.261,0.392-0.42 c0.094-0.159,0.141-0.331,0.141-0.518v-1.19H24.71c-0.644,0-1.113,0.093-1.407,0.28c-0.294,0.187-0.44,0.457-0.44,0.812v0.294 c0,0.354,0.128,0.63,0.385,0.826C23.502,15.114,23.85,15.211,24.288,15.211z M31,31.36H1v-0.72h30V31.36z M31,24.36H1 c-0.199,0-0.36-0.161-0.36-0.36V1c0-0.199,0.161-0.36,0.36-0.36h30c0.199,0,0.36,0.161,0.36,0.36v23 C31.36,24.199,31.199,24.36,31,24.36z M1.36,23.64h29.28V1.36H1.36V23.64z"/></svg>
+                    </div>
+                </caem-card>
+            
+        
+    
+    
+    
+
+
+
+    
+        
+            
+            
+                
+                <caem-card color-scheme cta-type="none" data-autoid="caem--card" target="_self" pictogram-placement="top" size>
+                    <caem-card-heading aria-level="3" data-autoid="caem--card-heading" role="heading" slot="heading">
+                        
+                        Node.js</caem-card-heading>
+                    <svg slot="pictogram" class="bx--card__pictogram" data-autoid="caem--card__pictogram" focusable="false" height="48" width="48" role="img">
+                        <use href="#javascript"></use>
+                    </svg>
+                    <p>Nodejs-cloudant is the official Cloudant NoSQL database library for Node.js.</p>
+                    
+                    <div class="caem-card-svg-source">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="javascript" viewBox="0 0 32 32"><path d="M31,31.36H1v-0.72h30V31.36z M31,24.36H1c-0.199,0-0.36-0.161-0.36-0.36V1c0-0.199,0.161-0.36,0.36-0.36 h30c0.199,0,0.36,0.161,0.36,0.36v23C31.36,24.199,31.199,24.36,31,24.36z M1.36,23.64h29.28V1.36H1.36V23.64z M9.051,15.354v-0.182 c0-0.476,0.266-0.812,0.854-0.812s0.854,0.336,0.854,0.812v0.182c0,0.477-0.266,0.812-0.854,0.812 C9.317,16.166,9.051,15.83,9.051,15.354z M12.998,8.77h1.121v8.349c0,0.994-0.49,1.68-1.569,1.68h-0.728v-0.98h1.176V8.77z M12.872,6.445V6.263c0-0.378,0.21-0.63,0.687-0.63s0.687,0.252,0.687,0.63v0.182c0,0.378-0.21,0.63-0.687,0.63 S12.872,6.823,12.872,6.445z M15.812,14.751l0.798-0.645c0.561,0.701,1.232,1.106,2.144,1.106c0.952,0,1.513-0.434,1.513-1.176 c0-0.561-0.309-0.995-1.261-1.135l-0.574-0.084c-1.331-0.196-2.326-0.743-2.326-2.087c0-1.429,1.107-2.129,2.578-2.129 c1.163,0,1.934,0.434,2.521,1.163l-0.742,0.672c-0.322-0.448-0.938-0.882-1.863-0.882s-1.415,0.434-1.415,1.121 c0,0.7,0.49,0.98,1.387,1.121l0.561,0.084c1.597,0.238,2.213,0.938,2.213,2.031c0,1.4-1.022,2.255-2.675,2.255 C17.339,16.166,16.456,15.606,15.812,14.751z"/></svg>
+                    </div>
+                </caem-card>
+            
+        
+    
+    
+    
+
+
+
+    
+        
+            
+            
+                
+                <caem-card color-scheme cta-type="none" data-autoid="caem--card" target="_self" pictogram-placement="top" size>
+                    <caem-card-heading aria-level="3" data-autoid="caem--card-heading" role="heading" slot="heading">
+                        
+                        Python</caem-card-heading>
+                    <svg slot="pictogram" class="bx--card__pictogram" data-autoid="caem--card__pictogram" focusable="false" height="48" width="48" role="img">
+                        <use href="#cloud--infrastructure-management"></use>
+                    </svg>
+                    <p>A supported library for working with Cloudant NoSQL database by using Python is available.</p>
+                    
+                    <div class="caem-card-svg-source">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="cloud--infrastructure-management" viewBox="0 0 32 32"><path d="M29,30.36 c-1.302,0-2.36-1.059-2.36-2.36c0-1.179,0.869-2.159,2-2.333V22.36H16.36v3.307c1.131,0.174,2,1.154,2,2.333 c0,1.302-1.059,2.36-2.36,2.36s-2.36-1.059-2.36-2.36c0-1.179,0.869-2.159,2-2.333V22.36H3.36v3.307c1.131,0.174,2,1.154,2,2.333 c0,1.302-1.059,2.36-2.36,2.36S0.64,29.302,0.64,28c0-1.179,0.869-2.159,2-2.333V22c0-0.199,0.161-0.36,0.36-0.36h12.64V18h0.72 v3.64H29c0.199,0,0.36,0.161,0.36,0.36v3.667c1.131,0.174,2,1.154,2,2.333C31.36,29.302,30.302,30.36,29,30.36z M29,26.36 c-0.904,0-1.64,0.735-1.64,1.64s0.735,1.64,1.64,1.64s1.64-0.735,1.64-1.64S29.904,26.36,29,26.36z M16,26.36 c-0.904,0-1.64,0.735-1.64,1.64s0.736,1.64,1.64,1.64c0.904,0,1.64-0.735,1.64-1.64S16.904,26.36,16,26.36z M3,26.36 c-0.904,0-1.64,0.735-1.64,1.64S2.096,29.64,3,29.64S4.64,28.904,4.64,28S3.904,26.36,3,26.36z M26,16.36H16 c-0.199,0-0.36-0.161-0.36-0.36V7c0-0.199,0.161-0.36,0.36-0.36h10c0.199,0,0.36,0.161,0.36,0.36v9 C26.36,16.199,26.199,16.36,26,16.36z M16.36,15.64h9.28v-2.28h-9.28V15.64z M16.36,12.64h9.28v-2.28h-9.28V12.64z M16.36,9.64h9.28 V7.36h-9.28V9.64z M14.667,16.36h-4.051c-2.743,0-4.975-2.286-4.975-5.097c0-3.073,2.583-5.533,5.569-5.165 c1.358-2.358,3.13-3.458,5.56-3.458c1.922,0,3.674,0.903,4.934,2.543l-0.57,0.438c-1.121-1.458-2.67-2.262-4.364-2.262 c-2.213,0-3.818,1.05-5.052,3.304c-0.074,0.135-0.225,0.21-0.378,0.182c-2.604-0.454-4.98,1.738-4.98,4.418 c0,2.414,1.909,4.377,4.255,4.377h4.051L14.667,16.36L14.667,16.36z M18.5,14.86h-1v-0.72h1V14.86z M18.5,11.86h-1v-0.72h1V11.86z M18.5,8.86h-1V8.14h1V8.86z"/></svg>
+                    </div>
+                </caem-card>
+            
+        
+    
+    
+    
+
+
+
+    
+        
+            
+            
+                
+                <caem-card color-scheme cta-type="none" data-autoid="caem--card" target="_self" pictogram-placement="top" size>
+                    <caem-card-heading aria-level="3" data-autoid="caem--card-heading" role="heading" slot="heading">
+                        
+                        Swift</caem-card-heading>
+                    <svg slot="pictogram" class="bx--card__pictogram" data-autoid="caem--card__pictogram" focusable="false" height="48" width="48" role="img">
+                        <use href="#data--insights"></use>
+                    </svg>
+                    <p>A supported library called SwiftCloudant is available for working with the Cloudant NoSQL database. Installed using cocoapods, it’s an early release version.</p>
+                    
+                    <div class="caem-card-svg-source">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="data--insights" viewBox="0 0 32 32"><path d="M15,31.36H9c-0.199,0-0.36-0.161-0.36-0.36v-6c0-0.199,0.161-0.36,0.36-0.36h6 c0.199,0,0.36,0.161,0.36,0.36v6C15.36,31.199,15.199,31.36,15,31.36z M9.36,30.64h5.28v-5.28H9.36V30.64z M23,23.36h-6 c-0.199,0-0.36-0.161-0.36-0.36v-6c0-0.199,0.161-0.36,0.36-0.36h6c0.199,0,0.36,0.161,0.36,0.36v6 C23.36,23.199,23.199,23.36,23,23.36z M17.36,22.64h5.279v-5.28H17.36V22.64z M4,7.36C2.147,7.36,0.64,5.853,0.64,4 S2.147,0.64,4,0.64S7.36,2.147,7.36,4S5.853,7.36,4,7.36z M4,1.36C2.544,1.36,1.36,2.544,1.36,4S2.544,6.64,4,6.64 S6.64,5.456,6.64,4S5.456,1.36,4,1.36z M4,31.36c-1.853,0-3.36-1.508-3.36-3.36S2.147,24.64,4,24.64S7.36,26.147,7.36,28 S5.853,31.36,4,31.36z M4,25.36c-1.456,0-2.64,1.184-2.64,2.64S2.544,30.64,4,30.64S6.64,29.456,6.64,28S5.456,25.36,4,25.36z M20,31.36c-1.853,0-3.36-1.508-3.36-3.36s1.507-3.36,3.36-3.36s3.36,1.508,3.36,3.36S21.853,31.36,20,31.36z M20,25.36 c-1.456,0-2.64,1.184-2.64,2.64s1.184,2.64,2.64,2.64s2.64-1.184,2.64-2.64S21.456,25.36,20,25.36z M28,31.36 c-1.853,0-3.36-1.508-3.36-3.36s1.508-3.36,3.36-3.36s3.36,1.508,3.36,3.36S29.853,31.36,28,31.36z M28,25.36 c-1.456,0-2.64,1.184-2.64,2.64s1.184,2.64,2.64,2.64s2.64-1.184,2.64-2.64S29.456,25.36,28,25.36z M12,23.36 c-1.853,0-3.36-1.508-3.36-3.36s1.507-3.36,3.36-3.36s3.36,1.507,3.36,3.36S13.853,23.36,12,23.36z M12,17.36 c-1.456,0-2.64,1.184-2.64,2.64s1.185,2.64,2.64,2.64s2.64-1.184,2.64-2.64S13.456,17.36,12,17.36z M31.464,23.36h-6.928 c-0.129,0-0.247-0.069-0.312-0.181s-0.064-0.248,0-0.359l3.464-6.001c0.129-0.223,0.494-0.223,0.623,0l3.464,6.001 c0.064,0.111,0.064,0.248,0,0.359S31.593,23.36,31.464,23.36z M25.159,22.64h5.682L28,17.72L25.159,22.64z M6.746,13.746 L4.36,16.131V10H3.64v6.131l-2.386-2.385l-0.509,0.509L4,17.509l3.254-3.254L6.746,13.746z"/></svg>
+                    </div>
+                </caem-card>
+            
+        
+    
+    
+    
+
+
+
+    
+
+
+                        </caem-card-group>
+                    
+                
+            
+        
+
+        <div class="bx--content-block__cta-row">
+            <div class="bx--content-block__cta bx--content-block__cta-col">
+                
+    
+    
+        
+        <dds-video-cta-container>
+            <dds-text-cta cta-type="local" icon-placement="right" href="https://cloud.ibm.com/docs/Cloudant?topic=Cloudant-client-libraries" target="_blank" data-dynamic-properties="{&quot;ctaUrl&quot;:&quot;href&quot;}" data-dynamic-inner-content="ctaLabel">Explore all Cloudant libraries 
+                
+            </dds-text-cta>
+        </dds-video-cta-container>
+    
+    
+    
+
+
+    
+
+
+            </div>
+        </div>
+    </div>
+
+    <div horizontal-ruler>
+        
+    
+    
+    
+        <dds-hr></dds-hr>
+        
+    
+
+    
+
+
+    </div>
+
+    <script type="module" src="https://1.www.s81c.com/common/carbon/carbon-for-aem/version/v0.5.1/card.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/carbon-for-aem/version/v0.5.1/card-group.min.js"></script>
+
+</div>
+<div class="simple-narrative">
+<dds-content-block-simple data-autoid="dds--content-block-simple" class="simple-narrative-container" no-aside content-section-body>
+    <div slot="heading">
+        
+        
+  
+    <a data-title="TrustRadius Honors IBM Cloudant" name="TrustRadius+Honors+IBM+Cloudant"></a>
+  
+
+        <dds-content-block-heading data-autoid="dds--content-block__heading" role="heading">
+            
+                
+
+
+  
+    <a data-title="TrustRadius Honors IBM Cloudant" name="TrustRadius+Honors+IBM+Cloudant"></a>
+  
+
+
+
+    TrustRadius Honors IBM Cloudant
+
+
+
+
+
+    
+
+
+            
+        </dds-content-block-heading>
+    </div>
+    <dds-content-block-copy data-autoid="dds--content-block__copy" slot="copy" size="sm">
+        
+            <div class="cms-richtext" id="rich-text-24f036d9a0" data-dynamic-inner-content="description">
+    <p>IBM Cloudant is recognized as a top leader across multiple categories: DBaaS, NoSQL and Non-relational Databases.</p>
+ 
+    
+    
+    
+    
+
+</div>
+        
+    </dds-content-block-copy>
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+
+</dds-content-block-simple>
+</div>
+<div class="product-reviews"><script src="https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js" type="application/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js" type="application/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-intl@5/dist/react-intl.min.js" type="application/javascript"></script>
+<link rel="stylesheet" href="https://hybrid-cloud-widgets-production.s3.us.cloud-object-storage.appdomain.cloud/widgets/product-reviews/css/main.5f658a79.css"/>
+<script src="https://hybrid-cloud-widgets-production.s3.us.cloud-object-storage.appdomain.cloud/widgets/product-reviews/js/main.0c8b00b1.js" type="application/javascript"></script>
+
+<div>
+    
+
+
+</div>
+<div id="product-reviews" data-localecode data-google-stars="true" data-product-reviews-ids="[&quot;5a26fb4d4c1cad00128fd51e&quot;]" data-theme="WHITE" data-reviews-provider="tr"></div>
+
+	<script type="text/javascript">
+document.getElementById("product-reviews").setAttribute("data-localecode", document.getElementsByTagName("html")[0].getAttribute("lang"));
+  try {
+ 	document.loadWidget({
+ 		renderFunctionName: 'renderProductReviews',
+ 		instanceId: 'product-reviews',
+ 		language: document.getElementsByTagName("html")[0].getAttribute("lang"),
+ 		onRenderFinish: (renderedElement) => {},
+ 	});
+ } catch (e) {
+ 	console.error(e);
+ }
+</script>
+
+</div>
+<div class="logo-grid">
+
+
+<section content-section-body>
+    
+  
+    <a data-title="Our clients" name="Our+clients"></a>
+  
+
+    <dds-logo-grid hide-border>
+        <dds-content-block-heading>
+            
+
+
+  
+    <a data-title="Our clients" name="Our+clients"></a>
+  
+
+
+
+    Our clients
+
+
+
+
+
+    
+
+
+        </dds-content-block-heading>
+
+        
+
+    
+    
+    
+    <dds-logo-grid-item default-src="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/f4/55/masters.png" alt="Masters logo"></dds-logo-grid-item>
+
+    
+
+<dds-logo-grid-item default-src="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/de/70/runkeeper.png" alt="Runkeeper logo"></dds-logo-grid-item>
+
+    
+
+<dds-logo-grid-item default-src="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/53/47/Evolufarma.png" alt="Evolufarma logo"></dds-logo-grid-item>
+
+    
+
+<dds-logo-grid-item default-src="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/b9/0a/ticket-fairy.png" alt="The Ticket Fairy logo"></dds-logo-grid-item>
+
+    
+
+<dds-logo-grid-item default-src="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/48/29/wetrade.png" alt="we.trade logo"></dds-logo-grid-item>
+
+    
+
+<dds-logo-grid-item default-src="/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/2c/7d/GIA.png" alt="GIA logo"></dds-logo-grid-item>
+
+    
+
+
+    
+
+
+    </dds-logo-grid>
+    
+    
+    
+    
+    
+        <dds-hr></dds-hr>
+        
+    
+
+    
+
+
+</section>
+</div>
+<div class="accordion-container">
+
+<div class="bx--content-block">
+    
+        <h2 class="bx--content-block__heading">
+            
+
+
+  
+    <a data-title="FAQ" name="FAQ"></a>
+  
+
+
+
+    Frequently asked questions
+
+
+
+
+
+    
+
+
+        </h2>
+    
+
+    
+
+    <div class="bx--content-item__copy accordion-intro-section">
+        <div class="cms-richtext" id="rich-text-e4f425d781" data-dynamic-inner-content="description">
+    <p>Get answers to the most commonly asked questions about this product.</p>
+ 
+    
+    
+    
+    
+
+</div>
+    </div>
+
+    <div class="bx--content-item" data-autoid="dds--content-item">
+        
+
+
+    <caem-accordion role="list" size="null">
+        
+            <caem-accordion-item label="What does IBM Cloudant manage for me?" role="listitem" size="null" title-text="What does IBM Cloudant manage for me?">
+                
+                <div class="accordion-item-container nested-container container responsivegrid">
+
+
+
+    
+        <div class="cms-richtext" id="rich-text-9f1204db4c" data-dynamic-inner-content="description">
+    <p>Cloudant handles software and hardware provisioning, management and scaling, and support. You'll receive high availability and elastic scaling of the hardware as your provisioned throughput capacity needs change. Learn about the <a href="https://www.ibm.com/topics/dbaas">other benefits of database as a service (DBaaS)</a>.</p>
+<p> </p>
+ 
+    
+    
+    
+    
+
+</div>
+    
+
+
+
+</div>
+
+            </caem-accordion-item>
+        
+            <caem-accordion-item label="What is a document data store?" role="listitem" size="null" title-text="What is a document data store?">
+                
+                <div class="accordion-item-container nested-container container responsivegrid">
+
+
+
+    
+        <div class="cms-richtext" id="rich-text-ac638e90f0" data-dynamic-inner-content="description">
+    <p>Document data stores are represented in JSON, where each document is itself a complex data structure. Documents can contain nested structures of various data types, and users can query these structures, retrieving or updating the document, or portions of it, without locking down the database. Documents are stored and retrieved through a unique primary key.</p>
+ 
+    
+    
+    
+    
+
+</div>
+    
+
+
+
+</div>
+
+            </caem-accordion-item>
+        
+            <caem-accordion-item label="Why JSON?" role="listitem" size="null" title-text="Why JSON?">
+                
+                <div class="accordion-item-container nested-container container responsivegrid">
+
+
+
+    
+        <div class="cms-richtext" id="rich-text-8d19cf55dd" data-dynamic-inner-content="description">
+    <p>JSON’s appeal stems partly from its schema, which can rapidly evolve without admin intervention. JSON offers an elegant model for persisting Java or JavaScript objects due to its affinity with JavaScript—with no need for &quot;heavyweights&quot; such as OpenJPA or Hibernate to build a data-layer solution. Storing a JSON document to represent a real object is fairly intuitive.</p>
+ 
+    
+    
+    
+    
+
+</div>
+    
+
+
+
+</div>
+
+            </caem-accordion-item>
+        
+            <caem-accordion-item label="How is Cloudant different than CouchDB?" role="listitem" size="null" title-text="How is Cloudant different than CouchDB?">
+                
+                <div class="accordion-item-container nested-container container responsivegrid">
+
+
+
+    
+        <div class="cms-richtext" id="rich-text-9c0600ec1f" data-dynamic-inner-content="description">
+    <p>While Cloudant is API-compatible with <a href="https://www.ibm.com/topics/couchdb">Apache CouchDB</a>, unlike CouchDB, Cloudant has layered additional open-source technologies for full text search and geospatial indexing capabilities. Both share a common replication protocol, so you can synchronize copies of your Cloudant data to a remote CouchDB instance—or vice versa—with a click. <a href="https://cloud.ibm.com/docs/Cloudant?topic=Cloudant-comparison-of-ibm-cloudant-and-couchdb-api-endpoints&amp;_ga=2.4908019.1165320250.1604321683-1614077795.1594908456#comparison-of-cloudant-and-couchdb-api-endpoints">Explore the differences</a>.</p>
+ 
+    
+    
+    
+    
+
+</div>
+    
+
+
+
+</div>
+
+            </caem-accordion-item>
+        
+            <caem-accordion-item label="What is offline-first architecture?" role="listitem" size="null" title-text="What is offline-first architecture?">
+                
+                <div class="accordion-item-container nested-container container responsivegrid">
+
+
+
+    
+        <div class="cms-richtext" id="rich-text-e660a73e43" data-dynamic-inner-content="description">
+    <p>Offline-first architecture means building an app without an internet connection; the architecture lets you interact with your app without connectivity. Using Cloudant Mobile Sync, mobile apps can collect and read data when the network is unavailable. Once the connection is established, the data will sync with Cloudant. Cloudant also works with Hoodie and PouchDB.</p>
+ 
+    
+    
+    
+    
+
+</div>
+    
+
+
+
+</div>
+
+            </caem-accordion-item>
+        
+    </caem-accordion>
+
+
+<script src="https://1.www.s81c.com/common/carbon/carbon-for-aem/version/v0.5.1/accordion.min.js" type="module"></script>
+
+    </div>
+
+    
+</div></div>
+
+        
+    </div>
+
+
+                            
+                        </div>
+                    </dds-video-container>
+                    
+                </div>
+            </div>
+        </div>
+    
+</div>
+<div class="next-steps-container">
+
+<div data-cmp-is="next-steps-container" class="bx--next-steps-container bx--next-steps-container__toc--vertical">
+    <div class="bx--cta-section--g10 bx--cta-section--theme" data-dynamic-content-type="ADOBE_TARGET" data-component-name="next-steps" data-component-identifier="next-steps">
+        
+            
+                
+                
+
+                    
+
+                    
+                        <dds-cta-block no-border>
+                            <div role="heading" data-autoid="dds--content-block__heading" class="bx--content-block__heading" slot="heading">
+                                
+
+  
+    <a data-title="Try Cloudant now—no charge
+" name="Try+Cloudant+now%E2%80%94no+charge%0A"></a>
+  
+
+<span class="enhanced-title">Try Cloudant now—no charge
+</span>
+
+
+
+    
+
+                            </div>
+                            <dds-content-block-copy size="sm">
+                                <dds-content-block-paragraph>
+                                    <div class="cms-richtext" id="rich-text-ddd880b19b" data-dynamic-inner-content="description">
+    <p>Create your account at no charge. Try over 40 always-free products with no time limit.</p>
+ 
+    
+    
+    
+    
+
+</div>
+                                </dds-content-block-paragraph>
+                            </dds-content-block-copy>
+                            
+                                
+
+
+    <dds-video-cta-container slot="action">
+        <dds-button-group>
+            
+    
+    
+    
+    
+    <dds-button-cta href="https://www.ibm.com/cloud/free" target="_self" kind="primary" cta-type="local">
+        <span>Create your account</span>
+        
+        
+    </dds-button-cta>
+    
+
+
+            
+        </dds-button-group>
+    </dds-video-cta-container>
+
+
+                            
+
+                            
+
+                            
+
+                            
+                        </dds-cta-block>
+                    
+                
+            
+        
+    </div>
+</div></div>
+
+        
+    </div>
+
+</div>
+
+        
+    </div>
+
+</dds-table-of-contents>
+</div>
+<div class="footer">
+
+
+
+
+    <dds-footer-container data-cmp-is="footer" data-autoid="dds--footer" class="cmp-footer" data-children-count="0" size="tall"></dds-footer-container>
+
+
+</div>
+
+        
+    </div>
+
+</div>
+
+
+<dds-lightbox-video-player-container></dds-lightbox-video-player-container>
+    
+    
+    
+<script src="/etc.clientlibs/adobe-cms/clientlibs/clientlib-idlBundle.min.ACSHASHc2af6e6bb32e23adb0343926119b2e53.js"></script>
+
+
+
+    
+
+    
+    
+<script src="/etc.clientlibs/adobe-cms/clientlibs/clientlib-target-antiflicker.min.ACSHASH36a1efb28e947b5873f4a28c2cf9d5eb.js"></script>
+<script src="/etc.clientlibs/adobe-cms/clientlibs/clientlib-idlWebComponents.min.ACSHASH25963942b4300c81d16a2bb033eb232b.js"></script>
+<script src="/etc.clientlibs/adobe-cms/clientlibs/clientlib-idlStyles.min.ACSHASHf3290158ae05752cc5e32eec78d7b36b.js"></script>
+
+
+
+    <script src="https://www.ibm.com/common/digitaladvisor/cm-app/latest/cm-app.min.js" defer></script>
+    
+    
+
+
+    
+
+    
+
+    
+
+    
+
+
+<script type="text/javascript"  src="/V7Tn/hmiA/H/byq/2b1DQQ/7NaLVGJc0Ji9Yh/dzojDwE/OzcKI/CRGNjwB"></script><link rel="stylesheet" type="text/css"  href="/_sec/cp_challenge/sec-4-0.css">
+                                        <script  src="/_sec/cp_challenge/sec-cpt-4-0.js" async defer></script>
+                                        <div id="sec-overlay" style="display:none;">
+                                        <div id="sec-container">
+                                        </div>
+                                      </div></body>
+</html>

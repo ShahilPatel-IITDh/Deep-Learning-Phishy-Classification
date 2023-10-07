@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head http-equiv="X-FRAME-OPTIONS" content="DENY">
+		<meta charset="UTF-8"/>
+		<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+		<meta name="description" content="190（190.vip）犀牛云旗下专注在域名、商标、云平台账户等企业数字资产交易平台，涵盖了域名注册、域名抢注、域名竞拍、域名续费管理、域名经纪、商标注册、商标经纪等多项业务，让域名、商标等数字资产创造更多价值。">
+		<meta name="keywords" content="域名预订，过期域名抢注，过期域名预订，域名竞价，域名交易，一口价，域名注册，域名中介，商标服务，190，190.vip，190域名">
+		<title>190域名交易平台，预定抢注，域名知识产权交易平台，安全中介，就选190！域名注册丨商标服务</title>
+		<base href="/">
+		<link rel="shortcut icon" href="/images/favicon-da7e3a6046bc2771a669e6c35d8d65f1.png" type="image/x-icon"/>
+		<!--IE 地址栏前的图标-->
+		<link rel="stylesheet" href="/css/iview-c8c1269f2a0133217437f7c5ba7780dd.css"/>
+		<link rel="stylesheet" href="/css/fontStyle-435f44ef787014c7672059c9063b6fb7.css"/>
+		<link rel="stylesheet" href="/css/main-0ac9941447752a6f7c688248b16eef5b.css"/>
+		<link rel="stylesheet" href="/css/header-7cb9e8860d0ecbadb059fe37100d11c8.css"/>
+		<link rel="stylesheet" href="/css/footer-4e4933fa5dbb182d5df011696783dc01.css"/>
+		
+		<script src="/script/jquery.min-b327509226baa10f2d2e89c42c2c49fb.js"></script>
+		<script src="/script/vue-0150b3e317fe4c51f00a901563761f6c.js"></script>
+		<script src="/script/iview.min-38f12af04ab33ec4e16e71e21033c6f2.js"></script>
+		<script src="/script/axios-ab8f0bbcbb081a33556bebc5c823f747.js"></script>
+		<script src="/js/http-ecbae45eab1eff6f54d5bb7c265e78aa.js"></script>
+		<script src="/js/api-849fcd8746f16abd1bc0145b8a8f622c.js"></script>
+		<script src="/js/common-895623ce16344e1d90241e593299d5cb.js"></script>
+	</head>
+<head>
+    <link rel="stylesheet" href="/css/index-4a99660e545a5c326cd434847c71be44.css"/>
+    <link rel="stylesheet" href="/css/swiper.min-018da5e642fda033e4debef641f6f582.css"/>
+</head>
+<body class="index">
+<div id="app">
+    <t-header></t-header>
+
+    <div class="banner">
+        <div class="swiper-container banner-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="bannerwrap" style="background-image:url(https://file.190.vip/content/fab88f8883ca4103809f1095797bba25.png)" href="https://www.190.vip/buyoutprice">
+
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="search-wrap">
+            <div class="middle">
+<!--                <div class="tel flx-row-bw-c flx-row-s-c">-->
+<!--                    <div class="t-1">安全中介选<span>190</span></div>-->
+<!--                    <div class="t-2" th:text="|客户热线: ${bottom.serviceTelephone}|"></div>-->
+<!--                </div>-->
+                <div class="flx-row-s-c">
+                    <div class="search-box">
+                        <label><input v-model="searchType" type="radio" name="radio-s" :value="0"/>搜域名</label>
+                        <label><input v-model="searchType" type="radio" name="radio-s" :value="1"/>查WHOIS</label>
+                    </div>
+                </div>
+                <div class="flx-row-bw-c" style="margin-top: 19px;">
+                    <input v-model="searchKey" id="searchKey" maxlength="50" placeholder="全站域名搜索" type="text" class="search-input">
+                    <div  @click="search()"  id="search-ok" class="search-btn">搜索</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-wrap">
+            <div class="middle">
+                <div class="news-box">
+                    <div class="flx-row-s-c">
+                        <div class="news-list">
+                            <ul class="flx-row-s-s">
+                                <li class="news-list flx-row-s-c">
+                                    <a target="_blank" href="/news/506" class="title" title="【通知】2023年中秋&amp;国庆放假通知">【通知】2023年中秋&amp;国庆放假通知</a>
+                                    <span class="time">2023-09-28</span>
+                                </li>
+                                <li class="news-list flx-row-s-c">
+                                    <a target="_blank" href="/news/485" class="title" title="公告丨.COM域名注册价格调整通知">公告丨.COM域名注册价格调整通知</a>
+                                    <span class="time">2023-08-01</span>
+                                </li>
+                                <li class="news-list flx-row-s-c">
+                                    <a target="_blank" href="/news/472" class="title" title="190官网服务器维护公告【2023-7-6】">190官网服务器维护公告【2023-7-6】</a>
+                                    <span class="time">2023-06-30</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="more">
+                            <a target="_blank" href="/news">更多</a>
+                        </div>
+                    </div>
+                    <div class="flx-row-s-c">
+                        <div class="news-list">
+                            <ul class="flx-row-s-s">
+                                <li class="news-list flx-row-s-c">
+                                    <a target="_blank" href="/news/504" class="title" title="靠卖粮食上市！其品牌域名是个四拼？！">靠卖粮食上市！其品牌域名是个四拼？！</a>
+                                    <span class="time">2023-09-20</span>
+                                </li>
+                                <li class="news-list flx-row-s-c">
+                                    <a target="_blank" href="/news/503" class="title" title="时隔多年，这枚千万级域名顺利完成交易！">时隔多年，这枚千万级域名顺利完成交易！</a>
+                                    <span class="time">2023-09-19</span>
+                                </li>
+                                <li class="news-list flx-row-s-c">
+                                    <a target="_blank" href="/news/502" class="title" title="【域名交易】99939.com约9.3万元成交，TM6.com超58万元结拍！">【域名交易】99939.com约9.3万元成交，TM6.com超58万元结拍！</a>
+                                    <span class="time">2023-09-15</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="more">
+                            <a target="_blank" href="/news">更多</a>
+                        </div>
+                    </div>
+                    <div class="flx-row-s-c">
+                        <div class="news-list">
+                            <ul class="flx-row-s-s">
+                                <li class="news-list flx-row-s-c">
+                                    <a target="_blank" href="/news/492" class="title" title="Adam Robinson花80万美元收购单词域名，值吗？">Adam Robinson花80万美元收购单词域名，值吗？</a>
+                                    <span class="time">2023-08-17</span>
+                                </li>
+                                <li class="news-list flx-row-s-c">
+                                    <a target="_blank" href="/news/482" class="title" title="马斯克启用X.com">马斯克启用X.com</a>
+                                    <span class="time">2023-07-25</span>
+                                </li>
+                                <li class="news-list flx-row-s-c">
+                                    <a target="_blank" href="/news/479" class="title" title="无忧传媒启用双拼域名：wuyou.com">无忧传媒启用双拼域名：wuyou.com</a>
+                                    <span class="time">2023-07-18</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="more">
+                            <a target="_blank" href="/news">更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-wrap">
+            <div class="middle">
+                <div class="top">
+                    <div class="title">热门预定</div>
+                    <div class="con">今日有<span>10708</span>个域名可以抢注预定<a class="more"
+                                                                                               target="_blank"
+                                                                                               href="/booking">更多</a>
+                    </div>
+                </div>
+                <div class="book-box flx-row-s-s">
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47617941">
+                            <div class="flx-row-bw-c">
+                                <h3 title="9my.com.cn">9my.com.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47704655">
+                            <div class="flx-row-bw-c">
+                                <h3 title="vmh.cn">vmh.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47704656">
+                            <div class="flx-row-bw-c">
+                                <h3 title="hkf.com.cn">hkf.com.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47704962">
+                            <div class="flx-row-bw-c">
+                                <h3 title="54f.com.cn">54f.com.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47705212">
+                            <div class="flx-row-bw-c">
+                                <h3 title="L5k.cn">L5k.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47705236">
+                            <div class="flx-row-bw-c">
+                                <h3 title="gyg.cn">gyg.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47705457">
+                            <div class="flx-row-bw-c">
+                                <h3 title="1jx.com.cn">1jx.com.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47705453">
+                            <div class="flx-row-bw-c">
+                                <h3 title="2ms.com.cn">2ms.com.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47705721">
+                            <div class="flx-row-bw-c">
+                                <h3 title="7dw.com.cn">7dw.com.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47705945">
+                            <div class="flx-row-bw-c">
+                                <h3 title="3gc.cn">3gc.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47706439">
+                            <div class="flx-row-bw-c">
+                                <h3 title="b0j.cn">b0j.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47622911">
+                            <div class="flx-row-bw-c">
+                                <h3 title="8fm.com.cn">8fm.com.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47621020">
+                            <div class="flx-row-bw-c">
+                                <h3 title="39m.com.cn">39m.com.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47623052">
+                            <div class="flx-row-bw-c">
+                                <h3 title="s6z.cn">s6z.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47621252">
+                            <div class="flx-row-bw-c">
+                                <h3 title="2xz.cn">2xz.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47706711">
+                            <div class="flx-row-bw-c">
+                                <h3 title="m5o.cn">m5o.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47710280">
+                            <div class="flx-row-bw-c">
+                                <h3 title="10o.com.cn">10o.com.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a target="_blank" href="/booking/47710271">
+                            <div class="flx-row-bw-c">
+                                <h3 title="3sh.com.cn">3sh.com.cn</h3>
+                                
+                            </div>
+                            <div class="cont"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bid-wrap">
+            <div class="middle">
+                <div class="bid-hot">
+                    <div class="bid-hot-top">
+                        <h3 class="title">热门竞价</h3>
+                        <a class="more" target="_blank" href="/bidding">更多</a>
+                    </div>
+                    <div class="bid-hot-box flx-row-s-s">
+                        <div v-for="(item, idx) in domainBiddingList" class="bid-hot-item">
+                            <div class="bid-item-top flx-row-bw-c">
+                                <div class="name">
+                                    <div class="en" v-text="item.domainName" :title="item.domainName"></div>
+                                    <div class="cn" v-text="item.meaning"></div>
+                                </div>
+                                <div class="date">
+                                    <span class="time">{{item.endTime | timeFilter }}</span>
+                                    <span class="tit">剩余时间</span>
+                                </div>
+                                <div class="money">
+                                    <span class="num" v-text="'￥' + item.price"></span>
+                                    <span class="tit">当前价格</span>
+                                </div>
+                            </div>
+                            <div class="bid-item-bottom flx-row-bw-c">
+                                <div class="cont" v-text="item.barrageText"></div>
+                                <div class="btn flx-row-bw-c">
+                                    <div class="view"><a target="_blank" href="#"></a></div>
+                                    <div class="buy"><a target="_blank"
+                                                        :href="'/bidding/details?id=' + item.id">参与竞价</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bid-case">
+                    <div class="bid-case-top">
+                        <h3 class="title">成功案例</h3>
+                    </div>
+                    <div class="bid-case-box">
+                        <div class="flx-row-bw-c one">
+                            
+                            <div class="case-item second">
+                                <div class="case-item-top">
+                                    <div class="top-box flx-row-c-c">
+                                        <div class="no">2</div>
+                                        <div class="name" title="sslj888.com.cn">sslj888.com.cn</div>
+                                    </div>
+                                    <div class="money">￥49000.00</div>
+                                </div>
+
+                                <div class="case-item-bottom flx-row-c-c">
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+
+                            <div class="case-item first">
+                                <div class="case-item-top">
+                                    <div class="top-box flx-row-c-c">
+                                        <div class="no">1</div>
+                                        <div class="name" title="jz.com.cn">jz.com.cn</div>
+                                    </div>
+                                    <div class="money">￥79000.00</div>
+                                </div>
+
+                                <div class="case-item-bottom flx-row-c-c">
+                                </div>
+                            </div>
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <div class="case-item third">
+                                <div class="case-item-top">
+                                    <div class="top-box flx-row-c-c">
+                                        <div class="no">3</div>
+                                        <div class="name" title="tjms.cn">tjms.cn</div>
+                                    </div>
+                                    <div class="money">￥48400.00</div>
+                                </div>
+
+                                <div class="case-item-bottom flx-row-c-c">
+                                </div>
+                            </div>
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                        </div>
+                        <div class="two">
+                            
+                            
+                            
+                            <div  class="case-item">
+                                <div class="no">4</div>
+                                <div class="name" title="sfdLyey.com.cn">sfdLyey.com.cn</div>
+                                <div class="money">￥47888.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">5</div>
+                                <div class="name" title="ycnmL.cn">ycnmL.cn</div>
+                                <div class="money">￥44888.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">6</div>
+                                <div class="name" title="whodesign.com.cn">whodesign.com.cn</div>
+                                <div class="money">￥40000.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">7</div>
+                                <div class="name" title="gxjs.com.cn">gxjs.com.cn</div>
+                                <div class="money">￥40000.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">8</div>
+                                <div class="name" title="asgjj.com.cn">asgjj.com.cn</div>
+                                <div class="money">￥36000.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">9</div>
+                                <div class="name" title="jakp.org.cn">jakp.org.cn</div>
+                                <div class="money">￥35500.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">10</div>
+                                <div class="name" title="LifedaiLy.com.cn">LifedaiLy.com.cn</div>
+                                <div class="money">￥30500.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">11</div>
+                                <div class="name" title="sdhxw.com.cn">sdhxw.com.cn</div>
+                                <div class="money">￥28828.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">12</div>
+                                <div class="name" title="henry-ch.com.cn">henry-ch.com.cn</div>
+                                <div class="money">￥16050.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">13</div>
+                                <div class="name" title="sdhrjt.cn">sdhrjt.cn</div>
+                                <div class="money">￥16000.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">14</div>
+                                <div class="name" title="xiaodaowang.cn">xiaodaowang.cn</div>
+                                <div class="money">￥15600.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">15</div>
+                                <div class="name" title="bxamc.com.cn">bxamc.com.cn</div>
+                                <div class="money">￥15555.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">16</div>
+                                <div class="name" title="yuekebao.com.cn">yuekebao.com.cn</div>
+                                <div class="money">￥15000.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">17</div>
+                                <div class="name" title="jclx.cn">jclx.cn</div>
+                                <div class="money">￥14499.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">18</div>
+                                <div class="name" title="sxshengda.com.cn">sxshengda.com.cn</div>
+                                <div class="money">￥14450.00</div>
+                            </div>
+                            <div  class="case-item">
+                                <div class="no">19</div>
+                                <div class="name" title="bj-yg.cn">bj-yg.cn</div>
+                                <div class="money">￥14444.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-wrap">
+            <div class="middle flx-row-bw-c">
+                <div class="article-list">
+                    <div class="article-list-top flx-row-bw-c">
+                        <h3 class="title">官方公告</h3>
+                        <div class="more"><a target="_blank" href="/news?typeId=6">更多</a></div>
+                    </div>
+                    <div class="article-list-box">
+                        <div class="article-item" title="【通知】2023年中秋&amp;国庆放假通知">
+                            <a href="/news/506" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">【通知】2023年中秋&amp;国庆放假通知</div>
+                                    <div class="time">2023-09-28</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="公告丨.COM域名注册价格调整通知">
+                            <a href="/news/485" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">公告丨.COM域名注册价格调整通知</div>
+                                    <div class="time">2023-08-01</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="190官网服务器维护公告【2023-7-6】">
+                            <a href="/news/472" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">190官网服务器维护公告【2023-7-6】</div>
+                                    <div class="time">2023-06-30</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="【通知】关于 2023年端午节放假通知">
+                            <a href="/news/466" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">【通知】关于 2023年端午节放假通知</div>
+                                    <div class="time">2023-06-21</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="190官网维护公告【2023-5-17】">
+                            <a href="/news/446" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">190官网维护公告【2023-5-17】</div>
+                                    <div class="time">2023-05-17</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-list">
+                    <div class="article-list-top flx-row-bw-c">
+                        <h3 class="title">交易爆料</h3>
+                        <div class="more"><a target="_blank" href="/news?typeId=5">更多</a></div>
+                    </div>
+                    <div class="article-list-box">
+                        <div class="article-item" title="靠卖粮食上市！其品牌域名是个四拼？！">
+                            <a href="/news/504" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">靠卖粮食上市！其品牌域名是个四拼？！</div>
+                                    <div class="time">2023-09-20</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="时隔多年，这枚千万级域名顺利完成交易！">
+                            <a href="/news/503" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">时隔多年，这枚千万级域名顺利完成交易！</div>
+                                    <div class="time">2023-09-19</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="【域名交易】99939.com约9.3万元成交，TM6.com超58万元结拍！">
+                            <a href="/news/502" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">【域名交易】99939.com约9.3万元成交，TM6.com超58万元结拍！</div>
+                                    <div class="time">2023-09-15</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="Pics.ai超36万元成交！人工智能图片领域新浪潮！">
+                            <a href="/news/501" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">Pics.ai超36万元成交！人工智能图片领域新浪潮！</div>
+                                    <div class="time">2023-09-13</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="加密公司斥资300万美元收购品牌域名Yolo.com">
+                            <a href="/news/499" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">加密公司斥资300万美元收购品牌域名Yolo.com</div>
+                                    <div class="time">2023-09-07</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-list">
+                    <div class="article-list-top flx-row-bw-c">
+                        <h3 class="title">企业域名</h3>
+                        <div class="more"><a target="_blank" href="/news?typeId=4">更多</a></div>
+                    </div>
+                    <div class="article-list-box">
+                        <div class="article-item" title="Adam Robinson花80万美元收购单词域名，值吗？">
+                            <a href="/news/492" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">Adam Robinson花80万美元收购单词域名，值吗？</div>
+                                    <div class="time">2023-08-17</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="马斯克启用X.com">
+                            <a href="/news/482" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">马斯克启用X.com</div>
+                                    <div class="time">2023-07-25</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="无忧传媒启用双拼域名：wuyou.com">
+                            <a href="/news/479" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">无忧传媒启用双拼域名：wuyou.com</div>
+                                    <div class="time">2023-07-18</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="马斯克携X.ai进场了！">
+                            <a href="/news/478" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">马斯克携X.ai进场了！</div>
+                                    <div class="time">2023-07-17</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-item" title="“宠食界富士康”终止IPO！">
+                            <a href="/news/477" target="_blank">
+                                <div class="flx-row-bw-c conbox">
+                                    <div class="name">“宠食界富士康”终止IPO！</div>
+                                    <div class="time">2023-07-12</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="links-wrap">
+            <div class="middle">
+                <div class="links-top">
+                    <h3 class="title">友情链接</h3>
+                </div>
+                <div class="links-box flx-row-s-s">
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="https://quan.xiniu.com/" title="https://quan.xiniu.com/">圈能力SCRM</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="https://cloud.tencent.com/" title="https://cloud.tencent.com/">腾讯云</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="https://www.aliyun.com/" title="https://www.aliyun.com/">阿里云</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="https://www.ename.com/" title="https://www.ename.com/">易名网</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="https://sg.godaddy.com/zh" title="https://sg.godaddy.com/zh">GoDaddy</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="http://juming.co/" title="http://juming.co/">聚名网</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="http://www.qiaomi.com/" title="http://www.qiaomi.com/">巧米网</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index" title="https://beian.miit.gov.cn/#/Integrated/index">工信部</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="http://todaynic.com/" title="http://todaynic.com/">时代互联</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="https://www.bizcn.com/" title="https://www.bizcn.com/">商中在线</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="https://www.himeili.com" title="https://www.himeili.com">嗨美丽</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="https://www.niuren.com" title="https://www.niuren.com">牛人软件开发</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="https://www.hebu.com" title="https://www.hebu.com">合步二手办公家具</a>
+                    </div>
+                    <div class="links-item">
+                        <a rel="nofollow" target="_blank" href="https://www.zihu.com" title="https://www.zihu.com">紫虎网站建设</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <t-bottom></t-bottom>
+</div>
+<!--    head-->
+<div><html lang="en">
+<template id="header">
+    <div class="header-container">
+        <div class="header middle flx-row-bw-c">
+            <div class="flx-row-s-c" style="height: 100%">
+                <a class="header-logo" href="/">
+                    <img src="https://file.190.vip/agent/logo/8b31356db2b844ae96f79de423c17c23.png" />
+                </a>
+                <ul class="header-menu" style="height: 100%">
+                    <li class="header-menu-sy" :class="path == '/' ? 'header-menu-active' : ''">
+                        <a href="/">
+                            <i class="icon-head"></i>
+                            <span class="title">首页</span>
+                        </a>
+                    </li>
+                    <li class="header-menu-zc" :class="path == '/dnreg' ? 'header-menu-active' : ''">
+                        <a href="/dnreg">
+                            <i class="icon-head"></i>
+                            <span class="title">域名注册</span>
+                        </a>
+                    </li>
+                    <li class="header-menu-yd" :class="path == '/booking' ? 'header-menu-active' : ''">
+                        <a href="/booking">
+                            <i class="icon-head"></i>
+                            <span class="title">域名预定</span>
+                        </a>
+                        <usernav></usernav>
+                    </li>
+                    <!-- dnsr -->
+                    <li class="header-menu-jj" :class="path == '/bidding' ? 'header-menu-active' : ''">
+                        <a href="/bidding">
+                            <i class="icon-head"></i>
+                            <span class="title">域名竞价</span>
+                        </a>
+                        <usernav></usernav>
+                    </li>
+                    <li class="header-menu-kj" :class="path == '/buyoutprice' ? 'header-menu-active' : ''">
+                        <a href="/buyoutprice">
+                            <i class="icon-head"></i>
+                            <span class="title">一口价</span>
+                        </a>
+                        <usernav></usernav>
+                    </li>
+<!--                    <li class="header-menu-zj" :class="path == '/dnpa' ? 'header-menu-active' : ''">-->
+<!--                        <a th:href="@{/dnpa}">-->
+<!--                            <i class="icon-head"></i>-->
+<!--                            <span class="title">域名中介</span>-->
+<!--                        </a>-->
+<!--                        <usernav></usernav>-->
+<!--                    </li>-->
+                    <!--        <li class="header-menu-fw"><a><i class="icon-head"></i><span>商标服务</span></a></li>-->
+                    <li class="header-menu-news" :class="path == '/news' ? 'header-menu-active' : ''">
+                        <a href="/news">
+                            <i class="icon-head"></i>
+                            <span class="title">新闻资讯</span>
+                        </a>
+                        <usernav></usernav>
+                    </li>
+                    <!--        <li class="header-menu-dl"><a th:href="@{/agency}"><i class="icon-head"></i><span>申请代理</span></a></li>-->
+                    <!--        <li class="header-menu-sc"><a><i class="icon-head"></i><span>积分商城</span></a></li>-->
+                    <!-- 头部导航下拉-->
+
+                </ul>
+            </div>
+
+            <div class="flx-row-s-c pub-m-l-28">
+                <div @click="toWhois" class="whois-btn flx-row-c-c">
+                    <span>查Whois</span>
+                    <img src="images/whoisSearch.png">
+                </div>
+                <div class="flx-row-s-c pub-m-l-55" @click="toPro" style="cursor: pointer;">
+                    
+                    <img class="cart-img" src="images/char1.png">
+                    <span class="c-r"></span>
+                </div>
+                
+                <div class="avatar-area flx-row-s-c" style="cursor: pointer;">
+                    <img src="images/user-no.png" class="head-img">
+                    <div class="user-box-area">
+                        <div class="login-area flx-col-c-c">
+                            <a href="javascript:void(0);" @click="toLogin()" class="login-link">用户登录</a>
+                            <a href="/register" class="login-link pub-m-t-34">免费注册</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div v-drag="(that)" id="window-drag" class="window cursor-pointer" :class="isOpen ? 'to' : ''">
+            <div class="flx-row-bw-c">
+                <div @click="open" class="flx-col-c-c" style="width: 20px">
+                    <span>扫码咨询</span>
+                    <div class="container">
+                        <div class="chevron" :class="isOpen ? 'show' : ''"></div>
+                    </div>
+                </div>
+                <div class="qrCode" style="background-image: url(https://file.190.vip/agent/qrcode/56ecb345d66e47bc8fe4b4a33779bcb0.png)"></div>
+            </div>
+        </div>
+
+    </div>
+</template>
+
+<div><html lang="en">
+
+<template id="userNavArea">
+    <div class="user-Nav-Box">
+        <div class="middle flx-row" style="padding-left: 335px;">
+            <template v-for="(item,index) in navList">
+                <ul v-if="showUser && item.isUser" class="flx-col-s-s list-area-item"  :class="'list-area-item-' + (index + 2)">
+                    <div class="other-area flx-row">
+                        <div
+                                class="inner-item"
+                                v-for="(innerItem, innerIndex) in item.children"
+                                :key="innerIndex"
+                                :class="[
+                                  innerIndex != 3 && innerIndex != 7 ? 'm-right' : '',
+                                  'inner-item-' + innerIndex,
+                                ]"
+                        >
+                            <div class="inner-title" v-text="innerItem.name"></div>
+                            <div class="inner-list-area flx-col-s-s">
+                                <template v-for="(e, eIndex) in innerItem.list">
+                                    <a class="list-item" :key="eIndex" @click="toPage(e.to)" >
+                                        <span v-text="e.name"></span>
+                                    </a>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul v-else  class="flx-col-s-s list-area-item"  :class="'list-area-item-' + (index + 2)">
+                    <a v-for="innerItem in item.list" @click="toPage(innerItem.to)" class="list-item">
+                        <span v-text="innerItem.name"></span>
+                    </a>
+                </ul>
+            </template>
+        </div>
+
+    </div>
+</template>
+<script>
+    Vue.component('usernav', {
+        template: '#userNavArea',
+        data() {
+            return {
+                showUser:true,
+                innerWidth:0,
+                navList: [
+                    {
+                        name: "域名预定",
+                        list: [
+                            {
+                                name: "预定域名",
+                                to: "/booking",
+                                other: true,
+                            },
+                            {
+                                name: "批量预定",
+                                to: "/batchbooking",
+                                other: true,
+                            },
+                            {
+                                name: "我的预定",
+                                to: "/user/mybookings",
+                            },
+                            {
+                                name: "预定提醒",
+                                to: "/user/reminder",
+                            },
+                        ],
+                    },
+                    {
+                        name: "域名竞价",
+                        list: [
+                            {
+                                name: "竞价中的域名",
+                                to: "/bidding",
+                                other: true, // 前台
+                            },
+                            {
+                                name: "我参与的竞价",
+                                to: "/user/mybiddings",
+                            },
+                            {
+                                name: "我的得标",
+
+                                to: "/user/mywinnings",
+                            },
+                        ],
+                    },
+                    {
+                        name: "一口价",
+                        list: [
+                            {
+                                name: "出售中的域名",
+                                to: "/buyoutprice",
+                                other: true,
+                            },
+                            {
+                                name: "我出售的域名",
+                                to: "/user/mybopdn",
+                            },
+                            {
+                                name: "出售域名",
+                                to: "/user/dnSell",
+                                other: true,
+                            },
+                        ],
+                    },
+                    /*{
+                        name: "域名中介",
+                        list: [
+                            {
+                                name: "委托代购",
+                                to: "/dnpa?tab=1",
+                            },
+                            {
+                                name: "我的委托记录",
+                                to: "/user/purchasing",
+                            },
+                        ],
+                    },*/
+                    {
+                        name: "新闻资讯",
+                        list: [
+                            {
+                                name: "官方公告",
+                                to: "/news?typeId=6&page=1&limit=10",
+                                other: true,
+                            },
+                            {
+                                name: "交易爆料",
+                                to: "/news?typeId=5&page=1&limit=10",
+                                other: true,
+                            },
+                            {
+                                name: "企业域名",
+                                to: "/news?typeId=4&page=1&limit=10",
+                                other: true,
+                            },
+                            {
+                                name: "媒体报道",
+                                to: "/news?typeId=18&page=1&limit=10",
+                                other: true,
+                            },
+                            {
+                                name: "域名百科",
+                                to: "/news?typeId=19&page=1&limit=10",
+                                other: true,
+                            },
+                        ],
+                    },
+                    {
+                        name: "管理中心",
+                        isUser: true,
+                        children: [
+                            {
+                                name: "域名管理",
+                                list: [
+                                    {
+                                        name: "我的域名",
+                                        to: "/user/mydn",
+                                    },
+                                    {
+                                        name: "我的模板",
+                                        to: "/user/template",
+                                    },
+                                    {
+                                        name: "域名转出",
+                                        to: "/user/transferout",
+                                    },
+                                    {
+                                        name: "域名转入",
+                                        to: "/user/transferin",
+                                    },
+                                    {
+                                        name: "域名PUSH",
+                                        to: "/user/dnPush",
+                                    },
+                                    {
+                                        name: "域名订单",
+                                        to: "/user/myorder",
+                                    },
+                                    {
+                                        name: "批量解析",
+                                        to: "/user/batchanalysis",
+                                    },
+                                    {
+                                        name: "DNS日志",
+                                        to: "/user/dnslogs",
+                                    },
+                                ],
+                            },
+                            {
+                                name: "域名预定",
+                                list: [
+                                    {
+                                        name: "预定域名",
+                                        to: "/booking",
+                                        other: true,
+                                    },
+                                    {
+                                        name: "批量预定",
+                                        to: "/batchbooking",
+                                        other: true,
+                                    },
+                                    {
+                                        name: "我的预定",
+                                        to: "/user/mybookings",
+                                    },
+                                    {
+                                        name: "预定提醒",
+                                        to: "/user/reminder",
+                                    },
+                                ],
+                            },
+                            {
+                                name: "域名竞价",
+                                list: [
+                                    {
+                                        name: "竞价中的域名",
+                                        to: "/bidding",
+                                        other: true,
+                                    },
+                                    {
+                                        name: "我的竞价",
+                                        to: "/user/mybiddings",
+                                    },
+                                    {
+                                        name: "我的得标",
+                                        to: "/user/mywinnings",
+                                    },
+                                ],
+                            },
+                            {
+                                name: "我是卖家",
+                                list: [
+                                    {
+                                        name: "出售域名",
+                                        to: "/user/dnSell",
+                                    },
+                                    {
+                                        name: "我发布的一口价",
+                                        to: "/user/mybopdn",
+                                    },
+                                    {
+                                        name: "我的米店",
+                                        to: "/user/bopsetting",
+                                    },
+                                ],
+                            },
+                            {
+                                name: "我是买家",
+                                list: [
+                                    {
+                                        name: "我购买的一口价",
+                                        to: "/user/successbop",
+                                    },
+                                ],
+                            },
+/*                            {
+                                name: "域名经纪",
+                                list: [
+                                    {
+                                        name: "申请域名经纪",
+                                        to: "/dnpa?tab=0",
+                                        other: true,
+                                    },
+                                    {
+                                        name: "我的代购记录",
+                                        to: "/user/purchasing",
+                                    },
+                                    {
+                                        name: "我的出售记录",
+                                        to: "/user/sell",
+                                    },
+                                ],
+                            },*/
+                            {
+                                name: "财务管理",
+                                list: [
+                                    {
+                                        name: "账户信息",
+                                        to: "/user/account",
+                                    },
+                                    {
+                                        name: "资金明细",
+                                        to: "/user/capitaldetails",
+                                    },
+                                    {
+                                        name: "发票管理",
+                                        to: "/user/invoice",
+                                    },
+                                ],
+                            },
+                            {
+                                name: "账户管理",
+                                list: [
+                                    {
+                                        name: "个人资料",
+                                        to: "/user/personalData",
+                                    },
+                                    {
+                                        name: "安全中心",
+                                        to: "/user/security",
+                                    },
+                                    {
+                                        name: "我的认证",
+                                        to: "/user/certification",
+                                    },
+                                    {
+                                        name: "我的申请",
+                                        to: "/user/myapplication",
+                                    },
+                                    {
+                                        name: "通知设置",
+                                        to: "/user/noticeSetting",
+                                    },
+                                    {
+                                        name: "登录日志",
+                                        to: "/user/securitylog",
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            }
+        },
+        watch:{
+            innerWidth: {
+                immediate: true,
+                deep: true,
+                handler(newValue) {
+                    if (newValue < 1600) {
+                        this.showUser = false;
+                    } else {
+                        this.showUser = true;
+                    }
+                },
+            },
+        },
+        mounted() {
+            this.innerWidth = window.innerWidth;
+            window.onresize = () => {
+                return (() => {
+                    this.innerWidth = window.innerWidth;
+                })();
+            };
+            if (this.innerWidth < 1600) {
+                this.showUser = false;
+            } else {
+                this.showUser = true;
+            }
+        },
+        methods: {
+            toPage(to) {
+                window.location.href = to
+            },
+        }
+    });
+</script>
+</html></div>
+<script>
+    Vue.component('t-header', {
+        template: '#header',
+        data() {
+            return {
+                pathList: {
+                    "/booking": ["/booking", "/batchbooking"],
+                    "/dnreg": ["/dnreg", "/dnsr"],
+                    "/bidding": ["/bidding"],
+                    "/buyoutprice": ["/buyoutprice"],
+                    "/dnpa": ["/dnpa"],
+                    "/news": ["/news"],
+                    "/user": ["/user/"],
+                },
+                path: '/',
+                shopCartCount: null,
+                isOpen: false,
+                that: this,
+                bottom: {"isAgent":0,"company":"\u5317\u4EAC\u835F\u7C73\u79D1\u6280\u6709\u9650\u516C\u53F8","address":"\u5317\u4EAC\u5E02 \u623F\u5C71\u533A \u957F\u9633\u4E07\u5174\u8DEF86\u53F7-N2264","serviceTelephone":"0755-2955 6666","complaintTelephone":"0755-2955 6666","serviceEmail":"kf@190.vip","securityEmail":"stone@xiniu.com","serviceQrcodeAddress":"https:\/\/file.190.vip\/agent\/qrcode\/56ecb345d66e47bc8fe4b4a33779bcb0.png","recordNum":"\u4EACICP\u59072023021463\u53F7","logoUrl":"https:\/\/file.190.vip\/agent\/logo\/8b31356db2b844ae96f79de423c17c23.png","version":"V4.1.8","color":"#f9521f","colorType":0},
+            }
+        },
+        directives: {
+            drag: {
+                bind(el, obj) {
+                    let box = el;
+                    let firstTime = '', lastTime = '';
+                    box.onmousedown = function (ev) {
+                        let e = ev || event;
+                        let y = e.clientY - box.offsetTop; //鼠标点击坐标距离盒子上边缘的距离
+                        let height = box.clientHeight;
+                        firstTime = new Date().getTime();
+                        let bodyScreenY = ev.screenY;
+                        let bodyClientHeight = document.documentElement.clientHeight
+                        document.onmousemove = function (ev) {
+                            box.setAttribute('drag', false)
+                            box.style.top = ev.clientY - y + 'px';
+                            bodyScreenY = ev.screenY
+                            bodyClientHeight = document.documentElement.clientHeight
+                            if (ev.clientY - y <= height) {
+                                box.style.top = height + 'px'
+                            } else if (ev.clientY - y > bodyClientHeight - height) {
+                                box.style.top = (bodyClientHeight - height) + 'px'
+                            }
+                        }
+                        document.onmouseup = function (ev) {
+                            document.onmousemove = null;
+                            document.onmouseup = null;
+
+                            if (ev.clientY - y <= height) {
+                                box.style.top = height + 'px'
+                            } else if (ev.clientY - y > bodyClientHeight - height) {
+                                box.style.top = (bodyClientHeight - height) + 'px'
+                            }
+                            lastTime = new Date().getTime();
+                            if ((lastTime - firstTime) < 200) {
+                                box.setAttribute('drag', true)
+                            } else {
+
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        created() {
+            let pathname = window.location.pathname.toLowerCase();
+            if (pathname === "/") {
+                this.path = "/"
+            } else {
+                for (let pathListKey in this.pathList) {
+                    this.pathList[pathListKey].forEach(item => {
+                        if (pathname.startsWith(item)) {
+                            this.path = pathListKey;
+                            return
+                        }
+                    })
+                }
+            }
+            if (this.bottom != null && this.bottom.color != null) {
+                document.documentElement.style.setProperty(
+                    "--Color", this.bottom.color
+                );
+            }
+        },
+        mounted() {
+            let box = document.getElementById('window-drag')
+        },
+        methods: {
+            isPC() {
+                let userAgentInfo = navigator.userAgent;
+                let Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+                let flag = true;
+                for (let v = 0; v < Agents.length; v++) {
+                    if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+                }
+                return flag;
+            },
+            logout() {
+                let that = this;
+                axios.delete("/logout").then(res => {
+                    console.log(res)
+                    const { result, message } = res.data;
+                    if (!result) {
+                        return that.$Message.warning(message);
+                    } else {
+                        that.$Message.success("退出登录成功！");
+                        window.location.replace("login?returnUrl=" + window.location.pathname + window.location.search)
+                    }
+                }).catch(err => {
+                    console.log(err)
+                })
+            },
+            toWhois() {
+                //window.open("/whoisSearch")
+                window.location.href = "/whoisSearch"
+            },
+            toPro() {
+                window.location.href = "/pro"
+            },
+            toUser() {
+                window.location.href = "/user"
+            },
+            toLogin() {
+                let pathname = window.location.pathname;
+                if ("" == pathname) {
+                    window.location.href = "/login"
+                } else {
+                    if (pathname !== '/login') {
+                        window.location.replace("login?returnUrl=" + pathname + window.location.search)
+                    }
+                }
+            },
+            open() {
+                //  验证是否为点击事件，是则继续执行click事件，否则不执行
+                let box = document.getElementById('window-drag')
+                let isClick = box.getAttribute('drag');
+                if (isClick) {
+                    this.isOpen = !this.isOpen
+                }
+            }
+        },
+        destroyed() {
+            window.onresize = null;
+        },
+    })
+</script>
+
+</html></div>
+<!--    bottom-->
+<div><html lang="en">
+<template id="bottom">
+    <div class="footer">
+        <div class="middle">
+            <div class="footer-top flx-row-bw-c">
+                <div class="code flx-row-s-s">
+                    <img src="https://file.190.vip/agent/qrcode/56ecb345d66e47bc8fe4b4a33779bcb0.png">
+                    <span class="code-text">扫一扫</br>联系我们</span>
+                </div>
+                <div class="contact">
+                    <ul class="flx-row-bw-c">
+                        <li class="tel">
+                            <h3>0755-2955 6666</h3>
+                            <div class="f-14">7×24小时 8:00-18:00</div>
+                        </li>
+                        <li class="qq">
+                            <h3>0755-2955 6666</h3>
+                            <div class="f-14">投诉电话</div>
+                        </li>
+                        <li class="mail flx-row-bw-c">
+                            <div class="mail1">
+                                <h3>kf@190.vip</h3>
+                                <div class="f-14">客服邮箱</div>
+                            </div>
+                            <div class="mail2">
+                                <h3>stone@xiniu.com</h3>
+                                <div class="f-14">域名安全部</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img style="width: 100%" src="https://file.190.vip/agent/logo/8b31356db2b844ae96f79de423c17c23.png">
+            </div>
+            <div class="footer-nav">
+                <a href="/about/3" class="item">190简介</a><a href="/about/4" class="item">管理团队</a><a href="/about/5" class="item">隐私声明</a><a href="/about/6" class="item">会员规则</a><a href="/about/14" class="item">域名竞价相关收费规则</a><a href="/about/8" class="item">联系我们</a><a href="/about/9" class="item">招贤纳士</a>
+            </div>
+            <div v-if="infoShow" class="footer-info">
+                <h3>
+                    <span>北京荟米科技有限公司</span>
+                    <a href="https://beian.miit.gov.cn/" target="_blank" class="c-w">京ICP备2023021463号</a>
+                    <!--<a class="beian" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602007532" target="_blank">
+                        <img th:src="@{/images/record.png}">
+                        粤公网安备 44030602007532号
+                    </a>-->
+                </h3>
+                <h3>
+                    <span>本公司（网站）所代理的域名注册服务机构：深圳英迈思信息技术有限公司</span>
+                    <span style="padding-left: 10px">资质:<a href="https://domain.miit.gov.cn/域名注册服务机构/互联网域名/深圳英迈思信息技术有限公司" target="_blank" class="c-w">粤通业函〔2021〕19号</a></span>
+                </h3>
+                <h3>
+                    <span>总部地址: 北京市 房山区 长阳万兴路86号-N2264</span>
+                </h3>
+                <h3>
+                    <span>安全版本号: V4.1.8</span>
+                </h3>
+            </div>
+            <div v-else class="footer-info">
+                <h3>
+                    <span>北京荟米科技有限公司</span>
+                    <a href="https://beian.miit.gov.cn/" target="_blank" class="c-w">京ICP备2023021463号</a>
+<!--                    <a class="beian" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602007532" target="_blank">-->
+<!--                        <img th:src="@{/images/record.png}">-->
+<!--                        粤公网安备 44030602007532号-->
+<!--                    </a>-->
+                </h3>
+                <h3>
+                    <span>本公司（网站）所代理的域名注册服务机构：深圳英迈思信息技术有限公司</span>
+                    <span style="padding-left: 10px">资质:<a href="https://domain.miit.gov.cn/域名注册服务机构/互联网域名/深圳英迈思信息技术有限公司" target="_blank" class="c-w">粤通业函〔2021〕19号</a></span>
+                </h3>
+                <h3>
+                    <span>总部地址: 北京市 房山区 长阳万兴路86号-N2264</span>
+                </h3>
+                <h3>
+                    <span>安全版本号: V4.1.8</span>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+<!--    <div v-drag="(that)" id="window-drag" class="window cursor-pointer" :class="isOpen ? 'to' : ''">
+        <div class="flx-row-bw-c">
+            <div @click="open" class="flx-col-c-c" style="width: 20px">
+                <span>扫码咨询</span>
+                <div class="container">
+                    <div class="chevron show"></div>
+                </div>
+            </div>
+            <div class="qrCode" th:style="'background-image: url(' + ${bottom.serviceQrcodeAddress} +')'"></div>
+        </div>
+    </div>-->
+</template>
+<script>
+    Vue.component('t-bottom', {
+        template: '#bottom',
+        data() {
+            return {
+                isOpen: false,
+                that: this,
+                bottom: {"isAgent":0,"company":"\u5317\u4EAC\u835F\u7C73\u79D1\u6280\u6709\u9650\u516C\u53F8","address":"\u5317\u4EAC\u5E02 \u623F\u5C71\u533A \u957F\u9633\u4E07\u5174\u8DEF86\u53F7-N2264","serviceTelephone":"0755-2955 6666","complaintTelephone":"0755-2955 6666","serviceEmail":"kf@190.vip","securityEmail":"stone@xiniu.com","serviceQrcodeAddress":"https:\/\/file.190.vip\/agent\/qrcode\/56ecb345d66e47bc8fe4b4a33779bcb0.png","recordNum":"\u4EACICP\u59072023021463\u53F7","logoUrl":"https:\/\/file.190.vip\/agent\/logo\/8b31356db2b844ae96f79de423c17c23.png","version":"V4.1.8","color":"#f9521f","colorType":0},
+                infoShow: true
+            }
+        },
+        directives: {
+            drag: {
+                bind(el, obj) {
+                    let box = el;
+                    let firstTime = '', lastTime = '';
+                    box.onmousedown = function (ev) {
+                        let e = ev || event;
+                        let y = e.clientY - box.offsetTop; //鼠标点击坐标距离盒子上边缘的距离
+                        let height = box.clientHeight;
+                        firstTime = new Date().getTime();
+                        let bodyScreenY = ev.screenY;
+                        let bodyClientHeight = document.body.clientHeight;
+                        document.onmousemove = function (ev) {
+                            box.setAttribute('drag', false)
+                            box.style.top = ev.clientY - y + 'px';
+                            bodyScreenY = ev.screenY
+                            bodyClientHeight = document.body.clientHeight
+                            if (ev.clientY - y <= height) {
+                                box.style.top =  height + 'px'
+                            } else if (ev.clientY -y > bodyClientHeight - height) {
+                                box.style.top = (bodyClientHeight - height) + 'px'
+                            }
+                        }
+                        document.onmouseup = function (ev) {
+                            document.onmousemove = null;
+                            document.onmouseup = null;
+
+                            if (ev.clientY - y <= height) {
+                                box.style.top =  height + 'px'
+                            } else if (ev.clientY -y > bodyClientHeight - height) {
+                                box.style.top = (bodyClientHeight - height) + 'px'
+                            }
+                            lastTime = new Date().getTime();
+                            if( (lastTime - firstTime) < 200){
+                                box.setAttribute('drag',true)
+                            } else {
+
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        created() {
+            if (this.bottom != null && this.bottom.color != null) {
+                document.documentElement.style.setProperty(
+                    "--Color", this.bottom.color
+                );
+            }
+            let host = window.location.host;
+            if(host.lastIndexOf("huimi.vip") > -1) {
+                this.infoShow = false
+            } else {
+                this.infoShow = true
+            }
+
+        },
+        mounted() {
+            let box = document.getElementById('window-drag')
+
+        },
+        methods: {
+            open() {
+                //  验证是否为点击事件，是则继续执行click事件，否则不执行
+                let box = document.getElementById('window-drag')
+                let isClick = box.getAttribute('drag');
+                if (isClick) {
+                    this.isOpen = !this.isOpen
+                }
+            }
+        }
+    })
+</script>
+</html></div>
+<script src="/script/swiper.min-da9effeb9447655663c5e0861e58d1dc.js"></script>
+<script src="/js/index-64476610fbc4773489d69814ea44f412.js"></script>
+<script>
+    //全局的过滤器
+    Vue.filter('mySlice', function (value) {
+        return value.slice(0, 4)
+    })
+    new Vue({
+        el: '#app',
+        data: {
+            arr: ['搜域名', '查whois'],
+            searchKey: '',
+            searchType: 0,
+            barrageIndex: -1,
+            rotationIndex: 0,
+            bannerList: [{"id":12,"title":"\u597D\u57DF\u540D\uFF0C\u5C3D\u5728190","imgUrl":"https:\/\/file.190.vip\/content\/fab88f8883ca4103809f1095797bba25.png","linkUrl":"https:\/\/www.190.vip\/buyoutprice"}],
+            noticedList: [{"id":506,"title":"\u3010\u901A\u77E5\u30112023\u5E74\u4E2D\u79CB\u0026\u56FD\u5E86\u653E\u5047\u901A\u77E5","releaseTime":"2023-09-28 07:32:04"},{"id":485,"title":"\u516C\u544A\u4E28.COM\u57DF\u540D\u6CE8\u518C\u4EF7\u683C\u8C03\u6574\u901A\u77E5","releaseTime":"2023-08-01 08:42:04"},{"id":472,"title":"190\u5B98\u7F51\u670D\u52A1\u5668\u7EF4\u62A4\u516C\u544A\u30102023-7-6\u3011","releaseTime":"2023-06-30 09:00:45"},{"id":504,"title":"\u9760\u5356\u7CAE\u98DF\u4E0A\u5E02\uFF01\u5176\u54C1\u724C\u57DF\u540D\u662F\u4E2A\u56DB\u62FC\uFF1F\uFF01","releaseTime":"2023-09-20 07:26:20"},{"id":503,"title":"\u65F6\u9694\u591A\u5E74\uFF0C\u8FD9\u679A\u5343\u4E07\u7EA7\u57DF\u540D\u987A\u5229\u5B8C\u6210\u4EA4\u6613\uFF01","releaseTime":"2023-09-19 07:33:30"},{"id":502,"title":"\u3010\u57DF\u540D\u4EA4\u6613\u301199939.com\u7EA69.3\u4E07\u5143\u6210\u4EA4\uFF0CTM6.com\u8D8558\u4E07\u5143\u7ED3\u62CD\uFF01","releaseTime":"2023-09-15 07:25:54"},{"id":492,"title":"Adam Robinson\u82B180\u4E07\u7F8E\u5143\u6536\u8D2D\u5355\u8BCD\u57DF\u540D\uFF0C\u503C\u5417\uFF1F","releaseTime":"2023-08-17 07:42:37"},{"id":482,"title":"\u9A6C\u65AF\u514B\u542F\u7528X.com","releaseTime":"2023-07-25 07:37:17"},{"id":479,"title":"\u65E0\u5FE7\u4F20\u5A92\u542F\u7528\u53CC\u62FC\u57DF\u540D\uFF1Awuyou.com","releaseTime":"2023-07-18 07:30:07"}],
+            domainBiddingList: [{"id":342735,"domainBaseId":57540161,"bookingId":47443751,"domainName":"em.org.cn","meaning":null,"len":2,"pr":null,"startTime":null,"endTime":"2023-10-07 21:00:34","outEndTime":"2023-10-07 21:00:34","price":50.0,"biddingCount":1,"isBarrage":0,"isTop":0,"barrageText":null,"biddingRebateValue":null,"biddingRebateType":null,"referrerRebateValue":null,"referrerRebateType":null,"isTab":0,"increasePrice":10.0,"source":0,"overReserve":0,"rebateType":0,"rebateNumber":0,"freeEnter":0,"rushInterface":"\u6DF1\u5733\u82F1\u8FC8\u601D\u4FE1\u606F\u6280\u672F\u6709\u9650\u516C\u53F8","isOut":0,"outStatus":2,"outPrice":0},{"id":342383,"domainBaseId":57442608,"bookingId":47346207,"domainName":"jxss.net.cn","meaning":null,"len":4,"pr":null,"startTime":null,"endTime":"2023-10-06 21:00:32","outEndTime":"2023-10-06 21:00:32","price":50.0,"biddingCount":1,"isBarrage":0,"isTop":0,"barrageText":null,"biddingRebateValue":null,"biddingRebateType":null,"referrerRebateValue":null,"referrerRebateType":null,"isTab":0,"increasePrice":10.0,"source":0,"overReserve":0,"rebateType":0,"rebateNumber":0,"freeEnter":0,"rushInterface":"\u957F\u6C99\u5C0F\u8C46\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8","isOut":0,"outStatus":2,"outPrice":0.0},{"id":342742,"domainBaseId":57540251,"bookingId":47443841,"domainName":"Lfex.cn","meaning":null,"len":4,"pr":null,"startTime":null,"endTime":"2023-10-07 21:04:32","outEndTime":"2023-10-07 21:04:32","price":50.0,"biddingCount":1,"isBarrage":0,"isTop":0,"barrageText":null,"biddingRebateValue":null,"biddingRebateType":null,"referrerRebateValue":null,"referrerRebateType":null,"isTab":0,"increasePrice":10.0,"source":0,"overReserve":0,"rebateType":0,"rebateNumber":0,"freeEnter":0,"rushInterface":"\u5408\u80A5\u6B22\u9E7F\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8","isOut":0,"outStatus":2,"outPrice":0.0},{"id":342385,"domainBaseId":57442761,"bookingId":47346360,"domainName":"kawo.cn","meaning":null,"len":4,"pr":null,"startTime":null,"endTime":"2023-10-06 21:01:36","outEndTime":"2023-10-06 21:01:36","price":50.0,"biddingCount":1,"isBarrage":0,"isTop":0,"barrageText":null,"biddingRebateValue":null,"biddingRebateType":null,"referrerRebateValue":null,"referrerRebateType":null,"isTab":0,"increasePrice":10.0,"source":0,"overReserve":0,"rebateType":0,"rebateNumber":0,"freeEnter":0,"rushInterface":"\u957F\u6625\u5E02\u667A\u7ED8\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8","isOut":0,"outStatus":2,"outPrice":0},{"id":343125,"domainBaseId":57631689,"bookingId":47535271,"domainName":"dzjy.org.cn","meaning":null,"len":4,"pr":null,"startTime":null,"endTime":"2023-10-08 21:05:15","outEndTime":"2023-10-08 21:05:15","price":50.0,"biddingCount":1,"isBarrage":0,"isTop":0,"barrageText":null,"biddingRebateValue":null,"biddingRebateType":null,"referrerRebateValue":null,"referrerRebateType":null,"isTab":0,"increasePrice":10.0,"source":0,"overReserve":0,"rebateType":0,"rebateNumber":0,"freeEnter":0,"rushInterface":"\u5C71\u897F\u51EF\u5229\u6676\u4FE1\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8","isOut":0,"outStatus":2,"outPrice":0.0},{"id":342758,"domainBaseId":57540838,"bookingId":47444428,"domainName":"h5ti.cn","meaning":null,"len":4,"pr":null,"startTime":null,"endTime":"2023-10-07 21:13:36","outEndTime":"2023-10-07 21:13:36","price":50.0,"biddingCount":1,"isBarrage":0,"isTop":0,"barrageText":null,"biddingRebateValue":null,"biddingRebateType":null,"referrerRebateValue":null,"referrerRebateType":null,"isTab":0,"increasePrice":10.0,"source":0,"overReserve":0,"rebateType":0,"rebateNumber":0,"freeEnter":0,"rushInterface":"\u957F\u6625\u5E02\u667A\u7ED8\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8","isOut":0,"outStatus":2,"outPrice":0.0},{"id":342770,"domainBaseId":57541352,"bookingId":47444942,"domainName":"myLj.net.cn","meaning":null,"len":4,"pr":null,"startTime":null,"endTime":"2023-10-07 21:20:24","outEndTime":"2023-10-07 21:20:24","price":50.0,"biddingCount":1,"isBarrage":0,"isTop":0,"barrageText":null,"biddingRebateValue":null,"biddingRebateType":null,"referrerRebateValue":null,"referrerRebateType":null,"isTab":0,"increasePrice":10.0,"source":0,"overReserve":0,"rebateType":0,"rebateNumber":0,"freeEnter":0,"rushInterface":"\u5305\u5934\u5E02\u7279\u6728\u9C81\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8","isOut":0,"outStatus":2,"outPrice":0.0},{"id":342788,"domainBaseId":57541742,"bookingId":47445332,"domainName":"eLwf.cn","meaning":null,"len":4,"pr":null,"startTime":null,"endTime":"2023-10-07 21:30:36","outEndTime":"2023-10-07 21:30:36","price":50.0,"biddingCount":1,"isBarrage":0,"isTop":0,"barrageText":null,"biddingRebateValue":null,"biddingRebateType":null,"referrerRebateValue":null,"referrerRebateType":null,"isTab":0,"increasePrice":10.0,"source":0,"overReserve":0,"rebateType":0,"rebateNumber":0,"freeEnter":0,"rushInterface":"\u5408\u80A5\u6B22\u9E7F\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8","isOut":0,"outStatus":2,"outPrice":0.0},{"id":342414,"domainBaseId":57443451,"bookingId":47347050,"domainName":"st58.cn","meaning":null,"len":4,"pr":null,"startTime":null,"endTime":"2023-10-06 21:17:04","outEndTime":"2023-10-06 21:17:04","price":50.0,"biddingCount":1,"isBarrage":0,"isTop":0,"barrageText":null,"biddingRebateValue":null,"biddingRebateType":null,"referrerRebateValue":null,"referrerRebateType":null,"isTab":0,"increasePrice":10.0,"source":0,"overReserve":0,"rebateType":0,"rebateNumber":0,"freeEnter":0,"rushInterface":"\u6D77\u53E3\u667A\u6167\u5EB7\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8","isOut":0,"outStatus":2,"outPrice":0.0}]
+        },
+        created() {
+            let count = Math.floor(this.noticedList.length / 3)
+            if (count * 3 < this.noticedList.length) {
+                count += 1;
+            }
+            let arr = []
+            for (let i = 0; i < count; i++) {
+                let formIdx = i * 3;
+                let toIdx = (i + 1) * 3;
+                if (toIdx > this.noticedList.length) {
+                    toIdx = this.noticedList.length
+                }
+                arr.push(this.noticedList.slice(formIdx, toIdx))
+            }
+            this.noticedList = arr
+        },
+        mounted() {
+            let that = this;
+            setInterval(() => {
+                that.getHotBidding()
+            }, 10000)
+
+            new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                autoplayDisableOnInteraction : false, //手动播放后继续自动播放
+                speed: 600,
+                autoplay: 3000,
+                loop: true
+            });
+        },
+        methods: {
+            getHotBidding() {
+                let that = this;
+                api.bid.hotBidList(9).then(res => {
+                    const {result, data} = res
+                    if (result) {
+                        that.domainBiddingList = data
+                    }
+                })
+            },
+            choseSearch(type) {
+                this.searchType = type
+            },
+            showBarrage(idx) {
+                if (idx === this.barrageIndex) {
+                    this.barrageIndex = -1
+                } else {
+                    this.barrageIndex = idx
+                }
+            },
+            search() {
+                var _this = this;
+                if (this.searchType === 0) {
+                    window.location.href = 'dmSearch?type=0&kw=' + _this.searchKey
+                } else {
+                    // 查whois
+                    window.location.href = "whois?type=1&domainName=" + _this.searchKey
+                }
+            }
+        },
+        filters: {
+            dateFilter(v) {
+                let datetime = new Date(v);
+                let year = datetime.getFullYear();
+                let month = datetime.getMonth() + 1 < 10 ? '0' + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
+                let date = datetime.getDate() < 10 ? '0' + datetime.getDate() : datetime.getDate();
+                return `${year}-${month}-${date}`
+            },
+            timeFilter(v) {
+                let str = '';
+                if (v == null) {
+                    str = '竞价结束';
+                } else {
+                    let t = Math.floor((new Date(v).getTime() - new Date().getTime()) / 1000);
+                    if (t <= 0) {
+                        str = '竞价结束';
+                    } else {
+                        let d = Math.floor(t / (24 * 3600));
+                        let h = Math.floor((t - d * 24 * 3600) / 3600);
+                        let m = Math.floor((t - d * 24 * 3600 - h * 3600) / 60);
+                        let s = Math.floor((t - d * 24 * 3600 - h * 3600 - m * 60));
+
+                        if (d > 0) {
+                            if (d < 10) {
+                                d = '0' + d;
+                            }
+                            str += `${d}天`
+                            if (h > 0) {
+                                if (h < 10) {
+                                    h = '0' + h;
+                                }
+                                str += `${h}时`
+                            }
+                            return str
+                        } else {
+                            if (h > 0) {
+                                if (h < 10) {
+                                    h = '0' + h;
+                                }
+                                str += `${h}时`
+                                if (m > 0) {
+                                    if (m < 10) {
+                                        m = '0' + m;
+                                    }
+                                    str += `${m}分`
+                                }
+                                return str
+                            } else {
+                                if (m > 0) {
+                                    if (m < 10) {
+                                        m = '0' + m;
+                                    }
+                                    str += `${m}分`
+                                    if (s > 0) {
+                                        if (s < 10) {
+                                            s = '0' + s;
+                                        }
+                                        str += `${s}秒`
+                                    }
+                                    return str
+                                } else {
+                                    if (s > 0) {
+                                        if (s < 10) {
+                                            s = '0' + s;
+                                        }
+                                        str += `${s}秒`
+                                    }
+                                    return str
+                                }
+                            }
+                        }
+
+                    }
+                }
+                return str;
+            },
+        }
+    })
+</script>
+</body>
+</html>

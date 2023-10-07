@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>MAIL.EX.UA - бесплатная электронная почта</title>		
+	<link href="/v1/exmail5/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/v1/exmail5/css_build/vendors.min.css?3392">
+	<link href="/v1/exmail5/css_build/main.min.css?_=3392" rel="stylesheet">
+	<meta name="description" content="Персональный и профессиональный email ➤ 100% бесплатно ➤ spam фильтр ➤ Удобная сортировка писем ➤ Мобильное приложение ➤ Регистрируйся на EX MAIL сегодня">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169854734-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-169854734-1');
+</script>
+
+	<style type="text/css">
+		.loading {
+			background: #fff;
+			position: absolute;
+			/*width: 100%;
+			height: 100%;*/
+			text-align: center;
+			overflow: hidden;
+			z-index: 99999;
+			display: none;
+			top: 0;
+    		left: 0;
+    		bottom: 0;
+    		right: 0;
+		}
+
+		.loading span {
+			display: block;
+			text-align: center;
+			font-size: 18px;
+		}
+
+		.lpb {
+			text-align: center;
+			width: 320px;
+			background-color: #f0f0f0;
+			height: 8px;
+			margin-top: 10px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		#lpt {
+			width: 0;
+  			height: 100%;
+  			background-color: #0080E3;
+  			background-repeat: repeat-x;
+  			background-position: 0 0;
+  			background-size: 16px 8px;
+
+  			-webkit-transition: all 325ms ease;
+			-moz-transition: 	all 325ms ease;
+			-ms-transition: 	all 325ms ease;
+			-o-transition: 		all 325ms ease;
+			transition: 		all 325ms ease;
+  		}
+	</style>
+	<script>
+        function readCookie(n){n+='=';for(var a=document.cookie.split(/;\s*/),i=a.length-1;i>=0;i--)if(!a[i].indexOf(n))return a[i].replace(n,'');}
+		function isMobileForbidden() {
+		    return readCookie('isMobileForbidden') === '1';
+		}
+		function isLandingPage() {
+            return location.hash === '' || /signup|restore|corp|about|terms|rules/.test(location.hash);
+		}
+		if(isLandingPage() && !isMobileForbidden()) {
+            var meta = document.createElement('meta');
+            meta.name = 'viewport';
+            meta.content = 'width=device-width,initial-scale=1';
+            document.head.appendChild(meta);
+		}
+	</script>
+</head>
+
+<body class="page">
+
+<div class="loading">
+	<span>Загрузка...</span>
+	<div class="lpb">
+		<div id="lpt"></div>
+	</div>
+</div>
+
+<span id="dot_template"></span>
+
+
+<script type="text/javascript">
+	var exMail = exMail || {};
+
+	exMail.initData  = {"login":null,"domain":{"flags":3,"host":"mail.ex.ua","fs":"mail.ex.ua","name":"ex.ua"},"captcha":0,"priv":0,"err":null};
+
+
+	var SHOW_CAPTCHA = parseInt(exMail.initData.captcha);
+	var	LOGIN = exMail.initData.login || 0;
+	var	CORP = parseInt(exMail.initData.priv);
+	var ERROR = {};
+
+	
+
+	try {
+		ERROR = exMail.initData.err;
+	} catch(e) {
+		console.warn(e.message);
+	}
+
+	var $loading = document.getElementsByClassName('loading')[0];
+
+	if(LOGIN) {
+		var span = $loading.getElementsByTagName('span')[0];
+
+		span.style.marginTop = window.innerHeight/2-100+'px';
+		span.textContent = LOGIN+"@"+getHost();
+		$loading.style.display = 'block';
+		exMail.firstLoad = true;
+		exMail.firstLoadPercent = 30;
+
+		var startTime = (new Date()).getTime();
+
+		
+
+		exMail.loadingProgInterval = setInterval(function() {
+			if(!exMail.firstLoad) {
+				exMail.firstLoadPercent = 100;
+				clearInterval(exMail.loadingProgInterval);
+			}
+
+			exMail.firstLoadPercent += getRandomInt(1, 5);
+			if(exMail.firstLoadPercent < getRandomInt(90, 99)) {	
+				document.getElementById('lpt').style.width = exMail.firstLoadPercent+'%';
+			} else {
+				document.getElementById('lpt').style.width = '100%';
+			}
+
+			// console.log('Loading...', exMail.firstLoadPercent);
+		}, 100); 
+
+
+		// ---
+
+		
+
+		function goLoadingCheck() {
+			exMail.loadingInterval = setInterval(function() {
+				if(!exMail.firstLoad) {
+					$loading.style.display = 'none';
+					clearInterval(exMail.loadingInterval);
+				}
+
+				var curTime = (new Date()).getTime();
+
+				var diffTime = curTime-startTime;
+
+				// console.log(diffTime);
+
+				if((diffTime >= 4000) && (diffTime < 10000)) {
+					clearInterval(exMail.loadingProgInterval);
+					// console.log('%cTo slow', 'color: red; font-size: 20px;');
+					exMail.firstLoadPercent += 0.5;
+					if(exMail.firstLoadPercent < 100) {	
+						document.getElementById('lpt').style.width = exMail.firstLoadPercent+'%';
+					} else {
+						document.getElementById('lpt').style.width = '100%';
+					}
+				} else if(diffTime >= 10000) {
+					// console.log('%cWery slow', 'color: red; font-size: 20px;');
+					exMail.firstLoadPercent += 0.09;
+					if(exMail.firstLoadPercent < 100) {	
+						document.getElementById('lpt').style.width = exMail.firstLoadPercent+'%';
+					} else {
+						document.getElementById('lpt').style.width = '100%';
+					}
+				}
+
+			}, 100);
+		}
+
+		setTimeout(goLoadingCheck, 1500);
+
+		function getRandomInt(min, max) {
+		  return Math.floor(Math.random() * (max - min)) + min;
+		}
+
+		// ---
+	} else {
+		$loading.innerHTML = 'Загрузка...';
+		$loading.style.paddingTop = '200px';
+		$loading.style.display = 'block';
+	}
+
+	function getHost() {
+		// var h = document.location.hostname;
+		// var host = {
+		// 	'mail.rover.info': 'rover.info',
+		// 	'mail.r13.org': 'r13.org',
+		// 	'mail.ex.ua': 'ex.ua'
+		// };	
+		// return host[h] || 'ex.ua';
+		return exMail.initData.domain.name || 'ex.ua';
+	}
+</script>
+<script>
+	if (exMail.initData.domain.host !== 'mail.ex.ua') {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+            { (i[r].q=i[r].q||[]).push(arguments)}
+            ,i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-100978626-1', 'auto');
+        ga('send', 'pageview');
+	}
+</script>
+<!-- auth container -->
+<div id="app" class="container"></div>
+<!-- / -->
+
+<div class="inbox_wr app-main-js">
+
+	<div class="ib_widgets_bl"></div>
+
+	<div id="top_menu" class="ib_top_bl clearfix"></div>
+
+	<section class="l-side"></section>
+
+	<div class="ib_box_r_bl r-side">
+
+		<div class="top-toolbar-block js-top-toolbar"></div>
+
+		<div class="ib_mail_list_wr">
+			<div id="mail_list" class="ib_mail_list_bl">
+				<!-- there include template -->
+			</div>
+
+			<div id="bottom_footer" class="ib_footer_bl clearfix"></div>
+
+			<div id="tt_holder"></div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- / -->
+
+<!-- this node part of settings popup -->
+<!-- <div class="bg-grey"></div> -->
+<!-- <div id="settings-wrap"></div> -->
+<!-- // -->
+
+<div id="files_wrap"></div>
+
+<div class="note_wr" id="alert_box"></div>
+
+<!-- // -->
+<div id="preview_box" class="preview">
+	<img class="view">
+	<div class="prev"><i></i></div>
+	<div class="next"><i></i></div>
+
+	<!-- // -->
+	<div class="list_wr clearfix">
+		<i class="ssc_prev"></i>
+		<div class="list_bl">
+			<div class="list slow_all"></div>
+		</div>
+		<i class="ssc_next"></i>
+	</div>
+	<!-- // -->
+
+	<div class="title">
+	<div class="file_name"></div>
+	<div class="file_link"><a href=""></a><a href=""></a></div>
+	</div>
+</div>
+
+<!-- // -->
+<div id="video_box" class="video">
+	<div class="view">
+		<video controls autoplay></video>
+		<div id="player_window"></div>
+	</div>
+	<div class="prev"><i></i></div>
+	<div class="next"><i></i></div>
+	
+	<div class="list_wr clearfix">
+		<i class="ssc_prev"></i>
+		<div class="list_bl">
+			<div class="list slow_all"></div>
+		</div>
+		<i class="ssc_next"></i>
+	</div>
+
+	<div class="title">
+		<div class="file_name">file_name</div>
+		<a href="" class="file_download"></a>
+	</div>
+	<div class="close"></div>
+</div>
+<!-- // -->
+
+<div class="modal"></div>
+
+<div id="popup_mode" class="popup_overlay_mode"></div>
+<div id="popup_changes" class="popup_overlay_changes"></div>
+
+<div id="f_holder"></div>
+
+<canvas id='user_avatar' style="display:none;"></canvas>
+
+<!-- label svg template -->
+<svg width="0" height="0" style="display: none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<path id="lbl"d="M260.7,172.9h-4.2c-0.8,0-1.9,0.4-2.4,1l-6.5,6.5c-0.5,0.5-0.5,1.4,0,2l5.1,5.1c0.5,0.5,1.4,0.5,2,0l6.5-6.5
+		c0.5-0.5,1-1.6,1-2.4v-4.2C262.1,173.5,261.5,172.9,260.7,172.9z M257.7,178.7c-0.8,0-1.4-0.6-1.4-1.4c0-0.8,0.6-1.4,1.4-1.4
+		s1.4,0.6,1.4,1.4C259.1,178,258.5,178.7,257.7,178.7z"></path>
+</svg>
+
+<!-- <script src="/v1/exmail5/js_build/libs.js?10"></script>
+<script src="/v1/exmail5/js_build/mail.min.js?10"></script> -->
+
+<script>
+	!function(doc) {
+		'use strict';
+
+		var vendors = doc.createElement('script');
+		var mail = doc.createElement('script');
+
+		vendors.async = true;
+		mail.async = true;
+
+		vendors.src = '/v1/exmail5/js_build/libs.js?_=3392';
+		mail.src = '/v1/exmail5/js_build/mail.min.js?_=3392';
+
+		mail.onload = function() {
+			$loading.style.display = 'none';
+		}
+
+		vendors.onload = function() {
+			doc.body.appendChild(mail);
+		}
+
+		doc.body.appendChild(vendors);
+		
+
+	}(document);
+</script>
+
+<script>
+	!function(doc) {
+		'use strict';
+
+		function loadJs(src) {
+			var a = doc.createElement('script');
+			a.setAttribute('src', src);
+			a.async = 'true';
+			var b = doc.getElementsByTagName('script')[0];
+			b.parentNode.insertBefore(a, b);
+		}
+		
+		if(!doc.cookie) doc.cookie = "b=b";
+		
+		loadJs('//c.hit.ua/hit?i=9' +
+			'&g=0&x=3&s=1' +
+			'&t=' + (new Date()).getTimezoneOffset() +
+			(doc.cookie ? '&c=1' : '') +
+			(self != top ? '&f=1' : '') +
+			(navigator.javaEnabled() ? '&j=1' : '') +
+			(typeof(screen) != 'undefined' ? '&w=' + screen.width + '&h=' + screen.height + '&d=' + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth) : '') +
+			'&r=' + escape(doc.referrer) +
+			'&u=' + escape(window.location.href) +
+			'&' + Math.random()
+		);
+	}(document);
+</script>
+
+</body>
+</html>
+

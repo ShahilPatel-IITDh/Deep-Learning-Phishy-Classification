@@ -1,0 +1,678 @@
+  <!DOCTYPE html>
+<html class="" lang="en-us">
+<head>
+    <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"a306fc3768","applicationID":"112512892","transactionName":"YAFWMRAFWEYCURIIWFlLdTYyS0RUF1sIBkQYAVpKCwpSUBscBxJHTw==","queueTime":0,"applicationTime":264,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:false},ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VQ4AVldVDRABVVNXBgMPX1Y=",licenseKey:"a306fc3768",applicationID:"112512892"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(27),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(28),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(10),t(9),"addEventListener"in window&&t(6),c.xhrWrappable&&t(11),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function i(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+l])try{window.performance[h](m,i,!1)}catch(t){}else try{window.performance[h]("webkit"+m,i,!1)}catch(t){}}function o(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(10),f=t(9),u=t(5),d=t(19),l="learResourceTimings",p="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",S=t("loader");if(!S.disabled){S.features.stn=!0,t(8),"addEventListener"in window&&t(6);var O=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof O&&(this.bstStart=S.now())}),a.on(b,function(t,e){var n=t[0];n instanceof O&&s("bst",[n,e,this.bstStart,S.now()])}),c.on(x,function(t,e,n){this.bstStart=S.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),this.bstType])}),f.on(x,function(){this.bstStart=S.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=S.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):p in window.performance&&(window.performance["c"+l]?window.performance[p](m,i,d(!1)):window.performance[p]("webkit"+m,i,d(!1))),document[p]("scroll",o,d(!1)),document[p]("keypress",o,d(!1)),document[p]("click",o,d(!1))}}},{}],5:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(28),a=t(27);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],10:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],11:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function o(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,S.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=t(19),p=NREUM.o,h=p.XHR,m=p.MO,v=p.PR,w=p.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,l(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,S=document.createTextNode(R);new m(a).observe(S,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],12:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(w.traceContextParentHeader=i(h,m),w.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(24),h=t(14);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],13:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function i(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(14),f=t(12).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(20),m=t(18),v=t(15),w=t(19),g=t(21).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(11),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;if("string"==typeof o?n=o:"object"==typeof o&&o instanceof y?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n),"data"!==this.params.protocol){var s=(""+(o&&o instanceof y&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],14:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],15:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(18);e.exports=r},{}],16:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),o(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(27),s=t(28),c=t("ee").get("tracer"),f=t("loader"),u=t(21),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var l=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(l,function(t,e){d[e]=i(p,e,!0,"api")}),d.addPageAction=i(p,"addPageAction",!0),d.setCurrentRouteName=i(p,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),o("err",[t,f.now(),!1,e])}},{}],17:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],20:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[s,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:i}},{}],22:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(29);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],23:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var i=[r],o=a({});o&&i.push(o),p("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,l,p=t("handle"),h=t("loader"),m=t(26),v=t(19),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}l=new PerformanceObserver(o);try{l.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],24:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(t)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],25:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],26:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(19);e.exports=r;var o,a,s;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],27:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],28:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],29:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||i(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(27),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!O++){var t=S.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+S.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){s("mark",["domContent",a()+S.offset],null,"api")}var a=t(22),s=t("handle"),c=t(27),f=t("ee"),u=t(25),d=t(17),l=t(19),p=d.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!1;NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),S=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(16),t(23),m[v]?(m[v]("DOMContentLoaded",o,l(!1)),h[v]("load",r,l(!1))):(m[w]("onreadystatechange",i),h[w]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var O=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(28),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,13,4,3]);</script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+    <script type="text/javascript" src='/_assets/js/jquery-3.5.1.min.js'></script>
+    <script type="text/javascript" src='/_assets/js/search/crownpeak.searchg2-1.1.0.js'></script>
+  
+       
+  
+    
+     
+       <link rel="stylesheet" href='/_assets/css/style.css?v6' media="all" />  
+     
+  <link rel="stylesheet" href="/_assets/css/stylecorpesg.css"  media="all"/>          <script type="text/javascript" src='/_assets/js/picturefill.js'></script>
+           
+		<script src="/_assets/js/search/search-2.0.4.js"></script>
+<script src="/_assets/js/ratingshomepage.js"></script>
+		<title>Home | S&P Global Ratings</title>
+
+
+<meta name="title" content="Home"/>
+<meta name="description" content="We provide intelligence that is embedded into the workflow and decision-making of customers around the globe."/>
+<meta name="keywords" content="Essential intelligence, S&P Global "/>
+<meta name="robots" content=""/>
+
+<meta name="vertical" content=""/>
+<meta name="topics" content=""/>
+<link rel="canonical" href="https://www.spglobal.com/ratings/en/"/>
+<meta name="asset_id" content="2849414"/>
+<meta name="asset_branch_id" content="903066"/>
+<meta property="og:title" content=""/>
+<meta property="og:url" content="https://www.spglobal.com/ratings/en/"/>
+    
+      
+    
+    <script type="text/javascript" src="//app-sjqe.marketo.com/js/forms2/js/forms2.js"></script>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src='/_assets/js/printpreview.js'></script>
+  
+    <link rel="icon" type="image/png" href="/_assets/images/icons/spg_favicon_wht_192x192.png">
+    <link rel="icon" href="/_assets/images/icons/SPG_favicon_wht_32x32.ico">        <!-- Google Tag Manager -->     <script>
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-TL3Q69N');
+    </script>
+	     <script>
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-NKVB4WM');
+    </script>
+		
+<!--  End Google Tag Manager -->   <script type="text/javascript" src='/_assets/js/ratingsbundle.js'></script>
+   
+   <link rel="stylesheet" href='/_assets/css/ratings-style.css' media="all" />
+  
+     
+    
+  
+     
+    <!-- Start : Concured AI Script -->
+<script>
+    (function (window, document) {
+        if (window.concuredWidget)
+    console.error('The engagement bar was already initialized.');
+    (window.concuredWidget = { }), (p = ['init']);
+    window.concuredWidget._c = [];
+    p.forEach(
+          (f) =>
+    (window.concuredWidget[f] = function () {
+        window.concuredWidget._c.push([f, arguments]);
+            })
+    );
+    var b = document.createElement('script');
+    b.type = 'text/javascript';
+    b.async = true;
+    b.src = 'https://cdn.concured.com/widget/concured-shim.js';
+    var before = document.getElementsByTagName('script')[0];
+    before.parentNode.insertBefore(b, before);
+      })(window, document);
+    concuredWidget.init('6670775e');
+</script>
+  <!-- End : Concured AI Script --> 
+ </head>
+<body class="">
+   
+  
+  <!-- Google Tag Manager (noscript) -->     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TL3Q69N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NKVB4WM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->    <span style="display: none;">
+        
+        Ratings
+        /ratings/en/index
+        content
+      esgSubNav
+        
+      	
+      	
+      	
+      	
+      	
+      	
+       	      
+      
+      
+      
+    
+      
+    </span>
+ 
+     <div class="header__wrapper js-header js-select-dispatch no-print"><!--start_new_eyebrow--><div class="top-navigation">	<div class="content">		<div class="top-navigation-container">			<div class="top-navigation-container__left">   <div class="sites-link" aria-label="S&amp;P Global Divisions">      <a href="javascript:void(0);" aria-haspopup="true" id="division" aria-expanded="false" class="sites-link__cta">S&P Global Ratings</a>      <div class="sites-link__dropdown" aria-hidden="true">         <div class="content"><!--start_division_heading-->            <p></p><!--end_division_heading-->            <ul class="sites-link__links" role="menu">                <li role="menuitem">     <a href="/en" data-gtm-category="Header" data-gtm-action="Outbound Link_Division" data-divison="ratings"  rel="ratings" data-gtm-label="S&P Global" class="">S&P Global     </a></li> <li role="menuitem">     <a href="/spdji/en/" data-gtm-category="Header" data-gtm-action="Outbound Link_Division" data-divison="ratings"  rel="ratings" data-gtm-label="S&P Dow Jones Indices" class="">S&P Dow Jones Indices     </a></li> <li role="menuitem">     <a href="/marketintelligence/en/" data-gtm-category="Header" data-gtm-action="Outbound Link_Division" data-divison="ratings"  rel="ratings" data-gtm-label="S&P Global Market Intelligence" class="">S&P Global Market Intelligence     </a></li> <li role="menuitem">     <a href="/mobility/en/" data-gtm-category="Header" data-gtm-action="Outbound Link_Division" data-divison="ratings"  rel="ratings" data-gtm-label="S&P Global Mobility" class="">S&P Global Mobility     </a></li> <li role="menuitem">     <a href="https://www.spglobal.com/commodity-insights/en" data-gtm-category="Header" data-gtm-action="Outbound Link_Division" data-divison="ratings"  rel="ratings" data-gtm-label="S&P Global Commodity Insights" class="">S&P Global Commodity Insights     </a></li> <li role="menuitem">     <a href="/ratings/en" data-gtm-category="Header" data-gtm-action="Outbound Link_Division" data-divison="ratings"  rel="ratings" data-gtm-label="S&P Global Ratings" class="active">S&P Global Ratings     </a></li> <li role="menuitem">     <a href="https://www.spglobal.com/esg/index" data-gtm-category="Header" data-gtm-action="Outbound Link_Division" data-divison="ratings"  rel="ratings" data-gtm-label="S&P Global Sustainable1" class="">S&P Global Sustainable1     </a></li>            </ul>            <div class="sites-link__close">		<a href="javascript:void(0);"><i class="fa fa-times"></i>Close</a>	    </div>         </div>      </div>   </div>   <span class="sites-link__info">Discover more about S&P Global’s offerings</span></div>	                        <div class="top-navigation-container__right"><!--start_language_block-->  <div class="utility-dropdown" aria-label="Language Dropdown">    <a href="javascript:void(0);" aria-haspopup="true" aria-label="English" aria-expanded="false" class="linkCta">English</a>  <ul aria-hidden="true" class="utility-dropdown-data language" role="menu">   <li role="menuitem"><a href="/ratings/ar" aria-label="Arabic" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Language_Arabic">Arabic</a></li><li role="menuitem"><a href="/ratings/zh" aria-label="Chinese" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Language_Chinese">Chinese</a></li><li role="menuitem"><a href="https://www.maalot.co.il" aria-label="Hebrew" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Language_Hebrew">Hebrew</a></li><li role="menuitem"><a href="/ratings/es" aria-label="Spanish" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Language_Spanish">Spanish</a></li><li role="menuitem"><a href="/ratings/pt" aria-label="Portuguese" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Language_Portuguese">Portuguese</a></li><li role="menuitem"><a href="/ratings/ru" aria-label="Russian" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Language_Russian">Russian</a></li><li role="menuitem"><a href="/ratings/jp/" aria-label="Japan" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Language_Japan">Japan</a></li><li role="menuitem"><a href="https://www.brc.com.co/inicio.php" aria-label="BRC Ratings S&P Global" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Language_BRC Ratings S&P Global">*BRC Ratings – S&P Global</a></li><li role="menuitem"><a href="https://www.crisil.com" aria-label="India Crisil" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Language_India Crisil">India-CRISIL</a></li><li role="menuitem"><a href="https://www.taiwanratings.com/portal/front/index" aria-label="Taiwan Ratings" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Language_Taiwan Ratings">Taiwan Ratings</a></li>  </ul>  </div><!--end_language_block-->    <!-- BEGINNING: molecules-user-dropdown-->
+        <a href="/ratings/en/login"  aria-label="Login" class="header-link login" tabindex="0" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Login">Login 
+<picture aria-hidden="true">
+   <source srcset="/_assets/images/icons/login.register.png 1x, /_assets/images/icons/login.register.-2x.png 2x" media="(min-width: 1360px)">
+   <img srcset="/_assets/images/icons/login.register.png 1x, /_assets/images/icons/login.register.-2x.png 2x" alt="">
+</picture>
+</a>
+			
+				<a href="/ratings/en/register" class="linkCta header-link" tabindex="0" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Register">
+                        Register
+                </a>
+  
+  			<a href="https://id.spglobal.com/SP/idm/idmlogin/public/resetPassword.do" class="linkCta header-link" tabindex="0" data-gtm-category="Header" data-gtm-action="Click" data-gtm-label="Reset Password">
+                        Reset Password
+                    </a><input type="hidden" id="hdnuuid" name="hdnuuid" value="">
+<!-- END: molecules-user-dropdown--></div>		</div>	</div></div><!--end_new_eyebrow-->	<div class="navigation__wrapper">		<a href="/ratings/en/index" class="logo " data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="S&P Global Ratings_Logo" target="" >    <img class="logo__image" src="/ratings/_division-assets/logos/logo-ratings.png" alt="S&P Global Ratings" /></a>		<!-- PrimaryNav name: global_header_primary_nav index:  --><style type="text/css">.nav-meta__event { padding-top: 10px; } .nav__secondary-list a { width: 17vw !important;}</style><!-- BEGINNING: molecules-primary-nav.twig --><nav class="nav__primary ratings_nav_primary" aria-label="">    <ul class="nav__primary-list">        <li><a href="#" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="About Ratings" class=" who-we-are   " data-event-name="who-we-are">About Ratings</a></li>            <li><a href="#" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights" class=" what-we-do   " data-event-name="what-we-do">Research & Insights</a></li>            <li><a href="#" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Sectors" class=" our-insights   " data-event-name="our-insights">Sectors</a></li>            <li><a href="#" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Regulatory" class=" regulatory   " data-event-name="regulatory">Regulatory</a></li>            <li><a href="#" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits" class=" careers   " data-event-name="careers">Products & Benefits</a></li>            <li><a href="#" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Events" class=" events   " data-event-name="events">Events</a></li>                </ul></nav><!-- END: molecules-primary-nav.twig -->		<button class="button__search " data-event-name="search" aria-label="search" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Search">	<svg viewBox="0 0 17.5 17.5">		<path d="M12.5,11h-0.8l-0.3-0.3c1-1.1,1.6-2.6,1.6-4.2C13,2.9,10.1,0,6.5,0S0,2.9,0,6.5S2.9,13,6.5,13c1.6,0,3.1-0.6,4.2-1.6l0.3,0.3v0.8l5,5l1.5-1.5L12.5,11z M6.5,11C4,11,2,9,2,6.5S4,2,6.5,2S11,4,11,6.5S9,11,6.5,11z"/>	</svg>	<span></span>	<span></span></button>		<div class="navigation__burger-wrapper">			<button class="button__menu js-select-dispatch" data-event-name="hamburger-menu" aria-label="mobile-menu">	<span></span>	<span></span>	<span></span></button>		</div>	</div>	<div class="navigation__mobile-wrapper js-navigation-mobile"></div>	<div class="navigation_secondary__wrapper--search js-search navigation_secondary__wrapper--search-ratings" data-paired-event="search" role="search">		<div class="search-input__wrapper">		   <!-- BEGINNING: Ratings Global Search Block --><script type='text/javascript' src='/_Assets/js/ratingshomepageglobal.js?v1'></script><div id="languagecode_header" style="display:none">enJs</div>  <form id="consolidatedSearch_header" action="/ratings/en/search?q=">  <div class="find find__consolidated" id="find find__consolidated_header">    <div class="find__content">		        <div class="find__tab-options">            <div class="find_tab-radio current" id="find_a_ratings_radio_header">                                <a class="find__tab" id="tab_find_a_rating_header" href="javascript:void(0)" role="button" aria-pressed="true" aria-labelledby="tab_find_a_rating_button__header" aria-describedby="tooltip_find_a_rating_header" ><span id="tab_find_a_rating_button__header">Find a Rating </span></a>                <span  id="tooltip_find_a_rating_header" class="tooltip-desc" aria-hidden="false">Search by Entity, CUSIP, ISIN, CINS...</span>            </div>            <div class="find_tab-radio" id="search_our_insight_header">                               <a id="tab_search_our_insight_header" class="find__tab" href="javascript:void(0)" role="button" aria-pressed="false" aria-labelledby="tab_search_our_insight_button__header" aria-describedby="tooltip_search_our_insights_header"><span id="tab_search_our_insight_button__header">Search our Insights</a></a>                <span id="tooltip_search_our_insights_header" class="tooltip-desc" aria-hidden="false">Search for Articles, Media, Events... </span>            </div>        </div>	        <div class="find__input-box">                   <input tabindex="0" id="rating_text_header" class="find__input hasMessage" aria-labelledby="consolidate_search_label_header_header" aria-describedby="rating_text_header" type="text" placeholder="">            <button tabindex="0" type="button" role="search"  id="ratings_button_header">               <a data-gtm-category="Hero" data-gtm-action="Search" data-gtm-label="Find">                   <svg width="20" height="20" fill="#fff" viewBox="0 0 17.5 17.5">		                    <path d="M12.5,11h-0.8l-0.3-0.3c1-1.1,1.6-2.6,1.6-4.2C13,2.9,10.1,0,6.5,0S0,2.9,0,6.5S2.9,13,6.5,13c1.6,0,3.1-0.6,4.2-1.6l0.3,0.3v0.8l5,5l1.5-1.5L12.5,11z M6.5,11C4,11,2,9,2,6.5S4,2,6.5,2S11,4,11,6.5S9,11,6.5,11z"></path>	                </svg></a>  FIND            </button>            <span  id="consolidate_search_label_header_header" class="ratings_error"></span>        </div>						    </div>           <div class="search-input__options" id="search-input__options_header">         <div class="search-input__radio">            <a tabindex="0" href="https://www.spglobal.com/ratings/en/products-benefits/products/credit-ratings">Need a Rating?</a>        </div>        <div class="search-input__radio">            <ul class="find__trending find__rating__radio custom_radio  custom_radio_light" role="radiogroup">                <li><p><input tabindex="0"  role="radio" aria-checked ="true" type="radio" name="consolidate_search_option_header" value="https://disclosure.spglobal.com/ratings/en/regulatory/search-result/searchType/Entity/searchTerm/" id="Entity_header" checked><label for="Entity_header">Entity</label></p></li>                <li><p><input role="radio" aria-checked="false" type="radio" name="consolidate_search_option_header" value="https://disclosure.spglobal.com/ratings/en/regulatory/instrument-details/identifier-search/searchType/CUSIP9/searchTerm/" id="CUSIP_header" ><label  for="CUSIP_header">CUSIP</label></p></li>                <li><p><input role="radio" aria-checked="false" type="radio" name="consolidate_search_option_header" value="https://disclosure.spglobal.com/ratings/en/regulatory/instrument-details/identifier-search/searchType/CINS/searchTerm/" id="CINS_header"><label  for="CINS_header" >CINS</label></p></li>                <li><p><input role="radio" aria-checked="false" type="radio" name="consolidate_search_option_header" value="https://disclosure.spglobal.com/ratings/en/regulatory/instrument-details/identifier-search/searchType/ISIN/searchTerm/" id="ISIN_header" ><label for="ISIN_header">ISIN</label></p></li>            </ul>             </div>        <div class="search-input__radio">            <a tabindex="0" href="https://disclosure.spglobal.com/ratings/en/regulatory/entity-browse">Browse by Practice</a>        </div>    </div> 				   </div></form><hr class="ds-hr ds-hr--gray ds-hr-40px "><!-- END: End Ratings Global Search Block -->		</div>	</div>    <div class="navigation_secondary__wrapper js-secondary-nav">
+<ul class="navigation_secondary__list">
+<li data-nav-id="who-we-are" id="who-we-are"><!-- BEGINNING: molecules-secondary-nav.twig --><nav class="nav__secondary three-column"><div class="nav__secondary-list  three-column ">	                  <ul class="nav__secondary__category-list">	     <li><a href="/ratings/en/products-benefits/products/credit-ratings"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="About Ratings_Need a Rating?">Need a Rating? </a></li><li><a href="/ratings/en/about/understanding-credit-ratings"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="About Ratings_Understanding Credit Ratings">Understanding Credit Ratings </a></li><li><a href="/ratings/en/about/intro-to-credit-ratings"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="About Ratings_Intro to Credit Ratings">Intro to Credit Ratings </a></li><li><a href="/ratings/en/research-insights/special-reports/esg-in-credit-ratings"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="About Ratings_ESG in Credit Ratings">ESG in Credit Ratings </a></li><li><a href="https://disclosure.spglobal.com/ratings/en/regulatory/ratings-actions"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="About Ratings_Ratings Actions">Ratings Actions </a></li></ul>		     		</div><div class="nav__secondary-list  three-column ">	                  <ul class="nav__secondary__category-list">	     <li><a href="https://disclosure.spglobal.com/ratings/en/regulatory/presale-reports"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="About Ratings_Presale Reports">Presale Reports </a></li><li><a href="https://disclosure.spglobal.com/ratings/en/regulatory/ratings-criteria"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="About Ratings_Ratings Criteria and Models">Ratings Criteria and Models </a></li><li><a href="https://disclosure.spglobal.com/ratings/en/regulatory/ratings-criteria/-/articles/criteria/requests-for-comment/filter/all#rfc"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="About Ratings_Request for Comment">Request for Comment </a></li><li><a href="https://disclosure.spglobal.com/ratings/en/regulatory/press-releases"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="About Ratings_Press Releases">Press Releases </a></li><li><a href="https://disclosure.spglobal.com/ratings/en/regulatory/annual-reviews"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="About Ratings_Annual Reviews">Annual Reviews </a></li></ul>		     		</div>		</nav><!-- END: molecules-secondary-nav.twig -->
+</li>
+<li data-nav-id="what-we-do" id="what-we-do"><!-- BEGINNING: molecules-secondary-nav.twig --><nav class="nav__secondary three-column"><div class="nav__secondary-list  three-column ">	     <span class="nav__secondary-category">RESEARCH & INSIGHTS</span>             <ul class="nav__secondary__category-list">	     <li><a href="/ratings/en/research-insights/researchfullfeed"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_Sector / Industry Research">Sector / Industry Research </a></li><li><a href="/ratings/en/research-insights/economic-research/economic-research-sector"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_Economic Research">Economic Research </a></li><li><a href="/ratings/en/research-insights/credit-market-ratings-performance-research"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_Credit Market Research">Credit Market Research </a></li><li><a href="/ratings/en/research-insights/emerging-markets"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_Emerging Markets">Emerging Markets </a></li><li><a href="/ratings/en/research-insights/special-reports/sustainability-insights"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_Sustainability Insights">Sustainability Insights </a></li></ul>		     		</div><div class="nav__secondary-list  three-column ">	     <span class="nav__secondary-category">KEY THEMES</span>             <ul class="nav__secondary__category-list">	     <li><a href="/ratings/en/research-insights/credit-research-insights"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_Credit Research & Insights">Credit Research & Insights </a></li><li><a href="/ratings/en/research-insights/special-reports/key-themes-2023"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_What We're Watching">What We're Watching </a></li><li><a href="/ratings/en/research-insights/credit-conditions"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_Credit Conditions">Credit Conditions </a></li><li><a href="/ratings/en/research-insights/special-reports/resurfacing-credit-headwinds"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_Confronting Credit Headwinds">Confronting Credit Headwinds </a></li><li><a href="/ratings/en/research-insights/special-reports/global-credit-outlook-2023"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_Outlook 2023: No Easy Way Out">Outlook 2023: No Easy Way Out </a></li></ul>		     		</div><div class="nav__secondary-list  three-column ">	     <span class="nav__secondary-category">MULTIMEDIA</span>             <ul class="nav__secondary__category-list">	     <li><a href="/ratings/en/research-insights/videos/"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_Videos">Videos </a></li><li><a href="/ratings/en/research-insights/podcasts/"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Research & Insights_Podcasts">Podcasts </a></li></ul>		     		</div>		</nav><!-- END: molecules-secondary-nav.twig -->
+</li>
+<li data-nav-id="our-insights" id="our-insights"><!-- BEGINNING: molecules-secondary-nav.twig --><nav class="nav__secondary three-column"><div class="nav__secondary-list  three-column ">	                  <ul class="nav__secondary__category-list">	     <li><a href="/ratings/en/sector/corporates/corporate-sector"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Sectors_Corporates">Corporates </a></li><li><a href="/ratings/en/research-insights/esg/esg"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Sectors_ESG: Sustainable Finance">ESG: Sustainable Finance </a></li><li><a href="/ratings/en/sector/financial-institutions/financial-institutions-sector"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Sectors_Financial Institutions">Financial Institutions </a></li><li><a href="/ratings/en/sector/fund-ratings/fund-ratings"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Sectors_Fund Ratings">Fund Ratings </a></li><li><a href="/ratings/en/sector/governments/governments-sector"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Sectors_Governments">Governments </a></li></ul>		     		</div><div class="nav__secondary-list  three-column ">	                  <ul class="nav__secondary__category-list">	     <li><a href="/ratings/en/sector/infrastructure-utilities/infrastructure-utilities"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Sectors_Infrastructure & Utilities">Infrastructure & Utilities </a></li><li><a href="/ratings/en/sector/insurance/insurance-sector"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Sectors_Insurance">Insurance </a></li><li><a href="/ratings/en/sector/structured-finance/structured-finance-sector"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Sectors_Structured Finance">Structured Finance </a></li><li><a href="/ratings/en/sector/u-s-public-finance/u-s-public-finance-sector"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Sectors_U.S. Public Finance">U.S. Public Finance </a></li></ul>		     		</div>		</nav><!-- END: molecules-secondary-nav.twig -->
+</li>
+<li data-nav-id="regulatory" id="regulatory"><!-- BEGINNING: molecules-secondary-nav.twig --><nav class="nav__secondary three-column"><div class="nav__secondary-list  three-column ">	                  <ul class="nav__secondary__category-list">	     <li><a href="/ratings/en/regulatory/content/disclosures"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Regulatory_Disclosures">Disclosures </a></li><li><a href="/ratings/en/regulatory/content/form-nrsro"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Regulatory_Form NRSRO">Form NRSRO </a></li><li><a href="/ratings/en/regulatory/content/code-of-conduct"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Regulatory_Policies & Code of Conduct">Policies & Code of Conduct </a></li><li><a href="https://disclosure.spglobal.com/ratings/en/regulatory/significant-criteria-and-model-errors"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Regulatory_Significant Criteria & Model Errors">Significant Criteria & Model Errors </a></li></ul>		     		</div><div class="nav__secondary-list  three-column ">	                  <ul class="nav__secondary__category-list">	     <li><a href="https://disclosure.spglobal.com/ratings/en/regulatory/ratingshistory"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Regulatory_Credit Rating History">Credit Rating History </a></li><li><a href="https://disclosure.spglobal.com/ratings/en/regulatory/17g7reports"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Regulatory_SEC Rule 17g-7 Reports">SEC Rule 17g-7 Reports </a></li><li><a href="https://disclosure.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/504352"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Regulatory_Ratings Definitions">Ratings Definitions </a></li><li><a href="https://disclosure.spglobal.com/ratings/en/regulatory/ratings-criteria"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Regulatory_Ratings Criteria and Models">Ratings Criteria and Models </a></li></ul>		     		</div>		</nav><!-- END: molecules-secondary-nav.twig -->
+</li>
+<li data-nav-id="careers" id="careers"><!-- BEGINNING: molecules-secondary-nav.twig --><nav class="nav__secondary three-column"><div class="nav__secondary-list  three-column ">	     <span class="nav__secondary-category">PRODUCTS & SERVICES</span>             <ul class="nav__secondary__category-list">	     <li><a href="/ratings/en/products-benefits/products/credit-ratings"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Credit Ratings">Credit Ratings </a></li><li><a href="/ratings/en/products-benefits/products/ratings-evaluation-service-res-"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Ratings Evaluation Service (RES)">Ratings Evaluation Service (RES) </a></li><li><a href="/ratings/en/products-benefits/products/second-party-opinions "  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Second Party Opinions">Second Party Opinions </a></li><li><a href="/ratings/en/products-benefits/products/company-assessments"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Company Assessments">Company Assessments </a></li><li><a href="/ratings/en/products-benefits/products/cyber-risk-solutions"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Cyber Risk Solutions">Cyber Risk Solutions </a></li><li><a href="/ratings/en/products-benefits/products/ratings360"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Ratings360<sup>®</sup>">Ratings360<sup>®</sup> </a></li></ul>		     <a href="/ratings/en/products-benefits/products/index" class="nav__secondary-link" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_SEE ALL PRODUCTS & SERVICES">SEE ALL PRODUCTS & SERVICES</a>		</div><div class="nav__secondary-list  three-column ">	     <span class="nav__secondary-category">I AM AN</span>             <ul class="nav__secondary__category-list">	     <li><a href="/ratings/en/products-benefits/persona/investors"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Investor">Investor </a></li><li><a href="/ratings/en/products-benefits/persona/intermediary"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Intermediary">Intermediary </a></li><li><a href="/ratings/en/products-benefits/persona/issuer"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Issuer">Issuer </a></li></ul>		     		</div><div class="nav__secondary-list  three-column hide-item-mobile">	     <span class="nav__secondary-category">TOOLS</span>             <ul class="nav__secondary__category-list">	     <li><a href="/ratings/en/products-benefits/corporate-credit-scenario-builder"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Corporate Credit Scenario Builder">Corporate Credit Scenario Builder </a></li><li><a href="/ratings/en/products-benefits/project-finance-credit-scenario-builder"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Project Finance Credit Scenario Builder">Project Finance Credit Scenario Builder </a></li><li><a href="/ratings/en/products-benefits/u-s-local-governments-credit-scenario-builder"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_U.S. Local Governments Credit Scenario Builder">U.S. Local Governments Credit Scenario Builder </a></li><li><a href="https://www.spratings.com/sri" target="_blank" class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Products & Benefits_Sovereign Risk Indicators">Sovereign Risk Indicators<i class="fa fa-external-link" aria-hidden="true"></i> </a></li></ul>		     		</div>		</nav><!-- END: molecules-secondary-nav.twig -->
+</li>
+<li data-nav-id="events" id="events"><!-- BEGINNING: molecules-secondary-nav.twig --><nav class="nav__secondary "><div class="nav__secondary-list   ">	                  <ul class="nav__secondary__category-list">	     <li><a href="/ratings/en/events/index"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Events_All Events">All Events </a></li><li><a href="/ratings/en/events/hosted-events/index"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Events_Hosted Events">Hosted Events </a></li><li><a href="/ratings/en/events/webcasts/index"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Events_Webinars">Webinars </a></li><li><a href="/ratings/en/events/webcast-replays/index"  class="" data-gtm-category="Navigation" data-gtm-action="Main Navigation" data-gtm-label="Events_Webinar Replays">Webinar Replays </a></li></ul>		     		</div>		</nav><!-- END: molecules-secondary-nav.twig -->
+</li>
+</ul>
+</div>
+</div><!-- END: organisms-header.twig --><!-- SideWideMessage: N/A -->
+    <div class="content">
+                
+		<div class="homepage_section ratings-homesection"> <!-- Three card-set starts--><div id="" class="carousel__wrapper featured--three js-carousel three-cardset-carousel">     <ul>          <li><a data-gtm-category="Featured" data-gtm-action="Article" data-gtm-label="S&P GLOBAL RATINGS_New integrated SPO product suite, featuring Shades of Green" class="modalimage card" target="_self" href="https://www.spglobal.com/ratings/en/products-benefits/products/second-party-opinions" data-division="S&P GLOBAL RATINGS"><div class="card__content has_underlay "><ul class="meta-data"><li class="meta-data__type link-white link-white-hover">S&P GLOBAL RATINGS</li></ul><h1 class="link-white link-white-hover">New integrated SPO product suite, featuring Shades of Green</h1><span href="#" class="learn-more link-white link-white-hover"><span>LEARN MORE</span></span><div class="card__underlay-icon"></div></div><picture class="card__background-image js-fit-parent" aria-hidden="true"><source srcset="/_assets/images/ratings/hero-images/2784026_ratings-tile_option1_2_437x566.png 1x, /_assets/images/ratings/hero-images/2784026_ratings-tile_option1_2_874.jpg 2x" media="(min-width: 1360px)"><img srcset="/_assets/images/ratings/hero-images/2784026_ratings-tile_option1_2_437x566.png" src="/_assets/images/ratings/hero-images/2784026_ratings-tile_option1_2_437x566.png" alt="" class=" lazyloaded"/></picture></a></li><li><a data-gtm-category="Featured" data-gtm-action="Article" data-gtm-label="S&P GLOBAL RATINGS_Credit Conditions" class="modalimage card" target="_self" href="https://www.spglobal.com/ratings/en/research-insights/credit-conditions" data-division="S&P GLOBAL RATINGS"><div class="card__content has_underlay "><ul class="meta-data"><li class="meta-data__type link-white link-white-hover">S&P GLOBAL RATINGS</li></ul><h1 class="link-white link-white-hover">Credit Conditions</h1><span href="#" class="learn-more link-white link-white-hover"><span>LEARN MORE</span></span><div class="card__underlay-icon"></div></div><picture class="card__background-image js-fit-parent" aria-hidden="true"><source srcset="/_assets/images/ratings/hero-images/2784026_ratings-tile_option1_437x566.png 1x, /_assets/images/ratings/hero-images/2784026_ratings-tile_option1_1_874.jpg 2x" media="(min-width: 1360px)"><img srcset="/_assets/images/ratings/hero-images/2784026_ratings-tile_option1_437x566.png" src="/_assets/images/ratings/hero-images/2784026_ratings-tile_option1_437x566.png" alt="" class=" lazyloaded"/></picture></a></li><li><a data-gtm-category="Featured" data-gtm-action="Article" data-gtm-label="CROSS-DIVISIONAL_Stablecoins: A Deep Dive into Valuation and Depegging" class="modalimage card" target="_self" href="https://www.spglobal.com/en/research-insights/featured/special-editorial/stablecoins-a-deep-dive-into-valuation-and-depegging" data-division="CROSS-DIVISIONAL"><div class="card__content has_underlay "><ul class="meta-data"><li class="meta-data__type link-white link-white-hover">CROSS-DIVISIONAL</li></ul><h1 class="link-white link-white-hover">Stablecoins: A Deep Dive into Valuation and Depegging</h1><span href="#" class="learn-more link-white link-white-hover"><span>LEARN MORE</span></span><div class="card__underlay-icon"></div></div><picture class="card__background-image js-fit-parent" aria-hidden="true"><source srcset="/_assets/images/ratings/hero-images/2784026_ratings-tile_option1_3_437x566.png 1x, /_assets/images/ratings/hero-images/2784026_ratings-tile_option1_3_874.jpg 2x" media="(min-width: 1360px)"><img srcset="/_assets/images/ratings/hero-images/2784026_ratings-tile_option1_3_437x566.png" src="/_assets/images/ratings/hero-images/2784026_ratings-tile_option1_3_437x566.png" alt="" class=" lazyloaded"/></picture></a></li>     </ul></div><!-- Three card-set ends--><hr class="divider thin"/><div class="home__content no-border"><!-- BEGINNING: Ratings Global Search Block --><script type='text/javascript' src='/_Assets/js/ratingshomepageglobal.js?v1'></script><div id="languagecode_content" style="display:none">enJs</div>  <form id="consolidatedSearch_content" action="/ratings/en/search?q=">  <div class="find find__consolidated" id="find find__consolidated_content">    <div class="find__content">		        <div class="find__tab-options">            <div class="find_tab-radio current" id="find_a_ratings_radio_content">                                <a class="find__tab" id="tab_find_a_rating_content" href="javascript:void(0)" role="button" aria-pressed="true" aria-labelledby="tab_find_a_rating_button__header" aria-describedby="tooltip_find_a_rating_content"><span id="tab_find_a_rating_button__header">Find a Rating</span></a>                <span id="tooltip_find_a_rating_content" class="tooltip-desc" aria-hidden="false">Search by Entity, CUSIP, ISIN, CINS...</span>            </div>            <div class="find_tab-radio" id="search_our_insight_content">                               <a id="tab_search_our_insight_content" class="find__tab" href="javascript:void(0)" role="button" aria-pressed="false" aria-labelledby="tab_search_our_insight_button__header" aria-describedby="tooltip_search_our_insights_content"><span id="tab_search_our_insight_button__header">Search our Insights</a></a>                <span id="tooltip_search_our_insights_content" class="tooltip-desc" aria-hidden="false">Search for Articles, Media, Events... </span>            </div>        </div>	        <div class="find__input-box">                   <input tabindex="0" id="rating_text_content" class="find__input hasMessage" aria-labelledby="consolidate_search_label_header_content" aria-describedby="rating_text_content" type="text" placeholder=""/>            <button tabindex="0" type="button" role="search" id="ratings_button_content">               <a data-gtm-category="Hero" data-gtm-action="Search" data-gtm-label="Find">                   <svg width="20" height="20" fill="#fff" viewBox="0 0 17.5 17.5">		                    <path d="M12.5,11h-0.8l-0.3-0.3c1-1.1,1.6-2.6,1.6-4.2C13,2.9,10.1,0,6.5,0S0,2.9,0,6.5S2.9,13,6.5,13c1.6,0,3.1-0.6,4.2-1.6l0.3,0.3v0.8l5,5l1.5-1.5L12.5,11z M6.5,11C4,11,2,9,2,6.5S4,2,6.5,2S11,4,11,6.5S9,11,6.5,11z"></path>	                </svg></a>  Find            </button>            <span id="consolidate_search_label_header_content" class="ratings_error"></span>        </div>						    </div>           <div class="search-input__options" id="search-input__options_content">         <div class="search-input__radio">            <a tabindex="0" href="https://www.spglobal.com/ratings/en/products-benefits/products/credit-ratings">Need a Rating?</a>        </div>        <div class="search-input__radio">            <ul class="find__trending find__rating__radio custom_radio  custom_radio_light" role="radiogroup">                <li><p><input tabindex="0" role="radio" aria-checked="true" type="radio" name="consolidate_search_option_content" value="https://disclosure.spglobal.com/ratings/en/regulatory/search-result/searchType/Entity/searchTerm/" id="Entity_content" checked/><label for="Entity_content">Entity</label></p></li>                <li><p><input role="radio" aria-checked="false" type="radio" name="consolidate_search_option_content" value="https://disclosure.spglobal.com/ratings/en/regulatory/instrument-details/identifier-search/searchType/CUSIP9/searchTerm/" id="CUSIP_content"/><label for="CUSIP_content">CUSIP</label></p></li>                <li><p><input role="radio" aria-checked="false" type="radio" name="consolidate_search_option_content" value="https://disclosure.spglobal.com/ratings/en/regulatory/instrument-details/identifier-search/searchType/CINS/searchTerm/" id="CINS_content"/><label for="CINS_content">CINS</label></p></li>                <li><p><input role="radio" aria-checked="false" type="radio" name="consolidate_search_option_content" value="https://disclosure.spglobal.com/ratings/en/regulatory/instrument-details/identifier-search/searchType/ISIN/searchTerm/" id="ISIN_content"/><label for="ISIN_content">ISIN</label></p></li>            </ul>             </div>        <div class="search-input__radio">            <a tabindex="0" href="https://disclosure.spglobal.com/ratings/en/regulatory/entity-browse">Browse by Practice</a>        </div>    </div> 				   </div></form><hr class="ds-hr ds-hr--gray ds-hr-40px "/><!-- END: End Ratings Global Search Block -->   <!--Mobile tabs--><ul class="tabs__wrapper js-tabs full-tabs">    <li data-target-tab="latest" class=""> <a href="#">latest</a> </li>    <li data-target-tab="topics" class=""> <a href="#">topics</a> </li>    <li data-target-tab="social" class=""> <a href="#">social</a> </li></ul>  <div class="home__latest" data-tab="latest">        <header class="home__header">          <h3 class="home__section-title"> <span class="short">Latest</span> <span>Latest from S&P Global Ratings</span> </h3>          <!-- BEGINNING: molecules-dropdown.twig -->          <ul class="dropdown menu js-dropdown-menu " role="menubar" data-dropdown-menu="090o00-dropdown-menu" data-is-click="false">            <li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-label="Type"><a href="javascript:void(0)"><span>FILTER BY</span></a>              <ul class="menu is-dropdown-submenu submenu first-sub vertical" data-submenu="" role="menu" id="filter-contenttype">              </ul>            </li>          </ul>          <!-- END: molecules-dropdown.twig -->          <!-- BEGINNING: molecules-dropdown.twig -->          <ul class="dropdown menu js-dropdown-menu " role="menubar" data-dropdown-menu="cqa5jh-dropdown-menu" data-is-click="false">            <li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-label="Commodity"> <a href="javascript:void(0)"><span>SECTORS</span></a>              <ul class="menu is-dropdown-submenu submenu first-sub vertical" data-submenu="" role="menu" id="filter-commodity"></ul>              </ul>            </li>          </ul>          <!-- END: molecules-dropdown.twig -->                  </header>        <hr class="divider"/><div class="table-filter">    <button class="filter_toggle_button">Filters <i class="filter-icon"></i></button>    <div class="table-filter-content">          <div class="table-filter-content-data" id="custom_ss_theme">    <h3 class="table-filter-data-title">Sector</h3>    <ul class="vertical" data-submenu="" role="menu" style=""></ul></div><div class="table-filter-content-data" id="custom_ss_contenttype">    <h3 class="table-filter-data-title">Filter By</h3>    <ul class="vertical" data-submenu="" role="menu" style=""></ul></div>    </div></div>        <!-- END: molecules-card.twig -->        <cp-preview><!-- --><a class="modalimage card--inline-product" href="https://www.spglobal.com/ratings/en/about/criteria/rfc-insurance-2023" target="_blank" data-gtm-category="Latest from S&P Global Ratings" data-gtm-action="CTA" data-gtm-label="PPSD Insurer Risk-Based Capital Adequacy Methodology">    <div class="card__content ">        <ul class="meta-data">            <li class="meta-data__type"></li>        </ul>        <h1>PPSD Insurer Risk-Based Capital Adequacy Methodology</h1>    </div></a> <hr class="divider"/><div id="resultsWrapper"></div>        <!-- BEGINNING: molecules-load-more.twig --><div class="load-more__wrapper js-load-more load-more__whitepapers no-border-bottom no-border-top" data-on-complete-label="Back To Top" style="display: none" id="load-more"> <a href="#" class="button__load-more arrow" data-gtm-category="Latest from S&P Global Ratings" data-gtm-action="More" data-gtm-label="Load More"> <span>Load More</span> </a> </div>        <!-- END: molecules-load-more.twig -->      </div><!-- START: Search Initialization V1 org --><noscript><a href="/ratings/en/research/articles/231005-price-dynamics-and-ability-to-invest-in-new-technology-will-determine-the-path-ahead-for-latin-american-telec-12870625">Price Dynamics And Ability To Invest In New Technology Will Determine The Path Ahead For Latin American Telecom Companies</a>
+<a href="/ratings/en/research/articles/231005-challenges-to-trading-oil-in-renminbi-remain-significant-12868072">Challenges To Trading Oil In Renminbi Remain Significant</a>
+<a href="/ratings/en/research/articles/231005-swedish-covered-bond-market-insights-2023-12823548">Swedish Covered Bond Market Insights 2023</a>
+<a href="/ratings/en/research/articles/231005-asian-battery-makers-are-shifting-strategies-to-hold-onto-global-lead-12866156">Asian Battery Makers Are Shifting Strategies To Hold Onto Global Lead</a>
+<a href="/ratings/en/research/pdf-articles/231005-second-party-opinion-tricolor-auto-acceptance-social-abs-framework-2023-101587280">Second Party Opinion: Tricolor Auto Acceptance Social ABS Framework 2023</a>
+<a href="/ratings/en/research/pdf-articles/231005-u-s-public-finance-rating-activity-september-2023-101587289">U.S Public Finance Rating Activity, September 2023</a>
+<a href="/ratings/en/research/articles/231004-credit-faq-asia-pacific-gaming-markets-face-fewer-chinese-players-at-the-table-12867707">Credit FAQ: Asia-Pacific Gaming Markets Face Fewer Chinese Players At The Table</a>
+<a href="/ratings/en/research/articles/231004-u-k-social-housing-providers-credit-headroom-could-tighten-if-the-operating-environment-deteriorates-12871224">U.K. Social Housing Providers' Credit Headroom Could Tighten If The Operating Environment Deteriorates</a>
+<a href="/ratings/en/research/articles/231004-economic-research-which-emerging-markets-are-more-vulnerable-to-a-further-increase-in-energy-prices-12871062">Economic Research: Which Emerging Markets Are More Vulnerable To A Further Increase In Energy Prices?</a>
+<a href="/ratings/en/research/articles/231004-asset-price-risks-overvaluation-persists-for-europe-s-rmbs-and-covered-bond-markets-12864595">Asset Price Risks: Overvaluation Persists For Europe's RMBS And Covered Bond Markets</a>
+<a href="/ratings/en/research/articles/200204-coronavirus-impact-key-takeaways-from-our-articles-11337257">Instant Insights: Key Takeaways From Our Research</a>
+<a href="/ratings/en/research/articles/231004-u-s-social-housing-providers-have-the-foundation-to-insulate-against-new-post-pandemic-risks-12866417">U.S. Social Housing Providers Have The Foundation To Insulate Against New Post-Pandemic Risks</a>
+<a href="/ratings/en/research/articles/231004-the-resolution-story-for-europe-s-banks-making-the-regime-fit-for-purpose-12869463">The Resolution Story For Europe's Banks: Making The Regime Fit For Purpose</a>
+<a href="/ratings/en/research/pdf-articles/231004-the-ratings-view-oct-4-2023-101587256">The Ratings View: Oct. 4, 2023</a>
+<a href="/ratings/en/research/articles/231003-u-s-public-finance-issuers-face-challenges-in-an-evolving-cyber-insurance-market-12867371">U.S. Public Finance Issuers Face Challenges In An Evolving Cyber Insurance Market</a>
+<a href="/ratings/en/research/articles/231003-global-heavy-duty-truck-sales-gain-momentum-amid-mounting-risks-12863493">Global Heavy-Duty Truck Sales Gain Momentum Amid Mounting Risks</a>
+<a href="/ratings/en/research/articles/231003-bennington-stark-capital-co-llc-abcp-conduit-profile-12869243">Bennington Stark Capital Co. LLC--ABCP Conduit Profile</a>
+<a href="/ratings/en/research-insights/podcasts/2023-10-03-take-notes-ep-78">Take Notes - A Comparative Overview Of U.S. And European BSL CLOs</a>
+<a href="/ratings/en/research/articles/231003-future-of-banking-ai-will-be-an-incremental-game-changer-12858571">Future Of Banking: AI Will Be An Incremental Game Changer</a>
+<a href="/ratings/en/research/pdf-articles/231003-slides-uneven-global-office-recovery-is-squeezing-credit-quality-101587193">SLIDES: Uneven Global Office Recovery Is Squeezing Credit Quality</a>
+<a href="/ratings/en/research/articles/231002-servicer-evaluation-newrez-llc-12856302">Servicer Evaluation: Newrez LLC</a>
+<a href="/ratings/en/research/articles/231002-servicer-evaluation-caliber-home-loans-inc-12856502">Servicer Evaluation: Caliber Home Loans Inc</a>
+<a href="/ratings/en/research/articles/231002-credit-trends-business-development-companies-assets-provide-a-glimpse-into-the-private-credit-market-12865113">Credit Trends: Business Development Companies' Assets Provide A Glimpse Into The Private Credit Market</a>
+<a href="/ratings/en/research/articles/210721-weekly-european-clo-update-12040052">Weekly European CLO Update</a>
+<a href="/ratings/en/research/pdf-articles/231002-this-week-in-credit-u-s-job-market-in-the-spotlight-oct-2-2023-101587130">This Week In Credit: U.S. Job Market In The Spotlight (Oct. 2, 2023)</a>
+<a href="/ratings/en/research/articles/230929-u-s-credit-card-quality-index-monthly-performance-august-2023-12866723">U.S. Credit Card Quality Index: Monthly Performance--August 2023</a>
+<a href="/ratings/en/research/articles/230929-sf-credit-brief-overall-u-s-cmbs-delinquency-rate-increased-18-bps-to-3-8-in-september-office-loan-delinque-12869118">SF Credit Brief: Overall U.S. CMBS Delinquency Rate Increased 18 Bps To 3.8% In September; Office Loan Delinquency Rate Climbs For Ninth Consecutive Month</a>
+<a href="/ratings/en/research/articles/230929-credit-faq-disney-vs-charter-broader-implications-for-pay-tv-12865817">Credit FAQ: Disney vs. Charter: Broader Implications For Pay-TV</a>
+<a href="/ratings/en/research/articles/230929-sf-credit-brief-clo-insights-2023-u-s-bsl-index-clo-ccc-exposures-up-scenario-analysis-on-bb-o-c-test-c-12869031">SF Credit Brief: CLO Insights 2023 U.S. BSL Index: CLO ‘CCC’ Exposures Up; Scenario Analysis On 'BB' O/C Test Cushions</a>
+<a href="/ratings/en/research/pdf-articles/230929-slides-u-s-structured-finance-chart-book-q3-2023-101587079">SLIDES: U.S. Structured Finance Chart Book: Q3 2023</a>
+<a href="/ratings/en/research/articles/230928-credit-faq-what-s-behind-our-recent-actions-on-investor-owned-utilities-in-connecticut-12856879">Credit FAQ: What's Behind Our Recent Actions On Investor-Owned Utilities In Connecticut?</a>
+<a href="/ratings/en/research/articles/230928-credit-trends-u-s-corporate-bond-yields-as-of-sept-27-2023-12869053">Credit Trends: U.S. Corporate Bond Yields As Of Sept. 27, 2023</a>
+<a href="/ratings/en/research/articles/230118-u-s-bsl-clo-obligors-corporate-rating-actions-tracker-2023-12614380">U.S. BSL CLO Obligors: Corporate Rating Actions Tracker 2023 (As Of Sept. 22)</a>
+<a href="/ratings/en/research/articles/230928-u-s-transportation-infrastructure-transit-update-end-of-the-line-nears-for-federal-assistance-as-low-ridersh-12861783">U.S. Transportation Infrastructure Transit Update: End Of The Line Nears For Federal Assistance As Low Ridership Pressures Operators</a>
+<a href="/ratings/en/research/articles/230928-u-s-highway-user-tax-bond-report-card-strong-coverage-drives-rating-resiliency-12863558">U.S. Highway User Tax Bond Report Card: Strong Coverage Drives Rating Resiliency</a>
+<a href="/ratings/en/research/articles/230928-turbo-finance-9-plc-ratings-raised-on-all-classes-of-auto-abs-notes-12863204">Turbo Finance 9 PLC Ratings Raised On All Classes Of Auto ABS Notes</a>
+<a href="/ratings/en/research/articles/230928-evolving-term-loan-b-market-for-u-s-merchant-power-industry-12834305">Evolving Term Loan B Market For U.S. Merchant Power Industry</a>
+<a href="/ratings/en/research/articles/230928-clo-pulse-q2-2023-the-snooze-drag-takes-hold-in-europe-12825805">CLO Pulse Q2 2023: The 'Snooze Drag' Takes Hold In Europe</a>
+<a href="/ratings/en/research/articles/230928-guest-opinion-after-the-bubble-do-we-still-need-crypto-12851278">Guest Opinion: After The Bubble, Do We Still Need Crypto?</a>
+<a href="/ratings/en/research/articles/230928-panelists-discuss-the-ties-that-bind-asia-pacific-bank-and-sovereign-ratings-12849622">Panelists Discuss The Ties That Bind Asia-Pacific Bank And Sovereign Ratings</a>
+<a href="/ratings/en/research/articles/230928-credit-faq-asia-pacific-bank-hybrids-bounce-back-in-the-wake-of-credit-suisse-12849583">Credit FAQ: Asia-Pacific Bank Hybrids Bounce Back In The Wake Of Credit Suisse</a>
+<a href="/ratings/en/research/articles/230928-guest-opinion-the-risks-and-opportunities-in-asia-pacific-banking-12852517">Guest Opinion: The Risks And Opportunities In Asia-Pacific Banking</a>
+<a href="/ratings/en/research/articles/230928-uneven-liquidity-and-strained-valuations-are-pushing-some-funds-toward-debt-12852874">Uneven Liquidity And Strained Valuations Are Pushing Some Funds Toward Debt</a>
+<a href="/ratings/en/research/articles/230928-research-update-new-zealand-post-outlook-revised-to-negative-on-operating-headwinds-kiwibank-divestment-a-12865962">Research Update: New Zealand Post Outlook Revised To Negative On Operating Headwinds, Kiwibank Divestment; 'A/A-1' Ratings Affirmed</a>
+<a href="/ratings/en/research/articles/230928-research-update-christchurch-international-airport-ratings-affirmed-on-strong-passenger-traffic-growth-outlo-12865930">Research Update: Christchurch International Airport Ratings Affirmed On Strong Passenger Traffic Growth; Outlook Stable</a>
+<a href="/ratings/en/research/pdf-articles/230928-the-ratings-view-sep-28-2023-101586969">The Ratings View: Sep. 28, 2023</a>
+<a href="/ratings/en/research/pdf-articles/230928-gansu-provincial-highway-aviation-tourism-investment-group-co-ltd-s-green-finance-framework-101586959">Gansu Provincial Highway Aviation Tourism Investment Group Co. Ltd.'s Green Finance Framework</a>
+<a href="/ratings/en/research/pdf-articles/230928-new-issue-citizen-irish-auto-receivables-trust-2023-dac-12861675">New Issue: Citizen Irish Auto Receivables Trust 2023 DAC</a>
+<a href="/ratings/en/research/pdf-articles/230928-global-credit-conditions-q4-2023-resilience-under-pressure-101586956">Global Credit Conditions Q4 2023: Resilience Under Pressure</a>
+<a href="/ratings/en/research/articles/230927-scenario-analysis-how-timeshare-loans-fare-amid-economic-slowdowns-12857404">Scenario Analysis: How Timeshare Loans Fare Amid Economic Slowdowns</a>
+<a href="/ratings/en/research/articles/230927-mexican-auto-suppliers-have-solid-financial-cushions-amid-united-auto-workers-strike-12866717">Mexican Auto Suppliers Have Solid Financial Cushions Amid United Auto Workers Strike</a>
+<a href="/ratings/en/research/articles/230328-this-month-in-credit-2023-data-companion-12646771">This Month In Credit: 2023 Data Companion</a>
+<a href="/ratings/en/research/articles/230927-global-economic-outlook-q4-2023-nearing-the-rate-plateau-12864146">Global Economic Outlook Q4 2023: Nearing The Rate Plateau</a>
+<a href="/ratings/en/research/articles/230927-u-s-municipal-water-and-sewer-utility-medians-held-strong-in-2022-amid-rising-costs-12864603">U.S. Municipal Water And Sewer Utility Medians Held Strong In 2022 Amid Rising Costs</a>
+<a href="/ratings/en/research/articles/230927-charter-school-brief-texas-12861080">Charter School Brief: Texas</a>
+<a href="/ratings/en/research/articles/230927-guidance-on-global-cmbs-property-evaluation-methodology-updated-12862689">Guidance On Global CMBS Property Evaluation Methodology Updated</a>
+<a href="/ratings/en/research/articles/230927-a-closer-look-at-finland-s-covered-bond-framework-12854733">A Closer Look At Finland's Covered Bond Framework</a>
+<a href="/ratings/en/research-insights/podcasts/2023-09-27-take-notes">Take Notes - The First 'AAA (sf)' Rating Assigned To Chinese Consumer Finance ABS</a>
+<a href="/ratings/en/research/articles/230927-ftpyme-tda-cam-4-class-c-sme-clo-rating-raised-on-continued-deleveraging-class-b-and-d-ratings-affirmed-12860681">FTPYME TDA CAM 4 Class C SME CLO Rating Raised On Continued Deleveraging; Class B And D Ratings Affirmed</a>
+<a href="/ratings/en/research/articles/230927-pearl-finance-2020-dac-euro-cmbs-class-a2-to-e-ratings-raised-class-a1-affirmed-12861899">Pearl Finance 2020 DAC Euro CMBS Class A2 To E Ratings Raised; Class A1 Affirmed</a>
+<a href="/ratings/en/research/articles/230927-china-securitization-abs-and-rmbs-tracker-august-2023-12861597">China Securitization: ABS And RMBS Tracker August 2023</a>
+<a href="/ratings/en/research/articles/230927-default-transition-and-recovery-2022-annual-greater-china-corporate-default-and-rating-transition-study-12851141">Default, Transition, and Recovery: 2022 Annual Greater China Corporate Default And Rating Transition Study</a>
+<a href="/ratings/en/research/pdf-articles/230927-second-party-opinion-development-bank-of-rwanda-s-sustainability-linked-bond-framework-101586918">Second Party Opinion: Development Bank of Rwanda's Sustainability-Linked Bond Framework</a>
+<a href="/ratings/en/research/pdf-articles/230927-this-month-in-credit-gathering-risks-september-2023-101586913">This Month In Credit: Gathering Risks (September 2023)</a>
+<a href="/ratings/en/research/pdf-articles/230927-asia-pacific-sector-roundup-q4-2023-a-skewed-recovery-101586854">Asia-Pacific Sector Roundup Q4 2023: A Skewed Recovery</a>
+<a href="/ratings/en/research/pdf-articles/230927-presale-orion-trust-2023-1-12856932">Presale: Orion Trust 2023-1</a>
+<a href="/ratings/en/research/pdf-articles/230927-tech-disruption-in-retail-banking-country-by-country-analysis-2023-leaders-and-laggards-emerge-101586887">Tech Disruption In Retail Banking: Country-By-Country Analysis 2023  <br>  Leaders And Laggards Emerge</a>
+<a href="/ratings/en/research/articles/230926-credit-faq-the-evolving-landscape-facing-u-s-cable-operators-12858736">Credit FAQ: The Evolving Landscape Facing U.S. Cable Operators</a>
+<a href="/ratings/en/research/articles/230926-research-update-hamilton-city-council-outlook-revised-to-negative-on-weakening-fiscal-metrics-aa-a-1-rat-12863108">Research Update: Hamilton City Council Outlook Revised To Negative On Weakening Fiscal Metrics; 'AA-/A-1+' Ratings Affirmed</a>
+<a href="/ratings/en/research/articles/230926-china-still-has-more-policy-tools-to-stabilize-the-higher-tier-property-markets-12857024">China Still Has More Policy Tools To Stabilize The Higher Tier Property Markets</a>
+<a href="/ratings/en/research/pdf-articles/230926-new-issue-s-bank-plc-cba-covered-bond-program-12860162">New Issue: S-Bank PLC CBA Covered Bond Program</a>
+<a href="/ratings/en/research/pdf-articles/230926-credit-conditions-credit-conditions-north-america-q4-2023-shift-to-low-gear-101586807">Credit Conditions North America Q4 2023: Shift To Low Gear</a>
+<a href="/ratings/en/research/pdf-articles/230926-credit-conditions-europe-q4-2023-resilience-under-pressure-amid-tighter-financial-conditions-101586769">Credit Conditions Europe Q4 2023: Resilience Under Pressure Amid Tighter Financial Conditions</a>
+<a href="/ratings/en/research/pdf-articles/230926-credit-conditions-emerging-markets-q4-2023-high-interest-rates-sour-the-mood-101586806">Credit Conditions Emerging Markets Q4 2023: High Interest Rates Sour The Mood</a>
+<a href="/ratings/en/research/pdf-articles/230926-credit-conditions-asia-pacific-q4-2023-china-downside-risk-is-high-101586772">Credit Conditions Asia-Pacific Q4 2023: China Downside Risk Is High</a>
+<a href="/ratings/en/research/articles/230925-economic-outlook-canada-q4-2023-sluggish-growth-ahead-12860532">Economic Outlook Canada Q4 2023: Sluggish Growth Ahead</a>
+<a href="/ratings/en/research/articles/230925-economic-outlook-u-k-q4-2023-high-rates-keep-growth-muted-12863187">Economic Outlook U.K. Q4 2023: High Rates Keep Growth Muted</a>
+<a href="/ratings/en/research/articles/230925-economic-outlook-emerging-markets-q4-2023-the-lagged-effects-of-monetary-policy-will-test-resilience-12858888">Economic Outlook Emerging Markets Q4 2023: The Lagged Effects Of Monetary Policy Will Test Resilience</a>
+<a href="/ratings/en/research/articles/230925-economic-outlook-u-s-q4-2023-slowdown-delayed-not-averted-12861020">Economic Outlook U.S. Q4 2023: Slowdown Delayed, Not Averted</a>
+<a href="/ratings/en/research/articles/230925-credit-trends-u-s-corporate-bond-yields-as-of-sept-20-2023-12863408">Credit Trends: U.S. Corporate Bond Yields As Of Sept. 20, 2023</a>
+<a href="/ratings/en/research/articles/230925-singapore-s-d-sii-rollout-improves-insurance-sector-resilience-12863199">Singapore's D-SII Rollout Improves Insurance Sector Resilience</a>
+<a href="/ratings/en/research/articles/230925-economic-research-economic-outlook-eurozone-q4-2023-slower-growth-faster-tightening-12856216">Economic Research: Economic Outlook Eurozone Q4 2023: Slower Growth, Faster Tightening</a>
+<a href="/ratings/en/research/pdf-articles/230925-this-week-in-credit-defaults-back-in-focus-sept-25-2023-101586688">This Week In Credit: Defaults Back In Focus (Sept. 25, 2023)</a>
+<a href="/ratings/en/research/pdf-articles/230925-new-issue-polaris-2023-2-plc-12855891">New Issue: Polaris 2023-2 PLC</a>
+<a href="/ratings/en/research/pdf-articles/230925-second-party-opinion-verd-boligkreditt-s-green-bond-framework-101586680">Second Party Opinion: Verd Boligkreditt's Green Bond Framework</a>
+<a href="/ratings/en/research/articles/230924-economic-research-economic-outlook-asia-pacific-q4-2023-resilient-growth-amid-china-slowdown-12856968">Economic Research: Economic Outlook Asia-Pacific Q4 2023: Resilient Growth Amid China Slowdown</a>
+<a href="/ratings/en/research/articles/190319-history-of-u-s-state-ratings-2185306">History Of U.S. State Ratings</a>
+<a href="/ratings/en/research/articles/190319-u-s-state-ratings-and-outlooks-current-list-1738758">U.S. State Ratings And Outlooks: Current List</a>
+<a href="/ratings/en/research/articles/230922-argentum-netherlands-b-v-series-2020-14-repack-rating-raised-following-action-on-credit-suisse-12860137">Argentum Netherlands B.V. Series 2020-14 Repack Rating Raised Following Action On Credit Suisse</a>
+<a href="/ratings/en/research/articles/230922-korean-insurers-and-ifrs-17-jury-s-out-if-increased-capital-is-here-to-stay-12856993">Korean Insurers And IFRS 17: Jury's Out If Increased Capital Is Here To Stay</a>
+<a href="/ratings/en/research/pdf-articles/230922-emea-structured-finance-chart-book-september-2023-101586598">EMEA Structured Finance Chart Book: September 2023</a>
+<a href="/ratings/en/research/pdf-articles/230922-esg-evaluation-california-water-service-group-101586587">ESG Evaluation: California Water Service Group</a>
+<a href="/ratings/en/research/pdf-articles/220426-esg-evaluation-fluidra-s-a-101527700">ESG Evaluation: Fluidra S.A.</a>
+<a href="/ratings/en/research/pdf-articles/230922-slides-global-auto-loan-abs-a-brief-market-update-101586624">SLIDES: Global Auto Loan ABS: ​A Brief Market Update</a>
+<a href="/ratings/en/research/pdf-articles/230922-new-issue-finance-ireland-rmbs-no-6-dac-12856044">New Issue: Finance Ireland RMBS No. 6 DAC</a>
+<a href="/ratings/en/research/articles/230921-u-s-states-jump-start-electric-vehicle-charging-infrastructure-12856397">U.S. States Jump Start Electric Vehicle Charging Infrastructure</a>
+<a href="/ratings/en/research/articles/230921-washington-morgan-capital-co-llc-abcp-conduit-profile-12854670">Washington Morgan Capital Co. LLC--ABCP Conduit Profile</a>
+<a href="/ratings/en/research/articles/230921-weak-cash-flow-pressures-ratings-for-north-american-speculative-grade-health-care-issuers-12846798">Weak Cash Flow Pressures Ratings For North American Speculative-Grade Health Care Issuers</a>
+<a href="/ratings/en/research/articles/230921-research-update-state-of-queensland-aa-a-1-ratings-affirmed-outlook-stable-12854304">Research Update: State of Queensland 'AA+/A-1+' Ratings Affirmed; Outlook Stable</a>
+<a href="/ratings/en/research/pdf-articles/230921-new-issue-together-asset-backed-securitisation-2023-1st2-plc-12848139">New Issue: Together Asset Backed Securitisation 2023-1ST2 PLC</a>
+</noscript><!-- URL: https://searchg2-restricted.crownpeak.net/sandpglobal-spglobal-live/select/?q=*%3A*&echoParams=explicit&fl=title,custom_s_local_url&defType=edismax&wt=json&start=0&rows=100&fq=custom_s_sub_type:("article","video","podcast","pdf details")&fq=custom_s_division:Ratings AND custom_s_region:en&sort=score+desc, custom_dt_meta_publish_date+desc -->
+<script>$(document).ready(function() {    var filtersInit = false;
+var themesList = [];
+
+function getFilterParams(key,value){
+ var query = "0/"+encodeURIComponent(key);
+ for (var i =0; i<value.length; i++){
+ query += "\"\" OR ";
+ query +=  "\"\""+encodeURIComponent(value[i]);
+ }
+  return query;
+}
+var commodityFilterList = [];
+var contentTypeFilterList = [];
+var contentTypeFilterListMobile = [];
+var divisionFilterList = [];
+var divisionFilterListMobile = [];
+
+function DateMonthYear(date) {
+    var result = [];
+    result.push(
+        ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][parseInt(date.split("-")[1])]
+    );
+    result.push(" " + date.split("-")[0]);
+    return result.join("");
+}
+
+function HideFilerOnClick(filterName) {
+    $("#" + filterName + " a").each(function(index) {
+        $(this).on("click", function() {
+            $("#" + filterName).parent().removeClass("is-activated").removeAttr("data-submenu").css("display", "").find("ul").css("display", "");
+        })
+    })
+}
+function GtmAnalyticsPush(category, action, label) {
+   window.dataLayer.push({ 'event': 'gtm.event', 'action': action, 'category': category, 'label': label});
+}
+function convertDivision(division) {   
+    if (division == 'Market Intelligence') {
+        return "S&P Global Market Intelligence";
+    } else if (division == 'Corporate') {
+        return "S&P Global";
+    } else if (division == 'Platts') {
+        return "S&P Global Platts";
+    } else {
+        return "";
+    }
+}
+    var src = new search({        collection: 'sandpglobal-spglobal-live',                filters: ["custom_s_sub_type:(\"article\",\"video\",\"podcast\",\"pdf details\")", "custom_s_division:(\"Ratings\")", 'custom_s_region:\"en\"'],        facet: true,        facets: [{  field: 'custom_ss_theme_full', sort: 'index', formatter: function(i, field, text, value, count) {
+if (value && value.length > 0 && themesList.indexOf(value) === -1) {
+    themesList.push(value);
+}
+    return "";
+}, callbacks: {
+    afterResults: function(html) {
+        
+		var retVal = [];
+        var obj = {};
+		for (i = 0; i < themesList.length; i++) { 
+          if (themesList[i].startsWith("0/")){
+               var key  = themesList[i].replace("0/","");
+               var valArray = [];
+               obj[key] = valArray;
+          }
+          else {
+            var regex = /\/(.*?)\//;
+            var matches = themesList[i].match(regex);
+            var category = matches[1]
+            var tmpArray = obj[category];
+            
+            tmpArray.push(themesList[i]);
+          }
+       }
+		retVal.push("<li class=\"is-dropdown-submenu-item is-submenu-item\" role=\"menuitem\"><a class=\"filter-menu-item js-gtm-tag\" data-gtm-category=\"Latest from S&P Global\" data-gtm-action=\"Filter\" data-gtm-label=\"Sector_All\" href=\"javascript:void(0)\" data-multi-select='1'   data-field='' data-filter-field='custom_ss_theme_full' >ALL</a></li>");
+		for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+			
+			//my code
+			 retVal.push("<li class=\"is-dropdown-submenu-item is-submenu-item\" role=\"menuitem\">");
+			 retVal.push("<a class=\"filter-menu-item js-gtm-tag\" data-gtm-category=\"Latest from S&P Global\" data-gtm-action=\"Filter\" data-gtm-label=\"Sector_" + key  +"\" href=\"javascript:void(0)\" data-field=\"custom_ss_theme_full\" data-value='\"" + getFilterParams(key,obj[key]) + "\"' data-multi-select='1'>" + key + "</a>");
+            retVal.push("</li>");
+			//end
+
+        }
+     }
+        
+       
+        return retVal.join("");
+    },
+    afterDrawResults: function(data, html) {
+        HideFilerOnClick("filter-commodity");
+    }
+}, selector: "#filter-commodity"  },{  field: 'custom_ss_theme_full', sort: 'index', formatter: function(i, field, text, value, count) {
+    return "";
+}, callbacks: {
+    afterResults: function(html) {
+        
+		var retVal = [];
+        var obj = {};
+		for (i = 0; i < themesList.length; i++) { 
+          if (themesList[i].startsWith("0/")){
+               var key  = themesList[i].replace("0/","");
+               var valArray = [];
+               obj[key] = valArray;
+          }
+          else {
+            var regex = /\/(.*?)\//;
+            var matches = themesList[i].match(regex);
+            var category = matches[1]
+            var tmpArray = obj[category];
+            
+            tmpArray.push(themesList[i]);
+          }
+       }
+		retVal.push("<li class=\"is-dropdown-submenu-item is-submenu-item\" role=\"menuitem\"><a class=\"filter-menu-item js-gtm-tag\" data-gtm-category=\"Latest from S&P Global\" data-gtm-action=\"Filter\" data-gtm-label=\"Sector_All\" href=\"javascript:void(0)\" data-multi-select='1'   data-field='' data-filter-field='custom_ss_theme_full' >ALL</a></li>");
+		for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+			
+			//my code
+			 retVal.push("<li class=\"is-dropdown-submenu-item is-submenu-item\" role=\"menuitem\">");
+			 retVal.push("<a class=\"filter-menu-item js-gtm-tag\" data-gtm-category=\"Latest from S&P Global\" data-gtm-action=\"Filter\" data-gtm-label=\"Sector_" + key  +"\" href=\"javascript:void(0)\" data-field=\"custom_ss_theme_full\" data-value='\"" + getFilterParams(key,obj[key]) + "\"' data-multi-select='1'>" + key + "</a>");
+            retVal.push("</li>");
+			//end
+
+        }
+     }
+        
+       
+        return retVal.join("");
+    },
+    afterDrawResults: function(data, html) {
+        HideFilerOnClick("filter-commodity");
+    }
+}, selector: ".home__latest .table-filter .table-filter-content .table-filter-content-data:eq(0) > ul"  },{  custom: 'custom_ss_contenttype', values: [{
+    text: 'Articles',
+    value: 'Articles'
+}, {
+    text: 'Blogs',
+    value: 'Blog'
+}, {
+    text: 'Commentaries',
+    value: 'Commentaries'
+}, {
+    text: 'Events',
+    value: 'Events'
+}, {
+    text: 'Podcasts',
+    value: 'Podcasts'
+}, {
+    text: 'Products',
+    value: 'Products'
+}, {
+    text: 'Research',
+    value: 'Ratings Research'
+}, {
+    text: 'Videos',
+    value: 'Videos'
+}], formatter: function(i, field, text, value, count) {
+    if (value && value.length > 0 && contentTypeFilterList.indexOf(value) === -1) {
+        contentTypeFilterList.push({val:value, name:text});
+    }
+    return "";
+}, callbacks: {
+    afterResults: function(html) {
+        var retVal = [];
+        retVal.push("<li class=\"is-dropdown-submenu-item is-submenu-item\" role=\"menuitem\"><a class=\"filter-menu-item js-gtm-tag\" data-gtm-category=\"Latest from S&P Global\" data-gtm-action=\"Filter\" data-gtm-label=\"Filter By_All\" href=\"javascript:void(0)\" data-multi-select='1'  data-field='' data-filter-field='custom_ss_contenttype' >ALL</a></li>");
+       for(i=0;i<contentTypeFilterList.length;i++){
+            retVal.push("<li class=\"is-dropdown-submenu-item is-submenu-item\" role=\"menuitem\">");
+            retVal.push("<a class=\"filter-menu-item js-gtm-tag\" data-gtm-category=\"Latest from S&P Global\" data-gtm-action=\"Filter\" data-gtm-label=\"Filter By_" + contentTypeFilterList[i].val  +"\" href=\"javascript:void(0)\" data-field=\"custom_ss_contenttype\" data-value='\"" + encodeURIComponent(contentTypeFilterList[i].val) + "\"' data-multi-select='1'>" + contentTypeFilterList[i].name + "</a>")
+            retVal.push("</li>");
+        };
+        return retVal.join("");
+    },
+    afterDrawResults: function(data, html) {
+        HideFilerOnClick("filter-contenttype");
+    }
+}, selector: "#filter-contenttype"  },{  custom: 'custom_ss_contenttype', values: [{
+    text: 'Articles',
+    value: 'Articles'
+}, {
+    text: 'Blogs',
+    value: 'Blog'
+}, {
+    text: 'Commentaries',
+    value: 'Commentaries'
+}, {
+    text: 'Events',
+    value: 'Events'
+}, {
+    text: 'Podcasts',
+    value: 'Podcasts'
+}, {
+    text: 'Products',
+    value: 'Products'
+}, {
+    text: 'Research',
+    value: 'Ratings Research'
+}, {
+    text: 'Videos',
+    value: 'Videos'
+}], formatter: function(i, field, text, value, count) {
+     if (value && value.length > 0 && contentTypeFilterListMobile.indexOf(value) === -1) {
+        contentTypeFilterListMobile.push({val:value, name:text});
+    }
+    return "";
+}, callbacks: {
+    afterResults: function(html) {
+	 var retVal = [];
+        retVal.push("<li class=\"is-dropdown-submenu-item is-submenu-item\" role=\"menuitem\"><a class=\"filter-menu-item js-gtm-tag\" data-gtm-category=\"Latest from S&P Global\" data-gtm-action=\"Filter\" data-gtm-label=\"Filter By_All\" href=\"javascript:void(0)\" data-multi-select='1'  data-field='' data-filter-field='custom_ss_contenttype' >ALL</a></li>");
+        for(i=0;i<contentTypeFilterListMobile.length;i++){
+            retVal.push("<li class=\"is-dropdown-submenu-item is-submenu-item\" role=\"menuitem\">");
+            retVal.push("<a class=\"filter-menu-item js-gtm-tag\" data-gtm-category=\"Latest from S&P Global\" data-gtm-action=\"Filter\" data-gtm-label=\"Filter By_" + contentTypeFilterListMobile[i].val  +"\"  href=\"javascript:void(0)\" data-field=\"custom_ss_contenttype\" data-value='\"" + encodeURIComponent(contentTypeFilterListMobile[i].val) + "\"' data-multi-select='1'>" + contentTypeFilterListMobile[i].name + "</a>")
+            retVal.push("</li>");
+        };
+        return retVal.join("");
+},
+    afterDrawResults: function(data, html) {
+        HideFilerOnClick("filter-contenttype");
+    }
+}, selector: ".home__latest .table-filter .table-filter-content .table-filter-content-data:eq(1) > ul"  }],        formatter: function(i, doc) {
+    var html = [];
+    var regionList = [];
+    var communityList = [];
+    var categoryText = $(".home__latest header h3.home__section-title span:nth-child(2)").text();
+	var gtmaction = "";
+	
+        if(doc.custom_s_sub_type == 'podcast')
+		gtmaction = "Podcast";
+	else if(doc.custom_s_sub_type == 'video')
+		gtmaction = "Video";
+else if(doc.custom_s_sub_type == 'event')
+		gtmaction = "Event";
+	else
+		gtmaction = "Article";
+		
+    html.push('<a class="modalimage card--inline js-gtm-tag" data-gtm-category= "' + categoryText + '" data-gtm-action="' + gtmaction + '" data-gtm-label="'+convertDivision(doc.custom_s_division) +'_'+ doc.title +'" href="'+doc.custom_s_local_url+'" target="_self">');
+    if(doc.custom_s_sub_type == 'video' && doc.custom_s_meta_videoid!==undefined && doc.custom_s_meta_videoid!==''){
+        html.push('<picture class="card__inline-image js-fit-parent" aria-hidden="true"> <img srcset="//play.vidyard.com/'+doc.custom_s_meta_videoid+'.jpg" class=" lazyloaded">');
+        html.push('</picture>');
+    }
+    html.push('<div class="card__content ">');
+    html.push('<ul class="meta-data">');
+    if(doc.custom_s_sub_type == 'blog'){
+        html.push('<li class="meta-data__type">'+convertDivision(doc.custom_s_division)+' : BLOG</li>');
+        html.push('<li class="meta-data__date">'+src.formatDate(doc.custom_dt_meta_publish_date)+'</li>');
+    } else {
+        html.push('<li class="meta-data__type">'+convertDivision(doc.custom_s_division)+'</li>');
+        html.push('<li class="meta-data__date">'+src.formatDate(doc.custom_dt_meta_publish_date)+'</li>');
+      if(doc.custom_s_gated_content_option ==="ciq registeration"){
+ html.push('<li class="meta-data__redTxt"><span class="red-text">Available on RatingsDirect<sup>®</sup></span></li>');
+    }
+    }
+    if(doc.custom_ss_location !== undefined){
+        html.push('<li class="meta-data__location">'+doc.custom_ss_location.join(", ")+'</li>');
+    }
+    html.push('</ul>');
+    if(doc.custom_s_sub_type == 'video'){
+        html.push('<h1> <span class="card__title-multimedia">watch: </span>'+doc.title+'</h1>');
+    } else if(doc.custom_s_sub_type == 'podcast'){
+        html.push('<h1> <span class="card__title-multimedia">listen: </span>'+doc.title+'</h1>');
+    } else {
+        html.push('<h1>'+doc.title+'</h1>');
+    }
+    if(doc.custom_s_sub_type == 'blog' && doc.custom_ss_authors !== undefined){
+        var thumbnail = '/_assets/images/blog-unknown-thumbnail.png';
+        if (doc.custom_ss_author_thumbnails!==undefined){
+            thumbnail = doc.custom_ss_author_thumbnails;
+        }
+        html.push('<div class="blog__author" role="presentation">');
+        html.push('<picture class="blog__author-image js-fit-parent" aria-hidden="true">');
+        html.push('<source srcset="'+thumbnail+' 1x, '+thumbnail+' 2x" media="(min-width: 1360px)">');
+        html.push('<img srcset="'+thumbnail+'" alt="" class=" lazyloaded"> </picture>');
+        html.push('<div class="blog__author-name-wrapper"> <span class="blog__author-name">'+doc.custom_ss_authors+'</span> <span class="blog__author-subtitle">'+doc.custom_ss_author_titles+'</span> </div>');
+        html.push('</div>');
+    }
+    html.push('</div>');
+    html.push('</a>');
+    html.push('<hr class="divider">');
+
+    return html.join("");
+},        callbacks: { 
+	afterDrawResults: function(data, html) {        
+                  var categoryText = $(".home__latest header h3.home__section-title span:nth-child(2)").text();
+		$("a.js-gtm-tag:not(.gtm-bound)").each(function(index) {
+$(this).attr("data-gtm-category",categoryText );
+			$(this).addClass('gtm-bound').on("click", function() {
+			GtmAnalyticsPush($(this).attr('data-gtm-category'), $(this).attr('data-gtm-action'), $(this).attr('data-gtm-label'));
+			})
+		});
+$("input.gtm-radio-rating").each(function(index) {
+			$(this).on("click", function() {
+			GtmAnalyticsPush("Hero", "Filter",$(this).next("label").text());
+			})
+		});
+	}
+},        selectors: {            loadMore: '#load-more',            results: '#resultsWrapper'        },        highlight: false,        maxFacets: 50,        noResults: "<p>There are no results found.</p>",        numRows: 15,        sortBy: ["score desc, custom_dt_meta_publish_date desc"],        spellcheck: false,        parameters: '&fl=title,custom_i_article_id,custom_dt_meta_publish_date,custom_s_local_url,custom_s_cshtml_path,custom_s_sub_type,custom_s_meta_type,score,custom_s_division,custom_ss_contenttype,custom_ss_location,custom_ss_region,custom_ss_theme,custom_ss_author_thumbnails,custom_ss_authors,custom_ss_author_titles,custom_s_meta_videoid,custom_ss_contenttype,custom_s_gated_content_option',        qOverride: ''    });    src.search();});</script><!-- END: Search Initialization V1 org -->     <div class="home__insight" data-tab="topics">        <header class="home__header">          <h3 class="home__section-title">Topics </h3>                  </header>        <hr class="divider"/>        <div id="topicSearchResults"></div>        <div class="home__sidebar-cta">              <div id="topic-feed-cta2">                  <a data-gtm-category="Topics" data-gtm-action="More" data-gtm-label="VIEW ALL TOPICS" href="/ratings/en/research-insights/topics/index">VIEW ALL TOPICS</a>              </div>        </div>      </div><!-- START: Search Initialization V1 org --><script>$(document).ready(function() {       $("#filter-title a").on("click", function() {
+                               src.sort($(this).attr("data-sort"));
+                    
+  });
+$("#filtermobilesort-title a").on("click", function() {
+                               src.sort($(this).attr("data-sort"));
+                    
+  });
+
+var gtmEventInit = false;
+function GtmAnalyticsPush(category, action, label) {
+   window.dataLayer.push({ 'event': 'gtm.event', 'action': action, 'category': category, 'label': label});
+}
+    var src = new search({        collection: 'sandpglobal-spglobal-live',                filters: ["custom_s_type:article", "custom_s_sub_type:topic", "custom_s_division:(\"Ratings\")"],        facet: false,        facets: [],        formatter: function(i, doc) {
+    var topicText =$(".home__insight header h3.home__section-title").text();
+    var html = [];
+    var theme = '';
+    if (typeof(doc.custom_ss_theme) != 'undefined' && doc.custom_ss_theme != null) {
+        for (var n = 0, lensegment = doc.custom_ss_theme.length; n < lensegment; n++) {
+            if (n > 0) theme = theme + ', ';
+            var thm = decodeURIComponent(doc.custom_ss_theme[n]).replace(/\+/g, ' ');
+            theme = theme + thm;
+        }
+    }
+    html.push('<a class="modalimage card--inline js-gtm-tag" href="' + doc.custom_s_local_url + '" data-gtm-category="' + topicText +'"  data-gtm-action="Topic" data-gtm-label="' + theme + '_' + doc.title + '" target="_self">');
+    html.push('<div class="card__content ">');
+    html.push('<ul class="meta-data">');
+    html.push('<li class="meta-data__type">' + theme + '</li>');
+    html.push('</ul>');
+    html.push('<h1>' + doc.title + '</h1>');
+    html.push('<ul class="card__meta-inline-list" data-topicid="' + doc.id + '">');
+    html.push('</ul>');
+    html.push('</div>');
+    html.push('</a>');
+    html.push('<hr class="divider">');
+    return html.join("");
+},        callbacks: {
+    beforeResults: function(data) {},
+    afterResults: function(html) {},
+    afterDrawResults: function(data, html) {
+        if (!data || !data.response) return;
+        var $bottomRowDivider = $('#resultsBottomRowDivider');
+        if ($bottomRowDivider.length > 0 && data && data.response && data.response.numFound && data.response.docs) {
+            $bottomRowDivider.toggle((data.response.start || 0) + data.response.docs.length < data.response.numFound);
+        }
+        var query = "q=*:*&wt=json&echoParams=none&fq=custom_s_type:article&facet=true&facet.pivot=custom_ss_topic_id,custom_s_sub_type&facet.sort=index&rows=0" + "&fq=custom_ss_topic_id:(" + data.response.docs.map(function(doc) {
+            return doc.id;
+        }).join("%20OR%20") + ")";
+        var cps = new CrownPeakSearch("sandpglobal-spglobal-live");
+        cps.endpoint('https://searchg2-restricted.crownpeak.net/%%COLLECTION%%/%%HANDLER%%?%%QUERY%%');
+        cps.searchProxy('/crownpeaksearchproxy.aspx?q=%%URLENCODED%%');
+        cps.raw(query).done(function(data) {
+            if (!data || !data.facet_counts || !data.facet_counts.facet_pivot || !data.facet_counts.facet_pivot["custom_ss_topic_id,custom_s_sub_type"]) return;
+
+            var mappingHash = {};
+            mappingHash['article'] = "Article(s)";
+            mappingHash['pdf details'] = "Article(s)";
+            mappingHash['podcast'] = "Podcast(s)";
+            mappingHash['video'] = "Video(s)";
+            mappingHash['blog'] = "Blog(s)";
+            mappingHash['news'] = "News";
+            mappingHash['research'] = "Research(s)";
+
+            var facets = data.facet_counts.facet_pivot["custom_ss_topic_id,custom_s_sub_type"];
+            for (var i = 0, len = facets.length; i < len; i++) {
+                var f = facets[i];
+
+                /*if (f.pivot && f.pivot.length > 0) {
+                      var message = f.pivot.map(function(pivot) {
+                          return "<li> " + pivot.count + " " + pivot.value.substr(0, 1).toUpperCase() + pivot.value.substr(1) + (pivot.count === 1 ? " " : "s");
+                      });
+                      $("ul[data-topicid='" + f.value + "']").html(message.join(" </li>"));
+                  }*/
+
+                if (f.pivot && f.pivot.length > 0) {
+
+                    var tempHash = {};
+                    $.each(f.pivot, function(index, T) {
+                        var itemName = mappingHash[T.value] ? mappingHash[T.value] : (T.value.substr(0, 1).toUpperCase() + T.value.substr(1));
+                        tempHash[itemName] = (tempHash[itemName]) ? (tempHash[itemName] + T.count) : T.count;
+                    });
+
+                    var message = Object.keys(tempHash).map(function(hv) {
+                        return tempHash[hv] + " " + hv;
+                    }).join("</li><li>");
+
+                    $("ul[data-topicid='" + f.value + "']").html("<li>" + message + "</li>");
+                }
+            }
+        });
+        if (!gtmEventInit) {
+            gtmEventInit = true;
+            $("a.js-gtm-tag:not(.gtm-bound)").each(function(index) {
+                $(this).addClass('gtm-bound').on("click", function() {
+                    GtmAnalyticsPush($(this).attr('data-gtm-category'), $(this).attr('data-gtm-action'), $(this).attr('data-gtm-label'));
+                })
+            })
+        }
+        if (src.alreadyLoaded) return;
+        src.alreadyLoaded = true;
+
+        if (data.response.numFound == 0) {
+            $("#topic-feed-cta2").hide();
+        }
+    }
+},        selectors: {            loadMore: '',            results: '#topicSearchResults'        },        highlight: false,        maxFacets: 0,        noResults: "<p class='no-result-found'>There are no results found.</p>",        numRows: 5,        sortBy: ["custom_dt_meta_publish_date desc"],        spellcheck: false,        parameters: '&fl=id,title,custom_i_item_id,custom_s_local_url,custom_s_cshtml_path,custom_s_meta_type,custom_s_summary,custom_ss_theme,custom_s_topic,custom_ss_segment',        qOverride: ''    });    src.search();});</script><!-- END: Search Initialization V1 org --></div><hr class="divider thin"/></div>
+    
+                  </div>    <!-- BEGINNING: organisms Global Footer --><footer class="footer no-print" role="contentinfo">    <div class="footer__content">        <ul class="footer__links">    <li><a href="/ratings/en/about/" target="_self" data-gtm-category="Footer" data-gtm-action="Support" data-gtm-label="About S&P Global Ratings">About S&P Global Ratings</a></li><li><a href="/ratings/en/media-center/media-contacts" target="_self" data-gtm-category="Footer" data-gtm-action="Support" data-gtm-label="Media Center">Media Center</a></li><li><a href="/ratings/en/contact-us/" target="_self" data-gtm-category="Footer" data-gtm-action="Support" data-gtm-label="Contact Us">Contact Us</a></li></ul>                <ul class="footer__secondary-links">    <li><a href="/en/careers/overview/" data-gtm-category="Footer" data-gtm-action="Outbound Link_Division" data-gtm-label="Careers">Careers</a></li><li><a href="/en/who-we-are/corporate-responsibility/overview" data-gtm-category="Footer" data-gtm-action="Outbound Link_Division" data-gtm-label="Corporate Responsibility">Corporate Responsibility</a></li><li><a href="/en/who-we-are/our-history" data-gtm-category="Footer" data-gtm-action="Outbound Link_Division" data-gtm-label="History">History</a></li><li><a href="/en/who-we-are/our-people/our-leadership" data-gtm-category="Footer" data-gtm-action="Outbound Link_Division" data-gtm-label="Leadership">Leadership</a></li><li><a href="https://www.crisil.com/" data-gtm-category="Footer" data-gtm-action="Outbound Link_Division" data-gtm-label="CRISIL">CRISIL</a></li></ul>        <div class="footer__bottom-wrapper">                                    <ul class="footer__notice">    <li>© 2023 S&P Global</li>    <li><a href="/ratings/en/regulatory/content/legal-disclaimer" data-gtm-category="Footer" data-gtm-action="Support" data-gtm-label="Legal Disclaimers">Legal Disclaimers</a></li><li><a href="/en/terms-of-use" data-gtm-category="Footer" data-gtm-action="Support" data-gtm-label="Terms of Use">Terms of Use</a></li><li><a href="/en/cookie-notice" data-gtm-category="Footer" data-gtm-action="Support" data-gtm-label="Cookie Notice">Cookie Notice</a></li><li><a href="/en/privacy/privacy-policy-english" data-gtm-category="Footer" data-gtm-action="Support" data-gtm-label="Privacy Policy">Privacy Policy</a></li><li><a href="/en/enterprise/Legal/privacy.html" data-gtm-category="Footer" data-gtm-action="Support" data-gtm-label="Client Privacy Portal">Client Privacy Portal</a></li><li><a href="https://more.spglobal.com/DoNotSell" data-gtm-category="Footer" data-gtm-action="Support" data-gtm-label="Do Not Sell My Personal Information">Do Not Sell My Personal Information</a></li><li><button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</button></li></ul>            <ul class="footer__social">    <li>            <a href="https://twitter.com/SPGlobalRatings" target="_blank" data-gtm-category="Footer" data-gtm-action="Outbound Link_Social" data-gtm-label="Twitter" aria-label=""><i class="fa fa-twitter"></i></a></li><li>            <a href="https://www.linkedin.com/company/spglobalratings" target="_blank" data-gtm-category="Footer" data-gtm-action="Outbound Link_Social" data-gtm-label="LinkedIn" aria-label=""><i class="fa fa-linkedin-square"></i></a></li><li>            <a href="https://www.youtube.com/user/SPTVbroadcast" target="_blank" data-gtm-category="Footer" data-gtm-action="Outbound Link_Social" data-gtm-label="YouTube" aria-label=""><i class="fa fa-youtube"></i></a></li></ul>        </div>    </div></footer><!-- END: organisms Global Footer -->
+  
+    <script type="text/javascript" src='/_assets/js/bundle.js?v13'></script>
+  
+  
+    
+  
+  
+  <script type="text/javascript" src="/_assets/js/bundleCorpEsg.js?v12"></script> 
+ <script type="text/javascript" src='/_assets/js/esg/esgsubnav.js'></script>            
+    <script type="text/javascript">
+        if ($('.relAsset').length) {
+            $('.menu.submenu li a').each(function () {
+                var aclass = $(this).attr('class');
+                if (typeof aclass != "undefined" && $(this).hasClass($('.relAsset').attr('id'))) {
+                    $(this).attr('href', $('.relAsset').text());
+                }
+            });
+        }
+       
+    </script> 
+     
+</body>
+</html>
+  

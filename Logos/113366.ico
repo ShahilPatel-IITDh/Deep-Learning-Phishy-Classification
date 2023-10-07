@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Requested page could not be displayed.</title>
+  <style>
+      html{position:relative;}:focus{outline:0;}
+      a,body,dd,div,dl,dt,form,h1,html,img,label,li,ol,p,span,strong{
+        margin:0;padding:0;border:0;font-size:100%;font-family:inherit;vertical-align:baseline;background:transparent;
+      }
+      body{position:relative;font-size: 12px;}
+      /* l10n font */
+      body.lang-ko, body.lang-ko input, body.lang-ko textarea, body.lang-ko button{font-family:dotum,Arial,sans-serif;}
+      body.lang-en, body.lang-en input, body.lang-en textarea, body.lang-en button{font-family:verdana,helvetica,Arial,sans-serif;}
+      body.lang-ja, body.lang-ja input, body.lang-ja textarea, body.lang-ja button{font-family:"MS PGothic",Osaka,Arial,sans-serif;}
+      body.lang-zh, body.lang-zh input, body.lang-zh textarea, body.lang-zh button,
+      body.lang-zh_CN, body.lang-zh_CN input, body.lang-zh_CN textarea, body.lang-zh_CN button,
+      body.lang-zh_TW, body.lang-zh_TW input, body.lang-zh_TW textarea, body.lang-zh_TW button{font-family:SimSun,Arial,sans-serif;}
+      #wrap{width: 676px; height: 370px; margin: 0 auto;text-align: center; position: relative; padding-top: 30px;}
+      #header{height: 28px;padding-bottom: 15px;}
+      #header *{height: 28px;margin: 0 3px;display: inline-block;line-height: 30px;font-size: 16px;font-weight: bold;vertical-align: top;}
+      #contents{padding: 30px 0;border: 1px solid #EAEAEA;border-radius: 3px;background-color: #F5F5F5;}
+      #contents h1{height: 33px;line-height: 33px;font-size: 24px;}
+      #contents p{padding: 18px 0;font-size: 12px;line-height: 18px;color: #777;}
+      #contents form{height: 26px;padding: 3px;font-size: 14px;color: #474747;}
+      #contents form *{display: inline-block;vertical-align: top;line-height: 26px;}
+      #contents form strong{letter-spacing: 0;}
+      #contents form input{
+        width: 120px;height: 20px;padding: 0 6px;margin: 0;*margin: -1px 0;border: 3px solid #474747;
+        color: #474747;font-size: 14px;font-weight: bold;line-height: 20px;
+      }
+      #contents form .button{
+        height: 26px; overflow: hidden !important;
+      }
+      #contents form button{
+        height: 26px; padding:0 12px;margin:0;border:0;overflow:visible;cursor:pointer; color: #FFF;
+        font-weight: bold; background-color: #474747; font-size: 14px; border-radius: 3px; _line-height: 25px;
+      }
+      #footer{width: 676px; height: 23px; position: absolute; bottom: 0; left:0}
+      #footer *{
+        height: 23px;display: inline-block;
+        color: #868686;line-height: 23px;font-size: 10px;vertical-align: top;font-family: arial;
+      }
+  </style>
+</head>
+<body class="lang-en">
+
+<div id="wrap">
+  <div id="header" class="section">
+    <img src="/public/images/relay/logo-default.png" alt="Rsupport" />
+    <span>Remote Support Services</span>
+  </div>
+
+  <div id="contents" class="section">
+    <h1>Page not found.</h1>
+    <p>The URL you typed does not exist.<br />Please enter the URL the representative directs again. <br />Please call representative if the same problem persists.</p>
+    <form action="https://113366.com" method="get" id="relay-form">
+      <strong id="relay-host-string">https://113366.com/</strong>
+      <input type="text" id="relay-uri" name="relay_uri" class="text" />
+      <span class="button"><button type="submit">Connect</button></span>
+    </form>
+  </div>
+
+  <div id="footer"  class="section">
+    <img src="/public/images/relay/logo-gray-small.png" alt="Rsupport" />
+    <span>Copyright &copy; 2001 ~ 2023 RSUPPORT CO.,LTD. ALL RIGHTS RESERVED.</span><br />
+    <p id="icpNumber" style="display:none">京ICP备10019129号-8</p>
+  </div>
+</div>
+
+<script>
+(function(win,doc){
+  if(false) {
+    document.getElementById('icpNumber').setAttribute('style', 'display : show;');
+  }
+  win.onresize = function(event){
+    var wrap = doc.getElementById('wrap')
+      , margin = 0,
+        win_height = (typeof window.innerHeight != 'undefined') ? window.innerHeight :
+                     (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0) ?
+                     document.documentElement.clientHeight : document.getElementsByTagName('body')[0].clientHeight;
+
+    if(win_height < 420) margin = 0;
+    else if(win_height > 600) margin = 100;
+    else margin = (win_height-420)/2;
+    wrap.style.marginTop = margin+"px";
+  }
+
+  win.onresize();
+  var form = doc.getElementById('relay-form')
+    , uri = doc.getElementById('relay-uri');
+
+  uri.value = '';
+  uri.trigger("focus");
+
+  form.onsubmit = function(event){
+    if(uri.value.replace(/(\s)+/g,'') == ''){
+      alert('Enter URL.');
+      uri.trigger("focus");
+    }
+    else location.href = form.action+uri.value;
+    return false;
+  }
+})(this,document)
+</script>
+
+</body>
+</html>

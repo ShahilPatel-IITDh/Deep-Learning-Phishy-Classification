@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <!-- Page hiding snippet -->
+    <style>.async-hide { opacity: 0 !important} </style>
+    <script>
+        (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+        h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+        })(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-5J45DBW':true});
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J45DBW');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Segment -->
+    <script type="text/javascript" id="segment-tag">
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+        }}();
+    </script>
+
+    <!-- Preprocessor searches for this literally, if changed update build pre-processor definition too -->
+    <base href="/">
+
+    <meta charset="utf-8" />
+
+    <!-- Start: Meta info -->
+    <title ng-bind="ngMeta.title"></title>
+
+    <meta name="robots" content="{{ngMeta.robots}}" />
+
+    <meta name="description" content="{{ngMeta.description}}" />
+    <meta name="keywords" content="{{ngMeta.keywords}}" />
+    <meta name="author" content="{{ngMeta['author']}}" />
+
+    <meta name="checksum" content="true" />
+
+    <meta ng-if="ngMeta['og:title']" property="og:title" content="{{ngMeta['og:title']}}" />
+    <meta ng-if="ngMeta['og:type']" property="og:type" content="{{ngMeta['og:type']}}" />
+    <meta ng-if="ngMeta['og:locale']" property="og:locale" content="{{ngMeta['og:locale']}}" />
+    <meta ng-if="ngMeta['og:description']" property="og:description" content="{{ngMeta['og:description']}}" />
+    <meta ng-if="ngMeta['og:video']" property="og:video" content="{{ngMeta['og:video']}}" />
+    <meta ng-if="ngMeta['og:image']" property="og:image" content="{{ngMeta['og:image']}}" />
+    <meta ng-if="ngMeta['og:site_name']" property="og:site_name" content="{{ngMeta['og:site_name']}}" />
+    <meta ng-if="ngMeta['profile:username']" property="profile:username" content="{{ngMeta['profile:username']}}" />
+    <meta property="fb:app_id" content="1630090427209343" />
+    <meta name="fragment" content="!">
+    <!-- End: Meta info -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="prerender-status-code" content="404" ng-if="$state.current.data.is404">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <meta name="slack-app-id" content="A68R1BXL4">
+
+    <link rel="stylesheet" href="styles/app.0_0.min.css" type="text/css" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <!-- Braintree -->
+    <script src="https://js.braintreegateway.com/web/dropin/1.7.0/js/dropin.min.js"></script>
+
+    <script src="app/app.0_0.environment.config.js"></script>
+    <script src="app/app.0_0.min.js"></script>
+
+    <!-- Cookie Banner -->
+    <gu-cookie-banner></gu-cookie-banner>
+    <!-- End Cookie Banner -->
+
+    <!-- Web components -->
+    <script src="https://cdn.jsdelivr.net/npm/@a-cloud-guru/wc-footer@0.0.6/dist/wc-footer.umd.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@a-cloud-guru/wc-app-switcher@1.1.0/dist/wc-app-switcher.umd.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@a-cloud-guru/wc-app-switcher-banner@0.0.6/dist/wc-app-switcher-banner.umd.js" defer></script>
+
+    <!-- LaunchDarkly Client -->
+    <script src="https://cdn.jsdelivr.net/npm/launchdarkly-js-client-sdk@3.1.2/dist/ldclient.min.js"></script>
+</head>
+
+<body ng-class="[$state.current.data.cssClass, $state.current.name.indexOf('forum.') === 0 ? 'forum-page' : '', $state.current.data.showAsModal ? 'public-modal-style' : '', $state.current.data.showViewer ? 'course-viewer' : '']">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J45DBW" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <toast></toast>
+    <gu-banner></gu-banner>
+    <gu-expired-org-banner></gu-expired-org-banner>
+    <gu-banner-payment-overdue></gu-banner-payment-overdue>
+    <div class="app" ui-view ng-controller="LayoutController"></div>
+    <gu-mobile-nav-overlay></gu-mobile-nav-overlay>
+</body>
+
+</html>

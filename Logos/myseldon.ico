@@ -1,0 +1,1708 @@
+
+
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="yandex-verification" content="9ea5c65cc8c2bdd2" />
+	<meta name="google-site-verification" content="-S_-39QbFwVbEX9gJradL47t-Bsp1VohTx-9bfpeTRY" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seldon — Поиск закупок, обоснование цены, аналитика рынка</title>
+    
+    <meta name="description" content='Закупки, контрагенты, цены и события для участников торгов, госкомпаний и предпринимателей. Сервисы для бизнеса и государства' />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" type="text/css" href="css/seldon-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/flickity.css" />
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?=2" />
+    <link rel="stylesheet" type="text/css" href="css/tipped.css" />
+    <link rel="stylesheet" type="text/css" href="https://news.myseldon.com/widget/v1/seldonNewsWidget.css">
+</head>
+<body>
+   <!-- <div id="preloader">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>-->
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter48554150 = new Ya.Metrika({
+                        id:48554150,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+    
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+    
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/48554150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- header -->
+    <header>
+        <div class="header-slogan">Сделки <span>?</span> Компании <span>?</span> События</div>
+        <div class="header-right">
+            <div class="header-contacts">
+                <div class="header-contacts-phone">
+                    <a href="tel:+74955582648">8 (495) 558-26-48</a>
+                    <!--<span>бесплатно из России</span>-->
+                </div>
+
+                <div class="header-contacts-controls">
+                    <button class="btn-feedback">
+                        Оставить заявку
+                    </button>
+
+                    <div class="language-select--current culture-links dropdown -bottom-right- -pointer-">
+                        <a class="language-select--current-link dropdown--toggle" href="#">
+                            <span>RU</span>
+                            <i class="ico-language--ru"></i>
+                        </a>
+                        <div class="dropdown--container" id="culture-links">                    
+                            <!--<a class="dropdown--item" data-culture="bg" href="/bg"><i class="ico-language--bg"></i>Български</a>-->
+                            <a class="dropdown--item" data-culture="de" href="/de"><i class="ico-language--de"></i>Deutsch</a>
+                            <a class="dropdown--item" data-culture="en" href="/en"><i class="ico-language--en"></i>English</a>
+                            <a class="dropdown--item" data-culture="es" href="/es"><i class="ico-language--es"></i>Español</a>
+                            <a class="dropdown--item" data-culture="fr" href="/fr"><i class="ico-language--fr"></i>Français</a>
+                            <a class="dropdown--item" data-culture="pt" href="/pt"><i class="ico-language--pt"></i>Português</a>
+                            <a class="dropdown--item" data-culture="ru" href="/"><i class="ico-language--ru"></i>Русский</a>
+                            <!--<a class="dropdown--item" data-culture="uk" href="/uk"><i class="ico-language--uk"></i>Українська</a>-->
+                            <!--<a class="dropdown--item" data-culture="tr" href="/tr"><i class="ico-language--tr"></i>Türkçe</a>-->
+                            <!--<a class="dropdown--item" data-culture="ar" href="/ar"><i class="ico-language--ar"></i>العربية</a>-->
+                            <a class="dropdown--item" data-culture="ja" href="/ja"><i class="ico-language--ja"></i>日本語</a>
+                            <a class="dropdown--item" data-culture="zh" href="/zh"><i class="ico-language--zh"></i>中文</a>
+                        </div>
+                    </div>
+                    <!--<a href="#" class="header-btn">Зарегистрироваться</a>-->
+                </div>
+
+                <div class="header-social">
+                    
+                    <!--<a href="https://www.instagram.com/seldon4business/">
+                        <img src="img/inst-icon.svg" alt="">
+                        <span>Instagram</span>
+                    </a>-->
+
+                    <a href="https://www.youtube.com/user/SeldonTV">
+                        <img src="img/youtube-icon.svg" alt="">
+                        <span>YouTube</span>
+                    </a>
+                    
+                    <a href="https://t.me/myseldonbot">
+                        <img src="img/telegram-icon.svg" alt="">
+                        <span>Telegram</span>
+                    </a>
+                    
+                    <a href="https://wa.me/79670912977">
+                        <img src="img/whatsapp-icon.svg" alt="">
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <!-- intro-screen -->
+    <section class="intro-screen">
+    
+        <div id="particles" class="particles"></div>
+    
+        <div class="logo-block">
+            <div class="logo-block--img">
+                <img src="img/big-logo.png" />
+            </div>
+            <div class="logo-block--text">Будущее</div>
+        </div>
+    
+        <!-- intro-screen--widgets -->
+        <div class="intro-screen--widgets">
+            <div class="intro-screen--widgets-line intro-screen--widgets-line-origin">
+    
+                <!-- inline-widgets -->
+                <div class="inline-widgets">
+    
+                    <div class="inline-widgets--logo">
+                        <img src="img/cards/logo-pro.svg">
+                    </div>
+    
+                    <!-- inline-widgets--item -->
+                    <div class="inline-widgets--item">
+                        <div class="inline-widgets--item--data">
+                            <div class="inline-widgets--item--data-title">
+                                Закупки
+                            </div>
+                            <div class="inline-widgets--item--data-value">
+                                31,4 <span>млн</span>
+                            </div>
+                            <div class="inline-widgets--item--data-dynamics">
+
+                                <span class="-positive-"> 278 977</span> за месяц
+                            </div>
+                        </div>
+                        <div class="inline-widgets--item--chart" data-provider='[
+                                {
+                                    "date": "2012-12-20",
+                                    "value": 30333133
+                                }, {
+                                    "date": "2012-12-21",
+                                    "value": 30626595
+                                }, {
+                                    "date": "2012-12-22",
+                                    "value": 30900469
+                                }, {
+                                    "date": "2012-12-23",
+                                    "value": 31140868
+                                }, {
+                                    "date": "2012-12-24",
+                                    "value": 31419845
+                                }]'>
+                        </div>
+                    </div>
+                    <!-- /inline-widgets--item -->
+    
+                    <!-- inline-widgets--item -->
+                    <div class="inline-widgets--item">
+                        <div class="inline-widgets--item--data">
+                            <div class="inline-widgets--item--data-title">
+                                Текущие закупки
+                            </div>
+                            <div class="inline-widgets--item--data-value">
+                                65 <span>тыс.</span>
+                            </div>
+                            <div class="inline-widgets--item--data-dynamics">
+
+                                <span class="-negative-"> 6 018</span> за сутки
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /inline-widgets--item -->
+    
+                    <!-- inline-widgets--item -->
+                    <div class="inline-widgets--item">
+                        <div class="inline-widgets--item--data">
+                            <div class="inline-widgets--item--data-title">
+                                Торги без участия
+                            </div>
+                            <div class="inline-widgets--item--data-value">
+                                18 <span>%</span>
+                            </div>
+                            <div class="inline-widgets--item--data-dynamics">
+
+                                <span class="">0%</span> за месяц
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /inline-widgets--item -->
+    
+                </div>
+                <!-- /inline-widgets -->
+    
+                <!-- inline-widgets -->
+                <div class="inline-widgets">
+    
+                    <div class="inline-widgets--logo">
+                        <img src="img/cards/logo-basis.svg">
+                    </div>
+    
+                    <!-- inline-widgets--item -->
+                    <div class="inline-widgets--item">
+                        <div class="inline-widgets--item--data">
+                            <div class="inline-widgets--item--data-title">
+                                Действующие компании
+                            </div>
+                            <div class="inline-widgets--item--data-value">
+                                7&#160;200 <span>тыс.</span>
+                            </div>
+                            <div class="inline-widgets--item--data-dynamics">
+
+                                <span class="-positive-"> 11 767</span> за неделю
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /inline-widgets--item -->
+    
+                    <!-- inline-widgets--item -->
+                    <div class="inline-widgets--item">
+                        <div class="inline-widgets--item--data">
+                            <div class="inline-widgets--item--data-title">
+                                Неблагонадежные
+                            </div>
+                            <div class="inline-widgets--item--data-value">
+                                606 <span>тыс.</span>
+                            </div>
+                            <div class="inline-widgets--item--data-dynamics">
+
+                                <span class="-positive-"> 4 887</span> за неделю
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /inline-widgets--item -->
+    
+                    <!-- inline-widgets--item -->
+                    <div class="inline-widgets--item">
+                        <div class="inline-widgets--item--data">
+                            <div class="inline-widgets--item--data-title">
+                                МСП
+                            </div>
+                            <div class="inline-widgets--item--data-value">
+                                6&#160;711 <span>тыс.</span>
+                            </div>
+                            <div class="inline-widgets--item--data-dynamics">
+
+                                <span class="-negative-"> 15 094</span> за неделю
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /inline-widgets--item -->
+    
+                </div>
+                <!-- /inline-widgets -->
+    
+                <!-- inline-widgets -->
+                <div class="inline-widgets">
+    
+                    <div class="inline-widgets--logo">
+                        <img src="img/cards/logo-price.svg">
+                    </div>
+    
+                    <!-- inline-widgets--item -->
+                    <div class="inline-widgets--item">
+                        <div class="inline-widgets--item--data">
+                            <div class="inline-widgets--item--data-title">
+                                Заказчики
+                            </div>
+                            <div class="inline-widgets--item--data-value">
+                                219 <span>тыс.</span>
+                            </div>
+                            <div class="inline-widgets--item--data-dynamics">
+
+                                <span class="-positive-"> 3 663</span> за полгода
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /inline-widgets--item -->
+    
+                    <!-- inline-widgets--item -->
+                    <div class="inline-widgets--item">
+                        <div class="inline-widgets--item--data">
+                            <div class="inline-widgets--item--data-title">
+                                Поставщики
+                            </div>
+                            <div class="inline-widgets--item--data-value">
+                                894 <span>тыс.</span>
+                            </div>
+                            <div class="inline-widgets--item--data-dynamics">
+
+                                <span class="-positive-"> 32 149</span> за полгода
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /inline-widgets--item -->
+    
+                    <!-- inline-widgets--item -->
+                    <div class="inline-widgets--item">
+                        <div class="inline-widgets--item--data">
+                            <div class="inline-widgets--item--data-title">
+                                Контракты
+                            </div>
+                            <div class="inline-widgets--item--data-value">
+                                37&#160;829 <span>тыс.</span>
+                            </div>
+                            <div class="inline-widgets--item--data-dynamics">
+
+                                <span class="-positive-"> 271 042</span> за месяц
+                            </div>
+                        </div>
+                        <div class="inline-widgets--item--chart" data-provider='[
+                                {
+                                    "date": "2012-12-20",
+                                    "value": 36503861
+                                }, {
+                                    "date": "2012-12-21",
+                                    "value": 36924418
+                                }, {
+                                    "date": "2012-12-22",
+                                    "value": 37261298
+                                }, {
+                                    "date": "2012-12-23",
+                                    "value": 37558319
+                                }, {
+                                    "date": "2012-12-24",
+                                    "value": 37829361
+                                }]'>
+                        </div>
+                    </div>
+                    <!-- /inline-widgets--item -->
+    
+                </div>
+                <!-- /inline-widgets -->
+        
+            </div>
+        </div>
+        <!-- /intro-screen--widgets -->
+    
+    </section>
+    <!-- /intro-screen -->
+    
+    <div class="gradient-bg">
+        
+        <div style="margin: 0 auto 86px auto; width: 70%">
+            <div id="sn_widget" style="margin: 0 -28px 0 -28px"></div>
+        </div>
+    
+        <!-- gs -->
+        <section class="gs">
+    
+		<h2>Решения для вашего бизнеса</h2>
+		<p>Госкомпаниям, участникам торгов, предпринимателям.</p>
+        
+        <!-- giant-slider-wrapper -->
+        <div class="giant-slider-wrapper">
+    
+            <!-- giant-slider-nav -->
+            <div class="giant-slider-nav">
+    
+                <div class="giant-slider-nav--item -active-">
+                    <div class="giant-slider-nav--item-title">
+                        Заработать и не потерять
+                    </div>
+                    <div class="giant-slider-nav--item-tags">
+                        <span>Малому и среднему бизнесу</span>
+                        <span>Поставщикам</span>
+                    </div>
+                    <div class="giant-slider-nav--item-bg -bg-1-"></div>
+                </div>
+    
+                <div class="giant-slider-nav--item">
+                    <div class="giant-slider-nav--item-title">
+                        Оптимизировать процессы
+                    </div>
+                    <div class="giant-slider-nav--item-tags">
+                        <span>Заказчикам</span>
+                        <span>Крупному бизнесу</span>
+                    </div>
+                    <div class="giant-slider-nav--item-bg -bg-2-"></div>
+                </div>
+    
+                <!--<div class="giant-slider-nav--item">
+                    <div class="giant-slider-nav--item-title">
+                        Отслеживать нарушения
+                    </div>
+                    <div class="giant-slider-nav--item-tags">
+                        <span>Госзаказчикам</span>
+                        <span>Корпорациям</span>
+                        <span>Госкомпаниям</span>
+                    </div>
+                    <div class="giant-slider-nav--item-bg -bg-3-"></div>
+                </div>-->
+    
+            </div>
+            <!-- /giant-slider-nav -->
+    
+            <div class="giant-slider">
+    
+                <div class="giant-slider--item -slide-bg-1-">
+                    <div class="giant-slider--item--heading">
+                        Заработать и не потерять
+                    </div>
+                    <div class="giant-slider--item--content">
+                        <div class="giant-slider--item--content-descr">
+                            Участвуйте в перспективных закупках, изучайте спрос. Находите надежных партнеров, выявляйте слабые стороны конкурентов. Оценивайте риски сотрудничества, будьте в курсе событий своего окружения.
+                        </div>
+                        <div class="giant-slider--item--content-technologies">
+                            <div class="content-technologies-heading">
+                                Технологии
+                            </div>
+                            <div class="content-technologies-analysis">
+                                <div class="content-technologies-analysis--line active">Рекомендация потенциальных сделок</div>
+                                <div class="content-technologies-analysis--line">Проверка компаний на благонадежность</div>
+                                <div class="content-technologies-analysis--line">Оценка уровня медийности</div>
+                            </div>
+                            <div class="content-technologies-list">
+                                <div>
+                                    <a href="https://pro.myseldon.com/"><img src="img/cards/logo-pro.svg" /></a>
+                                </div>
+                                <div>
+                                    <a href="https://basis.myseldon.com/"><img src="img/cards/logo-basis.svg" /></a>
+                                </div>
+                                <div>
+                                    <a href="https://news.myseldon.com/"><img src="img/cards/logo-news.svg" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="giant-slider--item--widgets">
+                        
+                        <div class="widget -big-">
+                            <div class="widget--stat">
+                                <div class="widget--stat-heading">
+                                    <span>Всего контрактов</span>
+                                </div>
+                                <div class="widget--stat-counter">
+                                    <strong>37&#160;829</strong> тыс.
+                                </div>
+                                <div class="widget--stat-shift">
+                                    <span class="widget--stat-shift--value">+ 271 042</span> за месяц
+                                </div>
+                            </div>
+                            <div class="widget--chart-wrapper">
+                                <div class="widget--chart" data-provider='[
+                                {
+                                    "date": "2012-12-15",
+                                    "value": 36503861
+                                }, {
+                                    "date": "2012-12-16",
+                                    "value": 36924418
+                                }, {
+                                    "date": "2012-12-17",
+                                    "value": 37261298
+                                }, {
+                                    "date": "2012-12-18",
+                                    "value": 37558319
+                                }, {
+                                    "date": "2012-12-19",
+                                    "value": 37829361
+                                }]'>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="widget -green-">
+                            <div class="widget--stat">
+                                <div class="widget--stat-heading">
+                                    <span>МСП</span>
+                                </div>
+                                <div class="widget--stat-counter">
+                                    <strong>6&#160;711</strong> тыс.
+                                </div>
+                                <div class="widget--stat-shift">
+                                    <span class="widget--stat-shift--value">- 15 094</span> за неделю
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="widget -blue-">
+                            <div class="widget--stat">
+                                <div class="widget--stat-heading">
+                                    <span>Текущие закупки</span>
+                                </div>
+                                <div class="widget--stat-counter">
+                                    <strong>65</strong> тыс.
+                                </div>
+                                <div class="widget--stat-shift">
+                                    <span class="widget--stat-shift--value">- 6 018</span> за сутки
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="widget -blue-">
+                            <div class="widget--stat">
+                                <div class="widget--stat-heading">
+                                    <span>Действующие компании</span>
+                                </div>
+                                <div class="widget--stat-counter">
+                                    <strong>7&#160;200</strong> тыс.
+                                </div>
+                                <div class="widget--stat-shift">
+                                    <span class="widget--stat-shift--value">+ 11 767</span> за неделю
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="widget -red-">
+                            <div class="widget--stat">
+                                <div class="widget--stat-heading">
+                                    <span>Неблагонадежные компании</span>
+                                </div>
+                                <div class="widget--stat-counter">
+                                    <strong>606</strong> тыс.
+                                </div>
+                                <div class="widget--stat-shift">
+                                    <span class="widget--stat-shift--value">+ 4 887</span> за неделю
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    
+                <div class="giant-slider--item -slide-bg-2-">
+                    <div class="giant-slider--item--heading">
+                        Оптимизировать процессы
+                    </div>
+                    <div class="giant-slider--item--content">
+                        <div class="giant-slider--item--content-descr">
+                            Автоматизируйте работу тендерных специалистов и отделов продаж.  Первыми узнавайте о самых выгодных закупках, оценивайте свои шансы на победу. Готовьте документацию в два раза быстрее.
+                        </div>
+                        <div class="giant-slider--item--content-technologies">
+                            <div class="content-technologies-heading">
+                                Технологии
+                            </div>
+                            <div class="content-technologies-analysis">
+                                <div class="content-technologies-analysis--line active">Автоматизация документооборота</div>
+                                <div class="content-technologies-analysis--line">Вероятность победы и уровень конкуренции в торгах</div>
+                                <div class="content-technologies-analysis--line">Анализ связей между компаниями</div>
+                            </div>
+                            <div class="content-technologies-list">
+                                <div>
+                                    <a href="https://doc2.myseldon.com/promo"><img src="img/cards/logo-doc.svg" /></a>
+                                </div>
+                                <div>
+                                    <a href="https://pro.myseldon.com/"><img src="img/cards/logo-pro.svg" /></a>
+                                </div>
+                                <div>
+                                    <a href="https://basis.myseldon.com/"><img src="img/cards/logo-basis.svg" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="giant-slider--item--widgets">
+    
+                        <div class="widget -blue-">
+                            <div class="widget--stat">
+                                <div class="widget--stat-heading">
+                                    <span>Поставщики</span>
+                                </div>
+                                <div class="widget--stat-counter">
+                                    <strong>894</strong> тыс.
+                                </div>
+                                <div class="widget--stat-shift">
+                                    <span class="widget--stat-shift--value">+ 32 149</span> за полгода
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="widget -green-">
+                            <div class="widget--stat">
+                                <div class="widget--stat-heading">
+                                    <span>Заказчики</span>
+                                </div>
+                                <div class="widget--stat-counter">
+                                    <strong>219</strong> тыс.
+                                </div>
+                                <div class="widget--stat-shift">
+                                    <span class="widget--stat-shift--value">+ 3 663</span> за полгода
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="widget -big-">
+                            <div class="widget--stat">
+                                <div class="widget--stat-heading">
+                                    <span>Всего закупок</span>
+                                </div>
+                                <div class="widget--stat-counter">
+                                    <strong>31,4</strong> млн
+                                </div>
+                                <div class="widget--stat-shift">
+                                    <span class="widget--stat-shift--value">+ 278 977</span> за месяц
+                                </div>
+                            </div>
+                            <div class="widget--chart-wrapper">
+                                <div class="widget--chart" data-provider='[
+                                {
+                                    "date": "2012-12-15",
+                                    "value": 30333133
+                                }, {
+                                    "date": "2012-12-16",
+                                    "value": 30626595
+                                }, {
+                                    "date": "2012-12-17",
+                                    "value": 30900469
+                                }, {
+                                    "date": "2012-12-18",
+                                    "value": 31140868
+                                }, {
+                                    "date": "2012-12-19",
+                                    "value": 31419845
+                                }]'>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="widget -red-">
+                            <div class="widget--stat">
+                                <div class="widget--stat-heading">
+                                    <span>Торгов без участия</span>
+                                </div>
+                                <div class="widget--stat-counter">
+                                    <strong>18%</strong> за месяц
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+            </div>
+            <!-- /giant-slider -->
+    
+        </div>
+        <!-- /giant-slider-wrapper -->
+    
+        </section>
+        <!-- /gs -->
+    
+        <!-- technologies -->
+        <section class="technologies">
+    
+            <h2>Чем занимаемся</h2>
+            <p>Разрабатываем и внедряем новые решения. Создаем продукты будущего.</p>
+    
+            <!-- technologies-list -->
+            <div class="technologies-list">
+    
+                <div class="technologies-list--item">
+                    <div class="technologies-list--item-img">
+                        <img src="img/technologies/icon-1.svg" />
+                    </div>
+                    <div class="technologies-list--item-title">
+                        Работаем с Big Data всего мира
+                    </div>
+                    <div class="technologies-list--item-descr">
+                        На постоянной основе мониторим и обрабатываем актуальные открытые данные из официальных источников. Структурируем информацию по компаниям, тендерам, торгам, событиям и новостным лентам различных СМИ.
+                    </div>
+                </div>
+    
+                <div class="technologies-list--item">
+                    <div class="technologies-list--item-img">
+                        <img src="img/technologies/icon-2.svg" />
+                    </div>
+                    <div class="technologies-list--item-title">
+                        Анализируем показатели
+                    </div>
+                    <div class="technologies-list--item-descr">
+                        Работаем с большими массивами данных. Используем методы машинного обучения.
+                    </div>
+                </div>
+    
+                <div class="technologies-list--item">
+                    <div class="technologies-list--item-img">
+                        <img src="img/technologies/icon-3.svg" />
+                    </div>
+                    <div class="technologies-list--item-title">
+                        Разрабатываем лингвистические технологии
+                    </div>
+                    <div class="technologies-list--item-descr">
+                        Для оценки информационной повестки дня, интеллектуального поиска, мультиязычных сервисов.
+                    </div>
+                </div>
+    
+                <div class="technologies-list--item">
+                    <div class="technologies-list--item-img">
+                        <img src="img/technologies/icon-4.svg" />
+                    </div>
+                    <div class="technologies-list--item-title">
+                        Моделируем рынки, прогнозируем события
+                    </div>
+                    <div class="technologies-list--item-descr">
+                        Проводим маркетинговые исследования. Выявляем тренды. Делаем выводы, на которые можно опираться.
+                    </div>
+                </div>
+    
+                <div class="technologies-list--item">
+                    <div class="technologies-list--item-img">
+                        <img src="img/technologies/icon-5.svg" />
+                    </div>
+                    <div class="technologies-list--item-title">
+                        Создаем и внедряем IT-продукты
+                    </div>
+                    <div class="technologies-list--item-descr">
+                        Автоматизируем работу госструктур и частных компаний. Оптимизируем сложные процессы.
+                    </div>
+                </div>
+    
+                <div class="technologies-list--item">
+                    <div class="technologies-list--item-img">
+                        <img src="img/technologies/icon-6.svg" />
+                    </div>
+                    <div class="technologies-list--item-title">
+                        Проектируем интерфейсы
+                    </div>
+                    <div class="technologies-list--item-descr">
+                        Делаем продукты простыми в работе. Визуализируем данные, чтобы их было удобно использовать.
+                    </div>
+                </div>
+    
+            </div>
+            <!-- /technologies-list -->
+    
+        </section>
+        <!-- /technologies -->
+
+        <!-- career -->        
+        <section class="career">
+            <h2>Карьера</h2>
+            <p>Вакансии на 06.10.2023</p>
+            
+
+            <div class="career-filters">
+                <div class="career-filters__group">
+                    <button class="career-filters__button career-type" data-name="Аналитика" data-val="2">Аналитика</button>
+                    <button class="career-filters__button career-type" data-name="Дизайн" data-val="3">Дизайн</button>
+                    <button class="career-filters__button career-type" data-name="Другое" data-val="4">Другое</button>
+                    <button class="career-filters__button career-type" data-name="Разработка" data-val="1">Разработка</button>
+                </div>
+                <div class="career-filters__group">
+                    <button class="career-filters__button career-region" data-val="3">Нижний Новгород</button>
+                    <button class="career-filters__button career-region" data-val="1">Удалённая работа</button>
+                </div>
+                <div class="career-filters__group">
+                    <button class="career-filters__button career-internship" data-val="False">Вакансии</button>
+                                        <button class="career-filters__button career-internship" data-val="True">Стажировка в компании</button>
+                </div>
+            </div>
+            
+            <div class="career-list-hidden">
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="1" data-region="3" title="Разработчик C# .NET / C# .NET Developer">
+                    <div class="career-item__title">
+                        Разработчик C# .NET / C#...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career6.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/seldonwork/developer/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="1" data-region="3" title="Ведущий разработчик / Технический координатор">
+                    <div class="career-item__title">
+                        Ведущий разработчик /...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career1.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/seldonwork/leaddeveloper/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="1" data-region="3" title="Backend разработчик">
+                    <div class="career-item__title">
+                        Backend разработчик
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career2.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/seldonwork/backenddeveloper/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="1" data-region="3" title="Fullstack разработчик">
+                    <div class="career-item__title">
+                        Fullstack разработчик
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career3.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/fullstackdeveloper/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="1" data-region="3" title="Системный архитектор">
+                    <div class="career-item__title">
+                        Системный архитектор
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career2.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/architector/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="1" data-region="3" title="Technical lead">
+                    <div class="career-item__title">
+                        Technical lead
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career6.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/techleader/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="1" data-region="3" title="Инженер программист">
+                    <div class="career-item__title">
+                        Инженер программист
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career4.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/programmer/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="2" data-region="3" title="Ассистент директора департамента аналитики">
+                    <div class="career-item__title">
+                        Ассистент директора...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career5.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/assistant/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="2" data-region="3" title="Специалист по сбору данных">
+                    <div class="career-item__title">
+                        Специалист по сбору...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career2.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/datacollector/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="2" data-region="3" title="Ведущий аналитик отдела подготовки информационных материалов">
+                    <div class="career-item__title">
+                        Ведущий аналитик отдела...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career4.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/leadanalyst/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="2" data-region="3" title="Технический писатель">
+                    <div class="career-item__title">
+                        Технический писатель
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career4.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/technicalwritter/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="2" data-region="3" title="Математик-аналитик">
+                    <div class="career-item__title">
+                        Математик-аналитик
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career3.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/mathematician/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="2" data-region="3" title="Аналитик по обработке данных">
+                    <div class="career-item__title">
+                        Аналитик по обработке...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career5.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/dataanalyst/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="2" data-region="3" title="Лингвист">
+                    <div class="career-item__title">
+                        Лингвист
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career1.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/linguist/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="2" data-region="1" title="Ведущий аналитик в отдел разработки требований">
+                    <div class="career-item__title">
+                        Ведущий аналитик в отдел...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career6.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/leadanalystreq/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="2" data-region="3" title="Специалист по работе с базами данных">
+                    <div class="career-item__title">
+                        Специалист по работе с...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career1.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/databasespecialist/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="2" data-region="3" title="Аналитик данных">
+                    <div class="career-item__title">
+                        Аналитик данных
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career2.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/data_analyst/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="3" data-region="3" title="Дизайнер интерфейсов">
+                    <div class="career-item__title">
+                        Дизайнер интерфейсов
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career3.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/designer/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="3" data-region="3" title="Дизайнер 3D графики">
+                    <div class="career-item__title">
+                        Дизайнер 3D графики
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career4.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/3ddesigner/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="4" data-region="3" title="Linux/Unix-инженер">
+                    <div class="career-item__title">
+                        Linux/Unix-инженер
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career3.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/linux/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="4" data-region="3" title="Администратор баз данных">
+                    <div class="career-item__title">
+                        Администратор баз данных
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career4.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/administrator/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="4" data-region="3" title="Системный инженер">
+                    <div class="career-item__title">
+                        Системный инженер
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career4.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/system/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="False" data-type="4" data-region="3" title="Оператор ситуационной службы">
+                    <div class="career-item__title">
+                        Оператор ситуационной...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career3.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/work/operator/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="True" data-type="3" data-region="3" title="Стажер в отдел графического дизайна">
+                    <div class="career-item__title">
+                        Стажер в отдел...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career6.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/stag/designer/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="True" data-type="1" data-region="3" title="Стажер отдела разрботки ПО">
+                    <div class="career-item__title">
+                        Стажер отдела разрботки...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career3.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/stag/po/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="True" data-type="1" data-region="3" title="Стажер-разработчик С# .NET">
+                    <div class="career-item__title">
+                        Стажер-разработчик С#...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career2.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/stag/с/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="True" data-type="1" data-region="3" title="Стажер в отдел компьютерной лингвистики">
+                    <div class="career-item__title">
+                        Стажер в отдел...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career5.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/stag/linguist/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="career-list__item career-item simple-tooltip" data-internship="True" data-type="1" data-region="3" title="Стажер технический-писатель">
+                    <div class="career-item__title">
+                        Стажер технический...
+                    </div>
+                    <div class="career-item__img">
+                        <img src="./img/career/career4.png" alt="">
+                    </div>
+                    <a href="http://www.tenderseldon.ru/stag/writter/" class="career-item__button" target="_blank">
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="career-list"></div>
+    	</section>
+      	<!-- /career -->
+        
+        <!-- products -->
+        <a id="products"></a>
+        <section class="products">
+    
+            <h2>Продукты</h2>
+            <p>Помогают вашему бизнесу. Открывают новые возможности</p>
+    
+            <!-- products-list -->
+            <div class="products-list">
+    
+                <div class="products-list--item" style="background-image: url(img/cards/bg-pro.png)">
+                    <div class="products-list--item-logo">
+                        <img src="img/cards/logo-pro.svg" />
+                    </div>
+                    <div class="products-list--item-title">
+                        Побеждайте в торгах
+                    </div>
+                    <div class="products-list--item-descr">
+                        Рекомендует закупки, считает вероятность победы, показывает конкурентов.
+                    </div>
+                    <div class="products-list--item-bottom">
+                        <a href="https://pro.myseldon.com/" class="products-list-btn">Перейти</a>
+                        <a href="https://pro.myseldon.com/news">Что нового?</a>
+                    </div>
+                </div>
+    
+                <div class="products-list--item" style="background-image: url(img/cards/bg-price.png)">
+                    <div class="products-list--item-logo">
+                        <img src="img/cards/logo-price.svg" />
+                    </div>
+                    <div class="products-list--item-title">
+                        Обосновывайте НМЦК
+                    </div>
+                    <div class="products-list--item-descr">
+                        Подбирает контракты, анализирует цены на товары и услуги.
+                    </div>
+                    <div class="products-list--item-bottom">
+                        <a href="https://price.myseldon.com/" class="products-list-btn">Перейти</a>
+                    </div>
+                </div>
+    
+                <div class="products-list--item" style="background-image: url(img/cards/bg-basis.png)">
+                    <div class="products-list--item-logo">
+                        <img src="img/cards/logo-basis.svg" />
+                    </div>
+                    <div class="products-list--item-title">
+                        Проверяйте партнеров, находите клиентов
+                    </div>
+                    <div class="products-list--item-descr">
+                        Оценивает благонадежность компаний, показывает сильные и слабые стороны.
+                    </div>
+                    <div class="products-list--item-bottom">
+                        <a href="https://basis.myseldon.com/" class="products-list-btn">Перейти</a>
+                        <a href="https://basis.myseldon.com/news">Что нового?</a>
+                    </div>
+                </div>
+    
+                <!--<div class="products-list--item" style="background-image: url(img/cards/bg-control.png)">
+                    <div class="products-list--item-logo">
+                        <img src="img/cards/logo-control.svg" />
+                    </div>
+                    <div class="products-list--item-title">
+                        Контролируйте закупки
+                    </div>
+                    <div class="products-list--item-descr">
+                        Анализирует закупочную деятельность, снижает риски, позволяет избежать штрафов.
+                    </div>
+                    <div class="products-list--item-bottom">
+                        <a href="https://control.myseldon.com/" class="products-list-btn">Перейти</a>
+                    </div>
+                </div>-->
+    
+                <div class="products-list--item" style="background-image: url(img/cards/bg-doc.png)">
+                    <div class="products-list--item-logo">
+                        <img src="img/cards/logo-doc.svg" />
+                    </div>
+                    <div class="products-list--item-title">
+                        Для тендерного отдела
+                    </div>
+                    <div class="products-list--item-descr">
+                        Автоматизирует работу, распределяет задачи, оценивает эффективность.
+                    </div>
+                    <div class="products-list--item-bottom">
+                        <a href="https://doc2.myseldon.com/promo" class="products-list-btn">Перейти</a>
+                    </div>
+                </div>
+    
+                <div class="products-list--item" style="background-image: url(img/cards/bg-news.png)">
+                    <div class="products-list--item-logo">
+                        <img src="img/cards/logo-news.svg" />
+                    </div>
+                    <div class="products-list--item-title">
+                        Будьте в курсе событий
+                    </div>
+                    <div class="products-list--item-descr">
+                        Рассказывает новости, оценивает события, формирует досье компаний и персон.
+                    </div>
+                    <div class="products-list--item-bottom">
+                        <a href="https://news.myseldon.com/" class="products-list-btn">Перейти</a>
+                    </div>
+                </div>
+    
+                <div class="products-list--item" style="background-image: url(img/cards/bg-17.png)">
+                    <div class="products-list--item-logo">
+                        <img src="img/cards/logo-17.svg" />
+                    </div>
+                    <div class="products-list--item-title">
+                        Участвуйте в закупках
+                    </div>
+                    <div class="products-list--item-descr">
+                        Ищет торги, анализирует рынок, проверяет заказчиков.
+                    </div>
+                    <div class="products-list--item-bottom">
+                        <a href="https://tender.myseldon.com/" class="products-list-btn">Перейти</a>
+                        <a href="https://tender.myseldon.com/news/">Что нового?</a>
+                    </div>
+                </div>
+    
+            </div>
+            <!-- /products-list -->
+    
+        </section>
+        <!-- /products -->
+    
+        <!-- services-company -->
+        <section class="services-company">
+    
+            <h2>Услуги</h2>
+            <p>Консультируем, обучаем, решаем финансовые вопросы.</p>
+    
+            <div class="services-company-list">
+    
+                <a href="http://consulting.myseldon.com/" class="services-company-list--item">
+                    <div class="services-company-list--item-img">
+                        <img src="img/services/consulting.svg" />
+                    </div>
+                    <div class="services-company-list--item-txt">
+                        Комплексное сопровождение торгов
+                    </div>
+                </a>
+    
+                <a href="https://iecp.ru/" class="services-company-list--item">
+                    <div class="services-company-list--item-img">
+                        <img src="img/services/iecp.png" />
+                    </div>
+                    <div class="services-company-list--item-txt">
+                        Выпуск электронной подписи
+                    </div>
+                </a>
+    
+                <a href="http://www.tenderseldon.ru/finance" class="services-company-list--item">
+                    <div class="services-company-list--item-img">
+                        <img src="img/services/finance.svg" />
+                    </div>
+                    <div class="services-company-list--item-txt">
+                        Предоставление банковских гарантий
+                    </div>
+                </a>
+    
+                <a href="http://seminar.aetp.ru/" class="services-company-list--item">
+                    <div class="services-company-list--item-img">
+                        <img src="img/services/academy.svg" />
+                    </div>
+                    <div class="services-company-list--item-txt">
+                        Обучающие семинары по 44-ФЗ и 223-ФЗ
+                    </div>
+                </a>
+                
+                <a href="https://uc-osnovanie.ru" class="services-company-list--item">
+                    <div class="services-company-list--item-img">
+                        <img src="img/services/update.png" />
+                    </div>
+                    <div class="services-company-list--item-txt">
+                        Дистанционное обновление электронной подписи
+                    </div>
+                </a>
+    
+            </div>
+    
+        </section>
+        <!-- /services-company -->
+    
+        <!-- clients -->
+        <section class="clients">
+    
+            <h2>Клиенты</h2>
+            <p>Пользуются и рекомендуют.</p>
+    
+            <!-- clients-list -->
+            <div class="clients-list">
+                <div class="clients-list--item" style="width:166px;">
+                    <img src="img/clients/gazprom.png" />
+                </div>
+                <div class="clients-list--item" style="width:231px;">
+                    <img src="img/clients/ccifrance.png" />
+                </div>
+                <div class="clients-list--item" style="width:183px;">
+                    <img src="img/clients/sojitz.png" />
+                </div>
+                <div class="clients-list--item" style="width:280px;">
+                    <img src="img/clients/schneider.png" />
+                </div>
+                <div class="clients-list--item" style="width:294px;">
+                    <img src="img/clients/sberbank.png" />
+                </div>
+                <div class="clients-list--item" style="width:210px;">
+                    <img src="img/clients/citibank.png" />
+                </div>
+                <div class="clients-list--item" style="width:199px;">
+                    <img src="img/clients/rostelecom.png" />
+                </div>
+                <div class="clients-list--item" style="width:127px;">
+                    <img src="img/clients/beeline.png" />
+                </div>
+                <div class="clients-list--item" style="width:144px;">
+                    <img src="img/clients/pepsi.png" />
+                </div>
+                <div class="clients-list--item" style="width:196px;">
+                    <img src="img/clients/xerox.png" />
+                </div>
+                <div class="clients-list--item" style="width:201px;">
+                    <img src="img/clients/3.png" />
+                </div>
+                <div class="clients-list--item" style="width:150px;">
+                    <img src="img/clients/4.png" />
+                </div>
+                <div class="clients-list--item" style="width:182px;">
+                    <img src="img/clients/6.png" />
+                </div>
+                <div class="clients-list--item" style="width:216px;">
+                    <img src="img/clients/7.png" />
+                </div>
+                <div class="clients-list--item" style="width:211px;">
+                    <img src="img/clients/10.png" />
+                </div>
+                <div class="clients-list--item" style="width:150px;">
+                    <img src="img/clients/12.png" />
+                </div>
+                <div class="clients-list--item" style="width:154px;">
+                    <img src="img/clients/13.png" />
+                </div>
+                <div class="clients-list--item" style="width:107px;">
+                    <img src="img/clients/14.png" />
+                </div>
+            </div>
+            <!-- /clients-list -->
+    
+        </section>
+        <!-- /clients -->
+        
+        <!-- partners -->
+        <section class="partners">
+    
+            <h2>Партнеры</h2>
+            <p>Поддерживаем деловые отношения. Совместно разрабатываем инструменты для решения бизнес-задач.</p>
+    
+            <!-- partners-list -->
+            <div class="partners-list">
+                <a class="partners-list--item" href="https://fas.gov.ru/" target="_blank">
+                    <img src="img/partners/fas.png" />
+                </a>
+                <a class="partners-list--item" href="http://inveb.ru/ru/" target="_blank">
+                    <img src="img/partners/webrf.png" />
+                </a>
+                <!-- <a class="partners-list--item" href="https://www.group-ib.ru/" target="_blank">
+                    <img src="img/partners/groupib.png"  />
+                </a> -->
+            </div>
+            <!-- /partners-list -->
+            <div class="news-tabs">
+                <span class="news-tabs--tab -active-"><a href="/partners">Посмотреть всех</a></span>
+            </div>
+    
+        </section>
+        <!-- /partners -->
+    
+        <!-- footer -->
+        <footer class="footer">
+    
+            <!-- news -->
+            <div class="news">
+    
+				<h2>Новости и обзоры</h2>
+                <div class="news-tabs">
+                    <span class="news-tabs--tab -active-">Продукты</span>
+                    <span class="news-tabs--tab">Рынок</span>
+                </div>
+    
+                <div class="tabs-body -active-">
+                	<div class="tabs-body--content">
+
+                        <!-- news-list -->
+                        <div class="news-list">
+                                <div class="news-list--item">
+                                    <!--<div class="news-list--item-img">
+                                        <img src="img/news/1.jpg" />
+                                    </div>-->
+                                    <div class="news-list--item-content">
+                                        <div class="news-list--item-content--date">
+                                            05 октября 2023
+                                        </div>
+                                        <div class="news-list--item-content--title">
+                                                <a href="https://basis.myseldon.com/news/3582">Транспортные средства</a>
+                                        </div>
+                                        <div class="news-list--item-content--descr">
+                                            Новый раздел в карточке компании и другие изменения в Seldon.Basis.
+                                        </div>
+                                        <div class="news-list--item-content--product">
+                                                <img src="img/news/products-logos/basis.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-list--item">
+                                    <!--<div class="news-list--item-img">
+                                        <img src="img/news/1.jpg" />
+                                    </div>-->
+                                    <div class="news-list--item-content">
+                                        <div class="news-list--item-content--date">
+                                            20 сентября 2023
+                                        </div>
+                                        <div class="news-list--item-content--title">
+                                                <a href="https://basis.myseldon.com/news/3578">Мониторинг и проверка контрагентов</a>
+                                        </div>
+                                        <div class="news-list--item-content--descr">
+                                            Рассказали о назначении, разнице и эффективности процессов
+                                        </div>
+                                        <div class="news-list--item-content--product">
+                                                <img src="img/news/products-logos/basis.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-list--item">
+                                    <!--<div class="news-list--item-img">
+                                        <img src="img/news/1.jpg" />
+                                    </div>-->
+                                    <div class="news-list--item-content">
+                                        <div class="news-list--item-content--date">
+                                            29 августа 2023
+                                        </div>
+                                        <div class="news-list--item-content--title">
+                                                <a href="https://basis.myseldon.com/news/3577">Риски сотрудничества с иноагентами</a>
+                                        </div>
+                                        <div class="news-list--item-content--descr">
+                                            Разобрали, чем грозит любое взаимодействие с такими лицами
+                                        </div>
+                                        <div class="news-list--item-content--product">
+                                                <img src="img/news/products-logos/basis.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-list--item">
+                                    <!--<div class="news-list--item-img">
+                                        <img src="img/news/1.jpg" />
+                                    </div>-->
+                                    <div class="news-list--item-content">
+                                        <div class="news-list--item-content--date">
+                                            17 августа 2023
+                                        </div>
+                                        <div class="news-list--item-content--title">
+                                                <a href="https://basis.myseldon.com/news/3574">Обзор летних обновлений Seldon.Basis </a>
+                                        </div>
+                                        <div class="news-list--item-content--descr">
+                                            Расширили возможности экспресс-проверки, обновили блок ВЭД и обогатили сервис еще большим количеством контактов.
+                                        </div>
+                                        <div class="news-list--item-content--product">
+                                                <img src="img/news/products-logos/basis.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /news-list -->
+                        
+                	</div>
+            	</div>
+    
+                <div class="tabs-body">
+                    <div class="tabs-body--content">
+                        <!-- news-list -->
+                        <div class="news-list">
+                                <div class="news-list--item">
+                                    <div class="news-list--item-content">
+                                        <div class="news-list--item-content--date">
+                                            16 января 2020
+                                        </div>
+                                        <div class="news-list--item-content--title">
+                                            <a href="/news/item/426790">Объем госзакупок в РФ вырос на 15%</a>
+                                        </div>
+                                        <div class="news-list--item-content--descr">
+                                            <p>Объем госзакупок в РФ в 2019 г. вырос на 15% до 9,6 трлн руб., следует из данных Единой информационной систем (ЕИС) в сфере закупок.</p>
+
+                                        </div>
+                                        <!--<div class="news-list--item-content--product">
+                                            <div class="news-list--item-content--product-tag">Законы</div>
+                                            <div class="news-list--item-content--product-tag">Поставщики</div>
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="news-list--item">
+                                    <div class="news-list--item-content">
+                                        <div class="news-list--item-content--date">
+                                            16 января 2020
+                                        </div>
+                                        <div class="news-list--item-content--title">
+                                            <a href="/news/item/426789">44-ФЗ определит порядок закупок у единственного поставщика на ЭТП</a>
+                                        </div>
+                                        <div class="news-list--item-content--descr">
+                                            <p>Закупка товара у единственного контрагента в случаях, предусмотренных новой редакцией (подп. 4 и 5&nbsp; ч. 1 и новой ч. 12 ст. 93 44-ФЗ), на сумму не превышающую 3 млн руб., может проходить в электронной форме на электронной площадке.</p>
+
+                                        </div>
+                                        <!--<div class="news-list--item-content--product">
+                                            <div class="news-list--item-content--product-tag">Законы</div>
+                                            <div class="news-list--item-content--product-tag">Поставщики</div>
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="news-list--item">
+                                    <div class="news-list--item-content">
+                                        <div class="news-list--item-content--date">
+                                            16 января 2020
+                                        </div>
+                                        <div class="news-list--item-content--title">
+                                            <a href="/news/item/426788">В рамках нацпроекта в контракте можно объединить работы по проектированию и строительству</a>
+                                        </div>
+                                        <div class="news-list--item-content--descr">
+                                            <p>Для реализации национальных проектов допускается возможность заключения контракта, предметом которого является одновременно подготовка проектной документации или выполнение инженерных изысканий, выполнение работ по строительству, реконструкции или капитальному ремонту объекта капитального строительства, определенного высшим исполнительным органом власти субъекта РФ, в соответствии дополненными частями 55 &mdash; 63 статьи 112 44-ФЗ.</p>
+
+                                        </div>
+                                        <!--<div class="news-list--item-content--product">
+                                            <div class="news-list--item-content--product-tag">Законы</div>
+                                            <div class="news-list--item-content--product-tag">Поставщики</div>
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="news-list--item">
+                                    <div class="news-list--item-content">
+                                        <div class="news-list--item-content--date">
+                                            25 декабря 2019
+                                        </div>
+                                        <div class="news-list--item-content--title">
+                                            <a href="/news/item/426673">Россияне смогут продавать квартиры на сайте госзакупок без залога</a>
+                                        </div>
+                                        <div class="news-list--item-content--descr">
+                                            <p>Россияне могут продавать свое жилье на сайте госзакупок, но из-за необходимости вносить крупную сумму залога они не участвуют в аукционах. Министерство юстиции предложило исключить эту норму.</p>
+
+                                        </div>
+                                        <!--<div class="news-list--item-content--product">
+                                            <div class="news-list--item-content--product-tag">Законы</div>
+                                            <div class="news-list--item-content--product-tag">Поставщики</div>
+                                        </div>-->
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /news-list -->
+                        <a href="/news" class="news-list-btn">Все статьи</a>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- /news -->
+    
+            <!-- footer-nav -->
+            <!--<nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Технологии</a></li>
+                    <li><a href="#">Сервисы</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="#">Пресс-центр</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>-->
+            <!-- /footer-nav -->
+    
+            <!-- footer-contacts -->
+            <div class="footer-contacts">
+                <div class="footer-contacts-inner">
+    
+                    <div class="footer-contacts--logo">
+                        <div class="footer-contacts--logo-img">
+                            <img src="img/logo-footer.svg" />
+                        </div>
+                        <div class="footer-contacts--logo-txt">
+                            © DID Group 2023
+                        </div>
+                    </div>
+    
+                    <div class="footer-contacts--phone">
+                        <div class="footer-contacts--phone-number">
+                            8 (495) 558-26-48
+                        </div>
+                        <!--<div class="footer-contacts--phone-caption">
+                            бесплатно из России
+                        </div>-->
+                        <div class="footer-contacts--mail">
+                        	<a href="mailto:welcome@myseldon.com">welcome@myseldon.com</a>
+                    	</div>
+                    </div>
+    
+                    <div class="footer-contacts--address">
+                        г. Москва, ул. Радио, д. 24, корп. 1<br />
+                        г. Нижний Новгород, ул. Тимирязева, д. 15к2
+                    </div>
+    
+                    <div class="footer-contacts--social">
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/user/SeldonTV">
+                                    <img src="img/social-youtube.svg" alt="youtube">
+                                </a>
+                            </li>
+                            <!--<li>
+                                <a href="https://www.facebook.com/myseldon/">
+                                    <img src="img/social-facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/seldon4business/">
+                                    <img src="img/social-instagram.svg" alt="instagram">
+                                </a>
+                            </li>-->
+                            <li>
+                                <a href="https://t.me/myseldonbot">
+                                    <img src="img/social-telegram.svg" alt="telegram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+            <!-- /footer-contacts -->
+
+        </footer>
+        <!-- /footer -->
+    
+    </div>
+    
+    <div id="callback" class="mfp-hide">
+        <div class="callback-logo">
+            <img src="img/logo_seldon_white.svg" alt="">
+        </div>
+        <form class="callback-form">
+            <input type="hidden" name="tag" value="company.myseldon.com">
+            <div class="form-item">
+                <input type="text" placeholder='Имя' name="name">
+            </div>
+            <div class="form-item">
+                <input type="tel" placeholder='Телефон' name="phone" data-mask="+7 (000) 000 00 00" data-mask-clearifnotmatch="true" placeholder="+7 (___) ___ __ __">
+            </div>
+            <div class="form-item">
+                <textarea placeholder='Комментарий' name="comment"></textarea>
+            </div>
+
+            <div class="callback-form-footer">
+                <button class="btn-submit" type="submit">Отправить</button>
+                <div class="privacy-policy">
+                    <p>
+                        Указывая свои персональные данные в форме, вы соглашаетесь на их обработку в соответствии с <a href="/privacy-policy" target="_blank">Политикой конфиденциальности</a>.
+                    </p>
+                </div>
+            </div>
+        </form>
+
+        <div class="success-msg">
+            <div class="title">
+                Данные отправлены
+            </div>
+            <div class="msg">
+                Спасибо! Мы вам позвоним.
+            </div>
+        </div>
+
+        <div class="error-msg">
+            <div class="title">
+                Произошла ошибка
+            </div>
+            <div class="msg">
+                Данные не были отправлены. Попробуйте снова.
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/seldon-ui.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/flickity.pkgd.min.js" ></script>
+    <script type="text/javascript" src="js/tipped.min.js" ></script>
+    <script type="text/javascript" src="js/amcharts.js" ></script>
+    <script type="text/javascript" src="js/serial.js" ></script>
+    <script type="text/javascript" src="js/smoothscroll.min.js" ></script>
+	<script type="text/javascript" src="js/particles.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js?=2" ></script>
+    <script type="text/javascript" src="https://news.myseldon.com/widget/v1/seldonNewsWidget.js"></script>
+    <script type="text/javascript">
+        createSeldonNewsWidget({showTags: true,
+                                showNews: true,
+                                showStats: true,
+                                showDossier: true,
+                                widgetDOMId: 'sn_widget',
+                                autoplay: false,
+                                partnerId: 151638,
+                                sliderType: 'slider',
+                                lang: 'ru'});
+	</script>
+</body>
+</html>
+<script src='/Content/admin.login.js' type='text/javascript'></script>

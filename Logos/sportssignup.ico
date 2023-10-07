@@ -1,0 +1,3355 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"ecc110ec74",applicationID:"242419238"};;/*! For license information please see nr-loader-rum-1.243.1.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={234:(e,t,n)=>{n.d(t,{P_:()=>h,Mt:()=>m,C5:()=>s,DL:()=>w,OP:()=>j,lF:()=>N,Yu:()=>_,Dg:()=>v,CX:()=>c,GE:()=>A,sU:()=>T});var r=n(8632),i=n(9567);const a={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a),(0,r.Qy)(e,o[e],"info")}const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=n(7056),l=n(50);const f=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:u.oD,inactiveMs:u.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector=t+",[data-nr-mask]":null===t?e.mask_selector=t:(0,l.Z)("An invalid session_replay.mask_selector was provided and will not be used",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},g={},p="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(p);if(!g[e])throw new Error("Configuration for ".concat(e," was never set"));return g[e]}function v(e,t){if(!e)throw new Error(p);g[e]=(0,i.D)(t,f()),(0,r.Qy)(e,g[e],"config")}function m(e,t){if(!e)throw new Error(p);var n=h(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const b={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},y={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!y[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return y[e]}function A(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");y[e]=(0,i.D)(t,b),(0,r.Qy)(e,y[e],"loader_config")}const _=(0,r.mF)().o;var x=n(385),D=n(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(x._A?.performance?.timeOrigin||x._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+x._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof x._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},E={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!E[e])throw new Error("Runtime for ".concat(e," was never set"));return E[e]}function T(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");E[e]=(0,i.D)(t,k),(0,r.Qy)(e,E[e],"runtime")}function N(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(n).length?e:n;for(let o in a)if(void 0!==e[o])try{"object"==typeof e[o]&&"object"==typeof t[o]?n[o]=i(e[o],t[o]):n[o]=e[o]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>a,q4:()=>r});const r="1.243.1",i="PROD",a="CDN"},385:(e,t,n)=>{n.d(t,{Nk:()=>u,Tt:()=>s,_A:()=>a,cv:()=>l,iS:()=>o,il:()=>r,ux:()=>c,v6:()=>i,w1:()=>d});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===a?.document?.visibilityState),s=(a?.location,/iPad|iPhone|iPod/.test(a.navigator?.userAgent)),c=s&&"undefined"==typeof SharedWorker,d=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(r&&window.document.documentMode)),u=!!a.navigator?.sendBeacon,l=Math.floor(a?.performance?.timeOrigin||a?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,n)=>{n.d(t,{w:()=>a});var r=n(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(8325),i=n(1284),a=n(4322),o=n(3325);const s={};function c(e,t){const n={staged:!1,priority:o.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const n=[...s[e]];function o(t){const n=e?r.ee.get(e):r.ee,o=a.X.handlers;if(n.backlog&&o){var s=n.backlog[t],c=o[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete o[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((t=>{let[n]=t;s[e].delete(n),o(n)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],a=e[3],o=e[2];i.apply(a,o)}}))}},8325:(e,t,n)=>{n.d(t,{A:()=>c,ee:()=>d});var r=n(8632),i=n(2210),a=n(234);class o{constructor(e){this.contextId=e}}var s=n(3117);const c="nr@context:".concat(s.a),d=function e(t,n){var r={},s={},u={},f=!1;try{f=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,a){!1!==a&&(a=!0);if(d.aborted&&!i)return;t&&a&&t.emit(e,n,r);for(var o=p(r),c=v(e),u=c.length,l=0;l<u;l++)c[l].apply(o,n);var f=b()[s[e]];f&&f.push([g,e,n,o]);return o},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new o(c))):new o(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return u[t]=u[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),u=(0,r.fP)();function l(){d.aborted=!0,d.backlog={}}u.ee||(u.ee=d)},5546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(8325).ee.get("handle");function i(e,t,n,i,a){a?(a.buffer([e],i),a.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{n.d(t,{X:()=>a});var r=n(5546);a.on=o;var i=a.handlers={};function a(e,t,n,a){o(a||r.E,i,e,t,n)}function o(e,t,n,i,a){a||(a="feature"),e||(e=r.E);var o=t[a]=t[a]||{};(o[n]=o[n]||[]).push([e,i])}},3239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var r=n(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(n,r))}},3117:(e,t,n)=>{n.d(t,{a:()=>r});const r=(0,n(4402).Rl)()},4402:(e,t,n)=>{n.d(t,{Rl:()=>o,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?a(t,++n).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const o=[];for(var s=0;s<e;s++)o.push(a(n,++i).toString(16));return o.join("")}},7056:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>a,oD:()=>i});const r="NRBA",i=144e5,a=18e5},7894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(8325),i=n(5546),a=n(3325);const o={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},s=new Set;function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(s.has(t)||Object.entries(e).forEach((e=>{let[t,r]=e;o[t]?o[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r)})),Object.keys(o).forEach((e=>{void 0===d[e]&&(o[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),s.add(t))}const d={}},2210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{n.d(t,{P:()=>a});var r=n(8325);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{n.d(t,{K:()=>o,b:()=>a});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,r.bP)("load",e,t)}function o(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>a,fP:()=>o,gG:()=>u,mF:()=>s});var r=n(7894),i=n(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=o();const a=i.initializedAgents||{},s=a[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...a,[e]:{...s,[n]:t}},i}function d(e,t){o()[e]=t}function u(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{n.d(t,{gF:()=>a,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>o});const r=n(3325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewEvent},9251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{n.d(t,{W:()=>i});var r=n(8325);class i{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=r.ee.get(e),this.featureName=n,this.blocked=!1}}},7530:(e,t,n)=>{n.d(t,{j:()=>b});var r=n(3325),i=n(234),a=n(5546),o=n(8325),s=n(7894),c=n(8e3),d=n(3960),u=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...r))})),a.length>1?a:a[0]}(t,...r)}}))}var h=n(2587);const v=e=>{const t=e.startsWith("http");e+="/",n.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:_,runtime:x={loaderType:b},exposed:D=!0}=t;const k=(0,g.gG)();A||(w=k.init,A=k.info,_=k.loader_config),(0,i.Dg)(e,w||{}),(0,i.GE)(e,_||{}),A.jsAttributes??={},u.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e,A);const E=(0,i.P_)(e),j=[A.beacon,A.errorBeacon];m||(m=!0,E.proxy.assets&&(v(E.proxy.assets),j.push(E.proxy.assets)),E.proxy.beacon&&j.push(E.proxy.beacon)),x.denyList=[...E.ajax.deny_list||[],...E.ajax.block_internal?j:[]],(0,i.sU)(e,x),p();const T=function(e,t){t||(0,c.R)(e,"api");const g={};var p=o.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,a){const o=(0,i.C5)(e);return null===n?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:n}}),A(v,r,!0,a||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=A(v,e,!0,"api")})),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,a.p)(f.xS,["API/start/".concat(t,"/called")],void 0,r.D.metrics,p);const n=Object.values(r.D);if(void 0===e)e=n;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!n.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(n));e.includes(r.D.pageViewEvent)||e.push(r.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,o="function"==typeof t;return(0,a.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],n),o)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function _(){n.e(75).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>_()),!0):_(),g}(e,y);return(0,g.Qy)(e,T,"api"),(0,g.Qy)(e,D,"exposed"),(0,g.EZ)("activatedFeatures",h.T),T}},3325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var a=r[e]={exports:{}};return n[e](a,a.exports,i),a.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum-1.243.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.243.1.PROD:",i.l=(n,r,a,o)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+a){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var a=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var a=n&&("load"===n.type?"missing":n.type),o=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,a,[o,s,c]=n,d=0;if(o.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},n=self["webpackChunk:NRBA-1.243.1.PROD"]=self["webpackChunk:NRBA-1.243.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var n=i(3325),r=i(234);const a=Object.values(n.D);function o(e){const t={};return a.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(7530);var c=i(8e3),d=i(5938),u=i(3960),l=i(385);class f extends d.W{constructor(e,t,n){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,r.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const n=l.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,c.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),a(!1)}};l.il?(0,u.b)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,n),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var a=this.getBucket(e,t,n,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,n){t[e]=b(n,t[e])})),t}(r,a.metrics),a}merge(e,t,n,r,i){var a=this.getBucket(e,t,r,i);if(a.metrics){var o=a.metrics;o.count+=n.count,(0,v.D)(n,(function(e,t){if("count"!==e){var r=o[e],i=n[e];i&&!i.c?o[e]=b(i.t,r):o[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=b(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=w(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,v.D)(e,A)}function A(e,t){return t}var _=i(8632),x=i(4402),D=i(4351);var k=i(5546),E=i(7956),j=i(3239),T=i(7894),N=i(9251);class S extends f{static featureName=N.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,n),l.il&&((0,E.N)((()=>(0,k.p)("docHidden",[(0,T.z)()],void 0,N.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,k.p)("winPagehide",[(0,T.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var C=i(3081);class P extends f{static featureName=C.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=n,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}run(){const t="features";try{const r=o(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>r[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,D.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,_.Qy)(this.agentIdentifier,this.features,t)}catch(n){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",n);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[p,S,P],loaderType:"lite"})})()})();</script>
+<meta name="description" content="SportsEngine HQ by NBC Sports is the home of youth sports management. Software built for sports leaders. SportsEngine HQ makes creating safe sports experiences faster and easier—while strengthening the connection between people and organizations." />
+<meta name="geo.region" content="US" />
+<link rel="canonical" href="https://www.sportsengine.com/solutions" />
+<meta name="robots" content="index, follow" />
+<meta http-equiv="content-language" content="en" />
+<link rel="image_src" href="https://www.sportsengine.com/sites/default/files/images/hq-home-product-illustration-foreground.png" />
+<meta name="google" content="nositelinkssearchbox" />
+<meta name="rating" content="safe for kids" />
+<meta property="og:site_name" content="SportsEngine" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.sportsengine.com/solutions" />
+<meta property="og:title" content="SportsEngine HQ Sports Management Software | SportsEngine" />
+<meta property="og:description" content="SportsEngine HQ by NBC Sports is the home of youth sports management. Software built for sports leaders. SportsEngine HQ makes creating safe sports experiences faster and easier—while strengthening the connection between people and organizations." />
+<meta property="og:image" content="https://www.sportsengine.com/sites/default/files/images/hq-home-product-illustration-foreground.png" />
+<meta property="og:image:url" content="https://www.sportsengine.com/sites/default/files/images/hq-home-product-illustration-foreground.png" />
+<meta property="og:image:secure_url" content="https://www.sportsengine.com/sites/default/files/images/hq-home-product-illustration-foreground.png" />
+<meta property="og:updated_time" content="Thu, 12/01/2022 - 06:00" />
+<meta property="article:publisher" content="https://www.facebook.com/SportsEngine/" />
+<meta property="article:published_time" content="Wed, 09/09/2020 - 21:06" />
+<meta property="article:modified_time" content="Thu, 12/01/2022 - 06:00" />
+<meta property="fb:app_id" content="1935164013265415" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SportsEngine HQ Sports Management Software | SportsEngine" />
+<meta name="twitter:description" content="SportsEngine HQ by NBC Sports is the home of youth sports management. Software built for sports leaders. SportsEngine HQ makes creating safe sports experiences faster and easier—while strengthening the connection between people and organizations." />
+<meta name="twitter:site:id" content="45573175" />
+<meta name="twitter:creator" content="@SportsEngine" />
+<meta name="twitter:url" content="https://www.sportsengine.com/solutions" />
+<meta name="twitter:image" content="https://www.sportsengine.com/sites/default/files/images/hq-home-product-illustration-foreground.png" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/sportsengine/favicon.ico" type="image/vnd.microsoft.icon" />
+</head-placeholder>
+  <title>SportsEngine HQ Sports Management Software | SportsEngine</title>
+  <meta
+    name="google-site-verification"
+    content="zkrF19Shij-zjiz7wkjPf8I39rtc-pQTAZUarFmX0-w"
+  />
+  <link rel="stylesheet" media="all" href="/sites/default/files/css/css_WhlNpW3Xx7LzvpWO-3Xbn-BvWAQZmZOtZYF9Yli864I.css" />
+<link rel="stylesheet" media="all" href="//cloud.typography.com/737218/6534192/css/fonts.css" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:400,600" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_xFTC-j3jdHXX2emqoXQI6CQKCE6G5fnXrRR1KOSCWlI.css" />
+</css-placeholder>
+  </js-placeholder>
+
+      <!-- Start OneTrust CCPA Code Snippet -->
+    <!-- OneTrust Cookies Consent Notice start for sportsengine.com -->
+<script async src="https://cdn.cookielaw.org/consent/ce826242-5917-4f6f-bad5-51328c5d5266/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="ce826242-5917-4f6f-bad5-51328c5d5266" integrity="sha384-gvkRTYvtQabw1A8MpAwecOM1aBpKZcnUGlVaIf6RPARi5q7eqCOQcwhEACf3EGPq" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  function OptanonWrapper() { }
+</script>
+<script async src="https://cdn.cookielaw.org/opt-out/otCCPAiab.js" type="text/javascript" charset="UTF-8" ccpa-opt-out-ids="dummy" ccpa-opt-out-geo="US" ccpa-opt-out-lspa="false"></script>
+<!-- OneTrust Cookies Consent Notice end for sportsengine.com -->
+    <!-- End OneTrust CCPA Code Snippet -->
+  
+      <!-- Google Ad Manager -->
+    <script
+      defer
+      src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+    ></script>
+    <script>window.googletag = window.googletag || {cmd: []};</script>
+    <!-- End Google Ad Manager -->
+  
+      <!-- Google Tag Manager -->
+    <script type="text/javascript">
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        });
+        var f  = d.getElementsByTagName(s)[0],
+            j  = d.createElement(s),
+            dl = l != 'dataLayer'
+                 ? '&l=' + l
+                 : '';
+        j.defer = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-M9H972');
+    </script>
+    <!-- End Google Tag Manager -->
+  
+      <!-- Start VWO Async Smartcode -->
+    <script
+      type="text/plain"
+      class="optanon-category-7"
+    >
+      window._vwo_code = window._vwo_code || (function(){ var account_id=425848, settings_tolerance=2000, library_tolerance=1500, use_existing_jquery=false, is_spa=1, hide_element='body', /* DO NOT EDIT BELOW THIS LINE */ f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){ settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <!-- End VWO Async Smartcode -->
+  
+</head>
+<body class="theme-hq">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-M9H972"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden"
+    ></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<a
+  href="#main-content"
+  class="visually-hidden focusable"
+>
+  Skip to main content
+</a>
+
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="layout-container">
+    <div class="row se-inc-header-container">
+    <div class="container-full">
+      <div class="se-inc-header">
+                  <nav role="navigation" class="hq-menu-secondary" aria-labelledby="block-solutions-secondary-menu" id="block-solutions-secondary">
+    <ul class="hq-menu hq-menu-secondary--menu__0" id="solutions-secondary">
+          <li role="menuitem" aria-haspopup="true"  class="hq-menu-secondary--item">
+  <a href="https://www.nbcsportsnext.com/youth-and-rec-sports" target="_blank" class="hq-menu-secondary--link view-basic">Company</a>
+</li>
+
+          <li role="menuitem" aria-haspopup="true"  class="hq-menu-secondary--item">
+  <a href="https://help.sportsengine.com/" target="_blank" class="hq-menu-secondary--link view-basic">Support</a>
+</li>
+
+          <li role="menuitem" aria-haspopup="true"  class="hq-menu-secondary--item">
+  <a href="https://app.sportngin.com/user/welcome" target="_blank" class="hq-menu-secondary--link view-basic">Login</a>
+</li>
+
+      </ul>
+
+
+
+</nav>
+
+<!--          block--solutions-secondary.html.twig -->
+          
+  
+<nav role="navigation" class="hq-menu-primary" aria-labelledby="block-solutions-primary-menu" id="block-solutions-primary">
+  <div class="hq-menu__brand">
+  <a href="/solutions" target="_self">
+   <img src="/themes/custom/sportsengine/img/sports-engine-hq-logo-light.svg">
+  </a>
+  </div>
+  <button id="hq-mobile-menu-trigger" class="hamburger" aria-label="Show Navigation Menu" aria-expanded="false" tabindex="0">
+   <div class='hamburger-menu'></div>
+  </button>
+  <ul class="hq-menu hq-menu__0" id="solutions-primary">
+            
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__0 hq-menu-item--basic__0 expanded">
+  <span class="hq-menu-link--basic__0" data-toggle="dropdown" tabindex="0">      Solutions<i class="icon-expanded fas fa-caret-down hide-xs hide-sm"></i><i class="icon-expanded fas fa-caret-right hide-md hide-lg hide-xl"></i>
+  </span>
+  
+
+          <div class="hq-menu--dropdown">
+                  <ul class="hq-menu hq-menu__1">
+                          
+                    
+
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__1 hq-menu-item--basic__1 expanded">
+  <span class="hq-menu-link--basic__1" data-toggle="dropdown">  Organizations</span>
+      
+
+                            
+    <ul class="hq-menu hq-menu__2">
+            
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-organization/club-and-associations" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10497">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Clubs &amp; Associations    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-organization/leagues" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10823">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Leagues    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-organization/national-governing-bodies" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10825">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    National Governing Bodies    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-organization/teams" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10824">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Teams    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+          </ul>
+
+
+
+            
+
+
+
+  </li>
+
+                        
+
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__1 hq-menu-item--basic__1 expanded">
+  <span class="hq-menu-link--basic__1" data-toggle="dropdown">  Roles</span>
+      
+
+                            
+    <ul class="hq-menu hq-menu__2">
+            
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-role/administrators-and-owners" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10643">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Administrators &amp; Owners    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-role/coaches-and-team-managers" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10828">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Coaches &amp; Team Managers    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-role/parents-and-athletes" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10829">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Parents &amp; Athletes    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+          </ul>
+
+
+
+            
+
+
+
+  </li>
+
+                        
+
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__1 hq-menu-item--basic__1 expanded">
+  <span class="hq-menu-link--basic__1" data-toggle="dropdown">  Sports</span>
+      
+
+                            
+    <ul class="hq-menu hq-menu__2">
+            
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-sport/soccer" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10495">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Soccer    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-sport/baseball" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10812">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Baseball    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-sport/hockey" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10813">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Hockey    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-sport/basketball" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10814">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Basketball    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-sport/volleyball" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10815">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Volleyball    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-sport/wrestling" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10817">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Wrestling    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-sport/football" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10818">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Football    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-sport/lacrosse" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10819">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Lacrosse    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-sport/softball" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10820">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Softball    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-sport/golf" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10821">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Golf    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/by-sport/tennis" class="hq-menu-link--detail__2" data-drupal-link-system-path="node/10822">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Tennis    </div>
+    <div class="hq-menu-item__description"></div>
+    
+  </div>
+</a>
+</li>
+                
+<li role="menuitem"  class="hq-menu--item__2 hq-menu-item--button__2">
+  <a href="/solutions/by-sport/all-sports" class="hq-menu-link--more__2" data-drupal-link-system-path="node/10237">  View all sports&nbsp;<i class="view-more_arrow fas fa-chevron-right arrow"></i>
+</a>
+</li>
+
+          </ul>
+
+
+
+            
+
+
+
+  </li>
+
+          
+
+
+                      
+                        </ul>
+          </div>
+  
+
+
+
+</li>
+
+                
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__0 hq-menu-item--basic__0 expanded">
+  <span class="hq-menu-link--basic__0" data-toggle="dropdown" tabindex="0">      Capabilities<i class="icon-expanded fas fa-caret-down hide-xs hide-sm"></i><i class="icon-expanded fas fa-caret-right hide-md hide-lg hide-xl"></i>
+  </span>
+  
+
+          <div class="hq-menu--dropdown">
+                  <ul class="hq-menu hq-menu__1">
+                          
+                    
+
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__1 hq-menu-item--basic__1 expanded">
+  <span class="hq-menu-link--basic__1" data-toggle="dropdown">  Collect, Report &amp; Confirm</span>
+      
+
+                            
+    <ul class="hq-menu hq-menu__2">
+            
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/finance/financials-and-payments" class="hq-menu-link--detail__2" title="Securely track every dollar" data-drupal-link-system-path="node/10441">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Payments.svg" alt="Payments &amp; Financials Icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Financials &amp; Payments    </div>
+    <div class="hq-menu-item__description">Securely track every dollar</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/finance/advanced-reporting" class="hq-menu-link--detail__2" title="Take a deeper look at data" data-drupal-link-system-path="node/10457">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Advanced-Reports.svg" alt="Reports Icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Advanced Reports    </div>
+    <div class="hq-menu-item__description">Take a deeper look at data</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/finance/registration" class="hq-menu-link--detail__2" title="Collect information and fees" data-drupal-link-system-path="node/10458">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Registration.svg" alt="registration icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Registration    </div>
+    <div class="hq-menu-item__description">Collect information and fees</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/finance/memberships" class="hq-menu-link--detail__2" title="Create special programs" data-drupal-link-system-path="node/10460">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Membership.svg" alt="membership icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Memberships    </div>
+    <div class="hq-menu-item__description">Create special programs</div>
+    
+  </div>
+</a>
+</li>
+          </ul>
+
+
+
+            
+
+
+
+  </li>
+
+                        
+
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__1 hq-menu-item--basic__1 expanded">
+  <span class="hq-menu-link--basic__1" data-toggle="dropdown">  Connect &amp; Communicate</span>
+      
+
+                            
+    <ul class="hq-menu hq-menu__2">
+            
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/communication/team-mobile-app" class="hq-menu-link--detail__2" title="Connect your teams" data-drupal-link-system-path="node/10502">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Mobile-App.svg" alt="mobile app icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Team Mobile App    </div>
+    <div class="hq-menu-item__description">Connect your teams</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/communication/sports-websites" class="hq-menu-link--detail__2" title="Customize a sports website" data-drupal-link-system-path="node/10678">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Websites.svg" alt="websites icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Websites    </div>
+    <div class="hq-menu-item__description">Customize a sports website</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/communication/messages-and-newsletters" class="hq-menu-link--detail__2" title="Keep everyone informed" data-drupal-link-system-path="node/10676">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Messages-Newsletters_0.svg" alt="chat icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Messages &amp; Newsletters    </div>
+    <div class="hq-menu-item__description">Keep everyone informed</div>
+    
+  </div>
+</a>
+</li>
+          </ul>
+
+
+
+            
+
+
+
+  </li>
+
+                        
+
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__1 hq-menu-item--basic__1 expanded">
+  <span class="hq-menu-link--basic__1" data-toggle="dropdown">  Create, Plan &amp; Organize</span>
+      
+
+                            
+    <ul class="hq-menu hq-menu__2">
+            
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/organize/clubs" class="hq-menu-link--detail__2" title="Create and manage teams" data-drupal-link-system-path="node/10552">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Teams.svg" alt="teams icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Clubs    </div>
+    <div class="hq-menu-item__description">Create and manage teams</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/organize/leagues" class="hq-menu-link--detail__2" title="Run and grow your league" data-drupal-link-system-path="node/10550">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Leagues.svg" alt="Leagues icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Leagues    </div>
+    <div class="hq-menu-item__description">Run and grow your league</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/organize/tournaments" class="hq-menu-link--detail__2" title="Manage every tournament" data-drupal-link-system-path="node/10684">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Tournaments.svg" alt="tournaments icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Tournaments    </div>
+    <div class="hq-menu-item__description">Manage every tournament</div>
+    
+  </div>
+</a>
+</li>
+          </ul>
+
+
+
+            
+
+
+
+  </li>
+
+                        
+
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__1 hq-menu-item--basic__1 expanded">
+  <span class="hq-menu-link--basic__1" data-toggle="dropdown">  Protect &amp; Prepare</span>
+      
+
+                            
+    <ul class="hq-menu hq-menu__2">
+            
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/eligibility/background-checks" class="hq-menu-link--detail__2" title="Protect youth athletes" data-drupal-link-system-path="node/10499">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Background-Checks.svg" alt="magnifying glass icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Background Checks    </div>
+    <div class="hq-menu-item__description">Protect youth athletes</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/eligibility/safety-training" class="hq-menu-link--detail__2" title="Be Safe Sport Act compliant" data-drupal-link-system-path="node/10554">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Safety-Training.svg" alt="safety badge icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Safety Training    </div>
+    <div class="hq-menu-item__description">Be Safe Sport Act compliant</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/eligibility/insurance-waivers" class="hq-menu-link--detail__2" title="Limit liability and risk" data-drupal-link-system-path="node/10668">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Insurance-Waivers.svg" alt="Financial shield icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Insurance &amp; Waivers    </div>
+    <div class="hq-menu-item__description">Limit liability and risk</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/finance/eligibility" class="hq-menu-link--detail__2" title="Confirm they qualify to play" data-drupal-link-system-path="node/10462">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Eligibility.svg" alt="eligibility icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Eligibility    </div>
+    <div class="hq-menu-item__description">Confirm they qualify to play</div>
+    
+  </div>
+</a>
+</li>
+          </ul>
+
+
+
+            
+
+
+
+  </li>
+
+                        
+
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__1 hq-menu-item--basic__1 expanded">
+  <span class="hq-menu-link--basic__1" data-toggle="dropdown">  Promote, Fund &amp; Support</span>
+      
+
+                            
+    <ul class="hq-menu hq-menu__2">
+            
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/promotion/sportsengine-listings" class="hq-menu-link--detail__2" title="Attract new sports families" data-drupal-link-system-path="node/10480">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-SportsEngine-Listings.svg" alt="Listings icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    SportsEngine Listings    </div>
+    <div class="hq-menu-item__description">Attract new sports families</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/promotion/sponsorship-and-fundraising" class="hq-menu-link--detail__2" title="Raise the funds you need" data-drupal-link-system-path="node/10483">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Fundraising.svg" alt="Fundraising icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Sponsorships &amp; Fundraising    </div>
+    <div class="hq-menu-item__description">Raise the funds you need</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/promotion/apparel-and-uniforms" class="hq-menu-link--detail__2" title="Suit up your teams and fans" data-drupal-link-system-path="node/10489">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Apparel-Uniforms.svg" alt="apparel &amp; uniforms icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Apparel &amp; Uniforms    </div>
+    <div class="hq-menu-item__description">Suit up your teams and fans</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/capabilities/promotion/design-center" class="hq-menu-link--detail__2" title="Promote events with style" data-drupal-link-system-path="node/10486">      <div class="hq-menu-item__icon">
+      
+            <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/HQ-Design-Center.svg" alt="Computer design icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Design Center    </div>
+    <div class="hq-menu-item__description">Promote events with style</div>
+    
+  </div>
+</a>
+</li>
+          </ul>
+
+
+
+            
+
+
+
+  </li>
+
+          
+
+
+                      
+                        </ul>
+          </div>
+  
+
+
+
+</li>
+
+                
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__0 hq-menu-item--basic__0">
+  <a href="/solutions/pricing" class="hq-menu-link--basic__0" data-toggle="dropdown" tabindex="0" data-drupal-link-system-path="node/10238">      Pricing
+  </a>
+  
+
+          <div class="hq-menu--dropdown">
+                  <ul class="hq-menu hq-menu__1">
+                      </ul>
+          </div>
+  
+
+
+
+</li>
+
+                
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__0 hq-menu-item--basic__0 expanded">
+  <span class="hq-menu-link--basic__0" data-toggle="dropdown" tabindex="0">      Resources<i class="icon-expanded fas fa-caret-down hide-xs hide-sm"></i><i class="icon-expanded fas fa-caret-right hide-md hide-lg hide-xl"></i>
+  </span>
+  
+
+          <div class="hq-menu--dropdown">
+                  <ul class="hq-menu hq-menu__1">
+                          
+                    
+
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__1 hq-menu-item--basic__1 expanded">
+  <span class="hq-menu-link--basic__1" data-toggle="dropdown">  Help, Learn, Contact</span>
+      
+
+                            
+    <ul class="hq-menu hq-menu__2">
+            
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/club-admin/hq/road-to-success" target="_blank" class="hq-menu-link--detail__2" title="See the SportsEngine HQ roadmap to success" data-drupal-link-system-path="node/11503">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    HQ Roadmap to Success
+        &nbsp;<i class="external-link_arrow fas fa-external-link-alt"></i>    </div>
+    <div class="hq-menu-item__description">See the SportsEngine HQ roadmap to success</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="https://www.sportsengine.com/solutions/resources/competitor-comparison/" target="_blank" class="hq-menu-link--detail__2" title="See how we stack up">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Competitor Comparison
+        &nbsp;<i class="external-link_arrow fas fa-external-link-alt"></i>    </div>
+    <div class="hq-menu-item__description">See how we stack up</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/resources/customer-stories-and-reviews" class="hq-menu-link--detail__2" title="Hear from our customers" data-drupal-link-system-path="node/10505">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Customer Stories &amp; Reviews    </div>
+    <div class="hq-menu-item__description">Hear from our customers</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/resources/contact" class="hq-menu-link--detail__2" title="Get in touch with our team" data-drupal-link-system-path="node/10507">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Contact    </div>
+    <div class="hq-menu-item__description">Get in touch with our team</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/resources/community" class="hq-menu-link--detail__2" title="Take part in our community" data-drupal-link-system-path="node/10811">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Community    </div>
+    <div class="hq-menu-item__description">Take part in our community</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="/solutions/resources/security" class="hq-menu-link--detail__2" title="Learn how we protect you" data-drupal-link-system-path="node/10508">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Security    </div>
+    <div class="hq-menu-item__description">Learn how we protect you</div>
+    
+  </div>
+</a>
+</li>
+                
+
+
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__2 hq-menu-item--detail__2">
+  <a href="https://developer.sportsengine.com/" target="_blank" class="hq-menu-link--detail__2" title="Access our API hub">      <div class="hq-menu-item__icon">
+      
+    </div>
+    <div>
+    <div class="hq-menu-item__title">
+    Developers
+        &nbsp;<i class="external-link_arrow fas fa-external-link-alt"></i>    </div>
+    <div class="hq-menu-item__description">Access our API hub</div>
+    
+  </div>
+</a>
+</li>
+          </ul>
+
+
+
+            
+
+
+
+  </li>
+
+          
+
+
+                      
+      <div class="hq-menu_component">
+              <div>
+
+<div class="se-card__container se-video-card level-1" >
+  <a href="/club-admin/hq/recap-automate-your-season-webinar" class="se-card__link-container" target="_self">
+          <div class="se-card__hero image-ratio-2-1">
+        <div class="video-card-play-icon">
+          <i class="fas fa-play"></i>
+        </div>
+        
+      <div>
+              <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/webinar.png.webp?itok=V-OfVNC3 150w, /sites/default/files/styles/webp_300_w/public/images/webinar.png.webp?itok=2YPmjCkE 300w, /sites/default/files/styles/webp_600_w/public/images/webinar.png.webp?itok=v6vZJn64 600w, /sites/default/files/styles/webp_768_w/public/images/webinar.png.webp?itok=46zxteZo 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/webinar.png?itok=f_wUEFyf" alt="Automate Your Season Webinar" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+          </div>
+  
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>Recap | Automate Your Season Webinar</span>&nbsp;<i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="video-card__date article_card__date">May 11, 2023</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>Watch as SportsEngine unveils and walks-through their latest youth sports season management tools.&nbsp;<i class="actionable fas fa-chevron-right arrow"></i></p>
+        </div>
+          </div>
+  </a>
+</div>
+</div>
+          </div>
+  
+                        </ul>
+          </div>
+  
+
+
+
+</li>
+
+                
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__0 hq-menu-item--button__0">
+  <a href="/solutions/pricing" class="hq-menu-link--button__0 primary" data-drupal-link-system-path="node/10238">Get started</a>
+</li>
+
+                
+
+<li role="menuitem" aria-haspopup="true"  class="hq-menu--item__0 hq-menu-item--button__0">
+  <a href="/solutions/hq-demo" class="secondary hq-menu-link--button__0 primary" data-drupal-link-system-path="node/9512">Request demo</a>
+</li>
+
+      </ul>
+
+</nav>
+
+<!--          block--solutions-primary.html.twig -->
+        
+        <div class="mobile-menu-trigger">
+          <div class="hamburger-menu"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  
+    <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+  
+
+  <main role="main">
+
+    <a id="main-content" tabindex="-1"></a>      <div>
+    <div id="block-sportsengine-content">
+  
+    
+      <article data-history-node-id="10233" role="article" about="/solutions" typeof="schema:WebPage">
+  <div>
+                  
+      <div>
+              <div>
+
+
+
+
+
+<article data-history-node-id="12182" role="article" about="/node/12182">
+  <div class="component se-background-image__container component-text-w-image hq-homepage-hero-v2  hq-dark-blue "  data-history-node-id="12182" role="article" about="/node/12182">
+          <div class="se-background-image__cover ">
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/hero-Sport-Soccer-background.jpg.webp?itok=lkfDvR5j 150w, /sites/default/files/styles/webp_300_w/public/images/hero-Sport-Soccer-background.jpg.webp?itok=8NBAA7gY 300w, /sites/default/files/styles/webp_600_w/public/images/hero-Sport-Soccer-background.jpg.webp?itok=pjX-wdVy 600w, /sites/default/files/styles/webp_768_w/public/images/hero-Sport-Soccer-background.jpg.webp?itok=poIq5SDn 768w, /sites/default/files/styles/webp_1024_w/public/images/hero-Sport-Soccer-background.jpg.webp?itok=TCw5FVYb 1024w, /sites/default/files/styles/webp_1200_w/public/images/hero-Sport-Soccer-background.jpg.webp?itok=xKFzxE7W 1200w, /sites/default/files/styles/webp_1440_w/public/images/hero-Sport-Soccer-background.jpg.webp?itok=Xau1EgZX 1440w, /sites/default/files/styles/webp_1920_w/public/images/hero-Sport-Soccer-background.jpg.webp?itok=8Z7oj3Xl 1920w" media="(min-width: 0px)" type="image/webp" sizes="100vw"/>
+                  <img src="/sites/default/files/styles/content_1200_w/public/images/hero-Sport-Soccer-background.jpg?itok=OCoPko0t" alt="Background gradient" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      </div>
+        <div class="container">
+      <div class="row around-xs middle-xs contrast-content">
+                              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 body">
+                
+            <div class="se-text-editor" ><h5>Sports Relationship Management Technology</h5>
+<h1 class="h1 se-font-weight-light">Software built for sports leaders</h1>
+<p>SportsEngine HQ provides everything your organization needs to create, grow, and manage top-tier sports experiences—all on one technology platform.</p>
+<p><a class="button primary" href="https://www.sportsengine.com/node/10238">Get pricing</a> <a class="button secondary" data-intercom-bot-id="herosection" href="/solutions/hq-demo#form-section">Chat with us</a></p>
+</div>
+      
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 field-image se-promotion__foreground-video ">
+                              
+      <div>
+              <div><article>
+  
+      
+            <div><script src="https://fast.wistia.com/embed/medias/z21s8j3q9h.jsonp" async=""></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async=""></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+<div class="wistia_embed wistia_async_z21s8j3q9h videoFoam=true" style="height:100%;position:relative;width:100%">
+<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" src="https://fast.wistia.com/embed/medias/z21s8j3q9h/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" /></div>
+</div>
+</div>
+</div>
+</div>
+      
+  </article>
+</div>
+          </div>
+  
+                          </div>
+                        </div>
+    </div>
+  </div>
+</article>
+
+</div>
+              <div>
+<div class="se-text component component-text hq-motion-graphic  "  data-history-node-id="10621" role="article" about="/node/10621">
+  <div class="container">
+    <div class="row around-xs">
+                  <div class="se-text__content contrast-content col-xs-12">
+            
+            <div class="se-text-editor" ><h2 class="h2 hq-dark-blue text-align-center">Bring your team together</h2>
+<p class="text-align-center">Every member of your leadership team has a place in SportsEngine HQ. Work together to <a href="/solutions/capabilities/organize/clubs">manage clubs</a>, <a href="/solutions/by-organization/club-and-associations">associations</a>, <a href="/solutions/by-organization/teams">teams</a>, <a href="/solutions/capabilities/organize/leagues">leagues</a>, and <a href="/solutions/capabilities/organize/tournaments">tournaments</a>.</p>
+<p><div data-embed-button="media" data-entity-embed-display="view_mode:media.full" data-entity-type="media" data-entity-uuid="dfa51d25-18a5-4a4b-befb-a12f46e68f1f" data-langcode="en" class="align-center embedded-entity" data-entity-embed-display-settings="[]"><article><div><script src="https://fast.wistia.com/embed/medias/hgrebcvm8r.jsonp" async=""></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async=""></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+<div class="wistia_embed wistia_async_hgrebcvm8r videoFoam=true" style="height:100%;position:relative;width:100%"> </div>
+</div>
+</div>
+</div>
+      
+  </article></div>
+</p>
+</div>
+      
+          </div>
+            </div>
+  </div>
+</div>
+</div>
+              <div>
+<div class="se-text component component-text more-passion-less-work no-vertical-padding "  data-history-node-id="10622" role="article" about="/node/10622">
+  <div class="container">
+    <div class="row around-xs">
+                  <div class="se-text__content contrast-content col-xs-12">
+            
+            <div class="se-text-editor" ><h2 class="h2 hq-dark-blue text-align-center">More passion. Less work.</h2>
+<p class="text-align-center">That's the advantage of using an integrated, all-in-one technology platform—the tools and information you need to quickly complete any task is just a click away. </p>
+<style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+.more-passion-less-work {
+    padding-bottom: 0rem;
+}
+
+/*--><!]]>*/
+</style></div>
+      
+          </div>
+            </div>
+  </div>
+</div>
+</div>
+              <div>
+
+
+
+
+
+<article data-history-node-id="10623" role="article" about="/node/10623">
+  <div class="component se-background-image__container component-text-w-image hq-homepage-capabilities no-top-padding  "  data-history-node-id="10623" role="article" about="/node/10623">
+        <div class="container">
+      <div class="row around-xs middle-xs contrast-content">
+                              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 field-image se-promotion__foreground-image ">
+                              
+      <div>
+              <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_1024_w/public/images/hq-home-product-illustration.png.webp?itok=q2g24dcW 1x" media="(min-width: 1024px)" type="image/webp"/>
+              <source srcset="/sites/default/files/styles/webp_768_w/public/images/hq-home-product-illustration.png.webp?itok=FaOfjRJE 1x" media="(min-width: 768px)" type="image/webp"/>
+              <source srcset="/sites/default/files/styles/webp_600_w/public/images/hq-home-product-illustration.png.webp?itok=pJwiymbE 1x" media="(min-width: 600px)" type="image/webp"/>
+              <source srcset="/sites/default/files/styles/webp_300_w/public/images/hq-home-product-illustration.png.webp?itok=HV1D2l_e 1x" media="(min-width: 0px)" type="image/webp"/>
+                  <img src="/sites/default/files/styles/content_1024_w/public/images/hq-home-product-illustration.png?itok=W3JQrdhJ" alt="SportsEngine Illustration" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+          </div>
+  
+                          </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 first-xs last-md last-lg last-xl body">
+                
+            <div class="se-text-editor" ><h4 class="h4 hq-dark-blue">Collect, report, &amp; confirm</h4>
+<p>SportsEngine HQ simplifies gathering information and payments online, then organizes everything, so it’s easy to find.</p>
+<p><a href="/node/10240">Learn more</a></p>
+<p> </p>
+<h4 class="h4 hq-dark-blue">Create, plan, &amp; organize</h4>
+<p>Discover the hassle-free way to create and manage teams, leagues, and events from start to finish—including uniform orders.</p>
+<p><a href="/node/10241">Learn more</a></p>
+<p> </p>
+<h4 class="h4 hq-dark-blue">Connect &amp; communicate</h4>
+<p>Keep teams and families in-sync while showcasing your brand and promoting your events online.</p>
+<p><a href="/node/10243">Learn more</a></p>
+<p> </p>
+<h4 class="h4 hq-dark-blue">Protect &amp; prepare</h4>
+<p>Do your part to keep athletes and data safe with our comprehensive safety services and technology.</p>
+<p><a href="/node/10242">Learn more</a></p>
+<p> </p>
+<h4 class="h4 hq-dark-blue">Promote, fund, &amp; sell</h4>
+<p>Raise meaningful funds to fuel your organization while spreading team pride.</p>
+<p><a href="/node/10244">Learn more</a></p>
+<p>
+ </p>
+</div>
+      
+            </div>
+                        </div>
+    </div>
+  </div>
+</article>
+
+</div>
+              <div>
+<div class="se-text component component-text get-sportsengine-hq  hq-dark-blue"  data-history-node-id="10448" role="article" about="/node/10448">
+  <div class="container">
+    <div class="row around-xs">
+                  <div class="se-text__content contrast-content col-xs-12">
+            
+            <div class="se-text-editor" ><section id="blue-section"><h2 class="text-align-center">Do all this, and more.</h2>
+<p> </p>
+</section><p class="text-align-center"><a class="button primary" href="/node/10238">Get pricing</a>  <a class="button secondary" data-intercom-bot-id="bluesection" href="/solutions/hq-demo#form-section">Chat with us</a></p>
+</div>
+      
+          </div>
+            </div>
+  </div>
+</div>
+</div>
+              <div>
+
+    
+  
+  
+
+<div class=" component-carousel hq-homepage-news-carousel    " >
+  <div class="container contrast-content">
+    <div class="row">
+      <div class="col-xs-12 carousel-body">
+        
+            <div class="se-text-editor" ><h3 class="h3 hq-dark-blue text-align-center">What’s new with SportsEngine HQ</h3>
+<p class="text-align-center">Learn more about our latest innovations and service enhancements built to simplify your life.</p>
+</div>
+      
+      </div>
+      <div
+        class="col-xs-12 carousel-content   slick-dots-responsive "
+        data-columns="3"
+        data-start-position="0"
+      >
+                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/tips-tricks/top-five-ways-clubs-are-using-sportsengine-hq-during-covid-19"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/Article%20Image.png.webp?itok=MebrVe9A 150w, /sites/default/files/styles/webp_300_w/public/images/Article%20Image.png.webp?itok=OMFQrprM 300w, /sites/default/files/styles/webp_600_w/public/images/Article%20Image.png.webp?itok=IhpP9GxG 600w, /sites/default/files/styles/webp_768_w/public/images/Article%20Image.png.webp?itok=f8cj2MMZ 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/Article%20Image.png?itok=Pls4iCPf" alt="Bustin&#039; COVID with SportsEngine HQ" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>Top Five Ways Clubs Are Using SportsEngine HQ During COVID-19</span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">September 16, 2020</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>After navigating postponed and canceled seasons, administrators and coaches are now facing new obstacles as teams return to play.&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/profiles/communicating-plan-time-crisis"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/EGF.jpg.webp?itok=4mFeELVJ 150w, /sites/default/files/styles/webp_300_w/public/images/EGF.jpg.webp?itok=6k8Wl68O 300w, /sites/default/files/styles/webp_600_w/public/images/EGF.jpg.webp?itok=ILHJqdgy 600w, /sites/default/files/styles/webp_768_w/public/images/EGF.jpg.webp?itok=w1WsCvno 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/EGF.jpg?itok=oZJyJYAf" alt="East Grand Forks’ Parks and Recreation department" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>Communicating a Plan in a Time of Crisis</span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">October 30, 2020</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>When the COVID-19 Pandemic struck, East Grand Forks’ Parks and Recreation department faced many tough decisions on how to press forward&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/club-admin/hq/find-your-fit-sportsengine-hq-express-vs-premium-package"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/shutterstock_2018564699.jpg.webp?itok=9DI-J2Nv 150w, /sites/default/files/styles/webp_300_w/public/images/shutterstock_2018564699.jpg.webp?itok=0CB5ENvT 300w, /sites/default/files/styles/webp_600_w/public/images/shutterstock_2018564699.jpg.webp?itok=MPyEerr3 600w, /sites/default/files/styles/webp_768_w/public/images/shutterstock_2018564699.jpg.webp?itok=3ZSUJaCY 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/shutterstock_2018564699.jpg?itok=hUKZF8rP" alt="Young happy female coach looking at camera" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>Find Your Fit: SportsEngine HQ Express vs. Premium Package</span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">September 21, 2023</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>What&#039;s the best sports management software package for your organization?&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/club-admin/hq/upcoming-season-mgt-releases"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/Release%20%281152%20%C3%97%20768%20px%29.png.webp?itok=3ZV7wnJZ 150w, /sites/default/files/styles/webp_300_w/public/images/Release%20%281152%20%C3%97%20768%20px%29.png.webp?itok=jFdcQSq- 300w, /sites/default/files/styles/webp_600_w/public/images/Release%20%281152%20%C3%97%20768%20px%29.png.webp?itok=zSDuz9Od 600w, /sites/default/files/styles/webp_768_w/public/images/Release%20%281152%20%C3%97%20768%20px%29.png.webp?itok=knF7KjJw 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/Release%20%281152%20%C3%97%20768%20px%29.png?itok=4LRP6KIM" alt="Season Mgt - Upcoming releases" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>Upcoming Season Management Releases in SportsEngine HQ</span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">September 18, 2023</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>Get a glimpse into upcoming releases within our Season Management tools.&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/club-admin/hq/new-mobile-app-release"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/970x250%20AM-Signature-Pre-Release.png.webp?itok=lWgh7Dlh 150w, /sites/default/files/styles/webp_300_w/public/images/970x250%20AM-Signature-Pre-Release.png.webp?itok=R1hp2fzT 300w, /sites/default/files/styles/webp_600_w/public/images/970x250%20AM-Signature-Pre-Release.png.webp?itok=gDlc2mne 600w, /sites/default/files/styles/webp_768_w/public/images/970x250%20AM-Signature-Pre-Release.png.webp?itok=6TKz7-zm 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/970x250%20AM-Signature-Pre-Release.png?itok=dxuP_TTr" alt="new mobile app banner" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>Explore the New and Improved SportsEngine Mobile App</span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">September 18, 2023</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>Team management just got a little bit better. Introducing the latest enhancements to the SportsEngine mobile app&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/play/club-admin/how-live-stream-your-upcoming-youth-sports-season"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29.png.webp?itok=ylewMs9W 150w, /sites/default/files/styles/webp_300_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29.png.webp?itok=wArwaCzj 300w, /sites/default/files/styles/webp_600_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29.png.webp?itok=x2Jh-6IL 600w, /sites/default/files/styles/webp_768_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29.png.webp?itok=IVgsjgOI 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29.png?itok=_0l60jVU" alt="How to Live Stream Your Upcoming Youth Sports Season    " typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>How to Live Stream Your Upcoming Youth Sports Season    </span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">September 15, 2023</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>Learn how to include video as you prepare for your upcoming season.&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/play/club-admin/your-live-youth-sports-broadcasting-cheat-sheet"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png.webp?itok=p6PxEy2x 150w, /sites/default/files/styles/webp_300_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png.webp?itok=01JPT31y 300w, /sites/default/files/styles/webp_600_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png.webp?itok=08qQzURQ 600w, /sites/default/files/styles/webp_768_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png.webp?itok=ZoLABlFp 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png?itok=K9gLet61" alt="Your Live Youth Sports Broadcasting Cheat Sheet " typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>Your Live Youth Sports Broadcasting Cheat Sheet </span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">September 15, 2023</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>Now that you&#039;ve selected a video broadcast provider, here are some pro tips to ensure a successful streaming event.&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/article/none/celebrate-launch-your-new-live-and-demand-broadcasting-solution"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png.webp?itok=p6PxEy2x 150w, /sites/default/files/styles/webp_300_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png.webp?itok=01JPT31y 300w, /sites/default/files/styles/webp_600_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png.webp?itok=08qQzURQ 600w, /sites/default/files/styles/webp_768_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png.webp?itok=ZoLABlFp 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png?itok=K9gLet61" alt="Your Live Youth Sports Broadcasting Cheat Sheet " typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>Celebrate the Launch of Your New Live and On Demand Broadcasting Solution  </span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">September 15, 2023</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>Now that you&#039;ve selected a video broadcast provider, here are some pro tips to ensure a successful streaming event.&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/play/club-admin/why-your-youth-sports-organization-should-invest-video-broadcasting"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29.jpg.webp?itok=tgk-bVMR 150w, /sites/default/files/styles/webp_300_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29.jpg.webp?itok=RGBn0MuF 300w, /sites/default/files/styles/webp_600_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29.jpg.webp?itok=XsJel-28 600w, /sites/default/files/styles/webp_768_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29.jpg.webp?itok=K-MRtqE9 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29.jpg?itok=Fdl4ndJ0" alt="Why Your Youth Sports Organization Should Invest in Video Broadcasting " typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>Why Your Youth Sports Organization Should Invest in Video Broadcasting </span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">September 15, 2023</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>Learn how video broadcasting for your youth sports organization can engage current members and recruit new members.&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/club-admin/teamunify/teamunify-takes-on-the-2023-scottish-national-open-championship"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/scottish.swim_.2023.hero_.png.webp?itok=GAHY-tqb 150w, /sites/default/files/styles/webp_300_w/public/images/scottish.swim_.2023.hero_.png.webp?itok=bo0_0j1_ 300w, /sites/default/files/styles/webp_600_w/public/images/scottish.swim_.2023.hero_.png.webp?itok=-kbkpB1n 600w, /sites/default/files/styles/webp_768_w/public/images/scottish.swim_.2023.hero_.png.webp?itok=YoNLKreU 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/scottish.swim_.2023.hero_.png?itok=yCPKaLQH" alt="Scottish Swimming article hero" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>TeamUnify Takes On the 2023 Scottish National Open Championship</span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">August 02, 2023</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>Teaser here&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/club-admin/hq/new-financial-tools-sportsengine-hq"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/shutterstock_654406453.jpg.webp?itok=u3k0Hfvh 150w, /sites/default/files/styles/webp_300_w/public/images/shutterstock_654406453.jpg.webp?itok=HhxlOn_7 300w, /sites/default/files/styles/webp_600_w/public/images/shutterstock_654406453.jpg.webp?itok=EUUUvkLA 600w, /sites/default/files/styles/webp_768_w/public/images/shutterstock_654406453.jpg.webp?itok=vRbQOsUb 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/shutterstock_654406453.jpg?itok=JAHYsAAP" alt="New Financial Tools" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>New Financial Tools in SportsEngine HQ</span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">July 31, 2023</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>Everything you need to know on the new tools, what it means for your organization, and what benefits you&#039;ll start to experience&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                                                        <div>
+              
+<div class="se-card__container level-1" >
+  <a
+    href="/club-admin/hq/how-to-retain-youth-sport-members-proven-strategies-to-enhance-engagement-and-loyalty"
+    class="se-card__link-container"
+    target="_self"
+  >
+          <div class="se-card__hero image-ratio-2-1">
+        
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/shutterstock_289866170.jpg.webp?itok=M1vYf-1Q 150w, /sites/default/files/styles/webp_300_w/public/images/shutterstock_289866170.jpg.webp?itok=ppK7WVgc 300w, /sites/default/files/styles/webp_600_w/public/images/shutterstock_289866170.jpg.webp?itok=xJGDMXME 600w, /sites/default/files/styles/webp_768_w/public/images/shutterstock_289866170.jpg.webp?itok=dUhlOOoG 768w" media="(min-width: 0px)" type="image/webp" sizes="(min-width:768px) 66vw, 100vw"/>
+                  <img src="/sites/default/files/styles/content_768_w/public/images/shutterstock_289866170.jpg?itok=YCrwuIl6" alt="shutterstock_289866170" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+      </div>
+        <div class="se-card__content">
+      
+      <div class="se-card__header">
+        <h3>
+          <span>How to Retain Youth Sport Members: Proven Strategies to Enhance Engagement and Loyalty </span>&nbsp;          <i class="actionable fas fa-chevron-right arrow teaser-is-empty"></i>        </h3>
+                  <h5 class="article_card__date">June 26, 2023</h5>
+              </div>
+              <div class="se-card__body actionable article_card__teaser">
+          <p>Discover proven and effective strategies to keep members engaged and coming back to your youth sports organization.&nbsp;<i class="actionable fas fa-chevron-right arrow"></i>
+          </p>
+        </div>
+          </div>
+  </a>
+</div>
+
+            </div>
+          
+                                              </div>
+        <div class="view-more col-xs-12 end-xs contrast-content">
+    <a class="view-more_link" href="/articles/more/2056+2129/general_article_page">View more&nbsp;<i class="view-more_arrow fas fa-chevron-right arrow"></i></a>
+  </div>
+
+    </div>
+  </div>
+</div>
+</div>
+              <div>
+
+
+
+
+
+<article data-history-node-id="16625" role="article" about="/node/16625">
+  <div class="component se-background-image__container component-text-w-image hq-bundle---features-banner  not-black "  data-history-node-id="16625" role="article" about="/node/16625">
+          <div class="se-background-image__cover ">
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/Rectangle_1.png.webp?itok=wzgnq5Uo 150w, /sites/default/files/styles/webp_300_w/public/images/Rectangle_1.png.webp?itok=ctGxV1jk 300w, /sites/default/files/styles/webp_600_w/public/images/Rectangle_1.png.webp?itok=oybWBKx- 600w, /sites/default/files/styles/webp_768_w/public/images/Rectangle_1.png.webp?itok=tZD6ivi1 768w, /sites/default/files/styles/webp_1024_w/public/images/Rectangle_1.png.webp?itok=25rwGwlZ 1024w, /sites/default/files/styles/webp_1920_w/public/images/Rectangle_1.png.webp?itok=gYNyBok5 1152w" media="(min-width: 0px)" type="image/webp" sizes="100vw"/>
+                  <img src="/sites/default/files/styles/content_1200_w/public/images/Rectangle_1.png?itok=ETmH-XnC" alt="Purple Gradient" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      </div>
+        <div class="container">
+      <div class="row around-xs middle-xs contrast-content">
+                              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 field-image se-promotion__foreground-image ">
+                              
+      <div>
+              <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_1024_w/public/images/Foreground_1.png.webp?itok=5kls4ZSK 1x" media="(min-width: 1024px)" type="image/webp"/>
+              <source srcset="/sites/default/files/styles/webp_768_w/public/images/Foreground_1.png.webp?itok=LYfJvUqa 1x" media="(min-width: 768px)" type="image/webp"/>
+              <source srcset="/sites/default/files/styles/webp_600_w/public/images/Foreground_1.png.webp?itok=iQYSmxh0 1x" media="(min-width: 600px)" type="image/webp"/>
+              <source srcset="/sites/default/files/styles/webp_300_w/public/images/Foreground_1.png.webp?itok=QVpzImYA 1x" media="(min-width: 0px)" type="image/webp"/>
+                  <img src="/sites/default/files/styles/content_1024_w/public/images/Foreground_1.png?itok=_9H1-V4o" alt="Coach with clipboard" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+          </div>
+  
+                          </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 first-xs last-md last-lg last-xl body">
+                
+            <div class="se-text-editor" ><h2>Bundle and save up to 60% on SportsEngine HQ</h2>
+<p>The ultimate teammate for youth sports organizations</p>
+<p><a class="button primary" href="https://www.sportsengine.com/solutions/pricing-and-bundling">Learn more</a></p>
+</div>
+      
+            </div>
+                        </div>
+    </div>
+  </div>
+</article>
+
+</div>
+              <div>
+<article data-history-node-id="10625" role="article" about="/node/10625">
+  <div class="component component-x-pack hq-homepage-stats  white" >
+    <div class="container contrast-content">
+              <div class="row around-xs">
+          <div class="col-xs-12 body">
+            
+            <div class="se-text-editor" ><h2 class="text-align-center">The trusted partner in youth sports technology</h2>
+<p class="text-align-center">We’re proud to be trusted by thousands of sports organizations of all shapes and sizes across North America to help build relationships and grow programs.</p>
+</div>
+      
+          </div>
+        </div>
+                    <div class="row">
+          <div class="col-xs-12 factoids">
+            <div >
+    <div class="row center-sm-col">
+                              <div class="col-xs-12 col-sm-6 col-md-4 center-xs-col se-factoid-card__container"  >
+      
+ <article  class="col-sm"  data-history-node-id="10626" role="article" about="/node/10626">
+      <div class="component-factoid 45,000+-sports-organizations-served  ">
+      <div>
+                              <div class="image">
+              
+      <div>
+              <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/hq-organizations-icon.svg" alt="organizations icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+          </div>
+  
+            </div>
+                  
+        
+                <div class="body contrast-content ">
+          
+            <div class="se-text-editor" ><h2 class="h2 hq-dark-blue text-align-center">45,000+</h2>
+<p class="text-align-center">sports organizations served</p>
+</div>
+      
+        </div>
+              </div>
+    </div>
+  </article>
+
+    </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 center-xs-col se-factoid-card__container"  >
+      
+ <article  class="col-sm"  data-history-node-id="11345" role="article" about="/node/11345">
+      <div class="component-factoid 1.2m+-teams  ">
+      <div>
+                              <div class="image">
+              
+      <div>
+              <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/hq-teams-icon.svg" alt="team flag" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+          </div>
+  
+            </div>
+                  
+        
+                <div class="body contrast-content ">
+          
+            <div class="se-text-editor" ><h2 class="h2 hq-dark-blue text-align-center">1,200,000+</h2>
+<p class="text-align-center">teams</p>
+</div>
+      
+        </div>
+              </div>
+    </div>
+  </article>
+
+    </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 center-xs-col se-factoid-card__container"  >
+      
+ <article  class="col-sm"  data-history-node-id="10628" role="article" about="/node/10628">
+      <div class="component-factoid 7m+-kids-protected  ">
+      <div>
+                              <div class="image">
+              
+      <div>
+              <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/hq-safety-checks-icon.svg" alt="safety checks" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+          </div>
+  
+            </div>
+                  
+        
+                <div class="body contrast-content ">
+          
+            <div class="se-text-editor" ><h2 class="h2 hq-dark-blue text-align-center">7,000,000+</h2>
+<p class="text-align-center">kids we help protect with industry-leading background checks</p>
+</div>
+      
+        </div>
+              </div>
+    </div>
+  </article>
+
+    </div>
+        </div>
+  </div>
+
+          </div>
+        </div>
+          </div>
+  </div>
+</article>
+</div>
+              <div>
+
+<div class="container component-promotion ">
+          <div class="se-promotion--default se-promotion__background se-background-image__container   hq-dark-blue">
+              <div class="se-background-image__cover">
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_150_w/public/images/hq-trust-factors-promo-background.png.webp?itok=EL8NdX-s 150w, /sites/default/files/styles/webp_300_w/public/images/hq-trust-factors-promo-background.png.webp?itok=PHup234c 300w, /sites/default/files/styles/webp_600_w/public/images/hq-trust-factors-promo-background.png.webp?itok=Zm8F9WbU 600w, /sites/default/files/styles/webp_768_w/public/images/hq-trust-factors-promo-background.png.webp?itok=H-O0JvcJ 768w, /sites/default/files/styles/webp_1024_w/public/images/hq-trust-factors-promo-background.png.webp?itok=1fOEO8Bb 1024w, /sites/default/files/styles/webp_1200_w/public/images/hq-trust-factors-promo-background.png.webp?itok=fRP5BV8N 1150w" media="(min-width: 0px)" type="image/webp" sizes="(min-width: 1200px) 1200px, 100vw"/>
+                  <img src="/sites/default/files/styles/content_1200_w/public/images/hq-trust-factors-promo-background.png?itok=1og9TIkY" alt="HQ Trust Factors Promo Background" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      </div>
+                  <div class="se-promotion__content contrast-content col-xs-12 col-md-6">
+            <div class="se-text-editor" ><h3>Award-winning tech.<br />
+Unmatched results. </h3>
+<p>Trust us to deliver your competitive edge. But don’t take our word for it. User satisfaction and customer reviews led to SportsEngine HQ being recognized as top-performing software.</p>
+</div>
+      </div>
+              <div class="se-promotion__media se-promotion__foreground-image align-bottom col-xs-12 col-md-6">
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_1024_w/public/images/hq-trust-factors-promo-foreground_0.png.webp?itok=dUE9WRLL 1x" media="(min-width: 1024px)" type="image/webp"/>
+              <source srcset="/sites/default/files/styles/webp_768_w/public/images/hq-trust-factors-promo-foreground_0.png.webp?itok=vcJGvduP 1x" media="(min-width: 768px)" type="image/webp"/>
+              <source srcset="/sites/default/files/styles/webp_600_w/public/images/hq-trust-factors-promo-foreground_0.png.webp?itok=GTTI_HDc 1x" media="(min-width: 600px)" type="image/webp"/>
+              <source srcset="/sites/default/files/styles/webp_300_w/public/images/hq-trust-factors-promo-foreground_0.png.webp?itok=9F1kRks_ 1x" media="(min-width: 0px)" type="image/webp"/>
+                  <img src="/sites/default/files/styles/content_1024_w/public/images/hq-trust-factors-promo-foreground_0.png?itok=toVfC-o3" alt="HQ Trust Factors Promo Foreground" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      </div>
+          </div>
+    </div>
+</div>
+              <div>
+<div class="se-text component component-text spacer-text-component-60px  "  data-history-node-id="11210" role="article" about="/node/11210">
+  <div class="container">
+    <div class="row around-xs">
+                  <div class="se-text__content contrast-content col-xs-12">
+            
+            <div class="se-text-editor" ><style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+.spacer-text-component-60px {
+    padding-top: 0;
+}
+
+/*--><!]]>*/
+</style></div>
+      
+          </div>
+            </div>
+  </div>
+</div>
+</div>
+              <div>
+<article data-history-node-id="10629" role="article" about="/node/10629">
+  <div class="component container-full center-xs component-image-pack  white" >
+    <div class="row center-xs">
+      <div class="body contrast-content col-xs-12 col-md-6">
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="image-grid col-xs-12 ">
+        <div>
+  <div class="row center-xs middle-xs">
+      <div class="image" >
+      <article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/US-olympics-logo-USOPC.svg" alt="US Olympics logo USOPC" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+
+    </div>
+      <div class="image" >
+      <article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/US-paralympics-logo-USOPC.svg" alt="US Paralympics Logo USOPC" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+
+    </div>
+      <div class="image" >
+      <article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/usa-volleyball-01.svg" alt="USA Volleyball" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+
+    </div>
+      <div class="image" >
+      <article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/USA-Hockey-01.svg" alt="USA Hockey" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+
+    </div>
+      <div class="image" >
+      <article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/babe-ruth.svg" alt="Babe Ruth League" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+
+    </div>
+    </div>
+</div>
+      </div>
+    </div>
+  </div>
+</article>
+</div>
+              <div>
+<div class="se-text component component-text built-on-the-sportsengine-srm-platform  hq-dark-blue"  data-history-node-id="10778" role="article" about="/node/10778">
+  <div class="container">
+    <div class="row around-xs">
+                  <div class="se-text__content contrast-content col-xs-12">
+            
+            <div class="se-text-editor" ><h3 class="h3 hq-dark-blue text-align-center">Built with SportsEngine SRM technology</h3>
+<p class="text-align-center">SportsEngine HQ operates on the world’s only fully-integrated <a href="https://www.sportsengine.com/corp/sport-relationship-management" target="_blank">Sport Relationship Management (SRM) technology platform</a>. This exclusive technology helps connect and manage relationships between people and organizations through all levels of sport.</p>
+</div>
+      
+          </div>
+            </div>
+  </div>
+</div>
+</div>
+              <div>
+<article data-history-node-id="10469" role="article" about="/node/10469">
+  <div class="component component-x-pack hq-support-band  " >
+    <div class="container contrast-content">
+              <div class="row around-xs">
+          <div class="col-xs-12 body">
+            
+            <div class="se-text-editor" ><h2 class="h2 hq-dark-blue text-align-center">Gain access to helpful resources</h2>
+<p class="text-align-center">Get the support you need when you need it from our trusted sports technology experts. </p>
+</div>
+      
+          </div>
+        </div>
+                    <div class="row">
+          <div class="col-xs-12 factoids">
+            <div >
+    <div class="row center-sm-col">
+                              <div class="col-xs-12 col-sm-6 col-md-4 center-xs-col se-factoid-card__container"  >
+      
+ <article  class="col-sm"  data-history-node-id="10466" role="article" about="/node/10466">
+      <div class="component-factoid live-tech-support  ">
+      <div>
+                              <div class="image">
+              
+      <div>
+              <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/hq-friendly-support-icon.svg" alt="handshake icon" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+          </div>
+  
+            </div>
+                  
+                <div class="title contrast-content">
+          <h4>Live tech support</h4>
+        </div>
+        
+                <div class="body contrast-content ">
+          
+            <div class="se-text-editor" ><p class="text-align-center">Getting the answer to your question is always just a click away—our team of experts is standing by to help every day of the year.</p>
+</div>
+      
+        </div>
+              </div>
+    </div>
+  </article>
+
+    </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 center-xs-col se-factoid-card__container"  >
+      
+ <article  class="col-sm"  data-history-node-id="10467" role="article" about="/node/10467">
+      <div class="component-factoid customer-help-center  ">
+      <div>
+                              <div class="image">
+              
+      <div>
+              <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/hq-messaging-icon.svg" alt="messaging" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+          </div>
+  
+            </div>
+                  
+                <div class="title contrast-content">
+          <h4>Customer help center</h4>
+        </div>
+        
+                <div class="body contrast-content ">
+          
+            <div class="se-text-editor" ><p class="text-align-center">Access helpful articles, videos, and resources at any time to help you get the most from SportsEngine HQ.</p>
+</div>
+      
+        </div>
+              </div>
+    </div>
+  </article>
+
+    </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 center-xs-col se-factoid-card__container"  >
+      
+ <article  class="col-sm"  data-history-node-id="10468" role="article" about="/node/10468">
+      <div class="component-factoid dedicated-onboarding-coach  ">
+      <div>
+                              <div class="image">
+              
+      <div>
+              <div><article>
+  
+      
+            <div>  <img width="" height="" src="/sites/default/files/images/hq-support-icon.svg" alt="support headset" loading="lazy" typeof="foaf:Image" loading="lazy"/>
+
+</div>
+      
+  </article>
+</div>
+          </div>
+  
+            </div>
+                  
+                <div class="title contrast-content">
+          <h4>Dedicated onboarding coach</h4>
+        </div>
+        
+                <div class="body contrast-content ">
+          
+            <div class="se-text-editor" ><p class="text-align-center">SportsEngine HQ Premium and Pro subscribers are provided with a dedicated onboarding coach to ensure a fast and efficient setup.</p>
+</div>
+      
+        </div>
+              </div>
+    </div>
+  </article>
+
+    </div>
+        </div>
+  </div>
+
+          </div>
+        </div>
+          </div>
+  </div>
+</article>
+</div>
+              <div>
+<div class="se-text component component-text try-sportsengine-hq  hq-dark-blue"  data-history-node-id="10492" role="article" about="/node/10492">
+  <div class="container">
+    <div class="row around-xs">
+                  <div class="se-text__content contrast-content col-xs-12">
+            
+            <div class="se-text-editor" ><h2 class="text-align-center">Add SportsEngine HQ to your roster
+<style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+.try-sportsengine-hq {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+
+/*--><!]]>*/
+</style></h2>
+<p class="text-align-center"><a class="button primary" href="/node/10238">Get pricing</a> <a class="button secondary" data-intercom-bot-id="whitesection" href="/solutions/hq-demo#form-section">Chat with us</a></p>
+</div>
+      
+          </div>
+            </div>
+  </div>
+</div>
+</div>
+              <div>
+<div class="se-text component component-text connect-with-sports-families  light-gray"  data-history-node-id="10631" role="article" about="/node/10631">
+  <div class="container">
+    <div class="row around-xs">
+                  <div class="se-text__content contrast-content col-xs-12">
+            
+            <div class="se-text-editor" ><h2 class="h2 hq-dark-blue text-align-center">Connect with local sports families</h2>
+<p class="text-align-center">SportsEngine.com is home to North America’s largest directory of youth sports programs, where clubs and leagues connect with local families. See how clubs in your area are advertising programs to local families through SportsEngine HQ.</p>
+</div>
+      
+          </div>
+            </div>
+  </div>
+</div>
+</div>
+              <div>
+
+<div id="js-component-programs" class="light-gray light-gray component-programs hq-programs-and-articles  " >
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
+        <div class="row">
+          <div class="col-xs-12 component-programs__header">
+            <div class="component-programs__title contrast-content">
+                              <h2>Youth sports program listings</h2>
+                          </div>
+            <div
+  class="component-programs__form"
+  id="programs-suggest-container"
+>
+  <div
+    class="location-suggestions__active-display is-active"
+    tabindex="0"
+    id="location-active-edit"
+  >
+    <i class="location-suggestions__icon fas fa-map-marker-alt"></i>
+          <span
+        class="location-suggestions__active-location"
+        id="programs-active-location"
+      >, </span>
+        <span class="se-form__button-inline">Change Location</span>
+  </div>
+  <div class="location-suggestions__form is-hidden">
+    <i class="location-suggestions__icon fas fa-map-marker-alt"></i>
+    <input
+      autocomplete="off"
+      id="location-suggestion-input"
+      class="location-suggestions__input"
+      type="text"
+      name=""
+      list="program-suggestions__list"
+      placeholder="Enter a location"
+      size="10"
+    >
+    <div class="se-form__dropdown location-suggestions__dropdown">
+      <ul
+        class="se-form__list"
+        id="location-suggestions-list"
+      >
+        <div class="se-form__list--item location-suggestions__current-location">
+          <img
+            src="/themes/custom/sportsengine/img/ui/current-location.svg"
+            class="se-form__list-item--icon"
+            loading="lazy"
+          />
+          <span>Current Location</span>
+        </div>
+        <h4 class="se-form__list--title">Suggested Locations</h4>
+      </ul>
+    </div>
+  </div>
+  <div class="location-suggestions__notice"><div class="se-notice is-hidden" tabindex="0">
+  <svg xmlns="http://www.w3.org/2000/svg" class="se-notice__icon" width="24" height="24" viewbox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="12" cy="12" r="12" fill="#B42846"/>
+    <path fill="#FFF" fill-rule="nonzero" d="M11 16v2h2v-2h-2zm0-10v9h2V6h-2z"/>
+  </g>
+</svg>
+  <span class="se-notice__tooltip">No results for entered location.</span>
+</div>
+
+</div>
+  
+</div>
+
+          </div>
+        </div>
+
+        <div class="row se-list--grid programs__list--grid"
+            data-sport-keys='[]'
+            data-program-type-ids='[]'
+            data-competition-level-ids='[]'
+            data-gender-keys='[]'
+            data-min-price=''
+            data-max-price=''
+            data-distance=''
+            data-listing-type=''
+            data-entity-organization-id=''
+            data-affiliation-id=''
+            data-credential-tag=''
+            data-listing-url='/search/listings'
+          >
+
+                              <div class="se-program-card__container col-xs-12 col-sm-6">
+      
+<div class="se-card__container se-program-card level-1" data-listing-type="program">
+  <a href="https://www.sportsengine.com/org/joe-dziedzic-hockey/program/joe-dziedzic-hockey-fall-2023-peewee-3-on-3" target="_self">
+    <div class="se-card__hero-container">
+      <div class="se-card__hero preview">
+                   <img src="https://www.sportsengine.com/ui_themes/assets/latest/images/portal/banners/ice-hockey_male_grade-school-2.jpg" />
+               </div>
+      <div class="se-card__hero-logo-container">
+        <img src="https://se-portal-production.s3.amazonaws.com/uploads/292/medium_2a6d91ea8dc3535d17bc9565f4669743.jpg" loading="lazy"/>
+      </div>
+    </div>
+    <div class="se-card__content">
+      <div class="se-card__header">
+                  <p class="text-league-title smaller-12">Joe Dziedzic Hockey</p>
+                <p class="text-program">Joe Dziedzic Hockey Fall 2023 Peewee 3 on 3</p>
+        <div class="row-sport">
+                                <p class="text-detail">Sports Offered</p>
+                                          <p class="smaller-14">Ice Hockey</p>
+                                            </div>
+        <p class="text-mileage smaller-12">About 3 miles from you</p>
+                <hr>
+                          <p class="text-league-details smaller-14">League or Season (Club, Association, Team) • Boys</p>
+                          <p class="text-dates smaller-12">
+            Jun 12, 2023             - 
+            Oct 16, 2023          </p>
+                                  <hr>
+              </div>
+      <div class="se-card__footer">
+        <div class="row">
+          <div class="col-xs-12">
+                          <h4>$300</h4>
+                                      <a class="text-links sign-up-link" href="https://jdhockey.sportngin.com/register/form/759119631" target="_self">Sign Up</a>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+    </div>
+                  <div class="se-program-card__container col-xs-12 col-sm-6">
+      
+<div class="se-card__container se-program-card level-1" data-listing-type="program">
+  <a href="https://www.sportsengine.com/org/minnesota-diving-academy/program/reverse-and-inward-diving-clinic" target="_self">
+    <div class="se-card__hero-container">
+      <div class="se-card__hero preview">
+                   <img src="https://www.sportsengine.com/ui_themes/assets/latest/images/portal/banners/diving_female_teen-2.jpg" />
+               </div>
+      <div class="se-card__hero-logo-container">
+        <img src="https://s3.amazonaws.com/se-portal-production/uploads/default/organization_placeholder.svg" loading="lazy"/>
+      </div>
+    </div>
+    <div class="se-card__content">
+      <div class="se-card__header">
+                  <p class="text-league-title smaller-12">Minnesota Diving Academy</p>
+                <p class="text-program">Reverse and Inward Diving Clinic</p>
+        <div class="row-sport">
+                                <p class="text-detail">Sports Offered</p>
+                                          <p class="smaller-14">Diving</p>
+                                            </div>
+        <p class="text-mileage smaller-12">About 2 miles from you</p>
+                <hr>
+                          <p class="text-league-details smaller-14">Training (Camp, Clinic, Class) • Co-ed</p>
+                          <p class="text-dates smaller-12">
+            Oct 4, 2023             - 
+            Oct 27, 2023          </p>
+                                  <hr>
+              </div>
+      <div class="se-card__footer">
+        <div class="row">
+          <div class="col-xs-12">
+                          <h4>$150</h4>
+                                      <a class="text-links sign-up-link" href="https://mndivingacademy.sportngin.com/register/form/249538629" target="_self">Sign Up</a>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+    </div>
+                  <div class="se-program-card__container col-xs-12 col-sm-6">
+      
+<div class="se-card__container se-program-card level-1" data-listing-type="program">
+  <a href="https://www.sportsengine.com/org/southeast-soccer-club/program/2023-late-fall-lil-dribblers" target="_self">
+    <div class="se-card__hero-container">
+      <div class="se-card__hero preview">
+                   <img src="https://www.sportsengine.com/ui_themes/assets/latest/images/portal/banners/soccer_coed_teen-1.jpg" />
+               </div>
+      <div class="se-card__hero-logo-container">
+        <img src="https://se-portal-production.s3.amazonaws.com/uploads/1078/medium_392038be426e16af8857a6de2cd3c505.png" loading="lazy"/>
+      </div>
+    </div>
+    <div class="se-card__content">
+      <div class="se-card__header">
+                  <p class="text-league-title smaller-12">Southeast Soccer Club</p>
+                <p class="text-program">2023 Late Fall Lil Dribblers</p>
+        <div class="row-sport">
+                                <p class="text-detail">Sports Offered</p>
+                                          <p class="smaller-14">Soccer</p>
+                                            </div>
+        <p class="text-mileage smaller-12">About 4 miles from you</p>
+                <hr>
+                          <p class="text-league-details smaller-14">League or Season (Club, Association, Team) • Boys, Girls, Co-ed</p>
+                          <p class="text-dates smaller-12">
+            Sep 1, 2023             - 
+            Nov 5, 2023          </p>
+                                  <hr>
+              </div>
+      <div class="se-card__footer">
+        <div class="row">
+          <div class="col-xs-12">
+                          <h4>$99</h4>
+                                      <a class="text-links sign-up-link" href="https://sesoccer.sportngin.com/register/form/363566222" target="_self">Sign Up</a>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+    </div>
+                  <div class="se-program-card__container col-xs-12 col-sm-6">
+      
+<div class="se-card__container se-program-card level-1" data-listing-type="program">
+  <a href="https://www.sportsengine.com/org/southeast-soccer-club/program/se-5-a-side-late-fall-2023" target="_self">
+    <div class="se-card__hero-container">
+      <div class="se-card__hero preview">
+                   <img src="https://www.sportsengine.com/ui_themes/assets/latest/images/portal/banners/soccer_coed_grade-school-1.jpg" />
+               </div>
+      <div class="se-card__hero-logo-container">
+        <img src="https://se-portal-production.s3.amazonaws.com/uploads/1078/medium_392038be426e16af8857a6de2cd3c505.png" loading="lazy"/>
+      </div>
+    </div>
+    <div class="se-card__content">
+      <div class="se-card__header">
+                  <p class="text-league-title smaller-12">Southeast Soccer Club</p>
+                <p class="text-program">SE 5-a-Side Late Fall 2023</p>
+        <div class="row-sport">
+                                <p class="text-detail">Sports Offered</p>
+                                          <p class="smaller-14">Soccer</p>
+                                            </div>
+        <p class="text-mileage smaller-12">About 4 miles from you</p>
+                <hr>
+                          <p class="text-league-details smaller-14">League or Season (Club, Association, Team) • Boys, Girls</p>
+                          <p class="text-dates smaller-12">
+            Sep 4, 2023             - 
+            Nov 12, 2023          </p>
+                                  <hr>
+              </div>
+      <div class="se-card__footer">
+        <div class="row">
+          <div class="col-xs-12">
+                          <h4>$99</h4>
+                                      <a class="text-links sign-up-link" href="https://sesoccer.sportngin.com/register/form/242390879" target="_self">Sign Up</a>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+    </div>
+          
+                  </div>
+
+        <div class="row programs__list--view-more">
+            <div class="view-more col-xs-12 end-xs contrast-content">
+    <a class="view-more_link" href="https://www.sportsengine.com/search/listings?latitude=&amp;longitude=&amp;sport_keys[]=">View more&nbsp;<i class="view-more_arrow fas fa-chevron-right arrow"></i></a>
+  </div>
+
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4 contrast-content">
+        
+
+  <h3 class="se-listing__list-title">Sports articles</h3>
+<ul class="se-listing__list ">
+                <li class="se-listing__list-entry">
+<a class="se-listing se-card__link-container" href="/safety/how-your-organization-protecting-youth-athletes-abuse" target="_self" data-content-type="article_general">
+      <div class="se-listing__preview">
+      <div class="se-listing__image">
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_300_w/public/images/How%20is%20Your%20Organization%20Protecting%20Youth%20Athletes%20from%20Abuse%20%281%29.jpg.webp?itok=Aw0TcgTw 1x" media="(min-width: 0px)" type="image/webp"/>
+                  <img src="/sites/default/files/styles/content_300_w/public/images/How%20is%20Your%20Organization%20Protecting%20Youth%20Athletes%20from%20Abuse%20%281%29.jpg?itok=Cc-gOrl_" alt="How is Your Organization Protecting Youth Athletes from Abuse?" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      </div>
+    </div>
+    <div class="se-listing__details">
+    
+
+    <h6 class="se-listing__title"><span>How is Your Organization Helping Protect Youth Athletes from Abuse?</span>
+</h6>
+    <div class="se-listing__byline">
+                    <h5 class="se-listing__author"><span>by </span>Marie Fitzgerald</h5>
+                          <h5 class="se-listing__date">October 02, 2023</h5>
+          </div>
+              <p class="se-listing__teaser">Learn how to give families access to industry standard abuse prevention training at your next registration.</p>
+        </div>
+</a>
+<hr class="se-listing__divider"/>
+
+</li>
+                                  <li class="se-listing__list-entry">
+<a class="se-listing se-card__link-container" href="/club-admin/hq/find-your-fit-sportsengine-hq-express-vs-premium-package" target="_self" data-content-type="article_general">
+      <div class="se-listing__preview">
+      <div class="se-listing__image">
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_300_w/public/images/shutterstock_2018564699.jpg.webp?itok=0CB5ENvT 1x" media="(min-width: 0px)" type="image/webp"/>
+                  <img src="/sites/default/files/styles/content_300_w/public/images/shutterstock_2018564699.jpg?itok=0R9nHwJD" alt="Young happy female coach looking at camera" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      </div>
+    </div>
+    <div class="se-listing__details">
+    
+
+    <h6 class="se-listing__title"><span>Find Your Fit: SportsEngine HQ Express vs. Premium Package</span>
+</h6>
+    <div class="se-listing__byline">
+                    <h5 class="se-listing__author"><span>by </span>Kelsey Erwin</h5>
+                          <h5 class="se-listing__date">September 21, 2023</h5>
+          </div>
+              <p class="se-listing__teaser">What&#039;s the best sports management software package for your organization?</p>
+        </div>
+</a>
+<hr class="se-listing__divider"/>
+
+</li>
+                                  <li class="se-listing__list-entry">
+<a class="se-listing se-card__link-container" href="/club-admin/hq/upcoming-season-mgt-releases" target="_self" data-content-type="article_general">
+      <div class="se-listing__preview">
+      <div class="se-listing__image">
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_300_w/public/images/Release%20%281152%20%C3%97%20768%20px%29.png.webp?itok=jFdcQSq- 1x" media="(min-width: 0px)" type="image/webp"/>
+                  <img src="/sites/default/files/styles/content_300_w/public/images/Release%20%281152%20%C3%97%20768%20px%29.png?itok=HqOs0DDg" alt="Season Mgt - Upcoming releases" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      </div>
+    </div>
+    <div class="se-listing__details">
+    
+
+    <h6 class="se-listing__title"><span>Upcoming Season Management Releases in SportsEngine HQ</span>
+</h6>
+    <div class="se-listing__byline">
+                    <h5 class="se-listing__author"><span>by </span>Marie Fitzgerald</h5>
+                          <h5 class="se-listing__date">September 18, 2023</h5>
+          </div>
+              <p class="se-listing__teaser">Get a glimpse into upcoming releases within our Season Management tools.</p>
+        </div>
+</a>
+<hr class="se-listing__divider"/>
+
+</li>
+                                  <li class="se-listing__list-entry">
+<a class="se-listing se-card__link-container" href="/club-admin/hq/new-mobile-app-release" target="_self" data-content-type="article_general">
+      <div class="se-listing__preview">
+      <div class="se-listing__image">
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_300_w/public/images/970x250%20AM-Signature-Pre-Release.png.webp?itok=R1hp2fzT 1x" media="(min-width: 0px)" type="image/webp"/>
+                  <img src="/sites/default/files/styles/content_300_w/public/images/970x250%20AM-Signature-Pre-Release.png?itok=3WHtgum4" alt="new mobile app banner" typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      </div>
+    </div>
+    <div class="se-listing__details">
+    
+
+    <h6 class="se-listing__title"><span>Explore the New and Improved SportsEngine Mobile App</span>
+</h6>
+    <div class="se-listing__byline">
+                    <h5 class="se-listing__author"><span>by </span>Marie Fitzgerald</h5>
+                          <h5 class="se-listing__date">September 18, 2023</h5>
+          </div>
+              <p class="se-listing__teaser">Team management just got a little bit better. Introducing the latest enhancements to the SportsEngine mobile app</p>
+        </div>
+</a>
+<hr class="se-listing__divider"/>
+
+</li>
+                                  <li class="se-listing__list-entry">
+<a class="se-listing se-card__link-container" href="/play/club-admin/your-live-youth-sports-broadcasting-cheat-sheet" target="_self" data-content-type="article_general">
+      <div class="se-listing__preview">
+      <div class="se-listing__image">
+            <div><article>
+  
+      
+            <div>    <picture>
+                  <source srcset="/sites/default/files/styles/webp_300_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png.webp?itok=01JPT31y 1x" media="(min-width: 0px)" type="image/webp"/>
+                  <img src="/sites/default/files/styles/content_300_w/public/images/Roadmap%20for%20Success_Play%20Covers%20%281152%20%C3%97%20768%20px%29%20%281%29.png?itok=0cvxIGnv" alt="Your Live Youth Sports Broadcasting Cheat Sheet " typeof="foaf:Image" loading="lazy"/>
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      </div>
+    </div>
+    <div class="se-listing__details">
+    
+
+    <h6 class="se-listing__title"><span>Your Live Youth Sports Broadcasting Cheat Sheet </span>
+</h6>
+    <div class="se-listing__byline">
+                    <h5 class="se-listing__author"><span>by </span>Marie Fitzgerald</h5>
+                          <h5 class="se-listing__date">September 15, 2023</h5>
+          </div>
+              <p class="se-listing__teaser">Now that you&#039;ve selected a video broadcast provider, here are some pro tips to ensure a successful streaming event.</p>
+        </div>
+</a>
+<hr class="se-listing__divider"/>
+
+</li>
+                    </ul>
+<div class="row">
+    <div class="view-more col-xs-12 end-xs contrast-content">
+    <a class="view-more_link" href="/articles/more/69,214/article_curated+general_article_page+video_article_page">View more&nbsp;<i class="view-more_arrow fas fa-chevron-right arrow"></i></a>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+          </div>
+  
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+
+    
+    
+  </main>
+
+  
+  <div class="se-footer">
+
+        <div class="se-footer-content">
+      <div class="logo-links-container row col-xs-12 center-xs">
+        <div class="logo-social-container col-xs-12 col-lg-3 col-xl-4 center-xs">
+          <div class="footer-logo">
+                          <div id="block-sebranding-2--2">
+  
+    
+      
+            <div class="se-text-editor" ><p><div data-embed-button="media" data-entity-embed-display="view_mode:media.hero_image" data-entity-embed-display-settings="[]" data-entity-type="media" data-entity-uuid="d6abe817-684a-4ba1-9981-ca217382471e" data-langcode="en" class="embedded-entity"><article><div>  <img width="" height="" src="/sites/default/files/images/SportsEngine_PRIMARY_LOGO_RGB_pos.svg" alt="SportsEngine Primary Logo" loading="lazy" typeof="foaf:Image" /></div>
+      
+  </article></div>
+</p>
+</div>
+      
+  </div>
+
+                      </div>
+          <div class="footer-social">
+            <div id="block-socialmediawithtext--2" class="row center-xs">
+  
+    
+      
+            <div class="se-text-editor" ><h5>Connect with Us</h5>
+</div>
+      
+    <div class="col-xs-12">
+      <a class="pl-nav__link--social" href="https://www.facebook.com/sportsengine">
+        <div class="fa-social-media-bg-circle facebook-circle">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </a>
+      <a class="pl-nav__link--social" href="https://www.twitter.com/sportsengine">
+       <div class="fa-social-media-bg-circle twitter-circle">
+          <i class="fab fa-twitter"></i>
+        </div>
+      </a>
+      <a class="pl-nav__link--social" href="https://www.youtube.com/@SportsEngine">
+        <div class="fa-social-media-bg-circle youtube-circle">
+          <i class="fab fa-youtube"></i>
+        </div>
+      </a>
+      <a class="pl-nav__link--social" href="https://www.instagram.com/sportsengine/">
+        <div class="fa-social-media-bg-circle instagram-circle">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+      <a class="pl-nav__link--social" href="https://www.tiktok.com/@nbcsportsengine">
+        <div class="fa-social-media-bg-circle tiktok-circle">
+          <i class="fab fa-tiktok"></i>
+        </div>
+      </a>
+      <a class="pl-nav__link--social" href="https://www.linkedin.com/company/405889/">
+        <div class="fa-social-media-bg-circle linkedin-circle">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+
+          </div>
+        </div>
+        <div class="footer-links col-xs-12 col-lg-9 col-xl-8 start-xs">
+                      <nav role="navigation" aria-labelledby="block-solutions-footer-menu" id="block-solutions-footer">
+            
+  <h2 class="visually-hidden" id="block-solutions-footer-menu">HQ Footer</h2>
+  
+
+        
+              <ul role="menu"  id="menu" class="footer-links inc-footer-links">
+              <li role="menuitem" >
+        <span>Capabilities</span>
+                                <ul>
+              <li role="menuitem" >
+        <a href="/solutions/capabilities/finance/financials-and-payments" data-drupal-link-system-path="node/10441">Financials &amp; Payments</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/finance/advanced-reporting" data-drupal-link-system-path="node/10457">Advanced Reports</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/finance/registration" data-drupal-link-system-path="node/10458">Registration</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/finance/memberships" data-drupal-link-system-path="node/10460">Memberships</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/finance/eligibility" data-drupal-link-system-path="node/10462">Eligibility</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/communication/team-mobile-app" data-drupal-link-system-path="node/10502">Team Mobile App</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/communication/sports-websites" data-drupal-link-system-path="node/10678">Websites</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/communication/messages-and-newsletters" data-drupal-link-system-path="node/10676">Messages &amp; Newsletters</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/organize/clubs" data-drupal-link-system-path="node/10552">Clubs</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/organize/leagues" data-drupal-link-system-path="node/10550">Leagues</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/organize/tournaments" data-drupal-link-system-path="node/10684">Tournaments</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/eligibility/background-checks" data-drupal-link-system-path="node/10499">Background Checks</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/eligibility/safety-training" data-drupal-link-system-path="node/10554">Safety Training</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/eligibility/insurance-waivers" data-drupal-link-system-path="node/10668">Insurance &amp; Waivers</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/promotion/sportsengine-listings" data-drupal-link-system-path="node/10480">SportsEngine Listings</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/promotion/sponsorship-and-fundraising" data-drupal-link-system-path="node/10483">Sponsorships &amp; Fundraising</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/promotion/apparel-and-uniforms" data-drupal-link-system-path="node/10489">Apparel &amp; Uniforms</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/capabilities/promotion/design-center" data-drupal-link-system-path="node/10486">Design Center</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li role="menuitem" >
+        <span>Sports</span>
+                                <ul>
+              <li role="menuitem" >
+        <a href="/solutions/by-sport/soccer" data-drupal-link-system-path="node/10495">Soccer</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/by-sport/baseball" data-drupal-link-system-path="node/10812">Baseball</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/by-sport/hockey" data-drupal-link-system-path="node/10813">Hockey</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/by-sport/basketball" data-drupal-link-system-path="node/10814">Basketball</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/by-sport/volleyball" data-drupal-link-system-path="node/10815">Volleyball</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/by-sport/wrestling" data-drupal-link-system-path="node/10817">Wrestling</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/by-sport/football" data-drupal-link-system-path="node/10818">Football</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/by-sport/lacrosse" data-drupal-link-system-path="node/10819">Lacrosse</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/by-sport/softball" data-drupal-link-system-path="node/10820">Softball</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/by-sport/golf" data-drupal-link-system-path="node/10821">Golf</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/by-sport/tennis" data-drupal-link-system-path="node/10822">Tennis</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li role="menuitem" >
+        <span>Resources</span>
+                                <ul>
+              <li role="menuitem" >
+        <a href="/solutions/resources/contact" data-drupal-link-system-path="node/10507">Contact</a>
+              </li>
+          <li role="menuitem" >
+        <a href="https://www.sportsengine.com/" target="_blank">Sports Directory</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/resources/community" data-drupal-link-system-path="node/10811">Community</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/resources/customer-stories-and-reviews" data-drupal-link-system-path="node/10505">Customer Stories &amp; Reviews</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/resources/competitor-comparison" data-drupal-link-system-path="node/10506">Competitor Comparison</a>
+              </li>
+          <li role="menuitem" >
+        <a href="https://developer.sportsengine.com/" target="_blank">Developers</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/solutions/resources/security" data-drupal-link-system-path="node/10508">Security</a>
+              </li>
+          <li role="menuitem" >
+        <a href="https://status.sportsengine.com/" target="_blank">Status</a>
+              </li>
+          <li role="menuitem" >
+        <a href="/corp" target="_blank" data-drupal-link-system-path="node/148">Company</a>
+              </li>
+          <li role="menuitem" >
+        <a href="https://help.sportsengine.com/" target="_blank">Support</a>
+              </li>
+          <li role="menuitem" >
+        <a href="https://app.sportngin.com/user/welcome" target="_blank">SportsEngine Account Login</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+                  </div>
+      </div>
+    </div>
+              <hr/>
+    
+        <div class="legal-footer row col-xs-12 center-xs">
+      <div id="block-copyrightlegalfooter--2">
+        <p class="text-align-center">©2023 SportsEngine, Inc.&nbsp;The Home of Youth Sports. All&nbsp;Rights&nbsp;Reserved.<br/>
+          <a href="/terms-and-conditions">UPDATED - Terms and Conditions</a>&nbsp;/&nbsp;<a
+            href="https://www.nbcuniversal.com/privacy/cookies#accordionheader2"
+            target="_blank"
+          >Ad Choices
+          </a>&nbsp;/&nbsp;<a href="https://www.nbcuniversal.com/privacy?intake=SportsEngine">Privacy Policy</a>&nbsp;&nbsp;<br/>
+          <button
+            class="ot-sdk-show-settings"
+            id="ot-sdk-btn"
+          >Your&nbsp;Privacy&nbsp;Choices
+          </button>
+          <a href="https://www.nbcuniversal.com/privacy/california-consumer-privacy-act?intake=SportsEngine">CA&nbsp;Notice</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+  </div>
+
+
+<script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/10233","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","currentQuery":{"domain_source":"SSUPLAY","utm_campaign":"PANTHEON_STRIPPED","utm_medium":"PANTHEON_STRIPPED","utm_source":"PANTHEON_STRIPPED","utm_term":"PANTHEON_STRIPPED"}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"nodeStatus":"1","mParticle":{"depth1":"SportsEngine","depth2":"page","depth3":"HQ | Home","depth4":"10233","contentType":"page","contentTopic":"","contentEntityOrganization":"","environment":"production"},"env":"live","geolocationAPIKey":"AIzaSyC3O3yc1pmScWcKhTbiQXXuFt0OvcHP9to","user":{"uid":0,"permissionsHash":"93dd3a8b0bbdd011c5900c65efa2d86ad38b2cd034874121cb70b55491e8d798"}}</script>
+<script src="/sites/default/files/js/js_0oofJrYzHoZDooiIftsGsh0pWTVQmGpnuW-UIW8AZYY.js"></script>
+<script src="https://kit.fontawesome.com/6342be7dc2.js"></script>
+<script src="/sites/default/files/js/js__MF3WVZfNjtRkG5ZKojSVeqI2uafxvjO4kA7ckPjppY.js"></script>
+</js-bottom-placeholder>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ecc110ec74","applicationID":"242419238","transactionName":"Y1VSZEIFWhJTUUYIXFofcVNEDVsPHXZAFENVXGxeXwBRPXFdXBVBW1xcVUI4eg5WV2QIVkNzX15EFlsNXldATA1CWVVH","queueTime":0,"applicationTime":2362,"atts":"TxJREgofSRw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

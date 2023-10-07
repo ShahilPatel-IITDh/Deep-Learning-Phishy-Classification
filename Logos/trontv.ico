@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Load our utilities and css -->
+    <script type="text/javascript" src="../../smartUtil.js"></script>
+    <script type="text/javascript" src="../../dist/typedUtils.js"></script>
+    <script type="text/javascript" src="../../smartBench.js"></script>
+    <script type="text/javascript" src="/assets/js/base64.js"></script>
+    <script type="text/javascript" src="/assets/js/sha256.min.js"></script>
+    <script type="text/javascript" src="/assets/js/yaml.min.js"></script>
+
+    <!-- Load stylesheets -->
+    <link href="/assets/css/video.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="/assets/css/content-detail.css" rel="stylesheet">
+
+    <!-- Google ima -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modules/video.js/dist/video-js.min.css">
+    <link rel="stylesheet" href="modules/videojs-contrib-ads/dist/videojs.ads.css" />
+    <link rel="stylesheet" href="dist/videojs.ima.css" />
+    <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+    <script src="modules/video.js/dist/video.min.js"></script>
+    <script src="modules/videojs-contrib-ads/dist/videojs.ads.min.js"></script>
+    <script src="dist/videojs.ima.js"></script>
+
+    <!-- City sking for vjs -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
+
+
+    <!-- polyfill for URL()-->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+    <script type="text/javascript" src="/assets/js/fetch.umd.js"></script>
+    <script src="https://unpkg.com/core-js-bundle@3.14.0/minified.js"></script>
+
+    <!--Preroll Pod-->
+    <script type="text/javascript" src="ima.js"></script>
+
+    <!--content rail-->
+    <script type="text/javascript" src="/assets/js/content-rail.js"></script>
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="trending.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-default justify-content-center fixed-top">
+  <img src="/assets/images/TronTV_Logo_White.svg" class="logo"/>
+</nav>
+<div id="lb">
+    <iframe id="lbIframe"></iframe>
+</div>
+<div class="container main">
+  <div class="tron-player-container" id="tron-player-container">
+    <div class="tron-player-aspect-container">
+    </div>
+    <div class="tron-player" id="tron-player">
+      <video id="content_video" class="video-js vjs-fill vjs-theme-city vjs-big-play-centered">
+  </video>
+    </div>
+  </div>
+  <div class="video-details" id="video-details">
+    <div id="placeholders">
+      <div class="placeholder title">
+        <div class="animated-background"></div>
+      </div>
+      <div class="placeholder description">
+        <div class="animated-background"></div>
+      </div>
+      <div class="placeholder description">
+        <div class="animated-background"></div>
+      </div>
+      <div class="placeholder description">
+        <div class="animated-background"></div>
+      </div>
+    </div>
+  </div>
+  <div class="cr-section">
+    <div class="cr-whitewrap">
+
+        <div id="cr_container">
+            <button class="deals-scroll-left deals-paddle" style="display: none;">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                    </path>
+                </svg>
+            </button>
+
+            <div id="cr-flexbox" class="cr-flexbox">
+            </div>
+
+            <button class="deals-scroll-right deals-paddle" style="display: none;">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p class="fw-bold">
+    <a id="privacy-preferences">Privacy Preferences</a>
+    <a href="https://www.rainberrytv.com/pages/privacy-policy/a/privacy-policy" class="text-decoration-none text-white">Privacy Policy</a>
+  </p>
+  <p class="mb-0">&#169; <script>document.write(new Date().getFullYear())</script> TRONTV.COM</p>
+</div>
+</body>
+</html>

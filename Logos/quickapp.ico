@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+  <meta name="applicable-device" content="pc,mobile" />
+  <meta name="Keywords" content="快应用,快应用联盟,quickapp,轻应用,手机小程序,直达应用,秒开应用,车联网应用,车机应用,tier1,IOT应用">
+  <meta name="description" content="快应用是移动互联网新型应用生态,由市面主流安卓手机厂商共建的生态标准和平台,降低了开发者的开发成本,手机系统深度整合,为用户提供更加场景化的体验;快应用无需安装、即点即用、具备传统APP完整的应用体验,同时组建IOT工作小组,如车联网、手表等,实现多终端互通互联。">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="format-detection" content="telephone=no">
+  <base href="/" />
+  <!-- 阿里图标 -->
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3349532_0hbahtvg93yr.css">
+  <!-- mackdown -->
+  <link rel="stylesheet" href="./assets/editor.md/css/editormd.min.css"/>  
+  <!-- 富文本代码高亮 -->
+  <link rel="stylesheet" href="./assets/css/prism.css"/>
+  <title>无需安装，即点即用-厂商联盟官方网站</title>
+  <!--[if lt IE 9]>
+  <script src="./assets/js/respond.min.js"></script>
+  <script src="./assets/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script>
+    var _hmt = _hmt || [];//百度统计全局变量，误删
+    ! function (n) {
+      var storageTest = function (storage) { //测试localstorage是否存在，是否开启无痕模式
+        if (!!storage) {
+          try {
+            storage.setItem("key", "value");
+            storage.removeItem("key");
+            return true;
+          } catch (e) {
+            return false;
+          }
+        } else {
+          return false;
+        }
+      }
+      if (location.search.indexOf('pc') > -1 || location.pathname.length > 1) {
+        return false;
+      }
+      if (storageTest(window.localStorage)) {
+        document.referrer.indexOf("m.") != -1 ? localStorage.setItem('checkoutPC', 'true') : void 0;
+        var checkoutPC = localStorage.getItem("checkoutPC");
+        if (checkoutPC == "true") {
+          return;
+        } else {
+          JumpMible(window);
+        }
+      } else {
+        JumpMible(window);
+      }
+    }(window);
+
+    function JumpMible(n) {
+      var e = n.navigator.userAgent.toLocaleLowerCase(),
+        r = /iphone|android|symbianos|windows\sphone/g,
+        c = /micromessenger|qq\/[\d.]+/i;
+      if (c.test(e) || r.test(e) && window.location.href.indexOf('docCenter') == -1) {
+        if (window.location.host == "www.quickapp.cn") {
+          window.location.href = "https://m.quickapp.cn";
+        } else {
+          var hostAry = window.location.host.split(".");
+          hostAry.splice(1, 0, "m");
+          location.href = window.location.protocol + '//' + hostAry.join(".");
+        }
+      }
+    }
+  </script>
+<link rel="stylesheet" href="styles.85fe6c1f943968399804.css"></head>
+
+<body id="body">
+  <app-root></app-root>
+<script src="runtime-es2015.2ba3522c8692d01212a3.js" type="module"></script><script src="polyfills-es2015.027c3b2cef9ba99e6b46.js" type="module"></script><script src="runtime-es5.3f286e6d9c304f61afd5.js" nomodule></script><script src="polyfills-es5.215a6c093b06fd7fc2ae.js" nomodule></script><script src="scripts.a6ef074ece4c9ae4066b.js"></script><script src="main-es2015.60ba302c5adc734af5b5.js" type="module"></script><script src="main-es5.083b5c937f403520d719.js" nomodule></script></body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="appfavicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<head>
+	 <!--include the following meta tag to make chrome dev tools recognize media queries: -->
+	 <meta name="viewport" content="width=device-width">
+	<style>
+		.splashScreen {
+			width: 100%;
+			object-fit: contain;
+		}
+		.splashScreen-content--container{
+			height: 100%;
+		}
+
+		@media only screen and (min-width: 1025px) {
+		/* For desktop */
+
+			.splashScreen-content--info__mobile{
+				display: none;
+			}
+
+			.splashScreen-content--info {
+				position: absolute;
+				top: 271px;
+				left: 150px;
+			}
+			.splashScreen-content--bgImage_mobile{
+				display: none;
+			}
+			.splashScreen-content--bgImage_desktop{
+				height: inherit;
+				width: inherit;
+			}
+			.splashScreen-content--info > .content{
+				font-family: 'Roboto';font-size: 24px;letter-spacing: 0.6px;color: #333333;
+			}
+			.splashScreen-content--info > .title{
+				font-family: 'Roboto';font-size: 46px; font-weight: bold;
+				letter-spacing: 1.15px;color: #333333;
+			}
+			.splashScreen-content--info > .btn-appleStore,.splashScreen-content--info > .btn-playStore{
+				width: 239px;
+				height: 80px;
+			}
+			.splashScreen-footer--container > div{
+				padding-top: 84px;
+				text-align: center;
+				vertical-align: middle;
+			}
+			.splashScreen-header--bgImage{
+				width: auto;
+				height: auto;
+				padding: 37px 40px 37.81px 40px;
+			}
+		}
+
+		@media only screen and (max-width: 1024px) {
+		/* For mobile phones: */
+
+			.splashScreen-content--info__desktop{
+				display: none;
+			}
+			.splashScreen-header--container{
+				text-align: center;
+			}
+			.splashScreen-content--info {
+				text-align: center;
+				padding:54px 20px 17px 20px;
+				background: #F7F7F7 0% 0% no-repeat padding-box;
+			}
+			.splashScreen-content--bgImage_mobile{
+				height: inherit;
+				width: inherit;
+			}
+			.splashScreen-content--bgImage_desktop{
+				display: none;
+			}
+			
+			.splashScreen-content--info > .title{
+				font-family: 'Roboto';font-size: 24px; font-weight: bold;color: #333333;
+				letter-spacing: 0.6px;
+			}
+			.splashScreen-content--info > .content{
+				font-family: 'Roboto';font-size: 16px;letter-spacing: 0.4px;color: #333333;
+			}
+			.splashScreen-content--info > .btn-appleStore,.splashScreen-content--info > .btn-playStore{
+				width: 119px;
+				height: 40px;
+			}
+			.splashScreen-footer--container > div{
+				padding-top: 37px;
+				text-align: center;
+				padding-left: 32px;
+				vertical-align: middle;
+				padding-right: 23px;
+			}
+			.splashScreen-header--bgImage{
+				width: auto;
+				height: auto;
+				padding: 20px 40px;
+			}
+
+		}
+
+		.splashScreen-footer--container{
+			background-color: #333333;
+			height: 205px;
+		}
+	
+		.splashScreen-footer--container > div > .footer-label,.splashScreen-footer--container > div > .footer-label .termNCondition {
+			color:  #FFFFFF;
+			font-family: 'Roboto';font-size: 14px;letter-spacing: 0.35px;
+
+		}
+		.btn-appleStore:hover,.btn-playStore:hover{
+			cursor: pointer;
+		}
+
+	
+	</style>
+	<title>Life Fitness Mobile</title>
+</head>
+<body>
+
+	<div class="splashScreen splashScreen-header--container">
+		<img class="splashScreen-header--bgImage" border="0" src="Halo_LFconnect_Logo.svg">
+	</div>
+	<div class="splashScreen splashScreen-content--container">
+		<img class="splashScreen-content--bgImage_desktop" border="0" src="Halo_LFconnect_SplashScreen_vf2.png">
+	
+		<div class="splashScreen-content--info splashScreen-content--info__desktop">
+			<label class="title">TAKE CONTROL OF YOUR <br>WORKOUTS ANYWHERE</label>
+			<br><br><label class="content">Set goals. Track your workouts.</label>
+			<br><br><label class="content">The <b>Life Fitness Connect</b> app is available now on:</label>
+			<br><br><img class="btn-appleStore" border="0" src="Halo_LFconnect_button_Appstore.png" onclick="gotoAppleStore();"> &nbsp;
+			<img class="btn-playStore" border="0" src="Halo_LFconnect_button_Playstore.png" onclick="gotoPlayStore();">
+		</div>
+		<div class="splashScreen-content--info splashScreen-content--info__mobile">
+			<label class="title">TAKE CONTROL OF YOUR <br>WORKOUTS ANYWHERE</label>
+			<br><br><label class="content">Set goals. Track your workouts.</label>
+			<br><br><label class="content">The <b>Life Fitness Connect</b> app is available now on:</label>
+			<br><br><img class="btn-appleStore" border="0" src="Halo_LFconnect_button_Appstore.png" onclick="gotoAppleStore();"> &nbsp;
+			<img class="btn-playStore" border="0" src="Halo_LFconnect_button_Playstore.png" onclick="gotoPlayStore();">
+		</div>
+		<img class="splashScreen-content--bgImage_mobile" border="0" src="Halo_LFconnect_SplashScreen_vf2_mobile.png">
+	</div>
+	<div class="splashScreen splashScreen-footer--container">
+		<div>
+			<label class="footer-label">@2021 Life Fitness <a class="termNCondition" href="https://www.halo.fitness/web/tos.jsp?locale=en_US">Terms of Use and Privacy Policy</a>. All Rights Reserved.</label>
+		</div>
+	</div>
+	
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script>
+	function gotoHaloFitness () {
+  		window.location.href = 'https://www.halo.fitness';
+	}
+	
+	function gotoAppleStore(){
+		window.location.href = 'https://apps.apple.com/us/app/lfconnect/id610127644?ls=1';
+	}
+	
+	function gotoPlayStore(){
+		window.location.href = 'https://play.google.com/store/apps/details?id=com.lf.lfvtandroid';
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,876 @@
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Free open source IoT OS and development tools from Arm | Mbed</title>
+    
+<meta name="description" content="Mbed OS is the fastest way to build IoT products with Arm processors">
+<meta name="google-site-verification" content="4w015E3pO4RbHXh8zZYwyK-Pxe1DaAchvE_LTVy_G8I" />
+<meta name="google-site-verification" content="KZ4q_DPDD_JJlvx650a1PyMDaaDJeq5A-9uflbhny80" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1447836-8');
+ga('require', 'GTM-WXMLD4S')
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl+'&gtm_auth=SMYNPwM0ICsV00c1ZHETqQ&gtm_preview=env-2&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M6FZ495');</script>
+
+
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:971746,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/static/img/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/static/img/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/static/img/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/static/img/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/static/img/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/static/img/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/static/img/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/static/img/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/static/img/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/static/img/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/static/img/favicons/manifest.json">
+<link rel="shortcut icon" href="/static/img/favicon.ico?">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/static/img/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+
+<link rel="stylesheet" href="/static/CACHE/css/output.811e2930ab34.css" type="text/css">
+
+    
+    <link rel="stylesheet" href="/static/main.a04570cfc985.css">
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6FZ495&gtm_auth=3a8Vwkp5SsDiYq6tYR1ObQ&gtm_preview=env-6&gtm_cookies_win=x"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="flex-container flex-dir-column fill-viewport-height">
+        
+<div>
+    
+
+
+
+
+
+
+
+
+<div class="mbed-nav">
+    <div class="mbed-nav__mobile-menu-control">
+        <i class="mbed-nav__mobile-menu-control-open fas fa-bars fa-fw"></i>
+        <i class="mbed-nav__mobile-menu-control-close fas fa-times is-hidden fa-fw"></i>
+        <i class="mbed-nav__mobile-menu-control-back fas fa-angle-left is-hidden fa-fw"></i>
+    </div>
+    <div class="mbed-nav__logo">
+        <a href="https://os.mbed.com">
+            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#logo"></use></svg>
+        </a>
+    </div>
+    <div class="mbed-nav__menu">
+
+        <!-- Main menu -->
+        <nav class="mbed-nav__main-menu">
+            <ul class="mbed-nav__dropdown-menu">
+                <li class="has-dropdown">
+                    Overview
+
+                    <div class="mbed-nav__dropdown-menu-content">
+
+                        <!-- Overview dropdown menu -->
+                        <div class="mbed-nav__overview-menu">
+                            <section>
+                                <p>Operating system</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://os.mbed.com/mbed-os/" class="mbed-nav__icon-link-detail">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_os"></use></svg>
+                                            <div>
+                                                <p>Mbed OS</p>
+                                                <p>The open source OS for Cortex-M devices</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <p>Development tools</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.keil.arm.com/mbed/?utm_source=mbed_com&utm_medium=compiler_button&utm_campaign=mbed_com_promo" class="mbed-nav__icon-link-detail">
+                                             <svg><use href="/static/img/keil_studio_icon.2c56c28014c6.svg?#keil_studio_icon"></use></svg>
+                                            <div>
+                                                <p>Keil Studio Cloud</p>
+                                                <p>Arm's IDE for IoT, embedded and Mbed development</p>
+                                            </div>
+                                         </a>
+                                     </li>
+                                    <li>
+                                        <a href="https://os.mbed.com/studio/" class="mbed-nav__icon-link-detail">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_studio"></use></svg>
+                                            <div>
+                                                <p>Mbed Studio</p>
+                                                <p>Download the desktop IDE for Mbed OS</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://os.mbed.com/docs/mbed-os/latest/quick-start/offline-with-mbed-cli.html" class="mbed-nav__icon-link-detail">
+
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_cli"></use></svg>
+                                            <div>
+                                               <p>Mbed CLI</p>
+                                               <p>Command line access to Mbed tools and services</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <p>Security and Connectivity</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://tls.mbed.org" class="mbed-nav__icon-link-detail">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_tls_crypto"></use></svg>
+                                            <div>
+                                                <p>Mbed TLS and Mbed Crypto</p>
+                                                <p>Industry standard TLS stack and crypto library</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://os.mbed.com/connectivity-technologies/" class="mbed-nav__icon-link-detail">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#connectivity"></use></svg>
+                                            <div>
+                                                <p>Connectivity</p>
+                                                <p>BLE, WiFi, Cellular, LoRaWAN and more</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    Hardware
+
+                    <!-- Hardware dropdown menu -->
+                    <div class="mbed-nav__dropdown-menu-content">
+                        <div class="mbed-nav__hardware-dropdown">
+                            <ul class="mbed-nav__hardware-menu">
+                                <li>
+                                    <a href="https://os.mbed.com/platforms/" class="mbed-nav__icon-link-detail">
+                                        <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#boards"></use></svg>
+                                        <div>
+                                            <p>Boards</p>
+                                            <p>Build your Mbed projects with development boards for Arm Cortex processors and MCUs</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/modules/" class="mbed-nav__icon-link-detail">
+                                        <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#modules"></use></svg>
+                                        <div>
+                                            <p>Modules</p>
+                                            <p>Modules include a MCU, connectivity and onboard memory, making them ideal for designing IoT products for mass production</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/components/" class="mbed-nav__icon-link-detail">
+                                        <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#components"></use></svg>
+                                        <div>
+                                            <p>Components</p>
+                                            <p>The component database hosts libraries for different sensors, actuators, radios, inputs, middleware and IoT services</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/hardware/" class="mbed-nav__icon-link-detail">
+                                        <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#hardware_overview"></use></svg>
+                                        <div>
+                                            <p>Hardware overview & Mbed Enabled</p>
+                                            <p>Learn about hardware support for Mbed, as well as the Mbed Enabled program, which identifies Mbed compatible products</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/docs/mbed-os/latest/porting/arm-mbed-hdk.html" class="mbed-nav__icon-link-detail">
+                                        <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_hdk"></use></svg>
+                                        <div>
+                                            <p>Mbed HDK</p>
+                                            <p>Reference designs, schematics and board layouts to develop production hardware and Mbed-compatible development boards</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+                <li><a href="https://os.mbed.com/code/">Code</a></li>
+                <li class="has-dropdown">
+                    Documentation
+
+                    <!-- Documentation dropdown menu -->
+                    <div class="mbed-nav__dropdown-menu-content">
+                        <div class="mbed-nav__documentation-dropdown">
+                            <ul class="mbed-nav__documentation-menu">
+                                <li>
+                                    <a href="https://os.mbed.com/docs/mbed-os/">Mbed OS</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://developer.arm.com/documentation/102497/latest/Arm-Keil-Studio-Cloud">
+                                        Keil Studio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/docs/mbed-studio/">Mbed Studio</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="https://os.mbed.com/built-with-mbed/">Case studies</a></li>
+                <li class="has-dropdown">
+                    Community
+
+                    <!-- Community dropdown menu -->
+                    <div class="mbed-nav__dropdown-menu-content">
+                        <div class="mbed-nav__community-dropdown">
+                            <ul class="mbed-nav__community-menu">
+                                <li>
+                                    <a href="https://forums.mbed.com">Forum</a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/docs/mbed-os/latest/contributing/index.html">Contribute</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/playlist?list=PLKjl7IFAwc4R4plIZe4IuHlsn8zW7rvKh">Mbed OS Tech Forum</a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/support/">Report a problem</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://os.mbed.com/blog/">Blog</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mbed-nav__user-controls">
+        <div class="mbed-nav__user-controls-top">
+            <div class="mbed-nav__search">
+                <form id="mbed-nav__search-box" class="is-hidden" action="https://os.mbed.com/search" method="GET">
+                    <div class="mbed-nav__search-box">
+                        <input type="search" name="q" placeholder="Search...">
+                        <button type="submit">
+                            <svg class="stroke-white"><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#search"></use></svg>
+                        </button>
+                    </div>
+                </form>
+                <i class="mbed-nav__search-close fas fa-times is-hidden"></i>
+                <svg class="mbed-nav__search-open stroke-white"><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#search"></use></svg>
+            </div>
+            <a class="mbed-nav__cta" href="https://studio.keil.arm.com" target="_blank">
+                Keil Studio Cloud
+            </a>
+
+            
+                
+                <nav class="mbed-nav__logged-out-nav">
+                    <ul class="mbed-nav__dropdown-menu">
+                        <li>
+                            <svg class="stroke-white"><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#profile"></use></svg>
+
+                            <!-- Logged out dropdown menu -->
+                            <div class="mbed-nav__dropdown-menu-content">
+                                <div class="mbed-nav__logged-out-dropdown">
+                                    <ul class="mbed-nav__logged-out-menu">
+                                        <li><a href="/account/login/?next=/">Log in or Sign up</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                
+            
+        </div>
+    </div>
+    <div class="mbed-nav__spacer"></div>
+</div>
+<div class="mbed-nav__mobile-menu-cover is-hidden">
+    <div class="mbed-nav__mobile-menu">
+
+        <div id="mbed-nav__main-menu-mobile">
+            <div class="mbed-nav__user-controls-mobile">
+                <div class="mbed-nav__user-controls-top-mobile">
+                    <form action="https://os.mbed.com/search" method="GET">
+                        <div class="mbed-nav__search-box mbed-nav__search-box--light">
+                            <input type="search" name="q" placeholder="Search...">
+                            <button type="submit">
+                                <svg class="stroke-dark-grey"><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#search"></use></svg>
+                            </button>
+                        </div>
+                    </form>
+                    
+                        
+                        <a href="/account/login/?next=/">Log in or Sign up</a>
+                        
+                    
+                </div>
+            </div>
+
+            <ul class="mbed-nav__side-menu">
+                <li>
+                    <input type="checkbox" name="accordion-toggle" id="overview-accordion">
+                    <label for="overview-accordion">Overview</label>
+                    <div class="accordion_content">
+                        <ul class="overview-menu-mobile">
+                            <li>
+                                <p>Operating system</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://os.mbed.com/mbed-os/" class="mbed-nav__icon-link">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_os"></use></svg>
+                                            <p>Mbed OS</p>
+                                        </a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Development tools</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://os.mbed.com/studio/" class="mbed-nav__icon-link">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_studio"></use></svg>
+                                            <p>Mbed Studio</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.keil.arm.com/mbed/?utm_source=mbed_com&utm_medium=compiler_button&utm_campaign=mbed_com_promo" class="mbed-nav__icon-link">
+                                             <svg><use href="/static/img/keil_studio_icon.2c56c28014c6.svg?#keil_studio_icon"></use></svg>
+                                            <p>Keil Studio</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://os.mbed.com/docs/mbed-os/latest/quick-start/offline-with-mbed-cli.html" class="mbed-nav__icon-link">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_cli"></use></svg>
+                                            <p>Mbed CLI</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Security and connectivity</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://tls.mbed.org" class="mbed-nav__icon-link">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_tls_crypto"></use></svg>
+                                            <p>Mbed TLS and Mbed Crypto</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://os.mbed.com/connectivity-technologies/" class="mbed-nav__icon-link">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#connectivity"></use></svg>
+                                            <p>Connectivity</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="accordion-toggle" id="hardware-accordion">
+                    <label for="hardware-accordion">Hardware</label>
+                    <div class="accordion_content">
+                        <ul>
+                            <li>
+                                <a href="https://os.mbed.com/platforms/" class="mbed-nav__icon-link">
+                                    <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#boards"></use></svg>
+                                    <p>Boards</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://os.mbed.com/modules/" class="mbed-nav__icon-link">
+                                    <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#modules"></use></svg>
+                                    <p>Modules</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://os.mbed.com/components/" class="mbed-nav__icon-link">
+                                    <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#components"></use></svg>
+                                    <p>Components</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://os.mbed.com/hardware/" class="mbed-nav__icon-link">
+                                    <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#hardware_overview"></use></svg>
+                                    <p>Hardware overview & Mbed Enabled</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://os.mbed.com/docs/mbed-os/latest/porting/arm-mbed-hdk.html" class="mbed-nav__icon-link">
+                                    <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_hdk"></use></svg>
+                                    <p>Mbed HDK</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://os.mbed.com/code/">Code</a></li>
+                <li>
+                    <input type="checkbox" name="accordion-toggle" id="documentation-accordion">
+                    <label for="documentation-accordion">Documentation</label>
+                    <div class="accordion_content">
+                        <ul>
+                            <li><a href="https://os.mbed.com/docs/mbed-os/">Mbed OS</a></li>
+                            <li><a href="https://os.mbed.com/docs/mbed-studio/">Mbed Studio</a></li>
+                            <li>
+                              <a
+                                href="https://developer.arm.com/documentation/102497/1-5/Arm-Keil-Studio/?utm_source=mbed_com&utm_medium=nav_docs_link&utm_campaign=mbed_com_promo">
+                                Keil Studio
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://os.mbed.com/built-with-mbed/">Case studies</a></li>
+                <li>
+                    <input type="checkbox" name="accordion-toggle" id="community-accordion">
+                    <label for="community-accordion">Community</label>
+                    <div class="accordion_content">
+                        <ul>
+                            <li><a href="https://forums.mbed.com">Forum</a></li>
+                            <li><a href="https://os.mbed.com/docs/mbed-os/latest/contributing/index.html">Contribute</a></li>
+                            <li><a href="https://www.youtube.com/playlist?list=PLKjl7IFAwc4R4plIZe4IuHlsn8zW7rvKh">Mbed OS Tech Forum</a></li>
+                            <li><a href="https://os.mbed.com/support/">Report a problem</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://os.mbed.com/blog/">Blog</a></li>
+            </ul>
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+        <div class="flex-child-grow">
+            
+
+    <div class="mbed-homepage-intro">
+        <div class="mbed-homepage-intro--container">
+            <header class="mbed-homepage-header">
+                <h1>Mbed</h1>
+
+                <h2>Rapid IoT device development</h2>
+                <p>
+                    Mbed gives you a free open source IoT operating
+                    system with connectivity, security, storage, device
+                    management and machine learning. Build your next product
+                    with free development tools, thousands of code examples
+                    and support for hundreds of microcontroller development
+                    boards.
+                </p>
+            </header>
+
+            <section class="mbed-homepage-signup">
+                <div>
+                    <a class="mbed-homepage-signup__button large" href="/account/signup">
+                        Sign up for free
+                    </a>
+                </div>
+            </section>
+
+            
+            <div class="mbed-homepage-compilations">
+                <div>
+                    <img src="/static/img/homepage/Compilations.svg">
+                </div>
+                <div class="mbed-homepage-compilations__text">
+                    <h3>
+                        47,739
+                    </h3>
+                    <p>
+                        compilations in the last 7 days
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="mbed-homepage-mbed-makes">
+        <section class="mbed-homepage-mbed-makes__container">
+            <header class="mbed-homepage-mbed-makes-header">
+                <h2 class="mbed-homepage-mbed-makes-header__title">
+                    What is Mbed?
+                </h2>
+                <h3 class="mbed-homepage-mbed-makes-header__subtitle">
+                    Mbed makes device development quicker
+                </h3>
+                <hr>
+            </header>
+            <section class="mbed-homepage-mbed-makes__operating-system">
+                <header>
+                    <img src="/static/img/homepage/Operating_system.19e4715a3d3e.svg">
+                    <h3>Operating system</h3>
+                </header>
+                <div class="mbed-homepage-os">
+                    <div class="mbed-homepage-os__text">
+                        <h4>Mbed OS</h4>
+                        <p>
+                            Mbed OS provides a well-defined API to develop your C++ application,
+                            plus free tools and thousands of code examples, libraries and drivers
+                            for common components. With a built-in security stack, core components
+                            such as storage, and several connectivity options, you can focus on
+                            the code.
+                        </p>
+                        <div class="mbed-homepage-os-cta">
+                            <a class="mbed-homepage-os-cta__primary" href="/docs/mbed-os/latest/introduction/index.html">Getting started</a>
+                            <a class="mbed-homepage-os-cta__secondary" href="/docs/mbed-os/latest/apis/index.html">Explore APIs</a>
+                        </div>
+                    </div>
+                    <div class="mbed-homepage-os__img">
+                        <img src="/static/img/homepage/Mbed-OS@2x.b666d78389a5.png">
+                    </div>
+                </div>
+                <div class="mbed-homepage-hardware">
+                    <div class="mbed-homepage-os__img">
+                        <img src="/static/img/homepage/Mbed-Discover-Hardware@2x.974fcf26ccdf.png">
+                    </div>
+                    <div class="mbed-homepage-hardware__text">
+                        <h4>Discover Hardware</h4>
+                        <p>
+                            Mbed Enabled hardware comes in many shapes and sizes. Whether you're
+                            building your first prototype or are ready to start mass production,
+                            we have the hardware you need to build connected devices.
+                        </p>
+                        <div class="mbed-homepage-hardware-cta">
+                            <a class="mbed-homepage-hardware-cta__primary" href="/hardware/">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="mbed-homepage-mbed-makes__separator">
+
+            <section class="mbed-homepage-mbed-makes__compiler-ide">
+                <header>
+                    <img src="/static/img/homepage/Compiler.3a642e67d774.svg">
+                    <h3>Compiler & IDE</h3>
+                </header>
+
+                <ul class="mbed-homepage-tools">
+                    <li class="mbed-homepage-tools__item">
+                        <div class="mbed-homepage-tools__item__header">
+                            <h3 class="mbed-homepage-tools__item__title">Keil Studio Cloud</h3>
+                            <h4 class="mbed-homepage-tools__item__subtitle">The easiest way to get started.</h4>
+                        </div>
+                        <div class="mbed-homepage-tools__item__image">
+                            <img src="/static/img/homepage/Keil_Studio_Cloud.2bd3bcfd40b5.png">
+                        </div>
+                        <div class="mbed-homepage-tools__item__text">
+                            <p>
+                                A modern, zero-installation Mbed development environment in your browser, with code highlighting, WebUSB flash and debug and version control. Create an account to get started.
+                            </p>
+                        </div>
+                        <a class="mbed-homepage-tools__item__primary" href="https://www.keil.arm.com/mbed/">
+                            Learn more
+                        </a>
+                    </li>
+
+                    <li class="mbed-homepage-tools__item">
+                        <div class="mbed-homepage-tools__item__header">
+                            <h3 class="mbed-homepage-tools__item__title">Mbed Studio</h3>
+                            <h4 class="mbed-homepage-tools__item__subtitle">The desktop IDE for Mbed OS.</h4>
+                        </div>
+                        <div class="mbed-homepage-tools__item__image">
+                            <img src="/static/img/homepage/Mbed_Studio.b9e704793814.png">
+                        </div>
+                        <div class="mbed-homepage-tools__item__text">
+                            <p>
+                                Mbed Studio is an IDE for application and library development.
+                                A single environment with everything you need to create,
+                                compile and debug your Mbed programs.
+                            </p>
+                        </div>
+                        <a class="mbed-homepage-tools__item__primary" href="/studio/">
+                            Learn more
+                        </a>
+                    </li>
+
+                    <li class="mbed-homepage-tools__item">
+                        <div class="mbed-homepage-tools__item__header">
+                            <h3 class="mbed-homepage-tools__item__title">Mbed CLI</h3>
+                            <h4 class="mbed-homepage-tools__item__subtitle">The command line tool for Mbed OS.</h4>
+                        </div>
+                        <div class="mbed-homepage-tools__item__image">
+                            <img src="/static/img/homepage/Mbed_CLI.a5985b35aae5.png">
+                        </div>
+                        <div class="mbed-homepage-tools__item__text">
+                            <p>
+                                Integrate Mbed functionality into your preferred editor, or enhance your
+                                automation setup by using Mbed CLI, our command line interface.
+                            </p>
+                        </div>
+                        <a class="mbed-homepage-tools__item__primary" href="/docs/mbed-os/latest/quick-start/offline-with-mbed-cli.html">
+                            Learn more
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="mbed-homepage-mbed-makes__separator">
+
+            <section class="mbed-homepage-mbed-makes__security">
+                <header>
+                    <img src="/static/img/homepage/Security.040e3790a2c6.svg">
+                    <h3>Security</h3>
+                </header>
+
+                <img src="/static/img/homepage/Code_panel.png" width="825">
+                <div class="mbed-homepage-mbed-makes__security-description">
+                    <p>
+                        Arm Mbed TLS provides a comprehensive SSL/TLS solution and
+                        makes it easy for developers to include cryptographic and
+                        SSL/TLS capabilities in their software and embedded products.
+                        As an SSL library, it provides an intuitive API, readable
+                        source code and a minimal and highly configurable code
+                        footprint.
+                    </p>
+                    <div>
+                        <a class="mbed-homepage-mbed-makes__security-button" href="https://tls.mbed.org">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <hr class="mbed-homepage-section-separator">
+
+    <section class="mbed-homepage-built-with-mbed">
+    <div class="mbed-homepage-built-with-mbed__container">
+        <header class="mbed-homepage-built-with-mbed-header">
+            <h2 class="mbed-homepage-built-with-mbed-header__title">
+                Built with Mbed
+            </h2>
+            <h3 class="mbed-homepage-built-with-mbed-header__subtitle">
+                Discover what thousands of professional IoT engineers are
+                creating with Mbed
+            </h3>
+        </header>
+
+        <ul class="built-with-mbed-products">
+            <li class="built-with-mbed-products__item">
+                <div class="built-with-mbed-products__item__image">
+                    <img src="/static/img/built-with-mbed/smart-street-lighting/Aaeon-Node.jpg">
+                </div>
+                <div class="built-with-mbed-products__item__header">
+                    <h3 class="built-with-mbed-products__item__title">Smart Street Lighting</h3>
+                </div>
+                <p class="built-with-mbed-products__item__text">
+                    The Aaeon Node is a small device that allows Facilities
+                    Managers to easily control lighting from a city-wide single
+                    platform. Operational efficiency can be gained by simply
+                    plugging the node into an industry standard NEMA 7-pin
+                    socket found on most street lights. Over 4,000 Aaeon Nodes
+                    have been deployed across the city of Taipei growing to an
+                    expected deployment of 25,000 by the end of 2020.
+                </p>
+                <a class="built-with-mbed-products__item__primary" href="/built-with-mbed/smart-street-lighting/">Learn more</a>
+            </li>
+            <li class="built-with-mbed-products__item">
+                <div class="built-with-mbed-products__item__image">
+                    <img src="/static/img/built-with-mbed/smart-city-bike-lights/See.Sense_ICON_Lifestyle.jpg">
+                </div>
+                <div class="built-with-mbed-products__item__header">
+                    <h3 class="built-with-mbed-products__item__title">Smart City Bike Lights</h3>
+                </div>
+                <p class="built-with-mbed-products__item__text">
+                    See.Sense's Smart City Bike Lights conserve power,
+                    but brighten when it’s essential to alert drivers
+                    to a cyclist’s presence. Accelerometers monitor
+                    various conditions including swerving, sudden
+                    braking, road surface condition and falls. City planners
+                    are using this data to improve road safety, reduce surface
+                    repair costs and support cycle track planning.
+                </p>
+                  <a
+                      class="built-with-mbed-products__item__primary"
+                      href="/built-with-mbed/smart-city-bike-lights/"
+                  >
+                      Learn more
+                  </a>
+            </li>
+            <li class="built-with-mbed-products__item">
+                <div class="built-with-mbed-products__item__image">
+                    <img src="/static/img/built-with-mbed/multisensor-industrial-asset-monitor/agora-epm2m-ag-cell.png">
+                </div>
+                <div class="built-with-mbed-products__item__header">
+                    <h3 class="built-with-mbed-products__item__title">Industrial Asset Monitor</h3>
+                </div>
+                <p class="built-with-mbed-products__item__text">
+                    The Agora EPM2M-AG-CELL epSensor is a flexible
+                    multi-sensor device designed to be used as a module
+                    by OEMs to be added to a system or as a complete
+                    solution for monitoring air quality,
+                    temperature/humidity, motion detection, audio
+                    detection, light sensing, accelerometer and time of
+                    flight. Cellular connectivity allows the epSensor to be
+                    used in locations without Ethernet or Wi-Fi.
+                </p>
+                  <a
+                      class="built-with-mbed-products__item__primary"
+                      href="/built-with-mbed/multisensor-industrial-asset-monitor/"
+                  >
+                      Learn more
+                  </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+        </div>
+
+        
+<div>
+    
+<footer class="global-footer">
+    <ul class="global-footer-media global-footer-row">
+        <li>
+            <a class="footer-media-icon" title="Twitter" href="https://twitter.com/ArmSoftwareDev">
+                <span class="fab fa-twitter-square fa-2x"></span>
+                <span class="global-footer-show-on-large-screens">Twitter</span>
+            </a>
+        </li>
+        <li>
+            <a class="footer-media-icon" title="YouTube" href="https://www.youtube.com/c/ArmSoftwareDevelopers">
+                <span class="fab fa-youtube-square fa-2x"></span>
+                <span class="global-footer-show-on-large-screens">YouTube</span>
+            </a>
+        </li>
+        <li>
+            <a class="footer-media-icon" title="Forum" href="http://forums.mbed.com/">
+                <span class="fas fa-comments fa-2x"></span>
+                <span class="global-footer-show-on-large-screens">Forum</span>
+            </a>
+        </li>
+        <li>
+            <a class="footer-media-icon" title="Blog" href="http://blog.mbed.com/">
+                <span class="fas fa-pen-square fa-2x"></span>
+                <span class="global-footer-show-on-large-screens">Blog</span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="global-footer-copyright global-footer-row">
+        <div class="copyright-statement">Copyright © <script>document.write(new Date().getFullYear());</script> Arm Limited (or its affiliates).</div>
+        <ul class="copyright-links">
+            <li><a href="https://os.mbed.com/">Home</a></li>
+            <li><a href="https://www.arm.com/company/policies/terms-and-conditions">Website Terms</a></li>
+            <li><a href="https://www.arm.com/company/policies/privacy">Privacy</a></li>
+            <li><a href="https://www.arm.com/company/policies/cookies">Cookies</a></li>
+            <li><a href="http://www.arm.com/company/policies/trademarks">Trademarks</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+    <div id="cookiemodule">
+    <h5>Important Information for this Arm website</h5>
+    <div id="cookiecontent">
+        <p>
+            This site uses cookies to store information on your computer.
+            By continuing to use our site, you consent to our cookies.
+            If you are not happy with the use of these cookies, please review our
+            <a href="https://www.arm.com/company/policies/cookies">Cookie Policy</a>
+            to learn how they can be disabled.
+            By disabling cookies, some features of the site will not work.
+        </p>
+        <button id="acceptcookie">Accept and hide this message</button>
+    </div>
+</div>
+<script src="/static/js/cookie_law.js"></script>
+
+
+
+</div>
+
+    </div>
+
+    <script src="/static/bundle.48cbbdd87d68.js"></script>
+    <script>
+        $(document).ready(function() {
+            mbed.initDismissableBanners($('[data-dismissable]'));
+            mbed.initNavNotification();
+        });
+    </script>
+    
+</body>
+</html>

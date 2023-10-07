@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<!-- 
+         __  __  ____    ______                                   _________________
+   .====/ /=/ /=/ __/===/_  __/==================================/######__________/
+  .==  / / / /  \ \      / / _______ ___  ___ __ ________ __    /######__________/
+ .==  / /_/ /  __\ \    / / / __/ -_) _ \(_--/ // / __/ // /   /######__________/
+.==   \____/  /____/   /_/ /_/  \__/\_/_/___/\___/_/  \_  /   /________________/
+=====================================================__/ /===/________________/
+                                                    /___/
+-->
+
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"c385fefcaf",applicationID:"70697698"};;/*! For license information please see nr-loader-rum-1.243.1.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={234:(e,t,n)=>{n.d(t,{P_:()=>h,Mt:()=>m,C5:()=>s,DL:()=>w,OP:()=>j,lF:()=>N,Yu:()=>_,Dg:()=>v,CX:()=>c,GE:()=>A,sU:()=>T});var r=n(8632),i=n(9567);const a={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a),(0,r.Qy)(e,o[e],"info")}const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=n(7056),l=n(50);const f=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:u.oD,inactiveMs:u.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector=t+",[data-nr-mask]":null===t?e.mask_selector=t:(0,l.Z)("An invalid session_replay.mask_selector was provided and will not be used",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},g={},p="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(p);if(!g[e])throw new Error("Configuration for ".concat(e," was never set"));return g[e]}function v(e,t){if(!e)throw new Error(p);g[e]=(0,i.D)(t,f()),(0,r.Qy)(e,g[e],"config")}function m(e,t){if(!e)throw new Error(p);var n=h(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const b={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},y={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!y[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return y[e]}function A(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");y[e]=(0,i.D)(t,b),(0,r.Qy)(e,y[e],"loader_config")}const _=(0,r.mF)().o;var x=n(385),D=n(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(x._A?.performance?.timeOrigin||x._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+x._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof x._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},E={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!E[e])throw new Error("Runtime for ".concat(e," was never set"));return E[e]}function T(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");E[e]=(0,i.D)(t,k),(0,r.Qy)(e,E[e],"runtime")}function N(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(n).length?e:n;for(let o in a)if(void 0!==e[o])try{"object"==typeof e[o]&&"object"==typeof t[o]?n[o]=i(e[o],t[o]):n[o]=e[o]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>a,q4:()=>r});const r="1.243.1",i="PROD",a="CDN"},385:(e,t,n)=>{n.d(t,{Nk:()=>u,Tt:()=>s,_A:()=>a,cv:()=>l,iS:()=>o,il:()=>r,ux:()=>c,v6:()=>i,w1:()=>d});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===a?.document?.visibilityState),s=(a?.location,/iPad|iPhone|iPod/.test(a.navigator?.userAgent)),c=s&&"undefined"==typeof SharedWorker,d=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(r&&window.document.documentMode)),u=!!a.navigator?.sendBeacon,l=Math.floor(a?.performance?.timeOrigin||a?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,n)=>{n.d(t,{w:()=>a});var r=n(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(8325),i=n(1284),a=n(4322),o=n(3325);const s={};function c(e,t){const n={staged:!1,priority:o.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const n=[...s[e]];function o(t){const n=e?r.ee.get(e):r.ee,o=a.X.handlers;if(n.backlog&&o){var s=n.backlog[t],c=o[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete o[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((t=>{let[n]=t;s[e].delete(n),o(n)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],a=e[3],o=e[2];i.apply(a,o)}}))}},8325:(e,t,n)=>{n.d(t,{A:()=>c,ee:()=>d});var r=n(8632),i=n(2210),a=n(234);class o{constructor(e){this.contextId=e}}var s=n(3117);const c="nr@context:".concat(s.a),d=function e(t,n){var r={},s={},u={},f=!1;try{f=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,a){!1!==a&&(a=!0);if(d.aborted&&!i)return;t&&a&&t.emit(e,n,r);for(var o=p(r),c=v(e),u=c.length,l=0;l<u;l++)c[l].apply(o,n);var f=b()[s[e]];f&&f.push([g,e,n,o]);return o},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new o(c))):new o(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return u[t]=u[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),u=(0,r.fP)();function l(){d.aborted=!0,d.backlog={}}u.ee||(u.ee=d)},5546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(8325).ee.get("handle");function i(e,t,n,i,a){a?(a.buffer([e],i),a.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{n.d(t,{X:()=>a});var r=n(5546);a.on=o;var i=a.handlers={};function a(e,t,n,a){o(a||r.E,i,e,t,n)}function o(e,t,n,i,a){a||(a="feature"),e||(e=r.E);var o=t[a]=t[a]||{};(o[n]=o[n]||[]).push([e,i])}},3239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var r=n(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(n,r))}},3117:(e,t,n)=>{n.d(t,{a:()=>r});const r=(0,n(4402).Rl)()},4402:(e,t,n)=>{n.d(t,{Rl:()=>o,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?a(t,++n).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const o=[];for(var s=0;s<e;s++)o.push(a(n,++i).toString(16));return o.join("")}},7056:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>a,oD:()=>i});const r="NRBA",i=144e5,a=18e5},7894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(8325),i=n(5546),a=n(3325);const o={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},s=new Set;function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(s.has(t)||Object.entries(e).forEach((e=>{let[t,r]=e;o[t]?o[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r)})),Object.keys(o).forEach((e=>{void 0===d[e]&&(o[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),s.add(t))}const d={}},2210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{n.d(t,{P:()=>a});var r=n(8325);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{n.d(t,{K:()=>o,b:()=>a});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,r.bP)("load",e,t)}function o(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>a,fP:()=>o,gG:()=>u,mF:()=>s});var r=n(7894),i=n(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=o();const a=i.initializedAgents||{},s=a[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...a,[e]:{...s,[n]:t}},i}function d(e,t){o()[e]=t}function u(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{n.d(t,{gF:()=>a,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>o});const r=n(3325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewEvent},9251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{n.d(t,{W:()=>i});var r=n(8325);class i{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=r.ee.get(e),this.featureName=n,this.blocked=!1}}},7530:(e,t,n)=>{n.d(t,{j:()=>b});var r=n(3325),i=n(234),a=n(5546),o=n(8325),s=n(7894),c=n(8e3),d=n(3960),u=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...r))})),a.length>1?a:a[0]}(t,...r)}}))}var h=n(2587);const v=e=>{const t=e.startsWith("http");e+="/",n.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:_,runtime:x={loaderType:b},exposed:D=!0}=t;const k=(0,g.gG)();A||(w=k.init,A=k.info,_=k.loader_config),(0,i.Dg)(e,w||{}),(0,i.GE)(e,_||{}),A.jsAttributes??={},u.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e,A);const E=(0,i.P_)(e),j=[A.beacon,A.errorBeacon];m||(m=!0,E.proxy.assets&&(v(E.proxy.assets),j.push(E.proxy.assets)),E.proxy.beacon&&j.push(E.proxy.beacon)),x.denyList=[...E.ajax.deny_list||[],...E.ajax.block_internal?j:[]],(0,i.sU)(e,x),p();const T=function(e,t){t||(0,c.R)(e,"api");const g={};var p=o.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,a){const o=(0,i.C5)(e);return null===n?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:n}}),A(v,r,!0,a||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=A(v,e,!0,"api")})),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,a.p)(f.xS,["API/start/".concat(t,"/called")],void 0,r.D.metrics,p);const n=Object.values(r.D);if(void 0===e)e=n;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!n.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(n));e.includes(r.D.pageViewEvent)||e.push(r.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,o="function"==typeof t;return(0,a.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],n),o)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function _(){n.e(75).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>_()),!0):_(),g}(e,y);return(0,g.Qy)(e,T,"api"),(0,g.Qy)(e,D,"exposed"),(0,g.EZ)("activatedFeatures",h.T),T}},3325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var a=r[e]={exports:{}};return n[e](a,a.exports,i),a.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum-1.243.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.243.1.PROD:",i.l=(n,r,a,o)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+a){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var a=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var a=n&&("load"===n.type?"missing":n.type),o=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,a,[o,s,c]=n,d=0;if(o.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},n=self["webpackChunk:NRBA-1.243.1.PROD"]=self["webpackChunk:NRBA-1.243.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var n=i(3325),r=i(234);const a=Object.values(n.D);function o(e){const t={};return a.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(7530);var c=i(8e3),d=i(5938),u=i(3960),l=i(385);class f extends d.W{constructor(e,t,n){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,r.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const n=l.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,c.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),a(!1)}};l.il?(0,u.b)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,n),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var a=this.getBucket(e,t,n,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,n){t[e]=b(n,t[e])})),t}(r,a.metrics),a}merge(e,t,n,r,i){var a=this.getBucket(e,t,r,i);if(a.metrics){var o=a.metrics;o.count+=n.count,(0,v.D)(n,(function(e,t){if("count"!==e){var r=o[e],i=n[e];i&&!i.c?o[e]=b(i.t,r):o[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=b(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=w(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,v.D)(e,A)}function A(e,t){return t}var _=i(8632),x=i(4402),D=i(4351);var k=i(5546),E=i(7956),j=i(3239),T=i(7894),N=i(9251);class S extends f{static featureName=N.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,n),l.il&&((0,E.N)((()=>(0,k.p)("docHidden",[(0,T.z)()],void 0,N.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,k.p)("winPagehide",[(0,T.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var C=i(3081);class P extends f{static featureName=C.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=n,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}run(){const t="features";try{const r=o(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>r[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,D.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,_.Qy)(this.agentIdentifier,this.features,t)}catch(n){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",n);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[p,S,P],loaderType:"lite"})})()})();</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTKLZK8R7K"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "G-QTKLZK8R7K", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location","allow_ad_personalization_signals":false});gtag("config", "UA-19138737-19", {"groups":"default","anonymize_ip":true,"page_placeholder":"PLACEHOLDER_page_path","allow_ad_personalization_signals":false});</script>
+<link rel="canonical" href="https://home.treasury.gov/" />
+<link rel="shortlink" href="https://home.treasury.gov/" />
+<meta property="og:site_name" content="U.S. Department of the Treasury" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://home.treasury.gov/front" />
+<meta property="og:description" content="U.S. Department of the Treasury" />
+<meta property="og:image" content="https://home.treasury.gov/system/files/291/treasury-preview-1900x950.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1900" />
+<meta property="og:image:height" content="950" />
+<meta property="og:image:alt" content="U.S. Department of the Treasury" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@USTreasury" />
+<meta name="twitter:image:alt" content="U.S. Department of the Treasury" />
+<meta name="twitter:image:height" content="1080" />
+<meta name="twitter:image:width" content="1080" />
+<meta name="twitter:image" content="https://home.treasury.gov/system/files/291/treasury-preview-1080x1080.jpg" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/sites/default/files/favicon_1.png" type="image/png" />
+
+    <title>Front page | U.S. Department of the Treasury</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_t0sb94bekZ1DBSaMoQk1nsEdzJwQNJjSWwBBlFTuFU0.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__GOGTd0KEUty2cRGmKeKHWKDzNgnH4pS-eSQE_GgD2s.css" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Merriweather:400,700,300" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:400,700,300" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Signika:400,700" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"front","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"blazy\/bio.ajax,blazy\/blazy,blazy\/classlist,blazy\/load,blazy\/loading,blazy\/polyfill,blazy\/promise,blazy\/raf,blazy\/webp,cog\/lib,fontawesome\/fontawesome.svg,fontawesome\/fontawesome.svg.shim,google_analytics\/google_analytics,hamilton\/lib,slick\/slick.load,system\/base,treasury_core\/jquery_dateformat,treasury_datatables\/treasury_datatables,treasury_mega_menu\/treasury_mega_menu,treasury_site\/treasury-site,usfedgov_google_analytics\/load-analytics-cdn,views\/views.ajax,views\/views.module","theme":"hamilton","theme_token":null},"ajaxTrustedUrl":{"\/search\/user":true},"google_analytics":{"account":"G-QTKLZK8R7K","trackOutbound":true,"trackMailto":true,"trackTel":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:db428994068b0b43a40c4cf62d02101e21b681deb380ba20b7ea04854bd9c178":{"view_name":"dfu_tool_page","view_display_id":"block_cmt_rates","view_args":"","view_path":"\/front","view_base_path":"resource-center\/data-chart-center\/interest-rates\/daily-treasury-rates.csv","view_dom_id":"db428994068b0b43a40c4cf62d02101e21b681deb380ba20b7ea04854bd9c178","pager_element":0}}},"blazy":{"loadInvisible":false,"offset":100,"saveViewportOffsetDelay":50,"validateDelay":25,"loader":true,"unblazy":null},"blazyIo":{"disconnect":false,"rootMargin":"0px","threshold":[0,0.25,0.5,0.75,1]},"slick":{"accessibility":true,"adaptiveHeight":false,"autoplay":false,"pauseOnHover":true,"pauseOnDotsHover":false,"pauseOnFocus":true,"autoplaySpeed":3000,"arrows":true,"downArrow":false,"downArrowTarget":"","downArrowOffset":0,"centerMode":false,"centerPadding":"50px","dots":false,"dotsClass":"slick-dots","draggable":true,"fade":false,"focusOnSelect":false,"infinite":true,"initialSlide":0,"lazyLoad":"ondemand","mouseWheel":false,"randomize":false,"rtl":false,"rows":1,"slidesPerRow":1,"slide":"","slidesToShow":1,"slidesToScroll":1,"speed":500,"swipe":true,"swipeToSlide":false,"edgeFriction":0.34999999999999998,"touchMove":true,"touchThreshold":5,"useCSS":true,"cssEase":"ease","cssEaseBezier":"","cssEaseOverride":"","useTransform":true,"easing":"linear","variableWidth":false,"vertical":false,"verticalSwiping":false,"waitForAnimate":true},"ajax":[],"user":{"uid":0,"permissionsHash":"90c52cecbb93286e589ef6764c3fe786e215672de8c2c8c327a783575cb8ebad"}}</script>
+<script src="/sites/default/files/js/js_y57geBL-K47QfSLZFcl_jtxJKKl-i8yIkHt048E1tQc.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js" defer crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.13.1/js/v4-shims.js" defer crossorigin="anonymous"></script>
+<script src="/sites/default/files/js/js_N8hozhWFVyGJUlqqIZTclsqQX18v5Kv8krK8XSZIvzY.js"></script>
+
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="M33KD-YMV8Y-625W4-V96WF-R28AJ",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"M33KD-YMV8Y-625W4-V96WF-R28AJ";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="b2fzmqqxey7r2zjatvma-f-33a3cca39-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"36","ak.cp":"590367","ak.ai":parseInt("384319",10),"ak.ol":"0","ak.cr":44,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"10c40e54","ak.r":36234,"ak.a2":n,"ak.m":"dscb","ak.n":"essl","ak.bpcip":"14.139.150.0","ak.cport":33824,"ak.gh":"104.115.39.150","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1696636248","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==0HGs/rvepK0Z91b5rZ7BacmDjAXAKG6CrNuNk1ShLqp2BtCXcYnRz0qUA4uM/rowPFgby4ir99RvPJ4pvzF0ZpTeUMUxawXdo8z9Mn05Q22bP+1X0z2DsO7t4jpqD007zHzkN1OTu+wWFz2maxWuwc6FrEl85R2PLE2i9rGBEojNaftYjHq/cCZbFlxDo4p4OBkEoTdWonhiezkup80dDt+8ONRFkBN217FEK0f1/S4+VYPYFk/Skgx3tnY24gce80/23qsGZ9hMWKs0Lx6vII3bftJ7/MuWG4sptjL2ifZjEQkr3ro5Q00rYUNefrmTk3IPCbzLSRPipTuHHBcZ9pkB6uHKiF7mhjhnr5QfD8CGpfMeyo/SV6aca1PgyO+ClZwttYlimIQW/hNnrCIc3nmLDRYOmSoIA4TVv93fuv8=","ak.pv":"132","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body class="path--front body-sidebars-none us-department-of-the-treasury">
+   <!--div id="skip" class="skip-link">
+      <a class="visually-hidden focusable skip-link" href="#main-content">
+        Skip to main content
+      </a>
+    </div -->
+
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="pg__c">
+
+
+    <!-- ______________________ BRANDING _______________________ -->
+
+    <header id="branding">
+        <div class="mq--t">
+                    </div>
+    </header>
+    <!-- /branding -->
+
+  <!-- ______________________ ALERT BANNER _______________________ -->
+
+                                  <!-- /usa header -->
+
+  <!-- ______________________ USA HEADER _______________________ -->
+
+    <header id="usa-header">
+        <div class="mq--t">
+                            <div id="usa-region">
+                      <div class="region region-usa-header">
+    
+
+<nav role="navigation" aria-label="block-utilitymenu-menu" id="block-utilitymenu" data-block-plugin-id="system_menu_block:utility-menu" class="secondary block block-menu navigation block-system-menublock menu--utility-menu">
+            
+          <div class="super-header">
+    <div class="super-header-title"><img class="flag-img" src="/themes/custom/hamilton/images/usflag.png" alt="U.S. flag">
+    An official website of the United States Government</div>
+        <div class="super-header-links">
+            
+             <ul class="menu">
+                          <li class="menu-item">
+          <a href="#main-content" class="is-active">Skip Navigation</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://home.treasury.gov/utility/accessibility">Accessibility</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://home.treasury.gov/utility/languages">Languages</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://home.treasury.gov/utility/contact">Contact</a>
+                  </li>
+          </ul>
+  
+
+
+        </div>
+    </div>
+</nav>
+  </div>
+
+                </div>
+                    </div>
+    </header>
+    <!-- /usa header -->
+
+    <!-- ______________________ HEADER _______________________ -->
+
+    <header id="header">
+        <div class="mq--t">
+                            <div id="header-region">
+                      <div id="region-header" class="mq--t clearfix region region-header">
+    
+  
+<div id="block-burgermenublock-2" data-block-plugin-id="treasury_burger_menu_block" class="block block-treasury-mega-menu block-treasury-burger-menu-block no-underline">
+  
+    
+      <button class="burger" type="button">
+        <span class="descriptive-text">MENU</span>
+        <span class="hidden-text">MENU
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </span>
+      </button>
+  </div>
+
+  
+<div id="block-hamilton-branding" data-block-plugin-id="system_branding_block" class="site-branding block block-system block-system-branding-block no-underline">
+  
+    
+              <h1>
+            <a href="/" title="Home" rel="home" class="logo">
+                <img class="treasury-logo" src="/themes/custom/hamilton/logo.svg" alt="Seal of the U.S. Department of the Treasury, 1789"/><span class="logo-text">U.S. Department of the Treasury</span>
+            </a>
+        </h1>
+    </div>
+
+  </div>
+
+                </div>
+                    </div>
+    </header>
+    <!-- /header -->
+
+    <!-- ______________________ NAVIGATION _______________________ -->
+
+    <div id="navigation">
+        <div class="mq--t">
+                            <div id="navigation-region">
+                    <div class="collapsed-logo">
+                        <a href="/" title="Home" rel="home" class="logo">
+                            <img src="/themes/custom/hamilton/logo.svg" alt="Seal of the U.S. Department of the Treasury, 1789"/>
+                        </a>
+                    </div>
+                      <div class="region region-navigation">
+    
+  
+<div id="block-megamenublock" data-block-plugin-id="treasury_mega_menu_block" class="block block-treasury-mega-menu block-treasury-mega-menu-block no-underline">
+  
+    
+      <nav class="mm block-system-menublock primary">
+  <ul class="nav-menu mq--t">
+            <li class="nav-item ">
+            <a href="/about-treasury" class="mm-top" onclick="return false;">About Treasury</a>
+                  <div class="sub-nav">
+        <article class="node node--type-mega_menu_panel node--view-mode-full clearfix">
+  
+    
+
+  <div>
+    <div class="mobile-sub-nav">
+  <div class="block-region-col1">
+  
+<div data-block-plugin-id="entity_field:node:title" class="block block-ctools-block block-entity-fieldnodetitle no-underline">
+  
+    
+      <span>About Treasury</span>
+
+  </div>
+</div>
+</div>
+<div class="mobile-scroll-wrap">
+  <div class="sub-nav-group secretarys-photo secretary-column" id="column-2">
+      <div class="block-region-col2">
+  
+<div data-block-plugin-id="block_content:08aa6afb-b64e-4bb1-ac6e-cfc98f1c3b3c" class="block block-block-content block-block-content08aa6afb-b64e-4bb1-ac6e-cfc98f1c3b3c no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/about/general-information">General Information</a></h2>
+
+<p><a href="/about/general-information/role-of-the-treasury">Role of the Treasury</a></p>
+
+<p><a href="/about/general-information/officials">Officials</a></p>
+
+<p><a href="/about/general-information/organizational-chart">Organizational Chart</a></p>
+
+<p><a href="/about/general-information/orders-and-directives">Orders and Directives</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:43c80fae-0d72-480c-a816-6dc13b206886" class="block block-block-content block-block-content43c80fae-0d72-480c-a816-6dc13b206886 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="https://home.treasury.gov/about/offices">Offices</a></h2>
+
+<p><a href="/about/offices/diversity-equity-inclusion-and-accessibility">Diversity, Equity, Inclusion, and Accessibility&nbsp;</a></p>
+
+<p><a href="/about/offices/domestic-finance">Domestic Finance</a></p>
+
+<p><a href="/about/offices/economic-policy">Economic Policy</a></p>
+
+<p><a href="/about/offices/general-counsel">General Counsel</a></p>
+
+<p><a href="/about/offices/international-affairs">International Affairs</a></p>
+
+<p><a href="/about/offices/management">Management</a></p>
+
+<p><a href="/about/offices/public-affairs">Public Affairs</a></p>
+
+<p><a href="/about/offices/tax-policy">Tax Policy</a></p>
+
+<p><a href="/about/offices/terrorism-and-financial-intelligence">Terrorism and Financial Intelligence</a></p>
+
+<p><a href="/services/report-fraud-waste-and-abuse/inspectors-general">Inspectors General</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="secretarys-bio sub-nav-group secretary-column" id="column-3">
+      <div class="block-region-col3">
+  
+<div data-block-plugin-id="block_content:599924e8-ff63-46da-a2ed-4f3c5739455d" class="block block-block-content block-block-content599924e8-ff63-46da-a2ed-4f3c5739455d no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/about/bureaus">Bureaus</a></h2>
+
+<p><a href="https://www.ttb.gov/">Alcohol and Tobacco Tax and Trade Bureau (TTB)</a></p>
+
+<p><a href="https://www.moneyfactory.gov/">Bureau of Engraving &amp; Printing (BEP)</a></p>
+
+<p><a href="https://www.fincen.gov/">Financial Crimes Enforcement Network (FinCEN)</a></p>
+
+<p><a href="https://www.fiscal.treasury.gov/">Bureau of the Fiscal Service (BFS)</a></p>
+
+<p><a href="https://www.irs.gov/">Internal Revenue Service (IRS)</a></p>
+
+<p><a href="https://www.occ.treas.gov/">Office of the Comptroller of the Currency (OCC)</a></p>
+
+<p><a href="https://www.usmint.gov/">U.S. Mint</a></p>
+
+<p><a href="https://www.treasury.gov/about/organizational-structure/ig/Pages/default.aspx">Office of Inspector General (OIG)</a></p>
+
+<p><a href="https://www.treasury.gov/tigta/">Treasury Inspector General for Tax Administration (TIGTA)</a></p>
+
+<p><a href="https://www.sigtarp.gov/Pages/Home.aspx">Special Inspector General for the Troubled Asset Relief Program (SIGTARP)</a></p>
+
+<p><a href="https://www.sigpr.gov/">Special Inspector General for Pandemic Recovery (SIGPR)</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-remarks secretary-column" id="column-4">
+      <div class="block-region-col4">
+  
+<div data-block-plugin-id="block_content:3e5cbfc4-de8d-4151-9710-95efaf040648" class="block block-block-content block-block-content3e5cbfc4-de8d-4151-9710-95efaf040648 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/about/budget-financial-reporting-planning-and-performance">Budget, Financial Reporting, Planning and Performance</a></h2>
+
+<p><a href="/about/budget-financial-reporting-planning-and-performance/strategic-plan">Strategic Plan</a></p>
+
+<p><a href="/about/budget-financial-reporting-planning-and-performance/budget-requestannual-performance-plan-and">Budget Request/Annual Performance Plan and Reports</a></p>
+
+<p><a href="/about/budget-financial-reporting-planning-and-performance/agency-financial-report">Agency Financial Report</a></p>
+
+<p><a href="/about/budget-financial-reporting-planning-and-performance/inspector-general-audits-and">Inspector General Audits and Investigative Reports</a></p>
+
+<p><a href="/about/budget-financial-reporting-planning-and-performance/climate-action-plan">Climate Action Plan</a></p>
+
+<p><a href="/about/budget-financial-reporting-planning-and-performance/irs-strategic-operating-plan">IRS Strategic Operating Plan</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-travel-schedule secretary-column" id="column-5">
+      <div class="block-region-col5">
+  
+<div data-block-plugin-id="block_content:d3de5c5c-98cb-46d1-8d23-a582bae1298c" class="block block-block-content block-block-contentd3de5c5c-98cb-46d1-8d23-a582bae1298c no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/about/history">History</a></h2>
+
+<p><a href="/about/history/curator">Curator</a></p>
+
+<p><a href="/about/history/history-overview">History Overview</a></p>
+
+<p><a href="/about/history/prior-secretaries">Prior Secretaries</a></p>
+
+<p><a href="/about/history/treasurers-of-the-united-states">Prior Treasurers</a></p>
+
+<p><a href="/about/history/the-treasury-building">The Treasury Building</a></p>
+
+<p><a href="/about/history/collection">Collections</a></p>
+
+<p><a href="/about/history/freedmans-bank-building">Freedman's Bank Building</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-column" id="column-6">
+      <div class="block-region-col6">
+  
+<div data-block-plugin-id="block_content:d6469877-15d1-4dd2-9da1-c4a8c29fde97" class="block block-block-content block-block-contentd6469877-15d1-4dd2-9da1-c4a8c29fde97 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/about/careers-at-treasury">Careers</a></h2>
+
+<p><a href="/about/careers-at-treasury/careers-at-headquarters">At Headquarters</a></p>
+
+<p><a href="//about/careers-at-treasury/careers-at-our-bureaus">At Our Bureaus&nbsp;</a></p>
+
+<p><a href="//about/careers-at-treasury/top-ten-reasons-to-work-for-treasury">Top 10 Reasons to Work Here</a></p>
+
+<p><a href="//about/careers-at-treasury/benefits-and-growth">Benefits and Growth</a></p>
+
+<p><a href="//about/careers-at-treasury/diversity">Diversity&nbsp;</a></p>
+
+<p><a href="//about/careers-at-treasury/veterans-employment">Veterans&nbsp;Employment</a></p>
+
+<p><a href="//about/careers-at-treasury/pathways-programs">Pathways</a></p>
+
+<p><a href="//about/careers-at-treasury/how-to-apply">How to Apply</a></p>
+
+<p><a href="https://treasury.usajobs.gov/">Search Jobs</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+</div>
+
+  </div>
+</article>
+
+      </div>
+                      </li>
+        <li class="nav-item ">
+            <a href="/policy-issues" class="mm-top" onclick="return false;">Policy Issues</a>
+                  <div class="sub-nav">
+        <article class="node node--type-mega_menu_panel node--view-mode-full clearfix">
+  
+    
+
+  <div>
+    <div class="mobile-sub-nav">
+  <div class="block-region-col1">
+  
+<div data-block-plugin-id="entity_field:node:title" class="block block-ctools-block block-entity-fieldnodetitle no-underline">
+  
+    
+      <span>Policy Issues</span>
+
+  </div>
+</div>
+</div>
+<div class="mobile-scroll-wrap">
+  <div class="sub-nav-group secretarys-photo secretary-column" id="column-2">
+      <div class="block-region-col2">
+  
+<div data-block-plugin-id="block_content:87238aca-8139-42ee-bd6e-b2fe3ab84737" class="block block-block-content block-block-content87238aca-8139-42ee-bd6e-b2fe3ab84737 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="https://home.treasury.gov/policy-issues/coronavirus">COVID19 Economic Relief</a></h2>
+
+<p><a href="https://home.treasury.gov/policy-issues/coronavirus/assistance-for-American-families-and-workers">American Families and Workers</a></p>
+
+<p><a href="https://home.treasury.gov/policy-issues/coronavirus/assistance-for-small-businesses">Small Businesses</a></p>
+
+<p><a href="https://home.treasury.gov/policy-issues/coronavirus/assistance-for-state-local-and-tribal-governments">State, Local, and Tribal Governments</a></p>
+
+<p><a href="https://home.treasury.gov/policy-issues/coronavirus/assistance-for-american-industry">American Industry</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:a85db02e-9805-4e62-919b-1d3fc20955bd" class="block block-block-content block-block-contenta85db02e-9805-4e62-919b-1d3fc20955bd no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/tax-policy">Tax Policy</a></h2>
+
+<p><a href="/policy-issues/tax-policy/revenue-proposals">Revenue Proposals</a></p>
+
+<p><a href="/policy-issues/tax-policy/tax-expenditures">Tax Expenditures</a></p>
+
+<p><a href="/policy-issues/tax-policy/international-tax">International Tax</a></p>
+
+<p><a href="/policy-issues/tax-policy/treaties">Treaties and Related Documents</a></p>
+
+<p><a href="/policy-issues/tax-policy/foreign-account-tax-compliance-act">Foreign Account Tax Compliance Act (FATCA) </a></p>
+
+<p><a href="/policy-issues/tax-policy/office-of-tax-policy-reports">Reports</a></p>
+
+<p><a href="/policy-issues/tax-policy/office-of-tax-analysis">Tax Analysis</a></p>
+
+<p><a href="/policy-issues/tax-policy/tax-regulatory-process">Tax Regulatory Process</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:b27482cc-fe38-4184-bee3-7e852d3f332c" class="block block-block-content block-block-contentb27482cc-fe38-4184-bee3-7e852d3f332c no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/climate-change">Climate Change</a></h2></div>
+      
+  </div>
+</div>
+  </div>
+  <div class="secretarys-bio sub-nav-group secretary-column" id="column-3">
+      <div class="block-region-col3">
+  
+<div data-block-plugin-id="block_content:45a7d3ca-8604-4462-bf30-0677d48e49c4" class="block block-block-content block-block-content45a7d3ca-8604-4462-bf30-0677d48e49c4 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/economic-policy">Economic Policy</a></h2>
+
+<p><a href="/data/treasury-coupon-issues-and-corporate-bond-yield-curves/treasury-coupon-issues">Treasury Coupon Issues</a></p>
+
+<p><a href="/data/treasury-coupon-issues-and-corporate-bond-yield-curve/corporate-bond-yield-curve">Corporate Bond Yield Curve</a></p>
+
+<p><a href="/policy-issues/economic-policy/economic-policy-reports">Economic Policy Reports</a></p>
+
+<p><a href="/policy-issues/economic-policy/social-security-and-medicare-trustee-reports">Social Security and Medicare</a></p>
+
+<p><a href="/policy-issues/economic-policy/total-taxable-resources">Total Taxable Resources</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:504b3551-baa1-4c2a-9f14-21016fc2bc43" class="block block-block-content block-block-content504b3551-baa1-4c2a-9f14-21016fc2bc43 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/terrorism-and-illicit-finance">Terrorism and Illicit Finance</a></h2>
+
+<p><a href="https://ofac.treasury.gov/">Sanctions</a></p>
+
+<p><a href="/policy-issues/terrorism-and-illicit-finance/treasury-executive-office-for-asset-forfeiture-teoaf">Asset Forfeiture</a></p>
+
+<p><a href="/policy-issues/terrorism-and-illicit-finance/domestic-violent-extremism">Domestic Violent Extremism</a></p>
+
+<p><a href="/policy-issues/terrorism-and-illicit-finance/311-actions">311 Actions</a></p>
+
+<p><a href="/policy-issues/terrorism-and-illicit-finance/terrorist-finance-tracking-program-tftp">Terrorist Finance Tracking Program</a></p>
+
+<p><a href="/policy-issues/terrorism-and-illicit-finance/money-laundering">Money Laundering</a></p>
+
+<p><a href="/policy-issues/terrorism-and-illicit-finance/financial-action-task-force">Financial Action Task Force</a></p>
+
+<p><a href="/about/offices/terrorism-and-financial-intelligence/protecting-charitable-organizations">Protecting Charitable Organizations</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-remarks secretary-column" id="column-4">
+      <div class="block-region-col4">
+  
+<div data-block-plugin-id="block_content:edc8b9ed-47da-4ab8-80bd-3fb2302d29a9" class="block block-block-content block-block-contentedc8b9ed-47da-4ab8-80bd-3fb2302d29a9 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/financing-the-government">Financing the Government </a></h2>
+
+<p><a href="/policy-issues/financing-the-government/quarterly-refunding">Treasury Quarterly Refunding</a></p>
+
+<p><a href="/policy-issues/financing-the-government/interest-rate-statistics">Interest Rate Statistics</a></p>
+
+<p><a href="/policy-issues/financing-the-government/treasury-marketable-and-non-marketable-securities">Treasury Securities</a></p>
+
+<p><a href="/policy-issues/financing-the-government/treasury-investor-data">Treasury Investor Data</a></p>
+
+<p><a href="/policy-issues/financing-the-government/debt-management-research">Debt Management Research</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:8b280840-59f6-4a11-b57d-2a1973bb0316" class="block block-block-content block-block-content8b280840-59f6-4a11-b57d-2a1973bb0316 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/financial-markets-financial-institutions-and-fiscal-service">Financial Markets, Financial Institutions, and Fiscal Service</a></h2>
+
+<p><a href="/policy-issues/financial-markets-financial-institutions-and-fiscal-service/cash-and-debt-forecasting">Cash and Debt Forecasting</a></p>
+
+<p><a href="/policy-issues/financial-markets-financial-institutions-and-fiscal-service/debt-limit">Debt Limit</a></p>
+
+<p><a href="/policy-issues/financial-markets-financial-institutions-and-fiscal-service/fsoc">Financial Stability Oversight Council</a></p>
+
+<p><a href="/policy-issues/financial-markets-financial-institutions-and-fiscal-service/federal-insurance-office">Federal Insurance Office</a></p>
+
+<p><a href="/policy-issues/financial-markets-financial-institutions-and-fiscal-service/restore-act">RESTORE Act</a></p>
+
+<p><a href="/policy-issues/financial-markets-financial-institutions-and-fiscal-service/1603-program-payments-for">1603 Program</a></p>
+
+<p><a href="https://www.cdfifund.gov/">The Community Development Financial Institution (CDFI) Fund</a></p>
+
+<p><a href="https://www.makinghomeaffordable.gov/">Making Home Affordable</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-travel-schedule secretary-column" id="column-5">
+      <div class="block-region-col5">
+  
+<div data-block-plugin-id="block_content:e779a09f-978f-4675-8c82-4d49327126bb" class="block block-block-content block-block-contente779a09f-978f-4675-8c82-4d49327126bb no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="https://ofac.treasury.gov/">Financial Sanctions</a></h2>
+
+<p><a href="https://ofac.treasury.gov/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists">Specially Designated Nationals List (SDN List)</a></p>
+
+<p><a href="https://ofac.treasury.gov/consolidated-sanctions-list-non-sdn-lists">Consolidated Sanctions List</a></p>
+
+<p><a href="https://ofac.treasury.gov/sanctions-list-search-tool">Search OFAC's Sanctions Lists</a></p>
+
+<p><a href="https://ofac.treasury.gov/other-ofac-sanctions-lists">Additional Sanctions Lists</a></p>
+
+<p><a href="https://ofac.treasury.gov/recent-actions">OFAC Recent Actions</a></p>
+
+<p><a href="https://ofac.treasury.gov/sanctions-programs-and-country-information">Sanctions Programs and Country Information</a></p>
+
+<p><a href="https://ofac.treasury.gov/faqs">Frequently Asked Questions</a></p>
+
+<p><a href="https://ofac.treasury.gov/civil-penalties-and-enforcement-information">OFAC Civil Penalties and Enforcement</a></p>
+
+<p><a href="https://ofac.treasury.gov/contact-ofac">Contact OFAC</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:2ca3d625-6c59-4e8d-af94-c1e12a9a5e41" class="block block-block-content block-block-content2ca3d625-6c59-4e8d-af94-c1e12a9a5e41 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/consumer-policy">Consumer Policy</a></h2>
+
+<p><a href="/policy-issues/consumer-policy/financial-literacy-and-education-commission">Financial Literacy and Education Commission</a></p>
+
+<p><a href="https://www.mymoney.gov/">Mymoney.gov</a></p>
+
+<p><a href="/policy-issues/consumer-policy/innovations-in-financial-services">Innovations in Financial Services</a></p>
+
+<p><a href="/policy-issues/consumer-policy/featured-research">Featured Research</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-column" id="column-6">
+      <div class="block-region-col6">
+  
+<div data-block-plugin-id="block_content:db30dc82-8265-4b2b-a85f-2d67961ebe49" class="block block-block-content block-block-contentdb30dc82-8265-4b2b-a85f-2d67961ebe49 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/international">International</a></h2><p><a href="/policy-issues/international/the-committee-on-foreign-investment-in-the-united-states-cfius">The Committee on Foreign Investment in the United States (CFIUS)</a></p><p><a href=" /policy-issues/international/outbound-investment-program">Outbound Investment Program</a></p><p><a href="/policy-issues/international/exchange-stabilization-fund">Exchange Stabilization Fund</a></p><p><a href="/policy-issues/international/g-7-and-g-20">G-7 and G-20</a></p><p><a href="/policy-issues/international/international-monetary-fund">International Monetary Fund</a></p><p><a href="/policy-issues/international/multilateral-development-banks">Multilateral Development Banks</a></p><p><a href="/policy-issues/international/macroeconomic-and-foreign-exchange-policies-of-major-trading-partners">Macroeconomic and Foreign Exchange Policies of Major Trading Partners</a></p><p><a href="/policy-issues/international/exchange-rate-analysis">Exchange Rate Analysis</a></p><p><a href="/policy-issues/international/us-china-comprehensive-economic-dialogue">U.S.-China Comprehensive Strategic Economic Dialogue (CED)</a></p></div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:ee06edda-a3f6-4eb7-9711-46c815e911a9" class="block block-block-content block-block-contentee06edda-a3f6-4eb7-9711-46c815e911a9 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/small-business-programs">Small Business Programs</a></h2>
+
+<p><a href="/policy-issues/small-business-programs/small-and-disadvantaged-business-utilization-0">Small and Disadvantaged Business Utilization</a></p>
+
+<p><a href="/policy-issues/small-business-programs/small-business-lending-fund">Small Business Lending Fund</a></p>
+
+<p><a href="/policy-issues/small-business-programs/state-small-business-credit-initiative-ssbci">State Small Business Credit Initiative</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:67ed2f97-7a9f-4b86-9df7-e63b30af96ae" class="block block-block-content block-block-content67ed2f97-7a9f-4b86-9df7-e63b30af96ae no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/tribal-affairs">Tribal Affairs</a></h2>
+</div>
+      
+  </div>
+</div>
+  </div>
+</div>
+
+  </div>
+</article>
+
+      </div>
+                      </li>
+        <li class="nav-item ">
+            <a href="/data" class="mm-top" onclick="return false;">Data</a>
+                  <div class="sub-nav">
+        <article class="node node--type-mega_menu_panel node--view-mode-full clearfix">
+  
+    
+
+  <div>
+    <div class="mobile-sub-nav">
+  <div class="block-region-col1">
+  
+<div data-block-plugin-id="entity_field:node:title" class="block block-ctools-block block-entity-fieldnodetitle no-underline">
+  
+    
+      <span>Data</span>
+
+  </div>
+</div>
+</div>
+<div class="mobile-scroll-wrap">
+  <div class="sub-nav-group secretarys-photo secretary-column" id="column-2">
+      <div class="block-region-col2">
+  
+<div data-block-plugin-id="block_content:9258b68a-9e90-42b1-b7c5-9049081662a0" class="block block-block-content block-block-content9258b68a-9e90-42b1-b7c5-9049081662a0 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/financing-the-government/interest-rate-statistics">Interest Rates</a></h2>
+
+<p><a href="/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2023">Daily Treasury Par Yield Curve Rates</a></p>
+
+<p><a href="/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&amp;field_tdr_date_value=2023">Daily Treasury Par Real Yield Curve Rates</a></p>
+
+<p><a href="/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&amp;field_tdr_date_value=2023">Daily Treasury Bill Rates</a></p>
+
+<p><a href="/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_long_term_rate&amp;field_tdr_date_value=2023">Daily Treasury Long-Term Rates</a></p>
+
+<p><a href="/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_long_term&amp;field_tdr_date_value=2023">Daily Treasury Real Long-Term Rates</a></p>
+
+<p>&nbsp;</p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:edd753f5-38d8-4209-a98c-27488d0d2fb1" class="block block-block-content block-block-contentedd753f5-38d8-4209-a98c-27488d0d2fb1 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/data/treasury-coupon-issues-and-corporate-bond-yield-curves">Treasury Coupon-Issue and Corporate Bond Yield Curve</a></h2>
+
+<p><a href="/data/treasury-coupon-issues-and-corporate-bond-yield-curves/treasury-coupon-issues">Treasury Coupon Issues</a></p>
+
+<p><a href="/data/treasury-coupon-issues-and-corporate-bond-yield-curve/corporate-bond-yield-curve">Corporate Bond Yield Curve</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="secretarys-bio sub-nav-group secretary-column" id="column-3">
+      <div class="block-region-col3">
+  
+<div data-block-plugin-id="block_content:3e280843-aad7-4e99-a3ad-4aa1d8d38a45" class="block block-block-content block-block-content3e280843-aad7-4e99-a3ad-4aa1d8d38a45 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2>Federal Financial Data</h2>
+
+<p><a href="https://fiscaldata.treasury.gov/americas-finance-guide/ ">Your Guide to America’s Finances</a></p>
+
+<p><a href="https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-outlays-and-the-deficit-surplus-of-the-u-s-government">Monthly Treasury Statement</a></p>
+
+<p><a href="https://fiscaldata.treasury.gov/datasets/daily-treasury-statement/operating-cash-balance">Daily Treasury Statement</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:40da813f-5ffa-4ef2-9e52-6767d2e42042" class="block block-block-content block-block-content40da813f-5ffa-4ef2-9e52-6767d2e42042 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="https://usaspending.gov">How Your Money Is Spent</a></h2>
+
+<p><a href="https://www.usaspending.gov/">USAspending.gov</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:1fa5995a-90da-46f6-98f6-f892b7e83b25" class="block block-block-content block-block-content1fa5995a-90da-46f6-98f6-f892b7e83b25 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="https://www.treasurydirect.gov/govt/reports/pd/pd_debttothepenny.htm">National Debt</a></h2>
+
+<p><a href="https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny">National Debt to the Penny</a></p>
+
+<p><a href="https://fiscaldata.treasury.gov/datasets/historical-debt-outstanding/historical-debt-outstanding">Historical Debt Outstanding</a></p>
+
+<p><a href="https://fiscaldata.treasury.gov/datasets/monthly-statement-public-debt/summary-of-treasury-securities-outstanding">Monthly Statement of the Public Debt&nbsp;</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:5f1697f3-3b2e-4ac3-9b73-2c49fa9926d0" class="block block-block-content block-block-content5f1697f3-3b2e-4ac3-9b73-2c49fa9926d0 no-underline">
+  
+    
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-remarks secretary-column" id="column-4">
+      <div class="block-region-col4">
+  
+<div data-block-plugin-id="block_content:65eef870-0ea4-4f5d-995e-a15fa42d00bc" class="block block-block-content block-block-content65eef870-0ea4-4f5d-995e-a15fa42d00bc no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/policy-issues/financing-the-government/quarterly-refunding">Quarterly Refunding</a></h2>
+
+<p><a href="/policy-issues/financing-the-government/quarterly-refunding/treasury-quarterly-refunding-process">Debt Management Overview and Quarterly Refunding Process</a></p>
+
+<p><a href="/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents">Most Recent Documents</a></p>
+
+<p><a href="/policy-issues/financing-the-government/quarterly-refunding/quarterly-refunding-archives">Archives</a></p>
+
+<p><a href="/policy-issues/financing-the-government/quarterly-refunding/treasury-quarterly-refunding-webcasts">Webcasts</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:b3900a1b-1a1f-4663-8abc-c1c74528e6bc" class="block block-block-content block-block-contentb3900a1b-1a1f-4663-8abc-c1c74528e6bc no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/data/investor-class-auction-allotments">Investor Class Auction Allotments</a></h2>
+
+<p>&nbsp;</p>
+
+<h2><a href="/data/other-programs">Other Programs</a></h2>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-travel-schedule secretary-column" id="column-5">
+      <div class="block-region-col5">
+  
+<div data-block-plugin-id="block_content:2a347020-8bd3-4994-88ba-c085eb54364b" class="block block-block-content block-block-content2a347020-8bd3-4994-88ba-c085eb54364b no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/data/treasury-international-capital-tic-system">Treasury International Capital (TIC) System</a></h2>
+
+<p><a href="/data/treasury-international-capital-tic-system">U.S International Portfolio Investment Statistics</a></p>
+
+<p><a href="/data/treasury-international-capital-tic-system-home-page/release-dates-of-tic-data-0">Release Dates</a></p>
+
+<p><a href="/data/treasury-international-capital-tic-system-home-page/tic-forms-instructions">Forms and Instructions</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:b79c5b27-c09f-4372-9f3a-15b7b804a842" class="block block-block-content block-block-contentb79c5b27-c09f-4372-9f3a-15b7b804a842 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/data/us-international-reserve-position">U.S. International Reserve Position</a></h2>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-column" id="column-6">
+      <div class="block-region-col6">
+  
+<div data-block-plugin-id="block_content:7b74c93b-9cc7-4791-a582-c36e910c5d41" class="block block-block-content block-block-content7b74c93b-9cc7-4791-a582-c36e910c5d41 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/data/troubled-assets-relief-program">Troubled Assets Relief Program</a></h2>
+
+<p><a href="/data/troubled-assets-relief-program/reports">Reports</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+</div>
+
+  </div>
+</article>
+
+      </div>
+                      </li>
+        <li class="nav-item ">
+            <a href="/services" class="mm-top" onclick="return false;">Services</a>
+                  <div class="sub-nav">
+        <article class="node node--type-mega_menu_panel node--view-mode-full clearfix">
+  
+    
+
+  <div>
+    <div class="mobile-sub-nav">
+  <div class="block-region-col1">
+  
+<div data-block-plugin-id="entity_field:node:title" class="block block-ctools-block block-entity-fieldnodetitle no-underline">
+  
+    
+      <span>Services</span>
+
+  </div>
+</div>
+</div>
+<div class="mobile-scroll-wrap">
+  <div class="sub-nav-group secretarys-photo secretary-column" id="column-2">
+      <div class="block-region-col2">
+  
+<div data-block-plugin-id="block_content:cd22a6d8-a500-49bb-a312-73c7d2985388" class="block block-block-content block-block-contentcd22a6d8-a500-49bb-a312-73c7d2985388 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/services/report-fraud-waste-and-abuse">Report Fraud, Waste &amp; Abuse</a></h2>
+
+<p><a href="/services/report-fraud-waste-and-abuse/covid-19-scams">Report COVID-19 Scam Attempts</a></p>
+
+<p><a href="/services/report-fraud-waste-and-abuse/report-scam-attempts">Report Scam Attempts</a></p>
+
+<p><a href="/services/report-fraud-waste-and-abuse/report-fraud-or-misconduct-related-to-government-contracts-or">Report Fraud Related to Government Contracts</a></p>
+
+<p><a href="/services/report-fraud-waste-and-abuse/inspectors-general">Inspectors General</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:5c206fe4-3cd6-4a7f-b337-75d6f0042fbc" class="block block-block-content block-block-content5c206fe4-3cd6-4a7f-b337-75d6f0042fbc no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/services/bonds-and-securities">Bonds and Securities</a></h2>
+
+<p><a href="https://www.treasurydirect.gov/tdhome.htm">Buy, Manage, and Redeem</a></p>
+
+<p><a href="https://treasuryhunt.gov/">Treasury Hunt - Search for Matured Bonds</a></p>
+
+<p><a href="https://www.treasurydirect.gov/indiv/research/indepth/ebonds/res_e_bonds_eeredeem_disaster.htm">Cashing Savings Bonds in Disaster-Declared Areas</a></p>
+
+<p><a href="https://www.treasurydirect.gov/faq.htm">Frequently Asked Questions</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:1337c6e2-5df1-4e57-9bb8-7d76ca39c94c" class="block block-block-content block-block-content1337c6e2-5df1-4e57-9bb8-7d76ca39c94c no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/services/grant-programs">Grant Programs</a></h2>
+
+<p><a href="/services/social-impact-partnerships/sippra-pay-for-results">Pay for Results (SIPPRA)</a></p>
+
+<p><a href="/policy-issues/financial-markets-financial-institutions-and-fiscal-service/restore-act">RESTORE Act</a></p>
+
+<p><a href="https://www.cdfifund.gov/Pages/default.aspx">Community Development Financial Institution (CDFI) Fund</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="secretarys-bio sub-nav-group secretary-column" id="column-3">
+      <div class="block-region-col3">
+  
+<div data-block-plugin-id="block_content:697d3b79-4238-4159-8111-a4b033f11319" class="block block-block-content block-block-content697d3b79-4238-4159-8111-a4b033f11319 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/services/treasury-payments">Treasury Payments</a></h2>
+
+<p><a href="https://www.irs.gov/refunds">Where is my Refund?</a></p>
+
+<p><a href="https://fiscal.treasury.gov/pfc/i-want-to.html">Lost or Expired Check</a></p>
+
+<p><a href="https://www.fiscal.treasury.gov/fsservices/indiv/pmt/dirExpss/dirExpss_home.htm">Direct Express Card</a></p>
+
+<p><a href="https://www.fiscal.treasury.gov/fsservices/gov/pmt/eft/eft_home.htm">Non-Benefit Federal Payments</a></p>
+
+<p><a href="https://fiscal.treasury.gov/GoDirect/">Electronic Federal Benefit&nbsp;Payments - GoDirect</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:a42a1c43-137d-4599-8c4e-4d6f6030ed6b" class="block block-block-content block-block-contenta42a1c43-137d-4599-8c4e-4d6f6030ed6b no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="https://home.treasury.gov/services/currency-and-coins">Currency and Coins</a></h2>
+
+<p><a href="https://www.usmint.gov/">Shop for Coin Products</a></p>
+
+<p><a href="https://www.bep.gov/services">Shop for Currency Products&nbsp;</a></p>
+
+<p><a href="https://www.bep.gov/services/mutilated-currency-redemption">Redeem Damaged Currency</a></p>
+
+<p><a href="https://www.bep.gov/">Bureau of Engraving and Printing</a></p>
+
+<p><a href="https://www.usmint.gov/">U.S Mint</a></p>
+
+<p>&nbsp;</p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-remarks secretary-column" id="column-4">
+      <div class="block-region-col4">
+  
+<div data-block-plugin-id="block_content:162bab68-efbe-4083-832b-1499417428d2" class="block block-block-content block-block-content162bab68-efbe-4083-832b-1499417428d2 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/services/treasury-auctions">Auctions</a></h2>
+
+<p><a href="https://www.treasury.gov/auctions/irs/index.html">IRS Auctions</a></p>
+
+<p><a href="https://www.treasury.gov/auctions/treasury/rp/">Real Estate</a></p>
+
+<p><a href="https://www.treasury.gov/auctions/treasury/gp/">General Property, Vehicles, Vessels &amp; Aircraft</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:04a3cfc7-3c51-4a8f-b13b-6c8463269c42" class="block block-block-content block-block-content04a3cfc7-3c51-4a8f-b13b-6c8463269c42 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/services/the-multiemployer-pension-reform-act-of-2014">Kline-Miller Multiemployer Pension Reform Act of 2014 </a></h2>
+
+<p><a href="/services/the-multiemployer-pension-reform-act-of-2014/applications-for-benefit-suspension">Applications</a></p>
+
+<p><a href="/services/the-multiemployer-pension-reform-act-of-2014/frequently-asked-questions-about-the-kline-miller-multiemployer-pension-reform-act">Frequently Asked Questions</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:a7453ce4-9a46-433f-bb6e-f7d19f11a1bc" class="block block-block-content block-block-contenta7453ce4-9a46-433f-bb6e-f7d19f11a1bc no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/services/education">Education</a></h2>
+
+<p>&nbsp;</p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-travel-schedule secretary-column" id="column-5">
+      <div class="block-region-col5">
+  
+<div data-block-plugin-id="block_content:b91a7ac1-1e69-4dd7-abd4-e453901167a0" class="block block-block-content block-block-contentb91a7ac1-1e69-4dd7-abd4-e453901167a0 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/services/taxes">Taxes</a></h2>
+
+<p><a href="https://www.irs.gov/">Internal Revenue Service (IRS)&nbsp;</a></p>
+
+<p><a href="https://www.irs.gov/forms-instructions">IRS Forms, Instructions &amp; Publications</a></p>
+
+<p><a href="https://www.irs.gov/refunds">Refund Status</a></p>
+
+<p><a href="https://www.irs.gov/businesses/corporations/foreign-account-tax-compliance-act-fatca">Foreign Account Tax Compliance Act</a></p>
+</div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:e66a6639-cf86-4822-b84e-2afeb5caa7c7" class="block block-block-content block-block-contente66a6639-cf86-4822-b84e-2afeb5caa7c7 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/services/forms">Forms</a></h2><p><a href="https://www.irs.gov/forms-instructions">IRS Forms and Instructions</a></p><p><a href="https://treasurydirect.gov/forms.htm">Savings Bonds - Treasury Securities</a></p><p><a href="https://bsaefiling.fincen.treas.gov/main.html">Bank Secrecy Act - Fincen 114 and more</a></p><p><a href="https://ofac.treasury.gov/ofac-license-application-page">OFAC License Application</a></p><p><a href="https://ofac.treasury.gov/ofac-reporting-system">OFAC Reporting</a></p><p><a href="/data/treasury-international-capital-tic-system-home-page/tic-forms-instructions">Treasury International Capital (TIC)</a></p></div>
+      
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-column" id="column-6">
+      <div class="block-region-col6">
+  
+<div data-block-plugin-id="block_content:2bc4edd6-3bb0-4803-a971-32a8e2934e37" class="block block-block-content block-block-content2bc4edd6-3bb0-4803-a971-32a8e2934e37 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/services/government-shared-services">Government Shared Services</a></h2><p><a href="/services/government-shared-services/enterprise-business-solutions">Enterprise Applications (EA)</a></p><p><a href="/services/government-shared-services/treasury-franchise-fund">Treasury Franchise Fund (TFF)</a></p><p><a href="/services/government-shared-services/administrative-resource-center">Administrative Resource Center (ARC)</a></p><p><a href="/services/government-shared-services/shared-services-programs">Shared Services Program (SSP)</a></p><p><a href="https://www.fiscal.treasury.gov/fmqsmo/marketplace-catalog.html">Financial Management Quality Service Management Office Marketplace Catalog</a></p><p><a href="https://www.treasurydirect.gov/government/">TreasuryDirect</a></p><p><a href="https://www.ipp.gov/">Invoice Processing Platform</a></p></div>
+      
+  </div>
+
+  
+<div data-block-plugin-id="block_content:edb8879e-fa29-4f75-86c5-c50b398f5682" class="block block-block-content block-block-contentedb8879e-fa29-4f75-86c5-c50b398f5682 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/services/tours-and-library">Tours and Library</a></h2>
+
+<p><a href="/services/tours-and-library/tours-of-the-historic-treasury-building">Historic Treasury Building</a></p>
+
+<p><a href="/services/tours-and-library/library">Library</a></p>
+
+<p><a href="/about/history/curator">Curator</a></p>
+
+<p><a href="https://www.bep.gov/visitor-centers">Bureau of Engraving and Printing</a></p>
+
+<p><a href="https://www.usmint.gov/about/mint-tours-facilities">U.S. Mint</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+</div>
+
+  </div>
+</article>
+
+      </div>
+                      </li>
+        <li class="nav-item ">
+            <a href="/news/press-releases" class="mm-top" onclick="return false;">News</a>
+                        <div class="sub-nav news-menu">
+        <article class="node node--type-mega_menu_panel node--view-mode-full clearfix">
+  
+    
+
+  <div>
+    <div class="mobile-sub-nav">
+  <div class="block-region-col1">
+  
+<div data-block-plugin-id="entity_field:node:title" class="block block-ctools-block block-entity-fieldnodetitle no-underline">
+  
+    
+      <span>News</span>
+
+  </div>
+</div>
+</div>
+<div class="mobile-scroll-wrap">
+  <div class="sub-nav-group secretarys-photo secretary-column" id="column-2">
+      <div class="block-region-col2">
+  
+<div class="views-element-container block block-views block-views-blockmega-menu-news-block-1 no-underline" data-block-plugin-id="views_block:mega_menu_news-block_1">
+  
+    
+      <div><div class="mm-news-block view view-mega-menu-news view-id-mega_menu_news view-display-id-block_1 js-view-dom-id-ddc839c46284478b2961bd1d612abef8c952ad4b6d0377765cffb4620172afc9">
+  
+    
+      <div class="view-header">
+      <h2 class=""><a href="/news/featured-stories" class="">Featured Stories</a></h2>
+    </div>
+      
+      <div class="view-content">
+          <div class="mm-news-row">
+    <time datetime="2023-08-28T19:22:19Z">August 28, 2023</time>
+<div class="news-title"><a href="/news/featured-stories/labor-unions-and-the-us-economy" hreflang="en">Labor Unions and the U.S. Economy</a></div>
+  </div>
+    <div class="mm-news-row">
+    <time datetime="2023-08-16T15:18:30Z">August 16, 2023</time>
+<div class="news-title"><a href="/news/featured-stories/memorandum-from-deputy-secretary-wally-adeyemo-inflation-reduction-act-year-1" hreflang="en">Memorandum from Deputy Secretary Wally Adeyemo - Inflation Reduction Act – Year 1</a></div>
+  </div>
+    <div class="mm-news-row">
+    <time datetime="2023-08-16T15:00:00Z">August 16, 2023</time>
+<div class="news-title"><a href="/news/featured-stories/the-inflation-reduction-act-and-us-business-investment" hreflang="en">The Inflation Reduction Act and U.S. Business Investment</a></div>
+  </div>
+
+    </div>
+  
+            <div class="view-footer">
+      <div class="more-link">
+<a href="/news/featured-stories" title="View all Featured Stories">View all<span class="visually-hidden"> Featured Stories</span></a>
+</div>
+    </div>
+    </div>
+</div>
+
+  </div>
+</div>
+  </div>
+  <div class="secretarys-bio sub-nav-group secretary-column" id="column-3">
+      <div class="block-region-col3">
+  
+<div class="views-element-container block block-views block-views-blockmega-menu-news-block-3 no-underline" data-block-plugin-id="views_block:mega_menu_news-block_3">
+  
+    
+      <div><div class="mm-news-block view view-mega-menu-news view-id-mega_menu_news view-display-id-block_3 js-view-dom-id-c9d8221100965f7e31e43bcb48e864f0967468205873a721cc8cabb6eaeed7af">
+  
+    
+      <div class="view-header">
+      <h2><a href="/news/press-releases">Press Releases</a></h2>
+    </div>
+      
+      <div class="view-content">
+          <div class="mm-news-row">
+    <time datetime="2023-10-06T13:00:00Z">October 6, 2023</time>
+<div class="news-title"><a href="/news/press-releases/jy1783" hreflang="en">U.S. Department of the Treasury, IRS Release Guidance to Expand Access to Clean Vehicle Tax Credits, Help Car Dealers Grow Businesses</a></div>
+  </div>
+    <div class="mm-news-row">
+    <time datetime="2023-10-06T12:07:48Z">October 6, 2023</time>
+<div class="news-title"><a href="/news/press-releases/jy1782" hreflang="en">Detailed Guidance and Press Schedule for Secretary of the Treasury Janet L. Yellen’s Travel to the IMF and World Bank Annual Meetings in Morocco and the Eurogroup Finance Ministers Meeting in Luxembourg</a></div>
+  </div>
+    <div class="mm-news-row">
+    <time datetime="2023-10-03T18:15:00Z">October 3, 2023</time>
+<div class="news-title"><a href="/news/press-releases/jy1779" hreflang="en">Treasury Targets Large Chinese Network of Illicit Drug Producers</a></div>
+  </div>
+
+    </div>
+  
+            <div class="view-footer">
+      <div class="more-link">
+<a href="/news/press-releases" title="View all Press Releases">View All<span class="visually-hidden"> Press Releases</span></a>
+</div>
+    </div>
+    </div>
+</div>
+
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-remarks secretary-column" id="column-4">
+      <div class="block-region-col4">
+  
+<div class="views-element-container block block-views block-views-blockmega-menu-news-block-5 no-underline" data-block-plugin-id="views_block:mega_menu_news-block_5">
+  
+    
+      <div><div class="mm-news-block view view-mega-menu-news view-id-mega_menu_news view-display-id-block_5 js-view-dom-id-82310bffc47b3678b390eb3872e0e30eb90c034b811f0862935ec2151da25d33">
+  
+    
+      <div class="view-header">
+      <h2><a href="/news/press-releases/statements-remarks">Remarks and Statements</a></h2>
+    </div>
+      
+      <div class="view-content">
+          <div class="mm-news-row">
+    <time datetime="2023-10-05T19:05:15Z">October 5, 2023</time>
+<div class="news-title"><a href="/news/press-releases/jy1781" hreflang="en">Remarks by Under Secretary for Terrorism and Financial Intelligence Brian Nelson at the U.S.-Mexico High-Level Security Dialogue</a></div>
+  </div>
+    <div class="mm-news-row">
+    <time datetime="2023-10-03T17:10:17Z">October 3, 2023</time>
+<div class="news-title"><a href="/news/press-releases/jy1780" hreflang="en">Remarks by Deputy Secretary Adeyemo at a Press Conference Announcing New Treasury Action Against Fentanyl Supply Chain</a></div>
+  </div>
+    <div class="mm-news-row">
+    <time datetime="2023-10-02T19:31:07Z">October 2, 2023</time>
+<div class="news-title"><a href="/news/press-releases/jy1778" hreflang="en">Remarks by Assistant Secretary for Terrorist Financing and Financial Crimes Elizabeth Rosenberg at the Association of Certified Anti-Money Laundering Specialists Assembly Conference</a></div>
+  </div>
+
+    </div>
+  
+            <div class="view-footer">
+      <div class="more-link">
+<a href="/news/press-releases/statements-remarks" title="View all Remarks and Statements">View All<span class="visually-hidden"> Remarks and Statements</span></a>
+</div>
+    </div>
+    </div>
+</div>
+
+  </div>
+</div>
+  </div>
+  <div class="sub-nav-group secretary-travel-schedule secretary-column" id="column-5">
+      <div class="block-region-col5">
+  
+<div data-block-plugin-id="block_content:b783c42f-c8c7-40ce-8801-5e190fa1f337" class="block block-block-content block-block-contentb783c42f-c8c7-40ce-8801-5e190fa1f337 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2><a href="/news/press-releases">Press Information</a></h2>
+
+<p><a href="/news/contacts-for-members-of-the-media">Press Contacts</a></p>
+
+<p><a href="https://search.usa.gov/search/docs?utf8=%E2%9C%93&amp;affiliate=treas&amp;sort_by=&amp;dc=9123&amp;query=weekly-schedule-updates">Weekly Public Schedule Archive</a></p>
+
+<p><a href="/news/webcasts">Webcasts</a></p>
+
+<p><a href="https://search.usa.gov/search/docs?utf8=%E2%9C%93&amp;affiliate=treas&amp;sort_by=&amp;dc=9121&amp;query=media-advisories">Media Advisories Archive</a></p>
+
+<p><a href="https://service.govdelivery.com/accounts/USTREAS/subscriber/new?topic_id=USTREAS_49">Subscribe to Press Releases</a></p>
+</div>
+      
+  </div>
+</div>
+  </div>
+  
+        <div class="sub-nav-group twitter-feed" id="column-6">
+          <div class="block-region-col6">
+            <div class="mm-news-block mobile-card view view-mega-menu-news view-id-mega_menu_news view-display-id-block_3 js-view-dom-id-b2c42544280177d5acae1de1d570863f6cc30245125750dab4f7a5b1617a3d64">
+              <h2><a href="https://twitter.com/USTreasury">Twitter</a></h2>
+              <div class="view-content" id="titterfeedDiv">
+                <!--Twitter Start-->
+                                <!--Twitter End-->
+              </div>
+               <div class="more-link">
+                <a href="https://twitter.com/USTreasury" title="View more posts on twitter.com" class="">View All Tweets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div></article>
+      </div>
+                </li>
+        <li class="nav-item  mega-search">
+            <a href="/search" class="mm-top" onclick="return false;" id="mega-search-link">Search</a>
+                  <div class="sub-nav">
+        <article class="node node--type-mega_menu_panel node--view-mode-full clearfix">
+  
+    
+
+  <div>
+      <div class="search-block">
+    <div class="block-region-search-block">
+  
+<div id="mm-search-block-form" class="search-form search-block-form block block-search block-search-form-block no-underline" onsubmit="return api_do_search();" data-drupal-selector="search-block-form" data-block-plugin-id="search_form_block" role="search">
+  
+    
+      <form action="/search/user" method="get" id="search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-type-search form-type-search form-item-keys form-no-label">
+      <label for="edit-keys" class="visually-hidden">Search</label>
+        <input placeholder="Enter keywords" data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="60" maxlength="128" class="form-search" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input class="search-form__submit button js-form-submit form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Go" />
+</div>
+
+</form>
+
+  </div>
+</div>
+  </div>
+<div class="mobile-sub-nav">
+  <div class="block-region-col1">
+  
+<div data-block-plugin-id="entity_field:node:title" class="block block-ctools-block block-entity-fieldnodetitle no-underline">
+  
+    
+      <span>Search</span>
+
+  </div>
+</div>
+</div>
+<div class="mobile-scroll-wrap">
+  <div class="sub-nav-group secretarys-photo secretary-column" id="column-2">
+      <div class="block-region-col2">
+
+<nav role="navigation" aria-label="-menu" data-block-plugin-id="menu_block:quick-links" class="block block-menu navigation block-system-menublock menu--quick-links">
+                    
+        <h2 id="-menu">The Public</h2>
+        
+    
+                
+             <ul class="quik menu">
+                          <li class="menu-item menu-item--expanded">
+          <a href="/" data-drupal-link-system-path="&lt;front&gt;" class="is-active">General Public</a>
+                                    <ul class="menu">
+                          <li class="menu-item">
+          <a href="https://home.treasury.gov/services/treasury-auctions">Auctions</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://home.treasury.gov/services/report-fraud-waste-and-abuse/report-scam-attempts">Report Scam Attempts</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.treasurydirect.gov/tdhome.htm" target="_blank">Savings Bonds</a>
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+
+
+    </nav></div>
+  </div>
+  <div class="secretarys-bio sub-nav-group secretary-column" id="column-3">
+      <div class="block-region-col3">
+
+<nav role="navigation" aria-label="-menu" data-block-plugin-id="menu_block:quick-links" class="block block-menu navigation block-system-menublock menu--quick-links">
+                    
+        <h2 id="-menu">Businesses</h2>
+        
+    
+                
+             <ul class="quik menu">
+                          <li class="menu-item menu-item--expanded">
+          <a href="/" data-drupal-link-system-path="&lt;front&gt;" class="is-active">All Businesses</a>
+                                    <ul class="menu">
+                          <li class="menu-item">
+          <a href="https://www.irs.gov/forms-pubs/about-form-941">Form 941, employer&#039;s quarterly federal tax return</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online">Employer Identification Number (EIN)</a>
+                  </li>
+          </ul>
+  
+                  </li>
+                      <li class="menu-item menu-item--expanded">
+          <a href="/" data-drupal-link-system-path="&lt;front&gt;" class="is-active">Small Businesses</a>
+                                    <ul class="menu">
+                          <li class="menu-item">
+          <a href="https://home.treasury.gov/policy-issues/small-business-programs/small-and-disadvantaged-business-utilization/bureau-small-business-specialists">Small Business Contacts</a>
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+
+
+    </nav></div>
+  </div>
+  <div class="sub-nav-group secretary-remarks secretary-column" id="column-4">
+      <div class="block-region-col4">
+
+<nav role="navigation" aria-label="-menu" data-block-plugin-id="menu_block:quick-links" class="block block-menu navigation block-system-menublock menu--quick-links">
+                    
+        <h2 id="-menu">Financial Institutions</h2>
+        
+    
+                
+             <ul class="quik menu">
+                          <li class="menu-item menu-item--expanded">
+          <a href="/" data-drupal-link-system-path="&lt;front&gt;" class="is-active">All Financial Institutions </a>
+                                    <ul class="menu">
+                          <li class="menu-item">
+          <a href="https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists">Specially Designated Nationals list</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/default.aspx">Interest rate statistics</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.treasury.gov/resource-center/data-chart-center/quarterly-refunding/Pages/default.aspx">Quarterly refunding information</a>
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+
+
+    </nav></div>
+  </div>
+  <div class="sub-nav-group secretary-travel-schedule secretary-column" id="column-5">
+      <div class="block-region-col5">
+
+<nav role="navigation" aria-label="-menu" data-block-plugin-id="menu_block:quick-links" class="block block-menu navigation block-system-menublock menu--quick-links">
+                    
+        <h2 id="-menu">Government</h2>
+        
+    
+                
+             <ul class="quik menu">
+                          <li class="menu-item menu-item--expanded">
+          <a href="/" data-drupal-link-system-path="&lt;front&gt;" class="is-active">Federal Government</a>
+                                    <ul class="menu">
+                          <li class="menu-item">
+          <a href="https://www.treasury.gov/about/budget-performance/Pages/default.aspx">Budget, Financial Reporting, Planning and Performance </a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://home.treasury.gov/services/government-shared-services">Shared Services</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://treasurydirect.gov/" data-display-mobile="0" data-display-desktop="0" target="_blank">TreasuryDirect for Government</a>
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+
+
+    </nav></div>
+  </div>
+  <div class="sub-nav-group secretary-column" id="column-6">
+      
+  </div>
+</div>
+
+  </div>
+</article>
+
+      </div>
+                      </li>
+          </ul>
+</nav>
+
+  </div>
+
+  </div>
+
+                </div>
+                    </div>
+                  <!-- ______________________ ALERT BANNER REGION _______________________ -->
+          <div id="alert-banner-region">
+                
+            </div>
+          </div>
+    <!-- /navigation -->
+	<div id="treas_alert" class="front-page-alert" style="display:none"></div>
+    <span id="main-content" tabindex="-1"></span>
+    <!-- ______________________ Hero -- _______________________ -->
+          <div class="clearfix hero-region" id="hero-inner" role="main">
+        <div class="hero-region-inner">
+            <div class="region region-hero">
+    
+  
+<div id="block-content-homepage-hero" data-block-plugin-id="entity_block:node" class="block block-entity-block block-entity-blocknode no-underline">
+  
+    
+      
+<article  role="article" about="/node/969431" class="node node--type-slideshow node--view-mode-default">
+
+    <header>
+    
+        <h2>
+      <a href="/node/969431"></a>
+    </h2>
+        
+
+    
+      </header>
+  
+  <div class="content">
+      <div class="slick blazy slick--field slick--field-slides slick--field-slides--default slick--optionset--default" data-blazy="" id="slick-node-slideshow-slides-default-969431-1">
+      <div id="slick-node-slideshow-slides-default-969431-1-slider" data-slick="{&quot;arrows&quot;:false,&quot;dots&quot;:true,&quot;infinite&quot;:false,&quot;count&quot;:2}" class="slick__slider">
+  
+        <div class="slick__slide slide slide--0">
+    
+
+
+<div class="treas-slideshow">
+    <div class="slide__image">
+        <div class="field-content">
+            <img src="/system/files/136/hero2023-Treasury-cherryblossom.jpg" alt="Main Treasury Building" />
+        </div>
+    </div>
+    <div class="slide__overlay">
+        <div>
+            <div class="slide__subtitle"></div>
+            <div class="slide__headline">
+                <h2>
+                    <a href="/news/press-releases/jy1340">Treasury Data on American Rescue Plan’s Historic Investments in Economic Growth</a>
+                </h2>
+            </div>
+            <div class="slide__readmore">
+                <a href="/news/press-releases/jy1340" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+  <div class="slick__slide slide slide--1">
+    
+
+
+<div class="treas-slideshow">
+    <div class="slide__image">
+        <div class="field-content">
+            <img src="/system/files/136/hero2023-jy.jpg" alt="Secretary Janet Yellen" />
+        </div>
+    </div>
+    <div class="slide__overlay">
+        <div>
+            <div class="slide__subtitle"></div>
+            <div class="slide__headline">
+                <h2>
+                    <a href="/about/general-information/officials">Treasury Officials</a>
+                </h2>
+            </div>
+            <div class="slide__readmore">
+                <a href="/about/general-information/officials" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+
+  
+      </div>
+          <nav role="navigation" class="slick__arrow">
+        <button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0">Previous</button>
+                <button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0">Next</button>
+      </nav>
+      </div>
+
+
+  </div>
+
+<!-- /content -->
+
+  
+  
+  
+</article>
+<!-- /article #node -->
+
+  </div>
+
+  </div>
+
+        </div>
+      </div>
+        
+    <!-- ______________________ Pre Content _______________________ -->
+            <div class="clearfix pre-content" id="pre-content">
+            <div class="mq--t breadcrumb-container">
+                  <div class="region region-pre-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+            </div>
+        </div>
+    
+
+    <!-- ______________________ Preface -- _______________________ -->
+
+        <div class="clearfix preface-region" id="preface-inner">
+            <div class="mq--t">
+                  <div class="region region-preface">
+    
+  
+<div class="views-element-container block block-views block-views-blockfeatured-stories-block-1 no-underline" id="block-views-block-featured-stories-block-1" data-block-plugin-id="views_block:featured_stories-block_1">
+  
+    
+      <div><div class="featued-stories--promoted-block view view-featured-stories view-id-featured_stories view-display-id-block_1 js-view-dom-id-c94f560bea95734f049e84e1aded3fc12a20ee039731b383bd9a2cb03655d606">
+  
+    
+      <div class="view-header">
+      <h2><a href="/news/featured-stories">Featured Stories</a></h2><span class="heading-border"><span class="line"></span></span>
+    </div>
+      
+      <div class="view-content">
+          <div>
+    <div class="featured-stories--horizontal full-featured-stories--horizontal">
+<span>
+  <img loading="lazy" src="/sites/default/files/styles/featured/public/2023-08/Green-Treasury-Seal-2021.png" width="427" height="279" alt="Green Treasury seal" typeof="Image" />
+
+
+
+</span>
+<div class="featured-stories--horizontal__col2">
+  <div class='date-format'><time datetime="2023-08-16T15:00:00Z">August 16, 2023</time>
+</div>
+  <div class="featured-stories__headline"><a href="/news/featured-stories/the-inflation-reduction-act-and-us-business-investment" hreflang="en">The Inflation Reduction Act and U.S. Business Investment</a></div>
+</div>
+<span class="learn-more-btn">Read More</span>
+</div>
+  </div>
+    <div>
+    <div class="featured-stories--horizontal">
+<span class="no-image">
+  <img loading="lazy" src="/sites/default/files/styles/featured/public/2023-08/seal-green-1112.png" width="427" height="279" alt="Treasury Seal" typeof="Image" />
+
+
+
+</span>
+<div class="featured-stories--horizontal__col2">
+  <div class='date-format'><time datetime="2023-08-28T19:22:19Z">August 28, 2023</time>
+</div>
+  <div class="featured-stories__headline"><a href="/news/featured-stories/labor-unions-and-the-us-economy" hreflang="en">Labor Unions and the U.S. Economy</a></div>
+</div>
+<span class="learn-more-btn">Read More</span>
+</div>
+  </div>
+    <div>
+    <div class="featured-stories--horizontal">
+<span class="no-image">
+  <img loading="lazy" src="/sites/default/files/styles/featured/public/2023-08/Green-Treasury-Seal-2021.png" width="427" height="279" alt="Treasury Seal" typeof="Image" />
+
+
+
+</span>
+<div class="featured-stories--horizontal__col2">
+  <div class='date-format'><time datetime="2023-08-16T15:18:30Z">August 16, 2023</time>
+</div>
+  <div class="featured-stories__headline"><a href="/news/featured-stories/memorandum-from-deputy-secretary-wally-adeyemo-inflation-reduction-act-year-1" hreflang="en">Memorandum from Deputy Secretary Wally Adeyemo - Inflation Reduction Act – Year 1</a></div>
+</div>
+<span class="learn-more-btn">Read More</span>
+</div>
+  </div>
+
+    </div>
+  
+            <div class="view-footer">
+      <a class="featured-stories-viewall" href="/news/featured-stories">View all Featured Stories</a>
+    </div>
+    </div>
+</div>
+
+  </div>
+
+  
+<div class="views-element-container block block-views block-views-blockmega-menu-news-block-8 no-underline" id="block-views-block-mega-menu-news-block-8" data-block-plugin-id="views_block:mega_menu_news-block_8">
+  
+    
+      <div><div class="block-treasury-social-hub view view-mega-menu-news view-id-mega_menu_news view-display-id-block_8 js-view-dom-id-d1f710664ec559e2369bdb7111db9fe1b637ac56f4a9737211ff2940767390bd">
+  
+    
+      <div class="view-header">
+      <h2><a href="/news/press-releases">Press Releases</a></h2><span class="heading-border"><span class="line"></span></span>
+    </div>
+      
+      <div class="view-content">
+          <div class="margin-bottom-2 margin-top-3 margin-bottom-3 margin-right-0 float-none width-auto bg-white padding-4 shadow-1">
+    <div class="date-format border-bottom border-base-lighter margin-bottom-1 text-no-underline">October 6, 2023</div><div class="font-sans-md"><a href="/news/press-releases/jy1783" hreflang="en">U.S. Department of the Treasury, IRS Release Guidance to Expand Access to Clean Vehicle Tax Credits, Help Car Dealers Grow Businesses</a></div>
+  </div>
+    <div class="margin-bottom-2 margin-top-3 margin-bottom-3 margin-right-0 float-none width-auto bg-white padding-4 shadow-1">
+    <div class="date-format border-bottom border-base-lighter margin-bottom-1 text-no-underline">October 6, 2023</div><div class="font-sans-md"><a href="/news/press-releases/jy1782" hreflang="en">Detailed Guidance and Press Schedule for Secretary of the Treasury Janet L. Yellen’s Travel to the IMF and World Bank Annual Meetings in Morocco and the Eurogroup Finance Ministers Meeting in Luxembourg</a></div>
+  </div>
+    <div class="margin-bottom-2 margin-top-3 margin-bottom-3 margin-right-0 float-none width-auto bg-white padding-4 shadow-1">
+    <div class="date-format border-bottom border-base-lighter margin-bottom-1 text-no-underline">October 3, 2023</div><div class="font-sans-md"><a href="/news/press-releases/jy1779" hreflang="en">Treasury Targets Large Chinese Network of Illicit Drug Producers</a></div>
+  </div>
+    <div class="margin-bottom-2 margin-top-3 margin-bottom-3 margin-right-0 float-none width-auto bg-white padding-4 shadow-1">
+    <div class="date-format border-bottom border-base-lighter margin-bottom-1 text-no-underline">September 29, 2023</div><div class="font-sans-md"><a href="/news/press-releases/jy1775" hreflang="en">FACT SHEET: The Impact of Climate Change on American Household Finances</a></div>
+  </div>
+    <div class="margin-bottom-2 margin-top-3 margin-bottom-3 margin-right-0 float-none width-auto bg-white padding-4 shadow-1">
+    <div class="date-format border-bottom border-base-lighter margin-bottom-1 text-no-underline">September 29, 2023</div><div class="font-sans-md"><a href="/news/press-releases/jy1776" hreflang="en">U.S. Department of the Treasury Releases Report on Climate Change and Household Finances</a></div>
+  </div>
+
+    </div>
+  
+            <div class="view-footer">
+      <div class="more-link">
+<a href="/news/press-releases" title="View all Press Releases" class="twitter-viewall-link">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;View All<span class="visually-hidden"> Press Releases</span></a>
+</div>
+    </div>
+    </div>
+</div>
+
+  </div>
+
+  </div>
+
+            </div>
+        </div>
+    
+
+    <!-- ______________________ MAIN _______________________ -->
+
+    <div class="clearfix content__container" id="main" role="main">
+        <div class="mq--t">
+
+                        <!-- /sidebar-first -->
+
+            <section id="content">
+
+                
+                <div id="content-area">
+                      <div class="region region-content">
+    
+  
+<div id="block-hamilton-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block no-underline">
+  
+    
+       <div id="two-two">
+   <div class="two-two-row1__container clearfix">
+    <div class="two-two-row1 two-two-row">
+      <section class="two-two-row1-col1">
+        
+      </section>
+      <aside class="two-two-row1-col2">
+        
+      </aside>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="two-two-row2 two-two-row">
+    <section class="two-two-row2-col1">
+      <div class="block-region-row2-col1">
+  
+<div data-block-plugin-id="block_content:9fc040b8-bf5c-414b-a699-7f97c9944e49" class="block block-block-content block-block-content9fc040b8-bf5c-414b-a699-7f97c9944e49 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="view-header" style="margin-bottom:20px; padding:0;">
+        <h2 style="margin-bottom:0px; padding-bottom:0;">We Can Do This</h2>
+        <span class="heading-border"><span class="line"></span></span>
+      </div>
+<div>
+<a href="https://www.vaccines.gov/"><img alt="Find COVID19 vaccines near you at vaccines.gov, vacunas.gov, 1-800-232-0233, text zip code to 438829, we can do this, CDC. " src="/system/files/291/banner-vaccines-v3.jpg" /></a></div>
+</div>
+      
+  </div>
+
+  
+<div class="views-element-container block block-views block-views-blockdfu-tool-page-block-cmt-rates no-underline" data-block-plugin-id="views_block:dfu_tool_page-block_cmt_rates">
+  
+    
+      <div><div class="view-data-center view view-dfu-tool-page view-id-dfu_tool_page view-display-id-block_cmt_rates js-view-dom-id-db428994068b0b43a40c4cf62d02101e21b681deb380ba20b7ea04854bd9c178">
+  
+    
+      <div class="view-header">
+      <h2>Data Center</h2><span class="heading-border"><span class="line"></span></span>
+    </div>
+      
+      <div class="view-content">
+          <div>
+    <div class="views-field views-field-nothing"><span class="field-content"><div class="col-1">
+<a href="/policy-issues/financing-the-government/interest-rate-statistics">Treasury Interest Rate Statistics </a>
+<p>On a daily basis, Treasury publishes <span><span>Treasury Par Yield Curve Rates</span></span>, <span><span>Treasury Par Real Yield Curve Rates</span></span>, Treasury Bill Rates, Treasury Long-Term Rates and Extrapolation Factors, and Treasury Real Long-Term Rate Averages.</p>
+
+<div class="data-link"><a href="/policy-issues/financing-the-government/interest-rate-statistics">View This Data</a> </div>
+</div>
+<div class="col-2">
+<div id="data-title">Daily Treasury Par Yield Curve CMT Rates</div>
+<div id="data-subtitle"><time datetime="2023-10-06T12:00:00Z">10/06/2023</time>
+</div>
+<div class="data-row-wrap">
+	<div class="data-box data-five-column-box">1 Month <hr><span id="data-1m">5.59</span></div>
+	<div class="data-box data-five-column-box">2 Month <hr><span id="data-2m">5.60</span></div>
+	<div class="data-box data-five-column-box">3 Month <hr><span id="data-3m">5.63</span></div>
+        <div class="data-box data-five-column-box">4 Month <hr><span id="data-4m">5.64</span></div>
+	<div class="data-box data-five-column-box">6 Month <hr><span id="data-6m">5.59</span></div>
+</div>
+<div class="data-row-wrap">
+	<div class="data-box data-four-column-box">1 Year <hr><span id="data-1yr">5.43</span></div>
+	<div class="data-box data-four-column-box">2 Year <hr><span id="data-2yr">5.08</span></div>
+	<div class="data-box data-four-column-box">3 Year <hr><span id="data-3yr">4.87</span></div>
+	<div class="data-box data-four-column-box">5 Year <hr><span id="data-5yr">4.75</span></div>
+</div>
+<div class="data-row-wrap">
+	<div class="data-box data-four-column-box">7 Year <hr><span id="data-7yr">4.79</span></div>
+	<div class="data-box data-four-column-box">10 Year <hr><span id="data-10yr">4.78</span></div>
+	<div class="data-box data-four-column-box">20 Year <hr><span id="data-20yr">5.13</span></div>
+	<div class="data-box data-four-column-box">30 Year <hr><span id="data-30yr">4.95</span></div>
+</div>
+<div></span></div>
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+</div>
+    </section>
+    <aside class="two-two-row2-col2">
+      <div class="block-region-row2-col2">
+  
+<div data-block-plugin-id="block_content:79d5cd0f-3cc4-403d-8318-ff736bc7d877" class="block block-block-content block-block-content79d5cd0f-3cc4-403d-8318-ff736bc7d877 no-underline">
+  
+            <div class="view-header">
+        <h2>Tools</h2>
+        <span class="heading-border"><span class="line"></span></span>
+      </div>
+        
+      
+  </div>
+<div data-block-plugin-id="block_content:19945a7f-26c3-4dd6-ac2b-b6bbbf5d897e" class="block tile-link-block tile--blue" tabindex="0">
+  <a href="https://www.treasury.gov/resource-center/sanctions/Pages/default.aspx">
+          <h3>Financial Sanctions</h3>
+        
+          
+            <div class="field field--name-field-tile-text field--type-string field--label-hidden field__item">OFAC sanctions programs, country information, and Specially Designated Nationals (SDN) List</div>
+      
+        <span class="tile--learn-more">Learn More</span>
+  </a>
+</div>
+<div data-block-plugin-id="block_content:a0dfe786-2a5b-4978-8db6-97d1e0313e52" class="block tile-link-block tile--gray" tabindex="0">
+  <a href="https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/default.aspx">
+          <h3>Daily Interest Rates</h3>
+        
+          
+            <div class="field field--name-field-tile-text field--type-string field--label-hidden field__item">View daily interest rate statistics</div>
+      
+        <span class="tile--learn-more">Learn More</span>
+  </a>
+</div>
+<div data-block-plugin-id="block_content:b9188f9f-a06a-4541-8dc0-e479e2cf1eda" class="block tile-link-block tile--green" tabindex="0">
+  <a href="https://treasuryhunt.gov/">
+          <h3>Treasury Hunt</h3>
+        
+          
+            <div class="field field--name-field-tile-text field--type-string field--label-hidden field__item">Search for Matured Bonds</div>
+      
+        <span class="tile--learn-more">Learn More</span>
+  </a>
+</div>
+</div>
+    </aside>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+  </div>
+
+  </div>
+
+                </div>
+
+                
+
+            </section>
+            <!-- /content-inner /content -->
+
+                        <!-- /sidebar-first -->
+
+        </div>
+        <!-- /mq--t -->
+    </div>
+    <!-- /main -->
+
+    <!-- ______________________ Post Content _______________________ -->
+
+            <div class="clearfix post-content" id="post-content">
+            <div class="mq--t">
+                  <div class="region region-post-content">
+    
+  
+<div id="block-homepageheroslidercssfix20230106" data-block-plugin-id="block_content:e8e71b3e-0d0c-49f5-9b45-bc9afc5522b1" class="block block-block-content block-block-contente8e71b3e-0d0c-49f5-9b45-bc9afc5522b1 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><style type="text/css">
+#block-content-homepage-hero, #block-content-homepage-hero--2, 
+.region-hero .block {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+.view-slideshow-slides .slide__overlay, .treas-slideshow .slide__overlay {
+    top: 0;
+    height: calc(100%);
+    resize: vertical;
+    overflow: auto;
+    max-height: calc(100vw * 0.645);
+ }
+}
+
+@media screen and (max-width: 768px) {
+.view-slideshow-slides .slide__image img, .treas-slideshow .slide__image img {
+    margin-top: 8px;
+   }
+}
+
+@media screen and (max-width: 40em) {
+   ul.slick-dots li:not(:last-child) {
+    margin-right: 14px;
+   }
+}
+
+</style></div>
+      
+  </div>
+
+  </div>
+
+            </div>
+        </div>
+    
+    <!-- ______________________ FOOTER _______________________ -->
+    <footer id="footer">
+            <div id="portal-footer">
+            <div class="mq--t">
+                <div class="inner">
+                  <div class="region region-footer">
+    
+
+<nav role="navigation" aria-label="block-portalfooter-menu" id="block-portalfooter" data-block-plugin-id="menu_block:portal-footer" class="col block block-menu navigation block-system-menublock menu--portal-footer">
+            
+    <h3 id="block-portalfooter-menu">Bureaus</h3>
+    
+
+                
+             <ul class="menu">
+                          <li class="menu-item">
+          <a href="http://www.ttb.gov/">Alcohol and Tobacco Tax and Trade (TTB)</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.bep.gov/" data-display-mobile="0" data-display-desktop="0">Bureau of Engraving and Printing (BEP)</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.fiscal.treasury.gov/">Bureau of the Fiscal Service (BFS)</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.fincen.gov/">Financial Crimes Enforcement Network (FinCEN)</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.irs.gov/">Internal Revenue Service (IRS)</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.occ.gov/">Office of the Comptroller of the Currency (OCC)</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.usmint.gov/">U.S. Mint</a>
+                  </li>
+          </ul>
+  
+
+
+    </nav>
+
+
+<nav role="navigation" aria-label="block-portalfooter-2-menu" id="block-portalfooter-2" data-block-plugin-id="menu_block:portal-footer" class="col block block-menu navigation block-system-menublock menu--portal-footer">
+            
+    <h3 id="block-portalfooter-2-menu">Inspector General Sites</h3>
+    
+
+                
+             <ul class="menu">
+                          <li class="menu-item">
+          <a href="https://oig.treasury.gov/">Office of Inspector General (OIG)</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.treasury.gov/tigta">Treasury Inspector General for Tax Administration (TIGTA)</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.sigtarp.gov/">Special Inspector General, Troubled Asset Relief Program (SIGTARP)</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/services/report-fraud-waste-and-abuse" data-display-mobile="0" data-display-desktop="0" data-drupal-link-system-path="node/3431">Report Scams, Fraud, Waste &amp; Abuse</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.sigpr.gov/">Special Inspector General for Pandemic Recovery (SIGPR)</a>
+                  </li>
+          </ul>
+  
+
+
+    </nav>
+
+
+<nav role="navigation" aria-label="block-portalfooter-3-menu" id="block-portalfooter-3" data-block-plugin-id="menu_block:portal-footer" class="col block block-menu navigation block-system-menublock menu--portal-footer">
+            
+    <h3 id="block-portalfooter-3-menu">U.S. Government Shared Services</h3>
+    
+
+                
+             <ul class="menu">
+                          <li class="menu-item">
+          <a href="/services/government-shared-services/enterprise-applications" data-display-mobile="0" data-display-desktop="0" data-drupal-link-system-path="node/3551">Enterprise Applications</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://arc.fiscal.treasury.gov/" data-display-mobile="0" data-display-desktop="0">Administrative Resource Center (ARC)- Bureau of the Fiscal Service</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.treasurydirect.gov/government/" data-display-mobile="0" data-display-desktop="0">Treasury Direct Services for Governments</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.fiscal.treasury.gov/fmqsmo/marketplace-catalog.html" data-display-mobile="0" data-display-desktop="0">Financial Management Quality Service Management Office Marketplace Catalog</a>
+                  </li>
+          </ul>
+  
+
+
+    </nav>
+
+
+<nav role="navigation" aria-label="block-portalfooter-4-menu" id="block-portalfooter-4" data-block-plugin-id="menu_block:portal-footer" class="col block block-menu navigation block-system-menublock menu--portal-footer">
+            
+    <h3 id="block-portalfooter-4-menu">Additional Resources</h3>
+    
+
+                
+             <ul class="menu">
+                          <li class="menu-item">
+          <a href="/footer/privacy-act" data-display-mobile="0" data-display-desktop="0" data-drupal-link-system-path="node/4156">Privacy Act</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/policy-issues/small-business-programs/small-and-disadvantaged-business-utilization/bureau-small-business-specialists" data-display-mobile="0" data-display-desktop="0" data-drupal-link-system-path="node/17831">Small Business Contacts</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/about/budget-financial-reporting-planning-and-performance" data-display-mobile="0" data-display-desktop="0" data-drupal-link-system-path="node/3217">Budget and Performance</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.treasurydirect.gov/">TreasuryDirect.gov Securities/Bonds</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/footer/freedom-of-information-act" data-display-mobile="0" data-display-desktop="0" data-drupal-link-system-path="node/4136">Freedom of Information Act (FOIA)</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/footer/no-fear-act" data-display-mobile="0" data-display-desktop="0" data-drupal-link-system-path="node/3771">No FEAR Act Data</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/footer/prohibited-personnel-practices-and-whistleblower-protection" data-display-mobile="0" data-display-desktop="0" data-drupal-link-system-path="node/3691">Whistleblower Protection</a>
+                  </li>
+          </ul>
+  
+
+
+    </nav>
+
+
+<nav role="navigation" aria-label="block-portalfooter-5-menu" id="block-portalfooter-5" data-block-plugin-id="menu_block:portal-footer" class="col block block-menu navigation block-system-menublock menu--portal-footer">
+            
+    <h3 id="block-portalfooter-5-menu">Other Government Sites</h3>
+    
+
+                
+             <ul class="menu">
+                          <li class="menu-item">
+          <a href="http://www.usa.gov/">USA.gov</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.usajobs.gov/">USAJOBS.gov</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.opm.gov/">OPM.gov</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.mymoney.gov/">MyMoney.gov</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.data.gov/">Data.gov</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.usa.gov/forms">Forms.gov</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.regulations.gov/">Regulations.gov</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.paymentaccuracy.gov/">PaymentAccuracy.gov</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="http://www.socialsecurity.gov/myaccount/">my Social Security</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://vote.gov/" data-display-mobile="0" data-display-desktop="0">Vote.gov</a>
+                  </li>
+          </ul>
+  
+
+
+    </nav>
+
+  </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /footer -->
+    
+    <!-- ______________________ Post FOOTER _______________________ -->
+
+            <div id="post-footer">
+            <div class="mq--t">
+                <div class="inner">
+                    <div class="col-1">
+                          <div class="region region-post-footer">
+    
+
+<nav role="navigation" aria-label="block-languages-menu" id="block-languages" data-block-plugin-id="menu_block:languages" class="block block-menu navigation block-system-menublock menu--languages">
+            
+                <div class="lang-menu">
+              <ul>
+                    <li>
+      
+        <a href="https://home.treasury.gov/utility/languages/alrbyt-arabic" lang="ar" title="Arabic">العربية</a> 
+                
+      </li>
+                <li>
+      
+        <a href="https://home.treasury.gov/utility/languages/zhongwenchinese" lang="zh" title="Chinese">中文</a> 
+                
+      </li>
+                <li>
+      
+        <a href="https://home.treasury.gov/utility/languages/espanol" lang="es" title="Spanish">Español</a> 
+                
+      </li>
+                <li>
+      
+        <a href="https://home.treasury.gov/utility/languages/korean" lang="ko" title="Korean">한국어</a> 
+                
+      </li>
+                <li>
+      
+        <a href="https://home.treasury.gov/utility/languages/tagalog" lang="tl" title="Tagalog">Tagalog</a> 
+                
+      </li>
+                <li>
+      
+        <a href="https://home.treasury.gov/utility/languages/tiengviet-vietnamese" lang="vi" title="Vietnamese">TiếngViệt</a> 
+                
+      </li>
+        </ul>
+  
+</div>
+
+    </nav>
+
+<nav role="navigation" aria-label="block-utilityfooter-menu" id="block-utilityfooter" data-block-plugin-id="menu_block:utility-footer" class="block block-menu navigation block-system-menublock menu--utility-footer">
+            
+                <div class="site-menu">
+              <ul>
+              <li>
+        <a href="https://home.treasury.gov/subfooter/privacy-policy" title="Privacy Policy">Privacy Policy</a>
+              </li>
+          <li>
+        <a href="https://home.treasury.gov/subfooter/google-privacy-policy" title="Google Privacy">Google Privacy</a>
+              </li>
+          <li>
+        <a href="https://home.treasury.gov/subfooter/site-policies-and-notices" title="Site Policies and Notices">Site Policies and Notices</a>
+              </li>
+          <li>
+        <a href="https://home.treasury.gov/faqs" title="FAQs">FAQs</a>
+              </li>
+          <li>
+        <a href="https://www.treasury.gov/pages/tgovproblemsfeedbackform.aspx" title="Feedback">Feedback</a>
+              </li>
+          <li>
+        <a href="/about/careers-at-treasury" data-display-mobile="0" data-display-desktop="0" title="Careers" data-drupal-link-system-path="node/4341">Careers</a>
+              </li>
+          <li>
+        <a href="/utility/accessibility" data-display-mobile="0" data-display-desktop="0" title="Accessibility" data-drupal-link-system-path="node/3851">Accessibility</a>
+              </li>
+        </ul>
+  
+  <div class="site-plugins">
+    Required Plug-ins <a href="http://get.adobe.com/reader/">Adobe® Reader®</a>
+  </div>
+</div>
+
+    </nav>
+  
+<div id="block-javascripttemporaryfixforfacebooklinkinfooter" data-block-plugin-id="block_content:07b6c9dc-f9a7-4b47-81bb-567eb4c4cc67" class="block block-block-content block-block-content07b6c9dc-f9a7-4b47-81bb-567eb4c4cc67 no-underline">
+  
+    
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery("li.facebook a").attr("href", "https://www.facebook.com/USTreasuryDept");
+  jQuery( ".twitter-feed .block-region-col6" ).replaceWith( '<div class="mm-news-block mobile-card view view-mega-menu-news view-id-mega_menu_news view-display-id-block_3"><h2>Stay Connected</h2><div class="view-content"><div class="mm-news-row"><p><a href="https://twitter.com/USTreasury" class="twitterlink">Twitter</a></p><p><a href="https://www.facebook.com/USTreasuryDept" class="twitterlink">Facebook</a></p><p><a href="https://www.linkedin.com/company/us-treasury" class="twitterlink">LinkedIn</a></p></div></div></div>');
+});
+</script></div>
+      
+  </div>
+
+  </div>
+
+                    </div>
+                    <div class="col-2">
+                        <div class="social--small">
+                            <ul>
+                              <li class="twitter first"><a href="https://twitter.com/USTreasury" aria-label="Twitter"><span>Twitter</span> </a></li>
+                              <li class="facebook"><a href="https://facebook.com/ustreasury" aria-label="Facebook"><span>Facebook</span></a></li>
+							  <!--
+                              <li class="flickr"><a href="http://www.flickr.com/photos/ustreasury"><span>Flickr</span></a></li>
+                              <li class="youtube last"><a href="https://www.youtube.com/user/USTreasGov"><span>YouTube</span></a></li>
+							  -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        </footer>
+</div>
+<!-- /page -->
+
+  </div>
+
+
+<script src="/sites/default/files/js/js_KsvSANLyr0UnwV38IN39vua-otGv06PcPukUzHYGJ9U.js"></script>
+<script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=TRE&amp;pua=UA-19138737-19" id="_fed_an_ua_tag"></script>
+<script src="/sites/default/files/js/js_go0wt33ujP9VhdciQFiwcCteEOQQK2J70z0C7MXbRQQ.js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c385fefcaf","applicationID":"70697698","transactionName":"YwZaMkdYWhYCARJQV1pMeQVBUFsLTBIHXl1rAFkFXVw=","queueTime":6,"applicationTime":84,"atts":"T0FZRA9CSRg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

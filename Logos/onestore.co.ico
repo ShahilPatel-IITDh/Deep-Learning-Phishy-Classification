@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title> 원스토어 </title>
+<meta charset="utf-8">
+<script type="text/javascript">
+	function getParams() {
+	    var iUrl = window.location.href;
+	    var offset = iUrl.indexOf('?');
+	    var params = (offset != -1) ? iUrl.substring(offset) : '';
+	    return params;
+	}
+	window.location = "https://m.onestore.co.kr/mobilepoc/main/main.omp" + getParams();
+</script>
+</head>
+<body>
+</body>
+</html>
