@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/ico" href="/public/favicon.ico" />
+    <title>Bloomberg Tax - Product Log In</title>
+    <meta name="description" content="Sign in to Bloomberg Tax for access to our comprehensive tax research software." />
+    <script type="text/javascript">
+      const queryParams = new URLSearchParams(location.search)
+      if (!queryParams.has('target')) {
+        location.href = `${location.href}?target=${location.protocol}//${location.host}/product/tax`
+      }
+
+      let environment
+      const betaHosts = ["beta"]
+      const devHosts = ["local", "dev"]
+
+      const newRelicScript = `<script src="/tax_login/helpers/newrelic.js"><\/script>`
+      if(!devHosts.some(host => location.hostname.includes(host))) {
+        document.write(newRelicScript)
+      }
+
+      if (betaHosts.some(host => location.hostname.includes(host))) { environment = '-q' }
+      else if (devHosts.some(host => location.hostname.includes(host))) { environment = '-d' }
+      else { environment = '' }
+      const authWidgetScript = `<script id="auth-widget" src="https://essential${environment}.bloombergindustry.com/widget/script/latest/widget.js"><\/script>`
+      document.write(authWidgetScript)
+
+      const authWidget = document.getElementById("auth-widget")
+      authWidget.addEventListener("error", function handleError() {
+        const target = window.location.host
+        let scheme = 'https'
+        if(target.includes("local")) {scheme = 'http'}
+
+        //Redirect to old login flow if there is an error downloading Auth Widget from CDN
+        window.location = `https://essential${environment}.bloombergindustry.com?url=${encodeURIComponent(`https://wsauth${environment}.bloombergindustry.com/wsauth/bltxauth?target=${scheme}://${target}/product/tax`)}`
+      })
+    </script>
+    <link rel="stylesheet" href="/tax_login/styles/index.css" />
+    <link rel="stylesheet" href="/tax_login/styles/crescent.css" />
+    <link rel="stylesheet" href="/tax_login/styles/_button.css" />
+    <style>
+      body,
+      html {
+        background: url('tax_login/images/background.png') !important;
+        background-size: cover !important;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .bbthat-wrapper {
+        display: none;
+      }
+
+      .main,
+      .footer {
+        max-width: 1440px;
+        margin: 0 auto 0;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FFFFFF;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #777c7f;
+      }
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active{
+        -webkit-transition: background-color 9999s ease-out;
+        -webkit-text-fill-color: #ffffff;
+      }
+      .main .tax-section,
+      .main .auth-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+      }
+      .main .tax-logo {
+        text-align: center;
+        width: 387px;
+        margin: 25px 50px;
+      }
+      .main .tax-header {
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 122.6%;
+        margin-top: 140px;
+        margin-left: 63px;
+        margin-bottom: 0;
+      }
+      .main .tax-text {
+        margin-left: 63px;
+      }
+      .main .tax-text p,
+      .main .tax-text .p-text {
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 30px;
+      }
+      .main .tax-text .p-text {
+        margin-left: 130px;
+      }
+      .main .promotion-link a {
+        margin-left: 175px;
+        color: #66abff;
+        text-decoration: none;
+      }
+      .main .promotion-link a:hover {
+        text-decoration: underline;
+      }
+      .main .tax-footer,
+      .main .auth-footer {
+        max-width: 1440px;
+        align-items: center;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 32px;
+        white-space: nowrap;
+        font-size: 10px;
+      }
+      .main .tax-footer-nav a{
+        margin: 0 20px 0 10px;
+        color: #fff;
+        text-decoration: none;
+      }
+      .main .tax-footer-nav a:hover{
+        text-decoration: underline;
+      }
+      .main .tax-footer a {
+        color: #fff;
+        margin-right: 12px;
+      }
+      .main .tax-footer a,
+      .main .tax-footer a:active,
+      .main .tax-footer a:hover {
+        background-color: none;
+      }
+      .main .auth-component {
+        flex-grow: 1;
+        max-width: 420px;
+      }
+      @media (min-height: 860px) {
+        .main {
+          height: calc(100vh - 30px);
+        }
+      }
+      @media (max-width: 1140px) {
+        .main {
+          height: 100%;
+        }
+      }
+      @media (min-width: 300px) {
+        .main .tax-header {
+          margin-left: 16px;
+          margin-right: 27px;
+        }
+        .main .tax-text {
+          margin-left: 15px;
+          margin-right: 31px;
+        }
+        .main .tax-footer,
+        .main .auth-footer {
+          white-space: nowrap;
+        }
+      }
+      @media (min-width: 1140px){
+        .bbthat-wrapper {
+          display: initial;
+          background: #000;
+        }
+        .main {
+          display: flex;
+          align-items: stretch;
+          flex-direction: row;
+        }
+        .main .tax-section {
+          overflow: hidden;
+          width: 58.5%;
+          align-items: baseline;
+        }
+        .main .tax-auth,
+        .main .tax-promotion {
+          position: relative;
+          text-align: left;
+          flex-grow: 1;
+          padding: 0;
+        }
+        .main .tax-auth {
+          margin-top: 20px;
+          margin-bottom: 16px;
+        }
+        .main .tax-promotion {
+          flex-grow: initial;
+        }
+        .main .auth,
+        .main .promotion-call {
+          background: rgba(0, 0, 0, 0.68);
+          padding: 30px 61px 30px 61px;
+          width: 486px;
+          border-radius: 16px;
+          box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.16);
+        }
+        .main .promotion-call {
+          margin-top: 35px;
+          padding: 0;
+          height: 120px;
+        }
+        .main .promotion-text {
+          padding: 3px 81px 0 25px;
+        }
+        .main .tax-logo {
+          position: relative;
+          left: 10%;
+          width: 445px;
+          text-align: left;
+          flex-grow: 1;
+        }
+        .main .tax-header {
+          margin-left: 68px;
+          margin-right: 27px;
+        }
+        .main .tax-text {
+          margin-left: 65px;
+          margin-right: 0;
+        }
+        .main .tax-text-links {
+          display: flex;
+          margin-top: 60px;
+        }
+        .main .tax-text-links a:last-child {
+          margin-right: 0;
+        }
+        .main .tax-footer,
+        .main .auth-footer {
+          left: 10%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 0 82px;
+          margin-left: 50px;
+          font-size: 10px;
+          white-space: nowrap;
+        }
+        .main .c-footer {
+          margin-right: 405px;
+        }
+        .main .auth-footer {
+          align-self: flex-end;
+          padding: 0 32px;
+          margin-left: 95px;
+        }
+      }
+
+    </style>
+    <link rel="stylesheet" href="/tax_login/that/that.css" />
+    <script src="/tax_login/helpers/trackers.js"></script>
+    <script type="text/javascript">
+      !function(){"use strict";!function(e,t){var r=e.amplitude||{_q:[],_iq:[]};if(r.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var n=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,r){return function(n){e._q.push({name:t,args:Array.prototype.slice.call(r,0),resolve:n})}},o=function(e,t,r){e[t]=function(){if(r)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))}}},i=function(e){for(var t=0;t<y.length;t++)o(e,y[t],!1);for(var r=0;r<g.length;r++)o(e,g[r],!0)};r.invoked=!0;var c=t.createElement("script");c.type="text/javascript",c.integrity="sha384-lyGcqRAilM5YOiZT3ktByF3Mv52pltOelJ66zwfcAZ/4s8cB1sSo7yMF2XWh+bzX",c.crossOrigin="anonymous",c.async=!0,c.src="https://cdn.amplitude.com/libs/analytics-browser-1.6.8-min.js.gz",c.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var a=t.getElementsByTagName("script")[0];a.parentNode.insertBefore(c,a);for(var u=function(){return this._q=[],this},l=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],p=0;p<l.length;p++)n(u,l[p]);r.Identify=u;for(var d=function(){return this._q=[],this},v=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],f=0;f<v.length;f++)n(d,v[f]);r.Revenue=d;var y=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset"],g=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];i(r),r.createInstance=function(){var e=r._iq.push({_q:[]})-1;return i(r._iq[e]),r._iq[e]},e.amplitude=r}}(window,document)}();
+      const token = location.hostname === 'bloomberglaw.com' || location.hostname === 'www.bloomberglaw.com' ? 'a86b3ce6846defb68cfe0634a7f8c3c3' : 'fd2835efceef98efe31953a5bfffc673'
+      amplitude.init(token, null, {serverUrl: 'https://a.blaw.com/2/httpapi'});
+      amplitude.identify(new amplitude.Identify());
+    </script>
+  </head>
+  <body class="moonfish" data-theme="crescent" data-color-scheme="light">
+    <section class="bbthat-wrapper">
+      <div id="bbthat" class="bbthat"></div>
+    </section>
+    <div class="main">
+      <section class="tax-section">
+        <div class="tax-logo">
+          <div class="logo">
+            <img src="tax_login/images/logo.svg" width="275" height="30">
+          </div>
+          <h1 class="tax-header">Smarter, Faster,<br />Tax Research</h1>
+          <div class="tax-text">
+            <p>“We rely on Bloomberg Tax Research to ensure we are as up to date as possible on legislation that concerns the tax industry. It is a consistently accurate and appreciated product.”</p>
+            <p class="p-text">Tax Manager at Maximus, Inc.</p>
+            <div class="tax-text-links">
+              <a href="https://pro.bloombergtax.com/request-a-demo-options/" class="m-button primary tax-m-button" id="request-demo-btn">Request Demo</a>
+              <a href="https://pro.bloombergtax.com/research/" class="m-button secondary" id="learn-more-btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="tax-footer">
+          <div class="c-footer">© 2023 Bloomberg Industry Group, Inc. All Rights Reserved.</div>
+        </div>
+      </section>
+      <section class="auth-section">
+        <div class="tax-promotion">
+          <div class="promotion-call">
+            <div class="promotion-text">
+              <p>What if you could simply review your rate rec instead of tying it out?</p>
+            </div>
+            <div class="promotion-link">
+              <a href="https://pro.bloombergtax.com/bloomberg-tax-provision/?trackingcode=TP21110559">See how with Bloomberg Tax Provision</a>
+            </div>
+          </div>
+        </div>
+        <div class="tax-auth">
+          <div class="auth">
+            <div class="auth-component">
+              <indg-login header-text="Sign in to Bloomberg Tax" hide-academic-registration-link vertical="true"></indg-login>
+            </div>
+          </div>
+        </div>
+        <div class="auth-footer">
+          <div class="tax-footer-nav">
+            <nav>
+              <a href="https://www.bloombergindustry.com/terms-and-conditions/">Terms of Service</a>
+              <a href="https://www.bloombergindustry.com/privacy-policy">Privacy Policy</a>
+              <a href="https://www.bloombergindustry.com/copyright-and-usage-guidelines-copyright/">Copyright</a>
+              <a href="https://www.bloombergindustry.com/about-us/">About Us</a>
+              <a href="https://www.bloombergindustry.com/contact-us/">Contact Us</a>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      fetch('/tax_login/that/that.htm')
+        .then(res => res.text())
+        .then(html => {
+          const el = document.getElementById('bbthat')
+          el.innerHTML = html
+
+          const script = document.createElement('script')
+          script.src = '/tax_login/that/that.js'
+          document.head.appendChild(script)
+        })
+      .catch(console.error)
+    </script>
+    <script type="text/javascript">
+      loginPageTrackingSetUp();
+    </script>
+    <script type="text/javascript">_satellite.pageBottom();</script>
+  </body>
+</html>

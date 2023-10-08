@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="quordle, game, puzzle, word, words, letters, play, online, guess, brain teaser, dordle" />
+    <meta name="author" content="Freddie Meyer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+    <!-- FB Meta Tags -->
+    <meta property="og:url" content="https://www.merriam-webster.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.merriam-webster.com/games/quordle/quordle-banner-1200.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="www.merriam-webster.com" />
+
+    <link rel="canonical" href="https://www.merriam-webster.com/games/quordle/" />
+
+    <meta name="theme-color" content="#111827" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="shortcut icon" sizes="192x192" href="favicon-192.png" />
+    <link rel="shortcut icon" sizes="128x128" href="favicon-128.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="favicon-128.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="favicon-128.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Tag Manager -->
+    <script>
+      window.__COMMIT_REF__ = '0388012';
+      window.wordchecking_url = 'https://www.merriam-webster.com/games/quordle';
+      window.quordle_url = 'https://www.quordle.com';
+      window.quordle_time = '2023-01-04';
+      window.quordle_api_url = 'https://prod-mw-cms.m-w.com';
+      window.quordle_theme = 'mw';
+      window.quordle_migration = 'false';
+      window.quordle_share_url = 'm-w.com/games/quordle/';
+
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '';
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TFNTWFL');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+    <script>
+      
+      
+        const mwsl = new URLSearchParams(location.search);
+        const mwpv = mwsl.get('mwrd');
+        const mwac = mwsl.get('mwac');
+        if (mwpv && mwac) {
+          window.history.replaceState({}, document.title, window.wordchecking_url + '/');
+        }
+        window.quordle_load = true;
+      
+    </script>
+
+    <!-- CafeMedia -->
+    <script>
+      const cafeMediaSiteId = '62d82df2aa320b2a23fc1466';
+      const insertHeadTag = () => {
+        window.adthrive = {};
+        window.adthrive.cmd = [];
+        window.adthrive.host = 'ads.adthrive.com';
+        window.adthrive.plugin = 'cam-manual-spa';
+        window.adthrive.threshold = Math.floor(Math.random() * 100 + 1);
+
+        const script = document.createElement('script');
+        script.async = true;
+        script.type = 'text/javascript';
+        script.src =
+          'https://ads.adthrive.com/sites/' + cafeMediaSiteId + '/ads.min.js?threshold=' + window.adthrive.threshold;
+        const node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(script, node);
+      };
+
+      const cleanUpSelectors = [
+        'iframe[src*="track.adthrive"]',
+        'iframe[src*="d.agkn.com"]',
+        'iframe[src*="ads.adthrive"]',
+        'script[src*="ads.adthrive"]',
+        'script[src*="confiant"]',
+        'script[src*="securepubads"]',
+        'script[src*="amazon-adsystem"]',
+        'script[src*="scorecardresearch"]',
+        'script[src*="js.agkn.com"]',
+        'link[rel="stylesheet"][href^="https://ads.adthrive"]',
+        '.adthrive-comscore',
+        '.adthrive-ad',
+      ];
+
+      const initCleanUpSelectors = [
+        '.adthrive-comscore span',
+        '.adthrive-ccpa-link',
+        '.adthrive-privacy-preferences',
+        '.adthrive-comscore.adthrive-footer-message',
+      ];
+
+      const cleanupAds = () => {
+        if (!window.adthrive) return;
+
+        document.body.classList.remove('adthrive-device-desktop', 'adthrive-device-tablet', 'adthrive-device-phone');
+
+        initCleanUpSelectors.forEach((selector) =>
+          document.querySelectorAll(selector).forEach((el, i) => {
+            if (i > 0) el.remove();
+          })
+        );
+
+        if (window.googletag && window.googletag.destroySlots) {
+          window.googletag.destroySlots();
+        }
+
+        if (window.adthrive.slots && window.adthrive.slots._slots && window.adthrive.slots._slots.size) {
+          window.adthrive.slots._slots.forEach((slot) => {
+            window.adthrive.slots._slots.delete(slot);
+          });
+        }
+
+        if (
+          window.adthrive._googleAdManager &&
+          window.adthrive._googleAdManager._slots &&
+          window.adthrive._googleAdManager._slots._slots &&
+          window.adthrive._googleAdManager._slots._slots.size
+        ) {
+          window.adthrive._googleAdManager._slots._slots.forEach((slot) => {
+            window.adthrive._googleAdManager._slots._slots.delete(slot.id);
+          });
+        }
+
+        if (window.adthrive && window.adthrive._googleAdManager) {
+          window.adthrive._googleAdManager._started = false;
+        }
+
+        if (window.pbjs && typeof window.pbjs.removeAdUnit === 'function') {
+          window.pbjs.removeAdUnit();
+        }
+
+        cleanUpSelectors.forEach((selector) => document.querySelectorAll(selector).forEach((el) => el.remove()));
+      };
+
+      const initializeAds = () => {
+        cleanupAds();
+        insertHeadTag();
+      };
+
+      let locationHref = document.location.href.split('?')[0].replace(/#/, '').replace(/\/+$/, '');
+      let footerExists = !!document.querySelector('#footer-placement');
+      let headerExists = !!document.querySelector('#header-placement');
+
+      let initializationAllowed = true;
+
+      const addObserver = () => {
+        if (!document.body || !document.querySelector('#root > div')) {
+          setTimeout(addObserver, 50);
+          return;
+        }
+        const observer = new MutationObserver(() => {
+          const intializeTrigger = [];
+
+          const noParamHref = document.location.href.split('?')[0].replace(/#/, '').replace(/\/+$/, '');
+
+          if (locationHref !== noParamHref) {
+            locationHref = noParamHref;
+
+            intializeTrigger.push(true);
+          }
+
+          if (document.querySelector('#footer-placement')) {
+            if (!footerExists) {
+              intializeTrigger.push(true);
+            }
+            footerExists = true;
+          } else {
+            footerExists = false;
+          }
+
+          if (document.querySelector('#header-placement')) {
+            if (!headerExists) {
+              intializeTrigger.push(true);
+            }
+            headerExists = true;
+          } else {
+            headerExists = false;
+          }
+
+          if (intializeTrigger.length > 0 && initializationAllowed) {
+            initializationAllowed = false;
+
+            initializeAds();
+
+            intializeTrigger.length = 0;
+
+            setTimeout(() => {
+              initializationAllowed = true;
+            }, 100);
+          }
+        });
+
+        observer.observe(document.querySelector('body'), {
+          childList: true,
+          subtree: true,
+          attributes: true,
+        });
+      };
+
+      addObserver();
+    </script>
+    <!-- CafeMedia Head Tag -->
+
+    <script src="https://js.sentry-cdn.com/cd8139814dd64a07af2a72fe40bed481.min.js" crossorigin="anonymous"></script>
+    <script>
+      if (!String.prototype.endsWith) {
+        String.prototype.endsWith = function (search, this_len) {
+          if (this_len === undefined || this_len > this.length) {
+            this_len = this.length;
+          }
+          return this.substring(this_len - search.length, this_len) === search;
+        };
+      }
+      if (window.Sentry) {
+        Sentry.onLoad(function () {
+          Sentry.init({
+            dsn:
+              'true' === 'true'
+                ? 'https://cd8139814dd64a07af2a72fe40bed481@o1140342.ingest.sentry.io/6197424'
+                : null,
+            sampleRate: 'prod' === 'prod' ? 0.004 : 1,
+            environment: 'prod',
+            release: '1.12.8-main',
+            allowUrls: ['quordle.com/assets', 'merriam-webster.com'],
+            ignoreErrors: [
+              'ResizeObserver',
+              'instantSearchSDKJSBridgeClearHighlight',
+              'webkitExitFullScreen',
+              'flat is not a function',
+              "Object doesn't support property or method 'flat'",
+              'TypeError: cancelled',
+              'TypeError: Load failed',
+              'privateSpecialRepair',
+              'BetterJsPop',
+              'bannerNight',
+              'window.webkit.messageHandlers',
+              'jQuery',
+              'isMainframe',
+              "e.addEventListener is not a function. (In 'e.addEventListener(t,r,n)', 'e.addEventListener' is undefined)",
+              'Non-Error promise rejection captured with value: undefined',
+              'Non-Error promise rejection captured with value: fun-hooks: hooked function not ready',
+              'Non-Error promise rejection captured with value: Not implemented on this platform',
+              'Blocked a restricted frame with origin "https://www.merriam-webster.com" from accessing another frame.',
+              'NotSupportedError: Failed to load because no supported source was found.',
+              'AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22',
+              "Cannot read properties of null (reading 'document')",
+            ],
+            beforeSend(event) {
+              let shouldIgnore = false;
+
+              // Exclude events that are ad-related
+
+              if (event.breadcrumbs) {
+                shouldIgnore = event.breadcrumbs.some((breadcrumb) => {
+                  if (breadcrumb.data && breadcrumb.data.url) {
+                    return breadcrumb.data.url.includes('securepubads.g.doubleclick.net');
+                  }
+
+                  return false;
+                });
+              }
+
+              // Exclude events that are attempting to fetch mraid.js
+
+              if (!shouldIgnore && event.exception) {
+                shouldIgnore = event.exception.values.some((exception) => {
+                  if (exception.stacktrace && exception.stacktrace.frames) {
+                    return exception.stacktrace.frames.some((frame) => {
+                      if (frame.filename) {
+                        return frame.filename.includes('mraid.js');
+                      }
+
+                      return false;
+                    });
+                  }
+
+                  return false;
+                });
+              }
+
+              return shouldIgnore ? null : event;
+            },
+          });
+        });
+      }
+    </script>
+    <script type="module" crossorigin src="/games/quordle/assets/index-119d57dd.js"></script>
+    <link rel="stylesheet" href="/games/quordle/assets/index-50690909.css">
+  <link rel="manifest" href="/games/quordle/manifest.webmanifest"></head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TFNTWFL"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div id="root"></div>
+    <script>
+      let _vh =
+        (window.innerHeight && document.documentElement.clientHeight
+          ? Math.min(window.innerHeight, document.documentElement.clientHeight)
+          : window.innerHeight ||
+            document.documentElement.clientHeight ||
+            document.getElementsByTagName('body')[0].clientHeight) * 0.01;
+      document.documentElement.style.setProperty('--vh', `${_vh}px`);
+
+      window.addEventListener('resize', function (event) {
+        let _vh =
+          (window.innerHeight && document.documentElement.clientHeight
+            ? Math.min(window.innerHeight, document.documentElement.clientHeight)
+            : window.innerHeight ||
+              document.documentElement.clientHeight ||
+              document.getElementsByTagName('body')[0].clientHeight) * 0.01;
+        document.documentElement.style.setProperty('--vh', `${_vh}px`);
+      });
+    </script>
+    
+  </body>
+</html>

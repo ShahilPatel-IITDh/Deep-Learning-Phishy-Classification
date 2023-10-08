@@ -1,0 +1,2969 @@
+<!doctype html>
+
+
+<html lang="nb">
+<head>
+
+    <meta charset="utf-8"/>
+    
+        <script>
+            try{!function(){var e="Expected a function",t=NaN,n="[object Symbol]",r=/^\s+|\s+$/g,i=/^[-+]0x[0-9a-f]+$/i,o=/^0b[01]+$/i,a=/^0o[0-7]+$/i,c=parseInt,u="object"==typeof global&&global&&global.Object===Object&&global,s="object"==typeof self&&self&&self.Object===Object&&self,f=u||s||Function("return this")(),l=Object.prototype.toString,p=Math.max,v=Math.min,g=function(){return f.Date.now()};function m(t,n,r){var i,o,a,c,u,s,f=0,l=!1,m=!1,b=!0;if("function"!=typeof t)throw new TypeError(e);function O(e){var n=i,r=o;return i=o=void 0,f=e,c=t.apply(r,n)}function y(e){var t=e-s;return void 0===s||t>=n||t<0||m&&e-f>=a}function N(){var e,t,r=g();if(y(r))return w(r);u=setTimeout(N,(t=n-((e=r)-s),m?v(t,a-(e-f)):t))}function w(e){return u=void 0,b&&i?O(e):(i=o=void 0,c)}function x(){var e,t=g(),r=y(t);if(i=arguments,o=this,s=t,r){if(void 0===u)return f=e=s,u=setTimeout(N,n),l?O(e):c;if(m)return u=setTimeout(N,n),O(s)}return void 0===u&&(u=setTimeout(N,n)),c}return n=d(n)||0,h(r)&&(l=!!r.leading,a=(m="maxWait"in r)?p(d(r.maxWait)||0,n):a,b="trailing"in r?!!r.trailing:b),x.cancel=function(){void 0!==u&&clearTimeout(u),f=0,i=s=o=u=void 0},x.flush=function(){return void 0===u?c:w(g())},x}function h(e){var t=typeof e;return!!e&&("object"==t||"function"==t)}function d(e){if("number"==typeof e)return e;if("symbol"==typeof(u=e)||(s=u)&&"object"==typeof s&&l.call(u)==n)return t;var u,s;if(h(e)){var f="function"==typeof e.valueOf?e.valueOf():e;e=h(f)?f+"":f}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(r,"");var p=o.test(e);return p||a.test(e)?c(e.slice(2),p?2:8):i.test(e)?t:+e}var b,O,y,N,w=(b=function(){function e(e){return!isNaN(parseFloat(e))&&isFinite(e)}function t(e){return e.charAt(0).toUpperCase()+e.substring(1)}function n(e){return function(){return this[e]}}var r=["isConstructor","isEval","isNative","isToplevel"],i=["columnNumber","lineNumber"],o=["fileName","functionName","source"],a=r.concat(i,o,["args"]);function c(e){if(e instanceof Object)for(var n=0;n<a.length;n++)e.hasOwnProperty(a[n])&&void 0!==e[a[n]]&&this["set"+t(a[n])](e[a[n]])}c.prototype={getArgs:function(){return this.args},setArgs:function(e){if("[object Array]"!==Object.prototype.toString.call(e))throw new TypeError("Args must be an Array");this.args=e},getEvalOrigin:function(){return this.evalOrigin},setEvalOrigin:function(e){if(e instanceof c)this.evalOrigin=e;else{if(!(e instanceof Object))throw new TypeError("Eval Origin must be an Object or StackFrame");this.evalOrigin=new c(e)}},toString:function(){return(this.getFunctionName()||"{anonymous}")+"("+(this.getArgs()||[]).join(",")+")"+(this.getFileName()?"@"+this.getFileName():"")+(e(this.getLineNumber())?":"+this.getLineNumber():"")+(e(this.getColumnNumber())?":"+this.getColumnNumber():"")}};for(var u=0;u<r.length;u++)c.prototype["get"+t(r[u])]=n(r[u]),c.prototype["set"+t(r[u])]=function(e){return function(t){this[e]=Boolean(t)}}(r[u]);for(var s=0;s<i.length;s++)c.prototype["get"+t(i[s])]=n(i[s]),c.prototype["set"+t(i[s])]=function(t){return function(n){if(!e(n))throw new TypeError(t+" must be a Number");this[t]=Number(n)}}(i[s]);for(var f=0;f<o.length;f++)c.prototype["get"+t(o[f])]=n(o[f]),c.prototype["set"+t(o[f])]=function(e){return function(t){this[e]=String(t)}}(o[f]);return c}(),O=/(^|@)\S+\:\d+/,y=/^\s*at .*(\S+\:\d+|\(native\))/m,N=/^(eval@)?(\[native code\])?$/,{parse:function(e){if(void 0!==e.stacktrace||void 0!==e["opera#sourceloc"])return this.parseOpera(e);if(e.stack&&e.stack.match(y))return this.parseV8OrIE(e);if(e.stack)return this.parseFFOrSafari(e);throw new Error("Cannot parse given Error object")},extractLocation:function(e){if(-1===e.indexOf(":"))return[e];var t=/(.+?)(?:\:(\d+))?(?:\:(\d+))?$/.exec(e.replace(/[\(\)]/g,""));return[t[1],t[2]||void 0,t[3]||void 0]},parseV8OrIE:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(y)},this).map(function(e){e.indexOf("(eval ")>-1&&(e=e.replace(/eval code/g,"eval").replace(/(\(eval at [^\()]*)|(\)\,.*$)/g,""));var t=e.replace(/^\s+/,"").replace(/\(eval code/g,"(").split(/\s+/).slice(1),n=this.extractLocation(t.pop()),r=t.join(" ")||void 0,i=["eval","<anonymous>"].indexOf(n[0])>-1?void 0:n[0];return new b({functionName:r,fileName:i,lineNumber:n[1],columnNumber:n[2],source:e})},this)},parseFFOrSafari:function(e){return e.stack.split("\n").filter(function(e){return!e.match(N)},this).map(function(e){if(e.indexOf(" > eval")>-1&&(e=e.replace(/ line (\d+)(?: > eval line \d+)* > eval\:\d+\:\d+/g,":$1")),-1===e.indexOf("@")&&-1===e.indexOf(":"))return new b({functionName:e});var t=/((.*".+"[^@]*)?[^@]*)(?:@)/,n=e.match(t),r=n&&n[1]?n[1]:void 0,i=this.extractLocation(e.replace(t,""));return new b({functionName:r,fileName:i[0],lineNumber:i[1],columnNumber:i[2],source:e})},this)},parseOpera:function(e){return!e.stacktrace||e.message.indexOf("\n")>-1&&e.message.split("\n").length>e.stacktrace.split("\n").length?this.parseOpera9(e):e.stack?this.parseOpera11(e):this.parseOpera10(e)},parseOpera9:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)/i,n=e.message.split("\n"),r=[],i=2,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera10:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)(?:: In function (\S+))?$/i,n=e.stacktrace.split("\n"),r=[],i=0,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({functionName:a[3]||void 0,fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera11:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(O)&&!e.match(/^Error created at/)},this).map(function(e){var t,n=e.split("@"),r=this.extractLocation(n.pop()),i=n.shift()||"",o=i.replace(/<anonymous function(: (\w+))?>/,"$2").replace(/\([^\)]*\)/g,"")||void 0;i.match(/\(([^\)]*)\)/)&&(t=i.replace(/^[^\(]+\(([^\)]*)\)$/,"$1"));var a=void 0===t||"[arguments not available]"===t?void 0:t.split(",");return new b({functionName:o,args:a,fileName:r[0],lineNumber:r[1],columnNumber:r[2],source:e})},this)}});window.onerror=function(t,n,r){var i=!0,o=!0;if("function"!=typeof t)throw new TypeError(e);return h(r)&&(i="leading"in r?!!r.leading:i,o="trailing"in r?!!r.trailing:o),m(t,n,{leading:i,maxWait:n,trailing:o})}(function(e,t,n,r,i){var o,a;i&&(o=w.parse(i)),window.location&&window.location.href&&(a=window.location.href),function(e){try{var t=new XMLHttpRequest;t.open("POST","/LogServlet",!0),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),t.send("javascriptError="+encodeURI(e))}catch(e){}}(JSON.stringify({userAgent:navigator.userAgent,url:a,logger:"apne_nettsider",message:e,source:t,lineno:n,colno:r,stacktrace:o}))},200)}()}catch(e){}
+        </script>
+    
+    <script>
+        dataLayer = [{
+            "subBrand": "bank",
+            "productName": "",
+            "productCategory": ""
+        }];
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TNKH3SP');</script>
+
+    
+    <!-- End Google Tag Manager -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes"/>
+    
+    
+    <meta name="robots" content="noindex"/>
+
+    
+
+    <!-- Open Graph General (Facebook & Pinterest) -->
+    <meta property="og:url" content="https://www.sparebank1.no/nb/bank/privat/404.html"/>
+    <meta property="og:title" content="404: Siden ble ikke funnet"/>
+    <meta property="og:description"/>
+    <meta property="og:image" content="https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"/>
+    <meta property="og:type" content="article"/>
+
+    <!-- Open Graph Article (Facebook & Pinterest) -->
+    <meta property="article:published_time" content="26.11.2020"/>
+    <meta property="article:modified_time" content="26.11.2020"/>
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="404: Siden ble ikke funnet"/>
+    <meta name="twitter:description"/>
+    <meta name="twitter:image:src" content="https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.768.768.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+
+    
+    
+    
+    
+    <!-- Preload SB1 fonts -->
+    <link rel="preload" as="font" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2" type="font/woff2" crossorigin/>
+    <link rel="preload" as="font" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2" type="font/woff2" crossorigin/>    
+    <link rel="preload" as="font" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2" type="font/woff2" crossorigin/>
+
+    
+    
+    <link rel="shortcut icon" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.ico"/>
+    <link rel="apple-touch-icon" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/apple-touch-icon.png"/>
+    <link rel="canonical" href="https://www.sparebank1.no/nb/bank/privat/404.html"/>
+    <link rel="stylesheet" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.css?refnr=1561542867" type="text/css"/>
+    <title>404: Siden ble ikke funnet | SpareBank 1 </title>
+    
+    <!--#config errmsg="" -->
+    
+    <!-- aem01-01 - 5.80.0 -->
+    <!--
+                                   bbbbbbbb            bbbbbbbb                             bbbbbbbb                                                                   
+             jjjj                  b::::::b            b::::::b                             b::::::b              1111111                                              
+            j::::j                 b::::::b            b::::::b                             b::::::b             1::::::1                                              
+             jjjj                  b::::::b            b::::::b                             b::::::b            1:::::::1                                              
+                                    b:::::b             b:::::b                              b:::::b            111:::::1                                              
+           jjjjjjj   ooooooooooo    b:::::bbbbbbbbb     b:::::bbbbbbbbb        ssssssssss    b:::::bbbbbbbbb       1::::1           nnnn  nnnnnnnn       ooooooooooo   
+           j:::::j oo:::::::::::oo  b::::::::::::::bb   b::::::::::::::bb    ss::::::::::s   b::::::::::::::bb     1::::1           n:::nn::::::::nn   oo:::::::::::oo 
+            j::::jo:::::::::::::::o b::::::::::::::::b  b::::::::::::::::b ss:::::::::::::s  b::::::::::::::::b    1::::1           n::::::::::::::nn o:::::::::::::::o
+            j::::jo:::::ooooo:::::o b:::::bbbbb:::::::b b:::::bbbbb:::::::bs::::::ssss:::::s b:::::bbbbb:::::::b   1::::l           nn:::::::::::::::no:::::ooooo:::::o
+            j::::jo::::o     o::::o b:::::b    b::::::b b:::::b    b::::::b s:::::s  ssssss  b:::::b    b::::::b   1::::l             n:::::nnnn:::::no::::o     o::::o
+            j::::jo::::o     o::::o b:::::b     b:::::b b:::::b     b:::::b   s::::::s       b:::::b     b:::::b   1::::l             n::::n    n::::no::::o     o::::o
+            j::::jo::::o     o::::o b:::::b     b:::::b b:::::b     b:::::b      s::::::s    b:::::b     b:::::b   1::::l             n::::n    n::::no::::o     o::::o
+            j::::jo::::o     o::::o b:::::b     b:::::b b:::::b     b:::::bssssss   s:::::s  b:::::b     b:::::b   1::::l             n::::n    n::::no::::o     o::::o
+            j::::jo:::::ooooo:::::o b:::::bbbbbb::::::b b:::::bbbbbb::::::bs:::::ssss::::::s b:::::bbbbbb::::::b111::::::111          n::::n    n::::no:::::ooooo:::::o
+            j::::jo:::::::::::::::o b::::::::::::::::b  b::::::::::::::::b s::::::::::::::s  b::::::::::::::::b 1::::::::::1 ......   n::::n    n::::no:::::::::::::::o
+            j::::j oo:::::::::::oo  b:::::::::::::::b   b:::::::::::::::b   s:::::::::::ss   b:::::::::::::::b  1::::::::::1 .::::.   n::::n    n::::n oo:::::::::::oo 
+            j::::j   ooooooooooo    bbbbbbbbbbbbbbbb    bbbbbbbbbbbbbbbb     sssssssssss     bbbbbbbbbbbbbbbb   111111111111 ......   nnnnnn    nnnnnn   ooooooooooo   
+            j::::j                                                                                                                                                     
+  jjjj      j::::j                                                                                                                                                     
+ j::::jj   j:::::j                                                                                                                                                     
+ j::::::jjj::::::j                                                                                                                                                     
+  jj::::::::::::j                                                                                                                                                      
+    jjj::::::jjj                                                                                                                                                       
+       jjjjjj
+-->
+
+    
+
+    <script type="text/javascript">
+        var _satellite = {
+            track: function() {}
+        }
+    </script>
+
+    <script src="/var/cq/dtm-reactor/clientlibs/EN62f569560777430297ad200bd5fb63ea/launch-EN62f569560777430297ad200bd5fb63ea.min.js" async></script>
+    
+</head>
+
+
+
+<body class="ffe-body-text">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TNKH3SP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<!-- End Google Tag Manager (noscript) -->
+
+
+<script>
+    window.SB1 = {
+        config: {
+            app: {
+                logServlet: "/bin/logservlet",
+                param1: "",
+                param2: "all",
+                param3: "",
+                sendToBank: "true",
+                sendToBankList: "",
+                sendToBankClose: "3",
+                sendToBankDelay: "4",
+                loggedInRedirectEnabled: "true",
+                urlList: "LogServlet,/bin/logservlet,/bin,/content/dam,/dynres,/restportal,static,/innhold,services.cicero.no,/kjopsprosess,/sb1-nettsider-skjema,/nettmote,.boost.ai/,https://publish.ne.cision.com/Subscription/Subscribe,dpm.demdex.net,sparebank1.d3.sc.omtrdc.net,/solr,/sb1-dialoghub,/openapi,edge.adobedc.net,/api/tracking/webbehavior,/pm-boliglan/,/api/personal/",
+                loginRedirectTimeout: "300000",
+                loginStatus: "",
+                isLoginIframeCheckEnabled: "true",
+                chatDefaultOpen: "",
+                enableWebTrackerCurrentPage: "", // To be removed when webtracking is in place on all pages
+                enableWebTrackerProd: "false", // To be removed when switched to Signal
+                enableWebTrackerProdCurrentPage: "", // To be removed when webtracking is in place on all pages
+                disableLaunchTrackerCurrentPage: "", // To be removed when switched to Signal
+                enableLaunchTracker: "true", // To be removed when switched to Signal
+                enableWebTracker: "true",
+                enableAlloyTargetCurrentPage: "", // To be removed when webtracking is in place
+                enableAlloyTarget: "false",
+                adobeEdgeId: "62a5b863-224a-4ac5-96bf-3cc470a0f515",
+                version: "5.80.0"
+            },
+            user: {
+                language: "nb"
+            },
+            global: {
+                logAjax: false
+            },
+            urls: {
+                marketPage: "/content/sites/sb1/nb/bank/privat.html",
+                gotoNettbank: ""
+            },
+            server: {
+            },
+            sites: {
+            },
+            page: {
+                tagVariables: "",
+                pageType: "Feil",
+                market: "Privat",
+                brand: "sb1",
+                products: [{
+                    name:"",
+                    category: ""
+                }],
+                is404Page: "true",
+            },
+            bank: {
+                bankSemanticUrl: "bank",
+                bankShortName: "bank",
+                bankName: "SpareBank 1 "
+            }
+        }
+    };
+</script>
+
+
+<script>
+        digitalData = {
+            disableActivitymap: 'no',
+            content: {
+                BU: "SpareBank 1",
+                subBrand: "bank",
+                language: "nb",
+                page: "sb1|nb|bank|privat|404",
+                section1: "privat",
+                section2: "privat|404",
+                section3: "privat|404",
+                section4: "privat|404",
+                errorpages: "Ja",
+                pagetype: "Feil",
+                tags: "",
+                application: "sb1-nettsider"
+            },
+            support: {},
+            disablePageLoad: 'false',
+            sdkInitialized: true,
+            disableUrlChangeTracking: true,
+            disableUrlListener: true,
+            Lead: {},
+            formfield: {},
+            event1: {
+                eventinfo: {}
+            },
+            products: [{
+                name:"",
+                category: ""
+            }]
+        };
+</script>
+
+<noscript>
+    <div>For at du skal kunne se innhold på SpareBank 1s nettsider optimalt, må du aktivere javascript i din nettleser.</div>
+</noscript>
+
+<div id="outer-main-wrap" class="main-wrap">
+    <!--[if lt IE 8]>
+        <script data-sly-test="true">
+            if(self !== top) {
+                document.getElementById('outer-main-wrap').style.display = 'none';
+                top.location = self.location;
+            }
+        </script> 
+    <![endif]-->
+    
+    
+    <nav>
+    <a href="#main-menu" class="visually-hidden focusable">Til hovedmeny</a>
+
+    <a href="#main-content" class="visually-hidden focusable">Til hovedinnhold</a>
+</nav>
+    
+
+
+    <aside aria-label="Melding" role="complementary">
+        <div class="global-message">
+            <div class="li-information-message-blue js-ie-message-item hide" role="alert" aria-live="assertive" data-id="ie-no-longer-supported" data-button="Lukk">
+                
+            </div>
+            
+        </div>
+    </aside>
+
+
+<header class="header" role="banner">
+    
+    
+    
+    
+    
+    <div class="header__wrap">
+        <div class="header__content  aem-main-container">
+            <div class="header__top-wrap">
+                <a class="header__search-mobile search-toggle" href="?search=" aria-label="Søk" title="Søk">
+                    <svg class="header__search-icon header__search-icon--open">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#forstorrelsesglass-ikon"></use>
+                    </svg>
+                    <svg class="header__search-icon header__search-icon--close">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#kryss-ikon"></use>
+                    </svg>
+                </a>
+
+                <div class="header__logo">
+<a href="/nb/bank/privat.html">
+    
+    
+    
+
+    
+        
+    
+    
+    <picture>
+        <source srcset="/content/dam/SB1/nettsider/logo.svg" media="(min-width: 768px)"/>
+        
+        <img src="/content/dam/SB1/nettsider/logo.svg" alt="Tilbake til forsiden for privat for - SpareBank 1" class="inline-svg responsive "/>
+        
+    </picture>
+    
+    <!--Fallback for no svg support from SoMe scrapers-->
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+    
+    
+
+</a></div>
+
+                <button href="#" class="hamburger-wrapper" aria-hidden="false" aria-expanded="false" aria-label="Meny">
+                    <div class="inner-wrapper">
+                        <div class="hamburger"></div>
+                    </div>
+                </button>
+                
+                <div class="header__top-nav">
+                    <ul>
+                        <li data-title="Privat"><a class="js-nav-link active" href="/nb/bank/privat.html">Privat</a></li>
+                    
+                        <li data-title="Bedrift"><a class="js-nav-link " href="/nb/bank/bedrift.html">Bedrift</a></li>
+                    
+                        <li data-title="Om oss"><a class="js-nav-link " href="/nb/bank/om-oss.html">Om oss</a></li>
+                    
+                        
+                    </ul>
+                    
+                </div>
+           
+            </div>
+
+            <div class="header__user-content">
+                
+
+                <button aria-controls="search-area" class="header__search-desktop search-toggle " aria-label="Søk">
+                    <svg class="header__search-icon header__search-icon--open">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#forstorrelsesglass-ikon"></use>
+                    </svg>
+                    <span>Søk</span>
+                </button>
+
+                <div class=" menu-actions">
+
+                    <div id="header-bli-kunde" class="button">
+                        <div class="button-wrapper">
+                            
+                            
+                                <a onclick="" href="/nb/bank/privat/kundeservice/bestill/bli-kunde.html" class="ffe-button ffe-button--action btn-bli-kunde overlay-btn">Bli kunde</a>
+                            
+                        </div>
+                        
+                            
+                            
+    
+    
+    
+    <div data-nosnippet class="bank-choice-overlay" role="alertdialog" aria-modal="true" aria-labelledby="bank-choice__modal-description_" data-desktop-link="/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html" data-modal-header="For å gå videre - velg en bank" data-modal-header-prefilled="For å gå videre..." data-prefilled-noproduct="Velg en av bankene som tilbyr produktet for å gå videre." data-prefilled-bank-text="Gå til banken du var hos sist" data-input-text="Ditt postnummer" data-optin-Bankpicker-Func="true" data-optin-Bankpicker-Func-Override="false" data-optinfunk-header="Vi kan dessverre ikke vise deg siste besøkte bank, da du ikke har tillatt funksjonelle informasjonskapsler" data-optinfunk-sublead="Hvis du ønsker å slippe å gjøre de samme valgene hver gang du er på nettsidene våre, så vil funksjonelle informasjonskapsler lagre opplysninger om din bruk av nettsidene og hvilke innstillinger du har gjort." data-optinfunk-accept="Slå på funksjonelle informasjonskapsler" data-optinfunk-reject="Nei takk" data-more-choices-text="Se alle banker" data-hide-choices-text="Skjul bankene" data-placeholder="Postnummer" data-placeholder-position="Din posisjon" data-fortsett="Fortsett til" data-filtered-list="Se resten av bankene" data-position-access="Tips! Tillatt nettleseren å hente din stedsinformasjon." data-position-api-fail="Vi finner ikke posisjonen din. Prøv å skriv et postnummer i stedet!" data-position-btn="Bruk min posisjon"></div>
+
+                    
+                                        
+                    </div>
+                
+                    
+
+<div id="login" class="user-buttons todo-handle">
+
+    <a id="login-button" class="login-btn login" href="/nb/bank/privat/innlogging.html">
+        <span>Logg inn</span>
+    </a>
+
+    <a id="nettbank-button" class="goto-btn to-bank-button login-buttons" href="#/">
+        <span>Til nettbank</span>
+    </a>
+
+    <a id="forsikring-button" class="goto-btn to-forsikring login-buttons" href="https://kundeforsikring.sparebank1.no">
+        <span>Til forsikring</span>
+    </a>
+
+    <button id="logout-button" class="logout-btn login-buttons" data-logout-url="/content/sites/sb1/nb/bank/privat/innlogging/logget-ut.html">
+        <span>Logg ut</span>
+    </button>
+</div>
+
+<script type="text/javascript">
+
+    (function(){
+        try{
+            var loginSection = document.getElementById('login');
+            var nettBankButton = document.getElementsByClassName('to-bank-button')[0];
+            var loginButton = document.getElementById('login-button');
+            var bank = window.SB1.config.bank.bankShortName;
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "/openapi/nettsider/ressurser/"+ bank +"/user", true);
+
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 ){
+                    if (this.status == 200) {
+                        var result = JSON.parse(this.responseText);
+
+                        if (result.authenticated) {
+                            loginSection.dataset['authenticated'] = 'true';
+                            showButton(document.getElementById('logout-button'));
+                            addClass(loginSection,'mobile-border');
+
+                            var realms = result.realms;
+                            if (realms.length > -1) {
+                                var i = 0;
+                                //Viser kun en knapp denne runden
+                                //tilrettelegger for flere knapper i neste runde
+
+                                if (realms[i] == 'nettbank-bm') {
+                                    var nettbankUrl = '/'+ result.bank + '/nettbank-bedrift/forside';
+                                    var isMobilBank = nettBankButton.id === 'mobilbank-button';
+                                    if(isMobilBank) {
+                                        nettbankUrl = nettBankButton.href;
+                                    } else {
+                                        nettBankButton.href = nettbankUrl;
+                                    }
+
+                                    setGotoNettbankConf(nettbankUrl);
+                                    showButton(nettBankButton);
+
+                                } else if (realms[i] == 'nettbank-pm') {
+                                    nettBankButton.href = '/'+ result.bank + '/nettbank-privat/oversikt';
+                                    setGotoNettbankConf('/'+ result.bank + '/nettbank-privat/oversikt');
+
+                                    //DIG-116242 Skjule "Til bettbank" for SB1 forvaltning
+                                    if(window.location.href && window.location.href.indexOf("sb1-forvaltning") == -1) {
+                                        showButton(nettBankButton);
+                                    }
+
+                                } else if (realms[i] == 'forsikring-pm' && bank != 'helgeland') {
+                                    showButton(document.getElementById('forsikring-button'));
+                                }
+
+                                loginButton.style.display='none';
+                                //Bli kunde button
+                                var bliKundeBtn = document.getElementById('header-bli-kunde');
+                                if (bliKundeBtn) {
+                                    bliKundeBtn.style.display='none';
+                                }
+                            }
+                        } else {
+                            setGotoNettbankConf(loginButton.href);
+                        }
+                    }else{
+                        setGotoNettbankConf(loginButton.href);
+                    }
+                }
+
+            };
+            xhttp.send();
+
+            function showButton(btn){
+                addClass(btn, 'login-buttons__show');
+            }
+
+            function setGotoNettbankConf(sUrl){
+                window.SB1.config.urls.gotoNettbank = sUrl;
+            }
+
+            function addClass(obj ,name) {
+                var arr;
+                arr = obj.className.split(" ");
+                if (arr.indexOf(name) == -1) {
+                    obj.className += " " + name;
+                }
+            }
+
+        }catch(exception){
+            document.getElementById('login-button').style.display = 'flex';
+        }
+    })();
+
+
+</script>
+
+
+                    
+                </div>
+
+            </div>
+
+            <nav id="main-menu" class="header__main-nav " aria-label="Hovedmeny" tabindex="-1" role="navigation">
+                <ul>
+                    <li><a class=" js-nav-link" href="/nb/bank/privat/daglig-bruk.html">Daglig bruk</a></li>
+                
+                    <li><a class=" js-nav-link" href="/nb/bank/privat/lan.html">Låne</a></li>
+                
+                    <li><a class=" js-nav-link" href="/nb/bank/privat/sparing.html">Spare</a></li>
+                
+                    <li><a class=" js-nav-link" href="/nb/bank/privat/pensjon.html">Pensjon</a></li>
+                
+                    <li><a class=" js-nav-link" href="/nb/bank/privat/forsikring.html">Forsikring</a></li>
+                
+                    <li><a class=" js-nav-link" href="/nb/bank/privat/eiendom.html">Eiendom</a></li>
+                
+                    <li><a class=" js-nav-link" href="/nb/bank/privat/tips-og-rad.html">Tips og råd</a></li>
+                
+                    <li><a class=" js-nav-link" href="/nb/bank/privat/kundeservice.html">Kundeservice</a></li>
+                
+                    <li><a class=" js-nav-link" href="/nb/bank/privat/lofavor.html">LOfavør-fordeler</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+
+
+
+    <!-- Søke område -->
+    <div id="search-area" class="search-overlay hide " aria-expanded="false" aria-live="polite" role="search">
+
+        <div class="full-width-wrap">
+
+            <div class="aem-main-container search-overlay__close">
+                <button tabindex="0" class="search-overlay__close-btn js-search-close">
+                    <span class="ffe-strong-text">Lukk</span>
+                    <svg focusable="false">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#kryss-ikon"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="inner-wrap">
+                
+                <div class="search-field-wrap">
+                    <form action=".">
+                        <input id="search-field" class="aem-input search-field" autocomplete="off" aria-label="Søk" name="search" placeholder="Søk" type="search"/>
+                    </form>
+
+                    <button class="search-button" aria-label="Søk">
+                        <svg class="icon-search">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#forstorrelsesglass-ikon"></use>
+                        </svg>
+                    </button>
+                    <button class="search-clear-button hide" aria-label="Fjern søketekst">
+                        <svg class="icon-search-clear">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#kryss-ikon"></use>
+                        </svg>
+                    </button>
+                    <div class="spellchecking-wrap">
+                        
+                        <ul class="spellchecking hide"></ul>
+                    </div>
+                </div>
+                <div class="search-field-error ffe-field-error-message hide" role="alert">Ikke skriv personlig informasjon i søkefeltet.</div>
+                <div class="facet-wrap market-facets-wrap">
+                </div>
+            </div>
+        </div>
+        <div class="inner-wrap">
+            <div class="search-loading hide">
+                <span class="ffe-loading-spinner ffe-loading-spinner--large"></span>
+            </div>
+        </div>
+        <div class="inner-wrap">
+            <div class="search-results-wrap" aria-live="polite">
+                <div class="visually-hidden js-numresult" aria-hidden="true" role="alert"><span>0</span> søketreff</div>
+                
+                <ul class="search-results"></ul>
+
+            </div>
+        </div>
+        <div class="search-empty">
+            <img class="search-empty__img" alt="Blå katt" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/search-cat.svg"/>
+        </div>
+        <div class="inner-wrap">
+            <div class="error-state hide"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function(){
+            try{
+                function iOS_macOS() {
+                    return ['iPad','iPhone'].includes(navigator.platform)
+                        || (navigator.userAgent.includes("Mac") ) //for safari desktop & iPad on iOS 13
+                }
+                //IOS og Safari mac cacher når man bruker back btn. JS kjøres ikke og søkefeltet blir tomt.
+                window.onpageshow = function(event) {
+                    if (event.persisted && iOS_macOS()) { //iOS og MacOS safari
+                        window.location.reload();                 
+                    }
+                };
+            }catch(exception){ }
+        })();
+    </script>
+
+    <main id="main-content" class="main" tabindex="-1" role="main" aria-hidden="false">
+    
+    
+    
+    <div class="image parbase">
+
+<div class="aem-component-container ">
+      
+            
+    
+    
+
+    
+        
+    
+    <div class="image-center">
+    <picture>
+        <source srcset="/content/dam/SB1/illustrasjoner/liggende/gutt_forstoerrelsesglass.svg" media="(min-width: 768px)"/>
+        
+        <img role="presentation" src="/content/dam/SB1/illustrasjoner/liggende/gutt_forstoerrelsesglass.svg" style="width:100%;height:300px;" class="inline-svg responsive "/>
+        
+    </picture>
+    </div>
+    <!--Fallback for no svg support from SoMe scrapers-->
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/illustrasjoner/liggende/gutt_forstoerrelsesglass.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+    
+    
+
+      
+</div></div>
+
+
+    
+    
+    
+    <div class="text parbase">
+<div class="aem-component-container">
+    
+    
+        
+        
+            <div class="text-wrapper">
+                
+                    <h3 style="text-align: center;">Oisann, siden du så etter finnes ikke</h3>
+<p style="text-align: center;">Beklager, vi skjønner at det er kjedelig. Kanskje du kan<br />
+prøve å søke etter det du leter etter?</p>
+
+                
+            </div>
+        
+
+        
+    
+</div></div>
+
+
+    
+    
+    
+    <div class="button parbase">
+      
+<div class="aem-component-container">
+
+    
+      
+    
+    <div class="button-wrapper center">
+        <a onclick="" class="primary-btn ffe-button ffe-button--primary     id-1795548433" href="?search">
+            <span class="ffe-button__label">  Søk  
+                </span>
+                
+            </span>
+        </a>
+        
+    </div>
+
+    
+
+    
+    
+
+
+
+    
+
+    
+
+</div>
+</div>
+
+
+    
+    
+    
+    <div class="columns-grid parbase color-fillable">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="columns-grid__wrap ">
+    <div class="ffe-grid ffe-grid--gap-none columns-grid--width  ">
+        
+        <div class="ffe-grid__row columns-grid__row columns-grid__row--col-12 ">
+            <div class="columns-grid__column ffe-grid__col--sm-12 ffe-grid__col--md-6 ffe-grid__col--lg-3 ffe-grid__col--lg-offset-0 ">
+                <div class="columns-grid__content columns-grid__content--start">
+                    
+                    
+                </div>
+            </div>
+            <div class="columns-grid__column ffe-grid__col--sm-12 ffe-grid__col--md-6 ffe-grid__col--lg-3 ">
+                <div class="columns-grid__content columns-grid__content--start">
+                    
+                    
+    
+    
+    
+    <div class="text parbase">
+<div class="aem-component-container">
+    
+    
+        
+        
+            <div class="text-wrapper">
+                
+                    <p style="text-align: center;"><a href="https://www.sparebank1.no/">Ta meg til forsiden</a></p>
+
+                
+            </div>
+        
+
+        
+    
+</div></div>
+
+
+                </div>
+            </div>
+            <div class="columns-grid__column ffe-grid__col--sm-12 ffe-grid__col--md-6 ffe-grid__col--lg-3 ">
+                <div class="columns-grid__content columns-grid__content--start">
+                    
+                    
+    
+    
+    
+    <div class="text parbase">
+<div class="aem-component-container">
+    
+    
+        
+        
+            <div class="text-wrapper">
+                
+                    <p style="text-align: center;"><a href="https://www.sparebank1.no/nb/bank/privat/innlogging.html">Logg inn i nettbanken</a></p>
+
+                
+            </div>
+        
+
+        
+    
+</div></div>
+
+
+                </div>
+            </div>
+            <div class="columns-grid__column ffe-grid__col--sm-12 ffe-grid__col--md-6 ffe-grid__col--lg-3  ">
+                <div class="columns-grid__content columns-grid__content--start">
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</div></div>
+
+</main>
+
+
+    <script async onerror="optinScriptError=true;" type="text/javascript" src="/sb1-nettsider-optin/bank/static/opt-in.js"></script>
+    <link rel="stylesheet" onerror="optinScriptError=true;" property="stylesheet" media="screen,print" type="text/css" href="/sb1-nettsider-optin/bank/static/opt-in.css"/>
+    <div id="opt-in" data-trigger-modal="true" data-nosnippet="true"></div>
+
+
+    
+
+<footer class="footer-wrapper" aria-hidden="false">
+    <div class="footer-top container-fluid">
+        <div id="contact-us">
+<div class="contact-section ">
+
+    <h2>Kontakt oss</h2>
+    
+<div class="aem-component-container">
+    
+    
+        
+        
+            <div class="text-wrapper">
+                
+                    <p style="text-align: center;"><a href="/nb/bank/privat/kundeservice.html">Gå til kundeservice</a></p>
+
+                
+            </div>
+        
+
+        
+    
+</div>
+    <div class="customer-action-wrap clearfix ">
+        <ul class="customer-action__list" role="tablist">
+
+            
+                
+<li class="customer-action__list-item" id="contact-tab1" data-menu-section="contact-call-template" aria-controls="panel1" role="tab">
+    <a href="#/" class="cs-action tab-section">
+        <div class="icon-circle">
+    
+    
+    
+
+    
+        
+    
+    
+    <picture>
+        <source srcset="/content/dam/SB1/ikoner/GUI-ikoner/hvit-telefon-ikon.svg" media="(min-width: 768px)"/>
+        
+        
+        <img role="presentation" src="/content/dam/SB1/ikoner/GUI-ikoner/hvit-telefon-ikon.svg" alt="" class="inline-svg responsive icon"/>
+    </picture>
+    
+    <!--Fallback for no svg support from SoMe scrapers-->
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/GUI-ikoner/hvit-telefon-ikon.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+    
+    
+
+</div>
+        <span class="btn-name">Ring telefon</span>
+        <span class="sub-info">Alle dager 7-24</span>
+    </a>
+    <div class="icon">
+        <svg class="arrow-down">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#chevron-ikon"></use>
+        </svg>
+    </div>
+</li>
+
+
+            
+
+            
+                
+<li class="customer-action__list-item" id="contact-tab2" data-menu-section="contact-appointment-template" aria-controls="panel2" role="tab">
+    <a id="meeting" href="#/" class="cs-action tab-section">
+        <div class="icon-circle">
+    
+    
+    
+
+    
+        
+    
+    
+    <picture>
+        <source srcset="/content/dam/SB1/ikoner/GUI-ikoner/hvit-kalender-ikon.svg" media="(min-width: 768px)"/>
+        
+        
+        <img role="presentation" src="/content/dam/SB1/ikoner/GUI-ikoner/hvit-kalender-ikon.svg" alt="" class="inline-svg responsive icon"/>
+    </picture>
+    
+    <!--Fallback for no svg support from SoMe scrapers-->
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/GUI-ikoner/hvit-kalender-ikon.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+    
+    
+
+</div>
+        <span class="btn-name">Avtal møte</span>
+        <span class="sub-info">med en rådgiver</span>
+    </a>
+    <div class="icon">
+        <svg class="arrow-down">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#chevron-ikon"></use>
+        </svg>
+    </div>
+</li>
+
+
+            
+
+            
+                
+<li class="customer-action__list-item" id="contact-tab3" data-menu-section="contact-message-template" aria-controls="panel3" role="tab">
+    <a id="message" href="#/" class="cs-action tab-section">
+        <div class="icon-circle">
+    
+    
+    
+
+    
+        
+    
+    
+    <picture>
+        <source srcset="/content/dam/SB1/ikoner/GUI-ikoner/hvit-epost-ikon.svg" media="(min-width: 768px)"/>
+        
+        
+        <img role="presentation" src="/content/dam/SB1/ikoner/GUI-ikoner/hvit-epost-ikon.svg" alt="" class="inline-svg responsive icon"/>
+    </picture>
+    
+    <!--Fallback for no svg support from SoMe scrapers-->
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/GUI-ikoner/hvit-epost-ikon.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+    
+    
+
+</div>
+        <span class="btn-name">Skriv til oss</span>
+        <span class="sub-info"></span>
+    </a>
+    <div class="icon">
+        <svg class="arrow-down">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#chevron-ikon"></use>
+        </svg>
+    </div>
+</li>
+
+
+
+
+            
+
+            
+                
+<li class="customer-action__list-item" id="contact-tab4" data-menu-section="find-us-template" aria-controls="panel4" role="tab">
+    <a href="#/" class="cs-action tab-section">
+        <div class="icon-circle">
+    
+    
+    
+
+    
+        
+    
+    
+    <picture>
+        <source srcset="/content/dam/SB1/ikoner/GUI-ikoner/hvit-omrade-ikon.svg" media="(min-width: 768px)"/>
+        
+        
+        <img role="presentation" src="/content/dam/SB1/ikoner/GUI-ikoner/hvit-omrade-ikon.svg" alt="" class="inline-svg responsive icon"/>
+    </picture>
+    
+    <!--Fallback for no svg support from SoMe scrapers-->
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/GUI-ikoner/hvit-omrade-ikon.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+    
+    
+
+</div>
+        <span class="btn-name">Finn kontor</span>
+        <span class="sub-info"></span>
+    </a>
+    <div class="icon">
+        <svg class="arrow-down">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#chevron-ikon"></use>
+        </svg>
+    </div>
+</li>
+
+
+            
+
+            
+                
+<li class="customer-action__list-item" id="contact-tab5" data-menu-section="contact-chat-template" aria-controls="panel5" role="tab">
+    <a id="contact-chat" href="#/" class="cs-action tab-section">
+        <div class="icon-circle">
+    
+    
+    
+
+    
+        
+    
+    
+    <picture>
+        <source srcset="/content/dam/SB1/ikoner/GUI-ikoner/hvit-chat-ikon.svg" media="(min-width: 768px)"/>
+        
+        
+        <img role="presentation" src="/content/dam/SB1/ikoner/GUI-ikoner/hvit-chat-ikon.svg" alt="" class="inline-svg responsive icon"/>
+    </picture>
+    
+    <!--Fallback for no svg support from SoMe scrapers-->
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/GUI-ikoner/hvit-chat-ikon.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+    
+    
+
+</div>
+        <span class="btn-name">Chat</span>
+        <span class="sub-info">Alle dager 7-24</span>
+    </a>
+    <div class="icon">
+        <svg class="arrow-down">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#chevron-ikon"></use>
+        </svg>
+    </div>
+</li>
+
+
+            
+
+        </ul>
+
+        
+
+        
+        
+    
+    <div aria-hidden="true" id="contact-call-template" class="hide">
+        <div id="panel1" class="contact-info-section" aria-labelledby="contact-tab1" role="tabpanel">
+            <div class="call-section">
+                <div class="call-banks">
+
+
+
+
+
+    <div class="call-banks__col1">
+
+        
+
+
+<div class="js-contact-bankpicker__listHeader-suggest hide">
+
+    
+
+    
+</div>
+
+<div class="js-contact-bankpicker__suggest contact-bankpicker__suggest hide" aria-live="polite"></div>
+
+<div class="contact-bankpicker">
+    
+
+    <div class="postal-input js-postal-input">       
+        <div class="postal-code ffe-input-group ffe-input-group--no-extra-margin ffe-input-group--message">
+            <label class="postal-input__label ffe-body-paragraph">Skriv inn postnummeret ditt</label>
+            <input class="contact-bankpicker__input ffe-input-field ffe-input-field--inline" type="tel" name="postalcode" maxlength="4" placeholder="Postnummer"/>
+            <button class="contact-bankpicker__searchBtn ffe-button ffe-button--primary ffe-input-field--inline button">
+                <span class="ffe-button__label">S&oslash;k</span>
+                <span class="ffe-button__spinner" aria-hidden="true">Vennligst vent</span>
+            </button>
+            <div class="sb1_form_validation_error ffe-field-error-message hide" role="alert">
+                <span>Skriv inn et gyldig postnummer (4 siffer).</span>
+            </div>
+        </div>       
+    </div>
+
+    <div class="contact-bankpicker__nobanks hide" aria-live="polite" role="alert">
+        <div class="ffe-field-error-message ffe-body-paragraph">
+            Vi fant dessverre ingen banker på dette postnummeret.
+        </div>
+    </div>
+</div>
+
+
+
+
+        <div class="contact-bankpicker__banksinfo" aria-live="polite" role="alert">
+            
+            
+            
+            
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide gudbrandsdal" data-postal="[{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2609&#34;},{&#34;from&#34;:&#34;2611&#34;,&#34;to&#34;:&#34;2611&#34;},{&#34;from&#34;:&#34;2613&#34;,&#34;to&#34;:&#34;2615&#34;},{&#34;from&#34;:&#34;2618&#34;,&#34;to&#34;:&#34;2658&#34;},{&#34;from&#34;:&#34;2670&#34;,&#34;to&#34;:&#34;2677&#34;}]" data-bank-name="gudbrandsdal">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/gudbrandsdal/privat/404.html">SpareBank 1 Gudbrandsdal</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:02095">02095</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02095" class="call-option__sub-number">+47 915 02095</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:02095">02095</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 91 50 20 95" class="call-option__sub-number">+47 91 50 20 95</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide hallingdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2890&#34;,&#34;to&#34;:&#34;2985&#34;},{&#34;from&#34;:&#34;3528&#34;,&#34;to&#34;:&#34;3528&#34;},{&#34;from&#34;:&#34;3539&#34;,&#34;to&#34;:&#34;3588&#34;}]" data-bank-name="hallingdal">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/hallingdal/privat/404.html">SpareBank 1 Hallingdal Valdres</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:03202">03202</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 03 202" class="call-option__sub-number">+47 915 03 202</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:03202">03202</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 03202" class="call-option__sub-number">+47 915 03202</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide helgeland" data-postal="[{&#34;from&#34;:&#34;8181&#34;,&#34;to&#34;:&#34;8182&#34;},{&#34;from&#34;:&#34;8185&#34;,&#34;to&#34;:&#34;8198&#34;},{&#34;from&#34;:&#34;8610&#34;,&#34;to&#34;:&#34;8986&#34;}]" data-bank-name="helgeland">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/helgeland/privat/404.html">SpareBank 1 Helgeland</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:+47 75 11 90 00">+47 75 11 90 00</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 75 11 90 00" class="call-option__sub-number">+47 75 11 90 00</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:+47 75 11 90 00">+47 75 11 90 00</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 75 11 90 00" class="call-option__sub-number">+47 75 11 90 00</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide lom-skjaak" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1369&#34;},{&#34;from&#34;:&#34;2660&#34;,&#34;to&#34;:&#34;2669&#34;},{&#34;from&#34;:&#34;2680&#34;,&#34;to&#34;:&#34;2695&#34;}]" data-bank-name="lom-skjaak">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/lom-skjaak/privat/404.html">SpareBank 1 Lom og Skjåk</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:61 21 90 00">61 21 90 00</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 61 21 90 00" class="call-option__sub-number">+47 61 21 90 00</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:61 21 90 00">61 21 90 00</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 61 21 90 00" class="call-option__sub-number">+47 61 21 90 00</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide nord-norge" data-postal="[{&#34;from&#34;:&#34;8003&#34;,&#34;to&#34;:&#34;8178&#34;},{&#34;from&#34;:&#34;8184&#34;,&#34;to&#34;:&#34;8184&#34;},{&#34;from&#34;:&#34;8200&#34;,&#34;to&#34;:&#34;8590&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9990&#34;}]" data-bank-name="nord-norge">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/nord-norge/privat/404.html">SpareBank 1 Nord-Norge</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:915 02244">915 02244</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02244" class="call-option__sub-number">+47 915 02244</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:915 02244">915 02244</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02244" class="call-option__sub-number">+47 915 02244</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide nordmore" data-postal="[{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;6057&#34;},{&#34;from&#34;:&#34;6062&#34;,&#34;to&#34;:&#34;7800&#34;}]" data-bank-name="nordmore">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/nordmore/privat/404.html">SpareBank 1 Nordmøre</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:+47 915 03900">+47 915 03900</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 03900" class="call-option__sub-number">+47 915 03900</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:+47 915 03900">+47 915 03900</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 03900" class="call-option__sub-number">+47 915 03900</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide ringerike-hadeland" data-postal="[{&#34;from&#34;:&#34;1480&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;2720&#34;,&#34;to&#34;:&#34;2770&#34;},{&#34;from&#34;:&#34;3510&#34;,&#34;to&#34;:&#34;3525&#34;},{&#34;from&#34;:&#34;3530&#34;,&#34;to&#34;:&#34;3534&#34;},{&#34;from&#34;:&#34;3538&#34;,&#34;to&#34;:&#34;3538&#34;}]" data-bank-name="ringerike-hadeland">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/ringerike-hadeland/privat/404.html">SpareBank 1 Ringerike Hadeland</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:+47 915 02130">+47 915 02130</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02130" class="call-option__sub-number">+47 915 02130</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:+47 915 02130">+47 915 02130</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02130" class="call-option__sub-number">+47 915 02130</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide smn" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2550&#34;,&#34;to&#34;:&#34;2555&#34;},{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2609&#34;},{&#34;from&#34;:&#34;2611&#34;,&#34;to&#34;:&#34;2611&#34;},{&#34;from&#34;:&#34;2613&#34;,&#34;to&#34;:&#34;2615&#34;},{&#34;from&#34;:&#34;2618&#34;,&#34;to&#34;:&#34;2625&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5176&#34;},{&#34;from&#34;:&#34;5178&#34;,&#34;to&#34;:&#34;5183&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5398&#34;},{&#34;from&#34;:&#34;5718&#34;,&#34;to&#34;:&#34;5718&#34;},{&#34;from&#34;:&#34;5743&#34;,&#34;to&#34;:&#34;5748&#34;},{&#34;from&#34;:&#34;5960&#34;,&#34;to&#34;:&#34;5978&#34;},{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7995&#34;}]" data-bank-name="smn">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/smn/privat/404.html">SpareBank 1 SMN</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:91507300">91507300</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 91507300" class="call-option__sub-number">+47 91507300</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:91507303">91507303</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 91507303" class="call-option__sub-number">+47 91507303</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide sr-bank" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1388&#34;},{&#34;from&#34;:&#34;1392&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;2000&#34;,&#34;to&#34;:&#34;2004&#34;},{&#34;from&#34;:&#34;2007&#34;,&#34;to&#34;:&#34;2007&#34;},{&#34;from&#34;:&#34;2010&#34;,&#34;to&#34;:&#34;2013&#34;},{&#34;from&#34;:&#34;2015&#34;,&#34;to&#34;:&#34;2015&#34;},{&#34;from&#34;:&#34;2019&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4536&#34;},{&#34;from&#34;:&#34;4550&#34;,&#34;to&#34;:&#34;4720&#34;},{&#34;from&#34;:&#34;4770&#34;,&#34;to&#34;:&#34;4849&#34;},{&#34;from&#34;:&#34;4870&#34;,&#34;to&#34;:&#34;4888&#34;},{&#34;from&#34;:&#34;4920&#34;,&#34;to&#34;:&#34;4920&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5382&#34;},{&#34;from&#34;:&#34;5410&#34;,&#34;to&#34;:&#34;5598&#34;},{&#34;from&#34;:&#34;5635&#34;,&#34;to&#34;:&#34;5694&#34;},{&#34;from&#34;:&#34;5718&#34;,&#34;to&#34;:&#34;5722&#34;},{&#34;from&#34;:&#34;5724&#34;,&#34;to&#34;:&#34;5748&#34;},{&#34;from&#34;:&#34;5911&#34;,&#34;to&#34;:&#34;5943&#34;},{&#34;from&#34;:&#34;5953&#34;,&#34;to&#34;:&#34;5978&#34;},{&#34;from&#34;:&#34;5993&#34;,&#34;to&#34;:&#34;5994&#34;}]" data-bank-name="sr-bank">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/sr-bank/privat/404.html">SpareBank 1 SR-Bank</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:915 02002">915 02002</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02002" class="call-option__sub-number">+47 915 02002</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:915 02002">915 02002</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02002" class="call-option__sub-number">+47 915 02002</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide sorost" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3296&#34;},{&#34;from&#34;:&#34;3300&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;3533&#34;,&#34;to&#34;:&#34;3533&#34;},{&#34;from&#34;:&#34;3535&#34;,&#34;to&#34;:&#34;3536&#34;},{&#34;from&#34;:&#34;3608&#34;,&#34;to&#34;:&#34;3970&#34;},{&#34;from&#34;:&#34;4770&#34;,&#34;to&#34;:&#34;4849&#34;},{&#34;from&#34;:&#34;4870&#34;,&#34;to&#34;:&#34;4994&#34;}]" data-bank-name="sorost">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/sorost/privat/404.html">SpareBank 1 Sørøst-Norge</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:915 02480">915 02480</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02480" class="call-option__sub-number">+47 915 02480</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:915 02479">915 02479</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02479" class="call-option__sub-number">+47 915 02479</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide ostfold-akershus" data-postal="[{&#34;from&#34;:&#34;1407&#34;,&#34;to&#34;:&#34;1407&#34;},{&#34;from&#34;:&#34;1430&#34;,&#34;to&#34;:&#34;1449&#34;},{&#34;from&#34;:&#34;1455&#34;,&#34;to&#34;:&#34;1455&#34;},{&#34;from&#34;:&#34;1511&#34;,&#34;to&#34;:&#34;1894&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;1970&#34;}]" data-bank-name="ostfold-akershus">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/ostfold-akershus/privat/404.html">SpareBank 1 Østfold Akershus</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:05700">05700</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:(+47) 915 05700" class="call-option__sub-number">(+47) 915 05700</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:05770">05770</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 05770" class="call-option__sub-number">+47 915 05770</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide ostlandet" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1406&#34;},{&#34;from&#34;:&#34;1408&#34;,&#34;to&#34;:&#34;1435&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;2625&#34;},{&#34;from&#34;:&#34;2815&#34;,&#34;to&#34;:&#34;2881&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3058&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3430&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4049&#34;},{&#34;from&#34;:&#34;4076&#34;,&#34;to&#34;:&#34;4085&#34;},{&#34;from&#34;:&#34;4150&#34;,&#34;to&#34;:&#34;4164&#34;},{&#34;from&#34;:&#34;4168&#34;,&#34;to&#34;:&#34;4173&#34;},{&#34;from&#34;:&#34;4187&#34;,&#34;to&#34;:&#34;4187&#34;},{&#34;from&#34;:&#34;4608&#34;,&#34;to&#34;:&#34;4658&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5184&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5268&#34;},{&#34;from&#34;:&#34;6100&#34;,&#34;to&#34;:&#34;6133&#34;},{&#34;from&#34;:&#34;6190&#34;,&#34;to&#34;:&#34;6190&#34;},{&#34;from&#34;:&#34;7010&#34;,&#34;to&#34;:&#34;7099&#34;},{&#34;from&#34;:&#34;7540&#34;,&#34;to&#34;:&#34;7549&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9034&#34;},{&#34;from&#34;:&#34;9043&#34;,&#34;to&#34;:&#34;9043&#34;},{&#34;from&#34;:&#34;9057&#34;,&#34;to&#34;:&#34;9057&#34;},{&#34;from&#34;:&#34;9100&#34;,&#34;to&#34;:&#34;9128&#34;},{&#34;from&#34;:&#34;9131&#34;,&#34;to&#34;:&#34;9131&#34;},{&#34;from&#34;:&#34;9141&#34;,&#34;to&#34;:&#34;9141&#34;}]" data-bank-name="ostlandet">
+                    <div class="call-banks__bankname">
+                        <a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/ostlandet/privat/404.html">SpareBank 1 Østlandet</a>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:915 07040">915 07040</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 07040" class="call-option__sub-number">+47 915 07040</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h3 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:915 07050">915 07050</a></h3>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 07050" class="call-option__sub-number">+47 915 07050</a><br/>
+                                Alle dager 7 - 24
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+        </div>
+
+        
+    <div class="js-contact-bankpicker__banklist-wrap contact-bankpicker__banklist-wrapper">
+        <div class="ffe-body-paragraph">
+            <span>... eller
+                <button aria-expanded="false" aria-controls="banks__expand-region" class="js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand">
+                    <span class="ffe-inline-button__label">velg banken</span>
+                    <svg viewBox="0 0 200 200" class="ffe-inline-button__icon ffe-inline-button__icon--right" style="margin-left: 5px; transform: none;"><path d="m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z"></path></svg>
+                </button>
+                 du ønsker å kontakte</span>
+        </div>
+
+        <div class="js-contact-bankpicker__banklist contact-bankpicker__bankList-wrap hide" role="region" id="banks__expand-region" tabindex="-1">
+            <div class="icon">
+                <svg class="listbanks">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#chevron-ikon"></use>
+                </svg>
+            </div>
+            
+            <div class="contact-bankpicker__bankList">
+                
+                    <div class="contact-bankpicker__bankList-list">
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="gudbrandsdal">
+                                 SpareBank 1 
+                                <span class="bank-name">Gudbrandsdal</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="hallingdal">
+                                 SpareBank 1 
+                                <span class="bank-name">Hallingdal Valdres</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="helgeland">
+                                 SpareBank 1 
+                                <span class="bank-name">Helgeland</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="lom-skjaak">
+                                 SpareBank 1 
+                                <span class="bank-name">Lom og Skjåk</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nord-norge">
+                                 SpareBank 1 
+                                <span class="bank-name">Nord-Norge</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nordmore">
+                                 SpareBank 1 
+                                <span class="bank-name">Nordmøre</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ringerike-hadeland">
+                                 SpareBank 1 
+                                <span class="bank-name">Ringerike Hadeland</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="smn">
+                                 SpareBank 1 
+                                <span class="bank-name">SMN</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sr-bank">
+                                 SpareBank 1 
+                                <span class="bank-name">SR-Bank</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sorost">
+                                 SpareBank 1 
+                                <span class="bank-name">Sørøst-Norge</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostfold-akershus">
+                                 SpareBank 1 
+                                <span class="bank-name">Østfold Akershus</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostlandet">
+                                 SpareBank 1 
+                                <span class="bank-name">Østlandet</span>
+                                
+                            </button>
+                        </div>
+                    </div>
+                
+                
+                
+                <button class="contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded" aria-label="Lukk bankliste">
+                    <svg focusable="false" class="ffe-button__icon" viewBox="0 0 200 200" width="150" height="150" x="1200" y="1200" xmlns="http://www.w3.org/2000/svg"><path d="M18.77 0c-3.562 0-7.125 1.347-9.834 4.044L4.507 8.483c-5.381 5.394-5.381 14.25 0 19.68l71.19 71.83-71.66 71.83c-5.381 5.394-5.381 14.25 0 19.68l4.429 4.439c5.381 5.394 14.22 5.394 19.64 0l71.66-71.83 71.65 71.83c5.381 5.394 14.23 5.394 19.65 0l4.429-4.439c5.381-5.394 5.381-14.25 0-19.68l-71.19-71.83 71.66-71.83c5.381-4.914 5.381-13.78 0-19.21l-4.429-4.423c-5.381-5.394-14.22-5.394-19.64 0l-72.13 71.34-71.17-71.83c-2.691-2.697-6.257-4.044-9.819-4.044z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="call-banks__col2">
+
+        
+        <h3 class="contact-bankpicker__header ffe-h4">Melde skade <a class="call-option__number-link" href="tel:91502300">915 02300</a></h3>
+        <div class="call-option__sub-info">
+            <div class="call-option__sub-text">
+                <span>Ring fra utland</span>
+                <a href="tel:+4791502300" class="call-option__sub-number">+47 915 02300</a>
+            </div>
+            
+                <span class="call-option__sub-text">Alle dager 7 - 24</span>
+            
+        </div>
+
+    </div>
+</div>
+                <div class="contact-box call-section">
+                    
+                    <ul class="call-section__list">                        
+                        
+    
+    
+    
+    <li class="call-option__list-item">
+
+
+
+
+
+<div class="call-option__sub-info">
+    
+    
+</div>
+</li>
+
+
+    
+    
+    
+    <li class="call-option__list-item">
+
+
+
+
+
+<div class="call-option__sub-info">
+    
+    
+</div>
+</li>
+
+
+    
+    
+    
+    <li class="call-option__list-item">
+
+
+
+
+
+<div class="call-option__sub-info">
+    
+    
+</div>
+</li>
+
+
+                    </ul>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+        
+
+<div aria-hidden="true" id="contact-appointment-template" class="hide">
+
+    <div id="panel2" class="contact-info-section" aria-labelledby="contact-tab2" role="tabpanel">
+        <section class="contact-box appointment-section">
+            
+            <div>
+
+    
+
+    
+
+
+
+
+<div class="appointment-banks">
+
+    
+
+
+<div class="js-contact-bankpicker__listHeader-suggest hide">
+
+    <h3 class="contact-bankpicker__header ffe-h4">Avtal møte</h3>
+
+    
+</div>
+
+<div class="js-contact-bankpicker__suggest contact-bankpicker__suggest hide" aria-live="polite"></div>
+
+<div class="contact-bankpicker">
+    <h3 class="contact-bankpicker__header ffe-h4">Avtal møte</h3>
+
+    <div class="postal-input js-postal-input">       
+        <div class="postal-code ffe-input-group ffe-input-group--no-extra-margin ffe-input-group--message">
+            <label class="postal-input__label ffe-body-paragraph">Skriv inn postnummeret ditt</label>
+            <input class="contact-bankpicker__input ffe-input-field ffe-input-field--inline" type="tel" name="postalcode" maxlength="4" placeholder="Postnummer"/>
+            <button class="contact-bankpicker__searchBtn ffe-button ffe-button--primary ffe-input-field--inline button">
+                <span class="ffe-button__label">S&oslash;k</span>
+                <span class="ffe-button__spinner" aria-hidden="true">Vennligst vent</span>
+            </button>
+            <div class="sb1_form_validation_error ffe-field-error-message hide" role="alert">
+                <span>Skriv inn et gyldig postnummer (4 siffer).</span>
+            </div>
+        </div>       
+    </div>
+
+    <div class="contact-bankpicker__nobanks hide" aria-live="polite" role="alert">
+        <div class="ffe-field-error-message ffe-body-paragraph">
+            Vi fant dessverre ingen banker på dette postnummeret.
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="contact-bankpicker__banksinfo">
+
+        <div class="contact-bankpicker__banksinfo-list">
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide gudbrandsdal" data-postal="[{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2609&#34;},{&#34;from&#34;:&#34;2611&#34;,&#34;to&#34;:&#34;2611&#34;},{&#34;from&#34;:&#34;2613&#34;,&#34;to&#34;:&#34;2615&#34;},{&#34;from&#34;:&#34;2618&#34;,&#34;to&#34;:&#34;2658&#34;},{&#34;from&#34;:&#34;2670&#34;,&#34;to&#34;:&#34;2677&#34;}]" data-bank-name="gudbrandsdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/gudbrandsdal/privat/404.html#meeting">SpareBank 1 Gudbrandsdal</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide hallingdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2890&#34;,&#34;to&#34;:&#34;2985&#34;},{&#34;from&#34;:&#34;3528&#34;,&#34;to&#34;:&#34;3528&#34;},{&#34;from&#34;:&#34;3539&#34;,&#34;to&#34;:&#34;3588&#34;}]" data-bank-name="hallingdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/hallingdal/privat/404.html#meeting">SpareBank 1 Hallingdal Valdres</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide helgeland" data-postal="[{&#34;from&#34;:&#34;8181&#34;,&#34;to&#34;:&#34;8182&#34;},{&#34;from&#34;:&#34;8185&#34;,&#34;to&#34;:&#34;8198&#34;},{&#34;from&#34;:&#34;8610&#34;,&#34;to&#34;:&#34;8986&#34;}]" data-bank-name="helgeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/helgeland/privat/404.html#meeting">SpareBank 1 Helgeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide lom-skjaak" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1369&#34;},{&#34;from&#34;:&#34;2660&#34;,&#34;to&#34;:&#34;2669&#34;},{&#34;from&#34;:&#34;2680&#34;,&#34;to&#34;:&#34;2695&#34;}]" data-bank-name="lom-skjaak">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/lom-skjaak/privat/404.html#meeting">SpareBank 1 Lom og Skjåk</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide nord-norge" data-postal="[{&#34;from&#34;:&#34;8003&#34;,&#34;to&#34;:&#34;8178&#34;},{&#34;from&#34;:&#34;8184&#34;,&#34;to&#34;:&#34;8184&#34;},{&#34;from&#34;:&#34;8200&#34;,&#34;to&#34;:&#34;8590&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9990&#34;}]" data-bank-name="nord-norge">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html">SpareBank 1 Nord-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide nordmore" data-postal="[{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;6057&#34;},{&#34;from&#34;:&#34;6062&#34;,&#34;to&#34;:&#34;7800&#34;}]" data-bank-name="nordmore">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/nordmore/privat/404.html#meeting">SpareBank 1 Nordmøre</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide ringerike-hadeland" data-postal="[{&#34;from&#34;:&#34;1480&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;2720&#34;,&#34;to&#34;:&#34;2770&#34;},{&#34;from&#34;:&#34;3510&#34;,&#34;to&#34;:&#34;3525&#34;},{&#34;from&#34;:&#34;3530&#34;,&#34;to&#34;:&#34;3534&#34;},{&#34;from&#34;:&#34;3538&#34;,&#34;to&#34;:&#34;3538&#34;}]" data-bank-name="ringerike-hadeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ringerike-hadeland/privat/404.html#meeting">SpareBank 1 Ringerike Hadeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide smn" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2550&#34;,&#34;to&#34;:&#34;2555&#34;},{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2609&#34;},{&#34;from&#34;:&#34;2611&#34;,&#34;to&#34;:&#34;2611&#34;},{&#34;from&#34;:&#34;2613&#34;,&#34;to&#34;:&#34;2615&#34;},{&#34;from&#34;:&#34;2618&#34;,&#34;to&#34;:&#34;2625&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5176&#34;},{&#34;from&#34;:&#34;5178&#34;,&#34;to&#34;:&#34;5183&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5398&#34;},{&#34;from&#34;:&#34;5718&#34;,&#34;to&#34;:&#34;5718&#34;},{&#34;from&#34;:&#34;5743&#34;,&#34;to&#34;:&#34;5748&#34;},{&#34;from&#34;:&#34;5960&#34;,&#34;to&#34;:&#34;5978&#34;},{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7995&#34;}]" data-bank-name="smn">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/smn/privat/404.html#meeting">SpareBank 1 SMN</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide sr-bank" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1388&#34;},{&#34;from&#34;:&#34;1392&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;2000&#34;,&#34;to&#34;:&#34;2004&#34;},{&#34;from&#34;:&#34;2007&#34;,&#34;to&#34;:&#34;2007&#34;},{&#34;from&#34;:&#34;2010&#34;,&#34;to&#34;:&#34;2013&#34;},{&#34;from&#34;:&#34;2015&#34;,&#34;to&#34;:&#34;2015&#34;},{&#34;from&#34;:&#34;2019&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4536&#34;},{&#34;from&#34;:&#34;4550&#34;,&#34;to&#34;:&#34;4720&#34;},{&#34;from&#34;:&#34;4770&#34;,&#34;to&#34;:&#34;4849&#34;},{&#34;from&#34;:&#34;4870&#34;,&#34;to&#34;:&#34;4888&#34;},{&#34;from&#34;:&#34;4920&#34;,&#34;to&#34;:&#34;4920&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5382&#34;},{&#34;from&#34;:&#34;5410&#34;,&#34;to&#34;:&#34;5598&#34;},{&#34;from&#34;:&#34;5635&#34;,&#34;to&#34;:&#34;5694&#34;},{&#34;from&#34;:&#34;5718&#34;,&#34;to&#34;:&#34;5722&#34;},{&#34;from&#34;:&#34;5724&#34;,&#34;to&#34;:&#34;5748&#34;},{&#34;from&#34;:&#34;5911&#34;,&#34;to&#34;:&#34;5943&#34;},{&#34;from&#34;:&#34;5953&#34;,&#34;to&#34;:&#34;5978&#34;},{&#34;from&#34;:&#34;5993&#34;,&#34;to&#34;:&#34;5994&#34;}]" data-bank-name="sr-bank">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/sr-bank/privat/404.html#meeting">SpareBank 1 SR-Bank</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide sorost" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3296&#34;},{&#34;from&#34;:&#34;3300&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;3533&#34;,&#34;to&#34;:&#34;3533&#34;},{&#34;from&#34;:&#34;3535&#34;,&#34;to&#34;:&#34;3536&#34;},{&#34;from&#34;:&#34;3608&#34;,&#34;to&#34;:&#34;3970&#34;},{&#34;from&#34;:&#34;4770&#34;,&#34;to&#34;:&#34;4849&#34;},{&#34;from&#34;:&#34;4870&#34;,&#34;to&#34;:&#34;4994&#34;}]" data-bank-name="sorost">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/sorost/privat/404.html#meeting">SpareBank 1 Sørøst-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide ostfold-akershus" data-postal="[{&#34;from&#34;:&#34;1407&#34;,&#34;to&#34;:&#34;1407&#34;},{&#34;from&#34;:&#34;1430&#34;,&#34;to&#34;:&#34;1449&#34;},{&#34;from&#34;:&#34;1455&#34;,&#34;to&#34;:&#34;1455&#34;},{&#34;from&#34;:&#34;1511&#34;,&#34;to&#34;:&#34;1894&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;1970&#34;}]" data-bank-name="ostfold-akershus">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostfold-akershus/privat/404.html#meeting">SpareBank 1 Østfold Akershus</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide ostlandet" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1406&#34;},{&#34;from&#34;:&#34;1408&#34;,&#34;to&#34;:&#34;1435&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;2625&#34;},{&#34;from&#34;:&#34;2815&#34;,&#34;to&#34;:&#34;2881&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3058&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3430&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4049&#34;},{&#34;from&#34;:&#34;4076&#34;,&#34;to&#34;:&#34;4085&#34;},{&#34;from&#34;:&#34;4150&#34;,&#34;to&#34;:&#34;4164&#34;},{&#34;from&#34;:&#34;4168&#34;,&#34;to&#34;:&#34;4173&#34;},{&#34;from&#34;:&#34;4187&#34;,&#34;to&#34;:&#34;4187&#34;},{&#34;from&#34;:&#34;4608&#34;,&#34;to&#34;:&#34;4658&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5184&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5268&#34;},{&#34;from&#34;:&#34;6100&#34;,&#34;to&#34;:&#34;6133&#34;},{&#34;from&#34;:&#34;6190&#34;,&#34;to&#34;:&#34;6190&#34;},{&#34;from&#34;:&#34;7010&#34;,&#34;to&#34;:&#34;7099&#34;},{&#34;from&#34;:&#34;7540&#34;,&#34;to&#34;:&#34;7549&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9034&#34;},{&#34;from&#34;:&#34;9043&#34;,&#34;to&#34;:&#34;9043&#34;},{&#34;from&#34;:&#34;9057&#34;,&#34;to&#34;:&#34;9057&#34;},{&#34;from&#34;:&#34;9100&#34;,&#34;to&#34;:&#34;9128&#34;},{&#34;from&#34;:&#34;9131&#34;,&#34;to&#34;:&#34;9131&#34;},{&#34;from&#34;:&#34;9141&#34;,&#34;to&#34;:&#34;9141&#34;}]" data-bank-name="ostlandet">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostlandet/privat/404.html#meeting">SpareBank 1 Østlandet</a>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="js-contact-bankpicker__banklist-wrap contact-bankpicker__banklist-wrapper">
+        <div class="ffe-body-paragraph">
+            <span>... eller
+                <button aria-expanded="false" aria-controls="banks__expand-region" class="js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand">
+                    <span class="ffe-inline-button__label">velg banken</span>
+                    <svg viewBox="0 0 200 200" class="ffe-inline-button__icon ffe-inline-button__icon--right" style="margin-left: 5px; transform: none;"><path d="m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z"></path></svg>
+                </button>
+                 du ønsker å kontakte</span>
+        </div>
+
+        <div class="js-contact-bankpicker__banklist contact-bankpicker__bankList-wrap hide" role="region" id="banks__expand-region" tabindex="-1">
+            <div class="icon">
+                <svg class="listbanks">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#chevron-ikon"></use>
+                </svg>
+            </div>
+            
+            <div class="contact-bankpicker__bankList">
+                
+                
+                    <div class="contact-bankpicker__bankList-list">
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/gudbrandsdal/privat/404.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="gudbrandsdal">
+                                SpareBank 1 
+                                <span class="bank-name">Gudbrandsdal</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/hallingdal/privat/404.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="hallingdal">
+                                SpareBank 1 
+                                <span class="bank-name">Hallingdal Valdres</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/helgeland/privat/404.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="helgeland">
+                                SpareBank 1 
+                                <span class="bank-name">Helgeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/lom-skjaak/privat/404.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="lom-skjaak">
+                                SpareBank 1 
+                                <span class="bank-name">Lom og Skjåk</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nord-norge">
+                                SpareBank 1 
+                                <span class="bank-name">Nord-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/nordmore/privat/404.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nordmore">
+                                SpareBank 1 
+                                <span class="bank-name">Nordmøre</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ringerike-hadeland/privat/404.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ringerike-hadeland">
+                                SpareBank 1 
+                                <span class="bank-name">Ringerike Hadeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/smn/privat/404.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="smn">
+                                SpareBank 1 
+                                <span class="bank-name">SMN</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/sr-bank/privat/404.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sr-bank">
+                                SpareBank 1 
+                                <span class="bank-name">SR-Bank</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/sorost/privat/404.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sorost">
+                                SpareBank 1 
+                                <span class="bank-name">Sørøst-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostfold-akershus/privat/404.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostfold-akershus">
+                                SpareBank 1 
+                                <span class="bank-name">Østfold Akershus</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostlandet/privat/404.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostlandet">
+                                SpareBank 1 
+                                <span class="bank-name">Østlandet</span>
+                                
+                            </a> 
+                        </div>   
+                    </div>
+                
+                
+                <button class="contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded" aria-label="Lukk bankliste">
+                    <svg focusable="false" class="ffe-button__icon" viewBox="0 0 200 200" width="150" height="150" x="1200" y="1200" xmlns="http://www.w3.org/2000/svg"><path d="M18.77 0c-3.562 0-7.125 1.347-9.834 4.044L4.507 8.483c-5.381 5.394-5.381 14.25 0 19.68l71.19 71.83-71.66 71.83c-5.381 5.394-5.381 14.25 0 19.68l4.429 4.439c5.381 5.394 14.22 5.394 19.64 0l71.66-71.83 71.65 71.83c5.381 5.394 14.23 5.394 19.65 0l4.429-4.439c5.381-5.394 5.381-14.25 0-19.68l-71.19-71.83 71.66-71.83c5.381-4.914 5.381-13.78 0-19.21l-4.429-4.423c-5.381-5.394-14.22-5.394-19.64 0l-72.13 71.34-71.17-71.83c-2.691-2.697-6.257-4.044-9.819-4.044z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+    
+</div>
+        </section>
+    </div>
+</div>
+
+        
+        
+
+<div aria-hidden="true" id="contact-message-template" class="hide">
+    <div id="panel3" aria-labelledby="contact-tab3" class="contact-info-section" role="tabpanel">
+        <section class="contact-box message-section">
+            
+
+
+
+
+<div class="message-banks">
+
+    
+
+
+<div class="js-contact-bankpicker__listHeader-suggest hide">
+
+    <h3 class="contact-bankpicker__header ffe-h4">Skriv til oss</h3>
+
+    
+</div>
+
+<div class="js-contact-bankpicker__suggest contact-bankpicker__suggest hide" aria-live="polite"></div>
+
+<div class="contact-bankpicker">
+    <h3 class="contact-bankpicker__header ffe-h4">Skriv til oss</h3>
+
+    <div class="postal-input js-postal-input">       
+        <div class="postal-code ffe-input-group ffe-input-group--no-extra-margin ffe-input-group--message">
+            <label class="postal-input__label ffe-body-paragraph">Skriv inn postnummeret ditt</label>
+            <input class="contact-bankpicker__input ffe-input-field ffe-input-field--inline" type="tel" name="postalcode" maxlength="4" placeholder="Postnummer"/>
+            <button class="contact-bankpicker__searchBtn ffe-button ffe-button--primary ffe-input-field--inline button">
+                <span class="ffe-button__label">S&oslash;k</span>
+                <span class="ffe-button__spinner" aria-hidden="true">Vennligst vent</span>
+            </button>
+            <div class="sb1_form_validation_error ffe-field-error-message hide" role="alert">
+                <span>Skriv inn et gyldig postnummer (4 siffer).</span>
+            </div>
+        </div>       
+    </div>
+
+    <div class="contact-bankpicker__nobanks hide" aria-live="polite" role="alert">
+        <div class="ffe-field-error-message ffe-body-paragraph">
+            Vi fant dessverre ingen banker på dette postnummeret.
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="contact-bankpicker__banksinfo">
+
+        <div class="contact-bankpicker__banksinfo-list">
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide gudbrandsdal" data-postal="[{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2609&#34;},{&#34;from&#34;:&#34;2611&#34;,&#34;to&#34;:&#34;2611&#34;},{&#34;from&#34;:&#34;2613&#34;,&#34;to&#34;:&#34;2615&#34;},{&#34;from&#34;:&#34;2618&#34;,&#34;to&#34;:&#34;2658&#34;},{&#34;from&#34;:&#34;2670&#34;,&#34;to&#34;:&#34;2677&#34;}]" data-bank-name="gudbrandsdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/gudbrandsdal/privat/404.html#message">SpareBank 1 Gudbrandsdal</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide hallingdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2890&#34;,&#34;to&#34;:&#34;2985&#34;},{&#34;from&#34;:&#34;3528&#34;,&#34;to&#34;:&#34;3528&#34;},{&#34;from&#34;:&#34;3539&#34;,&#34;to&#34;:&#34;3588&#34;}]" data-bank-name="hallingdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/hallingdal/privat/404.html#message">SpareBank 1 Hallingdal Valdres</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide helgeland" data-postal="[{&#34;from&#34;:&#34;8181&#34;,&#34;to&#34;:&#34;8182&#34;},{&#34;from&#34;:&#34;8185&#34;,&#34;to&#34;:&#34;8198&#34;},{&#34;from&#34;:&#34;8610&#34;,&#34;to&#34;:&#34;8986&#34;}]" data-bank-name="helgeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/helgeland/privat/404.html#message">SpareBank 1 Helgeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide lom-skjaak" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1369&#34;},{&#34;from&#34;:&#34;2660&#34;,&#34;to&#34;:&#34;2669&#34;},{&#34;from&#34;:&#34;2680&#34;,&#34;to&#34;:&#34;2695&#34;}]" data-bank-name="lom-skjaak">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/lom-skjaak/privat/404.html#message">SpareBank 1 Lom og Skjåk</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide nord-norge" data-postal="[{&#34;from&#34;:&#34;8003&#34;,&#34;to&#34;:&#34;8178&#34;},{&#34;from&#34;:&#34;8184&#34;,&#34;to&#34;:&#34;8184&#34;},{&#34;from&#34;:&#34;8200&#34;,&#34;to&#34;:&#34;8590&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9990&#34;}]" data-bank-name="nord-norge">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/lokalbankene.html">SpareBank 1 Nord-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide nordmore" data-postal="[{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;6057&#34;},{&#34;from&#34;:&#34;6062&#34;,&#34;to&#34;:&#34;7800&#34;}]" data-bank-name="nordmore">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/nordmore/privat/404.html#message">SpareBank 1 Nordmøre</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ringerike-hadeland" data-postal="[{&#34;from&#34;:&#34;1480&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;2720&#34;,&#34;to&#34;:&#34;2770&#34;},{&#34;from&#34;:&#34;3510&#34;,&#34;to&#34;:&#34;3525&#34;},{&#34;from&#34;:&#34;3530&#34;,&#34;to&#34;:&#34;3534&#34;},{&#34;from&#34;:&#34;3538&#34;,&#34;to&#34;:&#34;3538&#34;}]" data-bank-name="ringerike-hadeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ringerike-hadeland/privat/404.html#message">SpareBank 1 Ringerike Hadeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide smn" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2550&#34;,&#34;to&#34;:&#34;2555&#34;},{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2609&#34;},{&#34;from&#34;:&#34;2611&#34;,&#34;to&#34;:&#34;2611&#34;},{&#34;from&#34;:&#34;2613&#34;,&#34;to&#34;:&#34;2615&#34;},{&#34;from&#34;:&#34;2618&#34;,&#34;to&#34;:&#34;2625&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5176&#34;},{&#34;from&#34;:&#34;5178&#34;,&#34;to&#34;:&#34;5183&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5398&#34;},{&#34;from&#34;:&#34;5718&#34;,&#34;to&#34;:&#34;5718&#34;},{&#34;from&#34;:&#34;5743&#34;,&#34;to&#34;:&#34;5748&#34;},{&#34;from&#34;:&#34;5960&#34;,&#34;to&#34;:&#34;5978&#34;},{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7995&#34;}]" data-bank-name="smn">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/smn/privat/404.html#message">SpareBank 1 SMN</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide sr-bank" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1388&#34;},{&#34;from&#34;:&#34;1392&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;2000&#34;,&#34;to&#34;:&#34;2004&#34;},{&#34;from&#34;:&#34;2007&#34;,&#34;to&#34;:&#34;2007&#34;},{&#34;from&#34;:&#34;2010&#34;,&#34;to&#34;:&#34;2013&#34;},{&#34;from&#34;:&#34;2015&#34;,&#34;to&#34;:&#34;2015&#34;},{&#34;from&#34;:&#34;2019&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4536&#34;},{&#34;from&#34;:&#34;4550&#34;,&#34;to&#34;:&#34;4720&#34;},{&#34;from&#34;:&#34;4770&#34;,&#34;to&#34;:&#34;4849&#34;},{&#34;from&#34;:&#34;4870&#34;,&#34;to&#34;:&#34;4888&#34;},{&#34;from&#34;:&#34;4920&#34;,&#34;to&#34;:&#34;4920&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5382&#34;},{&#34;from&#34;:&#34;5410&#34;,&#34;to&#34;:&#34;5598&#34;},{&#34;from&#34;:&#34;5635&#34;,&#34;to&#34;:&#34;5694&#34;},{&#34;from&#34;:&#34;5718&#34;,&#34;to&#34;:&#34;5722&#34;},{&#34;from&#34;:&#34;5724&#34;,&#34;to&#34;:&#34;5748&#34;},{&#34;from&#34;:&#34;5911&#34;,&#34;to&#34;:&#34;5943&#34;},{&#34;from&#34;:&#34;5953&#34;,&#34;to&#34;:&#34;5978&#34;},{&#34;from&#34;:&#34;5993&#34;,&#34;to&#34;:&#34;5994&#34;}]" data-bank-name="sr-bank">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="https://www.sparebank1.no/nb/sr-bank/privat/kundeservice.html">SpareBank 1 SR-Bank</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide sorost" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3296&#34;},{&#34;from&#34;:&#34;3300&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;3533&#34;,&#34;to&#34;:&#34;3533&#34;},{&#34;from&#34;:&#34;3535&#34;,&#34;to&#34;:&#34;3536&#34;},{&#34;from&#34;:&#34;3608&#34;,&#34;to&#34;:&#34;3970&#34;},{&#34;from&#34;:&#34;4770&#34;,&#34;to&#34;:&#34;4849&#34;},{&#34;from&#34;:&#34;4870&#34;,&#34;to&#34;:&#34;4994&#34;}]" data-bank-name="sorost">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/sorost/privat/404.html#message">SpareBank 1 Sørøst-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ostfold-akershus" data-postal="[{&#34;from&#34;:&#34;1407&#34;,&#34;to&#34;:&#34;1407&#34;},{&#34;from&#34;:&#34;1430&#34;,&#34;to&#34;:&#34;1449&#34;},{&#34;from&#34;:&#34;1455&#34;,&#34;to&#34;:&#34;1455&#34;},{&#34;from&#34;:&#34;1511&#34;,&#34;to&#34;:&#34;1894&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;1970&#34;}]" data-bank-name="ostfold-akershus">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostfold-akershus/privat/404.html#message">SpareBank 1 Østfold Akershus</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ostlandet" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1406&#34;},{&#34;from&#34;:&#34;1408&#34;,&#34;to&#34;:&#34;1435&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;2625&#34;},{&#34;from&#34;:&#34;2815&#34;,&#34;to&#34;:&#34;2881&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3058&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3430&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4049&#34;},{&#34;from&#34;:&#34;4076&#34;,&#34;to&#34;:&#34;4085&#34;},{&#34;from&#34;:&#34;4150&#34;,&#34;to&#34;:&#34;4164&#34;},{&#34;from&#34;:&#34;4168&#34;,&#34;to&#34;:&#34;4173&#34;},{&#34;from&#34;:&#34;4187&#34;,&#34;to&#34;:&#34;4187&#34;},{&#34;from&#34;:&#34;4608&#34;,&#34;to&#34;:&#34;4658&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5184&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5268&#34;},{&#34;from&#34;:&#34;6100&#34;,&#34;to&#34;:&#34;6133&#34;},{&#34;from&#34;:&#34;6190&#34;,&#34;to&#34;:&#34;6190&#34;},{&#34;from&#34;:&#34;7010&#34;,&#34;to&#34;:&#34;7099&#34;},{&#34;from&#34;:&#34;7540&#34;,&#34;to&#34;:&#34;7549&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9034&#34;},{&#34;from&#34;:&#34;9043&#34;,&#34;to&#34;:&#34;9043&#34;},{&#34;from&#34;:&#34;9057&#34;,&#34;to&#34;:&#34;9057&#34;},{&#34;from&#34;:&#34;9100&#34;,&#34;to&#34;:&#34;9128&#34;},{&#34;from&#34;:&#34;9131&#34;,&#34;to&#34;:&#34;9131&#34;},{&#34;from&#34;:&#34;9141&#34;,&#34;to&#34;:&#34;9141&#34;}]" data-bank-name="ostlandet">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostlandet/privat/404.html#message">SpareBank 1 Østlandet</a>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="js-contact-bankpicker__banklist-wrap contact-bankpicker__banklist-wrapper">
+        <div class="ffe-body-paragraph">
+            <span>... eller
+                <button aria-expanded="false" aria-controls="banks__expand-region" class="js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand">
+                    <span class="ffe-inline-button__label">velg banken</span>
+                    <svg viewBox="0 0 200 200" class="ffe-inline-button__icon ffe-inline-button__icon--right" style="margin-left: 5px; transform: none;"><path d="m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z"></path></svg>
+                </button>
+                 du ønsker å kontakte</span>
+        </div>
+
+        <div class="js-contact-bankpicker__banklist contact-bankpicker__bankList-wrap hide" role="region" id="banks__expand-region" tabindex="-1">
+            <div class="icon">
+                <svg class="listbanks">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#chevron-ikon"></use>
+                </svg>
+            </div>
+            
+            <div class="contact-bankpicker__bankList">
+                
+                
+                    <div class="contact-bankpicker__bankList-list">
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/gudbrandsdal/privat/404.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="gudbrandsdal">
+                                SpareBank 1 
+                                <span class="bank-name">Gudbrandsdal</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/hallingdal/privat/404.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="hallingdal">
+                                SpareBank 1 
+                                <span class="bank-name">Hallingdal Valdres</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/helgeland/privat/404.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="helgeland">
+                                SpareBank 1 
+                                <span class="bank-name">Helgeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/lom-skjaak/privat/404.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="lom-skjaak">
+                                SpareBank 1 
+                                <span class="bank-name">Lom og Skjåk</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/lokalbankene.html" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nord-norge">
+                                SpareBank 1 
+                                <span class="bank-name">Nord-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/nordmore/privat/404.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nordmore">
+                                SpareBank 1 
+                                <span class="bank-name">Nordmøre</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ringerike-hadeland/privat/404.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ringerike-hadeland">
+                                SpareBank 1 
+                                <span class="bank-name">Ringerike Hadeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/smn/privat/404.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="smn">
+                                SpareBank 1 
+                                <span class="bank-name">SMN</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="https://www.sparebank1.no/nb/sr-bank/privat/kundeservice.html" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sr-bank">
+                                SpareBank 1 
+                                <span class="bank-name">SR-Bank</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/sorost/privat/404.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sorost">
+                                SpareBank 1 
+                                <span class="bank-name">Sørøst-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostfold-akershus/privat/404.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostfold-akershus">
+                                SpareBank 1 
+                                <span class="bank-name">Østfold Akershus</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostlandet/privat/404.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostlandet">
+                                SpareBank 1 
+                                <span class="bank-name">Østlandet</span>
+                                
+                            </a> 
+                        </div>   
+                    </div>
+                
+                
+                <button class="contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded" aria-label="Lukk bankliste">
+                    <svg focusable="false" class="ffe-button__icon" viewBox="0 0 200 200" width="150" height="150" x="1200" y="1200" xmlns="http://www.w3.org/2000/svg"><path d="M18.77 0c-3.562 0-7.125 1.347-9.834 4.044L4.507 8.483c-5.381 5.394-5.381 14.25 0 19.68l71.19 71.83-71.66 71.83c-5.381 5.394-5.381 14.25 0 19.68l4.429 4.439c5.381 5.394 14.22 5.394 19.64 0l71.66-71.83 71.65 71.83c5.381 5.394 14.23 5.394 19.65 0l4.429-4.439c5.381-5.394 5.381-14.25 0-19.68l-71.19-71.83 71.66-71.83c5.381-4.914 5.381-13.78 0-19.21l-4.429-4.423c-5.381-5.394-14.22-5.394-19.64 0l-72.13 71.34-71.17-71.83c-2.691-2.697-6.257-4.044-9.819-4.044z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+            
+            
+        </section>
+    </div>
+</div>
+
+        
+        
+
+
+<div aria-hidden="true" id="find-us-template" class="hide ">
+    <div id="panel4" class="contact-info-section find-us" aria-labelledby="contact-tab4" role="tabpanel">
+        <section class="contact-box find-us-section">
+            <h3 class="find-us__header ffe-h4">Søk etter et kontor</h3>
+
+            <div class="search-field-wrap">
+                <label class="visually-hidden" aria-hidden="true">Søk</label>
+                <input class="aem-input search-field" aria-label="Søk
+" name="search" type="search"/>
+
+                <button class="search-button" aria-label="Søk">
+                    <svg class="icon-search">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#forstorrelsesglass-ikon"></use>
+                    </svg>
+                </button>
+                <button class="search-clear-button hide" aria-label="Fjern søketekst">
+                    <svg class="icon-search-clear">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#kryss-ikon"></use>
+                    </svg>
+                </button>
+            </div>
+
+            
+
+            <div class="search-results-wrap find-us__wrap hide">
+                
+                <div class="category-facets-wrap"></div>
+                
+                <ul class="search-results"></ul>
+            </div>
+
+            <div class="search-messages-wrap hide" role="alert">
+                <div class="error-state hide">
+                    
+                    
+    
+    
+    
+    <div class="text parbase">
+<div class="aem-component-container">
+    
+    
+        
+        
+            <div class="text-wrapper">
+                
+                    <p style="text-align: center;"><span class="h5">Det oppstod en uventet feil. Vennligst prøv på nytt.</span></p>
+
+                
+            </div>
+        
+
+        
+    
+</div></div>
+
+
+
+                </div>
+                <div class="no-results-state hide">
+                    
+                    
+    
+    
+    
+    <div class="text parbase">
+<div class="aem-component-container">
+    
+    
+        
+        
+            <div class="text-wrapper">
+                
+                    <p style="text-align: center;"><span class="h5">Søket ditt ga ingen treff.</span></p>
+<p style="text-align: center;"><span class="h5">Ved søk på &quot;alle kontorer&quot; får du hele listen.</span></p>
+
+                
+            </div>
+        
+
+        
+    
+</div></div>
+
+
+                    
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+
+        
+        
+
+<div aria-hidden="true" id="contact-chat-template" class="hide">
+    <div id="panel5" class="contact-info-section" aria-labelledby="contact-tab5" role="tabpanel">
+        <section class="contact-box chat-section chat-section__bankpicker">
+
+            <h3 class="ffe-h4">Chat med oss</h3>
+
+            <div class="chat-section__text">
+                
+            </div>
+            
+            
+
+
+
+
+<div class="chat-banks">
+
+    
+
+
+<div class="js-contact-bankpicker__listHeader-suggest hide">
+
+    
+
+    
+</div>
+
+<div class="js-contact-bankpicker__suggest contact-bankpicker__suggest hide" aria-live="polite"></div>
+
+<div class="contact-bankpicker">
+    
+
+    <div class="postal-input js-postal-input">       
+        <div class="postal-code ffe-input-group ffe-input-group--no-extra-margin ffe-input-group--message">
+            <label class="postal-input__label ffe-body-paragraph">Skriv inn postnummeret ditt</label>
+            <input class="contact-bankpicker__input ffe-input-field ffe-input-field--inline" type="tel" name="postalcode" maxlength="4" placeholder="Postnummer"/>
+            <button class="contact-bankpicker__searchBtn ffe-button ffe-button--primary ffe-input-field--inline button">
+                <span class="ffe-button__label">S&oslash;k</span>
+                <span class="ffe-button__spinner" aria-hidden="true">Vennligst vent</span>
+            </button>
+            <div class="sb1_form_validation_error ffe-field-error-message hide" role="alert">
+                <span>Skriv inn et gyldig postnummer (4 siffer).</span>
+            </div>
+        </div>       
+    </div>
+
+    <div class="contact-bankpicker__nobanks hide" aria-live="polite" role="alert">
+        <div class="ffe-field-error-message ffe-body-paragraph">
+            Vi fant dessverre ingen banker på dette postnummeret.
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="contact-bankpicker__banksinfo">
+
+        <div class="contact-bankpicker__banksinfo-list">
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide gudbrandsdal" data-postal="[{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2609&#34;},{&#34;from&#34;:&#34;2611&#34;,&#34;to&#34;:&#34;2611&#34;},{&#34;from&#34;:&#34;2613&#34;,&#34;to&#34;:&#34;2615&#34;},{&#34;from&#34;:&#34;2618&#34;,&#34;to&#34;:&#34;2658&#34;},{&#34;from&#34;:&#34;2670&#34;,&#34;to&#34;:&#34;2677&#34;}]" data-bank-name="gudbrandsdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/gudbrandsdal/privat/404.html#sb1openchat">SpareBank 1 Gudbrandsdal</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide hallingdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2890&#34;,&#34;to&#34;:&#34;2985&#34;},{&#34;from&#34;:&#34;3528&#34;,&#34;to&#34;:&#34;3528&#34;},{&#34;from&#34;:&#34;3539&#34;,&#34;to&#34;:&#34;3588&#34;}]" data-bank-name="hallingdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/hallingdal/privat/404.html#sb1openchat">SpareBank 1 Hallingdal Valdres</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide helgeland" data-postal="[{&#34;from&#34;:&#34;8181&#34;,&#34;to&#34;:&#34;8182&#34;},{&#34;from&#34;:&#34;8185&#34;,&#34;to&#34;:&#34;8198&#34;},{&#34;from&#34;:&#34;8610&#34;,&#34;to&#34;:&#34;8986&#34;}]" data-bank-name="helgeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/helgeland/privat/404.html#sb1openchat">SpareBank 1 Helgeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide lom-skjaak" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1369&#34;},{&#34;from&#34;:&#34;2660&#34;,&#34;to&#34;:&#34;2669&#34;},{&#34;from&#34;:&#34;2680&#34;,&#34;to&#34;:&#34;2695&#34;}]" data-bank-name="lom-skjaak">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/lom-skjaak/privat/404.html#sb1openchat">SpareBank 1 Lom og Skjåk</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide nord-norge" data-postal="[{&#34;from&#34;:&#34;8003&#34;,&#34;to&#34;:&#34;8178&#34;},{&#34;from&#34;:&#34;8184&#34;,&#34;to&#34;:&#34;8184&#34;},{&#34;from&#34;:&#34;8200&#34;,&#34;to&#34;:&#34;8590&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9990&#34;}]" data-bank-name="nord-norge">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/nord-norge/privat/404.html#sb1openchat">SpareBank 1 Nord-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide nordmore" data-postal="[{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;6057&#34;},{&#34;from&#34;:&#34;6062&#34;,&#34;to&#34;:&#34;7800&#34;}]" data-bank-name="nordmore">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/nordmore/privat/404.html#sb1openchat">SpareBank 1 Nordmøre</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ringerike-hadeland" data-postal="[{&#34;from&#34;:&#34;1480&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;2720&#34;,&#34;to&#34;:&#34;2770&#34;},{&#34;from&#34;:&#34;3510&#34;,&#34;to&#34;:&#34;3525&#34;},{&#34;from&#34;:&#34;3530&#34;,&#34;to&#34;:&#34;3534&#34;},{&#34;from&#34;:&#34;3538&#34;,&#34;to&#34;:&#34;3538&#34;}]" data-bank-name="ringerike-hadeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ringerike-hadeland/privat/404.html#sb1openchat">SpareBank 1 Ringerike Hadeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide smn" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2550&#34;,&#34;to&#34;:&#34;2555&#34;},{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2609&#34;},{&#34;from&#34;:&#34;2611&#34;,&#34;to&#34;:&#34;2611&#34;},{&#34;from&#34;:&#34;2613&#34;,&#34;to&#34;:&#34;2615&#34;},{&#34;from&#34;:&#34;2618&#34;,&#34;to&#34;:&#34;2625&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5176&#34;},{&#34;from&#34;:&#34;5178&#34;,&#34;to&#34;:&#34;5183&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5398&#34;},{&#34;from&#34;:&#34;5718&#34;,&#34;to&#34;:&#34;5718&#34;},{&#34;from&#34;:&#34;5743&#34;,&#34;to&#34;:&#34;5748&#34;},{&#34;from&#34;:&#34;5960&#34;,&#34;to&#34;:&#34;5978&#34;},{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7995&#34;}]" data-bank-name="smn">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/smn/privat/404.html#sb1openchat">SpareBank 1 SMN</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide sr-bank" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1388&#34;},{&#34;from&#34;:&#34;1392&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;2000&#34;,&#34;to&#34;:&#34;2004&#34;},{&#34;from&#34;:&#34;2007&#34;,&#34;to&#34;:&#34;2007&#34;},{&#34;from&#34;:&#34;2010&#34;,&#34;to&#34;:&#34;2013&#34;},{&#34;from&#34;:&#34;2015&#34;,&#34;to&#34;:&#34;2015&#34;},{&#34;from&#34;:&#34;2019&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4536&#34;},{&#34;from&#34;:&#34;4550&#34;,&#34;to&#34;:&#34;4720&#34;},{&#34;from&#34;:&#34;4770&#34;,&#34;to&#34;:&#34;4849&#34;},{&#34;from&#34;:&#34;4870&#34;,&#34;to&#34;:&#34;4888&#34;},{&#34;from&#34;:&#34;4920&#34;,&#34;to&#34;:&#34;4920&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5382&#34;},{&#34;from&#34;:&#34;5410&#34;,&#34;to&#34;:&#34;5598&#34;},{&#34;from&#34;:&#34;5635&#34;,&#34;to&#34;:&#34;5694&#34;},{&#34;from&#34;:&#34;5718&#34;,&#34;to&#34;:&#34;5722&#34;},{&#34;from&#34;:&#34;5724&#34;,&#34;to&#34;:&#34;5748&#34;},{&#34;from&#34;:&#34;5911&#34;,&#34;to&#34;:&#34;5943&#34;},{&#34;from&#34;:&#34;5953&#34;,&#34;to&#34;:&#34;5978&#34;},{&#34;from&#34;:&#34;5993&#34;,&#34;to&#34;:&#34;5994&#34;}]" data-bank-name="sr-bank">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/sr-bank/privat/404.html#sb1openchat">SpareBank 1 SR-Bank</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide sorost" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3296&#34;},{&#34;from&#34;:&#34;3300&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;3533&#34;,&#34;to&#34;:&#34;3533&#34;},{&#34;from&#34;:&#34;3535&#34;,&#34;to&#34;:&#34;3536&#34;},{&#34;from&#34;:&#34;3608&#34;,&#34;to&#34;:&#34;3970&#34;},{&#34;from&#34;:&#34;4770&#34;,&#34;to&#34;:&#34;4849&#34;},{&#34;from&#34;:&#34;4870&#34;,&#34;to&#34;:&#34;4994&#34;}]" data-bank-name="sorost">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/sorost/privat/404.html#sb1openchat">SpareBank 1 Sørøst-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ostfold-akershus" data-postal="[{&#34;from&#34;:&#34;1407&#34;,&#34;to&#34;:&#34;1407&#34;},{&#34;from&#34;:&#34;1430&#34;,&#34;to&#34;:&#34;1449&#34;},{&#34;from&#34;:&#34;1455&#34;,&#34;to&#34;:&#34;1455&#34;},{&#34;from&#34;:&#34;1511&#34;,&#34;to&#34;:&#34;1894&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;1970&#34;}]" data-bank-name="ostfold-akershus">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostfold-akershus/privat/404.html#sb1openchat">SpareBank 1 Østfold Akershus</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ostlandet" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1406&#34;},{&#34;from&#34;:&#34;1408&#34;,&#34;to&#34;:&#34;1435&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;2625&#34;},{&#34;from&#34;:&#34;2815&#34;,&#34;to&#34;:&#34;2881&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3058&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3430&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4049&#34;},{&#34;from&#34;:&#34;4076&#34;,&#34;to&#34;:&#34;4085&#34;},{&#34;from&#34;:&#34;4150&#34;,&#34;to&#34;:&#34;4164&#34;},{&#34;from&#34;:&#34;4168&#34;,&#34;to&#34;:&#34;4173&#34;},{&#34;from&#34;:&#34;4187&#34;,&#34;to&#34;:&#34;4187&#34;},{&#34;from&#34;:&#34;4608&#34;,&#34;to&#34;:&#34;4658&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5184&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5268&#34;},{&#34;from&#34;:&#34;6100&#34;,&#34;to&#34;:&#34;6133&#34;},{&#34;from&#34;:&#34;6190&#34;,&#34;to&#34;:&#34;6190&#34;},{&#34;from&#34;:&#34;7010&#34;,&#34;to&#34;:&#34;7099&#34;},{&#34;from&#34;:&#34;7540&#34;,&#34;to&#34;:&#34;7549&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9034&#34;},{&#34;from&#34;:&#34;9043&#34;,&#34;to&#34;:&#34;9043&#34;},{&#34;from&#34;:&#34;9057&#34;,&#34;to&#34;:&#34;9057&#34;},{&#34;from&#34;:&#34;9100&#34;,&#34;to&#34;:&#34;9128&#34;},{&#34;from&#34;:&#34;9131&#34;,&#34;to&#34;:&#34;9131&#34;},{&#34;from&#34;:&#34;9141&#34;,&#34;to&#34;:&#34;9141&#34;}]" data-bank-name="ostlandet">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostlandet/privat/404.html#sb1openchat">SpareBank 1 Østlandet</a>
+                
+
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="js-contact-bankpicker__banklist-wrap contact-bankpicker__banklist-wrapper">
+        <div class="ffe-body-paragraph">
+            <span>... eller
+                <button aria-expanded="false" aria-controls="banks__expand-region" class="js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand">
+                    <span class="ffe-inline-button__label">velg banken</span>
+                    <svg viewBox="0 0 200 200" class="ffe-inline-button__icon ffe-inline-button__icon--right" style="margin-left: 5px; transform: none;"><path d="m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z"></path></svg>
+                </button>
+                 du ønsker å chatte med</span>
+        </div>
+
+        <div class="js-contact-bankpicker__banklist contact-bankpicker__bankList-wrap hide" role="region" id="banks__expand-region" tabindex="-1">
+            <div class="icon">
+                <svg class="listbanks">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#chevron-ikon"></use>
+                </svg>
+            </div>
+            
+            <div class="contact-bankpicker__bankList">
+                
+                
+                    <div class="contact-bankpicker__bankList-list">
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/gudbrandsdal/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="gudbrandsdal">
+                                SpareBank 1 
+                                <span class="bank-name">Gudbrandsdal</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/hallingdal/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="hallingdal">
+                                SpareBank 1 
+                                <span class="bank-name">Hallingdal Valdres</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/helgeland/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="helgeland">
+                                SpareBank 1 
+                                <span class="bank-name">Helgeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/lom-skjaak/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="lom-skjaak">
+                                SpareBank 1 
+                                <span class="bank-name">Lom og Skjåk</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/nord-norge/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nord-norge">
+                                SpareBank 1 
+                                <span class="bank-name">Nord-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/nordmore/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nordmore">
+                                SpareBank 1 
+                                <span class="bank-name">Nordmøre</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ringerike-hadeland/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ringerike-hadeland">
+                                SpareBank 1 
+                                <span class="bank-name">Ringerike Hadeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/smn/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="smn">
+                                SpareBank 1 
+                                <span class="bank-name">SMN</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/sr-bank/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sr-bank">
+                                SpareBank 1 
+                                <span class="bank-name">SR-Bank</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/sorost/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sorost">
+                                SpareBank 1 
+                                <span class="bank-name">Sørøst-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostfold-akershus/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostfold-akershus">
+                                SpareBank 1 
+                                <span class="bank-name">Østfold Akershus</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostlandet/privat/404.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostlandet">
+                                SpareBank 1 
+                                <span class="bank-name">Østlandet</span>
+                                
+                            </a> 
+                        </div>   
+                    </div>
+                
+                
+                <button class="contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded" aria-label="Lukk bankliste">
+                    <svg focusable="false" class="ffe-button__icon" viewBox="0 0 200 200" width="150" height="150" x="1200" y="1200" xmlns="http://www.w3.org/2000/svg"><path d="M18.77 0c-3.562 0-7.125 1.347-9.834 4.044L4.507 8.483c-5.381 5.394-5.381 14.25 0 19.68l71.19 71.83-71.66 71.83c-5.381 5.394-5.381 14.25 0 19.68l4.429 4.439c5.381 5.394 14.22 5.394 19.64 0l71.66-71.83 71.65 71.83c5.381 5.394 14.23 5.394 19.65 0l4.429-4.439c5.381-5.394 5.381-14.25 0-19.68l-71.19-71.83 71.66-71.83c5.381-4.914 5.381-13.78 0-19.21l-4.429-4.423c-5.381-5.394-14.22-5.394-19.64 0l-72.13 71.34-71.17-71.83c-2.691-2.697-6.257-4.044-9.819-4.044z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+            
+            
+
+            
+        </section>
+    </div>
+</div>
+
+
+    </div>
+
+</div>
+
+
+
+</div>
+        <a href="#/" class="to-top" tabindex="-1" aria-hidden="true">
+    <span class="visually-hidden">Til toppen</span>
+    <span class="icon-holder">
+        <svg class="arrow-up">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/symbol/ffe-icons.svg#chevron-ikon"></use>
+        </svg>
+    </span>
+</a>
+
+    </div>
+    <div class="footer-bottom" role="contentinfo">
+        <div class="bottom-content container-fluid">
+            
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-bottom__columns ">
+
+        <div class="footer-bottom__column">
+            <div class="footer-bottom__column-links">
+                <h2 class="ffe-h4">Privat</h2>
+                
+                <ul>
+                    <li><a href="/nb/bank/privat/kundeservice/bestill/bli-kunde.html">Bli kunde</a></li>
+                
+                    <li><a href="/nb/bank/privat/kundeservice/verktoy/sperre-kort.html">Sperre kort</a></li>
+                
+                    <li><a href="/nb/bank/privat/kundeservice/verktoy/meld-skade.html">Meld skade</a></li>
+                
+                    <li><a href="/nb/bank/privat/kundeservice/bestill/prisliste.html">Prisliste</a></li>
+                
+                    <li><a href="/nb/bank/privat/kundeservice.html">Kundeservice</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom__column-links">
+                <h2 class="ffe-h4">Logg inn</h2>
+                <ul>
+                    <li><a href="/nb/bank/privat/innlogging.html">Nettbank privat</a></li>
+                
+                    <li><a href="/nb/bank/bedrift/innlogging.html">Nettbank bedrift</a></li>
+                
+                    <li><a href="https://kundeforsikring.sparebank1.no">Forsikring</a></li>
+                
+                    <li><a href="https://kundeforsikring.sparebank1.no/privat/sparing">Pensjon</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <div class="footer-bottom__column footer-bottom__column-right">
+            <div class="footer-bottom__column-links footer-bottom__social-links">
+                <h2 class="ffe-h4">Sosiale medier</h2>
+                <ul>
+                    <li>
+                        <a class="social-logo" href="https://twitter.com/sparebank1_no/" target="_blank" rel="noopener" title="Twitter">
+                            
+
+<div class="aem-component-container ">
+      
+            <div>
+    
+    
+
+    
+        
+    
+    
+    <picture>
+        <source srcset="/content/dam/SB1/ikoner/SoMe/twitter-hvit.svg" media="(min-width: 768px)"/>
+        
+        
+        <img role="presentation" src="/content/dam/SB1/ikoner/SoMe/twitter-hvit.svg" alt="" style="width:100%;" class="inline-svg responsive "/>
+    </picture>
+    
+    <!--Fallback for no svg support from SoMe scrapers-->
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/SoMe/twitter-hvit.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+    
+    
+</div>
+      
+</div>
+                            <span class="visually-hidden">Twitter</span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="social-logo" href="https://instagram.com/sparebank1/" target="_blank" rel="noopener" title="Instagram">
+                            
+
+<div class="aem-component-container ">
+      
+            <div>
+    
+    
+
+    
+        
+    
+    
+    <picture>
+        <source srcset="/content/dam/SB1/ikoner/SoMe/instagram-hvit.svg" media="(min-width: 768px)"/>
+        
+        
+        <img role="presentation" src="/content/dam/SB1/ikoner/SoMe/instagram-hvit.svg" alt="" style="width:100%;" class="inline-svg responsive "/>
+    </picture>
+    
+    <!--Fallback for no svg support from SoMe scrapers-->
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/SoMe/instagram-hvit.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+    
+    
+</div>
+      
+</div>
+                            <span class="visually-hidden">Instagram</span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="social-logo" href="https://no.linkedin.com/company/sparebank-1" target="_blank" rel="noopener" title="Linkedin">
+                            
+
+<div class="aem-component-container ">
+      
+            <div>
+    
+    
+
+    
+        
+    
+    
+    <picture>
+        <source srcset="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" media="(min-width: 768px)"/>
+        
+        
+        <img role="presentation" src="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" alt="" style="width:100%;" class="inline-svg responsive "/>
+    </picture>
+    
+    <!--Fallback for no svg support from SoMe scrapers-->
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+    
+    
+</div>
+      
+</div>
+                            <span class="visually-hidden">Linkedin</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    <div class="footer-bottom__column-links footer-bottom__small-links ">
+        <ul>
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/om-banken/selskapsinformasjon.html">Selskapsinformasjon</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/personvern/generelle-vilkar.html">Vilkår for bruk av nettsiden</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/personvern.html">Personvern</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/personvern.html#analyseverktoy-og-statistikk-gjor-oss-bedre">Informasjonskapsler</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/bedrift/open-api.html">For utviklere</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom__address">
+        <p>SpareBank 1 Gruppen, Hammersborggata 2, 0179 Oslo</p>
+        
+    </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<div class="hide" id="translated-text">
+
+	{
+		"EMAIL_FIELD_ERROR": "Skriv inn en gyldig e-postadresse.",
+		"CHECKBOX_ERROR": "",
+		"CHECKBOX_GROUP_ERROR": "Velg minst et av alternativene",
+		"DROPDOWN_ERROR": "Gjør et valg i nedtrekkslisten.",
+		"DATE_TO_FROM_ERROR": "Ugyldig dato (eksempel på gyldig dato 31.12.2016).",
+		"RADIO_ERROR": "Velg et alternativ.",
+		"POSTAL_CODE_ERROR": "Skriv inn et gyldig postnummer (4 siffer).",
+		"TEXT_FIELD_ERROR": "Feltet må fylles ut.",
+		"TEXT_FIELD_CONTENTS_ERROR": "Ugyldig verdi.",
+		"ACCOUNT_FIELD_ERROR": "Skriv inn et gyldig kontonummer (11 siffer).",
+		"ORGANISATION_FIELD_ERROR": "Skriv inn et gyldig organisasjonsnummer (9 siffer).",
+		"SSN_ERROR": "Skriv inn et gyldig fødselsnummer (11 siffer).",
+		"PHONE_ERROR": "Skriv inn et gyldig telefonnummer (8 siffer).",
+		"MOBILE_PHONE_NO_ERROR": "Skriv inn et gyldig norsk mobilnummer (8 siffer)",
+		"SEARCH_ALLE": "Alle",
+		"MORE_INFO": "Vis mer informasjon",
+		"RESULT_TYPE_BANK": "Bankkontor",
+		"RESULT_TYPE_ADVISOR": "Rådgiver",
+		"VIEW_IN_MAP": "Vis i kart",
+		"BEFORE_COUNT_TEXT": "Du har",
+		"AFTER_COUNT_TEXT": "oppgave som venter på deg",
+		"AFTER_COUNT_TEXT_PLURAL": "oppgaver som venter på deg",
+		"MINE_OPPGAVER_LINK_TEXT": "Sjekk mine oppgaver",
+		"MINE_OPPGAVER_CLOSE_TEXT": "Ikke nå",
+        "MINE_OPPGAVER_COUNT_TEXT": "en",
+		"FORM_ERROR_LABEL":"Feil i skjema
+",
+		"FORM_SUCCESS_LABEL":"Takk for din henvendelse",
+		"TEXT_FIELD_LENGTH_ERROR":"TEXT_FIELD_LENGTH_ERROR",
+		"TEXTAREA_FIELD_LENGTH_ERROR":"Maks 2000 tegn",
+		"NUMBER_ERROR": "Du kan kun skrive inn tall.",
+		"SEC_BLOCKER_DROPDOWN_DEFAULT": "Velg land",
+		"GLOBAL_SEARCH_NO_RESULT_TEXT": "Ingen treff på",
+		"GLOBAL_SEARCH_FACET_LABEL": "Vis treff for",
+		"MODAL_CLOSE": "Lukk",
+		"SEND_TO_BANK_BEFORE_INFO_TEXT": "Vil du komme rett til",
+		"SEND_TO_BANK_AFTER_INFO_TEXT": "neste gang?",
+		"SEND_TO_BANK_NEXT_BUTTON_TEXT": "Ja, husk banken min",
+		"SEND_TO_BANK_CANCEL_BUTTON_TEXT": "Nei, ikke nå",
+		"SEND_TO_BANK_NEXT_DISCLAMER_TEXT": "For at du skal slippe å velge bank hver gang, bruker vi funksjonelle informasjonskapsler som lagrer hvordan du bruker nettsidene og hvilke innstillinger du har gjort."
+	}
+
+</div>
+
+
+
+<script type="text/javascript" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.js?refnr=1561542867"></script>
+<script type="text/javascript" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.js?refnr=1561542867"></script>
+
+
+<!-- Remove aem ghost nodes -->
+<script> 
+    try{
+        [].slice.call(document.getElementsByClassName('ghost')).forEach(function (element){ element.parentNode.removeChild(element);});
+    }catch(e) {}
+</script> 
+
+
+
+</body>
+</html>

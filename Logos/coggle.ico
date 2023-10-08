@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="228px" height="228px" viewBox="0 0 228 228" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Coggle Logo</title>
+    <defs>
+        <path d="M0,35.0008244 C0,15.6704029 15.6713634,1.12798659e-13 35.0008244,1.12798659e-13 L192.999176,1.12798659e-13 C212.329597,1.12798659e-13 228,15.6713634 228,35.0008244 L228,192.999176 C228,212.329597 212.328637,228 192.999176,228 L35.0008244,228 C15.6704029,228 0,212.328637 0,192.999176 L0,35.0008244 Z" id="path-1"></path>
+        <linearGradient x1="47.826087%" y1="100%" x2="47.826087%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#9ED56B" offset="0%"></stop>
+            <stop stop-color="#9ED56B" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-13.5%" y="-13.5%" width="127.0%" height="127.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <clipPath id="clip">
+            <use xlink:href="#path-1"></use>
+        </clipPath>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" clip-path="url(#clip)">
+        <g id="icon">
+            <g id="swoosh">
+                <g transform="translate(-1.000000, -1.000000)">
+                    <rect id="background" fill="url(#linearGradient-3)" x="0" y="0" width="230" height="230"></rect>
+                    <g id="Line" filter="url(#filter-4)" stroke-width="1" fill="none">
+                        <path d="M195,0 C170,0 130,30 105,55 L70,90 L140,90 L140,160 L185,115 C200,100 215,90 230,85 L230,0 L230,0 L195,0 Z" id="path3000" fill="#FFFFFF"></path>
+                        <path d="M0,230 L0,140 C20,135 35,125 50,110 L120,110 L120,180 C100,200 60,230 35,230 L0,230 Z" id="path3801" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

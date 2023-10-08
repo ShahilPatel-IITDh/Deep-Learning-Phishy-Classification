@@ -1,0 +1,35 @@
+<script src="https://www.agilysys.com/en/wp-includes/js/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+var jq = jQuery.noConflict();
+jq(document).ready(function(){
+	var access_key = '68494e9d298bbdc3b06181ef0d4d0433';
+	// get the API result via jQuery.ajax
+    jq.ajax({
+        url: 'https://api.ipstack.com/check',
+        type: 'GET',
+        dataType: 'json',
+        data: {
+            access_key: access_key
+        },
+        success: function(json) {
+            var ipcountrycode = json.country_code;
+            var redirectUrl;
+            switch(ipcountrycode) {
+                case 'CN':
+                    redirectUrl = 'https://www.agilysys.com/zh-cn/';
+                    break;
+                case 'JP':
+                    redirectUrl = 'https://www.agilysys.com/ja-jp/';
+                    break;
+                default:
+                    redirectUrl = 'https://www.agilysys.com/en/';
+                    break;
+            }
+            window.location.replace(redirectUrl);
+        },
+        error: function(xhr, status, error) {
+			window.location.replace('https://www.agilysys.com/en/');
+        }
+    });
+});
+</script>

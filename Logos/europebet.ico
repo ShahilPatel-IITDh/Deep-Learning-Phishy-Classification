@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://europebet-blockpage.s3-eu-west-1.amazonaws.com/blockpage/css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .mt-50{
+            margin-top: 50px!important;
+        }
+        .eb-infoBtn{
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body class="error-main">
+    <div class="error-section">
+        <a href="https://www.europebet.com/en" target="_blank">
+            <img src="https://europebet-blockpage.s3-eu-west-1.amazonaws.com/blockpage/img/europebet.svg" alt=""
+                class="logo-europebet logo-europebet_mob">
+        </a>
+        <div class="error-section_row">
+            <div class="error-section_img">
+                <img src="https://europebet-blockpage.s3-eu-west-1.amazonaws.com/blockpage/img/lock.svg" alt=""
+                    class="lockImg">
+            </div>
+            <div class="error-section_desc">
+                <h2 class="error-title">ყურადღება!</h2>
+                <h3 class="error-subtitle">გთხოვთ გაითვალისწინეთ, რომ თქვენს ქვეყანაში საიტი არ არის ხელმისაწვდომი.
+                    <br>
+                    <span class="moreInfo-lockKa">დამატებითი ინფორმაციისთვის დაგვიკავშირდით: </span>
+                    <br>
+                    <div class="eb-infoBtn"> Email: <a href="mailto:info@europebet.com">info@europebet.com</a> </div>
+                </h3>
+                <h2 class="error-title mt-50">Important Notice</h2>
+                <h3 class="error-subtitle">Please note, that this website is not available in your country.
+                    <br>
+                    <span class="moreInfo-lockKa">Please, contact us for further information: </span>
+                    <br>
+                    <div class="eb-infoBtn"> Email: <a href="mailto:info@europebet.com">info@europebet.com</a> </div>
+                </h3>
+                  
+                <a href="https://www.europebet.com/en" target="_blank">
+                    <img src="https://europebet-blockpage.s3-eu-west-1.amazonaws.com/blockpage/img/europebet.svg" alt=""
+                        class="logo-europebet logo-europebet_desktop">
+                </a>
+            </div>
+              
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var req = new XMLHttpRequest();
+    console.log(req)
+    req.open('GET', document.location, false);
+    req.send(null);
+    var headers = req.getAllResponseHeaders().toLowerCase();
+    console.log(headers)
+</script>

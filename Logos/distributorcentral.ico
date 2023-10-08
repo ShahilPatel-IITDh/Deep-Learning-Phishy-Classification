@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>Loading...</title>
+		<script>
+			var fallbackTimer;
+
+			function showFallback() {
+				document.getElementById('fallback').style.display = 'block';
+				document.getElementById('spinner').style.display = 'none';
+			}
+
+			function hideFallback() {
+				document.getElementById('fallback').style.display = 'none';
+				document.getElementById('spinner').style.display = 'block';
+			}
+
+			function getDomainName(hostName)
+			{
+				return hostName.substring(hostName.lastIndexOf(".", hostName.lastIndexOf(".") - 1) + 1);
+			}
+
+			function callback(captchaResponse) {
+				clearTimeout(fallbackTimer);
+				hideFallback();
+
+				var req = new XMLHttpRequest();
+
+				req.addEventListener('load', function() {
+					var response = JSON.parse(this.responseText);
+
+					if (response.status === 'success') {
+						var expires = new Date();
+
+						expires.setHours(expires.getHours() + 8);
+
+						document.cookie =
+							'captcha=' +
+							encodeURIComponent(response.payload) +
+							';path=/;' +
+							';domain=' +
+							getDomainName(document.location.hostname) +
+							';expires=' +
+							expires.toUTCString();
+
+						document.location.reload();
+					} else {
+						showFallback();
+					}
+				});
+				req.open(
+					'GET',
+					'https://prod-api.distributorcentral.com/utils/sign-captcha-response?value=' + encodeURIComponent(captchaResponse),
+				);
+				req.send();
+			}
+
+			function onloadCallback() {
+				grecaptcha.execute();
+
+				fallbackTimer = setTimeout(showFallback, 5000);
+			}
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback" async defer></script>
+	</head>
+	<body>
+		<style>
+			@keyframes spinner {
+				to {
+					transform: rotate(360deg);
+				}
+			}
+			#spinner:before {
+				content: '';
+				box-sizing: border-box;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 60px;
+				height: 60px;
+				margin-top: -15px;
+				margin-left: -15px;
+				border-radius: 50%;
+				border: 2px solid #ccc;
+				border-top-color: #07d;
+				animation: spinner 1s linear infinite;
+			}
+			#fallback {
+				margin: 50px auto;
+				width: fit-content;
+			}
+		</style>
+		<div style="margin: auto; padding: 50px; text-align: center; width: fit-content;">
+			<h1>Checking your browser&hellip;</h1>
+			<p>Running an automatic security check before allowing access.</p>
+			<div style="position: relative; height: 200px;">
+				<div id="spinner"></div>
+				<div
+					class="g-recaptcha"
+					data-callback="callback"
+					data-sitekey="6LdmZrAUAAAAAHzbJzqqHIMvUL3OFxCdOuX3a79F"
+					data-size="invisible"
+				></div>
+				<div
+					class="g-recaptcha"
+					data-callback="callback"
+					data-sitekey="6LdmZrAUAAAAAHzbJzqqHIMvUL3OFxCdOuX3a79F"
+					id="fallback"
+					style="display: none;"
+				></div>
+			</div>
+		</div>
+	</body>
+</html>

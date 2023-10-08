@@ -1,0 +1,535 @@
+<!DOCTYPE html><html lang="en"><head>
+
+  <script type="text/javascript" src="/ruxitagentjs_ICA2NVfghjqru_10275230919171419.js" data-dtconfig="app=b3b6cbefb0e70394|featureHash=ICA2NVfghjqru|srsr=25000|vcv=2|rdnt=1|uxrgce=1|bp=3|cuc=ezvchzkf|mel=100000|dpvc=1|md=mdcc1=a#my-account-js ^rb span.user-name ^rb span|ssv=4|lastModification=1696589859651|tp=500,50,0,1|agentUri=/ruxitagentjs_ICA2NVfghjqru_10275230919171419.js|reportUrl=/rb_bf84058tis|rid=RID_2418|rpid=222105896|domain=foreverliving.com"></script><script>
+    var isCrawler = window.location.href.indexOf("crawler=true") > -1;
+  </script>
+  <script>
+    totalTime = 0;
+    var start = Date.now();
+  </script>
+  <script>
+    function getParamValueFromUrl(searchParam, urlString) {
+      var match = RegExp('[?&]' + searchParam + '=([^&]*)').exec(urlString);
+      return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+    }
+    // iframe redirection support
+    var topNavigation = getParamValueFromUrl('topNavigation', window.location.href);
+    if (topNavigation && window.top !== window.self) {
+      window.top.location.href = window.location.href;
+    }
+  </script>
+  <script>
+    // Variable for Google Tag Manager
+    var dataLayer = [{
+      'pageCategory': 'ecommerce',
+      'visitorType': 'high-value'
+    }];
+  </script>
+  <!--Google Picker tag-->
+  <script async="" defer src="https://apis.google.com/js/api.js"></script>
+  <script async="" defer src="https://accounts.google.com/gsi/client"></script>
+  <!--End Google Picker tag-->
+   <!--Drop Box-->
+   <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="m9u4yle09o4hm3q">
+   </script>
+  <!-- Drop Box End -->
+  <!--One drive-->
+<script type="text/javascript" src="https://js.live.net/v7.2/OneDrive.js?picker"></script>
+
+<!-- one-drive End -->
+  <!-- Google Tag Manager -->
+  <script>
+    /*<![CDATA[*/
+    var gtmId = /*GTM-NH6BHZT*/ + '';
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+              new Date().getTime(), event: 'gtm.js'
+          }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+              'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NH6BHZT');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+  </script>
+  <!-- End Facebook Pixel Code -->
+  <!-- No Script Facebook Pixel Code -->
+  <script>
+    function nos(id) {
+      var s = document.createElement("noscript");
+      s.innerHTML = `<img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=`+ id + `&ev=PageView&noscript=1" alt="facebook"/>`
+      document.body.appendChild(s);
+    }
+  </script>
+
+
+
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  
+  
+  
+  <!--End--->
+  <!--Twitter meta tags-->
+  <meta name="twitter:card" content="summary">
+  
+  
+  
+
+  <!--END-->
+  <!-- Pinterest meta tag-->
+  <meta name="p:domain_verify" content="e4ea4c1917b1b91ce6c3cfaaadda7bb6">
+  <!-- End of Pinterest-->
+
+  <title>Forever Living Products</title>
+  <meta name="description" content="Forever Living is the world’s largest grower, manufacturer and distributor of Aloe Vera. Discover Forever Living Products and learn more about becoming a forever business owner here.">
+  <base href="/">
+  <meta name="viewport" content="width=supportice-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="">
+  <link rel="dns-prefetch">
+  <link rel="dns-prefetch">
+  <link rel="preload" href="https://cdn.foreverliving.com/css/V1/roboto_fonts.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="https://cdn.foreverliving.com/css/V1/fonts.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="https://cdn.foreverliving.com/css/V1/fontawesome.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="https://cdn.foreverliving.com/css/V1/PfSignSkript-font.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="https://checkoutshopper-test.adyen.com/checkoutshopper/sdk/5.31.1/adyen.css" as="style" crossorigin="anonymous" integrity="sha384-u0ZzEn9TjQx9ID0fkB21aOi32DxL9+b2ngTVz2x3q5wTi8sMfW3l49Dpe+TmBhb2">
+
+    <style>
+      .error-sso {
+        display: none;
+        text-align: center;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <noscript id="pixelCodeNoScript"></noscript>
+
+
+    <script>
+      var addScript = function () {
+        var trackerScript = document.createElement('script');
+        var siteScriptURL =  apiConfig.serviceConfig.cdnUrl + "/" + apiConfig.customerName + "/js/" + apiConfig.contentConfig.siteTrackVersion + "/site-tracker.js";
+        if (siteScriptURL && !apiConfig.portalConfig.betaConfig.isBetaPortal) {
+          trackerScript.type = 'text/javascript';
+          trackerScript.setAttribute('src', siteScriptURL);
+          document.head.appendChild(trackerScript);
+        }
+        if (apiConfig.contentConfig.facebookPixelCode) {
+          document.getElementById('pixelCodeNoScript').innerHTML = '<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=' + apiConfig.contentConfig.facebookPixelCode + '&ev=PageView&noscript=1" alt="facebook"/>';
+        }
+      }
+
+      var addCmsTemplateStyle = function (config) {
+        var style = document.createElement('link');
+        style.href = config.serviceConfig.cdnUrl + config.contentConfig.templateStylePath;
+        if (style) {
+          style.type = 'text/css';
+          style.rel = 'stylesheet';
+          style.crossOrigin = 'anonymous';
+          config.contentConfig.styleIntegrity = config.contentConfig.styleIntegrity ? config.contentConfig.styleIntegrity : '';
+          style.setAttribute('integrity', config.contentConfig.styleIntegrity);
+          document.head.appendChild(style);
+        }
+      }
+
+      function addAccountCmsTemplateStyle(config) {
+      var style = document.createElement('link');
+      style.href = config.serviceConfig.cdnUrl + config.contentConfig.accountTemplateStylePath;
+      if (style) {
+        style.type = 'text/css';
+        style.rel = 'stylesheet';
+        style.crossOrigin = 'anonymous';
+        config.contentConfig.accountStyleIntegrity = config.contentConfig.accountStyleIntegrity ? config.contentConfig.accountStyleIntegrity : '';
+        style.setAttribute('uatrity', config.contentConfig.accountStyleIntegrity);
+        document.head.appendChild(style);
+      }
+    }
+
+
+    var addShopCmsTemplateStyle = function (config) {
+        var style = document.createElement('link');
+        style.href = config.serviceConfig.cdnUrl + config.contentConfig.shopTemplateStylePath;
+        if (style) {
+          style.type = 'text/css';
+          style.rel = 'stylesheet';
+          style.crossOrigin = 'anonymous';
+          config.contentConfig.shopStyleIntegrity = config.contentConfig.shopStyleIntegrity ? config.contentConfig.shopStyleIntegrity : '';
+          style.setAttribute('integrity', config.contentConfig.shopStyleIntegrity);
+          document.head.appendChild(style);
+        }
+      }
+
+      var addJoinCmsTemplateStyle = function (config) {
+        var style = document.createElement('link');
+        style.href = config.serviceConfig.cdnUrl + config.contentConfig.joinTemplateStylePath;
+        if (style) {
+          style.type = 'text/css';
+          style.rel = 'stylesheet';
+          style.crossOrigin = 'anonymous';
+          config.contentConfig.joinStyleIntegrity = config.contentConfig.joinStyleIntegrity ? config.contentConfig.joinStyleIntegrity : '';
+          style.setAttribute('integrity', config.contentConfig.joinStyleIntegrity);
+          document.head.appendChild(style);
+        }
+      }
+
+    //   var addReportsCmsTemplateStyle = function (config) {
+    //     var style = document.createElement('link');
+    //     style.href = config.serviceConfig.cdnUrl + config.contentConfig.reportsTemplateStylePath;
+    //     if (style) {
+    //       style.type = 'text/css';
+    //       style.rel = 'stylesheet';
+    //       style.crossOrigin = 'anonymous';
+    //       config.contentConfig.shopStyleIntegrity = config.contentConfig.shopStyleIntegrity ? config.contentConfig.shopStyleIntegrity : '';
+    //       style.setAttribute('integrity', 'sha384-Fky1XLgO5g8WR8ccltf2rs0ladZxqDFYfygs5yj91LHEt9YjgEZCuh3hWnk9LFzZ');
+    //       document.head.appendChild(style);
+    //     }
+    //   }
+
+       /**
+       * updates rel for fonts
+       */
+       var updateFontNodes = function () {
+        var fontLinkNodes = document.querySelectorAll('[rel="preload"]');
+        for (var i = 0; i < fontLinkNodes.length; i++) {
+          fontLinkNodes[i].rel = 'stylesheet';
+        }
+      }
+      updateFontNodes();
+       // To get the specific cookie value based on cookie name
+       function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+      //only in ie
+      if (!('remove' in Element.prototype)) {
+        Element.prototype['remove'] = function () {
+          if (this.parentNode) {
+            this.parentNode.removeChild(this);
+          }
+        };
+      }
+        /**
+       * detect IE
+       * returns version of IE or false, if browser is not Internet Explorer
+       */
+       var detectIE = function () {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf('MSIE ');
+        if (msie > 0) {
+          // IE 10 or older => return version number
+          __Zone_enable_cross_context_check = true;
+          return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+        }
+        var trident = ua.indexOf('Trident/');
+        if (trident > 0) {
+          // IE 11 => return version number
+          __Zone_enable_cross_context_check = true;
+          var rv = ua.indexOf('rv:');
+          return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+        }
+        var edge = ua.indexOf('Edge/');
+        if (edge > 0) {
+          // Edge (IE 12+) => return version number
+          __Zone_enable_cross_context_check = true;
+          return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+        }
+        // other browser
+        return false;
+      }
+      detectIE();
+      var retry = function () {
+        window.location.href = apiConfig.securityConfig.idServerConfig.baseUrl +"/auth/realms/Titan-External/protocol/openid-connect/logout?client_id=" + apiConfig.securityConfig.clientId + "&redirect_uri=" +
+          window.location.href;
+      }
+      function initializeCookieConsent(config) {
+      // if (dataLayer && config && config.portalConfig.commonConfig.validationFlagConfig.enableCookeConsent) {
+        dataLayer.push({
+          "cookieConsentKey": '1ca55403-1080-425b-98b6-2b7def93986a'
+        });
+        console.log(dataLayer)
+      // }
+    }
+
+    </script>
+
+  <!-- App config Data-->
+  <script>
+  var imp = window.location.search.split("impersonation=")[1];
+  if (imp == "true") {
+    localStorage.setItem("eCommerce.impersonation", JSON.stringify(true));
+  }
+   /*<![CDATA[*/
+  var data = 0;
+  var apiConfig = 0;
+  var userLoginStatus = 0;
+  var loggedInMemberId = null;
+  var canShowSplashInitally = true;
+  data = {"environment":"FLPI","code":null,"discountConfigType":null,"removeDiscountConfig":false,"securityConfig":{"clientId":"Titan-eCommerce","realmId":"Titan-External","clientAssertion":"eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUaXRhbi1lQ29tbWVyY2UiLCJhdWQiOiJodHRwczpcL1wvc3NvLmZvcmV2ZXJsaXZpbmcuY29tXC9hdXRoXC9yZWFsbXNcL1RpdGFuLUV4dGVybmFsIiwiaXNzIjoiVGl0YW4tZUNvbW1lcmNlIiwiZXhwIjoxNjk2Njg1NzU5LCJpYXQiOjE2OTY2ODUxNTksImp0aSI6Ijg4ZDY4YTgwLWU2MmEtNDlkMi04NDMzLTJmYzNlMjkyM2EzYiJ9.fD161ltE7gNLz1l81fDQ_cOcm2kuCGU6sxsn1lhvOQbsu6TbvEe1odrnE9halLdSxdCEadEQOFW9Uf5ZUhAOQ8S2FTh8WcoweYEKVOHDhNcL6kMo-2GjRcVTzbw8va4ilPevs6caiWHzfaMuRVA8d2KI8y6RqWxFqhTmTI0wrNJZbhD0iy7l3nW8p7RDut1fwlMWkyzU2EeE9OR0gaH8D-hkq05-1REkebQy-t89cqlVe5OJcSXkzeyR13Hl36avwlM7A8DCMEUNF1x4S0khm_goQvo4tPeuI__Ysw774NIV4KhLug1eZ0LgmA8cXlB4gO7i64wEzT12vmLTQCAnfA","guestToken":"NM228CNbmRUWSfAqWJj7JTf7pEx4joivreIelmrx2N+ObtJEEkcX+1ii5nBHH\/Nx\/IjsYg9vAOrOacTdWgGYIZbhRF25itPtUpo0Hk6uoFBnnEdNosJjJdl\/h07elQUe5Bsoo\/umo7QjMaQSJewVZL0n3swMHlMIdMursvU4oxXLDVmgwQAAxADcr3RQ+VDNzMqxrUU\/MNpwhkjlaxD26F020HLikQ==","idServerConfig":{"baseUrl":"https:\/\/sso.foreverliving.com","tokenUrl":"https:\/\/sso.foreverliving.com\/auth\/realms\/Titan-External\/protocol\/openid-connect\/token","introspectUrl":"https:\/\/sso.foreverliving.com\/auth\/realms\/Titan-External\/protocol\/openid-connect\/token\/introspect","logoutUrl":"https:\/\/sso.foreverliving.com\/auth\/realms\/Titan-External\/protocol\/openid-connect\/logout"},"clientSecret":"5e94362d-94b3-4810-b79a-ff6cd851286b"},"serviceConfig":{"apiGatewayUrl":"https:\/\/apigw.foreverliving.com\/api","cdnUrl":"https:\/\/cdn.foreverliving.com","i18Url":"https:\/\/cdn.foreverliving.com\/portals\/titan-ecommerce\/template1\/json","s3BucketUrl":null},"contentConfig":{"styleIntegrity":null,"scriptIntegrity":null,"templateStylePath":"\/content\/cards\/cms-corporate-styles.v3.1.min.css","fontUrl":"\/assets\/fonts\/fonts.css","yeasterFontIntegrity":"","cdnNautilusFontUrl":"\/css\/nautilus_fonts.css","nautilusFontIntegrity":"","globalFontIntegrity":"","fontAwesomeIntegrity":"","robotoFontIntegrity":"","pfSignSkriptFontIntegrity":"","pfScriptEnabled":true,"userInfoFetch":true,"templateRtlStylePath":"\/content\/cards\/cms-templates-rtl-styles.v1.8.min.css","templateScriptPath":"\/content\/cards\/cms-templates-common-scripts.v1.5.js","rtlStyleIntegrity":null,"siteTrackVersion":"v3","facebookPixelCode":"166502073747401","accountTemplateStylePath":"\/content\/cards\/cms-account-styles.v3.7.min.css","shopTemplateStylePath":"\/content\/cards\/cms-shop-styles.v3.0.min.css","shopStyleIntegrity":null,"contentServiceApiVersion":"content","reportsTemplateStylePath":"\/content\/cards\/cms-reports-styles.v3.0.min.css","joinTemplateStylePath":"\/content\/cards\/cms-join-styles.v3.1.min.css","joinStyleIntegrity":null,"accountStyleIntegrity":null,"reportsStyleIntegrity":null},"botConfig":null,"analyticsConfig":{"googleTagManagerUrl":"https:\/\/www.googletagmanager.com\/ns.html?id=GTM-NH6BHZT","gtmId":"GTM-NH6BHZT"},"portalConfig":{"shopConfig":{"starterPackUrl":"combo-paks","organization":"Forever Living Products","jsonLdHomePage":"'Home Page'","productPriceValidDays":"365","worldpayMissingCountries":"IMN,JEY","enableTransliteration":true,"siteUrl":null},"joinConfig":{"hideFPCEnrollmentItem":"526","defaultEnrollCategoryId":"79","includeMemberTypeToVerifyCombination":true,"userSessionLogEnabled":false,"freeShippingExpiryDays":30,"siteUrl":"https:\/\/foreverliving.com\/join","otpTime":300,"resendOtpTime":120,"enableEnhancedEcommerce":true,"googleClientId":"1000331889598-q7b7blt4uequjvspeo4pk041l0thhfa7.apps.googleusercontent.com","googleScope":"https:\/\/www.googleapis.com\/auth\/drive","googleProjectId":"1000331889598","oneDriveClientId":"9ab4b9cb-fc1b-4881-a916-d479911fd405","titanIdGenEnabledOperatingCountries":"AUS,NZL,IND,NGA,ZAF,TZA","enableParticipatingCountryAsHomeCountry":"nam,bwa,zwe,lso,moz,swz","enableGoogleDrive":false,"enableOneDrive":false,"enableDropBox":false,"dropBoxApiKey":"m9u4yle09o4hm3q","googleApiKey":"AIzaSyDy1L_6ghqOO-lOSsBb097zC18nCx4PZ-c"},"accountConfig":{"enableSalesLink":true,"enableMemberSalePromotion":true,"memberSalePromotionEnabledCountries":"swe,nor,dnk,fin,usa,can,gbr,iln,irl,aus,nzl,pol,bel,lux,nld,are,sau,bhr,omn,qat,kwt,deu,aut,nga,zaf","legacyApiUrl":"https:\/\/fbosite.foreverliving.com\/distribNew\/rs\/titan\/","legacyApiEnabled":true,"businessEntityNamePdf":"https:\/\/gallery.foreverliving.com\/gallery\/FLP\/download\/Marketing\/Distributor_Downloads\/Business_Entity_Agreement_USA_v8_5_1_2015.pdf","flpiGlobalPayUrl":"https:\/\/globalpay.foreverliving.com\/hw2web\/landing.xhtml?faces-redirect=true\u0026refreshme=true","activeSalesLinkLimit":50,"linkUsageLimit":20,"flpiGlobalPayUkUrl":"http:\/\/www.foreverwebsites.co.uk\/stock.pdf","enableQuickLinksCardCountries":"USA","googleMapApiKey":"AIzaSyDuBWCCECxdC0mQnLLKj33FM-6o9qexvbU","bsnEnabledCountries":"BEL,LUX,NLD","enableNewCommunicationPreferenceScreen":true,"enableWatermarkInInvoice":true,"enableNexioPaymentProcessor":true,"adyenPaymentProcessorCountries":"swe,fin,nor,dnk,bel,lux,nld,deu,aut,pol,gbr,irl,iln,che","disableAuthorizationCountries":"IDN","enableCcStatus":true,"siteUrl":null,"enableBonusPayout":false,"kycEnableCountries":"104","titanFlp360":null},"reportsConfig":{"apiUrl":null,"maxPollTimes":90,"countryMergeConfiguration":"[{\"mergeTo\":\"FRA\",\"mergingCountries\":[{\"operatingCountryCode\":\"PRT\",\"text\":\"Data until December 2021\",\"notAvailableTest\":\"Not available. Please select France\"},{\"operatingCountryCode\":\"ESP\",\"text\":\"Data until December 2021\",\"notAvailableTest\":\"Not available. Please select France\"}]}]","siteUrl":null,"apiVersion":"reporttdm","enableNewAggregation":false},"corporateConfig":{"corporateUrl":null,"urlexclusions":"foto.foreverliving.com,globalpay.foreverliving.com,flp360.foreverliving.com","rallyPageEnabled":true,"joinPortalSubDomainName":"join-support","shopPortalSubDomainName":"shop-support","accountPortalSubDomainName":"account-support","siteUrl":null},"commonConfig":{"defaultFboId":"001002575619","autoShipConfig":{"defaultShipMethods":"4,11,12","startDay":5,"endDay":23,"maxMonths":2},"paymentConfig":{"apiKey":"GvtQwfLQxfWwQQZBHX0eVFWbYJEbzmjewiHXZV7rEVc=","serviceKey":"1|application\/json","securityKey":"iTjJeNEZgyyywl+uLEv43uazAPJtQw9f7hnk0sDmrYXkrQj1nC\/Z9RmUWzMfYOVz0fnZPpIHrm1Y+vAI2WAX0g==","cashOnDeliveryDisabledCountries":"ARE,KWT,QAT,BHR,OMN,SAU","checkOutFormSession":5,"officialNotificationBanner":"","adyenScriptPathIntegrity":"sha384-d6l5Qqod+Ks601U\/jqsLz7QkW0LL6T5pfEsSHypuTSnDUYVGRLNV1ZdITbEwb1yL","adyenScriptPath":"https:\/\/checkoutshopper-live.adyen.com\/checkoutshopper\/sdk\/5.31.1\/adyen.js","adyenStylePath":"https:\/\/checkoutshopper-test.adyen.com\/checkoutshopper\/sdk\/5.31.1\/adyen.css","adyenStylePathIntegrity":"sha384-u0ZzEn9TjQx9ID0fkB21aOi32DxL9+b2ngTVz2x3q5wTi8sMfW3l49Dpe+TmBhb2"},"validationFlagConfig":{"enableAuthentication":false,"enableAuthorization":true,"enableDistributorId":false,"enableEasterEgg":false,"enableGtag":true,"enableCookeConsent":true,"enableSponsorEligibilityCheck":true,"enableWhlSal00ForAsstSupervisor":"","enableRecognitionPage":true,"enableLongPoll":true,"allCountriesCorporateEnabled":true,"enableRetailFreeShipping":true,"enablePcSponsorShip":true},"legacyUrl":"https:\/\/fbosite.foreverliving.com","longPollCount":9,"routeToExternalSite":"ARG","notificationBannerEnable":false,"recognitionMenuRedirectUrl":"http:\/\/books.foreverliving.com\/books\/fzqt\/","bfpoInstructionsUrl":"https:\/\/cdn.foreverliving.com\/content\/MarketingConfigurableContent\/UK%2C%20Ireland%20and%20Iceland\/BFPO%20instructions.pdf","disableLanguageNavigation":"[{\"countryCode\":\"LUX\",\"languageCode\":\"de-LU\"},{\"countryCode\":\"BEL\",\"languageCode\":\"de-BE\"}]","yeasterEnableStoreCountries":"CZE,SVK,POL","nautilusEnabledStores":"BGR,MKD","scandinavianRetailUserCountries":"SWE,FIN,NOR,DNK","scandinavianCountries":"","scanGoLiveDate":"01-Jun-2021","beneluxCountries":"BEL,LUX,NLD","bonusLinkUrl":"https:\/\/zoek.officielebekendmakingen.nl\/stb-2021-358.html","defaultFboCountries":"","retailFreeShippingEnabledCountries":"USA","middleEastCountries":"ARE,KWT,QAT,BHR,OMN,SAU","deuCountries":"DEU,AUT,CHE","sponsorSearchTimeDelay":2000,"legacyShopUrl":"https:\/\/shop.foreverliving.com","legacyJoinUrl":"https:\/\/join.foreverliving.com","deuGoLiveDate":"19-JUN-2023","enableNexioPaymentForPickUpCenter":false,"enableOfflineTitanFlow":false,"enableProductLimitation":false},"betaConfig":{"betaPortal":false,"enabledCountries":"gha,bgd,khm,cod,bgr,bra,cmr,cyp,cze,gab,grc,hkg,ken,mys,mex,pan,phl,rwa,sen,sgp,svk,tza,uga,ukr,ven,mkd,che","enabledReportingCountries":"BOL,CHL,TWN,TUR,AZE,IRQ,KAZ,KGZ,GEO,ITA,ROM,MDA,CHE,LTU,ISL,COD,MNG,THA,FRA,DZA,MAR,MDG,MUS,TUN,MKD,RUS,HUN,BEN,CIV,TGO,KOR,AGO,SLE,ISR,ESP,PRT,ECU,PER,PRY,URY,COL","shopBetaEnabledCountries":"gha,bgd,khm,cod,bgr,bra,cmr,cyp,cze,gab,grc,hkg,ken,mys,mex,pan,phl,rwa,sen,sgp,svk,uga,ukr,ven,mkd","shopEnabledReportingCountries":"","joinBetaEnabledCountries":"gha,bgd,khm,cod,bgr,bra,cmr,cyp,cze,gab,grc,hkg,ken,mys,mex,pan,phl,rwa,sen,sgp,svk,tza,uga,ukr,ven,mkd","joinEnabledReportingCountries":"","accountBetaEnabledCountries":"gha,bgd,khm,cod,bgr,bra,cmr,cyp,cze,gab,grc,hkg,ken,mys,mex,pan,phl,rwa,sen,sgp,svk,uga,ukr,ven,mkd","accountEnabledReportingCountries":"","reportsBetaEnabledCountries":"bgd,khm,cod,bgr,bgr,bra,cmr,cyp,cze,gab,grc,hkg,ken,mys,mex,pan,phl,rwa,sen,sgp,svk,uga,ukr,ven","reportsEnabledReportingCountries":""},"flp360Config":{"enrollUrl":"https:\/\/flp360.foreverliving.com\/enrollment","featureEnabled":true,"baseUrl":"https:\/\/flp360.foreverliving.com"}},"ssoConfig":{"accessToken":"EPAT_FLPI","refreshToken":"EPRT_FLPI","idNonce":"IDNC_FLPI","memberId":"MID_FLPI"},"cookieConfig":{"domain":"foreverliving.com","path":"\/","consentKey":"1ca55403-1080-425b-98b6-2b7def93986a","expiryDays":95,"removeObsoleteCookies":true,"sameSiteCookie":"None","secureCookie":true},"sessionConfig":{"logoutInterval":3600,"popUpInterval":900},"customerName":"flpi","ecommerceUrl":"https:\/\/foreverliving.com","fboId":null,"countryCode":"ind","languageCode":null,"languageCultureCode":null};
+
+  if (data) {
+    apiConfig = data;
+    addScript();
+    addCmsTemplateStyle(apiConfig);
+     addShopCmsTemplateStyle(apiConfig);
+     addJoinCmsTemplateStyle(apiConfig);
+    // addReportsCmsTemplateStyle(apiConfig)
+     addAccountCmsTemplateStyle(apiConfig);
+    document.querySelector("link[rel*='icon']").href = apiConfig.serviceConfig.cdnUrl + "/flpi"  +
+      "/logo/favicon.ico";
+    if (data.loadConfiguration) {
+      sessionStorage.setItem('showPopup', JSON.stringify(false));
+    }
+    if (data.cartSessionGuid) {
+      localStorage.setItem("eCommerce.cartSessionGuid", JSON.stringify(data.cartSessionGuid));
+    }
+    if (data.code && data.discountConfigType) {
+      sessionStorage.setItem('memberSalePromotionModel', JSON.stringify({
+        code: data.code,
+        discountConfigType: data.discountConfigType
+      }))
+    } else if (data.removeDiscountConfig) {
+      sessionStorage.removeItem('memberSalePromotionModel');
+    }
+    if (data.fboId) {
+      sessionStorage.setItem("fboId", data.fboId);
+      localStorage.removeItem("eCommerce.ShareFBODetails");
+    }
+    if (data.languageCultureCode) {
+      localStorage.setItem("eCommerce.languageCultureCode", JSON.stringify(data.languageCultureCode));
+    }
+
+  } else {
+    var configScript = document.createElement('script');
+    configScript
+      .setAttribute(
+        'src',
+        'https://integ.flptitan.com/api/configuration?callback=getConfigData&expiryCode=' + new Date().getTime());
+    document.head.appendChild(configScript);
+  }
+
+
+  // if (apiConfig) {
+  //   apiConfig = JSON.parse(localStorage.getItem("appConfig"));
+  //   /* added below logic - to avoid loading DEV env data issue in QA env*/
+  //   let url = window.location.origin;
+  //   if (url.indexOf('ns') > -1) {
+  //     url = 'https://dev.flptitan.com';
+  //     console.log('after replacement' + url);
+  //   }
+  //   //fetch data from the running server
+  //   var myHeaders = new Headers();
+  //   var requestInit = {
+  //     method: 'GET',
+  //     headers: myHeaders
+  //   };
+  //   fetch(url +'/api/v1/configuration', requestInit)
+  //     .then(function (response) {
+  //       if (response) {
+  //         response.json()
+  //           .then(function (data) {
+  //             localStorage.setItem("appConfig", JSON.stringify(data));
+  //             addFont(data.fontUrl);
+  //             appConfig = data;
+  //             //addCmsTemplateStyle(data);
+  //           });
+  //       }
+  //     }).catch(function (reason) {
+  //       console.log(reason);
+  //     });
+  //   //  addScript();
+  // } else {
+  //   var configScript = document.createElement('script');
+  //   configScript
+  //     .setAttribute(
+  //       'src',
+  //       'https://corporate-integ.flptitan.com/api/Configuration?callback=getConfigData&expiryCode=' + new Date().getTime());
+  //   document.head.appendChild(configScript);
+  // }
+  /*]]>*/
+</script>
+
+
+<script type="text/javascript">
+    function getConfigData(data) {
+      apiConfig = data;
+      var exData = JSON.parse(localStorage.getItem("eCommerce.Configuration"));
+      if (!localStorage.getItem("eCommerce.Configuration") ||
+        (!JSON.stringify(exData.countryName) && !JSON.stringify(exData.templateConfiguration))) {
+        localStorage.setItem("eCommerce.Configuration", JSON.stringify(data));
+        //localStorage.setItem("eCommerce.countryName", 'USA');
+      }
+    }
+  </script>
+
+
+
+<script type="text/javascript">
+
+function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";expires=" + expires + ";domain=" + apiConfig.cookieConfig.domain + ";path=/";
+    }
+
+    function addFontsTemplateStyle(config) {
+      var style = document.createElement('link');
+      style.href = 'https://cdn-integ.flptitan.com' + "/css/V1/fonts.css";
+      style.rel = 'stylesheet';
+      document.head.appendChild(style);
+    }
+
+    function addFontAwesomeTemplateStyle(config) {
+      var style = document.createElement('link');
+      style.href = 'https://cdn-integ.flptitan.com' + "/css/V1/fontawesome.min.css";
+      style.rel = 'stylesheet';
+      document.head.appendChild(style);
+    }
+
+    function addRobotoFontTemplateStyle(config) {
+      var style = document.createElement('link');
+      style.href = 'https://cdn-integ.flptitan.com' + "/css/V1/roboto_fonts.css";
+      style.rel = 'stylesheet';
+      document.head.appendChild(style);
+    }
+
+    function addpfSignSkriptFontTemplateStyle(config) {
+      var style = document.createElement('link');
+      style.href = 'https://cdn-integ.flptitan.com' + "/css/V1/PfSignSkript-font.css";
+      style.rel = 'stylesheet';
+      document.head.appendChild(style);
+    }
+    function addBrokenImg(config) {
+      var img = document.createElement("img");
+      img.src = 'https://cdn-integ.flptitan.com' + '/images/page-broken.png';
+      img.height = "100";
+      document.getElementById("sso-brokenImg").appendChild(img);
+    }
+
+    function addForeverLogo(config) {
+      var image = document.getElementById("foreverlogo");
+      if(image){
+        image.src = "https://cdn-integ.flptitan.com/flpi/logo/foreverliving-eCom-logo.svg";
+      }
+    }
+
+    // function addLoaderImg(config) {
+    //   var image = document.getElementById("loaderimg");
+    //   if(image){
+    //     image.src = "https://cdn-integ.flptitan.com/flpi/logo/grey-processing.gif";
+    //   }
+    // }
+
+  function getConfigData(data) {
+    apiConfig = data;
+    initializeCookieConsent(apiConfig);
+    document.querySelector("link[rel*='icon']").href = 'https://cdn-integ.flptitan.com' + "/flpi"+
+      "/logo/favicon.ico";
+      addAccountCmsTemplateStyle(apiConfig);
+      addCmsTemplateStyle(apiConfig);
+       addShopCmsTemplateStyle(apiConfig);
+     //addReportsCmsTemplateStyle(apiConfig);
+      addBrokenImg(apiConfig);
+      addForeverLogo(apiConfig);
+     // addLoaderImg(apiConfig);
+      addFontAwesomeTemplateStyle(apiConfig);
+      addFontsTemplateStyle(apiConfig);
+      addRobotoFontTemplateStyle(apiConfig);
+      if(data.enabledPfScript){
+        addpfSignSkriptFontTemplateStyle(apiConfig);
+      }
+    if (data.languageCultureCode) {
+      localStorage.setItem("languageCultureCode", JSON.stringify(data.languageCultureCode));
+    }
+
+    var exData = JSON.parse(localStorage.getItem("eCommerce.Configuration"));
+    if (!localStorage.getItem("eCommerce.Configuration") ||
+      (!JSON.stringify(exData.countryName) && !JSON.stringify(exData.templateConfiguration))) {
+      localStorage.setItem("eCommerce.Configuration", JSON.stringify(data));
+      //localStorage.setItem("eCommerce.countryName", 'USA');
+    }
+  }
+</script>
+
+
+  <script id="configScript" type="text/javascript"></script>
+
+  <link rel="manifest" crossorigin="use-credentials" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+  <link rel="apple-touch-icon" crossorigin="use-credentials" href="./assets/icons/icon-152x152.png">
+<style>body{font-family:helvetica-light!important}body{line-height:1rem!important;color:#000;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#fff!important;letter-spacing:1px;width:100%;height:100%}html{font-size:16px!important}.image{height:50%;width:100%}.oops{font-size:60px;color:#00c2ef;font-weight:600;min-height:60px}.introspect_error,.refresh_token_error,.token_error,.user_info_error{display:none;padding:5px;font-size:25px;font-weight:600;min-height:30px}#in_error_reason{display:none}#in_error_reason,#other_error_reason{padding:5px;font-size:15px;font-weight:600;min-height:25px;color:gray}.retry{background-color:#00c2ef;border:none;color:#fff;padding:10px 20px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;margin:10px 2px;cursor:pointer;border-radius:5px}.titan-logo{text-align:center;padding-top:42px;padding-bottom:42px;border-bottom:1px solid #cccccc80}.titan-img{height:30px}@media (max-width: 764px){.titan-logo{padding-top:16px}.titan-img{height:16px}}:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,:after,:before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}img{border-style:none}img{vertical-align:middle}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button:not(:disabled){cursor:pointer}button::-moz-focus-inner{padding:0;border-style:none}@media print{*,:after,:before{text-shadow:none!important;box-shadow:none!important}img{page-break-inside:avoid}@page{size:a3}body{min-width:992px!important}}</style><link rel="stylesheet" href="https://cdn.foreverliving.com/portals/titan-ecommerce/template1/scripts/B.2086/styles.3567bc31abd294c98e33.css" crossorigin="anonymous" integrity="sha384-G9s6CNfIq21Yp8GlKDZeryDIQwiVkxPKvXFmpofkBH39s6eS4wmvQi7XLk07FqoM" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://cdn.foreverliving.com/portals/titan-ecommerce/template1/scripts/B.2086/styles.3567bc31abd294c98e33.css"></noscript></head>
+
+<body>
+  <noscript>
+    <iframe id="gtm" src="https://www.googletagmanager.com/ns.html?id=GTM-NH6BHZT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <span style="font-family:helvetica-light"></span>
+  <span style="font-family:helvetica-regular"></span>
+  <span style="font-family:helvetica-bold"></span>
+  <span style="font-family:scriptorama-tradeshow-jf"></span>
+  <span style="font-family:FontAwesome"></span>
+  <span style="font-family:Roboto-light"></span>
+  <span style="font-family:Roboto-bold"></span>
+  <span style="font-family:Roboto"></span>
+  <div id="progressBar"></div>
+  <app-root id="AccountApp">
+    <div class="logo-header-container titan-logo" id="logo-header-section">
+      <div class="logo-header">
+        <img class="titan-img" tabindex="0" alt="Header logo" id="foreverlogo" src="https://cdn.foreverliving.com/flpi/logo/foreverliving-eCom-logo.svg">
+      </div>
+    </div>
+    <!-- <div class="progress-bar-image loader-position" id="progress-bar">
+      <img class="loader-img" tabindex="0" id="loaderimg" alt="loader" th:if="${config}"
+        th:attr="src=${config.serviceConfig.cdnUrl}+'/flpi/logo/grey-processing.gif'">
+    </div> -->
+  </app-root>
+  <div id="error-sso" class="error-sso">
+    <div class="image" id="sso-brokenImg">
+      <img height="100%" alt="Page Broken" src="https://cdn.foreverliving.com/images/page-broken.png">
+    </div>
+    <div class="oops">Oops!</div>
+    <div id="token_error" class="token_error">Sorry, Currently we are unable to process your Login.</div>
+    <div id="introspect_error" class="introspect_error">Sorry, Currently we are unable to verify your login.</div>
+    <div id="user_info_error" class="user_info_error">Sorry, Currently we are unable to fetch your Details.</div>
+    <div id="refresh_token_error" class="refresh_token_error">Sorry, Something went wrong.</div>
+    <div id="other_error_reason">Click below to Retry</div>
+    <div id="in_error_reason">
+      <div>Please contact Customer Care.</div>
+    </div>
+    <div>
+      <button class="retry" onclick="retry()">Continue to Corporate</button>
+    </div>
+  </div>
+<script src="https://cdn.foreverliving.com/portals/titan-ecommerce/template1/scripts/B.2086/runtime.ed12ee5652e367cbd77d.js" crossorigin="anonymous" defer integrity="sha384-BmAu5jlHCsRZetR0wOezx/+9CshZSUMWsmGneoHPpArA7F8buB2ssxOmNJ4CA21y"></script><script src="https://cdn.foreverliving.com/portals/titan-ecommerce/template1/scripts/B.2086/polyfills.59d75bd13883daa8aec9.js" crossorigin="anonymous" defer integrity="sha384-I+zoXDKWHiYKTSduQGtxCJZVVo5jkirNT/HWKBL740D+j4qfIF2j3zMBThkhNP0v"></script><script src="https://cdn.foreverliving.com/portals/titan-ecommerce/template1/scripts/B.2086/scripts.d3d289e7e105c4988236.js" crossorigin="anonymous" defer integrity="sha384-efROj37IU6ayxd+qX/qzVaLBLIUd98TnhTQtEkfXB2KZNUJEZ67fHgIfbFX/oXik"></script><script src="https://cdn.foreverliving.com/portals/titan-ecommerce/template1/scripts/B.2086/vendor.68a52e99b283401698fb.js" crossorigin="anonymous" defer integrity="sha384-Ug78TfIIbTpdcwEl3jIdZm0FManTB0Xtl1cAa4oepXXLc8unjali9K8MhKeXRM4/"></script><script src="https://cdn.foreverliving.com/portals/titan-ecommerce/template1/scripts/B.2086/main.4f219289f82b2614bd45.js" crossorigin="anonymous" defer integrity="sha384-ZtjkBDaJ/hWoBT6SLO84dRy5WV6znH8c8Y0r4xleOXPBXEZXaBwCWwWf5vCkilY4"></script>
+
+<script async="" crossorigin="anonymous" src="https://checkoutshopper-live.adyen.com/checkoutshopper/sdk/5.31.1/adyen.js" integrity="sha384-d6l5Qqod+Ks601U/jqsLz7QkW0LL6T5pfEsSHypuTSnDUYVGRLNV1ZdITbEwb1yL"></script>
+
+</body></html>

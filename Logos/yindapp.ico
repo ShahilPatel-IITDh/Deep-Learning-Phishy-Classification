@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>音搭</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        .header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+			width: 100%;
+			transition: background-color 0.3s ease;
+		}
+		.header.transparent {
+			background-color: transparent;
+		}
+		
+		.header.black {
+			background-color: black;
+		}
+		
+        
+        .logo {
+            width: 34px;
+            height: 17px;
+        }
+        
+        .tabs {
+            display: flex;
+			margin-right: 15px;
+        }
+        
+        .tab {
+			margin-top: -5px;
+            margin-right: 20px;
+			font-size: 13px;
+            font-weight: normal;
+            text-decoration: none;
+            color: white;
+            position: relative;
+        }
+        
+        .tab.active {
+            font-weight: bold;
+        }
+        
+        .tab.active::after {
+            content: "";
+			font-weight: bold;
+            position: absolute;
+            bottom: -3.5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #FFE000;
+            border-radius: 1px;
+        }
+        
+        .content {
+            padding: 0px;
+            text-align: center;
+        }
+        
+        .footer {
+            height: 64.5px;
+            text-align: center;
+            padding: 10px;
+			font-size: 9pt;
+        }
+		
+		.footer a {
+			text-decoration: none;
+			color: white;
+			font-size: 9pt;
+		}
+		
+
+      
+        .floating-image-container {
+        position: relative; /* 设置容器为相对定位 */
+        margin: 0 auto;
+        z-index: 99; /* 设置较高的z-index值，使图片浮在背景之上 */
+        }
+
+        .floating-image-container.chiled {
+            position: absolute; /* 将图片绝对定位，相对于其容器位置 */
+            top: 60%;
+            left: 30%;
+            max-width: 20%; 
+            max-height: 50%;  
+            width: auto;
+            height: auto;
+        }
+        
+        img {
+			width: 100%;
+		}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img class="logo" src="img/logo.png" style="width: 70px; height: 30px;" alt="Logo">
+        </div>
+        <div class="tabs">
+            <a href="#" class="tab active" style="font-size: 20px;">首页</a>
+            <a href="#" class="tab" style="font-size: 20px;">关于我们</a>
+        </div>
+    </div>
+    <div class="content">
+        <div id="pageA">
+            <!-- 页面A的内容 -->
+            <div class="floating-image-container"> 
+                <img  src="img/index_top.png"/>
+                <div class="floating-image-container chiled">
+                    <a href="https://download.yindapp.com/yinda.apk">
+                        <img  src="img/download.png"/>
+                    </a>
+                </div>
+                
+            </div>
+			
+			<img src="img/content_bk.png"/>
+        </div>
+        <div id="pageB" style="display: none;">
+            <!-- 页面B的内容 -->
+			<img src="img/about_top.png"/>
+			<img src="img/about_cont.png"/>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- 隐私条款等内容 -->
+		<div>
+			<a href="用户协议.html">《用户协议》</a> <label>|</label> <a href="隐私政策.html">《隐私政策》</a>
+		</div>
+		<div>
+			<label>
+				版权信息：Copyright©2021-2023北京生趣互动科技
+			</label>
+		</div>
+		<div>
+			<a href="https://beian.miit.gov.cn/#/Integrated/index">京ICP备2023013635号-9</a> 
+		</div> 
+               <div style="width:300px;margin:0 auto;">
+                        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502053201" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="img/备案图标.png" style="float:left;width:20px;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">京公网安备 11010502053201号</p></a>
+	       </div>
+		 
+    </div>
+    <script>
+		
+		const header = document.querySelector('.header');
+		const headerHeight = header.offsetHeight;
+		const content = document.querySelector('.content');
+		
+		window.addEventListener('scroll', function() {
+			if (window.pageYOffset > headerHeight) {
+				header.classList.add('black');
+				header.classList.remove('transparent');
+				// content.style.marginTop = headerHeight + 'px';
+			} else {
+				header.classList.add('transparent');
+				header.classList.remove('black');
+				// content.style.marginTop = '0px';
+			}
+		});
+		
+        const tabA = document.querySelector('#pageA');
+        const tabB = document.querySelector('#pageB');
+        const tabLinks = document.querySelectorAll('.tab');
+        
+        tabLinks.forEach(function(tabLink) {
+            tabLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                
+                tabLinks.forEach(function(link) {
+                    link.classList.remove('active');
+                });
+                
+                this.classList.add('active');
+                
+                if (this.textContent === '首页') {
+                    tabA.style.display = 'block';
+                    tabB.style.display = 'none';
+                } else {
+                    tabA.style.display = 'none';
+                    tabB.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

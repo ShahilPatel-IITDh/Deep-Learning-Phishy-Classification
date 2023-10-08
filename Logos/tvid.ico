@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<meta content="width=device-width,initial-scale=1.0,user-scalable=no" name="viewport">
+	<title>Embed Player</title>
+	<script>
+		var SPL = {
+			config: {
+				isEmbedPage: true,
+				sdk: {
+					apikey: "slike373web5av4oulk6g",
+					referrer: "document.referrer"
+				}
+			}
+		};
+	</script>
+	<script type="text/javascript" src="//videoplayer.indiatimes.com/v2.5/sdk.js"></script>
+	<script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+	<script type="text/javascript" src="//videoplayer.indiatimes.com/v2/includes/ima3.js"></script>
+
+	<style>
+		body {
+			margin: 0px;
+			padding: 0px;
+			border-width: 0px;
+			background: #fff;
+		}
+
+		video {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+
+		#outerPlayer {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			max-width: 100%;
+			background-color: black;
+		}
+
+		#playerContainer {
+			height: 100%;
+			width: 100%;
+			background-color: black;
+		}
+	</style>
+
+
+
+	<script>
+		var mapApiKeys = {
+			toi: "toiweba5ec9705eb7ac2c984033e061",
+			etimes: "toi371web5awj999ou6",
+			lang: "slike373web5av4oulk6g",
+			test: "test",
+			rm:"ENIL466web5axqozl96g"
+		};
+
+		var mapFlags = ["skipAd"]
+
+		var pathname = document.location.pathname;
+		pathname = pathname.split("/");
+
+		var paramFromPath = {};
+		pathname[1] && (paramFromPath.videoId = pathname[1]);
+		pathname[2] && (paramFromPath.shortApiKey = pathname[2]);
+		pathname[2] && (paramFromPath.apikey = mapApiKeys[pathname[2]]);
+		pathname[3] && (paramFromPath.playlistId = pathname[3]);
+		pathname[4] && (paramFromPath.flags = pathname[4].split(""));
+		paramFromPath.adSection = "";
+
+		if (paramFromPath.apikey) {
+			SPL.config.sdk.apikey = paramFromPath.apikey;
+			paramFromPath.adSection = "embed";
+		}
+
+		function getQueryParams(qs) {
+			qs = qs.split('+').join(' ');
+			var params = {},
+				tokens,
+				re = /[?&]?([^=]+)=([^&]*)/g;
+			while (tokens = re.exec(qs)) {
+				params[decodeURIComponent(tokens[1].toLowerCase())] = decodeURIComponent(tokens[2]);
+			}
+			return params;
+		}
+		var query = getQueryParams(document.location.search);
+
+
+		function filterVal(inp, defVal) {
+			if (typeof inp === 'undefined' || inp == '') {
+				return defVal;
+			}
+			return inp;
+		}
+
+		function filterBoolVal(inp, defVal) {
+			if (filterVal(inp, defVal) == defVal)
+				return defVal;
+			return filterVal(inp, defVal) == "true" || filterVal(inp, defVal) == "1" ? true : false;
+		}
+
+		function filterURL(inp, defVal) {
+			return decodeURIComponent(filterVal(inp, defVal));
+		}
+
+		function getCurTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			var ms = today.getMilliseconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			return h + ":" + m + ":" + s + ":" + ms;
+
+			function checkTime(i) {
+				if (i < 10) {
+					i = "0" + i;
+				}
+				return i;
+			}
+		}
+
+
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+	</script>
+</head>
+
+<body>
+	<div id="outerPlayer" class="slikecontainer">
+		<div id="playerContainer"></div>
+	</div>
+	<script type="text/javascript">
+		function loadVideo() {
+			var jsWebUrl = location.protocol + '//' + location.host;
+			var player;
+			var config = {
+				page: {
+					origin: jsWebUrl,
+				},
+				player: {
+					skipAd: filterBoolVal(query.skipad, false),
+					skipPre: filterBoolVal(query.skippre, false),
+					skipPost: filterBoolVal(query.skippost, false),
+					skipMid: filterBoolVal(query.skipmid, false),
+					skipMidOverlay: filterBoolVal(query.skipmidoverlay, false),
+					pageSection: filterVal(query.pagesection, "default"),
+					//this will changed to embed 
+					adSection: (paramFromPath.adSection ? "embed" : ""),
+					autoPlay: filterBoolVal(query.autoplay, true), //autoPlay
+					nextVideoCounter: 5000,
+					nextVideoUrl: filterVal(query.nextvideourl, ""),
+					playlistid: filterVal(paramFromPath.playlistId, ""),
+					playlistindex: filterVal(query.index, ""),
+					startFromSec: filterVal(query.resume, 0), //startFrom
+					pauseOnHide: filterBoolVal(query.hidepause, false), // pauseOnHide
+					pagetpl: filterVal(query.pagetpl, ""),
+					pageurl: filterVal(query.pageurl, ""),
+					fallbackMute: filterBoolVal(query.fallbackmute, true),
+					showLastFrame: true,
+				},
+				controls: {
+					showProgressOnHide: false, //showProgressOnHide
+					pauseOnHide: filterBoolVal(query.hidepause, false),
+					showDVR: filterBoolVal(query.showdvr, false),
+					controlsType: filterVal(query.controls, "custom"),
+					showDimIcon: false,
+					showFullScreen: true,
+					showAutoPlayNext: filterBoolVal(query.showautoplaynext, true),
+					autoPlayNext: filterBoolVal(query.autoplaynext, true),
+					showNextButton: true,
+					showPrevButton: true,
+					showShare: false,
+					volume: filterVal(query.volume, 100),
+					mute: filterBoolVal(query.mute, false),
+					livemidroll: 10000,
+					showSpeedMenu: filterVal(query.speed, true),
+					preview: true,
+					hideCenterIcon: true,
+					showPipIcon: false,
+
+				},
+				video: {
+					id: paramFromPath.videoId,
+					pid: filterVal(query.pid, ""),
+					sg: filterVal(query.sg, ""),
+					sp: "embed",
+					nextVideoID: filterVal(query.nextvideoid, ""),
+					image: decodeURIComponent(filterVal(typeof query.poster !== undefined ? query.poster : query
+						.image,
+						"")),
+					title: filterVal(query.title, ""),
+					shareUrl: filterVal(query.shareurl, ""),
+					preRoll: "",
+					postRoll: "",
+					midRoll: "",
+				},
+				events: {
+					onAdEvent: function(adData, data) {},
+					onPlayerEvent: function(adData, data) {},
+					onEndScreenReplay: function(obj) {},
+					onEndScreenAutoPlay: function(obj) {},
+					onEndScreenPlay: function(obj) {}
+				}
+			};
+
+			function retry() {
+				var retryInterval = 100;
+				if (typeof S != "undefined" && typeof S.load == "function") {
+					S.load('playerContainer', config, function(inst) {
+						console.log("Player load Completed");
+						player = inst; //player is lnitialized now...
+					});
+				} else {
+					setTimeout(function() {
+						retry();
+					}, retryInterval);
+				}
+			}
+			retry();
+		}
+		loadVideo();
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<title>pool.ntp.org: the internet cluster of ntp servers</title>
+
+<script>
+  if (!NP) var NP = {};
+</script>
+
+<link rel="stylesheet" href="/static/.g/common.v7aca7f1d18.css" type="text/css">
+ 
+
+<link rel="shortcut icon" href="/static/images/favicon.v717cb32.ico" type="image/x-icon" />
+
+  </head>
+
+<body>
+
+
+
+<div class="container">
+	<div id="hd" class="row">
+		<h1>pool.ntp.org</h1>
+		
+
+	</div>
+	<div class="row">
+		<div id="sidebar" class="col-4 col-md-3">
+			<h1><a href="https://www.ntppool.org/">NTP Pool Project</a></h1>
+			<div id="quickstart" class="mod navbar navbar-expand-md">
+  <ul>
+    <li><a href="https://www.ntppool.org/en/#news">News</a></li>
+    <li><a href="https://www.ntppool.org/en/use.html">How do I <i>use</i> pool.ntp.org?</a></li>
+    <li><a href="https://www.ntppool.org/en/join.html">How do I <i>join</i> pool.ntp.org?</a></li>
+    
+    <li><a href="https://www.ntppool.org/en/vendors.html">Information for vendors</a></li>
+    
+    <li><a href="https://www.ntppool.org/en/mailinglists.html">Community</a></li>
+    <li><a href="https://www.ntppool.org/en/#links">Additional links</a></li>
+  </ul>
+</div>
+
+
+<h3>Translations</h3>
+<div id="translations">
+  <ul class="mod">
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/da/">Dansk</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/de/">Deutsch</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/en/">English</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/es/">Español</a>
+      
+    </li>
+    
+    
+    
+    
+    
+    <li><a href="/fr/">Français</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/it/">Italiano</a>
+      
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/nl/">Nederlands</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/nb/">Norsk (bokmål)</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/nn/">Norsk (nynorsk)</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/pt/">Português</a>
+      
+    </li>
+    
+    
+    
+    
+    
+    <li><a href="/fi/">Suomi</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/sv/">Svenska</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/tr/">Türkçe</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/el/">Ελληνικά</a>
+      
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/ru/">Русский</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/rs/">Српски</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/uk/">Українська</a>
+      
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/hi/">हिन्दी</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/ko/">한국어</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/zh/">中文（简体）</a>
+      
+    </li>
+    
+    
+    
+    <li><a href="/ja/">日本語</a>
+      
+    </li>
+    
+    <li><br>(<a href="/en/translators.html">Can you translate?</a>)</li>
+  </ul>
+</div>
+
+
+		</div>
+		<div id="mainbar" class="col-8 col-md-9">
+			<ul class="nav" id="nav">
+	<li class="join">
+		<a href="https://www.ntppool.org/en/join.html">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-user-plus">
+				<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+				<circle cx="8.5" cy="7" r="4"></circle>
+				<line x1="20" y1="8" x2="20" y2="14"></line>
+				<line x1="23" y1="11" x2="17" y2="11"></line>
+			</svg>
+			join the pool</a>
+	</li>
+
+	<li class="use"><a href="https://www.ntppool.org/en/use.html">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-users">
+				<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+				<circle cx="9" cy="7" r="4"></circle>
+				<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+				<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+			</svg>
+			use the pool</a>
+	</li>
+
+	<li class="manage"><a href="https://manage.ntppool.org/manage">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-settings">
+				<circle cx="12" cy="12" r="3"></circle>
+				<path
+					d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+				</path>
+			</svg>
+			manage servers</a>
+	</li>
+</ul>
+
+			<br class="clearboth"/>
+			<div id="tagline">pool.ntp.org: public ntp time server for everyone</div>
+
+<h3>Introduction</h3>
+	<div id="activity">
+		<h3>Active Servers</h3>
+		<ul id="servers">
+			
+                        
+			<li class="area">
+                                
+				<span class="location-img africa africa-img"></span>
+                                <span class="location africa africa">
+				<a href="/zone/africa">Africa</a>
+                                </span>
+                                <span class="count">83</span>
+			</li>
+                        
+			
+                        
+			
+                        
+			<li class="area">
+                                
+				<span class="location-img asia asia-img"></span>
+                                <span class="location asia asia">
+				<a href="/zone/asia">Asia</a>
+                                </span>
+                                <span class="count">361</span>
+			</li>
+                        
+			
+                        
+			<li class="area">
+                                
+				<span class="location-img europe europe-img"></span>
+                                <span class="location europe europe">
+				<a href="/zone/europe">Europe</a>
+                                </span>
+                                <span class="count">2983</span>
+			</li>
+                        
+			
+                        
+			<li class="area">
+                                
+				<span class="location-img north-america north-america-img"></span>
+                                <span class="location north-america north-america">
+				<a href="/zone/north-america">North America</a>
+                                </span>
+                                <span class="count">1073</span>
+			</li>
+                        
+			
+                        
+			<li class="area">
+                                
+				<span class="location-img oceania oceania-img"></span>
+                                <span class="location oceania oceania">
+				<a href="/zone/oceania">Oceania</a>
+                                </span>
+                                <span class="count">173</span>
+			</li>
+                        
+			
+                        
+			<li class="area">
+                                
+				<span class="location-img south-america south-america-img"></span>
+                                <span class="location south-america south-america">
+				<a href="/zone/south-america">South America</a>
+                                </span>
+                                <span class="count">57</span>
+			</li>
+                        
+			
+                        
+			<li class="area">
+                                
+				<span class="location-img @ global-img"></span>
+                                <span class="location @ global">
+				<a href="/zone/@">Global</a>
+                                </span>
+                                <span class="count">4441</span>
+			</li>
+                        
+			
+                        
+			<li class="area">
+                                
+				<span class="location-img . all-servers-img"></span>
+                                <span class="location . all-servers">
+				<a href="/zone/.">All Pool Servers</a>
+                                </span>
+                                <span class="count">4707</span>
+			</li>
+                        
+			
+		</ul>
+		<span class="date">As of 2023-10-07</span>
+	</div>
+
+    <p>
+The pool.ntp.org project is a big virtual cluster of timeservers providing reliable <a href="use.html">easy to use</a> NTP service for millions of clients.
+</p>
+
+<p>
+The pool is being used by hundreds of millions of systems around the world.  It's the default "time server" for most of the major Linux distributions and many networked appliances (see <a href="vendors.html">information for vendors</a>).
+</p>
+
+<p>
+Because of the large number of users we are in need of more servers. If you have a server with a static IP address always available on the internet, please consider <a href="join.html"> adding it to the system</a>.
+</p>
+
+<p>
+The project is maintained and developed by <a href="http://www.askask.com/">Ask Bjørn Hansen</a> and a great group of contributors on the <a href="/mailinglists.html">mailing lists</a>. The source code for the system is <a href="http://github.com/abh/ntppool">available</a>.
+</p>
+
+<p>
+Hosting and bandwidth for the "hub" servers are provided by <a href="https://www.packet.com/">Packet</a> and <a href="https://www.netactuate.com/">NetActuate</a>.
+</p>
+
+
+<a href="#top" class="up">go up</a>
+
+
+<a name="news"></a>
+
+<h3>News</h3>
+        <p>
+               <a href="https://news.ntppool.org/atom.xml" rel="alternate" type="application/rss+xml">
+                 <img width="16" height="16"
+                      src="/static/images/feed-icon16x16.vafa1ff4.png" alt="Atom feed" class="atom-logo">
+                 Subscribe in a reader
+               </a>
+		</p>
+
+	<ul id="news">
+
+        
+
+<li>
+<div>
+    <div class="date">March 20, 2023</div>
+    <h4><a href="https://news.ntppool.org/2023/03/ntp-pool-monitoring-v2/" rel="bookmark">NTP Pool Monitoring v2</a></h4>
+    <div class="asset-body">
+        This weekend the system that monitors the NTP servers in the NTP Pool got a major overhaul!
+NTP servers are now monitored from a number of monitors across the world, usually closer to the server than the single monitor was before.
+One of the most frustrating things about operating an NTP server in the NTP Pool was how random network issues far away from the server would impact the score. Sometimes cause an email to be sent to the operator about potential problems.
+    </div>
+    <p class="text-right"><a href="https://news.ntppool.org/2023/03/ntp-pool-monitoring-v2/">Continue Reading &rarr;</a></p>
+</div>
+</li>
+
+
+<li>
+<div>
+    <div class="date">March 12, 2023</div>
+    <h4><a href="https://news.ntppool.org/2023/03/20-years/" rel="bookmark">The NTP Pool Project turns 20</a></h4>
+    <div class="asset-body">
+        This year the NTP Pool Project has been serving time to the world for 20 years!
+Trillions and trillions of DNS requests have been served to billions of clients, with the NTP requests handled by thousands of NTP servers across the world day and night.
+Development on the project ebbs and flows, but maintenance and upgrades on the production infrastructure is consistent – and constant.
+Our community is active; and the NTP server operators even more so with almost 2,000 operators managing the 3,000 IPv4 NTP IPs and 1,600 IPv6 IPs active in the system.
+    </div>
+    <p class="text-right"><a href="https://news.ntppool.org/2023/03/20-years/">Continue Reading &rarr;</a></p>
+</div>
+</li>
+
+
+<li>
+<div>
+    <div class="date">May 25, 2020</div>
+    <h4><a href="https://news.ntppool.org/2020/05/website-cookie-policy/" rel="bookmark">Website cookie policy</a></h4>
+    <div class="asset-body">
+        The main website (www.ntppool.org / www.pool.ntp.org) doesn&rsquo;t set any browser cookies. Some access logs are generated strictly for diagnostics purposes. No long term storage or analytics on user behavior is attempted.
+The manage website (manage.ntppool.org) sets a cookie on login to track authentication. The site also keeps a record of the account information you provide and NTP server IPs that are registered. We try hard to not keep any information that&rsquo;s not essential for operating the system.
+    </div>
+    <p class="text-right"><a href="https://news.ntppool.org/2020/05/website-cookie-policy/">Continue Reading &rarr;</a></p>
+</div>
+</li>
+
+
+<li>
+<div>
+    <div class="date">September 6, 2019</div>
+    <h4><a href="https://news.ntppool.org/2019/09/ntp-pool-servers-on-kubernetes-on-packet/" rel="bookmark">NTP Pool servers on Kubernetes on Packet</a></h4>
+    <div class="asset-body">
+        <p><img src="https://news.ntppool.org/2019/images/Packet_logo_color-2.png" align="right" height="97" width="266"><a href="https://www.packet.com/">Packet</a> is awesome.</p>
+<p>When we started planning our recent <a href="https://news.ntppool.org/2019/08/ntp-pool-servers-hosted-at-netactuate/">unplanned server move</a>, we investigated options for having not one, but two sites, for the &ldquo;hub&rdquo; systems for the NTP Pool. With 4000 NTP servers and hundreds of millions of clients using the system, it really should be a given!</p>
+<p>Evaluating our options on a ridiculously short timeframe, <a href="https://www.packet.com">Packet</a> stood out as an interesting choice, though we were a little apprehensive at first if their setup would be too unusual compared to more familiar options.</p>
+<p>After a quick chat with some of the friendly staff at Packet, we were off to the races to see if we could get everything migrated in less than a week of nights and weekends. If we could, we&rsquo;d be able to move the physical servers the following Sunday without downtime to any critical services, and get us closer to having proper redundancy.</p>
+<p>Working with the Packet system has been fascinating and extremely productive. Despite having done this sort of work for several decades, it was a surprise how mixing familiar capabilities, APIs and abstractions opened new ways for quickly building and managing powerful, reliable and scalable infrastructure.</p>
+    </div>
+    <p class="text-right"><a href="https://news.ntppool.org/2019/09/ntp-pool-servers-on-kubernetes-on-packet/">Continue Reading &rarr;</a></p>
+</div>
+</li>
+
+
+<li>
+<div>
+    <div class="date">September 5, 2019</div>
+    <h4><a href="https://news.ntppool.org/2019/09/new-account-features/" rel="bookmark">New Account Features</a></h4>
+    <div class="asset-body">
+        The beta site has been updated with new features for managing the accounts. Until now each server had to be associated with just one user login. In the new system servers are associated with an account that can have multiple user logins.
+If you can, please try it out and post bug reports or suggestions in the development forum or via email.
+    </div>
+    <p class="text-right"><a href="https://news.ntppool.org/2019/09/new-account-features/">Continue Reading &rarr;</a></p>
+</div>
+</li>
+
+
+
+		<li class="last">
+			<a href="https://news.ntppool.org/archives.html">Older news...</a>
+		</li>
+	</ul>
+
+
+
+<a name="links"></a>
+	<h3>Links</h3>
+	<ul>
+                <li><a href="/tos.html">Terms of service</a>
+                </li>
+
+		<li>
+			<a href="http://www.ntp.org">NTP home</a> - the website about ntp
+		</li>
+
+                <li>
+			The NTP Pool DNS server uses <a href="https://www.maxmind.com/en/geoip2-services-and-databases">GeoIP</a>
+			data from <a href="https://www.maxmind.com">MaxMind</a> to help choose
+			an NTP server from the Pool.
+		<li>
+			<a href="http://www.meinberg.de/english/">Meinberg</a>, makers of incredibly fine <a href="http://www.meinberg.de/english/products/ntp-time-server.htm">time server</a> systems.
+		</li>
+
+		<li>
+			The <a href="http://groups.google.com/groups?threadm=3E2DBFF7.F9A51614%40udel.edu">Public servers abuse</a> and the <a href="http://groups.google.com/groups?threadm=cpaznpnzrb1.fsf%40cabernet.nelson.monkey.org">Fixing the NTP server abuse problem</a> threads on the <a href="news:comp.protocols.time.ntp">comp.protocols.time.ntp</a> newsgroup have caused this project to be started.
+		</li>
+	</ul>
+
+<a href="#top" class="up">go up</a>
+
+
+		</div>
+	</div>
+</div>
+
+<footer class="pt-1 pt-md-2 col-12 border-top">
+<div class="row">
+	<div id="ft" class="col-12 col-md">
+	<a href="http://status.ntppool.org/" target="_blank">
+		<span class="color-dot"></span>
+		<span class="color-description">Status</span>
+	</a> | <a href="https://community.ntppool.org/">Community</a>
+	</div>
+</div>
+</footer>
+
+
+<script  src="/static/.g/common.vf368152a6e.js"></script>
+
+
+
+
+<script defer data-domain="www.ntppool.org" src="https://st.ntppool.org/js/script.js"></script>
+
+
+
+<script src="https://cdn.statuspage.io/se-v2.js"></script>
+<script>
+(function(i){
+	if (i["StatusPage"] === undefined) {
+		console.log("StatusPage not loaded");
+		return
+	}
+	var sp = new StatusPage.page({ page: '8ll7xvh0qt1p'});
+	sp.summary({
+		success: function(data) {
+			$('.color-description').text(data.status.description);
+			$('.color-dot').addClass(data.status.indicator);
+		}
+	});
+}(window));
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['MapperObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.mapper.ntppool.org/mapper.js','mapper');
+  mapper()
+</script>
+
+</body>
+</html>
+
+

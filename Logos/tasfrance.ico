@@ -1,0 +1,2320 @@
+<!doctype html>
+<html data-n-head-ssr lang="fr" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22fr%22%7D%7D">
+  <head >
+    <title>Hébergement et Cloud - Datacenter en France | TAS Cloud Services</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="og:image" name="image" property="og:image" content="https://www.tascloudservices.fr/images/placeholder.jpg"><meta data-n-head="ssr" name="format-detection" content="telephone=no"><meta data-n-head="ssr" data-hid="description" name="description" content="Hébergement, Cloud Computing, Protection des Données, Services Managés, Ingénierie de Projets : nos solutions sur mesure pour externaliser votre informatique TESTEZ NOTRE CLOUD"><meta data-n-head="ssr" data-hid="og:title" name="title" property="og:title" content="Hébergement et Cloud - Datacenter en France | TAS Cloud Services"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link data-n-head="ssr" rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link data-n-head="ssr" rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><script data-n-head="ssr" data-hid="hubspotform" src="//js.hsforms.net/forms/v2.js" defer></script><script data-n-head="ssr" data-hid="gtm-script">if(!window._gtm_init){window._gtm_init=1;(function(w,n,d,m,e,p){w[d]=(w[d]==1||n[d]=='yes'||n[d]==1||n[m]==1||(w[e]&&w[e][p]&&w[e][p]()))?1:0})(window,navigator,'doNotTrack','msDoNotTrack','external','msTrackingProtectionEnabled');(function(w,d,s,l,x,y){w[x]={};w._gtm_inject=function(i){if(w.doNotTrack||w[x][i])return;w[x][i]=1;w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','_gtm_ids','_gtm_inject')}</script><link rel="preload" href="/_nuxt/11493cf.js" as="script"><link rel="preload" href="/_nuxt/09e9b87.js" as="script"><link rel="preload" href="/_nuxt/beb645c.js" as="script"><link rel="preload" href="/_nuxt/bd41ea8.js" as="script"><link rel="preload" href="/_nuxt/78cfa79.js" as="script"><link rel="preload" href="/_nuxt/fa3194e.js" as="script"><link rel="preload" href="/_nuxt/bcb3f80.js" as="script"><link rel="preload" href="/_nuxt/e2a47a1.js" as="script"><link rel="preload" href="/_nuxt/63ff836.js" as="script"><link rel="preload" href="/_nuxt/34b5094.js" as="script"><link rel="preload" href="/_nuxt/6bf7786.js" as="script"><link rel="preload" href="/_nuxt/1911f0c.js" as="script"><link rel="preload" href="/_nuxt/244e0e2.js" as="script"><link rel="preload" href="/_nuxt/4d233fd.js" as="script"><link rel="preload" href="/_nuxt/64417bb.js" as="script"><link rel="preload" href="/_nuxt/af10a84.js" as="script"><link rel="preload" href="/_nuxt/dd6637d.js" as="script"><link rel="preload" href="/_nuxt/9082733.js" as="script"><link rel="preload" href="/_nuxt/1768feb.js" as="script"><style data-vue-ssr-id="54b08540:0 0796fc2c:0 0796fc2c:1 7ec9bef8:0 0b6023b0:0">/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com*/
+
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+html {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+  font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/**
+ * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications.
+ */
+
+/**
+ * Removes the default spacing and border for appropriate elements.
+ */
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Tailwind custom reset styles
+ */
+
+/**
+ * 1. Use the user's configured `sans` font-family (with Tailwind's default
+ *    sans-serif font stack as a fallback) as a sane default.
+ * 2. Use Tailwind's default "normal" line-height so the user isn't forced
+ *    to override it to ensure consistency even when using the default theme.
+ */
+
+html {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  line-height: 1.5; /* 2 */
+}
+
+/**
+ * Inherit font-family and line-height from `html` so users can set them as
+ * a class directly on the `html` element.
+ */
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/**
+ * 1. Prevent padding and border from affecting element width.
+ *
+ *    We used to set this in the html element and inherit from
+ *    the parent element for everything else. This caused issues
+ *    in shadow-dom-enhanced elements like <details> where the content
+ *    is wrapped by a div with box-sizing set to `content-box`.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/4
+ *
+ *
+ * 2. Allow adding a border to an element by just adding a border-width.
+ *
+ *    By default, the way the browser specifies that an element should have no
+ *    border is by setting it's border-style to `none` in the user-agent
+ *    stylesheet.
+ *
+ *    In order to easily add borders to elements by just setting the `border-width`
+ *    property, we change the default border-style for all elements to `solid`, and
+ *    use border-width to hide them instead. This way our `border` utilities only
+ *    need to set the `border-width` property instead of the entire `border`
+ *    shorthand, making our border utilities much more straightforward to compose.
+ *
+ *    https://github.com/tailwindcss/tailwindcss/pull/116
+ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: currentColor; /* 2 */
+}
+
+/*
+ * Ensure horizontal rules are visible by default
+ */
+
+hr {
+  border-top-width: 1px;
+}
+
+/**
+ * Undo the `border-style: none` reset that Normalize applies to images so that
+ * our `border-{width}` utilities have the expected effect.
+ *
+ * The Normalize reset is unnecessary for us since we default the border-width
+ * to 0 on all elements.
+ *
+ * https://github.com/tailwindcss/tailwindcss/issues/362
+ */
+
+img {
+  border-style: solid;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  color: #8E98B0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #8E98B0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
+
+table {
+  border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/**
+ * Reset links to optimize for opt-in styling instead of
+ * opt-out.
+ */
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/**
+ * Reset form element properties that are easy to forget to
+ * style explicitly so you don't inadvertently introduce
+ * styles that deviate from your design system. These styles
+ * supplement a partial reset that is already applied by
+ * normalize.css.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+/**
+ * Use the configured 'mono' font family for elements that
+ * are expected to be rendered with a monospace font, falling
+ * back to the system monospace stack if there is no configured
+ * 'mono' font family.
+ */
+
+pre,
+code,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/**
+ * 1. Make replaced elements `display: block` by default as that's
+ *    the behavior you want almost all of the time. Inspired by
+ *    CSS Remedy, with `svg` added as well.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/14
+ * 
+ * 2. Add `vertical-align: middle` to align replaced elements more
+ *    sensibly by default when overriding `display` by adding a
+ *    utility like `inline`.
+ *
+ *    This can trigger a poorly considered linting error in some
+ *    tools but is included by design.
+ * 
+ *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
+ */
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/**
+ * Constrain images and videos to the parent width and preserve
+ * their intrinsic aspect ratio.
+ *
+ * https://github.com/mozdevs/cssremedy/issues/14
+ */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Ensure the default browser behavior of the `hidden` attribute.
+ */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after{
+  --tw-border-opacity:1;
+  border-color:rgba(188, 195, 211, var(--tw-border-opacity));
+}
+
+.container{
+  width:100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width:640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width:768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width:1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width:1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width:1536px;
+  }
+}
+
+.fixed{
+  position:fixed !important;
+}
+
+.absolute{
+  position:absolute !important;
+}
+
+.relative{
+  position:relative !important;
+}
+
+.top-0{
+  top:0px !important;
+}
+
+.right-0{
+  right:0px !important;
+}
+
+.bottom-0{
+  bottom:0px !important;
+}
+
+.z-10{
+  z-index:10 !important;
+}
+
+.z-20{
+  z-index:20 !important;
+}
+
+.z-40{
+  z-index:40 !important;
+}
+
+.z-50{
+  z-index:50 !important;
+}
+
+.order-first{
+  order:-9999 !important;
+}
+
+.order-last{
+  order:9999 !important;
+}
+
+.mx-4{
+  margin-left:1rem !important;
+  margin-right:1rem !important;
+}
+
+.mx-auto{
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+.-mx-2{
+  margin-left:-0.5rem !important;
+  margin-right:-0.5rem !important;
+}
+
+.-mx-3{
+  margin-left:-0.75rem !important;
+  margin-right:-0.75rem !important;
+}
+
+.-mx-4{
+  margin-left:-1rem !important;
+  margin-right:-1rem !important;
+}
+
+.-mx-8{
+  margin-left:-2rem !important;
+  margin-right:-2rem !important;
+}
+
+.my-4{
+  margin-top:1rem !important;
+  margin-bottom:1rem !important;
+}
+
+.mt-0{
+  margin-top:0px !important;
+}
+
+.mt-1{
+  margin-top:0.25rem !important;
+}
+
+.mt-3{
+  margin-top:0.75rem !important;
+}
+
+.mt-4{
+  margin-top:1rem !important;
+}
+
+.mt-8{
+  margin-top:2rem !important;
+}
+
+.mt-16{
+  margin-top:4rem !important;
+}
+
+.mt-24{
+  margin-top:6rem !important;
+}
+
+.mt-32{
+  margin-top:8rem !important;
+}
+
+.-mt-8{
+  margin-top:-2rem !important;
+}
+
+.mr-2{
+  margin-right:0.5rem !important;
+}
+
+.mr-3{
+  margin-right:0.75rem !important;
+}
+
+.mr-4{
+  margin-right:1rem !important;
+}
+
+.mr-8{
+  margin-right:2rem !important;
+}
+
+.mb-1{
+  margin-bottom:0.25rem !important;
+}
+
+.mb-2{
+  margin-bottom:0.5rem !important;
+}
+
+.mb-3{
+  margin-bottom:0.75rem !important;
+}
+
+.mb-4{
+  margin-bottom:1rem !important;
+}
+
+.mb-6{
+  margin-bottom:1.5rem !important;
+}
+
+.mb-8{
+  margin-bottom:2rem !important;
+}
+
+.mb-12{
+  margin-bottom:3rem !important;
+}
+
+.-mb-32{
+  margin-bottom:-8rem !important;
+}
+
+.ml-1{
+  margin-left:0.25rem !important;
+}
+
+.ml-2{
+  margin-left:0.5rem !important;
+}
+
+.ml-4{
+  margin-left:1rem !important;
+}
+
+.block{
+  display:block !important;
+}
+
+.flex{
+  display:flex !important;
+}
+
+.table{
+  display:table !important;
+}
+
+.grid{
+  display:grid !important;
+}
+
+.hidden{
+  display:none !important;
+}
+
+.h-4{
+  height:1rem !important;
+}
+
+.h-6{
+  height:1.5rem !important;
+}
+
+.h-8{
+  height:2rem !important;
+}
+
+.h-12{
+  height:3rem !important;
+}
+
+.h-16{
+  height:4rem !important;
+}
+
+.h-24{
+  height:6rem !important;
+}
+
+.h-32{
+  height:8rem !important;
+}
+
+.h-40{
+  height:10rem !important;
+}
+
+.h-64{
+  height:16rem !important;
+}
+
+.h-auto{
+  height:auto !important;
+}
+
+.h-full{
+  height:100% !important;
+}
+
+.h-screen{
+  height:100vh !important;
+}
+
+.h-hero{
+  height:22rem !important;
+}
+
+.h-product{
+  height:38rem !important;
+}
+
+.min-h-screen{
+  min-height:100vh !important;
+}
+
+.w-4{
+  width:1rem !important;
+}
+
+.w-8{
+  width:2rem !important;
+}
+
+.w-12{
+  width:3rem !important;
+}
+
+.w-16{
+  width:4rem !important;
+}
+
+.w-24{
+  width:6rem !important;
+}
+
+.w-32{
+  width:8rem !important;
+}
+
+.w-40{
+  width:10rem !important;
+}
+
+.w-64{
+  width:16rem !important;
+}
+
+.w-auto{
+  width:auto !important;
+}
+
+.w-1\/2{
+  width:50% !important;
+}
+
+.w-1\/3{
+  width:33.333333% !important;
+}
+
+.w-2\/3{
+  width:66.666667% !important;
+}
+
+.w-1\/4{
+  width:25% !important;
+}
+
+.w-1\/5{
+  width:20% !important;
+}
+
+.w-2\/5{
+  width:40% !important;
+}
+
+.w-3\/5{
+  width:60% !important;
+}
+
+.w-full{
+  width:100% !important;
+}
+
+.w-illustration{
+  width:50rem !important;
+}
+
+.max-w-lg{
+  max-width:32rem !important;
+}
+
+.max-w-xl{
+  max-width:36rem !important;
+}
+
+.max-w-3xl{
+  max-width:48rem !important;
+}
+
+.max-w-4xl{
+  max-width:56rem !important;
+}
+
+.max-w-5xl{
+  max-width:64rem !important;
+}
+
+.max-w-6xl{
+  max-width:72rem !important;
+}
+
+.max-w-7xl{
+  max-width:80rem !important;
+}
+
+.max-w-card{
+  max-width:380px !important;
+}
+
+.flex-none{
+  flex:none !important;
+}
+
+.transform{
+  --tw-translate-x:0 !important;
+  --tw-translate-y:0 !important;
+  --tw-rotate:0 !important;
+  --tw-skew-x:0 !important;
+  --tw-skew-y:0 !important;
+  --tw-scale-x:1 !important;
+  --tw-scale-y:1 !important;
+  transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+@-webkit-keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@-webkit-keyframes ping{
+  75%, 100%{
+    transform:scale(2);
+    opacity:0;
+  }
+}
+
+@keyframes ping{
+  75%, 100%{
+    transform:scale(2);
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes pulse{
+  50%{
+    opacity:.5;
+  }
+}
+
+@keyframes pulse{
+  50%{
+    opacity:.5;
+  }
+}
+
+@-webkit-keyframes bounce{
+  0%, 100%{
+    transform:translateY(-25%);
+    -webkit-animation-timing-function:cubic-bezier(0.8,0,1,1);
+            animation-timing-function:cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform:none;
+    -webkit-animation-timing-function:cubic-bezier(0,0,0.2,1);
+            animation-timing-function:cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes bounce{
+  0%, 100%{
+    transform:translateY(-25%);
+    -webkit-animation-timing-function:cubic-bezier(0.8,0,1,1);
+            animation-timing-function:cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform:none;
+    -webkit-animation-timing-function:cubic-bezier(0,0,0.2,1);
+            animation-timing-function:cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.cursor-pointer{
+  cursor:pointer !important;
+}
+
+.select-none{
+  -webkit-user-select:none !important;
+     -moz-user-select:none !important;
+          user-select:none !important;
+}
+
+.list-disc{
+  list-style-type:disc !important;
+}
+
+.grid-cols-1{
+  grid-template-columns:repeat(1, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-2{
+  grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-3{
+  grid-template-columns:repeat(3, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-4{
+  grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
+}
+
+.flex-col{
+  flex-direction:column !important;
+}
+
+.flex-wrap{
+  flex-wrap:wrap !important;
+}
+
+.flex-nowrap{
+  flex-wrap:nowrap !important;
+}
+
+.items-start{
+  align-items:flex-start !important;
+}
+
+.items-center{
+  align-items:center !important;
+}
+
+.justify-start{
+  justify-content:flex-start !important;
+}
+
+.justify-end{
+  justify-content:flex-end !important;
+}
+
+.justify-center{
+  justify-content:center !important;
+}
+
+.justify-between{
+  justify-content:space-between !important;
+}
+
+.overflow-hidden{
+  overflow:hidden !important;
+}
+
+.overflow-x-auto{
+  overflow-x:auto !important;
+}
+
+.overflow-y-auto{
+  overflow-y:auto !important;
+}
+
+.whitespace-nowrap{
+  white-space:nowrap !important;
+}
+
+.rounded-lg{
+  border-radius:0.5rem !important;
+}
+
+.rounded-xl{
+  border-radius:0.75rem !important;
+}
+
+.rounded-full{
+  border-radius:9999px !important;
+}
+
+.border-2{
+  border-width:2px !important;
+}
+
+.border-4{
+  border-width:4px !important;
+}
+
+.border{
+  border-width:1px !important;
+}
+
+.border-t-2{
+  border-top-width:2px !important;
+}
+
+.border-r-2{
+  border-right-width:2px !important;
+}
+
+.border-b-2{
+  border-bottom-width:2px !important;
+}
+
+.border-b{
+  border-bottom-width:1px !important;
+}
+
+.border-transparent{
+  border-color:transparent !important;
+}
+
+.border-white{
+  --tw-border-opacity:1 !important;
+  border-color:rgba(255, 255, 255, var(--tw-border-opacity)) !important;
+}
+
+.border-gray-300{
+  --tw-border-opacity:1 !important;
+  border-color:rgba(165, 174, 194, var(--tw-border-opacity)) !important;
+}
+
+.border-gray-500{
+  --tw-border-opacity:1 !important;
+  border-color:rgba(104, 115, 142, var(--tw-border-opacity)) !important;
+}
+
+.border-gray-600{
+  --tw-border-opacity:1 !important;
+  border-color:rgba(66, 77, 104, var(--tw-border-opacity)) !important;
+}
+
+.border-gray-900{
+  --tw-border-opacity:1 !important;
+  border-color:rgba(7, 18, 45, var(--tw-border-opacity)) !important;
+}
+
+.border-orange-500{
+  --tw-border-opacity:1 !important;
+  border-color:rgba(243, 150, 0, var(--tw-border-opacity)) !important;
+}
+
+.hover\:border-orange-400:hover{
+  --tw-border-opacity:1 !important;
+  border-color:rgba(247, 172, 49, var(--tw-border-opacity)) !important;
+}
+
+.bg-transparent{
+  background-color:transparent !important;
+}
+
+.bg-white{
+  --tw-bg-opacity:1 !important;
+  background-color:rgba(255, 255, 255, var(--tw-bg-opacity)) !important;
+}
+
+.bg-gray-50{
+  --tw-bg-opacity:1 !important;
+  background-color:rgba(247, 248, 252, var(--tw-bg-opacity)) !important;
+}
+
+.bg-gray-600{
+  --tw-bg-opacity:1 !important;
+  background-color:rgba(66, 77, 104, var(--tw-bg-opacity)) !important;
+}
+
+.bg-gray-700{
+  --tw-bg-opacity:1 !important;
+  background-color:rgba(36, 46, 70, var(--tw-bg-opacity)) !important;
+}
+
+.bg-gray-800{
+  --tw-bg-opacity:1 !important;
+  background-color:rgba(19, 30, 57, var(--tw-bg-opacity)) !important;
+}
+
+.bg-gray-900{
+  --tw-bg-opacity:1 !important;
+  background-color:rgba(7, 18, 45, var(--tw-bg-opacity)) !important;
+}
+
+.bg-green-500{
+  --tw-bg-opacity:1 !important;
+  background-color:rgba(16, 185, 129, var(--tw-bg-opacity)) !important;
+}
+
+.bg-purple-500{
+  --tw-bg-opacity:1 !important;
+  background-color:rgba(160, 50, 243, var(--tw-bg-opacity)) !important;
+}
+
+.bg-black-semi-50{
+  background-color:rgba(0, 0, 0, 0.50) !important;
+}
+
+.bg-black-semi-75{
+  background-color:rgba(0, 0, 0, 0.75) !important;
+}
+
+.bg-black-semi-85{
+  background-color:rgba(0, 0, 0, 0.85) !important;
+}
+
+.bg-white-semi-70{
+  background-color:rgba(255, 255, 255, 0.70) !important;
+}
+
+.hover\:bg-black:hover{
+  --tw-bg-opacity:1 !important;
+  background-color:rgba(0, 0, 0, var(--tw-bg-opacity)) !important;
+}
+
+.hover\:bg-white:hover{
+  --tw-bg-opacity:1 !important;
+  background-color:rgba(255, 255, 255, var(--tw-bg-opacity)) !important;
+}
+
+.hover\:bg-black-semi-75:hover{
+  background-color:rgba(0, 0, 0, 0.75) !important;
+}
+
+.bg-gradient-to-r{
+  background-image:linear-gradient(to right, var(--tw-gradient-stops)) !important;
+}
+
+.from-purple-500{
+  --tw-gradient-from:#A032F3 !important;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(160, 50, 243, 0)) !important;
+}
+
+.hover\:from-purple-400:hover{
+  --tw-gradient-from:#BB70F3 !important;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(187, 112, 243, 0)) !important;
+}
+
+.to-orange-500{
+  --tw-gradient-to:#F39600 !important;
+}
+
+.hover\:to-orange-400:hover{
+  --tw-gradient-to:#F7AC31 !important;
+}
+
+.bg-cover{
+  background-size:cover !important;
+}
+
+.bg-center{
+  background-position:center !important;
+}
+
+.bg-no-repeat{
+  background-repeat:no-repeat !important;
+}
+
+.object-cover{
+  -o-object-fit:cover !important;
+     object-fit:cover !important;
+}
+
+.p-4{
+  padding:1rem !important;
+}
+
+.p-8{
+  padding:2rem !important;
+}
+
+.px-0{
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+
+.px-2{
+  padding-left:0.5rem !important;
+  padding-right:0.5rem !important;
+}
+
+.px-3{
+  padding-left:0.75rem !important;
+  padding-right:0.75rem !important;
+}
+
+.px-4{
+  padding-left:1rem !important;
+  padding-right:1rem !important;
+}
+
+.px-6{
+  padding-left:1.5rem !important;
+  padding-right:1.5rem !important;
+}
+
+.px-8{
+  padding-left:2rem !important;
+  padding-right:2rem !important;
+}
+
+.px-16{
+  padding-left:4rem !important;
+  padding-right:4rem !important;
+}
+
+.py-1{
+  padding-top:0.25rem !important;
+  padding-bottom:0.25rem !important;
+}
+
+.py-2{
+  padding-top:0.5rem !important;
+  padding-bottom:0.5rem !important;
+}
+
+.py-3{
+  padding-top:0.75rem !important;
+  padding-bottom:0.75rem !important;
+}
+
+.py-4{
+  padding-top:1rem !important;
+  padding-bottom:1rem !important;
+}
+
+.py-6{
+  padding-top:1.5rem !important;
+  padding-bottom:1.5rem !important;
+}
+
+.py-8{
+  padding-top:2rem !important;
+  padding-bottom:2rem !important;
+}
+
+.py-16{
+  padding-top:4rem !important;
+  padding-bottom:4rem !important;
+}
+
+.pt-4{
+  padding-top:1rem !important;
+}
+
+.pt-8{
+  padding-top:2rem !important;
+}
+
+.pt-16{
+  padding-top:4rem !important;
+}
+
+.pr-4{
+  padding-right:1rem !important;
+}
+
+.pr-8{
+  padding-right:2rem !important;
+}
+
+.pb-2{
+  padding-bottom:0.5rem !important;
+}
+
+.pb-3{
+  padding-bottom:0.75rem !important;
+}
+
+.pb-4{
+  padding-bottom:1rem !important;
+}
+
+.pb-8{
+  padding-bottom:2rem !important;
+}
+
+.pb-12{
+  padding-bottom:3rem !important;
+}
+
+.pb-16{
+  padding-bottom:4rem !important;
+}
+
+.text-left{
+  text-align:left !important;
+}
+
+.text-center{
+  text-align:center !important;
+}
+
+.text-xs{
+  font-size:0.75rem !important;
+  line-height:1rem !important;
+}
+
+.text-sm{
+  font-size:0.875rem !important;
+  line-height:1.25rem !important;
+}
+
+.text-lg{
+  font-size:1.125rem !important;
+  line-height:1.75rem !important;
+}
+
+.text-xl{
+  font-size:1.25rem !important;
+  line-height:1.75rem !important;
+}
+
+.text-2xl{
+  font-size:1.5rem !important;
+  line-height:2rem !important;
+}
+
+.text-3xl{
+  font-size:1.875rem !important;
+  line-height:2.25rem !important;
+}
+
+.text-4xl{
+  font-size:2.25rem !important;
+  line-height:2.5rem !important;
+}
+
+.text-5xl{
+  font-size:3rem !important;
+  line-height:1 !important;
+}
+
+.text-6xl{
+  font-size:3.75rem !important;
+  line-height:1 !important;
+}
+
+.text-7xl{
+  font-size:4.5rem !important;
+  line-height:1 !important;
+}
+
+.font-bold{
+  font-weight:700 !important;
+}
+
+.uppercase{
+  text-transform:uppercase !important;
+}
+
+.leading-none{
+  line-height:1 !important;
+}
+
+.leading-tight{
+  line-height:1.25 !important;
+}
+
+.leading-relaxed{
+  line-height:1.625 !important;
+}
+
+.text-black{
+  --tw-text-opacity:1 !important;
+  color:rgba(0, 0, 0, var(--tw-text-opacity)) !important;
+}
+
+.text-white{
+  --tw-text-opacity:1 !important;
+  color:rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+}
+
+.text-gray-50{
+  --tw-text-opacity:1 !important;
+  color:rgba(247, 248, 252, var(--tw-text-opacity)) !important;
+}
+
+.text-gray-100{
+  --tw-text-opacity:1 !important;
+  color:rgba(217, 221, 231, var(--tw-text-opacity)) !important;
+}
+
+.text-gray-200{
+  --tw-text-opacity:1 !important;
+  color:rgba(188, 195, 211, var(--tw-text-opacity)) !important;
+}
+
+.text-gray-300{
+  --tw-text-opacity:1 !important;
+  color:rgba(165, 174, 194, var(--tw-text-opacity)) !important;
+}
+
+.text-gray-400{
+  --tw-text-opacity:1 !important;
+  color:rgba(142, 152, 176, var(--tw-text-opacity)) !important;
+}
+
+.text-gray-500{
+  --tw-text-opacity:1 !important;
+  color:rgba(104, 115, 142, var(--tw-text-opacity)) !important;
+}
+
+.text-gray-900{
+  --tw-text-opacity:1 !important;
+  color:rgba(7, 18, 45, var(--tw-text-opacity)) !important;
+}
+
+.text-green-500{
+  --tw-text-opacity:1 !important;
+  color:rgba(16, 185, 129, var(--tw-text-opacity)) !important;
+}
+
+.text-orange-400{
+  --tw-text-opacity:1 !important;
+  color:rgba(247, 172, 49, var(--tw-text-opacity)) !important;
+}
+
+.text-orange-500{
+  --tw-text-opacity:1 !important;
+  color:rgba(243, 150, 0, var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity:1 !important;
+  color:rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-gray-100:hover{
+  --tw-text-opacity:1 !important;
+  color:rgba(217, 221, 231, var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-gray-200:hover{
+  --tw-text-opacity:1 !important;
+  color:rgba(188, 195, 211, var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-gray-500:hover{
+  --tw-text-opacity:1 !important;
+  color:rgba(104, 115, 142, var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-orange-400:hover{
+  --tw-text-opacity:1 !important;
+  color:rgba(247, 172, 49, var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-orange-500:hover{
+  --tw-text-opacity:1 !important;
+  color:rgba(243, 150, 0, var(--tw-text-opacity)) !important;
+}
+
+.underline{
+  text-decoration:underline !important;
+}
+
+*, ::before, ::after{
+  --tw-shadow:0 0 #0000;
+}
+
+.shadow-lg{
+  --tw-shadow:0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+*, ::before, ::after{
+  --tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width:0px;
+  --tw-ring-offset-color:#fff;
+  --tw-ring-color:rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow:0 0 #0000;
+  --tw-ring-shadow:0 0 #0000;
+}
+
+.transition{
+  transition-property:background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
+  transition-property:background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+  transition-property:background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration:150ms !important;
+}
+
+@media (min-width: 640px){
+  .sm\:grid-cols-4{
+    grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .sm\:px-4{
+    padding-left:1rem !important;
+    padding-right:1rem !important;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:order-first{
+    order:-9999 !important;
+  }
+
+  .md\:my-16{
+    margin-top:4rem !important;
+    margin-bottom:4rem !important;
+  }
+
+  .md\:mt-16{
+    margin-top:4rem !important;
+  }
+
+  .md\:mb-0{
+    margin-bottom:0px !important;
+  }
+
+  .md\:mb-4{
+    margin-bottom:1rem !important;
+  }
+
+  .md\:mb-12{
+    margin-bottom:3rem !important;
+  }
+
+  .md\:block{
+    display:block !important;
+  }
+
+  .md\:flex{
+    display:flex !important;
+  }
+
+  .md\:hidden{
+    display:none !important;
+  }
+
+  .md\:h-40{
+    height:10rem !important;
+  }
+
+  .md\:h-auto{
+    height:auto !important;
+  }
+
+  .md\:w-40{
+    width:10rem !important;
+  }
+
+  .md\:w-1\/2{
+    width:50% !important;
+  }
+
+  .md\:w-1\/3{
+    width:33.333333% !important;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns:repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .md\:grid-cols-4{
+    grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .md\:flex-row{
+    flex-direction:row !important;
+  }
+
+  .md\:px-4{
+    padding-left:1rem !important;
+    padding-right:1rem !important;
+  }
+
+  .md\:px-8{
+    padding-left:2rem !important;
+    padding-right:2rem !important;
+  }
+
+  .md\:py-4{
+    padding-top:1rem !important;
+    padding-bottom:1rem !important;
+  }
+
+  .md\:py-8{
+    padding-top:2rem !important;
+    padding-bottom:2rem !important;
+  }
+
+  .md\:py-16{
+    padding-top:4rem !important;
+    padding-bottom:4rem !important;
+  }
+
+  .md\:pt-16{
+    padding-top:4rem !important;
+  }
+
+  .md\:pr-8{
+    padding-right:2rem !important;
+  }
+
+  .md\:pr-16{
+    padding-right:4rem !important;
+  }
+
+  .md\:pb-16{
+    padding-bottom:4rem !important;
+  }
+
+  .md\:pl-8{
+    padding-left:2rem !important;
+  }
+
+  .md\:text-left{
+    text-align:left !important;
+  }
+
+  .md\:text-center{
+    text-align:center !important;
+  }
+
+  .md\:text-lg{
+    font-size:1.125rem !important;
+    line-height:1.75rem !important;
+  }
+
+  .md\:text-xl{
+    font-size:1.25rem !important;
+    line-height:1.75rem !important;
+  }
+
+  .md\:text-2xl{
+    font-size:1.5rem !important;
+    line-height:2rem !important;
+  }
+
+  .md\:text-3xl{
+    font-size:1.875rem !important;
+    line-height:2.25rem !important;
+  }
+
+  .md\:text-4xl{
+    font-size:2.25rem !important;
+    line-height:2.5rem !important;
+  }
+
+  .md\:text-5xl{
+    font-size:3rem !important;
+    line-height:1 !important;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:order-first{
+    order:-9999 !important;
+  }
+
+  .lg\:order-last{
+    order:9999 !important;
+  }
+
+  .lg\:mt-0{
+    margin-top:0px !important;
+  }
+
+  .lg\:mt-32{
+    margin-top:8rem !important;
+  }
+
+  .lg\:mb-0{
+    margin-bottom:0px !important;
+  }
+
+  .lg\:mb-3{
+    margin-bottom:0.75rem !important;
+  }
+
+  .lg\:mb-6{
+    margin-bottom:1.5rem !important;
+  }
+
+  .lg\:mb-20{
+    margin-bottom:5rem !important;
+  }
+
+  .lg\:block{
+    display:block !important;
+  }
+
+  .lg\:flex{
+    display:flex !important;
+  }
+
+  .lg\:hidden{
+    display:none !important;
+  }
+
+  .lg\:h-hero{
+    height:22rem !important;
+  }
+
+  .lg\:w-64{
+    width:16rem !important;
+  }
+
+  .lg\:w-auto{
+    width:auto !important;
+  }
+
+  .lg\:w-1\/2{
+    width:50% !important;
+  }
+
+  .lg\:w-1\/3{
+    width:33.333333% !important;
+  }
+
+  .lg\:w-2\/3{
+    width:66.666667% !important;
+  }
+
+  .lg\:w-2\/5{
+    width:40% !important;
+  }
+
+  .lg\:w-hero{
+    width:32rem !important;
+  }
+
+  .lg\:min-w-card{
+    min-width:380px !important;
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns:repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .lg\:grid-cols-5{
+    grid-template-columns:repeat(5, minmax(0, 1fr)) !important;
+  }
+
+  .lg\:grid-cols-8{
+    grid-template-columns:repeat(8, minmax(0, 1fr)) !important;
+  }
+
+  .lg\:flex-row{
+    flex-direction:row !important;
+  }
+
+  .lg\:flex-wrap{
+    flex-wrap:wrap !important;
+  }
+
+  .lg\:items-end{
+    align-items:flex-end !important;
+  }
+
+  .lg\:justify-start{
+    justify-content:flex-start !important;
+  }
+
+  .lg\:justify-end{
+    justify-content:flex-end !important;
+  }
+
+  .lg\:rounded-lg{
+    border-radius:0.5rem !important;
+  }
+
+  .lg\:p-4{
+    padding:1rem !important;
+  }
+
+  .lg\:px-0{
+    padding-left:0px !important;
+    padding-right:0px !important;
+  }
+
+  .lg\:py-4{
+    padding-top:1rem !important;
+    padding-bottom:1rem !important;
+  }
+
+  .lg\:py-16{
+    padding-top:4rem !important;
+    padding-bottom:4rem !important;
+  }
+
+  .lg\:pt-0{
+    padding-top:0px !important;
+  }
+
+  .lg\:pt-8{
+    padding-top:2rem !important;
+  }
+
+  .lg\:pt-16{
+    padding-top:4rem !important;
+  }
+
+  .lg\:pr-0{
+    padding-right:0px !important;
+  }
+
+  .lg\:pr-8{
+    padding-right:2rem !important;
+  }
+
+  .lg\:pr-16{
+    padding-right:4rem !important;
+  }
+
+  .lg\:pb-0{
+    padding-bottom:0px !important;
+  }
+
+  .lg\:pb-6{
+    padding-bottom:1.5rem !important;
+  }
+
+  .lg\:pb-8{
+    padding-bottom:2rem !important;
+  }
+
+  .lg\:pb-16{
+    padding-bottom:4rem !important;
+  }
+
+  .lg\:pl-8{
+    padding-left:2rem !important;
+  }
+
+  .lg\:pl-16{
+    padding-left:4rem !important;
+  }
+
+  .lg\:text-left{
+    text-align:left !important;
+  }
+
+  .lg\:text-base{
+    font-size:1rem !important;
+    line-height:1.5rem !important;
+  }
+
+  .lg\:text-lg{
+    font-size:1.125rem !important;
+    line-height:1.75rem !important;
+  }
+
+  .lg\:text-xl{
+    font-size:1.25rem !important;
+    line-height:1.75rem !important;
+  }
+
+  .lg\:text-2xl{
+    font-size:1.5rem !important;
+    line-height:2rem !important;
+  }
+
+  .lg\:text-3xl{
+    font-size:1.875rem !important;
+    line-height:2.25rem !important;
+  }
+
+  .lg\:text-4xl{
+    font-size:2.25rem !important;
+    line-height:2.5rem !important;
+  }
+
+  .lg\:text-5xl{
+    font-size:3rem !important;
+    line-height:1 !important;
+  }
+
+  .lg\:text-6xl{
+    font-size:3.75rem !important;
+    line-height:1 !important;
+  }
+
+  .lg\:shadow-lg{
+    --tw-shadow:0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:p-8{
+    padding:2rem !important;
+  }
+
+  .xl\:px-16{
+    padding-left:4rem !important;
+    padding-right:4rem !important;
+  }
+
+  .xl\:text-3xl{
+    font-size:1.875rem !important;
+    line-height:2.25rem !important;
+  }
+}
+
+@media (min-width: 1536px){
+}
+@import url(https://p.typekit.net/p.css?s=1&k=rof6euq&ht=tk&f=139.175&a=84437520&app=typekit&e=css);
+/*purgecss start ignore*/
+
+@font-face{
+  font-family:"proxima-nova";
+
+  src:url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?fvd=n7&primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&v=3) format("woff2"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?fvd=n7&primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&v=3) format("woff"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?fvd=n7&primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&v=3) format("opentype");
+
+  font-display:auto;
+
+  font-style:normal;
+
+  font-weight:700;
+
+  font-stretch:normal
+}
+
+@font-face{
+  font-family:"proxima-nova";
+
+  src:url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?fvd=n4&primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&v=3) format("woff2"),url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?fvd=n4&primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&v=3) format("woff"),url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?fvd=n4&primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&v=3) format("opentype");
+
+  font-display:auto;
+
+  font-style:normal;
+
+  font-weight:400;
+
+  font-stretch:normal
+}
+
+.slideheader{
+  transition:top .3s;
+  top:-24rem
+}
+
+@-webkit-keyframes slidown{
+  0%{
+    opacity:0
+  }
+
+  to{
+    opacity:1
+  }
+}
+
+@keyframes slidown{
+  0%{
+    opacity:0
+  }
+
+  to{
+    opacity:1
+  }
+}
+
+.slide-down-enter-active{
+  transition:all .2s ease
+}
+
+.slide-down-enter,.slide-down-leave-active{
+  transition:all .2s ease;
+  opacity:0
+}
+
+.tas-alt-hero-bottom{
+  background-image:linear-gradient(180deg,#07122d,#132040);
+  background-image:-moz-linear-gradient(to bottom,#07122d,#132040)
+}
+
+.tas-alt-hero-top{
+  background-image:linear-gradient(0deg,#07122d,#132040);
+  background-image:-moz-linear-gradient(to top,#07122d,#132040)
+}
+
+.tas-alt-hero-right{
+  background-image:linear-gradient(90deg,#07122d,#132040);
+  background-image:-moz-linear-gradient(to right,#07122d,#132040)
+}
+
+.tas-alt-hero-right-orange{
+  background-image:linear-gradient(90deg,#a032f3,#f39600);
+  background-image:-moz-linear-gradient(to right,#a032f3,#f39600)
+}
+
+.tas-alt-hero-right-marine{
+  background-image:linear-gradient(90deg,#132040 50%,#07122d);
+  background-image:-webkit-linear-gradient(90deg,#132040 50%,#07122d)
+}
+
+.tas-alt-background-right{
+  background-image:radial-gradient(right,circle farthest-corner,#6e4438,#132040,#07122d,#07122d,#07122d);
+  background-image:-webkit-radial-gradient(right,circle farthest-corner,#6e4438,#132040,#07122d,#07122d,#07122d)
+}
+
+.tas-alt-background-left{
+  background-image:radial-gradient(left,circle farthest-corner,#6e4438,#132040,#07122d,#07122d,#07122d);
+  background-image:-webkit-radial-gradient(left,circle farthest-corner,#6e4438,#132040,#07122d,#07122d,#07122d)
+}
+
+.tas-alt-background-top-left{
+  background-image:radial-gradient(left top,ellipse farthest-corner,#132040,#132040,#07122d,#07122d,#07122d);
+  background-image:-webkit-radial-gradient(left top,ellipse farthest-corner,#132040,#132040,#07122d,#07122d,#07122d)
+}
+
+.tas-alt-background-top-right{
+  background-image:radial-gradient(right top,ellipse farthest-corner,#132040,#132040,#07122d,#07122d,#07122d);
+  background-image:-webkit-radial-gradient(right top,ellipse farthest-corner,#132040,#132040,#07122d,#07122d,#07122d)
+}
+
+.tas-alt-background-bottom-left{
+  background-image:radial-gradient(left bottom,ellipse farthest-corner,#132040,#132040,#07122d,#07122d,#07122d);
+  background-image:-webkit-radial-gradient(left bottom,ellipse farthest-corner,#132040,#132040,#07122d,#07122d,#07122d)
+}
+
+.tas-alt-background-bottom-right{
+  background-image:radial-gradient(right bottom,ellipse farthest-corner,#132040,#132040,#07122d,#07122d,#07122d);
+  background-image:-webkit-radial-gradient(right bottom,ellipse farthest-corner,#132040,#132040,#07122d,#07122d,#07122d)
+}
+
+.tas-background-top-left{
+  background-image:radial-gradient(left top,ellipse farthest-corner,#5f2e73,#6e4438,#07122d,#07122d,#07122d);
+  background-image:-webkit-radial-gradient(left top,ellipse farthest-corner,#5f2e73,#6e4438,#07122d,#07122d,#07122d)
+}
+
+.tas-background-top-right{
+  background-image:radial-gradient(right top,ellipse farthest-corner,#5f2e73,#6e4438,#07122d,#07122d,#07122d);
+  background-image:-webkit-radial-gradient(right top,ellipse farthest-corner,#5f2e73,#6e4438,#07122d,#07122d,#07122d)
+}
+
+.tas-background-bottom-left{
+  background-image:radial-gradient(left bottom,ellipse farthest-corner,#6e4438,#5f2e73,#07122d,#07122d,#07122d);
+  background-image:-webkit-radial-gradient(left bottom,ellipse farthest-corner,#6e4438,#5f2e73,#07122d,#07122d,#07122d)
+}
+
+.tas-background-bottom-right{
+  background-image:radial-gradient(right bottom,ellipse farthest-corner,#6e4438,#5f2e73,#07122d,#07122d,#07122d);
+  background-image:-webkit-radial-gradient(right bottom,ellipse farthest-corner,#6e4438,#5f2e73,#07122d,#07122d,#07122d)
+}
+
+.tas-gradient-text{
+  background-image:radial-gradient(center,circle farthest-corner,#f39600,#a032f3);
+  background-image:-webkit-radial-gradient(center,circle farthest-corner,#f39600 0,#c45e89 20%,#a032f3)
+}
+
+.tas-gradient-text,.tas-linear-gradient-text{
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent
+}
+
+.tas-linear-gradient-text{
+  background-image:linear-gradient(270deg,#f39600,#a032f3);
+  background-image:-moz-linear-gradient(to left,#f39600 0,#a032f3)
+}
+
+/*purgecss end ignore*/
+/*purgecss start ignore*/
+.nuxt-progress{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:2px;
+  width:0;
+  opacity:1;
+  transition:width .1s,opacity .4s;
+  background-color:#000;
+  z-index:999999
+}
+.nuxt-progress.nuxt-progress-notransition{
+  transition:none
+}
+.nuxt-progress-failed{
+  background-color:red
+}
+
+/*purgecss end ignore*/
+/*purgecss start ignore*/
+html{
+  font-family:"proxima-nova",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:16px;
+  word-spacing:1px;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing:antialiased;
+  box-sizing:border-box
+}
+*,:after,:before{
+  box-sizing:border-box;
+  margin:0
+}
+.button--green{
+  display:inline-block;
+  border-radius:4px;
+  border:1px solid #3b8070;
+  color:#3b8070;
+  text-decoration:none;
+  padding:10px 30px
+}
+.button--green:hover{
+  color:#fff;
+  background-color:#3b8070
+}
+.button--grey{
+  display:inline-block;
+  border-radius:4px;
+  border:1px solid #35495e;
+  color:#35495e;
+  text-decoration:none;
+  padding:10px 30px;
+  margin-left:15px
+}
+.button--grey:hover{
+  color:#fff;
+  background-color:#35495e
+}
+
+/*purgecss end ignore*/</style>
+  </head>
+  <body >
+    <noscript data-n-head="ssr" data-hid="gtm-noscript" data-pbody="true"></noscript><div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><!----> <!----> <span id="top"></span> <div id="backtotop" class="hidden"><a href="#top"><div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-orange-500 hover:from-purple-400 hover:to-orange-400 rounded-lg text-white flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"></path></svg></div></a></div> <div data-fetch-key="Index:0"><div id="scrollingheader" class="w-full lg:flex flex-col items-center justify-between text-white bg-gray-900 fixed z-40 slideheader"><div class="relative w-full"><div class="w-full"><div class="max-w-7xl mx-auto"><div class="flex justify-center justify-between items-center px-4 md:px-8 py-4"><div class="lg:hidden w-1/5 flex text-gray-100"><button class="hover:text-white"><svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" fill="currentColor" width="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"></path></svg></button></div> <div class="flex justify-center lg:justify-start w-1/5"><a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active"><img id="logo" src="/logos/logo-full.png" alt="Logo TAS Cloud Services" class="object-cover w-24"></a></div> <div class="text-white hidden lg:flex justify-center w-3/5"><ul class="flex items-center justify-center"><li class="px-4 uppercase select-none"><div class="py-2 hover:text-orange-400 border-b border-transparent hover:border-orange-400 font-bold flex items-center"><span>Solutions</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24" class="ml-2"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path></svg></span></div></li> <li class="px-4 uppercase"><a href="/a-propos" class="py-2 hover:text-orange-400 border-b border-transparent hover:border-orange-400 font-bold flex items-center"><span>Qui nous sommes</span><!----></a></li><li class="px-4 uppercase"><a href="/etudes-de-cas" class="py-2 hover:text-orange-400 border-b border-transparent hover:border-orange-400 font-bold flex items-center"><span>Etudes de cas</span><!----></a></li></ul></div> <div class="w-1/5 flex justify-end"><a href="/#book" class="hover:bg-white bg-gray-50 text-gray-900 px-4 py-2 text-sm rounded-lg font-bold hidden lg:block">
+            Nous contacter
+          </a></div></div></div></div> <!----></div> <!----></div> <div class="bg-gray-900 min-h-screen"><div class="tas-alt-hero-right bg-cover text-white"><div class="bg-transparent max-w-7xl mx-auto relative z-20"><div class="justify-end items-center px-8 overflow-hidden hidden lg:flex"><div class="flex justify-end"><ul class="text-gray-100 flex items-center -mx-2 text-sm font-bold"><li class="px-2"><a href="https://tasgroup.eu" class="flex block items-center hover:text-white"><span><svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12m2.557 16h-5.115c.546 2.46 1.441 4.114 2.558 5.744 1.194-1.741 2.041-3.41 2.557-5.744m-7.157 0h-4.567c1.236 2.825 3.704 4.972 6.755 5.716-1.048-1.733-1.783-3.658-2.188-5.716m13.767 0h-4.567c-.391 1.988-1.095 3.887-2.175 5.694 3.012-.763 5.517-2.895 6.742-5.694m-14.005-6h-4.962c-.267 1.313-.267 2.685 0 4h4.915c-.119-1.329-.101-2.672.047-4m7.661 0h-5.647c-.165 1.326-.185 2.672-.053 4h5.753c.133-1.328.111-2.673-.053-4m6.977 0h-4.963c.148 1.328.166 2.671.048 4h4.915c.26-1.285.273-2.648 0-4m-12.156-7.729c-3.077.732-5.567 2.886-6.811 5.729h4.653c.435-2.042 1.178-3.985 2.158-5.729m2.355-.048c-1.089 1.77-1.91 3.453-2.463 5.777h4.927c-.534-2.246-1.337-3.948-2.464-5.777m2.368.069c1.013 1.812 1.733 3.76 2.146 5.708h4.654c-1.232-2.816-3.762-4.958-6.8-5.708"></path></svg></span> <span class="ml-1">Groupe TAS</span></a></li> <li class="py-2"><a href="https://espaceclient.tascloudservices.fr/login.php" class="px-2 block hover:text-white">Espace client</a> <!----></li><li class="py-2"><a href="https://webmail.tasgroup.fr/" class="px-2 block hover:text-white">Webmail</a> <!----></li><li class="py-2"><!----> <a href="/reserver-un-appel" class="px-2 block hover:text-white">Réserver un appel</a></li> <li class="py-2"><a href="tel:0825563400" class="px-2 block hover:text-white flex items-center"><div><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"></path></svg></div> <div>0.825.563.400</div></a></li></ul></div></div></div> <div class="relative"><div class="w-full"><div class="max-w-7xl mx-auto"><div class="flex justify-center justify-between items-center px-4 md:px-8 py-4"><div class="lg:hidden w-1/5 flex text-gray-100"><button class="hover:text-white"><svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" fill="currentColor" width="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"></path></svg></button></div> <div class="flex justify-center lg:justify-start w-1/5"><a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active"><img id="logo" src="/logos/logo-full.png" alt="Logo TAS Cloud Services" class="object-cover w-24"></a></div> <div class="text-white hidden lg:flex justify-center w-3/5"><ul class="flex items-center justify-center"><li class="px-4 uppercase select-none"><div class="py-2 hover:text-orange-400 border-b border-transparent hover:border-orange-400 font-bold flex items-center"><span>Solutions</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24" class="ml-2"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path></svg></span></div></li> <li class="px-4 uppercase"><a href="/a-propos" class="py-2 hover:text-orange-400 border-b border-transparent hover:border-orange-400 font-bold flex items-center"><span>Qui nous sommes</span><!----></a></li><li class="px-4 uppercase"><a href="/etudes-de-cas" class="py-2 hover:text-orange-400 border-b border-transparent hover:border-orange-400 font-bold flex items-center"><span>Etudes de cas</span><!----></a></li></ul></div> <div class="w-1/5 flex justify-end"><a href="/#book" class="hover:bg-white bg-gray-50 text-gray-900 px-4 py-2 text-sm rounded-lg font-bold hidden lg:block">
+            Nous contacter
+          </a></div></div></div></div> <!----></div> <div><div><div imagealt="Tas Cloud Services"><div class="w-full h-full flex bg-no-repeat bg-cover bg-center max-w-7xl mx-auto"><div class="w-full flex text-white"><div class="px-4 md:px-8 lg:pt-16 pt-8 flex flex-col lg:flex-row text-center lg:text-left"><div class="lg:w-1/2 w-full order-last lg:order-first pb-8 lg:pb-0"><!----> <h1 class="font-bold text-xl md:text-3xl lg:text-4xl mb-6">Performance, flexibilité et sécurité pour votre infrastructure</h1> <div class="max-w-3xl mx-auto"><div class="mb-8 md:text-lg lg:text-xl leading-relaxed"><p>Externalisez votre informatique en toute sérénité avec TAS Cloud Services. Hébergeur infogérant cloud de proximité, nous vous accompagnons à chaque étape pour vous permettre de bénéficier d’une solution parfaitement adaptée à vos besoins IT.</p></div> <div><!----> <a href="#book" class="bg-gray-50 hover:bg-white text-gray-900 font-bold px-6 py-3 rounded-lg">
+                Nous contacter
+              </a></div></div></div> <div class="lg:w-1/2 w-full overflow-hidden relative order-first lg:order-last pb-8"><div class="flex justify-center text-center lg:text-left flex-col items-center lg:items-end absolute w-full z-20"><h2 class="font-bold text-lg md:text-xl lg:text-2xl mb-1 text-gray-300">Votre hébergeur de proximité</h2> <div class="flex items-center text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="mr-2"><path d="M12 0c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm8 12c0 2.209-3.581 4-8 4s-8-1.791-8-4c0-1.602 1.888-2.98 4.608-3.619l1.154 1.824c-.401.068-.806.135-1.178.242-3.312.949-3.453 2.109-.021 3.102 2.088.603 4.777.605 6.874-.001 3.619-1.047 3.164-2.275-.268-3.167-.296-.077-.621-.118-.936-.171l1.156-1.828c2.723.638 4.611 2.016 4.611 3.618z"></path></svg> <p class="md:text-lg lg:text-xl text-gray-300">A Sophia-Antipolis, France</p></div></div> <div class="hidden md:block"><div class="relative z-10 overflow-hidden mt-8 lg:mt-0" style="width:100%;height:100%;overflow:hidden;margin:0 auto;"></div></div> <div class="md:hidden"><img data-src="/illustrations/homeanimation.png" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" alt="animation" class="mt-8 lg:mt-0 lazyload"></div></div></div></div></div></div></div><div><div class="text-white pt-8"><div class="max-w-7xl mx-auto"><div class="text-center font-bold text-2xl text-gray-200"><h2>Ils nous font confiance</h2></div> <div class="grid lg:grid-cols-8 md:grid-cols-4 sm:grid-cols-4 grid-cols-2 items-center px-8 pb-8 w-full"><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/VFF_Sans_titre_3_73c18f32e0.png" alt="e.GM" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/KOEDIA_c91233cf32.png" alt="KOEDIA" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/Carlton_International_05d0624d1b.png" alt="CARLTON INTERNATIONAL" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/chullanka_b4994c8ab2.png" alt="Chullanka" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/ubaldi_afc186841b.png" alt="Ubaldi" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/cruiseline_130c17e46b.png" alt="Cruiseline" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/visiplus_bfbe8ded41.png" alt="Visiplus Academy" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/skema_cef2f8ff08.png" alt="SKEMA" class="px-8 sm:px-4 py-6 md:py-4"></div></div></div></div></div></div><div><div class="py-2 bg-gradient-to-r from-purple-500 to-orange-500"></div></div><div><div class="tas-alt-background-right"><div class="max-w-7xl mx-auto flex relative text-white"><div class="lg:w-2/3 lg:pr-8 relative"><div class="text-left px-4 md:px-8 pt-16 max-w-4xl"><h2 class="font-bold text-xl md:text-2xl lg:text-4xl pb-4">Vos données, hébergées au bon endroit, <span class="tas-linear-gradient-text">disponibles à tout moment</span></h2> <div class="pb-8 lg:pb-6 md:text-lg lg:text-xl leading-relaxed"><p>Nous soulageons votre entreprise de ses problèmes d’infrastructure informatique pour vous permettre de vous concentrer sur ce qui compte le plus pour vous : votre coeur de métier.</p></div></div> <div class="flex flex-wrap pb-16"><div class="md:pr-16 md:w-1/2 px-4 md:px-8 py-4 md:py-8 text-left"><h3 class="font-bold leading-none text-lg lg:text-xl pb-2">Assurez une meilleure disponibilité à vos données</h3> <div class="md:text-lg lg:text-xl leading-relaxed">Notre datacenter, de niveau Tier 4, assure une disponibilité garantie de service à 99,99%.</div></div><div class="md:pr-16 md:w-1/2 px-4 md:px-8 py-4 md:py-8 text-left"><h3 class="font-bold leading-none text-lg lg:text-xl pb-2">Renforcez la sécurité de votre infrastructure IT</h3> <div class="md:text-lg lg:text-xl leading-relaxed">Nous protégeons vos données et vous aidons à assurer la continuité et la reprise de votre activité.</div></div><div class="md:pr-16 md:w-1/2 px-4 md:px-8 py-4 md:py-8 text-left"><h3 class="font-bold leading-none text-lg lg:text-xl pb-2">Gagnez en performances</h3> <div class="md:text-lg lg:text-xl leading-relaxed">Nos ingénieurs Devops vous accompagnent dans la configuration de vos instances pour obtenir les meilleures performances possibles en production.</div></div><div class="md:pr-16 md:w-1/2 px-4 md:px-8 py-4 md:py-8 text-left"><h3 class="font-bold leading-none text-lg lg:text-xl pb-2">Faites le choix de la proximité</h3> <div class="md:text-lg lg:text-xl leading-relaxed">Nous hébergeons vos infrastructures dans notre datacenter de Sophia-Antipolis, en France.</div></div></div></div> <div class="absolute w-full bottom-0 hidden lg:block"><img src="https://cms8df399.tascloudservices.fr/uploads/vectors_1420cff2c9.png" alt="vectors.png" class="w-full"></div></div></div></div><div><div class="py-2 bg-gradient-to-r from-purple-500 to-orange-500"></div></div><div><div class="tas-alt-background-bottom-left"><div class="grid lg:grid-cols-2 grid-cols-1 md:px-8 md:py-16 max-w-7xl mx-auto text-center lg:text-left text-white"><div class="lg-16 pb-16 lg:pb-0 flex items-center"><img alt="cloud.png" data-src="https://cms8df399.tascloudservices.fr/uploads/cloud_4ece1a73cd.png" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" class="w-full lg:rounded-lg lazyload"></div> <div class="px-4 lg:px-0 lg:pl-16 pb-8 lg:pb-0"><p class="font-bold text-2xl uppercase mb-2 text-gray-100">Cloud</p> <h1 class="font-bold text-2xl md:text-3xl lg:text-5xl mb-6">Passez facilement à l'échelle grâce à nos solutions Cloud</h1> <div class="mb-8 md:text-lg lg:text-xl leading-relaxed"><p>Nous vous proposons des services de type IaaS et PaaS (containers et/ou VM) pour vous permettre de bénéficier d’une architecture flexible, capable de s’adapter à toute exigence accrue de volumes de stockage, de puissance de traitement et de débit.</p></div> <div class="pb-3 mb-8 lg:mb-0"><a href="/solutions/cloud" class="font-bold px-6 py-3 rounded-lg bg-gray-50 hover:bg-white text-gray-900">
+          Découvrir l'offre Cloud
+        </a> <!----></div> <!----></div> <!----></div></div></div><div><div class="tas-alt-background-top-left"><div class="grid lg:grid-cols-2 grid-cols-1 md:px-8 md:py-16 max-w-7xl mx-auto text-center lg:text-left text-white"><!----> <div class="px-4 lg:px-0 lg:pr-16 pt-16 lg:pt-0"><p class="font-bold text-2xl uppercase mb-2 text-gray-100">Hébergement</p> <h1 class="font-bold text-2xl md:text-3xl lg:text-5xl mb-6">Externalisez votre informatique en toute simplicité</h1> <div class="mb-8 md:text-lg lg:text-xl leading-relaxed"><p>En hébergeant votre informatique au sein de notre datacenter, vous bénéficierez des meilleures technologies et gagnerez en performances, en disponibilité et en sécurité, le tout avec le soutien et le suivi de nos experts en solutions IT.</p></div> <div class="pb-3 mb-8 lg:mb-0"><a href="/solutions/hebergement" class="font-bold px-6 py-3 rounded-lg bg-gray-50 hover:bg-white text-gray-900">
+          Découvrir l'offre hébergement
+        </a> <!----></div> <!----></div> <div class="lg:pl-16 pt-16 lg:pt-0 flex items-center order-first lg:order-last"><img alt="Hébergement" data-src="https://cms8df399.tascloudservices.fr/uploads/hosting_700871b3ae.png" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" class="w-full lg:rounded-lg lazyload"></div></div></div></div><div><div class="py-2 bg-gradient-to-r from-purple-500 to-orange-500"></div></div><div><div class="tas-alt-hero-bottom"><div class="flex justify-center"><!----></div> <div><div class="max-w-7xl mx-auto text-white"><div class="text-center px-4 md:px-8 pt-16 max-w-3xl mx-auto mt-0"><!----> <h2 class="font-bold text-xl md:text-2xl lg:text-4xl pb-4">Professionalisme et expérience au service de votre infrastructure IT</h2> <!----> <div class="pb-8 lg:pb-6 md:text-lg lg:text-xl leading-relaxed"><p>Les infrastructures informatiques vieillissent, deviennent coûteuses à maintenir et perdent en performance au fil du temps. Pour solutionner ce problème pour le bon fonctionnement de ses propres services, TAS a fait le choix de créer une unité experte, spécialement dédiée à la gestion de serveurs. Cette unité, c’est TAS Cloud Services, qui accompagne les entreprises dans l’externalisation de leurs systèmes d’information depuis plus de 25 ans.</p></div> <!----> <!----> <!----> <!----></div></div></div> <div class="text-white pt-8"><div class="max-w-7xl mx-auto"><div class="text-center font-bold text-2xl text-gray-200"><h2>Nos partenaires</h2></div> <div class="grid lg:grid-cols-8 md:grid-cols-4 sm:grid-cols-4 grid-cols-2 items-center px-8 pb-8 w-full"><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/cisco_719b4061cf.png" alt="Cisco" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/commscope_9b730c7b1c.png" alt="Commscope" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/dell_68aefe7071.png" alt="Dell Technologies" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/fortinet_f5f87d87b9.png" alt="Fortinet" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/kohler_334bc308d5.png" alt="Kohler" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/siemens_933226a978.png" alt="Siemens" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/schneider_7312918cd0.png" alt="Schneider Electric" class="px-8 sm:px-4 py-6 md:py-4"></div></div><div class="flex justify-center font-bold text-xl"><div><img src="https://cms8df399.tascloudservices.fr/uploads/microsoft_21227d06f5.png" alt="Microsoft" class="px-8 sm:px-4 py-6 md:py-4"></div></div></div></div></div></div></div><div><div class="py-2 bg-gradient-to-r from-purple-500 to-orange-500"></div></div><div><div class="tas-alt-background-top-left"><div><div class="max-w-7xl mx-auto text-white"><div class="text-center px-4 md:px-8 py-16 max-w-3xl mx-auto"><img data-src="https://cms8df399.tascloudservices.fr/uploads/datacenter_plan_white_2b09ff6529.png" alt="datacenter_plan_white.png" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" class="w-full object-cover rounded-lg mb-8 lazyload"> <p class="uppercase mb-3 text-lg">Votre hébergeur de proximité, à Sophia-Antipolis</p> <h2 class="font-bold text-xl md:text-2xl lg:text-4xl pb-4">Un datacenter moderne, de niveau Tier 4, pour une disponibilité garantie de service de 99,99%</h2> <!----> <div class="pb-8 lg:pb-6 md:text-lg lg:text-xl leading-relaxed"><p>Situé au coeur de la technopole de Sophia Antipolis, en France, notre datacenter de 850 m2 bénéficie des technologies les plus avancées. Son coefficient d’efficacité énergétique (PUE) de 1,3 le place parmi les meilleurs au monde. Nos systèmes de détection et d'extinction des incendies sont conformes, certifiés aux normes APSAD et AFNOR et répondent aux exigences les plus élevées de ces deux normes.</p></div> <!----> <!----> <!----> <div class="grid grid-cols-4 px-4 md:px-8"><div class="flex items-center px-4"><img data-src="https://cms8df399.tascloudservices.fr/uploads/iso9001_a9edc4db5b.png" alt="ISO 9001" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" class="lazyload"></div><div class="flex items-center px-4"><img data-src="https://cms8df399.tascloudservices.fr/uploads/iso27001_5e89f2f3f1.png" alt="ISO 27001" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" class="lazyload"></div><div class="flex items-center px-4"><img data-src="https://cms8df399.tascloudservices.fr/uploads/TUV_ISO_27017_c2b8969976.png" alt="ISO 27017" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" class="lazyload"></div><div class="flex items-center px-4"><img data-src="https://cms8df399.tascloudservices.fr/uploads/27018_2_75dbe074df.png" alt="ISO 27018" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" class="lazyload"></div><div class="flex items-center px-4"><!----></div><div class="flex items-center px-4"><img data-src="https://cms8df399.tascloudservices.fr/uploads/Design_sans_titre_0aad354262.png" alt="HDS" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" class="lazyload"></div><div class="flex items-center px-4"><img data-src="https://cms8df399.tascloudservices.fr/uploads/pci_dss_white_c389352e94.png" alt="PCI-DSS" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" class="lazyload"></div><div class="flex items-center px-4"><!----></div></div></div></div></div></div></div><div><div imagealt="Tas Cloud Services" class="tas-alt-background-right"><div class="max-w-7xl mx-auto text-white"><div class="text-center px-4 md:px-8 max-w-4xl pt-16 mx-auto"><h2 class="font-bold text-xl md:text-2xl lg:text-4xl pb-4">Redondance, continuité de service, présence locale et couverture internationale</h2></div></div> <div class="max-w-7xl mx-auto text-white"><div class="text-center px-4 md:px-8 max-w-5xl md:py-8 mx-auto"><div class="grid lg:grid-cols-4"><div class="px-2 mb-8 md:mb-0"><div class="text-5xl font-bold pb-2 tas-gradient-text">25</div> <div class="md:text-lg">Ans d'expérience en hébergement</div></div><div class="px-2 mb-8 md:mb-0"><div class="text-5xl font-bold pb-2 tas-gradient-text">5</div> <div class="md:text-lg">Points de présence en France et en Italie</div></div><div class="px-2 mb-8 md:mb-0"><div class="text-5xl font-bold pb-2 tas-gradient-text">3</div> <div class="md:text-lg">Points de peering</div></div><div class="px-2 mb-8 md:mb-0"><div class="text-5xl font-bold pb-2 tas-gradient-text">4</div> <div class="md:text-lg">Opérateurs internationaux de transit IP</div></div></div></div></div> <div class="max-w-7xl mx-auto text-white"><div class="text-center px-4 md:px-8 pt-8 md:pb-16 mx-auto"><div class="grid lg:grid-cols-3"><div class="px-0 md:px-4 mb-8 lg:mb-0"><div class="flex justify-center"><div class="flex items-center justify-center bg-purple-500 w-16 h-16 rounded-lg border-white border-2"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M8 24l3-9h-9l14-15-3 9h9l-14 15z"/></svg></div></div> <div class="bg-white-semi-70 -mt-8 p-8 rounded-lg text-gray-900"><div class="text-2xl font-bold pb-2 mt-8">Alimentation</div> <div class="md:text-lg"><p>Toute notre alimentation électrique est doublée : transformateurs EDF, onduleurs, groupes électrogènes. Chaque baie dispose également de 2 disjoncteurs.</p></div></div></div><div class="px-0 md:px-4 mb-8 lg:mb-0"><div class="flex justify-center"><div class="flex items-center justify-center bg-purple-500 w-16 h-16 rounded-lg border-white border-2"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 9.312l-1.762.491 1.562.881-.491.871-1.562-.881.491 1.762-.963.268-.76-2.724-2.015-1.126v1.939l2 2-.707.707-1.293-1.293v1.793h-1v-1.793l-1.293 1.293-.707-.707 2-2v-1.939l-2.015 1.126-.761 2.724-.963-.268.491-1.762-1.562.882-.491-.871 1.562-.881-1.761-.492.269-.962 2.725.76 1.982-1.11-1.983-1.109-2.724.759-.269-.962 1.762-.491-1.563-.882.491-.871 1.562.881-.49-1.762.963-.269.76 2.725 2.015 1.128v-1.94l-2-2 .707-.707 1.293 1.293v-1.793h1v1.793l1.293-1.293.707.707-2 2v1.94l2.016-1.127.76-2.725.963.269-.492 1.761 1.562-.881.491.871-1.562.881 1.762.492-.269.962-2.725-.76-1.982 1.11 1.982 1.109 2.725-.76.269.963zm4-5.812v7.525c0 1.57-.514 2.288-1.41 3.049-1.011.859-1.59 2.107-1.59 3.426 0 2.481 2.019 4.5 4.5 4.5s4.5-2.019 4.5-4.5c0-1.319-.579-2.567-1.589-3.426-.897-.762-1.411-1.48-1.411-3.049v-7.525c0-.827-.673-1.5-1.5-1.5s-1.5.673-1.5 1.5zm5 0v7.525c0 .587.258 1.145.705 1.525 1.403 1.192 2.295 2.966 2.295 4.95 0 3.59-2.909 6.5-6.5 6.5s-6.5-2.91-6.5-6.5c0-1.984.892-3.758 2.295-4.949.447-.381.705-.94.705-1.526v-7.525c0-1.934 1.567-3.5 3.5-3.5s3.5 1.566 3.5 3.5zm0 14c0 1.934-1.567 3.5-3.5 3.5s-3.5-1.566-3.5-3.5c0-1.141.599-2.084 1.393-2.781 1.01-.889 1.607-1.737 1.607-3.221v-.498h1v.498c0 1.486.595 2.33 1.607 3.221.794.697 1.393 1.64 1.393 2.781z"/></svg></div></div> <div class="bg-white-semi-70 -mt-8 p-8 rounded-lg text-gray-900"><div class="text-2xl font-bold pb-2 mt-8">Climatisation</div> <div class="md:text-lg"><p>Nos installations bénéficient d’une régulation thermique et hygrométrique. La température y est constante à + ou - 10% 24 heures sur 24, 7 jours sur 7.</p></div></div></div><div class="px-0 md:px-4 mb-8 lg:mb-0"><div class="flex justify-center"><div class="flex items-center justify-center bg-purple-500 w-16 h-16 rounded-lg border-white border-2"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M6 8v-2c0-3.313 2.687-6 6-6 3.312 0 6 2.687 6 6v2h-2v-2c0-2.206-1.795-4-4-4s-4 1.794-4 4v2h-2zm-3 2v14h18v-14h-18z"/></svg></div></div> <div class="bg-white-semi-70 -mt-8 p-8 rounded-lg text-gray-900"><div class="text-2xl font-bold pb-2 mt-8">Sécurité</div> <div class="md:text-lg"><p>Nous avons mis en place des protocoles de sécurité de très haut niveau pour prévenir tous types de risques : intrusions, sismique, incendie, eau, air, accès...</p></div></div></div></div></div></div> <div class="bg-transparent"><div class="max-w-7xl mx-auto"><div class="px-4 md:px-8 max-w-lg pb-16 mx-auto"><div class="flex justify-center flex-col items-center"><div class="px-4 bg-green-500 text-white rounded-lg flex flex-col items-center py-2 text-center lg:text-left w-16 h-16 justify-center shadow-lg border-2 border-white z-20"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24" class="mb-3 lg:mb-0"><path d="M15.787 7.531c-5.107 2.785-12.72 9.177-15.787 15.469h2.939c.819-2.021 2.522-4.536 3.851-5.902 8.386 3.747 17.21-2.775 17.21-11.343 0-1.535-.302-3.136-.92-4.755-2.347 3.119-5.647 1.052-10.851 1.625-7.657.844-11.162 6.797-8.764 11.54 3.506-3.415 9.523-6.38 12.322-6.634z"></path></svg></div> <div class="px-4 text-gray-900 bg-white-semi-70 shadow-lg rounded-lg items-center p-8 text-center -mt-8 z-10"><div class="text-2xl font-bold mb-3 lg:mb-3 mt-8">Ecologie</div> <div class="md:text-lg">L’architecture de notre salle en POD (Point of Delivery) lui permet de bénéficier d’une très grande efficacité énergétique. Son PUE est inférieur à 1,3.</div></div></div></div></div></div></div></div><div><div class="py-2 bg-gradient-to-r from-purple-500 to-orange-500"></div></div><div><div class="tas-alt-background-bottom-left"><div class="flex justify-center"><!----></div> <div><div class="max-w-7xl mx-auto text-white"><div class="text-center px-4 md:px-8 py-16 max-w-3xl mx-auto mt-0"><!----> <h2 class="font-bold text-xl md:text-2xl lg:text-4xl pb-4">Une infrastructure multi-sites, un réseau international</h2> <!----> <div class="md:text-lg lg:text-xl leading-relaxed"><p>Nous avons mis en place une infrastructure redondante et développé plusieurs points de présence pour permettre une disponibilité optimale des données hébergées dans notre datacenter. Les temps de latence sont ainsi très fortement réduits, à la fois pour l’Europe et la zone Amérique.</p><p>&nbsp;</p><p style="text-align:center;"><a href="https://www.youtube.com/watch?v=OSj0H04cLag"><img src="https://cms8df399.tascloudservices.fr/uploads/Capture_d_ecran_2023_01_11_161736_65eecef7ea.png" alt="Capture d’écran 2023-01-11 161736.png" srcset="https://cms8df399.tascloudservices.fr/uploads/thumbnail_Capture_d_ecran_2023_01_11_161736_65eecef7ea.png 219w,https://cms8df399.tascloudservices.fr/uploads/small_Capture_d_ecran_2023_01_11_161736_65eecef7ea.png 500w,https://cms8df399.tascloudservices.fr/uploads/medium_Capture_d_ecran_2023_01_11_161736_65eecef7ea.png 750w," sizes="100vw"></a></p><p>&nbsp;</p></div> <div class="text-center mt-4 pb-4"><!----> <!----></div> <!----> <!----> <div class="grid grid-cols-4 px-4 md:px-8"><div class="flex items-center px-4"><!----></div></div></div></div></div> <!----></div></div><div><div class="py-2 bg-gradient-to-r from-purple-500 to-orange-500"></div></div><div><span id="book"></span></div><div><div class="tas-alt-hero-right"><div class="tas-alt-hero-right"><div class="max-w-7xl mx-auto text-gray-50"><div class="text-center px-4 md:px-8 pt-16 max-w-3xl mx-auto mt-0"><h2 class="font-bold text-xl md:text-2xl lg:text-4xl pb-4">Contactez-nous</h2> <div class="pb-8 lg:pb-6 md:text-lg lg:text-xl leading-relaxed"><p>Nous sommes là pour répondre à toutes vos questions et demandes de renseignements.</p></div></div> <div class="lg:pb-16 max-w-xl mx-auto w-full"><div class="w-full bg-white p-8 rounded-xl"><!----></div></div></div></div></div></div><div><div nuxtlink="true" class="bg-gradient-to-r from-purple-500 to-orange-500"><div class="bg-gradient-to-r from-purple-500 to-orange-500"><div class="max-w-7xl mx-auto text-white"><div class="text-center px-4 md:px-8 pt-16 max-w-3xl mx-auto mt-0"><h2 class="font-bold text-xl md:text-2xl lg:text-4xl pb-4">Discutons dès maintenant de votre projet</h2> <div class="pb-8 lg:pb-6 md:text-lg lg:text-xl leading-relaxed"><p>Contactez-nous par téléphone au <a href="tel:0825563400"><strong>0 825 563 400</strong></a> ou réservez un appel avec l'un de nos experts TAS Cloud Services.</p></div></div> <div class="pb-16 flex justify-center text-center"><a href="/reserver-un-appel" class="font-bold px-6 py-3 rounded-lg bg-gray-50 hover:bg-white text-gray-900">
+          Réserver un appel
+        </a></div></div></div></div></div><div><div class="bg-gray-800"><div class="grid lg:grid-cols-2 grid-cols-1 md:px-8 lg:pt-16 lg:pb-8 max-w-7xl mx-auto text-center lg:text-left flex items-center text-white"><div class="lg:pr-16"><img data-src="https://cms8df399.tascloudservices.fr/uploads/scale2_a995da3bc1.jpg" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" alt="scale2.jpg" class="lg:rounded-lg w-full h-product lg:w-hero object-cover lazyload"></div> <div class="lg:pl-16 pt-16 lg:pt-0 px-4 md:px-8"><h2 class="font-bold text-xl md:text-2xl lg:text-4xl mb-6">Recevez notre veille sur l’actualité cloud / IT</h2> <div class="mb-8 lg:mb-6 md:text-lg lg:text-xl leading-relaxed"><p>La veille technologique est primordiale dans notre industrie. Nous vous faisons bénéficier des dernières actualités en la matière. Abonnez-vous à notre newsletter pour les recevoir chaque mois dans votre boîte e-mail.</p></div> <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-3">S'inscrire à notre newsletter</h3> <div class="w-full bg-white p-8 rounded-xl"><!----></div></div></div></div></div><div><div class="bg-gray-900"><div class="grid lg:grid-cols-2 grid-cols-1 md:px-8 lg:pt-8 max-w-7xl mx-auto text-center lg:text-left overflow-hidden text-white"><div class="flex items-center justify-center pt-8 lg:pt-0 lg:justify-start"><img data-src="/logos/logo-tas-white.png" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=" alt="Logo TAS Cloud Services" class="w-32 lazyload"></div> <div class="flex pt-4 lg:pt-0 justify-center flex-col items-center lg:items-end"><h2 class="font-bold text-lg md:text-xl lg:text-2xl mb-1">Votre hébergeur de proximité</h2> <div class="flex items-center text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="mr-2"><path d="M12 0c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm8 12c0 2.209-3.581 4-8 4s-8-1.791-8-4c0-1.602 1.888-2.98 4.608-3.619l1.154 1.824c-.401.068-.806.135-1.178.242-3.312.949-3.453 2.109-.021 3.102 2.088.603 4.777.605 6.874-.001 3.619-1.047 3.164-2.275-.268-3.167-.296-.077-.621-.118-.936-.171l1.156-1.828c2.723.638 4.611 2.016 4.611 3.618z"></path></svg> <p class="md:text-lg lg:text-xl text-gray-300">A Sophia-Antipolis, France</p></div></div></div> <div class="grid lg:grid-cols-5 grid-cols-1 md:px-8 py-8 max-w-7xl mx-auto text-center lg:text-left text-white"><div><h2 class="font-bold text-lg md:text-xl lg:text-2xl mb-2 text-gray-300">A propos</h2> <ul class="text-gray-100"><li class="mb-2"><a href="/a-propos" class="block hover:text-white">
+            Qui nous sommes
+          </a> <!----></li><li class="mb-2"><a href="/etudes-de-cas" class="block hover:text-white">
+            Etudes de cas
+          </a> <!----></li><li class="mb-2"><a href="/nous-rejoindre" class="block hover:text-white">
+            Nous rejoindre
+          </a> <!----></li><li class="mb-2"><!----> <a href="https://www.tasgroup.eu/" rel="nofollow" target="_blank" class="block hover:text-white">
+            Groupe TAS
+          </a></li></ul></div><div><h2 class="font-bold text-lg md:text-xl lg:text-2xl mb-2 text-gray-300">Solutions</h2> <ul class="text-gray-100"><li class="mb-2"><a href="/solutions/hebergement" class="block hover:text-white">
+            Hébergement
+          </a> <!----></li><li class="mb-2"><a href="/solutions/cloud" class="block hover:text-white">
+            Cloud
+          </a> <!----></li><li class="mb-2"><a href="/solutions/protection-des-donnees" class="block hover:text-white">
+            Protection des données
+          </a> <!----></li><li class="mb-2"><a href="/solutions/services-manages" class="block hover:text-white">
+            Services managés
+          </a> <!----></li><li class="mb-2"><a href="/solutions/ingenierie-de-projets" class="block hover:text-white">
+            Ingénierie de projets
+          </a> <!----></li></ul></div><div><h2 class="font-bold text-lg md:text-xl lg:text-2xl mb-2 text-gray-300">Outils</h2> <ul class="text-gray-100"><li class="mb-2"><!----> <a href="https://espaceclient.tascloudservices.fr/login.php" rel="nofollow" target="_blank" class="block hover:text-white">
+            Espace client
+          </a></li><li class="mb-2"><!----> <a href="https://webmail.tasgroup.fr" rel="nofollow" target="_blank" class="block hover:text-white">
+            Webmail
+          </a></li></ul></div><div><h2 class="font-bold text-lg md:text-xl lg:text-2xl mb-2 text-gray-300">Contact</h2> <ul class="text-gray-100"><li class="mb-2"><a href="/nous-contacter" class="block hover:text-white">
+            Nous contacter
+          </a> <!----></li><li class="mb-2"><a href="/reserver-un-appel" class="block hover:text-white">
+            Réserver un appel
+          </a> <!----></li></ul></div></div> <div class="border-t-2 overflow-hidden border-b-2 border-gray-500 py-4"><div class="max-w-7xl mx-auto md:px-8 lg:flex"><div class="overflow-hidden w-full"><ul class="md:flex text-center md:text-left items-center -mx-4 justify-center lg:justify-start mb-3 lg:mb-0"><li class="px-4 lg:text-xl font-bold text-gray-100"><a href="/actualites" class="hover:text-white">Actualités</a></li><li class="px-4 lg:text-xl font-bold text-gray-100"><a href="/guide" class="hover:text-white">Guide</a></li><li class="px-4 lg:text-xl font-bold text-gray-100"><a href="/kit-presse" class="hover:text-white">Kit presse</a></li><li class="px-4 lg:text-xl font-bold text-gray-100"><a href="/documents-utiles" class="hover:text-white">Documents utiles</a></li></ul></div> <div class="flex items-center lg:justify-end justify-center text-white"><ul class="flex items-center -mx-4"><li class="px-4 text-gray-100"><a href="https://www.linkedin.com/company/tas-cloud-services" rel="nofollow" target="_blank" class="hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a></li><li class="px-4 text-gray-100"><a href="https://twitter.com/TAS_Group" rel="nofollow" target="_blank" class="hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a></li><li class="px-4 text-gray-100"><a href="https://www.youtube.com/user/TASgroup1" rel="nofollow" target="_blank" class="hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a></li></ul></div></div></div> <div class="py-4 w-full overflow-hidden text-white"><div class="max-w-7xl mx-auto md:px-8 lg:flex w-full"><div class="w-auto overflow-hidden w-full text-center lg:text-left">
+       © 2023 - TAS Cloud Services
+      </div> <div class="lg:flex items-center justify-center lg:justify-end text-white"><ul class="lg:flex justify-center lg:justify-left items-center -mx-4 text-center lg:text-left"><li class="px-4 text-gray-100"><a href="/mentions-legales" class="whitespace-nowrap hover:text-white"><div>Mentions légales</div></a></li><li class="px-4 text-gray-100"><a href="/conditions-generales" class="whitespace-nowrap hover:text-white"><div>Conditions générales</div></a></li><li class="px-4 text-gray-100"><a href="/confidentialite" class="whitespace-nowrap hover:text-white"><div>Confidentialité</div></a></li></ul></div></div></div></div></div></div></div></div></div> <!----></div></div></div><script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v){return {layout:"default",data:[{}],fetch:{"Index:0":{slides:[{is:"SlidesHeroBackgroundFront",preheader:b,title:"Performance, flexibilité et sécurité pour votre infrastructure",text:"\u003Cp\u003EExternalisez votre informatique en toute sérénité avec TAS Cloud Services. Hébergeur infogérant cloud de proximité, nous vous accompagnons à chaque étape pour vous permettre de bénéficier d’une solution parfaitement adaptée à vos besoins IT.\u003C\u002Fp\u003E",tagline:"Votre hébergeur de proximité",image:a,imagealt:h,subtag:"A Sophia-Antipolis, France",button:"Nous contacter",link:l,nuxtlink:d,textcolor:c,backgroundcolor:m,buttoncolor:g},{is:"HomepageCustomersIntegrated",brands:[{name:"e.GM",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FVFF_Sans_titre_3_73c18f32e0.png"},{name:"KOEDIA",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FKOEDIA_c91233cf32.png"},{name:"CARLTON INTERNATIONAL",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FCarlton_International_05d0624d1b.png"},{name:"Chullanka",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fchullanka_b4994c8ab2.png"},{name:"Ubaldi",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fubaldi_afc186841b.png"},{name:"Cruiseline",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fcruiseline_130c17e46b.png"},{name:"Visiplus Academy",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fvisiplus_bfbe8ded41.png"},{name:"SKEMA",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fskema_cef2f8ff08.png"},{name:"Mydatamodels",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FDesign_sans_titre_6_18f7de9814.png"},{name:"DALLOYAU",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FDesign_sans_titre_2_51cc5c0377.png"},{name:"AUDEMARD",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FDesign_sans_titre_7_f7ad13f1d8.png"},{name:"Marineland",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fmarineland_0765037ea2.png"},{name:"Balitrand",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fbalitrand_7700d9964e.png"},{name:"Maisons & Appartements",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FDesign_sans_titre_8_fbe9086e58.png"},{name:"QUALIBAT",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FDesign_sans_titre_10_61cc8b61a6.png"},{name:"INFOLEASYS",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FDesign_sans_titre_9_f2b9e052b5.png"}],title:"Ils nous font confiance"},{is:e},{is:"SlidesTextGrid2Cols",title:"Vos données, hébergées au bon endroit, \u003Cspan class=\"tas-linear-gradient-text\"\u003Edisponibles à tout moment\u003C\u002Fspan\u003E",text:"\u003Cp\u003ENous soulageons votre entreprise de ses problèmes d’infrastructure informatique pour vous permettre de vous concentrer sur ce qui compte le plus pour vous : votre coeur de métier.\u003C\u002Fp\u003E",paragraphs:[{id:n,title:"Assurez une meilleure disponibilité à vos données",text:"Notre datacenter, de niveau Tier 4, assure une disponibilité garantie de service à 99,99%.",icon:a},{id:i,title:"Renforcez la sécurité de votre infrastructure IT",text:"Nous protégeons vos données et vous aidons à assurer la continuité et la reprise de votre activité.",icon:a},{id:j,title:"Gagnez en performances",text:"Nos ingénieurs Devops vous accompagnent dans la configuration de vos instances pour obtenir les meilleures performances possibles en production.",icon:a},{id:k,title:"Faites le choix de la proximité",text:"Nous hébergeons vos infrastructures dans notre datacenter de Sophia-Antipolis, en France.",icon:a}],image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fvectors_1420cff2c9.png",imagealt:"vectors.png",button:o,link:l,nuxtlink:d,textcolor:c,backgroundcolor:p,buttoncolor:a},{is:e},{is:q,header:"Cloud",title:"Passez facilement à l'échelle grâce à nos solutions Cloud",text:"\u003Cp\u003ENous vous proposons des services de type IaaS et PaaS (containers et\u002Fou VM) pour vous permettre de bénéficier d’une architecture flexible, capable de s’adapter à toute exigence accrue de volumes de stockage, de puissance de traitement et de débit.\u003C\u002Fp\u003E",inverse:f,image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fcloud_4ece1a73cd.png",imagealt:"cloud.png",button:"Découvrir l'offre Cloud",link:"solutions-cloud",nuxtlink:f,textcolor:c,backgroundcolor:r,buttoncolor:g},{is:q,header:"Hébergement",title:"Externalisez votre informatique en toute simplicité",text:"\u003Cp\u003EEn hébergeant votre informatique au sein de notre datacenter, vous bénéficierez des meilleures technologies et gagnerez en performances, en disponibilité et en sécurité, le tout avec le soutien et le suivi de nos experts en solutions IT.\u003C\u002Fp\u003E",inverse:d,image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fhosting_700871b3ae.png",imagealt:"hosting.png",button:"Découvrir l'offre hébergement",link:"solutions-hosting",nuxtlink:f,textcolor:c,backgroundcolor:s,buttoncolor:g},{is:e},{is:"SlidesParagraphCenterPartners",preheader:b,title:"Professionalisme et expérience au service de votre infrastructure IT",text:"\u003Cp\u003ELes infrastructures informatiques vieillissent, deviennent coûteuses à maintenir et perdent en performance au fil du temps. Pour solutionner ce problème pour le bon fonctionnement de ses propres services, TAS a fait le choix de créer une unité experte, spécialement dédiée à la gestion de serveurs. Cette unité, c’est TAS Cloud Services, qui accompagne les entreprises dans l’externalisation de leurs systèmes d’information depuis plus de 25 ans.\u003C\u002Fp\u003E",benefitheader:b,benefittext:b,tagline:b,benefits:b,image:a,imagealt:h,videoid:b,partners:[{name:"Cisco",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fcisco_719b4061cf.png"},{name:"Commscope",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fcommscope_9b730c7b1c.png"},{name:"Dell Technologies",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fdell_68aefe7071.png"},{name:"Fortinet",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Ffortinet_f5f87d87b9.png"},{name:"Kohler",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fkohler_334bc308d5.png"},{name:"Siemens",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fsiemens_933226a978.png"},{name:"Schneider Electric",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fschneider_7312918cd0.png"},{name:"Microsoft",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fmicrosoft_21227d06f5.png"}],textcolor:c,backgroundcolor:"tas-alt-hero-bottom",buttoncolor:a,titlecolor:a},{is:e},{is:"SlidesParagraphCenterFullPicture",preheader:"Votre hébergeur de proximité, à Sophia-Antipolis",title:"Un datacenter moderne, de niveau Tier 4, pour une disponibilité garantie de service de 99,99%",text:t,norms:[{name:"ISO 9001",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fiso9001_a9edc4db5b.png"},{name:"ISO 27001",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fiso27001_5e89f2f3f1.png"},{name:"ISO 27017",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FTUV_ISO_27017_c2b8969976.png"},{name:"ISO 27018",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002F27018_2_75dbe074df.png"},{name:a,image:a},{name:"HDS",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FDesign_sans_titre_0aad354262.png"},{name:"PCI-DSS",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fpci_dss_white_c389352e94.png"},{name:a,image:a}],benefitheader:b,benefittext:b,benefits:b,image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fdatacenter_plan_white_2b09ff6529.png",imagealt:"datacenter_plan_white.png",tagline:b,videoid:b,textcolor:c,backgroundcolor:s,buttoncolor:a,titlecolor:a},{is:"SlidesCharacteristicsSlide",title:"Redondance, continuité de service, présence locale et couverture internationale",text:t,numbers:[{id:i,figure:"25",text:"Ans d'expérience en hébergement"},{id:j,figure:"5",text:"Points de présence en France et en Italie"},{id:k,figure:"3",text:"Points de peering"},{id:n,figure:"4",text:"Opérateurs internationaux de transit IP"}],image:a,imagealt:h,icons:[{id:i,title:"Alimentation",text:"\u003Cp\u003EToute notre alimentation électrique est doublée : transformateurs EDF, onduleurs, groupes électrogènes. Chaque baie dispose également de 2 disjoncteurs.\u003C\u002Fp\u003E",icon_code:"\u003Csvg xmlns=\"http:\u002F\u002Fwww.w3.org\u002F2000\u002Fsvg\" width=\"32\" height=\"32\" fill=\"currentColor\" viewBox=\"0 0 24 24\"\u003E\u003Cpath d=\"M8 24l3-9h-9l14-15-3 9h9l-14 15z\"\u002F\u003E\u003C\u002Fsvg\u003E"},{id:j,title:"Climatisation",text:"\u003Cp\u003ENos installations bénéficient d’une régulation thermique et hygrométrique. La température y est constante à + ou - 10% 24 heures sur 24, 7 jours sur 7.\u003C\u002Fp\u003E",icon_code:"\u003Csvg xmlns=\"http:\u002F\u002Fwww.w3.org\u002F2000\u002Fsvg\" width=\"32\" height=\"32\" fill=\"currentColor\" viewBox=\"0 0 24 24\"\u003E\u003Cpath d=\"M12 9.312l-1.762.491 1.562.881-.491.871-1.562-.881.491 1.762-.963.268-.76-2.724-2.015-1.126v1.939l2 2-.707.707-1.293-1.293v1.793h-1v-1.793l-1.293 1.293-.707-.707 2-2v-1.939l-2.015 1.126-.761 2.724-.963-.268.491-1.762-1.562.882-.491-.871 1.562-.881-1.761-.492.269-.962 2.725.76 1.982-1.11-1.983-1.109-2.724.759-.269-.962 1.762-.491-1.563-.882.491-.871 1.562.881-.49-1.762.963-.269.76 2.725 2.015 1.128v-1.94l-2-2 .707-.707 1.293 1.293v-1.793h1v1.793l1.293-1.293.707.707-2 2v1.94l2.016-1.127.76-2.725.963.269-.492 1.761 1.562-.881.491.871-1.562.881 1.762.492-.269.962-2.725-.76-1.982 1.11 1.982 1.109 2.725-.76.269.963zm4-5.812v7.525c0 1.57-.514 2.288-1.41 3.049-1.011.859-1.59 2.107-1.59 3.426 0 2.481 2.019 4.5 4.5 4.5s4.5-2.019 4.5-4.5c0-1.319-.579-2.567-1.589-3.426-.897-.762-1.411-1.48-1.411-3.049v-7.525c0-.827-.673-1.5-1.5-1.5s-1.5.673-1.5 1.5zm5 0v7.525c0 .587.258 1.145.705 1.525 1.403 1.192 2.295 2.966 2.295 4.95 0 3.59-2.909 6.5-6.5 6.5s-6.5-2.91-6.5-6.5c0-1.984.892-3.758 2.295-4.949.447-.381.705-.94.705-1.526v-7.525c0-1.934 1.567-3.5 3.5-3.5s3.5 1.566 3.5 3.5zm0 14c0 1.934-1.567 3.5-3.5 3.5s-3.5-1.566-3.5-3.5c0-1.141.599-2.084 1.393-2.781 1.01-.889 1.607-1.737 1.607-3.221v-.498h1v.498c0 1.486.595 2.33 1.607 3.221.794.697 1.393 1.64 1.393 2.781z\"\u002F\u003E\u003C\u002Fsvg\u003E"},{id:k,title:"Sécurité",text:"\u003Cp\u003ENous avons mis en place des protocoles de sécurité de très haut niveau pour prévenir tous types de risques : intrusions, sismique, incendie, eau, air, accès...\u003C\u002Fp\u003E",icon_code:"\u003Csvg xmlns=\"http:\u002F\u002Fwww.w3.org\u002F2000\u002Fsvg\" width=\"32\" height=\"32\" fill=\"currentColor\" viewBox=\"0 0 24 24\"\u003E\u003Cpath d=\"M6 8v-2c0-3.313 2.687-6 6-6 3.312 0 6 2.687 6 6v2h-2v-2c0-2.206-1.795-4-4-4s-4 1.794-4 4v2h-2zm-3 2v14h18v-14h-18z\"\u002F\u003E\u003C\u002Fsvg\u003E"}],ecologytitle:"Ecologie",ecologytext:"L’architecture de notre salle en POD (Point of Delivery) lui permet de bénéficier d’une très grande efficacité énergétique. Son PUE est inférieur à 1,3.",textcolor:c,backgroundcolor:p,buttoncolor:a},{is:e},{is:"SlidesParagraphCenter2",preheader:a,title:"Une infrastructure multi-sites, un réseau international",text:"\u003Cp\u003ENous avons mis en place une infrastructure redondante et développé plusieurs points de présence pour permettre une disponibilité optimale des données hébergées dans notre datacenter. Les temps de latence sont ainsi très fortement réduits, à la fois pour l’Europe et la zone Amérique.\u003C\u002Fp\u003E\u003Cp\u003E&nbsp;\u003C\u002Fp\u003E\u003Cp style=\"text-align:center;\"\u003E\u003Ca href=\"https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=OSj0H04cLag\"\u003E\u003Cimg src=\"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002FCapture_d_ecran_2023_01_11_161736_65eecef7ea.png\" alt=\"Capture d’écran 2023-01-11 161736.png\" srcset=\"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fthumbnail_Capture_d_ecran_2023_01_11_161736_65eecef7ea.png 219w,https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fsmall_Capture_d_ecran_2023_01_11_161736_65eecef7ea.png 500w,https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fmedium_Capture_d_ecran_2023_01_11_161736_65eecef7ea.png 750w,\" sizes=\"100vw\"\u003E\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp\u003E&nbsp;\u003C\u002Fp\u003E",norms:[{name:a,image:a}],image:a,imagealt:h,videoid:a,brands:[],benefits:[],textcolor:c,backgroundcolor:r,buttoncolor:a},{is:e},{is:"SeparatorsAnchor",anchor:u},{is:"SlidesBooking",title:"Contactez-nous",text:"\u003Cp\u003ENous sommes là pour répondre à toutes vos questions et demandes de renseignements.\u003C\u002Fp\u003E",textcolor:"text-gray-50",backgroundcolor:"tas-alt-hero-right"},{is:"SlidesCallToActionSlide",title:"Discutons dès maintenant de votre projet",text:"\u003Cp\u003EContactez-nous par téléphone au \u003Ca href=\"tel:0825563400\"\u003E\u003Cstrong\u003E0 825 563 400\u003C\u002Fstrong\u003E\u003C\u002Fa\u003E ou réservez un appel avec l'un de nos experts TAS Cloud Services.\u003C\u002Fp\u003E",button:o,link:u,nuxtlink:f,textcolor:c,backgroundcolor:"bg-gradient-to-r from-purple-500 to-orange-500",buttoncolor:g},{is:"SlidesNewsletter",title:"Recevez notre veille sur l’actualité cloud \u002F IT",text:"\u003Cp\u003ELa veille technologique est primordiale dans notre industrie. Nous vous faisons bénéficier des dernières actualités en la matière. Abonnez-vous à notre newsletter pour les recevoir chaque mois dans votre boîte e-mail.\u003C\u002Fp\u003E",subtitle:"S'inscrire à notre newsletter",image:"https:\u002F\u002Fcms8df399.tascloudservices.fr\u002Fuploads\u002Fscale2_a995da3bc1.jpg",imagealt:"scale2.jpg",button:"S'inscrire",link:a,nuxtlink:f,textcolor:c,backgroundcolor:"bg-gray-800",buttoncolor:g},{is:"SharedFooter",textcolor:c,backgroundcolor:m}],meta_title:"Hébergement et Cloud - Datacenter en France",meta_description:"Hébergement, Cloud Computing, Protection des Données, Services Managés, Ingénierie de Projets : nos solutions sur mesure pour externaliser votre informatique TESTEZ NOTRE CLOUD",spin:d}},error:a,state:{mobilemenu:{open:d},preference:{preferenceSet:d,consentGiven:d},i18n:{routeParams:{}}},serverRendered:f,routePath:v,config:{_app:{basePath:v,assetsPath:"\u002F_nuxt\u002F",cdnURL:a}},__i18n:{langs:{}}}}(null,void 0,"text-white",false,"SeparatorsSeparator",true,"bg-gray-50 hover:bg-white text-gray-900","Tas Cloud Services",1,2,3,"#book","bg-gray-900",4,"Réserver un appel","tas-alt-background-right","SlidesProduct","tas-alt-background-bottom-left","tas-alt-background-top-left","\u003Cp\u003ESitué au coeur de la technopole de Sophia Antipolis, en France, notre datacenter de 850 m2 bénéficie des technologies les plus avancées. Son coefficient d’efficacité énergétique (PUE) de 1,3 le place parmi les meilleurs au monde. Nos systèmes de détection et d'extinction des incendies sont conformes, certifiés aux normes APSAD et AFNOR et répondent aux exigences les plus élevées de ces deux normes.\u003C\u002Fp\u003E","book","\u002F"));</script><script src="/_nuxt/11493cf.js" defer></script><script src="/_nuxt/78cfa79.js" defer></script><script src="/_nuxt/fa3194e.js" defer></script><script src="/_nuxt/bcb3f80.js" defer></script><script src="/_nuxt/e2a47a1.js" defer></script><script src="/_nuxt/63ff836.js" defer></script><script src="/_nuxt/34b5094.js" defer></script><script src="/_nuxt/6bf7786.js" defer></script><script src="/_nuxt/1911f0c.js" defer></script><script src="/_nuxt/244e0e2.js" defer></script><script src="/_nuxt/4d233fd.js" defer></script><script src="/_nuxt/64417bb.js" defer></script><script src="/_nuxt/af10a84.js" defer></script><script src="/_nuxt/dd6637d.js" defer></script><script src="/_nuxt/9082733.js" defer></script><script src="/_nuxt/1768feb.js" defer></script><script src="/_nuxt/09e9b87.js" defer></script><script src="/_nuxt/beb645c.js" defer></script><script src="/_nuxt/bd41ea8.js" defer></script><script data-n-head="ssr" src="//tascloudservices.matomo.cloud/piwik.js" data-body="true" defer async></script>
+  </body>
+</html>

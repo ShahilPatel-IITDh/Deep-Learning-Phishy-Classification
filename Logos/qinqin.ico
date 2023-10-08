@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="/static/index/assets/css/swiper-bundle.min.css?v=1.0"/>
+    <link rel="stylesheet" href="/static/index/assets/css/style.css?v=20"/>
+</head>
+<body class="pc mobile">
+<div class="notice">
+    <div class="mask"></div>
+    <div class="notice-img-div">
+        <img src="/static/index/assets/images/notice_title.png" alt=""/>
+        <div class="p-subwrap">
+            <pre class="notice-text">
+             
+            </pre>
+            <div class="close-modal">我知道了</div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="bg-fixed"></div>
+<div class="main-wrap">
+    <div class="main-body">
+        <div class="header-wrap">
+            <div class="logo">
+                <a href="#"> <img src="/static/index/assets/images/logo.png?v=1.1" alt=""/></a>
+            </div>
+            <div class="marquee">
+                <p>公告：</p>
+                <p>公告：</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="banner-wrap">
+                <div class="banner swiper mySwiper" id="top_banner_container">
+                    <div class="swiper-wrapper" id="top_banner"></div>
+                </div>
+            </div>
+            <div class="list-tabs">
+                <div class="list-tabs-header"></div>
+                <div class="list-tabs-slider">
+                    <div class="slider"></div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" id="app-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bottom-content">
+    <div class="add-banner-wrap">
+        <div class="banner swiper mySwiper" id="bottom_banner_container">
+            <div class="swiper-wrapper" id="bottom_banner"></div>
+        </div>
+    </div>
+    <h2 class="play-title">大家都在玩</h2>
+    <div class="list-row" id="listRow"></div>
+</div>
+<div class="bottom-fixed-app" id="bottomRow">
+</div>
+<script src="/static/index/assets/js/jquery.min.js"></script>
+<script src="/static/index/assets/js/swiper-bundle.min.js?v=1.0"></script>
+<script src="/static/zzz.js?v=1"></script>
+<script src="/static/index.js"></script>
+<script>
+    const getDeviceInfo = () => {
+        const userAgent = navigator.userAgent.toLowerCase();
+        let isPc = Boolean(userAgent.match(/mobile|android|iphone/i)) === false;
+        let isMobile = Boolean(userAgent.match(/mobile|android|iphone/i));
+        let isIos = Boolean(userAgent.match(/iphone|ipad/i));
+        let isAndroid = Boolean(
+            userAgent.match(/android|mobile|pad/i) &&
+            Boolean(userAgent.match(/ipad/i)) === false &&
+            Boolean(userAgent.match(/mac/i)) === false,
+        );
+
+        if (screen.availWidth >= 1024 && isAndroid) {
+            //安卓平板 视为pc端
+            isPc = true;
+            isMobile = false;
+            isAndroid = false;
+        }
+
+        return {isPc, isMobile, isIos, isAndroid};
+    };
+    const {isIos, isAndroid} = getDeviceInfo();
+
+    const params = {
+        mod: "index",
+        code: "index",
+        channel: "",
+    };
+
+    function templet(str, data) {
+        for (const dataKey in data) {
+            const reg = new RegExp("\{" + dataKey + "\}", "g");
+            str = str.replace(reg, data[dataKey]);
+        }
+        return str;
+    }
+
+    $.post("/api.php", params, function (res) {
+        const result = res.data;
+        const top_banner = result.top_banner;
+        var tabs = result.tabs;
+        const bottom_banner = result.bottom_banner;
+        const applist = result.list;
+        const bottomlist = result.bottom_list;
+
+        $.each(top_banner, function (k, v) {
+            v.url = v.url.length ? v.url : "#";
+            v.aTarget = v.url === "#" ? "" : 'target="_blank" ';
+            const html = templet(
+                '<div class="swiper-slide"><a href="{url}" {aTarget} title="{title}" data-id="{id}"><img data-state="no" data-src="{img_url}"/></a></div>',
+                v,
+            );
+            $("#top_banner").append(html);
+        });
+        if (top_banner.length > 1) {
+            // top_banner_container
+            (function () {
+                new Swiper("#top_banner_container", {
+                    autoplay: {delay: 3500},
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    loop: true,
+                });
+            })();
+        }
+
+        $("#app-list").append(function () {
+            let html = "";
+            for (let i = 0; i < tabs.length; i++) {
+                const element = tabs[i];
+                html += `<div class="swiper-slide">
+                    <div class="list-block">
+                      <div class="app-first-row">`;
+
+                for (let j = 0; j < element.list.length; j++) {
+                    const element2 = element.list[j];
+                    html += `<div class="list-item">
+                         <a href="${element2.url}" target="_blank" data-id="${element2.id}">
+                           <div class="app-icon list-app-icon">
+                            <img data-src='${element2.img_url}'  data-state="no" />
+                            </div>
+                           <div class="app-name">
+                             <p>${element2.title}</p>
+                           </div>
+
+                         </a>
+                       </div>`;
+                }
+                // <div class="download-btn">
+                //                  <img src="/static/index/assets/images/download-btn.png" alt="" />
+                //                </div>
+                html += `</div>
+                    </div>
+                  </div>`;
+            }
+            return html;
+        });
+
+        new Swiper(".list-tabs .swiper-container", {
+            pagination: {
+                el: ".list-tabs .list-tabs-header",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return (
+                        '<div class="list-tabs-item ' +
+                        className +
+                        '">' +
+                        tabs[index].position_name +
+                        "</div>"
+                    );
+                },
+            },
+            on: {
+                progress: function (progress) {
+                    const left = (progress * (tabs.length - 1)) / tabs.length;
+                    $(".list-tabs-slider").css("left", left * 100 + "%");
+                },
+            },
+            autoplay: false,
+            slidesPerView: 1,
+            paginationClickable: true,
+            loop: false,
+        });
+
+        $.each(bottom_banner, function (k, v) {
+            v.url = v.url.length ? v.url : "#";
+            v.aTarget = v.url === "#" ? "" : 'target="_blank" ';
+            const html = templet(
+                '<div class="swiper-slide"><a href="{url}" {aTarget} title="{title}" data-id="{id}"><img data-state="no" data-src="{img_url}"/></a></div>',
+                v,
+            );
+            $("#bottom_banner").append(html);
+        });
+        // top_banner_container
+        if (bottom_banner.length > 1) {
+            new Swiper("#bottom_banner_container", {
+                autoplay: {
+                    delay: 3500,
+                },
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+            });
+        }
+
+        function format_number(num) {
+            if (num > 10000) {
+                return parseInt(num / 10000) + "万";
+            } else {
+                return num;
+            }
+        }
+
+        $("#listRow").append(function () {
+            let html = "";
+            for (let i = 0; i < applist.length; i++) {
+                const appElement = applist[i];
+                html += ` <a href="${appElement.url}" target="_blank" class="item-wrap"  data-id="${appElement.id}">
+                  <div class="content">
+                    <div class="img-wrap">
+                      <img data-src="${appElement.img_url}" data-state="no" />
+                    </div>
+                    <div class="app-content-details">
+                      <div class="app-rating">
+                        <div class="app-title">
+                          <h2>${appElement.title}</h2>
+                        </div>
+                        <div class="rating">`;
+                for (let j = 0; j < Math.max(1, Math.min(appElement.star, 5)); j++) {
+                    html += ` <img src="/static/index/assets/images/star-icon.png" alt="" />`;
+                }
+                html += `<span>下载量：${format_number(appElement.down_num)}</span>
+                        </div>
+                        <div class="app-slogan">
+                          <h3 class="line2">${appElement.desc}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="app-download-btn">
+                    <img src="/static/index/assets/images/app-download-btn.png" alt="" />
+                  </div>
+                </a>
+                `;
+            }
+            return html;
+        });
+
+        if (bottomlist.length > 0) {
+            $("#bottomRow").css('display', 'flex')
+            $("#bottomRow").append(function () {
+                let html = "";
+                for (let i = 0; i < bottomlist.length; i++) {
+                    const appElement = bottomlist[i];
+                    html += `<a href="${appElement.url}" target="_blank" class="logo" data-id="${appElement.id}"><img data-src="${appElement.img_url}" data-state="no" /></a>
+                  <a class="app-content" href="${appElement.url}" target="_blank">
+                    <h2>${appElement.title}</h2>
+                    <p>${appElement.desc}</p>
+                  </a>
+                  <a href="${appElement.url}" class="download-button" target="_blank">立即下载</a>
+                `;
+                }
+                return html;
+            });
+        }
+
+
+        load_img();
+    });
+
+    $("body").on("click", "a", function () {
+        const id = $(this).data("id");
+        if (id) {
+            $.post("/api.php", {
+                mod: "index",
+                code: "click",
+                channel: "",
+                id: id,
+            });
+        }
+    });
+    //add click event for notice div
+    $(".notice .close-modal").click(function () {
+        $(".notice").hide();
+    });
+    $('.notice .mask').click(function () {
+        $(".notice").hide();
+    });
+    $(".notice-img-div .notice-text").click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        // window.external.AddFavorite(window.location.href,'My Favorite')
+        if (window.sidebar && window.sidebar.addPanel) {
+            // Firefox <23
+
+            window.sidebar.addPanel(document.title, window.location.href, "");
+        } else if (window.external && "AddFavorite" in window.external) {
+            // Internet Explorer
+
+            window.external.AddFavorite(location.href, document.title);
+        } else if (
+            (window.opera && window.print) ||
+            (window.sidebar && !(window.sidebar instanceof Node))
+        ) {
+            // Opera <15 and Firefox >23
+            /**
+             * For Firefox <23 and Opera <15, no need for JS to add to bookmarks
+             * The only thing needed is a `title` and a `rel="sidebar"`
+             * To ensure that the bookmarked URL doesn't have a complementary `#` from our trigger's href
+             * we force the current URL
+             */
+            triggerBookmark
+                .attr("rel", "sidebar")
+                .attr("title", document.title)
+                .attr("href", window.location.href);
+            return true;
+        } else {
+            // For the other browsers (mainly WebKit) we use a simple alert to inform users that they can add to bookmarks with ctrl+D/cmd+D
+
+            alert(
+                "您可以通过按下快捷键" +
+                (navigator.userAgent.toLowerCase().indexOf("mac") != -1 ? "Command/Cmd" : "CTRL") +
+                " + D 将网站快速保存到收藏夹.",
+            );
+        }
+    });
+
+    function load_img() {
+        jmtt();
+    }
+</script>
+</body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B9ZE15DH1J"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-B9ZE15DH1J');
+</script>
+</html>

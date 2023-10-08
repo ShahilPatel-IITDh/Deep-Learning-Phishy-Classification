@@ -1,0 +1,4471 @@
+
+
+
+
+
+<!doctype html>
+<html lang="en-US" xml:lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="CampusGroups is a private community platform, uniting student organizations, departments, and every group on campus." /><meta name="keywords" content="campus management platform, campus management software, student engagement, student life, campus community, alumni community, campus engagement software" /><meta name="author" content="CampusGroups | CG User Community (CampusGroups)" /><script src="/bower_components/jquery/dist/jquery.min.js"></script><title>CampusGroups | The All-In-One Campus Engagement Plaform - Request a Demo!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/themes/stack/css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/themes/stack/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/themes/stack/css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/themes/stack/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/themes/stack/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/themes/stack/css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/themes/stack/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/themes/stack/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/themes/stack/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+    <link href="/css/themes/stack/css/flexslider.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="/css/themes/stack/css/accessibility.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- FAVICON -->
+    <link rel="icon" type="images/x-icon" href="">
+    <link rel="shortcut icon" type="images/x-icon" href="">
+    <link rel="stylesheet" type="text/css" href="/css/themes/stack/cg-skin.css"/><style>/*Was using 2.2.1 */
+/* Overide custom css */
+.accordion li.active .accordion__content {
+    max-height: inherit !important;
+}
+
+body {color: #000;}
+
+b {
+    font-weight: 700;
+}
+p i a:hover, p a:hover, th a:hover, ul:not([class*='menu']) li > a:hover {
+    color: #80D4F1;
+    text-decoration: underline;
+}
+p i a, p a, th a, div.feature  a, ul:not([class*='menu']) li > a {color: #00a8e3;} 
+
+.background-cont h1 {font-weight: 400;}
+
+input[type], textarea, select {
+    -webkit-appearance: none;
+    background: #fcfcfc;
+    padding: 0.46428571em;
+    border-radius: 6px;
+    border: 1px solid #CCC;
+    padding-left: 0.92857143em;
+}
+
+section {
+  padding-top: 4.95238095em;
+  padding-bottom: 4.95238095em;
+}
+
+section div[data-editable] > ul, section div[data-editable] > ol {
+   margin: auto !important;
+   padding-inline-start: 40px !important;
+}
+
+section div[data-editable] > ul {
+    list-style: inherit !important;
+}
+
+a:hover {color: #0658a2;}
+.bar-3.bg--primary a {color: #ffffff; text-decoration: none; opacity: 1 !important;}
+@media (min-width: 990px) {
+      .menu-horizontal li.menu-social {    
+           margin-right: 0em; 
+    }
+.menu-horizontal li.menu-social :before {    
+           margin-right: 1.23809524em; 
+    }
+}
+
+hr.short {border-color: #00a8e3;}
+
+::-webkit-input-placeholder { color: #b3b3b3}
+::-moz-placeholder { color: #b3b3b3}
+:-ms-input-placeholder { color: #b3b3b3}
+::placeholder { color: #b3b3b3 !important}
+
+.box-shadow-wide > img{
+  margin:0;
+}
+div.box-shadow-wide{ display:inline-block; }
+
+.data-gradient-bg{
+    background: rgba(90,100,189,1);
+background: -moz-linear-gradient(left, rgba(90,100,189,1) 0%, rgba(106,73,188,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(90,100,189,1)), color-stop(100%, rgba(106,73,188,1)));
+background: -webkit-linear-gradient(left, rgba(90,100,189,1) 0%, rgba(106,73,188,1) 100%);
+background: -o-linear-gradient(left, rgba(90,100,189,1) 0%, rgba(106,73,188,1) 100%);
+background: -ms-linear-gradient(left, rgba(90,100,189,1) 0%, rgba(106,73,188,1) 100%);
+background: linear-gradient(to right, rgba(90,100,189,1) 0%, rgba(106,73,188,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a64bd', endColorstr='#6a49bc', GradientType=1 );
+}
+
+.video-cover.border--round{
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+}
+
+ .video-cover.border--round.box-shadow{
+    background: transparent;
+    box-shadow: none;
+}
+ .video-cover.border--round.box-shadow  img{
+    margin:0;
+}
+
+
+/* GENERAL */
+
+h3.cg_dynamic_msg {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+h3.cg_dynamic_msg + a {
+display: inline-block;
+text-align: center;
+width: 100%;
+}
+
+.bar.pos-fixed:not([class*='bg-']) .logo-holder{
+    position: relative;
+    top: -10px;
+}
+
+div.border--round--cg > img {border-radius: 6px;}
+div.box-shadow-wide--cg > img {
+    box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
+}
+
+#icons-selector__cont span.icon.icon--lg.color--dark {
+    height: auto;
+    width: auto;
+}
+
+#web-builder__tmpl-cont .icon-cont__btns-block > div {
+    position: relative !important;
+}
+
+#web-builder__tmpl-cont .icon-cont__btns-block .btn.btn--change {
+    font-size: 14px;
+    margin-top: -30px;
+}
+
+#web-builder__tmpl-cont .ct--highlight {outline: none;}
+
+.bg--primary {
+    background: #00a8e3;
+}
+
+.cgLead > p, .cgLead > ul {
+    color: #000;
+    font-size: 1.35714286em;
+    font-weight: 400;
+    line-height: 1.68421053em;
+}
+
+.bg--secondary  .bg--primary p.lead:last {margin-bottom: 0px;}
+
+/* MENU */
+
+.section-cont__content-menu_club_website_url {
+     padding: 10px;
+     display: block;
+}
+
+.section-cont__content-menu_club_website_url.isSchoolLightLogo {
+    background-color: #00a8e3;
+    border-radius: 6px;
+}
+
+.section-cont__content-menu_club_website_url.isSchoolLightLogo .section-cont__content-menu_club_logo {
+    /*margin-right: 10px;*/
+}
+
+.bar img[class^="logo"] {
+    max-height: 45px;
+    max-width: none;
+    width: auto;
+}
+
+.bar__module .container {width: auto;}
+
+.bar__module .dropdown__container {
+    display: none;
+    position: absolute;
+}
+
+.bar__module li.hasSubMenu:hover .dropdown__container {
+   display: block;
+}
+
+.bar__module .dropdown__content {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .1);
+    border: 1px solid #d8d8d8;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+    width: auto;
+    background: #fff;
+    padding: 1.23809524em 1.85714286em;
+}
+
+.bar__module .menu-vertical li a {
+    color: #666666;
+}
+
+.bar__module .menu-horizontal > .dropdown.isMenuHighlightedButton {
+    background: #005fbf;
+    border-color: #005fbf;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    letter-spacing: .5px;
+    padding-top: 0.30952381em;
+    padding-bottom: 0.30952381em;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    border-radius: 6px;
+    font-size: inherit;
+    line-height: 1.85714286em;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    opacity: 1;
+    margin-top: -6px;
+    margin-left: 1.85714286em;
+}
+
+.bar__module .menu-horizontal > .dropdown.isMenuHighlightedButton:hover {
+    background: #0a78e6;
+    border-color: #0a78e6;
+    transform: none;
+    -webkit-transform: none;
+}
+
+.bar__module .menu-horizontal > .dropdown.isMenuHighlightedButton > .dropdown__trigger a {
+    color: #fff !important;
+    letter-spacing: .5px;
+    margin-right: -0.5px;
+    text-shadow: 0 0 #FFF;
+    font-weight: 500;
+    font-size: 0.85714286em;
+    opacity: 1;
+}
+
+.bar__module .menu-horizontal > .dropdown.isMenuHighlightedButton > .dropdown__trigger a:hover {
+    color: #fff !important;
+}
+
+.menu-horizontal > .dropdown.hasNoSubMenu > .dropdown__trigger:after {display: none;}
+
+.menu-horizontal > .dropdown > .dropdown__trigger a {
+    font-size: inherit;
+    text-decoration: none;
+    font-weight: initial;
+    line-height: initial;
+    color: initial;
+   /*From CG website*/ 
+   opacity: .7;
+    color: #111;
+    font-size: 0.857142857142857em;
+    line-height: 2.166666666666667em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.menu-horizontal > .dropdown > .dropdown__trigger a:hover, .menu-horizontal > .dropdown > .dropdown__trigger a:focus, .menu-horizontal > .dropdown > .dropdown__trigger a:active, .menu-horizontal > .dropdown:hover, .menu-horizontal > .dropdown:hover > .dropdown__trigger a, .menu-horizontal > li:hover > a, .menu-horizontal > li:hover > span, .menu-horizontal > li:hover > .modal-instance > .modal-trigger, .dropdown .dropdown__content:not([class='bg--dark']) .menu-vertical a:hover {
+    color: #252525 !important;
+    opacity: 1 !important;
+    text-decoration: none !important;
+}
+
+.bar__module ul.menu-horizontal > li {
+    border-bottom: 1px solid transparent;
+}
+
+/*bar__module ul.menu-horizontal li.hasSubMenu:hover, .bar__module ul.menu-horizontal li.hasSubMenu.active, .bar__module ul.menu-horizontal li.hasNoSubMenu.active, .bar__module ul.menu-horizontal li.hasNoSubMenu:hover {
+    border-bottom: 1px solid #000;
+}*/
+ .bar__module ul.menu-horizontal li.hasSubMenu.active, .bar__module ul.menu-horizontal li.hasNoSubMenu.active {
+    border-bottom: 1px solid #000;
+}
+
+.menu-horizontal > li:not(:hover) > a, .menu-horizontal > li:not(:hover) > span, .menu-horizontal > li:not(:hover) > .modal-instance > .modal-trigger {
+     opacity: 1;
+}
+
+.menu-horizontal > li:hover > a, .menu-horizontal > li:hover > span, .menu-horizontal > li:hover > .modal-instance > .modal-trigger, .dropdown .dropdown__content:not([class='bg--dark']) .menu-vertical a:hover {
+     opacity: 0.75;
+}
+
+.dropdown .dropdown__content:not([class='bg--dark']) .menu-vertical a {
+    color: #666666;
+}
+
+.bar-1 .menu-horizontal > li > .dropdown__trigger, .bar-1 .menu-horizontal > li > a {
+    font-size: 0.97em;
+}
+
+/* BANNER */
+
+/* Temporary commented */
+/*
+.stack-blue-btn a{
+    background: #00a8e3;
+    border: 0;
+    letter-spacing: .5px;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 0;
+    margin-left: 0;
+    text-decoration: none;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    position: relative;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    border-radius: 6px;
+    padding-top: 0.46428571em;
+    padding-bottom: 0.46428571em;
+    padding-right: 2.78571429em;
+    padding-left: 2.78571429em;
+    border-width: 1px;
+    font-size: 12px;
+    line-height: 31px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+}
+.stack-blue-btn a:hover{
+    background: #80D4F1;
+    border-color: #80D4F1;
+}
+.stack-blue-btn .btn .btn__text{
+    font-size: 12px;
+}
+
+*/
+
+p.stack-blue-btn > span {
+    border-bottom: 1px solid transparent;
+    background: #00a8e3;
+    border-color: #00a8e3;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    letter-spacing: .5px;
+    padding-top: 0.30952381em;
+    padding-bottom: 0.30952381em;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    border-radius: 6px;
+    font-size: inherit;
+    line-height: 1.85714286em;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    opacity: 1;
+    margin-top: -6px;
+    opacity: 1;
+    line-height: 2.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-size: 14.06px;
+}
+
+p.stack-blue-btn > span a {
+    line-height: 2.166666666666667em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff !important;
+    letter-spacing: .5px;
+    margin-right: -0.5px;
+    text-shadow: 0 0 #FFF;
+    font-weight: 500;
+    font-size: 0.85714286em;
+    opacity: 1;
+}
+
+p.stack-blue-btn > span:hover {
+    background: #0658a2;
+    border-color: #0658a2;
+    transform: none;
+    -webkit-transform: none;
+}
+
+p.stack-blue-btn > span a:hover {
+    color: #fff !important;
+}
+
+p.stack-blue-btn-light > span {
+    background: #fff;
+    border-color: #fff;
+}
+
+p.stack-blue-btn-light > span a, p.stack-blue-btn-light > span a:hover  {
+     color: #00a8e3 !important;
+}
+
+p.stack-blue-btn-light > span:hover {
+    background: #fff;
+    border-color: #fff;
+}
+
+p.stack-blue-btn-light > span a:hover {
+    text-decoration: underline !important;
+}
+
+p.stack-cg-group-btn > span a, p.stack-cg-group-btn > span a:hover  {
+     color: #27a9e5 !important;
+}
+
+p.stack-cg-event-btn > span a, p.stack-cg-event-btn > span a:hover  {
+     color: #6dad15 !important;
+}
+
+p.stack-cg-email-btn > span a, p.stack-cg-email-btn > span a:hover  {
+     color: #f67401 !important;
+}
+
+p.stack-cg-money-btn > span a, p.stack-cg-money-btn > span a:hover  {
+     color: #888888 !important;
+}
+
+p.stack-cg-survey-btn > span a, p.stack-cg-survey-btn > span a:hover  {
+     color: #504296 !important;
+}
+
+p.stack-cg-app-btn > span a, p.stack-cg-app-btn > span a:hover  {
+     color: #27a9e5 !important;
+}
+
+p.stack-cg-engagement-btn > span a, p.stack-cg-engagement-btn > span a:hover  {
+     color: #7e57c2 !important;
+}
+
+p.stack-cg-integration-btn > span a, p.stack-cg-integration-btn > span a:hover  {
+     color: #555555 !important;
+}
+
+.section-title-center-bg {
+    background: url('/css/themes/stack/img/hero-1.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.section-title-bg img{
+    display:none;
+}
+
+/* MORE RECENT STORIES */
+div[data-editable] + .boxed{ border-top-left-radius: 0; border-top-right-radius: 0; }
+.col-sm-4 .feature div img {
+    width: 100%;
+    height: auto; 
+    max-width: 100%;
+}
+
+/* CONTACT */
+
+.section-cont__content-contact input.btn.btn--primary, .section-cont__content-contact--small input.btn.btn--primary {
+    background: #00a8e3;
+    border-color: #00a8e3;
+    padding-right: 2.78571429em !important;
+    padding-left: 2.78571429em !important;
+}
+
+.section-cont__content-contact p.lead + a:empty, .section-cont__content-contact--small p.lead + a:empty {display: none;}
+.section-cont__content-contact p.lead span[data=''], .section-cont__content-contact--small p.lead span[data=''] {display:none; }
+
+/* TESTIMONIALS */
+
+.testimonial__image .ce-element--type-image{
+    float: left;
+    margin-bottom: 26px;
+    margin-right: 26px;
+}
+
+.margin-bottom-30{ 
+    margin-bottom: 30px;
+}
+
+/* FAQ Section */
+.faq-center-bg{
+    background: url('/css/themes/stack/img/hero-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Top Banner Section */
+.background--top{
+    background: url(/css/themes/stack/img/cowork-1.jpg);
+    background-position: center -120px;
+    background-size: cover;
+}
+
+/* Recent stories Section */
+.read-more a{
+    font-weight: 700;
+    color: #00a8e3;
+    text-decoration: none;
+}
+.read-more a:hover{
+    text-decoration: underline;
+}
+
+/* Lets Get started Section */
+.section-get-started-bg{
+    background: url(/css/themes/stack/img/hero-1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* Launch Variant Page Builder */
+.process-3 li .process__number > p {
+    font-size: 1.35714286em;
+    font-weight: bold;
+    color: #00a8e3;
+    position: relative;
+    top: 12px;
+}
+.switchable img:last-child{
+    margin-bottom: 1.85714286em;
+}
+
+/* Pricing table Section CSS */
+.purchase-plan-blue-btn a, .imagebg:not(.image--light) .purchase-plan-blue-btn a{
+    color: #fff;
+    background: #00a8e3;
+    border-color: #00a8e3;
+    display: block;
+    margin-left: -2.78571429em;
+    margin-right: -2.78571429em;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 6px 6px;
+    padding: 0.92857143em 0;
+    margin: 0;
+    font-size: 12px;    
+    transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    line-height: 2.75em;
+    font-weight: 700;
+}
+.purchase-plan-blue-btn a:hover{
+    background: #0658a2;
+    border-color: #0658a2;
+}
+.purchase-plan-dark-blue-btn a {
+    font-weight: 700;
+    color: #fff;
+    background: #31639c;
+    border-color: #31639c;
+    display: block;
+    margin-left: -2.78571429em;
+    margin-right: -2.78571429em;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 6px 6px;
+    padding: 0.92857143em 0;
+    margin: 0;
+    font-size: 12px;
+    transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    line-height: 2.75em;
+}
+.purchase-plan-dark-blue-btn a:hover {
+    background: #80D4F1;
+}
+.purchase-plan-dark-blue-btn .btn .btn__text, .btn i {
+    font-size: 1em;
+}
+.purchase-plan-blue-btn .btn .btn__text, .btn i {
+    font-size: 1em;
+}
+.top-banner-with-img p.stack-blue-btn.dark-blue-btn span.btn__text {     
+    font-size: 19px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0.46428571em;
+    padding-bottom: 0.46428571em;
+}
+.top-banner-with-img p.stack-blue-btn.dark-blue-btn span.btn__text a {     
+    font-weight: 700 !important;
+}
+.btn--primary:active {
+    background: #00a8e3;
+}
+.pricing ul li > div{
+    display: inline-block;
+}
+.pricing .checkmark {
+    position: relative;
+    top: 4px;
+}
+.pricing ul li > div p, .pricing ul li > div p:last-of-type{
+    min-height: 0;
+    margin: 0;
+}
+.pricing ul li{
+    padding-left: 30px;
+    position: relative;
+}
+.pricing ul li .checkmark{
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.pricing-btn-edit > p{
+    height: 0;
+    margin: 0;
+    min-height: 0;
+}
+.pricing > div p, .pricing > div p:last-of-type, .pricing > div p:first-of-type{
+    margin: 0;
+}
+.pricing-1 p:last-of-type.label{
+    min-height: 0;
+}
+
+.pricing-1 .btn.btn--delete:last-child {left: auto !important;}
+
+/* OFFICERS */
+
+.section-cont__content-officers, .section-cont__content-officers--medium, .section-cont__content-officers--small, .section-cont__content-officers--large, .team-1-container .row.text-center {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.section-cont__content-officers, .section-cont__content-officers--medium .feature.feature-8 > .image-wrapper.background-image-holder, .section-cont__content-officers--small .feature.feature-8 > .image-wrapper.background-image-holder {
+opacity: 1;
+}
+
+.section-cont__content-officers, .section-cont__content-officers--medium .feature.feature-8 > .image-wrapper.background-image-holder img, .section-cont__content-officers--small .feature.feature-8 > .image-wrapper.background-image-holder img {
+display: inline;
+}
+
+.section-cont__content-officers .boxed.boxed--border {
+    min-height: 132px;
+}
+
+/* Mailer Section CSS */
+
+.mailer-section-icons{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mailer-section-icons .box-cont{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.mailer-section-icons .icon {
+    color: #252525;
+    font-size: 5.57142857em;
+    margin-bottom: 13px;
+}
+
+/* Perfect for bootstrapped startups */
+.feature-2 .icon {color: #00a8e3 !important;}
+.feature-2 .icon-cont__btns-block div, .feature-large-13  .icon-cont__btns-block div {
+    left: 0 !important;
+    right: auto !important;
+}
+
+/* Events Section CSS */
+.event-time{
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.event-title a{
+    color: #252525;
+    font-weight: 400;
+}
+
+.wrapper-events--featured {
+    background: #F5F5F8;
+}
+
+.wrapper-events--featured .feature.feature-9 {
+    background: #fff;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 30px;
+}
+
+.wrapper-events--featured .feature.feature-9 img {
+    border-radius: 6px 6px 0px 0px;
+}
+
+.section-cont__content-events--featured, .section-cont__content-events--large {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.section-cont__content-events .process__item:after {
+     border: 2px solid #00a8e3;
+}
+
+.section-cont__content-events.process-1:before {
+    background: #00a8e3;
+}
+
+@media only screen and (max-width: 767px){
+.section-cont__content-events_link_featured img.section-cont__content-events_photo_featured {height: auto;}
+}
+
+/* Design-driven and perfect for modern startups Right - CSS */
+.design-driven-right-bg{
+    background: url(/css/themes/stack/img/inner-7.jpg);
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.design-driven-right-bg + .container .feature-6 p:last-child{
+    min-height: 0;
+}
+.m-f-large-group + .feature-large__group {
+    margin-top: 3.71428571em;
+}
+
+.m-f-large-group + .feature-large__group .row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.feature i + div h5 {
+    margin-top: 1.85714286em;
+}
+.feature-6 p.color--primary{ min-height: 0; }
+#web-builder__tmpl-cont  .design-driven-right-bg.background-cont--edit{
+    position: absolute;
+}
+.design-driven-icon-style i.icon-cont{
+    font-size: 2.35714286em;
+    color: #00a8e3 !important;
+}
+
+/* Experience quality Left CSS */
+.switchable.imagebg.exp-quality-left-bg{
+    background: url('/css/themes/stack/img/recruitment-4.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+#web-builder__tmpl-cont .background-image-holder.exp-quality-left-bg{
+    position: absolute;
+}
+
+/* Design Driven Section CSS */
+.design-driven-bg{
+    background: url('/css/themes/stack/img/education-5.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+#web-builder__tmpl-cont .background-cont--edit.design-driven-bg{
+    position: absolute;
+}
+.p-margin p:last-child{ margin-bottom: 20px; }
+
+
+.switchable.imagebg.design-driven-back-bg{
+    background: url('/css/themes/stack/img/inner-8.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+
+
+/* Perfect for bootstrapped Startups CSS */
+.learn-more-link a{
+    font-size: 0.85714286em;
+    line-height: 2.16666667em;
+    color: #00a8e3;
+    font-weight: 700;
+    text-decoration: none;
+}
+.learn-more-link a:hover{
+    text-decoration: underline;
+}
+@media (min-width: 768px){
+div[class*='col-'] .mar-b-exp + .mar-b-exp{
+    margin-top: 3.71428571em;
+}
+.bar  {padding: 0px;}
+.col-md-3.col-sm-2.hidden-xs .bar__module, .col-md-1.col-sm-2.hidden-xs .bar__module {
+    min-height: 79px;
+    padding: 12px 0px;
+    max-height: 89px;
+    margin-left: 0px;
+}
+.bar img[class^="logo"] {
+    max-height: 55px;
+    min-height: 45px;
+}
+nav.bar .text-right.text-left-xs.text-left-sm {padding: 1.85714286em 0;}
+}
+
+/* Simple Title with background */
+.switchable.imagebg.simple-section-title-bg, .simple-section-title-bg{
+    background: url('/css/themes/stack/img/hero-1.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.simple-section-title-bg .boxed.boxed--lg {
+    padding-bottom: 50px;
+}
+.switchable .no-img-mar img:last-child{
+    margin-bottom: 0;
+}
+
+.startups-bg-1, .startups-bg-2, .startups-bg-3{
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.startups-bg-1{
+    background: url('/css/themes/stack/img/blog-1.jpg');
+}
+.startups-bg-2{
+    background: url('/css/themes/stack/img/cowork-1.jpg');
+}
+.startups-bg-3{
+    background: url('/css/themes/stack/img/education-1.jpg');
+}
+
+.pandb-icon--lg i{
+    font-size: 5.57142857em;
+}
+
+.mailer-section-icons.background-cont .icon{
+    color: #fff;
+}
+
+.feature-3 p.learn-more-link, .feature-3 p.label{
+    min-height: 0;
+}
+.feature-3 p.learn-more-link{ margin-bottom: 0; }
+
+.i-b {
+    display: inline-block;
+}
+
+.text-block .icon + div h4 {
+    margin-top: 0.6842105263158em;
+}
+
+.feature .pandb-icon--lg + div h4 {
+    margin-top: 1.36842105263158em;
+}
+
+.feature-4 p:last-of-type.purchase-plan-blue-btn, .feature-4 p.no-min-height, .feature-5 p.learn-more-link{
+    min-height: 0;
+}
+
+.feature i + div h4{ margin-top: 0.68421052631579em; }
+
+.feature-4 p:last-of-type.purchase-plan-blue-btn, .feature-5 p.learn-more-link{ margin-bottom:0; }
+.feature-5 h5 + p{ margin-bottom: 0.92857143em; }
+.mb-20{ margin-bottom: 20px; }
+.feature .ic-sm-blue + div h5 {
+    margin-top: 1.85714286em;
+}
+.ic-sm-blue i{
+    color: #00a8e3 !important;
+    font-size: 2.35714286em;
+}
+.feature-6 p.no-min-height{ min-height:0; }
+
+/* Build stylish, lean sites with Stack CSS */
+.build-stylish-bg, .switchable.imagebg.build-stylish-bg{
+    background: url('/css/themes/stack/img/landing-23.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+
+.xs-icon i{
+    font-size: 1.14285714285714em;
+}
+
+.lead.mb-13{
+    margin-bottom: 1.36842105263158em;
+}
+
+/* Top banner with right image */
+.top-banner-with-img{
+    padding-bottom: 0;
+}
+
+.customers-love-bg{
+    background: url('/css/themes/stack/img/education-1.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.vc_custom_1487802656615, .vc_custom_1486589149918{
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+}
+.vc_row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.vc_custom_1487802725839 {
+    padding-top: 100px !important;
+}
+.vc_custom_1487802762360, .vc_custom_1487892216420, .vc_custom_1487891964861 {
+    padding-top: 100px !important;
+}
+.vc_row.vc_row-o-content-middle:not(.vc_row-o-equal-height)>.vc_column_container {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.no-pad-bottom{
+    padding-bottom:0;
+}
+.no-pad-top{
+    padding-top:0;
+}
+
+/* Streamline workflow Dark */
+.streamline-workflow-dark-bg{
+    background: url('/css/themes/stack/img/landing-15.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+#web-builder__tmpl-cont .background-cont--edit.streamline-workflow-dark-bg{
+    position: absolute;
+}
+.vc_custom_1486589200383 {
+    padding-top: 100px !important;
+}
+.bg--secondary {
+    background: #fafafa;
+}
+.wpb_text_column + .wpcf7 {
+    padding-top: 30px;
+}
+.input-checkbox input:checked + label:after {
+    content: 'L';
+    transform: rotateY(180deg) rotateZ(-45deg);
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -2px;
+    font-weight: 700;
+}
+.follow-btn a{
+    padding-left: 5.57142857em !important;
+}
+.parallax-section-bg{
+    background: url('/css/themes/stack/img/landing-20.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+
+.dark-blue-btn span, .dark-blue-btn .btn--primary{
+    background: #00a8e3;
+    border-color: #00a8e3;
+}
+.dark-blue-btn a, .dark-blue-btn .btn--primary{
+    padding-right: 2.78571429em !important;
+    padding-left: 2.78571429em !important;
+}
+
+.dark-blue-btn span:hover, .dark-blue-btn .btn--primary:hover{
+    background: #80D4F1;
+    border-color: #80D4F1;
+}
+
+footer .logo {
+    max-height: 3.67142857em;
+}
+
+/* Dark centered footer */
+footer.space--sm.centered-footer-style-fix{
+    padding-top: 4.95238095em;
+    padding-bottom: 4.95238095em;
+    border-top: 0;
+    box-shadow: none;
+}
+.centered-footer-style-fix .list--hover li:not(:hover){
+    opacity: .6;
+}
+
+/* breadcrumb and title */
+.breadcrumb-section h1.team-title {
+    margin-bottom: 0.59090909090909em;
+}
+@media (min-width: 768px){
+.breadcrumb-section div[class*='col-'] .text-block + .text-block {
+    margin-top: 3.71428571em;
+}
+}
+.breadcrumb-section .text-block:not(:last-child) {
+    margin-bottom: 1.85714286em;
+}
+.breadcrumb-section ol li > div{
+    display: inline-block;
+}
+.breadcrumb-section .box-cont__btns-block > div{
+    min-width: 100px;
+    top: -30px !important;
+    left: -5px;
+}
+.breadcrumb-section .breadcrumbs li a{
+    text-decoration: none;
+}
+.breadcrumb-section .breadcrumbs li a:hover{
+    text-decoration: underline;
+}
+
+/* HOME SOFTWARE 3 FOOTER */
+
+.cgFooterHomeSoftware3  .modal-content .footer-stack-copyright * {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.cgFooterHomeSoftware3 .logo-holder + .footer-stack-copyright {
+	display: inline;
+	margin-left: 30px;
+}
+.cgFooterHomeSoftware3 a.footer-logo-holder:hover {
+    text-decoration: none;
+}
+@media (max-width:767px){
+  .cgFooterHomeSoftware3 .logo-holder + .footer-stack-copyright{
+    display: block;
+    margin-left: 0;
+  }
+  .cgFooterHomeSoftware3 .footer-logo-holder{ display: inline-block; }
+}
+
+footer.cgFooterHomeSoftware3 .col-sm-7 .list-inline a {
+	text-transform: uppercase;
+}
+
+footer.cgFooterHomeSoftware3 .socicon { 
+	margin-left: 1px; 
+}
+
+@media all and (max-width: 767px){
+	footer.cgFooterHomeSoftware3 .col-sm-6.col-md-3 { 
+		margin-bottom: 35px; 
+	}
+}
+
+footer.cgFooterHomeSoftware3 .logo-light,
+footer.cgFooterHomeSoftware3.bg--dark .logo-dark,
+footer.cgFooterHomeSoftware3.imagebg .logo-dark,
+.cgFooterHomeSoftware3 .menu-fullscreen .logo-dark,
+.cgFooterHomeSoftware3 .nav-container--sidebar .bg--dark .logo-dark {
+	display: none;
+	margin-right: 0;
+}
+
+footer.cgFooterHomeSoftware3.bg--dark .logo-light,
+footer.imagebg .logo-light {
+	display: inline;
+	margin-right: 0;
+}
+footer.cgFooterHomeSoftware3 .logo.logo-dark {
+	margin-right: 0;
+}
+
+.cgFooterHomeSoftware3 .nav-container--sidebar .footer-stack-copyright a {
+    margin: 0 5px;
+}
+
+.cgFooterHomeSoftware3 .footer-logo-holder + ul {
+	padding-left: 20px;
+}
+
+.cgFooterHomeSoftware3  .list--hover li:not(:hover) {
+    opacity: .6;
+}
+.cgFooterHomeSoftware3 
+@media (min-width: 1200px) {
+.cgFooterHomeSoftware3 .container {
+    width: 1170px;
+}
+}
+
+/* About Footer Dark */
+
+.border-top-eb{
+    border-top: 1px solid #ebebeb;
+}
+
+footer.footer-2.about-footer-dark .row:last-child {
+    margin-top: 3.71428571em;
+    background: transparent;
+}
+.about-footer-dark .btn--primary, .about-footer-dark .btn--primary:visited {
+    background: #00a8e3;
+    border-color: #00a8e3;
+}
+.about-footer-dark .btn--primary:hover {
+    background: #609de6;
+}
+.about-footer-dark button{
+    height: 3.25000000000001em;
+}
+.about-footer-dark input, .about-footer-dark select {
+    height: 2.78571429em;
+}
+.about-footer-dark input[type]::-webkit-input-placeholder,
+.about-footer-dark textarea::-webkit-input-placeholder,
+.about-footer-dark select::-webkit-input-placeholder {
+  color: #b3b3b3;
+  font-size: 1.14285714em;
+}
+.about-footer-dark input[type]:-moz-placeholder,
+.about-footer-dark textarea:-moz-placeholder,
+.about-footer-dark select:-moz-placeholder {
+  /* Firefox 18- */
+  color: #b3b3b3;
+  font-size: 1.14285714em;
+}
+.about-footer-dark input[type]::-moz-placeholder,
+.about-footer-dark textarea::-moz-placeholder,
+.about-footer-dark select::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #b3b3b3;
+  font-size: 1.14285714em;
+}
+.about-footer-dark input[type]:-ms-input-placeholder,
+.about-footer-dark textarea:-ms-input-placeholder,
+.about-footer-dark select:-ms-input-placeholder {
+  color: #b3b3b3;
+  font-size: 1.14285714em;
+}
+.about-footer-dark .list--hover li:not(:hover) {
+    opacity: .6;
+}
+
+/* Single Testimonial */
+.single-testimonial-section .vc_row.vc_row-o-content-middle:not(.vc_row-o-equal-height)>.vc_column_container {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.single-testimonial-section .vc_row.vc_row-flex>.vc_column_container {
+    display: flex;
+}
+.single-testimonial-section .vc_row.vc_row-flex {
+    box-sizing: border-box;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.single-testimonial-section img{
+    height: auto;
+}
+
+/* All the tools youÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ll need Save time */
+.vc_custom_1486514058573 {
+    padding-top: 100px !important;
+}
+.new-lead-txt .lead{
+    color: #000;
+    font-size: 1.35714286em;
+    line-height: 1.68421053em;
+}
+.bg--primary.new-lead-txt .lead{
+    color: #fff;
+}
+.no-top-padding{ padding-top:0; }
+
+/* The perfect resource */
+.prefect-resource-bg.bg--primary {
+    background: #00a8e3;
+}
+.prefect-resource-bg .background-image-holder, .prefect-resource-bg img{
+    height: auto;
+}
+.prefect-resource-bg .border--round .background-image-holder{ border-radius:none; }
+.prefect-resource-bg .border--round .background-image-holder img{ border-radius: 6px; }
+.prefect-resource-bg .background-image-holder{ position: relative; }
+    .prefect-resource-bg iframe{ display:none; }
+.prefect-resource-bg .background-image-holder div{ text-align:center; }
+.prefect-resource-bg .background-image-holder div img{ display: inline-block; }
+.prefect-resource-bg .attachment-large{ max-width: 100%; }
+@media (max-width: 767px){
+    
+}
+
+/* SERVICES 1 PAGE STYLE ADGUSTMENT */
+section.space--sm-new, .space--sm-new{
+    padding-top: 4.95238095em;
+    padding-bottom: 4.95238095em;
+}
+
+/* PAYMENTS AND BILLING ICON SPACING */
+.feature .pandb-icon--lg + div .h5 {
+    margin-top: 0.92857143em;
+}
+.h5 > a {
+    font-weight: 600;
+    text-decoration: none
+}
+.imagebg:not(.image--light) .color--primary a{
+    color: #00a8e3 !important;
+}
+
+.emoji-pos-set{ display:inline-block; }
+.emoji-pos-set img{
+    float: right;
+    position: relative;
+    top: 7px;
+    left: 5px;
+}
+
+/* Build perfect pages, easy as pie. */
+.vc_row.vc_row-o-content-middle:not(.vc_row-o-equal-height)>.vc_column_container {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.vc_row.vc_row-flex>.vc_column_container {
+    display: flex;
+}
+.vc_row.vc_row-o-content-middle>.vc_column_container>.vc_column-inner {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.vc_row.vc_row-flex>.vc_column_container>.vc_column-inner {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 1;
+}
+.vc_row.vc_row-flex {
+    box-sizing: border-box;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.feature-9 .border--round.section-cont__content-officers_picture{
+    height: auto;
+}
+
+.section-cont__content-officers--medium p.section-cont__content-officers_bio {
+text-align: justify;
+}
+
+/* Start building beautiful websites */
+.input-fix input, .input-fix select {
+    height: 2.78571429em;
+}
+.input-fix input[type], .input-fix textarea, .input-fix select{
+    background: #fcfcfc;
+}
+.input-fix button, .input-fix input[type="submit"] {
+    height: 3.25000000000001em;
+}
+
+/* No Button Parallex */
+.no-btn-parallex-bg{
+    background: url('/css/themes/stack/img/landing-21.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+
+/* What drives us */
+.vc_custom_1486488887432 {
+    padding-top: 60px !important;
+}
+
+/* Meet the makers */
+.feature.feature-8 > .image-wrapper.background-image-holder {
+    border-radius: 999px;
+    overflow: hidden;
+    display: block;
+    width: 208px;
+    height: 208px;
+    position: static;
+    margin: 0 auto 30px;
+}
+
+.section-cont__content-officers--small .feature.feature-8 > .image-wrapper.background-image-holder {
+    width: 108px;
+    height: 108px;
+}
+
+/* Monthly Newsletter */
+.input-checkbox{
+    top: 8px;
+    position: relative;
+    margin-right: 10px;
+}
+
+/* Meet Stack HTML Template */
+.meet-stack-section-css img{
+    margin-bottm: 0;
+    height: auto;
+}
+.meet-stack-section-css h5{
+    margin-top: 1.85714286em;
+}
+@media (max-width:767px){
+    .meet-stack-section-css .boxed.boxed--lg{ margin-top: 30px; }
+}
+
+/* Graphic Design */
+.graphic-section-bg{
+    background: url('/css/themes/stack/img/education-1.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.graphic-design-section{
+    padding-bottom: 0;
+}
+.graphic-design-section .box-cont{
+    margin-bottom: 7.42857143em;
+}
+
+/* Perfect for bootstrapped startups Right - Modifications for services 3 page */
+.perfect-for-startups-section{
+    padding-bottom: 0;
+}
+.perfect-for-startups-section img{ height: auto; }
+.perfect-for-startups-section .container > .box-cont{
+    padding-bottom: 7.42857143em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.switchable.perfect-for-startups-section img:last-child {
+    margin-bottom: 0;
+}
+.perfect-for-startups-section .container > .box-cont .col-md-5{
+    -webkit-display: flex;
+    display: flex;
+    align-items: center;
+}
+.perfect-for-startups-section.switchable--switch .container > .box-cont{
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+@media (max-width: 767px){
+    .perfect-for-startups-section .col-md-offset-1{ text-align: center; }
+}
+
+/* Let's get you started Background */
+.get-started-bg{
+    background: url('http://cglink.me/d587e199d1e1d97ff62dafe18ecbf5dc62dd5d36a233edcdc438d92222e343c63');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.vc_custom_1485991973582 {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.feature-3 span.icon {
+    margin-bottom: 30px;
+}
+
+/* What makes Stack different */
+.vc_custom_1486489470644 {
+    padding-top: 100px !important;
+}
+.vc_custom_1486489470644 .wpb_wrapper .feature  > div{
+    text-align: center;
+}
+.vc_custom_1486489470644 .wpb_wrapper .feature  p{
+    display: inline-block;
+    min-height: 0;
+}
+.vc_custom_1486489470644 .wpb_wrapper .feature  p:last-child{
+    width: 100%;
+}
+.padding-top-0{
+    padding-top: 0;
+}
+
+/* Frequently Asked Questions No Background */
+.faq-without-bg{
+    
+}
+.faq-without-bg h5:not(:last-child), .faq-without-bg .h5:not(:last-child) {
+    margin-bottom: 0;
+}
+
+/* Header - Center Logo */
+.logo-center-nav .logo.logo-light, .logo-center-nav .logo.logo-dark{
+    margin-top: 5px;
+}
+/*.logo-center-nav .menu-horizontal > .dropdown > .dropdown__trigger a{
+    color: #fff;
+}*/
+.logo-center-nav .stack-header-buttons > p{
+    display: block;
+    width: auto;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+.logo-center-nav .stack-header-buttons > p.nav-buy-stack-btn a{
+    background: #00a8e3;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    padding-top: 0.30952381em;
+    padding-bottom: 0.30952381em;
+    border: 1px solid #00a8e3;
+    border-width: 1px;
+    font-size: inherit;
+    line-height: 1.85714286em;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    border-radius: 6px;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    letter-spacing: .5px;
+    margin-right: -0.5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 30px;
+}
+.logo-center-nav .stack-header-buttons > p.nav-try-stack-btn a{
+    background: transparent;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    padding-top: 0.30952381em;
+    padding-bottom: 0.30952381em;
+    border: 1px solid #fff;
+    border-width: 1px;
+    font-size: inherit;
+    line-height: 1.85714286em;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    border-radius: 6px;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    letter-spacing: .5px;
+    margin-right: -0.5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 30px;
+}
+.logo-center-nav .stack-header-buttons > p.nav-try-stack-btn .btn .btn__text, .logo-center-nav .stack-header-buttons > p.nav-buy-stack-btn .btn .btn__text{
+    font-size: 12px;
+}
+.logo-center-nav .stack-header-buttons > p.nav-buy-stack-btn a:hover, .logo-center-nav .stack-header-buttons > p.nav-try-stack-btn a:hover{
+    text-decoration: none;
+}
+.logo-center-nav .pos-fixed .menu-horizontal > .dropdown > .dropdown__trigger a{
+    color: #333;
+}
+
+.menu-horizontal > .dropdown > .dropdown__trigger a {
+    display: inline-block !important;
+}
+
+.bar bar-1.hidden-xs .menu-horizontal > .dropdown > .dropdown__trigger:after {
+    padding: 1.2em 1.2em !important;
+}
+
+/* Grid Images */
+.grid-img-1, .grid-img-2, .grid-img-3, .grid-img-4{
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.grid-img-1{
+    background: url('/css/themes/stack/img/landing-20.jpg');
+}
+.grid-img-2{
+    background: url('/css/themes/stack/img/tourism-3.jpg');
+}
+.grid-img-3{
+    background: url('/css/themes/stack/img/tourism-4.jpg');
+}
+.grid-img-4{
+    background: url('/css/themes/stack/img/tourism-5.jpg');
+}
+
+/* Popular Experiences - Slider */
+.popular-exp-slider .feature__body h5  > a{
+    color: #252525;
+}
+
+section.slider .flickity-viewport:first-child {position: absolute;}
+.flickity-viewport {width: 100%}
+
+
+
+/* Cover Image Text 2 */
+.cover-image-text-2{
+    background: url('/css/themes/stack/img/landing-10.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+
+.cover-image-text-2:before {
+    opacity: 0.5;
+}
+
+/*  */
+.no-padding{ padding:0 !important; }
+.padding-vert-40{padding: 40px 0px !important;}
+
+.div-spacer{ padding-bottom: 7.42857143em; }
+
+.display-inlineblock > div{ display: inline-block; }
+
+.bg--primary-dark{
+        background: #00a8e3;
+}
+
+.margin-0{ margin: 0 !important; }
+.vc_custom_1486577354461{
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+}
+
+.mb-1 img, .mb-1 .ce-element--type-image{
+    margin-bottom: 1.85714286em;
+}
+
+.blue-icon-sm i{
+    font-size: 2.35714286em;
+    color: #00a8e3 !important;
+}
+
+.pricing.pricing-3 ul li{ padding-left:0; }
+.pricing-section-2 .pricing-3:hover{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Tabs Horizontal 1 */
+.tabs li.active{ background-color: transparent; }
+.tabs{
+    background-color: transparent;
+    border-color: #dedede;
+}
+
+/* Cover Section 2 */
+.cover-section-2-bg{
+    background: url('/css/themes/stack/img/landing-1.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.cover-section-2-bg img{ height: auto; }
+@media only screen and (max-width: 767px){
+  .cover-section-2-bg .stack-blue-btn{
+    margin-bottom: 30px;
+  }
+}
+/* Tabs Images 1 */
+.tabs-images-1{
+
+}
+.alignleft {
+    float: left;
+    margin: 0 30px 30px 0 !important;
+}
+.tabs-images-1 .tabs li.active .tab__title span{
+    color: #00a8e3;
+}
+.tabs-images-1 .alignleft {
+    margin-bottom: 0 !important;
+}
+.tabs-images-1 .alignleft img{
+    height: auto;
+}
+
+/* Cover Video 5 */
+.cover-video-5{
+    background: url('http://xxntkd86l336rq5h3k2kbv9l.wpengine.netdna-cdn.com/wp-content/uploads/sites/62/2017/02/landing-13-1.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.features-small-4 .btn--primary{
+    background: #00a8e3;
+    border-color: #00a8e3;
+}
+.features-small-4 .boxed.boxed--lg {
+    padding-bottom: 50px;
+}
+
+/* Monthly newsletter 2 */
+.monthly-newsletter-2 .tandc{
+    display: inline-block;
+}
+
+/* High-end design */
+.vc_custom_1486518485157{
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+/* Cover features 1 */
+.cover-features-1{
+    background: url('/css/themes/stack/img/construction-1.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+
+/* Features Large 8 */
+.features-large-8{
+    background: url('/css/themes/stack/img/construction-2.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+#web-builder__tmpl-cont .background-cont--edit.features-large-8{
+    position: absolute;
+}
+.vc_custom_1488504281898 {
+    padding-top: 100px !important;
+}
+
+/* About Footer Light */
+footer.footer-2.about-footer-light .row:last-child {
+    margin-top: 3.71428571em;
+    background-color: transparent;
+}
+footer.footer-2.about-footer-light{
+    /*padding-top: 0;*/
+}
+
+.accordion-1 li.active .accordion__title {
+     background: #00a8e3;
+     border-color: #00a8e3;
+}
+
+.accordion-image-2 .accordion__title p{
+   display: inline-block;
+}
+
+.accordion li .accordion__content p {margin-bottom: 20px;}
+
+.accordion li .accordion__content ul {
+    padding-inline-start: 40px !important;
+    list-style: disc !important;
+}
+
+.accordion-image-1 {
+    padding-top: 1.85714286em;
+    padding-bottom: 0px;
+}
+
+.accordion-image-1 .accordion {min-height: auto !important;}
+
+  @media (max-width: 768px) {
+    .accordion-image-1 .switchable div[class*="col-"]:first-child, .accordion-image-2-image .switchable div[class*="col-"]:first-child, .accordion-image-2-dark .switchable div[class*="col-"]:first-child, .accordion-image-2-medium .switchable div[class*="col-"]:first-child, .accordion-image-1-dark .switchable div[class*="col-"]:first-child {
+      float: initial;
+    }
+  }
+
+/* Home Event Page */
+.row > .col-sm-6.col-md-3.testimonial-avatar:first-child:last-child {
+    width: 100%;
+}
+.pricing-plan-3 .testimonial-2 .boxed{
+    background: #fff;
+    min-height: 30px;
+}
+.pricing-plan-3 .pricing-1 p:last-of-type, .pricing-plan-3 .pricing-1 p{
+    min-height: 10px;
+}
+.wpb_text_column + .wpcf7{
+    padding-top:0;
+}
+
+.testimonial-avatar-1 h5:not(:last-child){
+     margin-bottom: 0;
+}
+.testimonial-avatar-1 img{
+     height: auto;
+}
+@media (max-width: 767px){
+    .testimonial-avatar-1 img{ margin-top: 20px; }
+}
+
+/* Our Products Slide */
+.our-products-slide .feature-3 p{
+    min-height:0;
+}
+.our-products-slide .feature-3 p:last-child{
+    margin-bottom: 1.85714286em;
+}
+.our-products-slide .slider[data-paging="true"]:not(section) {
+    margin-bottom: 0;
+}
+.our-products-slide .box-cont {
+    margin-bottom: 30px;
+}
+.our-products-slide div[data-editable] p:nth-child(2) {
+    display:inline-block;
+}
+.blue-lg-icon i{
+    margin-bottom: 30px;
+    font-size: 5.57142857em;
+    color: #00a8e3 !important;
+}
+
+/* Features Small 9 */
+.features-small-9 .feature h4 + p {
+    display: inline-block;
+}
+
+/* Subscribe Boxed 1 */
+.subscribe-boxed-1 label{
+    display: inline-block !important;
+}
+.subscribe-boxed-1 label + span{
+    top: -8px;
+    position: relative;
+}
+.subscribe-boxed-1 .input-checkbox{
+    top: 0;
+}
+
+/* Carousel Logo */
+.carousel-logo .slides img{
+    height: 77px;
+    width: auto;
+}
+
+.testimonial-avatar-2 img{
+    width: 52px;
+    height: 52px;
+}
+
+.parallex-section-1{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237agency5_9495143_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+
+/* Features Small 17 */
+.features-small-17 .col-sm-4 .feature div img{
+        border-radius: 6px 6px 0 0;
+}
+
+.features-small-17 .vc_row.wpb_row.vc_row-fluid {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+/* Testimonial Slider 1 */
+.testimonial-slider-1{
+
+}
+
+.cover-section-1{
+    background: url('/upload/all/2018/web_upload_610237agency4_824937_crop.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+
+
+/* Posts Slider */
+.posts-slider .posts-slider-img-1{
+    background: url('/upload/all/2018/web_upload_610237blog41024x683_82753928_crop.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.posts-slider .posts-slider-img-2{
+    background: url('/upload/all/2018/web_upload_610237blog31024x671_82754027_crop.jpg');
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.posts-slider p{
+    margin-bottom: 0;
+}
+
+.features-large-13-1{
+    background: url(https://www.campusgroups.com/upload/all/2018/web_upload_610237blog4_82925857_crop.jpg);
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.features-large-13-2{
+    background: url(https://www.campusgroups.com/upload/all/2018/web_upload_610237blog3_82925955_crop.jpg);
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.features-large-13-3{
+    background: url(https://www.campusgroups.com/upload/all/2018/web_upload_610237blog2_8293024_crop.jpg);
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.features-large-13 p{
+    margin-bottom: 0;
+}
+
+/* Features Small 7 */
+.features-small-er .feature:not(.boxed) {
+    margin-bottom: 20px;
+}
+
+.vc_custom_1486513690996 {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+/* Footer Long 1 */
+.footer-long-1 footer.footer-2 .row:last-child{
+    background: transparent;
+}
+.footer-long-1 .row:last-child{
+    padding-top: 7.42857143em;
+    padding-bottom: 1.85714286em;
+}
+
+.cover-image-text-1{
+    background: url(https://www.campusgroups.com/upload/all/2018/web_upload_610237drone1_83091737_crop.jpg);
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+
+/* Cover Text 6 */
+.cover-text-6{
+    background: url(https://www.campusgroups.com/upload/all/2018/web_upload_610237drone2_83093347_crop.jpg);
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+
+/* Cover Features Small 3 */
+.cover-features-small-3{
+    background: url(https://www.campusgroups.com/upload/all/2018/web_upload_610237drone3_830101340_crop.jpg);
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+
+.cover-features-small-3 div[data-editable]{
+    text-align: center;
+}
+.cover-features-small-3 div[data-editable] p:nth-child(2){
+    display: inline-block;
+}
+.cover-features-small-3 div[data-editable] p{
+    min-height: 1px;
+}
+
+.vc_custom_1486676631534 {
+    padding-top: 100px !important;
+}
+
+
+/* Cover Text 7 */
+.cover-text-7{
+    background: 
+ url("https://www.campusgroups.com/upload/all/2018/web_upload_610237restaurant1_9371712_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+
+
+/* Text Layout 6 */
+.text-layout-6 h4{
+    
+}
+.mb0 {
+    margin-bottom: 0 !important;
+}
+.text-layout-6 .wpb_text_column.wpb_content_element{
+    margin-bottom: 40px;
+}
+.text-layout-6 .wpb_text_column.wpb_content_element:last-child{
+    margin-bottom: 0;
+}
+
+.text-layout-7 .feature h4 + p {max-width: inherit;}
+
+/* Cover Countdown 2 */
+.cover-countdown-2{
+    background: url(https://www.campusgroups.com/upload/all/2018/web_upload_610237inner4_9451023_crop.jpg);
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+.bordered-btn a{
+    padding-right: 2.78571429em !important;
+    padding-left: 2.78571429em !important;
+    border-radius: 6px;
+    padding-top: 0.46428571em;
+    padding-bottom: 0.46428571em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-width: 1px;
+    font-size: inherit;
+    line-height: 26px;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    border-radius: 6px;
+}
+.bordered-btn .btn__text a{
+        font-size: 13px;
+    display: inline-block;
+}
+.bordered-btn .btn__text a:hover {
+    border-color: #fff;
+    transform: translate3d(0, -2px, 0);
+    -webkit-transform: translate3d(0, -2px, 0);
+}
+
+.high-end-design img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Features Small 4 */
+.features-small-4 .purchase-plan-blue-btn a{
+    background: #00a8e3;
+    border-color: #00a8e3;
+}
+.features-small-4 .purchase-plan-blue-btn a:hover{
+    background: #609de6;
+}
+.purchase-plan-blue-btn a:hover{
+    background: #609de6;
+}
+
+.feature-small-8 .imagebg:not(.image--light) a{
+    font-weight: 400;
+}
+
+section.text-center.mailer-section-icons .row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+/* Cover Countdown 1 */
+.cover-countdown-1 .background-cont{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237inner3_9632018_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+#web-builder__tmpl-cont .cover-countdown-1 .background-cont--edit{
+    position: absolute;
+}
+.cover-countdown-1 .wpb_text_column + .wpcf7{
+        padding-top: 30px;
+}
+
+/* Subscribe Video 1 */
+.subscribe-video-1 .background-cont{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237inner9_9653623_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+.subscribe-video-1 .wpb_text_column + .wpcf7 {
+    padding-top: 30px;
+}
+#web-builder__tmpl-cont .subscribe-video-1 .background-cont--edit{
+    position: absolute;
+}
+
+/* Cover Text 5 */
+.cover-text-5{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237work3_9681217_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+
+/* Portfolio Block 3 */
+.section-cont--edit .portfolio-block-3 [data-overlay]:before {
+    height: auto;
+    min-height: 150px;
+}
+
+/* Cover Text 6 */
+.mira-cover-text-6{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237wedding1_9764523_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+
+/* Signup Feature 3 */
+.signup-feature-3 .wpcf7-list-item.last{
+    margin: 0 0 0 1em;
+}
+
+/* Cover Features 3 */
+.cover-features-3 .background-cont{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237personal1_9104121_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+#web-builder__tmpl-cont .cover-features-3 .background-cont--edit{
+    position: absolute;
+}
+
+/* cover text 9 */
+.cover-text-9 .bordered-btn .btn__text a {
+    font-size: 13px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.cover-text-9{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237CaptureJPG_91071444_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+
+/* Portfolio Block 4 */
+.section-cont--edit .portfolio-block-4 [data-overlay]:before {
+    height: auto;
+    min-height: 150px;
+}
+
+/* Cover Text 10 */
+.cover-text-10{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237music1_9118329_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+.cover-text-10 .bordered-btn .btn__text a {
+    font-size: 15px;
+}
+
+/* Table 1 */
+.bg--light.table-1 table {table-layout: fixed;}
+.bg--light.table-1 table td, .bg--light.table-1 table th {vertical-align: top;}
+.bg--light.table-1 table a {
+    color: #00a8e3;
+    font-weight: inherit;
+}
+
+.bg--light.table-1 table a:hover {
+    color: #80D4F1;
+    text-decoration: underline;
+}
+
+.table-1 .bordered-btn .btn__text a{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+.table-1 a{
+    text-decoration: none;
+}
+
+/* Instagram Feed 3 */
+.instagram-feed-3 .btn{
+    padding-left: 78px !important;
+}
+
+/* Footer Short 7 */
+.footer-short-7{
+    background: #1b1b1b;
+}
+footer.footer-short-7 .type--fine-print:not(p){
+    opacity: .5;
+    color: #fff;
+}
+.footer-short-7 .list--hover li:not(:hover) {
+    opacity: .6;
+}
+footer.footer-short-7:not(.bg--primary):not(.bg--dark) a{
+    color: #fff;
+}
+
+/* Cover Music 1 */
+.cover-music-1{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237music2_9134710_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+.cover-music-1 a, .cover-music-1 .imagebg:not(.image--light) a{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    letter-spacing: .5px;
+    outline: 0;
+    background-image: none;
+    margin-right: -0.5px;
+    font-weight: 700 !important;
+    font-size: 0.85714286em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.464286em 1em;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 3.71428571em;
+}
+.cover-music-1 .btn .btn__text{
+    font-size: 12px;
+}
+
+
+/* Features Small 12 */
+.features-small-12 .feature h4 + p {
+    display: inline-block;
+}
+.features-small-12 .feature-3 p{
+    min-height: 0;
+}
+
+
+/* Three Section Slider */
+.three-section-slider .slides:not(.flickity-enabled) li.imagebg:not(:first-child){
+    display: block;
+}
+section.three-section-slider.slider.height-100 .slides li.imagebg{
+    height: 100vh;
+}
+.three-section-slider-1{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237work2_9176118_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+.three-section-slider-2{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237work1_9176416_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+.three-section-slider-3{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237work5_9176428_crop.jpg");
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+.three-section-slider .slides:not(.flickity-enabled) li.imagebg:first-child{
+    animation:none;
+}
+.three-section-slider .slides:not(.flickity-enabled) li.imagebg:first-child.three-section-slider-1 {
+    background: url(https://www.campusgroups.com/upload/all/2018/web_upload_610237work2_9176118_crop.jpg);
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+.three-section-slider a {
+    text-decoration: none;
+}
+.three-section-slider a:hover{
+    text-decoration: underline;
+}
+
+/* Grid Images 1 */
+.grid-images-1 p{
+    margin: 0;
+}
+.grid-images-1 .h-100{
+    height: 100%;
+}
+.grid-images-1 .wpcf7-submit{
+    margin-top: 20px;
+}
+.grid-images-1 .your-email{
+    margin-bottom: 5px;
+}
+.grid-images-1-1, .grid-images-1-2, .grid-images-1-3, .grid-images-1-4, .grid-images-1-5, .grid-images-1-6, .grid-images-1-7{
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+.grid-images-1-1{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237blog4_91975017_crop.jpg");
+}
+.grid-images-1-2{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237blog3_91975927_crop.jpg");
+}
+.grid-images-1-3{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237blog2_9198230_crop.jpg");
+}
+.grid-images-1-4{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237blog5_9198316_crop.jpg");
+}
+.grid-images-1-5{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237blog1_9198333_crop.jpg");
+background-size: cover !important;
+    background-position: 50% 50%;
+}
+.grid-images-1-6{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237blog6_9198352_crop.jpg");
+}
+.grid-images-1-7{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237work4_919846_crop.jpg");
+}
+
+footer.bg--dark.centered-footer-style-fix {
+    background: #00a8e3;
+}
+
+/*  Features large 15  */
+.features-large-15-bg-1{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237work4_919846_crop.jpg");
+}
+.features-large-15-bg-2{
+    background: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237work4_919846_crop.jpg");
+}
+.features-large-15 .h4.inline-block + span {
+    display: inline-block;
+    margin-left: 0.92857143em;
+}
+.features-large-15-bg-1, .features-large-15-bg-2{
+    min-height: 300px;
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+.features-large-15 .col-xs-12{
+        margin-bottom: 30px;
+}
+
+
+/* Standard Bar */
+.bar-1 .menu-horizontal .dropdown__container{ 
+    left:0 !important;
+}
+.bar__module .container {
+    min-width: 200px;
+}
+.menu-vertical li.dropdown:after {
+    display: none;
+    right: -15px;
+}
+
+/* Team 1 */
+.team-1-container .feature-8 p{
+    min-height: 0;
+}
+.team-1-container .col-sm-4 .feature div img{
+    display:none;
+}
+.team-1-container .background-cont__btns-block > div{
+    bottom: 44% !important;
+    right: 39% !important;
+}
+.team-1-img-1{
+background: url('https://www.campusgroups.com/upload/all/2018/web_upload_610237avatarwide4300x203_101123457_crop.jpg');
+opacity: 1;
+}
+.team-1-img-2{
+background: url('https://www.campusgroups.com/upload/all/2018/web_upload_610237avatarwide1300x203_101123441_crop.jpg');
+opacity: 1;
+}
+.team-1-img-3{
+background: url('https://www.campusgroups.com/upload/all/2018/web_upload_610237avatarwide3300x203_10112353_crop.jpg');
+opacity: 1;
+}
+.team-1-img-4{
+background: url('https://www.campusgroups.com/upload/all/2018/web_upload_610237avatarwide2300x203_101123513_crop.jpg');
+opacity: 1;
+}
+.team-1-img-5{
+background: url('https://www.campusgroups.com/upload/all/2018/web_upload_610237avatarround1300x300_101123526_crop.png');
+opacity: 1;
+}
+.team-1-img-6{
+background: url('https://www.campusgroups.com/upload/all/2018/web_upload_610237avatarround31300x300_101123537_crop.png');
+opacity: 1;
+}
+
+.team-2-container .feature h4 + p{ max-width: 100%; }
+.team-2-container .feature-9 > .ce-element:first-child{
+    margin-bottom: 26px;
+    max-width: 100%;
+    background-position: 50%;
+}
+.team-2-container .col-sm-6{margin-bottom: 50px;}
+.team-2-container img{ height: auto; }
+@media (max-width:767px){
+    .team-2-container .col-sm-6{margin-bottom: 20px;}
+}
+
+/* Blog Recent Stories */
+.blog-recent-stories .col-sm-4 .feature div img{
+    min-width: 1px;
+    width: 100%;
+}
+.blog-recent-stories  .ce-element--type-image{
+    width: 100% !important;
+}
+
+/* Current Campaigns Slider */
+.current-campaigns-slider .attachment-large{ max-width: 100%; }
+
+/* Features Small 9 */
+.features-small-9-cont .mb-1 img{
+    width: 100%;
+    height: auto;
+}
+.features-small-9-cont .ce-element--type-image, .res-img-container .ce-element--type-image{ max-width: 100%; }
+@media only screen and (max-width: 767px){
+    .res-img-container .ce-element--type-image{ 
+        width: 100% !important; 
+    }
+}
+
+.grid-image-media .attachment-large{
+    height: auto;
+}
+@media only screen and (max-width: 1199px){
+    .grid-image-media .vc_empty_space{
+        height: 48px !important;
+    }
+}
+@media only screen and (max-width: 992px){
+    .grid-image-media .vc_empty_space{
+        height: 33px !important;
+    }
+}
+@media only screen and (max-width: 767px){
+    .grid-image-media .vc_empty_space{
+        height: 0 !important;
+    }
+}
+
+section.space--sm.res-img-container .vc_row.wpb_row.vc_row-fluid {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+section.space--sm.res-img-container .vc_row.wpb_row.vc_row-fluid .wpb_column.vc_column_container.col-sm-4.box-cont .vc_column-inner, section.space--sm.res-img-container .vc_row.wpb_row.vc_row-fluid .wpb_column.vc_column_container.col-sm-4.box-cont .wpb_wrapper, section.space--sm.res-img-container .vc_row.wpb_row.vc_row-fluid .wpb_column.vc_column_container.col-sm-4.box-cont .feature.feature-1, section.space--sm.res-img-container .vc_row.wpb_row.vc_row-fluid .wpb_column.vc_column_container.col-sm-4.box-cont .feature__body.boxed.boxed--lg.boxed--border {
+height: 100%;
+}
+
+
+/* ACCORDION IMAGE 1 */
+.accordion-image-1 .accordion__title p {
+    display: inline-block;
+}
+.vc_custom_1485969263457 {
+    padding-right: 55px !important;
+    padding-left: 55px !important;
+}
+.accordion-image-1-dark .accordion__title p, accordion-image-2-medium  .accordion__title p, .accordion-image-2-dark .accordion__title p, .accordion-image-2-image .accordion__title p, .accordion-image-2-medium .accordion__title p{
+    display: inline-block;
+}
+
+.accordion-image-2-image .switchable.imagebg, .accordion-image-2-image.switchable.imagebg{
+    background-image: none;
+}
+.accordion-image-2-image.switchable.imagebg{
+    background-size: cover !important;
+    background-position: 50% 50%;
+    background-image: url("https://www.campusgroups.com/upload/all/2018/web_upload_610237hero1_101782352_crop.jpg");
+}
+
+.top-banner-with-img figure img{
+    height: auto;
+}
+@media only screen and (max-width: 767px){
+.top-banner-with-img figure img {
+    margin-top: 30px;
+}
+}
+
+/* CTA Centered 1 BG */
+.data-gradient-bg{
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+
+/* CTA horizontal 3 bg */
+.cta-horizontal-3-bg, .no-bg-repeat{
+    background-size: cover !important;
+    background-position: 50% 50%;
+}
+
+/* F0eatures Large 10 */
+.features-large-10 .col-sm-6 div{
+    max-width: 100%;
+}
+.features-large-10 img{
+    height: auto;
+}
+
+.prefect-resource-bg .video-cover iframe{
+    background-color: transparent;
+}
+@media only screen and (max-width: 767px){
+.prefect-resource-bg img, .prefect-resource-bg iframe{
+    height: auto;
+}
+}
+.high-end-design .stack-blue-btn{ margin-bottom: 20px; }
+
+
+/* Features Large 16 */
+.features-large-16 img{
+    height: auto;
+}
+@media only screen and (max-width: 767px){
+  .features-large-16 .vc_custom_1487802762360{
+    padding-top: 20px !important;
+  }
+}
+
+/* Features Large 3 */
+.features-large-3 img{
+  height: auto;
+}
+.features-large-3 a{
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+/* Feature Small 10 */
+@media only screen and (max-width: 767px){
+    .feature-small-10-res .col-xs-12{ width:100%; }
+    .feature-small-10-res .feature.boxed{ margin-bottom:0; }
+}
+
+/* Page Title 8 */
+.page-title-8 img{
+    height: auto;
+}
+.page-title-8 .wpb_wrapper{
+    text-align: center;
+}
+
+.testimonial-avatar-20 img{
+    height: auto;
+}
+@media only screen and (max-width: 767px){
+  .testimonial-avatar-20 .vc_single_image-wrapper.vc_box_border_grey{
+    display: block;
+    text-align: center;
+    width: calc(100vw - 50px);
+  }
+  .testimonial-avatar-20  img{ margin-bottom: 20px; }
+}
+
+.team-single-img img, .team-single-2-img img{
+    height: auto;
+}
+
+.testimonial-2 .testimonial__image img{ max-height: 2000px; height: auto; }
+
+/* Grid Image Media */
+.grid-image-media .wpb_wrapper{
+    overflow: hidden;
+}
+
+.video-inline-1 img{ height: auto; }
+
+.accordion-image-1 .switchable img:last-child, .accordion-image-1-dark .switchable img:last-child, .accordion-image-2-medium.switchable img:last-child, .accordion-image-2-dark .switchable img:last-child, .accordion-image-2 img:last-child, .accordion-image-2-image.switchable img:last-child {
+    margin-bottom: 0;
+    height: auto;
+}
+.accordion-image-1, .accordion-image-1-dark, .accordion-image-2-medium, .accordion-image-2-dark, .accordion-image-2-image, .accordion-image-2{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.accordion-image-2 .wpb_wrapper{ text-align-center; }
+
+.accordion.accordion-2.accordion--oneopen li.box-cont {
+    display: inline-block;
+    width: 100%;
+}
+
+.footer-1 .col-sm-12{ top: -2px; }
+@media (max-width: 767px){
+  .footer-1 .logo {
+    margin-bottom: 1.92857143em;
+  }
+.accordion-image-1, .accordion-image-1-dark, .accordion-image-2-medium, .accordion-image-2-dark, .accordion-image-2-image, .accordion-image-2{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+}
+
+
+/* Officers */
+.officers-container .feature-8 img{
+    height: auto;
+}
+
+/* Process 3 */
+.process-3-container  img{
+    height: auto;
+}
+@media (max-width: 767px){
+    .process-3-container .border--round{ text-align: center; }
+    .process-3-container .border--round > div{ display: inline-block; }
+}
+
+.banner-ad img{height: auto;}
+
+.logo-center-nav .bar__module li.hasSubMenu:hover .dropdown__container{
+    left: 0 !important;
+}
+
+.media-banner-full-width, .media-banner-full-width .container {width: 100%;}
+
+.media-banner-full-width, .media-banner-full-width .container, .media-banner-full-width .vc_column_container {
+margin: 0px;
+padding: 0px;
+}
+
+.media-banner-full-width img {
+height: auto;
+width: 100%;
+}
+
+/* SURVEYS, NEWS LIST */
+.section-cont__content-surveys li .pandb-icon--md, .section-cont__content-news--medium li .pandb-icon--md, .section-cont__content-newsletters li .pandb-icon--md, .section-cont__content-folder li .pandb-icon--md {float: left; padding-right: 10px;}
+.section-cont__content-surveys li h4, .section-cont__content-news--medium li h4, .section-cont__content-newsletters li h4, .section-cont__content-folder li h4 {margin-bottom: 0px;}
+.section-cont__content-surveys li p,.section-cont__content-folder li p {margin-left: 54px;}
+
+/* USEFUL LINKS */
+.section-cont__content-useful_links li .pandb-icon--sm {float: left; padding-right: 10px;}
+.section-cont__content-useful_links li h4 {margin-bottom: 0px; line-height: 33px;}
+
+/* DOCUMENTS */
+.mfp-content {
+	width: 80% !important;
+	background-color: #fff;
+    	padding: 20px !important;
+}
+
+.mfp-content .padding_table {
+    	width: 98% !important;
+}
+
+.mfp-content .padding_table a strong {
+    	word-break: break-all;
+}
+
+.section-cont__content-documents .simple-ajax-popup.btn.btn-primary.mb-lg {
+    margin-bottom: 20px;
+}
+
+/* Light centered footer*/
+
+footer:not(.bg--primary):not(.bg--dark) a.isSchoolLightLogo {
+      background-color: #00a8e3;
+     border-radius: 6px;
+     display: inline-block;
+     padding: 5px  8px;
+}
+
+.footer-5 .social-list li {margin-top: 3.71428571em;}
+.footer-5 .heading-block {margin: 0;}
+
+/* QUICK FACTS */
+
+.section-cont__content-quick_facts i.icon {
+font-size: 4.57142857em;
+margin-bottom: 0px;
+}
+
+.section-cont__content-quick_facts h4 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #00a8e3 !important;
+    margin-top: 0.3842105263158em !important;
+    margin-bottom: 0px !important;
+}
+
+.section-cont__content-quick_facts p {
+    font-size: 1.2em;
+}
+
+.quick_facts_background {
+    color: #fff;
+    padding: 30px 0px;
+    background-image: url('/upload/all/2022/image_upload_951556_Login_Cover_82131651.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.quick_facts_background::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:  #00a8e3;
+    opacity: 0.7;
+}
+
+.quick_facts_background .icon:before, .quick_facts_background h4 {
+     color: #fff !important;
+}
+
+
+.quick_facts_background h4 {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0px !important;
+}
+
+.quick_facts_background p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* PHOTOS */
+
+.section-cont__content-pictures a[data-lightbox] img {width: 100%;}
+
+/*Gallery*/
+
+section.gallery-projects-3 .feature.feature-7 a {
+/*display: inline-grid;*/
+position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.feature-large-13 .lead {
+font-size: 1.2em;
+color: #444;
+margin-bottom: 1.36842105263158em;
+}
+.feature-large-13 .list-Icon.horiz > li {
+    width: 21%;
+}
+
+.feature-large-13 .list-Icon .icon {
+font-size: 2.5em;
+}
+
+.feature-large-13 .list-Icon .list-Item {
+    margin: .5em 0 0;
+}
+
+.feature-large-13 .box-cont__btns-block div {
+width: 0% !important;
+}
+
+.feature-large-13 .box-cont__btns-block div > a {
+margin-left: 0px;
+}
+
+.features-stripe {
+background: hsla(210, 10%, 94%, 1);
+}
+
+.features-stripe ul {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.features-stripe .feature-3 .icon {
+    color: #005fbf !important;
+font-size: 5.57142857em;
+}
+
+.features-stripe li.feature-3 {
+    background: #ffffff;
+    padding: 2.78571429em;
+    border-radius: 6px;
+    margin: 0px 19px 30px 19px;
+}
+
+@media (min-width: 992px) {
+.features-stripe li.feature-3.col-md-3 {
+    width: 22%;
+}
+}
+
+.features-stripe li.feature-3:hover {
+box-shadow: inset 0 0 0 2px #3182d4 !important;
+    color: #333 !important;
+    transform: scale(1.05);
+}
+
+.features-stripe .btn .btn__text {
+font-weight: 500;
+text-shadow: 0 0 #333;
+}
+
+/* Cookie footer */
+
+div#hs-eu-cookie-confirmation {
+    background: #fff;
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100000000!important;
+    border-bottom: 1px solid #cbd6e2;
+    border-top: 1px solid #cbd6e2;
+    box-shadow: 0 1px 5px #eaf0f6;
+    color: #33475b;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400!important;
+    line-height: inherit;
+    text-align: left;
+    text-shadow: none!important;
+    font-size: 12px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+div#hs-eu-cookie-confirmation {
+    position: fixed !important;
+}
+}
+
+@media only screen and (max-width: 767px) {
+div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom {
+    border-bottom: 0;
+    bottom: 0;
+    top: auto;
+    box-shadow: 0 -1px 3px #eaf0f6;
+}
+}
+
+/* Banner */
+.imagebg {
+background-repeat: no-repeat !important;
+background-size: cover !important;
+} 
+
+
+.accordion-1{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.wpb_single_image.wpb_content_element.vc_align_center figure div {text-align: center;}
+
+@media (max-width: 990px) {
+[data-editable] img {width: auto; height: auto;}
+}</style><link rel="stylesheet" type="text/css" href="/css/themes/stack/all.css"/><style>/* Global */
+
+#page-180835 h4 a{
+  color: #005fbf;
+}
+
+#page-182393 .cgLead h2{
+  font-weight: 700;
+}
+
+
+p.stack-blue-btn.stack-blue-btn-light > span:hover {
+  background: #fff;
+  border-color: #fff;
+}
+
+p.stack-grey-btn > span {
+  background: #888888;
+  border-color: #888888;
+  margin-top: 5px;
+}
+
+ul:not([class*='menu']) li > a {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.68421053em;
+}
+
+.testimonial__image img{
+  border-radius: 50%;
+}
+
+.list-Icon .icon {
+  color:#005fbf !important;
+}
+
+#JenniferLee.ce-element--type-image {
+  border-radius: 50%;
+}
+
+.bg--secondary {
+  background: hsla(210, 10%, 94%, 1);}
+
+[data-overlay="3"]:before {
+  opacity: 0.5 !important;
+}
+[data-overlay="2"]:before {
+  opacity: 0.6;
+  background: #003A66;
+}
+
+img {box-shadow:none!Important}
+
+.features-small-8{
+  background-color: #fafafa;
+}
+.perfect-for-startups-section h2{
+  color: #003A66;
+  font-weight: 700;
+}
+.design-driven-back-bg h2{
+  font-weight: 700;
+}
+
+.cta-3 h2{
+  color: #003A66;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+}
+
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ///////////// CG MARKETING TEAM EDITS ///////////// */
+
+/* Solutions Page 2021.10.15 */
+
+#page-188199 h2.textcenter{
+font-size: 16px;
+}
+
+#page-188199 [data-overlay="3"]:before {
+opacity: 0 !important;
+}
+
+/* Homepage 2021.08.24 */
+
+#page-255835 .cover-features-1:before {
+opacity: 0 !important;
+}
+
+#page-255835 .cover-features-1 .dark-blue-btn .btn--primary{
+ background: #f5e450;
+ border-color: #f5e450;
+ color: #005fbf;
+}
+
+#page-255835 .cover-features-1 p.stack-blue-btn > span a {
+ color: #005fbf !important;
+}
+
+#page-255835 .cover-features-1, .dark-blue-btn span, .dark-blue-btn .btn--primary{
+  background: #f5e450;
+  color: #005fbf; !important;
+}
+
+/* Ads Landing Page Edits */
+
+#page-249169 h2.textcenter{
+font-size: 16px;
+}
+
+#page-249169 [data-overlay="3"]:before {
+opacity: 0 !important;
+}
+
+#page-249169 .dark-blue-btn span, .dark-blue-btn .btn--primary{
+ background: #f5e450;
+ border-color: #f5e450;
+ color: #005fbf;
+font-size: 18px;
+font-weight: 600;
+line-height: 2.1em;
+}
+
+#page-249169 .dark-blue-btn span:hover, .dark-blue-btn .btn--primary:hover{
+  background: #efc748;
+  border-color: #efc748;
+  color: #005fbf;
+font-size: 18px;
+font-weight: 600;
+line-height: 2.1em;
+}
+
+#page-249169 p.stack-blue-btn > span a {
+ color: #005fbf !important;
+}
+
+#page-249169 .gallery-projects-3 h2{
+line-height: 4em;
+}
+
+#page-249169 @media (max-width: 767px) h2, .h2{
+font-size: 1.5em !important;
+line-height: 6em !important;
+}
+
+#page-249169 .perfect-for-startups-section h2{
+color: #005fbf !important;
+}
+/* 
+
+#page-249169 .dark-blue-btn span, .dark-blue-btn .btn--primary{
+  background: #005fbf;
+  border-color: #005fbf;
+}
+
+#page-249169 p.stack-blue-btn > span{
+background: #005fbf;
+  border-color: #005fbf;
+}
+
+#page-249169 .dark-blue-btn span:hover, .dark-blue-btn .btn--primary:hover{
+  background: #003A66;
+  border-color: #003A66;
+}
+
+#page-249169 .dark-blue-btn span:hover, p.stack-blue-btn > span:hover {
+  background: #003A66;
+  border-color: #003A66;
+}
+
+
+
+*/
+/* Orientation */
+
+#page-189650 [data-overlay="2"]:before {
+  opacity: 0.65;
+  background: #6dad15;
+}
+#page-189650 .perfect-for-startups-section h2{
+  color: #6dad15;
+}
+#page-189650 .cta-3 h2{
+  color: #6dad15;
+}
+
+/* Virtual Involvement Fair */
+
+#page-190438 [data-overlay="2"]:before {
+  opacity: 0.65;
+  background: #7e57c2;
+}
+#page-190438 .perfect-for-startups-section h2{
+  color: #7e57c2;
+}
+#page-190438 .cta-3 h2{
+  color: #7e57c2;
+}
+
+/* Virtual Career Fair */
+
+#page-192869 [data-overlay="2"]:before {
+  opacity: 0.65;
+  background: #7e57c2;
+}
+#page-192869 .perfect-for-startups-section h2{
+  color: #7e57c2;
+}
+#page-192869 .cta-3 h2{
+  color: #7e57c2;
+}
+
+/* Alumni */
+
+#page-193012 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #27a9e5;
+}
+#page-193012 .perfect-for-startups-section h2{
+  color: #27a9e5;
+}
+#page-193012 .cta-3 h2{
+  color: #27a9e5;
+}
+
+/*COVID FEATURES*/
+
+#page-196030 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #DAA520;
+}
+#page-196030 .perfect-for-startups-section h2{
+  color: #DAA520;
+}
+#page-196030 .cta-3 h2{
+  color: #DAA520;
+}
+
+/* Groups and Membership */
+
+#page-175995 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #27a9e5;
+}
+#page-175995 .perfect-for-startups-section h2{
+  color: #27a9e5;
+}
+#page-175995 .cta-3 h2{
+  color: #27a9e5;
+}
+
+
+/* Events and Calendar */
+
+#page-181893 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #6dad15;
+}
+#page-181893 .perfect-for-startups-section h2{
+  color: #6dad15;
+}
+#page-181893 .cta-3 h2{
+  color: #6dad15;
+}
+
+/* Events Attendance Tracking */
+
+#page-176959 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #6dad15;
+}
+#page-176959 .perfect-for-startups-section h2{
+  color: #6dad15;
+}
+#page-176959 .cta-3 h2{
+   color: #6dad15;
+}
+
+/* Emails and Mailing Lists */
+
+#page-176408 [data-overlay="2"]:before {
+    opacity: 0.8;
+    background: #f67401;
+}
+#page-176408 .perfect-for-startups-section h2{
+   color: #f67401;
+}
+#page-176408 .cta-3 h2{
+ color: #f67401;
+}
+
+/* Budgeting And Finance */
+
+#page-180381 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #888888;
+}
+#page-180381 .perfect-for-startups-section h2{
+  color: #888888;
+}
+#page-180381 .cta-3 h2{
+  color: #888888;
+}
+
+/* SURVEYS, FORMS & POLLS */
+
+#page-183946 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #504296;
+}
+#page-183946 .perfect-for-startups-section h2{
+  color: #504296;
+}
+#page-183946 .cta-3 h2{
+  color: #504296;
+}
+
+/* Campus Mobile Apps  */
+
+#page-176463 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #27a9e5;
+}
+#page-176463 .perfect-for-startups-section h2{
+  color: #27a9e5;
+}
+#page-176463 .cta-3 h2{
+  color: #27a9e5;
+}
+
+/* Co-Curricular Tracks  */
+
+#page-176461 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #7e57c2;
+}
+#page-176461 .perfect-for-startups-section h2{
+  color: #7e57c2;
+}
+#page-176461 .cta-3 h2{
+  color: #7e57c2;
+}
+
+/* INTEGRATION & CUSTOMIZATION  */
+
+#page-176405 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #254656;
+}
+#page-176405 .perfect-for-startups-section h2{
+  color: #254656;
+}
+#page-176405 .cta-3 h2{
+  color: #254656;
+}
+
+/* WORKFLOWS */
+
+#page-192637 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #504296;
+}
+#page-192637 .perfect-for-startups-section h2{
+  color: #504296;
+}
+#page-192637 .cta-3 h2{
+  color: #504296;
+}
+
+/* SERVICE HOURS */
+
+#page-193000 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #7E57C2;
+}
+#page-193000 .perfect-for-startups-section h2{
+  color: #7E57C2;
+}
+#page-193000 .cta-3 h2{
+  color: #7E57C2;
+}
+
+/* WEB BUILDER */
+
+#page-193011 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #0077a2;
+}
+#page-193011 .perfect-for-startups-section h2{
+  color: #0077a2;
+}
+#page-193011 .cta-3 h2{
+  color: #0077a2;
+}
+
+/* ROOM RESERVATION */
+
+#page-193146 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #8a4026;
+}
+#page-193146 .perfect-for-startups-section h2{
+  color: #8a4026;
+}
+#page-193146 .cta-3 h2{
+  color: #8a4026;
+}
+
+
+/* EVENTS APPS */
+
+#page-193147 [data-overlay="2"]:before {
+    opacity: 0.8;
+    background: #27a9e5;
+}
+#page-193147 .perfect-for-startups-section h2{
+   color: #27a9e5;
+}
+#page-193147 .cta-3 h2{
+ color: #27a9e5;
+}
+
+/* DISCUSSION FEEDS */
+
+#page-193361 [data-overlay="2"]:before {
+    opacity: 0.8;
+    background: #4285f4;
+}
+#page-193361 .perfect-for-startups-section h2{
+   color: #4285f4;
+}
+#page-193361 .cta-3 h2{
+ color: #4285f4;
+}
+
+/* CHAT */
+
+#page-193399 [data-overlay="2"]:before {
+    opacity: 0.8;
+    background: #4285f4;
+}
+#page-193399 .perfect-for-startups-section h2{
+   color: #4285f4;
+}
+#page-193399 .cta-3 h2{
+ color: #4285f4;
+}
+
+/* STORES */
+
+#page-193410 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #888888;
+}
+#page-193410 .perfect-for-startups-section h2{
+  color: #888888;
+}
+#page-193410 .cta-3 h2{
+  color: #888888;
+}
+
+/* ONLINE PAYMENTS */
+
+#page-193430 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #888888;
+}
+#page-193430 .perfect-for-startups-section h2{
+  color: #888888;
+}
+#page-193430 .cta-3 h2{
+  color: #888888;
+}
+
+/* DIRECTORY */
+
+#page-193600 [data-overlay="2"]:before {
+    opacity: 0.8;
+    background: #27a9e5;
+}
+#page-193600 .perfect-for-startups-section h2{
+   color: #27a9e5;
+}
+#page-193600 .cta-3 h2{
+ color: #27a9e5;
+}
+
+/* CONNCETION PROGRAMS */
+
+#page-193667 [data-overlay="2"]:before {
+    opacity: 0.8;
+    background: #c28140;
+}
+#page-193667 .perfect-for-startups-section h2{
+   color: #c28140;
+}
+#page-193667 .cta-3 h2{
+ color: #c28140;
+}
+
+/* GAMIFICATION */
+
+#page-193800 [data-overlay="2"]:before {
+    opacity: 0.8;
+    background: #c63030;
+}
+#page-193800 .perfect-for-startups-section h2{
+   color: #c63030;
+}
+#page-193800 .cta-3 h2{
+ color: #c63030;
+}
+
+/* TRACKS & CHECKLISTS */
+
+#page-193919 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #6dad15;
+}
+#page-193919 .perfect-for-startups-section h2{
+  color: #6dad15;
+}
+#page-193919 .cta-3 h2{
+   color: #6dad15;
+}
+
+/* Student Dashboard */
+
+#page-193972 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #27a9e5;
+}
+#page-193972 .perfect-for-startups-section h2{
+  color: #27a9e5;
+}
+#page-193972 .cta-3 h2{
+  color: #27a9e5;
+}
+
+
+/* ANALYTICS */
+
+#page-193973 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #335261;
+}
+#page-193973 .perfect-for-startups-section h2{
+  color: #335261;
+}
+#page-193973 .cta-3 h2{
+  color: #335261;
+}
+
+/* REPORTS */
+
+#page-193986 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #3a81be;
+}
+#page-193986 .perfect-for-startups-section h2{
+  color: #3a81be;
+}
+#page-193986 .cta-3 h2{
+  color: #3a81be;
+}
+
+/* INVENTORY */
+
+#page-194492 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #504296;
+}
+#page-194492 .perfect-for-startups-section h2{
+  color: #504296;
+}
+#page-194492 .cta-3 h2{
+  color: #504296;
+}
+
+/* JOBS & CAREERS*/
+
+#page-194493 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #504296;
+}
+#page-194493 .perfect-for-startups-section h2{
+  color: #504296;
+}
+#page-194493 .cta-3 h2{
+  color: #504296;
+}
+
+/* Marketplace */
+
+#page-211866 [data-overlay="2"]:before {
+  opacity: 0.8;
+  background: #D81B60;
+}
+#page-211866 .perfect-for-startups-section h2{
+  color: #D81B60;
+}
+#page-211866 .cta-3 h2{
+  color: #D81B60;
+}
+
+/* ///////////// CG DEV TEAM EDITS ///////////// */
+
+
+/* Menu */
+
+#menu1 .hidden-xs {padding-left: 4px;}
+
+@media (min-width: 768px)
+{
+.bar img[class^="logo"] {
+    max-height: 55px;
+    min-height: auto !important;
+    }
+}
+
+@media (min-width: 768px) {
+.col-md-3.col-sm-2.hidden-xs .bar__module, .col-md-1.col-sm-2.hidden-xs .bar__module {
+    padding: 17px 0px;
+}
+}
+
+/* Home */
+
+div.border--round--cg > a > img  {
+    border-radius: 6px;
+}
+
+@media (max-width: 767px) {
+section#logos .flexslider .slides > li {
+    width: 250.4px !important;
+    margin-right: 5px  !important;
+    float: left  !important;
+    display: block  !important;
+}
+}
+
+/* Product pages */
+@media (max-width: 767px) {
+.switchable.cta.cta-3.switchable--switch img {
+    width: 90%;
+    height: auto;
+}
+.perfect-for-startups-section .col-md-offset-1 {
+    text-align: left;
+}
+}
+
+/* Solutions pages */
+@media (max-width: 767px) {
+.switchable.feature-large.feature-large-13 {
+    padding-bottom: 0px;
+}
+
+.switchable.feature-large.feature-large-13 .list-Icon.horiz {
+    margin-left: auto;
+}
+
+.switchable.feature-large.feature-large-13 .list-Icon.horiz > li {
+    width: 29%;
+}
+
+.switchable.feature-large.feature-large-13 img {
+    width: 90%;
+    height: auto;
+}
+
+.switchable.feature-large.feature-large-13.feature-large-13-right .row {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.div-spacer.background-cont {
+    display: none;
+}
+}
+
+#page-180835 .feature h4 + p { max-width: inherit; }
+
+@media (max-width: 991px) {
+    #page-180835 .responsive-span > span { display: block; }
+    #page-180835 .responsive-span > span:not(:last-child) {margin-bottom: 7.5px; }
+}
+
+/*PRICING*/
+
+@media (min-width: 992px) {
+#page-191095 .d-md-flex { display: flex; }
+#page-191095 .d-md-flex .pricing.pricing-1 {height: 100%; }
+}
+
+
+/* ///////////// CG Color Buttons ///////////// */
+
+p.stack-cg-web-btn > span a, p.stack-cg-web-btn > span a:hover  {
+     color: ##005fbf !important;
+}
+
+p.stack-cg-room-btn > span a, p.stack-cg-room-btn > span a:hover  {
+     color: #8a4026 !important;
+}
+
+p.stack-cg-checklist-btn > span a, p.stack-cg-checklist-btn > span a:hover  {
+     color: #3cb371 !important;
+}
+
+p.stack-cg-file-btn > span a, p.stack-cg-file-btn > span a:hover  {
+     color: #009688 !important;
+}
+
+p.stack-cg-officer-btn > span a, p.stack-cg-officer-btn > span a:hover  {
+     color: #daa520 !important;
+}
+
+p.stack-cg-analytic-btn > span a, p.stack-cg-analytic-btn > span a:hover  {
+     color: #254656 !important;
+}
+
+p.stack-cg-mentorship-btn > span a, p.stack-cg-mentorship-btn > span a:hover  {
+     color: #b76a1d !important;
+}
+p.stack-cg-mentorship-btn > span a, p.stack-cg-defualt-btn > span a:hover  {
+     color: #005fbf !important;
+}
+p.stack-cg-marketplace-btn > span a, p.stack-cg-defualt-btn > span a:hover  {
+     color: #D81B60 !important;
+}
+
+/* Hubspot forms */
+.hbspt-form > iframe {width: 600px !important;}
+
+
+/* RDV Widget */
+#page-234614 .graphic-design-section [data-overlay]:before {
+background-color: rgba(253,99,93,0.3);
+}
+
+
+/*Mkt Kit*/
+#page-237807 .features-small-8{
+background-color: #fff;
+}
+
+#page-237807 section.space--sm, footer.space--sm {
+    padding-top: 4.95238095em;
+    padding-bottom: 0;
+}
+
+#page-239684 .schools-list { margin: 30px -5px 0; display: flex; flex-wrap: wrap; }
+#page-239684 .schools-list .schools-list-item { flex: 0 0 auto; width: 50%; max-width: 100%; padding-left: 5px; padding-right: 5px; margin-bottom: 7.5px; text-align: center;}
+@media (min-width: 720px) {
+	#page-239684 .schools-list .schools-list-item { width: 33.3333333333% }
+}
+@media (min-width: 992px) {
+	#page-239684 .schools-list .schools-list-item { width: 25%; }
+}
+@media (min-width: 1200px) {
+	#page-239684 .schools-list .schools-list-item { width: 20%; }
+}
+#page-239684 .schools-list .schools-list-item-card { box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px, rgb(0 0 0 / 14%) 0px 5px 8px 0px, rgb(0 0 0 / 12%) 0px 1px 14px 0px; border-radius: 3px; padding: 5px; display: inline-block;}
+#page-239684 .schools-list .schools-list-item .schools-list-item-card img {margin-bottom: 0;}
+
+#page-191095 .purchase-plan-dark-blue-btn a:hover {
+color: #ffffff;
+background-color: #436fa2;
+}</style>
+</head>
+
+<body data-smooth-scroll-offset="77" id="page-249169">
+    <div class="section-cont">
+<div class="section-cont__tmpl-block"><!-- ========== Header Section Start ========== -->
+<div class="nav-container">
+<div>
+<div class="bar bar--sm visible-xs">
+<div class="container">
+<div class="row">
+<div class="col-xs-8 col-sm-2"><a class="section-cont__content-menu_club_website_url isNotSchoolLightLogo" href="http://www.campusgroups.com/product/" aria-label="CampusGroups"><img alt="logo" class="logo1 logo-dark" src="https://www.campusgroups.com/product/home/img/logo_campusgroups.svg" width="290"> </a></div>
+
+<div class="col-xs-4 col-sm-10 text-right"><a aria-label="Hamburger Toggle" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs hidden-sm" href="#">&nbsp;<i class="icon icon--sm stack-interface stack-menu">&nbsp;</i> </a></div>
+</div>
+</div>
+</div>
+
+<nav class="bar bar-1 hidden-xs" id="menu1">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-2 hidden-xs">
+<div class="bar__module"><a class="section-cont__content-menu_club_website_url isNotSchoolLightLogo" href="http://www.campusgroups.com/product/" aria-label="CampusGroups"><img alt="logo" class="logo1 logo-dark" src="https://www.campusgroups.com/product/home/img/logo_campusgroups.svg" width="290"> </a></div>
+</div>
+
+<div class="col-md-9 col-sm-12 text-right text-left-xs text-left-sm">
+<div class="bar__module ">
+<ul class="menu-horizontal text-left section-cont__content-menu"><li class="dropdown  hasNoSubMenu "> 
+<span class="dropdown__trigger">
+<a href="/product/solutions/" >Solutions</a>
+</span>
+    <div class="dropdown__container">
+        <div class="container">
+            <div class="row">
+                <div class="dropdown__content col-md-2">
+                    <ul class="menu-vertical">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</li><li class="dropdown  hasNoSubMenu "> 
+<span class="dropdown__trigger">
+<a href="/product/product/" >Product</a>
+</span>
+    <div class="dropdown__container">
+        <div class="container">
+            <div class="row">
+                <div class="dropdown__content col-md-2">
+                    <ul class="menu-vertical">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</li><li class="dropdown  hasSubMenu [CONTENT-MENU_HIGHLIGHTED]"> 
+<span class="dropdown__trigger">
+<a href="/product/help-center/" [CONTENT-MENU_NEW_TAB]>Resources</a>
+</span>
+    <div class="dropdown__container">
+        <div class="container">
+            <div class="row">
+                <div class="dropdown__content col-md-2">
+                    <ul class="menu-vertical">
+                        <li class="dropdown"> <a href="/product/help-center/" >Help Center</a> </li><li class="dropdown"> <a href="/product/users-community/" >Users Community</a> </li><li class="dropdown"> <a href="/product/webinars/" >Webinars</a> </li><li class="dropdown"> <a href="/product/success-stories/" >Testimonials</a> </li><li class="dropdown"> <a href="/product/marketing-kit/" >Marketing Kit</a> </li><li class="dropdown"> <a href="/product/our-partners/" >Integrations</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</li><li class="dropdown  hasSubMenu [CONTENT-MENU_HIGHLIGHTED]"> 
+<span class="dropdown__trigger">
+<a href="/product/blog/" [CONTENT-MENU_NEW_TAB]>Company</a>
+</span>
+    <div class="dropdown__container">
+        <div class="container">
+            <div class="row">
+                <div class="dropdown__content col-md-2">
+                    <ul class="menu-vertical">
+                        <li class="dropdown"> <a href="/product/blog/" >Blog</a> </li><li class="dropdown"> <a href="/product/careers/" >Careers</a> </li><li class="dropdown"> <a href="/product/news/" >Press</a> </li><li class="dropdown"> <a href="/product/contact-us/" >Contact Us</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</li><li class="dropdown  hasNoSubMenu "> 
+<span class="dropdown__trigger">
+<a href="/product/sign-in/" >Sign In</a>
+</span>
+    <div class="dropdown__container">
+        <div class="container">
+            <div class="row">
+                <div class="dropdown__content col-md-2">
+                    <ul class="menu-vertical">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</li><li class="dropdown  hasNoSubMenu isMenuHighlightedButton"> 
+<span class="dropdown__trigger">
+<a href="/product/request-a-demo-old/" >Request a demo</a>
+</span>
+    <div class="dropdown__container">
+        <div class="container">
+            <div class="row">
+                <div class="dropdown__content col-md-2">
+                    <ul class="menu-vertical">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</li></ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<!-- ========== Header Section End ========== --></div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<section class="imagebg parallax background-cont cover-features-1" data-overlay="3" style="background-image: url(&quot;/upload/all/2022/web_upload_951556New_App_New_Branding_2022_31145134_crop.png&quot;);">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="cta">
+<div class="vc_empty_space" style="height: 100px">&nbsp;</div>
+
+<div class="row vc_row wpb_row vc_inner vc_row-fluid">
+<div class="wpb_column vc_column_container col-sm-7"><grammarly-extension class="cGcvT" data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;"></grammarly-extension><grammarly-extension class="cGcvT" data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;"></grammarly-extension>
+
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper cgLead" data-editable=""><h1 style="
+    /* color: #005fbf; */
+">
+    The all-in-one campus experience management platform
+</h1>
+<p class="lead" style="
+    /* color: #005fbf; */
+">
+    Help your students, staff, alumni and community partners connect, collaborate and be successful.
+</p>
+<p class="stack-blue-btn dark-blue-btn">
+    <span class="btn__text"><b><a href="https://www.campusgroups.com/product/demo/" target="">REQUEST A FREE DEMO</a></b></span>
+</p></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="wpb_column vc_column_container col-sm-5">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">&nbsp;</div>
+</div>
+</div>
+</div>
+
+<div class="vc_empty_space" style="height: 100px">&nbsp;</div>
+
+<div class="row vc_row wpb_row vc_inner vc_row-fluid">&nbsp;</div>
+
+<div class="vc_empty_space" style="height: 100px">&nbsp;</div>
+</div>
+</div>
+</div>
+<!--end of row--></div>
+<!--end of container--></section>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<div class="div-spacer background-cont">&nbsp;</div>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;"><grammarly-extension class="cGcvT" data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;"></grammarly-extension><grammarly-extension class="cGcvT" data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none;"></grammarly-extension>
+
+<div class="section-cont__tmpl-block">
+<section class="no-padding background-cont">
+<div class="container" data-editable=""><h2 style="text-align: center">
+    <b>Join 260+ leading institutions</b>
+</h2>
+<h2 class="text-center" style="
+    font-size: 25px;
+">
+    <b>70%</b> of the <a href="https://www.usnews.com/best-colleges/rankings/national-universities?int=top_nav_National_Universities" target="_blank">top universities&nbsp;worldwide</a> use CampusGroups as their campus community platform.
+</h2></div>
+</section>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<div class="div-spacer background-cont">&nbsp;</div>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block"><!-- ==========  Centered With Background Section Start ========== -->
+<div class="main-container">
+<section class="text-center imagebg background-cont section-title-center-bg" style="background-image: url(&quot;/upload/all/2021/web_upload_1205152Landing_Page_1_82413113_crop.png&quot;);">
+<div>
+<div class="container">
+<div class="row">
+<div class="col-sm-10 col-md-8 cgLead" data-editable=""><h1>
+    We <b>help campuses</b> achieve more with <b>powerful</b> and<b> customizable</b> solutions for their entire community.
+</h1></div>
+</div>
+</div>
+</div>
+</section>
+</div><div class="all-page-modals"></div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+<!-- ==========  Centered With Background Section End ========== --></div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<section class="switchable feature-large perfect-for-startups-section background-cont no-bg-repeat">
+<div class="container">
+<div class="row box-cont">
+<div class="col-sm-6 text-center">
+<div class="border--round--cg box-shadow-wide--cg" data-editable=""><img alt="" data-ce-max-width="3000" height="377" src="/upload/all/2023/web_upload_1713190allinone_student_engagement_platform_women_on_mobile_phone_and_laptop_copy_748417_crop.jpeg" style="
+    margin-top: 40px;
+" width="570"></div>
+</div>
+
+<div class="col-sm-6 col-md-5 col-md-offset-1">
+<div class="switchable__text">
+<div data-editable=""><h2>
+    8 core solutions integrated in one single platform
+</h2></div>
+
+<div class="box-cont p-margin">
+<div class="cgLead" data-editable=""><ul>
+    <li>
+        Student Engagement, Retention &amp; Success
+    </li>
+    <li>
+        Student Organization Management
+    </li>
+    <li>
+        Campus Calendaring &amp; Events Management
+    </li>
+    <li>
+        Campus-Wide Communication
+    </li>
+    <li>
+        Campus Portal &amp; Mobile App
+    </li>
+    <li>
+        Campus Management &amp; Operations
+    </li>
+    <li>
+        Alumni Engagement &amp; Success
+    </li>
+    <li>
+        Career Management
+    </li>
+    <li>
+        <a href="/product/solutions/" style="font-weight: normal;" target="">Learn more about our solutions</a>
+    </li>
+</ul>
+<p>
+    
+</p></div>
+</div>
+
+<div data-editable=""></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<section class="bg--secondary vc_custom_1486577354461">
+<div class="container">
+<div class="vc_row wpb_row vc_row-fluid">
+<div class="wpb_column vc_column_container col-sm-12">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="video video-1 text-center" data-editable=""><h2>
+    "<i>We really like how <b>user-friendly</b> the system is and how easy it was for our student organizations to set it up. It was a <b>simple process</b> and the CampusGroups staff was very <b>helpful and responsive</b></i>."
+</h2>
+<p style="
+    font-size: 20px;
+">
+    Alex Moreno, Program Coordinator at <b>Stanford University</b>
+</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<section class="switchable feature-large perfect-for-startups-section switchable--switch background-cont no-bg-repeat">
+<div class="container">
+<div class="row box-cont">
+<div class="col-xs-12 col-sm-6 col-md-offset-1">
+<div class="border--round--cg box-shadow-wide--cg" data-editable=""><img alt="" data-ce-max-width="801" height="457" src="/upload/all/2021/web_upload_951556Ads_MockUps_2_817101013_crop.png" width="610"></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-5">
+<div class="switchable__text">
+<div data-editable=""><h2>
+    Boost students involvement on-the-go
+</h2></div>
+
+<div class="box-cont p-margin">
+<div class="cgLead" data-editable=""><ul>
+    <li>
+        Centralized events calendar
+    </li>
+    <li>
+        Chat &amp; push notifications
+    </li>
+    <li>
+        Integration with other systems
+    </li>
+    <li>
+        Campus-wide directory
+    </li>
+    <li>
+        Attendance tracking
+    </li>
+    <li>
+        Group management
+    </li>
+    <li>
+        Customized feed
+    </li>
+    <li>
+        Secure streamlined event registration
+    </li>
+</ul>
+<p>
+    
+</p></div>
+</div>
+
+<div data-editable=""></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<div class="border-top-eb">&nbsp;</div>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<div class="main-container">
+<section class="text-center">
+<div class="container">
+<div class="row">
+<div class="col-sm-10 col-md-8 cgLead" data-editable=""><h1>
+    Drive success throughout the entire student life-cycle
+</h1></div>
+</div>
+</div>
+</section>
+</div><div class="all-page-modals"></div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+
+<div class="all-page-modals">&nbsp;</div>
+</div>
+</div>
+
+<div class="section-cont" style="display: block; position: relative; top: 0px; left: 0px;">
+<div class="section-cont__tmpl-block">
+<section>
+<div class="container features-small-9-cont">
+<div class="vc_row wpb_row vc_row-fluid vc_custom_1486577993244">
+<div class="wpb_column vc_column_container col-sm-4 box-cont">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="feature mb-1 margin-0 border--round--cg" data-editable=""><img alt="" data-ce-max-width="1920" height="314" src="/upload/all/2021/web_upload_1205152iphonexmockupfeaturingawomanlisteningtoacoolpodcast24794_826122852_crop.png" width="471">
+<h4>
+    <b>Admissions</b>
+</h4>
+<p>
+    Engage and retain new students in your programs, organize on campus or virtual orientation, connect new students to their new campus.
+</p></div>
+</div>
+</div>
+</div>
+
+<div class="wpb_column vc_column_container col-sm-4 box-cont">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="feature mb-1 margin-0 border--round--cg" data-editable=""><img alt="" data-ce-max-width="1920" height="313" src="/upload/all/2021/web_upload_1205152manusingamacbookmockuponawoodenbencha21006_826175020_crop.png" width="471">
+<h4>
+    <b>Career Management</b>
+</h4>
+<p>
+    Connect students with job opportunities and recruiting companies. Foster long-term relationships with employers by hosting a virtual career fair.
+</p></div>
+</div>
+</div>
+</div>
+
+<div class="wpb_column vc_column_container col-sm-4 box-cont">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="feature mb-1 margin-0 border--round--cg" data-editable=""><img alt="" data-ce-max-width="3000" height="314" src="/upload/all/2021/web_upload_1205152pexelsphoto267885_826174657_crop.jpeg" width="471">
+<h4>
+    <b>Alumni Community Management</b>
+</h4>
+<p>
+    Create a life-long connection to your campus! Our all-in-one Alumni Community platform promotes meaningful communication and strong networks.
+</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<div class="section-cont" style="display: block; position: relative; top: 0px; left: 0px;">
+<div class="section-cont__tmpl-block">
+<section class="imagebg background-cont data-gradient-bg" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1" style="background-image: url(&quot;/upload/all/2021/web_upload_951556Landing_Page_1_816222912_crop.png&quot;);"><canvas height="462" id="granim-0" width="1903"></canvas>
+
+<div class="container">
+<div class="vc_row wpb_row vc_row-fluid">
+<div class="wpb_column vc_column_container col-sm-2">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">&nbsp;</div>
+</div>
+</div>
+
+<div class="wpb_column vc_column_container col-sm-8">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper cgLead" data-editable=""><h2 style="text-align: center;">
+    <b>Request a free demo today!</b>
+</h2>
+<p class="lead" style="text-align: center;">
+    Our team of experts will be very happy to show you how our powerful features can help your campus achieve more and make your life easier.
+</p></div>
+</div>
+
+<div class="vc_empty_space" style="height: 32px">&nbsp;</div>
+
+<div class="text-center" data-editable=""><p class="stack-blue-btn dark-blue-btn">
+    <span class="btn__text"><a href="https://www.campusgroups.com/product/campus-engagement-platform/#lpdemorequest" target="_self"><b>Tell me more!</b></a></span>
+</p></div>
+</div>
+</div>
+</div>
+
+<div class="wpb_column vc_column_container col-sm-2">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<section class="gallery-projects-3">
+<div class="container">
+<div class="vc_row wpb_row vc_row-fluid box-cont">
+<div class="wpb_column vc_column_container col-sm-7">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="feature feature-7 boxed text-center imagebg background-cont grid-img-1 bg-grid" data-editable="" data-overlay="3" style="background-image: url(&quot;/upload/all/2021/web_upload_951556Users_Countries_816225155_crop.png&quot;);"><h2>
+    Over <b>6.5M</b> users across <b>11</b> countries
+</h2></div>
+</div>
+</div>
+</div>
+
+<div class="wpb_column vc_column_container col-sm-5">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="feature feature-7 boxed text-center imagebg background-cont grid-img-2 bg-grid" data-editable="" data-overlay="3" style="background-image: url(&quot;/upload/all/2021/web_upload_951556Campuses_81622527_crop.png&quot;);"><h2>
+    <span style="font-weight: normal;"><b>260+</b></span> <span style="font-weight: normal;">campuses</span>
+</h2></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="vc_row wpb_row vc_row-fluid box-cont">
+<div class="wpb_column vc_column_container col-sm-5">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="feature feature-7 boxed text-center imagebg background-cont grid-img-3 bg-grid" data-editable="" data-overlay="3" style="background-image: url(&quot;/upload/all/2021/web_upload_951556Users_81622524_crop.png&quot;);"><h2>
+    <b>30+</b> customizable modules
+</h2></div>
+</div>
+</div>
+</div>
+
+<div class="wpb_column vc_column_container col-sm-7">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="feature feature-7 boxed text-center imagebg background-cont grid-img-4 bg-grid" data-editable="" data-overlay="3" style="background-image: url(&quot;/upload/all/2021/web_upload_951556Modules_816225232_crop.png&quot;);"><h2>
+    <b>18M</b> participants for <b>2.2M</b> events
+</h2></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<section class="bg--secondary background-cont pricing-plan-3">
+<div class="container">
+<div class="vc_row wpb_row vc_row-fluid">
+<div class="wpb_column vc_column_container col-sm-5">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper cgLead" data-editable=""><h2>
+    <b>Flexible Pricing</b>
+</h2>
+<p class="lead">
+    We offer <b>flexible and scalable pricing</b> instead of the 'one size fits all' approach.&nbsp;We have designed solution bundles to&nbsp;<b>fit your needs and budget</b>.
+</p>
+<p>
+    Simply choose what works best for your institution!
+</p></div>
+</div>
+
+<div class="vc_empty_space" style="height: 32px">&nbsp;</div>
+
+<div class="row">
+<div class="col-sm-6 col-md-3 testimonial-avatar">
+<div class="testimonial testimonial-2">
+<div class="testimonial__body boxed boxed--border bg--secondary" data-editable=""><p>
+    <span>"CampusGroups is an amazing software company that is advanced enough to meet all our needs and requests and nimble enough to customize the platform. Every idea we have had, they have found a way to make it happen."</span>
+</p></div>
+
+<div class="testimonial__image" data-editable=""><img alt="" data-ce-max-width="160" height="80" src="/upload/all/2021/web_upload_1205152web_upload_1205152jennifer3_528151320_crop_8251496_crop.jpg" width="80">
+<h5>
+    Jennifer Lee
+</h5>
+<p>
+    <span>University of Wisconsin Stout</span>
+</p></div>
+</div>
+</div>
+</div>
+<!--end of row--></div>
+</div>
+</div>
+
+<div class="wpb_column vc_column_container col-sm-2">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">&nbsp;</div>
+</div>
+</div>
+
+<div class="wpb_column vc_column_container col-sm-4">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class="pricing pricing-1 boxed boxed--lg boxed--border boxed--emphasis">
+<div data-editable=""><h3>
+    Solutions for a
+</h3>
+<p>
+    <span class="h2"><strong>Campus Wide Platform</strong></span>
+</p>
+<p>
+    <span>Please ask us for a quote!</span>
+</p></div>
+
+<hr>
+<ul>
+	<li class="box-cont">&nbsp;
+	<div data-editable=""><p>
+    Select from <a href="https://www.campusgroups.com/product/product/" target="">30 modules</a>
+</p></div>
+	</li>
+	<li class="box-cont">&nbsp;
+	<div data-editable=""><p>
+    <span>Approval Workflows</span>
+</p></div>
+	</li>
+	<li class="box-cont">&nbsp;
+	<div data-editable=""><p>
+    <span>White Labeling</span>
+</p></div>
+	</li>
+	<li class="box-cont">&nbsp;
+	<div data-editable=""><p>
+    <span>Dedicated Email Server</span>
+</p></div>
+	</li>
+	<li class="box-cont">&nbsp;
+	<div data-editable=""><p>
+    <span>Single Sign-On</span>
+</p></div>
+	</li>
+	<li class="box-cont">&nbsp;
+	<div data-editable=""><p>
+    <span>Integrations &amp; API</span>
+</p></div>
+	</li>
+	<li class="box-cont">&nbsp;
+	<div data-editable=""><p>
+    <span>Single Tenant</span>
+</p></div>
+	</li>
+	<li class="box-cont">&nbsp;
+	<div data-editable=""><p>
+    <span>Dedicated Mobile App &amp; Web Portal</span>
+</p></div>
+	</li>
+	<li class="box-cont">&nbsp;
+	<div data-editable=""><p>
+    <span>Dedicated Account Manager</span>
+</p></div>
+	</li>
+	<li class="box-cont">&nbsp;
+	<div data-editable=""><p>
+    <span>Support Assistance</span>
+</p></div>
+	</li>
+	<li class="box-cont">&nbsp;
+	<div data-editable=""><p>
+    <span>Enterprise Implementation</span>
+</p></div>
+	</li>
+</ul>
+
+<div data-editable=""><p class="purchase-plan-dark-blue-btn">
+    <span class="btn__text"><a href="https://www.campusgroups.com/product/demo/" target="">Learn more</a></span>
+</p></div>
+</div>
+<!--end of pricing--></div>
+</div>
+</div>
+
+<div class="wpb_column vc_column_container col-sm-1">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<div class="div-spacer background-cont">&nbsp;</div>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<div class="vc_row wpb_row vc_row-fluid cover-features-3 clearfix" data-vc-full-width="true" data-vc-full-width-init="true">
+<div class="wpb_column vc_column_container col-sm-12">
+<div class="vc_column-inner ">
+<div class="wpb_wrapper"><a id="lpdemorequest"></a>
+
+<section class="unpad--top unpad--bottom imageblock switchable feature-large regular-background space--sm">
+<div class="imageblock__content col-md-6 col-sm-4 pos-right background-cont" style="background-image: url(&quot;/upload/all/2021/web_upload_1205152macbookpromockupfeaturinganelegantdesk483el_2_823142441_crop.png&quot;);"><!-- <div class="background-image-holder background-cont">
+    
+                        </div> --></div>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script><script>
+  hbspt.forms.create(%7B
+    region: "na1",
+    portalId: "6074670",
+    formId: "38608ec8-ee85-40d2-92fc-7c0432ec36df"
+  %7D);
+</script>
+
+<div class="container">
+<div class="row">
+<div class="col-md-5 col-sm-7">
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper cgLead" data-editable=""><h1>
+    Request a demo today!
+</h1>
+<p class="lead">
+    
+</p>
+<div id='2560943' class='section-cont__content-widget'><script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "6074670",
+    formId: "38608ec8-ee85-40d2-92fc-7c0432ec36df"
+  });
+</script></div>
+<p>
+    
+</p></div>
+</div>
+
+<div class="vc_empty_space" style="height: 30px">&nbsp;</div>
+<!--end feature--><!--end feature--><!--end feature--></div>
+</div>
+<!--end of row--></div>
+<!--end of container--></section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="section-cont" style="display: block;">
+<div class="section-cont__tmpl-block">
+<footer class="text-center space--sm footer-5 bg--secondary border-top-eb">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div>
+<ul class="list-inline list--hover section-cont__content-footer" id="menu-footer-menu"><!-- WSB-ey(501) -->
+<li class="menu-item menu-item-type-custom menu-item-object-custom"> 
+    <a href="/product/solutions/" aria-label="Solutions">
+        <span class="h6 type--uppercase">Solutions</span>
+    </a> 
+</li>
+<!-- WSB-ez(501) --><!-- WSB-ey(501) -->
+<li class="menu-item menu-item-type-custom menu-item-object-custom"> 
+    <a href="/product/product/" aria-label="Product">
+        <span class="h6 type--uppercase">Product</span>
+    </a> 
+</li>
+<!-- WSB-ez(501) --><!-- WSB-ey(501) -->
+<li class="menu-item menu-item-type-custom menu-item-object-custom"> 
+    <a href="/product/help-center/" aria-label="Resources">
+        <span class="h6 type--uppercase">Resources</span>
+    </a> 
+</li>
+<!-- WSB-ez(501) --><!-- WSB-ey(501) -->
+<li class="menu-item menu-item-type-custom menu-item-object-custom"> 
+    <a href="/product/blog/" aria-label="Company">
+        <span class="h6 type--uppercase">Company</span>
+    </a> 
+</li>
+<!-- WSB-ez(501) --><!-- WSB-ey(501) -->
+<li class="menu-item menu-item-type-custom menu-item-object-custom"> 
+    <a href="/product/sign-in/" aria-label="Sign In">
+        <span class="h6 type--uppercase">Sign In</span>
+    </a> 
+</li>
+<!-- WSB-ez(501) --><!-- WSB-ey(501) -->
+<li class="menu-item menu-item-type-custom menu-item-object-custom"> 
+    <a href="/product/request-a-demo-old/" aria-label="Request a demo">
+        <span class="h6 type--uppercase">Request a demo</span>
+    </a> 
+</li>
+<!-- WSB-ez(501) --></ul>
+</div>
+
+<div>
+<ul class="social-list list-inline list--hover stack-footer-social">
+	<li class="section-cont__content-footer_club_facebook_display" style="">&nbsp;</li>
+	<li class="section-cont__content-footer_club_twitter_display" style="">&nbsp;</li>
+	<li class="section-cont__content-footer_club_instagram_display" style="">&nbsp;</li>
+	<li class="section-cont__content-footer_club_linkedin_display" style="">&nbsp;</li>
+</ul>
+</div>
+
+<div><a class="footer-logo-holder logo-holder section-cont__content-footer_club_website_url isNotSchoolLightLogo" href="http://www.campusgroups.com/product/" aria-label="CampusGroups"><img alt="CampusGroups, website logo" class="logo logo-dark section-cont__content-footer_club_logo" src="/upload/all/2022/flyer_image_upload_951556_Wordmark_RE_Blue2x_628182819.png"> </a></div>
+
+<div>
+<div class="footer-stack-copyright"><span class="type--fine-print">©</span> <span class="section-cont__content-footer_copyright_year type--fine-print">2023</span> <span class="section-cont__content-footer_club_name type--fine-print">CampusGroups</span> <a class="type--fine-print section-cont__content-footer_privacy_policy" href="https://www.campusgroups.com/terms?view=privacy">Privacy Policy</a></div>
+</div>
+</div>
+</div>
+<!--end of row--></div>
+<!--end of container--></footer>
+</div>
+</div>
+
+    
+    <script src="/css/themes/stack/js/flickity.min.js"></script>
+    <script src="/css/themes/stack/js/parallax.js"></script>
+    <script src="/css/themes/stack/js/isotope.min.js"></script>
+    <script src="/css/themes/stack/js/lightbox.min.js"></script>
+    <script src="/css/themes/stack/js/smooth-scroll.min.js"></script>
+    <script src="/css/themes/stack/js/scripts.js"></script>
+    <script defer src="/css/themes/stack/js/jquery.flexslider-min.js"></script>
+    <script src="/css/themes/stack/js/accessibility.js"></script>
+</body>
+
+</html>
+    <!-- Google Analytics -->
+    <script>
+        <!-- TODO Remove after End of Life 01 July 2023 -->
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
+
+    
+    <!-- End Google Analytics -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HSK8LT');</script>

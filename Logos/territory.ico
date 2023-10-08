@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="windows-1251">
+	<title>Территория - Финал одной истории, начало новых!</title>
+	<style>
+		html, body {border: 0; margin: 0; padding: 0;}
+		body {background: #161125; color: #444; font-family: tahoma, geneva, san-serif; font-size: 14px;}
+
+		a {color: #113; text-decoration: underline}
+		a:hover {text-decoration: none}
+		header, section, article, footer {display: block;}
+		form, input {margin: 0; padding: 0;}
+
+		.header {background: url("images/end/header.jpg") 50% 100% no-repeat; height: 855px; text-align: center; position: relative;}
+		.header__logo {position: absolute; left: 50%; top: 80px; margin-left: -199px;}
+		.header__title {color: #FFF; font-weight: normal; position: absolute; left: 50%; top: 788px; margin: 0 0 0 -304px; padding: 0; line-height: 68px; width: 608px;}
+
+		.header__bar {background: #635f6e; position: absolute; left: 0; top: 0; height: 34px; width: 100%; padding: 8px 0;}
+		.header__bar-form {display: block; width: 608px; margin: 0 auto; overflow: hidden;}
+		.header__bar-form-field {background: url("images/end/search.png") 8px 6px no-repeat transparent; border: 1px solid #48454c; border-radius: 5px; box-shadow: inset 0 0 5px 0 #48454c; color: #1a1826; font-size: 20px; outline: none; float: left; padding: 0 0 0 36px; height: 32px; width: 448px; line-height: 32px;}
+		::-webkit-input-placeholder {color: #1a1826 !important;}
+		:-moz-placeholder {color: #1a1826 !important;}
+		::-moz-placeholder {color: #1a1826 !important;}
+		:-ms-input-placeholder {color: #1a1826 !important;}
+		.header__bar-form-field[placeholder] {color: #1a1826 !important;}
+		.header__bar-form-button {background: #4e4a59; border: 0; border-radius: 5px; color: #a5a4aa; cursor: pointer; font-size: 20px; float: right; outline: none; height: 34px; width: 110px;}
+
+		.b-content {background: #c8c0c0 url("images/end/content.jpg") 50% 100% no-repeat;}
+		.b-content__text {width: 608px; margin: 0 auto; padding: 20px 0;}
+		.b-content__text p {margin: 18px 0; padding: 0;}
+		.b-content__text a {}
+
+    .project-row {padding-left: 72px !important; position: relative;}
+    .project-row__logo {background: 50% / contain no-repeat; content: ''; height: 64px; left: 0; position: absolute; top: 0; width: 64px;}
+    .project-row__logo img {max-width: 100%; vertical-align: middle;}
+
+		.b-top {}
+
+		.footer {background: url("images/end/footer.png") 50% 50% no-repeat; height: 106px;}
+	</style>
+</head>
+<body>
+
+<header class="header">
+	<img class="header__logo" src="images/end/territory-logo.png" alt="Территория">
+	<h1 class="header__title">Финал одной истории, начало новых!</h1>
+	<div class="header__bar">
+		<form action="//go.territory.ru/user_info.php" method="get" class="header__bar-form" autocomplete="off" target="_blank">
+			<input type="text" name="log" value="" class="header__bar-form-field" placeholder="Для поиска персонажа введите его имя здесь"
+				onfocus="this.setAttribute('placeholder', '')"
+				onblur="this.setAttribute('placeholder', 'Для поиска персонажа введите его имя здесь');"
+			>
+			<input type="submit" value="Найти" class="header__bar-form-button">
+		</form>
+	</div>
+</header>
+
+<section class="b-content">
+	<article class="b-content__text">
+		<p>Этот путь был длиной в десять лет. Десять лет, полных побед и приключений, дружбы и соперничества, ярких впечатлений и незабываемых моментов. Десять лет, на протяжении которых менялись жанры и эпохи.</p>
+		<p>&laquo;Территория&raquo; не просто завоевала популярность, она стала домом родным для тысяч отчаянных бойцов. Борьба за власть над Химер-сити захватила сердца и умы множества игроков, сообща творивших виртуальную историю. Уличные сражения и подпольные турниры, единство и борьба склонностей, амбициозные планы и хитроумные комбинации… И просто немного чистого, доброго, человеческого веселья. Этот коктейль пришелся по душе многим.</p>
+		<p>Именно благодаря ему в &laquo;Территории&raquo; сформировалось столь дружное и крепкое сообщество. Именно благодаря нему &laquo;Территорию&raquo; будут вспоминать еще очень долго, с теплом и ностальгией.</p>
+		<p>Имена и заслуги героев не потеряются и не будут забыты! Профили всех без исключения игроков остались в свободном доступе на сайте игры, чтобы новые поколения могли равняться на ветеранов &laquo;Территории&raquo;.</p>
+		<p>Спасибо всем, кто был с нами!</p>
+		<p>И приглашаем встретиться в других наших мирах — они от вас всего в одном клике!</p>
+
+    <p class="project-row">
+      <a class="project-row__logo" href="https://w1.dwar.ru"><img src="images/end/logo-dwar.png" alt=""></a>
+      «<a href="https://w1.dwar.ru">Легенда: Наследие Драконов</a>»<br>
+        Здесь белый дракон ведет на битву людей, черный — магмаров, в чьих венах кипит огненная лава. Противостояние не стихает в этой легендарной MMORPG с&nbsp;сотнями персонажей, бесчисленными локациями, многолетней историей и&nbsp;уникальным комьюнити.
+    </p>
+
+    <p class="project-row">
+      <a class="project-row__logo" href="https://3k.mail.ru"><img src="images/end/logo-3k.png" alt=""></a>
+      «<a href="https://3k.mail.ru">Троецарствие</a>»<br>
+        Мир славянского фэнтези по мотивам книг знаменитого фантаста Юрия Никитина. Ратники и волхвы, чародеи и оборотни, могущественные цари и древние чудовища-дивы — станьте героем этой захватывающей былины!
+    </p>
+
+    <p class="project-row">
+      <a class="project-row__logo" href="https://jugger.ru"><img src="images/end/logo-jugger.png" alt=""></a>
+      «<a href="https://jugger.ru">Джаггернаут</a>»<br>
+        В Харадане есть место всему: чудо-доспехам и злым чарам, живым мертвецам и летающим кораблям, воинственным амазонкам и звероподобным дикарям. Вот только правитель здесь должен быть один! За это бьются два брата-императора, к кому примкнуть — ваш выбор.
+    </p>
+	</article>
+</section>
+
+<footer class="footer">
+	&nbsp;
+</footer>
+
+</body>
+</html>

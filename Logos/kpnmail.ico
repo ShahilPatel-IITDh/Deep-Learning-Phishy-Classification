@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="nl-NL">
+<head>
+   <title>KPN Webmail</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta charset="utf-8">
+   <meta name="description" content="Met Webmail kunt u e-mail op het internet lezen en versturen zonder een e-mailprogramma. U kunt dus op iedere PC met een internetverbinding uw e-mail lezen en versturen, ook in het buitenland.">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   <link rel="icon" href="/loginpages/images/kpnmail/favicon.svg" />
+   <link rel="stylesheet" type="text/css" href="/loginpages/css/kpnmail.css?v=16465" />
+   <link rel="canonical" href="https://webmail.kpnmail.nl/" />
+
+   <script type="text/javascript" src="/loginpages/js/webmail.js?v=16465" defer></script>
+   <script type="text/javascript" src="/loginpages/js/kpnmail.js?v=16465" defer></script>
+</head>
+<body>
+   <div id="wrapper">
+      <header class="row">
+         <div id="logo">
+            <a href="https://www.kpn.com">
+               <div class="kpn-logo"></div>
+            </a>
+         </div>
+         <div id="title">
+            <h1>Inloggen Webmail</h1>
+         </div>
+      </header>
+      <div class="row">
+         <div id="main">
+            <div>
+               <noscript>
+                  <strong>Deze browser ondersteunt geen JavaScript</strong>
+                  <p>
+                     Je zou het volgende kunnen proberen:
+                     <ul>
+                        <li>Zet JavaScript aan in je browser als die dit ondersteunt</li>
+                        <li>Gebruik een andere browser die wel JavaScript ondersteunt</li>
+                     </ul>
+                  </p>
+               </noscript>
+               <form id="login" class="disabled">
+                  <div class="form-input">
+                     <div id="emailaddress"></div>
+                     <input name="username" id="username" placeholder="Gebruikersnaam / e-mailadres" required type="text" tabindex="1" autocomplete="username" disabled />
+                     <div class="error-message error-required">Vul je gebruikersnaam of e-mailadres in.</div>
+                  </div>
+                  <div class="form-input">
+                     <input name="password" id="password" placeholder="Wachtwoord" required type="password" tabindex="2" autocomplete="current-password" disabled />
+                     <div class="error-message error-required">Vul je wachtwoord in.</div>
+                  </div>
+                  <label>
+                     <input id="remember" type="checkbox" tabindex="3" disabled> Onthoud mijn gebruikersnaam
+                  </label>
+                  <input id="inloggen" name="inloggen" alt="Inloggen" type="submit" value="Login" tabindex="4" disabled />
+                  <div id="message" class="error-message"></div>
+               </form>
+               <div class="spinner"></div>
+               <div id="links" class="row">
+                  <h3>Waarmee kunnen we je helpen?</h3>
+                  <ul class="links-left">
+                     <li>
+                        <a href="https://www.kpn.com/service/internet/e-mail/wachtwoord-of-gebruikersnaam-vergeten.htm" target="_blank">
+                           Wachtwoord vergeten
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.kpn.com/service/internet/e-mail.htm" target="_blank">
+                           Alles over KPN e-mail en Webmail
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.kpn.com/service/mobiel/problemen/toestelhulp.htm#/topic/e-mail/handmatig-instellen/device" target="_blank">
+                           E-mail instellen op je mobiele telefoon
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.kpn.com/service/internet/e-mail/geen-e-mail-ontvangen-of-versturen.htm" target="_blank">
+                           Problemen bij het ontvangen en versturen van e-mail
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://freeler.email.kpn.com" target="_blank">
+                           Freeler e-mail instellingen beheren
+                        </a>
+                     </li>
+                  </ul>
+                  <ul class="links-right"></ul>
+               </div>
+               <div id="banner" class="row">
+                  <a rel="nofollow" id="specials" href="/Specials.aspx">Specials</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

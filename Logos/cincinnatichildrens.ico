@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Site Error</title>
+	<meta name="robots" content="noindex,noarchive" />
+	<style type="text/css">
+		*,
+		:after,
+		:before {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box
+		}
+
+		html {
+			font-size: 16px;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			font-size: 87.5%;
+			line-height: 1.42857;
+			font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+		}
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		.cch-page {
+			height: 100%;
+			position: relative;
+			background-color: #f0f0f0;
+		}
+
+		.cch-downtimeNotice {
+			position: relative;
+			width: 100%;
+			max-width: 40rem;
+			border-top: 1.875rem solid #00aac8;
+			border-bottom: .625rem solid #ca5699;
+			background-color: #fff;
+			margin: 0 auto;
+			padding: 1.25rem 1.875rem 1.875rem;
+		}
+
+		h1,
+		h2 {
+			padding: 0;
+			line-height: 1.25;
+			font-weight: normal;
+		}
+
+		h1 {
+			margin: 0;
+			color: #00aac8;
+			font-size: 1.25rem;
+		}
+
+		h2 {
+			margin: 1.25rem 0 0 0;
+			font-size: 1rem;
+			color: #ca5699;
+		}
+
+		p {
+			margin: 0 0 .625rem;
+			padding: 0;
+			color: #565a5c;
+		}
+
+			p:last-child {
+				margin-bottom: 0;
+			}
+
+		a,
+		a:link,
+		a:visited {
+			color: #00aac8;
+		}
+
+			a:hover {
+				color: #0096b0;
+			}
+
+			a[href^="tel"] {
+				white-space: nowrap;
+			}
+
+			a[href^="tel:"]:before {
+				content: "\260e";
+				margin-right: 0.5em;
+			}
+
+		.img-logo {
+			display: block;
+			margin-bottom: 1.25rem;
+		}
+
+		@media print, screen and (min-width: 48rem) {
+			h1 {
+				font-size: 1.75rem;
+			}
+
+			h2 {
+				font-size: 1.25rem;
+			}
+
+			.cch-downtimeNotice {
+				top: 15%;
+				max-width: 45rem;
+				padding-left: 16rem;
+				background-image: url("/includes/org/img/childrens-logo.png");
+				background-position: 1.25rem 1.25rem;
+				background-repeat: no-repeat;
+			}
+
+			.img-logo {
+				position: absolute;
+				top: 1.25rem;
+				left: 1.25rem;
+			}
+
+			a[href^="tel:"] {
+				color: #565a5c;
+				text-decoration: none;
+			}
+
+				a[href^="tel:"]:before {
+					content: none;
+					margin-right: 0;
+				}
+		}
+	</style>
+</head>
+<body>
+	<div id="cchPage" class="cch-page">
+		<div id="cchDowntimeNotice" class="cch-downtimeNotice">
+			<img class="img-logo" src="/includes/org/img/childrens-logo.png" alt="Cincinnati Children's Logo">
+			<h1>Wait a minute. That wasn't supposed to happen!</h1>
+			<p>
+				We apologize for the inconvenience, but our server has encountered an error while attempting to show you the page you requested.
+			</p>
+			<p>
+				We have recorded the error and our staff will review the report so we can fix the problem as soon as possible -- hopefully by the time you return to view this page again.
+			</p>
+			<p>
+				In the meantime, you can try to visit our <a href="/">home page</a> or use our <a href="/search?q=&start=0&site=entire-site">search engine</a>.
+			</p>
+			<h2>If You Need to Contact Us</h2>
+			<p>
+				If you need to contact Cincinnati Children's Hospital Medical Center, you can always call our main switchboard at <a href="tel:1-513-636-4200">513-636-4200</a> or <a href="tel:1-800-344-2462">1-800-344-2462</a>.
+			</p>
+			<div id="time"></div>
+			<div id="server"></div>
+		</div>
+	</div>
+	<script>
+		const client = new XMLHttpRequest();
+		client.open("GET", "/errorpage.html", true);
+		client.send();
+
+		client.onreadystatechange = function () {
+			if (this.readyState === this.HEADERS_RECEIVED) {
+				var servervalue = client.getResponseHeader("CCHMCServer");
+				document.getElementById("server").innerHTML = '(' + servervalue + ')';
+			}
+		}
+
+		document.getElementById("time").innerHTML = new Date(Date.now()).toLocaleString();
+	</script>
+</body>

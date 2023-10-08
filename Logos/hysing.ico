@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="is">
+<head>
+	<base href="/" />	
+	<script src="/_content/Lisa.Modules.FontAwesome/main.js"></script>
+<script async="async" defer="defer" src="https://www.google.com/recaptcha/api.js"></script>
+<script src="/_content/Lisa.Modules.Components.GoogleReCaptcha/googleReCaptcha.js"></script>
+<script src="_content/BlazorAnimate/blazorAnimateInterop.js"></script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-TB4H66M');</script>
+<script src="/_content/Lisa.Modules.Pages/index.js"></script>
+<script src="/_content/Lisa.Modules.Components.Twitter/twitter.js"></script>
+
+	<link href="/_content/Lisa.Modules.StandardViewComponents/standardComponents.css" rel="stylesheet" type="text/css"></link>
+<link href="Advania.Application.styles.css" rel="stylesheet" type="text/css"></link>
+<link as="font" crossorigin="crossorigin" href="/_content/Advania.Theme/fonts/AdelleSans-Regular.woff" rel="preload" type="font/woff"></link>
+<link as="font" crossorigin="crossorigin" href="/_content/Advania.Theme/fonts/AdelleSans-Bold.woff" rel="preload" type="font/woff"></link>
+<link as="font" crossorigin="crossorigin" href="/_content/Advania.Theme/fonts/Adelle-Regular.woff" rel="preload" type="font/woff"></link>
+<link as="font" crossorigin="crossorigin" href="/_content/Advania.Theme/fonts/Adelle-Bold.woff" rel="preload" type="font/woff"></link>
+<link href="/_content/Advania.Theme/css/styles.css" rel="stylesheet" type="text/css"></link>
+<link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet" type="text/css"></link>
+
+	<link href="/library/?itemid=f199a37c-0516-4548-9712-e418c467b05f" rel="shortcut icon" />
+
+	<link href="https://advania.is/vorur-og-thjonusta/hysing-og-rekstur/" rel="canonical" />
+
+     
+	<!--Blazor:{"sequence":1,"type":"server","prerenderId":"2edcd9f4c91c466b95379f1fd8562457","descriptor":"CfDJ8KiebAOOHLVOsEpn5GkTkWlwNzOUrP/hbk2Up5gAFm/D\u002BOXfnhcsmJphl5xerXggfpXp1cdW4eEyNghjP\u002BkvBnkBFk5UgE/3trCs7NnwNjR3/y7fF3JZ8dgeloVid6MXQBaAlRRu3tm/3rtko7n\u002BKjv0g0LiMzHV810tHES4Bu224jcFqYIPviLeuJA2gvjZJUQYjxqXcXdgiHFzeR6rzrSPH38sZ48ojWsk5XqUkV6pJU9I\u002BJ9MUKXYfGguYqdNpd2Dn0P/3J04/1NO2WnV8IJ4UTtTGeeFHEIDS7NdOc9\u002BqeTJZzfZ6U1G9CtJxaWJUGuvqSm/iRlTy764joBc4He/ym8Bs0jcXmexewcLd3GVi9035dSi1NCdVNdrtTG/uuzk1vSbeu2SMsijhLE6wJr/EQuONTBFD8wroY1Uffbx"}--><!--Blazor:{"prerenderId":"2edcd9f4c91c466b95379f1fd8562457"}-->
+
+</head>
+<body>
+    <!--Blazor:{"sequence":0,"type":"server","descriptor":"CfDJ8KiebAOOHLVOsEpn5GkTkWkEPk9MJN4vIZg7kozCQMDryW3nYylwdKNYcy3Oi4QtqX5/6hM2aVeL0EAqMoaSsipDXVMGRHDOjrkMYcbaRYKrh9BpfHjImwjgaQJCFFd4HeAlQE5MlOuW6doe0IRQGG/zysD1NeDawb8Z/Ub3RSGsQkRis\u002ByRHPGUWWzBV4MSpj3usy4sc/rqnAXuC2i/r66GcuZlcHPJvHX\u002BO8pm/HhRUUmEg/tWarHuK0NDES3P99217m5vIrorSF72ZEIXefjD2MiPq/3p168thFwVFyXm41K4kKzT0YIeDN0yX7W7j8ZpP\u002BQmPuUUpoxyTzP9ZobN80a3sKt4NMJ47oh37Yzp/9g3TrSYvpTXRg/D\u002BHpE4A=="}-->
+
+	<script async="async" src="/_content/Lisa.Modules.Assets.RazorComponents/asset-components.js"></script>
+<script async="async" src="/_content/Lisa.Modules.StandardViewComponents/standardComponents.js"></script>
+<script async="async" src="/_content/Lisa.Modules.FormComponents/formComponents.js"></script>
+<script src="/_content/Advania.Theme/script/script.js"></script>
+<script defer="defer" src="/_content/Advania.Theme/script/genesysChat/widget-chat.js"></script>
+<script onload="javascript:CXBus.configure({debug:false,pluginsPath:&#x27;https://apps.mypurecloud.ie/widgets/9.0/plugins/&#x27;}); CXBus.loadPlugin(&#x27;widgets-core&#x27;);" src="https://apps.mypurecloud.ie/widgets/9.0/cxbus.min.js"></script>
+<script>window.didomiConfig = {
+                notice: {
+                    content: {
+                        deny: {
+                            en: 'Hafna'
+                        },
+                        dismiss: {
+                            en: 'Samþykkja'
+                        },
+                        learnMore: {
+                            en: 'Nánar'
+                        }
+                    }                    
+                },                
+                preferences: {
+                    content: {
+                        agree: {
+                            en: 'Samþykkja',
+                        },
+                        disagree: {
+                            en: 'Hafna',
+                        },
+                        agreeToAll: {
+                            en: 'Samþykkja allt'
+                        },
+                        disagreeToAll: {
+                            en: 'Hafna öllu'
+                        }
+                    }
+                }
+            };</script>
+<script>window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+                else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+                var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+                if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e){
+                  var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("97287281-0be1-45dc-8e19-527958909225")})();</script>
+<script src="https://advaniadev.boost.ai/chatPanel/chatPanel.js"></script>
+<script>var boost = window.boostInit('advaniadev');</script>
+<script src="/_framework/blazor.server.js"></script>
+
+
+	<!-- Server (AVAMSWEB02) -->
+</body>
+</html>

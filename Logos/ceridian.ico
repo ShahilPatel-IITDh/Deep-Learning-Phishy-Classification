@@ -1,0 +1,1810 @@
+
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+            <link rel="alternate" href="https://www.ceridian.com" hreflang="x-default" />
+            <link rel="alternate" href="https://www.ceridian.com" hreflang="en-US" />
+            <link rel="alternate" href="https://www.ceridian.com/asia" hreflang="en-SG" />
+            <link rel="alternate" href="https://www.ceridian.com/au" hreflang="en-AU" />
+            <link rel="alternate" href="https://www.ceridian.com/ca" hreflang="en-CA" />
+            <link rel="alternate" href="https://www.ceridian.com/uk" hreflang="en-GB" />
+            <link rel="alternate" href="https://www.ceridian.com/fr" hreflang="fr-CA" />
+            <link rel="alternate" href="https://www.ceridian.com/de" hreflang="de-DE" />
+            <link rel="alternate" href="https://www.ceridian.com/mu" hreflang="en-MU" />
+
+    <noscript>
+            <meta http-equiv="refresh" content="0;URL='https://www.ceridian.com/?lazy-activate=false'" />
+    </noscript>
+
+        <title>Global HCM software | Dayforce | Ceridian</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+        <meta name="description" content="Cloud HCM software that brings together real-time payroll, HR, benefits, time reporting, talent and workforce management to empower your people.">
+
+
+    <meta name="google-site-verification" content="SRcNdZj70gGk1mAlpfmsEUAo5Il-KXaW2aZptMgdIbo" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="/Ceridian/media/WebsiteMedia/Cfav.ico">
+
+    <link rel="canonical" href="https://www.ceridian.com/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content=" @ceridian" />
+
+            <meta name="twitter:title" content="Global HCM software | Dayforce | Ceridian" />
+
+
+        <meta name="twitter:image" content="https://www.ceridian.com/Ceridian/media/WebsiteMedia/Home/CERIDIAN_OG3.jpg?ext=.jpg">
+        <meta property="og:image" content="https://www.ceridian.com/Ceridian/media/WebsiteMedia/Home/CERIDIAN_OG3.jpg?ext=.jpg" />
+
+    
+
+        <meta name="twitter:description" content="Cloud HCM software that brings together real-time payroll, HR, benefits, time reporting, talent and workforce management to deliver intelligence at work.">
+        <meta name="og:description" content="Cloud HCM software that brings together real-time payroll, HR, benefits, time reporting, talent and workforce management to deliver intelligence at work.">
+    
+
+
+
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+
+
+    <meta class="swiftype" name="country" data-type="enum" content="us" />
+
+<!-- BrightEdge Integration - Start - ~/home : https://www.ceridian.com : https://www.ceridian.com/home -->
+
+<!-- be_ixf, sdk, gho-->
+<meta name="be:sdk" content="dotnet_sdk_1.4.17" />
+<meta name="be:timer" content="15ms" />
+<meta name="be:orig_url" content="https://www.ceridian.com/home" />
+<meta name="be:capsule_url" content="https://ixfd-api.bc0a.com/api/ixf/1.0.0/get_capsule/f00000000214901/0124260822" />
+<meta name="be:norm_url" content="https://www.ceridian.com/home" />
+<meta name="be:api_dt" content="py_2021; pm_07; pd_30; ph_08; pmh_14; p_epoch:1627658086592" />
+<meta name="be:mod_dt" content="py_2021; pm_07; pd_30; ph_08; pmh_14; p_epoch:1627658086592" />
+<meta name="be:messages" content="0" />
+<script type='text/javascript'>
+if (window.BEJSSDKObserver === undefined) {
+  (function(BEJSSDKObserver, $, undefined) {
+    var observer = void 0;
+    var listeners = [];
+    var readySet = [];
+    var doc = window.document;
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+
+    function checkSelector(selector, fn, indexList) {
+      var elements = doc.querySelectorAll(selector);
+  /**
+    issues on IE @see https://www.codesd.com/item/javascript-es6-not-a-function-error.html
+    elements = Array.from(elements);
+
+    */
+    for (var i = 0, len = elements.length; i < len; i++) {
+      /* -1 means all instances */
+      if (indexList != -1 && !(i in indexList)) {
+        continue;
+      }
+      var element = elements[i];
+      for (var j = 0; j < readySet.length; j++) {
+        if (readySet[j] == element.className || readySet[j] == element.id) {
+          return;
+        }
+      }
+      if (element.className) {
+        readySet.push(element.className);
+      }
+      if (element.id) {
+        readySet.push(element.id);
+      }
+
+      if (!element.ready || MutationObserver==null) {
+        element.ready = true;
+        fn.call(element, element);
+      }
+    }
+  }
+
+  function checkListeners() {
+    listeners.forEach(function (listener) {
+      return checkSelector(listener.selector, listener.fn, listener.indexList);
+    });
+  }
+
+  function removeListener(selector, fn) {
+    var i = listeners.length;
+    while (i--) {
+      var listener = listeners[i];
+      if (listener.selector === selector && listener.fn === fn) {
+        listeners.splice(i, 1);
+        if (!listeners.length && observer) {
+          observer.disconnect();
+          observer = null;
+        }
+      }
+    }
+  }
+
+/**
+ * Fire event on first js selector
+ * @param selector string to watch on
+ * @param fn       callback function
+ * @param index_list can be undefined which means only first one
+ *                   or -1 which means all
+ *                   or a list of allowable indexes
+ */
+ BEJSSDKObserver.jsElementReady = function(selector, fn, index_list) {
+  if (index_list === undefined) {
+    index_list = [];
+    index_list.push(0);
+  }
+
+  if (MutationObserver != null) {
+    if (!observer) {
+      observer = new MutationObserver(checkListeners);
+      observer.observe(doc.documentElement, {
+        childList: true,
+        subtree: true
+      });
+    }
+    listeners.push({ selector: selector, fn: fn, indexList: index_list });
+  } else {
+    /* <= IE8 */
+    if (!document.addEventListener) {
+      /* log("<=IE8 attachEvent assignment"); */
+      document.addEventListener = document.attachEvent;
+    }
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var elements = doc.querySelectorAll(selector);
+      for (var i = 0, len = elements.length; i < len; i++) {
+        /* -1 means all instances */
+        if (index_list != -1 && !(i in index_list)) {
+          continue;
+        }
+        var element = elements[i];
+        element.ready = true;
+        fn.call(element, element);
+      }
+    });
+  }
+
+  checkSelector(selector, fn, index_list);
+  return function () {
+    return removeListener(selector, fn);
+  };
+};
+}(window.BEJSSDKObserver = window.BEJSSDKObserver || {}));
+}
+var jsElementReady = window.BEJSSDKObserver.jsElementReady;
+
+if (window.BELinkBlockGenerator === undefined) {
+  (function(BELinkBlockGenerator, $, undefined) {
+    BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH = 100;
+    BELinkBlockGenerator.MAXIMUM_DESC_LENGTH = 200;
+
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_URL_TYPE = 0;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_HEADLINE_TYPE = 1;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_DESCRIPTION_TYPE = 2;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_IMAGE_TYPE = 3;
+
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_OVERWRITE = 0;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_POST_APPEND_ELEMENT = 1;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_ELEMENT = 2;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_PARENT = 3;
+
+    BELinkBlockGenerator.setMaximumHeadlineLength = function(length) {
+      BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH = length;
+    };
+
+    BELinkBlockGenerator.setMaximumDescriptionLength = function(length) {
+      BELinkBlockGenerator.MAXIMUM_DESC_LENGTH = length;
+    };
+
+    BELinkBlockGenerator.generateIndividualLinks = function(parentElement, linkStructure, link) {
+      var link_level_element_tag = linkStructure[0];
+      var link_level_element = document.createElement(link_level_element_tag);
+      var link_attribute_dictionary = linkStructure[1];
+      var allowable_elements = linkStructure[2];
+      var children_link_structures = linkStructure[3];
+      for (var link_attribute_key in link_attribute_dictionary) {
+        link_level_element.setAttribute(link_attribute_key, link_attribute_dictionary[link_attribute_key]);
+      }
+
+      var added_something = false;
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_URL_TYPE)>=0) {
+        link_level_element.setAttribute('href', link.url);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_HEADLINE_TYPE)>=0 && link.h1) {
+        var headline_text = link.h1;
+        if (headline_text.length > BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH) {
+          headline_text = headline_text.substring(0, BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH) + '...';
+        }
+        var text_node = document.createTextNode(headline_text);
+        link_level_element.appendChild(text_node);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_DESCRIPTION_TYPE)>=0 && link.desc) {
+        var desc_text = link.desc;
+        if (desc_text.length > BELinkBlockGenerator.MAXIMUM_DESC_LENGTH) {
+          desc_text = desc_text.substring(0, BELinkBlockGenerator.MAXIMUM_DESC_LENGTH) + '...';
+        }
+        var text_node = document.createTextNode(desc_text);
+        link_level_element.appendChild(text_node);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_IMAGE_TYPE)>=0 && link.image) {
+        link_level_element.setAttribute('src', link.image);
+        added_something = true;
+      }
+/**
+    don't emit for empty links, desc, headline, image
+    except for parent structures where allowable_length=0
+    */
+    if (!added_something && allowable_elements.length != 0) {
+
+      return;
+    }
+    /* go depth first */
+    for (var childrenIndex=0; childrenIndex<children_link_structures.length; childrenIndex++) {
+      var childLinkStructure = children_link_structures[childrenIndex];
+      BELinkBlockGenerator.generateIndividualLinks(link_level_element, childLinkStructure, link);
+    }
+    parentElement.appendChild(link_level_element);
+  };
+
+  BELinkBlockGenerator.insertLinkBlocks = function(targetElement, replacementStrategy, overallStructure, linkStructure, links,
+                                                   titleStructure) {
+    if (targetElement == null) {
+      return;
+    }
+
+    if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_OVERWRITE) {
+      while (targetElement.firstChild) {
+        targetElement.removeChild(targetElement.firstChild);
+      }
+    }
+
+    var previousElement = targetElement;
+    for (var i=0;i<overallStructure.length;i++) {
+      var level_definition = overallStructure[i];
+      var level_element_tag = level_definition[0];
+      var level_element = document.createElement(level_element_tag);
+      var attribute_dictionary = level_definition[1];
+      for (var attribute_key in attribute_dictionary) {
+        level_element.setAttribute(attribute_key, attribute_dictionary[attribute_key]);
+      }
+
+      /* need to place title structure */
+      if (titleStructure && titleStructure[0] == i) {
+        var title_element_tag = titleStructure[1];
+        var title_element = document.createElement(title_element_tag);
+        var title_attribute_dictionary = titleStructure[2];
+        var title_text_content = titleStructure[3];
+        for (var title_attribute_key in title_attribute_dictionary) {
+          title_element.setAttribute(title_attribute_key, title_attribute_dictionary[title_attribute_key]);
+        }
+
+        var title_text_node = document.createTextNode(title_text_content);
+        title_element.appendChild(title_text_node);
+
+
+        level_element.appendChild(title_element);
+      }
+
+      /* last level place links */
+      if (i == overallStructure.length-1) {
+        for (var link_i=0; link_i < links.length; link_i++) {
+          var link = links[link_i];
+          for (var linkStructureIndex=0;linkStructureIndex < linkStructure.length; linkStructureIndex++) {
+            BELinkBlockGenerator.generateIndividualLinks(level_element, linkStructure[linkStructureIndex], link)
+          }
+        }
+      }
+
+      /* first level child we need to check placement */
+      if (previousElement == targetElement) {
+        if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_ELEMENT) {
+          /* 2 means insert right before */
+          previousElement.insertBefore(level_element, targetElement.firstChild);
+        } else if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_PARENT) {
+          /* 3 means insert right before at parent level */
+          var parentElement = previousElement.parentElement;
+          parentElement.insertBefore(level_element, previousElement);
+        } else {
+          previousElement.appendChild(level_element);
+        }
+      } else {
+        previousElement.appendChild(level_element);
+      }
+      previousElement = level_element;
+    }
+  };
+}(window.BELinkBlockGenerator = window.BELinkBlockGenerator || {}))
+};
+</script>
+
+<style>
+.be-ix-link-block{clear:both}
+.be-ix-link-block .be-related-link-container{margin-bottom:25px;margin-left:20px}
+.be-ix-link-block .be-related-link-container .be-label,.be-ix-link-block .be-related-link-container .be-list{font-size:20px}
+.be-ix-link-block .be-related-link-container .be-label{margin:0}
+.be-ix-link-block .be-related-link-container .be-list{list-style:none;margin:0;padding:0}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item{margin:0;padding:0;font-size:15px}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item a{color:#808285;font-size:15px}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item a:hover{color:#3067DB}
+@media (max-width: 767px) {
+.be-ix-link-block .be-related-link-container .be-label{width:100%;padding-bottom:10px}
+.be-ix-link-block .be-related-link-container .be-list{display:block;width:100%}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item{display:block}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item:last-child{margin-bottom:0}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item a{line-height:18px;padding-bottom:8px}
+}
+@media (min-width: 768px) {
+.be-ix-link-block .be-related-link-container{display:flex}
+.be-ix-link-block .be-related-link-container .be-label{display:inline-block;margin-right:20px;flex-basis:150px;flex-grow:0;flex-shrink:0}
+.be-ix-link-block .be-related-link-container .be-list{display:inline-block;width:auto}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item{display:inline-block;margin-right:20px}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item:last-child{margin-right:0}
+}
+</style>
+
+
+<script data-cfasync="false" data-testmode="true" id="marvel" data-customerid="f00000000214901" src="https://marvel-b2-cdn.bc0a.com/marvel.js"></script>
+
+    <script>
+      (function() {
+      var bec = document.createElement('script');
+      bec.type = 'text/javascript';
+      bec.async = true;
+      bec.setAttribute("data-id", "bec");
+      bec.setAttribute("org-id", "f00000000214901");
+      bec.setAttribute("domain", ".ceridian.com");
+      bec.setAttribute("session-timeout", 86400000);
+      bec.src = document.location.protocol + '//cdn.b0e8.com/conv_v3.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(bec, s);
+})();
+</script>
+
+<script type='text/javascript'>
+    function positionLinkBlock(targetContainer) {
+        if (targetContainer != null) {
+            var strLinkBlock = '<div class="be-related-link-container"><div class="be-label">Also of Interest</div><ul class="be-list"><li class="be-list-item"><a class="be-related-link" href="https://www.ceridian.com/solutions/financial-workforce">Solutions for Financial Services</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.ceridian.com/">ceridian</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.ceridian.com/solutions/manufacturing-workforce">Solutions for Manufacturing</a></li></ul></div>';
+            targetContainer.insertAdjacentHTML('afterbegin', strLinkBlock);
+        }
+    }
+
+    jsElementReady('.be-ix-link-block', positionLinkBlock);
+
+</script>
+
+<!-- be_ixf, bodystr, _body_open -->
+
+
+<!-- BrightEdge Integration - End -->
+    <!-- OneTrust Cookies Consent Notice start for ceridian.com -->
+    <script type="text/javascript" src="https://cdn.cookielaw.org/consent/5a75e6b1-5d55-412e-a6ea-9cd67daa343e/OtAutoBlock.js"></script>
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="5a75e6b1-5d55-412e-a6ea-9cd67daa343e"></script>
+    <script type="text/javascript">
+        function OptanonWrapper() { }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end for ceridian.com -->
+
+    <script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>
+
+    
+    <script data-ot-ignore src="/bundles/headScripts?v=KbHwZZ0hP92eagiZmFjwCi-GaX18oqGpEfqUybSd3SE1"></script>
+
+
+    <link href="/bundles/css?v=8gAg_ecGbmepSx6b92LIGX1j3XltkeVaM7oGKqvS1ko1" rel="stylesheet"/>
+
+
+    
+        <style>
+
+            .navbar {
+                padding-top: 0;
+            }
+
+            .nav-top {
+                padding-top: 30px;
+            }
+
+            @media (max-width: 1024px) {
+                .topNavigation .navbar {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                #navfluid {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                .container .navbar-header {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+            }
+
+            section.heroSection {
+                margin-top: 145px; /*change back when there is no announcement */
+                margin-top: 0;
+            }
+
+            @media screen and (max-width:480px) {
+                section.heroSection {
+                    /* margin-top: 145px; change back when there is no announcement */
+                    margin-top: 0;
+                }
+
+                section.subPageBanner {
+                    margin-top: -60px;
+                }
+
+                .heroContent {
+                    margin-top: 30px;
+                }
+            }
+        </style>
+
+    
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5J9G99C');
+    </script>
+
+    <!-- End Google Tag Manager -->
+    <!-- Google Org Data -->
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Ceridian",
+        "url": "https://www.ceridian.com/",
+        "logo": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "description": "Cloud HCM software that brings together real-time payroll, HR, benefits, time reporting, talent and workforce management to deliver intelligence at work.",
+        "sameAs": [
+        "https://twitter.com/ceridian",
+        "https://www.facebook.com/Ceridian/",
+        "https://www.linkedin.com/company/ceridian/",
+        "https://www.youtube.com/user/ceridian"
+        ],
+        "legalname": "Ceridian HCM, Inc.",
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-729-7655",
+        "contactType": "Customer Service"
+        }
+        ],
+        "subOrganization": {
+        "@type": "Corporation",
+        "name": "Ceridian USA",
+        "legalname": "Ceridian HCM, Inc.",
+        "url": "https://www.ceridian.com/",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3311 East Old Shakopee Road",
+        "addressLocality": "Minneapolis",
+        "addressRegion": "MN",
+        "postalCode": "55425-1640",
+        "addressCountry": "USA",
+        "areaServed": "USA"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-952-853-8100",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-729-7655",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ],
+        "subOrganization": [
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Canada",
+        "legalname": "Ceridian Canada Ltd.",
+        "url": "https://www.ceridian.com/ca",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4110 Yonge Street, Suite 604",
+        "addressLocality": "Toronto",
+        "addressRegion": "ON",
+        "postalCode": "M2P 2B7",
+        "addressCountry": "Canada",
+        "areaServed": "Canada"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-416-987-2987",
+        "contactType": "customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-866-748-7066",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ],
+        "subOrganization": [
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Canada",
+        "legalname": "Ceridian Canada Ltd.",
+        "url": "https://www.ceridian.com/ca",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Suite 310, 2618 Hopewell Place, N.E.",
+        "addressLocality": "Calgary",
+        "addressRegion": "Alberta",
+        "postalCode": "T1Y 7J7",
+        "addressCountry": "Canada",
+        "areaServed": "Canada"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-403-262-6035",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-729-7655",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Canada",
+        "legalname": "Ceridian Canada Ltd.",
+        "url": "https://www.ceridian.com/ca",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "242 Hargrave Street, Suite 300",
+        "addressLocality": "Winnipeg",
+        "addressRegion": "Manitoba",
+        "postalCode": "R3C 0T8",
+        "addressCountry": "Canada",
+        "areaServed": "Canada"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-204-947-9400",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-877-237-4342",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Canada",
+        "legalname": "Ceridian Canada Ltd.",
+        "url": "https://www.ceridian.com/ca",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Park Place Centre, 238 Brownlow Avenue, Suite 310",
+        "addressLocality": "Dartmouth",
+        "addressRegion": "Nova Scotia",
+        "postalCode": "B3B 1Y2",
+        "addressCountry": "Canada",
+        "areaServed": "Canada"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-902-442-3200",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-877-237-4342",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Canada",
+        "legalname": "Ceridian Canada Ltd.",
+        "url": "https://www.ceridian.com/ca",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5600 Explorer Drive, 4th floor",
+        "addressLocality": "Mississauga",
+        "addressRegion": "Ontario",
+        "postalCode": "L4W 4Y2",
+        "addressCountry": "Canada",
+        "areaServed": "Canada"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-905-282-8100",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-877-237-4342",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Canada",
+        "legalname": "Ceridian Canada Ltd.",
+        "url": "https://www.ceridian.com/ca",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "223 Queen Street",
+        "addressLocality": "Charlottetown",
+        "addressRegion": "P.E.I.",
+        "postalCode": "C1A 4B7",
+        "addressCountry": "Canada",
+        "areaServed": "Canada"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-902-620-5600",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-877-237-4342",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Canada",
+        "legalname": "Ceridian Canada Ltd.",
+        "url": "https://www.ceridian.com/ca",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "343 Preston Street, 10th Floor",
+        "addressLocality": "Ottawa",
+        "addressRegion": "Ontario",
+        "postalCode": "K1S 1N4",
+        "addressCountry": "Canada",
+        "areaServed": "Canada"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-613-228-0222",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-877-237-4342",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Canada",
+        "legalname": "Ceridian Canada Ltd.",
+        "url": "https://www.ceridian.com/ca",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9300 Trans-Canada Highway, Suite 201",
+        "addressLocality": "Ville St. Laurent",
+        "addressRegion": "Quebec",
+        "postalCode": "H4S 1K5",
+        "addressCountry": "Canada",
+        "areaServed": "Canada"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-514-908-3000",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-877-237-4342",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Europe",
+        "legalname": "Ceridian Europe Limited",
+        "url": "https://www.ceridian.com/uk",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "45 Finnieston Street, Suite 3A, 3rd Floor Skypark 5",
+        "addressLocality": "Glasgow",
+        "addressRegion": "Scotland",
+        "postalCode": "G3 8JU",
+        "addressCountry": "UK",
+        "areaServed": "UK"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+44-141-584-7100",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+44-800-952-0415",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Australia",
+        "legalname": "Ceridian Australia Pty Ltd.",
+        "url": "https://www.ceridian.com/au",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "401 Collins Street",
+        "addressLocality": "Melbourne",
+        "addressRegion": "VIC",
+        "postalCode": "3000",
+        "addressCountry": "Australia",
+        "areaServed": "Australia"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+61-1800-324-928",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+61-1800-324-928",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ],
+        "subOrganization": {
+        "@type": "Corporation",
+        "name": "Ceridian Australia",
+        "legalname": "Ceridian Australia Pty Ltd.",
+        "url": "https://www.ceridian.com/au",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Level 3 41-43 Bourke Road",
+        "addressLocality": "Alexandria",
+        "addressRegion": "NSW",
+        "postalCode": "2015",
+        "addressCountry": "Australia",
+        "areaServed": "Australia"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+61-3-9982-4465",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        }
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Mauritius",
+        "legalname": "Ceridian (Mauritius) Ltd.",
+        "url": "http://www.ceridian.com/mu",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Level 9 Cyber Tower 1",
+        "addressLocality": "Ebene Cyber City",
+        "addressRegion": "",
+        "postalCode": "",
+        "addressCountry": "Mauritius",
+        "areaServed": "Mauritius"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+230 454 4036",
+        "contactType": "Customer Service"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian Germany",
+        "legalname": "Ceridian Europe Limited ",
+        "url": "http://www.ceridian.com/de",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kaiserswertherstr. 135",
+        "addressLocality": "Dusseldorf",
+        "addressRegion": "Nordrhein-Westfalen",
+        "postalCode": "40474",
+        "addressCountry": "Germany",
+        "areaServed": "Germany"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+49 211 3 6874342",
+        "contactType": "Customer Service"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian USA",
+        "legalname": "Ceridian HCM, Inc.",
+        "url": "http://www.ceridian.com",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1515 W. 190th Street Suite 100",
+        "addressLocality": "Gardena",
+        "addressRegion": "California",
+        "postalCode": "90248",
+        "addressCountry": "USA",
+        "areaServed": "USA"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-310-719-7400",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-729-7655",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian USA",
+        "legalname": "Ceridian HCM, Inc.",
+        "url": "http://www.ceridian.com",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "17390 Brookhurst Street",
+        "addressLocality": "Fountain Valley",
+        "addressRegion": "California",
+        "postalCode": "92708",
+        "addressCountry": "USA",
+        "areaServed": "USA"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-714-963-1311",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-729-7655",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian USA",
+        "legalname": "Ceridian HCM, Inc.",
+        "url": "http://www.ceridian.com",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3201 34th Street South",
+        "addressLocality": "St. Petersburg",
+        "addressRegion": "Florida",
+        "postalCode": "33711",
+        "addressCountry": "USA",
+        "areaServed": "USA"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-689-7893",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-729-7655",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian USA",
+        "legalname": "Ceridian HCM, Inc.",
+        "url": "http://www.ceridian.com",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3460 Preston Ridge Road, Suite 225",
+        "addressLocality": "Alpharetta",
+        "addressRegion": "Georgia",
+        "postalCode": "30005",
+        "addressCountry": "USA",
+        "areaServed": "USA"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-404-921-9925",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-729-7655",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian USA",
+        "legalname": "Ceridian HCM, Inc.",
+        "url": "http://www.ceridian.com",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6600 Peachtree Dunwoody Road, 300 Embassy Row",
+        "addressLocality": "Sandy Springs",
+        "addressRegion": "Georgia",
+        "postalCode": "30328-1607",
+        "addressCountry": "USA",
+        "areaServed": "USA"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-678-441-2100",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-729-7655",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian USA",
+        "legalname": "Ceridian HCM, Inc.",
+        "url": "http://www.ceridian.com",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3375 Koapaka Street, Suite G-310",
+        "addressLocality": "Honolulu",
+        "addressRegion": "Hawaii",
+        "postalCode": "96819",
+        "addressCountry": "USA",
+        "areaServed": "USA"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-729-7655",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian USA",
+        "legalname": "Ceridian HCM, Inc.",
+        "url": "http://www.ceridian.com",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "601 Busse Road, Suite D",
+        "addressLocality": "Elk Grove Village",
+        "addressRegion": "Illinois",
+        "postalCode": "60007",
+        "addressCountry": "USA",
+        "areaServed": "USA"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-847-364-7432",
+        "contactType": "Customer Service"
+        },
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-729-7655",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        },
+        {
+        "@type": "Corporation",
+        "name": "Ceridian USA",
+        "legalname": "Ceridian HCM, Inc.",
+        "url": "http://www.ceridian.com",
+        "image": "https://www.ceridian.com/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "10275 West Higgins Road, Suite 400",
+        "addressLocality": "Rosemont",
+        "addressRegion": "Illinois",
+        "postalCode": "60018",
+        "addressCountry": "USA",
+        "areaServed": "USA"
+        },
+        "contactPoint": [
+        {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-729-7655",
+        "contactType": "Customer Service",
+        "contactOption": "TollFree"
+        }
+        ]
+        }
+        ]
+        }
+        }
+    </script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J9G99C" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Navigation -->
+    <header class="topNavigation" data-swiftype-index='false'>
+
+        <div id="skip-to-main">
+            <a href="#main-content">Skip to main content</a>
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="presentation">
+
+<!-- Banner above Hero section -->
+    <div id="announcement" data-ride="carousel" class="carousel-fade carousel  slide  link-block bg-Dark-Blue">
+        <div class="carousel-inner" role="listbox">
+
+
+                <div role="option" class="item active" data-interval="5000">
+                    <a href="https://www.ceridian.com/company/newsroom/2023/ceridian-to-become-dayforce" target="_self">
+                        <div class="row  " style="">
+                            <div class="container">
+                                <div class="banner-contents col-md-9 text-left align-middle px-20 px-lg-0">
+                                    <p>Ceridian is becoming Dayforce. We&rsquo;re elevating our brand with a new name and the same powerful promise to make work life better. </br><span>Learn more</span></p>
+
+                                </div>
+                                    <div class="col-md-3 text-right visible-md visible-lg px-20 px-lg-0  ">
+                                        <img alt="" class=" banner-img" src="/Ceridian/media/WebsiteMedia/Home/Thumbnail-DF-announcement-500x260-3.png?ext=.png" />
+                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div role="option" class="item " data-interval="5000">
+                    <a href="https://www.ceridian.com/insights/agenda" target="_self">
+                        <div class="row  " style="">
+                            <div class="container">
+                                <div class="banner-contents col-md-9 text-left align-middle px-20 px-lg-0">
+                                    <p>INSIGHTS 2023 is live from Las Vegas. Tune in to the virtual experience to catch inspiring keynotes. <span>Learn more</span></p>
+
+                                </div>
+                                    <div class="col-md-3 text-right visible-md visible-lg px-20 px-lg-0  ">
+                                        <img alt="" class=" banner-img" src="/Ceridian/media/WebsiteMedia/Products/home-banner-insights-2023_2.png?ext=.png" />
+                                    </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+    </div>
+
+                <div class="nav-top navbar-static-top">
+                <div class="container">
+                    <div class="col-sm-4 navbar-left">
+                        <ul class="">
+                            <li>
+                                <div class="country-flags">
+                                    <div class="country-menu">
+    <div class="country-link">United States</div>
+        <ul class="submenu">
+                <li id="us"><a rel="nofollow" href="/">United States</a></li>
+                <li id="ca"><a rel="nofollow" href="/ca/">Canada (English)</a></li>
+                <li id="fr"><a rel="nofollow" href="/fr/">Canada (Fran&#231;ais)</a></li>
+                <li id="uk"><a rel="nofollow" href="/uk/">UK / Ireland</a></li>
+                <li id="de"><a rel="nofollow" href="/de/">Deutschland (Deutsch)</a></li>
+                <li id="au"><a rel="nofollow" href="/au/">Australia / NZ</a></li>
+                <li id="asia"><a rel="nofollow" href="/asia/">Asia (English)</a></li>
+                <li id="mu"><a rel="nofollow" href="/mu/">Mauritius</a></li>
+        </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8 navbar-right">
+                        <div class="searchit">
+                            <img alt="Search icon" border="0" class="searchicon" src="/ceridian/media/websitemedia/icon/icon-search-off.png" />
+                        </div>
+                        <div class="auxiliary-menu-wrapper">
+<nav aria-label="Desktop header secondary menu" class="header-secondary"><ul><li><a href="/support" target="">Support</a></li><li><a href="/support/login" target="">Login</a></li></ul></nav>
+                        </div>
+                        <div class="contact-methods">
+                            <ul class="">
+                                    <li><a href="tel:1-800-729-7655">Call Sales 1-800-729-7655</a></li>
+
+                            </ul>
+                        </div>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+            <div class="container" id="navfluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class="mobile-search">
+                        <img alt="" border="0" class="searchicon" src="/ceridian/media/websitemedia/icon/icon-search-off.png" />
+                    </div>
+                    <div class="top-nav-logo">
+                        <a href="/">
+                            <img class="logo-header" src="/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_header.svg" alt="Ceridian Logo" />
+                        </a>
+                    </div>
+                </div>
+
+                <div aria-label="main menu" class="navbar-slide main-mobile-menu" role="navigation">
+<ul class="nav navbar-nav nav-desktop"><li><a href="/products/dayforce" target="">Dayforce</a><ul class="submenu megamenu"><li class="column p-40 card-height"><h4>Dayforce</h4>
+<h5>Enterprise HCM software</h5>
+<p> Dayforce enterprise HCM software combines payroll, HR, benefits, talent and workforce management in a single cloud application to power the future of work. </p><ul><div class="col-sm-6 two-column"><li class="marginBottom15"><a href="/products/dayforce" target="">The Dayforce Suite</a></li><li class="marginBottom15"><a href="/products/dayforce/technology" target="">Our Technology</a></li><li class="marginBottom15"><a href="/products/dayforce/implementation-services-support" target="">Services and Support</a></li></div><div class="col-sm-6 two-column"></div></ul><ul><div class="col-sm-6 two-column"></div><div class="col-sm-6 two-column"></div></ul></li><li class="marginBottom15 column p-40 card-height"><h5>Dayforce Capabilities</h5>
+<br /><ul><div class="col-sm-6 two-column"><li class="marginBottom15"><a href="/products/dayforce/hr" target="">HR Software</a></li><li class="marginBottom15"><a href="/products/dayforce/payroll" target="">Payroll</a></li><li class="marginBottom15"><a href="/products/dayforce/payroll/wallet-on-demand-pay" target="">Dayforce Wallet</a></li><li class="marginBottom15"><a href="/products/dayforce/talent-intelligence" target="">Talent Intelligence</a></li><li class="marginBottom15"><a href="/products/dayforce/workforce-management" target="">Workforce Management</a></li><li class="marginBottom15"><a href="/products/dayforce/hr/advanced-hr-analytics" target="">Advanced HR Analytics</a></li></div><div class="col-sm-6 two-column"></div></ul><ul><div class="col-sm-6 two-column"></div><div class="col-sm-6 two-column"></div></ul></li></ul><ul class="submenu megamenu"></ul></li><li><a href="javascript:void(0)" target="">Solutions
+</a><ul class="submenu"><li><a href="/solutions/retail-workforce" target="">Retail & Hospitality</a></li><li><a href="/solutions/manufacturing-workforce" target="">Manufacturing</a></li><li><a href="/solutions/healthcare-workforce" target="">Healthcare</a></li><li><a href="/solutions/financial-workforce" target="">Financial Services</a></li><li><a href="/solutions/public-sector" target="">Public Sector</a></li><li><a href="/solutions/professional-and-business-services-workforce" target="">Professional & Business Services</a></li><li><a href="/solutions/sports-entertainment" target="">Sports Entertainment</a></li><li><a href="/solutions/workforce" target="">Other Industries</a></li></ul><ul class="submenu"></ul></li><li><a href="/resources" target="">Resources</a><ul class="submenu"><li><a href="/resources?resource=Customer%20Stories" target="">Customer Stories</a></li><li><a href="/resources?resource=reports" target="">Reports</a></li><li><a href="/resources?resource=guides" target="">Guides</a></li><li><a href="/resources?resource=webinars" target="">On-demand webinars</a></li><li><a href="/blog" target="">Blog</a></li></ul><ul class="submenu"></ul></li><li><a href="/company" target="">Company</a><ul class="submenu"><li><a href="/company" target="">About</a></li><li><a href="https://investor.ceridian.com" target="_blank">Investors</a></li><li><a href="/company/newsroom" target="">Newsroom</a></li><li><a href="/careers" target="">Careers</a></li><li><a href="/partners" target="">Partners</a></li><li><a href="/company/events" target="">Events</a></li><li><a href="/company/corporate-responsibility" target="">Corporate Responsibility</a></li><li><a href="https://www.ceridiancares.com/" target="_blank">Ceridian Cares</a></li></ul><ul class="submenu"></ul></li><li><a class="blue-btn big" href="/get-started/dayforce" target="_self">Get Started</a></li></ul>
+
+                    
+                    <ul class="nav navbar-nav nav-mobile">
+                        <li>
+                            <div class="navbar-header">
+                                <!-- Mobile - Close icon button -->
+                                <button type="button" class="navbar-toggle-close">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-x"></span>
+                                </button>
+
+                                <div class="top-nav-logo">
+                                    <a href="/" class="rootlink">
+                                        <img class="logo-header" src="/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_header.svg" alt="Ceridian Logo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+<div class="mobile-menu-items"><li class="dropdown main-menu"><a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="/#" target="">Dayforce</a><ul class="submenu dropdown-menu"><li><a href="/products/dayforce" target="">The Dayforce Suite</a></li><li><a href="/products/dayforce/technology" target="">Our Technology</a></li><li><a href="/products/dayforce/implementation-services-support" target="">Services and Support</a></li><li><a href="/products/dayforce/hr" target="">HR Software</a></li><li><a href="/products/dayforce/payroll" target="">Payroll</a></li><li><a href="/products/dayforce/payroll/wallet-on-demand-pay" target="">Dayforce Wallet</a></li><li><a href="/products/dayforce/talent-intelligence" target="">Talent Intelligence</a></li><li><a href="/products/dayforce/ideal-talent-marketplace" target="_self">Ideal Talent Marketplace</a></li><li><a href="/products/dayforce/workforce-management" target="">Workforce Management</a></li><li><a href="/products/dayforce/hr/advanced-hr-analytics" target="">Advanced HR Analytics</a></li></ul><ul class="submenu dropdown-menu"></ul></li><li class="dropdown main-menu"><a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="/#" target="">Solutions</a><ul class="submenu dropdown-menu"><li><a href="/solutions/retail-workforce" target="">Retail & Hospitality</a></li><li><a href="/solutions/manufacturing-workforce" target="">Manufacturing</a></li><li><a href="/solutions/healthcare-workforce" target="">Healthcare</a></li><li><a href="/solutions/financial-workforce" target="">Financial Services</a></li><li><a href="/solutions/public-sector" target="">Public Sector</a></li><li><a href="/solutions/professional-and-business-services-workforce" target="">Professional & Business Services</a></li><li><a href="/solutions/sports-entertainment" target="">Sports Entertainment</a></li><li><a href="/solutions/workforce" target="">Other Industries</a></li></ul><ul class="submenu dropdown-menu"></ul></li><li class="dropdown main-menu"><a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="/#" target="">Resources</a><ul class="submenu dropdown-menu"><li><a href="/resources?resource=customer stories" target="">Customer Stories</a></li><li><a href="/resources?resource=reports" target="">Reports</a></li><li><a href="/resources?resource=guides" target="">Guides</a></li><li><a href="/resources?resource=webinars" target="">On-demand webinars</a></li><li><a href="/blog" target="">Blog</a></li></ul><ul class="submenu dropdown-menu"></ul></li><li class="dropdown main-menu"><a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="/#" target="">Company</a><ul class="submenu dropdown-menu"><li><a href="/company" target="">About</a></li><li><a href="https://investors.ceridian.com/" target="_blank">Investors</a></li><li><a href="/company/newsroom" target="">Newsroom</a></li><li><a href="/careers" target="">Careers</a></li><li><a href="/partners" target="">Partners</a></li><li><a href="/company/events" target="">Events</a></li><li><a href="/company/corporate-responsibility" target="_self">Corporate Responsibility</a></li><li><a href="https://www.ceridiancares.ca/" target="_blank">Ceridian Cares</a></li></ul><ul class="submenu dropdown-menu"></ul></li><li class="dropdown main-menu"><a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="/#" target="">Get Started</a><ul class="submenu dropdown-menu"><li><a href="/get-started/Dayforce" target="">Book a Demo</a></li><li><a href="/get-started/Dayforce" target="">Let's Talk</a></li><li><a href="tel:1-800-729-7655" target="">Call Sales 1-800-729-7655</a></li></ul><ul class="submenu dropdown-menu"></ul></li><li class="paddingTop10"><a href="/support" target="">Support</a></li><li><a href="/support/login" target="">Login</a></li></div>
+
+
+                        <li class="divider"></li>
+                        <li class="dropdown">
+    <a href="#" id="mobile-dropdown8" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        United States
+    </a>
+        <ul class="submenu dropdown-menu" aria-labelledby="mobile-dropdown8">
+                <li id="m_us">
+                    <a rel="nofollow" href="/">
+                        United States
+                    </a>
+                </li>
+                <li id="m_ca">
+                    <a rel="nofollow" href="/ca/">
+                        Canada (English)
+                    </a>
+                </li>
+                <li id="m_fr">
+                    <a rel="nofollow" href="/fr/">
+                        Canada (Fran&#231;ais)
+                    </a>
+                </li>
+                <li id="m_uk">
+                    <a rel="nofollow" href="/uk/">
+                        UK / Ireland
+                    </a>
+                </li>
+                <li id="m_de">
+                    <a rel="nofollow" href="/de/">
+                        Deutschland (Deutsch)
+                    </a>
+                </li>
+                <li id="m_au">
+                    <a rel="nofollow" href="/au/">
+                        Australia / NZ
+                    </a>
+                </li>
+                <li id="m_asia">
+                    <a rel="nofollow" href="/asia/">
+                        Asia (English)
+                    </a>
+                </li>
+                <li id="m_mu">
+                    <a rel="nofollow" href="/mu/">
+                        Mauritius
+                    </a>
+                </li>
+        </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        
+
+
+
+
+
+
+<!-- Hero Block -->
+
+
+<!-- Hero -->
+<section class="newbrand heroSection  bg-top" style="background-image:url(/Ceridian/media/WebsiteMedia/Home/Ceridian-home-june-2021-v2.jpg?ext=.jpg);">
+
+    <div class="heroContent">
+        <div class="">
+            <div class="container">
+                <h1 class="pr-30 pr-sm-0">Your global people platform</h1>
+<h2 class="big font-White">Empower people, simplify compliance, <br />and unlock workforce intelligence</h2>
+                <div class="pt-30">
+                        <a class="blue-btn big width-auto orange" href="/products/dayforce?utm_source=web-df-prod-homepage-hero-cta-us" target="_self">Learn about Dayforce</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="tmp-statement">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="text-center">
+                        <p class="text-center"><strong>New research: 8,800 employees say there&#39;s more to flexibility than employers realize. <a href="https://www.ceridian.com/resources/2023-pulse-of-talent?utm_source=web-2023-amer-df-pot-homepage-sub-banner-CA-en">Download the report</a></strong></p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- General Contents - Intro -->
+<section class="generalContents my-0 pt-30 pb-0 pb-md-50 bg-Snow">
+    <div class="container">
+        <div class="row">
+            <div class="max-width-900 text-center px-20 px-lg-0 mb-30 mt-50">
+                    <h2 class="med mb-30">Right now, preparing your workforce is the smartest decision you’ll make</h2>
+
+
+                    <div class="p-content mb-20">
+                        <p>The world has changed, and it&#39;s going to keep changing. Our human capital management software helps your workforce adapt, evolve, and win by working more effectively within it. Spend less time focused on tasks and more time focused on strategy. Turn data into smarter decision making, and use modern technology to create experiences your employees will love.</p>
+
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</section>
+<!-- Customer Story section -->
+
+    <section class="bg-Snow mt-0 pt-50 pt-md-0 anc-video-section">
+        <div class="homeVideoWrapper max-width-1200 text-center">
+            <img alt="" class="lazyload img-responsive" data-src="/Ceridian/media/WebsiteMedia/Home/customer-video-image-anz-2400x1450.jpg?ext=.jpg" />
+
+                <button class="video-play-button" onclick="launchLightbox(&#39;d1FXLj2jyAxF1tXmjQXE5k&#39;)" aria-label="Watch video">
+                    <div class="video-play-arrow"></div>
+                </button>
+                <div class="row">
+                    <div id="hidden_content">
+                        <div class="homeVideoWrapper container text-center">
+        <img style="width: 100%; margin: auto; display: block;"
+             class="vidyard-player-embed"
+             src="//play.vidyard.com/d1FXLj2jyAxF1tXmjQXE5k.jpg"
+             data-uuid="d1FXLj2jyAxF1tXmjQXE5k"
+             data-v="4"
+             data-type="lightbox" />
+</div>
+
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="homeCustomer bg-full-container-half mt-0 mt-md-n190">
+
+        <div class="container bg-Brand-Blue pt-60 pb-70">
+            <div class="row">
+
+                    <div class="col-sm-10">
+                        <h2 class="font-White">Our customers on the ROI of Dayforce</h2>
+                        <h3 class="font-White ClarikaGrotesque-Light">Hear directly from Ceridian customers on how Dayforce has transformed their HR and payroll practices and delivered quantifiable value to their companies. </h3>
+                    </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                        <a href="/resources?resource=customer stories" target="_blank" class="">
+                            <h4 class="font-size-20 font-Brand-blue-light"> See more customer stories <i class="far fa-angle-right"></i></h4>
+                        </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- Key Contents (full half image/full half contents) -->
+
+    <section class="homeValues my-0">
+
+
+<div class="row mx-0 show-mobile-image" id="id_Complex_work_doesn’t_have_to_be_complicated">
+
+    <div class="col-sm-6 contents pt-50 pt-md-100 pb-70 pb-md-120 card-height right">
+        <div class="container-512 px-0 pull-left">
+            <div class="col-md-12 px-0 px-md-40">
+                <h2>
+                    Complex work doesn’t have to be complicated
+                </h2>
+                <div class="mt-20">
+                    <p>Businesses today are more complex than ever. Our customers cut through that complexity and are able to focus more on strategy and growth, and less on tasks. They&rsquo;re able to find opportunities that create quantifiable value as the business changes. Global payroll is one of the many areas where our customers have overcome complexity and applied innovative thinking and technology to create value.</p>
+
+                </div>
+                        <div class="mt-30">
+                            <a href="/products/dayforce/payroll" class="blue-btn" target="_self">Learn more</a>
+                        </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-6 text-center px-0 bg-cover card-height">
+<img alt="" class="lazyload img-responsive card-img" data-src="/Ceridian/media/WebsiteMedia/Home/value-image-1-1600x860.jpg?ext=.jpg" />    </div>
+</div>
+
+
+
+<div class="row mx-0 show-mobile-image" id="id_Work_smarter,_not_harder">
+
+    <div class="col-sm-6 contents pt-50 pt-md-100 pb-70 pb-md-120 card-height ">
+        <div class="container-512 px-0 pull-right">
+            <div class="col-md-12 px-0 px-md-40">
+                <h2>
+                    Work smarter, not harder
+                </h2>
+                <div class="mt-20">
+                    <p>People are a company&rsquo;s biggest investment and most important asset. Smart leaders understand this, and make strategic decisions about their workforce, informed by data. With Dayforce, leaders can make better decisions that benefit their company and their people. Read about some of our customers who are demonstrating intelligence at work.</p>
+
+                </div>
+                        <div class="mt-30">
+                            <a href="/intelligence-at-work" class="blue-btn" target="_self">Learn more</a>
+                        </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-6 text-center px-0 bg-cover card-height">
+<img alt="" class="lazyload img-responsive card-img" data-src="/Ceridian/media/WebsiteMedia/Home/value-image-2-1600x860.jpg?ext=.jpg" />    </div>
+</div>
+
+
+
+<div class="row mx-0 show-mobile-image" id="id_Modern_tech_employees_will_love">
+
+    <div class="col-sm-6 contents pt-50 pt-md-100 pb-70 pb-md-120 card-height right">
+        <div class="container-512 px-0 pull-left">
+            <div class="col-md-12 px-0 px-md-40">
+                <h2>
+                    Modern tech employees will love
+                </h2>
+                <div class="mt-20">
+                    <p>Today&rsquo;s employees want a work experience similar to their lifestyles: online, on-demand, and self-serve. A great employee experience is a win-win &ndash; employees are happier and more productive, and this can positively impact your bottom line. We are constantly innovating and developing new ways to deliver a better user experience, like with Dayforce Wallet &ndash; a whole new way to get paid.</p>
+
+                </div>
+                        <div class="mt-30">
+                            <a href="/products/dayforce/payroll/wallet" class="blue-btn" target="_self">Learn more</a>
+                        </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-6 text-center px-0 bg-cover card-height">
+<img alt="" class="lazyload img-responsive card-img" data-src="/Ceridian/media/WebsiteMedia/Home/value-image-3-1600x860.jpg?ext=.jpg" />    </div>
+</div>
+
+
+    </section>
+
+<!-- Award Block -->
+    <section class="bg-Brand-Blue mt-0 py-60">
+        <div class="container">
+            <div class="row">
+                    <div class="col-sm-3 pb-40 text-sm-center">
+                        <img alt="" class="lazyload max-width-215" data-src="/Ceridian/media/WebsiteMedia/Home/Gartner-Peer-Insights-Customers-Choice-badge-2021-White-500px.png?ext=.png" />
+                    </div>
+                <div class="col-sm-9 pl-20 pl-md-40  text-sm-center">
+                    <h2 class="med font-White">One of the highest rated HCM Suites for 1,000+ Employee Enterprises</h2>
+
+                        <div class="pt-40 pt-md-20 px-40 px-md-0">
+                            <img alt="" class="lazyload img-responsive max-height-140" data-src="/Ceridian/media/WebsiteMedia/Home/customer-rating-v3.png?ext=.png" />
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Parallax image section -->
+    <section class="mt-0">
+
+            <div class="row mx-0 hidden-xs">
+                <img alt="" class="lazyload img-responsive" data-src="/Ceridian/media/WebsiteMedia/Home/Home-DF-banner-v2.jpg?ext=.jpg" />
+            </div>
+                <div class="hidden-sm hidden-md hidden-lg">
+                    <img alt="" class="lazyload img-responsive" data-src="/Ceridian/media/WebsiteMedia/Home/Home-DF-banner-mobile-1200x700-wallet-v2.jpg?ext=.jpg" />
+
+                </div>
+    </section>
+
+<!-- FeatureBlock -->
+
+<section class="homeFeature my-0 py-50 bg-Snow">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 pb-sm-50  pt-10 pt-sm-50 ">
+                <h2>
+                    How to choose a cloud HCM software partner
+                </h2>
+                <div class="mt-20">
+                    <p>You have a lot to consider when choosing an HCM technology provider &ndash; how will it help you reduce complexity, improve the employee experience, and make smarter decisions that add value to your organization? Our Complete Buyer&rsquo;s Guide to HCM Technology has the information and guidance you need to make the best decisions for your business.</p>
+
+                </div>
+                    <div class="mt-30">
+                        <a href="/resources/start-your-hcm-journey-on-the-right-path" class="blue-btn" target="_self"  id="How-to-choose-a-cloud-HCM-software-partner">Get the guide</a>
+                    </div>
+            </div>
+            <div class="col-sm-6">
+                <div class=""><img alt="" class="lazyload img-responsive" data-src="/Ceridian/media/WebsiteMedia/Home/2020-HCM-Buyers-Guide-cover.png?ext=.png" /></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- What's New -->
+    <section class="pt-10 pt-md-60 pb-0 pb-md-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="big">Latest news:</h2>
+                    <!-- p class="p-strong">Stay informed with the latest news and trends.</p -->
+                </div>
+            </div>
+
+                <div class="row pt-30 pb-15">
+                    <div class="col-sm-3 pb-5">
+                        <a href="/company/newsroom/2023/ceridian-reports-fourth-quarter-and-full-year-2022-results" target="_blank"><img alt="" class="lazyload img-responsive" data-src="/Ceridian/media/WebsiteMedia/Home/latestnews-3-mau-1200x780.jpg?ext=.jpg" /></a>
+                    </div>
+                    <div class="col-sm-9">
+                        <p class="p-strong">Feb 8, 2023</p>
+                        <h3 class="mt-15">
+                            <a href="/company/newsroom/2023/ceridian-reports-fourth-quarter-and-full-year-2022-results" target="_blank">
+                                Ceridian Reports Fourth Quarter and Full Year 2022 Results
+                            </a>
+                        </h3>
+
+                    </div>
+                </div>
+                <div class="row pt-30 pb-15">
+                    <div class="col-sm-3 pb-5">
+                        <a href="/company/newsroom/2023/ceridian-recognized-in-2023-bloomberg-gender-equality-index" target="_blank"><img alt="" class="lazyload img-responsive" data-src="/Ceridian/media/WebsiteMedia/Home/latestnews-3-mau-1200x780.jpg?ext=.jpg" /></a>
+                    </div>
+                    <div class="col-sm-9">
+                        <p class="p-strong">January 31, 2023</p>
+                        <h3 class="mt-15">
+                            <a href="/company/newsroom/2023/ceridian-recognized-in-2023-bloomberg-gender-equality-index" target="_blank">
+                                
+Ceridian Recognized in 2023 Bloomberg Gender-Equality Index
+                            </a>
+                        </h3>
+
+                    </div>
+                </div>
+                <div class="row pt-30 pb-15">
+                    <div class="col-sm-3 pb-5">
+                        <a href="/company/newsroom/2022/ceridian-announces-the-ideal-talent-marketplace" target="_blank"><img alt="" class="lazyload img-responsive" data-src="/Ceridian/media/WebsiteMedia/Home/latestnews-3-mau-1200x780.jpg?ext=.jpg" /></a>
+                    </div>
+                    <div class="col-sm-9">
+                        <p class="p-strong"> November 9, 2022</p>
+                        <h3 class="mt-15">
+                            <a href="/company/newsroom/2022/ceridian-announces-the-ideal-talent-marketplace" target="_blank">
+                                Ceridian Announces Ideal Talent Marketplace
+                            </a>
+                        </h3>
+
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+<!-- Customer logos (Horizental) -->
+    <section class="homeCustomerLogo customers-horizental bg-White pt-0 pb-50">
+        <div class="max-width-1180 text-center">
+            <div class="col-sm-12"><h3 class="lg mt-30 mb-40 font-Black">We work with some of the world&rsquo;s best brands</h3></div>
+
+<!-- Customer Logos in Horizental layout -->
+
+
+<div class="col-lg-2 col-sm-4 col-xs-6 text-center">
+            <a href="/resources/danone-north-america-delivers-the-future-of-employee-experience-with-pay-on-demand"><img alt="" class="lazyload img-responsive cus-logo" data-src="/Ceridian/media/WebsiteMedia/Customers/customer-danone-new.png?ext=.png" /></a>
+</div><!-- Customer Logos in Horizental layout -->
+
+
+<div class="col-lg-2 col-sm-4 col-xs-6 text-center">
+            <a href="/resources/gannett-keeps-the-news-cycle-spinning-with-dayforce"><img alt="" class="lazyload img-responsive cus-logo" data-src="/Ceridian/media/WebsiteMedia/Customers/home-customerlogo-gannett.png?ext=.png" /></a>
+</div><!-- Customer Logos in Horizental layout -->
+
+
+<div class="col-lg-2 col-sm-4 col-xs-6 text-center">
+            <a href="/resources/otg-management-soars-to-new-heights"><img alt="" class="lazyload img-responsive cus-logo" data-src="/Ceridian/media/WebsiteMedia/Customers/home-customerlogo-otg.png?ext=.png" /></a>
+</div><!-- Customer Logos in Horizental layout -->
+
+
+<div class="col-lg-2 col-sm-4 col-xs-6 text-center">
+            <a href="/resources/sparc-group-trends-forward"><img alt="" class="lazyload img-responsive cus-logo" data-src="/Ceridian/media/WebsiteMedia/Customers/home-customerlogo-sparc.png?ext=.png" /></a>
+</div><!-- Customer Logos in Horizental layout -->
+
+
+<div class="col-lg-2 col-sm-4 col-xs-6 text-center">
+            <a href="/resources/spirit-aerosystems-soars-with-a-borderless-global-payroll-solution"><img alt="" class="lazyload img-responsive cus-logo" data-src="/Ceridian/media/WebsiteMedia/Customers/customer-icon-spirit.png?ext=.png" /></a>
+</div><!-- Customer Logos in Horizental layout -->
+
+
+<div class="col-lg-2 col-sm-4 col-xs-6 text-center">
+            <a href="/resources/caleres-puts-its-best-foot-forward"><img alt="" class="lazyload img-responsive cus-logo" data-src="/Ceridian/media/WebsiteMedia/Customers/home-customerlogo-caleres.png?ext=.png" /></a>
+</div>
+        </div>
+    </section>
+
+<!------------------------------------ New Footer CTA --------------------------------->
+
+<!-- Footer CTA -->
+<section class="footer-cta bg-Brand-Blue ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center titleSpacing text-center px-15 px-md-30">
+                <h2 class="big br-none-sm">Let’s get your workforce off <br />to a smarter start</h2>
+                
+                <div class="pt-35">
+                        <a class="blue-btn cta-btn big mb-20 trackLink orange" href="/get-started" target="_self" id="CTA-Contact-us">Contact us</a>
+                                            <a href="/get-started" class="blue-btn  cta-btn big ml-0 ml-md-30  trackLink" target="_self" id="CTA-Book-a-demo">Book a demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6 footerLogo">
+                    <img src="/Ceridian/media/WebsiteMedia/logo/ceridian_wordmark_blue_footer.svg" alt="" />
+                </div>
+            </div>
+            <div class="row">
+                <!-- BE: Footer Integration Start -->
+                <div class="be-ix-link-block"><!--Link Block Target Div--></div>
+                <!-- BE: Footer Integration End -->
+            </div>
+
+<nav aria-label="Desktop footer menu" class="desktop-footer row"><ul class="row fix"><li class="nav-list-heading col-md-5ths col-sm-4 col-xs-6"><a href="/products/dayforce" target="">Dayforce</a><ul><li class="nav-list-heading"><p>Enterprise HCM Software</p></li><li><a class="link-sm" href="/products/dayforce" target="">Why Dayforce</a></li><li><a class="link-sm" href="/products/dayforce/hr" target="">HR</a></li><li><a class="link-sm" href="/products/dayforce/payroll" target="">Payroll</a></li><li><a class="link-sm" href="/products/dayforce/payroll/wallet-on-demand-pay" target="">Dayforce Wallet</a></li><li><a class="link-sm" href="/products/dayforce/talent-intelligence" target="">Talent Intelligence</a></li><li><a class="link-sm" href="/products/dayforce/workforce-management" target="">Workforce Management</a></li><li><a class="link-sm" href="https://www.ceridian.com/products/dayforce/hr/advanced-hr-analytics" target="">Advanced HR Analytics</a></li><li><a class="link-sm" href="/products/dayforce/customer-experience" target="">Customer Experience</a></li><li><a class="link-sm" href="/products/dayforce/services" target="">Services</a></li><li class="nav-list-heading paddingTop10"><p>Fulfillment Services</p></li><li><a class="link-sm" href="/products/payroll-tax-services" target="">Tax Services</a></li></ul><ul></ul></li><li class="nav-list-heading col-md-5ths col-sm-4 col-xs-6"><a href="javascript:void(0)" target="">Solutions</a><ul><li><a class="link-sm" href="/solutions/retail-workforce" target="">Retail & Hospitality</a></li><li><a class="link-sm" href="/solutions/manufacturing-workforce" target="">Manufacturing</a></li><li><a class="link-sm" href="/solutions/healthcare-workforce" target="">Healthcare</a></li><li><a class="link-sm" href="/solutions/financial-workforce" target="">Financial Services</a></li><li><a class="link-sm" href="/solutions/public-sector" target="">Public Sector</a></li><li><a class="link-sm" href="/solutions/professional-and-business-services-workforce" target="">Professional & Business Services</a></li><li><a class="link-sm" href="/solutions/sports-entertainment" target="">Sports Entertainment</a></li><li><a class="link-sm" href="/solutions/workforce" target="">Other Industries</a></li></ul><ul></ul></li><li class="nav-list-heading col-md-5ths col-sm-4 col-xs-6"><a href="/resources" target="">Resources</a><ul><li><a class="link-sm" href="/resources?resource=customer%20stories" target="">Customer Stories</a></li><li><a class="link-sm" href="/resources?resource=reports" target="">Reports</a></li><li><a class="link-sm" href="/resources?resource=guides" target="">Guides</a></li><li><a class="link-sm" href="/resources?resource=webinars" target="">On-demand webinars</a></li><li><a class="link-sm" href="/blog" target="">Blog</a></li></ul><ul></ul></li><li class="nav-list-heading col-md-5ths col-sm-4 col-xs-6"><a href="/company" target="">Company</a><ul><li><a class="link-sm" href="/company" target="">About</a></li><li><a class="link-sm" href="https://investor.ceridian.com" target="_blank">Investors</a></li><li><a class="link-sm" href="/company/newsroom" target="">Newsroom</a></li><li><a class="link-sm" href="/careers" target="">Careers</a></li><li><a class="link-sm" href="/partners" target="">Partners</a></li><li><a class="link-sm" href="/company/events" target="">Events</a></li><li><a class="link-sm" href="/company/corporate-responsibility" target="">Corporate Responsibility</a></li><li><a class="link-sm" href="https://www.ceridiancares.com/" target="_blank">Ceridian Cares</a></li></ul><ul></ul></li><li class="nav-list-heading col-md-5ths col-sm-4 col-xs-6"><a href="/get-started/dayforce" target="">Get Started</a><ul><li><a class="link-sm" href="/get-started/Dayforce" target="">Watch Demo</a></li><li><a class="link-sm" href="/get-started/Dayforce" target="">Request Information</a></li><li><a class="link-sm" href="/contact" target="">Contact</a></li><li><a class="link-sm" href="/support" target="">Support</a></li></ul><ul></ul></li></ul></nav>
+
+            
+
+        </div>
+        <div class="container marginTop50">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="footerTalk">
+                            <p>
+                                Want to talk?<br />
+                                <a href="tel:1-800-729-7655">1-800-729-7655</a>
+                            </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="socialFooter">
+                        <ul>
+                            <li><a href="https://twitter.com/ceridian" target="_blank"><span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Go to Twitter</span></a></li>
+                            <li><a href="https://www.facebook.com/Ceridian/" target="_blank"><span class="fa fa-facebook" aria-hidden="true"></span><span class="sr-only">Go to Facebook</span></a></li>
+                            <li><a href="https://www.linkedin.com/company/ceridian/" target="_blank"><span class="fa fa-linkedin" aria-hidden="true"></span><span class="sr-only">Go to Linkedin</span></a></li>
+                            <li><a href="https://www.youtube.com/user/ceridian" target="_blank"><span class="fa fa-youtube-play" aria-hidden="true"></span><span class="sr-only">Go to Youtube</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bottomFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <span class="cpright">&#169; Ceridian HCM, Inc. All Rights Reserved.</span>
+
+<nav aria-label="Desktop footer secondary menu" class="footer-secondary"><ul class="legal"><li><a href="/privacy" target="_blank">Privacy</a></li><li><a href="https://www.ceridian.com/terms" target="_blank">Terms</a></li><li><a href="/privacy/cookie-notice" target="_blank">Cookie Statement</a></li></ul></nav>
+                    <span class="ot-sdk-show-settings"></span>
+
+                    <div class="bottom-footer-right">
+
+    <div class="country-flags">
+        <div class="country-menu">
+            <ul class="submenu">
+                <li id="footer-us"><a rel="nofollow" href="/">United States</a></li>
+                <li id="footer-ca"><a rel="nofollow" href="/ca/">Canada (English)</a></li>
+                <li id="footer-fr"><a rel="nofollow" href="/fr/">Canada (Fran&#231;ais)</a></li>
+                <li id="footer-uk"><a rel="nofollow" href="/uk/">UK / Ireland</a></li>
+                <li id="footer-de"><a rel="nofollow" href="/de/">Deutschland (Deutsch)</a></li>
+                <li id="footer-au"><a rel="nofollow" href="/au/">Australia / NZ</a></li>
+                <li id="footer-asia"><a rel="nofollow" href="/asia">Asia (English)</a></li>
+                <li id="footer-mu"><a rel="nofollow" href="/mu/">Mauritius</a></li>
+            </ul>
+                <div class="country-link">
+                    United States
+                </div>
+        </div>
+    </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="search-section">
+        <div class="search-header">
+            <div class="container">
+                <div class="col-sm-12">
+                    <input type="text" name="SearchHere" id="SearchHere" class="st-default-search-input">
+                    <label for="SearchHere">Search here </label >
+                    <div class="search-close">×</div>
+                </div>
+            </div>
+        </div>
+        <div class="search-ui-container">
+            <div class="container">
+                <div class="col-sm-12">
+                    <div class="st-search-container">
+                        <div class="search-zero-state">
+                            Find anything about our product, search our documentation, and more. Enter a query in the search input above, and results will be displayed as you type.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script data-ot-ignore src='/bundles/bodyScripts?v=qJcHbgXlR5WmLRS6iQkFdsmqbvLENf-kBpkYGo7qjtQ1'></script>
+
+
+
+        <!-- this is not bundled as some pages are excluded from tracking-->
+        <script src='/Scripts/body/hotjar.js'></script>
+    <script src='/kentico.activities/kenticoactivitylogger/logger.js'></script>
+
+
+    
+
+
+
+    <!-- Start Swift Search code -->
+
+    <script type="text/javascript">
+        (function (w, d, t, u, n, s, e) {
+            w['SwiftypeObject'] = n; w[n] = w[n] || function () {
+                (w[n].q = w[n].q || []).push(arguments);
+            }; s = d.createElement(t);
+            e = d.getElementsByTagName(t)[0]; s.async = 1; s.src = u; e.parentNode.insertBefore(s, e);
+        })(window, document, 'script', '//s.swiftypecdn.com/install/v2/st.js', '_st');
+
+        //_st('install', 'RM5ygsFL2qTyDS7UyUip', '2.0.0');
+        _st('install', 'RM5ygsFL2qTyDS7UyUip', '2.0.0', {
+            install: {
+                hooks: {
+                    query_filter: function (query) {
+                        query.setFilterDataByDocumentTypeSlugAndFilterField('page', 'country', { values: ['us'] });
+
+                        return query;
+                    }
+                }
+            }
+        });
+    </script>
+    <!-- End Swift Search code -->
+
+
+
+
+
+
+</body>
+</html>

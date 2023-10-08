@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            Access Denied
+        </title>
+    </head>
+<body>
+    <style>
+        *, *:before, *:after {
+  box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    background-color: #fff; 
+    height: 100%;
+    padding: 10px;
+}
+
+a {
+  color: #000 !important;
+  text-decoration:none;
+}
+a:hover {
+  color: #FFFFFF !important;
+  text-decoration:none;
+}
+
+.text-wrapper {
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.title {
+    font-size: 5em;
+    font-weight: 700;
+    color: #000;
+}
+
+.subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+    
+    </style>
+    <div class="text-wrapper">
+        <div class="title" data-content="404">
+            403 - ACCESS DENIED
+        </div>
+    
+        <div class="subtitle">
+            Oops, You don't have permission to access this page.
+        </div>
+    </div>
+</body>
+</html>
