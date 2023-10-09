@@ -123,7 +123,7 @@ if __name__ == '__main__':
 
     # Load the CSV file from the "tranco" directory, This is path according to the lab system
 
-    csv_file_path = os.path.join('..', 'tranco', 'top-1m.csv')
+    csv_file_path = os.path.join('..', 'tranco', 'top-1m-trimmed.csv')
 
     df = pd.read_csv(csv_file_path, header = None)
 
