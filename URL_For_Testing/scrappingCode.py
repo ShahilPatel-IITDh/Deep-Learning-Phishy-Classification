@@ -37,11 +37,11 @@ driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().
 driver.maximize_window()
 
 # Loop through all the pages
-for page in range(0, 5):
+for page in range(0, 1):
 
     # Send a GET request to the webpage and get the HTML content
-    # URL for confirmed phishing URLs
-    url = f"https://phishtank.org/phish_search.php?page={page}&valid=y&Search=Search"
+    # URL for confirmed Legitimate URLs
+    url = f"https://phishtank.org/phish_search.php?page={page}&valid=n&Search=Search"
     driver.get(url)
 
     # EC is the Expected Condition, presence_of_element_located is the condition that the element is present on the page
