@@ -7,7 +7,7 @@ import logging
 
 logging.basicConfig(filename='faviconErrors.log', level=logging.ERROR)
 
-def scrape_favicon(URL, favicons_directory, domain):
+def scrape_favicon(URL, faviconFile, domain):
     headers = {
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
     }
@@ -15,6 +15,7 @@ def scrape_favicon(URL, favicons_directory, domain):
     try:
         # Fetch the web page content
         response = requests.get(URL, headers=headers, timeout=5)
+        response.raise_for_status()  # Raise an exception for HTTP errors
 
         if response.status_code != 200:
             raise requests.exceptions.RequestException(f"Failed to fetch {URL}, status code: {response.status_code}")
@@ -49,7 +50,7 @@ def scrape_favicon(URL, favicons_directory, domain):
                 # Remove any extension from the domain name
                 filename, _ = os.path.splitext(domain)
 
-                with open(os.path.join(favicons_directory, filename + '.ico'), 'wb') as f:
+                with open(faviconFile, 'wb') as f:
                     f.write(favicon_content)
         else:
             faviconURL = URL + '/favicon.ico'
@@ -64,16 +65,12 @@ def scrape_favicon(URL, favicons_directory, domain):
                     # Get the content of the favicon
                     favicon_content = response.content
 
-                    only_brand_name, _ = os.path.splitext(domain)
-                    logoFileName = only_brand_name + '.ico'
-
-                    logofile = os.path.join(favicons_directory, f'{logoFileName}')
-
                     # Save the favicon image to a file
-                    with open(logofile, 'wb') as file:
+                    with open(faviconFile, 'wb') as file:
                         file.write(favicon_content)
 
                     return True
+                
                 else:
                     return False
 

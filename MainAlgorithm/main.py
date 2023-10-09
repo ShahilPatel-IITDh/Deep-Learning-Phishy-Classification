@@ -30,6 +30,7 @@ if not os.path.exists(faviconDir):
 counter = 0
 foundInputBox = 0
 notFoundInputBox = 0
+screenshotNotPresent = 0
 
 if __name__ == "__main__":    
     
@@ -61,10 +62,14 @@ if __name__ == "__main__":
 
             print("Domain name: ", domain_name)
 
+            # ---------------------------------------------------- Screen Shot Capturing ---------------------------------------------------- # 
+
             screenshotFile = os.path.join(screenShotDir, f"{domain_name}.png")
 
-            # Capture the full-page screenshot
+            # # Capture the full-page screenshot
             capture_full_page_screenshot(url, screenshotFile)
+
+            # ---------------------------------------------------- UI detection ---------------------------------------------------- # 
 
             # Check if the output file exists before running UI detection
             if os.path.isfile(screenshotFile):
@@ -80,30 +85,39 @@ if __name__ == "__main__":
                     notFoundInputBox += 1
                     print("Input box not detected.")
             
-            scrape_favicon(url, faviconDir, domain_name)
+            else:
+                print(f"Screenshot doesn't exist for: {domain_name}")
+                screenshotNotPresent += 1
 
+            # ---------------------------------------------------- Favicon scraping ---------------------------------------------------- #
+            
+            
             logoFile = os.path.join(faviconDir, f"{domain_name}.ico")
 
-            logoDatabase = os.path.join('..', 'SampleLogos')
+            scrape_favicon(url, faviconDir, domain_name)
 
-            # Check if the logo file exists before running logo similarity detection
-            if os.path.isfile(logoFile):
+            # logoDatabase = os.path.join('..', 'SampleLogos')
+
+            # # ---------------------------------------------------- Logo similarity detection ----------------------------------------------------
+
+            # # Check if the logo file exists before running logo similarity detection
+            # if os.path.isfile(logoFile):
                 
-                # Run logo similarity detection code if the file exists
+            #     # Run logo similarity detection code if the file exists
 
-                similarLogos = detect_logo_similarity(logoFile, logoDatabase)
+            #     similarLogos = detect_logo_similarity(logoFile, logoDatabase)
 
-                if not similarLogos:  # Check if the dictionary is empty
-                    print("Logo similarity not detected.")
+            #     if not similarLogos:  # Check if the dictionary is empty
+            #         print("Logo similarity not detected.")
 
-                else:
-                    print("Logo similarity detected:")
-                    for logo, similarity in similarLogos.items():
-                        with open(f"{domain_name}.txt", 'a') as file:
-                            file.write(f"Logo: {logo}, Similarity Score: {similarity:.2f}%\n")
+            #     else:
+            #         print("Logo similarity detected:")
+            #         for logo, similarity in similarLogos.items():
+            #             with open(f"{domain_name}.txt", 'a') as file:
+            #                 file.write(f"Logo: {logo}, Similarity Score: {similarity:.2f}%\n")
 
-            else:
-                print(f"Logo doesn't exist for: {domain_name}")
+            # else:
+            #     print(f"Logo doesn't exist for: {domain_name}")
 
             print(f"{counter}")
             print("----------------------------------\n")
@@ -113,9 +127,11 @@ if __name__ == "__main__":
     #     file.write(f"Total number of URLs processed: {counter}\n")
     #     file.write(f"Total number of URLs with input boxes: {foundInputBox}\n")
     #     file.write(f"Total number of URLs without input boxes: {notFoundInputBox}\n")
+    #     file.write(f"Total number of URLs without screenshots: {screenshotNotPresent}\n")
     
 
     with open("pytesseract-based-detection.txt", 'w') as file:
         file.write(f"Total number of URLs processed: {counter}\n")
         file.write(f"Total number of URLs with input boxes: {foundInputBox}\n")
         file.write(f"Total number of URLs without input boxes: {notFoundInputBox}\n")
+        file.write(f"Total number of URLs without screenshots: {screenshotNotPresent}\n")

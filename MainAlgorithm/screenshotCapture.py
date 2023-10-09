@@ -4,6 +4,9 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import WebDriverException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from PIL import Image
 import io
 import logging
@@ -29,6 +32,10 @@ driver.maximize_window()
 def capture_full_page_screenshot(url, output_file):
     try:
         driver.get(url)
+        
+        # Wait for the page to load completely (adjust the timeout as needed)
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+
 
         # Handle WebDriverException (e.g., net::ERR_NAME_NOT_RESOLVED)
         if "ERR_NAME_NOT_RESOLVED" in driver.page_source:
@@ -47,12 +54,18 @@ def capture_full_page_screenshot(url, output_file):
         # Capture and stitch the screenshots
         screenshots = []
 
-        for i in range(num_captures):
+        # for i in range(num_captures):
+        #     screenshot = driver.get_screenshot_as_png()
+        #     screenshots.append(Image.open(io.BytesIO(screenshot)))
+        #     driver.execute_script(f"window.scrollTo(0, {viewport_height * (i + 1)});")
+
+        #     time.sleep(2)
+
+        for i in range(0, page_height, viewport_height):
+            driver.execute_script(f"window.scrollTo(0, {i});")
+            time.sleep(2)  # Adjust sleep time as needed
             screenshot = driver.get_screenshot_as_png()
             screenshots.append(Image.open(io.BytesIO(screenshot)))
-            driver.execute_script(f"window.scrollTo(0, {viewport_height * (i + 1)});")
-
-            time.sleep(2)
 
         # Stitch the screenshots vertically
         full_page_screenshot = Image.new("RGB", (screenshots[0].width, page_height))
