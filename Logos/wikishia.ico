@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang=fa dir=rtl>
+<head>
+<title>ویکی شیعه</title>
+<meta http-equiv=ScreenOrientation content=autoRotate:disabled>
+<meta name=description content="ویکی شیعه، دانشنامه شیعه">
+<meta name=keywords content="ویکی ,شیعه ,دانشنامه, wiki, shia,wikishia">
+<meta name=author content="ویکی شیعه">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link href=./all.css rel=stylesheet>
+<script src=./all.js></script>
+<script>var currentLang="EN",currentSearchPhrase="";document.addEventListener("click",(()=>{document.getElementById("myInput").value="",filterFunction()}));const documentHeight=()=>{document.documentElement.style.setProperty("--doc-height",`${window.innerHeight}px`),elem=document.getElementById("myElement"),element.style.height="200px"};function searchFunction(){window.open("https://"+currentLang+".wikishia.net/view/"+currentSearchPhrase)}function changeLanguage(){currentLang=document.getElementById("select_language").value}function filterFunction(){var e=document.getElementById("myInput").value;currentLang=document.getElementById("select_language").value,currentSearchPhrase=e,e.length>2?fetch(`https://${currentLang}.wikishia.net/w/rest.php/v1/search/title?q=${currentSearchPhrase}&limit=5&format=json`).then((e=>e.json())).then((e=>{console.log(e);var t=e;if(dataHolder=document.getElementById("myDropdown"),tmpData="",0==t.pages.length&&"FA"==currentLang)return dataHolder=document.getElementById("myDropdown"),void(dataHolder.innerHTML="<p class='p-2 mt-3' style='color:black'>موردی یافت نشد!</p>");t.pages.map((e=>{tmpData+=`\n                                <a href="https://${currentLang}.wikishia.net/view/${e.key}" class="pb-0">\n                                    <div class="row pb-1" style="border-bottom: 1px solid rgba(0, 0, 0, 0.2);">\n                                        <div class="col-10 text-start">\n                                            <h5>${e.title}</h5>\n                                            <div>${e.description?e.description:""}...</div>\n                                        </div>\n                                        <img class="col-2" src=${e.thumbnail?e.thumbnail.url:"./img/file.svg"} style="object-fit:cover;height: 3.5rem;border-right:0.1rem solid rgba(0, 0, 0, 0.03);" />\n                                    </div>    \n                                </a>\n                                `})),dataHolder.innerHTML=tmpData})).catch((e=>{console.error(e),"FA"==currentLang&&(dataHolder=document.getElementById("myDropdown"),dataHolder.innerHTML="<p class='p-2 mt-3' style='color:black'>موردی یافت نشد! لطفا مجدد تلاش بفرمایید</p>")})):(dataHolder=document.getElementById("myDropdown"),dataHolder.innerHTML="")}document.documentElement.style.setProperty("--doc-height",`${window.innerHeight}px`),elem=document.getElementById("myElement")</script>
+<style>
+@import url(fontiran.css);
+    .heighti{
+        height: var(--doc-height);
+        justify-content: center;
+        width: var(--doc-height/2);
+    }
+    .img {
+        height: var(--doc-height/100);
+    }
+    :root {
+    --doc-height: 100%;
+    }
+
+    html,
+    body {
+    padding: 0;
+    margin: 0;
+    height: 100vh; 
+    height: var(--doc-height);
+    }
+    .doc-height{
+        height: var(--doc-height);
+    }
+    img {
+        object-fit: cover;
+    }
+    .link-unstyled, .link-unstyled:link, .link-unstyled:hover ,a ,a:hover ,a:link{
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .fs-8{
+            font-size: 0.7rem;
+        }
+    }
+    .bg-dark{
+        background-color: #121212 !important;
+    }
+    .bg-container{
+        background-color: #1E1E1E !important;
+    }
+    .line:after{
+        height: 100px;
+        background-color: red;
+    }
+    .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    }
+    .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+    }
+    #myInput {
+    font-size: 16px;
+    padding: 14px 0px 12px 10px;
+    border: none;
+    background: none;
+    color: white;
+    direction: ltr;
+    }
+    #myInput::placeholder {
+        color: white;
+    }
+    #myInput:hover{
+        border: none;
+    }
+    #myInput:focus {outline: none;}
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 100%;
+    border: none;
+    z-index: 1;
+    margin-top: 3.8rem;
+    left: 0.1rem;
+    }
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    .show {display:block;}
+    #select_language{
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1rem;
+    }
+    #select_language_form{
+        border-right: 0.1rem solid black;
+        margin-top: 0.8rem;
+        padding-right: 0.5rem;
+    }
+    select option::selection {
+        color: black; 
+    }
+    select option {
+        color: black; 
+    }
+</style>
+</head>
+<body class=bg-dark style=font-family:IRANSansX!important;background:url(./img//background.jpg);background-size:cover;background-repeat:no-repeat ;>
+<div class="container-fluid text-white p-0 m-0">
+<div class="row p-0 m-0 flex-row-reverse">
+<div class="col-12 col-lg-6 p-0 m-0 d-flex flex-column heighti">
+<div class="row m-0 mt-1 d-flex flex-column d-none d-lg-block">
+<img src=./img/logo.png style=height:15rem;object-fit:contain>
+</div>
+<div class="row m-0 mt-1 d-flex flex-column d-block d-lg-none">
+<img src=./img/logo.png style=height:35vh;object-fit:contain>
+</div>
+<div class="row p-0 m-0 container-fluid p-0 m-0 justify-content-center mb-5 mb-md-0">
+<div class="text-center rounded col-11 col-md-8 col-xxl-6" style=background-color:rgba(0,0,0,.4);font-size:.8rem>
+<div class="dropdown d-flex">
+<div class=col-1>
+<a href="" onclick=searchFunction()>
+<p style="background:url('./img//search.svg');background-repeat:no-repeat;width:100%;height:100%;background-position:center"></p>
+</a>
+</div>
+<input placeholder=Search.. id=myInput class="container-fluid col-9" onkeyup=filterFunction()>
+<div class=col-2>
+<form id=select_language_form action=/action_page.php>
+<select name=select_language id=select_language class=style_select_language onchange=changeLanguage()>
+<option value=FA lang=FA>FA</option>
+<option value=AR lang=AR>AR</option>
+<option value=UR lang=UR>UR</option>
+<option value=ID lang=ID>ID</option>
+<option value=RU lang=RU>RU</option>
+<option value=EN lang=EN>EN</option>
+<option value=ES lang=ES>ES</option>
+<option value=TR lang=TR>TR</option>
+<option value=FR lang=FR>FR</option>
+<option value=DE lang=DE>DE</option>
+<option value=SW lang=SW>SW</option>
+<option value=HI lang=HI>HI</option>
+<option value=ZH lang=ZH>ZH</option>
+<option value=TG lang=TG>TG</option>
+<option value=BN lang=BN>BN</option>
+<option value=IT lang=IT>FR</option>
+<option value=PT lang=PT>DE</option>
+<option value=AZ lang=AZ>SW</option>
+<option value=MY lang=MY>HI</option>
+<option value=TH lang=TH>ZH</option>
+<option value=PS lang=PS>TG</option>
+<option value=HA lang=HA>BN</option>
+</select>
+</form>
+</div>
+<div id=myDropdown class="dropdown-content show rounded" style=overflow:scroll;overflow-x:hidden;max-height:45vh>
+</div>
+</div>
+</div>
+</div>
+<div class="row m-0 mb-2 mt-2" style=justify-content:center>
+<div class="col-3 col-lg-3 text-dark" style=text-align:end>
+<div class=fs-5 style=color:rgba(0,0,0,.2)>
+_______
+</div>
+</div>
+<div class="col-6 col-lg-5 text-center text-dark pt-2">
+<p class="rounded p-1" style=color:#f6f6f6;background-color:rgba(0,0,0,.2);font-size:.7rem>
+Read WikiShia in your language
+</p>
+</div>
+<div class="col-3 col-lg-3 text-dark">
+<div class=fs-5 style=color:rgba(0,0,0,.2)>
+_______
+</div>
+</div>
+</div>
+<div class="row m-0 mt-1 mb-3">
+<div class="m-0 mt-3 mb-3 mt-auto d-flex flex-row" style=justify-content:center>
+<div class="ps-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://fa.wikishia.net>
+فارسی
+</a>
+</div>
+<div class="ps-2 pe-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://ar.wikishia.net>
+العربية
+</a>
+</div>
+<div class="pe-2 text-center text-dark">
+<a href=https://ur.wikishia.net>
+اردو
+</a>
+</div>
+</div>
+<div class="m-0 mt-3 mb-3 mt-auto d-flex flex-row" style=justify-content:center>
+<div class="ps-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://id.wikishia.net>
+Indonesia
+</a>
+</div>
+<div class="ps-2 pe-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://ru.wikishia.net>
+Русский
+</a>
+</div>
+<div class="ps-2 pe-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://en.wikishia.net>
+English
+</a>
+</div>
+<div class="pe-2 text-center text-dark">
+<a href=https://es.wikishia.net>
+Español
+</a>
+</div>
+</div>
+<div class="m-0 mt-3 mb-3 mt-auto d-flex flex-row" style=justify-content:center>
+<div class="ps-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://tr.wikishia.net>
+Türkçe
+</a>
+</div>
+<div class="ps-2 pe-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://fr.wikishia.net>
+Français
+</a>
+</div>
+<div class="pe-2 text-center text-dark">
+<a href=https://de.wikishia.net>
+Deutsch
+</a>
+</div>
+</div>
+<div class="m-0 mt-3 mb-3 mt-auto d-flex flex-row" style=justify-content:center>
+<div class="ps-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://sw.wikishia.net>
+Kiswahili
+</a>
+</div>
+<div class="ps-2 pe-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://hi.wikishia.net>
+हिन्दी
+</a>
+</div>
+<div class="ps-2 pe-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://zh.wikishia.net>
+中文
+</a>
+</div>
+<div class="ps-2 pe-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://tg.wikishia.net>
+Тоҷикӣ
+</a>
+</div>
+<div class="pe-2 text-center text-dark">
+<a href=https://bn.wikishia.net>
+বাংলা
+</a>
+</div>
+</div>
+<div class="m-0 mt-3 mb-3 mt-auto d-flex flex-row" style=justify-content:center>
+<div class="ps-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://it.wikishia.net>
+Italiano
+</a>
+</div>
+<div class="ps-2 pe-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://pt.wikishia.net>
+Português
+</a>
+</div>
+<div class="pe-2 text-center text-dark">
+<a href=https://az.wikishia.net>
+Azərbaycanca
+</a>
+</div>
+</div>
+<div class="m-0 mt-3 mb-3 mt-auto d-flex flex-row" style=justify-content:center>
+<div class="ps-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://my.wikishia.net>
+မြန်မာဘာသာ
+</a>
+</div>
+<div class="ps-2 pe-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://th.wikishia.net>
+ภาษาไทย
+</a>
+</div>
+<div class="ps-2 pe-2 text-center text-dark" style="border-left:#aa7944 2px solid">
+<a href=https://ps.wikishia.net>
+پښتو
+</a>
+</div>
+<div class="pe-2 text-center text-dark">
+<a href=https://ha.wikishia.net>
+Hausa
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id=arabicSection class="position-absolute bottom-0 p-0 m-0 container-fluid" style=height:2.6vh;background-color:#425aac>
+</div>
+<div id=arabicSection class="position-absolute bottom-0 p-0 m-0 container-fluid" style=height:1.6vh;background-color:#04112e>
+</div>
+</div>
+</body>
+</html>

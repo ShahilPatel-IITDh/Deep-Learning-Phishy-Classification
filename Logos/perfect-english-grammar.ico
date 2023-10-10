@@ -1,0 +1,298 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('/detroitchicago/boise.js', '/detroitchicago/boise.js?gcb=195-13&cb=2', true, [], true, false, true, false);__ez.queue.addFile('/parsonsmaize/abilene.js', '/parsonsmaize/abilene.js?gcb=195-13&cb=28', true, [], true, false, true, false);</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":0,"domain_id":740,"ezcache_level":2,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"68ceb3f8-267e-4e29-5175-1f6fe07c7d8c","response_size_orig":26341,"response_time_orig":2,"template_id":131,"url":"https://www.perfect-english-grammar.com/","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('/parsonsmaize/mulvane.js', '/parsonsmaize/mulvane.js?gcb=195-13&cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('/parsonsmaize/olathe.js', '/parsonsmaize/olathe.js?gcb=195-13&cb=20', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('/porpoiseant/et.js', '/porpoiseant/et.js?gcb=195-13&cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,_,n,r,a,s){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===s&&(s=!1);var p=parseInt(__ez.dot.getTargeting(t,"ap")),f=__ez.dot.getSlotIID(t),u=__ez.dot.getAdUnit(t,s),z=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,c=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("/").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("/").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(c=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(f,u)&&__ez.dot.isValid(o)&&("0"===f&&!0!==s||""===u||i.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:u,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:_,ad_position:p,ad_size:"",bid_floor_filled:n,bid_floor_prev:r,stat_source_id:a,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:z,line_item_id:g,creative_id:c,data:__ez.dot.dataToStr(o),is_orig:s||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("/porpoiseant/army.gif")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var _=e.split("/");if(__ez.dot.isDefined(e)&&3===_.length&&__ez.dot.isValid(t)){var n=_[0],r={type:"impression",impression_id:_[2],domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('/detroitchicago/raleigh.js', '/detroitchicago/raleigh.js?gcb=195-13&cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('/detroitchicago/vista.js', '/detroitchicago/vista.js?gcb=195-13&cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('/detroitchicago/tampa.js', '/detroitchicago/tampa.js?gcb=195-13&cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base href="https://www.perfect-english-grammar.com/"/><script src="https://www.googleoptimize.com/optimize.js?id=OPT-TPFS3VX"></script><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TRPXC28');</script><!-- End Google Tag Manager -->
+<title>Perfect English Grammar</title>
+
+<meta name="description" content="Lots of free explanations and exercises to help you perfect your English grammar."/>
+<!-- I don't no why this link is here as its not a file you sent me.
+	<link rel="stylesheet" href="https://www.perfect-english-grammar.com/support-files/normalize.css"> -->
+<link rel="stylesheet" href="https://www.perfect-english-grammar.com/support-files/A.perfect-english-grammar-style-sheet-new.css.pagespeed.cf.CnPo7FejtU.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--- GOOGLE FONTS ---><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+<link rel="shortcut icon" href=""/>
+<link rel="icon" href="http://example.com/favicon.ico"/>
+<link rel="author" href="https://plus.google.com/u/0/114180929522508652551/posts"/>
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6706d8c9-379e-4f89-9cb8-434918b53649" async=""></script>
+<script>(function(i,n,t,e,r,a,c){i['InteractPromotionObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=n.createElement(t),c=n.getElementsByTagName(t)[0];a.async=1;a.src=e;c.parentNode.insertBefore(a,c)})(window,document,'script','https://i.tryinteract.com/promotions/init.js','i_promo');i_promo('init','nxqC7YtQn');</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&amp;display=swap"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--- GOOGLE FONTS ---><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+<!-- Meta Pixel Code --><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','216802211212303');fbq('track','PageView');</script><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=216802211212303&ev=PageView&noscript=1"/></noscript><!-- End Meta Pixel Code --><!-- Google tag (gtag.js) --><script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-11361130474"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11361130474');</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<script src="https://www.perfect-english-grammar.com/sd/support-files/fix.js.pagespeed.jm.hNqckcKb0T.js"></script> <!-- start: tool_blocks.sbi_html_head -->
+<link rel="apple-touch-icon" sizes="57x57" href="/xfavicon-57x57.png.pagespeed.ic.afY19fQZjV.png"/> <link rel="apple-touch-icon" sizes="60x60" href="/xfavicon-60x60.png.pagespeed.ic.1Rce3RZDwz.png"/> <link rel="apple-touch-icon" sizes="72x72" href="/xfavicon-72x72.png.pagespeed.ic.X_gbgA9Pwp.png"/> <link rel="apple-touch-icon" sizes="76x76" href="/xfavicon-76x76.png.pagespeed.ic.VTCkXkWXot.png"/> <link rel="apple-touch-icon" sizes="114x114" href="/xfavicon-114x114.png.pagespeed.ic.ZZ3zrTewM9.png"/> <link rel="apple-touch-icon" sizes="120x120" href="/xfavicon-120x120.png.pagespeed.ic.SwsiJ9_kKd.png"/> <link rel="apple-touch-icon" sizes="144x144" href="/xfavicon-144x144.png.pagespeed.ic.-54aKPd1Sc.png"/> <link rel="apple-touch-icon" sizes="152x152" href="/xfavicon-152x152.png.pagespeed.ic.YVuL_p8UPu.png"/> <link rel="apple-touch-icon" sizes="180x180" href="/xfavicon-180x180.png.pagespeed.ic.wLkP6L52QI.png"/> <link rel="icon" type="image/png" href="/favicon-36x36.png.pagespeed.ce.W0o0p-k1Jc.png" sizes="36x36"/> <link rel="icon" type="image/png" href="/xfavicon-48x48.png.pagespeed.ic.Lu-gdl-e7u.png" sizes="48x48"/> <link rel="icon" type="image/png" href="/xfavicon-72x72.png.pagespeed.ic.X_gbgA9Pwp.png" sizes="72x72"/> <link rel="icon" type="image/png" href="/xfavicon-96x96.png.pagespeed.ic.2KUpuONGW0.png" sizes="96x96"/> <link rel="icon" type="image/png" href="/xfavicon-144x144.png.pagespeed.ic.-54aKPd1Sc.png" sizes="144x144"/> <link rel="icon" type="image/png" href="/xfavicon-192x192.png.pagespeed.ic.zfXzvbI2N1.png" sizes="192x192"/> <link rel="icon" type="image/png" href="/favicon-16x16.png.pagespeed.ce.XZvMBsxQ7V.png" sizes="16x16"/> <link rel="icon" type="image/png" href="/favicon-32x32.png.pagespeed.ce.3P6laiUmTT.png" sizes="32x32"/> <link rel="icon" type="image/png" href="/xfavicon-48x48.png.pagespeed.ic.Lu-gdl-e7u.png" sizes="48x48"/><link rel="canonical" href="https://www.perfect-english-grammar.com/"/>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.perfect-english-grammar.com/english-grammar.xml"/>
+<meta property="og:title" content="Perfect English Grammar"/>
+<meta property="og:description" content="Lots of free explanations and exercises to help you perfect your English grammar."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.perfect-english-grammar.com/"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/peg-image-14.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/peg-image-16.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/peg-image-17.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/peg-image-4.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/peg-image-9.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/peg-image-6.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/peg-image-1.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/peg-image-11.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/peg-image-3.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/a1-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/a2-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/b1-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/b2-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/c1-thumbnail.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/phrasal-verbs-1-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/tenses-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/collocations-1-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/conditionals-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/articles-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/modals-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/idioms-1-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/listening-1-thumbnail-2.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/a1-course-thumbnail.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/a2-course-thumbnail.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/b1-course-thumbnail.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/b2-course-thumbnail.png"/>
+<meta property="og:image" content="https://www.perfect-english-grammar.com/image-files/ultimate-courses-bundle-thumbnail.png"/>
+<!-- SD -->
+<script>var https_page=0</script>
+<!-- end: tool_blocks.sbi_html_head --><script type='text/javascript'>
+var ezoTemplate = 'old_site_excl';
+var ezouid = '1';
+var ezoFormfactor = '1';
+</script><script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 740;
+var ezdomain = 'perfect-english-grammar.com';
+var ezoicSearchable = 1;
+</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod1","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"","country":"IN","days_since_last_visit":-1,"domain_id":740,"engaged_time_visit":0,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"68ceb3f8-267e-4e29-5175-1f6fe07c7d8c","position_selection_id":0,"postal_code":"","pv_event_count":0,"response_size_orig":26341,"response_time_orig":2,"serverid":"i-06b90fe51436ebe06","state":"","t_epoch":1696930101,"template_id":131,"time_on_site_visit":0,"url":"https://www.perfect-english-grammar.com/","weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":118,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+	var d = new Date();
+	d.setTime(d.getTime() + (365*24*60*60*1000));
+	var expires = "expires="+d.toUTCString();
+	__ez.ck.setByCat("ezux_lpl_740=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+}
+function attach_ezolpl() {
+	if (document.readyState === "complete") {
+		create_ezolpl();
+		return;
+	}
+	window.addEventListener("load", create_ezolpl);
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script></head>
+<body><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRPXC28" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->
+<div class="navigation">
+<!-- desktop menu -->
+<div class="topnav">
+<ul>
+<li><a class="logo-image" href="https://www.perfect-english-grammar.com"><img class="logo-image" src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="Perfect English Grammar"/></a></li>
+<li><a href="https://sso.teachable.com/secure/337927/identity/login/password" class="orangeBut">Login</a></li>
+<li><a href="https://www.perfect-english-grammar.com/contact.html" class="navBut">Contact</a></li><li><a href="https://www.perfect-english-grammar.com/courses.html" class="navBut">Courses</a></li>
+<li><a href="https://www.perfect-english-grammar.com/membership.html" class="navBut">Membership</a></li>
+<li><a href="https://www.perfect-english-grammar.com/british-council.html" class="navBut">Speaking</a></li>
+<li><a href="https://www.perfect-english-grammar.com/grammar-explanations.html" class="navBut">Explanations</a></li>
+<li><a href="https://www.perfect-english-grammar.com/grammar-exercises.html" class="navBut">Exercises</a></li><li><a href="https://www.perfect-english-grammar.com/the-method.html" class="navBut">Method</a></li>
+</ul>
+</div>
+<!-- end of desktop menu -->
+<!-- mobile burger menu -->
+<div class="nav">
+<a class="mobile_logo" href="https://www.perfect-english-grammar.com"><img src="https://www.perfect-english-grammar.com/image-files/xpeg_logo.png.pagespeed.ic.7g0VMM_UVM.png" alt="Perfect English Grammar"/></a>
+<label for="toggle">☰</label>
+<input type="checkbox" id="toggle"/>
+<div class="menu">
+<a href="https://www.perfect-english-grammar.com/the-method.html">Method</a><a href="https://www.perfect-english-grammar.com/grammar-exercises.html">Exercises</a>
+<a href="https://www.perfect-english-grammar.com/grammar-explanations.html">Explanations</a>
+<a href="https://www.perfect-english-grammar.com/british-council.html">Speaking</a>
+<a href="https://www.perfect-english-grammar.com/membership.html">Membership</a>
+<a href="https://www.perfect-english-grammar.com/courses.html">Courses</a><a href="https://www.perfect-english-grammar.com/contact.html">Contact</a>
+<a href="https://sso.teachable.com/secure/337927/identity/login/password" class="orangeBut">Login</a>
+</div>
+</div>
+<!-- end of burger menu -->
+</div>
+<div class="hero">
+<div class="hero_content">
+<!-- you can replace the main text within h1 tags -->
+<h1>Welcome to Perfect English Grammar</h1>
+<!-- start of freefind search box html -->
+<div class="search-home">
+<table class="home-hero-search">
+<tbody><tr>
+<td width="90%">
+<form action="https://search.freefind.com/find.html" accept-charset="utf-8" target="_self">
+<input type="hidden" name="si" value="60380941"/>
+<input type="hidden" name="pid" value="r"/>
+<input type="hidden" name="n" value="0"/>
+<input type="hidden" name="_charset_" value=""/>
+<input type="hidden" name="bcd" value="÷"/>
+<input type="text" name="query" size="15"/>
+<input type="submit" value="Search the website" id="hero-btn"/>
+</form>
+</td>
+</tr>
+</tbody></table>
+<!-- end of freefind search box html -->
+</div>
+</div>
+</div>
+<div id="wrap">
+<div id="content">
+<section id="main-content">
+<section id="free-materials-section">
+<h1>Start studying with our free English materials</h1>
+<div class="cards">
+<div class="card"><a href="https://www.perfect-english-grammar.com/grammar-exercises.html"> <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-14.png.pagespeed.ic.uMwfkJSb3V.jpg" alt="grammar exercises link" width="100%"/><h4>grammar exercises</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/grammar-explanations.html"> <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-16.png.pagespeed.ic.xEEI4vtNUI.jpg" alt="grammar explanations link" width="100%"/><h4>grammar explanations</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/english-language-pdf.html"> <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-17.png.pagespeed.ic.EMdHh1Cm-K.jpg" alt="grammar PDFs link" width="100%"/><h4>grammar PDFs</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/verb-tenses.html"> <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-4.png.pagespeed.ic.uTiIeSDYe0.png" alt="verb tenses link" width="100%"/><h4>verb tenses</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/reported-speech.html"> <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-9.png.pagespeed.ic.qAhTcRVIN4.jpg" alt="reported speech link" width="100%"/><h4>reported speech</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/modal-verbs.html"> <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-6.png.pagespeed.ic.eFR7XJIJpe.jpg" alt="modal verbs link" width="100%"/><h4>modal verbs</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/passive.html"> <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-1.png.pagespeed.ic.Ha5zjvKmvl.jpg" alt="the passive link" width="100%"/><h4>the passive</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/conditionals.html"> <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-11.png.pagespeed.ic.SJWShlwLzC.jpg" alt="conditionals link" width="100%"/><h4>conditionals</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/phrasal-verbs.html"> <img src="https://www.perfect-english-grammar.com/image-files/xpeg-image-3.png.pagespeed.ic.HkkALU4mjK.jpg" alt="phrasal verbs link" width="100%"/><h4>phrasal verbs</h4></a></div>
+</div>
+</section>
+</section></div>
+</div>
+<section id="compleat-courses-section">
+<div class="cc-section">
+<h1>Learn more with our complete English courses</h1><span class="ezoic-autoinsert-video ezoic-under_first_paragraph"></span><!-- ezoic_video_placeholder-under_first_paragraph-1280x720-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-1280x720-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-nonexxxclearxxxblock -->
+<div class="cards">
+<div class="card"> <a href="https://www.perfect-english-grammar.com/ultimate-a1.html"><img src="https://www.perfect-english-grammar.com/image-files/xa1-thumbnail-2.png.pagespeed.ic.ZL-YxexgtO.png" alt="A1 grammar course" width="100%"/><h4>Complete beginner grammar</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/ultimate-a2.html"> <img src="https://www.perfect-english-grammar.com/image-files/xa2-thumbnail-2.png.pagespeed.ic.v0i8UdCp-9.png" alt="A2 grammar course" width="100%"/><h4>Complete pre-intermediate grammar</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/ultimate-b1.html"> <img src="https://www.perfect-english-grammar.com/image-files/xb1-thumbnail-2.png.pagespeed.ic.wBaRS8Z-Uv.png" alt="B1 grammar course" width="100%"/><h4>Complete intermediate grammar</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/ultimate-b2.html"> <img src="https://www.perfect-english-grammar.com/image-files/xb2-thumbnail-2.png.pagespeed.ic.WE3hHpTUu1.png" alt="B2 grammar course" width="100%"/><h4>Complete upper-intermediate grammar</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/ultimate-c1.html"> <img src="https://www.perfect-english-grammar.com/image-files/xc1-thumbnail.png.pagespeed.ic.xHDTobLor9.png" alt="C1 grammar course" width="100%"/><h4>Complete advanced grammar</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/advanced-phrasal-verbs-1.html"> <img src="https://www.perfect-english-grammar.com/image-files/xphrasal-verbs-1-thumbnail-2.png.pagespeed.ic.EO3K41Nwdn.png" alt="phrasal verbs course" width="100%"/><h4>Learn 150 advanced phrasal verbs</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/tenses-challenge.html"> <img src="https://www.perfect-english-grammar.com/image-files/xtenses-thumbnail-2.png.pagespeed.ic.qNcwuUw-Ab.png" alt="Tenses course" width="100%"/><h4>Tenses deep dive</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/collocations-1.html"> <img src="https://www.perfect-english-grammar.com/image-files/xcollocations-1-thumbnail-2.png.pagespeed.ic.Qr1UOUulri.png" alt="Collocations course" width="100%"/><h4>Speak natural English</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/conditionals-course.html"> <img src="https://www.perfect-english-grammar.com/image-files/xconditionals-thumbnail-2.png.pagespeed.ic.6KlUhl_Jfd.png" alt="Conditionals course" width="100%"/><h4>Conditionals deep dive</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/articles-challenge.html"> <img src="https://www.perfect-english-grammar.com/image-files/xarticles-thumbnail-2.png.pagespeed.ic.ItXHDCztW6.png" alt="Articles course" width="100%"/><h4>Articles deep dive</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/modals-course.html"> <img src="https://www.perfect-english-grammar.com/image-files/xmodals-thumbnail-2.png.pagespeed.ic.6iYawQ7A0Z.png" alt="Modals Course" width="100%"/><h4>Modals deep dive</h4></a></div>
+<div class="card"><a href="https://www.perfect-english-grammar.com/idioms-challenge-1.html"> <img src="https://www.perfect-english-grammar.com/image-files/xidioms-1-thumbnail-2.png.pagespeed.ic.g5DgO9sM7H.png" alt="Idioms course" width="100%"/><h4>Speak sophisticated English</h4></a></div>
+<!--<div class="card"><a href="https://www.perfect-english-grammar.com/listening-1.html"> <img src="https://www.perfect-english-grammar.com/image-files/listening-1-thumbnail-2.png" alt="Listening course" width="100%"/><h4>Transform your listening</h4></a></div>-->
+</div>
+</div></section>
+
+
+<!-- <div class="container-courses">
+
+  <div class="course-info">
+	  <div class="right_article"><a href="https://www.perfect-english-grammar.com/ultimate-a1.html"><img src="https://www.perfect-english-grammar.com/image-files/a1-course-thumbnail.png" alt="" width="100%"  class="placeholder"/></a></div>
+    <div class="left_article">
+      <h3><a href="https://www.perfect-english-grammar.com/ultimate-a1.html">Ultimate A1 grammar course</a></h3>
+      <p>Cover all the A1 (beginner level) grammar in 40 hours.</p>
+      <p>Review absolutely all the grammar from the A1 level. Learn everything deeply and review it so that it becomes automatic.</p>
+	  <p>$150 + tax</p>
+    </div></div>
+	
+<div class="row blockDisplay"> </div>
+	
+ <div class="course-info">
+	  <div class="right_article"><a href="https://www.perfect-english-grammar.com/ultimate-a2.html"><img src="https://www.perfect-english-grammar.com/image-files/a2-course-thumbnail.png" alt="" width="100%"  class="placeholder"/></a></div>
+    <div class="left_article">
+      <h3><a href="https://www.perfect-english-grammar.com/ultimate-a2.html">Ultimate A2 grammar course</a></h3>
+      <p>Cover all the A2 (pre-intermediate level) grammar in 40 hours.</p>
+      <p>Review absolutely all the grammar from the A2 level. Learn everything deeply and review it so that it becomes automatic.</p>
+	  <p>$150 + tax</p>
+    </div></div>
+	
+<div class="row blockDisplay"> </div>
+				
+  <div class="course-info">
+	  <div class="right_article"><a href="https://www.perfect-english-grammar.com/ultimate-b1.html"><img src="https://www.perfect-english-grammar.com/image-files/b1-course-thumbnail.png" alt="" width="100%"  class="placeholder"/></a></div>
+    <div class="left_article">
+      <h3><a href="https://www.perfect-english-grammar.com/ultimate-b1.html">Ultimate B1 grammar course</a></h3>
+      <p>Cover all the B1 (intermediate level) grammar in 40 hours.</p>
+      <p>Review absolutely all the grammar from the B1 level. Learn everything deeply and review it so that it becomes automatic.</p>
+	  <p>$150 + tax</p>
+    </div></div>
+	
+<div class="row blockDisplay"> </div>
+		
+  <div class="course-info">
+	  <div class="right_article"><a href="https://www.perfect-english-grammar.com/ultimate-b2.html"><img src="https://www.perfect-english-grammar.com/image-files/b2-course-thumbnail.png" alt="" width="100%"  class="placeholder"/></a> </div>
+    <div class="left_article">
+      <h3><a href="https://www.perfect-english-grammar.com/ultimate-b2.html">Ultimate B2 grammar course</a></h3>
+      <p>Cover all the B2 (upper-intermediate level) grammar in 40 hours.</p>
+      <p>Review absolutely all the grammar from the B2 level. Learn everything deeply and review it so that it becomes automatic.</p>
+	  <p>$150 + tax</p>
+    </div></div>
+	
+<div class="row blockDisplay"> </div>
+	
+  <div class="course-info">
+	  <div class="right_article"><a href="https://www.perfect-english-grammar.com/ultimate-bundle.html"><img src="	https://www.perfect-english-grammar.com/image-files/ultimate-courses-bundle-thumbnail.png" alt="" width="100%"  class="placeholder"/></a></div>
+    <div class="left_article">
+      <h3><a href="https://www.perfect-english-grammar.com/ultimate-bundle.html">Ultimate courses bundle</a></h3>
+      <p>All four (A1+A2+B1+B2) Ultimate Grammar Courses</p>
+      <p>Review absolutely all the grammar from beginner to upper-intermediate level, even the areas that we don't usually talk about. Learn everything deeply and review it so that it becomes automatic.</p>
+	  <p>$350 + tax</p>
+    </div></div>
+	
+
+<div class="row blockDisplay"> </div>
+
+				
+</div>
+				
+				</div>		
+			</section> -->
+<section id="sign-up-section">
+<div class="signup-box">
+<h1>Get free English lessons by email</h1>
+<script async="" data-uid="eddab51a08" src="https://perfect-english-grammar.ck.page/eddab51a08/index.js"></script>
+</div>
+</section>
+<br/>
+
+<footer>
+<div class="footer_logo">
+<img class="footer_logo" src="https://www.perfect-english-grammar.com/image-files/xpeg_logo_white.png.pagespeed.ic.iVt8GRhNt0.png" alt="Perfect English Grammar logo"/>
+</div>
+<!--	<div class="footer_menu1">
+
+			<a href="https://www.perfect-english-grammar.com/contact.html">Contact us</a>
+			<a href="https://www.perfect-english-grammar.com/about.html">About</a>
+			<a href="https://www.perfect-english-grammar.com/privacy-policy.html">Privacy policy</a>
+			
+		</div> -->
+<div class="footer_copywright">
+<p>Made with love in London</p>
+</div>
+</footer>
+<div class="bottom-bar">
+<div class="bottom-bar__content">
+<div class="bottom-bar__text">
+<a href="https://www.perfect-english-grammar.com/membership.html">Master English grammar for $25 (USD) per month. Click here to learn more.</a>
+</div>
+</div>
+</div>
+<script>var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www.");document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script>var pageTracker=_gat._getTracker("UA-3424976-1");pageTracker._initData();pageTracker._trackPageview();</script>
+<!-- Deadline Funnel --><script data-cfasync="false">function SendUrlToDeadlineFunnel(e){var r,t,c,a,h,n,o,A,i="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",d=0,l=0,s="",u=[];if(!e)return e;do r=e.charCodeAt(d++),t=e.charCodeAt(d++),c=e.charCodeAt(d++),A=r<<16|t<<8|c,a=A>>18&63,h=A>>12&63,n=A>>6&63,o=63&A,u[l++]=i.charAt(a)+i.charAt(h)+i.charAt(n)+i.charAt(o);while(d<e.length);s=u.join("");var C=e.length%3;var decoded=(C?s.slice(0,C-3):s)+"===".slice(C||3);decoded=decoded.replace("+","-");decoded=decoded.replace("/","_");return decoded;}var dfUrl=SendUrlToDeadlineFunnel(location.href);var dfParentUrlValue;try{dfParentUrlValue=window.parent.location.href;}catch(err){if(err.name==="SecurityError"){dfParentUrlValue=document.referrer;}}var dfParentUrl=(parent!==window)?("/"+SendUrlToDeadlineFunnel(dfParentUrlValue)):"";(function(){var s=document.createElement("script");s.type="text/javascript";s.async=true;s.setAttribute("data-scriptid","dfunifiedcode");s.src="https://a.deadlinefunnel.com/unified/reactunified.bundle.js?userIdHash=eyJpdiI6IkRQTFRKTVRZaklZa25BZ3RmUnBQckE9PSIsInZhbHVlIjoiNnd6bUNIOXpmUjBzYWYrcTBJWWxvZz09IiwibWFjIjoiNjE5MmIwODZkNWI4Y2RhMTM5MDg0MjAxY2ZkOGJhOTc0NjA4N2YwZDc4NzY4NjU1MWNkODk1ZDdkZDIwNDc2YyJ9&pageFromUrl="+dfUrl+"&parentPageFromUrl="+dfParentUrl;var s2=document.getElementsByTagName("script")[0];s2.parentNode.insertBefore(s,s2);})();</script><!-- End Deadline Funnel --><!-- start: tool_blocks.sbi_html_body_end -->
+<script>var SS_PARAMS={pinterest_enabled:false,googleplus1_on_page:false,socializeit_onpage:false};</script><style>.g-recaptcha{display:inline-block}.recaptcha_wrapper{text-align:center}</style>
+<script>if(typeof recaptcha_callbackings!=="undefined"){SS_PARAMS.recaptcha_callbackings=recaptcha_callbackings||[]};</script><script>(function(d,id){if(d.getElementById(id)){return;}var s=d.createElement('script');s.async=true;s.defer=true;s.src="/ssjs/ldr.js";s.id=id;d.getElementsByTagName('head')[0].appendChild(s);})(document,'_ss_ldr_script');</script><!-- end: tool_blocks.sbi_html_body_end -->
+<!-- Generated at 05:07:53 04-Oct-2023 with custom-10-0-3col v46 -->
+
+<script>__ez.queue.addFile('/tardisrocinante/vitals.js', '/tardisrocinante/vitals.js?gcb=13&cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+<script>var _audins_dom="perfect_english_grammar_com",_audins_did=740;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezodn.com/detroitchicago/audins.js?cb=195-13");</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.perfect_english_grammar_com,DomainId.740" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
+<script>__ez.queue.addFile('/beardeddragon/drake.js', '/beardeddragon/drake.js?gcb=13&cb=4', false, [], true, false, true, false);</script>
+<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('/parsonsmaize/chanute.js', '/parsonsmaize/chanute.js?a=a&cb=4&dcb=195-13&shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('/porpoiseant/jellyfish.js', '/porpoiseant/jellyfish.js?a=a&cb=10&dcb=195-13&shcb=34', false, [], true, false, false, false);</script></body></html>

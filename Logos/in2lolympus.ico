@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>iN2L Portal</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="all" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.d479e5e9f4234828b6e7.css"></head>
+
+  <body>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    </script>
+
+    <app-root></app-root>
+    <div class="preloader">
+      <div class="preloader-progress">
+        <div class="preloader-progress-bar"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function defer(method) {
+        if (window.jQuery && $.material) {
+          method();
+        }
+        else {
+          setTimeout(function() {
+            defer(method);
+          }, 50);
+        }
+      }
+
+      defer(function() {
+        console.log('$ initialized, init material');
+        $.material.init();
+      });
+    </script>
+  <script src="runtime-es2015.2ad818fc91eaa0294de2.js" type="module"></script><script src="runtime-es5.2ad818fc91eaa0294de2.js" nomodule defer></script><script src="polyfills-es5.0f2e4ed4ac783b881b5c.js" nomodule defer></script><script src="polyfills-es2015.4024a19a297a7479ead6.js" type="module"></script><script src="scripts.c32f4abc72adaf421749.js" defer></script><script src="main-es2015.8f2d5e3f3682871ec153.js" type="module"></script><script src="main-es5.8f2d5e3f3682871ec153.js" nomodule defer></script></body>
+</html>
