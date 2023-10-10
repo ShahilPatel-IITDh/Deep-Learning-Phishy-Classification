@@ -14,34 +14,31 @@ import logging
 # Configure logging
 logging.basicConfig(filename='ScreenshotError.log', level=logging.ERROR)
 
-# Set up Chrome options
-chrome_options = Options()
-# Run Chrome in headless mode
-chrome_options.add_argument("--headless") 
-# Disable the GPU 
-chrome_options.add_argument("--disable-gpu")
-# Disable the sandbox
-chrome_options.add_argument("--no-sandbox")
-# Disable the DevShmUsage
-chrome_options.add_argument("--disable-dev-shm-usage")
 
-# Install and Initialize WebDriver using webdriver_manager (This will not require pre-downloading the chrome driver)
-driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()), options=chrome_options)
-driver.maximize_window()
+def capture_full_page_screenshot(url, screenshotFile):
 
-def capture_full_page_screenshot(url, output_file):
+    # Set up Chrome options
+    chrome_options = Options()
+    # Run Chrome in headless mode
+    chrome_options.add_argument("--headless") 
+    # Disable the GPU 
+    chrome_options.add_argument("--disable-gpu")
+    # Disable the sandbox
+    chrome_options.add_argument("--no-sandbox")
+    # Disable the DevShmUsage
+    chrome_options.add_argument("--disable-dev-shm-usage")
+
+    # Install and Initialize WebDriver using webdriver_manager (This will not require pre-downloading the chrome driver)
+    driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()), options=chrome_options)
+    
     try:
         driver.get(url)
-        
-        # Wait for the page to load completely (adjust the timeout as needed)
-        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
-
 
         # Handle WebDriverException (e.g., net::ERR_NAME_NOT_RESOLVED)
         if "ERR_NAME_NOT_RESOLVED" in driver.page_source:
             print(f"Error: {url} could not be resolved. Skipping...")
             return
-
+        
         # Get the page height
         page_height = driver.execute_script("return document.body.scrollHeight")
 
@@ -67,16 +64,16 @@ def capture_full_page_screenshot(url, output_file):
             screenshot = driver.get_screenshot_as_png()
             screenshots.append(Image.open(io.BytesIO(screenshot)))
 
-        # Stitch the screenshots vertically
-        full_page_screenshot = Image.new("RGB", (screenshots[0].width, page_height))
-        y_offset = 0
+            # Stitch the screenshots vertically
+            full_page_screenshot = Image.new("RGB", (screenshots[0].width, page_height))
+            y_offset = 0
 
         for screenshot in screenshots:
             full_page_screenshot.paste(screenshot, (0, y_offset))
             y_offset += screenshot.height
 
         # Save the full-page screenshot
-        full_page_screenshot.save(output_file)
+        full_page_screenshot.save(screenshotFile)
 
     except WebDriverException as e:
         # Log the WebDriverException
