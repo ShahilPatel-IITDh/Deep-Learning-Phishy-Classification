@@ -14,6 +14,9 @@ from frequentTerms_from_screenshot import extract_top_terms_from_screenshot
 
 from frequentTerms_from_source_code import get_top_terms_from_website
 
+# Import the search engine function from searchEngine.py which will be used to search the domain name and the top 5 most occurring terms on Google
+from searchEngine import google_search
+
 # Import the module to get the favicon of the website
 # from getLogo import scrape_favicon
 
@@ -58,17 +61,20 @@ if __name__ == "__main__":
             
             counter += 1
 
-            # if counter == 2:
-            #     break
+            if counter == 2:
+                break
 
             # Remove the whitespace from the URL
             url = row[1].strip()
 
             # url = "https://www.fdd.org/analysis/2023/10/08/attacks-on-israel-part-of-irans-ring-of-fire-strategy/"
+            # url = "https://www.dailymail.co.uk/news/article-11559455/The-Twitter-Files-leaks-FBI-key-revelations-far.html/"
+
+            url = "https://training.knowbe4.com/ui/login"
 
             print(url)
 
-            # ---------------------------------------------------- Domain name extraction ---------------------------------------------------- #
+            # ---------------------------------------------------- Domain name extraction --------------------------------------------- #
 
             parsed_url = urlsplit(url)
 
@@ -157,6 +163,37 @@ if __name__ == "__main__":
                 top_terms = []
 
             print(f"final list of most occurring terms is: {top_terms}")
+
+
+            # ------------------------------- Searching domain + frequent terms on search engine --------------------------------------- #
+
+            topURLs = google_search(domain_name, top_terms)
+
+            # print(f"Top URLs for {domain_name}:", topURLs)   
+
+            unique_domains = set()
+
+            for urls in topURLs:
+                parsed_url = urlsplit(url)
+
+                # Extract the domain name from the netloc component
+                domain_name = parsed_url.netloc
+
+                # Remove "www." if present at the beginning
+                if domain_name.startswith("www."):
+                    domain_name = domain_name[4:]
+                
+                if domain_name.startswith("http.www."):
+                    domain_name = domain_name[10:]
+                
+                if domain_name.startswith("https."):
+                    domain_name = domain_name[6:]
+                
+                # Add the domain name to the set
+                unique_domains.add(domain_name)
+            
+            print(f"Unique domains for {domain_name}:", unique_domains)
+
             
             # ---------------------------------------------------- Favicon scraping ---------------------------------------------------- #
             
@@ -197,7 +234,7 @@ if __name__ == "__main__":
             #     print(f"Logo doesn't exist for: {domain_name}")
 
 
-            #--------------------------------------------------------- Counters for code checking ------------------------------------------------#
+            #------------------------------------------------- Counters for code checking ----------------------------------------------#
 
             print(f"{counter}")
             print("----------------------------------\n")
