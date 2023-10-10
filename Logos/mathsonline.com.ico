@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Maths Tuition for All K-12 Students | MathsOnline</title>
+
+        <meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"577170111",accountID:"530257",trustKey:"530257",xpid:"UQUHU1NUGwYHU1BUAAcEUQ==",licenseKey:"421d15b87f",applicationID:"577167637"};;/*! For license information please see nr-loader-spa-1.243.1.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,r={234:(e,t,r)=>{r.d(t,{P_:()=>g,Mt:()=>v,C5:()=>s,DL:()=>w,OP:()=>S,lF:()=>N,Yu:()=>x,Dg:()=>m,CX:()=>c,GE:()=>A,sU:()=>j});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,n.Qy)(e,a[e],"info")}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector=t+",[data-nr-mask]":null===t?e.mask_selector=t:(0,l.Z)("An invalid session_replay.mask_selector was provided and will not be used",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},h={},p="All configuration objects require an agent identifier!";function g(e){if(!e)throw new Error(p);if(!h[e])throw new Error("Configuration for ".concat(e," was never set"));return h[e]}function m(e,t){if(!e)throw new Error(p);h[e]=(0,i.D)(t,f()),(0,n.Qy)(e,h[e],"config")}function v(e,t){if(!e)throw new Error(p);var r=g(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const b={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},y={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!y[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return y[e]}function A(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");y[e]=(0,i.D)(t,b),(0,n.Qy)(e,y[e],"loader_config")}const x=(0,n.mF)().o;var E=r(385),_=r(6818);const T={buildEnv:_.Re,customTransaction:void 0,disabled:!1,distMethod:_.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:_.q4,denyList:void 0},D={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function j(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,T),(0,n.Qy)(e,D[e],"runtime")}function N(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.243.1",i="PROD",o="CDN"},385:(e,t,r)=>{r.d(t,{FN:()=>s,IF:()=>d,Nk:()=>f,Tt:()=>c,_A:()=>o,cv:()=>h,iS:()=>a,il:()=>n,ux:()=>u,v6:()=>i,w1:()=>l});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=""+o?.location,c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),l=Boolean(n&&window.document.documentMode),f=!!o.navigator?.sendBeacon,h=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=[...s[e]];function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((t=>{let[r]=t;s[e].delete(r),a(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,r)=>{r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++r).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(r,++i).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{r.d(t,{Bq:()=>n,Hb:()=>o,oD:()=>i});const n="NRBA",i=144e5,o=18e5},7894:(e,t,r)=>{function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{r.d(t,{e:()=>o});var n=r(385),i={};function o(e){if(e in i)return i[e];if(0===(e||"").indexOf("data:"))return{protocol:"data"};let t;var r=n._A?.location,o={};if(n.il)t=document.createElement("a"),t.href=e;else try{t=new URL(e,r.href)}catch(e){return o}o.port=t.port;var a=t.href.split("://");!o.port&&a[1]&&(o.port=a[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===a[0]?"443":"80"),o.hostname=t.hostname||r.hostname,o.pathname=t.pathname,o.protocol=a[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var s=!t.protocol||":"===t.protocol||t.protocol===r.protocol,c=t.hostname===r.hostname&&t.port===r.port;return o.sameOrigin=s&&(!t.hostname||c),"/"===o.pathname&&(i[e]=o),o}},50:(e,t,r)=>{function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2587:(e,t,r)=>{r.d(t,{N:()=>c,T:()=>u});var n=r(8325),i=r(5546),o=r(3325);const a={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},s=new Set;function c(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(s.has(t)||Object.entries(e).forEach((e=>{let[t,n]=e;a[t]?a[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),u[t]=Boolean(n)})),Object.keys(a).forEach((e=>{void 0===u[e]&&(a[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),u[e]=!1)})),s.add(t))}const u={}},2210:(e,t,r)=>{r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{r.d(t,{K:()=>a,b:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{r.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>d,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[r]:t}},i}function u(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{r.d(t,{em:()=>b,u5:()=>S,QU:()=>C,_L:()=>I,Gm:()=>H,Lg:()=>L,BV:()=>G,Kf:()=>K});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var w="fetch-",A=w+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,T="prototype";const D={};function S(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(D[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return D[t.debugId]=1,x.forEach((e=>{r(E[T],e,A),r(_[T],e,A)})),r(f._A,"fetch",w),t.on(w+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(w+"done",[null,r],n)}else t.emit(w+"done",[e],n)})),t}const j={},N=["pushState","replaceState"];function C(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||j[t.debugId]++||(j[t.debugId]=1,c(t).inPlace(window.history,N,"-")),t}var O=r(3239);const P={},R=["appendChild","insertBefore","replaceChild"];function I(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||P[t.debugId])return t;P[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,R,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,O.m$)(!1)),e.addEventListener("error",f,(0,O.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function H(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const z={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(z[t.debugId])return t;z[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const M={},B="setTimeout",F="setInterval",U="clearTimeout",Z="-start",V="-",q=[B,"setImmediate",F,U,"clearImmediate"];function G(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(M[t.debugId]++)return t;M[t.debugId]=1;var r=c(t);return r.inPlace(f._A,q.slice(0,2),B+V),r.inPlace(f._A,q.slice(2,3),F+V),r.inPlace(f._A,q.slice(3),U+V),t.on(F+Z,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(B+Z,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},Q=["open","send"];function K(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",A)}),(0,O.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",A)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,Q,"-xhr-",A),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(w):u?u(w):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(w).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||w()}));function w(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function A(e,t){return t}return r}},7825:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.sessionReplay},3614:(e,t,r)=>{r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>A,FEATURE_NAME:()=>i,FETCH:()=>T,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>w,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,w="-start",A="-end",x="-body",E="cb"+A,_="jsTime",T="fetch"},5938:(e,t,r)=>{r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);function p(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var g=r(2587);const m=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let v=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:x,runtime:E={loaderType:b},exposed:_=!0}=t;const T=(0,h.gG)();A||(w=T.init,A=T.info,x=T.loader_config),(0,i.Dg)(e,w||{}),(0,i.GE)(e,x||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e,A);const D=(0,i.P_)(e),S=[A.beacon,A.errorBeacon];v||(v=!0,D.proxy.assets&&(m(D.proxy.assets),S.push(D.proxy.assets)),D.proxy.beacon&&S.push(D.proxy.beacon)),E.denyList=[...D.ajax.deny_list||[],...D.ajax.block_internal?S:[]],(0,i.sU)(e,E),p();const j=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),g=p.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),A(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{h[e]=A(m,e,!0,"api")})),h.addPageAction=A(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=A(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,A(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(g.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,e],r),e}finally{g.emit("fn-end",[(0,s.z)()],r)}}}};function A(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b)((()=>x()),!0):x(),h}(e,y);return(0,h.Qy)(e,j,"api"),(0,h.Qy)(e,_,"exposed"),(0,h.EZ)("activatedFeatures",g.T),j}},3325:(e,t,r)=>{r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.243.1.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.243.1.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r),e[r]=[n];var f=(t,n)=>{s.onerror=s.onload=null,clearTimeout(h);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},h=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.243.1.PROD"]=self["webpackChunk:NRBA-1.243.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{var e=i(50);class t{addPageAction(t,r){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,r){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,r,n){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,r){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,r){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,3228));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),o(!1)}};l.il?(0,d.b)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=w(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,m.D)(e,A)}function A(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var T=i(5546),D=i(7956),S=i(3239),j=i(7894),N=i(9251);class C extends f{static featureName=N.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,r),l.il&&((0,D.N)((()=>(0,T.p)("docHidden",[(0,j.z)()],void 0,N.t,this.ee)),!0),(0,S.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,j.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var O=i(3081);class P extends f{static featureName=O.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,O.t9,r),this.importAggregator()}}var R=i(6660);class I{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends f{static featureName=R.t;#e=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#e.has(n)&&(this.#e.add(n),(0,T.p)("err",[this.#t(n),(0,j.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#t(e),(0,j.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#r(e),(0,j.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,S.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#e.has(e.error)?this.#e.delete(e.error):(0,T.p)("err",[this.#n(e),(0,j.z)()],void 0,r.D.jserrors,this.ee))}),(0,S.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#i,this.importAggregator()}#i(){this.removeOnAbort?.abort(),this.#e.clear(),this.abortHandler=void 0}#t(e){return e instanceof Error?e:void 0!==e?.message?new I(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new I("string"==typeof e?e:(0,_.P)(e))}#r(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new I(t);const r=this.#t(e.reason);return r.message=t+r.message,r}#n(e){return e.error instanceof Error?e.error:new I(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let z=1;const L="nr@id";function M(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,H.X)(e,L,(function(){return z++}))}function B(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var F=i(1214),U=i(7243);class Z{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),q=["load","error","abort","timeout"],G=q.length,W=n.Yu.REQ,X=n.Yu.XHR;class Q extends f{static featureName=V.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new Z(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};K(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,F.u5)(this.ee),(0,F.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,S.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,S.m$)(!1))}function s(e){this.params={method:e[0]},K(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=B(i);a&&(n.txSize=a)}this.startTime=(0,j.z)(),this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<G;s++)r.addEventListener(q[s],this.listener,(0,S.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+M(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+M(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,j.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,j.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,j.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function w(e,t){this.params={},this.metrics={},this.startTime=(0,j.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),K(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.txSize=B(n.body)||0}function A(e,t){var n;this.endTime=(0,j.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,j.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<G;o++)e.removeEventListener(q[o],this.listener,!1);t.aborted||(n.duration=(0,j.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?B(e.response):"text"===r||""===r||void 0===r?B(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",w),t.on("fn-start",v),t.on("fetch-done",A)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function K(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var Y=i(3614);const{BST_RESOURCE:J,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=Y;var se=i(7144);class ce extends f{static featureName=se.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,se.t,r),this.importAggregator()}}var ue=i(7836);const{FEATURE_NAME:de,START:le,END:fe,BODY:he,CB_END:pe,JS_TIME:ge,FETCH:me,FN_START:ve,CB_START:be,FN_END:ye}=ue;var we=i(4649);class Ae extends f{static featureName=we.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,we.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){const t="features";try{const n=a(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),i.forEach((t=>{if(n[t.featureName]||t.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>n[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,x.Qy)(this.agentIdentifier,this.features,t)}catch(r){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",r);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,x.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[Q,p,C,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,F.QU)(n),this.eventsEE=(0,F.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,j.z)()})),this.eventsEE.on(ie,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,j.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,j.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(J,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},ce,P,Ae,k,class extends f{static featureName=de;constructor(e,t){if(super(e,t,de,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,F._L)(this.ee),s=(0,F.Lg)(this.ee),c=(0,F.BV)(this.ee),u=(0,F.Kf)(this.ee),d=this.ee.get("events"),f=(0,F.u5)(this.ee),h=(0,F.QU)(this.ee),p=(0,F.Gm)(this.ee);function g(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,r=window.location.hash,this[ve]=(0,j.z)()}function v(){i--,window.location.hash!==r&&g(0,!0);var e=(0,j.z)();this[ge]=~~this[ge]+e-this[ve],this[ye]=e}function b(e,t){e.on(t,(function(){this[t]=(0,j.z)()}))}this.ee.on(ve,m),s.on(be,m),a.on(be,m),this.ee.on(ye,v),s.on(pe,v),a.on(pe,v),this.ee.buffer([ve,ye,"xhr-resolved"],this.featureName),d.buffer([ve],this.featureName),c.buffer(["setTimeout"+fe,"clearTimeout"+le,ve],this.featureName),u.buffer([ve,"new-xhr","send-xhr"+le],this.featureName),f.buffer([me+le,me+"-done",me+he+le,me+he+fe],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([ve],this.featureName),s.buffer(["propagate",be,pe,"executor-err","resolve"+le],this.featureName),o.buffer([ve,"no-"+ve],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(f,me+le),b(f,me+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,S.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,S.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,i>1)}),(0,S.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#i,this.importAggregator()}#i(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" rel="preload" as="style">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/dist/css/site.min.css?v=3.4.159" rel="preload" as="style">
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        
+        <meta name="description" content="MathsOnline is Australia's number one provider of mathematics tuition. If your kid struggles to understand maths, our team of experienced tutors is here to help!" />
+                    <meta name="keywords" content="maths, maths tutor, online tutor, mathematics, math online, maths online, math learning, math e-learning, maths buddy, maths tuition, maths australian curriculum, maths builder, maths syllabus, maths curriculum, maths worksheets" />
+                <meta name="classification" content="education, e-learning, tuition, tutorial" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="creator" content="Pat Murray" />
+        <meta name="publisher" content="Mathsonline.com.au" />
+
+        <meta name="facebook-domain-verification" content="y3capqjzapnrfk7mfbjwcwp0khij88" />
+
+                
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4ZX2DFKN9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-R4ZX2DFKN9');
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "MathsOnline",
+                "url": "https://www.mathsonline.com.au",
+                "logo": "https://cdn.mathsonline.com.au/assets/images/logo.png",
+                "description": "MathsOnline is Australia's number one provider of mathematics tuition. If your kid struggles to understand maths, our team of experienced tutors is here to help!",
+                "email": "info@mathsonline.com.au",
+                "founder": [
+                    {
+                        "@type": "Person",
+                        "name": "Pat Murray",
+                        "gender": "Male",
+                        "jobTitle": "CEO",
+                        "image": "https://cdn.mathsonline.com.au/assets/images/pat-murray.png"  
+                    },
+                    {
+                        "@type": "Person",
+                        "name": "Steve Murray",
+                        "gender": "Male",
+                        "jobTitle": "CTO",
+                        "image": "https://cdn.mathsonline.com.au/assets/images/steve-murray.png"  
+                    }
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+1300 88 20 45",
+                    "contactType": "customer support"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/mathsonline.com.au",
+                    "https://www.instagram.com/mathsonline"
+                ]
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCZ82NT"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->    
+    
+    <div id="main-nav" class="sticky-top">
+                <div id="top-nav">
+            <div class="container">
+                <ul class="nav justify-content-end">
+
+            
+                    <li class="nav-item ">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" style="cursor: pointer;font-size: 14px" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Login
+                            </a>
+                            <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton" style="padding: 5px;">
+                                <a class="dropdown-item" href="/login" ">Student Login</a>
+                                <a class="dropdown-item" href="/login" ">Teacher Login</a>
+                                <a class="dropdown-item" href="/login/parent" ">Parent Login</a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                
+                    <li class="nav-item" style="margin: 6px 10px; border-left: 1px solid #ddd;"></li>
+                    <li class="nav-item">
+                        <a href="/support" class="nav-link">Support / Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <nav class="navbar navbar-toggleable-md navbar-light  main-nav" style="background-color: #fff;">
+
+            <div class="container" id="main-container">
+
+                <button class="navbar-toggler navbar-toggler-right shadow-xs" type="button" data-toggle="collapse" data-target="#main-nav-items" aria-controls="main-nav-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a id="MathsOnline-logo" class="navbar-brand" href="/"><img title="Your Online Maths Tutor" src="/assets/images/logo-1.png" alt="MathsOnline" ></a>
+         
+                
+                                    <div class="collapse navbar-collapse" id="main-nav-items">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="/how-it-works" id="how_it_works">How It Works</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/info-for-parents" id="info_for_parents">For Parents</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/info-for-teachers" id="info_for_teachers">For Teachers</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/testimonials" id="testimonials">What Others Say</a>
+                            </li>
+                                                    </ul>
+                                                        <form class="form-inline ml-auto hidden-sm-down" id="cta-main-nav">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle borderless shadow-md" type="button" id="btn-free-trial" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        FREE TRIAL
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="btn-free-trial">
+                                        <a class="dropdown-item" href="/free-trial?type=student">Students</a>
+                                        <a class="dropdown-item" href="/free-trial?type=parent">Parents</a>
+                                        <a class="dropdown-item" href="/freetrial">Teachers</a>
+                                    </div>
+                                </div>
+                                                                <a href="/purchase" class="nav-link btn btn-success borderless shadow-md" id="btn-purchase">JOIN NOW</a>
+                            </form>
+                                                    
+                    </div>
+                                
+                
+            </div> <!-- container -->
+        </nav>
+    </div>
+
+    <a href="javascript:" id="return-to-top" title="Back to Top" style="display: flex; justify-content: center; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+</svg></a>
+        <div class="banner">
+
+            <div class="container">
+                                
+                <div class="row hidden-md-up" id="cta-home-top">
+                                        <div class="col-xs-6 col-md-6 ">
+                        <a href="/free-trial" class="btn btn-outline-info btn-lg btn-trial btn-block" style="color: #fff;">Free Trial</a>
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <a href="/purchase" class="btn btn-success btn-lg btn-join btn-block borderless">Join Now</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+
+                        <div class="banner-welcome" style="margin-right: 0;">
+                            <h1 style="font-weight: 400; font-size: 56px;">Australia's #1 Online Maths Teacher</h1>
+               
+                            <ul class="banner-key-points text-shadow">
+                                <li>Your kids learn at their own pace, not somebody else's</li>
+                                <li>Great for catch up, for keeping up, and for moving ahead</li>
+                                <li>Start getting better marks now</li>
+                                <li>For students in grades K-12</li>
+                            </ul>
+            
+                            <div id="banner-info-buttons">
+
+                                <div class="row">
+                                    <div class="col-md-1 hidden-sm-down">&nbsp;</div>
+                                    <div class="col-md-5">
+                                        <a href="#goto_testimonials" id="toTestimonials" class="shadow-lg btn btn-success borderless btn-block btn-lg shadow-xs text-shadow" style="font-weight: 700;  padding: 15px;">Testimonials</a>
+                                    </div>
+                                    <div class="col-md-5 hidden-sm-down">
+                                        <a href="/free-trial" class="shadow-lg btn btn-primary borderless btn-block btn-lg shadow-xs" style="padding: 15px;">Free Trial</a>
+                                    </div>
+                                    <div class="col-md-1 hidden-sm-down">&nbsp;</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 col-sm-12 ">
+
+                        <div class="banner-parents">
+                            <div class="caption">PARENTS</div>
+                            <div class="banner-control">
+                                <a class="btn btn-secondary btn-learn-more shadow-sm borderless" href="/how-it-works">Learn More</a>
+                                <a class="btn btn-primary btn-trial shadow-sm borderless" href="/free-trial?type=parent">Free Trial</a>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="banner-teachers">
+                            <div class="caption">TEACHERS</div>
+                            <div class="banner-control">
+                                <a class="btn btn-secondary btn-learn-more shadow-sm borderless" href="/info-for-teachers">Learn More</a>
+                                <!-- <a class="btn btn-info btn-trial shadow-sm borderless" href="/schools-signup">Free Trial</a> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div> <!-- end row -->
+            </div> 
+          
+            <br>
+
+        </div> 
+
+    
+    <div class="page-header marginless">
+        <div class="container">
+            <h3 class="title text-center">
+                Discover how MathsOnline can transform your child's results
+            </h3>
+        </div>
+    </div>
+
+    <div id="features-fold" >
+
+        <!-- Features List -->
+        <div id="features-list">
+
+            <div class="container">
+
+                <ul class="nav nav-pills justify-content-center hidden-md-up" role="tablist" id="features-list-item-mobile">
+                    <li class="nav-item">
+                        <a class="nav-link  active" data-toggle="tab" href="#videos" role="tab" aria-controls="videos">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
+  <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
+  <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-toggle="tab" href="#questions" role="tab" aria-controls="questions">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+</svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-toggle="tab" href="#worksheets" role="tab" aria-controls="worksheets">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+</svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-toggle="tab" href="#reports" role="tab" aria-controls="reports">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M13.5 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h11zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11z"/>
+  <path d="M6.5 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm-4 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm8 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3z"/>
+</svg>
+                        </a>
+                    </li>
+                </ul>
+
+
+                <ul class="nav nav-tabs  justify-content-center hidden-sm-down" role="tablist" id="features-list-item">
+                    <li class="nav-item">
+                        <a class="nav-link teardrop active" data-toggle="tab" href="#videos" role="tab" aria-controls="home" data-image="feature-icon-videos" >
+                            <span>
+                                <img src="/assets/images/feature-icon-videos.png" width="65" height="65" alt="" id="feature-icon-videos" />
+                                <br>Video<br>Tutorials
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link teardrop" data-toggle="tab" href="#questions" role="tab" aria-controls="profile" data-image="feature-icon-questions">
+                            <span>
+                                <img src="/assets/images/feature-icon-questions-o.png" width="65" height="65" alt="" id="feature-icon-questions" />
+                                <br>Interactive<br>Questions
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link teardrop" data-toggle="tab" href="#worksheets" role="tab" aria-controls="messages" data-image="feature-icon-worksheets">
+                            <span>
+                                <img src="/assets/images/feature-icon-worksheets-o.png" width="65" height="65" alt="" id="feature-icon-worksheets" />
+                                <br>Worksheets &<br>Solutions
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link teardrop" data-toggle="tab" href="#reports" role="tab" aria-controls="settings"  data-image="feature-icon-reports">
+                            <span>
+                               <img src="/assets/images/feature-icon-reports-o.png" width="65" height="65" alt="" id="feature-icon-reports" />
+                               <br>Reports <br>&nbsp;
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" style="">
+                    <div class="tab-pane active" id="videos" role="tabpanel">
+
+                            <div class="strike text-center">
+                                <span>Video Tutorials</span>
+                            </div>
+                            <br>
+
+                            <div class="row ">
+
+                                <div class="col-md-4 text-center">
+                                    <img src="/assets/images/how-it-works-1A.jpg" alt="How it works" class="bordered rounded w-100 shadow-lg" />
+                                </div>
+
+                                <div class="col-md-4">
+
+                                    <ul class="feature-points">
+                                        <li>Makes maths easy to understand</li>
+                                        <li>Clear, spoken explanations</li>
+                                        <li>Short, engaging, to the point - improves clarity and focus</li>
+                                        <li>Pause, rewind or repeat a lesson so they really get it</li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col-md-4">
+
+                                    <ul class="feature-points">
+                                        <li>Learn much faster by seeing and hearing at the same time</li>
+                                        <li>Learn without stress at home in their own time</li>
+                                        <li>Catch up on lessons missed or not fully understood</li>
+                                    </ul>
+                                    <br>
+
+                                    <div class="text-center cta-features-list">
+                                        <div class="dropdown d-inline-block">
+                                            <button class="btn btn-primary btn-lg dropdown-toggle borderless shadow-lg text-shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Free Trial
+                                            </button>
+                                            <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="/free-trial?type=student">Students</a>
+                                                <a class="dropdown-item" href="/free-trial?type=parent">Parents</a>
+                                                <a class="dropdown-item" href="/freetrial">Teachers</a>
+                                            </div>
+                                        </div>
+                                        <span class="hidden-sm-down">&nbsp;</span>
+                                        <a href="/purchase" class="btn btn-success btn-lg borderless shadow-lg text-shadow">JOIN NOW <i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="tab-pane" id="questions" role="tabpanel">
+
+                            <div class="strike text-center">
+                                <span>Interactive Questions</span>
+                            </div>
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-md-4 text-center">
+                                    <img data-src="/assets/images/how-it-works-2A.jpg" alt="How it works" class="bordered rounded w-100 shadow-lg lazyload" />
+                                </div>
+
+                                <div class="col-md-4">
+
+                                    <ul class="feature-points">
+                                        <li>Tests how well the video lesson was understood</li>
+                                        <li>Engaging and immediate feedback given</li>
+                                        <li>Increased difficulty levels to match progress</li>
+                                        <li>Automatically marked and recorded</li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col-md-4">
+
+                                    <ul class="feature-points">
+                                        <li>Huge variety of questions - great for quick revision too</li>
+                                        <li>Increases confidence</li>
+                                        <li>Kinaesthetic learning - actually doing the maths!</li>
+                                    </ul>
+                                    <br />
+                                    
+                                    <div class="text-center cta-features-list">
+                                        <div class="dropdown d-inline-block">
+                                            <button class="btn btn-primary btn-lg dropdown-toggle borderless shadow-lg text-shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Free Trial
+                                            </button>
+                                            <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="/free-trial?type=student">Students</a>
+                                                <a class="dropdown-item" href="/free-trial?type=parent">Parents</a>
+                                                <a class="dropdown-item" href="/freetrial">Teachers</a>
+                                            </div>
+                                        </div>&nbsp;
+                                        <a href="/purchase" class="btn btn-success btn-lg borderless shadow-lg text-shadow">JOIN NOW <i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="tab-pane" id="worksheets" role="tabpanel">
+
+                            <div class="strike text-center">
+                                <span>Worksheets &amp; Solutions</span>
+                            </div>
+                            <br>
+                            
+                            <div class="row">
+
+                                <div class="col-md-4 text-center">
+                                    <img data-src="/assets/images/how-it-works-4A.jpg" alt="How it works" class="bordered rounded w-100 shadow-lg lazyload" />
+                                </div>
+
+                                <div class="col-md-4">
+
+                                    <ul class="feature-points">
+                                        <li>Tests how well the video lesson was understood</li>
+                                        <li>Encourages the traditional pen-and-paper</li>
+                                        <li>Improves ability to set work out in clear, logical steps</li>
+                                        <li>Essential skill to achieve top marks in written tests</li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col-md-4">
+
+                                    <ul class="feature-points">
+                                        <li>Worked solutions great for learning too</li>
+                                        <li>Automatically marked and recorded</li>
+                                        <li>Can save progress and come back later if needed</li>
+                                    </ul>
+                                    <br />
+
+                                    <div class="text-center cta-features-list">
+                                        <div class="dropdown d-inline-block">
+                                            <button class="btn btn-primary btn-lg dropdown-toggle borderless shadow-lg text-shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Free Trial
+                                            </button>
+                                            <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="/free-trial?type=student">Students</a>
+                                                <a class="dropdown-item" href="/free-trial?type=parent">Parents</a>
+                                                <a class="dropdown-item" href="/freetrial">Teachers</a>
+                                            </div>
+                                        </div>&nbsp;
+                                        <a href="/purchase" class="btn btn-success btn-lg borderless shadow-lg text-shadow">JOIN NOW <i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="tab-pane" id="reports" role="tabpanel">
+                            
+                            <div class="strike text-center">
+                                <span>Reports</span>
+                            </div>
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-md-4 text-center">
+                                    <img  data-src="/assets/images/how-it-works-7A.jpg" alt="How it works" class="bordered rounded w-100 shadow-lg lazyload"  />
+                                </div>
+
+                                <div class="col-md-4">
+
+                                    <ul class="feature-points">
+                                        <li>Ongoing progress reports</li>
+                                        <li>Helps you identify weaker areas requiring further study</li>
+                                        <li>Instantly see areas where more review is needed</li>
+                                        <li>Every lesson is recorded and results stored</li>
+                                        
+                                    </ul>
+
+                                </div>
+
+                                <div class="col-md-4">
+
+                                    <ul class="feature-points">
+                                        <li>Detailed, easy-to-understand statistical information</li>
+                                        <li>When they passed and what score</li>
+                                        <li>Shows how much time and effort put in</li>
+                                    </ul>
+                                    <br />
+
+                                    <div class="text-center cta-features-list">
+                                        <div class="dropdown d-inline-block">
+                                            <button class="btn btn-primary btn-lg dropdown-toggle borderless shadow-lg text-shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Free Trial
+                                            </button>
+                                            <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="/free-trial?type=student">Students</a>
+                                                <a class="dropdown-item" href="/free-trial?type=parent">Parents</a>
+                                                <a class="dropdown-item" href="/freetrial">Teachers</a>
+                                            </div>
+                                        </div>&nbsp;
+                                        <a href="/purchase" class="btn btn-success btn-lg borderless shadow-lg text-shadow">JOIN NOW <i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                    </div>
+                </div>
+
+                
+                
+            </div> 
+            
+        </div>
+        <!-- End Fetaures List -->  
+    </div>
+
+    <link href="https://vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet" rel="preload" as="style">    
+    <script src="https://vjs.zencdn.net/5.11/video.min.js"></script>
+
+    <style>
+        .video-js .vjs-big-play-button {
+            width: 100px;
+            height: 100px;
+            top: 50%;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            font-size: 50px;
+            line-height: 100px;
+        }
+    </style>
+  
+    <div class="fold testimonial-videos">
+        <div class="container">
+
+            <h4 class="hidden-sm-up text-center color-white"><strong>Testimonials</strong></h4>
+            
+            <div class="card shadow-md borderless">
+                <div class="card-header text-center hidden-sm-down">
+                    <h2 class="no-margins">Testimonials</h2>
+                </div>
+
+                <a name="testimonials"></a>
+
+                <div class="card-block no-padding">
+
+                    <a id="button-for-video-modal-for-mobile" data-toggle="modal" data-target=".video-modal-for-mobile" style="display:none;"></a>
+                    
+                    <div class="row no-gutters">
+
+                            <div class="col-lg-8 col-md-12 col-sm-12">
+                                <video id="video_player" class="video-js" controls preload="auto" style="min-height:250px; height: 100%; width: 100%;" poster="assets/images/poster-testimonial_1a.jpg?v=1" data-setup='{ "errorDisplay": false }'>
+                                    <source src="https://cdn.mathsonline.com.au/videos/testimonial_1a.mp4" type='video/mp4'>
+                                    <p class="vjs-no-js">
+                                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                    </p>
+                                </video>
+                            </div>
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 hidden-md-down">
+
+                                    <a href="#" data-target="testimonial_1a" class="playlist-item home-testimonial active" title="Click to view testimonial">
+                                        <div class="playlist-item-text tight no-padding">
+                                            <img data-src="/assets/testimonials/lorene_stevenson.jpg" width="100" height="100" class="img-thumbnail lazyload" />
+                                            <img data-src="/assets/testimonials/wendy_howrah.jpg" width="100" height="100" class="img-thumbnail lazyload" />
+                                            <img data-src="/assets/testimonials/rebekah_haack.jpg" width="100" height="100" class="img-thumbnail lazyload" />
+                                        </div>                                        
+                                    </a>
+
+                                    <a href="#" data-target="testimonial_2" class="playlist-item home-testimonial" title="Click to view testimonial">
+                                        <div class="playlist-item-text tight no-padding">
+                                            <img data-src="/assets/testimonials/claire_cheong.jpg" width="100" height="100" class="img-thumbnail lazyload" />
+                                            <img data-src="/assets/testimonials/michelle.jpg" width="100" height="100" class="img-thumbnail lazyload" />
+                                            <img data-src="/assets/testimonials/nate_gaze.jpg" width="100" height="100" class="img-thumbnail lazyload" />
+                                            <img data-src="/assets/testimonials/janine_lorenz.jpg" width="100" height="100" class="img-thumbnail lazyload" />
+                                            <img data-src="/assets/testimonials/elizabeth_weinberg.jpg" width="100" height="100" class="img-thumbnail lazyload" />
+                                        </div>
+                                    </a>
+
+                            </div> 
+                    </div>
+
+                    <div class="hidden-lg-up">
+
+                        <ul class="nav nav-tabs justify-content-center" id="mobile-video-testimonials" role="tablist" style="background: #aaa; padding: 10px 0 0; border: 0">
+                            <li class="nav-item">
+                                <a class="nav-link active borderless" data-video-target="testimonial_1a" data-toggle="tab" href="#testimonial_1a" role="tab" style="padding: 5px;" title="Click to view testimonial">
+                                    <img data-src="/assets/testimonials/lorene_stevenson.jpg" class="img-thumbnail borderless lazyload" width="100" height="100" />
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link borderless" data-video-target="testimonial_2" data-toggle="tab" href="#testimonial_2" role="tab" style="padding: 5px;" title="Click to view testimonial">
+                                    <img data-src="/assets/testimonials/claire_cheong.jpg" class="img-thumbnail borderless lazyload" width="100" height="100" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card-footer text-center pad-25">
+                    <a href="/testimonials" class="btn btn-success btn-lg borderless darker shadow-lg text-shadow"><span class="hidden-sm-down">See</span> More Testimonials</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fold">
+
+        <div class="container">
+
+            <div class="card-deck row">
+            
+                <div class="card hidden-sm-down col-md-6 col-md-8" id="free-trial-banner">
+                    &nbsp;
+                </div>
+                
+                <div class="card col-sm-12 col-md-6 col-lg-4 ">
+
+                    <!-- Free Trial Form -->
+                    <form action="/home-free-trial" method="POST" id="home-free-trial" class="card-block">
+
+                        <div class="h3 text-center">Enjoy a FREE Trial of MathsOnline</div>
+
+                        <div class="form-group">
+                            <label for="type"  class="font-weight-bold">I am a</label>
+                            <select name="customerType" id="homeCustomerType" class="form-control" data-validation="required" data-validation-error-msg-container = '#type-error-label' data-validation-error-msg = 'Please select type'>
+                                <option value="">Please select one</option>
+                                <option value="Student">Student</option>
+                                <option value="Parent">Parent</option>
+                                <option value="Teacher">Teacher</option>
+                            </select>
+                            <span id="type-error-label" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="first_name" class="font-weight-bold">First Name</label>
+                            <div class="input-group">
+                                
+                                <input name="customerName" value="" type="text" class="form-control" placeholder="First name..." aria-describedby="name-addon" data-validation="required" data-validation-error-msg-container = '#name-error-label' data-validation-error-msg = 'Please enter your name'>
+                                <span class="input-group-addon" id="name-addon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+</svg></span>
+                            </div>
+                            <span id="name-error-label" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="font-weight-bold">Email Address</label>
+                            <div class="input-group input-group-block">
+                                <input name="customerEmail" value="" type="email" class="form-control" placeholder="Email address..." aria-describedby="email-addon" data-validation="email" data-validation-error-msg-container = '#email-error-label' data-validation-error-msg = 'Please enter a valid email'>
+                                <span class="input-group-addon" id="email-addon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+</svg></span>
+                            </div>
+                            <span id="email-error-label" class="text-danger"></span>
+                        </div>
+
+                        
+                        <div class="form-group inline">
+                            <input data-validation-error-msg="ReCaptcha check is required" type="hidden" data-validation="recaptcha" data-validation-recaptcha-size="compact" data-validation-recaptcha-sitekey="6LdQSn8UAAAAAHdMNWBEqh8pZ7NrL7oyPI0QwdrS" data-validation-error-msg-container="#error-captcha-label">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <label class="checkbox-inline" style="font-size:14px; line-height: 20px;">
+                                <input type="checkbox" name="customerAgree" value="Y" checked>
+                                <span class="text-muted tight">Please send me my free trial login details & keep me up to date with news & specials from MathsOnline</span>
+                            </label>
+                            <span id="agreement-error-label" class="text-danger" style="margin-bottom: 10px;"></span>
+                        </div>
+       
+                        <button type="submit" class="borderless btn btn-warning btn-lg btn-block shadow-lg text-shadow">Start my FREE trial now!</button>
+                
+                    </form>
+                    <!-- End Free Trial Form -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="games text-center text-shadow">
+        <div class="container">
+            <a href="games/speed_skills">
+                <img data-src="assets/images/index-speed-skills.jpg" alt="" style="width: 100%; max-width: 669px;" border="0" class="shadow-lg lazyload">
+            </a>
+        </div>
+    </div>    
+
+
+    <!-- FOOTER -->
+    <footer class="footer ">
+        <div>
+            <div class="container  text-center">
+
+                <a href="/games/speed_skills" title="Speed Skills">Speed Skills</a>                
+                <a href="/games/times_tables" title="Times Tables">Times Tables</a>                
+                <a href="/games/swap_pieces" title="Swap Pieces">Swap Pieces</a>
+                
+                    <a href="/how-it-works" title="How It Works">How It Works</a>                    
+                    <a href="https://www.mathsonline.com.au/purchase" title="Parent Sign-up">Parent Sign-up</a>                    
+                    <a href="/schools-signup" title="Teacher Sign-up">Teacher Sign-up</a>                    
+                    <a href="/docs/teachers" title="Teachers' User Guide">Teachers' User Guide</a>                    
+                    <a href="/testimonials" title="Testimonials">Testimonials</a>                            </div>
+        </div>
+                <div>
+            <div class="container text-center">
+
+                <a href="/pat" title="About">About Patrick Murray</a>
+                <a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a>                
+                <a href="/terms-conditions" title="Terms and Conditions">Terms and Conditions</a>                
+                <a href="/disclaimer" title="Disclaimer">Disclaimer</a>                
+                <a href="/site-map" title="Site Map">Site Map</a>                
+                <a href="tel:1300882045" style="font-weight:bold"><i class="fa-solid fa-phone"></i> 1300 88 20 45</a>
+
+                <a href="https://www.facebook.com/mathsonline.com.au" target="_new"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+
+                <a href="https://www.instagram.com/mathsonline" target="_new"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+                <div>
+            <div class="container text-center">
+            <span>&copy; Mathematics.com.au Pty Limited 2023</span>            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPTS  -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="/assets/dist/js/main/common.min.js?v=3.4.159"></script>
+    <script src="/assets/js/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="/assets/js/lazysizes.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            
+            var path = location.pathname.replace(/^\/|\/$/g, '');
+            if ( path ) $('#leftnav a[href$="' + path + '"]').addClass("active");
+
+            $('#toTestimonials').click(function() {
+                var positionTestimonials = $('.testimonial-videos').position().top;
+                $('body,html').animate({
+                    scrollTop : positionTestimonials - 100    // Scroll to testimonials
+                }, 500);
+            });
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+
+            $('.image-caption').on('click', function(event) {
+
+                event.preventDefault();
+                var targetId = $(this).attr('data-target-id');
+
+                $('.image.read-testimonial').removeClass('active');
+                $('[data-id='+targetId+']').addClass('active');
+
+                // Show testimonial
+                $('#' + targetId).removeClass('hidden').siblings().addClass('hidden');
+                
+            });
+
+            $('.nav-link.teardrop').click(function(event) {
+                var target_image_current = $(this).attr('data-image');
+                $('.nav-link.teardrop').each(function() {
+                    var target_image = $(this).attr('data-image');
+                    $('#'+ target_image).attr('src', '/assets/images/' + target_image + '-o.png');
+                });
+                $('#'+ target_image_current).attr('src', '/assets/images/' + target_image_current + '.png');
+            });
+
+            // Free trial dropdown homepage
+            $('#homeCustomerType').change(function() {
+                if ($(this).val() == 'Teacher') window.location.href='/freetrial';
+            });
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.faq-section-question').click(function(event) {
+                event.preventDefault();
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                    $(this).siblings('.collapse').children('.card-block').removeClass('card-outline-info')
+                } else {
+                    $(this).addClass('active');
+                    $(this).siblings('.collapse').children('.card-block').addClass('card-outline-info')
+                }
+            });
+
+            $('.faq-filter').click(function(event) {
+                event.preventDefault();
+                $('.faq-filter').removeClass('active');
+                $(this).addClass('active');
+                var filter = $(this).attr('data-filter');
+               
+                if (filter == 'all') {
+                    $('.faq-section').show();
+                } else {
+                    $('.faq-section').hide();
+                    $('.'+filter).show();
+                }
+            });
+
+
+            $('.home-testimonial').click(function(event) {
+
+                event.preventDefault();
+
+                var targetId  = $(this).attr('data-target');
+                var $vid_obj  = video(targetId);
+
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+
+                $(".vjs-big-play-button").click(function() {
+                    event.preventDefault();
+                    $(this).hide();
+                });
+                
+                $vid_obj.on('play', function() {
+                    $("#video_player .vjs-big-play-button").hide();
+                    event.stopPropagation();
+                });
+
+                function video(targetId) {
+                    var videoPath = "https://cdn.mathsonline.com.au/videos/";
+                    var $vid_obj  = videojs("video_player", { errorDisplay: false });
+
+                    $vid_obj.ready(function() {
+                        
+                        // hide the video UI
+                        $("#div_video_html5_api").hide();
+                        $vid_obj.pause();
+
+                        // Change sources
+                        // $("video:nth-child(1)").attr("src",videoPath+targetId+".webm");
+                        $("video:nth-child(1)").attr("src",videoPath+targetId+".mp4?v=3.4.159");
+
+                        // Change poster
+                        $(".vjs-poster").css("background-image",'url(/assets/images/poster-'+targetId+".jpg?v=3.4.159)");
+
+                        // reset the UI states
+                        $(".vjs-big-play-button").show();
+                        $("#div_video").removeClass("vjs-playing").addClass("vjs-paused");
+
+                        // load the new sources
+                        $vid_obj.load();
+                        $("#div_video_html5_api").show();
+
+                    });
+                    return $vid_obj;
+                }
+
+            });
+
+            $('#mobile-video-testimonials a.nav-link').click(function(event) {
+
+                var targetId  = $(this).attr('data-video-target');
+                var $vid_obj  = video(targetId);
+
+                $(".vjs-big-play-button").click(function(event) {
+                    event.preventDefault();
+                    $(this).hide();
+                });
+                        
+                function video(targetId) {
+                    var videoPath = "https://cdn.mathsonline.com.au/videos/";
+                    var $vid_obj  = videojs("video_player", { errorDisplay: false });
+
+                    $vid_obj.ready(function() {
+                        
+                        // hide the video UI
+                        $("#div_video_html5_api").hide();
+                        $vid_obj.pause();
+
+                        // Change sources
+                        // $("video:nth-child(1)").attr("src",videoPath+targetId+".webm");
+                        $("video:nth-child(1)").attr("src",videoPath+targetId+".mp4");
+
+                        // Change poster
+                        $(".vjs-poster").css("background-image",'url(/assets/images/poster-'+targetId+".jpg)");
+
+                        // reset the UI states
+                        $(".vjs-big-play-button").show();
+                        $("#div_video").removeClass("vjs-playing").addClass("vjs-paused");
+
+                        // load the new sources
+                        $vid_obj.load();
+                        $("#div_video_html5_api").show();
+
+                    });
+                    return $vid_obj;
+                }
+            });
+
+            $('.homeschool-testimonial').click(function(event) {
+
+                event.preventDefault();
+
+                var targetId  = $(this).attr('data-target');
+               
+                var $vid_obj  = video(targetId);
+
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+
+                $vid_obj.on('play', function() {
+                    $("#hs_video_player .vjs-big-play-button").hide();
+                    event.stopPropagation();
+                });
+
+                $("#hs_video_player .vjs-big-play-button").click(function() {
+                    event.stopPropagation();
+                    $(this).hide();
+                });
+                        
+                function video(targetId) {
+                    var videoPath = "/assets/videos/";
+                    var $vid_obj  = videojs("hs_video_player", { errorDisplay: false });
+
+                    $vid_obj.ready(function() {
+                        
+                        // hide the video UI
+                        $("#div_video_html5_api").hide();
+                        $vid_obj.pause();
+
+                        // Change sources
+                        // $("video:nth-child(1)").attr("src",videoPath+targetId+".webm");
+                        $("video#hs_video_player_html5_api").attr("src",videoPath+targetId+".mp4");
+
+                        // Change poster
+                        $("#hs_video_player .vjs-poster").css("background-image",'url(/assets/images/poster-'+targetId+".jpg)");
+
+                        // reset the UI states
+                        $(".vjs-big-play-button").show();
+                        $("#div_video").removeClass("vjs-playing").addClass("vjs-paused");
+
+                        // load the new sources
+                        $vid_obj.load();
+                        $("#div_video_html5_api").show();
+
+                    });
+                    return $vid_obj;
+                }
+
+            });
+
+            $('#homeschool-mobile-video-testimonials a.nav-link').click(function(event) {
+
+                var targetId  = $(this).attr('data-video-target');
+                var $vid_obj  = video(targetId);
+                
+
+                $(".homeschool-mobile-testimonial .vjs-poster").click(function() {
+                    $(".vjs-big-play-button").hide();
+                });
+
+                $(".vjs-big-play-button").click(function(event) {
+                    event.preventDefault();
+                    $(this).hide();
+                });
+                        
+                function video(targetId) {
+                    var videoPath = "/assets/videos/";
+                    var $vid_obj  = videojs("hs_video_player", { errorDisplay: false });
+
+                    $vid_obj.ready(function() {
+                        
+                        // hide the video UI
+                        $("#div_video_html5_api").hide();
+                        $vid_obj.pause();
+
+                        // Change sources
+                        // $("video:nth-child(1)").attr("src",videoPath+targetId+".webm");
+                        $("video#hs_video_player_html5_api").attr("src",videoPath+targetId+".mp4");
+
+                        // Change poster
+                        $("#hs_video_player .vjs-poster").css("background-image",'url(/assets/images/poster-'+targetId+".jpg)");
+
+                        // reset the UI states
+                        $(".vjs-big-play-button").show();
+                        $("#div_video").removeClass("vjs-playing").addClass("vjs-paused");
+
+                        // load the new sources
+                        $vid_obj.load();
+                        $("#div_video_html5_api").show();
+
+                    });
+                    return $vid_obj;
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            
+            $.validate({
+                modules : 'security, logic',
+                onSuccess: function($form) {
+                    $('input[type=submit].modal-login-btn').val('Signing in. Please wait...').prop('disabled', true);
+                }
+            });
+
+            var signupForm       = $('#signup-form');
+            var signupFormWidth  = signupForm.outerWidth();
+            var signupFormHeight = signupForm.outerHeight();
+            var windowWidth      = $(window).width();
+            var windowHeight     = $(window).height();
+            var signupFormFixed  = true;
+
+            $(window).resize(function() {
+                windowWidth      = $(this).width();
+                windowHeight     = $(this).height();
+                signupFormHeight = signupForm.outerHeight();
+                signupFormWidth  = signupForm.outerWidth();
+                if ((signupFormHeight + 180) < windowHeight) {
+                    if (windowWidth < 990) {
+                        signupForm.removeClass('fixed');
+                        signupForm.css('width', '100%');
+                    }
+                } else {
+                    signupForm.removeClass('fixed');
+                    signupForm.css('width', '100%');
+                }
+            });
+
+            $(window).scroll(function() {
+
+                windowHeight = $(this).height();
+
+                if ($(this).scrollTop() > 310) {
+                    $('#cta-main-nav').removeClass('hidden-sm-down');
+                } else {
+                   $('#cta-main-nav').addClass('hidden-sm-down');
+                }
+                
+                if ((signupFormHeight + 180) < windowHeight) {
+                    if (windowWidth > 990) {
+                        if ($(this).scrollTop() > 120) {
+                            signupForm.addClass('fixed');
+                            signupForm.css('width', signupFormWidth);
+                        } else {
+                            signupForm.removeClass('fixed');
+                            signupForm.css('width', '100%');
+                        }
+                    }
+                } else {
+                    if (signupFormFixed == false) {
+                        signupForm.removeClass('fixed');
+                    }
+                }
+            });
+
+            $('body').click(function(e) {
+                $('[data-toggle="popover"]').each(function () {
+                    if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                        $(this).popover('hide');
+                    }
+                });
+            });
+
+            $('[data-toggle="popover"]').popover();
+            
+            $('[data-toggle="popover"]').click(function(event) {
+                event.preventDefault();
+            });
+
+            function validateForm() {
+                var errors = 0;
+                $('input[name=full_name]').validate(function(valid, elem) {
+                    if (!valid) errors++;
+                });
+                $('input[name=email]').validate(function(valid, elem) {
+                   if (!valid) errors++;
+                });
+                $('select[name=position]').validate(function(valid, elem) {
+                   if (!valid) errors++;
+                });
+                $('select[name=phone]').validate(function(valid, elem) {
+                   if (!valid) errors++;
+                });
+                $('select[name=state]').validate(function(valid, elem) {
+                   if (!valid) errors++;
+                });
+                $('input[name=school_name]').validate(function(valid, elem) {
+                   if (!valid) errors++;
+                });
+                $('input[name=suburb]').validate(function(valid, elem) {
+                   if (!valid) errors++;
+                });
+                $('input[name=accept_terms]').validate(function(valid, elem) {
+                   if (!valid) errors++;
+                });      
+                $('input[name=recaptcha]').validate(function(valid, elem) {
+                   if (!valid) errors++;
+                });                
+                return errors > 0 ? false : true;
+            }
+
+            var template = $('#code_data');
+
+            $('#position').change(function(e) {
+                e.preventDefault();
+                if ($(this).val() == 'primary_school_teacher') {
+                    $('input[name=school_name]').val('');
+                    $('input[name=suburb]').val('');
+                    $('#toggle-school-info').addClass('hidden');
+                    signupFormFixed = true;
+                } else {
+                    signupFormFixed = false;
+                    $('#toggle-school-info').removeClass('hidden');
+                    if ($(window).scrollTop() > 0) {
+                        $('body,html').animate({
+                            scrollTop : 0                       
+                        }, 500);                      
+                    }                      
+                }
+                signupFormHeight = signupForm.outerHeight();
+            });
+
+            $('#signup-button').click(function(event) {
+                event.preventDefault();
+                if (validateForm()) {
+                    $(this).attr('disabled', true).val('Processing...');
+                    $('#signup-form').submit();
+                } else {
+                    $(this).attr('disabled', false).val('Get Started');
+                    windowWidth      = $(this).width();
+                    windowHeight     = $(this).height();
+                    signupFormHeight = signupForm.outerHeight();
+                    signupFormWidth  = signupForm.outerWidth();
+                    window.location.href="#top";
+                    if ((signupFormHeight + 160) < windowHeight) {
+                        if (windowWidth < 990) {
+                            signupForm.removeClass('fixed');
+                            signupForm.css('width', '100%');
+                        }
+                    } else {
+                        signupForm.removeClass('fixed');
+                        signupForm.css('width', '100%');
+                    }                
+                }
+            });
+
+            if ($("#homeschool-video").length > 0) {
+                var player = videojs("homeschool-video");
+                $('#play-demo').click(function() {
+                    player.play();
+                });
+            }
+
+            /* Video Library */
+            var $arrVideos = [
+                'AbsEYHut1hs',
+                '6iIU53VdAtg',
+                'Y--qUVeFVfA',
+                'LL_6dCzQ_j8',
+                'Z8kLr08fLTU',
+                'ltHlNFiN1Xs',
+                'gqyFqDzLU5Y',
+                '69pACegCXiA',
+                'xlojss6e7aY',
+                'vj2qj885I70',
+                '5FLuAENN8jc',
+                'g4pw07ZCfb4',
+                'MwKN5_IfGs4',
+                'cIXSB3Acz14',
+                'qPHwoCpxaDU',
+                '8mJN1YlghNo'
+            ];
+
+            function getParameterByName(name) {
+                var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+                return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+            }
+
+            var $specifiedVideoID = parseInt(getParameterByName('index'));
+            var $startPlayPosition = parseInt(getParameterByName('start'));
+            
+            if ($specifiedVideoID >= 0 && $specifiedVideoID < $arrVideos.length) {
+
+                $('#support-section-tabs li:eq(0) a').tab('show');
+
+                var $id = $arrVideos[$specifiedVideoID];
+                var $title = $('.video-index-'+$specifiedVideoID).attr('data-title');
+                $url = "https://www.youtube.com/embed/";
+                $url = $url + $id + '?autoplay=1&rel=0';
+
+                if ($startPlayPosition >= 0) {
+                    $url += '&start='+$startPlayPosition;                    
+                }
+   
+                $("#videoModal iframe").attr("src", $url);
+                $title = $('a[data-video-index='+$specifiedVideoID+']').attr('data-title');
+                
+                setTimeout(function() { 
+                    $('#modalVideoLabel').html($title);
+                    $('#videoModal').modal('show');
+                }, 500);
+            }
+
+            var centreSectionDefault = getParameterByName('section');
+            var article = getParameterByName('article');
+
+            if (centreSectionDefault) {
+                switch (centreSectionDefault) {
+                    case 'video':
+                        $('#support-section-tabs li:eq(0) a').tab('show');
+                    break;
+                    case 'guide':
+                        $('#support-section-tabs li:eq(1) a').tab('show');
+                    break;
+                    case 'downloads':
+                        $('#support-section-tabs li:eq(2) a').tab('show');
+                    break;         
+                    default:
+                        $('#support-section-tabs li:eq(0) a').tab('show');
+                    break;                               
+                }
+            }
+
+            if (article) {
+                $.ajax({
+                    type: "POST",
+                    url: "/docs/teachers/load_content",
+                    data: { template: article },
+                    success: function(data) { 
+                        if (data) {
+                            $('#guide_content').html(data);
+                            $('body,html').animate({
+                                scrollTop : 0                       
+                            }, 500);
+                            $(".menu-siderbar a.list-group-item, #leftnavDropdown a.dropdown-item").each(function() {
+                                var url = $(this).attr('href').split('/');
+                                var urlArticle = url[3];
+                                $(this).parent().children('a.dropdown-item').removeClass('active');
+                                $(this).parent().children('a.list-group-item').removeClass('active');
+                                if (urlArticle == article) {
+                                    $(this).addClass('active');
+                                }
+                            });
+                        } else {
+                            window.location = '/docs/teachers?section=guide';
+                        }
+                    }
+                }).fail(function( data ) {
+                    window.location = '/docs/teachers?section=guide';
+                });
+            }
+
+            $('.video-thumbnail').click(function(event) {
+                var $id = $(this).attr('data-id');
+                var $title = $(this).attr('data-title');
+                var $url = "https://www.youtube.com/embed/";
+                if ($id) {
+                    $url = $url + $id + '?autoplay=1&rel=0';
+                    $("#videoModal iframe").attr("src", $url);
+                }
+                $('#modalVideoLabel').html($title);
+            });
+
+            $("#videoModal").on('hidden.bs.modal', function (e) {
+                $("#videoModal iframe").attr("src", '');
+            });
+
+            $('#videoModal').on('shown.bs.modal', function () {
+                $('#videoModal').removeClass('in');
+            });   
+            
+            /* Video Library */
+            $(".menu-siderbar a.list-group-item, #leftnavDropdown a.dropdown-item").click(function(event) {
+                event.preventDefault();
+                var url     = $(this).attr('href').split('/');
+                var content = url[3];
+                $(this).parent().children('a.dropdown-item').removeClass('active');
+                $(this).parent().children('a.list-group-item').removeClass('active');
+                $(this).addClass('active');
+                $.ajax({
+                    type     : "POST",
+                    url      : "/docs/teachers/load_content",
+                    data     : { template: content },
+                    success  : function(data) { 
+                        $('#guide_content').html(data);
+                        $('body,html').animate({
+                            scrollTop : 0                       
+                        }, 500);
+                    }
+                }).fail(function( data ) {
+                    //
+                });
+            });
+
+            // Dropdown mobile for support section
+            $('#support-section-dropdown a').click(function(event) {
+                event.preventDefault();
+                $('#support-section-tabs li:eq('+$(this).index()+') a').tab('show');
+            });
+
+            if ($("#my-video").length) {
+                var vid_obj  = videojs("my-video");
+                vid_obj.on('play', function() {
+                    $.getJSON('https://ipinfo.io/?token=7df9f1f08676b4', function(data){
+                        data.product = 'MATHSONLINE';
+                        $.ajax({
+                            type     : "POST",
+                            url      : "/home/log_play",
+                            data     : data,
+                        });    
+                    });              
+                });
+            }
+
+            if ($('#signup-form select').val()) {
+                $('#signup-form select').addClass('has-value');
+            } else {
+                $('#signup-form select').removeClass('has-value');
+            }
+
+            $('#signup-form select').each(function() {
+                if ($(this).val()) {
+                    $(this).addClass('has-value');
+                } else {
+                    $(this).removeClass('has-value');
+                }
+            });
+
+            $('#signup-form select').change(function() {
+                if ($(this).val()) {
+                    $(this).addClass('has-value');
+                } else {
+                    $(this).removeClass('has-value');
+                }
+            });
+
+        });
+
+        $('#btn-fullscreen').bind('click', function(e) {
+            e.preventDefault();
+            $('.game-container').toggleClass('fullscreen');
+        });
+
+    </script>
+    
+    <script type="text/javascript">
+        window.addEventListener('load',function(){
+            jQuery('[href="/free-trial?type=student"]').click(function(){
+                ga('send', 'event', 'link', 'clicked', 'free trial student');
+            });
+            jQuery('[href="/free-trial?type=parent"]').click(function(){
+                ga('send', 'event', 'link', 'clicked', 'free trial parent');
+            });
+            jQuery('[href="/freetrial"]').click(function(){
+                ga('send', 'event', 'link', 'clicked', 'free trial teacher');
+            });
+            jQuery('[href="/purchase"]').click(function(){
+                ga('send', 'event', 'link', 'clicked', 'sign up');
+            });
+        });
+    </script>
+    
+    
+        <script type="text/javascript" src="https://hx116.infusionsoft.com/app/webTracking/getTrackingCode"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+          var menu = $('.menu-siderbar');
+          var menuItem = menu.find('.nav-item');
+    
+          menuItem.find('.nav-link-parent').click(function() {
+            var parentItem = $(this).parent();
+            var isOpen = parentItem.hasClass('open');
+    
+            menuItem.each(function(i, element) {
+              if ($(this).hasClass('open')) {
+                $(this).removeClass('open');
+              }
+            });
+    
+            if (isOpen) {
+              parentItem.removeClass('open');
+            } else {
+              parentItem.addClass('open');
+            }
+          });
+    
+          $('a.list-group-item').click(function() {
+            $('a.list-group-item').removeClass('active');
+            $(this).addClass('active');
+          });
+        });
+
+        function navigateClassList() {
+            $('.nav-class-list').click();
+        }
+
+        function navigateStudentList() {
+            $('.nav-student-list').click();
+        }
+    </script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"421d15b87f","applicationID":"577167637","transactionName":"YF1WY0VVWRFUWhFbDFkXdVRDXVgMGnEKXwYYUVpTUkw=","queueTime":0,"applicationTime":23,"atts":"TBpVFQ1PSh8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

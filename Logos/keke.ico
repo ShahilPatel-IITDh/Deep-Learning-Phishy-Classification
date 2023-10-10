@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords"
+            content="OPPO,OPPO，OPPO官网，OPPO OPPO，OPPO 官网，OPPO云服务,OPPO云服务,OPPO市场,OPPO软件商店,OPPO笔记,OPPO同步,OPPO找回手机" />
+        <meta name="description"
+            content="OPPO软件商店是官方、正版、安全的APP下载渠道，拥有海量资源，所有资源都通过机器检测、人工亲测，为用户提供安全可靠的应用、游戏资源下载及管理功能。" />
+        <meta name="generator" content="OPPO" />
+        <meta name="author" content="OPPO" />
+        <meta name="copyright" content="OPPO" />
+        <title>软件商店</title>
+        <script>
+            console.log(navigator.userAgent)
+            if ((/(android|iphone)/i).test(navigator.userAgent)) {
+                location.replace('/m/store.html')
+            }
+            //if(/oppomobile\.com/.test(location.host)){location.replace('https://www.heytapmobi.com/')}
+        </script>
+        <!--[if lte IE 6]><script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script> <script type="text/javascript"> DD_belatedPNG.fix('div, ul,.banner_img img,h3, a,span,dl,.market img'); </script> <![endif]-->
+        <link rel="stylesheet" href="css/common.css?2303" />
+        <link rel="stylesheet" href="css/home.css?2111" />
+        <style>
+            .foot_info .footer-identification {
+                margin-left: 10px;
+                width: 24px;
+                height: 24px;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                display: inline-block;
+            }
+
+            .foot_info .footer-identification:hover {
+                background-position: -24px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="nav_area">
+                <a href="javascript:void(0)" title="OPPO互联中心" class="keke"><img src="images/logo20.png"></a>
+                <ul class="nav">
+                    <li class="now_nav"><a href="javascript:;">首页</a></li>
+                    <li><a href="https://cloud.oppo.com/login.html" target="_blank">云服务</a></li>
+                    <li><a href="https://open.oppomobile.com" target="_blank">开放平台</a></li>
+                     <!-- <li><a href="./music.html" target="_blank">娱乐</a></li> -->
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+
+        <div id="content">
+            <!--轮播图区域-->
+            <div class="slide_banner">
+                <div class="banner_content"><img src="./images/banner21.png" alt="OPPO软件商店" /></div>
+                <ul class="banner_nav">
+                    <li class="active" i="0"></li>
+                    <li i="1"></li>
+                    <li i="2"></li>
+                </ul>
+                <div class="banner_bar_bg">
+                    <div class="banner_bar"></div>
+                </div>
+            </div>
+            <div class="floor w830">
+                <!--软件商店-->
+                <div class="soft_list">
+                    <div class="app-info">
+                        <img src="images/market202111.jpg" class="logo img" title="软件商店" alt="软件商店" />
+                        <h2>软件商店</h2>
+                        <h3>放心下安心用</h3>
+                    </div>
+                    <div class="intro market">软件商店是官方、正版、安全的APP下载渠道，拥有海量资源，所有资源都通过机器检测、人工亲测，为用户提供安全可靠的应用、游戏资源下载及管理功能。
+                    </div>
+                    <div class="qr oppo">
+                        <img src="images/market-oppo.png" title="扫码下载" />
+                        <p class="version">安卓版本9及以下</p>
+                        <a id="oppoMarket"
+                            href="https://storedl1.nearme.com.cn/apk/202110/26/7082abd4b14d9bfcb89d7e513b074c08.apk">
+                            <span onclick="downloadReport(1)" class="btn">点击下载</span>
+                        </a>
+                    </div>
+                    <div class="qr">
+                        <img src="images/marketdown.png" title="扫码下载" />
+                        <p class="version">安卓版本9以上</p>
+                        <a id="market"
+                            href="https://storedl1.nearme.com.cn/apk/202110/26/7082abd4b14d9bfcb89d7e513b074c08.apk">
+                            <span onclick="downloadReport(2)" class="btn">点击下载</span>
+                        </a>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <!--游戏中心-->
+                <div class="soft_list right">
+                    <div class="app-info">
+                        <img src="images/game10.0.png" class="img" title="游戏中心" />
+                        <h2>游戏中心</h2>
+                        <h3>来游戏中心，玩好游戏</h3>
+                    </div>
+                    <div class="intro">作为官方的游戏平台，游戏中心提供安全的游戏下载和海量游戏福利。同时，在社区中也能找到最新攻略资讯，与游戏官方及大神尽情交流。心动的话就快加入我们吧！</div>
+                    <div class="qr">
+                        <img src="images/webgame2020.png" title="扫码下载" />
+                        <p class="version">安卓通用</p>
+                        <!--    -->
+                        <a id="gameCenter"
+                         href="https://storedl.nearme.com.cn/apk/202105/24/8fc19275eb891bb97300606a261b1f97.apk" 
+                         onclick="downloadReport()">
+                            <span class="btn">点击下载</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!--阅读-->
+                <!-- <div class="soft_list">
+                    <div class="app-info">
+                        <img src="images/readIcon.png" class=" img" title="阅读" alt="阅读" />
+                        <h2>阅读</h2>
+                        <h3>手机看小说用阅读</h3>
+                    </div>
+                    <div class="intro">阅读旨在为用户提供高品质的图书内容及智能化的用户体验，目前拥有畅销、生活、文学等类别的优质图书数字版权30万册。阅读致力于通过更便捷的移动设备、数字化图书来传播知识。
+                    </div>
+                    <div class="qr">
+                        <img src="images/readDownLoad.png" title="扫码下载" />
+                         <p class="version">安卓通用</p>
+                        <a id="readIcon"
+                            href="https://adsfs.heytapimage.com/marketing/lp/1000153628/html/landingpagee04c0e0fe1bb4160b59fc47b4548f0b9.html">
+                            <span onclick="downloadReport()" class="btn">点击下载</span>
+                        </a>
+                    </div>
+                    <div class="line"></div>
+                </div> -->
+
+                 <!--音乐-->
+                <!-- <div class="soft_list right">
+                    <div class="app-info">
+                        <img src="images/music.png" class="img" title="音乐" />
+                        <h2>音乐</h2>
+                        <h3>热门音乐听我所想</h3>
+                    </div>
+                    <div class="intro">音乐是一款专业的音乐播放器，为你提供本地与在线音乐播放服务，尽享《爱如火》《蓝色切尔西》《微信爱》等时下流行好歌。同时还有小众乐队专题、音乐电台、高清 MV 等您体验!</div>
+                    <div class="qr">
+                        <img src="images/musicDownLoad.png" title="扫码下载" />
+                        <p class="version">安卓通用</p>
+
+                        <a id="music"
+                         href="https://adsfs.heytapimage.com/marketing/lp/1000047356/html/landingpagecfd2c50167774de6b8f51f8f50c85a09.html" 
+                         onclick="downloadReport()">
+                            <span class="btn">点击下载</span>
+                        </a>
+                    </div>
+                </div> -->
+                <div class="clear"></div>
+            </div>
+            <div class="bottom_service">
+                <a href="https://www.oppo.com/cn/service.html" class="border">用户服务</a>
+                <a href="https://open.oppomobile.com/home/contact#id=3">商务合作</a>
+            </div>
+        </div>
+
+        <div class="footer">
+
+            <div class="foot_bt">
+                <div class="foot_info">
+                    <p>电话：0769-86076888</p>
+                    <p>开发者:深圳市欢太科技有限公司&nbsp;<a href="https://activity-cdo.heytapimage.com/cdo-activity/static/202210/25/store-PrivacyHeyTap/100200/index.html?c=0&agreementType=3">隐私协议</a></p>
+                    <p>版本号:10.3.1&nbsp;更新时间:2023.03.10&nbsp;<a href="https://activity-cdo.heytapimage.com/cdo-activity/static/202205/23/store-UsersAgreement/index.html?c=0">用户权限</a></p>
+                    粤网文[2023]1559-113号&nbsp;&nbsp;|&nbsp;&nbsp;增值电信业务经营许可证粤B2-20140205&nbsp;&nbsp;|&nbsp;&nbsp;<a
+                        href="https://beian.miit.gov.cn/" target="_blank">粤ICP备14012291号<span id="vTag"></span></a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;（粤）-经营性-2018-0058
+                        <a class="dsn" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=441900001655276"
+                        target="_blank" title="企业名称：东莞市讯怡电子科技有限公司
+                    粤工商备P191703000396" class="footer-identification"></a>
+                    <div>
+                        <div class="foot_info">广东欢太科技有限公司 版权所有</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+        <script type="text/javascript" src="https://cdofs.oppomobile.com/cdo-activity/template/common/common.js?v=171106"></script>
+        <script type="text/javascript" src="https://static-common.heytapdownload.com/otrack/otrack-mininal-latest.min.js"></script>
+        <script type="text/javascript">
+            if(/oppomobile/i.test(location.host)){
+                $('#vTag').text('-5')
+            }else if(/heytapmobi/i.test(location.host)){
+                $('#vTag').text('-32')
+            }
+            var actId=3620;
+            var obus = new OTrack({
+                app_id: '113001',
+                app_key: '1360',
+                region: 'cn',
+                env: 'prod',
+                is_single_page_app: false
+            });
+            var channelName = getQueryString('channelName');
+            var obusHead = {'activity_id': actId};
+            if(channelName){
+                obusHead.activity_channel=channelName;
+            }
+            obus.setCustomHead(obusHead);
+            obus.track({
+                eventId: 'expose_activity',
+                eventGroup: 'exposure',
+                properties: {
+                    client_timestamp: Date.now()
+                }
+            });
+            function downloadReport(app) {
+                var pkg;
+                var ids={'1':'oppoMarket','2':'market','3':'gameCenter'};
+                if(app==1){
+                    pkg='com.oppo.market'
+                }else if(app==2){
+                    pkg='com.heytap.market'
+                }else{
+                    app=3;
+                    pkg='com.nearme.gamecenter'
+                }
+                webReport({
+                    type: 3,
+                    actid: actId,
+                    data: pkg
+                });
+                obus.track({
+                    eventId: 'trigger_download',
+                    eventGroup: 'app_behavior',
+                    properties: {
+                        client_timestamp: Date.now(),
+                        element_id: ids[app],
+                        element_type: 'component',
+                        app_id: app,
+                        ext_data: JSON.stringify({pkgName: pkg})
+                    }
+                });
+            }
+
+            function getQueryString(name) {
+                var paramsStr = window.location?.search || '';
+                paramsStr = paramsStr.replace(/\?/g, '&'); //若有过多?号造成异常，则替换
+                if (paramsStr) {
+                    var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+                    var r = paramsStr.match(reg);
+                    if (r != null) return decodeURI(r[2]);
+                    return null;
+                }
+                return null;
+            }
+
+            (function(win) {
+                var oppoMarket = "com.oppo.market";
+                var market = "com.heytap.market";
+                var gameCenter = "com.nearme.gamecenter";
+                var pkgs = [oppoMarket, market, gameCenter];
+                $.ajax({
+                    type: "POST",
+                    url: "https://www.heytapmobi.com/cdoweb/download/url",
+                    contentType: "application/json;charset=UTF-8",
+                    data: JSON.stringify(pkgs),
+                    success: function(data) {
+                        data.forEach(function(app) {
+                            switch (app.pkg) {
+                                case oppoMarket:
+                                    $('#oppoMarket').attr('href', app.link);
+                                    break;
+                                case market:
+                                    $('#market').attr('href', app.link);
+                                    break;
+                                case gameCenter:
+                                    $('#gameCenter').attr('href', app.link)
+                                    break;
+                            }
+                        });
+                    },
+                });
+            })(window);
+        </script>
+    </body>
+</html>

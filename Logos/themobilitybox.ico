@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mobilitybox </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5DQGZZJ');</script>
+  <!-- End Google Tag Manager -->
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="EfsqguZRpf4GlTVomGcFEzf+Kn9pPb69d78T5GHXWwgN41jajXRUbywYenSA9ZSP0cRngZsvZOkhy2u1dcnFdQ==" />
+
+
+<link rel="stylesheet" media="all" href="/assets/application-aad52419cd8ab97b23d897d2a6a5607e5209823ec932de647182ba00e5f0caad.css" data-turbolinks-track="reload" />
+<script src="/packs/js/api_key_manager-c26a544bc968e444d55c.js"></script>
+<script src="/packs/js/api_documentation-eb4a512605f8dbd64c0f.js"></script>
+<script src="/packs/js/application-db96c9b744489498c22a.js" data-turbolinks-track="reload"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript">
+  window.access_token = "";
+  window.heimdall_server_url = "https://account.themobilitybox.com/";
+  window.environment_mode = "";
+</script>
+
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DQGZZJ"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 navbar-expand-lg shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="https://themobilitybox.com">The Mobilitybox</a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <ul class="navbar-nav px-3 ml-auto">
+          <li class="nav-item text-nowrap">
+              <form class="form-inline">
+                <a class="nav-link" href="/signin">Login</a>
+              </form>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+  <div class="sidebar-sticky pt-3">
+
+
+    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+      <span>GENERAL</span>
+    </h6>
+    <ul class="nav flex-column mb-2">
+      <li class="nav-item">
+      <a class="nav-link active" href="/dashboard">Welcome</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/dashboard/release_plan">Release Plan</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="/dashboard/authentication">Authentication</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="/dashboard/sessions">Sessions</a>
+      </li>
+    </ul>
+
+    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+      <span>PUBLIC TRANSIT TICKETING</span>
+    </h6>
+    <ul class="nav flex-column mb-2">
+      <li class="nav-item">
+        <a class="nav-link " href="/ticket_sell_components/documentation/components">Overview</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/ticketing/documentation/quickstart">Ticketing API</a>
+        <ul class="nav flex-column mb-2 ml-3">
+          <li class="nav-item">
+            <a class="nav-link " href="/ticketing/documentation/api">API Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/ticketing/documentation/tutorial">Tutorial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/ticketing/documentation/invoicing">Invoicing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/ticketing/documentation/subscriptions">Subscriptions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/ticketing/documentation/restore">Restore Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/ticketing/documentation/tariff_settings">Manage Tariff Settings</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/ticket_sell_components/documentation/general_idea">App Integration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ticket_sell_components/documentation/components">Ticketing Components</a>
+        <ul class="nav flex-column mb-2 ml-3">
+          <li class="nav-item">
+            <a class="nav-link " href="/ticket_sell_components/documentation/fastlink">Fastlink</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/ticket_sell_components/documentation/mobilitywallet">Mobility Wallet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/ticket_sell_components/documentation/webhook_fastlink">Webhook (Fastlink)</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+      <span>PUBLIC TRANSIT DATA</span>
+    </h6>
+    <ul class="nav flex-column mb-2">
+      <li class="nav-item">
+        <a class="nav-link " href="/transit/documentation/quickstart">Quickstart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/transit/documentation/api">API Documentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/examples">Examples</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+          <div class="main-container col-md-9 ml-sm-auto col-lg-10">
+            <main role="main" class="main_content px-md-4">
+              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2">Welcome</h1>
+</div>
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+  <img src="https://www.vesputi.com/wp-content/uploads/2021/10/mobilitybox.png" width="400" alt="" class="pr-2">
+  <div>
+    <p>
+      The Mobilitybox API is a one-stop solution for accessing public transit data and booking tickets in Germany.
+    </p>
+    <p>
+      With our API, you can easily retrieve information about schedules, and fares for public transportation services in Germany, such as trains, buses, and subways.
+      Additionally, you can use our API to book tickets for these services and display them in your own app.
+      This documentation will provide you with all the information you need to get started using our API, including details about authentication, available endpoints, and common use cases.
+      We hope that the Mobilitybox API will make it easier for you to integrate public transit information and ticketing into your applications and make it more convenient for your users to access this data.
+      Thank you for choosing the Mobilitybox API!
+    </p>
+    <p>
+      You've found a bug or have any further suggestions? Just write us an <a href="/cdn-cgi/l/email-protection#95f8f4fcf9d5e3f0e6e5e0e1fcbbf6faf8">email to <span class="__cf_email__" data-cfemail="533e323a3f132536202326273a7d303c3e">[email&#160;protected]</span></a>. We love to hear from you!
+    </p>
+  </div>
+</div>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h3 class="h3">Authentication</h3>
+</div>
+<div>
+  How to authenticate with our apis.
+  <ul>
+    <li><a href="/dashboard/authentication"><span class="translation_missing" title="translation missing: en.authentication">Authentication</span></a></li>
+    <li><a href="/dashboard/sessions"><span class="translation_missing" title="translation missing: en.sessions">Sessions</span></a></li>
+  </ul>
+</div>
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h3 class="h3">Ticketing Components</h3>
+</div>
+<div>
+  With our Ticketing Components everyone can sell public transit tickets with little effort.
+  <ul>
+    <li><a href="/ticket_sell_components/documentation/components"><span class="translation_missing" title="translation missing: en.components">Components</span></a></li>
+    <li><a href="/ticket_sell_components/documentation/fastlink"><span class="translation_missing" title="translation missing: en.fastlink">Fastlink</span></a></li>
+    <li><a href="/ticket_sell_components/documentation/mobilitywallet"><span class="translation_missing" title="translation missing: en.mobilitywallet">Mobilitywallet</span></a></li>
+    <li><a href="/ticket_sell_components/documentation/webhook_fastlink"><span class="translation_missing" title="translation missing: en.webhook_fastlink">Webhook Fastlink</span></a></li>
+  </ul>
+</div>
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h3 class="h3">Ticketing API</h3>
+</div>
+<div>
+  With Ticketing API you can provide public transit tickets for your users.
+  <ul>
+    <li><a href="/ticketing/documentation/quickstart"><span class="translation_missing" title="translation missing: en.quickstart">Quickstart</span></a></li>
+    <li><a href="/ticketing/documentation/api"><span class="translation_missing" title="translation missing: en.api_documentation">Api Documentation</span></a></li>
+    <li><a href="/ticketing/documentation/tutorial"><span class="translation_missing" title="translation missing: en.tutorial">Tutorial</span></a></li>
+    <li><a href="/ticket_sell_components/documentation/general_idea"><span class="translation_missing" title="translation missing: en.sdk">Sdk</span></a></li>
+  </ul>
+</div>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h3 class="h3">Transit API</h3>
+</div>
+<div>
+  With Transit API you can access data of public transport in Germany.
+  <ul>
+    <li><a href="/transit/documentation/quickstart"><span class="translation_missing" title="translation missing: en.quickstart">Quickstart</span></a></li>
+    <li><a href="/transit/documentation/api"><span class="translation_missing" title="translation missing: en.api_documentation">Api Documentation</span></a></li>
+    <li><a href="/examples"><span class="translation_missing" title="translation missing: en.examples">Examples</span></a></li>
+  </ul>
+</div>
+
+              <footer>
+                <div class="content">
+                  <p>
+                    Mobilitybox is a service run by <a href="https://www.vesputi.com">Vesputi GmbH</a> | <a href="https://themobilitybox.com/privacypolicy/">Privacy Policy</a>
+                  </p>
+                </div>
+              </footer>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

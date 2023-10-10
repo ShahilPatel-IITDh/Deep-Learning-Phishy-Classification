@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOLL emsCharts Login</title>
+    <script src="/account/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+    <style type="text/css">
+        body {
+            background-color: #efefef;
+            color: #363636;
+            font-family: "Segoe UI", Calibri, sans-serif;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        main {
+            padding-top: 20px;
+        }
+    </style>
+    <link rel="SHORTCUT ICON" href="https://static.zollonline.com/v2/images/favicon.ico?v=11.11.0.43" />
+
+
+    <link href="https://static.zollonline.com/v2/css/bootstrap.min.css?v=11.11.0.43" rel="Stylesheet" type="text/css" />
+    <link href="https://static.zollonline.com/v2/css/bootstrap-theme.min.css?v=11.11.0.43" rel="Stylesheet" type="text/css" />
+    <link href="https://static.zollonline.com/v2/css/admin/admin_styles.min.css?v=11.11.0.43" rel="Stylesheet" type="text/css" />
+    <link href="/account/Content/stylesheets/document.css" rel="Stylesheet" type="text/css" />
+    <link href="/account/Content/stylesheets/login.css" rel="Stylesheet" type="text/css" />
+    <link href="https://static.zollonline.com/fontawesome/css/all.min.css?v=11.11.0.43" rel="Stylesheet" type="text/css" />
+    <link href="https://static.zollonline.com/v2/layouts/css/layouts.min.css?v=11.11.0.43" rel="Stylesheet" type="text/css" />
+    <link href="https://static.zollonline.com/v2/zo-bs/css/zo-bs.min.css?v=11.11.0.43" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container body-content">
+        
+
+
+
+
+
+<!--
+<link href="/Content/stylesheets/okta-sign-in.min.css" type="text/css" rel="stylesheet">-->
+<link href="https://global.oktacdn.com/okta-signin-widget/5.1.5/css/okta-sign-in.min.css" type="text/css" rel="stylesheet">
+<script src="https://global.oktacdn.com/okta-signin-widget/5.1.5/js/okta-sign-in.js" type="text/javascript"></script>
+<div>
+    <main id="content">
+        <div class="container">
+            <style type="text/css">
+                #loginContainer > #okta-sign-in {
+                    font-family: "Segoe UI", Calibri, sans-serif;
+                    margin-top: 0;
+                }
+
+                #loginContainer > #okta-sign-in input,
+                #loginContainer > #okta-sign-in button {
+                    font-family: "Segoe UI", Calibri, sans-serif;
+                }
+
+                #loginContainer > #okta-sign-in .auth-content {
+                    padding-bottom: 30px;
+                    padding-top: 0px;
+                }
+
+                #loginContainer > #okta-sign-in .auth-header {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+
+                #loginContainer #okta-sign-in .okta-sign-in-header {
+                    border-bottom: none;
+                }
+
+                #loginContainer > #okta-sign-in .auth-org-logo {
+                    max-height: none;
+                    max-width: none;
+                }
+
+                #loginContainer > #okta-sign-in .primary-auth-form .custom-checkbox {
+                    margin-top: -20px;
+                    position:relative;
+                }
+
+                main {
+                    padding-top: 20px;
+                }
+
+                .sign-up,
+                p.ca-data-transfer-notice {
+                    margin: 2em auto;
+                    width: 400px;
+                }
+
+                .sign-up {
+                    text-align: center;
+                }
+            </style>
+
+            <div id="loginContainer">
+                <main data-se="auth-container" tabindex="-1" id="okta-sign-in" class="auth-container main-container no-beacon">
+                    <div class="okta-sign-in-header auth-header">
+                        <img src="/account/Content/images/zoll-emsCHARTS-restricted.png" width="300" class="auth-org-logo" alt=" logo" aria-label=" logo">
+                        <div data-type="beacon-container" class="beacon-container"></div>
+                    </div>
+                    <div class="auth-content">
+                        <div class="auth-content-inner">
+                            <div class="primary-auth">
+                                <form novalidate="novalidate" method="POST" action="/Account" data-se="o-form" slot="content"
+                                      id="form1" class="primary-auth-form o-form o-form-edit-mode">
+                                    <input type="hidden" id="browserName" name="browserName" value="" />
+                                    <input type="hidden" id="browserVersion" name="browserVersion" value=""/>
+                                    <input name="__RequestVerificationToken" type="hidden" value="QSvAbwGbgREDMZe5VS76SKE7WKSxT-jENUmUtZ91f-wfanJhZPjasLCSPS4IrCUvatbfY1myoRfk0GIKxXzP_Ce-ZRU1" />
+                                    <div data-se="o-form-content" class="o-form-content o-form-theme clearfix">
+                                        <h2 data-se="o-form-head" class="okta-form-title o-form-head">Sign In</h2>
+
+
+                                        <div class="o-form-fieldset-container" data-se="o-form-fieldset-container">
+                                            <div data-se="o-form-fieldset" class="o-form-fieldset o-form-label-top margin-btm-5">
+                                                <div data-se="o-form-label" class="okta-form-label o-form-label">
+                                                    <label for="okta-signin-username">Username&nbsp;</label>
+                                                </div>
+                                                <div data-se="o-form-input-container" class="o-form-input">
+                                                    <span data-se="o-form-input-username"
+                                                          class="o-form-input-name-username o-form-control okta-form-input-field input-fix">
+                                                        <input type="text" placeholder="" name="username" id="okta-signin-username" autofocus
+                                                               value="" aria-label="" autocomplete="off" required=""
+                                                               style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAYdJREFUOBGVVLuKwkAUPTErioVgY5WF2AhpFKz8AC0W0vgTK9injvkMt7HyB6zWSuy1s1WRXUJQ0cJCxSLOnSSzcYmaDGTmPs45M3fuEMmyrA/XdXvse0eMIUnSD4N9drvdb4KnkpCJ4G/0RTYNEoi1swf35jAnFU68snO5HMrl8h0skYCqqmg0GtEC2WxWJDKZDNhlCT+cE0HfeKNV13XUajUMBgPs93t0Oh3Yto1+v3+X+08mP1EJUQKSaZouJeiY5/OZY6iEy+UShRcxVuIvc9riBAGZEK/IhGGtVNjS43dAgWej2WyiUqlAlmWs12sMh0OcTicuIk7wTOBwOGA+n2O5XELTNJRKJQFP+W9bBKKM6XSK4/GIfD4Px3G4UIAjgXYckXq9DkVRsN1ukU6nAz7+XosIeUbQHfKIcL1eUa1W0Wq1MB6PMZlMODDWJRqGgd1uh0KhwEmbzYavND0UoD77rcJoNEKxWOS1LxYLrFYrLkCYhwIMQXdDPxplNptxQngiMmFuABiQmENn7wkAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div data-se="o-form-fieldset" class="o-form-fieldset o-form-label-top margin-btm-30">
+                                            </div>
+                                            <div data-se="o-form-fieldset" class="o-form-fieldset o-form-label-top margin-btm-0">
+                                                <div data-se="o-form-input-container" class="o-form-input">
+                                                    <span data-se="o-form-input-remember" class="o-form-input-name-remember">
+                                                        <span class="custom-checkbox">
+                                                            <input type="checkbox" name="RememberMe" id="rememberMeBox"><label for="rememberMeBox" data-se-for-name="remember">
+                                                                Remember me
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="o-form-button-bar">
+                                        <input class="button button-primary" type="submit" value="Verify Username" id="okta-signin-submit" data-type="save">
+                                    </div>
+                                </form>
+                                <div class="auth-footer">
+                                    <a href="https://getemscharts.com/emscharts-login-help/" target="_blank">Need help signing in?</a>
+                                    <!--
+                                    <ul class="help-links js-help-links" id="help-links-container" style="display: none;">
+                                        <li>
+                                            <a href="#" data-se="forgot-password" class="link js-forgot-password">
+                                                Forgot
+                                                password?
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://zollonline.oktapreview.com/help/login" data-se="help-link"
+                                               class="link js-help-link" rel="noopener noreferrer" target="_blank">Help</a>
+                                        </li>
+                                    </ul>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </main>
+</div>
+        <footer class="zo-footer" id="zo-footer">
+            <nav>
+                <li>&copy; 2023 Data Systems</li>
+                <li><a href="https://www.zollonline.com/policies/termsofuse">Terms of Use</a></li>
+                <li><a href="https://www.zollonline.com/policies/privacypolicy">Privacy Policy</a></li>
+                <li><a href="https://www.zolldata.com/customer-community">Support Resources</a></li>
+            </nav>
+        </footer>
+    </div>
+    <script src="/account/bundles/jquery?v=8Oos0avDZyPg-cbyVzvkIfERIE1DGSe3sRQdCSYrgEQ1"></script>
+
+    <script src="/account/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+    
+
+    <script type="text/javascript" src="/account/Scripts/emsChartsBrowserTools.js" ></script>
+    <script type="text/javascript">
+        GetBrowserDetails();
+        GetTLSVersion();
+    </script>
+</body>
+</html>
