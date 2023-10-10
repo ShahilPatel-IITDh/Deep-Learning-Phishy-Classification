@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charSet="utf-8" />
+    <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <script type="text/javascript">
+      window.__staticBaseURI = '';
+      window.__staticURL = filename => `${window.__staticBaseURI}/${filename}`;
+    </script>
+
+    <script type="text/javascript">window.__staticBaseURI="https://prod.bwa.mweb.bethesda.net";</script>
+
+    <script id="cdn-data" type="application/json">{"country":"US","languageCode":"en"}</script>
+
+    
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" crossorigin="anonymous" href="https://api.locize.app">
+    <link rel="preconnect" crossorigin="anonymous" href="https://cdn.contentful.com">
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        personalization_storage: 'denied',
+        functionality_storage: 'denied',
+        ad_storage: 'denied',
+        wait_for_update: 500
+      });
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1MFRZTRV7D"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('js', new Date());
+      gtag('config', 'G-1MFRZTRV7D');
+    </script>
+
+    <script>
+      var otCount = 0;
+
+      // OneTrust will execute this function any time the consent preferences change, including on page load.
+      window.OptanonWrapper = function OptanonWrapper() {
+        if (window.dataLayer) {
+          // https://developer.onetrust.com/onetrust/docs/using-google-consent-mode#implementing-with-onetrust-cookie-compliance---gtm
+          if (window.OnetrustActiveGroups) {
+            // These are basically the consent categories that the user can toggle in the preferences panel.
+
+            // C0001 === essential
+            // C0002 === Analytics and Performance Cookies
+            // C0003 === Functional Cookies
+            // C0004 === Targeting Cookies (ads)
+            // C0005 === Social Media Cookies
+
+            // Categories can be viewed/set in the web console: https://app.onetrust.com/cookies/categorizations?tab=Categories
+            // gtag categories can be viewed here: https://support.google.com/tagmanager/answer/10718549?hl=en
+            gtag('consent', 'update', {
+              'analytics_storage': OnetrustActiveGroups.includes('C0002') ? 'granted' : 'denied',
+              'personalization_storage': OnetrustActiveGroups.includes('C0003') ? 'granted' : 'denied',
+              'functionality_storage': OnetrustActiveGroups.includes('C0003') ? 'granted' : 'denied',
+              'ad_storage': OnetrustActiveGroups.includes('C0004') ? 'granted' : 'denied',
+            });
+          }
+
+          window.dataLayer.push(
+            { event: 'otReady', otCount: ++otCount },
+            { event: 'OneTrustGroupsUpdated' }
+          );
+        }
+      };
+    </script>
+    <script type="module" crossorigin src="https://prod.bwa.mweb.bethesda.net/_static-bwa/index-4d023fcb.js"></script>
+    <link rel="modulepreload" crossorigin href="https://prod.bwa.mweb.bethesda.net/_static-bwa/_commonjsHelpers-87174ba5.js">
+    <link rel="modulepreload" crossorigin href="https://prod.bwa.mweb.bethesda.net/_static-bwa/Countdown-2edf1129.js">
+    <link rel="modulepreload" crossorigin href="https://prod.bwa.mweb.bethesda.net/_static-bwa/pushError-4b3fbca7.js">
+    <link rel="modulepreload" crossorigin href="https://prod.bwa.mweb.bethesda.net/_static-bwa/actions-7938e554.js">
+    <link rel="modulepreload" crossorigin href="https://prod.bwa.mweb.bethesda.net/_static-bwa/contentfulQueryBuilding-f22c2d06.js">
+    <link rel="modulepreload" crossorigin href="https://prod.bwa.mweb.bethesda.net/_static-bwa/routeDispatch-5ed97455.js">
+    <link rel="modulepreload" crossorigin href="https://prod.bwa.mweb.bethesda.net/_static-bwa/redirectIfNoAuth-27faab48.js">
+    <link rel="modulepreload" crossorigin href="https://prod.bwa.mweb.bethesda.net/_static-bwa/pushToDataLayer-db902c5c.js">
+    <link rel="modulepreload" crossorigin href="https://prod.bwa.mweb.bethesda.net/_static-bwa/imageApi-2eea797b.js">
+    <link rel="modulepreload" crossorigin href="https://prod.bwa.mweb.bethesda.net/_static-bwa/redirect-df1178bd.js">
+    <link rel="modulepreload" crossorigin href="https://prod.bwa.mweb.bethesda.net/_static-bwa/updateNavOptions-ba11f1cb.js">
+    <link rel="stylesheet" href="https://prod.bwa.mweb.bethesda.net/_static-bwa/index-e7c4cb0f.css">
+  </head>
+  <body style="margin: 0px; width: 100%; height: 100%;">
+    <div id="root"></div>
+    
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Single Digits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #030303;
+      background-image: url("background.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: #fff;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      /*padding-bottom: 1em;*/
+    }
+    a {
+      color: #ff4e00;
+    }
+    a.button {
+      background-color: #ff4e00;
+      border-radius: 25px;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    div.content {
+      min-height: 100%;
+      position: relative;
+    }
+    div.footer {
+      bottom: 0;
+      height: 2em;
+      font-size: 10px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 1023px) {
+      div.content {
+        margin: 25px;
+      }
+      img.logo {
+        height: 30px;
+        margin: 125px 0 75px 0;
+        width: 268px;
+      }
+      div.text {
+        margin-bottom: 50px;
+      }
+    }
+
+    @media only screen and (min-width: 1024px) {
+      div.content {
+        margin: 50px auto;
+        width: 750px;
+      }
+      img.logo {
+        height: 45px;
+        margin-bottom: 50px;
+        width: 402px;
+      }
+      div.text {
+        margin-bottom: 50px;
+        width: 300px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <img class="logo" src="single-digits-logo.png" width="537" height="60" alt="Single Digits">
+
+    <div class="text">
+      This URL is the property of Single Digits, Inc.
+    </div>
+
+    <a class="button" href="https://www.singledigits.com">Learn More</a>
+  </div>
+  <div class="footer">&copy; 2019 Single Digits. All rights reserved. <a href="https://www.singledigits.com/privacy">Privacy Policy</a></div>
+</body>
+</html>

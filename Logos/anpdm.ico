@@ -1,0 +1,206 @@
+
+<html>
+<head>
+    <title>APSIS Pro</title>
+
+
+        <link href="/static/css/Login/Login.css?638321005550576717" rel="stylesheet" type="text/css" />
+
+    <link href="/static/css/common/font-awesome.min.css?638321005550576717" rel="stylesheet" type="text/css"/>
+
+    <script src="/static/js/require-1.0.4.js?638321005550576717" type="text/javascript"></script>
+    <script src="/static/js/jquery-1.6.4.min.js?638321005550576717" type="text/javascript"></script>
+    
+                    <link href="/assetsbuild/lib/google-fonts/css/googlefonts_familyNoto_Sans_Titillium_Web.css" rel="stylesheet" type="text/css" />
+                    <link href="//fonts.googleapis.com/css?family=Noto+Sans|Titillium+Web?638321005550576717" rel="stylesheet" type="text/css" />
+                    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800?638321005550576717" rel="stylesheet" type="text/css" />
+                    <link href="/static/css/eme2017.css?638321005550576717" rel="stylesheet" type="text/css" />
+
+
+                <script src="/static/js/jquery-plugins/jquery-ui-1.8.16.min.js?638321005550576717" type="text/javascript"></script>
+
+
+    <style type="text/css">
+        #content {
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+        }
+    </style>
+    <script type="text/javascript">
+        require({
+        baseUrl: 'https://www.anpdm.com/static/js/build/'
+        ,urlArgs: 'bust=638321005550576717'
+        }
+,
+                        [
+                            'common/csharp-to-js-glue',
+                            'login/login',
+                            'login/maintenance-message'
+                        ],
+                        function(glue, login, maintenanceMessage) {
+                            glue.initOrUpdate('loginConfig', {
+                                fetchMaintenanceMessageBoxUrl: '/public/MaintenanceMessage.anp/Fetch'
+                            });
+
+                            $(document).ready(function() {
+                                login.init();
+                                maintenanceMessage.init();
+                            });
+                        });
+    </script>
+
+
+    <script nonce="b3c016ed35bf4100a245d14da8a8ee65" type="text/javascript">
+        $(document).ready(function () {
+            $("form").submit(function (e) {
+                $('<input />').attr('type', 'hidden')
+                    .attr('name', "__RequestVerificationToken")
+                    .attr('value', $('#__AjaxAntiForgeryForm input[name=__RequestVerificationToken]').val())
+                    .appendTo('form');
+            });
+
+            $(document)
+                .ajaxSend(function (event, jqxhr, settings) {
+                    if (settings.type.toUpperCase() != "POST") return;
+                    jqxhr.setRequestHeader('__RequestVerificationToken', $('#__AjaxAntiForgeryForm input[name=__RequestVerificationToken]').val())
+                })
+        });
+    </script>
+</head>
+<body>
+    <div id="content">
+        <div id="centerbox">
+            <div id="loginbox">
+                <div id="header">
+                    <img src="https://www.anpdm.com/static/img/login/apsis-logo-black.png" alt="Apsis" width="155" id="login-header"/>
+                </div>
+                <div id="innercontent">
+                    
+
+<h1 class="main-header almost-black single-header">Good morning</h1>
+<form method="post" action="https://www.anpdm.com/public/usersession.anp/new">
+    <div class="loginFormContainer">
+        <div class="validation">
+            
+        </div>
+        <i class="fa fa-user" id="userNameIcon"></i>
+        <input autocomplete="off" class="loginInput" data-formname="login" data-val="true" data-val-required="The UserName field is required." id="UserName" name="UserName" placeholder="Enter your email" type="text" value="" />
+        <i class="fa fa-unlock-alt" id="passwordIcon"></i>
+        <input data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="Password" type="password" value="" />
+        <input id="ReturnUrl" name="ReturnUrl" type="hidden" value="/favicon.ico" />
+        <input id="NewLoginGuidesHref" name="NewLoginGuidesHref" type="hidden" value="http://customers.anpdm.com/apsis/newlogin/index.html" />
+    </div>
+    <button id="loginButton"><i class="fa fa-sign-in"></i></button>
+</form>
+<div id="loginboxlink" style="margin-left: 70px;"><a href="/public/password.anp/forgotten" id="forgotpassword" style="style=&#39;margin-bottom:15px&#39;">Forgot password?</a></div>
+<!-- Tracking code for anpdm.com-->
+<script type="text/javascript">
+    var psSite = "cbd0af3afe";var peJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cscript src='" + peJsHost + "tr.prospecteye.com/track.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<noscript><img src="http://tr.prospecteye.com/?id=cbd0af3afe" style="border:0;display:none;"></noscript>
+<!-- End Tracking code -->
+                </div>
+            </div>
+            
+    <div id="infobox" style="display:none;"></div>
+
+        </div>
+        
+    <div id="support" tabindex="-1">
+        <span class="icon"><i class="fa fa-phone"></i></span>
+        <div id="support-info">
+            <h1 class="support-headline almost-black">Contact APSIS support</h1>
+
+            
+    <h4 class="support-headline almost-black">International</h4>
+    <ul class="support-list almost-black">
+        <li><a href="mailto:support@efficy.com" class="mail-link almost-black">support@efficy.com</a></li>
+        <li>+46 (0)40-24 97 75</li>
+    </ul>
+    <h4 class="support-headline almost-black">Sweden</h4>
+    <ul class="support-list almost-black">
+        <li><a href="mailto:support@efficy.com" class="mail-link almost-black">support@efficy.com</a></li>
+        <li>+46 (0)40-24 97 75</li>
+    </ul>
+    <h4 class="support-headline almost-black">Denmark</h4>
+    <ul class="support-list almost-black">
+        <li><a href="mailto:support@efficy.com" class="mail-link almost-black">support@efficy.com</a></li>
+        <li>+45 70 22 71 75</li>
+    </ul>
+    <h4 class="support-headline almost-black">Norway</h4>
+    <ul class="support-list almost-black">
+        <li><a href="mailto:support@efficy.com" class="mail-link almost-black">support@efficy.com</a></li>
+        <li>+47 23 89 64 54</li>
+    </ul>
+    <h4 class="support-headline almost-black">Finland</h4>
+    <ul class="support-list almost-black">
+        <li><a href="mailto:support@efficy.com" class="mail-link almost-black">support@efficy.com</a></li>
+        <li>+358 (0) 942 454 400</li>
+    </ul>
+    <h4 class="support-headline almost-black">EU Opening Hours:</h4>
+    <ul class="support-list almost-black">
+        <li><span class="almost-black">Monday - Thursday</span> 08:00 - 17:00, CET</li>
+        <li><span class="almost-black">Friday</span> 08:00 - 16:00, CET</li>
+    </ul>
+    <hr />
+    <h4 class="support-headline almost-black">Hong Kong</h4>
+    <ul class="support-list almost-black">
+        <li><a href="mailto:supportasia@efficy.com" class="mail-link almost-black">supportasia@efficy.com</a></li>
+        <li>+852 5804 3550</li>
+    </ul>
+    <h4 class="support-headline almost-black">Opening Hours:</h4>
+    <ul class="support-list almost-black">
+        <li><span class="almost-black">Monday - Friday</span> 09:00 - 18:00, HKT</li>
+    </ul>
+
+<ul class="almost-black support-list-bottom">
+    <li>
+        <h1 class="support-headline almost-black">More about us</h1>
+    </li>
+
+
+    <li>
+
+        <a rel="noopener" target="_blank" href="http://www.apsis.com" title="Apsis webpage about newsletters &amp; e-mail marketing" class="website-link almost-black">APSIS International</a>
+    </li>
+    <li>
+
+        <a rel="noopener" target="_blank" href="http://www.apsis.se" title="Apsis webbplats om nyhetsbrev &amp; e-postmarknadsf&ouml;ring" class="website-link almost-black">APSIS Sweden</a>
+    </li>
+    <li>
+
+        <a rel="noopener" target="_blank" href="http://www.apsis.dk" title="Apsis hjemmeside om nyhedsbrev &amp; e-mail markedsf&oslash;ring" class="website-link almost-black">APSIS Denmark</a>
+    </li>
+    <li>
+
+        <a rel="noopener" target="_blank" href="http://www.apsis.no" title="Apsis nettsted om nyhetsbrev &amp; e-postmarkedsf&oslash;ring" class="website-link almost-black">APSIS Norway</a>
+    </li>
+    <li>
+
+        <a rel="noopener" target="_blank" href="http://www.apsisfinland.fi" title="Apsiksen uutiskirje- ja s&auml;hk&ouml;postimarkkinointikotisivu" class="website-link almost-black">APSIS Finland</a>
+    </li>
+
+        <li>
+            <a rel="noopener" target="_blank" href="http://www.apsis.com.hk" title="Apsis webpage about newsletters &amp; e-mail marketing" class="website-link almost-black">APSIS Hong Kong</a>
+        </li>
+</ul>
+
+            
+        </div>
+    </div>
+    <div id="compatibility" class="almost-black" style="display: none;">
+        <i class="fa fa-times-circle almost-black"></i>&nbsp;&nbsp;&nbsp;We're sorry, APSIS Pro isn't fully supported for your browser. We recommend you to upgrade to a newer version.
+    </div>
+
+
+
+
+
+
+    </div>
+
+    <form id="__AjaxAntiForgeryForm" action="#" method="post"><input name="__RequestVerificationToken" type="hidden" value="EsXY9bN8saGaHlxfDUhJdfH_kE3m0DFROfNk5bJCLf-mMhlJVB9fAXytEdFAULuh9v_CFHVBINh0xDS7MSwDiTwZQsxYo_DUPbiVDxb3qyROcpgZZVrIq9UwtnPJFFWWwfeOjSb6zl_TAzxSrtHeckStdjrQykxyz5zmQRCLsmY1" /></form>
+</body>
+</html>

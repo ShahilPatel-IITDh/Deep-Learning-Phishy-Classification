@@ -1,0 +1,2391 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1385901548",accountID:"3373916",trustKey:"66686",xpid:"VwUAUl9SDhABV1lTAQcHXlAB",licenseKey:"NRJS-9ab73f504b3dcf788d7",applicationID:"1381660840"};;/*! For license information please see nr-loader-spa-1.243.1.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,r={234:(e,t,r)=>{r.d(t,{P_:()=>g,Mt:()=>v,C5:()=>s,DL:()=>w,OP:()=>S,lF:()=>N,Yu:()=>x,Dg:()=>m,CX:()=>c,GE:()=>A,sU:()=>j});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,n.Qy)(e,a[e],"info")}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector=t+",[data-nr-mask]":null===t?e.mask_selector=t:(0,l.Z)("An invalid session_replay.mask_selector was provided and will not be used",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},h={},p="All configuration objects require an agent identifier!";function g(e){if(!e)throw new Error(p);if(!h[e])throw new Error("Configuration for ".concat(e," was never set"));return h[e]}function m(e,t){if(!e)throw new Error(p);h[e]=(0,i.D)(t,f()),(0,n.Qy)(e,h[e],"config")}function v(e,t){if(!e)throw new Error(p);var r=g(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const b={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},y={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!y[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return y[e]}function A(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");y[e]=(0,i.D)(t,b),(0,n.Qy)(e,y[e],"loader_config")}const x=(0,n.mF)().o;var E=r(385),_=r(6818);const T={buildEnv:_.Re,customTransaction:void 0,disabled:!1,distMethod:_.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:_.q4,denyList:void 0},D={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function j(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,T),(0,n.Qy)(e,D[e],"runtime")}function N(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.243.1",i="PROD",o="CDN"},385:(e,t,r)=>{r.d(t,{FN:()=>s,IF:()=>d,Nk:()=>f,Tt:()=>c,_A:()=>o,cv:()=>h,iS:()=>a,il:()=>n,ux:()=>u,v6:()=>i,w1:()=>l});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=""+o?.location,c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),l=Boolean(n&&window.document.documentMode),f=!!o.navigator?.sendBeacon,h=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=[...s[e]];function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((t=>{let[r]=t;s[e].delete(r),a(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,r)=>{r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++r).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(r,++i).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{r.d(t,{Bq:()=>n,Hb:()=>o,oD:()=>i});const n="NRBA",i=144e5,o=18e5},7894:(e,t,r)=>{function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{r.d(t,{e:()=>o});var n=r(385),i={};function o(e){if(e in i)return i[e];if(0===(e||"").indexOf("data:"))return{protocol:"data"};let t;var r=n._A?.location,o={};if(n.il)t=document.createElement("a"),t.href=e;else try{t=new URL(e,r.href)}catch(e){return o}o.port=t.port;var a=t.href.split("://");!o.port&&a[1]&&(o.port=a[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===a[0]?"443":"80"),o.hostname=t.hostname||r.hostname,o.pathname=t.pathname,o.protocol=a[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var s=!t.protocol||":"===t.protocol||t.protocol===r.protocol,c=t.hostname===r.hostname&&t.port===r.port;return o.sameOrigin=s&&(!t.hostname||c),"/"===o.pathname&&(i[e]=o),o}},50:(e,t,r)=>{function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2587:(e,t,r)=>{r.d(t,{N:()=>c,T:()=>u});var n=r(8325),i=r(5546),o=r(3325);const a={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},s=new Set;function c(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(s.has(t)||Object.entries(e).forEach((e=>{let[t,n]=e;a[t]?a[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),u[t]=Boolean(n)})),Object.keys(a).forEach((e=>{void 0===u[e]&&(a[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),u[e]=!1)})),s.add(t))}const u={}},2210:(e,t,r)=>{r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{r.d(t,{K:()=>a,b:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{r.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>d,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[r]:t}},i}function u(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{r.d(t,{em:()=>b,u5:()=>S,QU:()=>C,_L:()=>I,Gm:()=>H,Lg:()=>L,BV:()=>G,Kf:()=>K});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var w="fetch-",A=w+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,T="prototype";const D={};function S(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(D[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return D[t.debugId]=1,x.forEach((e=>{r(E[T],e,A),r(_[T],e,A)})),r(f._A,"fetch",w),t.on(w+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(w+"done",[null,r],n)}else t.emit(w+"done",[e],n)})),t}const j={},N=["pushState","replaceState"];function C(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||j[t.debugId]++||(j[t.debugId]=1,c(t).inPlace(window.history,N,"-")),t}var O=r(3239);const P={},R=["appendChild","insertBefore","replaceChild"];function I(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||P[t.debugId])return t;P[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,R,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,O.m$)(!1)),e.addEventListener("error",f,(0,O.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function H(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const z={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(z[t.debugId])return t;z[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const M={},B="setTimeout",F="setInterval",U="clearTimeout",Z="-start",V="-",q=[B,"setImmediate",F,U,"clearImmediate"];function G(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(M[t.debugId]++)return t;M[t.debugId]=1;var r=c(t);return r.inPlace(f._A,q.slice(0,2),B+V),r.inPlace(f._A,q.slice(2,3),F+V),r.inPlace(f._A,q.slice(3),U+V),t.on(F+Z,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(B+Z,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},Q=["open","send"];function K(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",A)}),(0,O.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",A)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,Q,"-xhr-",A),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(w):u?u(w):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(w).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||w()}));function w(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function A(e,t){return t}return r}},7825:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.sessionReplay},3614:(e,t,r)=>{r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>A,FEATURE_NAME:()=>i,FETCH:()=>T,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>w,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,w="-start",A="-end",x="-body",E="cb"+A,_="jsTime",T="fetch"},5938:(e,t,r)=>{r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);function p(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var g=r(2587);const m=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let v=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:x,runtime:E={loaderType:b},exposed:_=!0}=t;const T=(0,h.gG)();A||(w=T.init,A=T.info,x=T.loader_config),(0,i.Dg)(e,w||{}),(0,i.GE)(e,x||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e,A);const D=(0,i.P_)(e),S=[A.beacon,A.errorBeacon];v||(v=!0,D.proxy.assets&&(m(D.proxy.assets),S.push(D.proxy.assets)),D.proxy.beacon&&S.push(D.proxy.beacon)),E.denyList=[...D.ajax.deny_list||[],...D.ajax.block_internal?S:[]],(0,i.sU)(e,E),p();const j=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),g=p.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),A(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{h[e]=A(m,e,!0,"api")})),h.addPageAction=A(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=A(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,A(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(g.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,e],r),e}finally{g.emit("fn-end",[(0,s.z)()],r)}}}};function A(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b)((()=>x()),!0):x(),h}(e,y);return(0,h.Qy)(e,j,"api"),(0,h.Qy)(e,_,"exposed"),(0,h.EZ)("activatedFeatures",g.T),j}},3325:(e,t,r)=>{r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.243.1.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.243.1.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r),e[r]=[n];var f=(t,n)=>{s.onerror=s.onload=null,clearTimeout(h);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},h=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.243.1.PROD"]=self["webpackChunk:NRBA-1.243.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{var e=i(50);class t{addPageAction(t,r){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,r){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,r,n){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,r){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,r){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,3228));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),o(!1)}};l.il?(0,d.b)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=w(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,m.D)(e,A)}function A(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var T=i(5546),D=i(7956),S=i(3239),j=i(7894),N=i(9251);class C extends f{static featureName=N.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,r),l.il&&((0,D.N)((()=>(0,T.p)("docHidden",[(0,j.z)()],void 0,N.t,this.ee)),!0),(0,S.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,j.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var O=i(3081);class P extends f{static featureName=O.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,O.t9,r),this.importAggregator()}}var R=i(6660);class I{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends f{static featureName=R.t;#e=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#e.has(n)&&(this.#e.add(n),(0,T.p)("err",[this.#t(n),(0,j.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#t(e),(0,j.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#r(e),(0,j.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,S.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#e.has(e.error)?this.#e.delete(e.error):(0,T.p)("err",[this.#n(e),(0,j.z)()],void 0,r.D.jserrors,this.ee))}),(0,S.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#i,this.importAggregator()}#i(){this.removeOnAbort?.abort(),this.#e.clear(),this.abortHandler=void 0}#t(e){return e instanceof Error?e:void 0!==e?.message?new I(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new I("string"==typeof e?e:(0,_.P)(e))}#r(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new I(t);const r=this.#t(e.reason);return r.message=t+r.message,r}#n(e){return e.error instanceof Error?e.error:new I(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let z=1;const L="nr@id";function M(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,H.X)(e,L,(function(){return z++}))}function B(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var F=i(1214),U=i(7243);class Z{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),q=["load","error","abort","timeout"],G=q.length,W=n.Yu.REQ,X=n.Yu.XHR;class Q extends f{static featureName=V.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new Z(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};K(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,F.u5)(this.ee),(0,F.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,S.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,S.m$)(!1))}function s(e){this.params={method:e[0]},K(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=B(i);a&&(n.txSize=a)}this.startTime=(0,j.z)(),this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<G;s++)r.addEventListener(q[s],this.listener,(0,S.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+M(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+M(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,j.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,j.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,j.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function w(e,t){this.params={},this.metrics={},this.startTime=(0,j.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),K(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.txSize=B(n.body)||0}function A(e,t){var n;this.endTime=(0,j.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,j.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<G;o++)e.removeEventListener(q[o],this.listener,!1);t.aborted||(n.duration=(0,j.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?B(e.response):"text"===r||""===r||void 0===r?B(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",w),t.on("fn-start",v),t.on("fetch-done",A)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function K(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var Y=i(3614);const{BST_RESOURCE:J,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=Y;var se=i(7144);class ce extends f{static featureName=se.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,se.t,r),this.importAggregator()}}var ue=i(7836);const{FEATURE_NAME:de,START:le,END:fe,BODY:he,CB_END:pe,JS_TIME:ge,FETCH:me,FN_START:ve,CB_START:be,FN_END:ye}=ue;var we=i(4649);class Ae extends f{static featureName=we.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,we.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){const t="features";try{const n=a(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),i.forEach((t=>{if(n[t.featureName]||t.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>n[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,x.Qy)(this.agentIdentifier,this.features,t)}catch(r){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",r);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,x.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[Q,p,C,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,F.QU)(n),this.eventsEE=(0,F.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,j.z)()})),this.eventsEE.on(ie,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,j.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,j.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(J,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},ce,P,Ae,k,class extends f{static featureName=de;constructor(e,t){if(super(e,t,de,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,F._L)(this.ee),s=(0,F.Lg)(this.ee),c=(0,F.BV)(this.ee),u=(0,F.Kf)(this.ee),d=this.ee.get("events"),f=(0,F.u5)(this.ee),h=(0,F.QU)(this.ee),p=(0,F.Gm)(this.ee);function g(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,r=window.location.hash,this[ve]=(0,j.z)()}function v(){i--,window.location.hash!==r&&g(0,!0);var e=(0,j.z)();this[ge]=~~this[ge]+e-this[ve],this[ye]=e}function b(e,t){e.on(t,(function(){this[t]=(0,j.z)()}))}this.ee.on(ve,m),s.on(be,m),a.on(be,m),this.ee.on(ye,v),s.on(pe,v),a.on(pe,v),this.ee.buffer([ve,ye,"xhr-resolved"],this.featureName),d.buffer([ve],this.featureName),c.buffer(["setTimeout"+fe,"clearTimeout"+le,ve],this.featureName),u.buffer([ve,"new-xhr","send-xhr"+le],this.featureName),f.buffer([me+le,me+"-done",me+he+le,me+he+fe],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([ve],this.featureName),s.buffer(["propagate",be,pe,"executor-err","resolve"+le],this.featureName),o.buffer([ve,"no-"+ve],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(f,me+le),b(f,me+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,S.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,S.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,i>1)}),(0,S.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#i,this.importAggregator()}#i(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+<meta name="description" content="Create fast and easy Windows installations with InstallShield free trial. Adapt to industry changes quickly with MSIX Ready InstallShield." />
+<link rel="canonical" href="https://www.revenera.com/install/products/installshield" />
+<meta property="og:url" content="https://www.revenera.com/install/products/installshield" />
+<meta property="og:title" content="InstallShield Windows Installer Get Your Free Trial Today | Revenera" />
+<meta property="og:description" content="Create fast and easy Windows installations with InstallShield free trial. Adapt to industry changes quickly with MSIX Ready InstallShield." />
+<meta property="og:image" content="https://www.revenera.com/sites/default/files/2022-08/917_IS_OpenGraph_BnrFINL1_01.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@getrevenera" />
+<meta name="twitter:description" content="Create fast and easy Windows installations with InstallShield free trial. Adapt to industry changes quickly with MSIX Ready InstallShield." />
+<meta name="twitter:title" content="InstallShield" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="text/javascript" data-toolbar-anti-flicker-loading>(function() {
+  const toolbarState = sessionStorage.getItem('Drupal.toolbar.toolbarState')
+    ? JSON.parse(sessionStorage.getItem('Drupal.toolbar.toolbarState'))
+    : false;
+  // These are classes that toolbar typically adds to <body>, but this code
+  // executes before the first paint, when <body> is not yet present. The
+  // classes are added to <html> so styling immediately reflects the current
+  // toolbar state. The classes are removed after the toolbar completes
+  // initialization.
+  const classesToAdd = ['toolbar-loading', 'toolbar-anti-flicker'];
+  if (toolbarState) {
+    const {
+      orientation,
+      hasActiveTab,
+      isFixed,
+      activeTray,
+      activeTabId,
+      isOriented,
+      userButtonMinWidth
+    } = toolbarState;
+
+    classesToAdd.push(
+      orientation ? `toolbar-` + orientation + `` : 'toolbar-horizontal',
+    );
+    if (hasActiveTab !== false) {
+      classesToAdd.push('toolbar-tray-open');
+    }
+    if (isFixed) {
+      classesToAdd.push('toolbar-fixed');
+    }
+    if (isOriented) {
+      classesToAdd.push('toolbar-oriented');
+    }
+
+    if (activeTray) {
+      // These styles are added so the active tab/tray styles are present
+      // immediately instead of "flickering" on as the toolbar initializes. In
+      // instances where a tray is lazy loaded, these styles facilitate the
+      // lazy loaded tray appearing gracefully and without reflow.
+      const styleContent = `
+      .toolbar-loading #` + activeTabId + ` {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.25) 20%, transparent 200%);
+      }
+      .toolbar-loading #` + activeTabId + `-tray {
+        display: block; box-shadow: -1px 0 5px 2px rgb(0 0 0 / 33%);
+        border-right: 1px solid #aaa; background-color: #f5f5f5;
+        z-index: 0;
+      }
+      .toolbar-loading.toolbar-vertical.toolbar-tray-open #` + activeTabId + `-tray {
+        width: 15rem; height: 100vh;
+      }
+     .toolbar-loading.toolbar-horizontal :not(#` + activeTray + `) > .toolbar-lining {opacity: 0}`;
+
+      const style = document.createElement('style');
+      style.textContent = styleContent;
+      style.setAttribute('data-toolbar-anti-flicker-loading', true);
+      document.querySelector('head').appendChild(style);
+
+      if (userButtonMinWidth) {
+        const userButtonStyle = document.createElement('style');
+        userButtonStyle.textContent = `#toolbar-item-user {min-width: ` + userButtonMinWidth +`px;}`
+        document.querySelector('head').appendChild(userButtonStyle);
+      }
+    }
+  }
+  document.querySelector('html').classList.add(...classesToAdd);
+})();</script>
+<link rel="alternate" hreflang="en" href="https://www.revenera.com/install/products/installshield" />
+<link rel="alternate" hreflang="de" href="https://www.revenera.de/install/products/installshield" />
+<link rel="icon" href="/themes/custom/revenera/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>InstallShield Windows Installer Get Your Free Trial Today | Revenera</title>
+
+        <!-- Start: Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P9Z3WSV');</script>
+    <!-- End: Google Tag Manager -->
+    
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_IXDGlIQziq6kGXR3JrgJBuFPIhJymdkb3InLVADLuXE.css?delta=0&amp;language=en&amp;theme=revenera&amp;include=eJyFzEEOwjAMRNELRc2RIqcZoggTR7ZT2ttTBCxYIFbzF09jhzluMZMhrKKIRecgXoZKVZiFC2OHUnzvC81eoPbMoNjQn-ATgemQ6am0E2zQI0rHKhyyiJsrjWR-MCwOnrX1JdN6rSrnZzqZ6JJn4_KTDyql9fpHOXb_urPmuLeCRAz12HrzBzv0ZAI" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_IKt3qbxTFpy4Dt7IOB7nll5Gb9YLyur1NWt7qpbk0L4.css?delta=1&amp;language=en&amp;theme=revenera&amp;include=eJyFzEEOwjAMRNELRc2RIqcZoggTR7ZT2ttTBCxYIFbzF09jhzluMZMhrKKIRecgXoZKVZiFC2OHUnzvC81eoPbMoNjQn-ATgemQ6am0E2zQI0rHKhyyiJsrjWR-MCwOnrX1JdN6rSrnZzqZ6JJn4_KTDyql9fpHOXb_urPmuLeCRAz12HrzBzv0ZAI" />
+<link rel="stylesheet" media="all" href="https://use.typekit.net/fqx4jiy.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_tjwdmhA23q3_xp2oQAY3pF3BIFjghNdUcenFx3cNfVI.css?delta=3&amp;language=en&amp;theme=revenera&amp;include=eJyFzEEOwjAMRNELRc2RIqcZoggTR7ZT2ttTBCxYIFbzF09jhzluMZMhrKKIRecgXoZKVZiFC2OHUnzvC81eoPbMoNjQn-ATgemQ6am0E2zQI0rHKhyyiJsrjWR-MCwOnrX1JdN6rSrnZzqZ6JJn4_KTDyql9fpHOXb_urPmuLeCRAz12HrzBzv0ZAI" />
+
+    <script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+
+
+      </head>
+  <body class="english page--node page--node--page page--node--37 revenera" data-current-path="/node/37">
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9Z3WSV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+<div class="layout-container ">
+  <div class="layout-container__header">
+      <header role="banner">
+      <div class="container">
+  <div class="row">
+
+    <div class="mobile-menu__top col-12 d-xl-none d-flex justify-content-between align-items-center">
+      <div class="branding-mobile">
+        <div id="block-revenera-branding">
+  
+    
+        <a href="https://www.revenera.com/" rel="home">
+      <img src="/themes/custom/revenera/logo.svg" alt="Home" />
+    </a>
+      
+</div>
+
+      </div>
+      <button class="btn-burger p-1 button-reset"><svg xmlns="http://www.w3.org/2000/svg" height="18" width="30">
+    <path d="M0 0h30v2H0zm0 8h30v2H0zm0 8h30v2H0z" fill-rule="evenodd"/>
+</svg></button>
+      <button class="btn-close p-1 button-reset"><svg xmlns="http://www.w3.org/2000/svg" height="23" width="23">
+    <path d="M21.27 0l-9.923 9.924L1.421 0 0 1.421l9.926 9.924L.001 21.27l1.421 1.421 9.925-9.925 9.924 9.925 1.421-1.421-9.925-9.925 9.924-9.924z" fill="#231f20" fill-rule="evenodd"/>
+</svg></button>
+    </div>
+    <div class="mobile-menu col-12">
+      <div class="mobile-menu__inner w-100 d-flex flex-column flex-xl-row justify-content-start justify-content-xl-end align-items-start align-items-xl-center">
+
+        <div class="mobile-menu__first-part flex-xl-grow-1 d-block d-xl-flex justify-content-between align-items-xl-center">
+          <div class="site-branding d-none d-xl-flex flex-column justify-content-center py-1">
+            <div id="block-revenera-branding">
+  
+    
+        <a href="https://www.revenera.com/" rel="home">
+      <img src="/themes/custom/revenera/logo.svg" alt="Home" />
+    </a>
+      
+</div>
+
+          </div>
+                    <div class="search search-mobile d-flex d-xl-none flex-column justify-content-center">
+            <div class="search-bar">
+              <div class="searchunify-search-form" data-drupal-selector="searchunify-search-form" id="block-revenera-search-form-header">
+  
+    
+      <form action="" method="get" id="searchunify-search-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-search form-item-searchstring js-form-item-searchstring form-no-label">
+      <label for="edit-searchstring" class="visually-hidden">Search</label>
+        <input title="Enter the terms you wish to search for." placeholder="Search" data-drupal-selector="edit-searchstring" type="search" id="edit-searchstring" name="searchString" value="" size="15" maxlength="128" class="form-search" />
+
+        </div>
+<input autocomplete="off" data-drupal-selector="form-9pjjuqvrayc4podibpsfv0l1amya7bqyxbu3ekkgawa" type="hidden" name="form_build_id" value="form-9pJJuqVRAyc4PODIBpsFV0l1AmyA7bQYxBU3eKkgaWA" />
+<input data-drupal-selector="edit-searchunify-search-form" type="hidden" name="form_id" value="searchunify_search_form" />
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit" />
+</div>
+
+</form>
+
+  </div>
+
+            </div>
+          </div>
+          <div class="main-menu">
+            <nav role="navigation" aria-labelledby="block-revenera-main-menu-menu" id="block-revenera-main-menu">
+            
+  <h2 class="visually-hidden" id="block-revenera-main-menu-menu">Main navigation</h2>
+  
+
+        
+              <ul class="menu-level-0">
+                                                  <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization" data-drupal-link-system-path="node/35">Software Monetization</a>
+        
+                                <ul class="menu-level-1">
+                                                  <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/business-solutions" class="font-weight-bold" icon="icon-monetization-business" data-drupal-link-system-path="node/34">Business Solutions</a>
+        
+                                <ul class="menu-level-2">
+                                                  <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/business-solutions/flexible-monetization-models" data-drupal-link-system-path="node/36">Flexible Monetization Models</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/business-solutions/monetize-iot" data-drupal-link-system-path="node/38">Monetize IoT - From the Edge to the Cloud</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/business-solutions/monetizing-saas-applications" data-drupal-link-system-path="node/2475">Monetizing SaaS Applications</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/business-solutions/iot-manage-and-protect-devices" data-drupal-link-system-path="node/39">Manage and Protect Devices</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/business-solutions/better-products-with-software-usage-analytics" data-drupal-link-system-path="node/40">Build Better Products with Software Usage Analytics</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/business-solutions/turn-software-piracy-into-revenue" data-drupal-link-system-path="node/41">Turn Software Piracy into Revenue</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/industries" target="_self" title="Monetization Solutions by Industry" data-drupal-link-system-path="node/2553">Monetization Solutions by Industry</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+                                                    <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/products" class="font-weight-bold" icon="icon-monetization-products" data-drupal-link-system-path="node/42">Products</a>
+        
+                                <ul class="menu-level-2">
+                                                  <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/products/entitlement-management" class="subchild" data-drupal-link-system-path="node/33">Entitlement Management</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/products/software-licensing" class="subchild" data-drupal-link-system-path="node/45">Software Licensing</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/products/software-delivery-and-updates" class="subchild" data-drupal-link-system-path="node/47">Software Delivery and Updates</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/products/usage-intelligence" class="subchild" data-drupal-link-system-path="node/48">Usage Intelligence</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/products/compliance-intelligence" class="subchild" data-drupal-link-system-path="node/55">Compliance Intelligence</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/products/renewals-and-customer-growth" class="subchild" data-drupal-link-system-path="node/59">Renewals and Customer Growth</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+                                                    <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/services-and-training" class="font-weight-bold" icon="icon-monetization-services" data-drupal-link-system-path="node/60">Services</a>
+        
+                                <ul class="menu-level-2">
+                                                  <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/services-and-training/monetization-advisory-services" data-drupal-link-system-path="node/61">Monetization Advisory Services</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/services-and-training/implementation-services" data-drupal-link-system-path="node/62">Implementation Services</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/services-and-training/training" data-drupal-link-system-path="node/63">Training</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/services-and-training/cloud-transformation" data-drupal-link-system-path="node/64">Cloud Transformation</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/services-and-training/revenue-recovery-services" data-drupal-link-system-path="node/65">Revenue Recovery Services</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+                                                    <li class="sidecar has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?category%5Bsoftware%20monetization%5D=software%20monetization" class="font-weight-bold" icon="icon-ressources" target="_self" title="Monetization Resources" data-drupal-link-query="{&quot;category&quot;:{&quot;software monetization&quot;:&quot;software monetization&quot;}}" data-drupal-link-system-path="node/2398">Resources</a>
+        
+                                <ul class="menu-level-2">
+                                                  <li>
+                  
+        
+        
+                  <a href="https://path.revenera.com/getting-started-software-monetization?PFOVERLAY=TRUE">Getting Started with Software Monetization</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="/blog/software-monetization/" target="_self">Blog</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?type%5Bcase-study%5D=case-study&amp;category%5Bsoftware%20monetization%5D=software%20monetization" target="_self" title="Software Monetization Case Studies" data-drupal-link-query="{&quot;category&quot;:{&quot;software monetization&quot;:&quot;software monetization&quot;},&quot;type&quot;:{&quot;case-study&quot;:&quot;case-study&quot;}}" data-drupal-link-system-path="node/2398">Case Studies</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-monetization/glossary" target="_self" data-drupal-link-system-path="node/2611">Glossary</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?type%5Bwebinar-event%5D=webinar-event&amp;category%5Bsoftware%20monetization%5D=software%20monetization" target="_self" data-drupal-link-query="{&quot;category&quot;:{&quot;software monetization&quot;:&quot;software monetization&quot;},&quot;type&quot;:{&quot;webinar-event&quot;:&quot;webinar-event&quot;}}" data-drupal-link-system-path="node/2398">Webinars &amp; Events</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?type%5Bwhite-paper-industry-report%5D=white-paper-industry-report&amp;category%5Bsoftware%20monetization%5D=software%20monetization" target="_self" data-drupal-link-query="{&quot;category&quot;:{&quot;software monetization&quot;:&quot;software monetization&quot;},&quot;type&quot;:{&quot;white-paper-industry-report&quot;:&quot;white-paper-industry-report&quot;}}" data-drupal-link-system-path="node/2398">White Papers &amp; Reports</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+              </ul>
+  
+              </li>
+                                                    <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-composition-analysis" data-drupal-link-system-path="node/32">Software Composition Analysis</a>
+        
+                                <ul class="menu-level-1">
+                                                  <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-composition-analysis/business-solutions" class="font-weight-bold" icon="icon-software-business" data-drupal-link-system-path="node/43">Business Solutions</a>
+        
+                                <ul class="menu-level-2">
+                                                  <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-composition-analysis/business-solutions/bill-of-materials" data-drupal-link-system-path="node/94">The Software Bill of Materials (SBOM)</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-composition-analysis/business-solutions/shift-left-automate-compliance-checks" data-drupal-link-system-path="node/70">Shift-Left and Automate Compliance Checks</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-composition-analysis/business-solutions/open-source-license-compliance" data-drupal-link-system-path="node/71">Open Source Software License Compliance</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-composition-analysis/business-solutions/open-source-vulnerability-management" data-drupal-link-system-path="node/88">Open Source Vulnerability Management</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+                                                    <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-composition-analysis/products" class="font-weight-bold" icon="icon-software-products" data-drupal-link-system-path="node/109">Products</a>
+        
+                                <ul class="menu-level-2">
+                                                  <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-composition-analysis/products/sbom-insights" data-drupal-link-system-path="node/2563">SBOM Management</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-composition-analysis/products/flexnet-code-insight" class="subchild" data-drupal-link-system-path="node/110">Scan and Analysis</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+                                                    <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <span class="font-weight-bold" icon="icon-software-services">Audits &amp; Services</span>
+        
+                                <ul class="menu-level-2">
+                                                  <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-composition-analysis/audits-and-services/open-source-audits" data-drupal-link-system-path="node/147">Open Source Audits</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/software-composition-analysis/audits-and-services/m-a-support" data-drupal-link-system-path="node/117">M&amp;A Support</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+                                                    <li class="sidecar has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?category%5Bsoftware%20composition%20analysis%5D=software%20composition%20analysis" class="font-weight-bold" icon="icon-ressources" target="_self" title="SCA Resources" data-drupal-link-query="{&quot;category&quot;:{&quot;software composition analysis&quot;:&quot;software composition analysis&quot;}}" data-drupal-link-system-path="node/2398">Resources</a>
+        
+                                <ul class="menu-level-2">
+                                                  <li>
+                  
+        
+        
+                  <a href="https://path.revenera.com/c/everything-your-busi?x=Vuj5OO&amp;PFOVERLAY=TRUE">Getting Started with SBOMs</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="/blog/software-composition-analysis/" target="_self" title="SCA Blog">Blog</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?type%5Bvideo%5D=video&amp;category%5Bsoftware%20composition%20analysis%5D=software%20composition%20analysis" target="_self" title="SCA Podcasts and Videos" data-drupal-link-query="{&quot;category&quot;:{&quot;software composition analysis&quot;:&quot;software composition analysis&quot;},&quot;type&quot;:{&quot;video&quot;:&quot;video&quot;}}" data-drupal-link-system-path="node/2398">Podcasts &amp; Videos</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?type%5Bwebinar-event%5D=webinar-event&amp;category%5Bsoftware%20composition%20analysis%5D=software%20composition%20analysis" target="_self" title="SCA Webinars and Events" data-drupal-link-query="{&quot;category&quot;:{&quot;software composition analysis&quot;:&quot;software composition analysis&quot;},&quot;type&quot;:{&quot;webinar-event&quot;:&quot;webinar-event&quot;}}" data-drupal-link-system-path="node/2398">Webinars &amp; Events</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?type%5Bwhite-paper-industry-report%5D=white-paper-industry-report&amp;category%5Bsoftware%20composition%20analysis%5D=software%20composition%20analysis" target="_self" title="SCA White Papers and Reports" data-drupal-link-query="{&quot;category&quot;:{&quot;software composition analysis&quot;:&quot;software composition analysis&quot;},&quot;type&quot;:{&quot;white-paper-industry-report&quot;:&quot;white-paper-industry-report&quot;}}" data-drupal-link-system-path="node/2398">White Papers &amp; Reports</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+              </ul>
+  
+              </li>
+                                                    <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/install" data-drupal-link-system-path="node/31">Installation</a>
+        
+                                <ul class="menu-level-1">
+                                                  <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/install/products" class="font-weight-bold" icon="icon-installation-products" data-drupal-link-system-path="node/156">Products</a>
+        
+                                <ul class="menu-level-2">
+                                                  <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/install/products/installshield" class="subchild is-active" data-drupal-link-system-path="node/37">InstallShield</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/install/products/installanywhere" class="subchild" data-drupal-link-system-path="node/75">InstallAnywhere</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+                                                    <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/install/services-and-training" class="font-weight-bold" icon="icon-installation-services" data-drupal-link-system-path="node/82">Services</a>
+        
+                                <ul class="menu-level-2">
+                                                  <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/install/services-and-training/installation-training" class="subchild" data-drupal-link-system-path="node/83">InstallShield Training</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/install/services-and-training/installshield-microconsulting" class="subchild" data-drupal-link-system-path="node/87">InstallShield MicroConsulting</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/install/services-and-training/installation-design-and-development" class="subchild" data-drupal-link-system-path="node/89">Design &amp; Development Consulting</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+                                                    <li class="sidecar has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?category%5Binstallation%5D=installation" class="font-weight-bold" icon="icon-ressources" target="_self" title="Installation Resources" data-drupal-link-query="{&quot;category&quot;:{&quot;installation&quot;:&quot;installation&quot;}}" data-drupal-link-system-path="node/2398">Resources</a>
+        
+                                <ul class="menu-level-2">
+                                                  <li>
+                  
+        
+        
+                  <a href="/blog/software-installation/" target="_self" title="Installation Blog">Blog</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?type%5Bcase-study%5D=case-study&amp;category%5Binstallation%5D=installation" target="_self" title="Installation Case Studies" data-drupal-link-query="{&quot;category&quot;:{&quot;installation&quot;:&quot;installation&quot;},&quot;type&quot;:{&quot;case-study&quot;:&quot;case-study&quot;}}" data-drupal-link-system-path="node/2398">Case Studies</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?type%5Bwebinar-event%5D=webinar-event&amp;category%5Binstallation%5D=installation" target="_self" title="Installation Webinars and Events" data-drupal-link-query="{&quot;category&quot;:{&quot;installation&quot;:&quot;installation&quot;},&quot;type&quot;:{&quot;webinar-event&quot;:&quot;webinar-event&quot;}}" data-drupal-link-system-path="node/2398">Webinars &amp; Events</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/resources?type%5Bwhite-paper-industry-report%5D=white-paper-industry-report&amp;category%5Binstallation%5D=installation" target="_self" title="Installation Whitepapers and Reports" data-drupal-link-query="{&quot;category&quot;:{&quot;installation&quot;:&quot;installation&quot;},&quot;type&quot;:{&quot;white-paper-industry-report&quot;:&quot;white-paper-industry-report&quot;}}" data-drupal-link-system-path="node/2398">White Papers &amp; Reports</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+              </ul>
+  
+              </li>
+                                                    <li class="direction-column has-child"><span class="has-child__toggle d-md-none"></span>
+                  
+        
+        
+                  <a href="https://www.revenera.com/about-us" data-drupal-link-system-path="node/186">About Us</a>
+        
+                                <ul class="menu-level-1">
+                                                  <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/about-us" class="font-weight-bold" icon="icon-about-us" data-drupal-link-system-path="node/186">About Us</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/about-us/leadership" data-drupal-link-system-path="node/2375">Leadership</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/about-us/press-center" data-drupal-link-system-path="node/2387">Media/Press Center</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/about-us/partners" data-drupal-link-system-path="node/184">Partners</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/about-us/environmental-social-governance" title="Environmental, Social, and Governance" data-drupal-link-system-path="node/2713">Environmental, Social, and Governance</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/about-us/careers" data-drupal-link-system-path="node/173">Careers</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/about-us/diversity" data-drupal-link-system-path="node/2402">Diversity</a>
+        
+              </li>
+                                                    <li>
+                  
+        
+        
+                  <a href="https://www.revenera.com/about-us/contact-us" data-drupal-link-system-path="node/175">Contact Us</a>
+        
+              </li>
+              </ul>
+  
+              </li>
+              </ul>
+  
+
+
+  </nav>
+
+          </div>
+        </div>
+        
+        <div class="external-links d-flex flex-column justify-content-center pb-1 pb-xl-0">
+          <nav role="navigation" aria-labelledby="block-externallink-2-menu" id="block-externallink-2">
+            
+  <h2 class="visually-hidden" id="block-externallink-2-menu">External Links</h2>
+  
+
+        
+        <div class="external-links">
+              <span>
+                    <a href="https://community.flexera.com/t5/Revenera-Community/ct-p/Revenera_Community" target="_blank">Community</a>
+        </span>
+          </div>
+  
+
+
+
+  </nav>
+
+        </div>
+
+        <div class="mobile-menu__second-part d-xl-flex flex-column flex-xl-row justify-content-end">
+          <div class="language-switcher d-flex flex-column justify-content-center">
+            
+
+<div class="language-switcher-language-url" id="block-revenera-languageswitcher" role="navigation">
+  
+  
+
+
+  <div class="d-flex align-items-center language-switcher__content">
+  <div class="menu__icon">
+    <svg xmlns="http://www.w3.org/2000/svg" id="icon-nav-globe" viewBox="0 0 512 512">
+    <path d="M256 0c141.67 0 256 114.33 256 256 0 141.67-114.33 256-256 256C114.33 512 0 397.67 0 256 0 114.33 114.33 0 256 0zm67.885 348.16h-135.77c10.985 44.605 29.945 89.21 56.88 133.815 3.644.171 7.314.258 11.005.258 3.69 0 7.362-.09 11.012-.267 26.93-44.602 45.889-89.204 56.873-133.806zm-164.952 0l-109.946.001c28.866 65.529 87.784 114.256 159.82 129.247-23.476-43.084-40.101-86.166-49.874-129.248zm303.727.001l-109.593-.001c-9.76 43.027-26.356 86.055-49.788 129.082 70.935-15.176 130.169-63.788 159.38-129.08zM153.126 194.558H38.208c-5.495 19.502-8.44 40.104-8.44 61.442 0 21.337 2.878 41.939 8.272 61.44h115.086c-3.097-20.48-4.646-40.96-4.646-61.44 0-20.48 1.549-40.96 4.646-61.442zm177.064 0H181.81c-3.362 20.481-5.043 40.962-5.043 61.442 0 20.48 1.68 40.96 5.043 61.44h148.38c3.362-20.48 5.043-40.96 5.043-61.44 0-20.48-1.68-40.96-5.043-61.441zm143.77 0H358.873c3.097 20.481 4.646 40.962 4.646 61.442 0 20.48-1.549 40.96-4.646 61.44h114.919c5.494-19.501 8.44-40.103 8.44-61.44 0-21.338-2.88-41.94-8.274-61.442zm-265.24-159.8l-3.179.702C136.02 51.394 78.116 99.523 49.341 163.837l109.592.003c9.76-43.027 26.356-86.055 49.788-129.082zm47.28-4.99c-3.69 0-7.36.089-11.01.266-26.933 44.603-45.891 89.204-56.875 133.806h135.77c-10.985-44.605-29.944-89.21-56.879-133.814A232.421 232.421 0 00256 29.767zm47.192 4.824l.008.02c23.473 43.075 40.095 86.152 49.867 129.228l109.945-.003C434.146 98.31 375.228 49.582 303.192 34.592z"/>
+</svg>  </div>
+  <div class="active-language">
+    en
+  </div>
+</div>
+
+<div class="subtab">
+      <ul class="links"><li hreflang="en" data-drupal-link-system-path="node/37" class="is-active"><a href="https://www.revenera.com/install/products/installshield" class="language-link is-active" hreflang="en" data-drupal-link-system-path="node/37">English</a></li><li hreflang="de" data-drupal-link-system-path="node/37"><a href="https://www.revenera.de/install/products/installshield" class="language-link" hreflang="de" data-drupal-link-system-path="node/37">Deutsch</a></li></ul>
+  </div>
+
+</div>
+
+          </div>
+
+                    <div class="search search-desktop d-none d-xl-flex flex-column justify-content-center">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" id="icon-nav-search" viewBox="0 0 512 512">
+    <path d="M367.971 63.261c81.156 81.184 84.2 210.348 9.134 295.132L510 491.337 489.336 512 356.163 379.073l-2.398 2.044c-84.769 71.08-210.794 66.74-290.526-13.018-84.319-84.348-84.319-220.49 0-304.838 84.32-84.348 220.413-84.348 304.732 0zm-21.722 20.983c-73.39-73.583-190.27-73.583-263.66 0-72.031 72.222-73.39 190.773 0 264.357 73.39 73.584 190.27 73.584 263.66 0 72.03-72.221 73.39-190.773 0-264.357z"/>
+</svg>              <svg xmlns="http://www.w3.org/2000/svg" id="icon-nav-search-close" viewBox="0 0 512 512">
+  <path d="M479.9,0L256,223.9L32.1,0L0,32.1L224,256L0,479.9L32.1,512L256,288.1L479.9,512l32.1-32.1L288.1,256L512,32.1L479.9,0z"/>
+</svg>
+            </button>
+            <div class="search-bar">
+              <div class="searchunify-search-form" data-drupal-selector="searchunify-search-form" id="block-revenera-search-form-header">
+  
+    
+      <form action="" method="get" id="searchunify-search-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-search form-item-searchstring js-form-item-searchstring form-no-label">
+      <label for="edit-searchstring" class="visually-hidden">Search</label>
+        <input title="Enter the terms you wish to search for." placeholder="Search" data-drupal-selector="edit-searchstring" type="search" id="edit-searchstring" name="searchString" value="" size="15" maxlength="128" class="form-search" />
+
+        </div>
+<input autocomplete="off" data-drupal-selector="form-9pjjuqvrayc4podibpsfv0l1amya7bqyxbu3ekkgawa" type="hidden" name="form_build_id" value="form-9pJJuqVRAyc4PODIBpsFV0l1AmyA7bQYxBU3eKkgaWA" />
+<input data-drupal-selector="edit-searchunify-search-form" type="hidden" name="form_id" value="searchunify_search_form" />
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit" />
+</div>
+
+</form>
+
+  </div>
+
+            </div>
+          </div>
+
+          <div class="phone_mobile mx-1 d-xl-none">
+            <div id="block-header-phone-mobile">
+  
+    
+      
+<div class="phone mb-1">
+  <a href="tel:infoModel.phoneLink" target="_blank"> +1.800.374.4353</a>
+</div>
+
+  </div>
+
+          </div>
+
+          <div class="contact-us d-flex flex-column justify-content-center pr-0 pb-2 pb-xl-0">
+            
+<div class="contact-us">
+  <a class="btn btn-outline--green btn--small" href="/about-us/contact-us">Contact Us</a>
+</div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+    </header>
+    </div>
+
+  <div class="layout-overlay"></div>
+
+      <div class="featured">
+      <aside>
+          <div>
+    <div id="block-sitewidealert-2">
+  
+    
+      <div data-sitewide-alert></div>
+  </div>
+
+  </div>
+
+      </aside>
+    </div>
+  
+  
+  
+
+  
+
+  
+
+  
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div>
+    
+<div class="container">
+  <div class="row block__container">
+    <div class="col-12 breadcrumbs d-none d-md-block">
+
+      <div id="block-revenera-breadcrumbs">
+        
+                
+                    <nav role="navigation" aria-labelledby="system-breadcrumb">
+  <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        
+        <a href="https://www.revenera.com/" itemprop="item" typeof="WebPage">
+                      <svg xmlns="http://www.w3.org/2000/svg" id="icon-nav-home" viewBox="0 0 512 512">
+  <polygon points="196.923 472.615 196.923 315.077 315.077 315.077 315.077 472.615 435.692 472.615 435.692 236.308 512 236.308 256 0 0 236.308 76.308 236.308 76.308 472.615"/>
+</svg>
+                    <meta itemprop="name" content="Home"/>
+          <meta itemprop="position" content="0"/>
+        </a>
+              </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        
+        <a href="https://www.revenera.com/install" itemprop="item" typeof="WebPage">
+                      Installation
+                    <meta itemprop="name" content="Installation"/>
+          <meta itemprop="position" content="1"/>
+        </a>
+              </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        
+        <a href="https://www.revenera.com/install/products" itemprop="item" typeof="WebPage">
+                      Installation Products
+                    <meta itemprop="name" content="Installation Products"/>
+          <meta itemprop="position" content="2"/>
+        </a>
+              </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  InstallShield
+          <meta itemprop="name" content="InstallShield"/>
+          <meta itemprop="position" content="3"/>
+              </li>
+      </ol>
+</nav>
+
+              </div>
+    </div>
+  </div>
+</div>
+<div id="block-revenera-content">
+  
+    
+      <article>
+
+  
+    
+
+  
+  <div>
+    <div  class="bg-gray-dark bg-color bg-image _none pb-2" style="background-image: url(/sites/default/files/2021-11/is-2021-r1-home-hero.png); background-position: center; background-repeat: no-repeat; background-size: cover;"><div  class="w-100">  
+  <div  class="layout row no-gutters layout-builder__layout">
+    
+                        <div  class="col-12">
+          
+
+
+  
+  
+
+
+<div class="hero hero--toc block block-layout-builder block-inline-blockhero-table-of-content">
+
+  
+  
+
+  <div class="container py-3 pt-md-5">
+    <div class="row hero__container align-content-center align-items-center">
+      <div class="col-md-7 mb-2 mb-md-0">
+
+                            <h2 class="subtitle">InstallShield</h2>
+        
+                                        <h1>Flexible, modern Windows installer - software installation</h1>
+                  
+        <div class="hero__text pb-2">
+            <div><p>Create native MSIX packages, build clean Windows installs, and build installations in the cloud with InstallShield from Revenera.</p>
+</div>
+      </div>
+
+        <div class="d-flex">
+                      <a class="btn-outline--green  w-fit-content me-1"
+                              href="https://info.revenera.com/IS-EVAL-InstallShield-Professional?lead_source=Website%20Visitor&amp;id=Revenera.com"
+                            >
+              Free trial
+            </a>
+          
+                      <a class="btn--green  w-fit-content"
+                              href="https://store.revenera.com/shop/s/category/installshield/0ZG1M000000GmaTWAS"
+                            >
+              Buy now
+            </a>
+                  </div>
+      </div>
+
+      <div class="col-md-4 offset-md-1">
+                  <div class="toc">
+            <p class="toc__title pb-1 font-size-5">RESOURCES</p>
+            <div class="toc__links">
+              <ul class="mb-0 ps-0">
+                                  <li>
+                                          <a href="https://www.revenera.com/install/products/installshield/installshield-compare-editions" class="toc__link">Compare Editions</a>
+                                      </li>
+                                  <li>
+                                          <a href="https://www.revenera.com/install/products/installshield/installshield-compare-versions" class="toc__link">Compare Versions</a>
+                                      </li>
+                                  <li>
+                                          <a href="https://www.revenera.com/install/products/installshield/cloud-license-server" class="toc__link">Cloud License Server</a>
+                                      </li>
+                                  <li>
+                                          <a href="https://community.flexera.com/t5/InstallShield/ct-p/InstallShield" class="toc__link">Customer Community</a>
+                                      </li>
+                                  <li>
+                                          <a href="https://www.revenera.com/install/products/installshield/installshield-requirements" class="toc__link">Requirements</a>
+                                      </li>
+                                  <li>
+                                          <a href="https://www.revenera.com/install/products/installshield/installshield-tips-tricks" class="toc__link">Tips and Tricks</a>
+                                      </li>
+                              </ul>
+            </div>
+
+                      </div>
+              </div>
+    </div>
+
+      </div>
+</div>
+
+
+
+            
+
+
+        </div>
+                                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="_none pt-4"><div  class="container">  
+  <div  class="layout row layout-builder__layout">
+    
+                        <div  class="col-12">
+          
+
+
+        
+
+
+
+<div  class="basic-block block-layout-builder block-inline-blockbasic">
+
+  
+  
+
+  
+            <h2 class=h2>Revenera InstallShield Windows Installer</h2>
+      
+      
+            <div><p>Consistent and reliable Windows installers. Every time. With InstallShield, you’ll adapt to industry changes quickly, get to market faster and deliver an engaging customer experience. </p>
+<p>The result? Productivity: up. Extra scripting/coding/rework: way down with simpler and cleaner installs, upgrades and uninstalls.</p>
+<p>Revenera InstallShield (formerly Flexera InstallShield) is the fastest easiest way to build Windows installers and MSIX packages and create installations directly within Microsoft Visual Studio.</p>
+</div>
+      
+  
+  
+  </div>
+
+
+
+        </div>
+                                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="_none pt-2 pb-2"><div  class="container">  
+  <div  class="layout row layout-builder__layout">
+    
+                        <div  class="col-12">
+          
+
+
+
+
+  <div class="block block-layout-builder block-inline-blockblock-card">
+
+  
+  
+
+        
+  <div class="card--split w-100 d-flex flex-column justify-content-between flex-lg-row">
+          <div class="card__image " style="background-image:url( https://www.revenera.com/sites/default/files/2021-11/5-3fifty-fifty-hi-res_0013_istock-623192890-hires_0.jpg );"
+        href="https://info.revenera.com/IS-EVAL-InstallShield-Professional?lead_source=Website%20Visitor&amp;id=Revenera.com">
+      </div>
+    
+    <div class="card__text d-flex flex-column justify-content-center align-items-start ">
+      <h2 class="mb-1">InstallShield 2023: start your free trial</h2>
+
+              <div class="card__content">
+          
+            <div><p>Check out the easier way to build Windows installers and get ready for MSIX</p>
+</div>
+      
+        </div>
+      
+              <a class="btn btn-outline--green mt-1" target="_self"  href="https://info.revenera.com/IS-EVAL-InstallShield-Professional?lead_source=Website%20Visitor&amp;id=Revenera.com" >
+          Get your free trial
+        </a>
+          </div>
+  </div>
+</div>
+
+
+
+        </div>
+                                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="section-border-bottom _none pt-2 pb-2"><div  class="container">  
+  <div  class="layout row layout-builder__layout">
+    
+                        <div  class="col-md-5 col-12">
+          
+
+
+
+
+
+
+<div  class="basic-block block-layout-builder block-inline-blockbasic">
+
+  
+  
+
+  
+  
+      
+            <div><h3 class="h4">WHAT'S NEW IN INSTALLSHIELD</h3>
+</div>
+      
+  
+  
+  </div>
+
+
+
+        </div>
+                              <div  class="col-md-7 col-12">
+          
+
+
+
+
+
+
+<div  class="basic-block block-layout-builder block-inline-blockbasic">
+
+  
+  
+
+  
+  
+      
+            <div><ul class="square"><li>
+<p><strong>Support for InstallScript Projects in Visual Studio 2022</strong><br />
+	Create, edit, and build InstallScript projects in Visual Studio 2022</p>
+</li>
+<li>
+<p><strong>App Updates</strong><br />
+	Configure and deliver updates for your apps</p>
+</li>
+<li>
+<p><strong>Install Windows Package Manager Apps from Suite</strong><br />
+	Configure your suite to install apps from Windows Package Manager (WPM)</p>
+</li>
+<li>
+<p><strong>Integration with Visual Studio 2022</strong><br />
+	Create, edit and build InstallShield projects in Visual Studio 2022.</p>
+</li>
+<li>
+<p><strong>Enhanced Support for Windows 11 and Windows Server 2022</strong><br />
+	Configure install conditions to specifically target Windows 11 and Windows Server 2022</p>
+</li>
+<li>
+<p><strong>Full ARM Support</strong><br />
+	Install files to native ARM locations on Windows 10 running on ARM machines</p>
+</li>
+<li>
+<p><strong>Support for Cloud Builds</strong><br />
+	Easily move your build infrastructure to the cloud by connecting to Revenera’s Cloud License Server</p>
+</li>
+</ul><p><a href="/sites/default/files/datasheet-is-compare-versions.pdf">View All New and Enhanced Features Added by Release</a> </p>
+<p> </p>
+</div>
+      
+  
+  
+  </div>
+
+
+
+        </div>
+                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="section-border-bottom _none pb-2"><div  class="container">  
+  <div  class="layout row layout-builder__layout">
+    
+                        <div  class="col-md-5 col-12">
+          
+
+
+
+
+
+
+<div  class="basic-block block-layout-builder block-inline-blockbasic">
+
+  
+  
+
+  
+  
+      
+            <div><h3 class="h4">WHAT INSTALLSHIELD CAN DO</h3>
+</div>
+      
+  
+  
+  </div>
+
+
+
+        </div>
+                              <div  class="col-md-7 col-12">
+          
+
+
+
+
+
+
+<div  class="basic-block block-layout-builder block-inline-blockbasic">
+
+  
+  
+
+  
+  
+      
+            <div><ul class="square"><li>Easily create native MSIX packages or convert any MSI file into an MSIX package<br />
+	 </li>
+<li>Build MSIX Modification Packages<br />
+	 </li>
+<li>Build clean installs, upgrades and uninstalls for Windows incredibly quickly and easily.<br />
+	 </li>
+<li>Simplify virtual and cloud-based deployments<br />
+	 </li>
+<li>Deliver a seamless customer user experience<br />
+	 </li>
+<li>Create installations directly within Microsoft Visual Studio for MSI and EXE installers<br />
+	 </li>
+<li>Benefit from the standard for Windows installers with Microsoft Windows and Visual Studio support</li>
+</ul><p> </p>
+</div>
+      
+  
+  
+  </div>
+
+
+
+        </div>
+                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="_none pb-3"><div  class="container">  
+  <div  class="layout row layout-builder__layout">
+    
+                        <div  class="col-md-5 col-12">
+          
+
+
+
+
+
+
+<div  class="basic-block block-layout-builder block-inline-blockbasic">
+
+  
+  
+
+  
+  
+      
+            <div><h3 class="h4">KEY FEATURES</h3>
+</div>
+      
+  
+  
+  </div>
+
+
+
+        </div>
+                              <div  class="col-md-7 col-12">
+          
+
+
+
+
+
+
+<div  class="basic-block block-layout-builder block-inline-blockbasic">
+
+  
+  
+
+  
+  
+      
+            <div><ul class="square"><li>The standard for Windows Installer (MSI) and InstallScript Installations<br />
+	 </li>
+<li>Effortless Creation of native MSIX Packages or Build MSIX from Existing Projects<br />
+	 </li>
+<li>Provides a Fresh, Modern Designer Interface<br />
+	 </li>
+<li>Build installation suites to install multiple products for Windows, MSIX and more<br />
+	 </li>
+<li>Converts MSIs to Microsoft® App-V™ 5.1<br />
+	 </li>
+<li>Installs Web Applications to Microsoft® Azure™ and Microsoft IIS using Microsoft Web Deploy<br />
+	 </li>
+<li>Automatically Provisions Virtual Machines for Simple Installation Testing<br />
+	 </li>
+<li>Microsoft Team Foundation Server Integration    </li>
+</ul><p> </p>
+</div>
+      
+  
+  
+  </div>
+
+
+
+        </div>
+                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="section-border-top _none"><div  class="container">  
+  <div  class="layout row layout-builder__layout">
+    
+                        <div  class="col-12">
+          
+
+
+
+
+
+
+<div  class="basic-block block-block-content block-block-contenta848ca70-daa6-4925-9850-0e87dca0a42c">
+
+  
+  
+
+  
+  
+      
+            <div><h2 class="h4">TESTIMONIAL</h2>
+</div>
+      
+  
+  
+  </div>
+
+
+
+        </div>
+                                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="_none pt-2 pb-4"><div  class="container">  
+  <div  class="layout row layout-builder__layout">
+    
+                        <div  class="col-12">
+          
+
+
+
+    <div>
+
+  
+  
+  <div class="blockquote__block">
+    <div class="blockquote__text"><p>Accenture is dedicated to developing differentiated software-based solutions to help organizations meet their business goals. The dynamic installation experience that we create ensures smooth adoption in enterprise environments. This is just as important as the functionality of the software products as a whole. We chose the versatile and robust InstallShield because of Revenera's domain expertise in innovative and flexible software suite products.</p>
+</div>
+          <p>
+         <span class="blockquote__person">FERDI ÖZTÜRK</span>        <span class="blockquote__occupation">Delivery Excellence Specialist</span>      </p>
+      </div>
+</div>
+
+
+        </div>
+                                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="bg-gray-light bg-color _none"><div  class="w-100">  
+  <div  class="layout row no-gutters layout-builder__layout">
+    
+                        <div  class="col-12">
+          
+
+
+    
+    
+        
+      
+        
+      
+        
+      
+        
+      
+  <div class="block block--ressources-slider block-layout-builder block-inline-blockblock-ressources-slider overflow-x-hidden">
+
+    
+    
+
+    <div class="container g-2">
+      <div class="row block__container align-content-center">
+        
+          <div class="col-12 pt-5">
+
+            
+                          <h2 class="h2">InstallShield Editions</h2>
+            
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <div class="slideshow-container mt-md-2 mb-1 mb-xl-0 pt-0 pt-md-2 pt-xl-0">
+      
+        <div class="slide my-xl-2">
+
+  <a class="w-100 d-block h-100" target="_blank"
+    href="https://www.revenera.com/sites/default/files/datasheet-is.pdf">
+    <div class="slide-container d-flex flex-column h-100">
+
+              <div class="slide__img">
+          <img src="/sites/default/files/styles/slide_image/public/2023-06/1094_IS_Release_IS2023-R1.png?itok=EP5YXyYK" width="266" height="266" loading="lazy" alt="slide thumbnail">
+        </div>
+      
+      <div class="slide__description p-1 p-md-2 d-flex flex-column flex-fill justify-content-between">
+        <h2> InstallShield 2023</h2>
+
+                  <div class="link">View Data Sheet</div>
+              </div>
+
+    </div>
+  </a>
+</div>
+
+      
+        <div class="slide my-xl-2">
+
+  <a class="w-100 d-block h-100" target="_blank"
+    href="https://www.revenera.com/sites/default/files/datasheet_IS_CloudLicensServer.pdf">
+    <div class="slide-container d-flex flex-column h-100">
+
+              <div class="slide__img">
+          <img src="/sites/default/files/styles/slide_image/public/2023-01/906_IS_Social_CloudLicnsSrvrDS_LI_1200x627_R1A.png?itok=npWYGrrv" width="266" height="266" loading="lazy" alt="slide thumbnail">
+        </div>
+      
+      <div class="slide__description p-1 p-md-2 d-flex flex-column flex-fill justify-content-between">
+        <h2> Cloud License Server with InstallShield</h2>
+
+                  <div class="link">View Data Sheet</div>
+              </div>
+
+    </div>
+  </a>
+</div>
+
+      
+        <div class="slide my-xl-2">
+
+  <a class="w-100 d-block h-100" target="_blank"
+    href="https://info.revenera.com/is-eval-installshield-professional?lead_source=Website%20Visitor&amp;id=Revenera.com">
+    <div class="slide-container d-flex flex-column h-100">
+
+              <div class="slide__img">
+          <img src="/sites/default/files/styles/slide_image/public/2023-06/1094_IS_Release_IS2023-R1_trial.png?itok=AwrLzGXu" width="266" height="266" loading="lazy" alt="slide thumbnail">
+        </div>
+      
+      <div class="slide__description p-1 p-md-2 d-flex flex-column flex-fill justify-content-between">
+        <h2> InstallShield</h2>
+
+                  <div class="link">Get Trial</div>
+              </div>
+
+    </div>
+  </a>
+</div>
+
+      
+        <div class="slide my-xl-2">
+
+  <a class="w-100 d-block h-100" target="_blank"
+    href="https://info.revenera.com/is-eval-installshield-premier?lead_source=Website%20Visitor&amp;id=Revenera.com">
+    <div class="slide-container d-flex flex-column h-100">
+
+              <div class="slide__img">
+          <img src="/sites/default/files/styles/slide_image/public/2023-01/revenera-social-share.png?itok=v2TOZePB" width="266" height="266" loading="lazy" alt="slide thumbnail">
+        </div>
+      
+      <div class="slide__description p-1 p-md-2 d-flex flex-column flex-fill justify-content-between">
+        <h2> InstallShield Premier</h2>
+
+                  <div class="link">Get Trial</div>
+              </div>
+
+    </div>
+  </a>
+</div>
+
+          </div>
+  </div>
+</div>
+<div>
+                  </div>
+
+    
+  </div>
+
+
+        </div>
+                                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="bg-gray-light bg-color _none pb-2"><div  class="container">  
+  <div  class="layout row layout-builder__layout">
+    
+                        <div  class="col-12">
+          
+
+
+
+
+
+
+<div  class="basic-block block-block-content block-block-contentd51eac40-bdda-400c-b893-fe2722e701b2">
+
+  
+  
+
+  
+  
+      
+            <div><div id="pf-concierge-is"><a class="link" href="/blog/software-installation">View all blog posts</a></div>
+</div>
+      
+  
+  
+  </div>
+
+
+
+        </div>
+                                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="_none pt-2 pb-2"><div  class="container">  
+  <div  class="layout row layout-builder__layout">
+    
+                        <div  class="col-12">
+          
+
+
+
+  
+  <div class="block block-layout-builder block-inline-blockblock-card">
+
+  
+  
+
+        
+  <div class="card--split w-100 d-flex flex-column justify-content-between flex-lg-row">
+          <div class="card__image " style="background-image:url( https://www.revenera.com/sites/default/files/2021-11/5-3fifty-fifty-hi-res_0010_istock-626999150-hires.jpeg );"
+        href="https://www.revenera.com/install/products/installshield/installshield-compare-editions">
+      </div>
+    
+    <div class="card__text d-flex flex-column justify-content-center align-items-start ">
+      <h2 class="mb-1">Compare Editions</h2>
+
+              <div class="card__content">
+          
+            <div><p>See the detailed features of each InstallShield edition in a side-by-side overview.</p>
+</div>
+      
+        </div>
+      
+              <a class="btn btn-outline--green mt-1" target="_self"  href="https://www.revenera.com/install/products/installshield/installshield-compare-editions" >
+          Compare Editions
+        </a>
+          </div>
+  </div>
+</div>
+
+
+
+        </div>
+                                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="bg-gray-light bg-color _none pb-2"><div  class="w-100">  
+  <div  class="layout row no-gutters layout-builder__layout">
+    
+                        <div  class="col-12">
+          
+
+
+    
+    
+                  
+      
+        
+      
+        
+      
+        
+      
+        
+      
+  <div class="block block--ressources-slider block-layout-builder block-inline-blockblock-ressources-slider overflow-x-hidden">
+
+    
+    
+
+    <div class="container g-2">
+      <div class="row block__container align-content-center">
+        
+          <div class="col-12 pt-5">
+
+            
+                          <h2 class="h2">Resources</h2>
+            
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <div class="slideshow-container mt-md-2 mb-1 mb-xl-0 pt-0 pt-md-2 pt-xl-0">
+      
+        <div class="slide my-xl-2 slide_video">
+
+  <a class="w-100 d-block h-100" target="_blank"
+    href="#" data-bs-toggle="modal" data-bs-target="#youtubeModal_1">
+    <div class="slide-container d-flex flex-column h-100">
+
+              <div class="slide__img">
+          <img src="/sites/default/files/styles/slide_image/public/2022-08/945_IS_Podcast_FtrBnft_LI_1200x627_R1A.png?itok=OeQ6Zi5V" width="266" height="266" loading="lazy" alt="slide thumbnail">
+        </div>
+      
+      <div class="slide__description p-1 p-md-2 d-flex flex-column flex-fill justify-content-between">
+        <h2> InstallShield 2022 Features and Benefits</h2>
+
+                  <div class="link">View Podcast</div>
+              </div>
+
+    </div>
+  </a>
+</div>
+
+      
+        <div class="slide my-xl-2">
+
+  <a class="w-100 d-block h-100" target="_blank"
+    href="https://info.revenera.com/IS-WP-MSIX-Windows-Installer?lead_source=Website%20Visitor&amp;id=Revenera.com">
+    <div class="slide-container d-flex flex-column h-100">
+
+              <div class="slide__img">
+          <img src="/sites/default/files/styles/slide_image/public/2023-01/791_IS_MSIXeBook_LI_1200x627_R2A.png?itok=stGLdoo8" width="266" height="266" loading="lazy" alt="slide thumbnail">
+        </div>
+      
+      <div class="slide__description p-1 p-md-2 d-flex flex-column flex-fill justify-content-between">
+        <h2> A Developer’s Guide to MSIX</h2>
+
+                  <div class="link">VIEW EBOOK</div>
+              </div>
+
+    </div>
+  </a>
+</div>
+
+      
+        <div class="slide my-xl-2">
+
+  <a class="w-100 d-block h-100" target="_blank"
+    href="https://info.revenera.com/IS-WBNR-TechTalk-Suite-Secrets?lead_source=Website%20Visitor&amp;id=Revenera.com">
+    <div class="slide-container d-flex flex-column h-100">
+
+              <div class="slide__img">
+          <img src="/sites/default/files/styles/slide_image/public/2023-01/863_IS_Webinar_TechTalkSecrts_LI_1200x627_R1A.png?itok=2rrc2i6v" width="266" height="266" loading="lazy" alt="slide thumbnail">
+        </div>
+      
+      <div class="slide__description p-1 p-md-2 d-flex flex-column flex-fill justify-content-between">
+        <h2> TechTalk: InstallShield “Suite” Secrets</h2>
+
+                  <div class="link">VIEW WEBINAR</div>
+              </div>
+
+    </div>
+  </a>
+</div>
+
+      
+        <div class="slide my-xl-2">
+
+  <a class="w-100 d-block h-100" target="_blank"
+    href="https://info.revenera.com/IS-EVNT-Unpacking-MSIX-2022">
+    <div class="slide-container d-flex flex-column h-100">
+
+              <div class="slide__img">
+          <img src="/sites/default/files/styles/slide_image/public/2023-01/883_SCA_EventOnDmnd_UnPackMSIX_LI_1200x627_R1B.png?itok=iw7kjQOn" width="266" height="266" loading="lazy" alt="slide thumbnail">
+        </div>
+      
+      <div class="slide__description p-1 p-md-2 d-flex flex-column flex-fill justify-content-between">
+        <h2> “Unpacking MSIX”: Panel Discussion</h2>
+
+                  <div class="link">VIEW ONLINE EVENT</div>
+              </div>
+
+    </div>
+  </a>
+</div>
+
+      
+        <div class="slide my-xl-2">
+
+  <a class="w-100 d-block h-100" target="_blank"
+    href="https://info.revenera.com/IS-WBNR-Developer-MSIX-eBook?lead_source=Website%20Visitor">
+    <div class="slide-container d-flex flex-column h-100">
+
+              <div class="slide__img">
+          <img src="/sites/default/files/styles/slide_image/public/2023-01/810_IS_OnDmnd_MSIXeBook_LI_1200x627_R2A.png?itok=CjssG2MB" width="266" height="266" loading="lazy" alt="slide thumbnail">
+        </div>
+      
+      <div class="slide__description p-1 p-md-2 d-flex flex-column flex-fill justify-content-between">
+        <h2> A Developer’s Guide to MSIX: Hear from the Authors</h2>
+
+                  <div class="link">View Webinar</div>
+              </div>
+
+    </div>
+  </a>
+</div>
+
+          </div>
+  </div>
+</div>
+<div>
+            <div class="modal fade youtubeModal" id="youtubeModal_1" tabindex="-1" aria-labelledby="youtubeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content pt-4 p-1 ">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="500" data-src="https://www.youtube.com/embed/046Qm_fEe2Y" src="https://www.youtube.com/embed/046Qm_fEe2Y" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+                    </div>
+
+          <div class="container mb-2">
+        <a class="link" href="https://www.revenera.com/resources?category%5Binstallation%5D=installation">View All Resources</a>
+      </div>
+    
+  </div>
+
+
+        </div>
+                                                                                                                                                                                              
+  </div>
+
+</div></div><div  class="_none pt-2 pb-4"><div  class="container">  
+  <div  class="layout row layout-builder__layout">
+    
+                        <div  class="col-12">
+          
+
+
+
+
+  <div class="block block-layout-builder block-inline-blockblock-card">
+
+  
+  
+
+        
+  <div class="card--split w-100 d-flex flex-column justify-content-between flex-lg-row-reverse">
+          <div class="card__image " style="background-image:url( https://www.revenera.com/sites/default/files/2021-11/10-9fifty-fifty-solutions-hi-res_0004_istock-810529310-hires.jpg );"
+        href="https://www.revenera.com/about-us/contact-us?C_Interest1=sales&amp;C_SolutionInterest=IS">
+      </div>
+    
+    <div class="card__text d-flex flex-column justify-content-center align-items-start ">
+      <h2 class="mb-1">Cloud License Server for InstallShield Premier</h2>
+
+              <div class="card__content">
+          
+            <div><p>Revenera is making it easy to move your build infrastructure to the cloud in InstallShield Premier—providing you with the flexibility to meet the needs of your business through our Cloud License Server.</p>
+</div>
+      
+        </div>
+      
+              <a class="btn btn-outline--green mt-1" target="_self"  href="https://www.revenera.com/about-us/contact-us?C_Interest1=sales&amp;C_SolutionInterest=IS" >
+          Contact us to learn more
+        </a>
+          </div>
+  </div>
+</div>
+
+
+
+        </div>
+                                                                                                                                                                                              
+  </div>
+
+</div></div>  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div>
+  
+    
+      
+  </div>
+<div>
+  
+    
+      
+  </div>
+<div>
+  
+    
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+    </div>
+    
+    
+  </main>
+
+      <footer role="contentinfo">
+      <div class="container">
+  <div class="row d-flex">
+
+    <div class="col-12 py-2 site-branding">
+      <div id="block-revenera-sitebranding-footer">
+  
+    
+        <a href="https://www.revenera.com/" rel="home">
+      <img src="/themes/custom/revenera/logo.svg" alt="Home" />
+    </a>
+      
+</div>
+
+    </div>
+
+    <div class="col-12 col-lg-12 footer__mainmenu  mb-2">
+      <nav role="navigation" aria-labelledby="block-footermenu-menu" id="block-footermenu">
+            
+  <h2 class="visually-hidden" id="block-footermenu-menu">Footer Menu</h2>
+  
+
+        
+              <ul class="menu-level-0">
+                                <li class="direction-column has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/about-us" data-drupal-link-system-path="node/186">About Us</a>
+                                <ul class="menu-level-1">
+                                <li>
+              
+      
+              <a href="https://www.revenera.com/about-us" data-drupal-link-system-path="node/186">About Us</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/about-us/leadership" data-drupal-link-system-path="node/2375">Leadership</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/about-us/press-center" data-drupal-link-system-path="node/2387">Media/Press Center</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/about-us/partners" data-drupal-link-system-path="node/184">Partners</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/about-us/environmental-social-governance" title="Environmental, Social, and Governance" data-drupal-link-system-path="node/2713">Environmental, Social, and Governance</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/about-us/careers" data-drupal-link-system-path="node/173">Careers</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/about-us/diversity" data-drupal-link-system-path="node/2402">Diversity</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/about-us/contact-us" data-drupal-link-system-path="node/175">Contact Us</a>
+              </li>
+      </ul>
+    
+              </li>
+                            <li class="direction-column has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/resources" data-drupal-link-system-path="node/2398">Resources</a>
+                                <ul class="menu-level-1">
+                                <li>
+              
+      
+              <a href="https://www.revenera.com/resources" class="font-weight-bold" icon="icon-ressources" data-drupal-link-system-path="node/2398">All Resources</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/blog/">Blog</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/resources?type%5Bcase-study%5D=case-study" data-drupal-link-query="{&quot;type&quot;:{&quot;case-study&quot;:&quot;case-study&quot;}}" data-drupal-link-system-path="node/2398">Case Studies</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/resources?type%5Bdatasheet%5D=datasheet" data-drupal-link-query="{&quot;type&quot;:{&quot;datasheet&quot;:&quot;datasheet&quot;}}" data-drupal-link-system-path="node/2398">Data Sheets</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/resources?type%5Bdemo-trial%5D=demo-trial" data-drupal-link-query="{&quot;type&quot;:{&quot;demo-trial&quot;:&quot;demo-trial&quot;}}" data-drupal-link-system-path="node/2398">Demos &amp; Trials</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/glossary">Glossary</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/resources/podcasts" title="Podcasts" data-drupal-link-system-path="node/2657">Podcasts</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/resources?type%5Bvideo%5D=video" data-drupal-link-query="{&quot;type&quot;:{&quot;video&quot;:&quot;video&quot;}}" data-drupal-link-system-path="node/2398">Videos</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/resources?type%5Bwebinar-event%5D=webinar-event" data-drupal-link-query="{&quot;type&quot;:{&quot;webinar-event&quot;:&quot;webinar-event&quot;}}" data-drupal-link-system-path="node/2398">Webinars &amp; Events</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/resources?type%5Bwhite-paper-industry-report%5D=white-paper-industry-report" data-drupal-link-query="{&quot;type&quot;:{&quot;white-paper-industry-report&quot;:&quot;white-paper-industry-report&quot;}}" data-drupal-link-system-path="node/2398">White Papers &amp; Industry Reports</a>
+              </li>
+      </ul>
+    
+              </li>
+                            <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/software-monetization" data-drupal-link-system-path="node/35">Software Monetization</a>
+                                <ul class="menu-level-1">
+                                <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/business-solutions" class="font-weight-bold" icon="icon-monetization-business" data-drupal-link-system-path="node/34">Business Solutions</a>
+                                <ul class="menu-level-2">
+                                <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/business-solutions/flexible-monetization-models" data-drupal-link-system-path="node/36">Flexible Monetization Models</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/business-solutions/monetize-iot" data-drupal-link-system-path="node/38">Monetize IoT - From the Edge to the Cloud</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/business-solutions/monetizing-saas-applications" data-drupal-link-system-path="node/2475">Monetizing SaaS Applications</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/business-solutions/iot-manage-and-protect-devices" data-drupal-link-system-path="node/39">Manage and Protect Devices</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/business-solutions/better-products-with-software-usage-analytics" data-drupal-link-system-path="node/40">Build Better Products with Software Usage Analytics</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/business-solutions/turn-software-piracy-into-revenue" data-drupal-link-system-path="node/41">Turn Software Piracy into Revenue</a>
+              </li>
+      </ul>
+    
+              </li>
+                            <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/products" class="font-weight-bold" icon="icon-monetization-products" data-drupal-link-system-path="node/42">Products</a>
+                                <ul class="menu-level-2">
+                                <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/products/entitlement-management" class="subchild" data-drupal-link-system-path="node/33">Entitlement Management</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/products/software-licensing" class="subchild" data-drupal-link-system-path="node/45">Software Licensing</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/products/software-delivery-and-updates" class="subchild" data-drupal-link-system-path="node/47">Software Delivery and Updates</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/products/usage-intelligence" class="subchild" data-drupal-link-system-path="node/48">Usage Intelligence</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/products/compliance-intelligence" class="subchild" data-drupal-link-system-path="node/55">Compliance Intelligence</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/products/renewals-and-customer-growth" class="subchild" data-drupal-link-system-path="node/59">Renewals and Customer Growth</a>
+              </li>
+      </ul>
+    
+              </li>
+                            <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/services-and-training" class="font-weight-bold" icon="icon-monetization-services" data-drupal-link-system-path="node/60">Services</a>
+                                <ul class="menu-level-2">
+                                <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/services-and-training/monetization-advisory-services" data-drupal-link-system-path="node/61">Monetization Advisory Services</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/services-and-training/implementation-services" data-drupal-link-system-path="node/62">Implementation Services</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/services-and-training/training" data-drupal-link-system-path="node/63">Training</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/services-and-training/cloud-transformation" data-drupal-link-system-path="node/64">Cloud Transformation</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/services-and-training/revenue-recovery-services" data-drupal-link-system-path="node/65">Revenue Recovery Services</a>
+              </li>
+      </ul>
+    
+              </li>
+                            <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/industries" class="font-weight-bold" icon="icon-monetization-industries" target="_self" data-drupal-link-system-path="node/2553">Industries</a>
+                                <ul class="menu-level-2">
+                                <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/industries/software-saas" data-drupal-link-system-path="node/66">Software &amp; SaaS</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/industries/manufacturing-and-industrial-automation" data-drupal-link-system-path="node/67">Manufacturing &amp; Industrial Automation</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/industries/networking" data-drupal-link-system-path="node/68">Networking</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-monetization/industries/medical-devices" data-drupal-link-system-path="node/69">Medical Devices</a>
+              </li>
+      </ul>
+    
+              </li>
+      </ul>
+    
+              </li>
+                            <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/software-composition-analysis" data-drupal-link-system-path="node/32">Software Composition Analysis</a>
+                                <ul class="menu-level-1">
+                                <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/software-composition-analysis/business-solutions" class="font-weight-bold" icon="icon-software-business" data-drupal-link-system-path="node/43">Business Solutions</a>
+                                <ul class="menu-level-2">
+                                <li>
+              
+      
+              <a href="https://www.revenera.com/software-composition-analysis/business-solutions/bill-of-materials" data-drupal-link-system-path="node/94">The Software Bill of Materials (SBOM)</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-composition-analysis/business-solutions/shift-left-automate-compliance-checks" data-drupal-link-system-path="node/70">Shift-Left and Automate Compliance Checks</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-composition-analysis/business-solutions/open-source-license-compliance" data-drupal-link-system-path="node/71">Open Source Software License Compliance</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-composition-analysis/business-solutions/open-source-vulnerability-management" data-drupal-link-system-path="node/88">Open Source Vulnerability Management</a>
+              </li>
+      </ul>
+    
+              </li>
+                            <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/software-composition-analysis/products" class="font-weight-bold" icon="icon-software-products" data-drupal-link-system-path="node/109">Products</a>
+                                <ul class="menu-level-2">
+                                <li>
+              
+      
+              <a href="https://www.revenera.com/software-composition-analysis/products/sbom-insights" data-drupal-link-system-path="node/2563">SBOM Management</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-composition-analysis/products/flexnet-code-insight" class="subchild" data-drupal-link-system-path="node/110">Scan and Analysis</a>
+              </li>
+      </ul>
+    
+              </li>
+                            <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <span class="font-weight-bold" icon="icon-software-services">Audits &amp; Services</span>
+                                <ul class="menu-level-2">
+                                <li>
+              
+      
+              <a href="https://www.revenera.com/software-composition-analysis/audits-and-services/open-source-audits" data-drupal-link-system-path="node/147">Open Source Audits</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/software-composition-analysis/audits-and-services/m-a-support" data-drupal-link-system-path="node/117">M&amp;A Support</a>
+              </li>
+      </ul>
+    
+              </li>
+      </ul>
+    
+              </li>
+                            <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/install" data-drupal-link-system-path="node/31">Installation</a>
+                                <ul class="menu-level-1">
+                                <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/install/products" class="font-weight-bold" icon="icon-installation-products" data-drupal-link-system-path="node/156">Products</a>
+                                <ul class="menu-level-2">
+                                <li>
+              
+      
+              <a href="https://www.revenera.com/install/products/installshield" class="subchild is-active" data-drupal-link-system-path="node/37">InstallShield</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/install/products/installanywhere" class="subchild" data-drupal-link-system-path="node/75">InstallAnywhere</a>
+              </li>
+      </ul>
+    
+              </li>
+                            <li class="has-child"><span class="has-child__toggle d-md-none"></span>
+              
+      
+              <a href="https://www.revenera.com/install/services-and-training" class="font-weight-bold" icon="icon-installation-services" data-drupal-link-system-path="node/82">Services</a>
+                                <ul class="menu-level-2">
+                                <li>
+              
+      
+              <a href="https://www.revenera.com/install/services-and-training/installation-training" class="subchild" data-drupal-link-system-path="node/83">InstallShield Training</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/install/services-and-training/installshield-microconsulting" class="subchild" data-drupal-link-system-path="node/87">InstallShield MicroConsulting</a>
+              </li>
+                            <li>
+              
+      
+              <a href="https://www.revenera.com/install/services-and-training/installation-design-and-development" class="subchild" data-drupal-link-system-path="node/89">Design &amp; Development Consulting</a>
+              </li>
+      </ul>
+    
+              </li>
+      </ul>
+    
+              </li>
+      </ul>
+    
+
+
+  </nav>
+
+    </div>
+
+    <div class="col-12 col-lg-12 footer__right-sidebar mb-1">
+      <div class="content d-flex align-items-center justify-content-between pt-1 flex-column flex-lg-row">
+        <div id="block-phone-2">
+  
+    
+      
+<div class="phone mb-1">
+  <a href="tel:infoModel.phoneLink" target="_blank"> +1.800.374.4353</a>
+</div>
+
+  </div>
+
+        <div class="buttons d-flex align-items-center justify-content-between flex-column flex-lg-row">
+          
+<div class="contact-us">
+  <a class="btn btn-outline--green btn--small" href="/about-us/contact-us">Contact Us</a>
+</div>
+
+          
+<div class="footer-links d-flex flex-column flex-lg-row">
+
+      <a class="btn btn-outline--green" href="https://community.flexera.com/t5/Revenera-Community/ct-p/Revenera_Community">Revenera Community</a>
+  
+      <a class="btn btn-outline--green" href="https://www.flexera.com">Flexera.com</a>
+  
+  
+</div>
+
+        </div>
+        <div class="mb-2">
+          
+<div class="social-medias">
+  <p class="social-label"></p>
+  <div class="social-icons d-flex justify-content-between">
+    <a class="" href="https://www.linkedin.com/company/revenera/">
+      <svg xmlns="http://www.w3.org/2000/svg" id="icon-linkedin" viewBox="0 0 512 512">
+    <path d="M362.922 178.834c-48.037 0-69.55 26.422-81.528 44.96v-38.577h-90.478c1.195 25.557 0 272.2 0 272.2h90.478v-152.02c0-8.111.585-16.249 2.976-22.047 6.535-16.25 21.411-33.084 46.409-33.084 32.753 0 45.85 24.947 45.85 61.54v145.636l90.453-.025V301.355c0-83.613-44.63-122.52-104.16-122.52zm-222.103 6.383H50.366v272.2h90.453v-272.2zM96.165 54C65.217 54 45 74.318 45 101.02c0 26.141 19.632 47.044 50.02 47.044h.56c31.532 0 51.19-20.928 51.19-47.045C146.185 74.32 127.112 54 96.165 54z"/>
+</svg>    </a>
+    <a class="" href="https://twitter.com/getrevenera">
+      <svg xmlns="http://www.w3.org/2000/svg" id="icon-twitter" viewBox="0 0 512 512">
+    <path d="M310.162 82.203c-38.8 14.129-63.325 50.538-60.543 90.388l.927 15.373-15.52-1.879c-56.492-7.223-105.859-31.699-147.783-72.818l-20.498-20.4-5.247 15.056c-11.176 33.578-4.026 69.06 19.254 92.926 12.421 13.177 9.615 15.056-11.786 7.223-7.443-2.513-13.983-4.392-14.593-3.44-2.172 2.196 5.27 30.747 11.176 42.07 8.077 15.715 24.525 31.064 42.534 40.191l15.227 7.223-18.033.269c-17.375 0-18.01.317-16.13 6.93 6.198 20.4 30.723 42.07 58.054 51.49l19.254 6.589-16.765 10.054c-24.842 14.47-54.028 22.62-83.214 23.207-13.982.317-25.476 1.561-25.476 2.513 0 3.124 37.897 20.694 59.909 27.624 66.131 20.4 144.684 11.591 203.665-23.231 41.924-24.794 83.824-74.087 103.395-121.819 10.566-25.403 21.108-71.866 21.108-94.146 0-14.446.927-16.325 18.302-33.578 10.25-10.054 19.864-21.035 21.743-24.159 3.123-5.978 2.782-5.978-13.031-.634-26.38 9.42-30.113 8.175-17.058-5.954 9.615-10.054 21.109-28.259 21.109-33.579 0-.927-4.661.635-9.932 3.441-5.588 3.148-18.01 7.858-27.331 10.664l-16.765 5.344-15.203-10.395c-8.394-5.637-20.157-11.933-26.38-13.812-15.861-4.393-40.069-3.758-54.369 1.269z"/>
+</svg>    </a>
+    <a class="" href="https://www.youtube.com/GetRevenera">
+      <svg xmlns="http://www.w3.org/2000/svg" id="icon-youtube" viewBox="0 0 512 512">
+    <path d="M204.08 332.34l133.262-75.962-133.261-77.86v153.821zm294.329 46.129c-3.805 19.017-22.828 39.936-43.754 43.739-39.949 11.41-199.744 11.41-199.744 11.41s-157.893 0-197.841-11.41c-20.926-3.803-39.95-24.722-45.656-43.74C0 336.632 0 256.76 0 256.76s0-81.773 11.414-121.709c5.707-20.919 24.73-41.837 45.656-45.64C97.018 78 254.91 78 254.91 78s159.795 0 199.744 11.41c20.926 3.804 39.949 24.722 43.754 45.641 13.316 39.936 13.316 121.709 13.316 121.709s0 79.871-13.316 121.709z"/>
+</svg>    </a>
+    <a class="" href="https://www.instagram.com/weareflexera/">
+      <svg xmlns="http://www.w3.org/2000/svg" id="icon-instagram" viewBox="0 0 512 512">
+    <path d="M256.48 88.858c54.597 0 61.072.204 82.645 1.192 55.414 2.522 81.298 28.815 83.82 83.82.988 21.556 1.175 28.031 1.175 82.628 0 54.613-.204 61.071-1.175 82.627-2.54 54.954-28.355 81.298-83.82 83.82-21.573.988-28.014 1.192-82.645 1.192-54.596 0-61.071-.204-82.627-1.192-55.55-2.54-81.298-28.951-83.82-83.837-.988-21.556-1.192-28.014-1.192-82.628 0-54.596.221-61.054 1.192-82.627 2.54-54.988 28.355-81.298 83.82-83.82 21.573-.97 28.031-1.175 82.627-1.175zm0-36.858c-55.533 0-62.485.239-84.297 1.227-74.26 3.408-115.531 44.61-118.94 118.94C52.24 193.994 52 200.946 52 256.48c0 55.534.239 62.503 1.227 84.315 3.408 74.26 44.61 115.531 118.94 118.94 21.828.987 28.78 1.226 84.313 1.226 55.534 0 62.503-.239 84.315-1.227 74.192-3.408 115.565-44.61 118.922-118.94 1.005-21.81 1.244-28.78 1.244-84.314 0-55.533-.239-62.485-1.227-84.297-3.34-74.192-44.594-115.531-118.922-118.94C318.983 52.24 312.014 52 256.48 52zm0 99.48c-57.987 0-105 47.013-105 105 0 57.988 47.013 105.018 105 105.018 57.988 0 105.001-47.013 105.001-105.018 0-57.987-47.013-105-105-105zm0 173.16c-37.641 0-68.16-30.501-68.16-68.16 0-37.641 30.519-68.16 68.16-68.16 37.642 0 68.16 30.519 68.16 68.16 0 37.659-30.518 68.16-68.16 68.16zM365.64 122.802c-13.564 0-24.555 10.991-24.555 24.538s10.991 24.538 24.555 24.538c13.547 0 24.52-10.991 24.52-24.538s-10.973-24.538-24.52-24.538z"/>
+</svg>    </a>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 order-3">
+      <div class="subfooter d-flex align-items-center pb-2 justify-content-between flex-column flex-lg-row">
+        <div class="footer__language-switcher">
+          
+
+<div class="language-switcher-language-url" id="block-languageswitcher-3" role="navigation">
+  
+  
+
+
+  <div class="d-flex align-items-center language-switcher__content">
+  <div class="menu__icon">
+    <svg xmlns="http://www.w3.org/2000/svg" id="icon-nav-globe" viewBox="0 0 512 512">
+    <path d="M256 0c141.67 0 256 114.33 256 256 0 141.67-114.33 256-256 256C114.33 512 0 397.67 0 256 0 114.33 114.33 0 256 0zm67.885 348.16h-135.77c10.985 44.605 29.945 89.21 56.88 133.815 3.644.171 7.314.258 11.005.258 3.69 0 7.362-.09 11.012-.267 26.93-44.602 45.889-89.204 56.873-133.806zm-164.952 0l-109.946.001c28.866 65.529 87.784 114.256 159.82 129.247-23.476-43.084-40.101-86.166-49.874-129.248zm303.727.001l-109.593-.001c-9.76 43.027-26.356 86.055-49.788 129.082 70.935-15.176 130.169-63.788 159.38-129.08zM153.126 194.558H38.208c-5.495 19.502-8.44 40.104-8.44 61.442 0 21.337 2.878 41.939 8.272 61.44h115.086c-3.097-20.48-4.646-40.96-4.646-61.44 0-20.48 1.549-40.96 4.646-61.442zm177.064 0H181.81c-3.362 20.481-5.043 40.962-5.043 61.442 0 20.48 1.68 40.96 5.043 61.44h148.38c3.362-20.48 5.043-40.96 5.043-61.44 0-20.48-1.68-40.96-5.043-61.441zm143.77 0H358.873c3.097 20.481 4.646 40.962 4.646 61.442 0 20.48-1.549 40.96-4.646 61.44h114.919c5.494-19.501 8.44-40.103 8.44-61.44 0-21.338-2.88-41.94-8.274-61.442zm-265.24-159.8l-3.179.702C136.02 51.394 78.116 99.523 49.341 163.837l109.592.003c9.76-43.027 26.356-86.055 49.788-129.082zm47.28-4.99c-3.69 0-7.36.089-11.01.266-26.933 44.603-45.891 89.204-56.875 133.806h135.77c-10.985-44.605-29.944-89.21-56.879-133.814A232.421 232.421 0 00256 29.767zm47.192 4.824l.008.02c23.473 43.075 40.095 86.152 49.867 129.228l109.945-.003C434.146 98.31 375.228 49.582 303.192 34.592z"/>
+</svg>  </div>
+  <div class="active-language">
+    en
+  </div>
+</div>
+
+<div class="subtab">
+      <ul class="links"><li hreflang="en" data-drupal-link-system-path="node/37" class="is-active"><a href="https://www.revenera.com/install/products/installshield" class="language-link is-active" hreflang="en" data-drupal-link-system-path="node/37">English</a></li><li hreflang="de" data-drupal-link-system-path="node/37"><a href="https://www.revenera.de/install/products/installshield" class="language-link" hreflang="de" data-drupal-link-system-path="node/37">Deutsch</a></li></ul>
+  </div>
+
+</div>
+
+        </div>
+        <div>
+          <div id="block-privacypolicy-2">
+  
+    
+      
+<div class="privacy-policy">
+  <p class="mb-0">© 2023 Flexera Software. All Rights Reserved.</p>
+</div>
+
+  </div>
+
+        </div>
+        <div>
+          <nav role="navigation" aria-labelledby="block-legallinks-menu" id="block-legallinks">
+            
+  <h2 class="visually-hidden" id="block-legallinks-menu">Legal Links</h2>
+  
+
+        
+        <div class="legal-links">
+              <span>
+                    <a href="https://www.revenera.com/legal/privacy-policy" data-drupal-link-system-path="node/146">Privacy Policy</a>
+        </span>
+              <span>
+                    <a href="https://www.revenera.com/legal" data-drupal-link-system-path="node/177">Terms and conditions</a>
+        </span>
+              <span>
+                    <a href="https://www.revenera.com/about-us/contact-us" data-drupal-link-system-path="node/175">Contact Us</a>
+        </span>
+          </div>
+  
+
+
+
+  </nav>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </footer>
+  
+</div>
+  </div>
+
+    
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/37","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"bootstrap_styles\/plugin.background_color.build,bootstrap_styles\/plugin.padding.build,bootstrap_styles\/plugin.text_color.build,flexera\/flexera,layout_discovery\/onecol,revenera\/revenera,sitewide_alert\/init,system\/base","theme":"revenera","theme_token":null},"ajaxTrustedUrl":{"":true},"sitewideAlert":{"refreshInterval":15000,"automaticRefresh":false},"user":{"uid":0,"permissionsHash":"3c02e23137a79686e28d6f6630d3a0dce0bfd1820e1558a3f80a583490519086"}}</script>
+<script src="/sites/default/files/js/js_tqgmQKusfspSCvgKtu7-sDpVGQSIE3_UM_kDCEDO-uk.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=revenera&amp;include=eJyFzEEOwjAMRNELRc2RIqcZoggTR7ZT2ttTBCxYIFbzF09jhzluMZMhrKKIRecgXoZKVZiFC2OHUnzvC81eoPbMoNjQn-ATgemQ6am0E2zQI0rHKhyyiJsrjWR-MCwOnrX1JdN6rSrnZzqZ6JJn4_KTDyql9fpHOXb_urPmuLeCRAz12HrzBzv0ZAI"></script>
+
+
+    <div class="modal fade" id="bs-modal" tabindex="-1" role="dialog"
+     aria-labelledby="bs-modal-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bs-modal-title"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">...</div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-9ab73f504b3dcf788d7","applicationID":"1381660840","transactionName":"NFdTZUIDXkMFUhUIXQ0dcFJEC19eS0EABlc8UVBSWAc=","queueTime":0,"applicationTime":21,"atts":"GBBQEwoZTU0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

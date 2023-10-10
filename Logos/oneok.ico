@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>
+                ONEOK, Inc.
+            </title>
+            <meta name="description" content="ONEOK, Inc. (pronounced ONE-OAK) (NYSE: OKE) is a leading midstream service provider in the United States connecting prolific supply basins with key market centers." />
+        <!-- Open Graph data -->
+
+
+    <link rel="shortcut icon" href="/Areas/OneOK/images/favicon.ico?v=1">
+    <link href="/bundles/oneok_css?v=CPCcBD87LZBe4h7i4P9homSHAkBKL92g_kbnpY9wlTw1" rel="stylesheet"/>
+
+    <script src="/bundles/oneok_vendor?v=e6hNXGj1GDlmXJbEEyT4BXDDYsI5bt3NXEwknpIi-Y41"></script>
+
+
+
+
+    <!-- Day One - Stylesheet -->
+    <link rel="stylesheet" href="/Areas/OneOK/stylesheets/integration/dayOneStyle.css" />
+
+
+    
+
+        <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	    })(window,document,'script','dataLayer','GTM-WJPTJ4X');</script>
+</head>
+<body class="">
+
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJPTJ4X"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+
+
+   <!-- Day One - Top Banner -->
+   <div class="container-fluid oneok-top-banner">
+      <p>ONEOK has completed its acquisition of Magellan Midstream Partners. Find out more <a href="/about-us/oneok-magellan-merger">here</a>. </p>
+    </div>
+
+
+        <div id="search" class="search">
+        <form method="GET" action="/search-results">
+            <div class="form-group position-relative ui-widget">
+                <input type="text" class="form-control search-input" id="search-header" name="q" placeholder="Search" autocomplete="off" data-api-url="/api/searchservice/GetSearchSuggestion" data-min-length="3" data-results-count="10" data-exact-match="true" data-min-charecters="3" data-search-results-url="/search-results?q=">
+                <button type="submit" class="d-none">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        /*************************************************************
+         * Predictive search using sitecore's recommendation of SOLR & jquery-ui
+         * https://doc.sitecore.com/developers/90/platform-administration-and-architecture/en/using-solr-auto-suggest.html
+         *************************************************************/
+        var apiUrl = "";
+        var minLength = "3";
+        var resultsCount = "5";
+        var exactMatch = true;
+        var searchResultsUrl = "";
+        if (typeof $("#search-header").data('api-url') !== 'undefined') {
+            apiUrl = $("#search-header").data('api-url');
+        }
+        if (typeof $("#search-header").data('search-results-url') !== 'undefined') {
+            searchResultsUrl = $("#search-header").data('search-results-url');
+        }
+        if (typeof $("#search-header").data('min-length') !== 'undefined') {
+            minLength = $("#search-header").data('min-length');
+        }
+        if (typeof $("#search-header").data('results-count') !== 'undefined') {
+            resultsCount = $("#search-header").data('results-count');
+        }
+
+        if (typeof $("#search-header").data('min-charecters') !== 'undefined') {
+            minLength = $("#search-header").data('min-charecters');
+        }
+
+        if (exactMatch == "") {
+            exactMatch = true;
+        }
+
+        // jquery-ui autocomplete
+        $("#search-header").autocomplete({
+            source: function (request, response) {
+                var searchText = $('#search-header').val();
+                if (searchText.length >= minLength) {
+                    $.ajax({
+                        url: apiUrl + "/" + searchText + "/" + resultsCount + "/" + exactMatch,
+                        dataType: "json",
+                        type: "GET",
+                        contentType: "application/json; charset=utf-8",
+                        dataFilter: function (data) { return data; },
+                        success: function (data) {
+                            response($.map(data.data,
+                                function (item) {
+                                    return {
+                                        value: item
+                                    }
+                                }));
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            console.log(textStatus);
+                        }
+                    });
+                }
+            },
+            select: function (event, ui) {
+                event.preventDefault();
+                let searchStringRaw = ui.item.label;
+                let searchStringClean = searchStringRaw.replace(/(<([^>]+)>)/ig, "");
+                let searchResultsUrlFull = searchResultsUrl + searchStringClean;
+                window.location = searchResultsUrlFull;
+            },
+            focus: function (event, ui) {
+                event.preventDefault();
+                let searchStringRaw = ui.item.label;
+                let searchStringClean = searchStringRaw.replace(/(<([^>]+)>)/ig, "");
+                $("#search-header").val(searchStringClean);
+            },
+            minLength: minLength
+        }).data("ui-autocomplete")._renderItem = function (ul, item) {
+            return $("<li></li>")
+                .data("item.autocomplete", item)
+                .append("<a>" + item.label + "</a>")
+                .appendTo(ul);
+          };
+    </script>
+    <header class="main-header auto-hide nav-open">
+        <div class="container">
+            <div class="upper-nav">
+                
+                    <a class="logo" href="/">
+<img src="/-/media/oneok/feature/navigation/logo.ashx?h=123&amp;w=400&amp;la=en&amp;hash=461A16417E4F28E45C89CB1B69DA9C78" alt="ONEOK, Inc." />                    </a>
+
+                <ul class="header-buttons">
+                    <li><a class="search-trigger" href="#search">Search<span></span></a></li>
+                    <li><a class="nav-trigger" href="#primary-nav">Back<span></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav class="nav" >
+        <ul id="primary-nav" class="primary-nav is-fixed">
+                    <li class="has-children ">
+                            <a class="title" href="/about-us" target="_self" data-index="0">about us</a>
+                                <ul class="secondary-nav is-hidden">
+                                    <li class="go-back"><a href="#">Back</a></li>
+                                    <li class="title">about us</li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/about-us/oneok-magellan-merger"  data-index="0">ONEOK-Magellan Merger</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/about-us/what-we-do"  data-index="0">What We Do</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/about-us/history"  data-index="0">History</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/about-us/values"  data-index="0">Values</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/about-us/community-investments"  data-index="0">Community Investments</a>
+
+                                                <ul class="is-hidden">
+                                                            <li class="go-back"><a href="#">Back</a></li>
+                                                            <li class="title">Community Investments</li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/about-us/diversity-and-inclusion"  data-index="0">Diversity and Inclusion</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/about-us/ethics-compliance"  data-index="0">Ethics and Compliance</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/about-us/growth-projects-2022"  data-index="0">Growth Projects</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="has-children">
+
+                                                    <a class="title " target=""  href="/about-us/governance"  data-index="0">Governance</a>
+
+                                                <ul class="is-hidden">
+                                                            <li class="go-back"><a href="#">Back</a></li>
+                                                            <li class="title">Governance</li>
+                                                                <li><a href="/about-us/governance/board-of-directors" target="" class="">Board of Directors</a></li>
+                                                                <li><a href="/about-us/governance/management" target="" class="">Management</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/about-us/political-engagement"  data-index="0">Political Engagement</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target="_blank"  href="/careers/benefits"  data-index="0">Benefits</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target="_blank"  href="http://ir.oneok.com/news-and-events/press-releases/"  data-index="0">News</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/about-us/contact"  data-index="0">Contact Us</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                </ul>
+
+
+                    </li>
+                    <li class=" ">
+                            <a class="title" href="https://sustainability.oneok.com/" target="" data-index="1">Sustainability</a>
+
+
+                    </li>
+                    <li class=" ">
+                            <a class="title" href="http://ir.oneok.com/" target="" data-index="2">Investors</a>
+
+
+                    </li>
+                    <li class="has-children ">
+                            <a class="title" href="/careers" target="_self" data-index="3">Careers</a>
+                                <ul class="secondary-nav is-hidden">
+                                    <li class="go-back"><a href="#">Back</a></li>
+                                    <li class="title">Careers</li>
+                                            <li class="">
+
+                                                    <a class="title " target="_blank"  href="https://oneok.wd1.myworkdayjobs.com/ONEOK"  data-index="3">Job Openings</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target="_blank"  href="https://veterans.oneok.com/"  data-index="3">Veteran Job Translator</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/careers/workingatoneok"  data-index="3">Working at ONEOK</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/careers/internships"  data-index="3">Internships</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/careers/hiringprocess"  data-index="3">Hiring Process</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/careers/benefits"  data-index="3">Benefits</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/careers/plandocuments"  data-index="3">Plan Documents</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                </ul>
+
+
+                    </li>
+                    <li class="has-children ">
+                            <a class="title" href="/customers" target="_self" data-index="4">customers</a>
+                                <ul class="secondary-nav is-hidden">
+                                    <li class="go-back"><a href="#">Back</a></li>
+                                    <li class="title">customers</li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/customers/ngl"  data-index="4">Natural Gas Liquids</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/customers/rpco"  data-index="4">Refined Products and Crude</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/customers/nggp"  data-index="4">Natural Gas Gathering and Processing</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/customers/ngp"  data-index="4">Natural Gas Pipelines</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                                <li class="has-image">
+                                                        <div class="nav-img"><img src="/-/media/oneok/sustainability/crr/2017crr_cover/logo-811.ashx" alt=""></div>
+                                                    <div class="nav-img-caption"></div>
+                                                </li>
+                                </ul>
+
+
+                    </li>
+                    <li class="has-children highlight">
+                            <a class="title" href="/public-awareness" target="_self" data-index="5">Public Awareness</a>
+                                <ul class="secondary-nav is-hidden">
+                                    <li class="go-back"><a href="#">Back</a></li>
+                                    <li class="title">Public Awareness</li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/public-awareness/public-awareness-and-pipeline-safety"  data-index="5">Public Awareness and Pipeline Safety</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/public-awareness/damage-prevention"  data-index="5">damage prevention</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/public-awareness/helpful-links"  data-index="5">helpful links</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/public-awareness/system-integrity"  data-index="5">System Integrity</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/public-awareness/safety-data-sheets"  data-index="5">Safety Data Sheets</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/public-awareness/emergency-contacts"  data-index="5">Emergency Contacts</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/public-awareness/community-resources"  data-index="5">Community Resources</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target=""  href="/public-awareness/community-support"  data-index="5">community support</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                            <li class="">
+
+                                                    <a class="title " target="_blank"  href="https://forms.oneok.com/landing/org/app/c30a2f35-23c5-47c6-855f-8c2b45b0c726/launch/index.html?form=F_Form_MapInfoRequest"  data-index="5">Request Map</a>
+
+                                                <ul class="is-hidden">
+
+                                                </ul>
+                                            </li>
+                                </ul>
+
+
+                    </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        
+                    <!-- BED: set background-image and data attributes dynamically -->
+            <div id="hero-interactive"
+                 class="hero-interactive-new carousel slide carousel-fade"
+                 data-interval="false"
+                 data-ride="carousel">
+                <div class="carousel-indicators-wrapper">
+
+                    <div id="left" class="icon icon-left">
+                        <i class="fa fa-solid fa-angle-left"></i>
+                    </div>
+
+                    <div class="container carousel-indicators">
+                                    <button class="carousel-tab active"
+                                            type="button"
+                                            data-target="#hero-interactive"
+                                            data-slide-to=0
+                                            aria-current="true"
+                                            aria-label=Slide 1>
+                                        Welcome
+                                    </button>
+                                    <button class="carousel-tab"
+                                            type="button"
+                                            data-target="#hero-interactive"
+                                            data-slide-to=1
+                                            aria-current="false"
+                                            aria-label=Slide 2>
+                                        Natural Gas Liquids
+                                    </button>
+                                    <button class="carousel-tab"
+                                            type="button"
+                                            data-target="#hero-interactive"
+                                            data-slide-to=2
+                                            aria-current="false"
+                                            aria-label=Slide 3>
+                                        Refined Products and Crude
+                                    </button>
+                                    <button class="carousel-tab"
+                                            type="button"
+                                            data-target="#hero-interactive"
+                                            data-slide-to=3
+                                            aria-current="false"
+                                            aria-label=Slide 4>
+                                        Natural Gas Gathering and Processing
+                                    </button>
+                                    <button class="carousel-tab"
+                                            type="button"
+                                            data-target="#hero-interactive"
+                                            data-slide-to=4
+                                            aria-current="false"
+                                            aria-label=Slide 5>
+                                        Natural Gas Pipelines
+                                    </button>
+                    </div>
+
+                    <div id="right" class="icon icon-right">
+                        <i class="fa fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+
+                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-img">
+                                        <img src="/-/media/oneok/feature/home-page/home-hero-welcome.ashx?h=540&amp;w=1850&amp;la=en&amp;hash=D59BF42D35F9262B196CF1498843E001" alt="" />
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-7 col-xl-5">
+                                                    <h2 class="hero-interactive__title">
+                                                        Diversified. Reliable. Stable.
+                                                    </h2>
+                                                    <div class="hero-interactive__copy">
+                                                        <p>
+                                                            ONEOK, Inc. (NYSE: OKE) is a leading midstream service provider in the United States connecting prolific supply basins with key market centers.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="carousel-img">
+                                        <img src="/-/media/oneok/feature/home-page/home-hero-ngl.ashx?h=540&amp;w=1850&amp;la=en&amp;hash=CBF7348A1271417CA7D03E215D249E1C" alt="" />
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-7 col-xl-5">
+                                                    <h2 class="hero-interactive__title">
+                                                        Natural Gas Liquids
+                                                    </h2>
+                                                    <div class="hero-interactive__copy">
+                                                        <p>
+                                                            Our natural gas liquids segment owns and operates facilities that gather, fractionate, treat, distribute and store NGL products.
+                                                        </p>
+                                                    </div>
+<a href="/customers/ngl" class="btn btn-primary white-bg" >                                                            <span>Learn More</span>
+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="carousel-img">
+                                        <img src="/-/media/oneok/feature/home-page/home-hero-rpco.ashx?h=540&amp;w=1850&amp;la=en&amp;hash=BFA4FE8CBBF66856548ACB692B375909" alt="" />
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-7 col-xl-5">
+                                                    <h2 class="hero-interactive__title">
+                                                        Refined Products and Crude
+                                                    </h2>
+                                                    <div class="hero-interactive__copy">
+                                                        <p>
+                                                            Our refined products and crude segment transports, stores and distributes petroleum products.
+                                                        </p>
+                                                    </div>
+<a href="/customers/rpco" class="btn btn-primary white-bg" >                                                            <span>Learn More</span>
+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="carousel-img">
+                                        <img src="/-/media/oneok/feature/home-page/home-hero-nggp.ashx?h=540&amp;w=1850&amp;la=en&amp;hash=37054F6865CCB15B049D7514FC7E474A" alt="" />
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-7 col-xl-5">
+                                                    <h2 class="hero-interactive__title">
+                                                        Natural Gas Gathering and Processing
+                                                    </h2>
+                                                    <div class="hero-interactive__copy">
+                                                        <p>
+                                                            Our natural gas gathering and processing segment provides midstream services to producers in North Dakota, Montana, Wyoming, Kansas and Oklahoma.
+                                                        </p>
+                                                    </div>
+<a href="/customers/nggp" class="btn btn-primary white-bg" >                                                            <span>Learn More</span>
+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="carousel-img">
+                                        <img src="/-/media/oneok/feature/home-page/home-hero-ngp.ashx?h=540&amp;w=1850&amp;la=en&amp;hash=7339C56FBAD753F6158536614B9EBD29" alt="" />
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-7 col-xl-5">
+                                                    <h2 class="hero-interactive__title">
+                                                        Natural Gas Pipelines
+                                                    </h2>
+                                                    <div class="hero-interactive__copy">
+                                                        <p>
+                                                            <p>Our natural gas pipelines segment provides interstate and intrastate transportation and storage services.</p>
+                                                        </p>
+                                                    </div>
+<a href="/customers/ngp" class="btn btn-primary white-bg" >                                                            <span>Learn More</span>
+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+            </div>
+    <div class="component__page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-tile">
+        <div class="container">
+            <div class="row">
+                    <div class="">
+                        
+                    </div>
+                <div class="col-md-12" )>
+                    <div class="content-tile-copy">
+                        <h3></h3>
+                        <p style="text-align: center;"><span style="font-size: 2.25rem; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; text-transform: uppercase; font-family: Oswald, sans-serif; color: #111111;">Investors, learn more now.</span>
+<span class="component__text-tile">
+<span class="my-auto">
+<a href="https://ir.oneok.com" target="_blank" class="btn btn-primary">
+<span></span>Click Here
+</a>
+</span>
+</span>
+</p>
+                    </div>
+                </div>
+                            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+                <div class="component__image-tile">
+                <img src="/-/media/oneok/feature/home-page/home-feature-transfromingenergy.ashx" alt="" class="img-responsive">
+        <div class="row no-gutters align-items-stretch">
+            <div class="col-12 col-lg-7 footer-link">
+                Transforming Energy Future
+            </div>
+            <div class="col-12 col-lg-5 cta">
+                        <a href="https://sustainability.oneok.com/transforming-energy-future/" class="btn btn-primary"><span></span><div>Learn More</div></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col-md-6">
+                <div class="component__image-tile">
+                <img src="/-/media/oneok/feature/home-page/2022-ar-tile-image.ashx" alt="" class="img-responsive">
+        <div class="row no-gutters align-items-stretch">
+            <div class="col-12 col-lg-7 footer-link">
+                <p>&nbsp;2022 Annual report&nbsp;</p>
+            </div>
+            <div class="col-12 col-lg-5 cta">
+                        <a href="https://issuu.com/oneok_inc/docs/oneok_2022_annual_report_issuu_final?fr=sY2JmOTQ4MTQzNTA" class="btn btn-primary"><span></span><div>Download</div></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+ </div>    <div class="component__page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+                <div class="component__image-tile">
+                <img src="/-/media/oneok/feature/home-page/oneokdotcom_tile_2022-2023sustainabilityreport.ashx" alt="" class="img-responsive">
+        <div class="row no-gutters align-items-stretch">
+            <div class="col-12 col-lg-7 footer-link">
+                <span style="font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: 1.4px; font-family: Roboto, sans-serif;">CORPORATE SUSTAINABILITY REPORT</span>
+            </div>
+            <div class="col-12 col-lg-5 cta">
+                        <a href="https://sustainability.oneok.com/" class="btn btn-primary"><span></span><div>Learn More</div></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col-md-6">
+                <div class="component__image-tile">
+                <img src="/-/media/oneok/feature/home-page/events_presentations_500x280.ashx" alt="plant towers" class="img-responsive">
+        <div class="row no-gutters align-items-stretch">
+            <div class="col-12 col-lg-7 footer-link">
+                <p>events &amp; presentations</p>
+            </div>
+            <div class="col-12 col-lg-5 cta">
+                        <a href="https://ir.oneok.com/news-and-events/events-and-presentations" class="btn btn-primary"><span></span><div>learn more</div></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+ </div>    <div class="component__page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="overlay"></div>
+    </main>
+    <footer>
+            <footer class="">
+        <div class="subfooter">
+            <div class="container">
+                <div class="row no-gutters align-items-stretch">
+                    <div class="col-md-4 contact">
+                                <div class="my-auto w-100"><a href="/about-us/contact">Contact ONEOK</a></div>
+                    </div>
+                    <div class="col-md-4 utility">
+                        <div class="my-auto w-100">
+                            <ul>
+                                <li>
+                                    Shareholder Inquiries:
+                                    <span><a href="tel:+1-877-208-7318">+1-877-208-7318</a></span>
+                                </li>
+                                <li>
+                                    Royalties Relations:
+                                    <span><a href="tel:+1-918-588-7463">+1-918-588-7463</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 utility promo">
+                        <div class="h-100 w-100">
+                            <a href="http://call811.com/"><img src="/-/media/oneok/feature/navigation/top-nav-images/know-whats-below.ashx?h=304&amp;w=390&amp;la=en&amp;hash=D019EEE0848A13844EC4DACBF4CFBB86" class="img-responsive" alt="whats below" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<div class="footer">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-4 order-md-2">
+                    <div class="nav-main">
+                <h2>
+                    Resources
+                </h2>
+        <ul>
+                <li>
+                        <a href="/careers" class="" target="">Careers</a>
+
+                </li>
+                <li>
+                        <a href="http://ir.oneok.com" class="externalLk" target="_blank">Investors</a>
+
+                </li>
+                <li>
+                        <a href="/legal-and-privacy" class="" target="">Legal and Privacy Policy</a>
+
+                </li>
+                <li>
+                        <a href="/public-awareness/safety-data-sheets" class="" target="">Safety Data Sheets</a>
+
+                </li>
+
+        </ul>
+    </div>
+
+                
+            </div>
+            <div class="col-md-4  order-md-3">
+                        <div class="nav-main">
+                <h2>
+                    Connect
+                </h2>
+        <ul>
+                <li>
+                        <a href="/about-us/what-we-do" class="" target="">Our Company</a>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+                        <a href="/about-us/community-investments" class="" target="">Our Community</a>
+
+                </li>
+                <li>
+                        <a href="/media-inquiries" class="" target="">Media Inquiries</a>
+
+                </li>
+
+        </ul>
+    </div>
+
+                    
+            </div>
+            <div class="col-md-4 order-md-1">
+                        <div class="logo">
+<a href="/" ><img src="/-/media/oneok/feature/navigation/logo.ashx?h=123&amp;w=400&amp;la=en&amp;hash=461A16417E4F28E45C89CB1B69DA9C78" alt="ONEOK, Inc." /></a>    </div>
+<address>
+    ONEOK Plaza<br>
+    100 West Fifth Street<br>
+    Tulsa, OK 74103<br>
+    <a href="tel:918-588-7000">918-588-7000</a>
+</address>
+
+                    <ul class="social-icons">
+                            <div class="social-icons">
+        <ul>
+                <li>
+                        <a href="https://www.facebook.com/ONEOKInc/" target="_blank" class="">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+
+                </li>
+                <li>
+                        <a href="https://www.linkedin.com/company/oneok/" target="_blank" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+
+                </li>
+                <li>
+                        <a href="https://twitter.com/oneok" target="_blank" class="">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+
+                </li>
+                <li>
+                        <a href="https://www.instagram.com/oneok_inc/ " target="" class="instagram">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+
+                </li>
+
+        </ul>
+    </div>
+
+                    </ul>
+                    
+            </div>
+            <div class="col-12 order-md-4">
+                
+                <p class="copyright">&copy;ONEOK, Inc. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    </footer>
+
+    <!-- Day One - Road Block Modal -->
+    <div class="modal fade" id="dayOneModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+    
+        <!-- Modal content-->
+            <div class="modal-content oneok-modal ">
+                <div class="modal-header border-0" style="text-align: center;">
+		            <button type="button" class="close text-light font-weight-bold" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <div class="container-fluid">
+                
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="display-4 font-weight-bold">Meet the New ONEOK!</h2>
+                            <h5 class="font-weight-bold text-light">
+                                Two great companies - now combined. ONEOK has successfully completed its acquisition of 
+                                Magellan Midstream Partners.  To find out more, click <a href="/about-us/oneok-magellan-merger">here</a>.</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                  
+                        <div class="col-sm-12">
+                            <img src="/Areas/OneOK/images/integration/icon-values_whtie.png" style="width:142px;height:142px;" class="img-responsive" />
+                        
+                        </div>
+                   
+                    </div>
+                    <hr/>
+                     <div class="row">
+                 
+                        <div class="col-sm-6">
+                            <p>For investor information, click <a href="https://ir.oneok.com" >here</a>.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p>For legacy Magellan information, click <a href="https://magellanlp.com/" >here</a>.</p>
+                        </div>
+                
+                    </div>
+                </div>
+            
+         
+         
+            </div>
+        
+        </div>
+      
+        </div>
+    </div>       
+
+
+   
+    <script src="/bundles/oneok_main?v=dyF6nKZ1xNr95H3mv4a17cM8C2mV6sWuoIdHa7wuCKY1"></script>
+
+
+    <!-- DayOne Modal Script-->
+    
+    <script src="/Areas/OneOK/javascripts/integration/dayOneModalJS.js"></script>
+
+
+
+    
+
+
+</body>
+</html>
+

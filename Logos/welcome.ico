@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base href="https://come.to" />
+	     <title>Not Found</title>
+    <link rel="icon" href="./tmdesign/icon.png"" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+	
+    <link rel="stylesheet" href="./tmlibrary/css/bootstrap/bootstrap.min.css">    
+	<link rel="stylesheet" href="./tmlibrary/css/main.css">
+	
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EXGCWKB5ST"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EXGCWKB5ST');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF35L6F');</script>
+<!-- End GoogleTagManager--> <style>
+    ul.ulnav_acc{
+		margin:0px;
+		padding:0px;
+	}
+    ul.ulnav_acc li{
+        list-style:none;
+        float:left; 
+        width:100%;
+        border-bottom:solid 1px #eee;
+        
+    }
+    ul.ulnav_acc li a{
+        padding:10px 20px;
+        display:block;
+        color:#0A2463;
+        text-decoration:none;
+    }
+    ul.ulnav_acc li a:hover{
+    
+        display:block;
+        background:#d9e2f7;
+        
+    }
+    /* paging  */
+    .paging {
+        padding:5px;
+        text-align  : center;	
+        font-size   : 12px;	
+
+      }
+      .paging a
+      {
+        padding:6px 12px 6px 12px;
+        margin:4px;
+        border              : 1px solid #999;
+        text-decoration     : none; 
+        font-size			:12px;
+        color :#333 !important;
+        background:#f5f5f5;
+        border-radius:35%;
+        text-align:center;
+      }
+      .paging a:hover
+      {
+        border           : 1px solid #fff;
+        background-color : #2FB1FC;
+        color			 : #fff !important;
+        box-shadow:0px 0px 2px #666;
+        
+      }
+      .paging span.current
+      {
+        padding:8px 14px 8px 14px;
+        margin:4px;
+        border              : 1px solid #fff;
+        text-decoration     : none; 
+        font-size			:12px;
+        color			 : #fff !important;
+        background-color : #2FB1FC;
+        border-radius:35%;
+        box-shadow:0px 0px 5px #666;
+      }
+
+      .paging span.disabled
+      {
+        padding:8px 14px 8px 14px;
+        margin:4px;
+        border              : 1px solid #ccc;
+        text-decoration     : none; 
+        font-size			:12px;
+        color :#333 !important;
+        background:#dedede;
+        border-radius:35%;
+        text-align:center;
+ 
+      }
+      /* paging */
+      h1{
+        font-size:220%;
+      }
+      .form-control, .form-select, .btn{
+        font-size: 16px;;
+      }
+      .btn_styled{
+        padding:3px 6px !important;
+        font-size:14px;
+      }
+      @media screen and (min-width:1000px){
+        .me-select-url{
+          width:50% !important;
+        }
+        .me-alias-char{
+          width:50% !important;
+        }
+      }
+      @media screen and (max-width:460px){
+        .me-select-url{
+          width:100% !important;
+          border-radius: 5px !important;
+          margin-bottom: 1.5rem;
+        }
+        .me-alias-char{
+          width:100% !important;
+          border-radius: 5px !important;
+        }
+      }
+      
+      .ishovered{
+        cursor: pointer;
+      }
+      .ishovered:hover{
+        opacity: 0.8;
+        filter:alpha(opacity=80);
+      }
+     
+      .css_cardbtn_radius_rounded span{        
+        border-radius:6px;
+      }
+      .css_cardbtn_radius_slightly span{
+        border-radius:20px;
+      }
+      .color_custom{
+        color:#236262;
+      }
+      .color_gelap{
+        color:#333;
+      }
+      .color_light{
+        color: #f5f5f5;;
+      }
+      .bg-gelap{
+        background-color: #333;
+      }
+      .card_btn_parent span:hover{
+        opacity: 0.8;
+        filter:alpha(opacity=80);
+      }
+      .css_btn_link_color_dark span {
+        color:#333;
+      }
+      .css_btn_link_color_dark span:hover {
+        color:#333;
+      }
+      .css_btn_link_color_light span {
+        color:#f5f5f5 !important;
+      }
+      .css_btn_link_color_light span:hover {
+        color:#f5f5f5;
+      }
+      .css_btn_link_color_custom span {
+        color:#236262;
+      }
+      .css_btn_link_color_custom span:hover {
+        color:#236262;
+      }
+      .css_btn_link_bg_dark span {
+        background-color: #333;
+      }
+      .css_btn_link_bg_light span {
+        background-color: #f5f5f5;
+      }
+      .css_btn_link_bg_custom span {
+        background-color: #236262;
+      }
+ </style>
+ <link rel="stylesheet" href="./tmlibrary/fontawesome-free/css/all.min.css" type="text/css"/>
+     <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '893106761930065');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=893106761930065&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+     </head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF35L6F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<noscript>
+	<div style="background:#333;opacity:0.8;filter:alpha(opacity=80);width:100%;height:100%;position:fixed;top:0px;z-index:1099;"></div>
+	<div style="background:#000;width:300px;z-index:1100;text-align:center;padding:4%;color:#fff;
+            position: absolute;
+             top:50%;
+             left:50%;
+             transform: translate(-50%,-50%);">
+		<p>Your browser does not support javascript.</p>
+	</div>
+</noscript>
+           <section class="bg-dark">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand h4 text-decoration-none text-white" href="/">
+              <img src="./tmdesign/logo-cometo.png" alt="" style="height: 50px;" width="auto">
+            </a>
+            <div class="d-lg-none">
+              <button class="btn btn-sm navbar-burger">
+                <svg class="d-block text-white" width="16" height="16" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <title>Come.to Menu</title>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link js_myurl" href="/my-url">My URLs</a></li>                
+                <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+              </ul>
+              <div class="d-none d-lg-block">
+                      <a class="btn btn-outline-light me-2" href="/login">Log In</a>
+                      <a class="btn btn-info" href="/signup">Sign Up</a></div>            </div>
+          </div>
+        </nav>
+		<!-- mobile -->
+        <div class="d-none navbar-menu position-fixed top-0 start-0 bottom-0 w-75 mw-sm" style="z-index: 9999;">
+          <div class="navbar-close navbar-backdrop position-fixed top-0 start-0 end-0 bottom-0 bg-dark" style="opacity: 75%;"></div>
+          <nav class="position-relative h-100 w-100 d-flex flex-column py-6 px-6 bg-dark overflow-auto">
+            <div class="d-flex align-items-center mb-10">
+              <a class="me-auto h4 mb-0 text-decoration-none" href="/">
+                <img src="./tmdesign/logo-cometo.png" alt="" style="height: 40px;" width="auto">
+              </a>
+              <button class="navbar-close btn " style="color:#f5f5f5 !important" type="button" aria-label="Close">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-3"><a class="nav-link js_myurl" href="/my-url">My URLs</a></li>                
+                <li class="nav-item mb-3"><a class="nav-link" href="/pricing">Pricing</a></li>
+                <li class="nav-item mb-3"><a class="nav-link" href="/faq">FAQ</a></li>
+                <li class="nav-item mb-3"><a class="nav-link" href="/contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="mt-auto">
+              <div class="py-6"><a class="w-100 mb-2 btn btn-outline-light" href="/login">Log In</a><a class="w-100 btn btn-primary" href="/signup">Sign Up</a></div>
+              <p class="mb-4 small text-center text-muted">
+                <span>2023 All rights reserved.</span>
+              </p>
+            </div>
+          </nav>
+        </div>
+      </section><section class="bg-white" >    
+      <div class="py-md-4 py-1">
+        <div class="container py-4" >
+          <div class="row py-2 my-lg-3">
+            <div class="col-12 text-dark  ">
+              <h1 class="lh-base mb-md-4 mb-3">Not Found</h1>
+              <div class="fontsize_130 lh-lg mb-md-5 mb-4">
+                Sorry, your link is currently does not exist.
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>       
+    </section>
+      <section class="py-20">
+        <div class="container">
+          <div class="pb-6 pb-lg-10 border-bottom">
+            <div class="d-flex flex-wrap align-items-start justify-content-between">
+              <div class="col-12 col-lg-2 mb-6 mb-lg-0">
+                &nbsp;
+              </div>
+              <div class="col-12 col-lg-auto">
+                <ul class="row text-center list-unstyled" style="font-size: 14px;">
+                  <li class="col-6 col-md-auto mb-2 mb-md-0"><a class="text-decoration-none link-dark fw-bold" href="/terms-of-services">Terms of Services</a></li>               
+                  <li class="col-6 col-md-auto mb-2 mb-md-0"><a class="text-decoration-none link-dark fw-bold" href="/report-url">Report URL</a></li>
+				  <li class="col-6 col-md-auto mb-2 mb-md-0"><a class="text-decoration-none link-dark fw-bold" href="/faq">FAQ</a></li>
+                  <li class="col-6 col-md-auto mb-2 mb-md-0"><a class="text-decoration-none link-dark fw-bold" href="contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <div class="row">
+              <p class="col text-muted small">&copy; Come.to 2023 - all rights reserved</p>
+              <div class="col d-flex justify-content-end">
+                <a class="d-flex justify-content-center align-items-center me-4 bg-light rounded-circle" href="#fb" style="width: 40px; height: 40px;">
+                  <svg class="text-muted" width="7" height="12" viewbox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.0898 11.8182V6.51068H5.90537L6.17776 4.44164H4.0898V3.12086C4.0898 2.52201 4.25864 2.1139 5.13515 2.1139L6.25125 2.11345V0.26283C6.05824 0.238228 5.39569 0.181824 4.62456 0.181824C3.01431 0.181824 1.9119 1.14588 1.9119 2.91594V4.44164H0.0908203V6.51068H1.9119V11.8182H4.0898Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+                <a class="d-flex justify-content-center align-items-center me-4 bg-light rounded-circle" href="#tw" style="width: 40px; height: 40px;">
+                  <svg class="text-muted" width="13" height="11" viewbox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5455 2.09728C12.0904 2.29892 11.6022 2.43566 11.0892 2.49671C11.613 2.18304 12.014 1.6855 12.204 1.09447C11.7127 1.38496 11.1703 1.59589 10.5924 1.71023C10.1296 1.21655 9.47138 0.909058 8.74128 0.909058C7.34059 0.909058 6.20489 2.04475 6.20489 3.44467C6.20489 3.64322 6.2273 3.83714 6.27057 4.02257C4.16298 3.91671 2.29411 2.90696 1.0433 1.37259C0.824652 1.74653 0.700269 2.18225 0.700269 2.64736C0.700269 3.52734 1.14837 4.30379 1.82825 4.75805C1.41259 4.74415 1.02166 4.62981 0.67942 4.43975V4.47142C0.67942 5.69983 1.55399 6.72504 2.71362 6.95837C2.50116 7.01554 2.27712 7.04722 2.04534 7.04722C1.88156 7.04722 1.72318 7.031 1.56788 7.00009C1.89081 8.00831 2.8272 8.74148 3.93663 8.76158C3.06902 9.44146 1.97504 9.84552 0.786814 9.84552C0.582087 9.84552 0.38043 9.83316 0.181885 9.81076C1.30445 10.5316 2.63716 10.9519 4.06952 10.9519C8.73514 10.9519 11.2854 7.0874 11.2854 3.73595L11.2769 3.4076C11.7752 3.05219 12.2063 2.60564 12.5455 2.09728Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+                <a class="d-flex justify-content-center align-items-center me-4 bg-light rounded-circle" href="#ig" style="width: 40px; height: 40px;">
+                  <svg class="text-muted" width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.06713 0.454529H9.9328C11.9249 0.454529 13.5456 2.07519 13.5455 4.06715V9.93282C13.5455 11.9248 11.9249 13.5454 9.9328 13.5454H4.06713C2.07518 13.5454 0.45459 11.9249 0.45459 9.93282V4.06715C0.45459 2.07519 2.07518 0.454529 4.06713 0.454529ZM9.9329 12.3839C11.2845 12.3839 12.3841 11.2844 12.3841 9.93282H12.384V4.06714C12.384 2.71563 11.2844 1.61601 9.93282 1.61601H4.06715C2.71564 1.61601 1.61609 2.71563 1.61609 4.06714V9.93282C1.61609 11.2844 2.71564 12.384 4.06715 12.3839H9.9329ZM3.57148 7.00005C3.57148 5.10947 5.10951 3.5714 7.00005 3.5714C8.8906 3.5714 10.4286 5.10947 10.4286 7.00005C10.4286 8.89056 8.8906 10.4285 7.00005 10.4285C5.10951 10.4285 3.57148 8.89056 3.57148 7.00005ZM4.75203 6.99998C4.75203 8.23951 5.76054 9.24788 7.00004 9.24788C8.23955 9.24788 9.24806 8.23951 9.24806 6.99998C9.24806 5.76036 8.23963 4.75191 7.00004 4.75191C5.76046 4.75191 4.75203 5.76036 4.75203 6.99998Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><script src="./tmlibrary/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./tmlibrary/js/main.js"></script> 
+<script src="./tmlibrary/js/jquery-3.6.0.min.js"></script> 
+<script src="./tmlibrary/js/gen-theme02.js"></script> 
+<div id="idmodal_cover" style="position:fixed;width:100%;height:100%;z-index:10000;filter=alpha(80);background-color: rgba(0,0,0,0.4);top:0px;display:none;overflow-y:scroll;">
+<div id="idmodal_content" style="position:relative;width:90%;height:auto;z-index:1010;top:10%; left:5%;background:#fff;padding:0%;border-radius:6px;" class="shadow-sm">
+  <div class="card p-5 border-0" id="idMyUrlPopUp"></div></div>
+</div><script>
+      var modal_wrap = document.getElementById('idmodal_cover');
+      function close_modal(){
+          $("#idmodal_cover").hide();
+          $("#idMyUrlPopUp").html("");
+      }
+      function open_modal(){
+          $("#idmodal_cover").fadeIn();
+          $("#idMyUrlPopUp").html("");
+          $("#idMyUrlPopUp").html("<div class='text-center p-4'><img src='../tmdesign/loading.gif' alt='' /></div>");
+
+      }		
+  </script><div id="idnew_hallo" me_par="0"></div><div style="border:solid 1px #f5f5f5;border-radius:0px;width:300px;padding:10px;background:#ffffff;position:fixed;z-index:1150;bottom:-500px;left:40px;" id="idxhallo_0" class="no_css_here shadow rounded " p_msg="0" onclick="jspop_slide_close('0')">
+                    
+                        <div class="float-end text-end " style="margin:-18px -16px 0px  0px;">
+                            <span style="margin:0px 0px 0px  0px;background:#fff;border-radius:10px;color:#f00;"
+                             class="hover_shadow fas fa-times-circle ishovered xclose" onclick="" title="close"></span>
+                        </div>
+                        
+                            <div class="text-center float-start" style="width:13%; margin-right:3%;padding-top:3px;">
+                                <img src="./images/flag/cameroon.png" alt="" class="rounded-0 p-0 border-0 img-thumbnail" loading="lazy" />
+                            </div>
+                            <div class="float-start" style="width:84%;">User from Cameroon just created a bio link (Basic Package)<br />
+                            <span class="text-secondary small">27 minute ago.</span>
+                            </div>
+                        
+                    </div><div style="border:solid 1px #f5f5f5;border-radius:0px;width:300px;padding:10px;background:#ffffff;position:fixed;z-index:1150;bottom:-500px;left:40px;" id="idxhallo_1" class="no_css_here shadow rounded " p_msg="1" onclick="jspop_slide_close('1')">
+                    
+                        <div class="float-end text-end " style="margin:-18px -16px 0px  0px;">
+                            <span style="margin:0px 0px 0px  0px;background:#fff;border-radius:10px;color:#f00;"
+                             class="hover_shadow fas fa-times-circle ishovered xclose" onclick="" title="close"></span>
+                        </div>
+                        
+                            <div class="text-center float-start" style="width:13%; margin-right:3%;padding-top:3px;">
+                                <img src="./images/flag/brazil.png" alt="" class="rounded-0 p-0 border-0 img-thumbnail" loading="lazy" />
+                            </div>
+                            <div class="float-start" style="width:84%;">User from Brazil just created a bio link (Pro Package)<br />
+                            <span class="text-secondary small">38 minute ago.</span>
+                            </div>
+                        
+                    </div><div style="border:solid 1px #f5f5f5;border-radius:0px;width:300px;padding:10px;background:#ffffff;position:fixed;z-index:1150;bottom:-500px;left:40px;" id="idxhallo_2" class="no_css_here shadow rounded " p_msg="2" onclick="jspop_slide_close('2')">
+                    
+                        <div class="float-end text-end " style="margin:-18px -16px 0px  0px;">
+                            <span style="margin:0px 0px 0px  0px;background:#fff;border-radius:10px;color:#f00;"
+                             class="hover_shadow fas fa-times-circle ishovered xclose" onclick="" title="close"></span>
+                        </div>
+                        
+                            <div class="text-center float-start" style="width:13%; margin-right:3%;padding-top:3px;">
+                                <img src="./images/flag/australia.png" alt="" class="rounded-0 p-0 border-0 img-thumbnail" loading="lazy" />
+                            </div>
+                            <div class="float-start" style="width:84%;">User from Australia just created a bio link (Pro Package)<br />
+                            <span class="text-secondary small">45 minute ago.</span>
+                            </div>
+                        
+                    </div><div style="border:solid 1px #f5f5f5;border-radius:0px;width:300px;padding:10px;background:#ffffff;position:fixed;z-index:1150;bottom:-500px;left:40px;" id="idxhallo_3" class="no_css_here shadow rounded " p_msg="3" onclick="jspop_slide_close('3')">
+                    
+                        <div class="float-end text-end " style="margin:-18px -16px 0px  0px;">
+                            <span style="margin:0px 0px 0px  0px;background:#fff;border-radius:10px;color:#f00;"
+                             class="hover_shadow fas fa-times-circle ishovered xclose" onclick="" title="close"></span>
+                        </div>
+                        
+                            <div class="text-center float-start" style="width:13%; margin-right:3%;padding-top:3px;">
+                                <img src="./images/flag/india.png" alt="" class="rounded-0 p-0 border-0 img-thumbnail" loading="lazy" />
+                            </div>
+                            <div class="float-start" style="width:84%;">User from India just created a bio link (Pro Package)<br />
+                            <span class="text-secondary small">10 minute ago.</span>
+                            </div>
+                        
+                    </div><div style="border:solid 1px #f5f5f5;border-radius:0px;width:300px;padding:10px;background:#ffffff;position:fixed;z-index:1150;bottom:-500px;left:40px;" id="idxhallo_4" class="no_css_here shadow rounded " p_msg="4" onclick="jspop_slide_close('4')">
+                    
+                        <div class="float-end text-end " style="margin:-18px -16px 0px  0px;">
+                            <span style="margin:0px 0px 0px  0px;background:#fff;border-radius:10px;color:#f00;"
+                             class="hover_shadow fas fa-times-circle ishovered xclose" onclick="" title="close"></span>
+                        </div>
+                        
+                            <div class="text-center float-start" style="width:13%; margin-right:3%;padding-top:3px;">
+                                <img src="./images/flag/malaysia.png" alt="" class="rounded-0 p-0 border-0 img-thumbnail" loading="lazy" />
+                            </div>
+                            <div class="float-start" style="width:84%;">User from Malaysia just created a bio link (Basic Package)<br />
+                            <span class="text-secondary small">22 minute ago.</span>
+                            </div>
+                        
+                    </div><div style="border:solid 1px #f5f5f5;border-radius:0px;width:300px;padding:10px;background:#ffffff;position:fixed;z-index:1150;bottom:-500px;left:40px;" id="idxhallo_5" class="no_css_here shadow rounded " p_msg="5" onclick="jspop_slide_close('5')">
+                    
+                        <div class="float-end text-end " style="margin:-18px -16px 0px  0px;">
+                            <span style="margin:0px 0px 0px  0px;background:#fff;border-radius:10px;color:#f00;"
+                             class="hover_shadow fas fa-times-circle ishovered xclose" onclick="" title="close"></span>
+                        </div>
+                        
+                            <div class="text-center float-start" style="width:13%; margin-right:3%;padding-top:3px;">
+                                <img src="./images/flag/china.png" alt="" class="rounded-0 p-0 border-0 img-thumbnail" loading="lazy" />
+                            </div>
+                            <div class="float-start" style="width:84%;">User from China just created a bio link (Pro Package)<br />
+                            <span class="text-secondary small">54 minute ago.</span>
+                            </div>
+                        
+                    </div><div style="border:solid 1px #f5f5f5;border-radius:0px;width:300px;padding:10px;background:#ffffff;position:fixed;z-index:1150;bottom:-500px;left:40px;" id="idxhallo_6" class="no_css_here shadow rounded " p_msg="6" onclick="jspop_slide_close('6')">
+                    
+                        <div class="float-end text-end " style="margin:-18px -16px 0px  0px;">
+                            <span style="margin:0px 0px 0px  0px;background:#fff;border-radius:10px;color:#f00;"
+                             class="hover_shadow fas fa-times-circle ishovered xclose" onclick="" title="close"></span>
+                        </div>
+                        
+                            <div class="text-center float-start" style="width:13%; margin-right:3%;padding-top:3px;">
+                                <img src="./images/flag/chile.png" alt="" class="rounded-0 p-0 border-0 img-thumbnail" loading="lazy" />
+                            </div>
+                            <div class="float-start" style="width:84%;">User from Chile just created a bio link (Pro Package)<br />
+                            <span class="text-secondary small">19 minute ago.</span>
+                            </div>
+                        
+                    </div><div style="border:solid 1px #f5f5f5;border-radius:0px;width:300px;padding:10px;background:#ffffff;position:fixed;z-index:1150;bottom:-500px;left:40px;" id="idxhallo_7" class="no_css_here shadow rounded " p_msg="7" onclick="jspop_slide_close('7')">
+                    
+                        <div class="float-end text-end " style="margin:-18px -16px 0px  0px;">
+                            <span style="margin:0px 0px 0px  0px;background:#fff;border-radius:10px;color:#f00;"
+                             class="hover_shadow fas fa-times-circle ishovered xclose" onclick="" title="close"></span>
+                        </div>
+                        
+                            <div class="text-center float-start" style="width:13%; margin-right:3%;padding-top:3px;">
+                                <img src="./images/flag/argentina.png" alt="" class="rounded-0 p-0 border-0 img-thumbnail" loading="lazy" />
+                            </div>
+                            <div class="float-start" style="width:84%;">User from Argentina just created a bio link (Basic Package)<br />
+                            <span class="text-secondary small">34 minute ago.</span>
+                            </div>
+                        
+                    </div><div style="border:solid 1px #f5f5f5;border-radius:0px;width:300px;padding:10px;background:#ffffff;position:fixed;z-index:1150;bottom:-500px;left:40px;" id="idxhallo_8" class="no_css_here shadow rounded " p_msg="8" onclick="jspop_slide_close('8')">
+                    
+                        <div class="float-end text-end " style="margin:-18px -16px 0px  0px;">
+                            <span style="margin:0px 0px 0px  0px;background:#fff;border-radius:10px;color:#f00;"
+                             class="hover_shadow fas fa-times-circle ishovered xclose" onclick="" title="close"></span>
+                        </div>
+                        
+                            <div class="text-center float-start" style="width:13%; margin-right:3%;padding-top:3px;">
+                                <img src="./images/flag/russia.png" alt="" class="rounded-0 p-0 border-0 img-thumbnail" loading="lazy" />
+                            </div>
+                            <div class="float-start" style="width:84%;">User from Russia just created a bio link (Pro Package)<br />
+                            <span class="text-secondary small">59 minute ago.</span>
+                            </div>
+                        
+                    </div><div style="border:solid 1px #f5f5f5;border-radius:0px;width:300px;padding:10px;background:#ffffff;position:fixed;z-index:1150;bottom:-500px;left:40px;" id="idxhallo_9" class="no_css_here shadow rounded " p_msg="9" onclick="jspop_slide_close('9')">
+                    
+                        <div class="float-end text-end " style="margin:-18px -16px 0px  0px;">
+                            <span style="margin:0px 0px 0px  0px;background:#fff;border-radius:10px;color:#f00;"
+                             class="hover_shadow fas fa-times-circle ishovered xclose" onclick="" title="close"></span>
+                        </div>
+                        
+                            <div class="text-center float-start" style="width:13%; margin-right:3%;padding-top:3px;">
+                                <img src="./images/flag/uk.png" alt="" class="rounded-0 p-0 border-0 img-thumbnail" loading="lazy" />
+                            </div>
+                            <div class="float-start" style="width:84%;">User from United Kingdom just created a bio link (Pro Package)<br />
+                            <span class="text-secondary small">32 minute ago.</span>
+                            </div>
+                        
+                    </div>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+        var pmsg = 0;
+        jQuery(document).ready(function(){	             
+            jshallo_bro();	 	               
+        });
+
+        function jspop_slide_close(idele){
+                jQuery("#idxhallo_"+idele).effect('shake',400,function(){jQuery('#idxhallo_'+idele).animate({bottom: '-500px'},1000);});		
+                jQuery("#idnew_hallo").attr("me_par","0");
+            }
+
+         function jshallo_bro(){	
+            
+            var xj = 0;
+            var vn_up = jQuery(".no_css_here").length;	
+                vn_up = vn_up-1;            
+            var xinterval = setInterval(function(){                
+                    xj = jQuery("#idnew_hallo").attr("me_par");		
+                    if(xj == 0 ){
+                        // muncul
+                        jQuery("#idxhallo_"+pmsg).animate({bottom: '100px',left: '40px'},500);
+                        jQuery("#idnew_hallo").attr("me_par","1");				
+                        setTimeout(function(){						
+                            jspop_slide_close(pmsg);
+                            if(pmsg==vn_up){
+                                pmsg = 0;
+                            }else{
+                                pmsg=pmsg+1;
+                            }	
+                            jshallo_bro();				 
+                        },6000);
+                        clearInterval(xinterval);
+                    }else{
+                        // sembunyi
+                        jspop_slide_close(pmsg);				
+                        if(pmsg==vn_up){
+                            pmsg = 0;
+                        }else{
+                            pmsg=pmsg+1;
+                        }
+                    }
+                },20000);
+            }
+            
+</script>
+
+ 
+</body>
+</html> 

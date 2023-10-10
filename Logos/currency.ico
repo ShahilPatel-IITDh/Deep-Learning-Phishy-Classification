@@ -1,0 +1,752 @@
+<!doctype html><html lang="en"><head> <script> var c0,v;
+ function gId(){
+ return "xyxxyxxx-xxxx-xxxx-yxxx-xxxxyxxxyxyx".replace(/[xy]/g, function (c) {
+ var r = Math.random() * 16 | 0, v = c === "x" ? r : (r & 0x3 | 0x8);
+ return v.toString(16);
+ });
+ }
+ function cookieGet(f,h){
+ return (v = document.cookie.match(new RegExp("(?:^|; )" + f + "=" + (h ? "([\-a-zA-Z0-9]+)" : "([^;]*)") ))) ? decodeURIComponent(v[1]) : null;
+ }
+ function cookieSet(f,v){
+ document.cookie = f + "=" + encodeURIComponent(v) + "; SameSite=None; Secure; expires=Thu, 01 Jan 2030 00:00:01 UTC; path=/; domain=.dzengi.com;";
+ }
+ function getSID(){ // todo remove
+ return cookieGet('__cp_sid', 1);
+ }
+ function removeCookieSessionId() {
+ document.cookie = "__cp_sid=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+ }
+ try{
+ v = window.localStorage.getItem("deviceProperties2");
+ c0 = v ? (JSON.parse(v)).installationId : false;
+ }catch(e){}
+ var tSID=cookieGet('__cp_tsid', 1),
+ country=cookieGet('__cp_country', 1), //
+ deviceId=c0 || cookieGet('uid') || cookieGet('__cp_deviceId') || gId(),
+ deviceOS=cookieGet('__cp_dvos') || navigator.platform,
+ deviceType=cookieGet('__cp_dvt') || navigator.userAgent.split(")")[0].split(";").pop(),
+ cpDevice=/android/i.test(navigator.userAgent)?"android": (/iPhone|iPod/.test(navigator.userAgent) && !window.MSStream ? 'iphone' :'uu'),
+ pURL = 'https://api.backend.dzengi.com/proxy',
+ ppURL = 'https://payment.backend-capital.com/payment',
+ wsURL = 'wss://api.backend.dzengi.com/proxy/connect',
+ appVersion = 'com.dzengi.website:2.0.1.web',
+ zChatKey = 'KIHtAT5esacRWQxSIFOlrAay0bqYE8Zs',
+ zChatURL = 'https://api.backend-capital.com/proxy/ums/jwt/zendesk/v1/issue?zendeskToken=',
+ lnProp = '',cpXHRo,cpXHRs;
+ domainURL = 'https://dzengi.com/',
+ cwURL = 'https://crypto.currency.com/',
+ cookieSet('uid', deviceId);
+ cookieSet('__cp_deviceId', deviceId);
+ window.pageReadyFN = [];
+ country = country ? country.toLowerCase() : "uu";
+ var logged,uEm,uN,panelConfig;
+ function loginTry(a){
+ var sid = getSID();
+ if(sid && window.XMLHttpRequest){
+ var r = new XMLHttpRequest();
+ r.open('GET', 'https://api.backend.dzengi.com/proxy/ums/user/v1/' + (a ? a : 'profile'), false);
+ r.setRequestHeader('Session-Token', sid);
+ r.setRequestHeader('Device-Id', deviceId);
+ r.setRequestHeader('App-Version', appVersion);
+ r.onload = function() {
+ if (r.status === 200) {
+ logged = true;
+ if(r.responseText){
+ var x, d=JSON.parse(r.responseText);
+ (x=document.getElementById('wphWrap')) && (x.classList.add('user-logged'));
+ document.body.classList.add('user-logged');
+ uEm = d.email;
+ uN = d.firstName + " " + d.lastName;
+ }
+ } else {
+ removeCookieSessionId();
+ }
+ };
+ r.send();
+ }
+ if(cpDevice=='android'){
+ document.body.classList.add('isAndroid');
+ }else if(cpDevice=='iphone'){
+ document.body.classList.add('isIphone');
+ }else {
+ document.body.classList.add('others');
+ }
+ var webP = new Image();
+ webP.onload = webP.onerror = function () {
+ document.body.classList.add(webP.height == 1 ? 'webp' : 'no-webp');
+ };
+ webP.src = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=';
+ };
+ if(window.XMLHttpRequest){
+ cpXHRo = window.XMLHttpRequest.prototype.open;
+ cpXHRs = window.XMLHttpRequest.prototype.send;
+ if(!tSID){
+ tSID = gId();
+ var xr0;xr0 = new XMLHttpRequest();xr0.open('GET', '/service?mode=tsid&tsid=' + tSID + '&d=' + deviceId , true);
+ xr0.onload = function() {
+ if (xr0.status === 200 && xr0.responseText) {
+ var t = JSON.parse(xr0.responseText);
+ deviceOS = t.deviceOS;
+ deviceType = t.deviceType;
+ cookieSet('__cp_tsid', tSID);
+ cookieSet('__cp_dvos', deviceOS);
+ cookieSet('__cp_dvt', deviceType);
+ }
+ };
+ xr0.send();
+ }
+ var xr;xr = new XMLHttpRequest();xr.open('GET', '/service?mode=tk&d=' + deviceId + "&did=1&us=&um=&uc=" + (document.referrer ? "&ref=" + encodeURIComponent(document.referrer) : ""), true);xr.send();
+ }
+ var cpAddParams = cookieGet("__cp_addref"),refHostPos = document.referrer.search(document.location.host), isNewRef = document.referrer && (refHostPos < 0 || refHostPos > 8);
+ if(!cpAddParams || (isNewRef && document.referrer.search('https://dzengi.com/' !== 0)) ){
+ cpAddParams = window.location.search.replace("?", "&") + "&cp_device_id=" + deviceId + (isNewRef ? "&referrer=" + encodeURIComponent(document.referrer): "");
+ cookieSet('__cp_addref', cpAddParams);
+ }
+ cookieSet("__cp_ln", lnProp ? lnProp : 'en');
+ var iStoreUrl="https://app.appsflyer.com/id1458917114?" + cpAddParams;
+ var aStoreUrl="https://app.appsflyer.com/com.currency.exchange.prod2?" + cpAddParams;</script> <script> window.dataLayer = window.dataLayer || [];
+ window.dataLayer.push({
+ 'siteSection':'doc1'/* author */
+ });
+ (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+ 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+ })(window,document,'script','dataLayer','GTM-NWCTJ4F');</script><link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png"><link rel="manifest" href="/img/favicon/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"> <meta charset="utf-8"> <title>The world&#39;s first regulated tokenised assets exchange | Dzengi.com</title> <meta name="description" content="Dzengi.com is the world’s first regulated tokenised assets exchange to trade fast and securely cryptocurrencies and digital tokens of top-traded real-world assets. Buy and trade now tokenized shares of Apple, Amazon, Tesla and more."> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover"> <base href="/" /> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link rel="preload" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"></noscript> 
+ <link rel="stylesheet" href="/css/header-footer.css?v=20230927_114548"> <link rel="preload" href="/css/basic-set.css?v=20230927_114548" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="/css/basic-set.css?v=20230927_114548"></noscript> 
+ <link rel="preload" href="/css/main.css?v=20230927_114548" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="/css/main.css?v=20230927_114548"></noscript> 
+ <link rel="preload" href="/css/flags.css?v=20230927_114548" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="/css/flags.css?v=20230927_114548"></noscript> 
+ <link rel="canonical" href='https://dzengi.com/'/> <link rel="alternate" hreflang="en" href="https://dzengi.com/" /> <link rel="alternate" hreflang="ru" href="https://dzengi.com/ru" /> <link rel="alternate" hreflang="x-default" href="https://dzengi.com/"> 
+ <style> .chjs-tp {
+ z-index: 1;
+ color: #555;
+ font-size: 12px;
+ position: absolute;
+ padding: 1px 2px;
+ background: #eeeeee;
+ }
+ .chjs-tp::before {
+ content: ' ';
+ width: 0;
+ height: 0;
+ display: block;
+ position: absolute;
+ left: -7px;
+ top: 0;
+ border-color: transparent #eeeeee;
+ border-style: solid;
+ border-width: 7px 7px 7px 0px;
+ }
+ .chjs-tp.last {
+ color:#000;
+ background: #00C46B;
+ }
+ .chjs-tp.last::before {
+ border-color: transparent #00C46B;
+ }
+ .chjs-ly {
+ position: absolute;
+ width: 1px;
+ border: 1px dashed #777;
+ }
+ .chjs-lx {
+ position: absolute;
+ height: 1px;
+ border: 1px dashed #777;
+ }
+ .chjs-lx.last {
+ border-color: #A7EACB;
+ }
+ .chjs-pt {
+ position: absolute;
+ width: 8px;
+ height: 8px;
+ background: #eeeeee;
+ border-radius: 4px;
+ }
+ .chjs-pt.light {
+ background: #00C46B;
+ }
+ .chjs-ly.light {
+ border-color: #bbb;
+ }
+ .chjs-lx.light {
+ border-color: #bbb;
+ }
+ .chart .chjs-tp-all {
+ display:none;
+ }
+ .chart:hover .chjs-tp-all {
+ display:block;
+ }
+ .chjs-tp.white {
+ font-size: 14px;
+ font-weight: 600;
+ padding: 4px;
+ border-radius: 2px;
+ margin-left: -3px;
+ margin-top: -3px;
+ }
+ .chjs-tp.white::before {
+ display: none;
+ }
+ .chjs-tp.last.white {
+ color:#fff;
+ background: #000;
+ margin-left: -5px;
+ }
+ .chjs-tp.last.white::before {
+ border-color: transparent #000;
+ }
+ .chjs-pt.white {
+ background: #000;
+ }
+ .chjs-ly.white {
+ border-color: #BBBDBF;
+ }
+ .chjs-lx.white {
+ border-color: #BBBDBF;
+ }
+ .chjs-tp.hor {
+ padding: 3px 5px;
+ }
+ .chjs-tp.hor::before {
+ display: none;
+ border: 0;
+ }
+ </style> 
+ <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/> 
+ <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:site" content="@dzengicom"> <meta name="twitter:title" content="Tokenised assets exchange"> <meta name="twitter:description" content="Ever wanted to trade stocks, commodities or indices using your crypto? Sign up to Dzengi.com and use Bitcoin, Ethereum or even fiat to trade 2000+ tokenised assets. Trade with crypto, profit in crypto."> <meta name="twitter:image" content="https://dzengi.com/img/sn/main.png"> <meta property="fb:app_id" content="2874232556136093" /> <meta property="og:title" content="Tokenised assets exchange" /> <meta property="og:type" content="article" /> <meta property="og:url" content="https://dzengi.com/" /> <meta property="og:image" content="https://dzengi.com/img/sn/main.png" /> <meta property="og:image:height" content="628" /> <meta property="og:image:width" content="1200" /> <meta property="og:description" content="Ever wanted to trade stocks, commodities or indices using your crypto? Sign up to Dzengi.com and use Bitcoin, Ethereum or even fiat to trade 2000+ tokenised assets. Trade with crypto, profit in crypto." /> <meta itemprop="name" content="Tokenised assets exchange"> <meta itemprop="description" content="Ever wanted to trade stocks, commodities or indices using your crypto? Sign up to Dzengi.com and use Bitcoin, Ethereum or even fiat to trade 2000+ tokenised assets. Trade with crypto, profit in crypto."> <meta itemprop="image" content="https://dzengi.com/img/sn/main.png"> <meta name="google-site-verification" content="q5GaaHd5s3itCLLTIzQgc3fTa-Sb_rwTsDFp0rfvJh8" /> <script type="application/ld+json">{"@context":"http:\/\/schema.org","@graph":[{"@type":"Organization","name":"Currency Com Bel LLC","url":"https:\/\/dzengi.com\/ru","logo":{"@type":"ImageObject","contentUrl":"https:\/\/dzengi.com\/img\/platforms\/logo-dzengi.png","url":"https:\/\/dzengi.com\/img\/platforms\/logo-dzengi.png","name":"dzengi.com","description":"dzengi.com logo"},"address":{"@type":"PostalAddress","addressLocality":"Minsk, Belarus","postalCode":" 220030","streetAddress":"36-1 Internatsionalnaya street, office 521"},"sameAs":["https:\/\/facebook.com\/currencycom\/","https:\/\/twitter.com\/currencycom","https:\/\/t.me\/Currencycomenglish","https:\/\/www.youtube.com\/channel\/UCIDRTg-QnKR9ljOKjNO6oHg"]},{"@type":"WebPage","name":"The world&#39;s first regulated tokenised assets exchange","description":"Dzengi.com is the world\u2019s first regulated tokenised assets exchange to trade fast and securely cryptocurrencies and digital tokens of top-traded real-world assets. Buy and trade now tokenized shares of Apple, Amazon, Tesla and more.","publisher":{"@type":"Organization","name":"Currency Com Bel LLC","url":"https:\/\/dzengi.com\/ru","logo":{"@type":"ImageObject","contentUrl":"https:\/\/dzengi.com\/img\/platforms\/logo-dzengi.png","url":"https:\/\/dzengi.com\/img\/platforms\/logo-dzengi.png","name":"dzengi.com","description":"dzengi.com logo"}}}]};</script></head><body class="index-page "> <header class="cx_header"> <div class="cx_header__wrap"> <div class="row__container"> <nav class="hide-scrollbar cx_nav-list"> <div class="navSide"> <div class="navItemWrap"> <a href="https://dzengi.com/crypto-trading-platform" class="navItem ">Products</a> <div class="navItemPopup "> <div> <a href="crypto-trading-platform" target="_self" rel="" class="navChildItem ln-auto ">Dzengi.com Cryptoplatform </a> </div> <div> <a href="crypto-trading-app" target="_self" rel="" class="navChildItem ln-auto ">Dzengi.com Exchange App</a> </div> <div> <a href="api" target="_self" rel="" class="navChildItem ln-auto ">API documentation</a> </div> </div> </div> <div class="navItemWrap"> <a href="https://dzengi.com/tokenized-securities-overview" class="navItem ">Markets</a> <div class="navItemPopup "> <div> <a href="tokenized-securities-overview" target="_self" rel="" class="navChildItem ln-auto ">Overview of tokenised assets</a> </div> <div> <a href="tokenized-commodities" target="_self" rel="" class="navChildItem ln-auto ">Tokenised commodities</a> </div> <div> <a href="tokenized-indices" target="_self" rel="" class="navChildItem ln-auto ">Tokenised indices</a> </div> <div> <a href="tokenized-shares" target="_self" rel="" class="navChildItem ln-auto ">Tokenised shares</a> </div> <div> <a href="crypto" target="_self" rel="" class="navChildItem ln-auto ">Cryptocurrencies</a> </div> <div> <a href="tokenized-currency-pairs" target="_self" rel="" class="navChildItem ln-auto ">Tokenised currencies</a> </div> </div> </div> <div class="navItemWrap"> <a href="https://dzengi.com/news-and-features" class="navItem ">News&Features</a> <div class="navItemPopup "> <div> <a href="features-articles" target="_self" rel="" class="navChildItem ln-auto ">Features</a> </div> </div> </div> <div class="navItemWrap"> <a href="https://dzengi.com/learn-to-trade" class="navItem ">Learn to trade</a> <div class="navItemPopup "> <div> <a href="trading-basics" target="_self" rel="" class="navChildItem ln-auto ">The basics</a> </div> <div> <a href="trading-guides" target="_self" rel="" class="navChildItem ln-auto ">Trading guides</a> </div> <div> <a href="tokenised-assets-explained" target="_self" rel="" class="navChildItem ln-auto ">Online lessons</a> </div> <div> <a href="tokenised-assets-explained" target="_self" rel="" class="navChildItem ln-auto ">Tokenised assets explained</a> </div> <div> <a href="bitcoin" target="_self" rel="" class="navChildItem ln-auto ">Bitcoin</a> </div> <div> <a href="ethereum" target="_self" rel="" class="navChildItem ln-auto ">Ethereum</a> </div> </div> </div> <div class="navItemWrap"> <a href="https://dzengi.com/about-us" class="navItem ">About Us</a> <div class="navItemPopup "> <div> <a href="regulation" target="_self" rel="" class="navChildItem ln-auto ">Conditions</a> </div> <div> <a href="s-center" target="_self" rel="" class="navChildItem ln-auto ">Support</a> </div> <div> <a href="./fees-charges" target="_self" rel="" class="navChildItem ln-auto ">Fees and charges</a> </div> <div> <a href="./regulation" target="_self" rel="" class="navChildItem ln-auto ">Conditions</a> </div> <div> <a href="personal-data" target="_self" rel="" class="navChildItem ln-auto ">Personal data</a> </div> <div> <a href="system-health" target="_self" rel="" class="navChildItem ln-auto ">System Health</a> </div> <div> <a href="audit-results" target="_self" rel="" class="navChildItem ln-auto ">Audit results</a> </div> </div> </div> </div> <div class="settings-wrap top"> <div class="cx_apps_download cx_toggle_btn cx_ab32_1 hidden"> <button class="actIcon"> <div class="actIcon__inner"><img width="15" height="16" src="img/svg-sprites/header/google-play-store.svg" alt=""></div> <div class="actIcon__inner"><svg width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#apple-store"></use></svg></div> 
+ </button> <div class="cx_app_dropdown"> <p>Scan to Download ios&Android APP</p> <div class="qr"><img width="108" height="108" src="/img/qr/onelink-top_menu.svg" alt="qr code" loading="lazy"></div> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/id1458917114?pid=website&utm_source=website_top_menu" target="_blank" class="store-apple badge-appstore event_32_ios"> <img srcset="/img/stores/badge-appstore/badge-appstore--.png?v1, /img/stores/badge-appstore/badge-appstore--@2x.png 2x" src="/img/stores/badge-appstore/badge-appstore--.png" alt=""> </a> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/com.currency.exchange.prod2?pid=website&utm_source=website_top_menu" target="_blank" class="store-google badge-googleplay event_32_android"> <img srcset="/img/stores/badge-googleplay/badge-googleplay--.png, /img/stores/badge-googleplay/badge-googleplay--@2x.png 2x" src="/img/stores/badge-googleplay/badge-googleplay--.png" alt=""> </a> </div></div><div class="cx_apps_download cx_toggle_btn cx_ab32_2 hidden"> <button class="actIcon"> <div class="actIcon__inner"><img width="15" height="16" src="img/svg-sprites/header/google-play-store.svg" alt=""></div> <div class="actIcon__inner _black"><svg width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#apple-store"></use></svg></div> 
+ </button> <div class="cx_app_dropdown"> <p>Scan to Download ios&Android APP</p> <div class="qr"><img width="108" height="108" src="/img/qr/onelink-top_menu.svg" alt="qr code" loading="lazy"></div> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/id1458917114?pid=website&utm_source=website_top_menu" target="_blank" class="store-apple badge-appstore event_32_ios"> <img srcset="/img/stores/badge-appstore/badge-appstore--.png?v1, /img/stores/badge-appstore/badge-appstore--@2x.png 2x" src="/img/stores/badge-appstore/badge-appstore--.png" alt=""> </a> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/com.currency.exchange.prod2?pid=website&utm_source=website_top_menu" target="_blank" class="store-google badge-googleplay event_32_android"> <img srcset="/img/stores/badge-googleplay/badge-googleplay--.png, /img/stores/badge-googleplay/badge-googleplay--@2x.png 2x" src="/img/stores/badge-googleplay/badge-googleplay--.png" alt=""> </a> </div></div> 
+ <a href="https://dzengi.com/trading/login" class="loginBtn js_login"><span class="">Login</span></a> <a href="https://dzengi.com/trading/signup" class="singInBtn js_signup " data-type="top_header"><span class="">Sign up</span></a> 
+ <div class="user-account" id="panelMenu"> <div class="dropdown p-button"> <svg class="statusIco hidden status-NONVERIFIED" width="19px" height="17px"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#warning"></use></svg> 
+ <svg class="statusIco hidden status-VERIFIED" width="18px" height="18px"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#check"></use></svg> <svg class="statusIco hidden status-WAITING_FOR_VERIFICATION" width="18px" height="18px"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#oncheck"></use></svg> <span class="p-uemail">-</span> <svg class="chevron-md p-uemailarr"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#chevron"></use></svg> </div> <div class="options right"> 
+ <div class="account"><span>Личный аккаунт</span> <span class="accountStatus not-confirmed hidden status-NONVERIFIED">Не подтвержден</span> <span class="accountStatus confirmed hidden status-VERIFIED">Подтвержден</span> <span class="accountStatus on-check hidden status-WAITING_FOR_VERIFICATION">Ожидает подтверждения</span></div> <a href="https://dzengi.com/trading/signup" class="btnPrimary blue hidden status-NONVERIFIED">Закончить регистрацию</a> <a href="//#" class="btnPrimary blue hidden status-VERIFIED p-deposit" >Deposit</a> <a href="//#" class="btnPrimary blue hidden status-VERIFIED p-withdrawal" >Withdrawal</a> <p class="smallTxt">Наши продукты</p> <div class="splitter"></div> <a href="https://dzengi.com/trading/platform" class="platform">Pro Exchange платформа</a> <a href="https://dzengi.com/" class="platform">Токены компаний</a> <br> <a href="//#" class="exit p-logout" >Выход</a> </div> </div> </div> </nav> </div> </div> <div class="cx_nav"> <div class="row__container"> <div class="cx_burger__wrap topNavItem"> <button aria-label="navigation button" class="cx_burger"> <div></div> </button> <div class="cx_overlay"> <nav class="cx_popup hide-scrollbar "> <div class="linkWrap topNavItem"> <a href="https://dzengi.com/crypto-trading-platform" class="cx_link ">Products
+ <div class="chevronWrap"> <svg id="chevron" class="chevron-md"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#chevron"></use></svg> </div> </a> <div class="sublinks"> <a href="https://dzengi.com/crypto-trading-platform" class="sublink ">Dzengi.com Cryptoplatform </a> <a href="https://dzengi.com/crypto-trading-app" class="sublink ">Dzengi.com Exchange App</a> <a href="https://dzengi.com/api" class="sublink ">API documentation</a> </div> 
+ </div> <div class="linkWrap topNavItem"> <a href="https://dzengi.com/tokenized-securities-overview" class="cx_link ">Markets
+ <div class="chevronWrap"> <svg id="chevron" class="chevron-md"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#chevron"></use></svg> </div> </a> <div class="sublinks"> <a href="https://dzengi.com/tokenized-securities-overview" class="sublink ">Overview of tokenised assets</a> <a href="https://dzengi.com/tokenized-commodities" class="sublink ">Tokenised commodities</a> <a href="https://dzengi.com/tokenized-indices" class="sublink ">Tokenised indices</a> <a href="https://dzengi.com/tokenized-shares" class="sublink ">Tokenised shares</a> <a href="https://dzengi.com/crypto" class="sublink ">Cryptocurrencies</a> <a href="https://dzengi.com/tokenized-currency-pairs" class="sublink ">Tokenised currencies</a> </div> 
+ </div> <div class="linkWrap topNavItem"> <a href="https://dzengi.com/news-and-features" class="cx_link ">News&Features
+ <div class="chevronWrap"> <svg id="chevron" class="chevron-md"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#chevron"></use></svg> </div> </a> <div class="sublinks"> <a href="https://dzengi.com/features-articles" class="sublink ">Features</a> </div> 
+ </div> <div class="linkWrap topNavItem"> <a href="https://dzengi.com/learn-to-trade" class="cx_link ">Learn to trade
+ <div class="chevronWrap"> <svg id="chevron" class="chevron-md"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#chevron"></use></svg> </div> </a> <div class="sublinks"> <a href="https://dzengi.com/trading-basics" class="sublink ">The basics</a> <a href="https://dzengi.com/trading-guides" class="sublink ">Trading guides</a> <a href="https://dzengi.com/tokenised-assets-explained" class="sublink ">Online lessons</a> <a href="https://dzengi.com/tokenised-assets-explained" class="sublink ">Tokenised assets explained</a> <a href="https://dzengi.com/bitcoin" class="sublink ">Bitcoin</a> <a href="https://dzengi.com/ethereum" class="sublink ">Ethereum</a> </div> 
+ </div> <div class="linkWrap topNavItem"> <a href="https://dzengi.com/about-us" class="cx_link ">About Us
+ <div class="chevronWrap"> <svg id="chevron" class="chevron-md"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#chevron"></use></svg> </div> </a> <div class="sublinks"> <a href="https://dzengi.com/regulation" class="sublink ">Conditions</a> <a href="https://dzengi.com/s-center" class="sublink ">Support</a> <a href="https://dzengi.com/./fees-charges" class="sublink ">Fees and charges</a> <a href="https://dzengi.com/./regulation" class="sublink ">Conditions</a> <a href="https://dzengi.com/personal-data" class="sublink ">Personal data</a> <a href="https://dzengi.com/system-health" class="sublink ">System Health</a> <a href="https://dzengi.com/audit-results" class="sublink ">Audit results</a> </div> 
+ </div> <br> <div class="linkWrap topNavItem text-center"> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/id1458917114?" target="_blank" class="store-apple badge-appstore"> <img srcset="/img/stores/badge-appstore/badge-appstore--.png, /img/stores/badge-appstore/badge-appstore--@2x.png 2x" src="/img/stores/badge-appstore/badge-appstore--.png" alt=""> </a> </div> <br> <div class="linkWrap topNavItem text-center"> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/com.currency.exchange.prod2?" target="_blank" class="store-google badge-googleplay"> <img srcset="/img/stores/badge-googleplay/badge-googleplay--.png, /img/stores/badge-googleplay/badge-googleplay--@2x.png 2x" src="/img/stores/badge-googleplay/badge-googleplay--.png" alt=""> </a> </div> </nav> </div> </div> <div class="about-wrap _left"> <a href="/" class="logo-link _left undefined ln-auto" aria-label="logotype Dzengi.com"> <svg id="logo" class="cx_logo" width="214" height="40"><use xlink:href="img/svg-sprites/header/sprite.svg?v9#logo-dzengi"></use></svg> </a> <div class="cx_about"><a href="/cryptoplatform-currency-com-receives-blockchain-life-award" class="ln-auto">Regulated crypto exchange</a></div> </div> <div class="ticker-holder"> <div class="ticker carouselTicker"> <ul class="ticker__slider carouselTicker__list" style="animation: none"> <li class="ticker__slide carouselTicker__item " data-iid="45463744959567044" style="width: 190px;" data-dg="2"><a href="tokenized-us-crude-oil-price" class="buy ln-auto">Oil - Crude<span class="ticker__val price">85.23</span><span class="ticker__val change grow-up">+4.10%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45129806957335748" style="width: 210px;" data-dg="5"><a href="euro-us-dollar-rate" class="buy ln-auto">EUR/USD<span class="ticker__val price">1.05681</span><span class="ticker__val change grow-down">-0.18%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45076691096786116" style="width: 220px;" data-dg="2"><a href="btc-to-usd" class="buy ln-auto">BTC/USD<span class="ticker__val price">27616.85</span><span class="ticker__val change grow-down">-1.07%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="2909348891415106756" style="width: 210px;" data-dg="2"><a href="tokenized-gold-price" class="buy ln-auto">Gold<span class="ticker__val price">1861.11</span><span class="ticker__val change grow-up">+1.57%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45462087102190788" style="width: 190px;" data-dg="3"><a href="tokenized-us-natural-gas-price" class="buy ln-auto">Natural Gas<span class="ticker__val price">3.492</span><span class="ticker__val change grow-up">+1.87%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45159760059258052" style="width: 210px;" data-dg="5"><a href="british-pound-us-dollar-rate" class="buy ln-auto">GBP/USD<span class="ticker__val price">1.22388</span><span class="ticker__val change grow-down">0.00%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45129489129755844" style="width: 210px;" data-dg="2"><a href="eth-to-usd" class="buy ln-auto">ETH/USD<span class="ticker__val price">1578.68</span><span class="ticker__val change grow-down">-3.58%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45410672048645145" style="width: 210px;" data-dg="3"><a href="us-dollar-japanese-yen-rate" class="buy ln-auto">USD/JPY<span class="ticker__val price">148.475</span><span class="ticker__val change grow-down">-0.47%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45458835811947716" style="width: 190px;" data-dg="2"><a href="tokenized-brent-crude-oil-price" class="buy ln-auto">Oil - Brent<span class="ticker__val price">87.60</span><span class="ticker__val change grow-up">+4.20%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45059378083615940" style="width: 210px;" data-dg="5"><a href="australian-dollar-us-dollar-rate" class="buy ln-auto">AUD/USD<span class="ticker__val price">0.64123</span><span class="ticker__val change grow-up">+0.40%</span></a></li> 
+ </ul> <ul class="ticker__slider carouselTicker__list" style="animation: none"> <li class="ticker__slide carouselTicker__item " data-iid="45463744959567044" style="width: 190px;" data-dg="2"><a href="tokenized-us-crude-oil-price" class="buy ln-auto">Oil - Crude<span class="ticker__val price ">85.23</span><span class="ticker__val change grow-up">+4.10%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45129806957335748" style="width: 210px;" data-dg="5"><a href="euro-us-dollar-rate" class="buy ln-auto">EUR/USD<span class="ticker__val price ">1.05681</span><span class="ticker__val change grow-down">-0.18%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45076691096786116" style="width: 220px;" data-dg="2"><a href="btc-to-usd" class="buy ln-auto">BTC/USD<span class="ticker__val price ">27616.85</span><span class="ticker__val change grow-down">-1.07%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="2909348891415106756" style="width: 210px;" data-dg="2"><a href="tokenized-gold-price" class="buy ln-auto">Gold<span class="ticker__val price ">1861.11</span><span class="ticker__val change grow-up">+1.57%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45462087102190788" style="width: 190px;" data-dg="3"><a href="tokenized-us-natural-gas-price" class="buy ln-auto">Natural Gas<span class="ticker__val price ">3.492</span><span class="ticker__val change grow-up">+1.87%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45159760059258052" style="width: 210px;" data-dg="5"><a href="british-pound-us-dollar-rate" class="buy ln-auto">GBP/USD<span class="ticker__val price ">1.22388</span><span class="ticker__val change grow-down">0.00%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45129489129755844" style="width: 210px;" data-dg="2"><a href="eth-to-usd" class="buy ln-auto">ETH/USD<span class="ticker__val price ">1578.68</span><span class="ticker__val change grow-down">-3.58%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45410672048645145" style="width: 210px;" data-dg="3"><a href="us-dollar-japanese-yen-rate" class="buy ln-auto">USD/JPY<span class="ticker__val price ">148.475</span><span class="ticker__val change grow-down">-0.47%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45458835811947716" style="width: 190px;" data-dg="2"><a href="tokenized-brent-crude-oil-price" class="buy ln-auto">Oil - Brent<span class="ticker__val price ">87.60</span><span class="ticker__val change grow-up">+4.20%</span></a></li> <li class="ticker__slide carouselTicker__item " data-iid="45059378083615940" style="width: 210px;" data-dg="5"><a href="australian-dollar-us-dollar-rate" class="buy ln-auto">AUD/USD<span class="ticker__val price ">0.64123</span><span class="ticker__val change grow-up">+0.40%</span></a></li> </ul> </div></div> <div class="settings-wrap"> <div class="cx_apps_download cx_toggle_btn cx_ab32_1 hidden"> <button class="actIcon"> <div class="actIcon__inner"><img width="15" height="16" src="img/svg-sprites/header/google-play-store.svg" alt=""></div> <div class="actIcon__inner"><svg width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#apple-store"></use></svg></div> 
+ </button> <div class="cx_app_dropdown"> <p>Scan to Download ios&Android APP</p> <div class="qr"><img width="108" height="108" src="/img/qr/onelink-top_menu.svg" alt="qr code" loading="lazy"></div> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/id1458917114?pid=website&utm_source=website_top_menu" target="_blank" class="store-apple badge-appstore event_32_ios"> <img srcset="/img/stores/badge-appstore/badge-appstore--.png?v1, /img/stores/badge-appstore/badge-appstore--@2x.png 2x" src="/img/stores/badge-appstore/badge-appstore--.png" alt=""> </a> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/com.currency.exchange.prod2?pid=website&utm_source=website_top_menu" target="_blank" class="store-google badge-googleplay event_32_android"> <img srcset="/img/stores/badge-googleplay/badge-googleplay--.png, /img/stores/badge-googleplay/badge-googleplay--@2x.png 2x" src="/img/stores/badge-googleplay/badge-googleplay--.png" alt=""> </a> </div></div><div class="cx_apps_download cx_toggle_btn cx_ab32_2 hidden"> <button class="actIcon"> <div class="actIcon__inner"><img width="15" height="16" src="img/svg-sprites/header/google-play-store.svg" alt=""></div> <div class="actIcon__inner _black"><svg width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#apple-store"></use></svg></div> 
+ </button> <div class="cx_app_dropdown"> <p>Scan to Download ios&Android APP</p> <div class="qr"><img width="108" height="108" src="/img/qr/onelink-top_menu.svg" alt="qr code" loading="lazy"></div> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/id1458917114?pid=website&utm_source=website_top_menu" target="_blank" class="store-apple badge-appstore event_32_ios"> <img srcset="/img/stores/badge-appstore/badge-appstore--.png?v1, /img/stores/badge-appstore/badge-appstore--@2x.png 2x" src="/img/stores/badge-appstore/badge-appstore--.png" alt=""> </a> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/com.currency.exchange.prod2?pid=website&utm_source=website_top_menu" target="_blank" class="store-google badge-googleplay event_32_android"> <img srcset="/img/stores/badge-googleplay/badge-googleplay--.png, /img/stores/badge-googleplay/badge-googleplay--@2x.png 2x" src="/img/stores/badge-googleplay/badge-googleplay--.png" alt=""> </a> </div></div> 
+ <a href="//#" target="_blank" rel="nofollow" class="signInIcon _noBorder js_login" aria-label="Log In" > <img srcset="img/icons/header/enter.png 1x, img/icons/header/enter@2x.png 2x" src="img/icons/header/enter.png" width="19" alt="enter"> </a> <a href="//#" target="_blank" rel="nofollow" class="signInIcon _noBorder signUpIcon js_signup" aria-label="Sign Up" data-type="top_header_icon" > <img srcset="img/icons/header/user.png 1x, img/icons/header/user@2x.png 2x" src="img/icons/header/user.png" width="20" alt="user"> </a> <div class="user-account mobile" style="display: none;"> <div class="dropdown"> <svg class="statusIco" width="19px" height="17px"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#warning"></use></svg> 
+ <svg width="18px" height="20px" viewBox="0 0 18 20"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#user-logged"></use></svg> <svg class="chevron-md"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#chevron"></use></svg> </div> <div class="options right"> 
+ <div class="account"><span>Личный аккаунт</span><span class="accountStatus not-confirmed">Не подтвержден</span></div> <a href="//#" class="ln-auto btnPrimary green" >Закончить регистрацию</a> <p class="smallTxt">Наши продукты</p> <div class="splitter"></div> <a href="/trading/platform" class="ln-auto platform">Pro Exchange платформа</a> <br> <a href="//#" class="ln-auto exit" >Выход</a> </div> </div> 
+ <script>loginTry();</script> 
+ <div class="cx_lang__wrap _noBorder" aria-label="language-switch" id="langSwitcher"> <button class="cx_toggler"> <svg class="cx_flag" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"> <use xlink:href="img/svg-sprites/header/sprite.svg?v8#flag_en"></use> </svg> <div class="cx_ln">en</div> <svg class="chevron"><use xlink:href="img/svg-sprites/header/sprite.svg?v8#chevron"></use></svg> </button> <div class="cx_dropdown"> <a href="https://dzengi.com/ru" class="cx_option ln-auto" data-ln="ru"> <svg class="cx_flag" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"> <use href="img/svg-sprites/header/sprite.svg?v8#flag_ru"></use> </svg> <div class="cx_optionName">ru</div> </a> </div> </div> 
+ </div> </div> </div></header> 
+ <div class="main"> <div class="mainBanner"> <div class="mainBanner__slider" id="slideshowMainBanner"> <div class="main__slider--item trade-crypto"> <div class="mainBannerCover" style="background-color: #000;" > <picture class="cx_ab33_3_1_0" > <source media="(min-width: 768px)" srcset="https://img.dzengi.com/banners_home/bg-banner-platform_10-1-.jpg" type="image/jpg"> <source media="(max-width: 767px)" srcset="https://img.dzengi.com/banners_home/bg-banner-platform-xs-1-.jpg" type="image/jpg"> <img class="mainBannerCover_bg cplzd" src="https://img.dzengi.com/banners_home/bg-banner-platform_10-1-.jpg" width="1440" height="504" alt=""/> </picture> </div> <div class="row__container"> <div class="itemRow"> <div class="itemCol mainBanner__content"> <div class="mainBanner__text"> <div class="mainBanner__title cx_ab33_3_0"><b>Trade crypto.</b> Simply and Safely.</div> <div class="mainBanner__title cx_ab33_3_1 hidden"><b>Trade crypto.</b> Simply and Safely.</div> <div class="mainBanner__title cx_ab33_3_2 hidden"><b>Trade crypto.</b> Simply and Safely.</div> <div class="mainBanner__desc"><p>Award-winning platform.<br />Fully regulated.</p></div> </div> <div class="mainBanner__actions"> <a href="/trading/signup" class="button-main button-lg mainBanner__btn js_signup ln-auto" data-type="hp_banner_platform">Start trading now</a> <a href="https://dzengi.com/trading/signup?go=demo" target="_self" rel="" class="button-main button-lg stroke-green js_signup" data-demomode="true" data-type="hp_banner_platform_demo">DEMO</a> 
+ </div> 
+ <div class="trustpilot js-trustpilot_banner"> <svg width="99" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-logo"></use> </svg> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-4.3"></use> </svg> <span>Excellent</span> </div> </div> <div class="itemCol blotAnim cx_ab33_3_1_1 hidden"> <div class="blotAnim__bubbles"> <canvas id="blotAnimCanvas" class="blotAnim__canvas"></canvas> <svg class="blotAnim__canvasFilter" id="blotAnimBubbles" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <filter id="goo"> <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" /> <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 18 -7" result="joint" /> </filter> </defs> </svg> </div> <i class="blotAnim__ico blotAnim__ico--1"></i> <i class="blotAnim__ico blotAnim__ico--3"></i> <picture class="blotAnim__pic"> <source media="(min-width: 990px)" srcset="img/banners/main/techs.png 1x, img/banners/main/techs@2.png 2x" type="image/jpg" > <img src="img/banners/main/techs.png"> </picture> <i class="blotAnim__ico blotAnim__ico--2"></i> <i class="blotAnim__ico blotAnim__ico--4"></i> <i class="blotAnim__ico blotAnim__ico--5"></i> <i class="blotAnim__ico blotAnim__ico--6"></i> </div> </div> </div> </div> <div class="main__slider--item bitcoin"> <div class="mainBannerCover" > <picture > <source media="(min-width: 768px)" srcset="https://img.dzengi.com/banners_home/2880x936_-Banners-LP-ETH_MCT-4900_2_2.png" type="image/jpg"> <source media="(max-width: 767px)" srcset="https://img.dzengi.com/banners_home/360x484_-Banners-LP-ETH_MCT-4900_2.png" type="image/jpg"> <img class="mainBannerCover_bg cplzd" src="https://img.dzengi.com/banners_home/2880x936_-Banners-LP-ETH_MCT-4900_2_2.png" width="1440" height="504" alt=""/> </picture> </div> <div class="row__container"> <div class="itemRow"> <div class="itemCol mainBanner__content"> <div class="mainBanner__text"> <div class="mainBanner__title ">Cryptocurrency volatility continues</div> <div class="mainBanner__desc"><p>Don't miss the opportunity</p></div> </div> <div class="mainBanner__actions"> <a href="/trading/signup" class="button-main button-lg mainBanner__btn js_signup ln-auto" data-type="hp_banner_bitcoinprice">Join in</a> 
+ </div> 
+ <div class="trustpilot js-trustpilot_banner"> <svg width="99" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-logo"></use> </svg> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-4.3"></use> </svg> <span>Excellent</span> </div> </div> <div class="itemCol mainBannerImg"> <div class="bannerPrice" data-iid="45076691096786116" data-dg="2"> 
+ <span class="bannerPrice__title">Bitcoin USD (BTC-USD)</span> <span class="bannerPrice__price buy"><sub>$</sub><span class="table-instruments__price">27634.10</span></span> <span class="bannerPrice__change changeIcon grow-down">-1.130%</span></div> <script> var initDetailsWidget;
+ if(!initDetailsWidget){
+ initDetailsWidget = 1;
+ initFn = function(){
+ $('.detailsWidget').each(function(){
+ var wmoWrap = $(this);
+ var chart = createChart($('.chartWrapDetails', wmoWrap).get(0));
+ $('[data-period]', wmoWrap).on('click', function(){
+ if($(this).hasClass('active')){
+ return;
+ }
+ $('.active[data-period]', wmoWrap).removeClass('active');
+ $(this).addClass('active');
+ chart.setTimeframe($(this).data('period'));
+ });
+ if($(this).data('period')){
+ chart.setTimeframe($(this).data('period'));
+ }
+ chart.setMarket($(this).data('proxyid'));
+ if($('.sentiment', wmoWrap).length > 0){
+ APICall("instrument.sentiment.get", {instrumentId: $(this).data('proxyid')}).then(function(d){
+ if(d && d.instrumentSentiment && d.instrumentSentiment.buyPercentage>0.001){
+ var b = Math.round(d.instrumentSentiment.buyPercentage);
+ $('.sentiment-left', wmoWrap).css("width", b + "%");
+ $('.sentiment-right', wmoWrap).css("width", (100-b) + "%");
+ $('.sentiment-left > .pc', wmoWrap).text( b + "%");
+ $('.sentiment-right > .pc', wmoWrap).text( (100-b) + "%");
+ $('.sentiment', wmoWrap).fadeIn();
+ }
+ });
+ }
+ $(this).data('chart', chart);
+ });
+ }
+ window.pageReadyFN.push(initFn);
+ }</script> </div> </div> </div> </div> <div class="main__slider--item second"> <div class="mainBannerCover" style="background-color: #000;" > <picture > <source media="(min-width: 768px)" srcset="https://img.dzengi.com/banners_home/bg-banner-bitcoinaward-1-.jpg" type="image/jpg"> <source media="(max-width: 767px)" srcset="https://img.dzengi.com/banners_home/bg-banner-bitcoinaward-xs_9.jpg" type="image/jpg"> <img class="mainBannerCover_bg cplzd" src="https://img.dzengi.com/banners_home/bg-banner-bitcoinaward-1-.jpg" width="1440" height="504" alt=""/> </picture> </div> <div class="row__container"> <div class="itemRow"> <div class="itemCol mainBanner__content"> <div class="mainBanner__text"> <div class="mainBanner__title ">Trade Bitcoin with leverage <br/>up to 1:100</div> <div class="mainBanner__desc"><p>Start with just 0,001 BTC. Ultra-competitive spreads. No hidden fees.</p></div> </div> <div class="mainBanner__actions"> <a href="/trading/signup" class="button-main button-lg mainBanner__btn js_signup ln-auto" data-type="hp_banner_bitcoinaward">Start trading now</a> <a href="https://dzengi.com/trading/signup?go=demo" target="_self" rel="" class="button-main button-lg stroke-green js_signup" data-demomode="true" data-type="hp_banner_bitcoinaward_demo">DEMO</a> 
+ </div> 
+ <div class="trustpilot js-trustpilot_banner"> <svg width="99" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-logo"></use> </svg> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-4.3"></use> </svg> <span>Excellent</span> </div> </div> </div> </div> </div> </div></div><script> var test33Anim= function(){
+ const canvas = document.getElementById('blotAnimCanvas');
+ if (typeof canvas.getContext === 'undefined') {
+ return;
+ }
+ const ctx = canvas.getContext("2d");
+ function fitCanvasSize() {
+ canvas.width = 600;
+ canvas.height = 350;
+ }
+ fitCanvasSize();
+ window.onresize = fitCanvasSize;
+ (function () {
+ var requestAnimationFrame = window.requestAnimationFrame ||
+ window.mozRequestAnimationFrame ||
+ window.webkitRequestAnimationFrame ||
+ window.msRequestAnimationFrame;
+ window.requestAnimationFrame = requestAnimationFrame;
+ })();
+ var mouse = {
+ x: 300,
+ y: 175
+ }
+ if (window.matchMedia("(min-width: 400px)").matches) {
+ var maxRadius = 50;
+ } else {
+ var maxRadius = 50;
+ }
+ var colorArray = [
+ '#F1A106',
+ '#DCEE33',
+ '#66F28A'
+ ]
+ function Circle(x, y, dx, dy, radius) {
+ this.x = x;
+ this.y = y;
+ this.dx = dx;
+ this.dy = dy;
+ this.radius = radius;
+ this.minRadius = radius;
+ this.color = colorArray[Math.floor(Math.random() * colorArray.length)];
+ this.draw = function () {
+ ctx.beginPath();
+ ctx.arc(this.x, this.y, this.radius, Math.PI * 2, false);
+ ctx.fillStyle = this.color;
+ ctx.fill();
+ };
+ this.update = function () {
+ if (this.x + radius > canvas.width || this.x - radius < 0) {
+ this.dx = -this.dx;
+ }
+ if (this.y + radius > canvas.height || this.y - radius < 0) {
+ this.dy = -this.dy;
+ }
+ this.x += this.dx;
+ this.y += this.dy;
+ if (mouse.x - this.x < 200 && mouse.x - this.x > -200 && mouse.y - this.y < 150 && mouse.y - this.y > -150) {
+ this.radius += 1;
+ if (this.radius > maxRadius) {
+ this.radius -= 1;
+ }
+ } else if (this.radius > this.minRadius) {
+ this.radius -= 1;
+ }
+ this.draw();
+ }
+ }
+ var circleArray = [];
+ for (var i = 0; i < 40; i++) {
+ var x = Math.random() * (canvas.width - radius * 2) + radius;
+ var dx = (Math.random() - 0.5);
+ var y = Math.random() * (canvas.height - radius * 2) + radius;
+ var dy = (Math.random() - 0.5);
+ var radius = Math.random() * 3 + 1;
+ circleArray.push(new Circle(x, y, dx, dy, radius));
+ }
+ function animate() {
+ requestAnimationFrame(animate);
+ ctx.clearRect(0, 0, canvas.width, canvas.height);
+ for (var i = 0; i < circleArray.length; i++) {
+ circleArray[i].update();
+ }
+ }
+ animate();
+ function parallax(e, target, layer) {
+ var layer_coeff = 100/layer;
+ var xShift = 0;
+ var yShift = 0; 
+ var matrix = window.getComputedStyle(target).getPropertyValue('transform').split('(');
+ if(matrix.length>1) {
+ matrix = matrix[1].split(',');
+ xShift = matrix[4];
+ yShift = matrix[5];
+ }
+ var x = 0 - e.pageX/layer_coeff;
+ var y = 0 - e.pageY/layer_coeff;
+ target.style.transform = "translate("+x+"px,"+y+"px)"
+ };
+ document.querySelector('.mainBanner').addEventListener("mousemove",function (e) {
+ parallax(e, document.querySelector('.blotAnim__ico--1'), 1);
+ parallax(e, document.querySelector('.blotAnim__ico--2'), 3);
+ parallax(e, document.querySelector('.blotAnim__ico--3'), 5);
+ parallax(e, document.querySelector('.blotAnim__ico--4'), 4);
+ parallax(e, document.querySelector('.blotAnim__ico--5'), 2);
+ parallax(e, document.querySelector('.blotAnim__ico--6'), 1);
+ });
+ }
+ window.pageReadyFN.push(test33Anim);</script> <div class="wrap"> <div class="row__container"> <div class="newest__heading low center"> Why Dzengi.com?</div> <div class="whyWrap "> <ul class="whyList"> <li><span class=text-green>2000+</span> top-traded tokenised assets and cryptos</li> <li>Tight market <span class=text-green>spreads</span></li> <li><span class=text-green>Competitive commissions</span> and no hidden fees</li> <li><span class=text-green>Leverage up to 1:500</span></li> <li><span class=text-green>Fully regulated.</span> Compliant with AML and KYC laws</li> </ul> <div class="instrumentDayliChart"> <div class="marketOverview" id="wmoWrap"> <div class="marketOverview__wrap"> <div class="typesWrap"> <div class="types"> <button class="type active data-c0" data-c0="Cryptocurrencies">Cryptocurrencies</button> <button class="type data-c0" data-c0="Indices">Indices</button> <button class="type data-c0" data-c0="Commodities">Commodities</button> <button class="type data-c0" data-c0="Shares">Shares</button> <button class="type data-c0" data-c0="Forex">Сurrencies</button> </div> </div> <div> <div class="periods" style="z-index: 1;position: absolute"> <button class="period active" data-period="H1">1h</button> <button class="period" data-period="H4">4h</button> <button class="period" data-period="D1">1d</button> <button class="period" data-period="W1">1w</button> </div> <div class="chart" style="height:170px;position: relative;padding-top: 15px;"> 
+ <canvas id="chartWrapMarket" style="position: absolute;bottom: 0;" ></canvas> </div> </div> 
+ <div class="cXmarketList__wrap"> <table class="cXmarketList data-c1" data-c1="Cryptocurrencies"> <thead class="cXmarketList__head"> <tr> <th></th> <th>Name</th> <th class="cXmarketList__trade"></th> <th>Price</th> <th>Spread</th> <th>Chg</th> </tr></thead><tbody> <tr class="cXmarketList__item active" data-iid-tmp="2887073189563290820" data-iid="2887073189563290820" data-dg="7"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2887073189563290820"></i> </td> <td class="cXmarketList__title"> DOGE/USD
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2887073189563290820?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 0.0590078
+ </span> </td> <td class="spreadData spr">0.0002427</td> <td class="cXmarketList__change up grow-down">-3.650%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45076691096786116" data-iid="45076691096786116" data-dg="2"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45076691096786116"></i> </td> <td class="cXmarketList__title"> Bitcoin / USD
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45076691096786116?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 27630.35
+ </span> </td> <td class="spreadData spr">0.15</td> <td class="cXmarketList__change up grow-down">-1.100%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45129489129755844" data-iid="45129489129755844" data-dg="2"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45129489129755844"></i> </td> <td class="cXmarketList__title"> Ethereum / USD
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45129489129755844?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 1579.79
+ </span> </td> <td class="spreadData spr">0.06</td> <td class="cXmarketList__change up grow-down">-3.530%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45075114843788484" data-iid="45075114843788484" data-dg="4"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45075114843788484"></i> </td> <td class="cXmarketList__title"> BNT/USD
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45075114843788484?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 0.5297
+ </span> </td> <td class="spreadData spr">0.0018</td> <td class="cXmarketList__change up grow-down">-7.860%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45463225268524228" data-iid="45463225268524228" data-dg="5"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45463225268524228"></i> </td> <td class="cXmarketList__title"> Ripple / USD
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45463225268524228?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 0.50421
+ </span> </td> <td class="spreadData spr">0.00061</td> <td class="cXmarketList__change up grow-down">-2.840%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45394248093750468" data-iid="45394248093750468" data-dg="5"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45394248093750468"></i> </td> <td class="cXmarketList__title"> TWT/USD
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45394248093750468?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 0.96540
+ </span> </td> <td class="spreadData spr">0.00346</td> <td class="cXmarketList__change up grow-down">-5.030%</td> </tr></tbody> </table> <table class="cXmarketList data-c1 hidden" data-c1="Indices"> <thead class="cXmarketList__head"> <tr> <th></th> <th>Name</th> <th class="cXmarketList__trade"></th> <th>Price</th> <th>Spread</th> <th>Chg</th> </tr></thead><tbody> <tr class="cXmarketList__item " data-iid-tmp="2898143493538534596" data-dg="1"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2898143493538534596"></i> </td> <td class="cXmarketList__title"> US Tech 100
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2898143493538534596?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 15057.9
+ </span> </td> <td class="spreadData spr">8.1</td> <td class="cXmarketList__change up grow-up">+0.350%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="2903984099305280708" data-dg="1"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2903984099305280708"></i> </td> <td class="cXmarketList__title"> US 500
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2903984099305280708?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 4336.5
+ </span> </td> <td class="spreadData spr">1.7</td> <td class="cXmarketList__change up grow-up">+0.550%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="2908549331713348804" data-dg="0"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2908549331713348804"></i> </td> <td class="cXmarketList__title"> US Wall Street 30
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2908549331713348804?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 33600
+ </span> </td> <td class="spreadData spr">9</td> <td class="cXmarketList__change up grow-up">+0.500%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="2890255807574201682" data-dg="1"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2890255807574201682"></i> </td> <td class="cXmarketList__title"> Germany 40
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2890255807574201682?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 15199.2
+ </span> </td> <td class="spreadData spr">10.9</td> <td class="cXmarketList__change up grow-down">-0.650%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45113069469783236" data-dg="4"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45113069469783236"></i> </td> <td class="cXmarketList__title"> US Dollar Index
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45113069469783236?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 105.7447
+ </span> </td> <td class="spreadData spr">0.0634</td> <td class="cXmarketList__change up grow-down">-0.040%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="2906156244655435920" data-dg="1"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2906156244655435920"></i> </td> <td class="cXmarketList__title"> UK 100
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2906156244655435920?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 7526.7
+ </span> </td> <td class="spreadData spr">7.4</td> <td class="cXmarketList__change up grow-down">0.000%</td> </tr></tbody> </table> <table class="cXmarketList data-c1 hidden" data-c1="Commodities"> <thead class="cXmarketList__head"> <tr> <th></th> <th>Name</th> <th class="cXmarketList__trade"></th> <th>Price</th> <th>Spread</th> <th>Chg</th> </tr></thead><tbody> <tr class="cXmarketList__item " data-iid-tmp="45463744959567044" data-dg="2"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45463744959567044"></i> </td> <td class="cXmarketList__title"> Crude Oil
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45463744959567044?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 85.24
+ </span> </td> <td class="spreadData spr">0.11</td> <td class="cXmarketList__change up grow-up">+4.100%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="2909348891415106756" data-dg="2"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2909348891415106756"></i> </td> <td class="cXmarketList__title"> Gold
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2909348891415106756?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 1861.63
+ </span> </td> <td class="spreadData spr">0.30</td> <td class="cXmarketList__change up grow-up">+1.570%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45462087102190788" data-dg="3"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45462087102190788"></i> </td> <td class="cXmarketList__title"> Natural Gas
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45462087102190788?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 3.496
+ </span> </td> <td class="spreadData spr">0.005</td> <td class="cXmarketList__change up grow-up">+1.870%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45458835811947716" data-dg="2"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45458835811947716"></i> </td> <td class="cXmarketList__title"> Brent Oil
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45458835811947716?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 87.60
+ </span> </td> <td class="spreadData spr">0.11</td> <td class="cXmarketList__change up grow-up">+4.200%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="2909345043124409540" data-dg="3"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2909345043124409540"></i> </td> <td class="cXmarketList__title"> Silver
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2909345043124409540?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 21.902
+ </span> </td> <td class="spreadData spr">0.031</td> <td class="cXmarketList__change up grow-up">+1.380%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="2889395641588995268" data-dg="4"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2889395641588995268"></i> </td> <td class="cXmarketList__title"> Copper
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2889395641588995268?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 3.6710
+ </span> </td> <td class="spreadData spr">0.0035</td> <td class="cXmarketList__change up grow-up">+0.670%</td> </tr></tbody> </table> <table class="cXmarketList data-c1 hidden" data-c1="Shares"> <thead class="cXmarketList__head"> <tr> <th></th> <th>Name</th> <th class="cXmarketList__trade"></th> <th>Price</th> <th>Spread</th> <th>Chg</th> </tr></thead><tbody> <tr class="cXmarketList__item " data-iid-tmp="2905159314026616004" data-dg="2"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2905159314026616004"></i> </td> <td class="cXmarketList__title"> Tesla
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2905159314026616004?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 258.88
+ </span> </td> <td class="spreadData spr">0.09</td> <td class="cXmarketList__change up grow-down">-0.630%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="2906341392105690308" data-dg="2"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2906341392105690308"></i> </td> <td class="cXmarketList__title"> ProShares Ultra VIX Short-Term Futures ETF
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2906341392105690308?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 16.16
+ </span> </td> <td class="spreadData spr">0.09</td> <td class="cXmarketList__change up grow-down">-1.950%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="2898454492120437956" data-dg="2"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2898454492120437956"></i> </td> <td class="cXmarketList__title"> Nvidia
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2898454492120437956?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 452.22
+ </span> </td> <td class="spreadData spr">0.64</td> <td class="cXmarketList__change up grow-down">-0.670%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="2883451703204074692" data-dg="2"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2883451703204074692"></i> </td> <td class="cXmarketList__title"> Apple
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2883451703204074692?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 178.86
+ </span> </td> <td class="spreadData spr">0.05</td> <td class="cXmarketList__change up grow-up">+0.730%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="2883665566805611716" data-dg="2"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--2883665566805611716"></i> </td> <td class="cXmarketList__title"> Amazon
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/2883665566805611716?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 128.25
+ </span> </td> <td class="spreadData spr">0.25</td> <td class="cXmarketList__change up grow-up">+0.020%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="705345307104452" data-dg="2"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--705345307104452"></i> </td> <td class="cXmarketList__title"> Meta Platforms Inc.
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/705345307104452?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 318.75
+ </span> </td> <td class="spreadData spr">0.40</td> <td class="cXmarketList__change up grow-up">+0.860%</td> </tr></tbody> </table> <table class="cXmarketList data-c1 hidden" data-c1="Forex"> <thead class="cXmarketList__head"> <tr> <th></th> <th>Name</th> <th class="cXmarketList__trade"></th> <th>Price</th> <th>Spread</th> <th>Chg</th> </tr></thead><tbody> <tr class="cXmarketList__item " data-iid-tmp="45129806957335748" data-dg="5"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45129806957335748"></i> </td> <td class="cXmarketList__title"> EUR/USD
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45129806957335748?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 1.05693
+ </span> </td> <td class="spreadData spr">0.00060</td> <td class="cXmarketList__change up grow-down">-0.180%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45159760059258052" data-dg="5"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45159760059258052"></i> </td> <td class="cXmarketList__title"> GBP/USD
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45159760059258052?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 1.22410
+ </span> </td> <td class="spreadData spr">0.00018</td> <td class="cXmarketList__change up grow-up">+0.050%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45410672048645145" data-dg="3"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45410672048645145"></i> </td> <td class="cXmarketList__title"> USD/JPY
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45410672048645145?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 148.543
+ </span> </td> <td class="spreadData spr">0.037</td> <td class="cXmarketList__change up grow-down">-0.480%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45059378083615940" data-dg="5"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45059378083615940"></i> </td> <td class="cXmarketList__title"> AUD/USD
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45059378083615940?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 0.64124
+ </span> </td> <td class="spreadData spr">0.00046</td> <td class="cXmarketList__change up grow-up">+0.410%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45410672048615942" data-dg="5"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45410672048615942"></i> </td> <td class="cXmarketList__title"> USD/CHF
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45410672048615942?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 0.90648
+ </span> </td> <td class="spreadData spr">0.00033</td> <td class="cXmarketList__change up grow-down">-0.380%</td> </tr> <tr class="cXmarketList__item " data-iid-tmp="45410672048615492" data-dg="5"> <td class="cXmarketList__ico"> <i class="marketList__ico marketList__ico--45410672048615492"></i> </td> <td class="cXmarketList__title"> USD/CAD
+ </td> <td class="cXmarketList__trade"> <a href="https://dzengi.com/trading/platform/spotlight/45410672048615492?side=buy" class="tradeLink hide-android hide-iphone" target="_blank">Trade</a> <a target="_blank" rel="nofollow noopener" href="https://currencycom.onelink.me/i7BW/9e19695e?" class="tradeLink hidden show-iphone show-android dBtn jsaddref" target="_blank">Trade</a> </td> <td class="buy"> <span class="table-instruments__price"> 1.35934
+ </span> </td> <td class="spreadData spr">0.00061</td> <td class="cXmarketList__change up grow-down">-0.510%</td> </tr></tbody> </table> </div> <div class="viewAllLink__wrap"> <a href="https://dzengi.com/crypto" class="viewAllLink data-c1" data-c1="Cryptocurrencies"> View all cryptocurrencies
+ <svg class="chevron "><use xlink:href="#chevron"></use></svg> </a> <a href="https://dzengi.com/tokenized-indices" class="viewAllLink data-c1 hidden" data-c1="Indices"> View all indicies
+ <svg class="chevron "><use xlink:href="#chevron"></use></svg> </a> <a href="https://dzengi.com/tokenized-commodities" class="viewAllLink data-c1 hidden" data-c1="Commodities"> View all commodities
+ <svg class="chevron "><use xlink:href="#chevron"></use></svg> </a> <a href="https://dzengi.com/tokenized-shares" class="viewAllLink data-c1 hidden" data-c1="Shares"> View all shares
+ <svg class="chevron "><use xlink:href="#chevron"></use></svg> </a> <a href="https://dzengi.com/tokenized-currency-pairs" class="viewAllLink data-c1 hidden" data-c1="Forex"> View all currency pairs
+ <svg class="chevron "><use xlink:href="#chevron"></use></svg> </a> </div> </div></div><script> var initFn = function(){
+ var wmoWrap = $('#wmoWrap');
+ var chart = createChart('chartWrapMarket');
+ var tabs = $('.data-c0', wmoWrap);
+ var items = $('.data-c1', wmoWrap);
+ tabs.on('click', function(e){
+ e.preventDefault();
+ if($(this).hasClass('active')){
+ return;
+ }
+ tabs.removeClass('active');
+ var c = $(this).addClass('active').data('c0');
+ items.addClass('hidden');
+ var type = $(this).data('type');
+ $('[data-iid]', wmoWrap).removeAttr('data-iid');
+ var typeWrap = $('[data-c1="' + c + '"]', wmoWrap);
+ typeWrap.find('[data-iid-tmp]').each(function(){
+ $(this).attr('data-iid', $(this).data('iid-tmp'));
+ });
+ livePricesSubscribe();
+ typeWrap.removeClass('hidden').find('.cXmarketList__item').first().click();
+ });
+ $('.cXmarketList__item', wmoWrap).on('click', function(){
+ if($(this).hasClass('active')){
+ return;
+ }
+ $('.cXmarketList__item.active').removeClass('active');
+ $(this).addClass('active');
+ chart.setMarket($(this).data('iid'));
+ });
+ $('[data-period]', wmoWrap).on('click', function(){
+ if($(this).hasClass('active')){
+ return;
+ }
+ $('.active[data-period]').removeClass('active');
+ $(this).addClass('active');
+ chart.setTimeframe($(this).data('period'));
+ });
+ chart.setMarket("2887073189563290820");
+ };
+ window.pageReadyFN.push(initFn);</script> </div> </div> </div> </div> <div id="ab29"> <div class="apps "> <div class="row__container"> <div class="apps__inner"> <div class="phone1Wrap"> 
+ </div> <div class="phone2Wrap"> <img data-src="/img/media/phone3.png?v2" alt="iPhone Image" class="phone2 cplzd"> </div> <div class="apps__text desk"> Trade the world’s top tokenised stocks, indices, commodities and currencies with the help of crypto or fiat
+ </div> <div class="imacWrap desk"> <img data-src="/img/media/imacc@2x.png?v2" alt="iMac Image" class="imac cplzd"> </div> </div> <div class="apps__text mob"> Trade the world’s top tokenised stocks, indices, commodities and currencies with the help of crypto or fiat
+ </div> <div class="imacWrap mob"> <img data-src="/img/media/imacc@2x.png?v2" alt="iMac Image" class="imac cplzd"> </div> <div class="apps__footer"> <div class="appsIconsWrap"> <a href="/" class="logo-link _left undefined ln-auto"
+ aria-label="logotype Dzengi.com"> <svg id="logo" class="cx_logo" width="214" height="40"> <use xlink:href="img/svg-sprites/header/sprite.svg?v9#logo-dzengi"></use> </svg> </a> </div> <div class="apps__btns"> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/id1458917114" target="_blank" class="store-apple badge-appstore ios"> <img srcset="/img/stores/badge-appstore/badge-appstore--.png, /img/stores/badge-appstore/badge-appstore--@2x.png 2x"
+ src="/img/stores/badge-appstore/badge-appstore--.png"
+ alt=""> </a> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/com.currency.exchange.prod2?" target="_blank"
+ class="store-google badge-googleplay android"> <img srcset="/img/stores/badge-googleplay/badge-googleplay--.png, /img/stores/badge-googleplay/badge-googleplay--@2x.png 2x"
+ src="/img/stores/badge-googleplay/badge-googleplay--.png"
+ alt=""> </a> <a href="https://dzengi.com/trading/platform" target="_blank" class="badge-platform"> <img srcset="/img/stores/badge-platform/badge-platform--.png, /img/stores/badge-platform/badge-platform--@2x.png 2x" src="/img/stores/badge-platform/badge-platform--.png" alt=""> </a> <a href="//#" class="qrBtn" > <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" class="qrIcon"><path d="M2 2h7V0H0v9h2V2zm17-2v2h7v7h2V0h-9zm7 26h-7v2h9v-9h-2v7zM2 19H0v9h9v-2H2v-7z" fill="#fff"/><path d="M6 6v7H3v2h3v7h16v-7h2v-2h-2V6H6zm2 2h12v5H8V8zm12 12H8v-5h12v5z" fill="#BBBDBF"/></svg> </a> </div> </div> 
+ </div></div><div class="overlay hidden qrwrap" id="qrwrap"> <div class="form-container-small"> <div class="form-container-small-header"> <button class="close-button" id="vclose"></button> </div> <div class="form-container-small-content" > <div class="applogoWrap"> <img data-src="/img/media/logo_dz.png?v2" alt="" class="qrLogo cplzd"> <div> <div class="logoTitle"> Dzengi.com Exchange
+ </div> <div class="logoDesc"> Trade BTC & tokenized stocks
+ </div> </div> </div> <img src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAAK8AAACvCAAAAACu+dGpAAACCUlEQVR42u3a247CMAxF0f7/T888joQad59wGezuPoEoyQKpsWPn+Ol1HXr1tvce19fffQ+vlgMs76MDnI6nV+8M7/qZLD99mO6MtXxL59Crd6YXPOO1cjkUuBkI9Oq9j3cZRPPlQq9evdhbh1g6gF699/ZeZJ/lJjG/+d35ul69X+vdrO+88NVH6lF69f63F3cP4K+JMG/st+jV+43eOkJGwDx4gx9C8ge9evt5844gXT3oRBd/kV697b1Rn7wu6ES9j40trl69M7yglV6H07x7T+Wn64NevU299Zx0VQBDbW5E9eqd5K2fSZAY00Q2P9RG6lF69bby5skorf5EvQqwsdWrt78XZKn0/FlU34l2qHr1jvPmD/9mvzDvlujVO8SbVz3pQbL6TwBpc5b/6tXbwEtDLG1x5A1H3PbQq3eulya8oKpDQ/HFeqNXb3tvFByjOWmnnkZrvXqHeF9zmDMvpYJNp169k7yg2AIcINfdrPTo1TvdCw620NpQvfyAT/XqneSlX8kf73rNAEfP1vVfvXqbeulFj2ZGGe7z8Viv3lbezZYErdZEZaGN+o5evf28NMOlmKd/w+l39eod5I0yYVoEpRtRMIBevffx0iMzmwdgyOR69d7LSyMz7dRH2bZevZO8Uf5LS0A0uSVNEb16Z3ij+k50EBS06/EWV6/e9t4+l169nb2/MqOz0ADFaz4AAAAASUVORK5CYII=" alt="" class="qrcodeImage"> </div> </div></div> </div> 
+ <section class="section _ab29_2"> <div class="row__container"> <section class="section greenBox " style="background-image: url('/img/lp/web-platform/bg-green-box.png?v1') "> <div class="greenBox__content flex flex-wrap"> <div class="c-md-7"> <h2>The best cryptoexchange*. Dzengi.com</h2> <p><strong>Fully regulated cryptoexchange with speed, agility and asset range investors demand. Revolutionise your cryptocurrency investment – trade tokenised Gold, tokenised Apple shares or tokenised S&P 500 with Bitcoin or Ethereum. <br><small> *According to Blockchain Life Award international (2019).</small></strong></p> </div> <div class="c-md-5"></div> </div> <div class="boxColumns"> <div class="boxButtons boxButtons--colMob"> <a target="_blank" rel="nofollow noopener" class="boxButtons__btn boxButtons__btn--shadow android" target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/com.currency.exchange.prod2?"> <img src="/img/badge/google-play-badge.svg" alt=""/></a> 
+ <a target="_blank" rel="nofollow noopener" class="boxButtons__btn boxButtons__btn--shadow ios" target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/id1458917114"> <img src="/img/badge/app-store-badge.svg" alt=""/> </a> 
+ <a class="boxButtons__btn boxButtons__btn--shadow " href="https://dzengi.com/trading/platform" target="_blank" rel="nofollow"> <img src="/img/badge/web-platform-badge.svg" alt=""/> </a> 
+ <a class="boxButtons__btn boxButtons__btn--grey js_signup hidden-small" href="https://dzengi.com/trading/platform/trading/signup?go=demo" target="_blank" rel="nofollow" data-demomode="true" data-type="boxButtonshidden-small"> <span>Platform <br> overview</span> <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L9 9L1 17" stroke="#767779" stroke-width="2" stroke-linejoin="round"/></svg> </a> 
+ <a class="js-modal-link boxButtons__btn boxButtons__btn--grey hidden-small" href="//#" data-target="qr-popup" > <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.0004 21H18.7504C19.4135 21 20.0494 20.7366 20.5182 20.2678C20.987 19.7989 21.2504 19.163 21.2504 18.5V16" stroke="#767779" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.99957 1H6.24957C5.58653 1 4.95065 1.26339 4.48181 1.73223C4.01297 2.20107 3.74957 2.83696 3.74957 3.5V6" stroke="#767779" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.99957 21H6.24957C5.58653 21 4.95065 20.7366 4.48181 20.2678C4.01297 19.7989 3.74957 19.163 3.74957 18.5V16" stroke="#767779" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.0004 1H18.7504C19.4135 1 20.0494 1.26339 20.5182 1.73223C20.987 2.20107 21.2504 2.83696 21.2504 3.5V6" stroke="#767779" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="1" y1="11.25" x2="24" y2="11.25" stroke="#767779" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> </a> </div> <a href="https://dzengi.com/trading/signup" data-type="greenBox" class=" js_signup button-main white button-lg button-promo">Get started now</a> </div> 
+ <div class="greenBox__img img-green-gradient"><img class="img-fluid" src="/img/lp/web-platform/laptop.png?v2" srcset="/img/lp/web-platform/laptop.png?v2 1x, /img/lp/web-platform/laptop.png?v2 2x" alt=""></div> </section> </div> </section> 
+ <div class="visualMarketBlock visualMarketBlock--black js-reviewsBlock"> <div class="row__container"> <div class="newest__heading low ">Listen to what our customers say</div> <div class="comment carouselTicker"> <div class="comment__list comment__list--first carouselTicker__list"> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-5"></use> </svg> </div> <p class="comment__author">FEHMI</p> <p class="comment__text">I find it excellent for the review But it needs more coins for leverage and exchange. If it does have all the crypto currencies I couldn&#39;t find them in the interface maybe you can make it a little bit easier to find the preferences and settings for better user experience. With my best wishes<span class="link-more">more</span></p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-4"></use> </svg> </div> <p class="comment__author">Blatata</p> <p class="comment__text">Great app but could be more crypto coin…</p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-5"></use> </svg> </div> <p class="comment__author">Enrique Silhy</p> <p class="comment__text">Its Amazing! I Love The Support, The Speed Of Transactions & Fees Are Usually Low If Not Note (Depends) I Love It!</p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-5"></use> </svg> </div> <p class="comment__author">Arman</p> <p class="comment__text">This is very good app for trading. Because every kind of currencies or stocks are shown in real time which is perfect for online trading. App works everytime in very good quality and Some applications work very slowly but this application is working great whenever it&#39;s opened And all the real time visible. I like it.<span class="link-more">more</span></p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-5"></use> </svg> </div> <p class="comment__author">AMOHELANG ALBERT</p> <p class="comment__text">I really like the Platform and the support team is quickly responsive, but i think that the platform sometimes doesn&#39;t load up the older chart till after few refreshes or maybe it&#39;s my connection :) but everything is all good so far :)<span class="link-more">more</span></p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-4"></use> </svg> </div> <p class="comment__author">JOGENDRA PRASAD</p> <p class="comment__text">Easy account opening process,demo version is helpful to the new account holders...</p> </div> </div> <div class="comment__list carouselTicker__list"> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-5"></use> </svg> </div> <p class="comment__author">JAKHONGIR</p> <p class="comment__text">Accurate and reliable app. I recommend.</p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-5"></use> </svg> </div> <p class="comment__author">FRANCK</p> <p class="comment__text">Excellent. Highly recommended. Excellent user experience. Easy to use with many features and a large choice for trading with leverage.<span class="link-more">more</span></p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-4"></use> </svg> </div> <p class="comment__author">JOHN GORDON HOLMES</p> <p class="comment__text">Good support while registering. Prompt replies to correspondence. Thanks.</p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-4"></use> </svg> </div> <p class="comment__author">Michael Kaastrup</p> <p class="comment__text">Great platform, easy to use and very intuitive. Only drawback , its a bit expencive to trade, quite high fees, but i guess its because of the high leverage. All in all great place for people who wants to grow a small account. Iam happy <span class="link-more">more</span></p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-5"></use> </svg> </div> <p class="comment__author">DAVID</p> <p class="comment__text">Excellent choice, safe, easy to use, loss insurance, totally 0 bugs on android app, even that I&#39;m a begginer user i could learn in a few time about the operation ways, they support system has also fast answer.<span class="link-more">more</span></p> </div> </div> </div><div class="comment carouselTicker commentTicker"> <div class="comment__list carouselTicker__list"> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-5"></use> </svg> </div> <p class="comment__author">SATOSHI</p> <p class="comment__text">I am amazed that the process to activate my account was speedy and very user-friendly.</p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-5"></use> </svg> </div> <p class="comment__author">JOEL</p> <p class="comment__text">Reassuring broker and very attentive to his clients Hello, The technical analysis software is intuitive, and above all a very responsive customer service 24/7. Simply excellent !!!<span class="link-more">more</span></p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-4"></use> </svg> </div> <p class="comment__author">ALIYU ISYAKU</p> <p class="comment__text">The limit for trade is too high because people can’t start with little money especially the beginners that are trying to start now<span class="link-more">more</span></p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-3"></use> </svg> </div> <p class="comment__author">Александр</p> <p class="comment__text">optimize performance, add Stop Lose and Take Profit to Trade Mode, minimize spread, make clear report per share/cripta<span class="link-more">more</span></p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-4"></use> </svg> </div> <p class="comment__author">Vladimir</p> <p class="comment__text">The Android app and web version are great and easy to use. Identity confirmation is fast and not so rigorous, as well. For me the biggest only issue is fees, there are many of them. Actually, this is why I continue to look for analogous platform for investing.<span class="link-more">more</span></p> </div> </div> <div class="comment__list carouselTicker__list"> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-5"></use> </svg> </div> <p class="comment__author">Shaun Gooch</p> <p class="comment__text">If you have been paper trading on TradingView and are ready to start then Dzengi.com is the closest you will get! The customer service is outstanding and I’m still very great full for their patience. Remember to calculate the fees on paper trading before jumping in deep.<span class="link-more">more</span></p> </div> <div class="comment__item "> <div class="stars"> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-4"></use> </svg> </div> <p class="comment__author">Yara</p> <p class="comment__text">Great trading platform. I think if you will include logic about opening and closing different countries stock markets. Like USA Stock exchange or Tokyo stock exchange it will be helpfull.<span class="link-more">more</span></p> </div> </div> </div><script>var other_reviews = function(){
+ $('.link-more').on('click', function() {
+ $(this).parent('.comment__text').css('height', 'auto');
+ $(this).hide();
+ });
+};
+window.pageReadyFN.push(other_reviews);</script> </div> <div class="trustpilot trustpilot--nobg"> <svg width="99" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-logo"></use> </svg> <svg width="128" height="24"> <use xlink:href="img/svg-sprites/trustpilot.svg?v1#trustpilot-rating-4.3"></use> </svg> <span>Excellent <strong> 4.3 • </strong> <a target="_blank" rel="nofollow noopener" href="https://www.trustpilot.com/review/currency.com" target="_blank"> <strong>1,183 reviews</strong> </a> </span> 
+ </div> </div> 
+ </div><script>function pageReady(){
+ var vframe = $("#vframe");
+var vwrap = $("#vwrap");
+$(".yvideo, .tvideo").on("click", function (e) {
+ e.preventDefault();
+ if ($(this).parent('.videoBox').length != 0) {
+ $(this).hide();
+ } else {
+ vwrap.removeClass('hidden');
+ }
+ vframe.html('<iframe width="100%" height="100%" class="video-youtube" src="https://www.youtube.com/embed/' + $(this).data('id') + '?autoplay=1&rel=0&showinfo=0&disablekb=1&autohide=1&modestbranding=1" frameborder="0" allowfullscreen id="yframe"></iframe>');
+ setTimeout(function () {
+ scaleVideo();
+ });
+});
+function scaleVideo() {
+ function sizeFrame() {
+ $(".video-youtube").each(function () {
+ $(this).height($(this).width() / (1080 / 615));
+ });
+ }
+ $(window).off('resize', sizeFrame).on('resize', sizeFrame).resize();
+};
+$('#vclose', vwrap).on('click', function () {
+ vframe.html('');
+ vwrap.addClass('hidden');
+});
+vwrap.on('click', function (e) {
+ if ($(e.target).hasClass('overlay')) {
+ vframe.html('');
+ vwrap.addClass('hidden');
+ }
+});
+var t = $(".video-youtube");
+function sizeFrame() {
+ t.height(t.width() / (1080 / 615));
+}
+$(window).on('resize', sizeFrame).resize();
+$('.restVideo').on('click', function (e) {
+ e.preventDefault();
+ var currentVideoId = $('.yvideo', this).data('id');
+ var currentTitle = $('.restTitle', this).text();
+ var frameVideoId = $(".videoBox .yvideo").data('id');
+ var frameTitle = $('.activeTitle').text();
+ if (currentVideoId !== frameVideoId) {
+ vframe.html('');
+ //$('.activeDescription').removeClass('active');
+ $('.yvideo', this).data("id", frameVideoId);
+ $('.yvideo img', this).attr('src', 'https://i.ytimg.com/vi/' + frameVideoId + '/hqdefault.jpg');
+ $('.restTitle', this).html(frameTitle);
+ $(".videoBox .yvideo").data('id', currentVideoId).show();
+ $(".videoBox .yvideo img").attr('src', 'https://i.ytimg.com/vi/' + currentVideoId + '/hqdefault.jpg');
+ $('.activeTitle').html(currentTitle);
+ $('.activeBtn').attr('href', 'https://youtu.be/' + currentVideoId);
+ }
+});
+ $('.slides').slick({
+ dots: true,
+ arrows: true,
+ infinite: true,
+ speed: 300,
+ draggable: false,
+ slidesToShow: 1,
+ slidesToScroll: 1,
+ prevArrow: $('.prev-slide'),
+ nextArrow: $('.next-slide'),
+ fade: true,
+ cssEase: 'linear'
+ });
+ $('.mainBanner__slider').on('init', function(event, slick) {
+ $('.mainBanner__slider').find('.slick-current').removeClass('slick-active');
+ setTimeout( function() {
+ $('.mainBanner__slider').find('.slick-current').addClass('slick-active');
+ }, 100);
+ });
+ $('.mainBanner__slider').slick({
+ dots: true,
+ infinite: true,
+ arrows: true,
+ speed: 600,
+ draggable: false,
+ slidesToShow: 1,
+ slidesToScroll: 1,
+ fade: true,
+ //autoplay: true,
+ autoplaySpeed: 9000,
+ pauseOnHover: false,
+ pauseOnFocus:false,
+ pauseOnDotsHover: true,
+ cssEase: 'linear'
+ });
+ $('.mainBanner__actions a').on('mouseover', function() {
+ $('.mainBanner__slider').slick('slickPause');
+ });
+ $('.mainBanner__actions a').on('mouseleave', function() {
+ $('.mainBanner__slider').slick('slickPlay');
+ });
+ $('.shortTxtSlider').slick({
+ dots: false,
+ infinite: true,
+ arrows: false,
+ autoplaySpeed: 2500,
+ slidesToShow: 1,
+ slidesToScroll: 1,
+ fade: true,
+ cssEase: 'linear',
+ autoplay: true
+ });
+ $('.settingBtn').on('click', function(e) {
+ e.preventDefault();
+ $(this).parent().toggleClass('active');
+ });
+ $('.optionsCheckbox').on('click', function(e) {
+ e.preventDefault();
+ if ($(this).hasClass('disabled')) {
+ return;
+ }
+ var optionsWrap = $(this).closest('.options');
+ $(this).toggleClass('checked');
+ var checkBoxes = $('input[type="checkbox"]', this);
+ checkBoxes.attr("checked", !checkBoxes.attr("checked"));
+ var optionsChecked = $('.optionsCheckbox.checked', optionsWrap).length;
+ // for instruments
+ if ($(this).hasClass('tools')) {
+ if (optionsChecked < 4) {
+ $('.optionsCheckbox', optionsWrap).removeClass('disabled');
+ $('.saveBtn', optionsWrap).removeAttr('disabled');
+ } else {
+ $('.optionsCheckbox:not(.checked)', optionsWrap).addClass('disabled');
+ $('.saveBtn', optionsWrap).attr('disabled', 'disabled');
+ }
+ }
+ //for country
+ if ($(this).hasClass('country')) {
+ if (optionsChecked == 0) {
+ $('#clearBtn').attr('disabled', 'disabled');
+ $('#selectAllBtn').removeAttr('disabled');
+ } else if (optionsChecked == $('.optionsCheckbox', optionsWrap).length) {
+ $('#selectAllBtn').attr('disabled', 'disabled');
+ $('#clearBtn').removeAttr('disabled');
+ } else {
+ $('#selectAllBtn').removeAttr('disabled');
+ $('#clearBtn').removeAttr('disabled');
+ }
+ }
+ });
+ $('#clearBtn').on('click', function() {
+ $('.optionsCheckbox.country').removeClass('checked');
+ $('.optionsCheckbox.country input').removeAttr('checked');
+ $('#selectAllBtn').removeAttr('disabled');
+ $(this).attr('disabled', 'disabled');
+ });
+ $('#selectAllBtn').on('click', function() {
+ $('.optionsCheckbox.country').addClass('checked');
+ $('.optionsCheckbox.country input').attr('checked', 'checked');
+ $('#clearBtn').removeAttr('disabled');
+ $(this).attr('disabled', 'disabled');
+ });
+ $('.leverageBtn').on('click', function(e) {
+ e.preventDefault();
+ var x = $(this).data('x');
+ $('.leverageBtn').removeClass('active');
+ $(this).addClass('active');
+ $('.profit .invest__view span').css('height', x + '%');
+ $('.profit .invest__count span').html(x);
+ $('.currentLeverageValue').html('x' + x);
+ });
+ $('.qrBtn').on('click', function(e) {
+ e.preventDefault();
+ $('#qrwrap').removeClass('hidden');
+ });
+ $('#vclose').on('click', function(){
+ $('#qrwrap').addClass('hidden');
+ });
+ $('.sp-slider').on('afterChange', function(event, slick, currentSlide){
+ var id = $(slick.$slides[currentSlide]).data('list');
+ $('[data-list2]').removeClass('text-green');
+ $('[data-list2="' + id + '"]').addClass('text-green');
+ });
+ $('[data-list2]').on('mouseover', function(){
+ var slider = $('.slides');
+ var slideIndex = $(this).index();
+ slider[0].slick.slickGoTo( parseInt(slideIndex) );
+ });
+ try { dataLayer.push({event: "optimize.activate.ab33"});} catch (e) {};
+ $('.js-trustpilot_banner').on('click',function(){
+ $('html, body').animate({
+ scrollTop: $('.js-reviewsBlock').offset().top
+ }, 500);
+ });
+}</script><div class="payment-logos hide-by"> <div class="row__container"> <div class="payment-logos__wrap"> <div class="payment-logos__icon payment-logos__icon--visa"></div> <div class="payment-logos__icon payment-logos__icon--mastercard"></div> <div class="payment-logos__icon payment-logos__icon--mir hidden"></div> <div class="payment-logos__icon payment-logos__icon--sber hidden"></div> <div class="payment-logos__icon payment-logos__icon--wire"></div> <div class="payment-logos__icon payment-logos__icon--pci"></div> <div class="payment-logos__icon payment-logos__icon--btc"></div> <div class="payment-logos__icon payment-logos__icon--eth"></div> </div> </div></div><div class="payment-logos hidden show-by"> <div class="row__container"> <div class="payment-logos__wrap"> <div class="payment-logos__icon payment-logos__icon--visa"></div> <div class="payment-logos__icon payment-logos__icon--visa-secure"></div> <div class="payment-logos__icon payment-logos__icon--mastercard"></div> <div class="payment-logos__icon payment-logos__icon--mastercard-identity"></div> <div class="payment-logos__icon payment-logos__icon--wire"></div> <div class="payment-logos__icon payment-logos__icon--btc"></div> <div class="payment-logos__icon payment-logos__icon--eth"></div> <div class="payment-logos__icon payment-logos__icon--alfa-bank hidden"></div> <div class="payment-logos__icon payment-logos__icon--belkart hidden"></div> <div class="payment-logos__icon payment-logos__icon--belkart-parol hidden"></div> </div> </div></div><footer class="cx_footer"> <div class="row__container"> <div class="footerRow footerTop"> <div class="footerInfo"> <div class="logoWrap"> <span class="toTop" id="scrollToTop"> <svg xmlns="http://www.w3.org/2000/svg" stroke="none" fill="none" viewBox="0 0 10 10" class="toTopIcon"><path d="M3 9L7 5L3 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> </span> <a href="/" class="logoLink ln-auto"> <svg id="logo" class="cx_logo" width="214" height="40"> <use xlink:href="img/svg-sprites/header/sprite.svg?v9#dzengi"></use> </svg> </a> </div> 
+ <div class="footerAppsHolder"> <div class="heading">Download apps</div> <div class="footerApps"> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/id1458917114?" target="_blank" class="store-apple badge-appstore dBtn jsaddref" aria-label="Download on the App Store"> <img srcset="/img/stores/badge-appstore/badge-appstore--.png, /img/stores/badge-appstore/badge-appstore--@2x.png 2x" src="/img/stores/badge-appstore/badge-appstore--.png" alt=""> </a> <a target="_blank" rel="nofollow noopener" href="https://app.appsflyer.com/com.currency.exchange.prod2?" target="_blank" class="store-google badge-googleplay dBtn jsaddref" aria-label="Get it on Google Play"> <img srcset="/img/stores/badge-googleplay/badge-googleplay--.png, /img/stores/badge-googleplay/badge-googleplay--@2x.png 2x" src="/img/stores/badge-googleplay/badge-googleplay--.png" alt=""> </a> </div> </div> </div> <div class="footerMenu expand-collapse--dark expand-collapse--openTabletLand"> <div class="footerMenu__item"> <div class="expand-collapse"><input class="expand-collapse-control" id="footerLink-4" type="checkbox"> <div class="expand-collapse-inner"> <label class="expand-collapse-switcher" for="footerLink-4"> <div class="expand-collapse-header"> <div class="heading">About Us</div> </div> </label> <div class="expand-collapse-body"> <a href="s-center" class="gridLink ln-auto ">Support</a> <a href="personal-data" class="gridLink ln-auto ">Personal data</a> <a href="audit-results" class="gridLink ln-auto ">Audit results</a> </div> </div> </div> </div> <div class="footerMenu__item"> <div class="expand-collapse"><input class="expand-collapse-control" id="footerLink-5" type="checkbox"> <div class="expand-collapse-inner"> <label class="expand-collapse-switcher" for="footerLink-5"> <div class="expand-collapse-header"> <div class="heading">Conditions</div> </div> </label> <div class="expand-collapse-body"> <a href="regulation" class="gridLink ln-auto ">Conditions</a> <a href="" class="gridLink ln-auto "></a> <a href="" class="gridLink ln-auto "></a> <a href="" class="gridLink ln-auto "></a> </div> </div> </div> </div> </div> </div> <div class="footerRow footerRegulation"><h4>We hereby warn about the following risks:</h4><p>1. Digital signs (tokens) (hereinafter referred to as “tokens”) are not legal tender and are not required to be accepted as a means of payment.</p><p>2. Tokens are not backed by the state.</p><p>3. Acquisition of tokens may lead to complete loss of funds and other objects of civil rights (investments) transferred in exchange for tokens (including as a result of token cost volatility; technical failures (errors); illegal actions, including theft).</p><p>4. The distributed ledger technology (blockchain), other distributed information system and similar technologies are innovative and constantly updated, which implies the need for periodic updates (periodic improvement) of the information system of Dzengi CJSC and the risk of technical failures (errors) in its operation.</p><p>5. Certain tokens sold by Dzengi CJSC may be of value only when using the information system of Dzengi CJSC and (or) the services rendered by Dzengi CJSC.</p><p>6. As the attitude of different states (their regulators) to token transactions (operations) and approaches to their legal regulation differ from jurisdiction to jurisdiction, there is a risk that contracts between Dzengi CJSC and its clients or their particular terms and conditions may be invalid and (or) unenforceable in certain states.</p><p><a href="https://dzengi.com/general-information-and-risk-notification" target="_blank">Dzengi сlosed joint stock company</a> is a cryptoplatform operator (cryptoexchange) and carries out <a href="https://dzengi.com/ccb-activities-htp" target="_blank">activities using tokens</a>. <a href="https://dzengi.com/general-information-currency-com-eu" target="_blank">CURRENCY COM EU</a></p></div> <div class="footerRow footerCopyright">© 2018-2023 Dzengi Com</div> </div></footer><div class="sticky-bar"> <div class="row__container"> 
+ <div class="main__cookies" id="cookiesmsg" style="display: none"> <svg class="main__cookies--icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.98372 19.9999C4.47237 19.9938 0.0060525 15.5203 0 9.99995C0.393106 10.1112 0.799546 10.168 1.20803 10.1689C2.55933 10.1789 3.82888 9.52174 4.6025 8.41195C5.29413 7.41154 5.44027 6.13091 4.99186 4.99997C5.27858 5.05119 5.5692 5.07729 5.86045 5.07797C7.1552 5.08764 8.38408 4.50698 9.2 3.49998C9.99844 2.52274 10.3106 1.2352 10.0486 0C15.5625 0.0179493 20.0178 4.50963 19.9999 10.0324C19.982 15.5553 15.4976 20.0178 9.98372 19.9999ZM10.7455 16.5679C10.8991 16.634 11.0645 16.6681 11.2317 16.6679C11.7362 16.6674 12.1909 16.363 12.3842 15.8961C12.5775 15.4293 12.4714 14.8919 12.1152 14.5339C11.8805 14.2998 11.5629 14.1683 11.2317 14.1679C10.6392 14.1693 10.1294 14.5877 10.0115 15.1693C9.89371 15.7509 10.2004 16.3353 10.7455 16.5679ZM4.91199 14.8749C5.11205 14.9578 5.32647 15.0003 5.54296 14.9999C6.21842 14.9997 6.82678 14.5907 7.08272 13.9646C7.33867 13.3385 7.19143 12.6195 6.71006 12.1449C6.3989 11.838 5.97969 11.6659 5.54296 11.6659C4.62442 11.667 3.88022 12.4129 3.87967 13.3329C3.87984 14.0017 4.2781 14.606 4.89202 14.8689H4.89702H4.908L4.91199 14.8749ZM14.3276 12.3679C14.9987 12.6502 15.775 12.4627 16.2439 11.9051C16.7127 11.3475 16.7652 10.5493 16.3733 9.93495C16.2506 9.74359 16.0902 9.57925 15.9021 9.45195C15.3853 9.10239 14.7167 9.07155 14.17 9.37206C13.6233 9.67256 13.2902 10.254 13.307 10.8784C13.3238 11.5028 13.6877 12.0654 14.2498 12.3359H14.2378L14.2677 12.3489L14.2877 12.3569H14.2817C14.296 12.3615 14.31 12.3669 14.3236 12.3729L14.3276 12.3679ZM9.98372 8.33295C9.58552 8.33229 9.24259 8.61412 9.16546 9.00541C9.08834 9.3967 9.2986 9.78793 9.66717 9.93889C10.0357 10.0899 10.4594 9.95831 10.6782 9.62501C10.8969 9.2917 10.8493 8.84995 10.5648 8.57095C10.4906 8.49777 10.4032 8.4394 10.3072 8.39896L10.2892 8.39095L10.2623 8.38095C10.1729 8.349 10.0786 8.33276 9.98372 8.33295ZM13.7276 4.16697C13.0888 4.16539 12.5526 4.64873 12.4871 5.28522C12.4216 5.92172 12.8481 6.50444 13.4738 6.63339C14.0995 6.76235 14.7211 6.39562 14.9118 5.78494C15.1025 5.17425 14.8004 4.51814 14.2128 4.26698H14.2028C14.0525 4.20267 13.8911 4.16869 13.7276 4.16697ZM2.49593 7.49996C2.03663 7.49996 1.66429 7.12701 1.66429 6.66696C1.66429 6.20691 2.03663 5.83397 2.49593 5.83397C2.95524 5.83397 3.32757 6.20691 3.32757 6.66696C3.32702 7.12679 2.95501 7.49941 2.49593 7.49996ZM1.24797 4.99997C0.558733 4.99997 0 4.44033 0 3.74998C0 3.05963 0.558733 2.49999 1.24797 2.49999C1.9372 2.49999 2.49593 3.05963 2.49593 3.74998C2.49483 4.43988 1.93674 4.99887 1.24797 4.99997ZM6.23983 3.33298C5.55059 3.33298 4.99186 2.77334 4.99186 2.08299C4.99186 1.39264 5.55059 0.832996 6.23983 0.832996C6.92906 0.832996 7.48779 1.39264 7.48779 2.08299C7.48779 2.7735 6.92922 3.33343 6.23983 3.33398V3.33298ZM3.32857 1.66699C2.8694 1.66699 2.49711 1.29425 2.49693 0.834328C2.49675 0.374408 2.86873 0.00136823 3.32791 0.000999989C3.78708 0.000632288 4.15967 0.373075 4.16022 0.832996C4.16022 1.29321 3.78804 1.66644 3.32857 1.66699Z" fill="rgba(255,255,255,.4)"/> </svg> <p class="main__cookies--text">By using the Dzengi.com website, you agree to the use of <a href=/cookies-policy>cookies</a>.</p> <button class="main__cookies--close" id="cookiesmsgbtn" aria-label="Close cookies message"></button> </div> </div></div><div class="overlay hidden" id="fromUSA"> <div class="form-container-small modal modal--black"> <div class="form-container-mid form-container-mid--auto"> <div class="modal-content"> <br> <div class="text-center"> <span class="h2">Welcome to Dzengi.com! </span> </div> <br> <p class="details details__lighter text-center"> 
+ Please, select the exchange you want to visit
+ </p> <br> <div class="text-center"> <a target="_blank" rel="nofollow noopener" href="https://currency.com/crypto" class="btn emptyBtn medium">Currency.com/crypto</a> </div> <p class="text-center"> 
+ <span class="text-green">currency.com/crypto</span> is a licensed exchange platform available for
+ American users. You can buy and sell crypto via your credit/debit card or your bank account.
+ </p> <br><br> <div class="text-center"> <a href="//#" class="btn emptyBtn medium js-modal-close" id="" >Dzengi.com</a> </div> <p class="text-center"> 
+ <span class="text-green">Dzengi.com</span> does not offer service for USA residents, but you are
+ welcome to check the website content.
+ </p> </div> </div> </div></div><div class=" js-modal overlay hidden" id="qr-popup"> <div class="modal modal-large modal--qr"> <div class="close-button modal-close js-modal-close">close</div> <div class="modal-content"> <img src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAAK8AAACvCAAAAACu+dGpAAACCUlEQVR42u3a247CMAxF0f7/T888joQad59wGezuPoEoyQKpsWPn+Ol1HXr1tvce19fffQ+vlgMs76MDnI6nV+8M7/qZLD99mO6MtXxL59Crd6YXPOO1cjkUuBkI9Oq9j3cZRPPlQq9evdhbh1g6gF699/ZeZJ/lJjG/+d35ul69X+vdrO+88NVH6lF69f63F3cP4K+JMG/st+jV+43eOkJGwDx4gx9C8ge9evt5844gXT3oRBd/kV697b1Rn7wu6ES9j40trl69M7yglV6H07x7T+Wn64NevU299Zx0VQBDbW5E9eqd5K2fSZAY00Q2P9RG6lF69bby5skorf5EvQqwsdWrt78XZKn0/FlU34l2qHr1jvPmD/9mvzDvlujVO8SbVz3pQbL6TwBpc5b/6tXbwEtDLG1x5A1H3PbQq3eulya8oKpDQ/HFeqNXb3tvFByjOWmnnkZrvXqHeF9zmDMvpYJNp169k7yg2AIcINfdrPTo1TvdCw620NpQvfyAT/XqneSlX8kf73rNAEfP1vVfvXqbeulFj2ZGGe7z8Viv3lbezZYErdZEZaGN+o5evf28NMOlmKd/w+l39eod5I0yYVoEpRtRMIBevffx0iMzmwdgyOR69d7LSyMz7dRH2bZevZO8Uf5LS0A0uSVNEb16Z3ij+k50EBS06/EWV6/e9t4+l169nb2/MqOz0ADFaz4AAAAASUVORK5CYII=" alt="store qr-code" class="img-fluid"> </div> </div></div><div class="overlay hidden" id="fromSpain"> <div class="form-container-small modal modal--black"> <div class="form-container-small-header"> 
+ </div> <div class="modal-content"> <br> <div class="text-center"> <span class="h2">Welcome to Dzengi.com! </span> </div> <br> <p class="details details__lighter text-center"> At the moment we aren’t onboarding residents from Spain. We can recommend <a href=https://capital.com target=_blank>Capital.com</a>, one of the highest rated trading platforms in the world.
+ </p> <br> <div class="btns-wrap"> <a href="//#" class="btn emptyBtn medium js-modal-close" id="es_p_continue" >I&#39;m not from Spain</a> <a target="_blank" rel="nofollow noopener" href="https://capital.com" target="_blank" class="button-main small btn-target" id="es_p_capital"> proceed to Capital.com
+ <svg id="logo" class="cx_logo" width="214" height="40"> <use xlink:href="img/svg-sprites/header/sprite.svg?v9#dzengi"></use> </svg> </a> </div> </div> </div></div><div class="global-search__overlay"></div> <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.js"></script><script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.2.min.js"><\/script>')</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script><script> var pTK = "9cfda6309391d0ae7be7";
+ cookieSet("__cp_lastPage", document.location.href.split("?")[0]);
+ $('.jsaddref').each(function(){
+ $(this).attr('href', $(this).attr('href') + cpAddParams);
+ });
+ $('.show-' + country + ',.showtr-' + country + ',.showtd-' + country + ",.show-" + cpDevice).removeClass('hidden');
+ $('.hide-' + country + ',.hidetr-' + country + ',.hidetd-' + country + ",.hide-" + cpDevice).addClass('hidden');</script> <script src="/js/vendor/slick.min.js?v=20230927_114548"></script> <script src="/js/vendor/wow.min.js"></script> <script src="/js/p_main.js?v=20230927_114548"></script><script src="/js/js_userarea.min.js?v=20230927_114548"></script><div class="blg-wd"> <div class="blg-btn-w"> <a class="blg-btn"> <div class="blg-rs"> <div class="blg-r"></div> <div class="blg-r"></div> <div class="blg-r"></div> </div> </a> </div> <div class="blg-c-w"> <div class="blg-cs"> <div class="blg-c-wp"> <a href="https://help.dzengi.com/hc/en-us/" class="blg-c zd ln-auto"> <span class="blg-tp"> <span class="blg-tp-inner">Help center</span> </span> </a> </div> </div> </div></div><script> 
+ var gc = (''+ window.location.href).indexOf('go=chat');
+ $('.blg-btn-w').on('click', function(){
+ $('.blg-c-w').toggleClass('blinger-show');
+ $('.blg-btn').toggleClass('blinger-opened');
+ $('.blg-rs').toggleClass("blinger-hide");
+ });
+ $('[data-ln]').on('click', function(){
+ var l = $(this).data('ln');
+ if(l){
+ cookieSet("__cp_ln", l);
+ }
+ });</script></body><!-- tm: 0.032832860946655  --></html>

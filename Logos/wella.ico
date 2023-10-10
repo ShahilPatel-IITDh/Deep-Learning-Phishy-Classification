@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WELCOME TO THE WORLD OF WELLA</title>
+    
+
+    <!-- Adobe Header DTM Tag -->
+        <!-- System.Diagnostics.Debug.WriteLine("HOST: " + host); -->
+
+    <script src="//assets.adobedtm.com/6dbccae18e8a/ddecd2c39756/launch-888bd934bb2f.min.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <script type="text/javascript">
+        var country='IN';
+    </script>
+    <!--<script src="/scripts/home.js"></script>-->
+    <link href="/Content/bootstrap.css" rel="stylesheet"/>
+<link href="/Content/home.css" rel="stylesheet"/>
+
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+
+</head>
+<body>
+    
+
+<div class="top">
+    <img class="logo" src="/img/logo.png" />
+    <h1>WELCOME TO THE WORLD OF WELLA</h1>
+    <h2>WHICH WELLA BRANDS WOULD YOU LIKE TO DISCOVER?</h2>
+    <div class="buttons">
+        <div><a href="http://www.wella.com/professional/en-EN/">WELLA PROFESSIONALS</a></div>
+        <div><a href="http://www.wella.com/retail/en-UK/">WELLA</a></div>
+    </div>
+    <a class="button" target="_blank" href="https://www.wellacareers.com/">EXPLORE WELLA CAREERS</a>
+</div>
+<div>
+    <div class="banners">
+        <a href="http://www.wella.com/professional/en-EN/">
+            <div class="left">
+                <div class="banner">
+                    <div class="image">
+                        <div class="imageOverlay" onmouseover="mouseOnLeft()" onmouseout="mouseOfLeft()">
+                            <img src="/img/bannerLeft_new.png" />
+                        </div>
+                        <div class="logo" id="logo"><img src="/img/logoPro.png" /></div>
+                        <div class="logoWhite" id="logoWhite"><img src="/img/logoProwhite.png" /></div>
+                    </div>
+                    <div class="packshot"><img src="/img/packshotRight.png" /></div>
+                    <div class="discover"><a onclick="getProfessional('in', '/professional/en-EN/')" class="disc">DISCOVER</a></div>
+                </div>
+            </div>
+        </a>
+        <a href="http://www.wella.com/retail/en-UK/">
+            <div class="right">
+                <div class="banner">
+                    <div class="image">
+                        <div class="imageOverlay" onmouseover="mouseOnRight()" onmouseout="mouseOfRight()">
+                            <img src="/img/bannerRight.png" class="hideOnMobile" /><img src="/img/bannerRightMobile.png" class="hideOnDT" />
+                        </div>
+                        <div class="logo2" id="logo2"><img src="/img/logo.png" /></div>
+                        <div class="logoWhite2" id="logoWhite2"><img src="/img/logowhite.png" /></div>
+                    </div>
+                    <div class="packshot"><img src="/img/packshotLeft.png" /></div>
+                    <div class="discover"><a onclick="getRetail('in', '/retail/en-UK/')" class="disc">DISCOVER</a></div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div lang="IN"></div>
+
+    <footer>
+        <div>
+            <a href="/professional/en-EN/sitemap">SITEMAP</a>
+            <a href="https://www.wellacompany.com/cookie-policy">ABOUT COOKIES</a>
+            <a href="https://www.wellacompany.com/privacy-policy">PRIVACY NOTICE</a>
+            <a id="ot-sdk-btn" class="ot-sdk-show-settings">COOKIES SETTINGS</a>
+        </div>
+        <div>&#169;2023 Wella International Operations Switzerland S&#224;rl. All rights reserved.</div>
+    </footer>
+
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+
+    <script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/home.js"></script>
+
+    
+</body>
+</html>

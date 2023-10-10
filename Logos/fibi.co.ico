@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+	<title>שגיאה</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" /> 	
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://apps.fibi.co.il/ErrorPage/css/err_all.css">
+</head>
+<body onload="init();">
+	<section class="err_wrapper" style="background:#28365d !important" >
+			<div class="err_inner">
+				<div class="err_logoTop">
+					<a href="javascript:backToSite();" title="חזרה לאתר" aria-label="logo"><img src="https://apps.fibi.co.il/logo/031_logo.png" id="logoImage" title="Bank Logo" alt="Bank Logo"/></a>
+				</div>
+                
+				<p class="err_small"><br>
+                נא לפנות לתמיכה.<BR><BR>
+<BR><BR>
+</p>
+				<div class="err_links">					
+					<a class="err_btnTech" href="mailto:support@fibi.co.il?subject=שגיאה באתר&body=(7275822201292404949)">לשליחת דוא"ל לתמיכה</a>
+					<a class="err_btnTech" title="לתמיכה טכנית" href="javascript:techSupport();">ליצירת קשר עם התמיכה</a>
+					</p>
+					<BR/>
+				<a class="err_btnBack"  title="חזרה לאתר" href="javascript:backToSite();">חזרה לאתר</a>					
+				</div>
+                <div>
+                    מזהה פניה : 7275822201292404949
+                </div>
+			</div>		
+	</section>
+<script type="text/javascript">
+
+    var techUrl = "https://www.fibi.co.il/wps/portal/FibiMenu/Marketing/Private/General/ContactUs#content080dad1b-1700-4c91-8902-0bfc56e7ffb6";
+    var logoUrl = "https://apps.fibi.co.il/logo/031_logo.png";
+
+
+
+    function backToSite()
+    {
+        window.history.back();
+    }
+    function init()
+    {
+
+        if (window.location.href.indexOf("pagi") > 0) {
+            techUrl = "https://online.pagi.co.il/wps/portal/FibiMenu/Marketing/AnAccountMngment/AnOnlineBanking/AnTecnicalSupport";
+            logoUrl = "https://apps.fibi.co.il/logo/052_logo.png";
+        }
+
+        if (window.location.href.indexOf("u-bank") > 0) {
+            techUrl = "https://online.u-bank.net/wps/portal/FibiMenu/Marketing/AnContactUs/AnTechnicalSupport";
+            logoUrl = "https://apps.fibi.co.il/logo/026_logo.png";
+        }
+
+        if (window.location.href.indexOf("bankmassad") > 0) {
+            techUrl = "https://online.bankmassad.co.il/wps/portal/FibiMenu/Marketing/AnDirectBanking/AnDBInformation/AnTechnicalSupport";
+            logoUrl = "https://apps.fibi.co.il/logo/046_logo.png";
+        }
+
+        if (window.location.href.indexOf("bankotsar") > 0) {
+            techUrl = "https://online.bankotsar.co.il/wps/portal/FibiMenu/Marketing/AnAccountMngment/AnOnlineBanking/AnFibiOnline/AnSupport";
+            logoUrl = "https://apps.fibi.co.il/logo/014_logo.png";
+        }
+
+        document.getElementById("logoImage").src = logoUrl;
+
+    }
+    function techSupport()
+    {
+        window.location = techUrl;
+    }
+</script>	
+	
+	
+</body>	
+</html>

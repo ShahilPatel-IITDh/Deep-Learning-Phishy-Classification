@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head><script>(function () { var exp = new Date(); exp.setTime(exp.getTime() + 3600000); document.cookie = "HMY_JC=e4be04f87fdf72b756252acdb7da293007cfec3c12d259a63fb721bfce763f34f2,"+"; expires="+exp.toGMTString()+"; path=/"; })()</script>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"ee118bb1d3",applicationID:"1086606533"};;/*! For license information please see nr-loader-rum-1.243.1.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={234:(e,t,n)=>{n.d(t,{P_:()=>h,Mt:()=>m,C5:()=>s,DL:()=>w,OP:()=>j,lF:()=>N,Yu:()=>_,Dg:()=>v,CX:()=>c,GE:()=>A,sU:()=>T});var r=n(8632),i=n(9567);const a={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a),(0,r.Qy)(e,o[e],"info")}const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=n(7056),l=n(50);const f=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:u.oD,inactiveMs:u.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector=t+",[data-nr-mask]":null===t?e.mask_selector=t:(0,l.Z)("An invalid session_replay.mask_selector was provided and will not be used",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},g={},p="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(p);if(!g[e])throw new Error("Configuration for ".concat(e," was never set"));return g[e]}function v(e,t){if(!e)throw new Error(p);g[e]=(0,i.D)(t,f()),(0,r.Qy)(e,g[e],"config")}function m(e,t){if(!e)throw new Error(p);var n=h(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const b={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},y={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!y[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return y[e]}function A(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");y[e]=(0,i.D)(t,b),(0,r.Qy)(e,y[e],"loader_config")}const _=(0,r.mF)().o;var x=n(385),D=n(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(x._A?.performance?.timeOrigin||x._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+x._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof x._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},E={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!E[e])throw new Error("Runtime for ".concat(e," was never set"));return E[e]}function T(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");E[e]=(0,i.D)(t,k),(0,r.Qy)(e,E[e],"runtime")}function N(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(n).length?e:n;for(let o in a)if(void 0!==e[o])try{"object"==typeof e[o]&&"object"==typeof t[o]?n[o]=i(e[o],t[o]):n[o]=e[o]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>a,q4:()=>r});const r="1.243.1",i="PROD",a="CDN"},385:(e,t,n)=>{n.d(t,{Nk:()=>u,Tt:()=>s,_A:()=>a,cv:()=>l,iS:()=>o,il:()=>r,ux:()=>c,v6:()=>i,w1:()=>d});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===a?.document?.visibilityState),s=(a?.location,/iPad|iPhone|iPod/.test(a.navigator?.userAgent)),c=s&&"undefined"==typeof SharedWorker,d=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(r&&window.document.documentMode)),u=!!a.navigator?.sendBeacon,l=Math.floor(a?.performance?.timeOrigin||a?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,n)=>{n.d(t,{w:()=>a});var r=n(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(8325),i=n(1284),a=n(4322),o=n(3325);const s={};function c(e,t){const n={staged:!1,priority:o.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const n=[...s[e]];function o(t){const n=e?r.ee.get(e):r.ee,o=a.X.handlers;if(n.backlog&&o){var s=n.backlog[t],c=o[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete o[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((t=>{let[n]=t;s[e].delete(n),o(n)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],a=e[3],o=e[2];i.apply(a,o)}}))}},8325:(e,t,n)=>{n.d(t,{A:()=>c,ee:()=>d});var r=n(8632),i=n(2210),a=n(234);class o{constructor(e){this.contextId=e}}var s=n(3117);const c="nr@context:".concat(s.a),d=function e(t,n){var r={},s={},u={},f=!1;try{f=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,a){!1!==a&&(a=!0);if(d.aborted&&!i)return;t&&a&&t.emit(e,n,r);for(var o=p(r),c=v(e),u=c.length,l=0;l<u;l++)c[l].apply(o,n);var f=b()[s[e]];f&&f.push([g,e,n,o]);return o},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new o(c))):new o(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return u[t]=u[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),u=(0,r.fP)();function l(){d.aborted=!0,d.backlog={}}u.ee||(u.ee=d)},5546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(8325).ee.get("handle");function i(e,t,n,i,a){a?(a.buffer([e],i),a.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{n.d(t,{X:()=>a});var r=n(5546);a.on=o;var i=a.handlers={};function a(e,t,n,a){o(a||r.E,i,e,t,n)}function o(e,t,n,i,a){a||(a="feature"),e||(e=r.E);var o=t[a]=t[a]||{};(o[n]=o[n]||[]).push([e,i])}},3239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var r=n(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(n,r))}},3117:(e,t,n)=>{n.d(t,{a:()=>r});const r=(0,n(4402).Rl)()},4402:(e,t,n)=>{n.d(t,{Rl:()=>o,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?a(t,++n).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const o=[];for(var s=0;s<e;s++)o.push(a(n,++i).toString(16));return o.join("")}},7056:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>a,oD:()=>i});const r="NRBA",i=144e5,a=18e5},7894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(8325),i=n(5546),a=n(3325);const o={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},s=new Set;function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(s.has(t)||Object.entries(e).forEach((e=>{let[t,r]=e;o[t]?o[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r)})),Object.keys(o).forEach((e=>{void 0===d[e]&&(o[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),s.add(t))}const d={}},2210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{n.d(t,{P:()=>a});var r=n(8325);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{n.d(t,{K:()=>o,b:()=>a});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,r.bP)("load",e,t)}function o(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>a,fP:()=>o,gG:()=>u,mF:()=>s});var r=n(7894),i=n(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=o();const a=i.initializedAgents||{},s=a[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...a,[e]:{...s,[n]:t}},i}function d(e,t){o()[e]=t}function u(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{n.d(t,{gF:()=>a,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>o});const r=n(3325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewEvent},9251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{n.d(t,{W:()=>i});var r=n(8325);class i{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=r.ee.get(e),this.featureName=n,this.blocked=!1}}},7530:(e,t,n)=>{n.d(t,{j:()=>b});var r=n(3325),i=n(234),a=n(5546),o=n(8325),s=n(7894),c=n(8e3),d=n(3960),u=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...r))})),a.length>1?a:a[0]}(t,...r)}}))}var h=n(2587);const v=e=>{const t=e.startsWith("http");e+="/",n.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:_,runtime:x={loaderType:b},exposed:D=!0}=t;const k=(0,g.gG)();A||(w=k.init,A=k.info,_=k.loader_config),(0,i.Dg)(e,w||{}),(0,i.GE)(e,_||{}),A.jsAttributes??={},u.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e,A);const E=(0,i.P_)(e),j=[A.beacon,A.errorBeacon];m||(m=!0,E.proxy.assets&&(v(E.proxy.assets),j.push(E.proxy.assets)),E.proxy.beacon&&j.push(E.proxy.beacon)),x.denyList=[...E.ajax.deny_list||[],...E.ajax.block_internal?j:[]],(0,i.sU)(e,x),p();const T=function(e,t){t||(0,c.R)(e,"api");const g={};var p=o.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,a){const o=(0,i.C5)(e);return null===n?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:n}}),A(v,r,!0,a||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=A(v,e,!0,"api")})),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,a.p)(f.xS,["API/start/".concat(t,"/called")],void 0,r.D.metrics,p);const n=Object.values(r.D);if(void 0===e)e=n;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!n.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(n));e.includes(r.D.pageViewEvent)||e.push(r.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,o="function"==typeof t;return(0,a.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],n),o)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function _(){n.e(75).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>_()),!0):_(),g}(e,y);return(0,g.Qy)(e,T,"api"),(0,g.Qy)(e,D,"exposed"),(0,g.EZ)("activatedFeatures",h.T),T}},3325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var a=r[e]={exports:{}};return n[e](a,a.exports,i),a.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum-1.243.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.243.1.PROD:",i.l=(n,r,a,o)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+a){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var a=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var a=n&&("load"===n.type?"missing":n.type),o=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,a,[o,s,c]=n,d=0;if(o.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},n=self["webpackChunk:NRBA-1.243.1.PROD"]=self["webpackChunk:NRBA-1.243.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var n=i(3325),r=i(234);const a=Object.values(n.D);function o(e){const t={};return a.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(7530);var c=i(8e3),d=i(5938),u=i(3960),l=i(385);class f extends d.W{constructor(e,t,n){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,r.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const n=l.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,c.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),a(!1)}};l.il?(0,u.b)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,n),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var a=this.getBucket(e,t,n,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,n){t[e]=b(n,t[e])})),t}(r,a.metrics),a}merge(e,t,n,r,i){var a=this.getBucket(e,t,r,i);if(a.metrics){var o=a.metrics;o.count+=n.count,(0,v.D)(n,(function(e,t){if("count"!==e){var r=o[e],i=n[e];i&&!i.c?o[e]=b(i.t,r):o[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=b(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=w(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,v.D)(e,A)}function A(e,t){return t}var _=i(8632),x=i(4402),D=i(4351);var k=i(5546),E=i(7956),j=i(3239),T=i(7894),N=i(9251);class S extends f{static featureName=N.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,n),l.il&&((0,E.N)((()=>(0,k.p)("docHidden",[(0,T.z)()],void 0,N.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,k.p)("winPagehide",[(0,T.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var C=i(3081);class P extends f{static featureName=C.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=n,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}run(){const t="features";try{const r=o(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>r[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,D.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,_.Qy)(this.agentIdentifier,this.features,t)}catch(n){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",n);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[p,S,P],loaderType:"lite"})})()})();</script>
+<script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({"drupalLanguage":"en","drupalCountry":"FR","siteName":"Solvay","entityCreated":"1571230165","entityLangcode":"en","entityStatus":"1","entityUid":"1","entityUuid":"8ab2d4eb-4c5d-4ea1-ba60-765a09f97820","entityVid":"513961","entityType":"node","entityBundle":"landing_page","entityId":"16","entityTitle":"We bond people, ideas and elements to reinvent progress","userUid":0,"entityCreatedDate":"2019-10-16","entityLastModifiedDate":"2023-10-05","entityPublishDate":"2018-09-17"});</script>
+<script src="/sites/g/files/srpend221/files/google_tag/primary/google_tag.script.js?s21jgv" defer></script>
+<meta name="description" content="At Solvay, we bond people, ideas, and elements to reinvent progress. We rank among the world’s top 3 companies for most of our activities." />
+<meta name="abstract" content="Solvay is an advanced materials and specialty chemicals company. We commit to developing clean mobility and improving resource efficiency." />
+<meta name="keywords" content="Advanced Materials, Specialty Chemicals, Chemistry, Resource Efficiency, Energy Efficiency, Specialty Polymers, Composite Materials, Lightweight, Venture Capital, Investor Relations, Career, Connect, Batteries" />
+<link rel="canonical" href="https://www.solvay.com/en/" />
+<meta http-equiv="content-language" content="en" />
+<meta name="news_keywords" content="Advanced Materials, Specialty Chemicals, Chemistry, Resource Efficiency, Energy Efficiency, Specialty Polymers, Composite Materials, Lightweight, Venture Capital, Investor Relations, Career, Connect, Batteries" />
+<meta property="og:site_name" content="Solvay" />
+<meta property="og:type" content="Homepage" />
+<meta property="og:url" content="https://www.solvay.com/en/" />
+<meta property="og:title" content="Solvay, an advanced materials and specialty chemicals company" />
+<meta property="og:description" content="Solvay is an advanced materials and specialty chemicals company. We aim at developing next-generation mobility and at improving resource efficiency." />
+<meta property="og:image:width" content="1181" />
+<meta property="og:image:height" content="620" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="We connect with clients to innovate to create solutions for end users, allowing resource efficiency and sustainable mobility" />
+<meta name="twitter:site" content="@SolvayGroup" />
+<meta name="twitter:title" content="Homepage | Solvay" />
+<meta name="twitter:site:id" content="323259257" />
+<meta name="twitter:url" content="https://www.solvay.com/en/" />
+<meta name="twitter:image" content="https://www.solvay.com/sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media408/61968-3axv7qquh9.jpg?itok=MRMbkx4D" />
+<meta name="twitter:image:height" content="246" />
+<meta name="twitter:image:width" content="470" />
+<meta name="msvalidate.01" content="8296A90A00B5310F530EC02748364E8E" />
+<script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="42895158-01e5-4325-8e15-5660c742c367"></script>
+<script type="text/javascript">function OptanonWrapper() { }</script>
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Corporation",
+            "additionalType": "Organization",
+            "@id": "https://www.solvay.com/en",
+            "name": "Solvay",
+            "sameAs": [
+                "https://www.instagram.com/solvaygroup/",
+                "https://en.wikipedia.org/wiki/Solvay_S.A.",
+                "https://www.facebook.com/solvaygroup/",
+                "https://www.youtube.com/user/SolvayGroup",
+                "https://twitter.com/solvaygroup",
+                "https://www.linkedin.com/company/4114/"
+            ],
+            "url": "https://www.solvay.com/en",
+            "telephone": "+3222642111",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+3222642111",
+                "contactType": "customer service",
+                "areaServed": {
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Rue de Ransbeek 310",
+                        "addressLocality": "Brussels",
+                        "addressRegion": "Bruxelles-Capitale",
+                        "postalCode": "1200",
+                        "addressCountry": "BE"
+                    }
+                }
+            },
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.solvay.com/profiles/custom/solvay_core/themes/solvay_core_theme/logo.svg"
+            },
+            "legalName": "Solvay"
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.solvay.com/en",
+            "name": "Solvay",
+            "url": "https://www.solvay.com",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "query": "https://www.solvay.com/en/search?s={search_term_string}",
+                "query-input": "required name=search_term_string",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://www.solvay.com/en/search?s={search_term_string}"
+                }
+            }
+        }
+    ]
+}</script>
+<link rel="alternate" hreflang="en" href="https://www.solvay.com/en" />
+<link rel="icon" href="/profiles/custom/solvay_core/themes/solvay_core_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>Solvay | A Global Leader in Materials, Solutions and Chemicals</title>
+    <link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/core.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/controlgroup.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/autocomplete.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/menu.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/checkboxradio.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/resizable.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/button.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/dialog.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/ajax-progress.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/align.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/autocomplete-loading.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/fieldgroup.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/container-inline.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/clearfix.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/details.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/hidden.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/item-list.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/js.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/nowrap.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/position-container.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/progress.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/reset-appearance.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/resize.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/sticky-header.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/system-status-counter.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/system-status-report-counters.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/system-status-report-general-info.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/tabledrag.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/tablesort.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/tree-child.module.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/core/modules/ckeditor5/css/ckeditor5.dialog.fix.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/modules/contrib/blazy/css/blazy.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/modules/contrib/blazy/css/components/blazy.loading.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/theme.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/core/modules/layout_discovery/layouts/onecol/onecol.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/modules/contrib/paragraphs/css/paragraphs.unpublished.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/modules/contrib/clear_field/css/clear-field.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/modules/contrib/search_api_autocomplete/css/search_api_autocomplete.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/libraries/zoomify/src/zoomify.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/profiles/custom/solvay_core/themes/solvay_core_theme/css/languages/default.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/profiles/custom/solvay_core/themes/solvay_core_theme/css/styles.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/profiles/custom/solvay_core/themes/solvay_core_theme/libs/slick-carousel/slick/slick.css?s21jgv" />
+<link rel="stylesheet" media="all" href="/profiles/custom/solvay_core/themes/solvay_core_theme/libs/slick-carousel/slick/slick-theme.css?s21jgv" />
+
+    
+  </head>
+  <body id="page-top" class="path--node body-sidebars-none alias--home nodetype--landing_page logged-out entity-node-canonical page-header--logo-left-main page-footer--columns">
+    <div id="skip">
+      <a class="visually-hidden focusable skip-link" href="#content">
+        Skip to content
+      </a>
+    </div>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9XG56S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      <header role="banner" class="header--left-main">
+  <div class="header__content">
+    <div class="header--left-main__top">
+        <div class="region region-header-top">
+    
+
+<nav role="navigation" aria-labelledby="block-solvay-core-theme-headertop" id="block-solvay-core-theme-headertop" data-block-plugin-id="menu_block:header-top" class="block block-menu navigation block-system-menublock menu--header-top">
+      
+        
+              <ul class="menu">
+                          <li class="menu-item">
+          <a href="/en/our-company/history/160-years" class="highlight" data-drupal-link-system-path="node/53096">160 years</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/career" data-drupal-link-system-path="node/11586">Careers</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/contact-us" data-drupal-link-system-path="node/19986">Contact Us</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/solvay-around-the-world" data-drupal-link-system-path="solvay-around-the-world">Locations</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+  </div>
+
+    </div>
+    <div class="header--left-main__bottom">
+      <div class="header--left-main__bottom-left">
+        <div class="header__branding">
+            <div class="region region-branding">
+    <div id="block-solvay-core-theme-sitebranding" data-block-plugin-id="system_branding_block" class="site-branding block block-system block-system-branding-block">
+  
+    
+        <a href="/en/" alt="Home" rel="home" class="logo">
+        <img src="/profiles/custom/solvay_core/themes/solvay_core_theme/logo_solvay_2020.svg" alt="Home"/>
+    </a>
+    </div>
+
+  </div>
+
+        </div>
+      </div>
+
+      <div class="header--left-main__bottom-right">
+        <div class="header--left-main__bottom-right__left">
+          <div class="header__main-menu">
+              <div class="region region-main-menu">
+    
+
+<nav role="navigation" aria-labelledby="block-headerleft" id="block-headerleft" data-block-plugin-id="system_menu_block:header-left" class="block block-menu navigation block-system-menublock menu--header-left">
+      
+        
+              <ul class="menu menu--simple-mega-menu">
+                    <li class="menu-item">
+        <span data-simple-mega-menu="41">Our Company</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company">About Solvay</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/our-purpose">Our Purpose</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/our-strategy">Strategy</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/our-businesses">Businesses</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/diversity-equity-and-inclusion">Diversity, Equity and Inclusion</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/philanthropy">Corporate Citizenship</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/ethics-and-compliance">Ethics and Compliance</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/investors/corporate-governance/executive-committee">Management</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/history">History</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+                <li class="menu-item">
+        <span data-simple-mega-menu="46">Products &amp; Solutions</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-4 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-4 field__item"><a href="https://www.solvay.com/en/search?s=&amp;f%5B0%5D=fsection%3AProducts">Product Finder</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-4 field__item"><a href="/en/solutions-market">Solutions by Market</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-4 field__item"><a href="/en/chemical-categories">Chemical Categories</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-4 field__item"><a href="/en/brands">Brands</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+                <li class="menu-item">
+        <span data-simple-mega-menu="51">Sustainability</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__item"><a href="/en/sustainability">Solvay One Planet</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__item"><a href="/en/sustainability/climate">Climate</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__item"><a href="/en/sustainability/planet-resources">Resources</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__item"><a href="/en/sustainability/better-life">Better Life</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__item"><a href="/en/sustainability/sustainable-portfolio-management-tool">Sustainable Portfolio</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+                <li class="menu-item">
+        <span data-simple-mega-menu="56">Innovation</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="/en/innovation">Our Way to Innovate</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="https://www.solvay.com/en/innovation#growthplatforms">Growth platforms</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="/en/innovation/open-innovation/overview">Open Innovation</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="/en/innovation/solvay-ventures">Solvay Ventures</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="/en/innovation/encourage-science/chemistry-future-solvay-prize">Solvay Prize</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="/en/innovation/encourage-science/solar-impulse">Solar Impulse</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+        </ul>
+  
+
+
+  </nav>
+  </div>
+
+          </div>
+        </div>
+        <div class="header--left-main__bottom-right__right">
+          <div class="header__secondary-menu">
+              <div class="region region-secondary-menu">
+    
+
+<nav role="navigation" aria-labelledby="block-headerright" id="block-headerright" data-block-plugin-id="system_menu_block:header-right" class="block block-menu navigation block-system-menublock menu--header-right">
+      
+        
+              <ul class="menu menu--simple-mega-menu">
+                    <li class="menu-item">
+        <span data-simple-mega-menu="61">Media</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/newsroom">Overview</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/newsroom/news-and-press-releases">News releases</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/newsroom/stories">Blog</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/podcast">Podcast</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/newsroom/events">Events</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/newsroom/media-resources">Publications</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/media-contacts">Contacts</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+                <li class="menu-item">
+        <span data-simple-mega-menu="66">Investors</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors">Investor Relations</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/creating-two-strong-industry-leaders">Separation project</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/financial-calendar-events-presentations">Calendar, Events, Presentations</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/financial-reporting">Financials</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/bond-information">Debt &amp; credit rating</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/toward-sustainable-investing-esg-information">ESG Information</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/share-information">Stock Information</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/annual-reports">Annual reports</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/corporate-governance">Governance</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/regulated-information">Regulated information</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/shareholders-meetings">Shareholders meetings</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/investor-relations-contacts">Contact</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+        </ul>
+  
+
+
+  </nav>
+  </div>
+
+          </div>
+          <div class="header__search">
+              
+  <div class="region region-global-search">
+    <div class="search__loupe">
+      <span class="search-text">Search</span>
+      <span class="sv-search-icon"></span>
+    </div>
+
+    <div class="region__content">
+      <div class="inner">
+        <div class="title">What are you <strong>searching</strong> for?</div>
+        <div class="facet-inactive block-facets-ajax js-facet-block-id-section hidden block-facet--links block block-facets block-facet-blockglobal-section" id="block-section" data-block-plugin-id="facet_block:global_section">
+  
+    
+      <div data-drupal-facet-id="global_section" class="facet-empty facet-hidden"><div class="facets-widget-links">
+      
+</div>
+</div>
+
+  </div>
+<div class="views-exposed-form solvay-search-autocomplete block block-solvay-search-autocomplete block-solvay-search-autocomplete-exposedsolvay-search-main-page-global-main" data-drupal-selector="views-exposed-form-solvay-search-main-page-global-main" id="block-solvay-search-main-exposed-form-global-search" data-block-plugin-id="solvay_search_autocomplete_exposed:solvay_search_main-page_global_main">
+  
+    
+      <form action="/en/search" method="get" id="views-exposed-form-solvay-search-main-page-global-main-0" accept-charset="UTF-8">
+  <div class="form--inline clearfix">
+  <div class="js-form-item form-item js-form-type-search-api-autocomplete form-type-search-api-autocomplete js-form-item-s form-item-s form-no-label">
+        <input placeholder="What are you searching for?" data-drupal-selector="edit-s-0" data-search-api-autocomplete-search="solvay_search_main" class="form-autocomplete form-text" data-autocomplete-path="/en/search_api_autocomplete/solvay_search_main?display=page_global_main&amp;&amp;filter=s" id="edit-s-0" type="text" name="s" value="" size="30" maxlength="128" />
+
+        </div>
+<div class="last-searches-container" data-drupal-selector="edit-solvay-quick-links"></div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit-solvay-search-main" type="submit" id="edit-submit-solvay-search-main" value="Search" class="button js-form-submit form-submit" />
+</div>
+
+</div>
+
+</form>
+
+  </div>
+
+        <div class="search__close">
+          <span class="sv-cross_thin-icon"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+          </div>
+          <div id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="mobile-region">
+    <div class="region region-main-menu">
+    
+
+<nav role="navigation" aria-labelledby="block-headerleft" id="block-headerleft" data-block-plugin-id="system_menu_block:header-left" class="block block-menu navigation block-system-menublock menu--header-left">
+      
+        
+              <ul class="menu menu--simple-mega-menu">
+                    <li class="menu-item">
+        <span data-simple-mega-menu="41">Our Company</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company">About Solvay</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/our-purpose">Our Purpose</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/our-strategy">Strategy</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/our-businesses">Businesses</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/diversity-equity-and-inclusion">Diversity, Equity and Inclusion</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/philanthropy">Corporate Citizenship</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/ethics-and-compliance">Ethics and Compliance</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/investors/corporate-governance/executive-committee">Management</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-9 field__item"><a href="/en/our-company/history">History</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+                <li class="menu-item">
+        <span data-simple-mega-menu="46">Products &amp; Solutions</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-4 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-4 field__item"><a href="https://www.solvay.com/en/search?s=&amp;f%5B0%5D=fsection%3AProducts">Product Finder</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-4 field__item"><a href="/en/solutions-market">Solutions by Market</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-4 field__item"><a href="/en/chemical-categories">Chemical Categories</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-4 field__item"><a href="/en/brands">Brands</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+                <li class="menu-item">
+        <span data-simple-mega-menu="51">Sustainability</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__item"><a href="/en/sustainability">Solvay One Planet</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__item"><a href="/en/sustainability/climate">Climate</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__item"><a href="/en/sustainability/planet-resources">Resources</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__item"><a href="/en/sustainability/better-life">Better Life</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-5 field__item"><a href="/en/sustainability/sustainable-portfolio-management-tool">Sustainable Portfolio</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+                <li class="menu-item">
+        <span data-simple-mega-menu="56">Innovation</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="/en/innovation">Our Way to Innovate</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="https://www.solvay.com/en/innovation#growthplatforms">Growth platforms</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="/en/innovation/open-innovation/overview">Open Innovation</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="/en/innovation/solvay-ventures">Solvay Ventures</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="/en/innovation/encourage-science/chemistry-future-solvay-prize">Solvay Prize</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-6 field__item"><a href="/en/innovation/encourage-science/solar-impulse">Solar Impulse</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+        </ul>
+  
+
+
+  </nav>
+  </div>
+
+    <div class="region region-secondary-menu">
+    
+
+<nav role="navigation" aria-labelledby="block-headerright" id="block-headerright" data-block-plugin-id="system_menu_block:header-right" class="block block-menu navigation block-system-menublock menu--header-right">
+      
+        
+              <ul class="menu menu--simple-mega-menu">
+                    <li class="menu-item">
+        <span data-simple-mega-menu="61">Media</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/newsroom">Overview</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/newsroom/news-and-press-releases">News releases</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/newsroom/stories">Blog</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/podcast">Podcast</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/newsroom/events">Events</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/newsroom/media-resources">Publications</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-7 field__item"><a href="/en/media-contacts">Contacts</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+                <li class="menu-item">
+        <span data-simple-mega-menu="66">Investors</span>
+                      <div class="mega-menu-wrapper">
+              
+
+<div class="simple-mega-menu mega-menu-item simple-mega-menu-type-megamenu-dropdown view-mode-default">
+  <div class="megamenu__close">
+    <span class="sv-cross_thin-icon"></span>
+  </div>
+
+  <div class="megamenu__back">Back</div>
+
+      <div class="scrollable-content">  
+<div  class="column-first">
+      
+      <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__items">
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors">Investor Relations</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/creating-two-strong-industry-leaders">Separation project</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/financial-calendar-events-presentations">Calendar, Events, Presentations</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/financial-reporting">Financials</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/bond-information">Debt &amp; credit rating</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/toward-sustainable-investing-esg-information">ESG Information</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/share-information">Stock Information</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/annual-reports">Annual reports</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/corporate-governance">Governance</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/regulated-information">Regulated information</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/shareholders-meetings">Shareholders meetings</a></div>
+              <div class="field field--name-field-megamenu-dropdown-links-1 field--type-link field--label-hidden field__items__total-12 field__item"><a href="/en/investors/investor-relations-contacts">Contact</a></div>
+          </div>
+  
+  </div>
+
+</div>
+  </div>
+
+                  
+            </div>
+                </li>
+        </ul>
+  
+
+
+  </nav>
+  </div>
+
+    <div class="region region-header-top">
+    
+
+<nav role="navigation" aria-labelledby="block-solvay-core-theme-headertop" id="block-solvay-core-theme-headertop" data-block-plugin-id="menu_block:header-top" class="block block-menu navigation block-system-menublock menu--header-top">
+      
+        
+              <ul class="menu">
+                          <li class="menu-item">
+          <a href="/en/our-company/history/160-years" class="highlight" data-drupal-link-system-path="node/53096">160 years</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/career" data-drupal-link-system-path="node/11586">Careers</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/contact-us" data-drupal-link-system-path="node/19986">Contact Us</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/solvay-around-the-world" data-drupal-link-system-path="solvay-around-the-world">Locations</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+  </div>
+
+</section>
+
+  
+
+
+
+
+
+    <div class="region region-pre-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+
+<main role="main">
+  
+    <div class="region region-content">
+    <div id="block-solvay-core-theme-mainpagecontent" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+      
+
+<article  about="/en" class="entity--type-node header-style-default node node--type-landing-page node--view-mode-full">
+
+  
+  <div class="content">
+    <div class="one-col-stacked">
+      <h1 class="page-title--visually-hidden">We bond people, ideas and elements to reinvent progress</h1>
+  
+  <div class="one-col-stacked__content">
+                  <div class="one-col-stacked__main">
+                  
+      <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items__total-9 field__items">
+              <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items__total-9 field__item">  <div class="paragraph paragraph--type--carousel-push paragraph--view-mode--default">
+            
+      <div class="field field--name-push-custom field--type-entity-reference-revisions field--label-hidden field__items__total-3 field__items">
+              <div class="field field--name-push-custom field--type-entity-reference-revisions field--label-hidden field__items__total-3 field__item">  <div class="display-side_left paragraph paragraph--type--push-custom paragraph--view-mode--default">
+          
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-fullwidth">
+  
+        
+            <div class="field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item">    <picture>
+                  <source srcset="/sites/g/files/srpend221/files/styles/full_width_video/https/media.solvay.com/medias/domain1446/media100854/256422-unwpquydgi.png.webp?itok=_6Q1luK4 1x, /sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100854/256422-unwpquydgi.png.webp?itok=k8WZEZm8 2x" media="all and (min-width: 1024px)" type="image/webp" width="1366" height="683"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100854/256422-unwpquydgi.png.webp?itok=iLFdmZP1 1x, /sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100854/256422-unwpquydgi.png.webp?itok=iLFdmZP1 2x" media="all and (min-width: 0)" type="image/webp" width="500" height="250"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/full_width_video/https/media.solvay.com/medias/domain1446/media100854/256422-unwpquydgi.png?itok=_6Q1luK4 1x, /sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100854/256422-unwpquydgi.png?itok=k8WZEZm8 2x" media="all and (min-width: 1024px)" type="image/png" width="1366" height="683"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100854/256422-unwpquydgi.png?itok=iLFdmZP1 1x, /sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100854/256422-unwpquydgi.png?itok=iLFdmZP1 2x" media="all and (min-width: 0)" type="image/png" width="500" height="250"/>
+                  <img loading="lazy" src="/sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100854/256422-unwpquydgi.png?itok=k8WZEZm8" width="1366" height="683" alt="Podcast_Marga_Hoek" title="Podcast_Marga_Hoek" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+      
+
+  </article>
+</div>
+      
+
+            <div class="wrapper">
+        
+<div  class="content">
+      
+            <div class="field field--name-field-subtitle field--type-string field--label-hidden field__items__total-1 field__item"><span>Podcast</span>
+</div>
+      
+            <div class="field field--name-field-title field--type-string field--label-hidden field__items__total-1 field__item"><h2>The SDGs AND the Trillion Dollar Shift</h2>
+</div>
+      
+            <div class="field field--name-field-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><p><span>According to sustainable leadership expert Marga Hoek, there’s a $12 trillion business case for implementing the SDGs. Ilham and Marga discuss these incredible business opportunities!</span></p></div>
+      
+      <div class="field field--name-field-cta field--type-link field--label-hidden field__items__total-1 field__items">
+              <div class="field field--name-field-cta field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/podcast/sdgs-and-trillion-dollar-shift" class="cta-gtmtrack">Listen now</a></div>
+          </div>
+  
+  </div>
+
+      </div>
+            </div>
+</div>
+              <div class="field field--name-push-custom field--type-entity-reference-revisions field--label-hidden field__items__total-3 field__item">  <div class="display-side_left paragraph paragraph--type--push-custom paragraph--view-mode--default">
+          
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-fullwidth">
+  
+        
+            <div class="field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item">    <picture>
+                  <source srcset="/sites/g/files/srpend221/files/styles/full_width_video/https/media.solvay.com/medias/domain1446/media100718/215476-uvn0kuru76.png.webp?itok=tqN6aFNY 1x, /sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100718/215476-uvn0kuru76.png.webp?itok=Mcc26Iqe 2x" media="all and (min-width: 1024px)" type="image/webp" width="1366" height="683"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100718/215476-uvn0kuru76.png.webp?itok=LmJqLV71 1x, /sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100718/215476-uvn0kuru76.png.webp?itok=LmJqLV71 2x" media="all and (min-width: 0)" type="image/webp" width="500" height="250"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/full_width_video/https/media.solvay.com/medias/domain1446/media100718/215476-uvn0kuru76.png?itok=tqN6aFNY 1x, /sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100718/215476-uvn0kuru76.png?itok=Mcc26Iqe 2x" media="all and (min-width: 1024px)" type="image/png" width="1366" height="683"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100718/215476-uvn0kuru76.png?itok=LmJqLV71 1x, /sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100718/215476-uvn0kuru76.png?itok=LmJqLV71 2x" media="all and (min-width: 0)" type="image/png" width="500" height="250"/>
+                  <img loading="lazy" src="/sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100718/215476-uvn0kuru76.png?itok=Mcc26Iqe" width="1366" height="683" alt="Professor Katalin Karikó" title="Professor Katalin Karikó" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+      
+
+  </article>
+</div>
+      
+
+            <div class="wrapper">
+        
+<div  class="content">
+      
+            <div class="field field--name-field-title field--type-string field--label-hidden field__items__total-1 field__item"><h2>From Solvay Prize to Nobel Prize: Dr. Katalin Karikó</h2>
+</div>
+      
+            <div class="field field--name-field-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><p>Dr. Karikó, a pioneering researcher in the field of mRNA therapeutics, is the third Solvay Prize winner to become a Nobel Prize laureate.</p></div>
+      
+      <div class="field field--name-field-cta field--type-link field--label-hidden field__items__total-1 field__items">
+              <div class="field field--name-field-cta field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/news/solvay-celebrates-medicine-nobel-prize-winner-katalin-kariko" class="cta-gtmtrack">Read more</a></div>
+          </div>
+  
+  </div>
+
+      </div>
+            </div>
+</div>
+              <div class="field field--name-push-custom field--type-entity-reference-revisions field--label-hidden field__items__total-3 field__item">  <div class="display-side_left paragraph paragraph--type--push-custom paragraph--view-mode--default">
+          
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-fullwidth">
+  
+        
+            <div class="field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item">    <picture>
+                  <source srcset="/sites/g/files/srpend221/files/styles/full_width_video/https/media.solvay.com/medias/domain1446/media100862/258708-vcl329hp5j.jpg.webp?itok=RKqzy3x1 1x, /sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100862/258708-vcl329hp5j.jpg.webp?itok=8vHN_zat 2x" media="all and (min-width: 1024px)" type="image/webp" width="1366" height="683"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100862/258708-vcl329hp5j.jpg.webp?itok=6Mb3Eub3 1x, /sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100862/258708-vcl329hp5j.jpg.webp?itok=6Mb3Eub3 2x" media="all and (min-width: 0)" type="image/webp" width="500" height="250"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/full_width_video/https/media.solvay.com/medias/domain1446/media100862/258708-vcl329hp5j.jpg?itok=RKqzy3x1 1x, /sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100862/258708-vcl329hp5j.jpg?itok=8vHN_zat 2x" media="all and (min-width: 1024px)" type="image/jpeg" width="1366" height="683"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100862/258708-vcl329hp5j.jpg?itok=6Mb3Eub3 1x, /sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100862/258708-vcl329hp5j.jpg?itok=6Mb3Eub3 2x" media="all and (min-width: 0)" type="image/jpeg" width="500" height="250"/>
+                  <img loading="lazy" src="/sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100862/258708-vcl329hp5j.jpg?itok=8vHN_zat" width="1366" height="683" alt="DeeDee_with_emotor_PEEK_magwire_slotliner-1366x720" title="DeeDee_with_emotor_PEEK_magwire_slotliner-1366x720" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+      
+
+  </article>
+</div>
+      
+
+            <div class="wrapper">
+        
+<div  class="content">
+      
+            <div class="field field--name-field-subtitle field--type-string field--label-hidden field__items__total-1 field__item"><span>Clean mobility</span>
+</div>
+      
+            <div class="field field--name-field-title field--type-string field--label-hidden field__items__total-1 field__item"><h2>Who’s behind the technology powering your electric car?</h2>
+</div>
+      
+            <div class="field field--name-field-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><p><span>As e-mobility grows, Solvay’s material experts support EV manufacturers in selecting the right advanced materials to optimize the performance of electric vehicles.</span></p></div>
+      
+      <div class="field field--name-field-cta field--type-link field--label-hidden field__items__total-1 field__items">
+              <div class="field field--name-field-cta field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/article/materials-power-electric-vehicles" class="cta-gtmtrack">Read more</a></div>
+          </div>
+  
+  </div>
+
+      </div>
+            </div>
+</div>
+          </div>
+  
+
+      </div>
+</div>
+              <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items__total-9 field__item">  <div class="cards-layout--columns cards-columns--7 cards-type--square paragraph paragraph--type--cards paragraph--view-mode--default">
+            
+            <div class="field field--name-field-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><h2 class="blue--color text-align-center">Find the right <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="136292c5-87fc-44fb-a556-ed562ba9dfd5" href="/en/solutions-market"><span class="text_color--primary">solutions</span></a> for your needs</h2></div>
+      
+      <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-7 field__items">
+              <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-7 field__item">  <div class="has-whole-link paragraph paragraph--type--card paragraph--view-mode--default">
+            
+            <div class="field field--name-field-link field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/solutions-market/automotive">/en/solutions-market/automotive</a></div>
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-1-1">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--1-1 field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image is-b-loading"><img data-keepeek-id="176659" alt="Automotive market pictogram" title="Automotive market pictogram" class="media__image media__element b-lazy" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media1111/176659-4f95716t85.png" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="600" height="600" typeof="foaf:Image" />
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+<div  class="group-content">
+      <h3 class="title"><a href="/en/solutions-market/automotive">Automotive</a></h3>
+
+  </div>
+
+
+      </div>
+</div>
+              <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-7 field__item">  <div class="has-whole-link paragraph paragraph--type--card paragraph--view-mode--default">
+            
+            <div class="field field--name-field-link field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/solutions-market/aerospace">/en/solutions-market/aerospace</a></div>
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-1-1">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--1-1 field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image is-b-loading"><img data-keepeek-id="176656" alt="Aerospace pictogram" title="Aerospace pictogram" class="media__image media__element b-lazy" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media1111/176656-yv4vcc1dbc.png" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="600" height="600" typeof="foaf:Image" />
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+<div  class="group-content">
+      <h3 class="title"><a href="/en/solutions-market/aerospace">Aerospace</a></h3>
+
+  </div>
+
+
+      </div>
+</div>
+              <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-7 field__item">  <div class="has-whole-link paragraph paragraph--type--card paragraph--view-mode--default">
+            
+            <div class="field field--name-field-link field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/solutions-market/agriculture-feed">/en/solutions-market/agriculture-feed</a></div>
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-1-1">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--1-1 field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image is-b-loading"><img data-keepeek-id="176662" alt="Agriculture market pictogram" title="Agriculture market pictogram" class="media__image media__element b-lazy" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media1111/176662-n6ko7es8em.png" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="600" height="600" typeof="foaf:Image" />
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+<div  class="group-content">
+      <h3 class="title"><a href="/en/solutions-market/agriculture-feed">Agriculture &amp; Feed</a></h3>
+
+  </div>
+
+
+      </div>
+</div>
+              <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-7 field__item">  <div class="has-whole-link paragraph paragraph--type--card paragraph--view-mode--default">
+            
+            <div class="field field--name-field-link field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/solutions-market/consumer-goods">/en/solutions-market/consumer-goods</a></div>
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-1-1">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--1-1 field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image is-b-loading"><img data-keepeek-id="176665" alt="Consumer Goods market pictogram" title="Consumer Goods market pictogram" class="media__image media__element b-lazy" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media1111/176665-yuimiqo242.png" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="600" height="600" typeof="foaf:Image" />
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+<div  class="group-content">
+      <h3 class="title"><a href="/en/solutions-market/consumer-goods">Consumer Goods</a></h3>
+
+  </div>
+
+
+      </div>
+</div>
+              <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-7 field__item">  <div class="has-whole-link paragraph paragraph--type--card paragraph--view-mode--default">
+            
+            <div class="field field--name-field-link field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/solutions-market/healthcare">/en/solutions-market/healthcare</a></div>
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-1-1">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--1-1 field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image is-b-loading"><img data-keepeek-id="176668" alt="Healthcare market pictogram" title="Healthcare market pictogram" class="media__image media__element b-lazy" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media1111/176668-5bauuyptvk.png" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="600" height="600" typeof="foaf:Image" />
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+<div  class="group-content">
+      <h3 class="title"><a href="/en/solutions-market/healthcare">Healthcare</a></h3>
+
+  </div>
+
+
+      </div>
+</div>
+              <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-7 field__item">  <div class="has-whole-link paragraph paragraph--type--card paragraph--view-mode--default">
+            
+            <div class="field field--name-field-link field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/solutions-market/electronics">/en/solutions-market/electronics</a></div>
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-1-1">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--1-1 field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image is-b-loading"><img data-keepeek-id="215380" alt="Electronics-purple" title="Electronics-purple" class="media__image media__element b-lazy" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media100717/215380-6ymsbs34qq.png" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="600" height="600" typeof="foaf:Image" />
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+<div  class="group-content">
+      <h3 class="title"><a href="/en/solutions-market/electronics">Electronics</a></h3>
+
+  </div>
+
+
+      </div>
+</div>
+              <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-7 field__item">  <div class="has-whole-link paragraph paragraph--type--card paragraph--view-mode--default">
+            
+            <div class="field field--name-field-link field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/solutions-market">/en/solutions-market</a></div>
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-1-1">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--1-1 field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image is-b-loading"><img data-keepeek-id="176674" alt="solutions-picto" title="solutions-picto" class="media__image media__element b-lazy" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media1111/176674-qp2gkslfex.png" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="600" height="600" typeof="foaf:Image" />
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+<div  class="group-content">
+      <h3 class="title"><a href="/en/solutions-market">All our solutions</a></h3>
+
+  </div>
+
+
+      </div>
+</div>
+          </div>
+  
+
+      </div>
+</div>
+              <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items__total-9 field__item">  <div class="paragraph paragraph--type--wysiwyg paragraph--view-mode--default">
+            
+            <div class="field field--name-field-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><p class="text-align-center"><a class="button--icon-search button--primary cta-gtmtrack" href="/search?s=&amp;f%5B0%5D=fsection%3AProducts">Browse our product finder</a></p></div>
+      
+
+      </div>
+</div>
+              <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items__total-9 field__item">  <div class="display-side_left paragraph paragraph--type--push-custom paragraph--view-mode--default">
+          
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-fullwidth">
+  
+        
+            <div class="field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item">    <picture>
+                  <source srcset="/sites/g/files/srpend221/files/styles/full_width_video/https/media.solvay.com/medias/domain1446/media100862/258789-hr6g77h4dw.jpg.webp?itok=XkN4zz1u 1x, /sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100862/258789-hr6g77h4dw.jpg.webp?itok=l-yOJa4O 2x" media="all and (min-width: 1024px)" type="image/webp" width="1366" height="683"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100862/258789-hr6g77h4dw.jpg.webp?itok=gWXZYTxC 1x, /sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100862/258789-hr6g77h4dw.jpg.webp?itok=gWXZYTxC 2x" media="all and (min-width: 0)" type="image/webp" width="500" height="250"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/full_width_video/https/media.solvay.com/medias/domain1446/media100862/258789-hr6g77h4dw.jpg?itok=XkN4zz1u 1x, /sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100862/258789-hr6g77h4dw.jpg?itok=l-yOJa4O 2x" media="all and (min-width: 1024px)" type="image/jpeg" width="1366" height="683"/>
+              <source srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100862/258789-hr6g77h4dw.jpg?itok=gWXZYTxC 1x, /sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100862/258789-hr6g77h4dw.jpg?itok=gWXZYTxC 2x" media="all and (min-width: 0)" type="image/jpeg" width="500" height="250"/>
+                  <img loading="lazy" src="/sites/g/files/srpend221/files/styles/fullwidth/https/media.solvay.com/medias/domain1446/media100862/258789-hr6g77h4dw.jpg?itok=l-yOJa4O" width="1366" height="683" alt="Rhodia_Drone Image VIII" title="Rhodia_Drone Image VIII" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+      
+
+  </article>
+</div>
+      
+
+            <div class="wrapper">
+        
+<div  class="content">
+      
+            <div class="field field--name-field-subtitle field--type-string field--label-hidden field__items__total-1 field__item"><span>Solvay One Planet</span>
+</div>
+      
+            <div class="field field--name-field-title field--type-string field--label-hidden field__items__total-1 field__item"><h2>International Union for Conservation of Nature highlighted Solvay sites for going above and beyond to protect biodiversity</h2>
+</div>
+      
+            <div class="field field--name-field-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><p><span>Solvay’s Paulinia, Torrelavega and Rosignano sites are among the leading companies featured in the IUCN report on nature conservation.</span></p></div>
+      
+      <div class="field field--name-field-cta field--type-link field--label-hidden field__items__total-1 field__items">
+              <div class="field field--name-field-cta field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/news/solvay-among-leading-companies-featured-iucn-report-nature-conservation" class="cta-gtmtrack">Read more</a></div>
+          </div>
+  
+  </div>
+
+      </div>
+            </div>
+</div>
+              <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items__total-9 field__item">  <div class="cards-layout--columns cards-columns--3 cards-type--block paragraph paragraph--type--cards paragraph--view-mode--default">
+            
+      <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-3 field__items">
+              <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-3 field__item">  <div class="has-whole-link paragraph paragraph--type--card paragraph--view-mode--default">
+            
+            <div class="field field--name-field-link field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/press-release/solvay-partners-beta-technologies-advanced-air-mobility-platform">/en/press-release/solvay-partners-beta-technologies-advanced-air-mobility-platf…</a></div>
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-half-width">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--half-width field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image media--responsive is-b-loading">  <picture>
+                  <source srcset="" media="all and (min-width: 0)" type="image/webp" width="683" height="342" data-srcset="/sites/g/files/srpend221/files/styles/halfwidth/https/media.solvay.com/medias/domain1446/media100862/258648-pjbq1yimbr.jpg.webp?itok=5tun4OyE 1x"/>
+              <source srcset="" media="all and (min-width: 0)" type="image/jpeg" width="683" height="342" data-srcset="/sites/g/files/srpend221/files/styles/halfwidth/https/media.solvay.com/medias/domain1446/media100862/258648-pjbq1yimbr.jpg?itok=5tun4OyE 1x"/>
+                  <img data-keepeek-id="258648" class="media__image media__element b-lazy b-responsive" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media100862/258648-pjbq1yimbr.jpg" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="683" height="342" alt="Banner - BETA Technologies electric aircraft" title="Banner - BETA Technologies electric aircraft" typeof="foaf:Image" />
+
+  </picture>
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+<div  class="group-content">
+      <h3 class="title"><a href="/en/press-release/solvay-partners-beta-technologies-advanced-air-mobility-platform">Solvay composite materials helping BETA Technologies to provide zero-emission air transit</a></h3>
+
+  </div>
+
+
+      </div>
+</div>
+              <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-3 field__item">  <div class="has-whole-link paragraph paragraph--type--card paragraph--view-mode--default">
+            
+            <div class="field field--name-field-link field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/press-release/solvay-invites-analysts-and-institutional-investors-specialtycos-and-essentialcos">/en/press-release/solvay-invites-analysts-and-institutional-investors-specialty…</a></div>
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-half-width">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--half-width field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image media--responsive is-b-loading">  <picture>
+                  <source srcset="" media="all and (min-width: 0)" type="image/webp" width="683" height="342" data-srcset="/sites/g/files/srpend221/files/styles/halfwidth/https/media.solvay.com/medias/domain1446/media100861/258498-79uw23cjua.jpg.webp?itok=qPwI0VIZ 1x"/>
+              <source srcset="" media="all and (min-width: 0)" type="image/jpeg" width="683" height="342" data-srcset="/sites/g/files/srpend221/files/styles/halfwidth/https/media.solvay.com/medias/domain1446/media100861/258498-79uw23cjua.jpg?itok=qPwI0VIZ 1x"/>
+                  <img data-keepeek-id="258498" class="media__image media__element b-lazy b-responsive" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media100861/258498-79uw23cjua.jpg" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="683" height="342" alt="Solvay Haren architectuur" title="Solvay Haren architectuur" typeof="foaf:Image" />
+
+  </picture>
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+<div  class="group-content">
+      <h3 class="title"><a href="/en/press-release/solvay-invites-analysts-and-institutional-investors-specialtycos-and-essentialcos">Analysts and institutional investors are invited to SpecialtyCo’s and EssentialCo’s first Capital Markets Day</a></h3>
+
+  </div>
+
+
+      </div>
+</div>
+              <div class="field field--name-field-card field--type-entity-reference-revisions field--label-hidden field__items__total-3 field__item">  <div class="has-whole-link paragraph paragraph--type--card paragraph--view-mode--default">
+            
+            <div class="field field--name-field-link field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/press-release/solvay-reduce-co2-emissions-20-collonges-france-site">/en/press-release/solvay-reduce-co2-emissions-20-collonges-france-site</a></div>
+      
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-half-width">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--half-width field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image media--responsive is-b-loading">  <picture>
+                  <source srcset="" media="all and (min-width: 0)" type="image/webp" width="683" height="342" data-srcset="/sites/g/files/srpend221/files/styles/halfwidth/https/media.solvay.com/medias/domain1446/media100829/248887-yyrh0rd19w.PNG.webp?itok=q5qIwvFp 1x"/>
+              <source srcset="" media="all and (min-width: 0)" type="image/png" width="683" height="342" data-srcset="/sites/g/files/srpend221/files/styles/halfwidth/https/media.solvay.com/medias/domain1446/media100829/248887-yyrh0rd19w.PNG?itok=q5qIwvFp 1x"/>
+                  <img data-keepeek-id="248887" class="media__image media__element b-lazy b-responsive" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media100829/248887-yyrh0rd19w.PNG" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="683" height="342" alt="Collonges site, France (2)" title="Collonges site, France (2)" typeof="foaf:Image" />
+
+  </picture>
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+<div  class="group-content">
+      <h3 class="title"><a href="/en/press-release/solvay-reduce-co2-emissions-20-collonges-france-site">Solvay constructs a way to reduce CO2 emissions by 20% at Collonges</a></h3>
+
+  </div>
+
+
+      </div>
+</div>
+          </div>
+  
+
+      </div>
+</div>
+              <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items__total-9 field__item">  <div class="paragraph paragraph--type--wysiwyg paragraph--view-mode--default">
+            
+            <div class="field field--name-field-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><p class="text-align-center"><a class="button--primary cta-gtmtrack" href="https://www.solvay.com/en/newsroom">Read more news</a></p></div>
+      
+
+      </div>
+</div>
+              <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items__total-9 field__item">  <div class="paragraph paragraph--type--double-push paragraph--view-mode--default">
+        <div class="double-block block-left  ">
+      
+      
+            <div class="field field--name-field-dpl-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-16-9">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--16-9 field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image media--responsive is-b-loading">  <picture>
+                  <source srcset="" media="all and (min-width: 1024px)" type="image/webp" width="1366" height="768" data-srcset="/sites/g/files/srpend221/files/styles/header/https/media.solvay.com/medias/domain1446/media100833/250126-apoxd8fhto.jpg.webp?itok=6GNPTZJT 1x, /sites/g/files/srpend221/files/styles/header/https/media.solvay.com/medias/domain1446/media100833/250126-apoxd8fhto.jpg.webp?itok=6GNPTZJT 2x"/>
+              <source srcset="" media="all and (min-width: 600px)" type="image/webp" width="1024" height="467" data-srcset="/sites/g/files/srpend221/files/styles/full_tablet/https/media.solvay.com/medias/domain1446/media100833/250126-apoxd8fhto.jpg.webp?itok=8MVgqTRX 1x, /sites/g/files/srpend221/files/styles/full_tablet/https/media.solvay.com/medias/domain1446/media100833/250126-apoxd8fhto.jpg.webp?itok=8MVgqTRX 2x"/>
+              <source srcset="" media="all and (min-width: 0)" type="image/webp" width="500" height="250" data-srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100833/250126-apoxd8fhto.jpg.webp?itok=XgUQGnhN 1x"/>
+              <source srcset="" media="all and (min-width: 1024px)" type="image/jpeg" width="1366" height="768" data-srcset="/sites/g/files/srpend221/files/styles/header/https/media.solvay.com/medias/domain1446/media100833/250126-apoxd8fhto.jpg?itok=6GNPTZJT 1x, /sites/g/files/srpend221/files/styles/header/https/media.solvay.com/medias/domain1446/media100833/250126-apoxd8fhto.jpg?itok=6GNPTZJT 2x"/>
+              <source srcset="" media="all and (min-width: 600px)" type="image/jpeg" width="1024" height="467" data-srcset="/sites/g/files/srpend221/files/styles/full_tablet/https/media.solvay.com/medias/domain1446/media100833/250126-apoxd8fhto.jpg?itok=8MVgqTRX 1x, /sites/g/files/srpend221/files/styles/full_tablet/https/media.solvay.com/medias/domain1446/media100833/250126-apoxd8fhto.jpg?itok=8MVgqTRX 2x"/>
+              <source srcset="" media="all and (min-width: 0)" type="image/jpeg" width="500" height="250" data-srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100833/250126-apoxd8fhto.jpg?itok=XgUQGnhN 1x"/>
+                  <img data-keepeek-id="250126" class="media__image media__element b-lazy b-responsive" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media100833/250126-apoxd8fhto.jpg" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="1366" height="768" alt="Solvay.com_Banner_1933x710_2." title="Solvay.com_Banner_1933x710_2." typeof="foaf:Image" />
+
+  </picture>
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+
+            <div class="wrapper">
+        
+<div  class="content">
+      
+            <div class="field field--name-field-dpl-title field--type-string field--label-hidden field__items__total-1 field__item"><h2>Annual Integrated Report</h2>
+</div>
+      
+            <div class="field field--name-field-dpl-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><p><span><span><span><span><span><span>In 2022, Solvay delivered record financial results and significant progress on sustainability goals, while supporting employees and communities in need.</span></span></span></span></span></span></p></div>
+      
+      <div class="field field--name-field-dpl-cta field--type-link field--label-hidden field__items__total-1 field__items">
+              <div class="field field--name-field-dpl-cta field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/2022-annual-integrated-report" class="cta-gtmtrack">Read more</a></div>
+          </div>
+  
+  </div>
+
+      </div>
+          </div>
+
+    <div class="double-block block-right  ">
+      
+      
+            <div class="field field--name-field-dpr-image field--type-entity-reference field--label-hidden field__items__total-1 field__item"><article class="entity--type-media media--type-media-keepeek media--view-mode-16-9">
+  
+        
+            <div class="blazy blazy--field blazy--field-keepeek-image blazy--field-keepeek-image--16-9 field field--name-field-keepeek-image field--type-image field--label-hidden field__items__total-1 field__item" data-blazy="">
+
+
+
+
+                  <div class="media media--blazy media--image media--responsive is-b-loading">  <picture>
+                  <source srcset="" media="all and (min-width: 1024px)" type="image/webp" width="1366" height="768" data-srcset="/sites/g/files/srpend221/files/styles/header/https/media.solvay.com/medias/domain1446/media100848/254565-d8fkyub2dd.jpg.webp?itok=6-teX1YW 1x, /sites/g/files/srpend221/files/styles/header/https/media.solvay.com/medias/domain1446/media100848/254565-d8fkyub2dd.jpg.webp?itok=6-teX1YW 2x"/>
+              <source srcset="" media="all and (min-width: 600px)" type="image/webp" width="1024" height="467" data-srcset="/sites/g/files/srpend221/files/styles/full_tablet/https/media.solvay.com/medias/domain1446/media100848/254565-d8fkyub2dd.jpg.webp?itok=54LW0f9V 1x, /sites/g/files/srpend221/files/styles/full_tablet/https/media.solvay.com/medias/domain1446/media100848/254565-d8fkyub2dd.jpg.webp?itok=54LW0f9V 2x"/>
+              <source srcset="" media="all and (min-width: 0)" type="image/webp" width="500" height="250" data-srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100848/254565-d8fkyub2dd.jpg.webp?itok=E7JThKaj 1x"/>
+              <source srcset="" media="all and (min-width: 1024px)" type="image/jpeg" width="1366" height="768" data-srcset="/sites/g/files/srpend221/files/styles/header/https/media.solvay.com/medias/domain1446/media100848/254565-d8fkyub2dd.jpg?itok=6-teX1YW 1x, /sites/g/files/srpend221/files/styles/header/https/media.solvay.com/medias/domain1446/media100848/254565-d8fkyub2dd.jpg?itok=6-teX1YW 2x"/>
+              <source srcset="" media="all and (min-width: 600px)" type="image/jpeg" width="1024" height="467" data-srcset="/sites/g/files/srpend221/files/styles/full_tablet/https/media.solvay.com/medias/domain1446/media100848/254565-d8fkyub2dd.jpg?itok=54LW0f9V 1x, /sites/g/files/srpend221/files/styles/full_tablet/https/media.solvay.com/medias/domain1446/media100848/254565-d8fkyub2dd.jpg?itok=54LW0f9V 2x"/>
+              <source srcset="" media="all and (min-width: 0)" type="image/jpeg" width="500" height="250" data-srcset="/sites/g/files/srpend221/files/styles/fullwidth_mobile/https/media.solvay.com/medias/domain1446/media100848/254565-d8fkyub2dd.jpg?itok=E7JThKaj 1x"/>
+                  <img data-keepeek-id="254565" class="media__image media__element b-lazy b-responsive" decoding="async" loading="lazy" data-src="https://media.solvay.com/medias/domain1446/media100848/254565-d8fkyub2dd.jpg" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="1366" height="768" alt="Picto image" title="Picto image" typeof="foaf:Image" />
+
+  </picture>
+        </div>
+        
+  
+</div>
+      
+
+  </article>
+</div>
+      
+
+            <div class="wrapper">
+        
+<div  class="content">
+      
+            <div class="field field--name-field-dpr-title field--type-string field--label-hidden field__items__total-1 field__item"><h2>Creating two strong industry leaders</h2>
+</div>
+      
+            <div class="field field--name-field-dpr-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><p>Solvay has been continually changing, transforming and reinventing for 160 years, but we have always remained true to our heritage of social responsibility and innovation excellence. Our Power of 2 project is the next bold chapter in our story.</p></div>
+      
+      <div class="field field--name-field-dpr-cta field--type-link field--label-hidden field__items__total-1 field__items">
+              <div class="field field--name-field-dpr-cta field--type-link field--label-hidden field__items__total-1 field__item"><a href="/en/investors/creating-two-strong-industry-leaders" class="cta-gtmtrack">Read more</a></div>
+          </div>
+  
+  </div>
+
+      </div>
+          </div>
+      </div>
+</div>
+              <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items__total-9 field__item">  <div class="columns--66-33 mobile-reverse-0 paragraph paragraph--type--columns paragraph--view-mode--default">
+            
+      <div class="field field--name-field-columns-paragraph field--type-entity-reference-revisions field--label-hidden field__items__total-2 field__items">
+              <div class="field field--name-field-columns-paragraph field--type-entity-reference-revisions field--label-hidden field__items__total-2 field__item">  <div class="paragraph paragraph--type--wysiwyg paragraph--view-mode--default">
+            
+            <div class="field field--name-field-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><h2>We bond people, ideas and elements to reinvent progress</h2><p>We are a science company whose technologies bring benefits to many aspects of daily life. Our <a href="/en/our-company/our-purpose" data-entity-type="node" data-entity-uuid="8155ee6c-b738-4eb6-bf13-e341be092742" data-entity-substitution="canonical">purpose </a>is to bond people, ideas and elements to reinvent progress. The Group's innovative <a href="/en/solutions-market" data-entity-type="node" data-entity-uuid="136292c5-87fc-44fb-a556-ed562ba9dfd5" data-entity-substitution="canonical">solutions </a>contribute to safer, cleaner, and more sustainable products found in homes, food and consumer goods, planes, cars, batteries, smart devices, health care applications, water and air purification systems. We seek to create sustainable shared value for all through our<a href="/en/sustainability" data-entity-type="node" data-entity-uuid="7ed1ebbc-022e-4009-af06-667808d24b84" data-entity-substitution="canonical"> One Planet</a> program, an initiative crafted around three pillars: protecting the climate, preserving resources and fostering better life. Founded in 1863, the Group ranks among the world’s top three companies for the vast majority of its activities.</p></div>
+      
+
+      </div>
+</div>
+              <div class="field field--name-field-columns-paragraph field--type-entity-reference-revisions field--label-hidden field__items__total-2 field__item">  <div class="paragraph paragraph--type--iframe paragraph--view-mode--default">
+            
+            <div class="field field--name-field-iframe field--type-iframe field--label-hidden field__items__total-1 field__item"><div class="">
+    <style type="text/css">iframe#iframe-field_iframe-23481 {/*frameborder*/ border-width:0;/*scrolling*/ overflow:auto;}</style>
+  <iframe  width="100%" height="500" name="iframe-field_iframe-23481" id="iframe-field_iframe-23481" title="" allow="accelerometer;autoplay;camera;encrypted-media;geolocation;gyroscope;microphone;payment;picture-in-picture" src="https://tools.eurolandir.com/tools/ticker/html/?companycode=b-sol&amp;v=static&amp;lang=en-gb" loading="lazy">
+    Your browser does not support iframes, but you can visit <a href="https://tools.eurolandir.com/tools/ticker/html/?companycode=b-sol&amp;v=static&amp;lang=en-gb"></a>
+  </iframe>
+</div>
+</div>
+      
+
+      </div>
+</div>
+          </div>
+  
+
+      </div>
+</div>
+              <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items__total-9 field__item">  <div class="paragraph paragraph--type--iframe paragraph--view-mode--default">
+            
+            <div class="field field--name-field-iframe field--type-iframe field--label-hidden field__items__total-1 field__item"><div class="">
+    <style type="text/css">iframe#iframe-field_iframe-228861 {/*frameborder*/ border-width:0;/*scrolling*/ overflow:auto;}</style>
+  <iframe  width="100%" height="700" name="iframe-field_iframe-228861" id="iframe-field_iframe-228861" title="" allow="accelerometer;autoplay;camera;encrypted-media;geolocation;gyroscope;microphone;payment;picture-in-picture" src="https://x3oqy.mjt.lu/wgt/x3oqy/u30/form?c=b36fc7ce" loading="lazy">
+    Your browser does not support iframes, but you can visit <a href="https://x3oqy.mjt.lu/wgt/x3oqy/u30/form?c=b36fc7ce"></a>
+  </iframe>
+</div>
+</div>
+      
+
+      </div>
+</div>
+          </div>
+  
+              </div>
+      </div>
+
+  </div>
+
+  </div>
+
+<!-- /content -->
+
+  
+  
+  
+</article>
+<!-- /article #node -->
+
+  </div>
+
+  </div>
+
+</main>
+
+  <div class="region region-pre-footer">
+    <div id="block-solvaystickybuttons" data-block-plugin-id="solvay_sticky_buttons" class="block block-solvay-sticky block-solvay-sticky-buttons">
+  
+    
+      <div class="wrapper">
+  
+      <a class="btn-scroll-to-top js-scroll-to-top" title="Scroll to top" href="#page-top">
+        <span class="sv-arrow_down-icon"></span>
+    </a>
+    </div>
+
+  </div>
+
+  </div>
+
+
+  <footer role="contentinfo" class="footer-columns">
+      <div class="footer__top">
+        <div class="region region-footer-top-left">
+    
+
+<nav role="navigation" aria-labelledby="block-solvay-core-theme-footerone-menu" id="block-solvay-core-theme-footerone" data-block-plugin-id="menu_block:footer-one" class="block block-menu navigation block-system-menublock menu--footer-one">
+          
+    <div id="block-solvay-core-theme-footerone-menu" class="h2">Careers</div>
+    
+  
+        
+              <ul class="menu">
+                          <li class="menu-item">
+          <a href="/en/career/job-opportunities" data-drupal-link-system-path="node/39751">Job Opportunities</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+
+
+<nav role="navigation" aria-labelledby="block-solvay-core-theme-footertwo-menu" id="block-solvay-core-theme-footertwo" data-block-plugin-id="menu_block:footer-two" class="block block-menu navigation block-system-menublock menu--footer-two">
+          
+    <div id="block-solvay-core-theme-footertwo-menu" class="h2">Social Responsibility</div>
+    
+  
+        
+              <ul class="menu">
+                          <li class="menu-item">
+          <a href="/en/sustainability/citizen-day" data-drupal-link-system-path="node/29086">Citizen Day</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/our-company/philanthropy" data-drupal-link-system-path="node/11081">Corporate Citizenship</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://corporate-citizenship.solvay.com/solvay-solidarity-fund">Solvay Solidarity Fund</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+
+
+<nav role="navigation" aria-labelledby="block-solvay-core-theme-footerthree-menu" id="block-solvay-core-theme-footerthree" data-block-plugin-id="menu_block:footer-three" class="block block-menu navigation block-system-menublock menu--footer-three">
+          
+    <div id="block-solvay-core-theme-footerthree-menu" class="h2">Support</div>
+    
+  
+        
+              <ul class="menu">
+                          <li class="menu-item">
+          <a href="/en/e-business-services" data-drupal-link-system-path="node/12171">E-services</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/contact-us" data-drupal-link-system-path="node/19986">Contact Us</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/suppliers" data-drupal-link-system-path="node/39256">Suppliers</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://secure.ethicspoint.eu/domain/media/en/gui/34618/index.html">Ethics Helpline</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        <div class="region region-footer-top-right">
+    
+
+<nav role="navigation" aria-labelledby="block-solvay-core-theme-menu-social-menu" id="block-solvay-core-theme-menu-social" data-block-plugin-id="system_menu_block:social" class="block block-menu navigation block-system-menublock menu--social">
+          
+    <div id="block-solvay-core-theme-menu-social-menu" class="h2">Social Media</div>
+    
+  
+        
+              <ul class="menu">
+                          <li class="menu-item">
+          <a href="https://www.linkedin.com/company/solvay">Linkedin</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://twitter.com/solvaygroup" target="_self">Twitter</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.solvay.cn/solvay-wechat" target="_self">WeChat</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.instagram.com/solvaygroup/">Instagram</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.facebook.com/solvaygroup/">Facebook</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="https://www.youtube.com/user/SolvayGroup">Youtube</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+<div id="block-countrypageselector" data-block-plugin-id="block_content:8d56046d-b8d1-4a40-b3b8-9e5eb5404a29" class="block--bundle-basic block block-block-content block-block-content8d56046d-b8d1-4a40-b3b8-9e5eb5404a29" data-bundle-class="basic">
+  
+    
+        
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><p><a class="solvay-local-websites" href="https://www.solvay.com/en/solvay-countries">See All Our Local Websites</a> | <a class="solvay-locations" href="https://www.solvay.com/en/solvay-around-the-world">Our Worldwide Presence</a></p></div>
+      
+
+  </div>
+
+  </div>
+
+    </div>
+  
+  
+
+      <div class="footer__bottom">
+        <div class="region region-footer-bottom-left">
+    
+
+<nav role="navigation" aria-labelledby="block-solvay-core-theme-menu-legal" id="block-solvay-core-theme-menu-legal" data-block-plugin-id="system_menu_block:legal" class="block block-menu navigation block-system-menublock menu--legal">
+      
+        
+              <ul class="menu">
+                          <li class="menu-item">
+          <a href="/en/contact-us" target="_self" data-drupal-link-system-path="node/19986">Contact us</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/privacy-and-cookie-policy" target="_self" data-drupal-link-system-path="node/12606">Solvay&#039;s Privacy &amp; Cookie Policy</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/disclaimer" target="_self" data-drupal-link-system-path="node/12611">Disclaimer</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/terms-and-conditions-and-legal-notice" target="_self" data-drupal-link-system-path="node/14476">Terms and Conditions and Legal Notice</a>
+                  </li>
+                      <li class="menu-item">
+          <a href="/en/sitemap" target="_self" data-drupal-link-system-path="sitemap">Sitemap</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+  </div>
+
+        <div class="region region-footer-bottom-right">
+    <div id="block-solvay-core-theme-copyright" data-block-plugin-id="block_content:e80dbf13-b643-46e1-b427-8a12465c9c0f" class="block--bundle-basic block block-block-content block-block-contente80dbf13-b643-46e1-b427-8a12465c9c0f" data-bundle-class="basic">
+  
+    
+        
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><p>© Solvay 2023</p></div>
+      
+
+  </div>
+
+  </div>
+
+    </div>
+  
+      <div class="footer__bottom-under">
+        <div class="region region-footer-bottom">
+    <div id="block-solvay-core-theme-legal" data-block-plugin-id="block_content:9eb7669b-5ca0-462b-b996-dcd424361b39" class="block--bundle-basic block block-block-content block-block-content9eb7669b-5ca0-462b-b996-dcd424361b39" data-bundle-class="basic">
+  
+    
+        
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__items__total-1 field__item"><p class="text-align-center"><a href="https://beian.miit.gov.cn/">沪ICP备15007541号-5</a>   |   沪公网安备 31011202001085号</p></div>
+      
+
+  </div>
+
+  </div>
+
+    </div>
+  </footer>
+
+<div id="overlay"></div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"blazy\/blazy,blazy\/classlist,blazy\/load,blazy\/polyfill,blazy\/promise,blazy\/raf,blazy\/webp,clear_field\/clear_field,cog\/lib,core\/drupal.autocomplete,datalayer\/behaviors,facets\/drupal.facets.link-widget,facets\/drupal.facets.views-ajax,layout_discovery\/onecol,paragraphs\/drupal.paragraphs.unpublished,search_api_autocomplete\/search_api_autocomplete,solvay_core_theme\/cards,solvay_core_theme\/carousel_blog,solvay_core_theme\/carousel_push,solvay_core_theme\/carousel_teaser,solvay_core_theme\/fonts,solvay_core_theme\/footer_columns,solvay_core_theme\/global,solvay_core_theme\/header_sticky,solvay_core_theme\/lang_default,solvay_core_theme\/megamenu,solvay_core_theme\/menu_dots,solvay_core_theme\/search_overlay,solvay_core_theme\/utm_track,solvay_core_theme\/zoomify,solvay_datalayer\/solvay_datalayer_user_search,solvay_paragraphs\/iframe_lazyload,solvay_search_autocomplete\/solvay_search_autocomplete,solvay_search_autocomplete\/solvay_search_autocomplete_last_searches,solvay_sticky\/addthis_detect,solvay_sticky\/scroll_to_top,system\/base,webform\/webform.dialog","theme":"solvay_core_theme","theme_token":null},"ajaxTrustedUrl":{"\/en\/search":true},"dataLayer":{"defaultLang":"en","languages":{"en":{"id":"en","name":"English","direction":"ltr","weight":0},"zh-hans":{"id":"zh-hans","name":"Chinese","direction":"ltr","weight":1},"fr":{"id":"fr","name":"French","direction":"ltr","weight":1},"ja":{"id":"ja","name":"Japanese","direction":"ltr","weight":1},"ko":{"id":"ko","name":"Korean","direction":"ltr","weight":1},"nl":{"id":"nl","name":"Dutch","direction":"ltr","weight":2},"de":{"id":"de","name":"German","direction":"ltr","weight":3},"it":{"id":"it","name":"Italian","direction":"ltr","weight":4},"es":{"id":"es","name":"Spanish","direction":"ltr","weight":5},"bg":{"id":"bg","name":"Bulgarian","direction":"ltr","weight":6},"hr":{"id":"hr","name":"Croatian","direction":"ltr","weight":7},"cs":{"id":"cs","name":"Czech","direction":"ltr","weight":8},"el":{"id":"el","name":"Greek","direction":"ltr","weight":9},"pl":{"id":"pl","name":"Polish","direction":"ltr","weight":10},"pt-pt":{"id":"pt-pt","name":"Portuguese, Portugal","direction":"ltr","weight":11},"ro":{"id":"ro","name":"Romanian","direction":"ltr","weight":12},"ru":{"id":"ru","name":"Russian","direction":"ltr","weight":12},"th":{"id":"th","name":"Thai","direction":"ltr","weight":13},"tr":{"id":"tr","name":"Turkish","direction":"ltr","weight":14},"hu":{"id":"hu","name":"Hungarian","direction":"ltr","weight":15},"uk":{"id":"uk","name":"Ukrainian","direction":"ltr","weight":16},"pt-br":{"id":"pt-br","name":"Portuguese, Brazil","direction":"ltr","weight":17}}},"webform":{"dialog":{"options":{"narrow":{"title":"Narrow","width":600},"normal":{"title":"Normal","width":800},"wide":{"title":"Wide","width":1000}},"entity_type":"node","entity_id":"16"}},"field_group":{"html_element":{"mode":"default","context":"view","settings":{"classes":"column-first","id":"","element":"div","show_label":false,"label_element":"h3","attributes":"","effect":"none","speed":"fast","label":"Content"}}},"blazy":{"loadInvisible":true,"offset":100,"saveViewportOffsetDelay":50,"loader":true,"unblazy":null},"blazyIo":{"disconnect":false,"rootMargin":"0px","threshold":[0,0.25,0.5,0.75,1]},"carousel_push":{"autoplayspeed":"3500","autoplay":true},"clear_field":{"close_button":"  \u003Cspan class=\u0022clear-field span-class\u0022\u003E\u003Ca class=\u0022close a-class\u0022 href=\u0022#\u0022 title=\u0022\u0022\u003E\u003C\/a\u003E\u003C\/span\u003E\n","span_class":"span-class","form_text_class":["form-date","form-time"]},"search_api_autocomplete":{"solvay_search_main":{"delay":600,"min_length":3}},"solvay_core_theme":{"ellipsis_character":"..."},"facets_views_ajax":{"global_section":{"view_id":"solvay_search_main","current_display_id":"page_global_main","view_base_path":"search","ajax_path":"\/en\/views\/ajax"}},"ajax":[],"user":{"uid":0,"permissionsHash":"72ae5c54f85152d6b1385dde306dacad2deeded38dbadd4f10f1c16d809d86a2"}}</script>
+<script src="/modules/contrib/blazy/js/polyfill/blazy.polyfill.min.js?s21jgv"></script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.7.0"></script>
+<script src="/modules/contrib/blazy/js/polyfill/blazy.classlist.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/polyfill/blazy.promise.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/polyfill/blazy.raf.min.js?s21jgv"></script>
+<script src="/core/assets/vendor/once/once.min.js?v=1.0.1"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=10.1.4"></script>
+<script src="/core/misc/drupal.js?v=10.1.4"></script>
+<script src="/core/misc/drupal.init.js?v=10.1.4"></script>
+<script src="/core/misc/debounce.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/version-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/data-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/disable-selection-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/form-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/jquery-patch-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/scroll-parent-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/unique-id-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/focusable-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/ie-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/keycode-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/plugin-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/safe-active-element-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/safe-blur-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widget-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/controlgroup-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/form-reset-mixin-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/mouse-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/autocomplete-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/labels-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/menu-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/checkboxradio-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/draggable-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/resizable-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/button-min.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/dialog-min.js?v=10.1.4"></script>
+<script src="/modules/contrib/blazy/js/dblazy.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.dataset.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.viewport.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.dom.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.xlazy.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.observer.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.loading.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/polyfill/blazy.webp.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/base/blazy.base.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/base/blazy.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/base/io/bio.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/base/io/bio.media.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/base/blazy.drupal.min.js?s21jgv"></script>
+<script src="/modules/contrib/blazy/js/blazy.load.min.js?s21jgv"></script>
+<script src="/core/assets/vendor/tabbable/index.umd.min.js?v=6.1.2"></script>
+<script src="/core/misc/autocomplete.js?v=10.1.4"></script>
+<script src="/modules/contrib/datalayer/js/datalayer.js?v=1.x"></script>
+<script src="/profiles/custom/solvay_core/modules/solvay_sticky/js/scroll-to-top.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/modules/solvay_sticky/js/addthis-detect.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/libs/modernizr/modernizr-custom.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/libs/jquery.vellipsis/jquery.vEllipsis_custom.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/libs/basictable-master/jquery.basictable.min.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/libs/sticky-sidebar/jquery.sticky-sidebar.min.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/libs/metadrop-inheritclick/InheritClick.js?s21jgv"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/main.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/grid_list_toggle.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/mobile_nav.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/overlay.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/menu_carousel_newsroom.js?s21jgv"></script>
+<script src="https://npmcdn.com/headroom.js@0.9.4/dist/headroom.min.js"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/header_sticky.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/menu_dots.js?s21jgv"></script>
+<script src="/core/misc/progress.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/loadjs/loadjs.min.js?v=4.2.0"></script>
+<script src="/core/misc/announce.js?v=10.1.4"></script>
+<script src="/core/misc/message.js?v=10.1.4"></script>
+<script src="/core/misc/ajax.js?v=10.1.4"></script>
+<script src="/themes/contrib/stable/js/ajax.js?v=10.1.4"></script>
+<script src="/core/misc/displace.js?v=10.1.4"></script>
+<script src="/core/misc/jquery.tabbable.shim.js?v=10.1.4"></script>
+<script src="/core/misc/position.js?v=10.1.4"></script>
+<script src="/core/misc/dialog/dialog.js?v=10.1.4"></script>
+<script src="/core/misc/dialog/dialog.position.js?v=10.1.4"></script>
+<script src="/core/misc/dialog/dialog.jquery-ui.js?v=10.1.4"></script>
+<script src="/core/modules/ckeditor5/js/ckeditor5.dialog.fix.js?v=10.1.4"></script>
+<script src="/core/misc/dialog/dialog.ajax.js?v=10.1.4"></script>
+<script src="/modules/contrib/webform/js/webform.drupal.dialog.js?v=10.1.4"></script>
+<script src="/modules/contrib/webform/js/webform.dialog.js?v=10.1.4"></script>
+<script src="/profiles/custom/solvay_core/modules/solvay_datalayer/js/solvay-datalayer-user-search.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/libs/slick-carousel/slick/slick.min.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/carousel_teaser.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/modules/solvay_paragraphs/js/iframe-lazyload.js?s21jgv"></script>
+<script src="/libraries/zoomify/src/zoomify.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/solvay_zoomify.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/cards.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/carousel_push.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/megamenu.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/search_overlay.js?s21jgv"></script>
+<script src="/modules/contrib/clear_field/js/clear-field.js?v=1.x"></script>
+<script src="/profiles/custom/solvay_core/modules/solvay_search_autocomplete/js/solvay_search_autocomplete-last-searches.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/modules/solvay_search_autocomplete/js/solvay_search_autocomplete.js?s21jgv"></script>
+<script src="/modules/contrib/search_api_autocomplete/js/search_api_autocomplete.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/footer_columns.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/utm_track.js?s21jgv"></script>
+<script src="/profiles/custom/solvay_core/themes/solvay_core_theme/js/carousel_blog.js?s21jgv"></script>
+<script src="/modules/contrib/facets/js/base-widget.js?v=10.1.4"></script>
+<script src="/core/assets/vendor/jquery-form/jquery.form.min.js?v=4.3.0"></script>
+<script src="/core/modules/views/js/base.js?v=10.1.4"></script>
+<script src="/core/modules/views/js/ajax_view.js?v=10.1.4"></script>
+<script src="/modules/contrib/facets/js/facets-views-ajax.js?s21jgv"></script>
+<script src="/modules/contrib/facets/js/link-widget.js?v=10.1.4"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ee118bb1d3","applicationID":"1086606533","transactionName":"YlcHYkdZXUFUVRVaVlsdJFVBUVxcGnITRklUXjlYWlxWbnZZD0dLWl4JU0dkfV1RUzdaXEJxClhBSlxeWVMTHgdDWwBB","queueTime":0,"applicationTime":474,"atts":"ThAEFA9DTk8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

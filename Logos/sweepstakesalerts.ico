@@ -1,0 +1,919 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweepstakesAlerts</title>
+    <!-- GA4 Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9WRQ78FTS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q9WRQ78FTS');
+</script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+    <script type="text/javascript" src="//cdn.play.sweepstakesalerts.com/static/js/ef38715ec279.js"></script>
+    <link rel="stylesheet" href="//cdn.play.sweepstakesalerts.com/static/css/34a85a69b16a.css" type="text/css">
+    <style>
+
+    .container{
+      max-width: 109rem !important;
+
+    }
+
+    section{
+      background-image: url("//cdn.play.sweepstakesalerts.com/static/img/bg-money-orange.jpg");
+
+    }
+
+    .wrapper{
+      background-image: url("//cdn.play.sweepstakesalerts.com/static/img/bg-money-orange.jpg") !important;
+    }
+
+    .column.left-links, .column.right-links{
+    	display: none !important;
+    }
+
+    .column.left-links a img{
+    	width: 1.5rem
+    }
+
+    .column.right-links a img{
+    	width: 1.7rem;
+    }
+
+    .row.row-content{
+    	border-top: 2px solid #f77f00;
+    }
+
+
+    header .column a{
+    	color: #ffffff !important;
+        font-size: 1.3rem !important;
+        font-weight: bold;
+        margin-right: 1.3rem;
+        margin-left: 0.2rem;
+    }
+
+    .column.column-25 a img{
+      margin-right: 0.5rem;
+    	width: 1.5rem;
+    }
+
+    .menu-burger{
+    	height: 84px;
+      width: 70px;
+      background-image: url(https://cdn.sweepstakesalerts.com/images/2018/07/30/icon-nav3x.png);
+      background-size: 20px;
+      float: right;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+    	top: 0;
+    }
+
+
+    /* DROP DOWN MENU STYLES */
+    .drop-down{
+      text-align: center;
+      top: -370px;
+      position: relative;
+    }
+
+    .drop-down .drop-logo-container{
+    	z-index: 200;
+      background-color: #fcbf49;
+      padding-top: 1.5rem;
+      position: relative;
+      top: -216px;
+      transition: top 0.2s;
+      transition-delay: 0.4s;
+    }
+
+    .drop-down .drop-down-logo{
+      max-width: 14rem;
+      margin: 0 auto;
+      display: block;
+      padding-bottom: 1.5rem;
+      width: 130px;
+      padding-top: 0.5rem;
+    }
+
+    .drop-icon{
+      height: 62px;
+      width: 70px;
+      background-image: url(https://cdn.sweepstakesalerts.com/images/2018/07/29/shape3x.png);
+      background-size: 20px;
+      float: right;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: -216px;
+    	transition: top 0.4s;
+      transition-delay: 0.3s;
+    }
+
+
+    .drop-down .drop-down-content{
+      background-color: #ffcd5b;
+      margin-bottom: 0;
+      text-align: initial;
+      position: absolute;
+      z-index: 100;
+      width: 100%;
+      top: -100%;
+      transition: top 0.4s;
+    	transition-delay: 0.3s;
+    }
+
+    .showIcon{
+    	top: 0 !important;
+      transition: top 0.4s;
+    	transition-delay: 0.3s;
+    }
+
+    .showMenu{
+    	top: 286px !important;
+      transition: top 0.4s;
+    	transition-delay: 0.3s;
+    }
+
+    .showContent{
+     	top: 353px !important;
+      transition: top 0.2s;
+    }
+
+
+    .drop-down ul li{
+    	border-bottom: 1px solid #fcbf49;
+      list-style-type: none;
+      margin-bottom: 0 !important;
+    }
+
+    .drop-link-arrow{
+      float: right;
+      height: 2rem;
+      margin-top: 0.3rem;
+      margin-right: -0.2rem;
+    }
+
+    .drop-down ul li a{
+      color: #003049 !important;
+      display: block;
+      font-weight: 500;
+      padding: 1.5rem 3rem;
+      font-size: 1.7rem;
+    }
+    /* END DROP DOWN MENU STYLES */
+
+    main{
+    	margin-top: -6rem !important;
+    }
+
+    h2.play-and-win{
+    	text-align: center !important;
+      font-size: 2.8rem;
+    }
+
+    h2.play-and-win span{
+    	display: block;
+    }
+
+    .gradientButton{
+
+        border-radius: 0.5rem;
+        background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003049+0,086392+100 */ background: #003049;
+        background: -moz-linear-gradient(top, #003049 0%, #086392 100%);
+        background: -webkit-linear-gradient(top, #003049 0%,#086392 100%);
+        background: linear-gradient(to bottom, #003049 0%,#086392 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003049', endColorstr='#086392',GradientType=0 );
+        color: white;
+        font-weight: 900;
+        font-size: 24px;
+        text-align: center;
+        height: 5rem;
+        padding-top: 0.5rem;
+        box-shadow: inset 0 -4px 0 0 #003049;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: none;
+    }
+
+    .amt125k, .money-box{
+    	width: 100%;
+    }
+
+    .amt125k{
+    	max-width: 557px;
+    }
+
+    form fieldset h3, input, button{
+      margin-bottom: 1rem;
+    }
+
+    form fieldset h3{
+      display: flex;
+      justify-content: center;
+    }
+
+    form fieldset p{
+    	font-size: 1.2rem;
+      margin-top: 1.2rem;
+    }
+
+    fieldset{
+    	margin-top: -1rem;
+    }
+
+    .privacy{
+      box-shadow: none !important;
+      border: none !important;
+      color: #fff !important;
+    }
+
+    .money-box{
+      max-width: 527px;
+    }
+
+    hr{
+      background-color: #f77f00 !important;
+      color: #f77f00 !important;
+      border-color: #f77f00 !important;
+      height: 0.8px !important;
+    }
+
+    .row-title{
+    	display: flex;
+      justify-content: center;
+    }
+
+    .row-link{
+    	display: none;
+    }
+
+    .luckybucks{
+    	margin-bottom: 2rem;
+    }
+
+    .active-img{
+      box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+      max-width: 340px;
+      height: 270px;
+      border-radius: 11px;
+      margin: 0 auto;
+    }
+
+    .active-img img{
+    	border-radius: 11px;
+    }
+
+    a.row2{
+    	font-size: 18px !important;
+      padding-top: 0 !important;
+      align-items: center !important;
+      margin: 1rem auto 0;
+      max-width: 340px;
+      line-height: 18px;
+      padding: 0 15px;
+
+    }
+
+    a.row2:hover, a.row2:focus{
+    	color: #ffffff;
+    }
+
+    .real-winner{
+    	margin-top: 2rem;
+    }
+
+    .real-win-tag{
+      border: 2px solid #fcbf49;
+      border-radius: 5px;
+      margin-top: 1rem;
+      font-size: 1.4rem;
+      padding: 1.12rem 0;
+      text-align: center;
+      min-height: 50px;
+      margin-bottom: 0!important;
+
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 1rem;
+      max-width: 350px;
+    }
+
+    .img1, .img2, .img3{
+    	background-size: cover;
+      background-position: center;
+    }
+
+    .active-img.img1{
+    	background-image: url("https://cdn.sweepstakesalerts.com/images/2018/07/29/sa-sweepstakes-luckybucks.jpg");
+    }
+
+    .active-img.img2{
+    	background-image: url("https://cdn.sweepstakesalerts.com/images/2018/07/29/sa-sweepstakes-spin.jpg");
+    }
+
+    .active-img.img3{
+    	background-image: url("https://cdn.sweepstakesalerts.com/images/2018/07/29/sa-hp-winner-real.jpg");
+    }
+
+    .stories-top, .stories-bottom{
+    	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+      margin: 0 auto
+    }
+
+    .stories-top{
+      background-size: cover;
+      max-width: 340px;
+      height: 200px;
+      border-top-left-radius: 11px;
+      border-top-right-radius: 11px;
+    }
+
+    .stories-top.img1{
+    	background-image: url("https://cdn.sweepstakesalerts.com/images/2018/07/29/sa-blog-winners.jpg");
+    }
+
+    .stories-top.img2{
+      background-image: url("https://cdn.sweepstakesalerts.com/images/2018/07/29/sa-blog-luck.jpg");
+    }
+
+    .stories-top.img3{
+    	background-image: url("https://cdn.sweepstakesalerts.com/images/2018/07/29/sa-blog-mistakes.jpg");
+    }
+
+    .stories-bottom{
+      border-bottom-left-radius: 11px;
+      background-color: #fff;
+      border-bottom-right-radius: 11px;
+      padding: 1rem;
+      max-width: 340px;
+    	min-height: 166px;
+      margin-bottom: 3rem;
+    }
+
+
+    .stories-link, .stories-bottom p{
+    	color: #4a4a4a;
+      padding: 0 1.2rem;
+    }
+
+    .stories-link{
+      text-decoration-line: underline;
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+
+    .stories-link:hover{
+    	color: #4a4a4a;
+    }
+
+    .stories-link span{
+    	margin-left: 1.1rem;
+    	display: inline-block;
+      text-decoration: underline;
+    }
+
+    .stories-bottom h3{
+    	font-weight: bold;
+    }
+
+    .stories-bottom p{
+    	font-weight: 300;
+      margin-top: 1rem;
+    	margin-bottom: 0!important;
+    }
+
+    .disclaimer{
+      font-size: 1.3rem;
+      max-width: 95rem;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    footer.container{
+      max-width: 100%!important;
+
+    }
+
+    @media(min-width: 40rem){
+
+      main{
+      	margin-top: initial !important;
+      }
+
+      h2.play-and-win{
+    		text-align: initial;
+        margin-top: initial;
+        margin-bottom: 0.2rem;
+    	}
+
+      h2.play-and-win span{
+    		display: initial;
+      }
+
+    	.luckybucks{
+    		margin-bottom: initial;
+    	}
+
+      .row-title{
+    		float: left;
+    	}
+
+      .row-link{
+    		float: right;
+        color: #ffd03a;
+        display: block;
+    	}
+
+    	.row-link:hover{
+    		color: #ffd03a
+    	}
+
+      a.row2{
+        line-height: 18px;
+      }
+
+      .real-win-tag{
+        line-height: 14px;
+        padding: 0.8rem 0;
+        min-height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .real-winner{
+    		display: initial !important;
+        margin-top: initial;
+    	}
+
+    	.stories-bottom{
+    /* 		min-height: 196px; */
+        /* min-height: 292px; */
+        min-height: 316px;
+    	}
+
+    	.stories-bottom p{
+    		margin-bottom: initial;
+    	}
+
+      .stories-link{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .stories-link span{
+        margin-left: 0;
+      }
+    }
+
+    @media(min-width: 768px){
+      .stories-bottom{
+      	min-height: 196px;
+      }
+
+      header{
+        display:block;
+      }
+
+      .row.headerLinks{
+        margin: 0 auto;
+      }
+
+      .column.left-links, .column.right-links{
+        display: initial !important;
+      }
+
+      .menu-burger{
+        display: none;
+      }
+
+      .drop-down{
+        display: none;
+      }
+
+      .logo{
+        margin-left: -20rem;
+      }
+
+      .column.right-links{
+        margin-left: -17rem;
+      }
+
+      header .column a{
+        margin-right: 1.2rem;
+      }
+
+      .stories-bottom{
+        min-height: 239px;
+      }
+    }
+
+    @media(min-width: 907px){
+      .logo{
+        margin-left: -14rem;
+      }
+
+      .column.right-links{
+        margin-left: -11rem;
+      }
+
+      .stories-bottom{
+        min-height: 208px;
+      }
+
+      header .column a{
+        font-size: 1.5rem!important;
+      }
+    }
+
+    @media(min-width: 1017px){
+      .real-win-tag{
+        padding: 1.12rem;
+      }
+    }
+
+    @media(min-width: 1048px){
+      .logo, .column.right-links{
+        margin-left: initial;
+      }
+
+    }
+
+    </style>
+
+  </head>
+  <body>
+<section class="wrapper b-lazy red" src="https://cdn.play.sweepstakesalerts.com/static/img/bg-money-orange.jpg" />
+	<header class="container">
+		<div class="row headerLinks">
+      <div class="column left-links">
+        <a href="/">
+					<img src="https://cdn.sweepstakesalerts.com/images/2018/07/30/if-home-2162423x.png"/>
+					Home
+				</a>
+        <a   href="https://play.sweepstakesalerts.com/win-5k">Signup</a>
+        <a   href="https://play.sweepstakesalerts.com/about">About Us</a>
+      </div>
+
+      <div class="column">
+        <div class="logo"><img src="//cdn.play.sweepstakesalerts.com/static/img/logo-sweepstakesalerts-white.svg" border="0" alt="SweeptakesAlerts"/></div>
+      </div>
+
+      <div class="column right-links">
+        <a href="https://play.sweepstakesalerts.com/giveaways">
+					<img src="https://cdn.sweepstakesalerts.com/images/2018/07/30/if-star-outline-2164693x.png" />
+					Giveaways
+				</a>
+        <a href="https://play.sweepstakesalerts.com/lucky-bucks">Scratch Off</a>
+        <a href="https://play.sweepstakesalerts.com/spin-to-win-50k">Spin To Win</a>
+      </div>
+
+      <div class="menu-burger">
+
+      </div>
+
+		</div>
+	</header>
+
+  <!--DROP DOWN MENU -->
+    <div class="drop-down">
+    <div class="drop-logo-container">
+      <img class="drop-down-logo" src="https://cdn.sweepstakesalerts.com/images/2018/05/10/SA-DarkTealPNG.png" />
+      <div class="drop-icon">
+
+      </div>
+    </div>
+
+    <ul class="drop-down-content">
+      <li>
+        <a href="/">
+          Home
+          <img class="drop-link-arrow" src="https://cdn.sweepstakesalerts.com/images/2018/07/29/if-arrow-right-01-186409-13x.png" />
+        </a>
+      </li>
+      <li>
+        <a href="https://play.sweepstakesalerts.com/win-5k">
+          Signup
+          <img class="drop-link-arrow" src="https://cdn.sweepstakesalerts.com/images/2018/07/29/if-arrow-right-01-186409-13x.png" />
+        </a>
+      </li>
+      <li>
+        <a href="https://play.sweepstakesalerts.com/about">
+          About
+          <img class="drop-link-arrow" src="https://cdn.sweepstakesalerts.com/images/2018/07/29/if-arrow-right-01-186409-13x.png" />
+        </a>
+      </li>
+      <li>
+        <a href="https://play.sweepstakesalerts.com/giveaways">
+          Giveaways
+          <img class="drop-link-arrow" src="https://cdn.sweepstakesalerts.com/images/2018/07/29/if-arrow-right-01-186409-13x.png" />
+        </a>
+      </li>
+      <li>
+        <a href="https://play.sweepstakesalerts.com/lucky-bucks">
+          Scratch Off
+          <img class="drop-link-arrow" src="https://cdn.sweepstakesalerts.com/images/2018/07/29/if-arrow-right-01-186409-13x.png" />
+        </a>
+      </li>
+      <li>
+        <a href="https://play.sweepstakesalerts.com/spin-to-win-50k">
+          Spin To Win
+          <img class="drop-link-arrow" src="https://cdn.sweepstakesalerts.com/images/2018/07/29/if-arrow-right-01-186409-13x.png" />
+        </a>
+      </li>
+    </ul>
+  </div>
+<!-- END DROP DOWN -->
+
+	<main class="container content justify-content-center">
+    <div class="row">
+      <div class="column">
+				<h2 class="play-and-win">PLAY TODAY <span>AND YOU COULD WIN <span></h2>
+				<img class="amt125k" src="https://cdn.sweepstakesalerts.com/images/2018/07/29/sa-125k.png"  />
+				<form id="register" method="get" action="//api.sweepstakesalerts.com/datacollection/" accept-charset="UTF-8" novalidate="novalidate">
+					<fieldset>
+						<h3> Are You an Instant Winner? </h3>
+						<input type="text" name="fullname" value="" required autofocus class="content__entry__form__input form-control" placeholder="Full Name" act="entryInput">
+						<input type="email" name="email" value="" required class="content__entry__form__input form-control" placeholder="Email Address" act="entryInput">
+
+                        <p>
+							By clicking the button, I agree to the <a class="privacy" href="https://play.sweepstakesalerts.com/privacy"  >privacy policy</a> and to receive relevant emails from SweepstakesAlerts I understand that I’ll need to confirm my email address to receive my entry. See official rules below.
+						</p>
+
+						<button type="submit" class="enter-here gradientButton"> PLAY NOW </button>
+
+						<!--NEED TO UPDATE SUCCESS/REJECT URLS-->
+						<input type="hidden" name="successurl" value="https://play.sweepstakesalerts.com/check-email" required/>
+						<input type="hidden" name="rejecturl" value="https://play.sweepstakesalerts.com/check-email"  required/>
+
+						<input type="hidden" name="firstname" value="" />
+						<input type="hidden" name="lastname" value="" />
+						<input type="hidden" name="campaign_id" value="" />
+						<input type="hidden" name="link_id" value="" />
+						<input type="hidden" name="click_id" value="" />
+						<input type="hidden" name="offer_id" value="" />
+						<input type="hidden" name="source" value="-" />
+						<input type="hidden" name="campaign" value="" />
+						<input type="hidden" name="medium" value="" />
+						<input type="hidden" name="content" value="" />
+						<input type="hidden" name="term" value="" />
+						<input type="hidden" name="pub_has_offers_id" value="" />
+						<input type="hidden" name="sourceurl" value="home2" />
+						<input type="hidden" name="convpt" value="" />
+
+						<input type="hidden" name="s" value="289" />
+						<input type="hidden" name="ak" value="e2c7d0b8-b96d-42e0-84e1-66bcaab8a6cc" />
+					</fieldset>
+				</form>
+
+      <!--COLUMN WITH BOX OF MONEY-->
+      </div>
+      <div class="column">
+        <img class="money-box" src="https://cdn.sweepstakesalerts.com/images/2018/07/29/sa-hp-briefcase.png" />
+      </div>
+    </div>
+    <!--END COLUMN WITH BOX OF MONEY-->
+
+    <hr />
+
+    <!--ROW 2-->
+    <h2 class="row-title"> ACTIVE SWEEPSTAKES </h2>
+    <a class="row-link" href="https://play.sweepstakesalerts.com/win-5k"  > Play Now →</a>
+
+    <div class="row">
+      <div class="column active-col luckybucks">
+        <a href="https://play.sweepstakesalerts.com/lucky-bucks">
+          <div class="active-img img1">
+
+          </div>
+        </a>
+        <a class="gradientButton row2" href="https://play.sweepstakesalerts.com/lucky-bucks"  >Lucky Bucks: Scratch to Win!</a>
+      </div>
+      <div class="column active-col">
+        <a href="https://play.sweepstakesalerts.com/spin-to-win-50k">
+          <div class="active-img img2">
+
+          </div>
+        </a>
+        <a class="gradientButton row2" href="https://play.sweepstakesalerts.com/spin-to-win-50k">Sign Up For A Chance To Win $50,000 Instantly</a>
+      </div>
+      <div class="column active-col real-winner">
+          <div class="active-img img3">
+
+          </div>
+        <p class="real-win-tag">SweepstakesAlerts $5,000 Winner Josephine B.</p>
+      </div>
+    </div>
+
+    <hr />
+		<!--END OF ROW 2-->
+
+     <!--ROW 3-->
+			<h2 class="row-title">TOP STORIES</h2>
+      <a class="row-link" href="https://play.sweepstakesalerts.com/faq"  > Frequently Asked Questions →</a>
+
+    <div class="row">
+      <div class="column">
+        <div class="stories-container">
+					<a href="https://play.sweepstakesalerts.com/do-people-every-really-win-sweepstakes">
+						<div class="stories-top img1">
+
+						</div>
+					</a>
+          <div class="stories-bottom">
+            <a href="https://play.sweepstakesalerts.com/do-people-every-really-win-sweepstakes"   class="stories-link">Do People Ever Really Win <span> Sweepstakes? </span></a>
+            <p>
+              I get asked this question QUITE a lot "Does anyone ever really win?"
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="stories-container">
+					<a href="https://play.sweepstakesalerts.com/10-ways-to-change-your-luck">
+	          <div class="stories-top img2">
+
+	          </div>
+					</a>
+          <div class="stories-bottom">
+            <a href="https://play.sweepstakesalerts.com/10-ways-to-change-your-luck"   class="stories-link">10 Ways to Change your Luck!</a>
+            <p>
+              Why are some people winning sweepstakes over and over again when the rest of us are entering with no results?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="stories-container">
+					<a href="https://play.sweepstakesalerts.com/are-you-making-these-sweepstakes-mistakes">
+	          <div class="stories-top img3">
+
+
+	          </div>
+					</a>
+          <div class="stories-bottom">
+            <a href="https://play.sweepstakesalerts.com/are-you-making-these-sweepstakes-mistakes"   class="stories-link">Are You Making These <span> Sweepstakes Mistakes? </span></a>
+            <p>
+              Did you know that there are other mistakes you could be making that are costing you chances to win?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!--END OF ROW 3-->
+
+	</main>
+	<footer class="container">
+    <div class="disclaimer">
+      <p>
+        NO PURCHASE NECESSARY. A purchase of payment of any kind will not increase your chances of winning. You do not need to click ads in order to enter or win. Void where prohibited. Sponsored by SweepstakesAlerts.com. See <a class="privacy" href="https://play.sweepstakesalerts.com/125k-rules"> Official Rules</a>
+      </p>
+      <p>
+The third-party product names, logos, brands, and trademarks shown on this website are the property of their respective owners. These companies are not affiliated with SweepstakesAlerts.com and do not sponsor or endorse any sweepstakes.
+      </p>
+    </div>
+		<div class="row">
+			<div class="column text-center">
+				<ul>
+		  <li><a href="https://play.sweepstakesalerts.com/tou">Terms of Use</a></li>
+      	  <li><a href="https://play.sweepstakesalerts.com/privacy">Privacy</a></li>
+      	  <li><a href="https://play.sweepstakesalerts.com/privacy#do-not-sell">Do Not Sell or Share My Personal Information</a></li>
+      	  <li><a href="https://play.sweepstakesalerts.com/contact">Contact</a></li>
+      	  <li><a href="https://play.sweepstakesalerts.com/about">About</a></li>
+      	  <li><a href="https://play.sweepstakesalerts.com/125k-rules">Official Rules</a></li>
+      	  <li><a href="https://play.sweepstakesalerts.com/unsubscribe">Unsubscribe</a></li>
+				</ul>
+				<p class="copyright">Copyright &copy; 2023 SweeptakesAlerts</p>
+			</div>
+		</div>
+	</footer>
+</section>
+
+
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-KgfKnLKEydhQX"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-KgfKnLKEydhQX.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+  </body>
+</html>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+
+<script>
+  const dropDownContent = document.querySelector(".drop-down-content");
+  const contentClasses = dropDownContent.classList;
+  const dropDownMenu = document.querySelector(".drop-logo-container");
+  const dropDownExit = document.querySelector(".drop-icon");
+  const dropDownShow = document.querySelector(".menu-burger");
+  const lazyLoader = document.querySelector("section");
+
+  window.onload = function() {
+    lazyLoader.classList.add("b-loaded");
+
+  };
+
+  function collapseMenu(){
+    if(contentClasses.contains("showContent")){
+       contentClasses.remove("showContent");
+      	dropDownExit.classList.remove("showMenu");
+      	dropDownMenu.classList.remove("showMenu");
+    }
+
+  }
+  function expandMenu(){
+    contentClasses.add("showContent");
+    dropDownExit.classList.add("showIcon");
+    dropDownMenu.classList.add("showMenu");
+  }
+  dropDownExit.addEventListener("click", collapseMenu);
+  dropDownShow.addEventListener("click", expandMenu);
+</script>
+
+<script>
+    $(function() {
+        // Prevent spaces as prefix.
+        $('[type="email"], [type="text"]').on('keypress', function(e) {
+            var key =  e.charCode || e.code;
+            if(key == 32 && ($.trim(this.value) == '' || this.value.substr(-1) == ' ')) {
+                return false;
+            }
+            return true;
+        });
+
+        // Form submit.
+        $('#register').validate({
+            submitHandler: function(form) {
+                var email = $('[name="email"]').val().toLowerCase(),
+                        emailDomain = email.split('@')[1],
+                        fullName = $.trim($('[name="fullname"]').val()),
+                        firstName = $.trim(fullName.substr(0, fullName.indexOf(' '))),
+                        lastName = $.trim(fullName.substr(fullName.indexOf(' ') + 1)),
+                        rejectUrl = $('[name="rejecturl"]').val().split('?')[0],
+                        successUrl = $('[name="successurl"]').val().split('?')[0];
+
+                // Re-check for email domain format.
+                if(emailDomain.indexOf('.') < 1) {
+                    $('[name="email"]')[0].setCustomValidity('NOPE!');
+                    return false;
+                }
+
+                // Fill name.
+                if(! firstName) {
+                    firstName = lastName;
+                    lastName = '';
+                }
+                $('[name="firstname"]').val(firstName);
+                $('[name="lastname"]').val(lastName);
+
+                var redirectQs = $.param({
+                    clickid: '',
+                    email: email,
+                    firstname: firstName,
+                    lastname: lastName
+                });
+                $('[name="rejecturl"]').val(rejectUrl + '?status=fail&' + redirectQs);
+                $('[name="successurl"]').val(successUrl + '?status=success&' + redirectQs);
+
+
+                form.submit();
+            }
+        });
+
+    });
+</script>

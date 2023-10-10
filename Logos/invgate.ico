@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="InvGate - Build a state-of-the-art IT operation" />
+            <meta name="description" content="InvGate is the solution to build a modern service desk and empower IT with total visibility of your IT estate.">
+        <meta property="og:description" content="InvGate is the solution to build a modern service desk and empower IT with total visibility of your IT estate.">
+                <meta property="og:image" content="/img/content/share-en.jpg">
+                <title>
+        InvGate - Build a state-of-the-art IT operation    </title>
+            <script type="text/javascript" src="//cdn-4.convertexperiments.com/js/10042539-10043269.js"></script>        <link href="/favicon.ico" rel="shortcut icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" as="style">
+    <link rel="preload" href="/js/lib/validation-engine/css/validationEngine.jquery.css" as="style" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link href="/css/lib/font-awesome/css/min.css" type="text/css" rel="stylesheet">
+    <link href="/js/lib/magnific-popup/magnific-popup.css" type="text/css" rel="stylesheet">
+    <link href="/js/lib/validation-engine/css/validationEngine.jquery.css" type="text/css" rel="stylesheet">
+    <link href="/css/swiper.1154a555591835988bed.css" rel="stylesheet"><link href="/css/main.319bdcb15fa8a4e56346.css" rel="stylesheet">    <link rel="canonical" href="https://invgate.com/" />
+
+    <script>
+        let industryGlobal;
+
+        function snitcher(identification) {
+            if (identification && identification.type !== "isp") {
+                const {
+                    company
+                } = identification;
+                console.log(company.industry);
+                industryGlobal = company.industry;
+
+                document.cookie = `industryGlobal=${industryGlobal}; path=/`;
+            }
+        }
+
+        window.SpotterSettings = {
+            token: "819|bkWNJRhlKoHyJDEOKNhlLxznm8yWREFDERia8YTs",
+            callback: snitcher,
+        };
+
+        // ! function(s, n, i, t, c, h) {
+        //     s.SnitchObject = i;
+        //     s[i] || (s[i] = function() {
+        //         (s[i].q = s[i].q || []).push(arguments)
+        //     });
+        //     s[i].l = +new Date;
+        //     c = n.createElement(t);
+        //     h = n.getElementsByTagName(t)[0];
+        //     c.src = '//snid.snitcher.com/8423750.js';
+        //     h.parentNode.insertBefore(c, h)
+        // }(window, document, 'snid', 'script');
+
+        // snid('verify', '8423750');
+    </script>
+
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WPBV394');</script>
+
+<!-- Google Tag Manager ga4 -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQ5V8DC');</script>
+<!-- End Google Tag Manager ga4 -->                        <link rel="alternate" hreflang="en" href="https://invgate.com/">
+                <link rel="alternate" hreflang="es" href="https://invgate.com/es/">
+                <link rel="alternate" hreflang="pt" href="https://invgate.com/pt/">
+        <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Corporation","name":"InvGate","url":"https:\/\/invgate.com\/","logo":"https:\/\/invgate.com\/img\/logo.svg","sameAs":["https:\/\/www.facebook.com\/invgate","https:\/\/twitter.com\/invgate","https:\/\/www.youtube.com\/user\/invgateMedia","https:\/\/www.linkedin.com\/company\/invgate\/","https:\/\/invgate.com\/"]}</script></head><body>
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPBV394" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- Google Tag Manager (noscript) ga4 -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQ5V8DC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) ga4 -->    
+    <div class="h-[70px]">
+        <nav class="fixed z-50 w-full bg-white">
+            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-5 mx-auto h-[70px] md:px-10">
+                                    <a href="/" class="flex items-center md:mr-5">
+                        <img src="/img/logo.svg?v=1" alt="IT Management Software" width="124" height="30" />
+                    </a>
+                    <div class="flex items-center gap-1 lg:order-2">
+                        <a href="/contact-us/" id="contact-header" class="hidden px-2 py-4 font-medium text-body hover:text-cta-500 sm:block">
+                            Contact Us                        </a>
+                        <a href="/free-trial/" id="free-trial-header" class="hidden button button--medium button--blue sm:block">
+                            Free Trial                        </a>
+                                                    <div class="relative">
+                                <button aria-label="Language" class="p-2 menu-item after:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6 text-base !transform-none hover:fill-cta-500" viewBox="0 0 512 512">
+                                        <path d="M256 16C123.5 16 16 123.5 16 256s107.5 240 240 240 239.1-107.5 239.1-240S388.5 16 256 16zm208 240c0 22.34-3.633 43.82-10.18 64h-74.56c3.008-20.4 4.744-41.8 4.744-64s-1.736-43.6-4.744-64h74.56c6.58 20.2 10.18 41.7 10.18 64zM256 464c-32.23 0-66.98-43.18-84.49-112h168.1C322.1 420.8 288.2 464 256 464zm-91.1-144c-3.1-19.9-4.9-41.3-4.9-64s1.754-44.14 4.875-64h182.3c3.121 19.86 4.875 41.28 4.875 64s-1.754 44.14-4.875 64H164.9zM48 256c0-22.34 3.633-43.82 10.18-64h74.56c-3.008 20.4-4.744 41.8-4.744 64s1.736 43.6 4.744 64H58.18C51.63 299.8 48 278.3 48 256zM256 48c32.23 0 66.98 43.18 84.49 112H171.5C189 91.18 223.8 48 256 48zm184.3 112h-67c-9.131-39.15-23.7-72.71-41.88-97.64C378.4 80.73 417.1 115.6 440.3 160zM180.6 62.36c-18.2 24.93-32.7 58.44-41.9 97.64H71.66c23.21-44.4 61.94-79.27 108.94-97.64zM71.66 352h67.04c9.131 39.15 23.7 72.71 41.88 97.64C133.6 431.3 94.87 396.4 71.66 352zm259.74 97.6c18.2-24.9 32.7-58.4 41.9-97.6h67.06c-23.26 44.4-61.96 79.3-108.96 97.6z" />
+                                    </svg>
+                                </button>
+                                <div class="absolute right-0 z-20 hidden mt-4 bg-white border border-gray-100 shadow-lg menu-content rounded-xl">
+                                    <div class="p-3" data-menu="language">
+                                        <a href="#" class="flex p-4 lang-option text-body lg:hover:bg-light-blue-50 lg:rounded-2xl" data-lang="en">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6 mr-4" viewBox="0 0 24 24">
+                                                <g clip-path="url(#clip0_1046_3723)">
+                                                    <path fill="#F0F0F0" d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z" />
+                                                    <path fill="#D80027" d="M11.478 12H24c0-1.083-.144-2.132-.413-3.13H11.479V12zM11.478 5.739h10.76a12.062 12.062 0 0 0-2.769-3.13h-7.992v3.13zM12 24c2.824 0 5.42-.976 7.47-2.609H4.53A11.948 11.948 0 0 0 12 24zM1.761 18.26h20.477a11.93 11.93 0 0 0 1.348-3.13H.413c.3 1.116.758 2.168 1.348 3.13z" />
+                                                    <path fill="#0052B4" d="M5.559 1.874h1.093l-1.017.739.388 1.196-1.017-.74-1.017.74.336-1.033c-.896.746-1.68 1.62-2.328 2.594h.35l-.647.47c-.1.168-.197.34-.29.513l.31.951-.578-.419C1 7.19.868 7.5.75 7.817l.34 1.048h1.258l-1.017.74.388 1.195-1.017-.74-.61.444C.033 10.994 0 11.494 0 12h12V0C9.63 0 7.42.688 5.56 1.874zm.465 8.926-1.018-.739-1.017.739.389-1.196-1.017-.739h1.257l.388-1.195.389 1.195h1.257l-1.017.74.389 1.195zm-.389-4.691.389 1.195-1.018-.739-1.017.74.389-1.196-1.017-.74h1.257l.388-1.195.389 1.196h1.257l-1.017.739zm4.693 4.691-1.017-.739-1.017.739.388-1.196-1.017-.739h1.257l.389-1.195.388 1.195h1.258l-1.018.74.389 1.195zm-.389-4.691.389 1.195-1.017-.739-1.017.74.388-1.196-1.017-.74h1.257l.389-1.195.388 1.196h1.258l-1.018.739zm0-3.496.389 1.196-1.017-.74-1.017.74.388-1.196-1.017-.74h1.257L9.311.679l.388 1.196h1.258l-1.018.739z" />
+                                                </g>
+                                            </svg>
+                                            <span class="font-medium">English</span>
+                                        </a>
+                                        <a href="#" class="flex p-4 lang-option text-body lg:hover:bg-light-blue-50 lg:rounded-2xl" data-lang="es">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6 mr-4" viewBox="0 0 24 24">
+                                                <g clip-path="url(#clip0_1046_3708)">
+                                                    <path fill="#FFDA44" d="M0 11.999c0 1.468.264 2.874.746 4.174L12 17.216l11.254-1.043c.483-1.3.747-2.706.747-4.174 0-1.468-.264-2.874-.747-4.174L12 6.782.746 7.825A11.975 11.975 0 0 0 0 12z" />
+                                                    <path fill="#D80027" d="M23.255 7.826C21.559 3.256 17.161 0 12.001 0 6.841 0 2.443 3.256.747 7.826h22.507zM.747 16.174C2.443 20.744 6.841 24 12.001 24s9.558-3.257 11.254-7.826H.748z" />
+                                                </g>
+                                            </svg>
+                                            <span class="font-medium">Español</span>
+                                        </a>
+                                        <a href="#" class="flex p-4 lang-option text-body lg:hover:bg-light-blue-50 lg:rounded-2xl" data-lang="pt">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6 mr-4" viewBox="0 0 24 24">
+                                                <g clip-path="url(#clip0_1046_3580)">
+                                                    <path fill="#6DA544" d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z" />
+                                                    <path fill="#FFDA44" d="M12 4.696 21.913 12 12 19.305 2.087 12 12 4.696z" />
+                                                    <path fill="#F0F0F0" d="M12 16.174a4.174 4.174 0 1 0 0-8.348 4.174 4.174 0 0 0 0 8.348z" />
+                                                    <path fill="#0052B4" d="M9.913 11.74a7.02 7.02 0 0 0-2.086.315 4.173 4.173 0 0 0 7.59 2.34 7.034 7.034 0 0 0-5.504-2.655zM16.096 12.8a4.174 4.174 0 0 0-7.932-2.447 8.607 8.607 0 0 1 7.932 2.447z" />
+                                                </g>
+                                            </svg>
+                                            <span class="font-medium">Português</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                <button type="button" aria-label="Menu" class="inline-flex items-center p-2 rounded-lg text-body menu-toggler lg:hidden hover:bg-gray-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 448 512">
+                                <path d="M416 224H31.1C14.33 224 0 238.3 0 256s14.33 32 31.1 32h384c18.6 0 32.9-14.3 32.9-32s-14.3-32-32-32zm0 160H31.1C14.33 384 0 398.3 0 415.1S14.33 448 31.1 448h384c18.6 0 32.9-14.3 32.9-32s-14.3-32-32-32zm0-320H31.1C14.33 64 0 78.33 0 95.1S14.33 128 31.1 128h384c18.6 0 32.9-14.3 32.9-32s-14.3-32-32-32z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="fixed left-0 items-center justify-between hidden w-full h-full px-5 pb-10 overflow-auto bg-white menu-mobile lg:flex lg:w-auto lg:order-1 grow lg:static md:px-10 lg:pb-0 top-16 lg:px-0">
+                        <ul class="flex flex-col font-medium lg:flex-row lg:space-x-6 lg:pb-0">
+                            <li>
+                                <button id="products-header" class="relative flex items-center justify-between w-full py-3 font-medium border-b-2 border-gray-100 menu-item lg:w-auto lg:border-0 text-body hover:text-cta-500 lg:p-0 lg:h-[70px]">
+                                    Products                                    <svg class="w-3 h-3 ml-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                    </svg>
+                                </button>
+                                <div class="z-10 hidden w-full bg-white lg:px-10 lg:shadow-lg menu-content lg:fixed lg:left-0 lg:overflow-auto">
+                                    <div class="grid max-w-screen-xl py-5 mx-auto gap-7 lg:grid-cols-2">
+                                        <div>
+                                            <a href="/service-desk/" id="products-sd-header" class="grid items-center p-4 lg:grid-cols-2 rounded-2xl product-button">
+                                                <div class="hidden lg:block">
+                                                    <img class="rounded-2xl" src="/img/content/menu__service-desk.jpg">
+                                                </div>
+                                                <div class="flex lg:ml-5">
+                                                    <img loading="lazy" class="w-12 h-12 mr-4" src="/img/icons/service-enhanced.svg?v=1">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Service Desk                                                        </span>
+                                                        <span class="mb-4 text-sm text-body">
+                                                            Optimize ITSM and ESM processes.                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="/insight/" id="products-in-header" class="grid items-center p-4 lg:grid-cols-2 rounded-2xl product-button">
+                                                <div class="hidden lg:block">
+                                                    <img class="rounded-2xl" src="/img/content/menu__insight.jpg">
+                                                </div>
+                                                <div class="flex lg:ml-5">
+                                                    <img loading="lazy" src="/img/icons/insight-enhanced.svg?v=1" class="w-12 h-12 mr-4">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Insight                                                        </span>
+                                                        <span class="mb-4 text-sm text-body">
+                                                            Gain total network visibility & IT Asset control.                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="hidden lg:block">
+                                            <div class="product-features">
+                                                <div class="grid max-w-screen-xl py-5 mx-auto gap-7 lg:gap-x-5 sm:grid-cols-2 product-features-list">
+                                                    <ul class="space-y-7 lg:space-y-0">
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/ticketing/" id="header-ticket-mgmt-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 18 22">
+                                                                    <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 1H3a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7m-6-6 6 6m-6-6v6h6M9 17v-6m-3 3h6" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Ticket Management                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Manage your incidents                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/reporting-and-analytics/" id="header-analytics-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 14 18">
+                                                                    <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17V7M7 17V1M1 17v-6" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Analytics                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Analyze your efforts                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/self-service/" id="header-self-service-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                                    <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Self-Service                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Encourage self-help                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/gamification/" id="header-gamification-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 16 24" preserveAspectRatio="xMidYMid meet">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.21 13.89 3 23l5-3 5 3-1.21-9.12M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Gamification                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Improve team productivity                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/integrations/" id="header-integrations-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                                    <path fill="#08A1FF" d="M18.254 11.358c-.794 0-1.579-.002-2.333-.008a3.304 3.304 0 0 1-3.269-3.277 450.182 450.182 0 0 1 0-4.791A3.302 3.302 0 0 1 15.921.006C16.563.002 17.26 0 18.049 0c.79 0 1.589.002 2.383.004h.23c1.65.005 3.003 1.144 3.293 2.772.001.008.01.027.017.041a.77.77 0 0 1 .018.042c.007.017.01.035.01.053v5.533a.142.142 0 0 1-.004.035l-.036.142c-.025.102-.05.207-.08.31a3.3 3.3 0 0 1-3.143 2.419c-.85.005-1.685.007-2.483.007Zm.126-9.491c-.79 0-1.579 0-2.368.002-.879.002-1.494.614-1.496 1.49-.003 1.532-.003 3.093 0 4.639.002.875.617 1.488 1.496 1.49a1192.911 1192.911 0 0 0 4.614 0c.885-.002 1.505-.62 1.51-1.503.002-.532.001-1.074 0-1.597V4.97c.002-.532.002-1.083-.001-1.623-.005-.855-.63-1.476-1.483-1.478-.757-.002-1.515-.002-2.272-.002ZM2.912 24a.128.128 0 0 1-.036-.005l-.148-.038a10.65 10.65 0 0 1-.328-.086 3.297 3.297 0 0 1-1.724-1.18 3.265 3.265 0 0 1-.671-1.979 571.999 571.999 0 0 1 0-4.767 3.295 3.295 0 0 1 3.278-3.293 407.897 407.897 0 0 1 4.791 0 3.27 3.27 0 0 1 2.315.97c.617.619.958 1.444.962 2.323.008 1.612.005 3.214.001 4.717a3.318 3.318 0 0 1-.774 2.16 3.338 3.338 0 0 1-1.997 1.132.225.225 0 0 0-.041.017.852.852 0 0 1-.042.019.142.142 0 0 1-.053.01H2.912Zm2.779-9.486c-.773 0-1.545 0-2.317.002-.883.001-1.502.62-1.505 1.505-.002.53-.002 1.067-.001 1.588v3.026c.004.88.616 1.497 1.488 1.5a920.888 920.888 0 0 0 4.64 0c.876-.003 1.49-.617 1.492-1.494.004-1.633.004-3.15 0-4.64-.003-.873-.619-1.484-1.499-1.485-.766-.002-1.532-.002-2.298-.002ZM5.671 11.355c-.771 0-1.543 0-2.315-.003-.916-.002-1.763-.345-2.384-.965a3.347 3.347 0 0 1-.968-2.38V4.928c-.001-.521-.002-1.06 0-1.591A3.332 3.332 0 0 1 .973.97 3.34 3.34 0 0 1 3.344.004a960.469 960.469 0 0 1 4.669 0 3.341 3.341 0 0 1 2.372.965c.621.62.965 1.461.968 2.369.004 1.488.004 3.015 0 4.668-.003.915-.346 1.761-.967 2.381-.621.62-1.468.963-2.385.965-.776.002-1.554.003-2.33.003ZM4.286 1.868h-.894c-.91.002-1.522.61-1.524 1.512-.002 1.458-.002 2.96 0 4.59.002.907.611 1.517 1.518 1.518a1260.115 1260.115 0 0 0 4.59 0c.888-.002 1.509-.618 1.511-1.5.004-1.468.004-3.021 0-4.614-.002-.884-.62-1.503-1.505-1.506l-.878-.001H4.286ZM18.31 22.418c-.538-.008-.915-.424-.917-1.012v-.317c-.003-.576-.004-1.172.004-1.76a.358.358 0 0 0-.005-.072.3.3 0 0 0-.057-.004h-.01c-.294.005-.61.006-.996.006l-.73-.001h-.351c-.305-.002-.576-.106-.762-.293a.89.89 0 0 1-.255-.648c.005-.54.418-.92 1.005-.924h1.013c.105 0 .21 0 .314-.002l.317-.001c.179 0 .325.002.46.007h.017a.283.283 0 0 0 .035-.002.369.369 0 0 0 .003-.064c-.006-.592-.005-1.194-.003-1.775v-.3c.001-.603.384-1.024.932-1.024.547 0 .93.421.932 1.024v.374c.003.55.004 1.118-.004 1.677-.001.05.003.075.005.086.01.002.029.005.065.005h.013c.27-.005.565-.007.927-.007a118.22 118.22 0 0 1 1.1.003c.627 0 1.05.372 1.055.925a.881.881 0 0 1-.252.644c-.188.19-.47.295-.791.295l-.457.001-.635.001c-.375 0-.68-.002-.96-.006h-.01a.294.294 0 0 0-.056.004.367.367 0 0 0-.004.074c.008.611.006 1.232.004 1.832v.244c-.003.585-.394 1.01-.931 1.01h-.017.002Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Integrations                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Expand functionality and usability                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/problem-management/" id="header-problem-mgmt-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" class="mt-1 mr-4" viewBox="0 0 22 22">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 7v4m0 4h.01M21 11c0 5.523-4.477 10-10 10S1 16.523 1 11 5.477 1 11 1s10 4.477 10 10Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Problem Management                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Get proactive                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/automation/" id="header-automation-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                                    <path fill="#08A1FF" d="M23.998 4.314c-.002-1.337-.994-2.31-2.36-2.31a12997.989 12997.989 0 0 0-19.28 0c-1.185 0-2.094.74-2.319 1.885a.148.148 0 0 1-.006.013l-.016.036-.017.04v13.987l.006.026c.088.354.193.725.445 1.048.475.61 1.133.92 1.954.92h5.559l-.1.292a451.91 451.91 0 0 1-.516 1.515c-.022.062-.038.126-.054.187-.025.097-.06.23-.1.263 0 0-.016.013-.084.013-.048 0-.106-.006-.166-.013a1.995 1.995 0 0 0-.216-.015h-.011c-.169.002-.354.003-.583.003H5.203c-.527.001-.89.259-.996.706-.097.409.098.774.536 1.009l.064.081h14.438l.028-.08a.235.235 0 0 0 .029-.014c.386-.205.584-.605.491-.995-.1-.424-.454-.7-.902-.705a99.26 99.26 0 0 0-2.05.002h-.008c-.016 0-.027 0-.034-.002a.335.335 0 0 1-.012-.03c-.191-.58-.392-1.166-.585-1.732l-.165-.484 3.2.001c.786 0 1.572 0 2.358-.002 1-.001 1.73-.432 2.173-1.279.155-.297.23-.636.23-1.036v-2.035c.002-3.701.003-7.529-.001-11.293v-.002ZM1.84 8.844c0-1.517 0-3.035.002-4.552 0-.122 0-.493.573-.494h19.101c.506 0 .644.135.644.628v2.078c0 2.931 0 5.962.005 8.943v.026h-.032a110.463 110.463 0 0 0-2.32 0c.008-.443.006-.891.005-1.325l-.001-.356c-.002-.664-.365-1.015-1.051-1.017l-.205-.002-.23-.002c-.122 0-.222.002-.316.009h-.03a.388.388 0 0 1-.023-.048l-.008-.018c-.04-.099-.08-.201-.083-.235.017-.032.106-.12.185-.197l.129-.125c.11-.105.223-.215.33-.33.349-.373.352-.874.007-1.221a92.345 92.345 0 0 0-2.004-1.957.881.881 0 0 0-.606-.246.984.984 0 0 0-.646.26c-.199.18-.404.381-.629.613a.265.265 0 0 1-.03.029.211.211 0 0 1-.028-.01l-.022-.01a1.45 1.45 0 0 1-.242-.113c-.015-.031-.015-.17-.015-.29v-.177a8.185 8.185 0 0 0-.004-.439.892.892 0 0 0-.903-.874 143.929 143.929 0 0 0-2.786 0 .888.888 0 0 0-.903.875c-.01.293-.01.593 0 .891v.022l-.025.01-.016.008c-.117.046-.227.09-.26.091-.033-.01-.133-.108-.22-.194-.043-.041-.084-.082-.125-.124-.104-.102-.211-.209-.324-.31a.972.972 0 0 0-.643-.257.903.903 0 0 0-.626.259c-.662.63-1.325 1.276-1.971 1.924-.362.361-.357.88.01 1.259.176.182.387.396.615.598a.197.197 0 0 1 .028.029.237.237 0 0 1-.015.044l-.009.02a1.414 1.414 0 0 1-.112.226c-.036.012-.16.012-.27.012l-.353-.001-.224.001c-.6.008-.976.38-.98.97v.078c-.002.54-.005 1.098.004 1.649a117.928 117.928 0 0 0-2.35-.001c.002-2.21.002-4.454.002-6.626Zm16.137 6.627c-.001.14-4.663.058-5.016.055-1.6-.016-3.199-.035-4.798-.063-.216-.004-2.134-.02-2.134-.032v-.851c0 .035.883-.036.998-.081.279-.11.457-.337.543-.613.117-.377.273-.742.475-1.116.23-.427.172-.794-.186-1.156-.136-.137-.27-.272-.41-.402.219-.209.437-.421.65-.636.134.138.272.268.413.401.228.216.446.316.686.316.156 0 .318-.045.496-.136a6.645 6.645 0 0 1 1.144-.464c.466-.14.695-.45.702-.951.003-.206.004-.383 0-.558a55.406 55.406 0 0 0 .918 0c-.002.22-.002.408.002.588.01.472.24.78.684.915.41.125.792.28 1.165.473.173.09.333.133.49.133.234 0 .456-.099.676-.304a12.5 12.5 0 0 0 .425-.414c.228.232.443.441.651.636a9.99 9.99 0 0 0-.433.425c-.338.35-.392.705-.17 1.118.206.384.365.756.485 1.137.139.443.46.671.954.68l.344.003c.089 0 .17-.001.246-.003a26.74 26.74 0 0 0 0 .9Zm-6.292 6.731c-.704 0-1.624 0-2.552.003a119.154 119.154 0 0 0 .769-2.249h.027v-.226l.001.225c.819.004 1.628.004 2.382.004h1.785c.209.623.419 1.236.64 1.883l.123.36h-3.175Zm10.48-4.93c-.014.099-.01.19-.008.278.002.046.003.088.002.129-.008.304-.187.476-.503.483H2.474c-.492 0-.634-.137-.635-.614 0-.107 0-.218.007-.275.06-.008.174-.008.285-.008h5.567a14398.679 14398.679 0 0 0 14.468-.004l-.002.012Z" />
+                                                                    <path fill="#08A1FF" d="M14 15a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Automation                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Automate support processes                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="space-y-7 lg:space-y-0">
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/workflow/" id="header-workflow-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4">
+                                                                    <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 13a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm0 0V6a2 2 0 0 0-2-2h-3M4 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 0v12" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Workflow                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Improve IT efficiency                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/itil/" id="header-itil-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 18 22">
+                                                                    <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 1H3a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7m-6-6 6 6m-6-6v6h6m-4 5H5m8 4H5m2-8H5" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        ITIL-Alignment                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Employ best practice                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/knowledge-base/" id="header-knowledge-base-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" class="mt-1 mr-4" viewBox="0 0 22 20">
+                                                                    <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5a4 4 0 0 0-4-4H1v15h7a3 3 0 0 1 3 3m0-14v14m0-14a4 4 0 0 1 4-4h6v15h-7a3 3 0 0 0-3 3" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Knowledge Base                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Build and share knowledge                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/change-management/" id="header-change-mgmt-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" class="mt-1 mr-4" viewBox="0 0 24 20">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 2v6m0 0h6M1 8l4.64-4.36A9 9 0 0 1 20.49 7M23 18v-6m0 0h-6m6 0-4.64 4.36A9.001 9.001 0 0 1 3.51 13" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Change Management                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Better manage change                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/service-level-management/" id="header-slas-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" class="mt-1 mr-4" viewBox="0 0 22 22">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5v6l4 2m6-2c0 5.523-4.477 10-10 10S1 16.523 1 11 5.477 1 11 1s10 4.477 10 10Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        SLAs                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Prioritize IT operations                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/ai/" id="header-ai-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                                    <g clip-path="url(#a)">
+                                                                        <path fill="#08A1FF" d="M20 12a3.994 3.994 0 0 0-3.172 1.566l-.07-.03a4.999 4.999 0 0 0-6.009-6.377l-.091-.172a3.995 3.995 0 1 0-1.779.913l.073.137a4.992 4.992 0 0 0-1.134 6.7L5.933 16.5a4 4 0 1 0 1.455 1.377l1.838-1.718a4.993 4.993 0 0 0 6.539-.871l.279.119A4 4 0 1 0 20 12zM6 4a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM4 22a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm8-7a3 3 0 0 1-1.6-5.534l.407-.217A3 3 0 1 1 12 15zm8 3a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
+                                                                    </g>
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        AI                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Enhance support efficiency                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/service-desk/multiple-departments/" id="header-multiple-departments-feature-sd" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="mt-1 mr-4" viewBox="0 0 20 20">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 1h6m0 0v6m0-6-7 7M7 19H1m0 0v-6m0 6 7-7" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Multiple departments                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Extend outside IT                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <button type="button" id="header-moreless-features-sd" class="inline-flex items-center justify-between group whitespace-nowrap rounded px-4 py-3 text-[0.9rem] text-darkblue-gray-700 text-center leading-none transition-all duration-[0.4s] bg-light-blue-50 hover:bg-light-blue-100 group product-features-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" class="ml-1 group-[.active]:rotate-180" viewBox="0 0 24 24">
+                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 13 5 5 5-5M7 6l5 5 5-5" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-features">
+                                                <div class="grid max-w-screen-xl py-5 mx-auto gap-7 lg:gap-x-5 sm:grid-cols-2 product-features-list">
+                                                    <ul class="space-y-7 lg:space-y-0">
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/insight/it-asset-inventory/" id="header-asset-inventory-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 20 23">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1.27 5.96 10 11.01l8.73-5.05M10 21.08V11m9 4V7a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 1 7v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 19 15Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Asset Inventory                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Track and manage assets                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/insight/cmdb/" id="header-cmdb-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" class="mt-1 mr-4" viewBox="0 0 24 16">
+                                                                    <path fill="#08A1FF" fill-rule="evenodd" d="M8 6.2H1.8v3.6H8V6.2zM1.8 4.4c-1 0-1.8.8-1.8 1.8v3.6c0 1 .8 1.8 1.8 1.8H8c1 0 1.8-.8 1.8-1.8V6.2c0-1-.8-1.8-1.8-1.8H1.8zM22.2 1.8h-5.3v3.6h5.3V1.8zM16.9 0c-1 0-1.8.8-1.8 1.8v3.6c0 1 .8 1.8 1.8 1.8h5.3c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8h-5.3z" clip-rule="evenodd" />
+                                                                    <path fill="#08A1FF" fill-rule="evenodd" d="M10.7 5.3c0-1.5 1.2-2.7 2.7-2.7H17v1.8h-3.6c-.5 0-.9.4-.9.9v5.3c0 .5.4.9.9.9h2.5v1.8h-2.5c-1.5 0-2.7-1.2-2.7-2.7V5.3z" clip-rule="evenodd" />
+                                                                    <path fill="#08A1FF" fill-rule="evenodd" d="M22.2 10.7h-5.3v3.6h5.3v-3.6zm-5.3-1.8c-1 0-1.8.8-1.8 1.8v3.6c0 1 .8 1.8 1.8 1.8h5.3c1 0 1.8-.8 1.8-1.8v-3.6c0-1-.8-1.8-1.8-1.8h-5.3z" clip-rule="evenodd" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        CMDB                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Map your IT infrastructure                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/insight/software-license-optimization/" id="header-software-license-mgmt-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 22 22">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.5 6.5 18 3m2-2-2 2 2-2Zm-9.61 9.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777l.001-.001Zm0 0L14.5 6.5l-4.11 4.11ZM14.5 6.5l3 3L21 6l-3-3-3.5 3.5Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Software License Mgmt                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Optimize license usage                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/insight/integrations/" id="header-integrations-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                                    <path fill="#08A1FF" d="M18.254 11.358c-.794 0-1.579-.002-2.333-.008a3.304 3.304 0 0 1-3.269-3.277 450.182 450.182 0 0 1 0-4.791A3.302 3.302 0 0 1 15.921.006C16.563.002 17.26 0 18.049 0c.79 0 1.589.002 2.383.004h.23c1.65.005 3.003 1.144 3.293 2.772.001.008.01.027.017.041a.77.77 0 0 1 .018.042c.007.017.01.035.01.053v5.533a.142.142 0 0 1-.004.035l-.036.142c-.025.102-.05.207-.08.31a3.3 3.3 0 0 1-3.143 2.419c-.85.005-1.685.007-2.483.007Zm.126-9.491c-.79 0-1.579 0-2.368.002-.879.002-1.494.614-1.496 1.49-.003 1.532-.003 3.093 0 4.639.002.875.617 1.488 1.496 1.49a1192.911 1192.911 0 0 0 4.614 0c.885-.002 1.505-.62 1.51-1.503.002-.532.001-1.074 0-1.597V4.97c.002-.532.002-1.083-.001-1.623-.005-.855-.63-1.476-1.483-1.478-.757-.002-1.515-.002-2.272-.002ZM2.912 24a.128.128 0 0 1-.036-.005l-.148-.038a10.65 10.65 0 0 1-.328-.086 3.297 3.297 0 0 1-1.724-1.18 3.265 3.265 0 0 1-.671-1.979 571.999 571.999 0 0 1 0-4.767 3.295 3.295 0 0 1 3.278-3.293 407.897 407.897 0 0 1 4.791 0 3.27 3.27 0 0 1 2.315.97c.617.619.958 1.444.962 2.323.008 1.612.005 3.214.001 4.717a3.318 3.318 0 0 1-.774 2.16 3.338 3.338 0 0 1-1.997 1.132.225.225 0 0 0-.041.017.852.852 0 0 1-.042.019.142.142 0 0 1-.053.01H2.912Zm2.779-9.486c-.773 0-1.545 0-2.317.002-.883.001-1.502.62-1.505 1.505-.002.53-.002 1.067-.001 1.588v3.026c.004.88.616 1.497 1.488 1.5a920.888 920.888 0 0 0 4.64 0c.876-.003 1.49-.617 1.492-1.494.004-1.633.004-3.15 0-4.64-.003-.873-.619-1.484-1.499-1.485-.766-.002-1.532-.002-2.298-.002ZM5.671 11.355c-.771 0-1.543 0-2.315-.003-.916-.002-1.763-.345-2.384-.965a3.347 3.347 0 0 1-.968-2.38V4.928c-.001-.521-.002-1.06 0-1.591A3.332 3.332 0 0 1 .973.97 3.34 3.34 0 0 1 3.344.004a960.469 960.469 0 0 1 4.669 0 3.341 3.341 0 0 1 2.372.965c.621.62.965 1.461.968 2.369.004 1.488.004 3.015 0 4.668-.003.915-.346 1.761-.967 2.381-.621.62-1.468.963-2.385.965-.776.002-1.554.003-2.33.003ZM4.286 1.868h-.894c-.91.002-1.522.61-1.524 1.512-.002 1.458-.002 2.96 0 4.59.002.907.611 1.517 1.518 1.518a1260.115 1260.115 0 0 0 4.59 0c.888-.002 1.509-.618 1.511-1.5.004-1.468.004-3.021 0-4.614-.002-.884-.62-1.503-1.505-1.506l-.878-.001H4.286ZM18.31 22.418c-.538-.008-.915-.424-.917-1.012v-.317c-.003-.576-.004-1.172.004-1.76a.358.358 0 0 0-.005-.072.3.3 0 0 0-.057-.004h-.01c-.294.005-.61.006-.996.006l-.73-.001h-.351c-.305-.002-.576-.106-.762-.293a.89.89 0 0 1-.255-.648c.005-.54.418-.92 1.005-.924h1.013c.105 0 .21 0 .314-.002l.317-.001c.179 0 .325.002.46.007h.017a.283.283 0 0 0 .035-.002.369.369 0 0 0 .003-.064c-.006-.592-.005-1.194-.003-1.775v-.3c.001-.603.384-1.024.932-1.024.547 0 .93.421.932 1.024v.374c.003.55.004 1.118-.004 1.677-.001.05.003.075.005.086.01.002.029.005.065.005h.013c.27-.005.565-.007.927-.007a118.22 118.22 0 0 1 1.1.003c.627 0 1.05.372 1.055.925a.881.881 0 0 1-.252.644c-.188.19-.47.295-.791.295l-.457.001-.635.001c-.375 0-.68-.002-.96-.006h-.01a.294.294 0 0 0-.056.004.367.367 0 0 0-.004.074c.008.611.006 1.232.004 1.832v.244c-.003.585-.394 1.01-.931 1.01h-.017.002Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Integrations                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Expand functionality and usability                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/insight/remote-monitoring/" id="header-remote-desktop-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="none" class="mt-1 mr-4">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.24 4.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14M13 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Remote Access                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Make secure connections                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/insight/software-metering/" id="header-software-metering-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" class="mt-1 mr-4" viewBox="0 0 24 20">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19v-7m0-4V1m8 18v-9m0-4V1m8 18v-5m0-4V1M1 12h6m2-6h6m2 8h6" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Software Metering                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Optimize software usage                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="space-y-7 lg:space-y-0">
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/insight/it-asset-discovery-tool/" id="header-network-discovery-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" fill="none" class="mt-1 mr-4">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8.55a11 11 0 0 1 14.08 0M1.42 5a16 16 0 0 1 21.16 0M8.53 12.11a6 6 0 0 1 6.95 0M12 16h.01" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Network Discovery                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Make informed decisions                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/insight/it-financials-and-lifecycle/" id="header-it-financials-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" class="mt-1 mr-4" viewBox="0 0 21 22">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.175 3.222C12.178 1.994 9.674 1 6.588 1 3.504 1 1.002 1.996 1 3.222m0 0C1 4.45 3.501 5.444 6.588 5.444s5.589-.994 5.589-2.222v8.623M1 3.222v13.334c.001 1.227 2.502 2.222 5.588 2.222 1.497 0 2.848-.237 3.85-.618M1.002 7.667c0 1.228 2.501 2.222 5.588 2.222s5.589-.994 5.589-2.222m-1.672 6.028c-1.008.394-2.391.639-3.918.639-3.086 0-5.587-.995-5.587-2.223m17.526.354a4.98 4.98 0 0 1 0 7.07 5.051 5.051 0 0 1-7.113 0 4.98 4.98 0 0 1 0-7.07 5.051 5.051 0 0 1 7.113 0Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        IT Financials                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Gain control over budgets                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/insight/it-assets-monitoring-software/" id="header-asset-monitoring-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4.35-4.35M17 9A8 8 0 1 1 1 9a8 8 0 0 1 16 0Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Asset Monitoring                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Monitor and control changes                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/insight/it-security/" id="header-it-security-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 mr-4" width="20" height="20" viewBox="0 0 448 512" fill="#08A1FF">
+                                                                    <path d="M144 128v64H304V128c0-44.2-35.8-80-80-80s-80 35.8-80 80zM96 192V128C96 57.3 153.3 0 224 0s128 57.3 128 128v64h32c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H96zM48 256V448c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V256c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        IT Security                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Monitor IT security compliance                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/assets/software-deployment-and-remote-desktop/" id="header-software-deployment-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a1.998 1.998 0 0 1 0 2.83 1.998 1.998 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a1.998 1.998 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 3.417 1.415 2 2 0 0 1-.587 1.415l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Software Deployment                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Reduce asset waste                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                            <a href="/insight/automation/" id="header-automation-feature-in" class="flex">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                                                                    <path stroke="#08A1FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z" />
+                                                                </svg>
+                                                                <div class="flex flex-col">
+                                                                    <span class="text-base font-medium text-darkblue-gray-700">
+                                                                        Automation                                                                    </span>
+                                                                    <span class="text-sm text-body">
+                                                                        Make your IT asset management easy                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <button type="button" id="header-moreless-features-in" class="inline-flex items-center justify-between group whitespace-nowrap rounded px-4 py-3 text-[0.9rem] text-darkblue-gray-700 text-center leading-none transition-all duration-[0.4s] bg-light-blue-50 hover:bg-light-blue-100 group product-features-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" class="ml-1 group-[.active]:rotate-180" viewBox="0 0 24 24">
+                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 13 5 5 5-5M7 6l5 5 5-5" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button id="solutions-header" class="relative flex items-center justify-between w-full py-3 font-medium border-b-2 border-gray-100 menu-item lg:w-auto lg:border-0 text-body hover:text-cta-500 lg:p-0 lg:h-[70px]">
+                                    Solutions                                    <svg class="w-3 h-3 ml-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                    </svg>
+                                </button>
+                                <div class="z-10 hidden w-full bg-white lg:px-10 lg:shadow-lg menu-content lg:fixed lg:left-0">
+                                    <div class="grid max-w-screen-xl py-5 mx-auto gap-7 lg:gap-x-5 sm:grid-cols-2 lg:grid-cols-4">
+                                        <ul>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/itsm/" id="solutions-itsm-header" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#08a1ff" class="mt-1 mr-4" width="24" height="24" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                                                        <g clip-path="url(#a)">
+                                                            <path d="M19 3.022V1a1 1 0 0 0-2 0v1.1a5 5 0 0 0-1-.1h-1V1a1 1 0 0 0-2 0v1h-2V1a1 1 0 0 0-2 0v1H8a5 5 0 0 0-1 .1V1a1 1 0 0 0-2 0v2.022A4.979 4.979 0 0 0 3 7v12a5.006 5.006 0 0 0 5 5h8a5.006 5.006 0 0 0 5-5V7a4.978 4.978 0 0 0-2-3.978ZM19 19a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v12ZM17 8a1 1 0 0 1-1 1H8a1 1 0 0 1 0-2h8a1 1 0 0 1 1 1Zm0 4a1 1 0 0 1-1 1H8a1 1 0 0 1 0-2h8a1 1 0 0 1 1 1Zm-4 4a1 1 0 0 1-1 1H8a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1Z" />
+                                                        </g>
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            IT Service Management                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            The best ITSM technology behind your IT team.                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/esm/" id="solutions-esm-header" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#08a1ff" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                        <g clip-path="url(#clip0_8551_189067)">
+                                                            <path d="M7.333 14a1 1 0 0 1-1 1h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 1 1zm4-1h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2zm-5 4h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2zm5 0h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2zm-5-12h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2zm5 0h-1a1 1 0 0 0 0 2h1a1 1 0 1 0 0-2zm-5 4h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2zm5 0h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2zm13 1v9a5.006 5.006 0 0 1-5 5h-14a5.006 5.006 0 0 1-5-5V5a5.006 5.006 0 0 1 5-5h6a5.006 5.006 0 0 1 5 5h3a5.006 5.006 0 0 1 5 5zm-19 12h9V5a3 3 0 0 0-3-3h-6a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3zm17-12a3 3 0 0 0-3-3h-3v15h3a3 3 0 0 0 3-3v-9zm-3 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0-8a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                                        </g>
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Enterprise Service Management                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            Create an employee centric organization.                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/itam/" id="solutions-itam-header" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#08a1ff" class="mt-1 mr-4" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                                                        <path d="M22.667 12.184V5a5.005 5.005 0 0 0-5-5h-10a5.006 5.006 0 0 0-5 5v7.184a2.992 2.992 0 0 0 1 5.816h18a2.993 2.993 0 0 0 1-5.816zM7.667 2h10a3 3 0 0 1 3 3v7h-4.151a2.001 2.001 0 0 0-1.528.708l-.247.292h-4.149l-.246-.292A2 2 0 0 0 8.818 12h-4.15V5a3 3 0 0 1 2.999-3zm14 14h-18a1 1 0 0 1 0-2h5.152l.246.292a2 2 0 0 0 1.527.708h4.149a2.001 2.001 0 0 0 1.528-.708l.247-.292h5.151a1 1 0 0 1 0 2z" />
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            IT Asset Management                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            A command center for your assets inventory.                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="before:content-[''] before:absolute before:-z-10 before:w-[100vh] before:left-0 before:-inset-y-5 relative before:bg-gray-100 lg:pl-7 hidden lg:block">
+                                            <a href="https://blog.invgate.com/topic/case-study" target="_blank" id="solutions-card-case-studies">
+                                                <img src="/img/content/menu__case-study.jpg?v=1" class="mb-5 w-full h-[180px] object-cover lg:h-auto lg:object-contain rounded-2xl">
+                                                <span class="inline-flex items-center font-medium text-cta-500 hover:underline hover:text-cta-600">
+                                                    See case studies                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-1" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-2.293-2.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/pricing/" id="pricing-header" class="flex items-center py-3 font-medium border-b-2 border-gray-100 text-body lg:border-0 hover:text-cta-500 lg:p-0 lg:h-[70px]">
+                                    Pricing                                </a>
+                            </li>
+                            <li>
+                                <button id="resources-header" class="relative flex items-center justify-between w-full py-3 font-medium border-b-2 border-gray-100 menu-item lg:w-auto lg:border-0 text-body hover:text-cta-500 lg:p-0 lg:h-[70px]">
+                                    Resources                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-3 h-3 ml-1" viewBox="0 0 512 512">
+                                        <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                    </svg>
+                                </button>
+                                <div class="z-10 hidden w-full bg-white lg:px-10 lg:shadow-lg menu-content lg:fixed lg:left-0">
+                                    <div class="grid max-w-screen-xl py-5 mx-auto gap-7 lg:gap-x-5 sm:grid-cols-2 lg:grid-cols-4">
+                                        <ul class="space-y-7 lg:space-y-0">
+                                            <li class="lg:px-3 lg:pb-2 lg:rounded-2xl">
+                                                <span class="text-sm font-medium uppercase text-cta-500">
+                                                    Discover                                                </span>
+                                            </li>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="https://blog.invgate.com/topic/case-study/" target="_blank" id="resources-disc-case-studies" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                        <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16M4 7h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" />
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Case Studies                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            Success stories                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="https://try.invgate.com/gartner-reviews/" target="_blank" id="resources-disc-leave-a-review" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                        <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z" />
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Leave a Review                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            Gartner Peer Insights                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/customer-experience/" id="resources-disc-cx" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                        <path fill="#08A1FF" d="M21.77 8.948a1.238 1.238 0 0 1-.7-1.7 3.239 3.239 0 0 0-4.315-4.316 1.24 1.24 0 0 1-1.7-.7 3.239 3.239 0 0 0-6.1 0 1.238 1.238 0 0 1-1.7.7A3.239 3.239 0 0 0 2.934 7.25a1.237 1.237 0 0 1-.7 1.7 3.24 3.24 0 0 0 0 6.1 1.238 1.238 0 0 1 .705 1.7 3.238 3.238 0 0 0 4.311 4.317 1.24 1.24 0 0 1 1.7.7 3.24 3.24 0 0 0 6.1 0 1.237 1.237 0 0 1 1.7-.7 3.239 3.239 0 0 0 4.316-4.315 1.237 1.237 0 0 1 .7-1.7 3.24 3.24 0 0 0 0-6.1l.004-.003zm-.67 4.22a3.239 3.239 0 0 0-1.84 4.441 1.24 1.24 0 0 1-1.652 1.651 3.238 3.238 0 0 0-4.441 1.84 1.238 1.238 0 0 1-2.334 0 3.24 3.24 0 0 0-4.442-1.84 1.24 1.24 0 0 1-1.65-1.652 3.238 3.238 0 0 0-1.841-4.44 1.239 1.239 0 0 1 0-2.335 3.237 3.237 0 0 0 1.84-4.442 1.239 1.239 0 0 1 1.65-1.65 3.24 3.24 0 0 0 4.443-1.84 1.238 1.238 0 0 1 2.334 0 3.24 3.24 0 0 0 4.442 1.84 1.239 1.239 0 0 1 1.65 1.651 3.237 3.237 0 0 0 1.84 4.441 1.238 1.238 0 0 1 0 2.334z" />
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Customer Experience                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            How we work with you                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="space-y-7 lg:space-y-0">
+                                            <li class="lg:px-3 lg:pb-2 lg:rounded-2xl">
+                                                <span class="text-sm font-medium uppercase text-cta-500">
+                                                    Get to know us                                                </span>
+                                            </li>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/why-invgate/" id="resources-gtku-why-invgate" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                        <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2m1-2h6a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Z" />
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Why InvGate?                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            Here are 10 reasons                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/about-us/" id="resources-gtku-about-us" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                        <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 22V12h6v10M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z" />
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            About Us                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            Who we are                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/careers/" id="resources-gtku-careers" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 22 22">
+                                                        <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 7v8m-4-4h8m6 0c0 5.523-4.477 10-10 10S1 16.523 1 11 5.477 1 11 1s10 4.477 10 10z" />
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Careers                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            Join our team                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="space-y-7 lg:space-y-0">
+                                            <li class="lg:px-3 lg:pb-2 lg:rounded-2xl">
+                                                <span class="text-sm font-medium uppercase text-cta-500">
+                                                    Learn                                                </span>
+                                            </li>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/ticket-volume/" id="resources-learn-tivo" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                        <g fill="#08a1ff" clip-path="url(#a)">
+                                                            <path d="M12 20a8.009 8.009 0 0 0 8-8V8A8 8 0 0 0 4 8v4a8.009 8.009 0 0 0 8 8zm0-18a6.006 6.006 0 0 1 5.91 5H15a1 1 0 1 0 0 2h3v2h-3a1 1 0 0 0 0 2h2.91a5.993 5.993 0 0 1-11.82 0H9a1 1 0 0 0 0-2H6V9h3a1 1 0 0 0 0-2H6.09A6.006 6.006 0 0 1 12 2z" />
+                                                            <path d="M23 12a1 1 0 0 0-1 1 9.01 9.01 0 0 1-9 9h-2a9.011 9.011 0 0 1-9-9 1 1 0 1 0-2 0 11.013 11.013 0 0 0 11 11h2a11.013 11.013 0 0 0 11-11 1 1 0 0 0-1-1z" />
+                                                        </g>
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Ticket Volume                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            ITSM podcast                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/guides/" target="_blank" id="resources-learn-guides" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                        <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15Z" />
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Guides                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            Industry insights                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/esm-course/" id="resources-learn-esm-course" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                        <g clip-path="url(#a)">
+                                                            <path fill="#489FF8" d="m22.057 5.23-7.374-3.513A5.226 5.226 0 0 0 9.4 1.672L1.943 5.23a3.691 3.691 0 0 0 0 6.5L4 12.71v4.9a5.007 5.007 0 0 0 3.519 4.778c1.456.421 2.965.627 4.481.612a15.556 15.556 0 0 0 4.481-.607A5.007 5.007 0 0 0 20 17.615v-4.907l2-.956V20a1 1 0 1 0 2 0V8c.007-1.174-.92-2.26-1.943-2.77zM18 17.615a3 3 0 0 1-2.1 2.863A13.596 13.596 0 0 1 12 21a13.597 13.597 0 0 1-3.9-.522A3 3 0 0 1 6 17.615v-3.952l3.317 1.58a5.272 5.272 0 0 0 2.705.739 5 5 0 0 0 2.577-.694l3.4-1.625v3.952zm3.2-7.69-7.542 3.6a3.294 3.294 0 0 1-3.39-.045L2.889 9.97a1.692 1.692 0 0 1-.037-2.958l7.495-3.58a3.3 3.3 0 0 1 3.39.045l7.374 3.513c.542.301.882.87.889 1.49a1.7 1.7 0 0 1-.8 1.445z" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="a">
+                                                                <path fill="#fff" d="M0 0h24v24H0z" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Introduction to ESM                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            Online course                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="space-y-7 lg:space-y-0">
+                                            <li class="lg:px-3 lg:pb-2 lg:rounded-2xl">
+                                                <span class="text-sm font-medium uppercase text-cta-500">
+                                                    Connect                                                </span>
+                                            </li>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/support/" id="resources-connect-support" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                        <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 18v-6a9 9 0 0 1 18 0v6m0 1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z" />
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Support                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            Here to help                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="lg:p-4 lg:hover:bg-light-blue-50 lg:rounded-2xl">
+                                                <a href="/partners/" id="resources-connect-partners" class="flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="mt-1 mr-4" viewBox="0 0 24 24">
+                                                        <path stroke="#08a1ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7.5 4.21 4.5 2.6 4.5-2.6m-9 15.58V14.6L3 12m18 0-4.5 2.6v5.19M3.27 6.96 12 12.01l8.73-5.05M12 22.08V12m9 4V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                                    </svg>
+                                                    <div class="flex flex-col">
+                                                        <span class="text-base font-medium text-darkblue-gray-700">
+                                                            Partners                                                        </span>
+                                                        <span class="text-sm text-body">
+                                                            Share our success                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://blog.invgate.com" class="flex items-center py-3 font-medium border-b-2 border-gray-100 text-body lg:border-0 hover:text-cta-500 lg:p-0 lg:h-[70px]">
+                                    Blog                                </a>
+                            </li>
+                        </ul>
+                        <div>
+                            <div class="flex flex-col py-12 sm:hidden gap-y-5">
+                                <a href="/contact-us/" id="contact-header" class="button button--medium button--white">
+                                    Contact Us                                </a>
+                                <a href="/free-trial/" id="free-trial-header" class="button button--medium button--blue">
+                                    Free Trial                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                </nav>
+    </div>
+
+    <div class="hidden top-bar insight">
+        <div class="flex justify-center w-full">
+            <span class="inline-flex flex-col items-center text-center text-white lg:flex-row">
+                Looking for ways to optimize your IT Asset Management strategy?                <a href="/insight/?legacy-assets" class="inline-flex items-center text-white underline lg:ml-1 hover:text-white">
+                    InvGate Insight is your platform!                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="ml-1" viewBox="0 0 23 23">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.477 16.817 15.06 7.65m0 0H5.477m9.583 0v9.167" />
+                    </svg>
+                </a>
+            </span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" class="ml-2 cursor-pointer close-button">
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6 6 18M6 6l12 12" />
+        </svg>
+    </div><div class="content">
+    <section class="overflow-hidden hero-block pb-28 bg-[url('/img/content/bg-light.jpg')]">
+        <div class="wrapper wrapper--expanded">
+            <div class="flex items-center">
+                <div class="hero-block__left">
+                    <h1 class="hero-block__title">
+                        The all-in-one solution to streamline your IT operations                    </h1>
+                    <p class="hero-block__description">
+                        A fit-for-purpose service desk solution with integrated asset management, designed to let you focus on supporting your organization without arduous implementations.                    </p>
+                    <div class="flex flex-wrap justify-center gap-5 mt-7 sm:justify-start buttons-container">
+                        <a href="/free-trial/" id="free-trial-hero-home" class="button button--blue">
+                            Get started for free                        </a>
+                        <a href="/sales/" id="demo-hero-home" class="button button--white">
+                            Talk to Sales                        </a>
+                    </div>
+                </div>
+                <div class="hero-block__right">
+                    <div class="hero-block__right-video">
+                        <video class="video" preload="metadata" width="100%" muted playsinline ><source src="/img/videos/home_realtime-monitoring-cut.webm" type="video/webm" /><source src="/img/videos/home_realtime-monitoring-cut.mp4" type="video/mp4" /></video>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col gap-10 mx-10 -mt-12 xl:mx-auto xl:flex-row max-w-7xl">
+        <a href="/itsm/" id="itsm-card-home" class="flex overflow-hidden transition duration-500 ease-in-out bg-white border border-gray-200 border-solid shadow-md basis-full lg:basis-1/3 rounded-2xl hover:-translate-y-4 hover:text-curren">
+            <div class="w-full p-6 text-center sm:w-4/5 shrink-0">
+                <h2 class="mb-2 text-base font-medium text-darkblue-gray-700">
+                    IT Service Management                </h2>
+                <p class="text-sm text-body">
+                    Bring simplicity to your help desk with  dynamic ticket management, automated workflows, SLAs and advanced dashboards.                </p>
+            </div>
+            <div class="hidden bg-right-top bg-no-repeat bg-cover grow sm:block bg-[url('/img/content/home/itsm.jpg')]"></div>
+        </a>
+        <a href="/esm/" id="esm-card-home" class="flex overflow-hidden transition duration-500 ease-in-out bg-white border border-gray-200 border-solid shadow-md basis-full lg:basis-1/3 rounded-2xl hover:-translate-y-4 hover:text-current">
+            <div class="w-full p-6 text-center sm:w-4/5 shrink-0">
+                <h2 class="mb-2 text-base font-medium text-darkblue-gray-700">
+                    Enterprise Service Management                </h2>
+                <p class="text-sm text-body">
+                    Transform your organization by centralizing your operations in one platform.                </p>
+            </div>
+            <div class="hidden bg-right-top bg-no-repeat bg-cover grow sm:block bg-[url('/img/content/home/itam.jpg')]"></div>
+        </a>
+        <a href="/itam/" id="itam-card-home" class="flex overflow-hidden transition duration-500 ease-in-out bg-white border border-gray-200 border-solid shadow-md basis-full lg:basis-1/3 rounded-2xl hover:-translate-y-4 hover:text-current">
+            <div class="w-full p-6 text-center sm:w-4/5 shrink-0">
+                <h2 class="mb-2 text-base font-medium text-darkblue-gray-700">
+                    IT Asset Management                </h2>
+                <p class="text-sm text-body">
+                    Get a unified view of your IT shape. Track device ownership, software licenses and build your CMDB.                </p>
+            </div>
+            <div class="hidden bg-right-top bg-no-repeat bg-cover grow sm:block bg-[url('/img/content/home/esm.jpg')]"></div>
+        </a>
+    </section>
+
+    <section class="pt-24">
+        <div class="wrapper">
+            <h2 class="carrousel-block__title">
+                Powering top IT teams around the world            </h2>
+            <div class="swiper swiper-brands">
+                <div class="carrousel-block__brands swiper-wrapper">
+                        <div class="w-auto swiper-slide" title="PWC">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/pwc.svg?=v1" alt="PWC" width="auto" height="80" loading="lazy">
+    </div>
+    <div class="w-auto swiper-slide" title="NASA">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/nasa.svg?=v1" alt="nasa" width="auto" height="80" loading="lazy">
+    </div>
+    <div class="w-auto swiper-slide" title="Peoples Bank">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/peoples-bank.svg?=v1" alt="Peoples Bank" width="auto" height="80" loading="lazy">
+    </div>
+    <div class="w-auto swiper-slide" title="Arcos Dorados">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/arcos-dorados.svg?=v1" alt="Arcos Dorados" width="auto" height="80" loading="lazy">
+    </div>
+    <div class="w-auto swiper-slide" title="Toyota">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/toyota.svg?=v1" alt="Toyota" width="auto" height="80" loading="lazy">
+    </div>
+    <div class="w-auto swiper-slide" title="The City University of New York">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/cuny.svg?=v1" alt="The City University of New York" width="auto" height="80" loading="lazy">
+    </div>
+    <div class="w-auto swiper-slide" title="KPMG">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/kpmg.svg?=v1" alt="KPMG" width="auto" height="80" loading="lazy">
+    </div>
+    <div class="w-auto swiper-slide" title="US Army">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/us-army.svg?=v1" alt="US Army" width="auto" height="80" loading="lazy">
+    </div>
+    <div class="w-auto swiper-slide" title="Memorial Hermann">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/memorial-hermann.svg?=v1" alt="Memorial Hermann" width="auto" height="80" loading="lazy">
+    </div>
+    <div class="w-auto swiper-slide" title="AHCCCS">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/ahcccs.svg?=v1" alt="AHCCCS" width="auto" height="80" loading="lazy">
+    </div>
+    <div class="w-auto swiper-slide" title="Tulsa">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/tulsa.svg?=v1" alt="Tulsa" width="auto" height="80" loading="lazy">
+    </div>
+    <div class="w-auto swiper-slide" title="Texas A&M University">
+        <img class="w-full max-w-[140px] h-20" src="/img/customers/texas-am.svg?=v1" alt="Texas A&M University" width="auto" height="80" loading="lazy">
+    </div>
+
+                </div>
+                <svg class="h-20 absolute w-full z-[2] left-0 bottom-0">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="rgba(255,255,255,1)"></stop>
+                            <stop offset="5%" stop-color="rgba(255,255,255,0)"></stop>
+                            <stop offset="95%" stop-color="rgba(255,255,255,0)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255,1)"></stop>
+                        </linearGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#gradient)"></rect>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="mx-auto mt-20 mb-14 max-w-7xl px-7">
+        <div class="overflow-hidden border-white shadow-lg border-3 px-14 rounded-2xl py-14 lg:py-20 lg:service-desk-gradient">
+            <div class="image-block">
+                <div class="image-block__left">
+                    <div class="block__logo-image">
+                        <a href="/service-desk/">
+                            <img loading="lazy" src="/img/content/home/service-desk-logo.svg" width="174" height="40">
+                        </a>
+                    </div>
+                    <h2 class="image-block__title [&>a]:after:ml-1 [&>a]:after:font-awesome [&>a]:after:text-[1.5rem] [&>a]:after:content-['\f0a9']">
+                        <a href="/service-desk/" id="sd-cta-home">
+                            Build a state-of-the-art service desk                        </a>
+                    </h2>
+                    <p class="image-block__description">
+                        InvGate Service Desk is the solution chosen from mid to large organizations who want to deliver outstanding service.                    </p>
+                    <div class="grid grid-cols-1 mt-7 gap-7 sm:grid-cols-2 xl:mt-12 xl:grid-cols-3">
+                        <div class="w-full">
+                            <h3 class="image-block__col-title">
+                                <a href="/service-desk/ticketing/" id="ticketing-home">
+                                    Ticketing                                </a>
+                            </h3>
+                            <p class="image-block__col-description">
+                                Improve the way you manage your organization                            </p>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="image-block__col-title">
+                                <a href="/service-desk/workflow/" id="workflows-home">
+                                    Workflows                                </a>
+                            </h3>
+                            <p class="image-block__col-description">
+                                Automate your operations                            </p>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="image-block__col-title">
+                                <a href="/service-desk/reporting-and-analytics/" id="analytics-home">
+                                    Analytics                                </a>
+                            </h3>
+                            <p class="image-block__col-description">
+                                Get a clear view of your team’s performance                            </p>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="image-block__col-title">
+                                <a href="/service-desk/itil/" id="slas-home">
+                                    SLAs                                </a>
+                            </h3>
+                            <p class="image-block__col-description">
+                                Prioritize your operations                            </p>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="image-block__col-title">
+                                <a href="/service-desk/self-service/" id="self-service-home">
+                                    Self-Service                                </a>
+                            </h3>
+                            <p class="image-block__col-description">
+                                Encourage self-help                            </p>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="image-block__col-title">
+                                <a href="/service-desk/itil/" id="itil-home">
+                                    ITIL-Ready                                </a>
+                            </h3>
+                            <p class="image-block__col-description">
+                                Follow industry best practices                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-block__right">
+                    <div class="image-block__image image-block__video image-block__video--big">
+                        <video class="video" preload="metadata" width="100%" muted playsinline ><source src="/img/videos/home_service-desk.webm" type="video/webm" /><source src="/img/videos/home_service-desk.mp4" type="video/mp4" /></video>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mx-auto mt-20 mb-14 max-w-7xl px-7">
+        <div class="overflow-hidden border-white shadow-lg border-3 px-14 rounded-2xl py-14 lg:py-20 lg:insight-gradient">
+            <div class="image-block image-block--reversed">
+                <div class="image-block__left">
+                    <div class="block__logo-image">
+                        <a href="/insight/">
+                            <img loading="lazy" src="/img/content/home/insight-logo.svg" width="144" height="40">
+                        </a>
+                    </div>
+                    <h2 class="image-block__title [&>a]:after:ml-1 [&>a]:after:font-awesome [&>a]:after:text-[1.5rem] [&>a]:after:content-['\f0a9']">
+                        <a href="/insight/" id="in-cta-home">
+                            Get a unified view of your asset inventory                        </a>
+                    </h2>
+                    <p class="image-block__description">
+                        Track and manage all hardware, software, cloud and fixed assets in a centralized and automated way.                    </p>
+                    <div class="grid grid-cols-1 mt-7 gap-7 sm:grid-cols-2 xl:mt-12 xl:grid-cols-3">
+                        <div class="w-full">
+                            <h3 class="image-block__col-title">
+                                <a href="/insight/it-asset-inventory/" id="inventory-home">
+                                    Inventory                                </a>
+                            </h3>
+                            <p class="image-block__col-description">
+                                Get a centralized view of all your assets                            </p>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="image-block__col-title">
+                                <a href="/insight/it-asset-discovery-tool/" id="discovery-home">
+                                    Discovery                                </a>
+                            </h3>
+                            <p class="image-block__col-description">
+                                Discover devices connected to your network                            </p>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="image-block__col-title">
+                                <a href="/insight/it-assets-monitoring-software/" id="monitoring-home">
+                                    Monitoring                                </a>
+                            </h3>
+                            <p class="image-block__col-description">
+                                Real time information on the use of your assets                            </p>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="image-block__col-title">
+                                <a href="/insight/cmdb/" id="cmdb-home">
+                                    CMDB                                </a>
+                            </h3>
+                            <p class="image-block__col-description">
+                                Lay out your IT infrastructure on a map                            </p>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="image-block__col-title">
+                                <a href="/insight/software-license-optimization/" id="licenses-home">
+                                    Licenses                                </a>
+                            </h3>
+                            <p class="image-block__col-description">
+                                Optimize software license usage                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-block__right">
+                    <div class="image-block__image">
+                        <video class="video" preload="metadata" width="100%" muted playsinline ><source src="/img/videos/home_insight.webm" type="video/webm" /><source src="/img/videos/home_insight.mp4" type="video/mp4" /></video>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrapper">
+            <div class="flex flex-col lg:grid gap-y-10 lg:gap-x-10 lg:gap-y-0 lg:grid-cols-3 lg:grid-rows-1 mb-14">
+                <div class="flex flex-col items-center justify-center px-3 py-10 text-center shadow-lg lg:col-start-1 lg:col-end-2 rounded-2xl bg-light-blue-100">
+                    <h2 class="text-2xl text-center lg:text-xl text-darkblue-gray-700">
+                        <a href="/customer-experience/" class="text-inherit hover:text-darkblue-gray-600 after:ml-1 after:font-awesome after:text-[1.2rem] after:content-['\f0a9']">
+                            IT solutions chosen by the best in the industry                        </a>
+                    </h2>
+                    <div class="grid items-center grid-cols-3 gap-2 mt-5 mb-0 justify-items-center">
+                        <img class="drop-shadow-xl" loading="lazy" src="/img/content/badges/badge-front-runners-2023.svg?=v1" width="96" height="90">
+                        <img class="drop-shadow-xl" loading="lazy" src="/img/content/badges/badge-most-recommended-2022.svg?=v1" width="96" height="90">
+                        <img class="drop-shadow-xl" loading="lazy" src="/img/content/badges/badge-best-customer-support-2022.svg?=v1" width="96" height="90">
+                        <img class="drop-shadow-xl" loading="lazy" src="/img/content/badges/badge-best-ease-of-use-2022.svg?=v1" width="96" height="90">
+                        <img class="drop-shadow-xl" loading="lazy" src="/img/content/badges/badge-best-functionality-and-features-2022.svg?=v1" width="96" height="90">
+                        <img class="drop-shadow-xl" loading="lazy" src="/img/content/badges/badge-gartner-customer.svg?=v1" width="96" height="90">
+                    </div>
+                </div>
+                <div class="flex items-center px-3 py-10 shadow-lg lg:col-start-2 lg:col-end-4 bg-darkblue-gray-800 rounded-2xl sm:px-12 hover:cursor-grab active:cursor-grabbing">
+                    <div class="swiper swiper-quotes">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="flex-wrap justify-center">
+                                    <p class="text-center text-2xl font-normal text-white before:mr-1 before:font-awesome before:text-lg before:font-semibold before:leading-none before:content-['\f10d'] after:relative after:ml-1 after:font-awesome after:text-lg after:font-semibold after:leading-none after:content-['\f10e']">
+                                        We wanted a Service Desk solution that is easy to use and yet can accommodate complex workflow. InvGate Service Desk answered all of these                                    </p>
+                                    <div class="flex flex-col items-center justify-center m-6 border-t border-solid md:flex-row border-t-white pt-7">
+                                        <div class="md:pr-10">
+                                            <img src="/img/content/home/global-asia-sinergi.svg" alt="Columbus Public School" width="157" height="53">
+                                        </div>
+                                        <div>
+                                            <p class="mt-5 text-base font-medium text-center text-white md:text-start">Asia Sinergi</p>
+                                            <p class="mt-2 text-base text-center text-white md:text-start">
+                                                Senior Technical Program Manager                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex-wrap justify-center">
+                                    <p class="text-center text-2xl font-normal text-white before:mr-1 before:font-awesome before:text-lg before:font-semibold before:leading-none before:content-['\f10d'] after:relative after:ml-1 after:font-awesome after:text-lg after:font-semibold after:leading-none after:content-['\f10e']">
+                                        If you can think it, it will do it. Ease of use. Ability to create multiple help desk divisions to keep service requests separated. One stop for our end. Great product                                    </p>
+                                    <div class="flex flex-col items-center justify-center m-6 border-t border-solid md:flex-row border-t-white pt-7">
+                                        <div class="md:pr-10">
+                                            <img src="/img/content/home/columbus-public-school.svg" alt="Columbus Public School" width="72" height="53">
+                                        </div>
+                                        <div>
+                                            <p class="mt-5 text-base font-medium text-center text-white md:text-start">Columbus Public School</p>
+                                            <p class="mt-2 text-base text-center text-white md:text-start">
+                                                Network & Systems Administrator                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex-wrap justify-center">
+                                    <p class="text-center text-2xl font-normal text-white before:mr-1 before:font-awesome before:text-lg before:font-semibold before:leading-none before:content-['\f10d'] after:relative after:ml-1 after:font-awesome after:text-lg after:font-semibold after:leading-none after:content-['\f10e']">
+                                        We are transforming the way we work to become more agile. InvGate Service Desk is accompanying us in this transformation process, helping us to implement changes in a way that is practically transparent to the entire organization                                    </p>
+                                    <div class="flex flex-col items-center justify-center m-6 border-t border-solid md:flex-row border-t-white pt-7">
+                                        <div class="md:pr-10">
+                                            <img src="/img/content/home/farmacity.svg" alt="Farmacity" width="102" height="53">
+                                        </div>
+                                        <div>
+                                            <p class="mt-5 text-base font-medium text-center text-white md:text-start">Farmacity</p>
+                                            <p class="mt-2 text-base text-center text-white md:text-start">
+                                                Level One Support Efficiency Leader                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex-wrap justify-center">
+                                    <p class="text-center text-2xl font-normal text-white before:mr-1 before:font-awesome before:text-lg before:font-semibold before:leading-none before:content-['\f10d'] after:relative after:ml-1 after:font-awesome after:text-lg after:font-semibold after:leading-none after:content-['\f10e']">
+                                        InvGate‘s Service Desk is the tool that not only satisfies our long list of requirements, but has the best price-performance ratio. Its capabilities have enabled us to significantly improve our organization‘s IT service management                                    </p>
+                                    <div class="flex flex-col items-center justify-center m-6 border-t border-solid md:flex-row border-t-white pt-7">
+                                        <div class="md:pr-10">
+                                            <img src="/img/content/home/smartmatic.svg" alt="Smartmatic" width="90" height="53">
+                                        </div>
+                                        <div>
+                                            <p class="mt-5 text-base font-medium text-center text-white md:text-start">Smartmatic</p>
+                                            <p class="mt-2 text-base text-center text-white md:text-start">
+                                                IT Support Manager                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-24 pb-12">
+        <div class="wrapper">
+            <h2 class="block__title">
+                The way in which the best IT teams achieve success            </h2>
+            <p class="block__subtitle">
+                Trusted by clients in 50+ countries            </p>
+            <div class="flex flex-wrap justify-center gap-5 mt-7 buttons-container">
+                <a href="https://blog.invgate.com/topic/case-study" target="_blank" id="case-studies-home" class="button button--blue">
+                    See case studies                </a>
+                <a href="https://blog.invgate.com" target="_blank" id="blog-home" class="button button--white">
+                    Visit our blog                </a>
+            </div>
+            <div class="grid grid-cols-1 gap-10 mt-16 lg:grid-cols-3">
+                <div class="flex flex-col">
+                    <a href="https://blog.invgate.com/peoples-bank-invgate-case-study" target="_blank" class="block__column-image block__column-image--post">
+                        <img loading="lazy" src="/img/content/itsm/case-study-peoples-bank.jpg" alt="Case study Peoples Bank" width="373" height="187">
+                    </a>
+                    <div class="block__col-text">
+                        <h3 class="block__col-title">
+                            <a href="https://blog.invgate.com/peoples-bank-invgate-case-study" target="_blank" rel="noopener noreferrer">
+                                How Peoples Bank Aligned 24 Different Departments Using InvGate Service Desk                            </a>
+                        </h3>
+                        <p class="block__col-description">
+                            Peoples Bank is one of the leading locally-owned and operated community...                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <a href="https://blog.invgate.com/harmony-schools-service-desk-case-study" target="_blank" target="_blank" class="block__column-image block__column-image--post">
+                        <img loading="lazy" src="/img/content/itsm/case-study-harmony.jpg" alt="Case study Harmony" width="373" height="187">
+                    </a>
+                    <div class="block__col-text">
+                        <h3 class="block__col-title">
+                            <a href="https://blog.invgate.com/harmony-schools-service-desk-case-study" target="_blank" target="_blank">
+                                How Harmony Public Schools Leveraged InvGate’s Customizability to Improve Customer Experience                            </a>
+                        </h3>
+                        <p class="block__col-description">
+                            Harmony Public Schools is a system of 58 Texas charter public schools...                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <a href="https://blog.invgate.com/mcdonalds-servicedesk-case-study" target="_blank" class="block__column-image block__column-image--post">
+                        <img loading="lazy" src="/img/content/itsm/case-study-arcos-dorados.jpg" alt="Case study Arcos Dorados" width="373" height="187">
+                    </a>
+                    <div class="block__col-text">
+                        <h3 class="block__col-title">
+                            <a href="https://blog.invgate.com/mcdonalds-servicedesk-case-study" target="_blank">
+                                How McDonald‘s Consolidated All its Service Desks on a Single Platform                            </a>
+                        </h3>
+                        <p class="block__col-description">
+                            Arcos Dorados Holdings Inc. is a company that owns the McDonald‘s...                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-12 pb-24">
+        <div class="wrapper">
+            <h2 class="block__title">
+                Don’t miss out on our ITSM content            </h2>
+            <p class="block__subtitle">
+                Learn more about our products, the industry and IT culture.            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-[60%,1fr] sm:grid-rows-[repeat(1,1fr)] gap-5 grid-cols-[1fr] grid-rows-[repeat(3,1fr)] mt-16">
+                <div class="relative col-[1/2] row-[1/2] flex items-center rounded-2xl shadow-lg bg-tivo-darkblue overflow-hidden bg-cover bg-[left_center] bg-no-repeat p-10 text-center sm:col-[1/3] sm:row-[1/2] md:bg-[url(../img/content/home/tivo-background.png)] md:text-start lg:col-[1/1] lg:row-[1/3]">
+                    <div class="flex flex-col items-center w-full my-0 ml-0 mr-0 md:mr-5 md:w-3/6 md:items-start">
+                        <img loading="lazy" src="/img/content/home/tivo-logo.png" width="180" height="84">
+                        <p class="mt-5 text-lg text-white">
+                            Join a community of Service Management Professionals and get insights from IT leaders on ITSM, technology and business.                        </p>
+                        <div class="flex flex-wrap justify-center gap-5 mt-7 md:justify-start buttons-container">
+                            <a href="/ticket-volume/" id="content-listen-tivo-home" class="button button--medium button--blue">
+                                Listen now                            </a>
+                            <a href="https://www.linkedin.com/company/invgate/" target="_blank" id="content-linkedin-tivo-home" class="button button--medium button--white">
+                                Follow us on LinkedIn                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 right-0 hidden md:block">
+                        <img loading="lazy" src="/img/content/home/tivo-group.png" width="300" height="255">
+                    </div>
+                </div>
+                <div class="col-[1/2] row-[2/3] flex flex-col-reverse items-center justify-center rounded-2xl shadow-lg bg-light-blue-100 p-10 text-center sm:col-[1/2] sm:row-[2/3] lg:col-[2/3] lg:row-[1/2] lg:flex-row lg:justify-between lg:text-start">
+                    <div class="flex flex-col w-full m-0 my-0 ml-0 lg:mr-5 lg:w-3/6 xl:w-2/3 shrink-0">
+                        <p class="mt-6 text-lg text-darkblue-gray-700 lg:mt-0">
+                            Learn more about our products.                        </p>
+                        <div class="flex flex-wrap justify-center gap-5 mt-7 lg:justify-start">
+                            <a href="https://www.youtube.com/@InvGate/featured" target="_blank" id="content-videos-home" class="button button--medium button--blue">
+                                Explore videos                            </a>
+                        </div>
+                    </div>
+                    <img loading="lazy" src="/img/content/home/tivo-youtube.png" width="100" height="119">
+                </div>
+                <div class="col-[1/2] row-[3/4] flex flex-col-reverse items-center justify-center rounded-2xl shadow-lg bg-darkblue-gray-700 p-10 text-center sm:col-[2/3] sm:row-[2/3] lg:flex-row lg:justify-between lg:text-start">
+                    <div class="flex flex-col w-full m-0 my-0 ml-0 lg:mr-5 lg:w-3/6 xl:w-2/3 shrink-0">
+                        <p class="mt-6 text-lg text-white lg:mt-0">
+                            Get access to a wide range of in-depth guides.                        </p>
+                        <div class="flex flex-wrap justify-center gap-5 mt-7 lg:justify-start">
+                            <a href="/guides/index" id="content-guides-home" class="button button--medium button--blue">
+                                Explore guides                            </a>
+                        </div>
+                    </div>
+                    <img loading="lazy" src="/img/content/home/guides.png" width="100" height="119">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-darkblue-gray-700">
+        <div class="wrapper">
+            <div class="cta-block__content bg-[url(/img/background-cta.jpg)]">
+                <div class="cta-block__left">
+                    <h2 class="cta-block__title">
+                        Check out InvGate as your ITSM solution                    </h2>
+                    <p class="cta-block__subtitle">
+                        30-day free trial - No credit card needed                    </p>
+                    <div class="block__cta-button">
+                        <a href="/free-trial/" id="free-trial-hero-home" class="button button--blue">
+                            Get started                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <section class="px-0 pt-10 pb-0 bg-darkblue-gray-800">
+        <div class="flex flex-wrap px-0 py-5 mx-auto max-w-7xl">
+            <div class="flex flex-col w-2/4 p-5 space-y-5 sm:w-1/3 lg:w-1/6">
+                <div style="flex-grow: 1;">
+                    <img loading="lazy" src="/img/logo_light.svg" width="116" height="30" title="InvGate">
+                </div>
+                <div>
+                    <a href="https://www.pinkelephant.com/en-CA/pinkverify/pinkverify-certification" target="_blank">
+                        <img loading="lazy" src="/img/pinkverify-itil-4.webp" width="105" height="38" title="Pink Elephant Compliant Software">
+                    </a>
+                </div>
+                <div>
+                    <img loading="lazy" src="/img/endeavor-white.svg" width="104" height="12" title="Endeavor Entrepreneur">
+                </div>
+            </div>
+            <div class="w-2/4 p-5 sm:w-1/3 lg:w-1/6">
+                <div class="text-[#70ade6] text-base font-medium mb-5">
+                    Service Desk                </div>
+                <ul class="[&>*]:mt-4 [&>li>a]:text-base [&>a]:leading-none [&>li>a]:text-[#cbe2f4] hover:[&>li>a]:text-[#a1cbeb] hover:[&>li>a]:underline">
+                    <li>
+                        <a href="/itsm/" id="footer-sd-itsm">
+                            IT Service Management                        </a>
+                    </li>
+                    <li>
+                        <a href="/esm/" id="footer-sd-esm">
+                            Enterprise Service Management                        </a>
+                    </li>
+                    <li>
+                        <a href="/service-desk/ticketing/" id="footer-sd-ticket-mgmt">
+                            Ticket Management                        </a>
+                    </li>
+                    <li>
+                        <a href="/service-desk/self-service/" id="footer-sd-selfservice">
+                            Self-Service                        </a>
+                    </li>
+                    <li>
+                        <a href="/service-desk/workflow/" id="footer-sd-workflows">
+                            Workflows                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-2/4 p-5 sm:w-1/3 lg:w-1/6">
+                <h6 class="text-[#70ade6] font-medium">
+                    ITAM                </h6>
+                <ul class="[&>*]:mt-4 [&>li>a]:text-base [&>a]:leading-none [&>li>a]:text-[#cbe2f4] hover:[&>li>a]:text-[#a1cbeb] hover:[&>li>a]:underline">
+                    <li>
+                        <a href="/itam/" id="footer-itam-itam">
+                            IT Asset Management                        </a>
+                    </li>
+                    <li>
+                        <a href="/insight/it-asset-inventory/" id="footer-itam-asset-inventory">
+                            Asset Inventory                        </a>
+                    </li>
+                    <li>
+                        <a href="/insight/cmdb/" id="footer-itam-cmdb">
+                            CMDB</a>
+                    </li>
+                    <li>
+                        <a href="/insight/it-asset-discovery-tool/" id="footer-itam-network-discovery">
+                            Network Discovery                        </a>
+                    </li>
+                    <li>
+                        <a href="/insight/software-metering/" id="footer-itam-metering">
+                            Metering                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-2/4 p-5 sm:w-1/3 lg:w-1/6">
+                <div class="text-[#70ade6] font-medium">
+                    Learn                </div>
+                <ul class="[&>*]:mt-4 [&>li>a]:text-base [&>a]:leading-none [&>li>a]:text-[#cbe2f4] hover:[&>li>a]:text-[#a1cbeb] hover:[&>li>a]:underline">
+                    <li>
+                        <a href="/guides/itsm/" target="_blank" id="footer-learn-itsm">ITSM</a>
+                    </li>
+                    <li>
+                        <a href="/guides/itil" target="_blank" id="footer-learn-itil">ITIL</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.invgate.com/enterprise-service-management" target="_blank" id="footer-learn-esm">ESM</a>
+                    </li>
+                    <li>
+                        <a href="/guides/service-level-management/" target="_blank" id="footer-learn-slas">SLAs</a>
+                    </li>
+                    <li>
+                        <a href="/guides/help-desk-software/" target="_blank" id="footer-learn-help-desks">Help Desks</a>
+                    </li>
+                    <li>
+                        <a href="/ticket-volume/" target="_blank" id="footer-learn-tivo">Ticket Volume</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-2/4 p-5 sm:w-1/3 lg:w-1/6">
+                <h6 class="text-[#70ade6] font-medium">InvGate</h6>
+                <ul class="[&>*]:mt-4 [&>li>a]:text-base [&>a]:leading-none [&>li>a]:text-[#cbe2f4] hover:[&>li>a]:text-[#a1cbeb] hover:[&>li>a]:underline">
+                    <li>
+                        <a href="/about-us/" id="footer-invgate-about-us">
+                            About Us                        </a>
+                    </li>
+                    <li>
+                        <a href="/why-invgate/" id="footer-invgate-why-invgate">
+                            Why InvGate?                        </a>
+                    </li>
+                    <li>
+                        <a href="/partners/" id="footer-learn-partners">
+                            Partners                        </a>
+                    </li>
+                    <li>
+                        <a href="/careers/" id="footer-learn-careers">
+                            Careers                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact-us/" id="footer-learn-contactus">
+                            Contact Us                        </a>
+                    </li>
+                    <li>
+                        <a href="https://try.invgate.com/gartner-reviews/" target="_blank" id="footer-learn-review">
+                            Leave a Review                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-2/4 p-5 sm:w-1/3 lg:w-1/6">
+                <h6 class="text-[#70ade6] font-medium">
+                    Compare With                </h6>
+                <ul class="[&>*]:mt-4 [&>li>a]:text-base [&>a]:leading-none [&>li>a]:text-[#cbe2f4] hover:[&>li>a]:text-[#a1cbeb] hover:[&>li>a]:underline">
+                    <li>
+                        <a href="https://try.invgate.com/jira-alternative/" target="_blank" id="footer-compare-jira">Jira</a>
+                    </li>
+                    <li>
+                        <a href="https://try.invgate.com/servicenow-alternative/" target="_blank" id="footer-compare-servicenow">Service Now</a>
+                    </li>
+                    <li>
+                        <a href="https://try.invgate.com/ca-servicedesk-alternative/" target="_blank" id="footer-compare-clarity">Clarity</a>
+                    </li>
+                    <li>
+                        <a href="https://try.invgate.com/freshservice-alternative/" target="_blank" id="footer-compare-freshservice">Freshservice</a>
+                    </li>
+                    <li>
+                        <a href="https://try.invgate.com/manageengine-alternative/" target="_blank" id="footer-compare-manageengine">Manage Engine</a>
+                    </li>
+                    <li>
+                        <a href="https://try.invgate.com/servicedesk-alternatives/" target="_blank" id="footer-compare-otheralternatives">
+                            Other Alternatives                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-darkblue-gray-900">
+        <div class="flex flex-col flex-wrap items-center px-10 py-6 mx-auto space-x-3 lg:flex-row lg:flex-nowrap md:max-w-screen-xl">
+            <div class="flex flex-wrap justify-center w-full space-x-3 xl:justify-start">
+                <a class="text-sm text-primary-300 hover:text-primary-400 whitespace-nowrap" href="/privacy-policy/">
+                    Privacy Policy                </a>
+                <a class="text-sm text-primary-300 hover:text-primary-400 whitespace-nowrap" href="/quality-policy/">
+                    Quality Policy                </a>
+                <a class="text-sm text-primary-300 hover:text-primary-400 whitespace-nowrap" href="/cookie-policy/">
+                    Cookie Policy                </a>
+                <a class="text-sm text-primary-300 hover:text-primary-400 whitespace-nowrap" href="/terms-and-conditions/">
+                    Terms and Conditions                </a>
+                <a class="text-sm text-primary-300 hover:text-primary-400 whitespace-nowrap" href="https://hubs.ly/Q01mw6yS0" target="_blank">
+                    Solutions Terms and Conditions                </a>
+                <span class="text-primary-300 whitespace-nowrap">&copy; InvGate</span>
+            </div>
+            <div class="flex mx-auto mt-6 lg:mt-0 space-x-7">
+                    <a href="http://www.twitter.com/invgate" target="_blank">
+        <svg width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="#99CCFC" />
+        </svg>
+    </a>
+<a href="http://www.facebook.com/invgate" target="_blank">
+    <svg width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" fill="#99CCFC" />
+    </svg>
+</a>
+<a href="http://www.linkedin.com/company/invgate" target="_blank">
+    <svg width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" fill="#99CCFC" />
+    </svg>
+    <a href="https://www.youtube.com/InvgateMedia" target="_blank">
+        <svg width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" fill="#99CCFC" />
+        </svg>
+    </a>            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+
+    <script src="/js/lib/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/lib/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/js/lib/validation-engine/jquery.validationEngine.min.js" type="text/javascript"></script>
+    <script src="/js/lib/validation-engine/languages/jquery.validationEngine-en.js" type="text/javascript"></script>
+    <script src="/js/lib/jquery.timer/jquery.timer.js" type="text/javascript"></script>
+    <script src="/js/lib/formparams/formparams.js" type="text/javascript"></script>
+    <script src="/js/lib/magnific-popup/magnific-popup.min.js" type="text/javascript" defer></script>
+    <script src="/js/swiper.110c679dcda7ff0df413.js"></script><script src="/js/main.8f7d577b96302f913aba.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('body').data('lang', 'en').data('hubspot', {"forms":{"contact":{"en":"676de9cb-bbe0-47d6-bb56-4f5bc44d5f0a","es":"f26516b8-f30c-4030-baec-5215c7c12452","pt":"8628123f-e091-4af2-b958-3f5770b41e10"},"trial":{"en":"5dd282f0-9ced-4504-8799-11c685c5fc1c","es":"46623a39-1ad5-4bd8-9b3b-f168cf8104ae","pt":"c50764f1-bb2e-4fb0-a4ac-69e787a78799"},"insight-teaser":{"en":"09f5688e-2e26-4a22-9b4c-15818c2f2ae4","es":"8be80e20-a847-4892-a887-7fc061b3ea2e","pt":"44113c90-1312-46db-ba65-b6b081b3b31e"},"quote":{"en":"cfb4ca02-c901-4d6e-94fd-92df37ba5c9b","es":"f6c102f7-69d1-470f-acce-11b61f9f327c","pt":"a44b4851-d9c7-4d23-803d-bcb9f99df8e3"},"webinar":{"en":"db348e90-e976-4127-9f68-15371f742d09","es":"072d967e-f7eb-44ec-8dde-50e0df02d94d","pt":"36ff2203-08af-4cab-9db6-3a5f5e8fa3f2"},"partners":{"become-a-partner":{"en":"6899a93f-b6f8-42c1-a40b-2fbdb2fd5558","es":"018d06c4-dee1-4093-8683-2c0ef95506b7","pt":"03f6cd8f-4956-4d58-be8c-b52bdd82b834"},"a-nova":{"en":"8ecf3578-e487-4642-a726-17bd14fc32bd","es":"8ecf3578-e487-4642-a726-17bd14fc32bd","pt":"8ecf3578-e487-4642-a726-17bd14fc32bd"}},"update":{"en":"538388cb-9518-470c-b365-4bd3eff799df","es":"538388cb-9518-470c-b365-4bd3eff799df","pt":"538388cb-9518-470c-b365-4bd3eff799df"},"brief":{"en":"efeac636-ae3c-4cae-8b11-ab6ee6dd90c5","es":"4a9dd136-f583-475d-aa55-f7c11602af06","pt":"cb62699a-a13f-4c7e-8723-253e84c5131e"},"tivo":{"en":"b212816a-1945-429d-b30b-0a1446086260","es":"b212816a-1945-429d-b30b-0a1446086260","pt":"b212816a-1945-429d-b30b-0a1446086260"},"esm-course":{"en":"1f2ac760-71f0-4c3e-80e9-3f646dba44a0","es":"1385bf99-1827-49ba-ac7b-84fa69eb5e13","pt":"013f69e2-9a45-4b1a-9882-3f9bd5cfc220"},"courtesy-book":{"en":"883f2634-964d-45f4-a7a9-c0914308b795","es":"e3944a55-d248-455a-98ba-419419ce8ae3","pt":"92cc8d3f-831e-46ec-88b0-f3bc7c9baa8f"},"test":{"en":"b58252be-f8e7-4ae1-b2f2-5b9c7c08d9ce","es":"b58252be-f8e7-4ae1-b2f2-5b9c7c08d9ce","pt":"b58252be-f8e7-4ae1-b2f2-5b9c7c08d9ce"}}});
+        });
+    </script>
+
+    
+    <div id="google_cpc" data-source="None"></div>
+    <div id="google_campaign" data-source="None"></div>
+    <div id="google_keywords" data-source="None"></div>
+
+    </body>
+
+    </html>

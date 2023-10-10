@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+
+<!--
+	Copyright (c) 2020
+
+	This webapplication is powered by indual GmbH, Brig (www.indual.ch)
+	Science Valais, Sion
+-->
+
+<title>VSnet | VSnet, Science Valais, Agenda scientifique, Événements, Expositions, Formations continue, Workshops | Science Valais</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="Science Valais" />
+
+<!-- Favicon, Apple touch icons -->
+<link rel="shortcut icon" href="/templates/sciencevalais/img/icons/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" sizes="57x57" href="/templates/sciencevalais/img/icons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/templates/sciencevalais/img/icons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/templates/sciencevalais/img/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/templates/sciencevalais/img/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/templates/sciencevalais/img/icons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/templates/sciencevalais/img/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/templates/sciencevalais/img/icons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/templates/sciencevalais/img/icons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/templates/sciencevalais/img/icons/apple-touch-icon-180x180.png">
+
+<!-- Base -->
+<base href="https://www.science-valais.ch/">
+
+<!-- Metadata -->
+<meta charset="UTF-8">
+<meta name="description" content="VSnet - Science Valais défend et promeut l’activité scientifique professionnelle du canton, sur le territoire valaisan comme à l’extérieur.">
+<meta name="keywords" content="VSnet - Science Valais, Agenda scientifique, Événements, Expositions, Formations continue, Workshops">
+<meta name="author" content="VSnet - Science Valais, Sion">
+<meta name="generator" content="phpComasy - Content Management System">
+<meta name="revisit-after" content="5 days">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="VSnet">
+<meta property="og:url" content="https://www.science-valais.ch/fr/portrait/association-vsnet">
+<meta property="og:description" content="Promouvoir le r&eacute;seau scientifique valaisan">
+
+<link href="https://www.science-valais.ch/addons/fontawesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.science-valais.ch/styles/bxslider/jquery.bxslider.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.science-valais.ch/addons/fancybox3/jquery.fancybox.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.science-valais.ch/styles/default_styles.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.science-valais.ch/templates/sciencevalais/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.science-valais.ch/templates/sciencevalais/css/management.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.science-valais.ch/templates/sciencevalais/css/modules.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.science-valais.ch/templates/sciencevalais/css/navigation.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.science-valais.ch/templates/sciencevalais/css/phpcomasy.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.science-valais.ch/templates/sciencevalais/css/portlets.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.science-valais.ch/templates/sciencevalais/css/responsive.css" rel="stylesheet" type="text/css" media="all">
+
+
+<!-- Agenda stylesheets -->
+<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/_sciencevalais/basic.css">
+<link rel="stylesheet" href="templates/sciencevalais/css/fonts.css">
+<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/_sciencevalais/forms.css">
+<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/_sciencevalais/navigation.css">
+
+<!-- Addon stylesheets -->
+<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/jquery/jquery-ui.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/basic.css">
+<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/content.css">
+<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/fancybox.css">
+<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/forms.css">
+<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/responsive.css">
+<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/_sciencevalais/responsive.css">
+<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/print.css" media="print">
+
+<!--[if IE 9]>
+	<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/ie/ie-9-and-down.css">
+<![endif]-->
+
+<!--[if lt IE 9]>
+	<link rel="stylesheet" href="https://agenda.sciencevalais.ch/css/ie/ie-9-and-down.css">
+<![endif]-->
+
+</head>
+<body id="cv_standard"  lang="fr" class="fr sciencevalais page_standard no_module_page root_category_162 no_special_css no_mod_action no_system_page is_desktop category_195 not_logged_in preload">
+	
+	<nav id="rwdnav"><div class="rwdnav_inner"><div class="language_switcher responsive"><a class="language language-fr current" href="https://www.science-valais.ch/fr/portrait/association-vsnet" title="Fran&ccedil;ais"><span title="Fran&ccedil;ais">fr</span></a>
+<a class="language language-de" href="https://www.science-valais.ch/de/portrait/verein-vsnet" title="Deutsch"><span title="Deutsch">de</span></a>
+</div><ul class="rwd_navigation level0"><li class="level0 sort-0 current" data-id="162" id="rwdnav-162"><a href="https://www.science-valais.ch/fr/portrait" title=""><span>Portrait</span></a><ul class="level1 current"><li class="level1 sort-0 current" data-id="195" id="rwdnav-195"><a href="https://www.science-valais.ch/fr/portrait/association-vsnet" title=""><span>Association VSnet</span></a><ul class="level2 current"><li class="level2 sort-0" data-id="326" id="rwdnav-326"><a href="https://www.science-valais.ch/fr/portrait/association-vsnet/gouvernance" title=""><span>Gouvernance</span></a></li><li class="level2 sort-1" data-id="166" id="rwdnav-166"><a href="https://www.science-valais.ch/fr/portrait/association-vsnet/devenir-membre" title=""><span>Devenir membre</span></a></li></ul></li><li class="level1 sort-1" data-id="180" id="rwdnav-180"><a href="https://www.science-valais.ch/fr/portrait/science-valais" title=""><span>Science Valais</span></a><ul class="level2"><li class="level2 sort-0" data-id="163" id="rwdnav-163"><a href="https://www.science-valais.ch/fr/portrait/science-valais/institutions" title=""><span>Institutions</span></a></li><li class="level2 sort-1" data-id="319" id="rwdnav-319"><a href="https://www.science-valais.ch/fr/portrait/science-valais/journee-reseau-2022" title=""><span>Journée Réseau 2022</span></a></li><li class="level2 sort-2" data-id="321" id="rwdnav-321"><a href="https://www.science-valais.ch/fr/portrait/science-valais/festival-pint-of-science-2023" title=""><span>Festival Pint of Science 2023</span></a></li><li class="level2 sort-3" data-id="308" id="rwdnav-308"><a href="https://www.science-valais.ch/fr/portrait/science-valais/journees-reseau-passees" title=""><span>Journées Réseau passées</span></a></li></ul></li><li class="level1 sort-2" data-id="288" id="rwdnav-288"><a href="https://www.science-valais.ch/fr/portrait/presse" title=""><span>Presse</span></a></li></ul></li><li class="level0 sort-1" data-id="167" id="rwdnav-167"><a href="https://www.science-valais.ch/fr/actualites" title=""><span>Actualités</span></a><ul class="level1"><li class="level1 sort-0" data-id="169" id="rwdnav-169"><a href="https://www.science-valais.ch/fr/actualites/news" title=""><span>News</span></a></li><li class="level1 sort-1" data-id="168" id="rwdnav-168"><a href="https://www.science-valais.ch/fr/actualites/evenements" title=""><span>Evénements</span></a></li><li class="level1 sort-2" data-id="274" id="rwdnav-274"><a href="https://www.science-valais.ch/fr/actualites/ateliers-et-formations-continues" title=""><span>Ateliers et formations continues</span></a></li><li class="level1 sort-3" data-id="282" id="rwdnav-282"><a href="https://www.science-valais.ch/fr/actualites/emplois-et-concours" title=""><span>Emplois et concours</span></a></li><li class="level1 sort-4" data-id="292" id="rwdnav-292"><a href="https://www.science-valais.ch/fr/actualites/portraits-de-chercheurs-euses" title=""><span>Portraits de chercheurs/euses</span></a><ul class="level2"></ul></li></ul></li><li class="level0 sort-2" data-id="284" id="rwdnav-284"><a href="https://www.science-valais.ch/fr/ressources" title=""><span>Ressources</span></a><ul class="level1"><li class="level1 sort-0" data-id="283" id="rwdnav-283"><a href="https://www.science-valais.ch/fr/ressources/financement" title=""><span>Financement</span></a></li><li class="level1 sort-1" data-id="171" id="rwdnav-171"><a href="https://www.science-valais.ch/fr/ressources/infrastructures" title=""><span>Infrastructures</span></a></li></ul></li><li class="level1 sort-0" data-id="1" id="rwdnav-1"><a href="https://www.science-valais.ch/fr/meta/accueil" title=""><span>Accueil</span></a></li><li class="level1 sort-1" data-id="307" id="rwdnav-307"><a href="https://www.science-valais.ch/fr/meta/blog" title=""><span>Blog</span></a></li><li class="level1 sort-2" data-id="327" id="rwdnav-327"><a href="https://www.science-valais.ch/fr/meta/podcast" title=""><span>Podcast</span></a></li><li class="level1 sort-3" data-id="177" id="rwdnav-177"><a href="https://www.science-valais.ch/fr/meta/contact" title=""><span>Contact</span></a></li></ul></div></nav>
+	<div id="outer_wrap">
+
+		<header id="header">
+			<div class="header_inner">
+				<!--<div class="overlay_hidden"><img id="overlay_header" src="https://agenda.sciencevalais.ch/img/_sciencevalais/overlay_header.png" width="800"></div>-->
+				<div id="logo">
+					<a href=""><img src="https://agenda.sciencevalais.ch/img/_sciencevalais/logo.png" width="320" alt="Logo Science Valais, Wissenschaft Wallis"></a>
+				</div>
+				<div id="navigation_button">
+					<a href="javascript:void(0);" class="border-menu"></a>
+				</div>
+				<div class="header_right">
+					<div id="meta">
+						<div id="language_switcher">
+							<div class="language_switcher"><a class="language language-fr current" href="https://www.science-valais.ch/fr/portrait/association-vsnet" title="Fran&ccedil;ais"><span title="Fran&ccedil;ais">fr</span></a>
+<a class="language language-de" href="https://www.science-valais.ch/de/portrait/verein-vsnet" title="Deutsch"><span title="Deutsch">de</span></a>
+</div>
+						</div>
+						<div id="login"></div>
+						<ul class="meta-navigation" id="meta-navigation-178"><li id="meta-nav-1" class="sort-1"><a href="https://www.science-valais.ch/fr/meta/accueil" title=""><span>Accueil</span></a></li><li id="meta-nav-307" class="sort-2"><a href="https://www.science-valais.ch/fr/meta/blog" title=""><span>Blog</span></a></li><li id="meta-nav-327" class="sort-3"><a href="https://www.science-valais.ch/fr/meta/podcast" title=""><span>Podcast</span></a></li><li id="meta-nav-177" class="sort-4"><a href="https://www.science-valais.ch/fr/meta/contact" title=""><span>Contact</span></a></li></ul>
+					</div>
+					<nav id="navigation">
+						<ul class="navigation level0"><li class="level0 sort-0 current" data-id="162" id="nav-162"><a href="https://www.science-valais.ch/fr/portrait" title=""><span>Portrait</span></a><ul class="level1 current"><li class="level1 sort-0 current" data-id="195" id="nav-195"><a href="https://www.science-valais.ch/fr/portrait/association-vsnet" title=""><span>Association VSnet</span></a><ul class="level2 current"><li class="level2 sort-0" data-id="326" id="nav-326"><a href="https://www.science-valais.ch/fr/portrait/association-vsnet/gouvernance" title=""><span>Gouvernance</span></a></li><li class="level2 sort-1" data-id="166" id="nav-166"><a href="https://www.science-valais.ch/fr/portrait/association-vsnet/devenir-membre" title=""><span>Devenir membre</span></a></li></ul></li><li class="level1 sort-1" data-id="180" id="nav-180"><a href="https://www.science-valais.ch/fr/portrait/science-valais" title=""><span>Science Valais</span></a><ul class="level2"><li class="level2 sort-0" data-id="163" id="nav-163"><a href="https://www.science-valais.ch/fr/portrait/science-valais/institutions" title=""><span>Institutions</span></a></li><li class="level2 sort-1" data-id="319" id="nav-319"><a href="https://www.science-valais.ch/fr/portrait/science-valais/journee-reseau-2022" title=""><span>Journée Réseau 2022</span></a></li><li class="level2 sort-2" data-id="321" id="nav-321"><a href="https://www.science-valais.ch/fr/portrait/science-valais/festival-pint-of-science-2023" title=""><span>Festival Pint of Science 2023</span></a></li><li class="level2 sort-3" data-id="308" id="nav-308"><a href="https://www.science-valais.ch/fr/portrait/science-valais/journees-reseau-passees" title=""><span>Journées Réseau passées</span></a></li></ul></li><li class="level1 sort-2" data-id="288" id="nav-288"><a href="https://www.science-valais.ch/fr/portrait/presse" title=""><span>Presse</span></a></li></ul></li><li class="level0 sort-1" data-id="167" id="nav-167"><a href="https://www.science-valais.ch/fr/actualites" title=""><span>Actualités</span></a><ul class="level1"><li class="level1 sort-0" data-id="169" id="nav-169"><a href="https://www.science-valais.ch/fr/actualites/news" title=""><span>News</span></a></li><li class="level1 sort-1" data-id="168" id="nav-168"><a href="https://www.science-valais.ch/fr/actualites/evenements" title=""><span>Evénements</span></a></li><li class="level1 sort-2" data-id="274" id="nav-274"><a href="https://www.science-valais.ch/fr/actualites/ateliers-et-formations-continues" title=""><span>Ateliers et formations continues</span></a></li><li class="level1 sort-3" data-id="282" id="nav-282"><a href="https://www.science-valais.ch/fr/actualites/emplois-et-concours" title=""><span>Emplois et concours</span></a></li><li class="level1 sort-4" data-id="292" id="nav-292"><a href="https://www.science-valais.ch/fr/actualites/portraits-de-chercheurs-euses" title=""><span>Portraits de chercheurs/euses</span></a><ul class="level2"></ul></li></ul></li><li class="level0 sort-2" data-id="284" id="nav-284"><a href="https://www.science-valais.ch/fr/ressources" title=""><span>Ressources</span></a><ul class="level1"><li class="level1 sort-0" data-id="283" id="nav-283"><a href="https://www.science-valais.ch/fr/ressources/financement" title=""><span>Financement</span></a></li><li class="level1 sort-1" data-id="171" id="nav-171"><a href="https://www.science-valais.ch/fr/ressources/infrastructures" title=""><span>Infrastructures</span></a></li></ul></li></ul>
+						<div class="cf"></div>
+					</nav>
+				</div>
+				<div class="cf"></div>
+			</div>
+		</header>
+
+		<div id="main">
+			
+<h1 id="page_title" class="page_title">VSnet</h1>
+
+<div class="column_wrap">
+	<div class="column_double">
+		<div class="introduction">Promouvoir le r&eacute;seau scientifique valaisan</div>
+		<p><strong>L&#39;Association pour la promotion du r&eacute;seau scientifique valaisan, plus connue sous le nom &laquo;&nbsp;VSnet&nbsp;&raquo;, est une association (au sens du Code Civil Suisse) dont les membres sont des institutions valaisannes du monde de l&#39;enseignement, de la recherche, de la culture et de l&#39;information en g&eacute;n&eacute;ral.</strong></p>
+
+<h4>Objectifs:</h4>
+
+<ul>
+	<li>D&eacute;velopper et assurer la gestion et l&#39;exploitation du r&eacute;seau scientifique valaisan (VSnet). Dans ce but, elle&nbsp;entretient notamment des contacts &eacute;troits avec les universit&eacute;s ou tout autre centre de recherche ou association &agrave; but non-lucratif.</li>
+	<li>Offrir &agrave; ses membres un catalogue de prestations li&eacute;es &agrave; internet : connexion au r&eacute;seau acad&eacute;mique&nbsp;Switch, connexion priv&eacute;e de diff&eacute;rents sites d&rsquo;une institution, h&eacute;bergement web et de bases de donn&eacute;es, courrier &eacute;lectronique avec anti-spam performant, stockage de donn&eacute;es, firewall virtuel, etc.</li>
+	<li>Pr&eacute;senter &agrave; travers un portail internet la recherche et la formation sup&eacute;rieure en Valais et sur le Valais.&nbsp;</li>
+</ul>
+
+<h4>Services mutualis&eacute;s</h4>
+
+<p>Les objectifs se d&eacute;clinent en services mutualis&eacute;s selon une tarification valid&eacute;e par l&#39;Assembl&eacute;e G&eacute;n&eacute;rale. Le portefeuille des&nbsp;prestations r&eacute;alis&eacute;es par Vsnet est le suivant :</p>
+
+<ul>
+	<li><a href="https://www.science-valais.ch/fr/portrait/association-vsnet/acces-internet"><strong>Acc&egrave;s internet</strong></a></li>
+	<li><strong><a href="https://www.science-valais.ch/fr/portrait/association-vsnet/reseau-prive">R&eacute;seau priv&eacute; &amp;&nbsp;IaaS</a></strong></li>
+	<li><strong><a href="https://www.science-valais.ch/fr/portrait/association-vsnet/hebergement">H&eacute;bergement</a></strong></li>
+	<li><strong><a href="https://www.science-valais.ch/fr/portrait/association-vsnet/location-de-serveur">Location de serveur</a></strong></li>
+	<li><strong><a href="https://www.science-valais.ch/fr/portrait/association-vsnet/courrier-electronique">Courrier &eacute;lectronique</a></strong></li>
+	<li><strong><a href="https://www.science-valais.ch/fr/portrait/association-vsnet/cms-bibliotheques">CMS pour biblioth&egrave;ques</a></strong></li>
+</ul>
+
+<p>Chaque institution membre de VSnet dispose d&#39;un correspondant technique qui fait l&#39;interface entre les personnes dans l&#39;institution (personnel, &eacute;tudiants) et l&#39;&eacute;quipe VSnet</p>
+
+<p><a class="button" href="https://www.science-valais.ch/fr/portrait/association-vsnet/correspondants-techniques-locaux">Contactez votre correspondant technique</a></p>
+
+<p>&nbsp;</p>
+
+		
+	</div>
+	<div class="column">
+		
+		
+		
+		
+					<div id="portlets_portlets_right" class="portlets portlets_portlets_right">
+						<div class="portlets_inner_wrap">
+				<div class="portlet portlet_content portlet_index_1   portlet_no_title portlet_no_content hidden" id="portlet_content_56"><div class="portlet_inner"><div class="cf"></div>	<div class="portlet-content"><div id="resource_container_portlet_content_56_pictures_0" class="resource_container pictures">
+	<div id="resource_53" class="resource picture picture_0">
+		<span class="resource_background">
+		<a href="data/Cache//4/4c/4cf/4cfa/_src4cfa934b4dcb1d185913b92b16382129_pard077f271b88d92bf1586a89be472a933_dat1500636761.png"  class="resource_link fancybox" data-fancybox="fcb47a5e739da032ed9eadbcb5da1328" target="_blank" title="" data-caption="" rel="gallery_portlet_content_56"><span>
+				<img  data-srcset="data/Cache//4/4c/4cf/4cfa/_src4cfa934b4dcb1d185913b92b16382129_parde611ad325d47ee17bbf543d6764bdb5_dat1500636761.png 1x, data/Cache//4/4c/4cf/4cfa/_src4cfa934b4dcb1d185913b92b16382129_par16564c8869bd8096343d38af4c733332_dat1500636761.png 2x" data-retina="data/Cache//4/4c/4cf/4cfa/_src4cfa934b4dcb1d185913b92b16382129_par16564c8869bd8096343d38af4c733332_dat1500636761.png"  data-src="data/Cache//4/4c/4cf/4cfa/_src4cfa934b4dcb1d185913b92b16382129_parde611ad325d47ee17bbf543d6764bdb5_dat1500636761.png" src="addons/phpThump/phpThumb.php?src=../../data/Ressources/1496604075-image001.png&amp;f=png&amp;w=125&amp;q=5" alt="" class="resource_image lazyload" width="500" />
+		</span></a>
+		</span>	</div>
+<div class="cf"></div>
+</div>
+	<div class="cf"></div></div></div></div><div class="portlet portlet_content portlet_index_2   portlet_no_title" id="portlet_content_43"><div class="portlet_inner"><div class="cf"></div>	<div class="portlet-content"><div class="portlet_content_description"><p><a class="button" href="mailto:&#x69;&#110;&#102;&#111;&#x40;&#x76;&#x73;&#x6e;&#101;&#x74;&#x2e;&#99;&#x68;"><span>Contactez VSnet</span></a></p>
+</div>	<div class="cf"></div></div></div></div><div class="portlet portlet_content portlet_index_3   portlet_no_content" id="portlet_content_31"><div class="portlet_inner"><div class="cf"></div>	<h3 class="portlet-title">Documents à télécharger</h3>	<div class="portlet-content"><div class="portlet_content_description"><div id="resource_container_portlet_content_31_documents" class="resource_container documents">
+	<div id="resource_1139" class="resource document">
+		<a href="https://www.science-valais.ch?action=get_file&amp;language=fr&amp;id=87&amp;resource_link_id=5f4" target="_blank"><span>		<i class="fa fa-file-o fa-file-pdf-o"></i>		<span class="title">Tarifs VSnet 2023.pdf</span></span></a>
+	</div>
+	<div id="resource_1137" class="resource document">
+		<a href="https://www.science-valais.ch?action=get_file&amp;language=fr&amp;id=87&amp;resource_link_id=5f2" target="_blank"><span>		<i class="fa fa-file-o fa-file-pdf-o"></i>		<span class="title">Histoire de Vsnet.pdf</span></span></a>
+	</div>
+</div>
+</div>	<div class="cf"></div></div></div></div><div class="portlet portlet_content portlet_index_4 " id="portlet_content_39"><div class="portlet_inner"><div class="cf"></div>	<h3 class="portlet-title">Devenir membre</h3>	<div class="portlet-content"><div class="portlet_content_description"><p>Le statut de membre est ouvert &agrave; des institutions &agrave; but non-lucratif li&eacute;es au monde de l&#39;enseignement et de la recherche. Les personnes physiques ne peuvent pas &ecirc;tre membres VSnet.&nbsp;</p>
+
+<p><a class="button" href="https://www.science-valais.ch/fr/portrait/association-vsnet/formulaire-dadhesion"><span>Formulaire d&#39;adh&eacute;sion&nbsp;&agrave; VSnet</span></a></p>
+</div>	<div class="cf"></div></div></div></div>
+					</div>
+				</div>
+				<div class="cf"></div>
+			
+	</div>
+</div>
+			<div class="cf"></div>
+		</div>
+
+		<footer id="footer">
+			<div id="footer_line">
+				<div class="footer_inner">Le Valais scientifique : moteur d’innovation, facteur de dynamisme</div>
+			</div>
+			<div class="footer_inner">
+				<!--<div class="overlay_hidden"><img id="overlay_footer" src="https://agenda.sciencevalais.ch/img/_sciencevalais/overlay_footer.png" width="800"></div>-->
+				<div class="footer_column_wrap">
+					<div id="address" class="footer_column">
+						<div class="portlet portlet_content " id="portlet_content_4"><div class="portlet_inner"><div class="cf"></div>	<h3 class="portlet-title">ASSOCIATION VALAISANNE POUR LA PROMOTION DU RESEAU SCIENTIFIQUE VALAISAN (VSnet)</h3>	<div class="portlet-content"><div class="portlet_content_description"><p>Rue Beau-Soleil 8<br />
+3963 Crans-Montana</p>
+
+<p>&#105;&#x6e;&#x66;&#111;&#64;&#118;&#x73;&#110;&#101;&#x74;&#46;&#x63;&#x68;</p>
+
+<p>&nbsp;</p>
+
+<p>Equipe Science Valais :</p>
+
+<p>Rue de Conthey 19<br />
+1950 Sion<br />
++41 (0) 27 606 41 62 (Mer. 8h30-17h)</p>
+
+<p><a href="mailto:&#x69;&#110;&#x66;&#x6f;&#x40;&#115;&#x63;&#x69;&#x65;&#110;&#99;&#101;&#x2d;&#x76;&#x61;&#x6c;&#97;&#x69;&#x73;&#x2e;&#99;&#104;"><span>&#x69;&#x6e;&#102;&#111;&#64;&#x73;&#x63;&#x69;&#101;&#110;&#99;&#x65;&#x2d;&#x76;&#97;&#x6c;&#97;&#x69;&#115;&#46;&#x63;&#x68;</span></a></p>
+</div>	<div class="cf"></div></div></div></div>
+						<a href="https://www.science-valais.ch/fr/impressum" data-id="35" class="imprint">Impressum</a>
+						<a href="https://www.science-valais.ch/fr/politique-de-confidentialite" data-id="272" class="imprint">Politique de confidentialité</a>
+					</div>
+
+					<div id="social_media" class="footer_column">
+						<h4>Social Media</h4>
+						<a href="https://www.facebook.com/sciencevalais/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.twitter.com/sciencevalais/" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.instagram.com/sciencevalais/" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.youtube.com/channel/UCoeFflYX0qT65_ZB23uItQg" target="_blank"><i class="fab fa-youtube"></i></a>
+						<a href="https://www.linkedin.com/company/science-valais-wissenschaft-wallis" target="_blank"><i class="fab fa-linkedin"></i></a>
+					</div>
+
+					<div id="newsletter" class="footer_column">
+						
+		<!-- Begin MailChimp Signup Form -->
+		<div id="mc_embed_signup">
+			<form action="//sciencevalais.us16.list-manage.com/subscribe/post?u=d032a0d289ce4e39aa3539741&amp;id=bf988d243d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<h3>Newsletter</h3>
+				<p style="font-size: 75%; line-height:145%;margin:3px 0 7px 0;">En utilisant ce formulaire, vous acceptez que les informations que vous fournissez à MailChimp seront partagées pour traitement conformément à sa <a href='https://mailchimp.com/legal/privacy/' target='_blank'>politique de confidentialité</a> et à ses <a href='https://mailchimp.com/legal/terms/' target='_blank'>conditions d'utilisation</a>.</p>
+				<div class="cf"></div>
+				<div class="recipient_lists mc-field-group input-group">
+							<div class="mc-field-group radio_button_wrap">
+								<input type="radio" value="1" name="group[2177]" checked=checked id="mce-group[2177]-2177-0">
+								<label for="mce-group[2177]-2177-0">Newsletter pour les acteurs scientifiques</label>
+							</div>
+							<div class="cf"></div>
+						
+							<div class="mc-field-group radio_button_wrap">
+								<input type="radio" value="2" name="group[2177]"  id="mce-group[2177]-2177-1">
+								<label for="mce-group[2177]-2177-1">Newsletter pour le grand public</label>
+							</div>
+							<div class="cf"></div>
+						
+				</div>
+				<div class="mc-field-group">
+					<input type="email" value="" placeholder="E-Mail" name="EMAIL" class="required email" id="mce-EMAIL"><input type="submit" name="submitter" value="S'abonner" class="button" id="mc-embedded-subscribe">
+				</div>
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>
+				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d032a0d289ce4e39aa3539741_98360a99d9" tabindex="-1" value=""></div>
+			</form>
+		<!--End mc_embed_signup-->
+		</div>
+
+	
+					</div>
+				</div>
+				<div class="cf"></div>
+			</div>
+			<div class="cf"></div>
+		</footer>
+		<div id="partner">
+			<div class="inner">
+				
+		<div class="partner"> 
+			<span>géré par</span>
+			<a href="https://www.science-valais.ch/fr/portrait/vsnet">
+				<img src="https://agenda.sciencevalais.ch/img/_sciencevalais/footer/logo_vsnet.png" width="320">
+			</a>
+		</div>
+		<div class="partner">
+			<span>avec le soutien de</span>
+			<a href="https://www.vs.ch/fr/web/she" target="_blank">
+				<img src="https://agenda.sciencevalais.ch/img/_sciencevalais/footer/logo_canton_vs.png" height="100">
+			</a>
+			<a href="https://www.entraide.ch/fr" target="_blank">
+				<img src="https://agenda.sciencevalais.ch/img/_sciencevalais/footer/logo_lotterie_romande.jpg" height="55">
+			</a>
+		</div>
+	
+				<div class="cf"></div>
+			</div>
+		</div>
+
+	</div>
+	<div id="privacy_banner_wrap" data-privacy-page-id="161"></div>
+
+
+<!-- Javascripts -->
+<script src="https://www.science-valais.ch/scripts/jquery.min.js"></script>
+<script src="https://www.science-valais.ch/scripts/jquery.cookie.min.js"></script>
+<script src="https://www.science-valais.ch/scripts/jquery.bxslider.min.js"></script>
+<script src="https://www.science-valais.ch/addons/fancybox3/jquery.fancybox.min.js"></script>
+<script src="https://www.science-valais.ch/addons/lazysizes/lazysizes.min.js"></script>
+<script src="https://www.science-valais.ch/scripts/jquery.mixitup.min.js"></script>
+<script src="https://www.science-valais.ch/scripts/phpcomasy.min.js"></script>
+<script src="https://www.science-valais.ch/modules/portlet_listing/js/script.js"></script>
+<script src="https://www.science-valais.ch/templates/sciencevalais/js/behaviours.js"></script>
+<script src="https://www.science-valais.ch/templates/sciencevalais/js/functions.js"></script>
+<script src="https://www.science-valais.ch/templates/sciencevalais/js/iscroll.js"></script>
+<script src="https://www.science-valais.ch/templates/sciencevalais/js/jquery.blImageCenter.js"></script>
+<script src="https://www.science-valais.ch/templates/sciencevalais/js/jquery.bxslider.min.js"></script>
+<script src="https://www.science-valais.ch/templates/sciencevalais/js/jquery.columnizer.js"></script>
+<script src="https://www.science-valais.ch/templates/sciencevalais/js/jquery.sticky.js"></script>
+<script src="https://www.science-valais.ch/templates/sciencevalais/js/modernizr.js"></script>
+
+<script type="text/javascript" src="https://agenda.sciencevalais.ch/js/jquery/jquery.fitvids.js"></script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-106570110-1']);
+	_gaq.push(['_setDomainName', 'science-valais.ch']);
+	_gaq.push(['_trackPageview']);
+	_gaq.push (['_gat._anonymizeIp']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+	
+</body>
+</html>

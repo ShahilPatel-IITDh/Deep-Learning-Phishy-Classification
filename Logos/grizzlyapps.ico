@@ -1,0 +1,548 @@
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BEST Currency Converter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="resources/css/main.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/aedcf44882.js" crossorigin="anonymous"></script>
+
+</head>
+  <body> 
+    <div class="modal-wrapper">
+      <div class="modal-container">
+        <div class="modal-header">
+          <button class="close-modal">
+            <span class="close-button"></span>
+          </button>
+        </div>
+        <div class="modal-content">
+          <div class="modal-content-wrapper">
+            <div class="modal-image"></div>
+            <div class="modal-navigation">
+              <button class="modal-previous">
+                <span class="modal-arrow left"></span>
+              </button>
+              <button class="modal-next">
+                <span class="modal-arrow right"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="nav-wrapper">
+        <nav class="nav">
+          <div class="nav-logo">
+            <a href="index.php">
+              <h1>Grizzly Apps</h1>
+            </a>
+          </div>
+          <ul class="nav-items">
+            <li>
+              <a href="mailto:support@grizzlyapps.com" target="_blank">Contact Us</a>
+            </li>
+            <li>
+              <div class="add-app">
+                <a href="https://currency.grizzlyapps.com/login" target="_blank">Add App</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-container">
+      <main class="main">
+        <div class="hero">
+          <div class="hero-wrapper">
+            <div class="hero-details">
+              <h1 class="hero-heading">BEST Currency Converter</h1>
+              <p class="hero-tagline">
+                Show prices in customers local currency. Make shopping easy.
+              </p>
+              <div class="hero-rating">
+                <div class="star-rating">
+                  <div class="star-icon full-star"></div>
+                  <div class="star-icon full-star"></div>
+                  <div class="star-icon full-star"></div>
+                  <div class="star-icon full-star"></div>
+                  <div class="star-icon half-star"></div>
+                </div>
+                <a href="reviews.php">         8,789 reviews       </a>
+              </div>
+              <div class="hero-pricing">
+                <p>Free plan available</p>
+              </div>
+
+              <div class="hero-actions">
+                <div class="hero-action">
+                  <div class="add-app">
+                    <a href="https://currency.grizzlyapps.com/login" target="_blank">Add App</a>
+                  </div>
+                </div>
+                <div class="hero-action demo-store">
+                  <a href="https://doubly-2.myshopify.com/collections/all" target="_blank">View demo store</a>
+                </div>
+              </div>
+
+              <div class="hero-media">
+                <p class="hero-media-tagline"><a href="https://www.youtube.com/watch?v=E7r57PAjYfY" target="_blank">Watch video</a></p>
+                <a class="hero-media-play" href="https://www.youtube.com/watch?v=E7r57PAjYfY" target="_blank"></a>
+              </div>
+            </div>
+
+            <div class="hero-media-wrapper">
+              <div class="hero-media-pane">
+                <div class="dots dots-pink"></div>
+                <div class="rectangle"></div>
+                <div class="circle circle-transparent"></div>
+                <div class="circle circle-mascot">
+                  <img class="mascot" src="/resources/images/mascot.png" alt="mascot icon">
+                </div>
+                <div class="circle circle-yellow"></div>
+                <div class="dots dots-grey"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-listinginfo">
+          <div class="app-listinginfo-wrapper">
+            <div class="app-listinginfo-items">
+              <div class="app-listinginfo-item">
+                <h3 class="app-listinginfo-item-title">
+                  Easily add multiple currencies
+                </h3>
+                <p class="app-listinginfo-item-description">
+                  Add 160+ currencies with the push of a button. Start selling internationally like a pro and encourage your customers to buy. 
+                </p>
+              </div>
+              <div class="app-listinginfo-item">
+                <h3 class="app-listinginfo-item-title">
+                  Automatically Convert Prices 
+                </h3>
+                <p class="app-listinginfo-item-description">
+                  The prices convert automatically based on your customers location. This creates a pleasant and easy shopping experience for your customers. 
+                </p>
+              </div>
+              <div class="app-listinginfo-item">
+                <h3 class="app-listinginfo-item-title">
+                  Increase your Sales
+                </h3>
+                <p class="app-listinginfo-item-description">
+                  By helping your customers shop in their local currency you decrease customer frustration and cart abandonment, increasing your sales. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="gallery-wrapper">
+            <div class="gallery-grid">
+              <div class="gallery-content">
+                <ul class="gallery-items">
+                  <li class="gallery-item mobile-active">
+                    <img src="https://cdn.shopify.com/app-store/listing_images/0acf71ea227f225b08ce559a9b6ee9ec/desktop_screenshot/COPI2dP0lu8CEAE=.png?height=360&width=640" alt="Add multiple currencies" modal-img="1">
+                  </li>
+                  <li class="gallery-item">
+                    <img src="https://cdn.shopify.com/app-store/listing_images/0acf71ea227f225b08ce559a9b6ee9ec/desktop_screenshot/CK-79dD0lu8CEAE=.png?height=360&width=640" alt="Great currency converter themes" modal-img="2">
+                  </li>
+                  <li class="gallery-item">
+                    <img src="https://cdn.shopify.com/app-store/listing_images/0acf71ea227f225b08ce559a9b6ee9ec/desktop_screenshot/CObNsN70lu8CEAE=.png?height=360&width=640" alt="Convert from USD" modal-img="3">
+                  </li>
+                  <li class="gallery-item">
+                    <img src="https://cdn.shopify.com/app-store/listing_images/0acf71ea227f225b08ce559a9b6ee9ec/desktop_screenshot/CIe5iqz0lu8CEAE=.png?height=360&width=640" alt="Convert to EUR" modal-img="4">
+                  </li>
+                  <li class="gallery-item">
+                    <img src="https://cdn.shopify.com/app-store/listing_images/0acf71ea227f225b08ce559a9b6ee9ec/mobile_screenshot/COmBhKb0lu8CEAE=.png?height=360&width=640" alt="Change currencies on mobile" modal-img="5">
+                  </li>
+                  <li class="gallery-item">
+                    <img src="https://cdn.shopify.com/app-store/listing_images/0acf71ea227f225b08ce559a9b6ee9ec/mobile_screenshot/CIqa1rH0lu8CEAE=.png?height=360&width=640" alt="Automatically Convert Prices on mobile" modal-img="6">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="gallery-count">1 of 6</div>
+            <div class="gallery-actions">
+              <button class="galery-previous">
+                <span class="gallery-arrow left"></span>
+              </button>
+              <button class="galery-next">
+                <span class="gallery-arrow right"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <section class="details">
+          <div class="details-wrapper">
+            <div class="details-content">
+              <div class="details-description">
+                <h4>Works with any Theme</h4>
+                <p>Works out of the box with any theme, and looks amazing!</p>
+                <h4>Supports any Currency</h4>
+                <p>Works with 160+ currencies including Bitcoin. Converts prices instantly, on any devices, any theme, even if you use ajax. You can even add all the currencies with the push of a button.</p>
+                <p>Currency Rates get updated twice a day.</p>
+                <h4>Auto-select currency based on Customer's Location</h4>
+                <p>The app detects your customer's location and automatically selects the currency for them. They can also change it manually if they wish from the Currency Switcher.</p>
+                <h4>Beautiful Design</h4>
+                <p>Choose from 3 different currency converter themes, one more beautiful than the other.</p>
+                <h4>Price configuration</h4>
+                <p>Removing price decimals is as easy as Pi, so that your customers can see beautiful converted prices like €3 instead of €3.14159.</p>
+                <h4>Our app informs your customers</h4>
+                <p>Since Shopify doesn't allow us to convert the prices on the Checkout page, we came up with a few ways to inform your customers of this. Either with a custom message on the cart page or if they hover over the converted prices, they'll be able to still see the original prices.</p>
+              </div>      
+            </div>
+          </div>
+        </section>
+
+        <section class="pricing">
+          <div class="plans-wrapper">
+            <div class="plans-content">
+              <div class="pricing-plans">
+                <div class="pricing-plan-card">
+                  <div class="pricing-plan-title">
+                    <h3 class="pricing-plan-title-header">
+                      <i class="fa-solid fa-tree"></i> Free plan
+                    </h3>
+                  </div>
+                  <ul class="pricing-plan-details">
+                    <li>
+                      <div class="pricing-plan-check">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </div>
+                      Free for life
+                    </li>
+                    <li>
+                      <div class="pricing-plan-check">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </div>
+                      Add up to 5 currencies 
+                    </li>
+                    <li>
+                      <div class="pricing-plan-check">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </div>
+                      3 beautiful designs 
+                    </li>
+                  </ul>
+                  <hr>
+                  <div class="pricing-plan-footer">
+                    <h3>Free</h3>
+                  </div>
+                </div>
+                <div class="pricing-plan-card elite-card">
+                  <div class="pricing-plan-title">
+                    <h3 class="pricing-plan-title-header">
+                      <i class="fa-solid fa-coins"></i>  Elite plan
+                    </h3>
+                  </div>
+                  <ul class="pricing-plan-details">
+                    <li>
+                      <div class="pricing-plan-check">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </div>
+                      30 days free trial 
+                    </li>
+                    <li>
+                      <div class="pricing-plan-check">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </div>
+                      160+ currencies
+                    </li>
+                    <li>
+                      <div class="pricing-plan-check">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </div>
+                      3 beautiful designs
+                    </li>
+                    <li>
+                      <div class="pricing-plan-check">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </div>
+                      Auto switch by customer location 
+                    </li>
+                    <li>
+                      <div class="pricing-plan-check">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </div>
+                      Checkout currency notification 
+                    </li>
+                  </ul>
+                  <hr>
+                  <div class="pricing-plan-footer">
+                    <h3>$9.95</h3>
+                    <p>/month</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <div class="reviews-wrapper">
+            <div class="reviews-content">
+              <div class="reviews-item">
+                <h2 class="reviews-header">Reviews</h2>
+              </div>
+            </div>
+            <div class="reviews-content">
+              <div class="reviews-item one-grid">
+                <div class="reviews-summary">
+                  <div class="reviews-heading-wrapper">
+                    <button class="reviews-heading">Overall rating</button>
+                    <span class="overall-rating">
+                      <div class="overall-rating-wrapper">
+                        <span class="overall-star-rating-star star-icon full-star"></span>
+                        <span class="overall-star-rating-star star-icon full-star"></span>
+                        <span class="overall-star-rating-star star-icon full-star"></span>
+                        <span class="overall-star-rating-star star-icon full-star"></span>
+                        <span class="overall-star-rating-star star-icon half-star"></span>
+                        <span class="overall-star-rating-text">       4.7     </span>
+                      </div>
+                    </span>
+                  </div>
+
+                  <ul class="reviews-rating-list">
+                    <li class="reviews-rating">
+                      <div class="reviews-star-rating">
+                        <div class="star-rating">
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon full-star"></div>
+                        </div>
+                      </div>
+                      <div class="reviews-progress">
+                        <div class="progress-bar">
+                          <span class="progress-bar-fill" style="width: 85%;"></span>
+                        </div>
+                      </div>
+                      <div class="reviews-count">
+                        <span class="reviews-count-text">                                7.4K                 </span>
+                      </div>
+                    </li>
+                    <li class="reviews-rating">
+                      <div class="reviews-star-rating">
+                        <div class="star-rating">
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon empty-star"></div>
+                        </div>
+                      </div>
+                      <div class="reviews-progress">
+                        <div class="progress-bar">
+                          <span class="progress-bar-fill" style="width: 11%;"></span>
+                        </div>
+                      </div>
+                      <div class="reviews-count">
+                        <span class="reviews-count-text">                                932                 </span>
+                      </div>
+                    </li>
+                    <li class="reviews-rating">
+                      <div class="reviews-star-rating">
+                        <div class="star-rating">
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon empty-star"></div>
+                          <div class="star-icon empty-star"></div>
+                        </div>
+                      </div>
+                      <div class="reviews-progress">
+                        <div class="progress-bar">
+                          <span class="progress-bar-fill" style="width: 2%;"></span>
+                        </div>
+                      </div>
+                      <div class="reviews-count">
+                        <span class="reviews-count-text">                                209                 </span>
+                      </div>
+                    </li>
+                    <li class="reviews-rating">
+                      <div class="reviews-star-rating">
+                        <div class="star-rating">
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon empty-star"></div>
+                          <div class="star-icon empty-star"></div>
+                          <div class="star-icon empty-star"></div>
+                        </div>
+                      </div>
+                      <div class="reviews-progress">
+                        <div class="progress-bar">
+                          <span class="progress-bar-fill" style="width: 1%;"></span>
+                        </div>
+                      </div>
+                      <div class="reviews-count">
+                        <span class="reviews-count-text">                                57                 </span>
+                      </div>
+                    </li>
+                    <li class="reviews-rating">
+                      <div class="reviews-star-rating">
+                        <div class="star-rating">
+                          <div class="star-icon full-star"></div>
+                          <div class="star-icon empty-star"></div>
+                          <div class="star-icon empty-star"></div>
+                          <div class="star-icon empty-star"></div>
+                          <div class="star-icon empty-star"></div>
+                        </div>
+                      </div>
+                      <div class="reviews-progress">
+                        <div class="progress-bar">
+                          <span class="progress-bar-fill" style="width: 2%;"></span>
+                        </div>
+                      </div>
+                      <div class="reviews-count">
+                        <span class="reviews-count-text">                                152                 </span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="review-all-link">
+                    <a href="reviews.php">
+                      <span>View all          8,789 reviews       </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-item two-grid">
+                <div class="review-element">
+                        <div class="review-info">
+                            <div class="star-rating"><div class="star-icon full-star"></div><div class="star-icon full-star"></div><div class="star-icon full-star"></div><div class="star-icon full-star"></div><div class="star-icon full-star"></div></div>
+                            <div class="review-info-label">         <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>    </div>
+                        </div>
+                        <div class="review-element-header">
+                            <a class="shop-name"  target="_blank">
+                                <h3 class="review-element-header">Awesome app. Can’t believe it’s free! Customer service is top notch and super responsive to customized requests to fit my website’s themes and very fast to address any issues. 100% recommend! Download it now!</h3>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="review-content">
+                            <p>           September 13,</p>
+                        </div>
+                    </div><div class="review-element">
+                        <div class="review-info">
+                            <div class="star-rating"><div class="star-icon full-star"></div><div class="star-icon full-star"></div><div class="star-icon full-star"></div><div class="star-icon full-star"></div><div class="star-icon full-star"></div></div>
+                            <div class="review-info-label">         <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>    </div>
+                        </div>
+                        <div class="review-element-header">
+                            <a class="shop-name"  target="_blank">
+                                <h3 class="review-element-header">awesome but some time is breck the website please help me if find the review</h3>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="review-content">
+                            <p>           August 24,</p>
+                        </div>
+                    </div><div class="review-element">
+                        <div class="review-info">
+                            <div class="star-rating"><div class="star-icon full-star"></div><div class="star-icon full-star"></div><div class="star-icon full-star"></div><div class="star-icon full-star"></div><div class="star-icon full-star"></div></div>
+                            <div class="review-info-label">         <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>          <svg class="tw-fill-fg-primary tw-w-md tw-h-md" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.75C8.14001 0.74991 8.27725 0.789014 8.39619 0.862887C8.51513 0.93676 8.61102 1.04245 8.673 1.168L10.555 4.983L14.765 5.595C14.9035 5.61511 15.0335 5.67355 15.1405 5.76372C15.2475 5.85388 15.3271 5.97218 15.3704 6.10523C15.4137 6.23829 15.4189 6.3808 15.3854 6.51665C15.3519 6.6525 15.2811 6.77628 15.181 6.874L12.135 9.844L12.854 14.036C12.8777 14.1739 12.8624 14.3157 12.8097 14.4454C12.757 14.5751 12.6691 14.6874 12.5559 14.7697C12.4427 14.852 12.3087 14.901 12.1691 14.9111C12.0295 14.9212 11.8899 14.8921 11.766 14.827L8 12.847L4.234 14.827C4.11018 14.892 3.97066 14.9211 3.83119 14.911C3.69171 14.9009 3.55784 14.852 3.44468 14.7699C3.33152 14.6877 3.24359 14.5755 3.19081 14.446C3.13803 14.3165 3.12251 14.1749 3.146 14.037L3.866 9.843L0.817997 6.874C0.717563 6.77632 0.646496 6.65247 0.612848 6.51647C0.579201 6.38047 0.584318 6.23777 0.627621 6.10453C0.670924 5.97129 0.75068 5.85284 0.857852 5.76261C0.965025 5.67238 1.09533 5.61397 1.234 5.594L5.444 4.983L7.327 1.168C7.38898 1.04245 7.48486 0.93676 7.6038 0.862887C7.72274 0.789014 7.85998 0.74991 8 0.75Z"/> </svg>    </div>
+                        </div>
+                        <div class="review-element-header">
+                            <a class="shop-name"  target="_blank">
+                                <h3 class="review-element-header">This app works like a charm. But for that you all have to set up a little thing in your Shopify store, no need to worry guys the app will tell you what to change and how to change it. After completing the whole process the app will run smoothly.</h3>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="review-content">
+                            <p>           July 24,</p>
+                        </div>
+                    </div>                <div class="view-all-button-wrapper">
+                  <a class="view-all-button" href="reviews.php">View all reviews</a>
+                </div>
+              </div>
+            </div>  
+          </div>  
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <nav class="footer-nav">
+            <ul class="footer-nav-items">
+              <li class="footer-nav-item">
+                <a href="https://currency.grizzlyapps.com/privacy-policy" target="_blank">Privacy Policy</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="https://currency.grizzlyapps.com/terms-and-conditions" target="_blank">Terms and Conditions</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="mailto:support@grizzlyapps.com" target="_blank">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+  <script>
+    function toggleGalleryModal() {
+      $('.gallery-item').bind('click.openModal touchend.openModal', function() {
+        let modalImage = $(this).find('img')[0].outerHTML;
+        increaseRezolution(modalImage);
+        $('body').toggleClass('modal-active');
+      });
+      $('.close-modal').bind('click.openModal touchend.openModal', function() {
+        $('body').toggleClass('modal-active');
+      });
+    }
+
+    function modalNavigationBind() {
+      $('.modal-previous').bind('click.modalNavigate touchend.modalNavigate', function() {
+        let prevImageNr = parseInt($('.modal-image img').attr('modal-img')) - 1;
+        let prevImage = $('.gallery-item img[modal-img="'+(prevImageNr == 0 ? 6 : prevImageNr)+'"]')[0].outerHTML;
+        increaseRezolution(prevImage);
+      });
+
+      $('.modal-next').bind('click.modalNavigate touchend.modalNavigate', function() {
+        let nextImageNr = parseInt($('.modal-image img').attr('modal-img')) + 1;
+        let nextImage = $('.gallery-item img[modal-img="'+(nextImageNr == 7 ? 1 : nextImageNr)+'"]')[0].outerHTML;
+        increaseRezolution(nextImage);
+      });
+    }
+
+    function mobileGalleryCarousel() {
+      $('.galery-previous').bind('click.galleryNavigate touchend.galleryNavigate', function() {
+        let prevImageNr = parseInt($('.gallery-item.mobile-active img').attr('modal-img')) - 1;
+        $('.gallery-item').removeClass('mobile-active');
+        $('.gallery-item img[modal-img="'+(prevImageNr == 0 ? 6 : prevImageNr)+'"]').parent().addClass('mobile-active');
+        $('.gallery-count').text((prevImageNr == 0 ? 6 : prevImageNr)+' of 6');
+      });
+
+      $('.galery-next').bind('click.galleryNavigate touchend.galleryNavigate', function() {
+        let nextImageNr = parseInt($('.gallery-item.mobile-active img').attr('modal-img')) + 1;
+        $('.gallery-item').removeClass('mobile-active');
+        $('.gallery-item img[modal-img="'+(nextImageNr == 7 ? 1 : nextImageNr)+'"]').parent().addClass('mobile-active');
+        $('.gallery-count').text((nextImageNr == 7 ? 1 : nextImageNr)+' of 6');
+      });
+    }
+
+    function increaseRezolution(img) {
+      img = img.toString();
+      let firstSplit = img.indexOf('png?');
+      let secondSplit = img.indexOf('" alt');
+      let firstBit = img.substring(0,firstSplit+4);
+      let lastBit = img.substring(secondSplit);
+      $('.modal-image').html(firstBit+'height=900&amp;width=1600'+lastBit);
+    }
+
+    toggleGalleryModal();
+    modalNavigationBind();
+    mobileGalleryCarousel();
+  
+  </script>
+
+  </body>
+</html>

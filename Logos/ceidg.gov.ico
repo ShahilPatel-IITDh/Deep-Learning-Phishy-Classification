@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><meta http-equiv="X-UA-Compatible" content="ie=edge" /><title>
+	Strona Główna | Ceidg.gov.pl - Centralna Ewidencja i Informacja o Działalności Gospodarczej
+</title><meta name="keywords" content="Ceidg.gov.pl - Centralna Ewidencja i Informacja o Działalności Gospodarczej" /><meta name="description" content="Centralna Ewidencja i Informacja o Działalności Gospodarczej" /><meta name="theme-color" content="#FDFDFD" /><link rel="icon" href="favicon.png" /><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /><link href="/CEIDG/Styles/bootstrap-gov-pl.css" rel="stylesheet"/>
+<link href="/CEIDG/Styles/biznes.css" rel="stylesheet"/>
+<link href="/CEIDG/Styles/new-biznes-ceidg.css" rel="stylesheet"/>
+<link href="/CEIDG/Styles/AdminLTE.css" rel="stylesheet"/>
+<link href="/CEIDG/Styles/nowyBiznes.css" rel="stylesheet"/>
+<link href="/CEIDG/Styles/Index.css" rel="stylesheet"/>
+<link href="/CEIDG/Content/fontawesome-all.min.css" rel="stylesheet"/>
+
+    <script src="/CEIDG/Scripts/jquery-3.0.0.js"></script>
+<script src="/CEIDG/Scripts/jquery-migrate-1.2.1.js"></script>
+<script src="/CEIDG/Scripts/jquery-ui.js"></script>
+<script src="/CEIDG/Scripts/ceidg-master.js"></script>
+<script src="/CEIDG/Scripts/CommonScripts.js"></script>
+<script src="/CEIDG/Scripts/CommonResponsive.js"></script>
+<script src="/CEIDG/Scripts/jquery.alerts.js"></script>
+<script src="/CEIDG/Scripts/json2.js"></script>
+<script src="/CEIDG/Scripts/ui.datepicker-pl.js"></script>
+<script src="/CEIDG/Scripts/jquery.easing.1.3.js"></script>
+<script src="/CEIDG/Scripts/jquery.cookie.js"></script>
+<script src="/CEIDG/Scripts/jquery.feedbackBadge.min.js"></script>
+<script src="/CEIDG/Scripts/jquery.notify.min.js"></script>
+<script src="/CEIDG/Scripts/feedback.js"></script>
+<script src="/CEIDG/Scripts/SessionTimeout.js"></script>
+<script src="/CEIDG/Scripts/umd/popper.js"></script>
+<script src="/CEIDG/Scripts/bootstrap.js"></script>
+<script src="/CEIDG/Scripts/adminlte.min.js"></script>
+<script src="/CEIDG/Scripts/jquery.maskedinput-1.2.2.js"></script>
+<script src="/CEIDG/Scripts/inputmask/jquery.inputmask.min.js"></script>
+<script src="/CEIDG/Scripts/inputmask/bindings/inputmask.binding.js"></script>
+<script src="/CEIDG/Scripts/moment-with-locales.min.js"></script>
+<script src="/CEIDG/Scripts/daterangepicker-master/daterangepicker.js"></script>
+<script src="/CEIDG/Scripts/jquery.session.js"></script>
+
+    
+    <script type="text/javascript" src="../ceidg/Scripts/jquery.corner.2.11.js"></script>
+    <link href="/CEIDG/Styles/Index.css" rel="stylesheet" type="text/css" />
+    <link href="/CEIDG/Styles/biznes.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body style="overflow-y: scroll;" class="siteMasterBody sidebar-mini sidebar-collapse">
+
+    
+
+    <nav class="sr-only-focusable skip-to-content">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link sr-only sr-only-focusable" href="#maincontent">
+                    Przejdź do treści</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link sr-only sr-only-focusable" href="#menucontent">
+                    Przejdź do menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link sr-only sr-only-focusable" href="#help-row">
+                    Przejdź do Centrum Pomocy</a>
+            </li>
+        </ul>
+    </nav>
+
+    <form method="post" action="./Index.aspx" id="aspnetForm" class="wrapper" style="height: auto; min-height: 100%;">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTgxNjU0ODYyNA9kFgJmD2QWBAIDDxYCHgdWaXNpYmxlaGQCBQ9kFg4CBQ8WAh8AaBYEAgEPFgIeBFRleHRlZAIDDxYCHwFlZAIJDxYCHgRocmVmBSlodHRwczovL3d3dy5iaXpuZXMuZ292LnBsL3BsL3BvcnRhbC8wMzE1NRYCAgEPDxYCHwEFJDxsYW5nPkZvcm11bGFyemUgaSBpbnN0cnVrY2plPC9sYW5nPmRkAgsPFgIfAgVUaHR0cHM6Ly9hcGxpa2FjamEuY2VpZGcuZ292LnBsL0NFSURHLkNNUy5FTkdJTkUvLi4vQ0VJREcvQ0VJREcuUHVibGljLlVJL1NlYXJjaC5hc3B4FgICAQ8PFgIfAQUePGxhbmc+V3lzenVraXdhcmthIGZpcm08L2xhbmc+ZGQCDQ8WAh8AaGQCDw8WAh8CBSZodHRwczovL2xvZ293YW5pZS5iaXpuZXMuZ292LnBsL2xvZ2luLxYCAgEPDxYCHwEFIjxsYW5nPktvbnRvIHByemVkc2nEmWJpb3JjeTwvbGFuZz5kZAIXDxYCHwEFCSBTZXJ3ZXIgQWQCIw8WAh8BBeIDPHNjcmlwdD52YXIgX2dhcSA9IF9nYXEgfHwgW107ICAgX2dhcS5wdXNoKFsnX3NldEFjY291bnQnLCAnVUEtMjQzODA1ODYtMSddKTsgICAgX2dhcS5wdXNoKFsnX3NldFZhcicsICduaWV6YWxvZ293YW55J10pOyAgICBfZ2FxLnB1c2goWydfdHJhY2tQYWdldmlldyddKTsgICAgKGZ1bmN0aW9uKCkgeyAgdmFyIGdhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7IGdhLnR5cGUgPSAndGV4dC9qYXZhc2NyaXB0JzsgZ2EuYXN5bmMgPSB0cnVlOyAgICBnYS5zcmMgPSAoJ2h0dHBzOicgPT0gZG9jdW1lbnQubG9jYXRpb24ucHJvdG9jb2wgPyAnaHR0cHM6Ly9zc2wnIDogJ2h0dHA6Ly93d3cnKSArICcuZ29vZ2xlLWFuYWx5dGljcy5jb20vZ2EuanMnOyAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOyBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGdhLCBzKTsgfSkoKTs8L3NjcmlwdD5kZAxrV5wbyN0CKrL6NAtRlYLECP+4" />
+
+
+<script src="/CEIDG/ScriptResource.axd?d=RFep6JT2A4LZO2iMBru5ygI1GG_Kr-Sr99iIpMfpiv4eeDjzd6pvJf70SphKDvr9HWiBePf4W5oGRHcwHttwSwfnQ3AlsF_NBZe_zuwObaSfImGp51mIvP2nRRQuvQk6-dtGj7fOidMACDMV5kiq_pqrBF1Vh3K8hPJKFyQ9y9n349iub7mrixzm2-uS70Z709o2eOB8yULSD7cgQWbT_FsSnOfbVgec-v6S9B5ETQ4Vk2JRHk6GYmEDPRkTUaJhIqt-v0HL6ZHvg5fTvJfuTrvRX1GWM1lmquz2KKVW2M6TIU9V0" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BB71FCEF" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAzIR9cA9LxAqsfz4g6pSZ3ccRQGRuTH5oIs2b3SYHF1D4qKDiOZm6h1VkHLuvLcjGkv+3HzMaIa54FDut1dgW+tqGX8oSdktq9YmnNR0MTSZdksfUvVdahDgqVAS+2dNlLP8CgHwV0DL8mM9QApY+SDuXksWWdtbIsMuhsyn7rmI+ZAL8ZnvJOhPqMFthh/X6YwixsvcFzqI2nSRYgVokKYKFmvtepiNUxcBpP0488SX3dsnKHJZ6HNsAmNR5rL5NKqvpUTzgEae2tZiKNYrSh3nZlfRA==" />
+        
+
+        
+
+        
+        <div class="content-wrapper" style="min-height: 926px;">
+            <div id="main-container" class="main-container">
+                <div class="row">
+                    <div class="first-col">
+                        <div class="row header top-row sticky">
+                            <div class="col">
+                                <div class="gov-pl">gov.pl</div>
+                            </div>
+                        </div>
+                        <div class="row header">
+                            <div class="col">
+                                <img class="logo" src="/ceidg.cms.engine/images/logo2.jpg" alt="Godło Rzeczypospolitej Polskiej" />
+                            </div>
+                        </div>
+                        <div class="row header">
+                            <div class="col eu-logo">
+                                <img src="/ceidg.cms.engine/images/UE_pl_top.svg" width="108" class="d-none d-md-inline-block" alt="EU" />
+                                <img src="/ceidg.cms.engine/images/UE_pl_top_sm.svg" width="30" class="d-md-none" alt="EU" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col main-col">
+                        <div class="row header top-row">
+                            <div class="col">
+                                <span class="welcome d-none d-md-inline-block">
+                                    Centralna Ewidencja i Informacja o Działalności Gospodarczej
+                                </span>
+                                <nav class="nav top-nav sps sps--abv" data-sps-offset="35">
+                                    
+                                    <a href="javascript:changeLangMap()" id="linkChangeLanguage" class="nav-link">
+                                        <span class="sr-only">
+                                            Change language to</span>
+                                        <span class="d-none d-lg-inline">
+                                            English</span>
+                                        <span class="d-lg-none">
+                                            English</span>
+                                    </a>
+
+                                    
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="row header">
+                            <div class="col-md-8 col-12 title">
+                                <a href="#" id="linkHome">
+                                    <span class="ceidg-gov-title">Ceidg.gov.pl</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="menustart"></div>
+                        <div class="row header menu-row sticky sps sps--abv" data-sps-offset="55">
+                            <div class="col">
+                                <nav class="navbar navbar-expand-lg">
+                                    <button id="header-navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Przełącz nawigację">
+                                        <i class="fas fa-bars" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="mainnav">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a href="https://www.biznes.gov.pl/pl/portal/03155" id="linkMenu1" class="nav-link">
+                                                    <span id="lblMenu1">Formularze i instrukcje</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="https://aplikacja.ceidg.gov.pl/CEIDG.CMS.ENGINE/../CEIDG/CEIDG.Public.UI/Search.aspx" id="linkMenu2" class="nav-link">
+                                                    <span id="lblMenu2">Wyszukiwarka firm</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav nav-help">
+                                    </div>
+                                    
+                                    <ul class="nav ">
+                                        <li class="nav-item">
+                                            
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="https://logowanie.biznes.gov.pl/login/" id="linkMenu3" class="nav-link">
+                                                <span id="lblMenu3">Konto przedsiębiorcy</span></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="row header sticky alerts-row">
+                            <div id="alerts">
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="help-row">
+                            <div class="row header align-items-center">
+                                <div class="col" id="help-container">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="pnlBreadcrumb" class="row header breadcrumbs-row">
+                            <div class="col">
+                                <nav aria-label="Okruszki strony">
+                                    <div id="breadCrumbMenu">
+                                        <ul id="siteMapPath" class="breadcrumbs"></ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="row" id="maincontent" role='main'>
+                            <div class="col">
+                                <article class="content-box">
+                                    
+
+                                    
+
+    
+
+    <h1 class="sr-only">Centralna Ewidencja i Informacja o Działalności Gospodarczej</h1>
+
+    <h2>Usługi CEIDG</h2>
+
+    <div id="MainContentForm_buttons" class="box-group col">	    
+            <div class="services-box">
+	                    <div class="box box-outline-primary box-with-button">
+                            <span id="MainContentForm_Label1" class="services-box-label">W prosty sposób utwórz wniosek do CEIDG. Możesz go wysłać elektronicznie lub podpisać w urzędzie</span>
+                            <input type="submit" name="ctl00$MainContentForm$btnExternalUser" value="ZAREJESTRUJ FIRMĘ" id="MainContentForm_btnExternalUser" class="btn btn-primary w-lg-5 services-box-btn" />
+	                   </div>
+            </div>
+          <div class="services-box" style="margin-left: 30px;">
+                       <div class="box box-outline-primary box-with-button">
+                            <span id="MainContentForm_Label2" class="services-box-label">Zmień dane firmy, zawieś, wznów lub zamknij działalność gospodarczą</span>
+                            <input type="submit" name="ctl00$MainContentForm$btnInternalUser" value="ZMIEŃ DANE W CEIDG" id="MainContentForm_btnInternalUser" class="btn btn-primary w-lg-5 services-box-btn" />
+	                   </div>
+          </div>
+     </div>
+
+    <h2>Ważne informacje</h2>
+
+    <div class="container" style="padding-left: 0px; padding-right: 0px;"">
+  <div class="row">
+    <div class="col-sm">
+        <img class="index-box" src="/CEIDG/Images/Index/informacjentprowadzeniafirmywpolsce.jpg" alt="Informacje na temat prowadzenia firmy w Polsce"/>
+        <b><a class="index-href" href="https://www.biznes.gov.pl/pl/portal/0516">Informacje na temat prowadzenia firmy w Polsce</a></b>
+    </div>
+    <div class="col-sm">
+        <img class="index-box" src="/CEIDG/Images/Index/wyszukiwarkakodowpkd.jpg" alt="Wyszukiwarka kodów PKD"/>
+        <b><a class="index-href" href="https://www.biznes.gov.pl/pl/tabela-pkd">Wyszukiwarka kodów PKD</a></b>
+    </div>
+    <div class="col-sm">
+        <img class="index-box" src="/CEIDG/Images/Index/bialalistapodatnikowvat.jpg" alt="Biała lista podatników VAT"/>
+        <b><a class="index-href" href="https://www.podatki.gov.pl/wykaz-podatnikow-vat-wyszukiwarka">Biała lista podatników VAT</a></b>
+    </div>
+  </div>
+</div>
+
+	
+		<script type="text/javascript" src="https://static.inteliwise.com/embed/ad60db20a05220368f16043a24241a081448991d2184068a412291451ea49fb8/3061/space.js" async ></script>
+	
+
+                                </article>
+                            </div>
+                        </div>
+                        <footer>
+                            <div class="row links">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col footer-title">
+                                            <a href="https://www.gov.pl/" rel="noopener noreferrer" target="_blank" title="Przejść do strony głównej gov.pl. Strona otworzy się w nowej karcie.">gov.pl</a> /
+                                            <h2><span class="sr-only">Mapa </span>Ceidg.gov.pl</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <ul>
+                                                <li><a rel="noopener noreferrer" target="_blank" title="Strona otworzy się w nowej karcie" href="https://aplikacja.ceidg.gov.pl/">
+                                                    Aplikacja urzędnika CEIDG</a></li>
+                                                <li><a rel="noopener noreferrer" target="_blank" title="Strona otworzy się w nowej karcie" href="https://akademia.biznes.gov.pl/rdr/">
+                                                    Współpraca i komunikaty</a></li>
+                                                <li><a rel="noopener noreferrer" target="_blank" title="Strona otworzy się w nowej karcie" href="https://dane.biznes.gov.pl/">
+                                                    Dane i statystyki</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm">
+                                            <ul>
+                                                <li><a rel="noopener noreferrer" target="_blank" title="Strona otworzy się w nowej karcie" href="https://www.biznes.gov.pl/pl/centrum-pomoc">
+                                                    Centrum pomocy</a></li>
+                                                <li><a rel="noopener noreferrer" target="_blank" title="Strona otworzy się w nowej karcie" href="https://www.biznes.gov.pl/pl/portal/03127">
+                                                    Punkty kontaktowe UE</a></li>
+                                                <li><a rel="noopener noreferrer" target="_blank" title="Strona otworzy się w nowej karcie" href="https://www.biznes.gov.pl/pl/portal/03130">
+                                                    O nas</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm">
+                                            <ul>
+                                                <li><a rel="noopener noreferrer" target="_blank" title="Strona otworzy się w nowej karcie" href="https://www.biznes.gov.pl/pl/deklaracja">
+                                                    Deklaracja dostępności</a></li>
+                                                <li><a rel="noopener noreferrer" target="_blank" title="Strona otworzy się w nowej karcie" href="https://www.biznes.gov.pl/pl/polityka-prywatnosci">
+                                                    Polityka prywatności</a></li>
+                                                <li><a rel="noopener noreferrer" target="_blank" title="Strona otworzy się w nowej karcie" href="https://www.biznes.gov.pl/pl/uwagi-prawne">
+                                                    Uwagi prawne</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm footer-icons">
+                                            <ul class="list-unstyled d-flex flex-row">
+                                                <li>
+                                                    <a href="https://www.facebook.com/biznesgovpl/" class="mr-4">
+                                                        <img class="footer-icon" src="./Images/f_icon.svg"
+                                                            alt="Facebook" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.youtube.com/c/biznesgovpl" class="mr-4">
+                                                        <img class="footer-icon" src="./Images/yt_icon.svg"
+                                                            alt="Youtube" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.linkedin.com/company/biznes-gov-pl/" class="mr-4">
+                                                        <img class="footer-icon" src="./Images/li_icon.svg"
+                                                            alt="inkedin" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row info">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <p class="text-center">
+                                                Portal nadzorowany jest przez
+                                                <a rel="noopener noreferrer" target="_blank" title="Strona otworzy się w nowej karcie" href="http://www.mrpit.gov.pl/" class="alt-link">
+                                                    Ministerstwo Rozwoju i Technologii</a>,
+                                                współfinansowany ze środków Unii Europejskiej w ramach Europejskiego Funduszu Rozwoju Regionalnego
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row hidden-xs">
+                                        
+                                        <div class="col logos">
+                                            <div>
+                                                <img src="/CEIDG/Images/Index/FE_PC_pl.png" style="display: inline-block" class="img-responsive" alt="Logo Funduszy Europejskich" />
+                                            </div>
+                                            <div>
+                                                <img src="/CEIDG/Images/Index/PL_pl.png" style="display: inline-block" class="img-responsive" alt="Flaga Rzeczypospolitej Polskiej" />
+                                            </div>
+                                            <div>
+                                                <img src="/CEIDG/Images/Index/UE_pl_down.png" style="display: inline-block" class="img-responsive" alt="Logo Unii Europejskiej" />
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            
+                                            <p class="text-right">
+                                                 Serwer A
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <input name="ctl00$hfAuthRequired" type="hidden" id="hfAuthRequired" class="hfAuthRequired" value="False" />
+        <input name="ctl00$hfCeidgSiteMaster" type="hidden" id="hfCeidgSiteMaster" value="true" />
+        <input name="ctl00$hfAuth" type="hidden" id="hfAuth" value="false" />
+        <input name="ctl00$hfSessionTimeoutMsg" type="hidden" id="hfSessionTimeoutMsg" value="przeniesiony z bieżącej strony" />
+        <button id="idletimeout-resume-hidden" type="button" class="d-none">
+            Przedłuż sesję</button>
+        <input type="hidden" name="ctl00$hfEnglishWebsiteUrl" id="hfEnglishWebsiteUrl" value="/CEIDG.CMS.ENGINE/?D;f124ce8a-3e72-4588-8380-63e8ad33621f" />
+        <div id="notifyContainer" style="display: none">
+            <div id="withIcon">
+                <a class="ui-notify-close ui-notify-cross" href="#">x</a>
+                <div>
+                    #{text}
+                </div>
+            </div>
+        </div>
+        <div id="global_popup_container">
+        </div>
+        <script>var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-24380586-1']);    _gaq.push(['_setVar', 'niezalogowany']);    _gaq.push(['_trackPageview']);    (function() {  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+        <input type="hidden" name="ctl00$stWarningLength" id="stWarningLength" value="30" />
+        <input type="hidden" name="ctl00$stIdleAfter" id="stIdleAfter" value="1200" />
+        <input type="hidden" name="ctl00$stPollingInterval" id="stPollingInterval" value="60" />
+        <input type="hidden" name="ctl00$stMultiTabTimeoutSyncInterval" id="stMultiTabTimeoutSyncInterval" value="20" />
+    <script>var serverDateNow = new Date(2023,9,10,2,4,50);</script></form>
+</body>
+</html>

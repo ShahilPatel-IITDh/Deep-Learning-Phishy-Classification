@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function reload1() {
+            var url = window.location.href;
+            var host = location.hostname;
+            var ssl = location.protocol;
+            var pathname = location.pathname;
+            var search = window.location.search;
+            if (host.indexOf('rguhs') >= 0) {
+                if (pathname.indexOf('myeasydocs_new/student/ebsresponse.html') >= 0) {
+                    window.location = url.replace('myeasydocs_new/student', 'rgstudent');
+                    }
+            }
+            else if (pathname.indexOf('student/homepage.html') >= 0) {
+                window.location = url.replace('myeasydocs_new/', '');
+            } else if (pathname.indexOf('ebsresponse.html') >= 0) {
+                window.location = url.replace('myeasydocs_new/', '');
+            } else if (url.indexOf('verifier') >= 0) {
+                window.location = ssl + '//' + host + '/verifier';
+            } else if (url.indexOf('downloader') >= 0) {
+                window.location = ssl + '//' + host + '/downloader';
+            } else if (url.indexOf('dvc_ui') >= 0) {
+                window.location = ssl + '//' + host + '/dvc';
+            } else if (url.indexOf('student') >= 0) {
+                window.location = ssl + '//' + host + '/student';
+            } else if (url.indexOf('myeasydocs_directverify') >= 0) {
+                window.location = ssl + '//' + host + '/student';
+            }
+        }
+
+    </script>
+</head>
+<body onload="reload1()">
+<img src="404.png" style="width:100%">
+</body>
+</html>
