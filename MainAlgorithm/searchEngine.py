@@ -4,8 +4,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.webdriver import WebDriver
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
+import time
 
-def google_search(domain, search_terms):
+def google_search(domain, search_terms, reportFile):
+
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')  # Enable headless mode
+    chrome_options.add_argument('--disable-gpu')  # Disable GPU to prevent issues
 
 
     # Initialize ChromeDriver with ChromeDriverManager
@@ -15,6 +21,9 @@ def google_search(domain, search_terms):
 
     # Combine domain and search terms to form the search query
     search_query = f'{domain} ' + (search_string)
+
+    with open(reportFile, 'a') as file:
+        file.write(f"search query will be {search_query}\n")
 
     # Open google.com in Chrome
     driver.get("https://www.google.com")
@@ -29,6 +38,8 @@ def google_search(domain, search_terms):
 
     # Find the search result elements (links)
     search_results = driver.find_elements(By.CSS_SELECTOR, ".tF2Cxc")
+
+    time.sleep(20)
 
     # Extract the top 3 URLs
     top_urls = []

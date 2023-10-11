@@ -41,7 +41,11 @@ for page in range(0, 1):
 
     # Send a GET request to the webpage and get the HTML content
     # URL for confirmed Legitimate URLs
-    url = f"https://phishtank.org/phish_search.php?page={page}&valid=n&Search=Search"
+    # url = f"https://phishtank.org/phish_search.php?page={page}&valid=n&Search=Search"
+
+    # URL for confirmed Phishing URLs
+    url = f"https://phishtank.org/phish_search.php?page={page}&valid=y&Search=Search"
+
     driver.get(url)
 
     # EC is the Expected Condition, presence_of_element_located is the condition that the element is present on the page

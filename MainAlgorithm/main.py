@@ -18,7 +18,7 @@ from frequentTerms_from_source_code import get_top_terms_from_website
 from searchEngine import google_search
 
 # Import the module to get the favicon of the website
-# from getLogo import scrape_favicon
+from getLogo import scrape_favicon
 
 # Check the logo similarity
 # from logoSimilarity import detect_logo_similarity
@@ -27,6 +27,8 @@ inputCSV_File = os.path.join('..', 'URL_For_Testing', 'phishTankDatabase.csv')
 screenShotDir = os.path.join('screenshots')
 faviconDir = os.path.join('favicons')
 
+report = os.path.join('..', 'report')
+
 
 # Create the directory if it doesn't exist
 if not os.path.exists(screenShotDir):
@@ -34,6 +36,9 @@ if not os.path.exists(screenShotDir):
 
 if not os.path.exists(faviconDir):
     os.makedirs(faviconDir)
+
+if not os.path.exists(report):
+    os.makedirs(report)
 
 counter = 0
 foundInputBox = 0
@@ -44,7 +49,6 @@ faviconsNotFound = 0
 
 def filter_valid_lists(lists):
     return [lst for lst in lists if lst is not None and len(lst) > 0]
-
 
 if __name__ == "__main__":    
     
@@ -67,10 +71,7 @@ if __name__ == "__main__":
             # Remove the whitespace from the URL
             url = row[1].strip()
 
-            # url = "https://www.fdd.org/analysis/2023/10/08/attacks-on-israel-part-of-irans-ring-of-fire-strategy/"
-            # url = "https://www.dailymail.co.uk/news/article-11559455/The-Twitter-Files-leaks-FBI-key-revelations-far.html/"
-
-            url = "https://training.knowbe4.com/ui/login"
+            url = "https://rception04.wixsite.com/messagerievocale"
 
             print(url)
 
@@ -79,23 +80,26 @@ if __name__ == "__main__":
             parsed_url = urlsplit(url)
 
             # Extract the domain name from the netloc component
-            domain_name = parsed_url.netloc
+            input_domain_name = parsed_url.netloc
 
             # Remove "www." if present at the beginning
-            if domain_name.startswith("www."):
-                domain_name = domain_name[4:]
+            if input_domain_name.startswith("www."):
+                input_domain_name = input_domain_name[4:]
             
-            if domain_name.startswith("http.www."):
-                domain_name = domain_name[10:]
+            if input_domain_name.startswith("http.www."):
+                input_domain_name = input_domain_name[10:]
             
-            if domain_name.startswith("https."):
-                domain_name = domain_name[6:]
+            if input_domain_name.startswith("https."):
+                input_domain_name = input_domain_name[6:]
 
-            print("Domain name: ", domain_name)
+            print("Domain name: ", input_domain_name)
+            
+            # Final report file for the URL
+            reportFile = os.path.join(report, f"{input_domain_name}.txt")
 
             # ---------------------------------------------------- Screen Shot Capturing ---------------------------------------------------- # 
 
-            screenshotFile = os.path.join(screenShotDir, f"{domain_name}.png")
+            screenshotFile = os.path.join(screenShotDir, f"{input_domain_name}.png")
             print("The name of Screenshot file will be: ", screenshotFile)
 
             # Capture the full-page screenshot
@@ -111,40 +115,50 @@ if __name__ == "__main__":
 
                 if result == -1:
                     foundInputBox += 1
-                    print("Input box detected.")
+                    with open (reportFile, 'w') as file:
+                        file.write(f"Input box detected in screenshot\n")
 
                 else:
                     notFoundInputBox += 1
-                    print("Input box not detected.")
+                    with open (reportFile, 'w') as file:
+                        file.write(f"Input box not detected in screenshot\n")
             
             else:
-                print(f"Screenshot doesn't exist for: {domain_name}")
                 screenshotNotPresent += 1
+                with open (reportFile, 'w') as file:
+                    file.write(f"screenshot doesn't exist.\n")
+
 
             
             # ---------------------------------------------------- Frequent terms extraction ------------------------------------------- #
             
-            # From Screenshot
+            # ----------------------------------------  From Screenshot ------------------------------------------ #
+
             # Check if the output file exists before running frequent terms extraction
             if os.path.isfile(screenshotFile):
                     
-                    # Run frequent terms extraction code if the file exists
-                    top_terms_from_screenshot = extract_top_terms_from_screenshot(domain_name, screenshotFile)
-    
-                    print(f"Top 5 most occurring terms for {domain_name}:", top_terms_from_screenshot)
+                # Run frequent terms extraction code if the file exists
+                top_terms_from_screenshot = extract_top_terms_from_screenshot(input_domain_name, screenshotFile)
+
+                with open(reportFile, 'a') as file:
+                    file.write(f"Top 5 most occurring terms from screenshot: {top_terms_from_screenshot}\n")
             
             else:
-                print(f"Screenshot doesn't exist for so frequent terms not found: {domain_name}")
+                with open(reportFile, 'a') as file:
+                    file.write(f"Screenshot doesn't exist for so frequent terms not found: {input_domain_name}\n")
+
             
-            # From Source Code
+            # -----------------------------------------  From Source Code ------------------------------------------ #
 
             top_terms_from_source_code = get_top_terms_from_website(url)
 
             if top_terms_from_source_code is None:
-                print("No terms found, website not working")
+                with open (reportFile, 'a') as file:
+                    file.write("No terms found, website not working!!\n")
             
             else:
-                print("Top 5 most occurring terms in the website's source code:", top_terms_from_source_code)
+                with open (reportFile, 'a') as file:
+                    file.write(f"Top 5 most occurring terms in the website's source code: {top_terms_from_source_code}\n")
 
             
             # Final list of the top most occurring terms
@@ -156,20 +170,22 @@ if __name__ == "__main__":
             if valid_lists:
                 # Concatenate and create a set to remove duplicates
                 unique_terms_set = set(item for sublist in valid_lists for item in sublist)
+
                 # Convert the set back to a list
                 top_terms = list(unique_terms_set)
 
             else:
                 top_terms = []
 
-            print(f"final list of most occurring terms is: {top_terms}")
+            with open (reportFile, 'a') as file:
+                file.write(f"final list of most occurring terms is: {top_terms}\n")
 
 
             # ------------------------------- Searching domain + frequent terms on search engine --------------------------------------- #
 
-            topURLs = google_search(domain_name, top_terms)
+            topURLs = google_search(input_domain_name, top_terms, reportFile)
 
-            # print(f"Top URLs for {domain_name}:", topURLs)   
+            # print(f"Top URLs for {input_domain_name}:", topURLs)   
 
             unique_domains = set()
 
@@ -192,25 +208,36 @@ if __name__ == "__main__":
                 # Add the domain name to the set
                 unique_domains.add(domain_name)
             
-            print(f"Unique domains for {domain_name}:", unique_domains)
+            with open(reportFile, 'a') as file:
+                file.write(f"Unique domains: {unique_domains}\n")
 
+
+            # Check if the input_domain_name is in the list of domains obtained from the search engine
+            if input_domain_name in unique_domains:
+                with open(reportFile, 'a') as file:
+                    file.write(f"{input_domain_name} is in the list of unique domains.\n")
+
+            else:
+                with open(reportFile, 'a') as file:
+                    file.write(f"{input_domain_name} is not in the list of unique domains.\n")
             
             # ---------------------------------------------------- Favicon scraping ---------------------------------------------------- #
             
-            # logoFile = os.path.join(faviconDir, f"{domain_name}.ico")
+            logoFile = os.path.join(faviconDir, f"{input_domain_name}.ico")
 
-            # scrape_favicon(url, logoFile, domain_name)
+            scrape_favicon(url, logoFile, input_domain_name)
 
-            # if os.path.isfile(logoFile):
-            #     faviconsFound += 1
-            #     print("Logo found")
+            if os.path.isfile(logoFile):
+                faviconsFound += 1
+                with open(reportFile, 'a') as file:
+                    file.write(f"Favicon found\n")
             
-            # else:
-            #     faviconsNotFound += 1
-            #     print("Logo NOT found")
+            else:
+                faviconsNotFound += 1
+                with open(reportFile, 'a') as file:
+                    file.write(f"Favicon not found\n")
 
-
-            # logoDatabase = os.path.join('..', 'SampleLogos')
+            logoDatabase = os.path.join('..', 'SampleLogos')
 
             # ------------------------------------------------ Logo similarity detection ------------------------------------------ #
 
@@ -227,33 +254,14 @@ if __name__ == "__main__":
             #     else:
             #         print("Logo similarity detected:")
             #         for logo, similarity in similarLogos.items():
-            #             with open(f"{domain_name}.txt", 'a') as file:
+            #             with open(f"{input_domain_name}.txt", 'a') as file:
             #                 file.write(f"Logo: {logo}, Similarity Score: {similarity:.2f}%\n")
 
             # else:
-            #     print(f"Logo doesn't exist for: {domain_name}")
+            #     print(f"Logo doesn't exist for: {input_domain_name}")
 
 
             #------------------------------------------------- Counters for code checking ----------------------------------------------#
 
             print(f"{counter}")
             print("----------------------------------\n")
-
-
-    # with open("contour-based-detection.txt", 'w') as file:
-    #     file.write(f"Total number of URLs processed: {counter}\n")
-    #     file.write(f"Total number of URLs with input boxes: {foundInputBox}\n")
-    #     file.write(f"Total number of URLs without input boxes: {notFoundInputBox}\n")
-    #     file.write(f"Total number of URLs without screenshots: {screenshotNotPresent}\n")
-    
-
-    # with open("pytesseract-based-detection.txt", 'w') as file:
-    #     file.write(f"Total number of URLs processed: {counter}\n")
-    #     file.write(f"Total number of URLs with input boxes: {foundInputBox}\n")
-    #     file.write(f"Total number of URLs without input boxes: {notFoundInputBox}\n")
-    #     file.write(f"Total number of URLs without screenshots: {screenshotNotPresent}\n")
-    
-    # with open('favicons-stat.txt', 'w') as file:
-    #     file.write(f"Total number of URLs processed: {counter}\n")
-    #     file.write(f"Total number of URLs with favicons: {faviconsFound}\n")
-    #     file.write(f"Total number of URLs without favicons: {faviconsNotFound}\n")
