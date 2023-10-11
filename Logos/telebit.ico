@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=900">
+		<title>Telebit&trade; Cloud</title>
+    <link href="static-site-assets/styles/main.css" rel="stylesheet">
+    <link href="static-site-assets/styles/vertical-slide.css" rel="stylesheet">
+    <link href="static-site-assets/styles/1200.css" rel="stylesheet" media="(max-width:1075px)">
+    <style>
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-display: block;
+        font-weight: 400;
+        src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(/static-site-assets/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-display: block;
+        src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(/static-site-assets/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Source Code Pro';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(/static-site-assets/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+	</head>
+	<body>
+    <header>
+      <div class="container">
+        <div class="logo">Telebit</div>
+        <ul class="navigation-menu"> 
+          <li>
+            <a class="nav-link" target="_blank" href="https://git.coolaj86.com/coolaj86/telebit.js">Docs</a>
+          </li>
+          <li>
+            <a class="nav-link" target="_blank" href="https://www.patreon.com/coolaj86">Donate</a>
+          </li>
+          <li>
+            <a class="link-button nav-link" href="#download-section">Download</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="container">
+        <div class="spiel">
+          <h1>Access your devices
+            <br>Share your stuff
+          </h1>
+        </div>
+        <div aria-hidden="true" class="demo-row">
+          <div class="demo-container">
+            <div class="demo-browser">
+              <div class="demo-browser-header">
+                <div class="demo-browser-buttons">
+                  <div></div><div></div><div></div>
+                </div>
+                <div class="demo-browser-address-bar">
+                  <img src="static-site-assets/images/green-secure.png">
+                  <div class="demo-browser-url">
+                    https://jondoe.telebit.io
+                  </div>
+                </div>
+              </div>
+              <div class="demo-browser-body">
+                Hello world!
+              </div>
+            </div>
+          
+            <div class="demo-terminal">
+              <div class="demo-terminal-input">
+                telebit http 3000
+              </div>
+              <div class="demo-terminal-line">&nbsp;
+              </div>
+              <div class="demo-terminal-output">
+                Forwarding https://jondoe.telebit.io =&gt; localhost:3000
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container quickstart-container">
+        <h2 class="use-it">Use it <div class="sliding-vertical">
+          <!-- to add more of or remove some of these, you will also need to update
+              ./static-site-assets/styles/vertical-slide.css
+            to allow for the correct number of values.  Formulas for calculating
+            new values are included in the style comments.
+          -->
+          <span class="accent-color">to test your webhooks.</span>
+          <span class="accent-color">to show your project to Mom.</span>
+          <span class="accent-color">to test your site on mobile.</span>
+          <span class="accent-color">to work from 127.0.0.1.</span>
+          <span class="accent-color">to access your raspberry pi.</span>
+          <span class="accent-color">to build peer-to-peer apps.</span>
+        </div></h2>
+        <h2 id="download-section">Quickstart with bash</h2>
+        <div class="quickstart-step">
+          <div class="quickstart-step-text">
+            <div class="quickstart-step-number">1</div>
+            <div class="quickstart-step-name">Install Telebit</div>
+          </div>
+          <pre class="quickstart-terminal qickstart-terminal-prompt">curl https://get.telebit.io/ | bash</pre>
+        </div>
+        <div class="quickstart-step">
+          <div class="quickstart-step-text">
+            <div class="quickstart-step-number">2</div>
+            <div class="quickstart-step-name">Claim your device via Email</div>
+          </div>
+          <pre class="quickstart-terminal">Hello!
+
+Want to use 'Jon's Macbook Pro' with Telebit?
+Just confirm your email address:
+
+    <u>Confirm Email Address</u></pre>
+        </div>
+        <div class="quickstart-step">
+          <div class="quickstart-step-text">
+            <div class="quickstart-step-number">3</div>
+            <div class="quickstart-step-name">Enjoy Anytime, Anywhere Access</div>
+          </div>
+          <pre class="quickstart-terminal"><strong>For Local Development</strong>
+
+  <code class="quickstart-input">~/telebit http 3000</code>
+  <code class="quickstart-output">Forwarding https://jondoe.telebit.io =&gt; localhost:3000</code>
+
+  <code class="quickstart-input">curl -fsSL https://jondoe.telebit.io/</code>
+
+<strong>For Sharing Files</strong>
+
+  <code class="quickstart-input">~/telebit http ./project.zip</code>
+  <code class="quickstart-output">Serving ./project.zip as https://jondoe.telebit.io</code>
+
+  <code class="quickstart-input">curl -fsSL https://jondoe.telebit.io/</code>
+
+<strong>For Access with SSH</strong>
+
+  <code class="quickstart-input">~/telebit ssh auto</code>
+  <code class="quickstart-output">Forwarding jondoe.telebit.io -p 5050 =&gt; localhost:22</code>
+  <code class="quickstart-output">Forwarding ssh+https (openssl proxy) =&gt; localhost:22</code>
+
+  <code class="quickstart-input">ssh -p 5050 jondoe.telebit.io</code>
+  <code class="quickstart-input">ssh -o ProxyCommand="<a href="sclient/">sclient</a> %h" jondoe.telebit.io</code>
+
+<strong>For Debugging with TCP</strong>
+
+  <code class="quickstart-input">~/telebit tcp 9000</code>
+  <code class="quickstart-output">Forwarding jondoe.telebit.io -p 5050 =&gt; localhost:9000</code>
+
+  <code class="quickstart-input">netcat jondoe.telebit.io 5050</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="install-for">
+      <div class="container">
+        <h3>Install For</h3>
+        <div class="install-badges">
+          <a class="install-badge" target="_blank"
+              href="https://git.coolaj86.com/coolaj86/telebit.js#windows--nodejs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="none" fill-rule="evenodd">
+                    <path fill="#000" fill-rule="nonzero" d="M2
+                    4.819l8.11-1.105.004 7.823-8.107.047L2 4.819zm8.107
+                    7.62l.006 7.83-8.107-1.114v-6.769l8.1.053zm.983-8.87L21.844
+                    2v9.438l-10.754.085V3.57zm10.757 8.944l-.003 9.395L11.09
+                    20.39l-.015-7.895 10.772.018z"/>
+                </g>
+            </svg>
+		        <span>Windows</span>
+					</a>
+          <a class="install-badge"  target="_blank"
+              href="https://git.coolaj86.com/coolaj86/telebit.js#mac--linux">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="none" fill-rule="evenodd">
+                    <path fill="#1A1A1A" d="M21.41 8.22c-1.667 1.179-2.5
+                    2.597-2.5 4.254 0 1.986 1.03 3.509 3.09 4.57-.553 1.6-1.354
+                    2.993-2.402 4.178C18.549 22.407 17.592 23 16.726 23c-.408
+                    0-.965-.135-1.67-.404l-.34-.13c-.69-.27-1.302-.404-1.834-.404-.502
+                    0-1.052.105-1.649.316l-.426.153-.535.218c-.422.167-.848.251-1.277.251-1.012
+                    0-2.13-.833-3.352-2.498C3.88 18.117 3 15.518 3 12.704c0-2
+                    .55-3.61 1.649-4.832 1.1-1.222 2.555-1.833 4.368-1.833.677
+                    0 1.31.124
+                    1.9.371l.404.164.426.174c.378.16.684.24.917.24.298 0
+                    .63-.069.993-.207l.557-.218.415-.153c.663-.24 1.394-.36
+                    2.195-.36 1.9 0 3.429.724 4.586 2.17zM16.911
+                    1c.022.255.033.45.033.589 0 1.258-.458 2.361-1.376
+                    3.31-.917.95-1.983 1.424-3.199 1.424a5.474 5.474 0 0
+                    1-.055-.611c0-1.069.426-2.072 1.278-3.01.852-.938
+                    1.838-1.487 2.96-1.647.08-.015.2-.033.36-.055z"/>
+                </g>
+            </svg>
+						<span>Mac</span>
+					</a>
+          <a class="install-badge" target="_blank"
+              href="https://git.coolaj86.com/coolaj86/telebit.js#mac--linux">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="none" fill-rule="evenodd">
+                    <g transform="translate(1 2)">
+                        <rect width="22" height="20" fill="#000" rx="1"/>
+                        <path fill="#FFF" d="M6.495 3.942v1.125l-4.12
+                        1.566V5.551l2.882-1.047-2.882-1.056V2.375l4.12
+                        1.567zm.32 3.592h4.327v.779H6.814v-.78z"/>
+                    </g>
+                </g>
+            </svg>
+						<span>Linux</span>
+					</a>
+          <a class="install-badge" target="_blank"
+              href="https://git.coolaj86.com/coolaj86/telebit.js#mac--linux">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="none" fill-rule="evenodd">
+                    <g fill="#000" fill-rule="nonzero">
+                        <path d="M6.502 3.124c2.152 1.11 3.403 2.007 4.088
+                        2.771-.35 1.407-2.182 1.471-2.851
+                        1.432.137-.064.251-.14.292-.258-.168-.12-.764-.012-1.18-.246.16-.033.235-.065.31-.183-.394-.125-.817-.233-1.066-.441.134.002.26.03.435-.092-.352-.19-.727-.34-1.019-.63.182-.004.378-.001.435-.068a3.924
+                        3.924 0 0
+                        1-.819-.665c.255.031.363.005.424-.04-.243-.25-.552-.46-.698-.767.189.065.362.09.486-.006-.082-.186-.437-.296-.641-.733.199.02.41.044.452
+                        0-.092-.376-.25-.588-.406-.807.426-.006 1.071.002
+                        1.042-.034l-.263-.27c.416-.112.841.018
+                        1.15.115.14-.11-.002-.248-.171-.39.353.048.673.129.962.241.154-.14-.1-.279-.224-.418.547.104.778.25
+                        1.008.395.167-.16.01-.296-.103-.435.412.153.624.35.848.544.075-.102.192-.177.051-.424.293.169.513.367.676.59.18-.115.108-.273.109-.418.304.247.497.51.733.767.047-.034.089-.152.126-.338.725.704
+                        1.75 2.476.263
+                        3.179-1.264-1.044-2.775-1.802-4.45-2.371zM17.921
+                        3.124c-2.152 1.11-3.403 2.007-4.089 2.771.351 1.407
+                        2.183 1.471 2.852
+                        1.432-.137-.064-.251-.14-.292-.258.168-.12.764-.012
+                        1.18-.246-.16-.033-.235-.065-.31-.183.393-.125.817-.233
+                        1.066-.441-.135.002-.26.03-.436-.092.352-.19.728-.34
+                        1.02-.63-.182-.004-.379-.001-.436-.068.323-.2.594-.422.82-.665-.255.031-.363.005-.424-.04.243-.25.551-.46.698-.767-.189.065-.362.09-.487-.006.083-.186.438-.296.642-.733-.2.02-.41.044-.453
+                        0
+                        .093-.376.251-.588.407-.807-.426-.006-1.071.002-1.042-.034l.263-.27c-.416-.112-.842.018-1.15.115-.14-.11.002-.248.171-.39a4.182
+                        4.182 0 0
+                        0-.962.241c-.154-.14.1-.279.223-.418-.546.104-.778.25-1.008.395-.166-.16-.01-.296.103-.435-.411.153-.624.35-.847.544-.076-.102-.192-.177-.052-.424a2.149
+                        2.149 0 0
+                        0-.675.59c-.181-.115-.108-.273-.109-.418-.304.247-.497.51-.733.767-.048-.034-.09-.152-.126-.338-.725.704-1.75
+                        2.476-.263 3.179 1.264-1.044 2.775-1.802
+                        4.449-2.371zM14.818 17.45c0 1.313-1.154 2.377-2.578
+                        2.377s-2.578-1.064-2.578-2.377c0-1.313 1.154-2.377
+                        2.578-2.377s2.578 1.064 2.578 2.377zM10.153
+                        10.363c1.204.426 1.773 1.922 1.27 3.343-.501 1.42-1.884
+                        2.227-3.088
+                        1.801-1.204-.426-1.773-1.922-1.271-3.343.502-1.42
+                        1.885-2.227 3.09-1.801zM14.226 10.236c-1.204.426-1.773
+                        1.922-1.27 3.343.501 1.42 1.884 2.227 3.088 1.801
+                        1.204-.425 1.773-1.922
+                        1.271-3.342-.502-1.42-1.885-2.227-3.089-1.802zM5.41
+                        11.803c1.153-.309.389 4.771-.55
+                        4.355-1.032-.83-1.364-3.262.55-4.355zM18.737
+                        11.74c-1.154-.309-.39 4.771.549 4.354 1.032-.83
+                        1.364-3.261-.55-4.354zM14.818 7.957c1.99-.336 3.647.847
+                        3.58 3.005-.066.827-4.313-2.882-3.58-3.005zM9.32
+                        7.894c-1.99-.336-3.646.846-3.58 3.004.066.828
+                        4.313-2.881 3.58-3.004zM12.178
+                        7.39c-1.187-.03-2.327.882-2.33 1.411-.003.643.939 1.302
+                        2.339 1.318 1.429.01 2.34-.527
+                        2.345-1.19.006-.752-1.3-1.55-2.354-1.539zM12.251
+                        20.578c1.036-.045 2.425.333 2.428.836.017.488-1.26
+                        1.59-2.497
+                        1.569-1.28.055-2.536-1.05-2.52-1.432-.019-.56 1.56-.999
+                        2.589-.973zM8.426 17.6c.737.888 1.073 2.449.458
+                        2.909-.582.351-1.996.207-3-1.237-.678-1.211-.591-2.444-.115-2.806.711-.433
+                        1.81.152 2.657 1.134zM15.929 17.318c-.798.935-1.242
+                        2.64-.66 3.188.556.427 2.05.367
+                        3.153-1.164.801-1.028.533-2.746.075-3.201-.68-.526-1.656.147-2.568
+                        1.177z"/>
+        </g>
+    </g>
+</svg>
+						<span>Raspberry Pi</span>
+					</a>
+        </div>
+      </div>
+    </div>
+    <div class="feature-list">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="feature-badges">
+          <div class="feature-badge">
+						<img src="static-site-assets/images/lock.svg" />
+						<div>
+							Secure https for all tunnels
+						</div>
+          </div>
+          <div class="feature-badge">
+						<img src="static-site-assets/images/computer.svg" />
+						<div>
+          		Show your work to anyone
+						</div>
+					</div>
+          <div class="feature-badge">
+						<img src="static-site-assets/images/language.svg" />
+						<div>
+							Test API Webhooks
+						</div>
+          </div>
+          <div class="feature-badge">
+						<img src="static-site-assets/images/cloud.svg" />
+						<div>
+							Test your UI in cloud browsers
+						</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="donate-section">
+      <div class="container">
+        <h2>Donate and become a sponsor of a more open web</h2>
+        <p>We're on a mission to build a more open web. Telebit is still in it's
+          early days and the development is supported by generous sponsors like
+          you. Make a recurring or one-time donation today.
+        </p>
+        <a class="link-button" target="_blank" href="https://www.patreon.com/coolaj86">Make a donation</a>
+      </div>
+    </div>
+		<div class="mailing-list-form">
+      <div class="container">
+				<h2>Join our mailing list</h2>
+				<form class="js-inline-email-form email-signup-form" novalidate>
+          <div class="form-error js-inactive"></div>
+          <div class="success-message js-inactive">Thank you for joining!</div>
+          <span class="input-container email">
+            <div class="input-error email js-inactive"></div>
+            <input type="email" name="email" id="email" placeholder="Email">
+          </span>
+					<input class="link-button" type="submit" value="Join">
+				</form>
+				<ul>
+          <li><img src="static-site-assets/images/done.svg" />Get exclusive invites to try new features</li>
+					<li><img src="static-site-assets/images/done.svg" />Get updates on our progress</li>
+					<li><img src="static-site-assets/images/done.svg" />We'll never spam you</li>
+				</ul>
+			</div>
+		</div>
+		<footer>
+      <div class="container">
+				<div class="logo">
+					Telebit™
+				</div>
+				<ul clss="footer-links">
+          <li>© 2018-2020 <a href="https://therootcompany.com/" target="_blank">Root</a></li>
+          <li><a href="https://twitter.com/@coolaj86/" target="_blank">AJ ONeal</a></li>
+					<li><a href="mailto:telebit@therootcompany.com" target="_blank">Contact</a></li>
+					<li><a href="https://telebit.cloud/.well-known/security.txt" target="_blank">Security</a></li>
+					<li><a href="https://therootcompany.com/legal/#privacy" target="_blank">Privacy</a></li>
+					<li><a href="https://therootcompany.com/legal/#terms" target="_blank">Terms</a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+  <script src="./static-site-assets/scripts/form-processing.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165323265-2"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+        gtag('config', 'UA-165323265-2');
+  </script>
+</html>

@@ -1,0 +1,463 @@
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  lang='en'>
+<head>
+
+  
+  
+    <title>Savvas Sign In</title>
+  
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="media/css/style.css" />
+<link rel="stylesheet" href="media/css/spectrum-blue-theme.css" />
+<link rel="stylesheet" type="text/css" href="media-register/css/jquery-ui-1.8.16.custom.css" />
+<link rel="stylesheet" href="media-register/css/errors.css" />
+
+<!--  DEFAULT PEARSON BRANDING-->
+
+	 
+
+<link href="media/css/bubbles.css" rel="stylesheet" type="text/css" />
+<link href="media/css/modal-window.css" rel="stylesheet" type="text/css" />
+<script src="media/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+<script src="media/js/google-analytics.js" type="text/javascript"></script>
+<script src="media/js/modify-logout-url.js" type="text/javascript"></script>
+<script src="media/js/events.js" type="text/javascript"></script>
+<script src="media-register/js/modals.js" type="text/javascript"></script>
+<script type="text/javascript" src="media-register/js/modals_extensions_next.js"></script>
+<script src="media/js/modals.js" type="text/javascript"></script>
+<script src="media/js/modal-window.js" type="text/javascript"></script>
+<script src="media-register/js/errors.js" type="text/javascript"></script>
+<!--[if IE 7]>
+<link href="media/css/ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if gte IE 6]><style type="text/css" media="screen">@import 'css/ie_cas.css';</style><![endif]-->
+
+<script type="text/javascript">
+function init() {
+    var firstForm = document.forms[0];
+    
+    if (firstForm) {
+        var formElements = firstForm.getElementsByTagName("input");
+        
+        for (var i = 0; i < formElements.length; i++) {
+            var e = formElements[i];
+            
+            if (
+                (! e.disabled) &&
+                (e.type.toLowerCase() != 'hidden')
+            ) {
+                e.focus();
+                e.select();
+                
+                break;
+            }
+        }
+    }
+}
+</script>
+
+
+<script type="text/javascript">
+var query_string = "profile\x3Deb\x2Dclassic\x26additionalAttributes\x3DDomains\x26k12int\x3Dtrue\x26service\x3Dhttps\x3A\x2F\x2Fcat.easybridge.pk12ls.com\x2Fca\x2Fdashboard.htm";
+ function appendScriptTag(filename) {
+	 var element = document.createElement("script");
+	 element.setAttribute("type","text/javascript")
+	 element.src = filename;
+	 document.getElementsByTagName("head")[0].appendChild(element);
+ }
+
+ function downloadJSAtOnload(filename) {
+	appendScriptTag("media/js/events.js");
+ }
+
+ // Check for browser support of event handling capability
+ if (window.addEventListener)
+ window.addEventListener("load", downloadJSAtOnload, false);
+ else if (window.attachEvent)
+ window.attachEvent("onload", downloadJSAtOnload);
+ else window.onload = downloadJSAtOnload;
+ 
+ // window.onload = function(){
+ //	    document.getElementById('close').onclick = () => {
+ //	        this.parentNode.parentNode.remove();
+ //	        return false;
+ //	    };
+ //	};
+
+</script>
+<link rel="shortcut icon" href="/sso/favicon.ico;jsessionid=EF9483D7F4610DCC6924C76829A7ABE4" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/sso/touchicon.png;jsessionid=EF9483D7F4610DCC6924C76829A7ABE4">
+<meta name="msapplication-TileColor" content="#004168">
+<meta name="msapplication-TileImage" content="/sso/tileicon.png;jsessionid=EF9483D7F4610DCC6924C76829A7ABE4 ">
+<meta name="msapplication-config" content="none"/>
+</head>
+<body id="cas" class="spectrumBlue"  onload="init()">
+  <!--   -->
+
+
+<div id="content">
+
+
+
+
+<link rel="stylesheet" href="css/pearson/reveal.css">
+<script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.reveal.js" type="text/javascript"></script>
+<script src="js/signin.js" type="text/javascript"></script>
+<script type="text/javascript">
+    String.prototype.trim = function() {
+        var retVal = this;
+        while(retVal.substr(0,1)==" ")
+            retVal = retVal.substring(1,retVal.length) ;
+
+        while(retVal.substr(retVal.length-1,1)==" ")
+            retVal = retVal.substring(0,retVal.length-1) ;
+
+        return retVal;
+    };
+
+    $(document).ready(function() {
+        errors.signin.onLoad();
+        document.querySelector('form').onkeydown = checkEnter;
+
+        var runame = document.getElementById('runame');
+        if (runame) {
+          document.getElementById('username').value = runame.value;
+        }
+    });
+
+    
+    function checkEnter(e) {
+      if ((e.key === 'Enter' || e.keyCode === 13 ) && e.target.id === 'district-search-field') {
+        event.preventDefault();
+      }
+    }
+
+    function forwardToWAYF(wayfURL)
+    {
+      var serviceURL = document.getElementById("serviceURL").value;
+      wayfURL = wayfURL + "?service=" + serviceURL;
+      window.location = wayfURL;
+    }
+
+    function validateSubmit()
+    {
+      // prevent duplicate form submission
+      this.fm1.submit1.disabled=true;
+      return true;
+    }
+
+
+</script>
+<script src="js/typeahead.js" type="text/javascript"></script>
+<script src="js/wayf.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/typeahead.css">
+<main>
+  <form id="fm1" action="/sso/login;jsessionid=EF9483D7F4610DCC6924C76829A7ABE4?execution=e1s1&amp;profile=eb-classic&amp;additionalAttributes=Domains&amp;k12int=true&amp;service=https://cat.easybridge.pk12ls.com/ca/dashboard.htm" method="POST" onsubmit="validateSubmit()">
+  
+          
+          
+              <div id="containerLogin" class="generic">
+            
+    
+    
+      
+          <!--<h1>Savvas Sign In</h1>-->
+          <h1 id="savvasImage">
+            <img alt="Savvas Learning Company" src="images/pearson/logo_savvas.svg" id="savvas-logo" />
+          </h1>
+      
+      
+    
+    
+      
+      
+        <!-- <h2>Sign In with Your Savvas Account</h2> -->
+      
+    
+      
+  
+  
+      
+      
+          
+       
+             
+             
+             
+      
+      
+             
+             
+          
+         
+
+          
+          <fieldset>
+            <label aria-label="username" for="username">
+            Username
+            </label>
+            
+            
+              
+              <input id="username" name="username" class="required" aria-label="Enter username" onchange="this.value = this.value.trim();" type="text" value="" size="25" autocomplete="on"/>
+              
+            
+            
+
+          </fieldset>
+          <fieldset>
+            <label for="password">
+            Password
+            </label>
+            
+            
+            <input id="password" name="password" class="required" aria-label="Enter password" onchange="this.value = this.value.trim()" type="password" value="" size="25" autocomplete="on"/>
+            <span role="button" id="eyeIcon" class="icon-button eye" aria-label="Show password" tabindex="0" onclick="hideShowPwd()">
+                <img class="hide-icon display-none" src="media/images/icons/hide.svg" alt="Hide password" />
+                <img class="show-icon" src="media/images/icons/show.svg" alt="Show password" />
+            </span>
+            
+          <input type="hidden" name="_eventId" value="submit" />
+          
+        </fieldset>
+
+      <div class="clear">
+        <!-- -->
+      </div>
+
+    
+    <div class="contentFooter customized clear" style="line-height: 35px;">
+      <button class="btn-submit" name="submit1" disabled id="signInBtn" type="submit">
+      Sign in
+      </button>
+      <p class="forgot"><a href="login?execution=e1s1&_eventId=forgot&amp;service&#x3d;https&#x3a;&#x2f;&#x2f;cat.easybridge.pk12ls.com&#x2f;ca&#x2f;dashboard.htm">
+        Forgot your username or password?
+        </a></p>
+      <div class="clear">
+        <!-- -->
+      </div>
+      <!-- <div style="height: 50px;">
+            
+      </div> -->
+    </div>
+    
+    <fieldset>
+        <div>
+            <span id="divider">or</span>
+            <div class="search-container">
+                <p>For Savvas EasyBridge Plus and Auto users, search for your school district’s sign in options.</p>
+                <div class="search-field-container" aria-live="polite">
+                    <input class="search-field" id="district-search-field" type="text" tabindex="0" placeholder="Type your district name" aria-autocomplete="none" autocomplete="off" aria-label="District Name" />
+                    <img alt="Sign in to Savvas" src="images/pearson/buttons/search.svg" name="search" width="16px" height="16px" role="presentation" />
+                    <ul class="district-list" id="districts" role="list" tabindex="-1"/>
+                    <a tabindex="-1" aria-hidden="true" id="forwardFlowEvent" href="login?execution=e1s1&_eventId=forwardToDist&amp;k12int&#x3d;true"/>
+                    <input type="hidden" id="extIdpId" name="extIdpId"/>
+                    <input type="hidden" id="orgData" name="orgData"/>
+                </div>
+                <input type="hidden" id="serviceURL" value="https://cat.easybridge.pk12ls.com/ca/dashboard.htm" />
+                <input type="hidden" id="casURL" value="https://sso.rumba.pk12ls.com/sso/login" />
+                <input type="hidden" id="ssoUrl" value="https://sso.rumba.pk12ls.com/sso/login"/>
+                <a id="districtInfoModal" tabindex="0" href="javascript:void(0)" role="button" aria-label="Can’t find your district. To activate press enter" onfocus="clearItem()">Can’t find your district?</a>
+            </div>
+        </div>
+    </fieldset>
+      <input type="hidden" id="serviceURL" value="https&#x3a;&#x2f;&#x2f;cat.easybridge.pk12ls.com&#x2f;ca&#x2f;dashboard.htm" />
+    <div id="modal1" title="login-assistance"style="display: none;" role="dialog" aria-labelledby="modal1" aria-hidden="true" aria-describedby="modalContent1">
+      <div role="document">
+        <span class="close"> 
+          <button href="#" id="cancel1" type='button' class="closeModal"><img src="media-register/images/buttons/close-modal.png"
+            alt='close'
+            title='close' /> 
+          </button>
+        </span>
+        <div id="modalContent1" class="preload">
+          <h2 id="dialogTitle">Savvas EasyBridge Plus or EasyBridge Auto?</h2>
+          <p id="dialogDescription">Select this option only if your district is using Savvas EasyBridge Plus or EasyBridge Auto. 
+          If your district is not an EasyBridge Plus or EasyBridge Auto customer, enter your username and password to sign in.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </form>
+</main>
+<div id="blackoutdiv">
+  <img src="media/images/marketing/black.png" alt="">
+</div>
+
+<div class="ae-modal-overlay ae-modal-center" id='signInAssistanceModal'>
+  <div role="dialog" aria-modal="true" class="ae-modal-window col-between" aria-label="Sign In Assistance">
+    <div class="modal-top-container">
+      <div class="modal-header-container row-start">
+          <div class="close-button icon">
+              <button id="savvasCloseIcon" class="icon-button center" aria-label="close modal" style="padding: 8px;" tabindex="0">
+                  <img aria-label="close modal" src="images/pearson/close.svg" width="16" height="16" />
+              </button>
+          </div>
+          <div class="modal-title-container row-start">
+            <h1>Assistance with Savvas Sign In</h1>
+          </div>
+      </div>
+      <div class="body-container borders with-borders ">
+        <div class="context">
+          <div class="modal-body">
+            <div>
+              <h2>Are you a student or a caregiver?</h2>
+              <p>Please contact your teacher or school administrator for your login instructions.</p>
+            </div>
+            <div>
+              <h2>Are you a teacher?</h2>
+              <p><a id="teacher-help-link" href="javascript:void(0)" aria-label="Teacher registration and signin. To activate press enter. To open in a new window" class="blue-anchor-underline">Click here</a> for registration and sign in instructions.</p>
+            </div>
+            <div>
+              <h2>Are you an administrator?</h2>
+              <p><a id="admin-help-link" href="javascript:void(0)" aria-label="Admin registration and signin. To activate press enter. To open in a new window" class="blue-anchor-underline">Click here</a> for registration and sign in instructions.</p>
+            </div>
+            <div class='tech-support-message'>
+              If you are having technical problems, please contact 
+              <a role = "link" id="technical-support-link" href="javascript:void(0)" aria-label="Technical support opens in a new window"  class="blue-anchor-underline">
+                Technical Support.
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer-container row-end">
+      <div class="button-container row-end">
+        <button id="savvasCloseBtn" class="primary close">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ae-modal-overlay ae-modal-center" id='districtModal'>
+  <div role="dialog" aria-modal="true" class="ae-modal-window col-between" aria-label="Can't Find Your District?">
+    <div class="modal-top-container">
+        <div class="modal-header-container row-start">
+          <div class="close-button icon">
+            <button id="districtCloseIcon" class="icon-button center" aria-label="close modal" style="padding: 8px;" tabindex="0">
+                <img aria-label="close modal" src="images/pearson/close.svg" width="16" height="16" />
+            </button>
+          </div>
+          <div class="modal-title-container row-start">
+              <h1>Can't find your district</h1>
+          </div>
+        </div>
+        <div class="body-container borders">
+          <div class="context">
+            <div class="modal-body">
+              <div class="text-container">
+                <p>If your district is not integrated with EasyBridge Plus or EasyBridge Auto, then your district may not be listed. Return to Savvas sign in and enter your username and password to sign in.</p>
+                <p>If you are still having issues signing in, contact <a id="technical-support-link1" href="javascript:void(0)" aria-label="Savvas Technical support opens in a new window">Savvas Technical Support</a> for further assistance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal-footer-container row-end">
+      <div class="button-container row-end">
+        <button class="link">Return to Savvas sign in</button>
+        <button id="districtCloseBtn" class="primary close">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+<!-- End #content -->
+<footer>
+	<div id="footer" class="marketingFooter">
+    <div class="logo">
+		<a href="https://www.savvas.com/" target="_blank" aria-label="Savvas. To activate press enter. To open in a new window">
+        	<img src="media/images/logos/logo_savvas_dark.svg" alt="Savvas Logo" width="97" height="16" />
+		</a>
+    </div>
+	<div class="footer-links">
+		<p class="footer-text">Copyright &copy; 2023 <a target="_blank" aria-label="Savvas Learning Company. To activate press enter. To open in a new window" href="https://savvas.com/">Savvas Learning Company</a> LLC.</p>
+		<p class="footer-text rights-space">All rights reserved.</p>
+		<div style="display: flex;">
+			<ul class="footer-ul">
+				<li>
+					<p class="footer-text">
+						<a href="https://www.savvasrealize.com/#/userAgreement" aria-label='User Agreement link opens in new window'
+						    class="pop">User Agreement</a>
+					</p>
+				</li>
+				<span class="separator" aria-hidden="true">|</span>
+				<li>
+					<p class="footer-text">
+						<a href="https://www.savvasrealize.com/#/privacy" aria-label='Privacy Policy link opens in new window'
+						    class="pop">Privacy Policy</a>
+					</p>
+				</li>
+				<span class="separator" aria-hidden="true">|</span>
+				<li>
+					<p class="footer-text">
+						<a href="https://media.pk12ls.com/curriculum/credits/index.html" aria-label='Credits link opens in new window'
+						    class="pop">Credits</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+		<!--   | -->
+		<!--    -->
+		<!--   
+	
+	<a href="http://help.pearsoncmg.com/rumba/universal_signin/en/index_CSH.htm#us_support|csh" class="pop">
+	 -->
+		<!--  Support </a> | 
+				<a href="http://help.pearsoncmg.com/rumba/universal_signin/en/index_CSH.htm#global|csh" class="pophelp"> Help </a> -->
+		
+	</div>
+</footer>
+
+
+	
+
+<div id="modalContainer" style="display: none;" role="dialog"
+	aria-labelledby="modalTitle" aria-hidden="true"
+	aria-describedby="modalDescription">
+	<div id="modal">
+		<span class="close"> <a href="#" id="closeModalX"
+			class="closeModal"><img
+				src="media-register/images/buttons/close-modal.png"
+				alt='Back'
+				title='Back' /> </a>
+		</span>
+		<div id="modalContent" class="preload">
+			<p class="loading"></p>
+		</div>
+	</div>
+	<div id="modalOverlay"></div>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name=" viewport" content="width=device-width">
+	<title>Login</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
+	<link rel="stylesheet" type="text/css" href="login.css" />
+	<link rel="stylesheet" type="text/css" href="branding.css" />
+	<script>
+		var isIE8 = false, isIE7 = false;
+	</script>
+
+	<script src="translations.js"></script>
+	<script src="https://static.telogis.com/common/jquery/v1.6.2/jquery.min.js"></script>
+	<script src="common.js"></script>
+	<script src="login.js"></script>
+
+	<!-- OneTrust Cookies Consent Notice start for platform.telogis.com -->
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true"
+		type="text/javascript" charset="UTF-8" data-domain-script="59129ae7-8317-49d8-807b-0366c148cb69-test"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() {
+			OneTrust.InsertScript('./mixpanel.js', 'head', null, null, 'C0002');
+		}
+	</script>
+	<!-- OneTrust Cookies Consent Notice end for platform.telogis.com -->
+
+</head>
+
+<body>
+	<div id="container">
+
+		<div id="backgroundMask"></div>
+		<div id="brandingLogo" class="brandingLogo"></div>
+		<div id="mask">
+			<div id="loadingPanel" align="center">
+				<table style="margin: 10px;">
+					<tr>
+						<td style="vertical-align: middle;">
+							<img src="loading-white.gif" height="32" width="32" />
+						</td>
+						<td id="loadingMessage" style="vertical-align: middle; font-size: 12px;">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<table id="body">
+			<tr>
+				<td>
+					<div align="center" style="position: relative;">
+						<table id="panelTable">
+							<tr>
+								<td class="midTd" align="center">
+									<form id="login" method="post" class="midpanel">
+										<img id="logo"
+											src="https://static.telogis.com/resources/images/vzc_rgb_p_pad_100h@2x.png"
+											class="logo" />
+										<div id="loginError" class="error"></div>
+										<input type="text" id="username" class="input" name="username"
+											required="required" autocomplete="on" autocapitalize="off">
+										<input type="password" id="password" class="input" name="password"
+											required="required" autocomplete="off">
+										<div align="middle">
+											<input type="checkbox" id="autologin" name="autologin">
+											<label for="autologin" id="autologinLabel"></label>
+											<small id="forgotPassword" style="display: block;">
+												<a href="#" id="forgotPasswordLink"></a>
+											</small>
+										</div>
+										<button type="submit" id="btnSignIn" class="btnSignIn"></button>
+										<div id="termsAndConditions">
+											<small>
+												<span id="termsText"></span> <a
+													href="https://www.verizonconnect.com/terms-of-use/fleet/"
+													id="termsLink"></a>
+												<br />
+												<span id="pleaseSee"></span> <a
+													href="https://www.verizon.com/about/privacy/" id="privacyLink"></a>.
+												<br />
+												<span id="caliPrivacyText"></span>
+												<br /> <a
+													href="https://www.verizon.com/about/privacy/full-privacy-policy?scrollto=index-1#acc-item-55"
+													id="caliPrivacyNotice"></a>.
+												<br />
+												<!-- AS-925: Updated privacy link -->
+												<a href="https://www.verizonconnect.com/your-privacy-choices"
+													id="yourPrivacyChoicesLink"></a>
+												<img src="ccpaPrivacyOptions.png" height="14" width="30"
+													style="vertical-align:middle" />
+												<br>
+												<span id="copyright"></span>
+											</small>
+										</div>
+									</form>
+								</td>
+								<td class="midTd" align="center">
+									<div id="forgotPasswordPanel" class="midpanel">
+										<img src="https://static.telogis.com/resources/images/vzc_rgb_p_pad_100h@2x.png"
+											class="logo" />
+										<div class="text" id="forgotPasswordText"></div>
+										<div id="forgotPasswordError" class="error"></div>
+										<form id="forgotPasswordForm" onsubmit="return false">
+											<input type="text" id="forgotPasswordUsername" class="input" name="username"
+												required="required" autocomplete="off" autocapitalize="off">
+											<button type="submit" id="btnSubmit" class="btnSignIn"></button>
+										</form>
+										<div align="center" id="backToSignInDiv">
+											<small>
+												<a href="#" id="backToSignIn"></a>
+											</small>
+										</div>
+									</div>
+								</td>
+								<td class="midTd" align="center">
+									<div id="marketing" class="midpanel">
+										<div id="marketingText">
+											<div id="marketingHeader"></div>
+											<div id="marketingBody"></div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="midTd" align="center">
+									<div id="salesForceProdRedirectPanel" class="midpanel">
+										<small>
+											<a href="https://telogiscommunity.force.com/Customer/sitelogin"
+												id="salesforceProdLoginText"></a>
+										</small>
+									</div>
+									<div id="salesForceStagingRedirectPanel" class="midpanel">
+										<small>
+											<a href="https://full-telogiscommunity.cs63.force.com/Customer/sitelogin"
+												id="salesforceStagingLoginText"></a>
+										</small>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<div id="footer">
+			<span class="footerDiv" style="float: left;">
+				<small id="maintenance"></small>
+			</span>
+			<span class="footerDiv" style="float: right;">
+				<small id="onetrust-sdk-btn">
+					<!-- OneTrust Cookies Settings button start -->
+					<button id="ot-sdk-btn" class="ot-sdk-show-settings"></button>
+					<!-- OneTrust Cookies Settings button end -->
+				</small>
+				<span>&nbsp;|&nbsp;</span>
+				<small id="languageLabel"></small>
+				<select name="language" id="language">
+					<option value="en-US" id="englishUS"></option>
+					<option value="en-GB" id="englishGB"></option>
+					<option value="de" id="german"></option>
+					<option value="es" id="spanish"></option>
+					<option value="fr" id="french"></option>
+					<option value="it" id="italian"></option>
+					<option value="nl" id="dutch"></option>
+					<option value="pl" id="polish"></option>
+					<option value="lt" id="lithuanian"></option>
+					<option value="cs" id="czech"></option>
+					<option value="pt" id="portuguese"></option>
+					<option value="pt-PT" id="portuguese-pt"></option>
+					<option value="zh" id="chinese"></option>
+					<option value="ro" id="romanian"></option>
+					<option value="sk" id="slovak"></option>
+					<option value="hu" id="hungarian"></option>
+				</select>
+			</span>
+		</div>
+
+	</div>
+</body>
+<script src="track.js"></script>
+<script src="visitor.js"></script>
+<script src="session.js"></script>
+<script src="branding.js"></script>
+<script>
+	setAttribute('username', 'placeholder', '/auth/email_or_username');
+	setAttribute('password', 'placeholder', '/pages/common/password');
+	setInnerHtml('autologinLabel', '/auth/remember_username');
+	setInnerHtml('forgotPasswordLink', '/auth/forgot_password');
+	setInnerHtml('btnSignIn', '/auth/sign_in');
+	setInnerHtml('termsText', '/auth/by_signing_in');
+	setInnerHtml('termsLink', '/auth/terms_and_conditions');
+	setInnerHtml('privacyLink', '/auth/privacy_policy');
+	setInnerHtml('pleaseSee', '/auth/please_see');
+	setInnerHtml('caliPrivacyText', '/auth/california_privacy_text');
+	setInnerHtml('caliPrivacyNotice', '/auth/california_privacy');
+	setInnerHtml('yourPrivacyChoicesLink', '/auth/your_privacy_choices');
+	setCopyrightInnerHtml('copyright', '/auth/copyright');
+	setInnerHtml('and', '/auth/and');
+	setInnerHtml('forgotPasswordText', '/auth/enter_details');
+	setAttribute('forgotPasswordUsername', 'placeholder', '/auth/email_or_username');
+	setInnerHtml('btnSubmit', '/auth/submit');
+	setInnerHtml('backToSignIn', '/auth/back_to_sign_in');
+	setInnerHtml('languageLabel', '/translations_language');
+	setInnerHtml('englishUS', '/pages/common/language/native_en-US', 'en-US');
+	setInnerHtml('englishGB', '/pages/common/language/native_en-GB', 'en-GB');
+	setInnerHtml('german', '/pages/common/language/native_de', 'de');
+	setInnerHtml('spanish', '/pages/common/language/native_es', 'es');
+	setInnerHtml('french', '/pages/common/language/native_fr', 'fr');
+	setInnerHtml('italian', '/pages/common/language/native_it', 'it');
+	setInnerHtml('dutch', '/pages/common/language/native_nl', 'nl');
+	setInnerHtml('polish', '/pages/common/language/native_pl', 'pl');
+	setInnerHtml('czech', '/pages/common/language/native_cs', 'cs');
+	setInnerHtml('lithuanian', '/pages/common/language/native_lt', 'lt');
+	setInnerHtml('portuguese', '/pages/common/language/native_pt-BR', 'pt');
+	setInnerHtml('portuguese-pt', '/pages/common/language/native_pt-PT', 'pt-PT');
+	setInnerHtml('chinese', '/pages/common/language/native_zh', 'zh');
+	setInnerHtml('romanian', '/pages/common/language/native_ro', 'ro');
+	setInnerHtml('slovak', '/pages/common/language/native_sk', 'sk');
+	setInnerHtml('hungarian', '/pages/common/language/native_hu', 'hu');
+	setInnerHtml('salesforceProdLoginText', '/auth/salesforce_redirect_message');
+	setInnerHtml('salesforceStagingLoginText', '/auth/salesforce_redirect_message');
+</script>
+
+</html>

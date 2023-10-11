@@ -1,0 +1,4902 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" wf-loading>
+    <head>
+        
+    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+
+
+    <script>
+        window.newrelicAttributes = {
+            accountId: "1796917",
+            trustKey: "1796917",
+            agentId: "149134891",
+            licenseKey: "f701a6c63c",
+            applicationId: "149134891"
+        };
+    </script>
+    <script src="/newrelic.js"></script>
+
+
+
+<!-- Compliant Google Optimize -->
+<script>
+        (() => {
+            const getPrivacyCookie = () => {
+                const privacyCookie = document.cookie.match('(^|;)\\s*cmapi_cookie_privacy\\s*=\\s*([^;]+)');
+
+                return privacyCookie ? privacyCookie.pop() : null;
+            };
+
+            const getBehaviorCookie = () => {
+                const behaviorCookie = document.cookie.match('(^|;)\\s*notice_behavior\\s*=\\s*([^;]+)');
+
+                return behaviorCookie ? behaviorCookie.pop() : null;
+            };
+
+            const hasOptedIn = () => {
+                const behaviorCookie = getBehaviorCookie();
+                const privacyCookie = getPrivacyCookie();
+
+                return behaviorCookie && behaviorCookie.match(/^none$/) || privacyCookie && privacyCookie.match(/2|3/);
+            }
+
+            const appendOptimize = () => {
+                const head = document.getElementsByTagName('head')[0];
+
+                if (head) {
+                    const script = document.createElement('script');
+
+                    script.src = 'https://www.googleoptimize.com/optimize.js?id=GTM-M6BQF2W';
+                    script.id = "google-optimize"
+                    head.append(script);
+                }
+            };
+
+            const removeOptimize = () => {
+                const head = document.getElementsByTagName('head')[0];
+                const optimizeScript = document.getElementById('google-optimize');
+
+                if (head && optimizeScript) {
+                    head.removeChild(optimizeScript);
+                }
+            }
+
+            /**
+             * Append or remove Google Optimize script to head,
+             * depending on whether user's cookie preferences
+             * have opted in and Google Optimize script already
+             * exists in head.
+             */
+            const handleConsentDecision = () => {
+                const googleOptimizeScript = document.getElementById('google-optimize');
+                if (hasOptedIn() && !googleOptimizeScript) {
+                    appendOptimize();
+                } else if (!hasOptedIn() && googleOptimizeScript) {
+                    removeOptimize();
+                }
+            }
+
+            /**
+             * Callbacks will occur in the form of a PostMessage event. This code listens for the
+             * appropriately formatted PostMessage event, gets the new consent decision, and then sets
+             * the new cookie preferences.
+             */
+            const handlePreferencesUpdated = (e) => {
+                try {
+                    const { capabilities, action } = JSON.parse(e.data).PrivacyManagerAPI || {};
+                    if (capabilities && action === 'getConsentDecision') {
+                        handleConsentDecision();
+                    }
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+
+            /**
+             * Registers with the TrustArc Content Manager (CM) API to receive callbacks when
+             * a preference update occurs, and initialized dispatched preferences array to
+             * the user's current preferences. You must wait for the CM API (PrivacyManagerAPI object)
+             * to exist on the page before registering.
+             */
+            const CMICallbackRegister = () => {
+                const interval = setInterval(() => {
+                    if (window.PrivacyManagerAPI && interval) {
+                        const apiObject = {
+                            PrivacyManagerAPI: {
+                                action: 'getConsentDecision',
+                                timestamp: new Date().getTime(),
+                                self: window.location.host
+                            }
+                        };
+                        window.top.postMessage(JSON.stringify(apiObject), '*');
+                        clearInterval(interval);
+                    }
+                }, 50);
+            }
+
+            /**
+             * Listener registers a message callback on the TrustArc Content Manager when
+             * user's cookie preferences are updated and adds an event listener
+             * on the message events that occur when said preference updates occur.
+             */
+            const trustArcScriptLoadListener = () => {
+                if (typeof window.truste === 'object') {
+                    CMICallbackRegister();
+                    window.addEventListener('message', handlePreferencesUpdated);
+                }
+            }
+
+            window.addEventListener('load', trustArcScriptLoadListener);
+            const behaviorCookie = getBehaviorCookie();
+
+            if (behaviorCookie === null) {
+                // wait for TrustArc script to load before checking cookies
+                let numIntervals = 0;
+                const scriptLoadInterval = setInterval( () => {
+                    if(getBehaviorCookie()) {
+                        handleConsentDecision();
+                        clearInterval(scriptLoadInterval);
+                    }
+                    // Stop running interval after 8 times (8x the documented 500ms it
+                    // should take to load the TrustArc script on the BE) to prevent running forever
+                    if (++numIntervals >= 10) {
+                        clearInterval(scriptLoadInterval);
+                    }
+                } , 500);
+            } else {
+                handleConsentDecision();
+            }
+        })();
+</script>
+    <!-- End Compliant Google Optimize -->
+
+
+<!-- Google Tag Manager -->
+<script>
+    (function(w, d, s, l) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+
+        var f = d.getElementsByTagName(s)[0];
+        var j = d.createElement(s);
+        var dl = l !== 'dataLayer' ? '&l=' + l : '';
+
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-TG32RCX' + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer');
+</script>
+<!-- End Google Tag Manager -->
+
+
+
+<style>
+    [unresolved] {
+        visibility: hidden !important;
+    }
+</style>
+
+
+<noscript>
+    <style>
+        [unresolved] {
+            visibility: visible !important;
+        }
+    </style>
+</noscript>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+</style>
+
+
+<script>
+    
+    if (!CSS.supports('width', 'calc((var(--test))')) {
+        window.ShadyCSS = {
+            shimcssproperties: true
+        };
+    }
+
+    document.addEventListener('nds.typeKit.active', function() {
+        document.querySelector('html').removeAttribute('wf-loading');
+    });
+</script>
+
+<script src="//unpkg.com/@webcomponents/webcomponentsjs@2.2.7/webcomponents-loader.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="//w.soundcloud.com/player/api.js"></script>
+
+
+
+
+
+
+<script>
+    window.nds = window.nds || {};
+    window.nds.componentUrlPrefix = '//pl.ea.com/release/4.63.0/elements/ea-elements.min.js'.substring(0, '//pl.ea.com/release/4.63.0/elements/ea-elements.min.js'.lastIndexOf('/') + 1);
+    window.nds.contentfulUrl = 'https://contentful-proxy.juno.ea.com/graphql';
+    window.nds.salUrl = 'https://service-aggregation-layer.juno.ea.com/graphql';
+    window.nds.useApq = true;
+    window.nds.salClientId = 'eacom-fe';
+    window.nds.xGameDistMethod = 'eacom';
+    window.nds.lockboxGameId = 'eacom';
+    window.nds.lockboxInvoiceSource = 'EACOM-STORE-WEB-%countryCode%';
+    window.nds.lockboxExternalPaymentPath = '/lockbox-external-payment';
+</script>
+
+
+
+<script type="module" src="//pl.ea.com/release/4.63.0/elements/ea-elements.min.js"></script>
+<script nomodule defer src="//pl.ea.com/release/4.63.0/elements/ea-elements.min.js"></script>
+
+
+
+    
+        
+    
+
+<style>
+    @font-face {
+    font-family: 'ElectronicArtsDisplay';
+    src: url(/assets/fonts/display/ElectronicArtsDisplay-Regular.woff2) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsDisplay';
+    src: url(/assets/fonts/display/ElectronicArtsDisplay-Bold.woff2) format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Light.woff2) format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-LightItalic.woff2) format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Regular.woff2) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Italic.woff2) format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Bold.woff2) format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-BoldItalic.woff2) format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+</style>
+
+
+
+
+
+
+    <title>Command &amp; Conquer - Official EA Site</title>
+    
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Command &amp; Conquer - Official EA Site">
+<meta property="og:description" content="Are you ready for the ultimate real-time strategy experience? Gather resources, build your base, and create the most powerful armies in the world before engaging the enemy in all-out war. ">
+
+    <meta property="og:url" content="https://www.ea.com/games/command-and-conquer">
+
+<meta property="og:site_name" content="Electronic Arts Inc.">
+
+    <meta property="og:image" content="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/10/en-us-featured-image.jpg.adapt.crop191x100.1200w.jpg">
+
+
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+
+
+<meta name="description" content="Are you ready for the ultimate real-time strategy experience? Gather resources, build your base, and create the most powerful armies in the world before engaging the enemy in all-out war. ">
+<meta name="author" content="Electronic Arts">
+<meta property="article:modified_time" content="2023-03-31T19:50:39Z">
+<meta property="article:published_time" content="2017-02-06T18:24:25Z">
+
+
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ea">
+<meta name="twitter:title" content="Command &amp; Conquer - Official EA Site">
+<meta name="twitter:description" content="Are you ready for the ultimate real-time strategy experience? Gather resources, build your base, and create the most powerful armies in the world before engaging the enemy in all-out war. ">
+
+    <meta name="twitter:image" content="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/10/en-us-featured-image.jpg.adapt.crop16x9.1023w.jpg">
+
+<meta name="twitter:creator" content="@ea">
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+     
+"image": {
+    "@type": "ImageObject",
+    "url": "https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/10/en-us-featured-image.jpg.adapt.crop191x100.1200w.jpg"
+},
+ 
+    "author": {
+      "@type": "Organization",
+      "name": "Electronic Arts",
+      "sameAs": "https://en.wikipedia.org/wiki/Electronic_Arts"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Electronic Arts",
+        "sameAs": "https://en.wikipedia.org/wiki/Electronic_Arts",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://media.contentapi.ea.com/content/dam/ea/EA_logo.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "inLanguage": "en",
+    "description": "Are you ready for the ultimate real-time strategy experience? Gather resources, build your base, and create the most powerful armies in the world before engaging the enemy in all-out war. ",
+    "datePublished": "2017-02-06T18:24:25Z",
+    "dateModified": "2023-03-31T19:50:39Z",
+    "headline": "Command &amp; Conquer - Official EA Site",
+    "url": "https://www.ea.com/games/command-and-conquer"
+}
+</script>
+
+
+
+    </head>
+    <body unresolved>
+        
+    
+
+
+<custom-style><style include="ea-shared-styles-base-common"></style></custom-style>
+<custom-style><style include="ea-shared-styles-base-headings"></style></custom-style>
+<custom-style><style include="ea-shared-styles-base-lists"></style></custom-style>
+<custom-style><style include="ea-shared-styles-base-links"></style></custom-style>
+<custom-style><style include="ea-shared-styles-base-images"></style></custom-style>
+<custom-style><style include="ea-shared-styles-typography-headings"></style></custom-style>
+<custom-style><style include="ea-shared-styles-typography-paragraphs"></style></custom-style>
+<custom-style><style include="ea-shared-styles-typography-labels"></style></custom-style>
+
+
+    
+        
+            <custom-style>
+                <style>
+                    html {
+                        
+                            --ea-theme-color: #7dcd00;
+                        
+                    }
+                </style>
+            </custom-style>
+        
+    
+
+
+
+<ea-elements-loader elements="ea-network-nav, ea-player, ea-type-kit">
+</ea-elements-loader>
+
+
+    <ea-network-nav
+        unresolved
+        userData="/user-data"
+        content="//nds-network-nav.ea.com//en-us/network-nav"
+        login-url="/login"
+        logout-url="/logout"
+            
+                
+                    
+                        hide-logo
+                    
+                
+            
+    ></ea-network-nav>
+
+
+
+
+    
+        
+            
+                
+<ea-elements-loader elements="ea-page-background">
+</ea-elements-loader>
+<ea-page-background
+    unresolved
+    layout="fixed"
+    background-color=""
+    
+>
+    
+
+
+    <ea-elements-loader elements="ea-image">
+    </ea-elements-loader>
+    <ea-image
+        unresolved
+        tooltip=""
+        smallest="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/05/hex-bg.png.adapt.crop16x9.320w.png"
+        small="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/05/hex-bg.png.adapt.crop16x9.767w.png"
+        medium="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/05/hex-bg.png.adapt.crop16x9.1023w.png"
+        large="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/05/hex-bg.png.adapt.crop16x9.1455w.png"
+        largest="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/05/hex-bg.png.adapt.crop16x9.1920w.png"
+        
+        
+        
+        
+            slot="image"
+        
+        
+    >
+        <img
+            src="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/05/hex-bg.png.adapt.crop16x9.320w.png"
+            alt=""
+            srcset="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/05/hex-bg.png.adapt.crop16x9.320w.png 320w, https://media.contentapi.ea.com/content/dam/scorpion/images/2018/05/hex-bg.png.adapt.crop16x9.767w.png 768w, https://media.contentapi.ea.com/content/dam/scorpion/images/2018/05/hex-bg.png.adapt.crop16x9.1023w.png 1024w, https://media.contentapi.ea.com/content/dam/scorpion/images/2018/05/hex-bg.png.adapt.crop16x9.1455w.png 1320w, https://media.contentapi.ea.com/content/dam/scorpion/images/2018/05/hex-bg.png.adapt.crop16x9.1920w.png 1456w" />
+    </ea-image>
+
+
+
+</ea-page-background>
+
+            
+        
+    
+
+
+
+
+    
+        
+            
+                
+<ea-elements-loader elements="ea-local-nav-advanced, ea-link">
+</ea-elements-loader>
+<ea-local-nav-advanced
+    
+    
+        home-text = "Command and Conquer"
+        home-tooltip = "Command and Conquer"
+        home-link = "/games/command-and-conquer"
+    
+    
+        logo-image="https://media.contentapi.ea.com/content/dam/scorpion/common/cc-franchise-logo-nav.png"
+        
+            logo-tooltip="Electronics Arts Home"
+        
+    
+    
+        theme = "light"
+    
+    
+        shelf-type = "scrim"
+    
+    
+        open-drawer-text = "Menu"
+    
+    
+        close-drawer-text = "Close"
+    
+    
+    
+
+    
+        show-franchise-nav
+    
+
+    
+        show-breadcrumbs
+    
+
+    
+
+    
+
+    
+        franchise-link-text = "Command &amp; Conquer"
+    
+
+    
+        franchise-link-url = "/games/command-and-conquer"
+    
+    unresolved
+>
+    
+        
+            
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="franchise-game-box"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/gin/images/2018/05/command-and-conquer-rivals-keyart.jpg.adapt.crop1x1.767w.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/gin/common/logos/command-and-conquer-rivals-logo.svg"
+            logo-alt=""
+        
+        
+            main-link-url="/games/command-and-conquer/command-and-conquer-rivals"
+        
+        
+            main-link-title="Command &amp; Conquer: Rivals"
+        
+        
+        
+            type="simple"
+        
+        
+        show-back-alt="Command &amp; Conquer: Rivals"
+        show-front-alt="Command &amp; Conquer: Rivals"
+        title="Command &amp; Conquer: Rivals"
+        sale-text=""
+        unresolved
+    >
+        
+        
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+        <a
+            
+                href="/games/command-and-conquer/command-and-conquer-rivals"
+            
+            
+                title="Command &amp; Conquer: Rivals"
+            
+            
+        >Command &amp; Conquer: Rivals</a>
+    </ea-game-box>
+</ea-container>
+
+        
+            
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="franchise-game-box"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/command-and-conquer-tiberium-alliances-key-art.jpg.adapt.crop1x1.767w.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/gin/common/logos/command-and-conquer-tiberium-alliances-mono-logo.png"
+            logo-alt=""
+        
+        
+            main-link-url="/games/command-and-conquer/command-and-conquer-tiberium-alliances"
+        
+        
+            main-link-title="Command &amp; Conquer: Tiberium Alliances"
+        
+        
+        
+            type="simple"
+        
+        
+        show-back-alt="Command &amp; Conquer: Tiberium Alliances"
+        show-front-alt="Command &amp; Conquer: Tiberium Alliances"
+        title="Command &amp; Conquer: Tiberium Alliances"
+        sale-text=""
+        unresolved
+    >
+        
+        
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+        <a
+            
+                href="/games/command-and-conquer/command-and-conquer-tiberium-alliances"
+            
+            
+                title="Command &amp; Conquer: Tiberium Alliances"
+            
+            
+        >Command &amp; Conquer: Tiberium Alliances</a>
+    </ea-game-box>
+</ea-container>
+
+        
+            
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="franchise-game-box"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/command-and-conquer-4-tiberian-twilight-key-art.jpg.adapt.crop1x1.767w.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/gin/common/logos/command-and-conquer-4-tiberian-twilight-mono-logo.png"
+            logo-alt=""
+        
+        
+            main-link-url="/games/command-and-conquer/command-and-conquer-4-tiberian-twilight"
+        
+        
+            main-link-title="Command &amp; Conquer 4: Tiberian Twilight"
+        
+        
+        
+            type="simple"
+        
+        
+        show-back-alt="Command &amp; Conquer 4: Tiberian Twilight"
+        show-front-alt="Command &amp; Conquer 4: Tiberian Twilight"
+        title="Command &amp; Conquer 4: Tiberian Twilight"
+        sale-text=""
+        unresolved
+    >
+        
+        
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+        <a
+            
+                href="/games/command-and-conquer/command-and-conquer-4-tiberian-twilight"
+            
+            
+                title="Command &amp; Conquer 4: Tiberian Twilight"
+            
+            
+        >Command &amp; Conquer 4: Tiberian Twilight</a>
+    </ea-game-box>
+</ea-container>
+
+        
+            
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="franchise-game-box"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/command-and-conquer-red-alert-3-uprising-key-art.jpg.adapt.crop1x1.767w.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/gin/common/logos/command-and-conquer-red-alert-3-uprising-mono-logo.png"
+            logo-alt=""
+        
+        
+            main-link-url="/games/command-and-conquer/command-and-conquer-red-alert-3-uprising"
+        
+        
+            main-link-title="Command &amp; Conquer Red Alert 3: Uprising"
+        
+        
+        
+            type="simple"
+        
+        
+        show-back-alt="Back"
+        show-front-alt="Front"
+        title="Command &amp; Conquer Red Alert 3: Uprising"
+        sale-text=""
+        unresolved
+    >
+        
+        
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+        <a
+            
+                href="/games/command-and-conquer/command-and-conquer-red-alert-3-uprising"
+            
+            
+                title="Command &amp; Conquer Red Alert 3: Uprising"
+            
+            
+        >Command &amp; Conquer Red Alert 3: Uprising</a>
+    </ea-game-box>
+</ea-container>
+
+        
+            
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="franchise-game-box"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/command-and-conquer-red-alert-3-key-art.jpg.adapt.crop1x1.767w.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/gin/common/logos/command-and-conquer-red-alert-3-mono-logo.png"
+            logo-alt=""
+        
+        
+            main-link-url="/games/command-and-conquer/command-and-conquer-red-alert-3"
+        
+        
+            main-link-title="Command And Conquer Red Alert 3"
+        
+        
+        
+            type="simple"
+        
+        
+        show-back-alt="Back"
+        show-front-alt="Front"
+        title="Command And Conquer Red Alert 3"
+        sale-text=""
+        unresolved
+    >
+        
+        
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+        <a
+            
+                href="/games/command-and-conquer/command-and-conquer-red-alert-3"
+            
+            
+                title="Command And Conquer Red Alert 3"
+            
+            
+        >Command And Conquer Red Alert 3</a>
+    </ea-game-box>
+</ea-container>
+
+        
+    
+
+    
+
+    
+        <a title="Command and Conquer" href="/games/command-and-conquer">
+            Command and Conquer
+            
+                <img
+                    src="https://media.contentapi.ea.com/content/dam/scorpion/common/cc-franchise-logo-nav.png"
+                    
+                        alt="Electronics Arts Home"
+                    
+                />
+            
+        </a>
+    
+
+    
+        
+            
+                <ea-link
+                    slot="local-nav-shelf-link"
+                    class="eapl-local-nav__shelf-link"
+                    text-color="dark"
+                    link-href="#games"
+                    link-title="Games"
+                    link-text="Games"
+                    unresolved
+                >
+                    <a href="#games">Games</a>
+                </ea-link>
+            
+        
+    
+
+    
+        
+            
+
+    <ea-elements-loader elements="ea-link">
+    </ea-elements-loader>
+    <ea-link
+        
+            slot="local-nav-drawer-link"
+        
+        class="eapl-local-nav__drawer-link"
+        link-href="#games"
+        link-title="Games"
+        link-text="Games"
+        text-color="dark"
+        unresolved
+    >
+        <a href="#games">Games</a>
+    </ea-link>
+
+
+        
+    
+
+    
+</ea-local-nav-advanced>
+
+            
+        
+    
+
+
+
+
+
+<main>
+    
+
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="hidden"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+        background-image-smallest="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/common/c-c-rm-section-bg-xl.png.adapt.320w.png"
+        background-image-small="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/common/c-c-rm-section-bg-xl.png.adapt.768w.png"
+        background-image-medium="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/common/c-c-rm-section-bg-xl.png.adapt.1024w.png"
+        background-image-large="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/common/c-c-rm-section-bg-xl.png.adapt.1456w.png"
+        background-image-largest="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/common/c-c-rm-section-bg-xl.png.adapt.1920w.png"
+        image-tooltip=""
+    
+    
+>
+    
+        <img
+            src="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/common/c-c-rm-section-bg-xl.png.adapt.320w.png"
+            alt=""
+            srcset="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/common/c-c-rm-section-bg-xl.png.adapt.320w.png 320w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/common/c-c-rm-section-bg-xl.png.adapt.768w.png 768w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/common/c-c-rm-section-bg-xl.png.adapt.1024w.png 1024w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/common/c-c-rm-section-bg-xl.png.adapt.1456w.png 1320w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/common/c-c-rm-section-bg-xl.png.adapt.1920w.png 1456w"
+        />
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+        indent-left=""
+    
+    
+        indent-right=""
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-spacer">
+</ea-elements-loader>
+<ea-spacer
+    unresolved
+    
+        smallest="92px"
+    
+    
+        small="92px"
+    
+    
+        medium="16vw"
+    
+    
+        large="14vw"
+    
+    
+        largest="12vw"
+    
+>
+</ea-spacer>
+
+<ea-elements-loader elements="ea-hero">
+</ea-elements-loader>
+<ea-hero
+    
+        layout="medium"
+    
+    
+        text-position="right"
+    
+    
+        text-align="center"
+    
+    
+        text-color="light"
+    
+    
+        stacked
+    
+    
+    
+    
+    
+    
+        background-color="none"
+    
+    
+    
+    
+    
+        subtitle-text="Welcome back, Commander."
+    
+    
+    
+        image-smallest="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-hero-medium-7x2-xl.png.adapt.crop16x9.320w.png"
+        image-small="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-hero-medium-7x2-xl.png.adapt.crop16x9.767w.png"
+        image-medium="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-hero-medium-7x2-xl.png.adapt.crop2x1.1023w.png"
+        image-large="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-hero-medium-7x2-xl.png.adapt.crop5x2.1455w.png"
+        image-largest="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-hero-medium-7x2-xl.png.adapt.crop7x2.1920w.png"
+        image-tooltip=""
+    
+    
+    
+    
+    
+    
+    
+    
+        logo-image-smallest="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-logo-xl.png.adapt.crop16x9.320w.png"
+        logo-image-small="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-logo-xl.png.adapt.crop16x9.767w.png"
+        logo-image-medium="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-logo-xl.png.adapt.crop2x1.1023w.png"
+        logo-image-large="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-logo-xl.png.adapt.crop5x2.1455w.png"
+        logo-image-largest="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-logo-xl.png.adapt.crop7x2.1920w.png"
+        logo-image-tooltip=""
+    
+    
+    
+    
+    
+    
+    
+        spacing-bottom="none"
+    
+    
+        spacing-top="none"
+    
+    
+        scrim-color="none"
+    
+    
+        scrim-opacity="medium"
+    
+    
+    unresolved
+    
+        custom-styles="{}"
+    
+    
+    
+    
+>
+    
+    
+        <h2>Welcome back, Commander.</h2>
+    
+    
+    
+    
+        <img
+            src="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-hero-medium-7x2-xl.png.adapt.crop16x9.320w.png"
+            alt=""
+            srcset="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-hero-medium-7x2-xl.png.adapt.crop16x9.320w.png 320w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-hero-medium-7x2-xl.png.adapt.crop16x9.767w.png 768w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-hero-medium-7x2-xl.png.adapt.crop2x1.1023w.png 1024w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-hero-medium-7x2-xl.png.adapt.crop5x2.1455w.png 1320w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-hero-medium-7x2-xl.png.adapt.crop7x2.1920w.png 1456w"
+        />
+    
+    
+    
+    
+    
+    
+    
+    
+        <img
+            src="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-logo-xl.png.adapt.crop16x9.320w.png"
+            alt=""
+            srcset="https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-logo-xl.png.adapt.crop16x9.320w.png 320w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-logo-xl.png.adapt.crop16x9.767w.png 768w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-logo-xl.png.adapt.crop2x1.1023w.png 1024w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-logo-xl.png.adapt.crop5x2.1455w.png 1320w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/games-hub/images/2020/06/c-c-rm-logo-xl.png.adapt.crop7x2.1920w.png 1456w"
+        />
+    
+    
+    
+    
+    
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+    
+    
+        link-text="Watch Trailer"
+    
+    
+        icon="play"
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="dark"
+    
+    
+        stroke-color="none"
+    
+    
+    
+    
+    
+        intent="media"
+    
+    
+        modal-id="remastered-trailer"
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+        
+    >
+        
+            Watch Trailer
+        
+    </a>
+</ea-cta>
+
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="/games/command-and-conquer/command-and-conquer-remastered"
+    
+    
+    
+        link-text="Learn More"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="none"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="light"
+    
+    
+    
+    
+    
+        intent="buy"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="/games/command-and-conquer/command-and-conquer-remastered"
+        
+        
+    >
+        
+            Learn More
+        
+    </a>
+</ea-cta>
+
+    
+</ea-hero>
+
+<ea-elements-loader elements="ea-spacer">
+</ea-elements-loader>
+<ea-spacer
+    unresolved
+    
+        smallest="0vw"
+    
+    
+        small="0vw"
+    
+    
+        medium="0vw"
+    
+    
+        large="3vw"
+    
+    
+        largest="6vw"
+    
+>
+</ea-spacer>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="hidden"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-hero">
+</ea-elements-loader>
+<ea-hero
+    
+        layout="medium"
+    
+    
+        text-position="center"
+    
+    
+        text-align="center"
+    
+    
+        text-color="light"
+    
+    
+    
+    
+    
+    
+    
+        background-color="none"
+    
+    
+    
+    
+    
+        subtitle-text="Dominate Your Opponents in Real-Time 1v1 Matches!"
+    
+    
+    
+        image-smallest="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/11/ccr-hero-medium-ccr-dec4-18-hero-update-7x2-xl.jpg.adapt.crop3x5.320w.jpg"
+        image-small="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/11/ccr-hero-medium-ccr-dec4-18-hero-update-7x2-xl.jpg.adapt.crop3x5.767w.jpg"
+        image-medium="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/11/ccr-hero-medium-ccr-dec4-18-hero-update-7x2-xl.jpg.adapt.crop2x1.1023w.jpg"
+        image-large="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/11/ccr-hero-medium-ccr-dec4-18-hero-update-7x2-xl.jpg.adapt.crop5x2.1455w.jpg"
+        image-largest="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/11/ccr-hero-medium-ccr-dec4-18-hero-update-7x2-xl.jpg.adapt.crop7x2.1920w.jpg"
+        image-tooltip=""
+    
+    
+    
+    
+    
+    
+        logo-image="https://media.contentapi.ea.com/content/dam/eacom/en-us/images/2018/05/ccr-hero-logo.png"
+        logo-alt=""
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        spacing-bottom="none"
+    
+    
+        spacing-top="none"
+    
+    
+        scrim-color="none"
+    
+    
+        scrim-opacity="medium"
+    
+    
+    unresolved
+    
+        custom-styles="{}"
+    
+    
+    
+    
+>
+    
+    
+        <h2>Dominate Your Opponents in Real-Time 1v1 Matches!</h2>
+    
+    
+    
+    
+        <img
+            src="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/11/ccr-hero-medium-ccr-dec4-18-hero-update-7x2-xl.jpg.adapt.crop3x5.320w.jpg"
+            alt=""
+            srcset="https://media.contentapi.ea.com/content/dam/scorpion/images/2018/11/ccr-hero-medium-ccr-dec4-18-hero-update-7x2-xl.jpg.adapt.crop3x5.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/scorpion/images/2018/11/ccr-hero-medium-ccr-dec4-18-hero-update-7x2-xl.jpg.adapt.crop3x5.767w.jpg 768w, https://media.contentapi.ea.com/content/dam/scorpion/images/2018/11/ccr-hero-medium-ccr-dec4-18-hero-update-7x2-xl.jpg.adapt.crop2x1.1023w.jpg 1024w, https://media.contentapi.ea.com/content/dam/scorpion/images/2018/11/ccr-hero-medium-ccr-dec4-18-hero-update-7x2-xl.jpg.adapt.crop5x2.1455w.jpg 1320w, https://media.contentapi.ea.com/content/dam/scorpion/images/2018/11/ccr-hero-medium-ccr-dec4-18-hero-update-7x2-xl.jpg.adapt.crop7x2.1920w.jpg 1456w"
+        />
+    
+    
+    
+    
+    
+    
+        <img
+            src="https://media.contentapi.ea.com/content/dam/eacom/en-us/images/2018/05/ccr-hero-logo.png"
+            
+            alt=""
+        />
+    
+    
+    
+    
+    
+    
+    
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="/games/command-and-conquer/command-and-conquer-rivals"
+    
+    
+    
+        link-text="What&#x27;s New"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="dark"
+    
+    
+        stroke-color="none"
+    
+    
+    
+    
+    
+        intent="navigation"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="/games/command-and-conquer/command-and-conquer-rivals"
+        
+        
+    >
+        
+            What&#x27;s New
+        
+    </a>
+</ea-cta>
+
+    
+</ea-hero>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="hidden"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+        background-image-smallest="https://media.contentapi.ea.com/content/dam/scorpion/common/cc-hero-md-ultimate-collection-7x2-xl.jpg.adapt.320w.jpg"
+        background-image-small="https://media.contentapi.ea.com/content/dam/scorpion/common/cc-hero-md-ultimate-collection-7x2-xl.jpg.adapt.768w.jpg"
+        background-image-medium="https://media.contentapi.ea.com/content/dam/scorpion/common/cc-hero-md-ultimate-collection-7x2-xl.jpg.adapt.1024w.jpg"
+        background-image-large="https://media.contentapi.ea.com/content/dam/scorpion/common/cc-hero-md-ultimate-collection-7x2-xl.jpg.adapt.1456w.jpg"
+        background-image-largest="https://media.contentapi.ea.com/content/dam/scorpion/common/cc-hero-md-ultimate-collection-7x2-xl.jpg.adapt.1920w.jpg"
+        image-tooltip=""
+    
+    
+>
+    
+        <img
+            src="https://media.contentapi.ea.com/content/dam/scorpion/common/cc-hero-md-ultimate-collection-7x2-xl.jpg.adapt.320w.jpg"
+            alt=""
+            srcset="https://media.contentapi.ea.com/content/dam/scorpion/common/cc-hero-md-ultimate-collection-7x2-xl.jpg.adapt.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/scorpion/common/cc-hero-md-ultimate-collection-7x2-xl.jpg.adapt.768w.jpg 768w, https://media.contentapi.ea.com/content/dam/scorpion/common/cc-hero-md-ultimate-collection-7x2-xl.jpg.adapt.1024w.jpg 1024w, https://media.contentapi.ea.com/content/dam/scorpion/common/cc-hero-md-ultimate-collection-7x2-xl.jpg.adapt.1456w.jpg 1320w, https://media.contentapi.ea.com/content/dam/scorpion/common/cc-hero-md-ultimate-collection-7x2-xl.jpg.adapt.1920w.jpg 1456w"
+        />
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-hero">
+</ea-elements-loader>
+<ea-hero
+    
+        layout="medium"
+    
+    
+        text-position="center"
+    
+    
+        text-align="center"
+    
+    
+        text-color="light"
+    
+    
+    
+    
+    
+    
+    
+        background-color="none"
+    
+    
+    
+    
+        title-text="Command and Conquer™ The Ultimate Collection"
+    
+    
+    
+        copy-text="Enjoy limitless hours of RTS Command & Conquer gaming with 10 base games and 7 in-depth expansion packs.  To purchase, open the EA app for Windows and search for &quot;Command and Conquer Ultimate Collection&quot;."
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        spacing-bottom="none"
+    
+    
+        spacing-top="none"
+    
+    
+        scrim-color="none"
+    
+    
+        scrim-opacity="medium"
+    
+    
+    unresolved
+    
+        custom-styles="{}"
+    
+    
+    
+    
+>
+    
+        <h1>Command and Conquer™ The Ultimate Collection</h1>
+    
+    
+    
+        <p>Enjoy limitless hours of RTS Command &amp; Conquer gaming with 10 base games and 7 in-depth expansion packs.  To purchase, open the EA app for Windows and search for &amp;quot;Command and Conquer Ultimate Collection&amp;quot;.</p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="/ea-app"
+    
+    
+    
+        link-text="Get the EA app for Windows"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="dark"
+    
+    
+        stroke-color="none"
+    
+    
+        target="_blank"
+    
+    
+    
+    
+        intent="navigation"
+    
+    
+    
+    
+        emphasis="primary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="/ea-app"
+        
+        
+    >
+        
+            Get the EA app for Windows
+        
+    </a>
+</ea-cta>
+
+    
+</ea-hero>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+<ea-elements-loader elements="ea-newsletter-opt-in">
+</ea-elements-loader>
+<ea-newsletter-opt-in
+    api-newsletter-status="/api/newsletter/status"
+    api-newsletter-signup="/api/newsletter/signup"
+    
+        token="4e-kfOcYU9XR01aPdK1ikh0KRbbszqQCE4QQFkyBijTYii8Lfkr0UfdYAvgLzESDKhPAHeK_YcAKTBn_t0S9HGjSUbCIwTVFFIAl_oKaeo995bXS0H9TeryvgC-IMsn7VJUdaphiXl_ASOgwC6IgpqMw2DX6Tw"
+    
+    
+    
+    
+        proposition-title-text="Stay up to date with Command &amp; Conquer™ &amp; EA emails"
+    
+    
+        email-label-text="Email"
+    
+    
+        email-error-text="The email address is invalid. It should be a valid, full address, e.g. user@domain.com"
+    
+    
+        birthdate-label-Text="Birthdate"
+    
+    
+        birthdate-error-Text="Please enter your birthdate in MM/DD/YYYY format."
+    
+    
+        birthdate-month-placeholder-text="MM"
+    
+    
+        birthdate-day-placeholder-text="DD"
+    
+    
+        birthdate-year-placeholder-text="YYYY"
+    
+    
+        birthdate-format = "mm-dd-yyyy"
+    
+    
+        country-label-text="Country"
+    
+    
+        countries="[{&#34;value&#34;:&#34;US&#34;,&#34;text&#34;:&#34;United States&#34;},{&#34;value&#34;:&#34;AR&#34;,&#34;text&#34;:&#34;Argentina&#34;},{&#34;value&#34;:&#34;AU&#34;,&#34;text&#34;:&#34;Australia&#34;},{&#34;value&#34;:&#34;AT&#34;,&#34;text&#34;:&#34;Austria&#34;},{&#34;value&#34;:&#34;BE&#34;,&#34;text&#34;:&#34;Belgium&#34;},{&#34;value&#34;:&#34;BR&#34;,&#34;text&#34;:&#34;Brazil&#34;},{&#34;value&#34;:&#34;CA&#34;,&#34;text&#34;:&#34;Canada&#34;},{&#34;value&#34;:&#34;CL&#34;,&#34;text&#34;:&#34;Chile&#34;},{&#34;value&#34;:&#34;CN&#34;,&#34;text&#34;:&#34;China&#34;},{&#34;value&#34;:&#34;CO&#34;,&#34;text&#34;:&#34;Colombia&#34;},{&#34;value&#34;:&#34;CZ&#34;,&#34;text&#34;:&#34;Czech Republic&#34;},{&#34;value&#34;:&#34;DK&#34;,&#34;text&#34;:&#34;Denmark&#34;},{&#34;value&#34;:&#34;FI&#34;,&#34;text&#34;:&#34;Finland&#34;},{&#34;value&#34;:&#34;FR&#34;,&#34;text&#34;:&#34;France&#34;},{&#34;value&#34;:&#34;DE&#34;,&#34;text&#34;:&#34;Germany&#34;},{&#34;value&#34;:&#34;GR&#34;,&#34;text&#34;:&#34;Greece&#34;},{&#34;value&#34;:&#34;HK&#34;,&#34;text&#34;:&#34;Hong Kong&#34;},{&#34;value&#34;:&#34;HU&#34;,&#34;text&#34;:&#34;Hungary&#34;},{&#34;value&#34;:&#34;IN&#34;,&#34;text&#34;:&#34;India&#34;},{&#34;value&#34;:&#34;IE&#34;,&#34;text&#34;:&#34;Ireland&#34;},{&#34;value&#34;:&#34;IL&#34;,&#34;text&#34;:&#34;Israel&#34;},{&#34;value&#34;:&#34;IT&#34;,&#34;text&#34;:&#34;Italy&#34;},{&#34;value&#34;:&#34;JP&#34;,&#34;text&#34;:&#34;Japan&#34;},{&#34;value&#34;:&#34;KR&#34;,&#34;text&#34;:&#34;Korea&#34;},{&#34;value&#34;:&#34;MX&#34;,&#34;text&#34;:&#34;Mexico&#34;},{&#34;value&#34;:&#34;NL&#34;,&#34;text&#34;:&#34;Netherlands&#34;},{&#34;value&#34;:&#34;NZ&#34;,&#34;text&#34;:&#34;New Zealand&#34;},{&#34;value&#34;:&#34;NO&#34;,&#34;text&#34;:&#34;Norway&#34;},{&#34;value&#34;:&#34;PL&#34;,&#34;text&#34;:&#34;Poland&#34;},{&#34;value&#34;:&#34;PT&#34;,&#34;text&#34;:&#34;Portugal&#34;},{&#34;value&#34;:&#34;RO&#34;,&#34;text&#34;:&#34;Romania&#34;},{&#34;value&#34;:&#34;RU&#34;,&#34;text&#34;:&#34;Russia&#34;},{&#34;value&#34;:&#34;SA&#34;,&#34;text&#34;:&#34;Saudi Arabia&#34;},{&#34;value&#34;:&#34;SG&#34;,&#34;text&#34;:&#34;Singapore&#34;},{&#34;value&#34;:&#34;SK&#34;,&#34;text&#34;:&#34;Slovakia&#34;},{&#34;value&#34;:&#34;ZA&#34;,&#34;text&#34;:&#34;South Africa&#34;},{&#34;value&#34;:&#34;ES&#34;,&#34;text&#34;:&#34;Spain&#34;},{&#34;value&#34;:&#34;SE&#34;,&#34;text&#34;:&#34;Sweden&#34;},{&#34;value&#34;:&#34;CH&#34;,&#34;text&#34;:&#34;Switzerland&#34;},{&#34;value&#34;:&#34;TW&#34;,&#34;text&#34;:&#34;Taiwan&#34;},{&#34;value&#34;:&#34;TH&#34;,&#34;text&#34;:&#34;Thailand&#34;},{&#34;value&#34;:&#34;TR&#34;,&#34;text&#34;:&#34;Turkey&#34;},{&#34;value&#34;:&#34;UA&#34;,&#34;text&#34;:&#34;Ukraine&#34;},{&#34;value&#34;:&#34;AE&#34;,&#34;text&#34;:&#34;United Arab Emirates&#34;},{&#34;value&#34;:&#34;GB&#34;,&#34;text&#34;:&#34;United Kingdom&#34;}]"
+    
+    
+        edit-profile-text="edit"
+    
+    
+        edit-profile-link="https://myaccount.ea.com/cp-ui/aboutme/index"
+    
+    
+        connected-platforms-title-text="Your Connected Platforms."
+    
+    
+        connected-platforms-more-text="See Connected Platforms"
+    
+    
+        connected-platforms-more-link="https://myaccount.ea.com/cp-ui/aboutme/index"
+    
+    
+        connected-platforms-help-text="How do I add accounts?"
+    
+    
+        connected-platforms-help-link="https://help.ea.com/en-ca/help/account/linking-your-origin-account-with-your-psn-id-and-gamertag/"
+    
+    
+        submit-text="Sign Up"
+    
+    
+        sign-in-cta-text="Sign In and Join"
+    
+    
+        sign-in-cta-link="/login"
+    
+    
+        sign-up-cta-text="Sign Up"
+    
+    
+        success-title-text="You&#x27;ve successfully signed up."
+    
+    
+    
+    
+    
+    
+    
+        already-title-text="You&#x27;ve already signed up."
+    
+    
+    
+    
+        ineligible-title-text="Ineligible"
+    
+    
+    
+    
+        error-title-text="Error"
+    
+    
+    
+    
+        type="dedicated"
+    
+    
+        theme="light"
+    
+    
+        input-background-color="none"
+    
+    
+        background-color="none"
+    
+    
+        submit-text-color="dark"
+    
+    
+        spacing-bottom="none"
+    
+    
+        spacing-top="none"
+    
+    
+        preferences
+    
+    
+    unresolved
+>
+    
+        
+<ea-elements-loader elements="ea-connected-accounts">
+</ea-elements-loader>
+<ea-connected-accounts
+    
+        slot="context-connected-accounts"
+    
+    
+        cta-text="See Connected Platforms"
+    
+    
+        cta-link="https://myaccount.ea.com/cp-ui/aboutme/index"
+    
+    
+        text-color="light"
+    
+    
+        spacing-bottom="none"
+    
+    
+        spacing-top="none"
+    
+    unresolved
+></ea-connected-accounts>
+
+    
+    
+        
+<ea-elements-loader elements="ea-connected-accounts">
+</ea-elements-loader>
+<ea-connected-accounts
+    
+        slot="already-signed-up-connected-accounts"
+    
+    
+        cta-text="See Connected Platforms"
+    
+    
+        cta-link="https://myaccount.ea.com/cp-ui/aboutme/index"
+    
+    
+        text-color="light"
+    
+    
+        spacing-bottom="none"
+    
+    
+        spacing-top="none"
+    
+    unresolved
+></ea-connected-accounts>
+
+    
+    
+        
+<ea-elements-loader elements="ea-input">
+</ea-elements-loader>
+<ea-input
+    
+        slot="email-field"
+    
+    
+        id="Email"
+    
+    
+        type="email"
+    
+    
+        name="email"
+    
+    
+        required
+    
+    
+        background-color="none"
+    
+    
+        text-color="light"
+    
+    
+        theme="light"
+    
+    
+        label-text="Email"
+    
+    
+        error-text="The email address is invalid. It should be a valid, full address, e.g. user@domain.com"
+    
+    
+    
+    
+    unresolved
+></ea-input>
+
+    
+    
+        
+<ea-elements-loader elements="ea-date-field">
+</ea-elements-loader>
+<ea-date-field
+    
+        slot="birthdate-field"
+    
+    
+    
+        id="DateOfBirth"
+    
+    
+        name="birthdate"
+    
+    
+        error-text="Please enter your birthdate in MM/DD/YYYY format."
+    
+    
+    
+        text-color="light"
+    
+    
+        background-color="none"
+    
+    
+        month-placeholder="MM"
+    
+    
+        day-placeholder="DD"
+    
+    
+        year-placeholder="YYYY"
+    
+    
+    
+        label-text="Birthdate"
+    
+    
+    
+        required
+    
+    
+    unresolved
+>
+</ea-date-field>
+
+    
+    
+        
+<ea-elements-loader elements="ea-select">
+</ea-elements-loader>
+<ea-select
+    unresolved
+    
+        slot="country-field"
+    
+    
+        id="Country"
+    
+    
+        theme="light"
+    
+    
+        background-color="none"
+    
+    
+        label-text="Country"
+    
+    
+        value="US"
+    
+    
+>
+    
+        
+            <ea-select-option
+            slot="select-option"
+            value="US"
+            >
+            United States
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="AR"
+            >
+            Argentina
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="AU"
+            >
+            Australia
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="AT"
+            >
+            Austria
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="BE"
+            >
+            Belgium
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="BR"
+            >
+            Brazil
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="CA"
+            >
+            Canada
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="CL"
+            >
+            Chile
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="CN"
+            >
+            China
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="CO"
+            >
+            Colombia
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="CZ"
+            >
+            Czech Republic
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="DK"
+            >
+            Denmark
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="FI"
+            >
+            Finland
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="FR"
+            >
+            France
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="DE"
+            >
+            Germany
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="GR"
+            >
+            Greece
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="HK"
+            >
+            Hong Kong
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="HU"
+            >
+            Hungary
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="IN"
+            >
+            India
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="IE"
+            >
+            Ireland
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="IL"
+            >
+            Israel
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="IT"
+            >
+            Italy
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="JP"
+            >
+            Japan
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="KR"
+            >
+            Korea
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="MX"
+            >
+            Mexico
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="NL"
+            >
+            Netherlands
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="NZ"
+            >
+            New Zealand
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="NO"
+            >
+            Norway
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="PL"
+            >
+            Poland
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="PT"
+            >
+            Portugal
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="RO"
+            >
+            Romania
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="RU"
+            >
+            Russia
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="SA"
+            >
+            Saudi Arabia
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="SG"
+            >
+            Singapore
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="SK"
+            >
+            Slovakia
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="ZA"
+            >
+            South Africa
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="ES"
+            >
+            Spain
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="SE"
+            >
+            Sweden
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="CH"
+            >
+            Switzerland
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="TW"
+            >
+            Taiwan
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="TH"
+            >
+            Thailand
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="TR"
+            >
+            Turkey
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="UA"
+            >
+            Ukraine
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="AE"
+            >
+            United Arab Emirates
+            </ea-select-option>
+        
+            <ea-select-option
+            slot="select-option"
+            value="GB"
+            >
+            United Kingdom
+            </ea-select-option>
+        
+    
+
+</ea-select>
+
+    
+    
+    
+        
+<ea-elements-loader elements="ea-checkbox">
+</ea-elements-loader>
+<ea-checkbox
+    
+        slot="opt-in-field"
+    
+    
+        id="LegalOptIn"
+    
+    
+        name="legalOptin"
+    
+    
+        required
+    
+    
+    
+        text-color="light"
+    
+    unresolved
+>
+    
+        I can unsubscribe at any time by changing my <a adhocenable="false" href="https://myaccount.ea.com/cp-ui/aboutme/index">email preferences</a>, contacting <a adhocenable="false" href="https://privacyadmin.ea.com/">privacyadmin.ea.com</a>, or writing to Electronic Arts Inc., ATTN: Email Opt-Out, 209 Redwood Shores Pkwy, Redwood City, CA, 94065, USA.
+    
+</ea-checkbox>
+
+    
+    
+        
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="sign-in-cta"
+    
+    
+    
+        link-url="/login"
+    
+    
+    
+        link-text="Sign In and Join"
+    
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="dark"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="/login"
+        
+        
+    >
+        
+            Sign In and Join
+        
+    </a>
+</ea-cta>
+
+    
+    
+        
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="sign-up-cta"
+    
+    
+    
+    
+    
+        link-text="Sign Up"
+    
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="dark"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+        
+    >
+        
+            Sign Up
+        
+    </a>
+</ea-cta>
+
+    
+    
+        
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="success-cta"
+    
+    
+    
+    
+    
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="dark"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+        
+    >
+        
+    </a>
+</ea-cta>
+
+    
+    
+        
+<ea-elements-loader elements="ea-form-errors">
+</ea-elements-loader>
+<ea-form-errors
+    
+        slot="form-errors"
+    
+    unresolved
+>
+</ea-form-errors>
+
+
+    
+    
+        
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="double-opt-in-cta"
+    
+    
+    
+    
+    
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="dark"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+        
+    >
+        
+    </a>
+</ea-cta>
+
+    
+    
+        
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="already-cta"
+    
+    
+    
+    
+    
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="dark"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+        
+    >
+        
+    </a>
+</ea-cta>
+
+    
+    
+        
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="ineligible-cta"
+    
+    
+    
+    
+    
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="dark"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+        
+    >
+        
+    </a>
+</ea-cta>
+
+    
+    
+        
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="error-cta"
+    
+    
+    
+    
+    
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="dark"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+        
+    >
+        
+    </a>
+</ea-cta>
+
+    
+    
+        
+<ea-elements-loader elements="ea-submit">
+</ea-elements-loader>
+<ea-submit
+    unresolved
+    
+        slot="sign-up-submit"
+    
+    
+        value-text="Sign Up"
+    
+    
+        text-color="dark"
+    
+    
+    
+    
+    
+></ea-submit>
+
+    
+    
+        <newsletter-opt-in-proposition-copy-text
+            slot="newsletter-opt-in-proposition-copy-text"
+        >
+            <p>Sign up today to receive the latest&nbsp;Command &amp; Conquer™ news, updates, behind-the-scenes content, offers, and more (including other EA news, products, events, and promotions) by email.</p>
+
+        </newsletter-opt-in-proposition-copy-text>
+    
+    
+        <newsletter-opt-in-sign-in-copy-text
+            slot="newsletter-opt-in-sign-in-copy-text"
+        >
+            <p>You must sign in and sign up for&nbsp;Command &amp; Conquer™ newsletter before you can redeem your items.</p>
+
+        </newsletter-opt-in-sign-in-copy-text>
+    
+    
+        <newsletter-opt-in-sign-up-copy-text
+            slot="newsletter-opt-in-sign-up-copy-text"
+        >
+            <p>You must sign in and sign up for&nbsp;Command &amp; Conquer™ newsletter before you can redeem your items.</p>
+
+        </newsletter-opt-in-sign-up-copy-text>
+    
+    
+    
+        <newsletter-opt-in-success-copy-text
+            slot="newsletter-opt-in-success-copy-text"
+        >
+            <p>You&#39;ve successfully signed up to receive emails about&nbsp;Command &amp; Conquer™ and other EA news, products, events and promotions. Unsubscribe at any time by changing your <a href="https://myaccount.ea.com/cp-ui/aboutme/index" adhocenable="false">email preferences</a>.</p>
+
+        </newsletter-opt-in-success-copy-text>
+    
+    
+    
+        <newsletter-opt-in-already-copy-text
+            slot="newsletter-opt-in-already-copy-text"
+        >
+            <p>You’ve already signed up for&nbsp;Command &amp; Conquer™ newsletters with the above email. Please check your spam folder. If you still have troubles receiving the emails, please <a href="https://help.ea.com/contact-us/">contact EA</a>.</p>
+
+        </newsletter-opt-in-already-copy-text>
+    
+    
+        <newsletter-opt-in-ineligible-copy-text
+            slot="newsletter-opt-in-ineligible-copy-text"
+        >
+            <p>Sorry, you are ineligible to sign up for this newsletter.</p>
+
+        </newsletter-opt-in-ineligible-copy-text>
+    
+    
+        <newsletter-opt-in-error-copy-text
+            slot="newsletter-opt-in-error-copy-text"
+        >
+            <p>Sorry, something has gone wrong. Please try again later.</p>
+
+        </newsletter-opt-in-error-copy-text>
+    
+</ea-newsletter-opt-in>
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="visible"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="small"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+        indent-left=""
+    
+    
+        indent-right=""
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-hero">
+</ea-elements-loader>
+<ea-hero
+    
+        layout="medium"
+    
+    
+        text-position="center"
+    
+    
+        text-align="center"
+    
+    
+        text-color="light"
+    
+    
+    
+    
+    
+    
+    
+        background-color="light"
+    
+    
+    
+    
+    
+    
+    
+        image-smallest="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/02/hero-cncta-m.jpg.adapt.crop3x5.320w.jpg"
+        image-small="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/02/hero-cncta-m.jpg.adapt.crop3x5.767w.jpg"
+        image-medium="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/02/hero-cncta-m.jpg.adapt.crop2x1.1023w.jpg"
+        image-large="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/02/hero-cncta-m.jpg.adapt.crop5x2.1455w.jpg"
+        image-largest="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/02/hero-cncta-m.jpg.adapt.crop7x2.1920w.jpg"
+        image-tooltip=""
+    
+    
+    
+    
+    
+    
+        logo-image="https://media.contentapi.ea.com/content/dam/eacom/en-us/common/hero-cncta-logo.png"
+        logo-alt=""
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        spacing-bottom="medium"
+    
+    
+    
+        scrim-color="none"
+    
+    
+        scrim-opacity="medium"
+    
+    
+    unresolved
+    
+        custom-styles="{}"
+    
+    
+    
+    
+>
+    
+    
+    
+    
+    
+        <img
+            src="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/02/hero-cncta-m.jpg.adapt.crop3x5.320w.jpg"
+            alt=""
+            srcset="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/02/hero-cncta-m.jpg.adapt.crop3x5.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/02/hero-cncta-m.jpg.adapt.crop3x5.767w.jpg 768w, https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/02/hero-cncta-m.jpg.adapt.crop2x1.1023w.jpg 1024w, https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/02/hero-cncta-m.jpg.adapt.crop5x2.1455w.jpg 1320w, https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2017/02/hero-cncta-m.jpg.adapt.crop7x2.1920w.jpg 1456w"
+        />
+    
+    
+    
+    
+    
+    
+        <img
+            src="https://media.contentapi.ea.com/content/dam/eacom/en-us/common/hero-cncta-logo.png"
+            
+            alt=""
+        />
+    
+    
+    
+    
+    
+    
+    
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="http://o.ea.com/32450"
+    
+    
+        link-title="Play Command &amp; Conquer Tiberium Alliances"
+    
+    
+        link-text="Play Free Now"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="brand"
+    
+    
+        text-color="dark"
+    
+    
+        stroke-color="none"
+    
+    
+        target="_blank"
+    
+    
+    
+    
+        intent="navigation"
+    
+    
+    
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="http://o.ea.com/32450"
+        
+        
+            title="Play Command &amp; Conquer Tiberium Alliances"
+        
+    >
+        
+            Play Free Now
+        
+    </a>
+</ea-cta>
+
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="https://www.tiberiumalliances.com/home"
+    
+    
+        link-title="Learn More about Command &amp; Conquer Tiberium Alliances"
+    
+    
+        link-text="Learn More"
+    
+    
+        icon="none"
+    
+    
+    
+        fill-color="none"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="light"
+    
+    
+        target="_blank"
+    
+    
+    
+    
+        intent="navigation"
+    
+    
+    
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="https://www.tiberiumalliances.com/home"
+        
+        
+            title="Learn More about Command &amp; Conquer Tiberium Alliances"
+        
+    >
+        
+            Learn More
+        
+    </a>
+</ea-cta>
+
+    
+</ea-hero>
+
+<ea-elements-loader elements="ea-text">
+</ea-elements-loader>
+<ea-text
+    unresolved
+    slot="text"
+    
+        text-color="dark"
+    
+>
+    <p><a id="games"></a> <br></p>
+    
+</ea-text>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="railed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="none"
+    
+    
+    
+        background-overflow="visible"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="small"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-subheading">
+</ea-elements-loader>
+<ea-subheading
+    unresolved
+    
+        type="ordered"
+    
+    
+        layout="small"
+    
+    
+        text-align="center"
+    
+    
+        text-color="light"
+    
+    
+    
+        title-text="Command & Conquer Games"
+    
+    
+    
+        spacing-top="small"
+    
+    
+        spacing-bottom="small"
+    
+>
+    
+    
+        <h3>Command &amp; Conquer Games</h3>
+    
+    
+</ea-subheading>
+
+<ea-elements-loader elements="ea-box-set">
+</ea-elements-loader>
+<ea-box-set
+    unresolved
+    
+        layout="3up"
+    
+    
+        spacing-top="medium"
+    
+    
+        spacing-bottom="medium"
+    
+    
+        game-box-scrim-color="dark"
+    
+    
+        game-box-scrim-opacity="medium"
+    
+    
+        total-count="19"
+        
+    
+        ajax-url="/pagination/2-NFshsAbGLetCr5T06VJRmlATKYx9UOL35eJoURqrcuDy38yZ9qJ3vo9thuV6BQ3iTZQVZ9pw6AscLA99rJImQIRWTNigKmd%2FL9Ywctc1p3BLlu%2BXRJcgeYTrmLSa22G8fIV2kbSTmW0QSuh8k7cyxAwpKvieRVr0oYG4ro7MXkeJcg%3D%3D"
+    
+>
+    
+
+    
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="container"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/gin/images/2020/03/command-and-conquer-remastered-keyart-16x9.jpg.adapt.crop1x1.767p.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/gin/common/logos/command-and-conquer-remastered-mono-logo.svg"
+            logo-alt=""
+        
+        
+            main-link-url="/games/command-and-conquer/command-and-conquer-remastered"
+        
+        
+            main-link-title="Command &amp; Conquer™ Remastered Collection"
+        
+        
+        
+        
+        show-back-alt="Command &amp; Conquer™ Remastered Collection"
+        show-front-alt="Command &amp; Conquer™ Remastered Collection"
+        title="Command &amp; Conquer™ Remastered Collection"
+        sale-text=""
+        unresolved
+    >
+        
+        
+<a
+    class="eapl-link"
+    href="/games/command-and-conquer/command-and-conquer-remastered"
+    slot="feature-link"
+    target=""
+>
+    Official Site
+</a>
+
+<a
+    class="eapl-link"
+    href="https://help.ea.com/en/command-and-conquer/command-and-conquer-remastered/"
+    slot="feature-link"
+    target=""
+>
+    Help
+</a>
+
+<a
+    class="eapl-link"
+    href="https://answers.ea.com/t5/Other-C-C-Games/bd-p/cc-tiberium-alliances"
+    slot="feature-link"
+    target=""
+>
+    Forums
+</a>
+
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+        <a
+            
+                href="/games/command-and-conquer/command-and-conquer-remastered"
+            
+            
+                title="Command &amp; Conquer™ Remastered Collection"
+            
+            
+        >Command &amp; Conquer™ Remastered Collection</a>
+    </ea-game-box>
+</ea-container>
+
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="container"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/gin/images/2018/06/command-and-conquer-rivals-key-art.jpg.adapt.crop1x1.767p.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/gin/common/logos/command-and-conquer-rivals-mono-logo.png"
+            logo-alt=""
+        
+        
+            main-link-url="/games/command-and-conquer/command-and-conquer-rivals"
+        
+        
+            main-link-title="Command &amp; Conquer: Rivals"
+        
+        
+        
+        
+        show-back-alt="Command &amp; Conquer: Rivals"
+        show-front-alt="Command &amp; Conquer: Rivals"
+        title="Command &amp; Conquer: Rivals"
+        sale-text=""
+        unresolved
+    >
+        
+        
+<a
+    class="eapl-link"
+    href="/games/command-and-conquer/command-and-conquer-rivals"
+    slot="feature-link"
+    target=""
+>
+    Official Site
+</a>
+
+<a
+    class="eapl-link"
+    href="https://help.ea.com/en/"
+    slot="feature-link"
+    target=""
+>
+    Help
+</a>
+
+<a
+    class="eapl-link"
+    href="https://answers.ea.com/t5/Command-Conquer-Games/bd-p/cc-tiberium-alliances"
+    slot="feature-link"
+    target=""
+>
+    Forums
+</a>
+
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+        <a
+            
+                href="/games/command-and-conquer/command-and-conquer-rivals"
+            
+            
+                title="Command &amp; Conquer: Rivals"
+            
+            
+        >Command &amp; Conquer: Rivals</a>
+    </ea-game-box>
+</ea-container>
+
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="container"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/command-and-conquer-tiberium-alliances-key-art.jpg.adapt.crop1x1.767p.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/gin/common/logos/command-and-conquer-tiberium-alliances-mono-logo.png"
+            logo-alt=""
+        
+        
+            main-link-url="/games/command-and-conquer/command-and-conquer-tiberium-alliances"
+        
+        
+            main-link-title="Command &amp; Conquer Tiberium Alliances"
+        
+        
+        
+        
+        show-back-alt="Command &amp; Conquer Tiberium Alliances"
+        show-front-alt="Command &amp; Conquer Tiberium Alliances"
+        title="Command &amp; Conquer Tiberium Alliances"
+        sale-text=""
+        unresolved
+    >
+        
+        
+<a
+    class="eapl-link"
+    href="/games/command-and-conquer/command-and-conquer-tiberium-alliances"
+    slot="feature-link"
+    target=""
+>
+    Official Site
+</a>
+
+<a
+    class="eapl-link"
+    href="https://help.ea.com/en/"
+    slot="feature-link"
+    target=""
+>
+    Help
+</a>
+
+<a
+    class="eapl-link"
+    href="http://forum.alliances.commandandconquer.com/"
+    slot="feature-link"
+    target=""
+>
+    Forums
+</a>
+
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+        <a
+            
+                href="/games/command-and-conquer/command-and-conquer-tiberium-alliances"
+            
+            
+                title="Command &amp; Conquer Tiberium Alliances"
+            
+            
+        >Command &amp; Conquer Tiberium Alliances</a>
+    </ea-game-box>
+</ea-container>
+
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="container"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/command-and-conquer-4-tiberian-twilight-key-art.jpg.adapt.crop1x1.767p.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/gin/common/logos/command-and-conquer-4-tiberian-twilight-mono-logo.png"
+            logo-alt=""
+        
+        
+            main-link-url="/games/command-and-conquer/command-and-conquer-4-tiberian-twilight"
+        
+        
+            main-link-title="Command &amp; Conquer 4 Tiberian Twilight"
+        
+        
+        
+        
+        show-back-alt="Command &amp; Conquer 4 Tiberian Twilight"
+        show-front-alt="Command &amp; Conquer 4 Tiberian Twilight"
+        title="Command &amp; Conquer 4 Tiberian Twilight"
+        sale-text=""
+        unresolved
+    >
+        
+        
+<a
+    class="eapl-link"
+    href="/games/command-and-conquer/command-and-conquer-4-tiberian-twilight"
+    slot="feature-link"
+    target=""
+>
+    Official Site
+</a>
+
+<a
+    class="eapl-link"
+    href="https://help.ea.com/en/"
+    slot="feature-link"
+    target=""
+>
+    Help
+</a>
+
+<a
+    class="eapl-link"
+    href="https://answers.ea.com/t5/Other-EA-Games/bd-p/Other-EA-Games"
+    slot="feature-link"
+    target=""
+>
+    Forums
+</a>
+
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+        <a
+            
+                href="/games/command-and-conquer/command-and-conquer-4-tiberian-twilight"
+            
+            
+                title="Command &amp; Conquer 4 Tiberian Twilight"
+            
+            
+        >Command &amp; Conquer 4 Tiberian Twilight</a>
+    </ea-game-box>
+</ea-container>
+
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="container"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/command-and-conquer-red-alert-3-mobile-key-art.jpg.adapt.crop1x1.767p.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/gin/common/logos/command-and-conquer-red-alert-3-mobile-mono-logo.png"
+            logo-alt=""
+        
+        
+            main-link-url="/games/command-and-conquer/command-and-conquer-red-alert-mobile"
+        
+        
+            main-link-title="Command &amp; Conquer Red Alert for Mobile"
+        
+        
+        
+        
+        show-back-alt="Command &amp; Conquer Red Alert for Mobile"
+        show-front-alt="Command &amp; Conquer Red Alert for Mobile"
+        title="Command &amp; Conquer Red Alert for Mobile"
+        sale-text=""
+        unresolved
+    >
+        
+        
+<a
+    class="eapl-link"
+    href="/games/command-and-conquer/command-and-conquer-red-alert-mobile"
+    slot="feature-link"
+    target=""
+>
+    Official Site
+</a>
+
+<a
+    class="eapl-link"
+    href="https://help.ea.com/en/"
+    slot="feature-link"
+    target=""
+>
+    Help
+</a>
+
+<a
+    class="eapl-link"
+    href="http://forum.alliances.commandandconquer.com/"
+    slot="feature-link"
+    target=""
+>
+    Forums
+</a>
+
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+        <a
+            
+                href="/games/command-and-conquer/command-and-conquer-red-alert-mobile"
+            
+            
+                title="Command &amp; Conquer Red Alert for Mobile"
+            
+            
+        >Command &amp; Conquer Red Alert for Mobile</a>
+    </ea-game-box>
+</ea-container>
+
+<ea-elements-loader elements="ea-game-box">
+</ea-elements-loader>
+<ea-container
+    
+        filter-key="All"
+    
+    
+        slot="container"
+    
+>
+    <ea-game-box
+        slot="game-box"
+        
+            background-image="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/ea-header-small-gneric-game-4k.jpg.adapt.crop1x1.767p.jpg"
+            
+                background-image-alt-text=""
+            
+
+        
+        
+            logo-url="https://media.contentapi.ea.com/content/dam/gin/common/logos/command-and-conquer-commanders-challenge-mono-logo.png"
+            logo-alt=""
+        
+        
+            main-link-url="/games/command-and-conquer/command-and-conquer-commanders-challenge"
+        
+        
+            main-link-title="Command &amp; Conquer: Red Alert 3: Commander&#x27;s Challenge"
+        
+        
+        
+        
+        show-back-alt="Command &amp; Conquer: Red Alert 3: Commander&#x27;s Challenge"
+        show-front-alt="Command &amp; Conquer: Red Alert 3: Commander&#x27;s Challenge"
+        title="Command &amp; Conquer: Red Alert 3: Commander&#x27;s Challenge"
+        sale-text=""
+        unresolved
+    >
+        
+        
+<a
+    class="eapl-link"
+    href="/games/command-and-conquer/command-and-conquer-commanders-challenge"
+    slot="feature-link"
+    target=""
+>
+    Official Site
+</a>
+
+<a
+    class="eapl-link"
+    href="https://help.ea.com/en/"
+    slot="feature-link"
+    target=""
+>
+    Help
+</a>
+
+<a
+    class="eapl-link"
+    href="https://answers.ea.com/t5/Other-EA-Games/bd-p/Other-EA-Games"
+    slot="feature-link"
+    target=""
+>
+    Forums
+</a>
+
+        
+
+        
+        <!-- Output Main Link as an anchor tag for SEO -->
+        <a
+            
+                href="/games/command-and-conquer/command-and-conquer-commanders-challenge"
+            
+            
+                title="Command &amp; Conquer: Red Alert 3: Commander&#x27;s Challenge"
+            
+            
+        >Command &amp; Conquer: Red Alert 3: Commander&#x27;s Challenge</a>
+    </ea-game-box>
+</ea-container>
+
+
+
+    
+
+<ea-elements-loader elements="ea-pagination">
+</ea-elements-loader>
+<ea-pagination
+    unresolved
+    slot="pagination"
+    total-count=""
+    page-size="6"
+    current-page="1"
+    next-text="Next"
+    previous-text="Previous"
+    theme="light"
+    
+></ea-pagination>
+
+
+</ea-box-set>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+<ea-elements-loader elements="ea-spacer">
+</ea-elements-loader>
+<ea-spacer
+    unresolved
+    
+        smallest="2rem"
+    
+    
+        small="2rem"
+    
+    
+        medium="3rem"
+    
+    
+        large="3rem"
+    
+    
+        largest="3rem"
+    
+>
+</ea-spacer>
+
+<ea-elements-loader elements="ea-section">
+</ea-elements-loader>
+<ea-section
+    unresolved
+    slot="section"
+    
+    
+        type="full-bleed"
+    
+    
+        layout="100"
+    
+    
+    
+        background-color="dark"
+    
+    
+    
+        background-overflow="visible"
+    
+    
+        spacing-top="none"
+    
+    
+        spacing-bottom="none"
+    
+    
+    
+    
+    
+>
+    
+    
+
+
+<ea-section-column
+    slot="section-column"
+    
+        indent-left=""
+    
+    
+        indent-right=""
+    
+    
+        text-align="left"
+    
+    
+    
+        mobile-order="0"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-subheading">
+</ea-elements-loader>
+<ea-subheading
+    unresolved
+    
+        type="ordered"
+    
+    
+        layout="small"
+    
+    
+        text-align="left"
+    
+    
+        text-color="dark"
+    
+    
+    
+    
+    
+        spacing-top="medium"
+    
+    
+        spacing-bottom="medium"
+    
+>
+    
+    
+    
+</ea-subheading>
+
+<ea-elements-loader elements="ea-buy-game">
+</ea-elements-loader>
+<ea-buy-game
+    unresolved
+    slot="buy-game"
+    
+        theme="light"
+    
+    
+    
+    
+    
+>
+    
+
+    <ea-elements-loader elements="ea-buy-game-product">
+    </ea-elements-loader>
+    <ea-buy-game-product
+        unresolved
+        slot="buy-game-product"
+        
+        edition-text="Remastered Collection"
+        
+            title-text="Command &amp; Conquer™ Remastered Collection"
+        
+        
+    >
+        <h2>Remastered Collection</h2>
+        
+<ea-elements-loader elements="ea-text">
+</ea-elements-loader>
+<ea-text
+    unresolved
+    slot="text"
+    
+        text-color="light"
+    
+>
+    <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Contains the complete Tiberian Dawn and Red Alert games, plus all three expansion packs (Covert Operations, Counterstrike, and The Aftermath), completely remastered music and graphics, UI improvements, and tons of bonus features and improvements.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+    
+</ea-text>
+
+        
+<ea-elements-loader elements="ea-details-table">
+</ea-elements-loader>
+<ea-details-table
+    slot="details-table"
+    
+        theme="light"
+    
+    
+        spacing-top="none"
+    
+    
+    
+    unresolved
+>
+    
+        <ea-details-table-row
+            slot="details-table-row"
+        >
+            <div>
+                <div label>Release Date</div>
+                <div text>06.05.2020</div>
+            </div>
+        </ea-details-table-row>
+    
+        <ea-details-table-row
+            slot="details-table-row"
+        >
+            <div>
+                <div label>Genre</div>
+                <div text><a href="/games/library/strategy">Strategy</a></div>
+            </div>
+        </ea-details-table-row>
+    
+        <ea-details-table-row
+            slot="details-table-row"
+        >
+            <div>
+                <div label>Platforms</div>
+                <div text><a href="https://www.origin.com/">PC Download</a></div>
+            </div>
+        </ea-details-table-row>
+    
+</ea-details-table>
+
+        
+
+    <ea-elements-loader elements="ea-buy-game-product-retailer">
+    </ea-elements-loader>
+    <ea-buy-game-product-retailer
+        unresolved
+        slot="buy-game-product-retailer"
+        
+            title-text="Command &amp; Conquer Remastered Collection"
+        
+        
+            platform-text="PC Download"
+        
+        
+        
+        
+        
+            pack-art-url="https://media.contentapi.ea.com/content/dam/gin/common/packart/command-and-conquer-remastered-generic-packart.jpg"
+        
+    >
+    <div>
+        
+            <h6>Command &amp; Conquer Remastered Collection</h6>
+        
+        
+            <div>PC Download</div>
+        
+    </div>
+    
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="https://www.ea.com/games/command-and-conquer/command-and-conquer-remastered/buy/pc"
+    
+    
+    
+        link-text="Buy Now"
+    
+    
+        icon="platform-pc"
+    
+    
+    
+        fill-color="ea-app-brand"
+    
+    
+        text-color="light"
+    
+    
+        stroke-color="none"
+    
+    
+        target="_self"
+    
+    
+    
+    
+        intent="buy"
+    
+    
+    
+        full-width
+    
+    
+        emphasis="secondary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="https://www.ea.com/games/command-and-conquer/command-and-conquer-remastered/buy/pc"
+        
+        
+    >
+        
+            Buy Now
+        
+    </a>
+</ea-cta>
+
+    </ea-buy-game-product-retailer>
+
+
+
+    <ea-elements-loader elements="ea-buy-game-product-retailer">
+    </ea-elements-loader>
+    <ea-buy-game-product-retailer
+        unresolved
+        slot="buy-game-product-retailer"
+        
+            title-text="Command &amp; Conquer Remastered Collection"
+        
+        
+            platform-text="PC Download"
+        
+        
+        
+        
+        
+            pack-art-url="https://media.contentapi.ea.com/content/dam/gin/common/packart/command-and-conquer-remastered-generic-packart.jpg"
+        
+    >
+    <div>
+        
+            <h6>Command &amp; Conquer Remastered Collection</h6>
+        
+        
+            <div>PC Download</div>
+        
+    </div>
+    
+<ea-elements-loader elements="ea-cta">
+</ea-elements-loader>
+<ea-cta
+    
+        slot="cta"
+    
+    
+        type="standard"
+    
+    
+        link-url="https://store.steampowered.com/app/1213210/Command__Conquer_Remastered_Collection"
+    
+    
+    
+        link-text="Buy Now"
+    
+    
+        icon="custom"
+    
+    
+        custom-icon="&lt;svg width=&quot;17px&quot; height=&quot;16px&quot; viewBox=&quot;0 0 17 16&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;     &lt;!-- Generator: Sketch 59.1 (86144) - https://sketch.com --&gt;     &lt;title&gt;Group 8&lt;/title&gt;     &lt;desc&gt;Created with Sketch.&lt;/desc&gt;     &lt;defs&gt;         &lt;polygon id=&quot;path-1&quot; points=&quot;1.37339056e-05 0 15.9828326 0 15.9828326 15.9999931 1.37339056e-05 15.9999931&quot;&gt;&lt;/polygon&gt;     &lt;/defs&gt;     &lt;g id=&quot;Page-1&quot; stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;         &lt;g id=&quot;Group-8&quot; transform=&quot;translate(0.500000, 0.000000)&quot;&gt;             &lt;g id=&quot;Group-3&quot;&gt;                 &lt;mask id=&quot;mask-2&quot; fill=&quot;white&quot;&gt;                     &lt;use xlink:href=&quot;#path-1&quot;&gt;&lt;/use&gt;                 &lt;/mask&gt;                 &lt;g id=&quot;Clip-2&quot;&gt;&lt;/g&gt;                 &lt;path d=&quot;M7.98284635,-6.86695279e-06 C3.74312103,-6.86695279e-06 0.27400515,3.29812189 1.37339056e-05,7.46849099 C0.00118111588,7.4704824 0.00227982833,7.47233648 0.0034472103,7.4743279 C0.0034472103,7.47419056 0.00351587983,7.47329785 0.00351587983,7.47329785 L4.30209099,9.24291159 C4.41910386,9.16600172 4.54373906,9.09939227 4.67668326,9.04514335 C4.97848584,8.9208515 5.29670043,8.86522918 5.61381631,8.87964979 L7.57144721,6.0359073 C7.57076052,6.0232721 7.57076052,6.00981288 7.57076052,5.99635365 C7.57076052,4.31807039 8.93385064,2.95278283 10.6093871,2.95278283 C12.2856103,2.95278283 13.6480137,4.31807039 13.6480137,5.99635365 C13.6480137,7.67449957 12.2856103,9.04102318 10.6093871,9.04102318 C10.5867262,9.04102318 10.5633785,9.04033648 10.5407176,9.03964979 L7.73968755,11.0413665 C7.7479279,11.3503794 7.69093219,11.660079 7.56870043,11.9553579 C7.09900086,13.0849717 5.79709528,13.6226541 4.66796223,13.1508944 C3.97783348,12.8631691 3.50998798,12.2650575 3.35747296,11.5831691 L0.329078112,10.3335897 C1.32780773,13.6135897 4.37632275,15.9999931 7.98284635,15.9999931 C12.4010438,15.9999931 15.9828464,12.4181906 15.9828464,7.99999313 C15.9828464,3.58172704 12.4010438,-6.86695279e-06 7.98284635,-6.86695279e-06&quot; id=&quot;Fill-1&quot; fill=&quot;#000000&quot; mask=&quot;url(#mask-2)&quot;&gt;&lt;/path&gt;             &lt;/g&gt;             &lt;path d=&quot;M4.97084292,12.2520034 L3.98165837,11.8420464 C4.15683433,12.2080549 4.46049099,12.5150077 4.86268841,12.6825614 C5.73451674,13.0458232 6.73750386,12.6317459 7.10104034,11.7589562 L7.10104034,11.7589562 C7.27683433,11.3373253 7.27752103,10.8703725 7.10378712,10.4473682 C6.93005322,10.0243639 6.60222489,9.69337682 6.17970129,9.51758283 C5.76061116,9.34316223 5.3120618,9.34865579 4.9174867,9.49835536 L5.94004464,9.92204635 C6.58265408,10.1898575 6.88679142,10.9287416 6.61870558,11.5721751 C6.35144378,12.2149219 5.61379571,12.5198146 4.97084292,12.2520034&quot; id=&quot;Fill-4&quot; fill=&quot;#000000&quot;&gt;&lt;/path&gt;             &lt;path d=&quot;M9.09249099,5.99324979 C9.09249099,5.15184206 9.7736927,4.46940429 10.6128343,4.46940429 C11.452594,4.46940429 12.1337957,5.15184206 12.1337957,5.99324979 C12.1337957,6.83472618 11.452594,7.51654592 10.6128343,7.51654592 C9.7736927,7.51654592 9.09249099,6.83472618 9.09249099,5.99324979 M12.6343966,5.99633991 C12.6343966,4.87874335 11.7259674,3.96859742 10.6094009,3.96859742 C9.49352103,3.96859742 8.58495451,4.87874335 8.58495451,5.99633991 C8.58495451,7.11482918 9.49352103,8.02470043 10.6094009,8.02470043 C11.7259674,8.02470043 12.6343966,7.11482918 12.6343966,5.99633991&quot; id=&quot;Fill-6&quot; fill=&quot;#000000&quot;&gt;&lt;/path&gt;         &lt;/g&gt;     &lt;/g&gt; &lt;/svg&gt;"
+    
+    
+        fill-color="none"
+    
+    
+        text-color="dark"
+    
+    
+        stroke-color="dark"
+    
+    
+    
+    
+    
+        intent="buy"
+    
+    
+    
+        full-width
+    
+    
+        emphasis="secondary"
+    
+    
+    
+    
+    
+    unresolved
+>
+    <a
+        
+            href="https://store.steampowered.com/app/1213210/Command__Conquer_Remastered_Collection"
+        
+        
+    >
+        
+            Buy Now
+        
+    </a>
+</ea-cta>
+
+    </ea-buy-game-product-retailer>
+
+
+    </ea-buy-game-product>
+
+
+</ea-buy-game>
+
+</ea-section-column>
+
+    
+</ea-section>
+
+
+    
+
+    <div>
+        <style>
+ea-section-column.eapl-section-column-100 img,ea-section-column.eapl-section-column-50 img {
+max-width: 100%;
+}
+</style>
+    </div>
+
+
+
+
+<ea-elements-loader elements="ea-page-background">
+</ea-elements-loader>
+<ea-page-background
+    unresolved
+    layout="fixed"
+    background-color=""
+    
+>
+    
+
+
+    <ea-elements-loader elements="ea-image">
+    </ea-elements-loader>
+    <ea-image
+        unresolved
+        tooltip=""
+        smallest="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/homepage/common/ccrem-section-bg-black-xl.jpg.adapt.320w.jpg"
+        small="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/homepage/common/ccrem-section-bg-black-xl.jpg.adapt.768w.jpg"
+        medium="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/homepage/common/ccrem-section-bg-black-xl.jpg.adapt.1024w.jpg"
+        large="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/homepage/common/ccrem-section-bg-black-xl.jpg.adapt.1456w.jpg"
+        largest="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/homepage/common/ccrem-section-bg-black-xl.jpg.adapt.1920w.jpg"
+        
+        
+        
+        
+            slot="image"
+        
+        
+    >
+        <img
+            src="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/homepage/common/ccrem-section-bg-black-xl.jpg.adapt.320w.jpg"
+            alt=""
+            srcset="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/homepage/common/ccrem-section-bg-black-xl.jpg.adapt.320w.jpg 320w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/homepage/common/ccrem-section-bg-black-xl.jpg.adapt.768w.jpg 768w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/homepage/common/ccrem-section-bg-black-xl.jpg.adapt.1024w.jpg 1024w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/homepage/common/ccrem-section-bg-black-xl.jpg.adapt.1456w.jpg 1320w, https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/homepage/common/ccrem-section-bg-black-xl.jpg.adapt.1920w.jpg 1456w" />
+    </ea-image>
+
+
+
+</ea-page-background>
+
+<ea-elements-loader elements="ea-modal">
+</ea-elements-loader>
+<ea-modal
+    modal
+    unresolved
+    
+        id="remastered-trailer"
+    
+    
+        theme="dark"
+    
+    
+        type="railed"
+    
+>
+    
+<ea-elements-loader elements="ea-youtube">
+</ea-elements-loader>
+<ea-youtube
+    unresolved
+    slot="youtube"
+    video-id="DrtodXOIeW8"
+    
+    
+        playlist=""
+    
+    
+    
+        default-age-gate=""
+    
+    theme="light"
+    icon-theme="light"
+    autoplay="0"
+    controls="1"
+    rel="0"
+    annotations="1"
+    hide-info="0"
+    age-gate-alignment="center-left"
+    age-gate-message="This video is age-restricted and only available on Youtube."
+    more-link-text="Learn More"
+    more-link-url="https://support.google.com/youtube/answer/2802167?hl=en"
+    watch-link-text="Watch on Youtube"
+    
+        cover-image-smallest="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/videos/2020/06/f752192d-52dc-ca93-795a-0ab8334b42ee.youtube/subassets/poster.jpg.adapt.crop16x9.320w.jpg"
+        cover-image-small="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/videos/2020/06/f752192d-52dc-ca93-795a-0ab8334b42ee.youtube/subassets/poster.jpg.adapt.crop16x9.767w.jpg"
+        cover-image-medium="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/videos/2020/06/f752192d-52dc-ca93-795a-0ab8334b42ee.youtube/subassets/poster.jpg.adapt.crop16x9.1023w.jpg"
+        cover-image-large="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/videos/2020/06/f752192d-52dc-ca93-795a-0ab8334b42ee.youtube/subassets/poster.jpg.adapt.crop16x9.1455w.jpg"
+        cover-image-largest="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/videos/2020/06/f752192d-52dc-ca93-795a-0ab8334b42ee.youtube/subassets/poster.jpg.adapt.crop16x9.1920w.jpg"
+        cover-image-tooltip=""
+        button-color="dark"
+    
+>
+    
+    
+        
+            
+                
+        <div itemscope itemtype="http://schema.org/VideoObject">
+            <link itemprop="url" href="https://www.youtube.com/watch?v=DrtodXOIeW8">
+            
+                <link itemprop="thumbnailUrl" href="https://media.contentapi.ea.com/content/dam/ea/command-conquer/remastered/videos/2020/06/f752192d-52dc-ca93-795a-0ab8334b42ee.youtube/subassets/poster.jpg.adapt.crop16x9.1920w.jpg">
+            
+            <iframe src="https://www.youtube.com/embed/DrtodXOIeW8"></iframe>
+        </div>
+    
+            
+        
+    
+</ea-youtube>
+
+</ea-modal>
+
+<ea-elements-loader elements="ea-modal">
+</ea-elements-loader>
+<ea-modal
+    modal
+    unresolved
+    
+        id="rivals-trailer"
+    
+    
+        theme="dark"
+    
+    
+        type="railed"
+    
+>
+    
+<ea-elements-loader elements="ea-youtube">
+</ea-elements-loader>
+<ea-youtube
+    unresolved
+    slot="youtube"
+    video-id="fyNXQpAFQJc"
+    
+    
+        playlist=""
+    
+    
+    
+        default-age-gate=""
+    
+    theme="light"
+    icon-theme="light"
+    autoplay="0"
+    controls="1"
+    rel="0"
+    annotations="1"
+    hide-info="0"
+    age-gate-alignment="center-left"
+    age-gate-message="This video is age-restricted and only available on Youtube."
+    more-link-text="Learn More"
+    more-link-url="https://support.google.com/youtube/answer/2802167?hl=en"
+    watch-link-text="Watch on Youtube"
+    
+        cover-image-smallest="https://media.contentapi.ea.com/content/dam/scorpion/videos/2018/05/c83b9948-5804-5008-8566-3acd1bd51b08.youtube/subassets/poster.jpg.adapt.crop16x9.320w.jpg"
+        cover-image-small="https://media.contentapi.ea.com/content/dam/scorpion/videos/2018/05/c83b9948-5804-5008-8566-3acd1bd51b08.youtube/subassets/poster.jpg.adapt.crop16x9.767w.jpg"
+        cover-image-medium="https://media.contentapi.ea.com/content/dam/scorpion/videos/2018/05/c83b9948-5804-5008-8566-3acd1bd51b08.youtube/subassets/poster.jpg.adapt.crop16x9.1023w.jpg"
+        cover-image-large="https://media.contentapi.ea.com/content/dam/scorpion/videos/2018/05/c83b9948-5804-5008-8566-3acd1bd51b08.youtube/subassets/poster.jpg.adapt.crop16x9.1455w.jpg"
+        cover-image-largest="https://media.contentapi.ea.com/content/dam/scorpion/videos/2018/05/c83b9948-5804-5008-8566-3acd1bd51b08.youtube/subassets/poster.jpg.adapt.crop16x9.1920w.jpg"
+        cover-image-tooltip=""
+        button-color="dark"
+    
+>
+    
+    
+        
+            
+                
+        <div itemscope itemtype="http://schema.org/VideoObject">
+            <link itemprop="url" href="https://www.youtube.com/watch?v=fyNXQpAFQJc">
+            
+                <link itemprop="thumbnailUrl" href="https://media.contentapi.ea.com/content/dam/scorpion/videos/2018/05/c83b9948-5804-5008-8566-3acd1bd51b08.youtube/subassets/poster.jpg.adapt.crop16x9.1920w.jpg">
+            
+            <iframe src="https://www.youtube.com/embed/fyNXQpAFQJc"></iframe>
+        </div>
+    
+            
+        
+    
+</ea-youtube>
+
+</ea-modal>
+
+
+
+
+    
+        
+            
+                
+
+    
+
+
+    
+
+
+
+
+            
+        
+    
+
+
+
+    
+    <div style="display: none;"></div>
+</main>
+<footer role="contentinfo">
+    
+
+    
+        
+            
+                
+<ea-elements-loader elements="ea-local-footer, ea-local-links, ea-local-link, ea-social-links, ea-social-link, ea-hybrid-regional-rating">
+</ea-elements-loader>
+<ea-local-footer
+    theme="light"
+    sal-game-slug=""
+    rating-lang="en"
+    unresolved
+>
+    <ea-local-links
+        slot="local-links"
+        title-text=" "
+        text-color="light"
+        unresolved
+    >
+    
+        <ea-local-link
+            slot="local-link"
+            link-url="/games/command-and-conquer/command-and-conquer-rivals"
+            link-title="Command and Conquer™: Rivals"
+            link-text="Command and Conquer™: Rivals"
+            text-color="light"
+            unresolved
+        >
+            <a
+                href="/games/command-and-conquer/command-and-conquer-rivals"
+                title="Command and Conquer™: Rivals"
+            >Command and Conquer™: Rivals</a>
+        </ea-local-link>
+    
+        <ea-local-link
+            slot="local-link"
+            link-url="http://o.ea.com/32450"
+            link-title="Command and Conquer™: Tiberium Alliances"
+            link-text="Command and Conquer™: Tiberium Alliances"
+            text-color="light"
+            unresolved
+        >
+            <a
+                href="http://o.ea.com/32450"
+                title="Command and Conquer™: Tiberium Alliances"
+            >Command and Conquer™: Tiberium Alliances</a>
+        </ea-local-link>
+    
+    </ea-local-links>
+
+    <ea-social-links
+        slot="social-links"
+        text-color="light"
+        title-text="Join The Conversation"
+        unresolved
+    >
+    
+        <ea-social-link
+            slot="social-link"
+            link-url="https://www.facebook.com/TiberiumAlliances/"
+            link-title="Facebook"
+            link-target="_blank"
+            text-color="light"
+            social-network="facebook"
+            unresolved
+        >
+            <a
+                href="https://www.facebook.com/TiberiumAlliances/"
+                title="Facebook"
+            >facebook</a>
+        </ea-social-link>
+    
+        <ea-social-link
+            slot="social-link"
+            link-url="https://twitter.com/CnCAlliances"
+            link-title="Twitter"
+            link-target="_blank"
+            text-color="light"
+            social-network="twitter"
+            unresolved
+        >
+            <a
+                href="https://twitter.com/CnCAlliances"
+                title="Twitter"
+            >twitter</a>
+        </ea-social-link>
+    
+    </ea-social-links>
+
+    
+
+    
+        
+<ea-elements-loader elements="ea-rating-link">
+</ea-elements-loader>
+<ea-rating-link
+    unresolved
+    slot="rating-link"
+    link-url="https://www.esrb.org"
+    link-title="ESRB"
+    
+    
+        image-smallest="https://media.contentapi.ea.com/content/dam/gin/common/rating-icons/esrb/teen.png"
+        image-small="https://media.contentapi.ea.com/content/dam/gin/common/rating-icons/esrb/teen.png"
+        image-medium="https://media.contentapi.ea.com/content/dam/gin/common/rating-icons/esrb/teen.png"
+        image-large="https://media.contentapi.ea.com/content/dam/gin/common/rating-icons/esrb/teen.png"
+        image-largest="https://media.contentapi.ea.com/content/dam/gin/common/rating-icons/esrb/teen.png"
+        image-alt=""
+        
+        
+    
+>
+    <a
+        href="https://www.esrb.org"
+        title="ESRB"
+    ></a>
+</ea-rating-link>
+
+    
+
+    
+
+    
+</ea-local-footer>
+
+            
+        
+    
+
+
+    
+
+    
+        
+            
+                
+<ea-elements-loader elements="ea-network-footer, ea-network-legal, ea-link, ea-content-loader">
+</ea-elements-loader>
+<ea-network-footer
+    theme="light"
+    
+    
+        logo-image="https://media.contentapi.ea.com/content/dam/eacom/ar-sa/common/october-ea-ring.png"
+        logo-tooltip=""
+    
+    
+        logo-link-url="/"
+        logo-link-text="EA"
+        logo-link-tooltip="EA"
+    
+    unresolved
+>
+    
+        <img
+            src="https://media.contentapi.ea.com/content/dam/eacom/ar-sa/common/october-ea-ring.png"
+            alt=""
+        />
+    
+    
+        
+            <ea-link
+                slot="link"
+                link-href="/games"
+                link-title="Browse Games"
+                link-text="Browse Games"
+                text-color="light"
+                unresolved
+            >
+                <a
+                    href="/games"
+                    title="Browse Games"
+                >Browse Games</a>
+            </ea-link>
+        
+            <ea-link
+                slot="link"
+                link-href="/about"
+                link-title="About"
+                link-text="About"
+                text-color="light"
+                unresolved
+            >
+                <a
+                    href="/about"
+                    title="About"
+                >About</a>
+            </ea-link>
+        
+            <ea-link
+                slot="link"
+                link-href="https://help.ea.com/"
+                link-title="Support"
+                link-text="Support"
+                text-color="light"
+                unresolved
+            >
+                <a
+                    href="https://help.ea.com/"
+                    title="Support"
+                >Support</a>
+            </ea-link>
+        
+    
+    
+    
+<ea-elements-loader elements="ea-locale-selector">
+</ea-elements-loader>
+<ea-locale-selector
+    slot="locale-selector"
+    theme="light"
+    value="en-us"
+    label-text=""
+    
+    unresolved
+    >
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="en-us"
+        >United States</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="en-gb"
+        >United Kingdom</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="en-au"
+        >Australia</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="fr-fr"
+        >France</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="de-de"
+        >Deutschland</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="it-it"
+        >Italia</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="ja-jp"
+        >日本</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="pt-br"
+        >Brasil</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="ru-ru"
+        >Россия</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="es-es"
+        >España</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="en-ca"
+        >Canada (English)</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="fr-ca"
+        >Canada (Français)</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="ko-kr"
+        >대한민국</ea-locale-selector-option>
+    
+        <ea-locale-selector-option
+            slot="locale-selector-option"
+            value="zh-tw"
+        >繁體中文</ea-locale-selector-option>
+    
+</ea-locale-selector>
+
+    <ea-network-legal
+        slot="network-legal"
+        copyright-text="© 2023 Electronic Arts Inc."
+        text-color="light"
+        unresolved
+    >
+        
+            <ea-link
+                slot="link"
+                link-href="http://www.ea.com/legal"
+                link-title="Legal &amp; Privacy"
+                link-text="Legal &amp; Privacy"
+                text-color="light"
+                unresolved
+            >
+                <a
+                    href="http://www.ea.com/legal"
+                    title="Legal &amp; Privacy"
+                >Legal &amp; Privacy</a>
+            </ea-link>
+        
+            <ea-link
+                slot="link"
+                link-href="https://www.ea.com/terms-of-service"
+                link-title="NEW User Agreement"
+                link-text="User Agreement"
+                text-color="light"
+                unresolved
+            >
+                <a
+                    href="https://www.ea.com/terms-of-service"
+                    title="NEW User Agreement"
+                >User Agreement</a>
+            </ea-link>
+        
+            <ea-link
+                slot="link"
+                link-href="https://www.ea.com/legal/privacy-and-cookie-policy"
+                link-title="Privacy &amp; Cookie Policy (Your Privacy Rights)"
+                link-text="Privacy &amp; Cookie Policy (Your Privacy Rights)"
+                text-color="light"
+                unresolved
+            >
+                <a
+                    href="https://www.ea.com/legal/privacy-and-cookie-policy"
+                    title="Privacy &amp; Cookie Policy (Your Privacy Rights)"
+                >Privacy &amp; Cookie Policy (Your Privacy Rights)</a>
+            </ea-link>
+        
+            <ea-link
+                slot="link"
+                link-href="/service-updates"
+                link-title="Online Service Updates"
+                link-text="Online Service Updates"
+                text-color="light"
+                unresolved
+            >
+                <a
+                    href="/service-updates"
+                    title="Online Service Updates"
+                >Online Service Updates</a>
+            </ea-link>
+        
+        <ea-content-loader
+            slot="link"
+            content-url="https://www.ea.com/ccpa/footer-link"
+        >
+        </ea-content-loader>
+        
+    </ea-network-legal>
+    
+<ea-elements-loader elements="ea-truste">
+</ea-elements-loader>
+
+
+<script async>
+
+        function createElement(id, hidden) {
+            const element = document.createElement("div");
+
+            element.id = id;
+            element.hidden = hidden;
+
+            return element;
+        }
+
+        function createScriptTag() {
+            const script = document.createElement("script");
+            let src = `//consent.trustarc.com/notice?` +
+                `domain=ea.com&c=teconsent&js=nj&noticeType=bb&text=true&gtm=1&pn=1`;
+
+            if (shouldAutoShowCookiePreferences()) {
+                src = src + "&behavior=expressed";
+            }
+
+            script.src = src;
+            script.setAttribute("crossorigin", "");
+
+            return script;
+        }
+
+        function shouldAutoShowCookiePreferences() {
+            const showCookiePreferencesParam = "show=cookiePreferences";
+            const urlSearchParams = window.location.search.slice(1).split("&");
+
+            return urlSearchParams.includes(showCookiePreferencesParam);
+        }
+
+        function isLocalNDS(componentUrlPrefix) {
+            return componentUrlPrefix && componentUrlPrefix.includes('local');
+        }
+
+        function isNDSBranch(componentUrlPrefix) {
+            return componentUrlPrefix && componentUrlPrefix.includes('branch');
+        }
+
+        function isNDSVersionGreaterOrEqual(componentUrlPrefix) {
+            let ndsVersion = componentUrlPrefix && componentUrlPrefix.match('/release\/([^\/]*)/')[1];
+            let isGreaterOrEqual = ndsVersion && ndsVersion.localeCompare("4.40.5", undefined, { numeric: true, sensitivity: 'base' });
+
+            return isGreaterOrEqual >= 0;
+        }
+
+        const componentUrlPrefix = window.nds.componentUrlPrefix;
+
+        /**
+         * Check for backwards compatibility with NDS version greater or equal to when TrustArc was integrated
+         */
+        if (
+            isLocalNDS(componentUrlPrefix) ||
+            isNDSBranch(componentUrlPrefix) ||
+            isNDSVersionGreaterOrEqual(componentUrlPrefix)
+        )
+        {
+            const trustArcScript = createScriptTag();
+            const elements = document.createDocumentFragment();
+
+            elements.appendChild(createElement("consent_blackbar", false));
+            elements.appendChild(createElement("teconsent", true));
+            elements.appendChild(trustArcScript);
+
+            document.body.appendChild(elements);
+        }
+
+</script>
+<ea-truste
+    unresolved
+    slot="truste"
+    
+        domain="ea.com"
+    
+>
+    <div>
+        
+            <a href="//privacy.truste.com/privacy-seal/validation?rid=f1a11c5d-0232-4077-8498-2e69a38c1335" target="_blank">
+                <img style="border: none" src="//privacy-policy.truste.com/privacy-seal/seal?rid=f1a11c5d-0232-4077-8498-2e69a38c1335" alt="TRUSTe"/>
+            </a>
+        
+    </div>
+</ea-truste>
+
+</ea-network-footer>
+
+            
+        
+    
+
+
+</footer>
+<ea-player player-endpoint="/user-data"></ea-player>
+
+
+    
+        
+            
+                
+<ea-elements-loader elements="ea-modal">
+</ea-elements-loader>
+<ea-modal
+    modal
+    unresolved
+    
+        id="eacomagegate"
+    
+    
+        theme="dark"
+    
+    
+>
+    
+<ea-elements-loader elements="ea-age-gate">
+</ea-elements-loader>
+<ea-age-gate
+    unresolved
+    slot="age-gate"
+    age-gate-id="eacomagegate"
+    
+        age="18"
+    
+    
+        error="You are not eligible to view this content."
+    
+    
+    
+        message="Please provide your birth date. "
+    
+>
+    
+        
+<ea-elements-loader elements="ea-date-field">
+</ea-elements-loader>
+<ea-date-field
+    
+        slot="date-field"
+    
+    
+        type="date"
+    
+    
+    
+    
+    
+    
+        text-color="light"
+    
+    
+    
+        month-placeholder="MM"
+    
+    
+        day-placeholder="DD"
+    
+    
+        year-placeholder="YYYY"
+    
+    
+    
+        label-text="Enter your birthdate"
+    
+    
+    
+    
+    unresolved
+>
+</ea-date-field>
+
+    
+    
+        
+<ea-elements-loader elements="ea-submit">
+</ea-elements-loader>
+<ea-submit
+    unresolved
+    
+        slot="submit"
+    
+    
+        value-text="Submit"
+    
+    
+        text-color="light"
+    
+    
+    
+    
+    
+></ea-submit>
+
+    
+</ea-age-gate>
+
+</ea-modal>
+
+            
+        
+    
+
+
+
+
+    
+        
+            
+                <script src="//pl.ea.com/release/4.63.0/elements/browser-support.min.js"></script>
+<script>
+    eaBrowserSupport.requiredFeatures = 'picture';
+    eaBrowserSupport.requiredHeading = 'Sorry, this browser is not supported';
+    eaBrowserSupport.requiredText = 'Please download a supported browser to view this webpage.';
+    eaBrowserSupport.recommendedFeatures = 'cssgrid';
+    eaBrowserSupport.recommendedText = 'This browser is not recommended and the webpage may not display properly.';
+    eaBrowserSupport.ctas = [{"text":"Download Chrome","url":"https://www.google.com/chrome/"},{"text":"Download Firefox","url":"https://www.mozilla.org/firefox/new/"},{"text":"Download Edge","url":"https://www.microsoft.com/edge/"}];
+    eaBrowserSupport.dismissText = 'Dismiss';
+    eaBrowserSupport.svgLogo = '';
+    eaBrowserSupport.init();
+</script>
+
+            
+        
+    
+
+
+
+
+    <ea-type-kit kit-url="//use.typekit.net/txn1klh.js"></ea-type-kit>
+
+
+    </body>
+</html>
+

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="cs" class="js-no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#2362a2">
+    <link rel="stylesheet" href="/info/styles/fonts/fa/css/all.min.css?v=po1f9f32" >
+    <link rel="stylesheet" href="/info/styles/vendor/gov-design-system/dist/out/ds-styles.min.css?v=po1f9f32" media="screen">
+    <link rel="stylesheet" href="/info/styles/vendor/gov-design-system/dist/out/print.min.css?v=po1f9f32" media="print">
+    <link rel="stylesheet" href="/info/styles/slick/slick.css?v=po1f9f32" >
+    <link rel="stylesheet" href="/info/styles/slick/slick-theme.css?v=po1f9f32" >
+    <link rel="stylesheet" href="/info/styles/ds-overrides.css?v=po1f9f32" >
+    <title>Datové schránky</title>
+  </head>
+  <body>
+<!-- Content -->
+<div class="gov-page home-page">
+  <div class="ds-header-container">
+      <header class="gov-container gov-container--no-y-offset gov-portal-header">
+        <div class="gov-container__content ds-header">
+
+          <div class="gov-portal-header__upper top-btn-container">
+            <div class="ds-logo">
+              <a class="gov-logo gov-logo--inversed ds-mobile-not" href="/">
+                <div class="gov-pictogram gov-pictogram--inversed"><img class="svg-img" alt="isds logo"src="/info/images/loga/isds_logo.svg"/></div>
+                <span class="gov-logo__sitename u-sr-only">
+                    datove schranky
+                </span>
+              </a>
+            </div>
+            <div class="gov-portal-header__column ds-mobile-only">
+              <a class="gov-logo gov-logo--inversed" href="/">
+                <div class="gov-pictogram gov-pictogram--inversed"><img class="svg-img" alt="isds logo"src="/info/images/loga/isds_logo.svg"/></div>
+                <span class="gov-logo__sitename u-sr-only">
+                    datove schranky
+                </span>
+              </a>
+              <button id="mobile-menu-btn" class="gov-hamburger">
+                  Menu
+              </button>
+            </div>
+            <button class="gov-button gov-button--primary-outlined gov-button--inversed ds-hide-on-mobile" type="button" data-href="https://chcidatovku.gov.cz/datova-schranka#zalozeni-datova-schranka">
+              Založit datovou schránku
+            </button>
+            <!---->
+            <button class="gov-button gov-button--inversed ds-hide-on-mobile" type="button" data-href="/info/cs/help/">
+              Nápověda
+            </button>
+            <!---->
+            <div class="infolinka ds-hide-on-mobile">
+              <span>Infolinka&nbsp;</span><a class="infoline_link auto-blur" href="tel:954200200">954&nbsp;200&nbsp;200</a>
+            </div>
+            <!---->
+            <div class="gov-portal-header__column ds-header-search ds-hide-on-mobile">
+              <div class="gov-search">
+                <div class="gov-search__inner">
+                  <form method="GET">
+                    <div class="gov-form-control gov-form-control--inversed unset-minwidth">
+                      <input id="search-input" name="q" class="gov-form-control__input gov-form-control__input--standalone" type="text" aria-required="false" aria-disabled="false" placeholder="Hledat" maxlength="255" />
+                      <label class="gov-form-control__label u-sr-only" for="search-input">Hledat</label>
+                    </div>
+                    <button id="search-btn" class="gov-button gov-button--primary gov-button--icon-only gov-search__submit" aria-labelledby="ho-submit" type="button">
+                      <span id="ho-submit" class="u-sr-only gov-button__label">Hledat</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Mobilni verze -->
+        <nav class="gov-portal-nav ds-portal-nav ds-mobile-only">
+          <ul class="gov-portal-nav__menu">
+            <li class="gov-portal-nav__item has-subnav">
+              <div class="gov-accordion">
+                <a class="gov-portal-nav__link gov-accordion__header gov-accordion__header--noborder ds-menu-level-0 "
+                    id="collapse-item-27"
+                    aria-expanded="false"
+                    aria-controls="mb1-gov-accordion-content-27" data-dsclanky="2017,2019,null,49,2030,2025,1028"
+                     href="/info/cs/2017.html">Potřebuji poradit</a>
+                  <div
+                    class="gov-accordion__content"
+                    id="mb1-gov-accordion-content-27"
+                    aria-labelledby="collapse-item-27"
+                    >
+                    <nav class="gov-portal-subnav">
+                        <ul class="gov-portal-subnav__menu">
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/2017.html">ePoradna</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/2019.html">Rady pro nováčky</a>
+                          </li>
+
+
+                          <li class="gov-portal-nav__item has-subnav">
+                            <div class="gov-accordion">
+                              <a class="gov-portal-nav__link gov-accordion__header gov-accordion__header--noborder ds-menu-level-1 "
+                                  id="collapse-item-1046"
+                                  aria-expanded="false"
+                                  aria-controls="mb1-gov-accordion-content-1046" data-dsclanky="1027,1024"
+                                   href="/info/cs/1027.html">Videa a návody</a>
+                                <div
+                                  class="gov-accordion__content"
+                                  id="mb1-gov-accordion-content-1046"
+                                  aria-labelledby="collapse-item-1046"
+                                  >
+                                  <nav class="gov-portal-subnav">
+                                      <ul class="gov-portal-subnav__menu">
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/1027.html">Videa</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/1024.html">Návody</a>
+                                        </li>
+
+                                      </ul>
+                                  </nav>
+                                </div>
+                            </div>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/49.html">Infolinka</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/2030.html">Kontaktní adresa</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/2025.html">Kontakt pro novináře</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/1028.html">Nejčastěji se ptáte</a>
+                          </li>
+
+                        </ul>
+                    </nav>
+                  </div>
+              </div>
+            </li>
+
+
+            <li class="gov-portal-nav__item has-subnav">
+              <div class="gov-accordion">
+                <a class="gov-portal-nav__link gov-accordion__header gov-accordion__header--noborder ds-menu-level-0 "
+                    id="collapse-item-39"
+                    aria-expanded="false"
+                    aria-controls="mb1-gov-accordion-content-39" data-dsclanky="65,66,null"
+                     href="/info/cs/65.html">Chci datovku</a>
+                  <div
+                    class="gov-accordion__content"
+                    id="mb1-gov-accordion-content-39"
+                    aria-labelledby="collapse-item-39"
+                    >
+                    <nav class="gov-portal-subnav">
+                        <ul class="gov-portal-subnav__menu">
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/65.html">Typy datových schránek</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/66.html">Zřízení datové schránky</a>
+                          </li>
+
+
+                          <li class="gov-portal-nav__item has-subnav">
+                            <div class="gov-accordion">
+                              <a class="gov-portal-nav__link gov-accordion__header gov-accordion__header--noborder ds-menu-level-1 "
+                                  id="collapse-item-1026"
+                                  aria-expanded="false"
+                                  aria-controls="mb1-gov-accordion-content-1026" data-dsclanky="1005,1003,1004,1006,1007,1008"
+                                   href="/info/cs/1005.html">Přihlašovací metody</a>
+                                <div
+                                  class="gov-accordion__content"
+                                  id="mb1-gov-accordion-content-1026"
+                                  aria-labelledby="collapse-item-1026"
+                                  >
+                                  <nav class="gov-portal-subnav">
+                                      <ul class="gov-portal-subnav__menu">
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/1005.html">Způsoby přihlašování</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/1003.html">Přihlašování jménem a heslem</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/1004.html">Přihlašování certifikátem</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/1006.html">SMS autentizace</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/1007.html">Přihlašování mobilním klíčem</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/1008.html">Přihlašování přes Identitu občana</a>
+                                        </li>
+
+                                      </ul>
+                                  </nav>
+                                </div>
+                            </div>
+                          </li>
+
+
+                          <li class="gov-portal-nav__item has-subnav">
+                            <div class="gov-accordion">
+                              <a class="gov-portal-nav__link gov-accordion__header gov-accordion__header--noborder ds-menu-level-1 "
+                                  id="collapse-item-47"
+                                  aria-expanded="false"
+                                  aria-controls="mb1-gov-accordion-content-47" data-dsclanky="1002,72,96,71,1016"
+                                   href="/info/cs/1002.html">Přístupové údaje</a>
+                                <div
+                                  class="gov-accordion__content"
+                                  id="mb1-gov-accordion-content-47"
+                                  aria-labelledby="collapse-item-47"
+                                  >
+                                  <nav class="gov-portal-subnav">
+                                      <ul class="gov-portal-subnav__menu">
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/1002.html">Přístupové údaje</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/72.html">Využití virtuální obálky</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/96.html">Zřízení účtu pro Pověřené osoby a Administrátory</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/71.html">Doručování přístupových údajů</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/1016.html">Zneplatnění přístupových údajů a vydání nových</a>
+                                        </li>
+
+                                      </ul>
+                                  </nav>
+                                </div>
+                            </div>
+                          </li>
+
+                        </ul>
+                    </nav>
+                  </div>
+              </div>
+            </li>
+
+
+            <li class="gov-portal-nav__item has-subnav">
+              <div class="gov-accordion">
+                <a class="gov-portal-nav__link gov-accordion__header gov-accordion__header--noborder ds-menu-level-0 "
+                    id="collapse-item-55"
+                    aria-expanded="false"
+                    aria-controls="mb1-gov-accordion-content-55" data-dsclanky="81,83,null,95"
+                     href="/info/cs/81.html">O datových schránkách</a>
+                  <div
+                    class="gov-accordion__content"
+                    id="mb1-gov-accordion-content-55"
+                    aria-labelledby="collapse-item-55"
+                    >
+                    <nav class="gov-portal-subnav">
+                        <ul class="gov-portal-subnav__menu">
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/81.html">Základní informace</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/83.html">Výhody datových schránek</a>
+                          </li>
+
+
+                          <li class="gov-portal-nav__item has-subnav">
+                            <div class="gov-accordion">
+                              <a class="gov-portal-nav__link gov-accordion__header gov-accordion__header--noborder ds-menu-level-1 "
+                                  id="collapse-item-1006"
+                                  aria-expanded="false"
+                                  aria-controls="mb1-gov-accordion-content-1006" data-dsclanky="87,88,89,90,91,92,93,94"
+                                   href="/info/cs/87.html">Možnosti využití datové schránky</a>
+                                <div
+                                  class="gov-accordion__content"
+                                  id="mb1-gov-accordion-content-1006"
+                                  aria-labelledby="collapse-item-1006"
+                                  >
+                                  <nav class="gov-portal-subnav">
+                                      <ul class="gov-portal-subnav__menu">
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/87.html">Osobní doklady</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/88.html">Daňové přiznání</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/89.html">Zdravotní pojištění</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/90.html">Nemocenské pojištění</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/91.html">Důchodové pojištění</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/92.html">Katastrální řízení</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/93.html">Výpisy z ISVS</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/94.html">Ostatní</a>
+                                        </li>
+
+                                      </ul>
+                                  </nav>
+                                </div>
+                            </div>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/95.html">Vyzkoušejte si datovou schránku</a>
+                          </li>
+
+                        </ul>
+                    </nav>
+                  </div>
+              </div>
+            </li>
+
+
+            <li class="gov-portal-nav__item has-subnav">
+              <div class="gov-accordion">
+                <a class="gov-portal-nav__link gov-accordion__header gov-accordion__header--noborder ds-menu-level-0 "
+                    id="collapse-item-45"
+                    aria-expanded="false"
+                    aria-controls="mb1-gov-accordion-content-45" data-dsclanky="84,82,101,86"
+                     href="/info/cs/84.html">Doplňkové služby</a>
+                  <div
+                    class="gov-accordion__content"
+                    id="mb1-gov-accordion-content-45"
+                    aria-labelledby="collapse-item-45"
+                    >
+                    <nav class="gov-portal-subnav">
+                        <ul class="gov-portal-subnav__menu">
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/84.html">Datový trezor</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/82.html">Poštovní datová zpráva</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/101.html">SMS upozornění</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/86.html">Kreditní systém</a>
+                          </li>
+
+                        </ul>
+                    </nav>
+                  </div>
+              </div>
+            </li>
+
+
+            <li class="gov-portal-nav__item has-subnav">
+              <div class="gov-accordion">
+                <a class="gov-portal-nav__link gov-accordion__header gov-accordion__header--noborder ds-menu-level-0 "
+                    id="collapse-item-63"
+                    aria-expanded="false"
+                    aria-controls="mb1-gov-accordion-content-63" data-dsclanky="80,1022,1025,1017,null,1026,62"
+                     href="/info/cs/80.html">Důležité informace</a>
+                  <div
+                    class="gov-accordion__content"
+                    id="mb1-gov-accordion-content-63"
+                    aria-labelledby="collapse-item-63"
+                    >
+                    <nav class="gov-portal-subnav">
+                        <ul class="gov-portal-subnav__menu">
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/80.html">Provozní řád ISDS</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/1022.html">Seznam pracovišť Czech POINT</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/1025.html">Bezpečnost</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/1017.html">Informace o zpracování osobních údajů</a>
+                          </li>
+
+
+                          <li class="gov-portal-nav__item has-subnav">
+                            <div class="gov-accordion">
+                              <a class="gov-portal-nav__link gov-accordion__header gov-accordion__header--noborder ds-menu-level-1 "
+                                  id="collapse-item-1038"
+                                  aria-expanded="false"
+                                  aria-controls="mb1-gov-accordion-content-1038" data-dsclanky="75,76,78,77,74,79"
+                                   href="/info/cs/75.html">Technické požadavky</a>
+                                <div
+                                  class="gov-accordion__content"
+                                  id="mb1-gov-accordion-content-1038"
+                                  aria-labelledby="collapse-item-1038"
+                                  >
+                                  <nav class="gov-portal-subnav">
+                                      <ul class="gov-portal-subnav__menu">
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/75.html">Požadavky na HW a SW</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/76.html">Formát příloh datové zprávy</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/78.html">Přístupy do datové schránky</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/77.html">Přístupové rozhraní</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/74.html">Aplikační rozhraní</a>
+                                        </li>
+
+
+                                        <li class="gov-portal-subnav__item">
+                                          <a class="gov-portal-subnav__link ds-menu-level-2"  href="/info/cs/79.html">Podporované šifrovací sady protokolu TLS</a>
+                                        </li>
+
+                                      </ul>
+                                  </nav>
+                                </div>
+                            </div>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/1026.html">Slovník pojmů</a>
+                          </li>
+
+
+                          <li class="gov-portal-subnav__item">
+                            <a class="gov-portal-subnav__link ds-menu-level-1"  href="/info/cs/62.html">Ke stažení</a>
+                          </li>
+
+                        </ul>
+                    </nav>
+                  </div>
+              </div>
+            </li>
+
+          </ul>
+        </nav>
+        </div>
+      </header>
+  </div>
+  <div class="ds-row-container gov-portal-nav">
+    <div class="ds-column-container ">
+      <div class="gov-container gov-container--no-y-offset">          
+        <div class="gov-container__content">
+          <nav class="gov-portal-nav ds-portal-nav">
+            <!-- Desktop verze -->
+            <ul class=" gov-portal-nav__menu u-hide--mobile-landscape">
+              <li class="gov-portal-nav__item">
+                <a class="gov-portal-nav__link "  href="/info/cs/2017.html">Potřebuji poradit</a>
+              </li>
+              <li class="gov-portal-nav__item">
+                <a class="gov-portal-nav__link "  href="/info/cs/65.html">Chci datovku</a>
+              </li>
+              <li class="gov-portal-nav__item">
+                <a class="gov-portal-nav__link "  href="/info/cs/81.html">O datových schránkách</a>
+              </li>
+              <li class="gov-portal-nav__item">
+                <a class="gov-portal-nav__link "  href="/info/cs/84.html">Doplňkové služby</a>
+              </li>
+              <li class="gov-portal-nav__item">
+                <a class="gov-portal-nav__link "  href="/info/cs/80.html">Důležité informace</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="ds-row-container ds-search-mobile-container">
+        <div class="ds-column-container">
+          <div class="gov-container__content ds-desktop-search ds-show-on-mobile">
+            <div class="gov-portal-header__column ds-header-search">
+              <div class="gov-search ">
+                <div class="gov-search__inner">
+                  <form method="GET">
+                    <div class="gov-form-control gov-form-control--inversed">
+                      <input name="q" id="search-input-mob" class="gov-form-control__input gov-form-control__input--standalone" type="text" aria-required="false" aria-disabled="false" placeholder="Hledat" maxlength="255" />
+                      <label class="gov-form-control__label u-sr-only" for="search-input-mob">Hledat</label>
+                    </div>
+                    <button id="search-btn-mob" class="gov-button gov-button--primary gov-button--icon-only gov-search__submit" aria-labelledby="ho-submit-mob" type="button">
+                      <span id="ho-submit-mob" class="u-sr-only gov-button__label">Hledat</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div class="ds-row-container ds-top-content-container">
+  <div class="ds-column-container">
+
+      <div role="alert" class="gov-alert gov-alert--warning">
+        <div class="gov-alert__content">
+          <p>Datová zpráva s výzvou k úhradě za zápis do rejstříku. Více informací <a href="/info/cs/2034.html" aria-label="zde">zde</a>.</p>
+        </div>
+      </div>
+
+    <section>
+      <div class="marketing-container">
+        <div class="marketing-panel">
+          <div class="marketing-label">Přišel vám dopis nebo vám byla zřízena datová schránka?</div>
+          <button class="gov-button gov-button--primary-outlined" type="button" data-header="Přišel vám dopis nebo vám byla zřízena datová schránka?" data-clanek="/info/cs/2015.html" >Jste tu poprvé?</button>
+        </div>
+        <div class="img-wrapper">
+          <img src="/info/files/2013_mkt_main_0138_0046_MVCR_Datovka_banner_web.png" alt="" />
+        </div>
+      </div>
+
+      <div class="login-container-wrapper">
+        <div class="login-container">
+          <div class="header">
+            <div class="label">
+              <h2>Přihlášení</h2>
+            </div>
+          </div>
+          <div class="divider w-100"></div>
+          <div class="content-container">
+            <div class="gov-accordion__content-inner">
+              <ul class="gov-list--plain login-methods">
+                <li><span aria-hidden="true" class="gov-icon-svg-25"><img class="svg-img" src="/info/images/icons/eye_on_blue.svg" alt="ikona" /></span><a class="gov-link gov-link--standalone gov-link--large gov-link gov-link--has-arrow gov-link--no-underline" href="https://www.mojedatovaschranka.cz/as/login?type=captcha&uri=https%3A%2F%2Fwww.mojedatovaschranka.cz%2Fportal%2FISDS%2F">JMÉNEM A HESLEM<br><span class="note"></span></a></li>
+                <li><span aria-hidden="true" class="gov-icon-svg-25"><img class="svg-img" src="/info/images/icons/mep_lev.svg" alt="ikona" /></span><a class="gov-link gov-link--standalone gov-link--large gov-link gov-link--has-arrow gov-link--no-underline" href="https://www.mojedatovaschranka.cz/as/login?type=mep&uri=https%3A%2F%2Fwww.mojedatovaschranka.cz%2Fportal%2FISDS%2F">MOBILNÍM KLÍČEM<br><span class="note"></span></a></li>
+                <li><span aria-hidden="true" class="gov-icon-svg-25"><img class="svg-img" src="/info/images/icons/nia_lev.svg" alt="ikona" /></span><a class="gov-link gov-link--standalone gov-link--large gov-link gov-link--has-arrow gov-link--no-underline" href="https://www.mojedatovaschranka.cz/as/login?type=saml&uri=https%3A%2F%2Fwww.mojedatovaschranka.cz%2Fportal%2FISDS%2F&FromHome=1">IDENTITOU OBČANA<br><span class="note">(BANKOVNÍ IDENTITA, NIA ID...)</span></a></li>
+                <li><span aria-hidden="true" class="gov-icon-svg-25"><img class="svg-img" src="/info/images/icons/more.svg" alt="ikona" /></span><a class="gov-link gov-link--standalone gov-link--large gov-link gov-link--has-arrow gov-link--no-underline" href="https://www.mojedatovaschranka.cz/as/login?type=other&uri=https%3A%2F%2Fwww.mojedatovaschranka.cz%2Fportal%2FISDS%2F">DALŠÍ ZPŮSOBY<br><span class="note"></span></a></li>
+                <li>
+                  <a class="gov-link gov-no-icon" href="#" data-href="isds:/static/ISDS/help/page1.html#1_6">Máte problémy s přihlášením?</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div class="ds-row-container ds-main-content-container">
+  <div class="ds-column-container">
+    <section class="gov-layout__col">
+      <div class="gov-content-block">
+        <div class="gov-layout gov-layout--ratio-3-1">
+          <!-- Content -->
+          <div class="gov-layout__col">
+            <!-- obsahova cast -->
+            <section class="content">
+              <h2>Návody a tipy k datovým schránkám</h2>
+              <div class="ds-carousel">
+                <div class="ds-carousel-item" data-header="Byla vám automaticky založena schránka ?" data-video="/info/video/2075_01_Navod pro uzivatele automaticky zalozene datove schranky_CZsub.mp4" >
+                  <div class="content-wrapper">
+                    <div class="label">Byla vám automaticky založena schránka ?</div>
+                    <div class="img-wrapper">
+                      <img class="d-block h-100" src="/info/files/2054_CP_Datove-schranky-bannery 1-100.png" alt="">
+                    </div>
+                    <div class="link-container">
+                      <div class="play-label">Zobrazit</div>
+                      <div class="play-img-container">
+                        <img src="/info/images/icons/play-yellow.svg" alt="přehrát" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ds-carousel-item" data-header="Co všechno umí datová schránka" data-video="/info/video/2083_09_Predstaveni datove schranky_CZsub.mp4" >
+                  <div class="content-wrapper">
+                    <div class="label">Co všechno umí datová schránka</div>
+                    <div class="img-wrapper">
+                      <img class="d-block h-100" src="/info/files/2062_CP_Datove-schranky-bannery 9-100.png" alt="">
+                    </div>
+                    <div class="link-container">
+                      <div class="play-label">Zobrazit</div>
+                      <div class="play-img-container">
+                        <img src="/info/images/icons/play-yellow.svg" alt="přehrát" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ds-carousel-item" data-header="Jak založit datovou schránku osobně" data-video="/info/video/2080_06_Zalozeni datove schranky osobne_CZsub.mp4" >
+                  <div class="content-wrapper">
+                    <div class="label">Jak založit datovou schránku osobně</div>
+                    <div class="img-wrapper">
+                      <img class="d-block h-100" src="/info/files/2061_CP_Datove-schranky-bannery 8-100.png" alt="">
+                    </div>
+                    <div class="link-container">
+                      <div class="play-label">Zobrazit</div>
+                      <div class="play-img-container">
+                        <img src="/info/images/icons/play-yellow.svg" alt="přehrát" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ds-carousel-item" data-header="Založení datovky Mobilním klíčem" data-video="/info/video/2077_03_Zalozeni datove schranky Mobilnim klicem eGovermentu_CZsub.mp4" >
+                  <div class="content-wrapper">
+                    <div class="label">Založení datovky Mobilním klíčem</div>
+                    <div class="img-wrapper">
+                      <img class="d-block h-100" src="/info/files/2057_CP_Datove-schranky-bannery 4-100.png" alt="">
+                    </div>
+                    <div class="link-container">
+                      <div class="play-label">Zobrazit</div>
+                      <div class="play-img-container">
+                        <img src="/info/images/icons/play-yellow.svg" alt="přehrát" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ds-carousel-item" data-header="Snadné přihlášení Identitou občana" data-video="/info/video/2079_05_Prihlaseni Identitou obcana_CZsub.mp4" >
+                  <div class="content-wrapper">
+                    <div class="label">Snadné přihlášení Identitou občana</div>
+                    <div class="img-wrapper">
+                      <img class="d-block h-100" src="/info/files/2059_CP_Datove-schranky-bannery 6-100.png" alt="">
+                    </div>
+                    <div class="link-container">
+                      <div class="play-label">Zobrazit</div>
+                      <div class="play-img-container">
+                        <img src="/info/images/icons/play-yellow.svg" alt="přehrát" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ds-carousel-item" data-header="Bezpečné přihlášení Mobilním klíčem" data-video="/info/video/2082_08_Prihlaseni Mobilnim klicem eGovermentu_CZsub.mp4" >
+                  <div class="content-wrapper">
+                    <div class="label">Bezpečné přihlášení Mobilním klíčem</div>
+                    <div class="img-wrapper">
+                      <img class="d-block h-100" src="/info/files/2058_CP_Datove-schranky-bannery 5-100.png" alt="">
+                    </div>
+                    <div class="link-container">
+                      <div class="play-label">Zobrazit</div>
+                      <div class="play-img-container">
+                        <img src="/info/images/icons/play-yellow.svg" alt="přehrát" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ds-carousel-item" data-header="Průvodce nastavením datové schránky " data-video="/info/video/2084_10_Pruvodce datovou schrankou_CZsub.mp4" >
+                  <div class="content-wrapper">
+                    <div class="label">Průvodce nastavením datové schránky </div>
+                    <div class="img-wrapper">
+                      <img class="d-block h-100" src="/info/files/2063_CP_Datove-schranky-bannery 10-100.png" alt="">
+                    </div>
+                    <div class="link-container">
+                      <div class="play-label">Zobrazit</div>
+                      <div class="play-img-container">
+                        <img src="/info/images/icons/play-yellow.svg" alt="přehrát" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ds-carousel-item" data-header="Rychlejší a levnější komunikace" data-video="/info/video/2078_04_Datova schranka pro komunikaci nejen s urady_CZsub.mp4" >
+                  <div class="content-wrapper">
+                    <div class="label">Rychlejší a levnější komunikace</div>
+                    <div class="img-wrapper">
+                      <img class="d-block h-100" src="/info/files/2056_CP_Datove-schranky-bannery 3-100.png" alt="">
+                    </div>
+                    <div class="link-container">
+                      <div class="play-label">Zobrazit</div>
+                      <div class="play-img-container">
+                        <img src="/info/images/icons/play-yellow.svg" alt="přehrát" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ds-carousel-item" data-header="Archivace datových zpráv " data-video="/info/video/2081_07_Uchovavani datovych zprav nad ramec standartni doby_CZsub.mp4" >
+                  <div class="content-wrapper">
+                    <div class="label">Archivace datových zpráv </div>
+                    <div class="img-wrapper">
+                      <img class="d-block h-100" src="/info/files/2060_CP_Datove-schranky-bannery 7-100.png" alt="">
+                    </div>
+                    <div class="link-container">
+                      <div class="play-label">Zobrazit</div>
+                      <div class="play-img-container">
+                        <img src="/info/images/icons/play-yellow.svg" alt="přehrát" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ds-carousel-item" data-header=" Přidat pověřenou osobu? Žádný problém." data-video="/info/video/2076_02_Pridat poverenou osobu_ Zadny problem_CZsub.mp4" >
+                  <div class="content-wrapper">
+                    <div class="label"> Přidat pověřenou osobu? Žádný problém.</div>
+                    <div class="img-wrapper">
+                      <img class="d-block h-100" src="/info/files/2055_CP_Datove-schranky-bannery 2-100.png" alt="">
+                    </div>
+                    <div class="link-container">
+                      <div class="play-label">Zobrazit</div>
+                      <div class="play-img-container">
+                        <img src="/info/images/icons/play-yellow.svg" alt="přehrát" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gov-row headline">
+                <div class="gov-col">
+                  <h2>Ještě nemáte datovku?</h2>
+                </div>
+              </div>
+              <div class="gov-row">
+                <div class="gov-col-md-50">
+                  <p>Datová schránka je v podstatě vaše elektronická komunikace se státem a všemi jeho
+                    institucemi – například s úřady nebo soudy.</p>
+                  <ul>
+                    <li>Funguje <b>nonstop</b>, úřední hodiny pro ni neplatí</li>
+                    <li>Pro komunikaci s úřady je <b>zdarma</b></li>
+                    <li>Využijete ji <b>odkudkoliv</b>, na úřady nemusíte osobně</li>
+                  </ul>
+                  <button class="gov-button gov-button--primary gov-yellow-button mb-125rem" type="button"  data-href="https://chcidatovku.gov.cz/datova-schranka#zalozeni-datova-schranka">
+                    Založit datovou schránku
+                  </button>
+                </div>
+                <div class="gov-col-md-50">
+                  <img src="/info/images/ds-transp.png" alt="datová schránka" />
+                </div>
+              </div>
+              <div class="gov-row headline">
+                <div class="gov-col">
+                  <h2>Novinky</h2>
+                </div>
+              </div>
+              <div class="news-panel"><div class="gov-row"><div class="gov-col"><a class="gov-link gov-no-icon" href="/info/cs/1061.html">Datové zprávy až do 100 MB a nové formáty příloh od roku 2024</a></li></div><div class="gov-col"><p>Všem schránkám bude nově umožněno odesílat i přijímat tzv. Velkoobjemové datové zprávy o velikosti až 100 MB. </p></div><!-- <div class="gov-col"><p>6.&nbsp;10.&nbsp;2023</p></div> --></div><div class="divider"></div></div>
+              <div class="news-panel"><div class="gov-row"><div class="gov-col"><a class="gov-link gov-no-icon" href="/info/cs/2035.html">Plánovaná odstávka základních registrů od 16.9. 14:00hod  do 17.9 20:00hod</a></li></div><div class="gov-col"><p>Plánovaná odstávka základních registrů od 16.9. 14:00hod  do 17.9 20:00hod</p></div><!-- <div class="gov-col"><p>8.&nbsp;9.&nbsp;2023</p></div> --></div><div class="divider"></div></div>
+              <div class="news-panel"><div class="gov-row"><div class="gov-col"><a class="gov-link gov-no-icon" href="/info/cs/2034.html">Datová zpráva s výzvou k úhradě za zápis do rejstříku</a></li></div><div class="gov-col"><p>Datová zpráva s výzvou k úhradě za zápis do rejstříku.</p></div><!-- <div class="gov-col"><p>27.&nbsp;7.&nbsp;2023</p></div> --></div><div class="divider"></div></div>
+              <div class="news-panel"><div class="gov-row"><div class="gov-col"><a class="gov-link gov-no-icon" href="/info/cs/2033.html">Milostivé léto 2023 již potřetí pomáhá občanům vyřešit a zbavit se daňových dluhů. </a></li></div><div class="gov-col"><p>Akce letos probíhá od 1. července do 30. listopadu 2023. </p></div><!-- <div class="gov-col"><p>13.&nbsp;7.&nbsp;2023</p></div> --></div><div class="divider"></div></div>
+              <div class="news-panel"><div class="gov-row"><div class="gov-col"><a class="gov-link gov-no-icon" href="/info/cs/2031.html">Nemáte přístupové údaje ke zřízené datové schránce? Zkuste to jinak!</a></li></div><div class="gov-col"><p>Přístup do automaticky zřízené datové schránky</p></div><!-- <div class="gov-col"><p>18.&nbsp;4.&nbsp;2023</p></div> --></div><div class="divider"></div></div>
+
+              <div class="news-panel">
+                <div class="gov-row">
+                  <div class="gov-col">
+                    <a class="gov-link gov-no-icon" href="/info/cs/archive.html">Archiv novinek</a></li>
+                  </div>
+                </div>
+              </div>
+                <div>
+                  <script charset="utf-8" src="https://chatbot.isds.cz/WebchatStatic/f50e28e9-5696-4e6a-90e6-8a02689cfd53/webchat/integration-script.js" defer></script>
+                </div>
+
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+  <footer class="gov-container u-bg-color--grey-dark gov-footer">
+    <div class="gov-container__content">
+        <section class="gov-footer__upper u-screen--only">
+            <div class="gov-footer__col">
+                <h3 class="gov-footer__headline">
+                    Informace
+                </h3>
+                <ul class="gov-list--plain">
+                    <li>
+                        <a href="https://info.mojedatovaschranka.cz/info/cs/help/13.0.text.html" class="gov-link gov-link--standalone gov-link--inversed">
+                            Prohlášení o přístupnosti
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://info.mojedatovaschranka.cz/info/cs/help/14.0.text.html" class="gov-link gov-link--standalone gov-link--inversed">
+                            Informace o zpracování osobních údajů
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gov-footer__col">
+                <h3 class="gov-footer__headline">
+                    Kontakty
+                </h3>
+                <ul class="gov-list--plain">
+                    <li>
+                        <a href="tel:954200200" class="gov-link gov-link--standalone gov-link--inversed ds-no-text-decoration ds-center-items">
+                            <span class="gov-icon gov-icon--phone"></span><span>954&nbsp;200&nbsp;200</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/info/cs/eporadna.html' class="gov-link gov-link--standalone gov-link--inversed">
+                            <span class="ds-lowercase">e</span>Poradna
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gov-footer__col">
+                <h3 class="gov-footer__headline">
+                    Užitečné odkazy
+                </h3>
+                <ul class="gov-list--plain">
+                    <li>
+                        <a href="https://www.mojedatovaschranka.cz/sds/" class="gov-link gov-link--standalone gov-link--inversed">
+                            Seznam datových schránek <span class="gov-icon gov-icon--external"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/info/cs/stats.html' class="gov-link gov-link--standalone gov-link--inversed">
+                            Statistiky <span class="gov-icon gov-icon--external"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.datovy-trezor.cz/" class="gov-link gov-link--standalone gov-link--inversed">
+                            Datový trezor <span class="gov-icon gov-icon--external"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://info.mojedatovaschranka.cz/info/cs/82.html" class="gov-link gov-link--standalone gov-link--inversed">
+                            Poštovní datová zpráva <span class="gov-icon gov-icon--external"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.kredit-ds.cz/" class="gov-link gov-link--standalone gov-link--inversed">
+                            Kreditní systém <span class="gov-icon gov-icon--external"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gov-footer__col">
+                <h3 class="gov-footer__headline">
+                    <!-- bez nadpisu -->
+                </h3>
+                <ul class="gov-list--plain">
+                    <!-- gov-list--inline - do jedne radky -->
+                    <li>
+                        <a href="https://www.czechpoint.cz/public/" class="gov-link gov-link--standalone gov-link--inversed">
+                            Czech POINT <span class="gov-icon gov-icon--external"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="ds-link-header">Aplikace Mobilní klíč</div>
+                        <div class="ds-mt-0">
+                            <a class="gov-link gov-link--external-unset ds-img-link" href="https://play.google.com/store/apps/details?id=cz.mojedatovaschranka.mobilniklic&amp;hl=cs" target="_blank"><img alt="aplikace Mobilní klíč v Google Play" src="/info/images/loga/google_play-icon.png" style="width: 150px; text-decoration: none !important;"> </a>
+                        </div>
+                        <div class="ds-mt-0">
+                            <a class="gov-link gov-link--external-unset ds-img-link" href="https://apps.apple.com/cz/app/mobiln%C3%AD-kl%C3%AD%C4%8D-isds/id1466762017" target="_blank"><img alt="aplikace Mobilní klíč v App Store" src="/info/images/loga/app_store-icon.png" style="width: 150px; text-decoration: none !important;"> </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="gov-footer__lower">
+            <p class="gov-footnote">
+                &copy; 2023 Digitální a informační agentura • Všechna práva vyhrazena • Provoz datových schránek i webové prezentace zajišťuje Česká pošta, s.p.
+            </p>
+            <!--
+            <p class="gov-footnote">
+                Verze 1.0.0
+            </p>
+            -->
+        </section>
+        <button class="gov-button gov-button--primary-outlined gov-button--inversed gov-footer__scroll-up gov-js--scroll-up" aria-labelledby="fo-scrollBtn">
+            <span id="fo-scrollBtn" class="u-sr-only gov-button__label">
+                Zpět nahoru
+            </span>
+        </button>
+    </div>
+  </footer>
+</div>
+
+<button id="carousel-modal-btn" class="gov-modal__trigger" data-id="modal-video" type="button"></button>
+<div id="modal-video" class="gov-modal" aria-hidden="true" tabindex="-1" aria-labelledby="modal-title" aria-describedby="modal-description" role="dialog">
+  <div class="gov-modal__content">
+    <div class="gov-modal__header">
+      <h2 id="video-header"></h2>
+    </div>
+    <div class="gov-modal__content-inner">
+      <div class="gov-content-block">
+        <div id="video-bucket">
+          <video controls="" frameborder="0" allowfullscreen="true" height="170" width="400">
+            <source src="#">
+            <track src="#" kind="subtitles" srclang="en" label="en">
+          </video>
+        </div>
+        <div id="video-info" class="ds-pt20">
+          <a id="video-info-a" class="gov-button gov-button--primary-outlined" href="#">Více informací</a>
+        </div>
+      </div>
+    </div>
+    <button class="gov-button gov-button--secondary gov-modal__close" aria-labelledby="modal-close" type="button">
+      <img src="/info/images/icons/close.svg" alt="zavřít" />
+      <span
+          id="modal-close"
+          class="u-sr-only gov-button__label">
+          Zavřít modální okno
+      </span>
+    </button>
+  </div>
+  <div class="gov-modal__backdrop"></div>
+</div>
+    <script src="/info/styles/vendor/gov-design-system/dist/out/ds-scripts.js?v=po1f9f32" type="text/javascript"></script>
+    <script src="/info/styles/safari-focus-polyfill.js?v=po1f9f32" type="text/javascript"></script>
+    <script src="/info/styles/search.js?v=po1f9f32" type="text/javascript"></script>
+    <script src="/info/styles/jquery-3.6.0.min.js?v=po1f9f32" type="text/javascript"></script>
+    <script src="/info/styles/slick.min.js?v=po1f9f32" type="text/javascript"></script>
+    <script src="/info/styles/infoportal.js?v=po1f9f32" type="text/javascript"></script>
+  </body>
+</html>

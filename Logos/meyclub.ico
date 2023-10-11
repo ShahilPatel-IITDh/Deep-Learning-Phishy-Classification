@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="fr" data-locale="fr">
+    <head>
+        <title>
+            Meyclub - Créateur de loisirs
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Tag Manager -->
+<script>
+
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCTP62R');
+</script>
+<!-- End Google Tag Manager -->
+                <script>
+    function recordOutboundLink(link, category, action) {
+        try {
+            var pageTracker = _gat._getTracker(UA-662319-12);
+            pageTracker._trackEvent(category, action);
+            ga('send', 'event', category, action, label);
+
+            if (link != false) {
+                setTimeout('document.location = "' + link.href + '"', 100)
+            }
+        } catch (err) {
+        }
+    }
+
+            ga('set', 'dimension2', '');
+            ga('set', 'dimension1', '');
+            ga('set', 'dimension3', '');
+        </script>
+
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"
+                  type="text/css">
+            <link href="/assets/externe/font-awesome/css/font-awesome.min.css?20230915122420" type="text/css" rel="stylesheet" media="screen"/>
+            <link href="/css/monkey.css?20230915122420" type="text/css" rel="stylesheet" media="screen"/>
+            <link href="/public/css/monkey_meyclub_identification_3.92.0.css?20230915122420" type="text/css" rel="stylesheet" media="screen"/>
+            <link href="/public/css/meyclub_identification_3.92.0.css?20230915122420" type="text/css" rel="stylesheet" media="screen"/>
+            <link href="/assets/externe/icomoon/style.css?20230915122420" type="text/css" rel="stylesheet" media="screen"/>
+        
+            <script>
+                function onSubmit(token) {
+                    document.getElementById("identification-form").submit();
+                }
+            </script>
+
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png?20230915122420">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?20230915122420">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?20230915122420">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?20230915122420">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?20230915122420">
+                    <link rel="icon" type="image/png" href="">
+    <!--[if IE]>
+        <link rel="SHORTCUT ICON" href="/favicon.ico?20230915122420"/>
+    <![endif]-->
+
+        <link rel="manifest" href="/manifest.json?20230915122420">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg?20230915122420" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+            <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+        <script src="/bundles/bazingajstranslation/js/translator.min.js?20230915122420"></script>
+<script src="/js/translations/config.js?20230915122420"></script>
+<script src="/js/translations/global/fr.js?h=37ae1940558d2c7796e320d482011558?20230915122420"></script>
+<script type="text/javascript" src="/bundles/meyclubfocommun/js/mcJSTranslator.js?20230915122420"></script>
+
+
+            </head>
+
+    <body class="IdentificationContent monkey">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCTP62R" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header>
+    <section class="mk-container-fluid">
+        <div class="mk-row">
+            <div class="mk-col-xs-12 mk-col-m-6">
+                <h1 class="mk-text-center-s-less">
+                    <a class="mk-link--no-decoration mk-mar-t-l mk-show-inline-block" href="/" title="Meyclub - Créateur de loisirs">
+                        <img class="header--logo" src="/images/meyclub-logo-connexion.png?20230915122420"
+                             alt="Meyclub - Créateur de loisirs"/>
+                    </a>
+                </h1>
+            </div>
+        </div>
+        <div class="mk-row mk-background--primary mk-pad-t-l mk-mar-b-xl">
+        </div>
+    </section>
+</header>
+
+        <div class="IdentificationPrincipalContent mk-container-fix">
+                <section class="connection mk-row">
+        <div class="mk-col-xs-12 mk-col-m-5">
+    <div>
+        <h2 class="mk-trafalgar mk-text--main mk-semi-bold">Connectez-vous</h2>
+                    <form action="/fr/identification/check/"
+                  method="post"
+                  id="identification-form"
+                  class="mk-form"
+            >
+                <input type="hidden" name="_csrf_token" value="hY22RdTexTJBJRX1EPKKfsVZzKQB7FfwjOCzSzbXP30"/>
+                                <input type="hidden" name="dest" value="/"/>
+                                    
+<div class="monkey"></div>
+
+                <div class="mk-form__element mk-form__element-title-inside">
+                    <div class="mk-group-input">
+                        <input type="text" id="identification_identifiant" value="" name="_username" required="required"/>
+                    </div>
+                    <div class="mk-group-label">
+                        <label for="identification_identifiant" class="required">Identifiant ou adresse e-mail</label>
+                    </div>
+                </div>
+                <div class="mk-form__element mk-form__element-title-inside mk-form__element--with-icon-inside-right">
+                    <div class="mk-group-input">
+                        <input type="password" id="identification_password"
+                               name="_password" required="required"/>
+                        <div class="mk-group-icon">
+                            <i class="mk-icon mk-icon-eye"></i>
+                        </div>
+                    </div>
+                    <div class="mk-group-label">
+                        <label for="identification_password" class="required">Mot de passe</label>
+                    </div>
+                </div>
+                                <div class="mk-row mk-pad-b-m">
+                    <div class="mk-col-inline">
+                        <div class="mk-form__element mk-form__element--checkbox">
+                            <input type="checkbox" id="identification_se_souvenir_de_moi" checked="checked" name="persistance" value="on"/>
+                            <label for="identification_se_souvenir_de_moi" class="required">Se souvenir de moi</label>
+                        </div>
+                    </div>
+                    <div class="mk-col-inline mk-text-right identification--forgot-password">
+                        <a href="/fr/mot-de-passe-perdu/">
+                            Mot de passe perdu ?
+                        </a>
+                    </div>
+                </div>
+                <div class="mk-text-right">
+                    <button id="identification_submit" type="submit" class="mk-btn mk-btn--highlight">Je me connecte</button>
+                </div>
+            </form>
+            </div>
+</div>
+
+        <div class="mk-col-m-1 mk-hidden-s-less"></div>
+<div class="mk-col-m-5">
+    <div>
+        <h2 class="mk-trafalgar mk-text--main mk-semi-bold">Créez votre compte</h2>
+        <p class="mk-text-center mk-text-right-m-more">
+            <button class="mk-btn mk-btn--highlight" id="activer-compte" data-mk-dialog-show="modal_creation-compte-etape−1">
+                Je crée mon compte
+            </button>
+        </p>
+    </div>
+</div>
+
+    </section>
+        </div>
+        <footer class="mk-container-fluid mk-background--light-grey mk-mar-t-xl">
+    <div class="mk-pad-y-m">
+                        <div class="mk-text-center">
+        <p class="mk-no-margin">
+            <span class="mk-great-pica mk-semi-bold mk-text--primary">
+                FAQ
+            </span>
+        </p>
+        <p class="mk-no-margin">
+            <span class="mk-link" role="button" tabindex="0" data-mk-dialog-show="modal_probleme-connexion">Questions fréquentes</span>
+        </p>
+        <p class="mk-no-margin">
+            <a class="mk-link--silent" href="https://happly.io/Meyclub-politiques-de-confidentialite" target="_blank">
+                <span class="mk-link">Mes données personnelles</span>
+                <i
+                    class="mk-icon mk-icon-stml-open-in-new"
+                    title="Ce lien s&#039;ouvrira dans un nouvel onglet"
+                    aria-label="Ce lien s&#039;ouvrira dans un nouvel onglet"
+                >
+                </i>
+            </a>
+        </p>
+        <p class="mk-no-margin">
+            <a href="#" class="mk-link" role="button" tabindex="0" data-mk-dialog-show="modal_complaints">Gestion des réclamations</a>
+        </p>
+    </div>
+
+            </div>
+    </footer>
+
+
+                
+<div
+    class="monkey mk-dialog  "
+    id="modal_probleme-connexion"
+    aria-hidden="true"
+    data-mk-dialog-container>
+    <div class="mk-dialog__overlay" tabindex="-1" data-mk-dialog-hide></div>
+    <div
+        class="mk-dialog__box"
+                    aria-labelledby="Questions fréquentes"
+                role="dialog">
+                    <div class="mk-dialog__box__header">
+                                    <h1 id="modal_probleme-connexion_title">Questions fréquentes</h1>
+                                        <button
+                        type="button"
+                        data-mk-dialog-hide
+                        class="mk-dialog__box__header__dialog-close mk-icon mk-icon-close"
+                        aria-label="Fermer la modale"
+                    >
+                    </button>
+                                                </div>
+                <div class="mk-dialog__box__elements">
+                        <div id="modal_probleme-connexion_content" class="mk-dialog__box__elements__content">
+                    <article>
+        <h3>
+            Connexion au site Meyclub Edenred
+        </h3>
+        <p>
+            Pour se connecter à www.meyclub.com, vous devez disposer de votre code comité d'entreprise et de votre
+                    identifiant unique transmis par votre comité d'entreprise.<br/>Pour certains comité d'entreprise, vous devez vous
+                    connecter directement sur le site de votre comité d'entreprise ou de votre entreprise. Pour savoir si <br/>vous
+                    bénéficiez de ce mode de connexion, merci de vous rapprocher de votre comité d'entreprise ou de contacter
+                    notre service client.
+        </p>
+        <h3>
+            Je me suis déjà connecté à www.meyclub.com
+        </h3>
+        <p>Saisissez votre identifiant ou votre adresse e-mail et votre mot de passe et cliquez sur &quot;se
+                    connecter&quot;.</p>
+        <h3>
+            Je me suis déjà connecté à www.meyclub.com mais j’ai oublié mon mot de passe
+        </h3>
+        <p>
+            Cliquez sur <a href="/fr/mot-de-passe-perdu/" alt="Reinitialiser mon mot de passe"> Mot de passe perdu
+                ?</a> et suivez les instructions<br/>
+        </p>
+        <h3>
+            Je me suis déjà connecté à Meyclub - Créateur de loisirs mais cela ne fonctionne pas
+        </h3>
+        <p>
+            Vérifiez votre adresse e-mail utilisée lors de votre première connexion, vous devez toujours
+                    utiliser la même adresse e-mail. Si vous souhaitez la modifier, merci de vous rapprocher de votre
+                    comité d'entreprise ou contacter notre service client.<br/>ou <br/>Vérifiez votre mot de passe
+                    lors de votre première connexion, vous devez toujours utiliser le même mot de passe. Si vous
+                    souhaitez le modifier, cliquez sur<br/>"
+                    <a href="%/fr/mot-de-passe-perdu/%" alt="Reinitialiser mon mot de passe">mot de passe oublié</a>" et
+                    suivez les instructions.<br/>ou <br/>Vérifiez si vous bénéficiez d’un mode de connexion
+                    directement sur le site de votre comité d'entreprise ou de votre entreprise, si c’est le cas merci de vous
+                    rapprocher de votre comité d'entreprise ou de contacter notre service client.<br/>
+        </p>
+        <h3>
+            Je suis nouveau bénéficiaire et je ne me suis jamais connecté à Meyclub - Créateur de loisirs
+        </h3>
+        <p>
+            Cliquez sur  "<a onclick="$showModal('creation-stage1');">Activer mon compte</a>" et suivez les étapes de création de votre compte. Vous devez au préalable vous munir des identifiants fournis par votre comité d'entreprise/organisme (contactez votre organisme si vous ne les avez pas reçus). Ces étapes vous permettront de choisir votre adresse e-mail et votre mot de passe, gardez les informations à conserver précieusement pour vos prochaines connexions.
+        </p>
+        <h3>
+            Je suis nouveau bénéficiaire mais je n’arrive pas à créer mon compte
+        </h3>
+        <p>
+            Vérifier les identifiants transmis par votre comité d'entrepriseorganisme ou votre entreprise. Le module de création de compte vérifie les informations que vous avez saisies, si celles-ci ne correspondent pas, vous avez peut-être fait une erreur de saisie ou vos codes sont erronés.
+Merci de vérifier que les informations renseignées sont complètes et exactes, sans espace avant ou après l’e-mail, le code, nom ou prénom indiqué dans les champs dédiés. Si malgré ces vérifications vous ne parvenez pas à activer votre compte, merci de vous rapprocher de votre responsable au sein de votre organisme pour obtenir ces informations. 
+Si ce-dernier n’a pas pu vous les fournir, contacter notre service client.
+Enfin, il se peut que vous ne parveniez pas à vous connecter à Meyclub car votre entreprise n’est pas adhérente aux services Meyclub ; merci de vous rapprocher de votre organisme pour obtenir ces informations. 
+Si vous être responsable CSE/Organisme, vous pouvez faire une demande d’information en cliquant ici 
+une demande d’information en <a title="Demande d'information"
+                    href="http://www.prowebce.com/contact/">cliquant ici</a>
+
+        </p>
+        <h3>
+            Je ne suis pas bénéficiaire de Meyclub
+        </h3>
+        <p>
+            Que vous soyez un comité d'entreprise social et économique, autre organisme ou un particulier, <a href="http://www.prowebce.com/contact/"
+                    title="Demande d'information">cliquez ici</a>.
+        </p>
+    </article>
+                </div>
+                        <div class="mk-dialog__box__elements__footer">
+                                                                                                                    </div>
+                                </div>
+    </div>
+</div>
+
+        
+<div
+    class="monkey mk-dialog  "
+    id="modal_rgpd"
+    aria-hidden="true"
+    data-mk-dialog-container>
+    <div class="mk-dialog__overlay" tabindex="-1" data-mk-dialog-hide></div>
+    <div
+        class="mk-dialog__box"
+                    aria-labelledby="Mes données personnelles"
+                role="dialog">
+                    <div class="mk-dialog__box__header">
+                                    <h1 id="modal_rgpd_title">Mes données personnelles</h1>
+                                        <button
+                        type="button"
+                        data-mk-dialog-hide
+                        class="mk-dialog__box__header__dialog-close mk-icon mk-icon-close"
+                        aria-label="Fermer la modale"
+                    >
+                    </button>
+                                                </div>
+                <div class="mk-dialog__box__elements">
+                        <div id="modal_rgpd_content" class="mk-dialog__box__elements__content">
+                        
+    <div class="monkey rgpd-container">
+        <h1 class="mk-text--primary mk-paragon mk-text-center">POLITIQUE DE PROTECTION DES DONNEES PERSONNELLES<br>PLATEFORME MEYCLUB</h1>
+        <p class="mk-bold mk-text-center">(Février 2021)</p>
+        <p>ProwebCE, société par actions simplifiée, au capital social de 397 485,20 euros, dont le siège social est situé au 166 -180 boulevard Gabriel Péri – 92240 Malakoff, immatriculée au Registre du Commerce et des Sociétés de Nanterre sous le numéro 421 011 875 et immatriculée au registre des opérateurs de voyages et de séjours sous le numéro IM092120028, est éditeur des sites <a class="mk-link mk-link--highlighted" target="_blank" href="https://www.meyclub.com" title="Ce lien s'ouvrira dans un nouvel onglet">www.meyclub.com <i class="mk-icon mk-icon-stml-open-in-new" aria-hidden="true"></i></a> et <a class="mk-link mk-link--highlighted" target="_blank"  href="https://voyages.meyclub.com" title="Ce lien s'ouvrira dans un nouvel onglet">voyages.meyclub.com<i class="mk-icon mk-icon-stml-open-in-new" aria-hidden="true"></i></a>.</p><p>La Plateforme Meyclub est une plateforme d’e-commerce et de réservation de voyages à destination des Bénéficiaires des clients de ProwebCE, notamment des comités sociaux et économiques (CSE) ou entreprises, proposant des offres de biens et services à tarifs négociés, dans les domaines du sport, shopping, tourisme, voyages, loisirs, presse, électroménager, high-tech, maison, culture/jeux, informatique, mode (ci-après <span class="mk-bold">« la Plateforme Meyclub »</span>).</p>
+        <p>Dans le cadre de l’utilisation de la Plateforme Meyclub et des services associés, nous sommes amenés à mettre en œuvre des traitements de données à caractère personnel (ci-après <span class="mk-bold">« Données »</span>) vous concernant. Nous souhaitons donc vous expliquer de manière transparente pourquoi nous collectons, stockons et utilisons vos Données. </p>
+        <p>Cette Politique a été établie au regard de la réglementation en vigueur en matière de protection des données personnelles dont le Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 (<span class="mk-bold">« RGPD »</span>), la loi n°78-17 relative à l’informatique, aux fichiers et aux libertés du 6 janvier 1978 modifiée (<span class="mk-bold">« Loi Informatique et Libertés »</span>), ainsi que la loi « pour la confiance dans l’économie numérique » du 21 juin 2004, l’article L.33-4-1 du Code des postes et communications électroniques, et l’article L221-16 et suivants du Code de la consommation relatifs à la prospection commerciale (ci-après la <span class="mk-bold">« Réglementation applicable »</span>). Elle pourra être modifiée à tout moment par ProwebCE afin de se conformer à d’éventuelles évolutions réglementaires, jurisprudentielles, éditoriales et/ou techniques. </p>
+        <p>La présente Politique s’applique :</p>
+        <ul>
+            <li>(i) aux Traitements de Données mis en œuvre via les sites www.meyclub.com et voyages.meyclub.com, via tout site internet édité par ProwebCE comprenant les fonctionnalités et services de la Plateforme Meyclub et via l’application mobile Meyclub ;</li>
+            <li>(ii) à tout Traitement de Données mis en œuvre par ProwebCE dans le cadre des services liés à la Plateforme Meyclub.</li>
+        </ul>
+        <p>Sont exclus du champ d’application de la présente Politique :</p>
+        <ul>
+            <li>(i) les Traitements opérés pour le compte des Clients CSE, lorsque ProwebCE agit en qualité de Sous-traitant ; </li>
+            <li>(ii) les Traitements liés à la navigation sur le Site institutionnel www.prowebce.com , ce dernier disposant d’une Notice d’information relative à la protection des données, qui lui est propre. </li>
+        </ul>
+        <h2 class="mk-primer mk-text--primary">Définitions</h2>
+        <p>Dans la présente Politique de protection des données personnelles :</p>
+        <ul>
+            <li>Vous ou votre/vos, désigne toute personne dont les Données sont traitées par ProwebCE via la Plateforme Meyclub ou pour la mise en œuvre des services liés à la Plateforme ;</li>
+            <li>Nous ou notre/nos, désigne ProwebCE, agissant en qualité de responsable du traitement.</li>
+        </ul>
+        <p>Les termes ci-dessous définis auront au sein du présent document (ci-après, « la Politique ») la signification suivante :</p>
+        <p><span class="mk-semi-bold">Bénéficiaires :</span> Personne physique bénéficiant d’un accès à la Plateforme Meyclub et aux services associés. L’accès aux services est ouvert au Bénéficiaire à la demande du Client.</p>
+        <p><span class="mk-semi-bold">Client :</span> (i) Comité Social et Economique ou toute entité de droit privé ou de droit public mettant en œuvre des activités sociales et culturelles (ci-après collectivement « CSE »), et/ou (ii) toute entité de droit privé ou de droit public, ayant souscrit un ou plusieurs services proposés par ProwebCE, ou bénéficiant de services de ProwebCE.</p>
+        <p><span class="mk-semi-bold">Correspondant la protection des données personnelles :</span> Personne physique ou morale désignée par ProwebCE, afin d’assurer la conformité à la Réglementation applicable, des Traitements de Données mis en œuvre par ProwebCE.</p>
+        <p><span class="mk-semi-bold">Données :</span>  Toute information permettant d’identifier, directement ou indirectement, une personne physique, notamment par référence à un identifiant, tel qu&rsquo;un nom, un numéro d&rsquo;identification, des données de localisation, un identifiant en ligne, ou à un ou plusieurs éléments spécifiques propres à son identité physique, physiologique, génétique, psychique, économique, culturelle ou sociale.</p>
+        <p><span class="mk-semi-bold">Destinataire :</span> Personne physique ou morale, à laquelle ProwebCE communique des Données, en raison de ses fonctions ou de son intervention dans le cadre des services.</p>
+        <p><span class="mk-semi-bold">Personne concernée :</span> Toute personne ayant fourni ses informations directement ou indirectement à ProwebCE et étant identifiée ou identifiable directement ou indirectement notamment par référence à un identifiant, un nom, un numéro d’identification, des données de localisation, ou à un ou plusieurs éléments propres à son identité physique, économique, culturelle ou sociale.</p>
+        <p><span class="mk-semi-bold">Partenaires :</span> Entités ou organismes proposant des produits (biens ou services) aux Bénéficiaires sur la Plateforme Meyclub.</p>
+        <p><span class="mk-semi-bold">Plateforme Meyclub :</span> plateforme d’e-commerce et de réservation de voyages à destination des Bénéficiaires des clients de ProwebCE, notamment des comités sociaux et économiques (CSE) ou entreprises, proposant des offres de biens et services à tarifs négociés, dans les domaines du sport, shopping, tourisme, voyages, loisirs, presse, électroménager, high-tech, maison, culture/jeux, informatique, mode.</p>
+        <p><span class="mk-semi-bold">Responsable du traitement :</span> Organisme qui détermine les finalités et les moyens du Traitement de Données, et auprès duquel vous pouvez exercer les droits dont vous disposez vis-à-vis de vos Données.</p>
+        <p><span class="mk-semi-bold">Services :</span> Services proposés par la Plateforme Meyclub.</p>
+        <p><span class="mk-semi-bold">Site :</span> Sites internet <a class="mk-link mk-link--highlighted" target="_blank"  href="https://www.meyclub.com" title="Ce lien s'ouvrira dans un nouvel onglet">www.meyclub.com<i class="mk-icon mk-icon-stml-open-in-new" aria-hidden="true"></i></a>, <a class="mk-link mk-link--highlighted" target="_blank" href="https://voyages.meyclub.com" title="Ce lien s'ouvrira dans un nouvel onglet">voyages.meyclub.com<i class="mk-icon mk-icon-stml-open-in-new" aria-hidden="true"></i></a>, application mobile Meyclub, ou tout site internet édité par ProwebCE et comprenant les fonctionnalités de la Plateforme Meyclub, indépendamment de son nom de domaine.</p>
+        <p><span class="mk-semi-bold">Site institutionnel :</span> Site <a class="mk-link mk-link--highlighted" target="_blank"  href="https://www.prowebce.com" title="Ce lien s'ouvrira dans un nouvel onglet">www.prowebce.com<i class="mk-icon mk-icon-stml-open-in-new" aria-hidden="true"></i></a>, fournissant de l’information sur l’activité et les offres de service de ProwebCE.</p>
+        <p><span class="mk-semi-bold">Sous-traitant :</span> Organisme qui traite les Données au nom et pour le compte du Responsable du traitement.</p>
+        <p><span class="mk-semi-bold">Traitement :</span> Toute opération ou tout ensemble d’opérations effectuées ou non à l’aide de procédés automatisés et appliquées à des Données ou des ensembles de Données, telles que la collecte, l’enregistrement, l’organisation, la structuration, la conservation, l’adaptation ou la modification, l’extraction, la consultation, l’utilisation, la communication par transmission, la diffusion ou toute autre forme de mise à disposition, le rapprochement ou l’interconnexion, la limitation, l’effacement ou la destruction.</p>
+        <h2 class="mk-primer mk-text--primary">Qui est responsable du traitement de vos Données ?</h2>
+        <ul>
+            <li>
+                <h3 class="mk-pica">Navigation sur le site de votre CSE</h3>
+                <p>Lorsque vous naviguez sur le site de votre CSE, notamment via le logiciel de gestion d’activités sociales et culturelles, votre CSE est le Responsable du traitement. En qualité de Responsable du traitement, votre CSE, transmet des Données vous concernant à ProwebCE, après vous en avoir préalablement informé et lorsque cela est nécessaire, après avoir recueilli votre consentement.</p>
+                <p>Nous traitons ces Données selon les instructions de votre CSE, ProwebCE étant Sous-traitant au sens de la Réglementation applicable. Vous pouvez exercer les droits dont vous disposez sur vos Données auprès de votre CSE. Pour en savoir plus, nous vous invitons à contacter votre CSE ou à consulter les informations relatives à la protection des données disponibles sur le site de votre CSE.  </p>
+            </li>
+            <li>
+                <h3 class="mk-pica">Navigation sur la Plateforme Meyclub</h3>
+                <p>A contrario, dès lors que vous utilisez la Plateforme Meyclub, accessible notamment par connexion sur le Site www.meyclub.com, ProwebCE est le Responsable du traitement. Les Traitements de Données sont mis en œuvre conformément à la Réglementation applicable.</p>
+            </li>
+        </ul>
+        <h2 class="mk-primer mk-text--primary">Quand et auprès de qui collectons-nous vos Données ?</h2>
+        <p>Nous collectons des Données vous concernant : </p>
+        <ul>
+            <li>
+                <p class="mk-semi-bold">De manière indirecte :</p>
+                <p>Nous pouvons être amenés à collecter certaines Données vous concernant auprès de notre Client qui nous transmettra ces informations afin de pouvoir créer votre compte et vous faire profiter de la Plateforme Meyclub. Certaines Données, concernant par exemple votre vie personnelle, nous permettent notamment de connaître le montant de la subvention que vous pouvez dépenser sur la Plateforme Meyclub. Les Données sont collectées lors de la création de votre compte sur la Plateforme Meyclub. </p>
+                <p>Pour permettre le calcul des subventions, ProwebCE est susceptible de traiter des Données relatives à vos ayants droit.</p>
+                <p>En outre, dans le cas particulier d’une réservation sur le Site voyages.meyclub.com, nous collectons, directement auprès de vous, au moment de la réservation, des Données relatives aux tiers participant au voyage. Il vous appartient de recueillir le consentement des participants pour la communication de leurs Données à nos services et de les informer des Traitements de Données que nous mettons en œuvre pour l’exécution des services souscrits, tels qu’ils sont définis dans les Conditions Particulières de Vente Voyages.</p>
+            </li>
+            <li>
+                <p class="mk-semi-bold">De manière directe :</p>
+                <p>Nous collectons également des Données vous concernant directement auprès de vous, notamment lorsque vous créez votre compte, naviguez sur le Site ou passez des commandes. </p>
+            </li>
+        </ul>
+        <h2 class="mk-primer mk-text--primary">Pourquoi collectons-nous vos Données ?</h2>
+        <p>En fonction de votre utilisation de la Plateforme Meyclub et de votre qualité, nous collectons et traitons en qualité de Responsable du traitement, des Données vous concernant, pour les finalités suivantes : </p>
+        <p>Pour l’exécution des contrats conclus avec nos Clients :</p>
+        <ul>
+            <li class="mk-semi-bold">(i) Gestion des relations avec le Client.</li>
+        </ul>
+        <p>Pour vous permettre l’accès à la Plateforme Meyclub, service souscrit à votre profit par l’un de nos Clients, ces Traitements étant nécessaires aux fins des intérêts légitimes que nous poursuivons à savoir l’exécution de nos obligations contractuelles :</p>
+        <ul>
+            <li class="mk-semi-bold">(i) Création des comptes Meyclub au profit des Bénéficiaires ;</li>
+            <li class="mk-semi-bold">(ii) Gestion des subventions et chèques cadeaux (calcul, chargement) ;</li>
+            <li class="mk-semi-bold">(iii) Gestion des relations avec les Bénéficiaires. </li>
+        </ul>
+        <p>Pour l’exécution du contrat conclu à l’occasion de la commande :</p>
+        <ul>
+            <li class="mk-semi-bold">(i) Gestion des commandes et réservation (enregistrement et traitement des commandes, livraison, facturation, paiement, SAV, réclamations) .</li>
+        </ul>
+        <p>Les Données des tiers participants, dans le cadre d’une réservation sur le site <a class="mk-link mk-link--highlighted" target="_blank"  href="https://voyages.meyclub.com" title="Ce lien s'ouvrira dans un nouvel onglet">voyages.meyclub.com<span class="mk-icon mk-icon-stml-open-in-new">&nbsp;</span></a>, sont collectées et traitées sur la base de leur consentement recueilli par le Bénéficiaire réalisant la réservation.</p>
+        <p>Pour répondre aux intérêts légitimes que nous poursuivons à savoir assurer la sécurité de nos systèmes d’information ou la gestion des contrats :</p>
+        <ul>
+            <li class="mk-semi-bold">(i) Sécurisation du site ;</li>
+            <li class="mk-semi-bold">(ii) Gestion du recouvrement et de la fraude ;</li>
+            <li class="mk-semi-bold">(iii) Gestion des contentieux.</li>
+        </ul>
+        <p>Pour répondre aux intérêts légitimes que nous poursuivons à savoir améliorer les parcours utilisateurs ou promouvoir nos services :</p>
+        <ul>
+            <li class="mk-semi-bold">(i) Réalisation d’études et d’analyses prédictives, d&rsquo;enquêtes de satisfaction et de sondages, mesures d’audience pour les besoins de l’optimisation des services ;</li>
+            <li class="mk-semi-bold">(ii) Envoi de communications servicielles non-commerciales et proposition d’offres commerciales pour des biens et des services analogues à ceux souscrits. </li>
+        </ul>
+        <p>Avec votre consentement : </p>
+        <ul>
+            <li class="mk-semi-bold">(i) Gestion des inscriptions aux newsletters et participation aux jeux concours ;</li>
+            <li class="mk-semi-bold">(ii) Proposition d’offres commerciales pour des biens et des services non-analogues à ceux souscrits.</li>
+        </ul>
+        <p>En vue de satisfaire aux obligations légales auxquelles nous sommes tenus :</p>
+        <ul>
+            <li class="mk-semi-bold">(i) Gestion des listes d’opposition et demandes d’exercice des droits ;</li>
+            <li class="mk-semi-bold">(ii) Respect de la réglementation en vigueur.</li>
+        </ul>
+        <p>Nous sommes susceptibles de mettre en œuvre d’autres Traitements de Données, en vue de la réalisation de nos obligations légales.</p>
+        <h2 class="mk-primer mk-text--primary">Quelles communications électroniques êtes-vous susceptibles de recevoir de nos services ?</h2>
+        <p>Vous êtes susceptibles de recevoir, de la part des services de ProwebCE, des courriers électroniques : </p>
+        <ul>
+            <li>nécessaires à l’activation et à la gestion de votre compte ;</li>
+            <li>nécessaires à la gestion des commandes et réservations passées depuis la Plateforme ;</li>
+            <li>d’information sur les fonctionnalités de la Plateforme ;</li>
+            <li>à la suite d’une commande ou réservation, de prospection pour des biens ou services analogues à ceux souscrits. </li>
+        </ul>
+        <p>Sauf s’agissant des courriels nécessaires à la fourniture des services, vous pouvez exercer votre droit d’opposition à la réception de courriers électroniques dans les conditions prévues ci-dessous (voir « Comment exercer vos droits »).</p>
+        <h2 class="mk-primer mk-text--primary">Quelles catégories de Données sont traitées ?</h2>
+        <p>Nous ne collectons et ne traitons que les Données nécessaires pour la réalisation des finalités susvisées. En fonction des finalités de Traitement poursuivies, les catégories de Données suivantes peuvent être traitées : </p>
+        <ul>
+            <li>Données d’Etat civil et d’identité ;</li>
+            <li>Données relatives à la vie professionnelle ;</li>
+            <li>Données relatives à la vie personnelle ;</li>
+            <li>Données d’ordre économique et financier ou bancaire ;</li>
+            <li>Données de connexion ;</li>
+            <li>Données relatives à l’attribution de subventions/chèques cadeaux ;</li>
+            <li>Données relatives aux commandes passées depuis la Plateforme Meyclub ;</li>
+            <li>Données relatives aux échanges avec nos services.</li>
+        </ul>
+        <p>Lorsque la communication d’une information est obligatoire pour la fourniture d’un bien ou service, nous vous le spécifions notamment en apposant un astérisque (*) à côté du champ obligatoire dans nos formulaires en ligne. L’absence de communication des Données obligatoires rend impossible la souscription aux biens ou services ou l’accès aux services souhaités par les Bénéficiaires.</p>
+        <p>Par ailleurs, afin de mener des audits qualité du service client, lorsque vous contactez notre centre de relation clientèle, vos appels sont susceptibles d’être enregistrés. Vous avez la possibilité de vous opposer à cet enregistrement au début de votre appel et d’accéder à ces enregistrements (voir « Comment exercer vos droits »).</p>
+        <h2 class="mk-primer mk-text--primary">Combien de temps vos Données sont-elles conservées ?</h2>
+        <p>Vos Données sont conservées tant que vous avez accès à la Plateforme Meyclub. A l’issue de cette durée, vos Données font l’objet d’un archivage dont la durée est déterminée en fonction des durées de prescription applicables (notamment en matière sociale et commerciale).</p>
+        <p>Pour les besoins de la mise en œuvre de nos obligations en matière comptable et fiscale, les Données utilisées dans le cadre de la facturation sont conservées pendant une durée de dix (10) ans à compter de l’achat du bien ou service concerné.</p>
+        <p>En présence d&rsquo;une réclamation ou d&rsquo;un litige non résolu avec un Bénéficiaire, les Données nécessaires à la résolution de la réclamation ou du litige seront conservées pendant la durée de traitement du litige dans la limite des règles applicables en matière de prescription.</p>
+        <p>Nous pouvons conserver au-delà de ces durées des informations anonymisées, ne constituant plus des Données à caractère personnel au sens de la Réglementation applicable, à des fins d’études et de statistiques.</p>
+        <h2 class="mk-primer mk-text--primary">Quels sont les destinataires de vos Données ?</h2>
+        <p>Les Données collectées sont destinées en premier lieu aux services internes de ProwebCE ayant besoin de les connaître pour la réalisation des finalités mentionnées précédemment.</p>
+        <p>Elles sont susceptibles d’être communiquées à d’autres entités du groupe Edenred auquel ProwebCE appartient, en fonction et dans la limite de leurs besoins respectifs, dans la limite des finalités définies précédemment.</p>
+        <p>Par ailleurs, nous pouvons communiquer des Données vous concernant : </p>
+        <ul>
+            <li>à nos Partenaires marchands, en vue de la gestion des commandes et réservations de biens ou de services proposés sur la Plateforme Meyclub ;</li>
+            <li>à nos prestataires, et sous-traitants intervenant dans l’exécution des prestations. Ceux-ci peuvent avoir accès à vos Données et les traiter dans le cadre de la fourniture des Services et notamment pour les besoins de l’hébergement de la Plateforme Meyclub, du paiement, ou de la livraison des commandes. Nous ne les autorisons pas à exploiter les Données que nous leur transmettons à des fins marketing, ou pour poursuivre des objectifs autres que ceux nécessaires à l’exécution des prestations ; </li>
+            <li>à votre CSE pour les seuls besoins de la réalisation de ses obligations légales, relatives à l’utilisation des subventions versées dans le cadre de sa politique d’activités sociales et culturelles.</li>
+        </ul>
+        <p>Dans le cadre des commandes que vous passez sur la Plateforme Meyclub, nous faisons appel à un prestataire de service de paiement en ligne, certifié PCI DSS, dont les data centers sont situés en France. </p>
+        <p>Nous sommes également susceptibles de communiquer vos Données à des tiers :</p>
+        <ul>
+            <li>Pour satisfaire à nos obligations légales ;</li>
+            <li>Dans le cadre d’audit des autorités dont nous et/ou nos prestataires relèvent ;</li>
+            <li>Pour répondre à une citation à comparaître, à l’ordonnance d’un tribunal ou à une autre procédure judiciaire ou pour établir ou exercer nos droits légaux ou nous défendre contre des revendications légales ;</li>
+            <li>Si nous pensons que leur divulgation est nécessaire pour enquêter, prévenir ou prendre des mesures contre des activités illégales, des fraudes suspectées, des situations impliquant des menaces potentielles à la sécurité physique des personnes ou si la loi l’exige autrement.</li>
+        </ul>
+        <p>En dehors des cas visés ci-dessus, nous ne communiquons pas vos Données à des tiers sans votre consentement.</p>
+        <h2 class="mk-primer mk-text--primary">Comment sécurisons-nous vos Données ?</h2>
+        <p>La confidentialité et la sécurité de vos Données est, et restera, une priorité pour nous.</p>
+        <p>Ainsi, nous nous engageons à assurer la sécurité de vos Données et à respecter la Réglementation applicable en mettant en œuvre des mesures techniques et organisationnelles appropriées en l’état de l’art (sensibilisation et formation du personnel, désignation d’un responsable sécurité, établissement d’une connexion VPN, chiffrement des données et des échanges, pare-feux, etc…). Ces mesures sont destinées à protéger vos Données contre toute destruction fortuite ou illicite, perte fortuite, altération, divulgation ou un accès non autorisé.</p>
+        <p>Nous veillons à ce que nos prestataires autorisés à traiter les Données, soient soumis à une obligation de confidentialité et dispensent aux personnes autorisées à traiter les Données, la formation nécessaire en matière de protection des Données. Nous nous assurons que nos prestataires mettent en œuvre les mesures de sécurité, techniques et organisationnelles, adéquates, propres à assurer la confidentialité, l’intégrité et la disponibilité des Données</p>
+        <p>Nous insistons sur le fait que la sécurité des Données dépend également du respect des bonnes pratiques de gestion des mots de passe par les Bénéficiaires et Clients. Pour en savoir plus, vous pouvez consulter <a class="mk-link mk-link--highlight" target="_blank" href="https://www.cnil.fr/fr/les-conseils-de-la-cnil-pour-un-bon-mot-de-passe" title="Ce lien s'ouvrira dans un nouvel onglet">les recommandations de la CNIL<i class="mk-icon mk-icon-stml-open-in-new" aria-hidden="true"></i></a>. Si vous pensez que quelqu&rsquo;un a pu accéder à votre mot de passe, modifiez-le immédiatement en vous connectant à votre compte et en changeant les paramètres de vos Préférences.</p>
+        <h2 class="mk-primer mk-text--primary">Vos Données sont-elles transférées hors de l’Union européenne ? Sous quelles garanties ?</h2>
+        <p>Les Données que nous traitons sont hébergées au sein de l’Union européenne dans le respect des exigences de la Réglementation applicable.</p>
+        <p>Dans le cas où des transferts de Données en dehors de l’Union européenne seraient nécessaires pour l’exécution du service, nous nous engageons à ce qu’ils s’opèrent (i) vers des pays dont la législation a été reconnue comme conférant un niveau de protection adéquat par la Commission européenne (ii) ou, à défaut, sous couvert de garanties contractuelles appropriées, telles que des Clauses contractuelles types approuvées par la Commission européenne.</p>
+        <h2 class="mk-primer mk-text--primary">Comment se désinscrire des newsletters ?</h2>
+        <p>Vous pouvez vous désinscrire de nos newsletters, à tout moment, directement en utilisant le lien de désabonnement présent dans nos mails, ou, après vous être connecté avec vos identifiants sur le Site <a class="mk-link mk-link--highlight" target="_blank" href="https://www.meyclub.com" title="Ce lien s'ouvrira dans un nouvel onglet">www.meyclub.com<span class="mk-icon mk-icon-stml-open-in-new">&nbsp;</span></a>, en vous rendant dans les paramètres de votre compte, à la page « Abonnement et Données Personnelles ».</p>
+        <h2 class="mk-primer mk-text--primary">Quels sont vos droits vis-à-vis de vos Données ?</h2>
+        <h3 class="mk-pica"><i class="mk-icon mk-icon-arrow-to-right mk-mar-x-xs" aria-hidden="true"></i>Droit d’accès :</h3>
+        <p >Vous avez le droit d’accéder aux Données vous concernant, que nous avons collecté directement ou indirectement et que nous traitons.</p>
+        <h3 class="mk-pica"><i class="mk-icon mk-icon-arrow-to-right mk-mar-x-xs" aria-hidden="true"></i>Droit de rectification : </h3>
+        <p>Vous avez la possibilité de demander la correction des Données vous concernant, si celles-ci sont incomplètes ou incorrectes. </p>
+        <h3 class="mk-pica"><i class="mk-icon mk-icon-arrow-to-right mk-mar-x-xs" aria-hidden="true"></i>Retrait du consentement :</h3>
+        <p>Lorsque le Traitement de vos Données repose sur votre consentement, comme par exemple l’inscription à une newsletter ou la réception d’offres commerciales par courrier électronique, vous avez le droit à tout moment de retirer votre consentement.</p>
+        <p>Ce droit s’exerce en modifiant vos options en matière de prospection commerciale et d’abonnements aux newsletters depuis les paramètres de votre compte, ainsi qu’en retirant votre consentement au placement de cookies depuis le Centre des préférences selon les modalités mentionnées dans notre Notice d’information relative aux cookies. </p>
+        <h3 class="mk-pica"><i class="mk-icon mk-icon-arrow-to-right mk-mar-x-xs" aria-hidden="true"></i>Droit de suppression : </h3>
+        <p>Vous pouvez également demander la suppression de vos Données, dans les cas suivants :</p>
+        <ul>
+            <li>Si vous considérez que le Traitement de vos Données n’est plus nécessaire au regard des Services souscrits ou de votre utilisation du Site, ou pour la réalisation des finalités visées plus haut dans cette Politique ou que la conservation de vos Données est contraire à la loi ;</li>
+            <li>Si vous avez retiré votre consentement au Traitement de vos Données (voir ci-dessus « Retrait du consentement ») ;</li>
+            <li>Si vous vous opposez au Traitement de vos Données pour des motifs tenant à votre situation personnelle ;</li>
+            <li>Si vous vous opposez à l’utilisation de vos Données à des fins de prospection commerciale. </li>
+        </ul>
+        <p>Veuillez noter que nonobstant l’exercice de ce droit, nous sommes susceptibles de conserver certaines Données vous concernant lorsque la loi l’impose ou l’y autorise, lorsqu’il existe un motif légitime de le faire (cf. durées de conservation définies aux présentes), pour l’exercice ou la défense de droits en justice ou encore lorsque l’exercice de ce droit porte atteinte à d’autres droits. </p>
+        <h3 class="mk-pica"><i class="mk-icon mk-icon-arrow-to-right mk-mar-x-xs" aria-hidden="true"></i>Opposition au Traitement </h3>
+        <p>Vous disposez du droit de vous opposer à la mise en œuvre d’un Traitement de Données dans deux situations :</p>
+        <ul>
+            <li>Lorsque le Traitement que nous réalisons est fondé sur l’intérêt légitime que nous poursuivons ;</li>
+            <li>Lorsque le Traitement est réalisé à des fins de prospection.</li>
+        </ul>
+        <h3 class="mk-pica"><i class="mk-icon mk-icon-arrow-to-right mk-mar-x-xs" aria-hidden="true"></i>Limitation du Traitement</h3>
+        <p>Vous pouvez obtenir la limitation temporaire d’un Traitement de Données vous concernant, dans les cas suivants : </p>
+        <ul>
+            <li>Si vos Données ne nous sont plus nécessaires dans le cadre du Traitement, mais que vous avez besoin qu’elles soient conservées pour la constatation, l’exercice ou la défense de vos droits en justice ;</li>
+            <li>Dans le cadre de l’exercice du droit d’opposition, pendant la période où nous mettons en balance nos intérêts légitimes et les vôtres ;</li>
+            <li>Si vous vous opposez à la suppression de vos Données alors même qu’un Traitement serait reconnu comme illicite ;</li>
+            <li>Pendant la période où nous vérifions l’exactitude des Données à la suite d’une contestation de votre part.</li>
+        </ul>
+        <h3 class="mk-pica"><i class="mk-icon mk-icon-arrow-to-right mk-mar-x-xs" aria-hidden="true"></i>Droit à la portabilité</h3>
+        <p>Vous avez le droit de demander à recevoir les Données vous concernant que vous nous avez fourni, pour votre usage personnel ou pour les transférer à un autre organisme.</p>
+        <p>Ce droit s’applique pour les Traitements ayant pour base de licéité le consentement ou l’exécution d’un contrat. Il est également nécessaire que vous ayez fourni les Données, qu’elles aient fait l’objet d’un Traitement automatisé et que l’exercice de ce droit ne porte pas atteinte aux droits et libertés de tiers.</p>
+        <h3 class="mk-pica"><i class="mk-icon mk-icon-arrow-to-right mk-mar-x-xs" aria-hidden="true"></i>Directives post mortem</h3>
+        <p>Vous disposez également du droit de définir des directives relatives au sort de vos Données après votre décès.</p>
+        <p><span class="mk-semi-bold">Veuillez noter</span> que (i) si vous sollicitez la suppression de vos Données, (ii) si vous vous opposez  au Traitement de vos Données ou (ii) si vous demandez à ce que le Traitement de vos Données soit limité, certains services sont susceptibles de ne plus être accessibles, et ce, sans que notre responsabilité ne puisse être engagée.</p>
+        <p>Vous disposez, enfin, du droit de saisir la Commission Nationale de l’Informatique et des Libertés (CNIL), de toute réclamation concernant le Traitement des Données vous concernant.</p>
+        <h2 class="mk-primer mk-text--primary">Comment exercer vos droits ?</h2>
+        <p>Pour en savoir plus sur notre Politique de protection des données personnelles ou pour exercer vos droits, vous pouvez nous contacter :</p>
+        <ul>
+            <li><span class="mk-semi-bold">par courriel</span>, à l’adresse suivante : <a class="mk-link mk-link--highlight" href="mailto:rgpd-dpo@prowebce.com">rgpd-dpo@prowebce.com</a> </li>
+            <li><span class="mk-semi-bold">par courrier</span>, à l’adresse suivante : ProwebCE – Correspondant à la Protection des Données - 166-180, boulevard Gabriel Péri, 92240 Malakoff.</li>
+        </ul>
+        <p>S’il existe un doute raisonnable sur votre identité ou votre qualité de personne concernée par le Traitement, nous sommes susceptibles de vous demander avant le traitement de votre demande, la communication d’un justificatif d’identité (Carte Nationale d’Identité, passeport…). Cette pièce justificative sera supprimée dès la vérification opérée.</p>
+        <h2 class="mk-primer mk-text--primary">Comment être informé de la modification de la Politique de protection des données ?</h2>
+        <p>Nous pouvons modifier notre Politique de protection des données personnelles, notamment afin de la compléter ou de l’adapter eu égard aux évolutions de la Réglementation en vigueur. Nous vous conseillons de consulter régulièrement cette page afin de prendre connaissance des évolutions apportées à ce document. Si la Réglementation l’exige, nous vous informerons de ces changements par courriel ou au moyen d’une notification sur votre compte.
+        </p>
+    </div>
+                </div>
+                        <div class="mk-dialog__box__elements__footer">
+                                                                                                                    </div>
+                                </div>
+    </div>
+</div>
+
+        
+<div
+    class="monkey mk-dialog  "
+    id="modal_complaints"
+    aria-hidden="true"
+    data-mk-dialog-container>
+    <div class="mk-dialog__overlay" tabindex="-1" data-mk-dialog-hide></div>
+    <div
+        class="mk-dialog__box"
+                    aria-labelledby="Gestion des réclamations"
+                role="dialog">
+                    <div class="mk-dialog__box__header">
+                                    <h1 id="modal_complaints_title">Gestion des réclamations</h1>
+                                        <button
+                        type="button"
+                        data-mk-dialog-hide
+                        class="mk-dialog__box__header__dialog-close mk-icon mk-icon-close"
+                        aria-label="Fermer la modale"
+                    >
+                    </button>
+                                                </div>
+                <div class="mk-dialog__box__elements">
+                        <div id="modal_complaints_content" class="mk-dialog__box__elements__content">
+                        Télécharger le formulaire de rétractation
+        <h2>Contactez notre service clients</h2><p>Nos conseillers sont à votre disposition par téléphone pour vous aider sur vos questions SAV, du lundi au vendredi de 09h à 18h au 01 79 62 15 13 (Prix d'un appel local).<br/>Vous pouvez aussi nous contacter par mail en remplissant le <a href="https://meyclub.com/fr/compte/demandes" title="formulaire de contact">formulaire de contact</a>.</p>
+        <h2>Consultez nos CGV</h2><p>Les présentes <a href="https://www.meyclub.com/fr/faq/27-cgv-meyclub" title="conditions générales de vente">conditions générales de vente</a> s'appliquent à toutes commandes passées sur ou avec le site internet www.meyclub.com.<br/>Toute passation de commande sur le site www.meyclub.com suppose la prise de connaissance des présentes conditions générales de ventes.<br/>Nous nous réservons la faculté de modifier les présentes conditions générales de vente à tout moment. En ce cas, seules les conditions générales de vente en vigueur lors de la prise de commande seront alors applicables.<br/>Il est conseillé au consommateur ayant acheté un bien sur <a href="https://www.meyclub.com/" title="www.meyclub.com">www.meyclub.com</a> de conserver et/ou imprimer les présentes conditions générales de vente.</p>
+        <h2>Contactez le médiateur</h2><p>Concernant les biens et services Meyclub hors Voyage :<br/>Vous pouvez saisir la CNPM – MEDIATION DE LA CONSOMMATION en déposant votre réclamation sur son site : <a href="https://www.cnpm-mediation-consommation.eu" title="https://www.cnpm-mediation-consommation.eu">https://www.cnpm-mediation-consommation.eu</a> ou en écrivant par voie postale à : CNPM – MEDIATION CONSOMMATION – 27 avenue de la libération – 42400 Saint-Chamond.<br/><br/>Concernant les Voyages et Sejours:<br/>Vous pouvez saisir gratuitement le Médiateur du Tourisme et du Voyage, dont les coordonnées et modalités de saisine sont disponibles sur le site :<br/><a href="https://www.mtv.travel/" title="https://www.mtv.travel/">https://www.mtv.travel/</a><br/><br/>Dans tous les cas, vous pouvez également saisir:<br/>La Plateforme européenne de règlement des litiges <a href="https://ec.europa.eu/consumers/odr"title="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a><br/></p>
+                </div>
+                        <div class="mk-dialog__box__elements__footer">
+                                                                                                                    </div>
+                                </div>
+    </div>
+</div>
+
+    
+
+
+    
+<div
+    class="monkey mk-dialog  "
+    id="modal-air-france"
+    aria-hidden="true"
+    data-mk-dialog-container>
+    <div class="mk-dialog__overlay" tabindex="-1" data-mk-dialog-hide></div>
+    <div
+        class="mk-dialog__box"
+                    aria-labelledby="Vos informations"
+                role="dialog">
+                    <div class="mk-dialog__box__header">
+                                    <h1 id="modal-air-france_title">Vos informations</h1>
+                                        <button
+                        type="button"
+                        data-mk-dialog-hide
+                        class="mk-dialog__box__header__dialog-close mk-icon mk-icon-close"
+                        aria-label="Fermer la modale"
+                    >
+                    </button>
+                                                </div>
+                <div class="mk-dialog__box__elements">
+                        <div id="modal-air-france_content" class="mk-dialog__box__elements__content">
+                                    
+                            </div>
+                        <div class="mk-dialog__box__elements__footer">
+                                                                                                                    </div>
+                                </div>
+    </div>
+</div>
+
+            
+    
+<div
+    class="monkey mk-dialog  "
+    id="modal_creation-compte-etape−1"
+    aria-hidden="true"
+    data-mk-dialog-container>
+    <div class="mk-dialog__overlay" tabindex="-1" data-mk-dialog-hide></div>
+    <div
+        class="mk-dialog__box"
+                    aria-labelledby="Etape 1 : Vérification du compte"
+                role="dialog">
+                    <div class="mk-dialog__box__header">
+                                    <h1 id="modal_creation-compte-etape−1_title">Etape 1 : Vérification du compte</h1>
+                                        <button
+                        type="button"
+                        data-mk-dialog-hide
+                        class="mk-dialog__box__header__dialog-close mk-icon mk-icon-close"
+                        aria-label="Fermer la modale"
+                    >
+                    </button>
+                                                </div>
+                <div class="mk-dialog__box__elements">
+                    <form name="meyclub_identification_creation_compte_etape1_form" method="get" action="/fr/identification/" class="creation-etape-form mk-form" id="meyclub_identification_creation_compte_etape1_form">
+                <div id="modal_creation-compte-etape−1_content" class="mk-dialog__box__elements__content">
+                
+                    <div class="mk-mar-y-m">
+            <div class="mk-step-line">
+    <ul class="mk-step-line__steps"><li  class="mk-step mk-step--active mk-step--first">
+            <span  class="mk-step__title" data-step-number="1">
+            Vérification du compte
+            </span></li><li  class="mk-step">
+            <span  class="mk-step__title" data-step-number="2">
+            Identifiants de connexion
+            </span></li><li  class="mk-step mk-step--last">
+            <span  class="mk-step__title" data-step-number="3">
+            Activation
+            </span></li></ul></div>
+
+            </div>
+            <p>Avant de démarrer la procédure de création de compte assurez vous d'être en possession de votre code d’activation.<br/>
+Si vous ne possédez pas votre code d’activation, rapprochez-vous de votre entreprise pour le récupérer.<br/>
+Commençons par procéder à la vérification de votre compte</p>
+        
+        <div id="erreur-connexion-activation" class="mk_alert mk_alert--alert mk-hidden">
+                
+<div class="monkey"></div>
+
+        </div>
+        <div id="captcha_activation" class="mk-hidden">
+                    </div>
+        <div id="creation_correspondance_multi_container">
+            <div class="    mk-form__element mk-form__element-title-inside">
+            <div class="mk-group-input">
+        <input type="text" id="meyclub_identification_creation_compte_etape1_form_creation_correspondance_multi" name="meyclub_identification_creation_compte_etape1_form[creation_correspondance_multi]" required="required" class="control-label" autocomplete="off" />
+            </div>     <div  class="mk-group-label"><label for="meyclub_identification_creation_compte_etape1_form_creation_correspondance_multi" class="required">Code d&#039;activation</label></div>  </div> 
+        </div>
+        <input type="hidden" id="meyclub_identification_creation_compte_etape1_form__token" name="meyclub_identification_creation_compte_etape1_form[_token]" value="HF4SSPUfwlygmPi2fVSK22MJCBZHNgdmfPQW-YrEVjM" />
+                </div>
+                        <div class="mk-dialog__box__elements__footer">
+                                                                                                                                                                                                                                                                
+                                <button  id="modal_creation-compte-etape−1__button-cancel" type="button" data-mk-dialog-hide class="AccountCreationStep-cancelInput mk-dialog__btn-cancel">Annuler</button>
+                                                                                                                                                                                                                    
+                                <button  id="continuer_etape1" type="submit" class="AccountCreationStep-validationInput">Continuer</button>
+                                                                                                                    </div>
+                                </form>
+            </div>
+    </div>
+</div>
+
+
+        
+
+<div
+    class="monkey mk-dialog  "
+    id="modal_creation-compte-etape−2"
+    aria-hidden="true"
+    data-mk-dialog-container>
+    <div class="mk-dialog__overlay" tabindex="-1"></div>
+    <div
+        class="mk-dialog__box"
+                    aria-labelledby="Etape 2 : Choix de vos identifiants de connexion"
+                role="dialog">
+                    <div class="mk-dialog__box__header">
+                                    <h1 id="modal_creation-compte-etape−2_title">Etape 2 : Choix de vos identifiants de connexion</h1>
+                                        <button
+                        type="button"
+                        data-mk-dialog-hide
+                        class="mk-dialog__box__header__dialog-close mk-icon mk-icon-close"
+                        aria-label="Fermer la modale"
+                    >
+                    </button>
+                                                </div>
+                <div class="mk-dialog__box__elements">
+                    <form name="meyclub_identification_creation_compte_etape2_form" method="get" action="/fr/identification/" class="creation-etape-form mk-form" id="meyclub_identification_creation_compte_etape2_form">
+                <div id="modal_creation-compte-etape−2_content" class="mk-dialog__box__elements__content">
+                        <div class="mk-mar-y-m">
+            <div class="mk-step-line">
+    <ul class="mk-step-line__steps"><li  class="mk-step mk-step--passed mk-step--first">
+            <span  class="mk-step__title" data-step-number="1">
+            Vérification du compte
+            </span></li><li  class="mk-step mk-step--active">
+            <span  class="mk-step__title" data-step-number="2">
+            Identifiants de connexion
+            </span></li><li  class="mk-step mk-step--last">
+            <span  class="mk-step__title" data-step-number="3">
+            Activation
+            </span></li></ul></div>
+
+        </div>
+        <div class="body-content">
+            <p>
+                Vous êtes sur le point de pouvoir accéder à <strong>Meyclub</strong>, pour
+                    cela veuillez tout d'abord choisir vos identifiants de connexion. Ils vous serviront pour vous
+                    connecter lors de vos prochaines visites.
+            </p>
+            <div id="creation_email_container" class="has-feedback">
+                <div class="    mk-form__element mk-form__element-title-inside mk-form__element--with-icon-inside-right">
+            <div class="mk-group-input">
+        <input type="email" id="meyclub_identification_creation_compte_etape2_form_creation_email" name="meyclub_identification_creation_compte_etape2_form[creation_email]" required="required" autocomplete="off"  />
+        <div  class="mk-group-icon">
+                                                    <span>@</span>
+                            </div>
+            </div>     <div  class="mk-group-label"><label for="meyclub_identification_creation_compte_etape2_form_creation_email" class="required">E-mail</label></div>  </div> 
+            </div>
+            <div id="creation_motdepasse_container" class="has-feedback">
+                    <div class="    mk-form__element mk-form__element-title-inside mk-form__element--with-icon-inside-right">
+                <div class="mk-group-input">
+        <input type="password" id="meyclub_identification_creation_compte_etape2_form_creation_motdepasse" name="meyclub_identification_creation_compte_etape2_form[creation_motdepasse]" required="required" data-mk-pwd-strength="{&quot;labels&quot;:{&quot;constraints&quot;:{&quot;title&quot;:&quot;Pour une meilleure s\u00e9curit\u00e9 utilisez :&quot;,&quot;min_length&quot;:&quot;8 caract\u00e8res&quot;,&quot;uppercase&quot;:&quot;1 majuscule&quot;,&quot;lowercase&quot;:&quot;1 minuscule&quot;,&quot;number&quot;:&quot;1 chiffre&quot;,&quot;special_char&quot;:&quot;1 caract\u00e8re sp\u00e9cial (!$%^*()_=+;:@#~,.?...)&quot;,&quot;black_list&quot;:&quot;Pour une meilleure s\u00e9curit\u00e9, \u00e9vitez d&#039;utiliser votre login, pr\u00e9nom ou nom.&quot;,&quot;requirement&quot;:&quot;Votre mot de passe ne respecte pas les r\u00e8gles de s\u00e9curit\u00e9.&quot;},&quot;strength&quot;:{&quot;main&quot;:&quot;Force&quot;,&quot;stateWeak&quot;:&quot;Faible&quot;,&quot;stateAverage&quot;:&quot;Moyenne&quot;,&quot;stateStrong&quot;:&quot;Forte&quot;,&quot;helpWeak&quot;:&quot;Votre mot de passe se devine facilement, essayez de l&#039;allonger pour le rendre plus fort.&quot;,&quot;helpAverage&quot;:&quot;Votre mot de passe est pr\u00eat \u00e0 faire face \u00e0 la plupart des menaces, mais peut toujours \u00eatre facilement devin\u00e9. Plus il est long, plus il sera s\u00e9curis\u00e9.&quot;,&quot;helpStrong&quot;:&quot;Votre mot de passe est fort, f\u00e9licitations.&quot;}}}" />
+        <div  class="mk-group-icon">
+                                    <i class="mk-icon mk-icon-eye"></i>
+                                            </div>
+            </div>     <div  class="mk-group-label"><label for="meyclub_identification_creation_compte_etape2_form_creation_motdepasse" class="required">Mot de passe</label></div>  </div> 
+            </div>
+
+            <div id="creation_motdepasse_confirmation_container" class="has-feedback">
+                    <div class="    mk-form__element mk-form__element-title-inside mk-form__element--with-icon-inside-right">
+                    <div class="mk-group-input">
+        <input type="password" id="meyclub_identification_creation_compte_etape2_form_creation_motdepasse_confirmation" name="meyclub_identification_creation_compte_etape2_form[creation_motdepasse_confirmation]" required="required" data-mk-pwd-confirm="{&quot;linkedTo&quot;:&quot;creation_motdepasse&quot;,&quot;linkedToMessage&quot;:&quot;Les deux champs sont diff\u00e9rents.&quot;,&quot;linkedToMessageSuccess&quot;:&quot;Les deux champs sont identiques.&quot;}" />
+        <div  class="mk-group-icon">
+                                    <i class="mk-icon mk-icon-eye"></i>
+                                            </div>
+            </div>     <div  class="mk-group-label"><label for="meyclub_identification_creation_compte_etape2_form_creation_motdepasse_confirmation" class="required">Confirmation du mot de passe</label></div>  </div> 
+            </div>
+        </div>
+        <input type="hidden" id="meyclub_identification_creation_compte_etape2_form__token" name="meyclub_identification_creation_compte_etape2_form[_token]" value="v6-HDj3p39ERR0R8-w2aB0vxITFGMvbgLOUHnehgLlU" />
+                </div>
+                        <div class="mk-dialog__box__elements__footer">
+                                                                                                                                                                                                                                                                
+                                <button  id="modal_creation-compte-etape−2__button-cancel" type="button" data-mk-dialog-hide class="AccountCreationStep-cancelInput mk-dialog__btn-cancel">Annuler</button>
+                                                                                                                                                                                                                    
+                                <button  id="continuer_etape2" type="submit" disabled="disabled" class="AccountCreationStep-validationInput">Continuer</button>
+                                                                                                                    </div>
+                                </form>
+            </div>
+    </div>
+</div>
+
+        
+
+<div
+    class="monkey mk-dialog  "
+    id="modal_creation-compte-etape−3"
+    aria-hidden="true"
+    data-mk-dialog-container>
+    <div class="mk-dialog__overlay" tabindex="-1"></div>
+    <div
+        class="mk-dialog__box"
+                    aria-labelledby="Etape 3 : Activation de votre compte"
+                role="dialog">
+                    <div class="mk-dialog__box__header">
+                                    <h1 id="modal_creation-compte-etape−3_title">Etape 3 : Activation de votre compte</h1>
+                                        <button
+                        type="button"
+                        data-mk-dialog-hide
+                        class="mk-dialog__box__header__dialog-close mk-icon mk-icon-close"
+                        aria-label="Fermer la modale"
+                    >
+                    </button>
+                                                </div>
+                <div class="mk-dialog__box__elements">
+                    <form name="meyclub_identification_creation_compte_etape3_form" method="get" action="/fr/identification/" class="creation-etape-form mk-form" id="meyclub_identification_creation_compte_etape3_form">
+                <div id="modal_creation-compte-etape−3_content" class="mk-dialog__box__elements__content">
+                        <div class="mk-mar-y-m">
+            <div class="mk-step-line">
+    <ul class="mk-step-line__steps"><li  class="mk-step mk-step--passed mk-step--first">
+            <span  class="mk-step__title" data-step-number="1">
+            Vérification du compte
+            </span></li><li  class="mk-step mk-step--passed">
+            <span  class="mk-step__title" data-step-number="2">
+            Identifiants de connexion
+            </span></li><li  class="mk-step mk-step--active mk-step--last">
+            <span  class="mk-step__title" data-step-number="3">
+            Activation
+            </span></li></ul></div>
+
+        </div>
+        <div class="mk-container-fluid">
+            <p>
+                Vous y êtes presque !<br/>Confirmez les coordonnées ci dessous et accédez dès maintenant à
+                    <strong>Meyclub</strong>.
+            </p>
+            <div class="mk-row">
+                <div class="mk-col-inline">
+                        <div class="mk-form__element mk-form__element--radio"><input type="radio" id="meyclub_identification_creation_compte_etape3_form_creation_civilite_0" name="meyclub_identification_creation_compte_etape3_form[creation_civilite]" required="required" checked="checked" value="Mme" /><label for="meyclub_identification_creation_compte_etape3_form_creation_civilite_0" class="required">Madame</label></div>
+                </div>
+                <div class="mk-col-inline">
+                        <div class="mk-form__element mk-form__element--radio"><input type="radio" id="meyclub_identification_creation_compte_etape3_form_creation_civilite_1" name="meyclub_identification_creation_compte_etape3_form[creation_civilite]" required="required" value="M" /><label for="meyclub_identification_creation_compte_etape3_form_creation_civilite_1" class="required">Monsieur</label></div>
+                </div>
+                <div class="mk-col-inline">
+                        <div class="mk-form__element mk-form__element--radio"><input type="radio" id="meyclub_identification_creation_compte_etape3_form_creation_civilite_2" name="meyclub_identification_creation_compte_etape3_form[creation_civilite]" required="required" value="Autre" /><label for="meyclub_identification_creation_compte_etape3_form_creation_civilite_2" class="required">Autre</label></div>
+                </div>
+            </div>
+            <div class="mk-row mk-pad-t-m">
+                <div class="mk-col-xs-12">
+                    <div class="    mk-form__element mk-form__element-title-inside">
+            <div class="mk-group-input">
+        <input type="text" id="meyclub_identification_creation_compte_etape3_form_creation_prenom" name="meyclub_identification_creation_compte_etape3_form[creation_prenom]" required="required" />
+            </div>     <div  class="mk-group-label"><label for="meyclub_identification_creation_compte_etape3_form_creation_prenom" class="required">Prénom (obligatoire)</label></div>  </div> 
+                </div>
+                <div class="mk-col-xs-12">
+                    <div class="    mk-form__element mk-form__element-title-inside">
+            <div class="mk-group-input">
+        <input type="text" id="meyclub_identification_creation_compte_etape3_form_creation_nom" name="meyclub_identification_creation_compte_etape3_form[creation_nom]" required="required" />
+            </div>     <div  class="mk-group-label"><label for="meyclub_identification_creation_compte_etape3_form_creation_nom" class="required">Nom (obligatoire)</label></div>  </div> 
+                </div>
+                <div class="mk-col-xs-12">
+                    <div class="    mk-form__element mk-form__element-title-inside">
+            <div class="mk-group-input">
+        <input type="text" id="meyclub_identification_creation_compte_etape3_form_creation_telephone" name="meyclub_identification_creation_compte_etape3_form[creation_telephone]" />
+            </div>     <div  class="mk-group-label"><label for="meyclub_identification_creation_compte_etape3_form_creation_telephone">Téléphone</label></div>  </div> 
+                </div>
+                <div class="mk-col-xs-12 mk-col-m-6">
+                    <div class="    mk-form__element mk-form__element-title-inside">
+            <div class="mk-group-input">
+        <input type="text" id="meyclub_identification_creation_compte_etape3_form_creation_adresse1" name="meyclub_identification_creation_compte_etape3_form[creation_adresse1]" />
+            </div>     <div  class="mk-group-label"><label for="meyclub_identification_creation_compte_etape3_form_creation_adresse1">Adresse</label></div>  </div> 
+                </div>
+                <div class="mk-col-xs-12 mk-col-m-6">
+                    <div class="    mk-form__element mk-form__element-title-inside">
+            <div class="mk-group-input">
+        <input type="text" id="meyclub_identification_creation_compte_etape3_form_creation_adresse2" name="meyclub_identification_creation_compte_etape3_form[creation_adresse2]" />
+            </div>     <div  class="mk-group-label"><label for="meyclub_identification_creation_compte_etape3_form_creation_adresse2">Complément d&#039;adresse</label></div>  </div> 
+                </div>
+                <div class="mk-col-xs-12 mk-col-m-4">
+                    <div class="    mk-form__element mk-form__element-title-inside">
+            <div class="mk-group-input">
+        <input type="text" id="meyclub_identification_creation_compte_etape3_form_creation_codepostal" name="meyclub_identification_creation_compte_etape3_form[creation_codepostal]" />
+            </div>     <div  class="mk-group-label"><label for="meyclub_identification_creation_compte_etape3_form_creation_codepostal">Code postal</label></div>  </div> 
+                </div>
+                <div class="mk-col-xs-12 mk-col-m-8">
+                    <div class="    mk-form__element mk-form__element-title-inside">
+            <div class="mk-group-input">
+        <input type="text" id="meyclub_identification_creation_compte_etape3_form_creation_ville" name="meyclub_identification_creation_compte_etape3_form[creation_ville]" />
+            </div>     <div  class="mk-group-label"><label for="meyclub_identification_creation_compte_etape3_form_creation_ville">Ville</label></div>  </div> 
+                </div>
+            </div>
+            <div id="creation_password_container" class="mk_alert mk_alert--alert mk-hidden"></div>
+            En cliquant sur "Continuer", vous activez votre compte, vous attestez avoir pris connaissance de la Politique de confidentialité  <a class="gdprLink" href="https://happly.io/Meyclub-politiques-de-confidentialite" target="_blank">consultable ici</a>.
+            <input type="hidden" id="meyclub_identification_creation_compte_etape3_form__token" name="meyclub_identification_creation_compte_etape3_form[_token]" value="EglP9i53m68io3UKEP5vttiMjoFDude_2PQopG3gc0U" />
+        </div>
+                </div>
+                        <div class="mk-dialog__box__elements__footer">
+                                                                                                                                                                                                                                                                
+                                <button  id="modal_creation-compte-etape−3__button-cancel" type="button" data-mk-dialog-hide class="AccountCreationStep-cancelInput mk-dialog__btn-cancel">Annuler</button>
+                                                                                                                                                                                                                    
+                                <button  id="continuer_etape3" type="button" disabled="disabled" class="AccountCreationStep-validationInput">Continuer</button>
+                                                                                                                <p class="mk-hidden mk-col-xs-12">
+            Création de votre compte en cours ...
+        </p>
+                </div>
+                                </form>
+            </div>
+    </div>
+</div>
+
+    
+        <script src="/js/monkey.js?20230915122420"></script>
+                    <script src="/js/78ae3a2.js?20230915122420"></script>
+                <script src="/js/routing?callback=fos.Router.setData"></script>
+        <script type="text/javascript" src="/js/meyclub_fo_identification_3.92.0.js?20230915122420"></script>
+                    <script type="text/javascript" src="//try.abtasty.com/058a0dc8ac0a79bb236b05bb817862ec.js"></script>
+            </body>
+
+                
+    
+
+                <script type="text/javascript">
+                                        $(function() {
+                            $('#resultat_correspondance_multi').text('');
+                $('#creation_correspondance_identifiant').removeClass('dNone');
+                    });
+        </script>
+    </html>

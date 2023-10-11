@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WatchDog - Barking at bad browser extensions!</title>
+  <meta name="description" content="WatchDog Browser Protector">
+  <meta name="keywords" content="WatchDog Browser Protector Remove Bad Extensions">
+  <!--Favicon-->
+  <link rel="icon" href="#" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <!--OG tags-->
+  <meta property="og:title" content="Browser WatchDog"/>
+  <meta property="og:description" content="Browser WatchDog - Protecting your browser while you surf & sleep"/>
+
+   <meta property="og:image" content="#"/>
+
+   <!-- CSS styles -->
+<!-- CSS styles -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+  <!-- CSS styles -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
+        integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
+        integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+        integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+
+  <style type="text/css">
+    h1 {
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+<body>
+  <section id=add class="add">
+    <div class="container">
+      <div class="section__wraper">
+        <div class="row">
+          <a href="#" class="col-xl-3 col-md-4 col-sm-4 col-xs-4">
+            <img class="header__logo" src="img/logo.png" alt="">
+          </a>
+          <div class="offset-xl-1 offset-md-0 offset-sm-0 col-xl-8  col-md-8 col-sm-8 col-xs-8">
+            <ul class="menu d-flex">
+              <li class="menu__item">
+                <a href="#identify" class="hvr-underline-from-center go">
+                  Services
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#slider" class="hvr-underline-from-center go">
+                  Preview
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#price" class="hvr-underline-from-center go">
+                  Price
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#question" class="hvr-underline-from-center go">
+                  Support
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#question" class="hvr-underline-from-center go">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-7 col-md-7 col-sm-12 fadeInLeft animated">
+          <h1 class="add__title">Clean up your Browser</h1>
+             <p class="add_text">
+               Browser WatchDog 🐶 scans your Chrome™ browser for extensions that slow down your browser, leak your data and secretly change its settings. Bad extensions - Begon! ☠️
+
+              Click `Start Free Scan` for a scan and dog protection. Oh and it's FREE!
+             </p>
+          <button id="add__btn1" class="add__btn" data-a11y-dialog-show="my-accessible-dialog-1">
+            <i class="fas fa-plus"></i>
+            Start free scan
+          </button>
+          <div class="add__wrap d-flex" style="margin-top: 10px;">
+            <i class="fas fa-check"></i>
+            <p class="add_subtext">Compatible with your browser</p>
+          </div>
+        </div>
+        <div class="offset-xl-1 col-xl-5 col-lg-5 col-md-5 col-sm-12 fadeInRight animated">
+          <img class="icon__img" src="img/dog-face.png" alt="">
+          <h2 class="dog__title"></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 text-center">
+          <h1 class="services__main">After the scan you will <span class="services__span">immediately</span> get</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12 ">
+          <div class="services__item">
+            <img class="services__img" src="img/privacy.png" alt="">
+            <h5 class="services__title">
+              More Privacy Protection
+            </h5>
+            <p class="services__text">
+              Delete tracking or tracking-embedding extensions
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12">
+          <div class="services__item">
+            <img class="services__img" src="img/less-ads.png" alt="">
+            <h5 class="services__title">
+              Less Annoying Ads
+            </h5>
+            <p class="services__text">
+              Reduce intrusive ads like Push Notifications and injected ads
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12">
+          <div class="services__item">
+            <img class="services__img" src="img/rocket.png" alt="">
+            <h5 class="services__title services__title_3">
+              Browser Optimization
+            </h5>
+            <p class="services__text">
+              Cleanup internet junk and make your browser light as the day you installed it
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12">
+          <div class="services__item ">
+            <img class="services__img" src="img/easy.png" alt="">
+            <h5 class="services__title">
+              Easy to Use
+            </h5>
+            <p class="services__text">
+              Scan is automatic, takes 10 seconds and works out of the box!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="identify" class="identify">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <h1 class="identify__main">Browser WatchDog Barks and Bites!</h1>
+          <h5 class="identify__sub">at bad extenension</h5>
+        </div>
+      </div>
+      <div class="identify__wrap animated identify__wrap_first ">
+        <div class="row ">
+          <div class="offset-xl-1 offset-md-0 offset-sm-2 col-xl-5 col-md-5 col-sm-10">
+            <a href="https://imgur.com/5H3T1GG"><img class="identify__img identify__img_scan" src="https://i.imgur.com/5H3T1GG.png" title="source: imgur.com" /></a>
+          </div>
+          <div class="offset-md-0 offset-sm-1 col-xl-5 col-md-7 col-sm-11">
+            <h2 class="identify__title identify__title_scan">Smart Scan</h2>
+            <p class="identify__text">
+              WatchDog will scan your browser for adware, potentially unwanted addons & apps, annoying toolbars and
+              ad-injectors. <br/>Scan is just 1 click away + 10 seconds away.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="identify__wrap animated identify__wrap_second ">
+        <div class="row">
+          <div class="offset-xl-1 offset-md-0 offset-sm-2 col-xl-5 col-md-5 col-sm-10">
+            <a href="https://imgur.com/jOJnMAF"><img class="identify__img" src="https://i.imgur.com/jOJnMAF.png" title="source: imgur.com" /></a>
+          </div>
+          <div class="offset-md-0 offset-sm-1 col-xl-5 col-md-7 col-sm-11">
+            <h2 class="identify__title">Riddance of dangerous browser extensions</h2>
+                <p class="identify__text">
+                  WatchDog was developed with a simple goal in mind: To help you get rid of dangerous browser extensions and to help you restore your browser to a clean state. One click to scan and one click to remove. Super easy!
+                </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider" id="slider">
+    <div class="container-fluid container-fluid_plan">
+      <div class="row">
+        <div class="col-xl-12">
+          <h1 class="slider__title text-center animated">Let's see how it works</h1>
+        </div>
+        <div class="col-xl-12 ">
+          <div id="da-slider" class="da-slider">
+            <div class="da-slide">
+              <h2>Easy Start</h2>
+              <p>No config required. Get BrowserDog, click the Scan Now button and you're off to the (dog) races.</p>
+              <div class="da-img"><img src="img/step1.1.jpg" alt="image01"/></div>
+            </div>
+            <div class="da-slide">
+              <h2>Quick Scan</h2>
+	             <p>Browser WatchDog will scan all your installed extensions and compare them to known extension blacklists, extensions with low reputation or questionable behavior.
+
+
+              <div class="da-img"><img src="img/step2.2.jpg" alt="image01"/></div>
+            </div>
+            <div class="da-slide">
+                     <h2>Scan Results</h2>
+                     <p>Once the scan is finished you will be presented with the results: If all of your extensions were found to be clean, no action is required. If a questionable extension was found - you will have the option to remove it or all extensions found.
+
+                      Expect your browser to speed up, privacy improved and fewer ads displayed. </p> 
+
+              <div class="da-img">
+                <img src="img/step3.3.jpg" alt="image01"/>
+              </div>
+            </div>
+            <nav class="da-arrows">
+              <span class="da-arrows-prev"></span>
+              <span class="da-arrows-next"></span>
+            </nav>
+          </div>
+        </div>
+        <div class="col-xl-12 text-center">
+          <h2 class="line__title">It's easy as 1,2,3</h2>
+          <button id="add__btn2" class="add__btn animated" data-a11y-dialog-show="my-accessible-dialog-1">
+            <i class="fas fa-plus "></i>
+            Add to chrome
+          </button>
+        </div>
+      </div>
+  </section>
+  <section class="price" id="price">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <h1 class="price__title text-center">Pricing</h1>
+        </div>
+        <div class="col-xl-4 col-md-9 col-sm-12">
+          <div class="pricing__wrap text-center">
+            <img src="img/balloon_1.png" alt="" class="pricing__icon">
+            <h3 class="pricing__title">Free</h3>
+            <p class="pricing__sentence">Perfect for private users</p>
+            <p class="pricing__currency pricing__currency_1">0$<span class="pricing__period">/month</span></p>
+            <ul class="pricing__feature-list">
+              <li class="pricing__feature">Limited Email support</li>
+              <li class="pricing__feature">Beginners tips</li>
+            </ul>
+            <button class="pricing__btn pricing__btn_1" data-a11y-dialog-show="my-accessible-dialog-1">Get It</button>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-9 col-sm-12">
+          <div class="pricing__wrap text-center">
+            <img src="img/balloon_2.png" alt="" class="pricing__icon">
+            <h3 class="pricing__title">Pro</h3>
+            <p class="pricing__sentence">For small companies with 30 or less user</p>
+            <p class="pricing__currency">29$<span class="pricing__period">/month</span></p>
+            <ul class="pricing__feature-list">
+              <li class="pricing__feature">24/7 Tech Support</li>
+              <li class="pricing__feature">Unlimited Extra Features</li>
+            </ul>
+            <button class="pricing__btn pricing__btn_2">Soon...</button>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-9 col-sm-12">
+          <div class="pricing__wrap text-center">
+            <img src="img/balloon_3.png" alt="" class="pricing__icon">
+            <h3 class="pricing__title">Premium</h3>
+            <p class="pricing__sentence">For any large corporation with an unlimited number of users</p>
+            <p class="pricing__currency">79$<span class="pricing__period">/month</span></p>
+            <ul class="pricing__feature-list">
+              <li class="pricing__feature">24/7 Tech Support</li>
+              <li class="pricing__feature">Incident Response</li>
+              <li class="pricing__feature">Unlimited Extra Features</li>
+            </ul>
+            <button class="pricing__btn pricing__btn_3">Soon...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="question" class="question">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <h1 class="question__title animated">Have a <span class="services__span">Question</span>?</h1>
+        </div>
+        <div class="col-xl-12">
+          <div class="contact__wrap text-center">
+            <p class="question__email">If you have a question, comment or anything else, feel free to shoot us a line:</p>
+            <span class="icon">
+                         <i class="fas fa-envelope-open"></i>
+                      </span>
+            <a href="/cdn-cgi/l/email-protection#067573767669747246647469717563746269612865696b" class="contact__email"><span class="__cf_email__" data-cfemail="1e6d6b6e6e716c6a5e7c6c71696d7b6c7a7179307d7173">[email&#160;protected]</span></a>
+          </div>
+          <h5 style="padding-left: 30px;" class="question__subtitle">or fill the form below:</h5>  
+
+        </div>
+        <div class="col-xl-12 col-sm-12">
+          <form id="my-form" action="https://formspree.io/mayjrjzv" class="question__form animated text-center"
+                method="POST">
+            <input type="text" class="form__input" name="name" placeholder="Name">
+            <input type="text" class="form__input" name="email" placeholder="Email"><br>
+            <textarea id="message" class="message" type="message" placeholder="Your message"></textarea>
+          </form>
+          <div class="col-xl-12 text-center">
+            <button type="submit" id="add__btn_form" class="add__btn animated add__btn_form">
+              Send
+            </button>
+            <div id="my-form-status" class="note" style="display: none">
+              <h2 class="note__subtitle">Thank you!</h2>
+              <p class="note__text">
+                Your message was sent successfully. We will keep in touch.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <img class="dogs__hand" src="img/dogs-hand.png" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer class="footer" style="
+      padding: 40px 0px 40px 0px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-md-12">
+          <a href="#header" class="footer__logo">
+            <img class="header__logo" src="img/logo.png" alt="">
+          </a>
+        </div>
+        <div class="col-xl-8 col-md-12 col-sm-12">
+          <p class="footer__text">
+            &#169;2020 WatchDog. All rights reserved | Browser WatchDog <a class="policy__link" href="privacy.html">|
+            Privacy Policy</a>
+          </p>
+        </div>
+        <div class="col-12">
+          <div class="policy d-flex">
+            <div class="policy__item">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="my-accessible-dialog-1" class="dialog" data-a11y-dialog-native>
+    <div tabindex="-1" class="dialog-overlay" data-a11y-dialog-hide="my-accessible-dialog-1"></div>
+    <dialog aria-labelledby="dialog-title" class="dialog-content">
+      <button data-a11y-dialog-hide="my-accessible-dialog-1" id="dialog-close-1" class="dialog-close" aria-label="Close this dialog window">
+      </button>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- modal -->
+            <h2 id="dialog-title" class="main__title">How to install:</h2>
+            <p class="main__text">Easily add this handy app in 3 steps:</p>
+            <div class="steps__wrap">
+              <div class="steps">
+                <div class="steps__icon">
+                  <i class="fas fa-hand-point-up"></i>
+                </div>
+                <h5 class="steps__title">Step 1:</h5>
+                <p class="steps__text">Click on "Continue" button</p>
+              </div>
+              <div class="steps">
+                <div class="steps__icon">
+                  <i class="fas fa-folder-plus"></i>
+                </div>
+                <h5 class="steps__title">Step 2:</h5>
+                <p class="steps__text">Add the extension</p>
+              </div>
+              <div class="steps steps">
+                <div class="steps__icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h5 class="steps__title">Step 3:</h5>
+                <p class="steps__text">Scan your browser</p>
+              </div>
+              <button id="continue__btn" class="add__btn">
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>
+  <div id="my-accessible-dialog-2" class="dialog" data-a11y-dialog-native>
+    <div tabindex="-1" class="dialog-overlay" data-a11y-dialog-hide="my-accessible-dialog-2"></div>
+    <dialog aria-labelledby="dialog-title" class="dialog-content dialog-content_again">
+      <button data-a11y-dialog-hide="my-accessible-dialog-2" id="dialog-close-2" class="dialog-close" aria-label="Close this dialog window">
+      </button>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <!-- modal "try-again" -->
+            <h1 class="again__title">Oops...</h1>
+            <p class="again__text">It looks like something went wrong,<br>and your installation canceled. 
+            <p class="again__subtext">
+              Let's try again?
+            </p>
+              <button id="continue__btn continue__btn_again" class="continue__btn continue__btn_again"
+                      onclick="window.open('https://chrome.google.com/webstore/detail/browser-watchdog/jjnfhbcilcppomkcmkbbmcadoihkkgah', '_blank')">
+                Try again
+              </button>
+            </div>
+            <!--modal -->
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery-3.4.0.min.js"></script>
+  <script src="js/jquery.cslider.js"></script>
+  <script src="js/modernizr.custom.28468.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/a11y-dialog.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

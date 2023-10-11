@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Venstar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link href="css/googleapis-roboto.css" rel="stylesheet">
+	<link href="css/googleapis-open-sans.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/cloudsfare.css">
+	<link rel="icon" href="images/venstarfavicon.png" type="image/png" sizes="16x16">
+	<link rel="icon" href="images/venstarfavicon.png" sizes="32x32" />
+	<style>
+	.owl-carousel .owl-nav button.owl-prev span,
+	.owl-carousel .owl-nav button.owl-next span {
+		position: relative;
+		top: -3px;
+	}
+	
+	.survyeor-block {
+		padding-bottom: 100%;
+	}
+	
+	.voice-control-block {
+		background-position: right;
+	}
+	
+	.survyeor-img img {
+		max-width: 80%;
+	}
+	
+	.for-mobile {
+		display: none;
+	}
+	
+	.social-media ul li img {
+		width: 100%;
+	}
+	
+	.videoWrapper-home {
+		height: 700px;
+	}
+	
+	.videoWrapper-home video {
+		object-fit: cover;
+	}
+	
+	.container.h-100 {
+		max-width: 950px;
+	}
+	@media(max-width:767px) {
+		.videoWrapper-home {
+			height: auto
+		}
+		#parallax1 {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+		}
+		.mob-back-none .skyweb-inn h2 {
+			margin-top: 5px;
+		}
+		.skyweb-block {
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
+		.for-mobile {
+			display: block;
+		}
+		.for-mobile {
+			width: 100%;
+		}
+		.for-mobile img {
+			width: 100%;
+		}
+		.mob-back-none .skyweb-inn {
+			position: unset;
+			height: auto;
+		}
+		.mob-pos-none h2,
+		.mob-pos-none p {
+			text-align: center;
+			color: #000;
+			width: 100% !important;
+			max-width: 100%;
+		}
+		.mob-pos-none {
+			position: unset;
+			height: auto;
+			padding: 0;
+			margin: 0;
+			width: 90%;
+			margin: 0 auto;
+		}
+		.mob-pos-none a {
+			text-align: center;
+		}
+		.mob-back-none {
+			background-image: none !important;
+			background-color: #fff !important;
+			padding: 0px 0;
+			height: auto;
+			margin: 0;
+			min-height: auto;
+		}
+		.voice-control-block.mob-back-none {
+			padding: 25px 0;
+		}
+	}
+	</style>
+</head>
+
+<body class="home-page">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+		<div class="container">
+			<a class="navbar-brand logo" href="/"><img src="images/logo.png" alt="image" class="img-fluid"></a>
+			<div class="navbar-toggler p-0 border-0" onclick="myFunction(this)" data-toggle="offcanvas">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div class="for-desk">
+				<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item"> <a class="nav-link" href="/">Home</a> </li>
+						<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Thermostats                            
+                        </a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12 col-lg-3">
+											<div class="mega-menu-content text-center">
+												<div class="mega-cap"><img src="images/color-touch-txt-img.png" alt="image" class="img-fluid"></div>
+												<h5>3 Residential</h5>
+												<h5>3 Commercial</h5>
+												<div class="wifi-icon"><img src="images/wifi-2nd.png" alt="image" class="img-fluid"></div>
+												<div class="mega-image1 mega-img">
+													<a href="/thermostats/colortouch/"><img src="images/colortouch-img.png" alt="image" class="img-fluid"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<div class="mega-menu-content text-center">
+												<div class="mega-cap"><img style="max-width: 60%;" src="images/exiaq_logo_menu.png" alt="image" class="img-fluid"></div>
+												<h5>1 Residential - 2 Commercial</h5>
+												<h5>and 1 School Model</h5>
+												<div class="wifi-icon" style="margin-top: 16px;margin-bottom: 25px;"><img style="max-width: 100%;" src="images/explorer-iaq-combine.png" alt="image" class="img-fluid"></div>
+												<div class="mega-image1 mega-img">
+													<a href="/thermostats/explorer-iaq/"><img src="images/explorer-iaq2.png" alt="image" class="img-fluid"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<div class="mega-menu-content text-center">
+												<div class="mega-cap"><img src="images/explore-txt-img.png" alt="image" class="img-fluid"></div>
+												<h5>3 Residential - 3 Commercial</h5>
+												<h5>and 1 School Model</h5>
+												<div class="wifi-icon"><img src="images/wifi-2nd.png" alt="image" class="img-fluid"></div>
+												<div class="mega-image1 mega-img">
+													<a href="/thermostats/explorer/"><img src="images/explorer-img2.png" alt="image" class="img-fluid"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<div class="mega-menu-content text-center">
+												<div class="mega-cap"><img src="images/explore-mini-img.png" alt="image" class="img-fluid"></div>
+												<h5>2 Residential</h5>
+												<h5>2 Commercial</h5>
+												<div class="wifi-icon" style="margin-bottom: 2px;"><img src="images/wifi-2nd.png" alt="image" class="img-fluid"></div>
+												<div class="mega-image3 mega-img">
+													<a href="/thermostats/explorermini/"><img src="images/Mini_front-img.png" alt="image" class="img-fluid"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-3">
+											<div class="mega-menu-content text-center">
+												<h2>Slimline</h2>
+												<h5>3 Residential - 3 Commercial</h5>
+												<h5>and 1 School Model</h5>
+												<div class="mega-image4 mega-img">
+													<a href="thermostats/slimline/"><img src="images/slimeline-img.png" alt="image" class="img-fluid"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="mega-menu-content text-center">
+												<h2>Small Series</h2>
+												<h5>2 Residential</h5>
+												<h5>2 Commercial</h5>
+												<div class="mega-image5 mega-img">
+													<a href="thermostats/small-series/"><img src="images/smallseries-img.png" alt="image" class="img-fluid"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="mega-menu-content text-center">
+												<h2>FlatStat</h2>
+												<h5>3 Residential</h5>
+												<h5>3 Commercial</h5>
+												<div class="mega-image6 mega-img">
+													<a href="/thermostats/flatstat/"><img src="images/flatstart-img.png" alt="image" class="img-fluid"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="mega-menu-content text-center">
+												<h2>Value Series</h2>
+												<h5>2 Residential</h5>
+												<h5>2 Commercial</h5>
+												<div class="mega-image7 mega-img">
+													<a href="/thermostats/value-series/"><img src="images/valueseries-img.png" alt="image" class="img-fluid"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item"> <a class="nav-link" href="/surveyor/">Surveyor</a> </li>
+						<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownnew" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Apps                            
+                        </a>
+							<div class="next-drop dropdown-menu" aria-labelledby="navbarDropdownnew">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12 col-lg-1 col-xs-offset-1" id="p1"></div>
+										<div class="col-md-12 col-lg-2">
+											<div class="mega-menu-content text-center">
+												<div class="hover_pop_img">
+													<a href="/skyport/"><img src="images/Skyweb_menu.png" alt="image" /></a>
+												</div>
+												<div class="hover_pop_desc">
+													<h4><a href="/skyport/">SkyWeb</a></h4>
+													<p>Venstar's Powerful Web App for Skyport Cloud Services Provides New Power to Monitor and Control.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-2">
+											<div class="mega-menu-content text-center">
+												<div class="hover_pop_img">
+													<a href="/skyport/mobile/"><img src="images/Skyport_menu.png" alt="image" /></a>
+												</div>
+												<div class="hover_pop_desc">
+													<h4><a href="/skyport/mobile/">Skyport Mobile</a></h4>
+													<p>Control your Venstar WiFi connected thermostat from across the couch, or across the world</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-2">
+											<div class="mega-menu-content text-center">
+												<div class="hover_pop_img">
+													<a href="/thermostats/colortouch/desktop/"><img src="images/ColorTouch_Desktop_menu.png" alt="image" /></a>
+												</div>
+												<div class="hover_pop_desc">
+													<h4><a href="/thermostats/colortouch/desktop/">ColorTouch Desktop</a></h4>
+													<p>Update the firmware and easily create photo galleries for ColorTouch thermostats.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-2">
+											<div class="mega-menu-content text-center">
+												<div class="hover_pop_img">
+													<a href="/apps/configurator/"><img src="images/Configurator_menu.png" alt="image" /></a>
+												</div>
+												<div class="hover_pop_desc">
+													<h4><a href="/apps/configurator/">Configurator</a></h4>
+													<p>Connect compatible thermostats and wireless sensors to WiFi and create profiles for easy installation.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-2">
+											<div class="mega-menu-content text-center">
+												<div class="hover_pop_img">
+													<a href="/voicecontrol/"><img src="images/voicecontrol.png" alt="image" /></a>
+												</div>
+												<div class="hover_pop_desc">
+													<h4><a href="/voicecontrol/">Voice Control</a></h4>
+													<p>Venstar connected products works with Amazon Alexa and Google Assistant.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item"> <a class="nav-link" href="/support/">Support</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="/case-studies/">Case Studies</a> </li><li class="nav-item"> <a class="nav-link" href="/buy/">Where to Buy</a> </li>
+					</ul>
+					<form class="form-inline user-form-icon my-2 my-lg-0"> <a target="_blank" href="https://venstar.skyportcloud.com/">Sign In/</a><a target="_blank" href="https://venstar.skyportcloud.com/signup">Create Account</a> </form>
+				</div>
+			</div>
+			<div class="for-mob">
+				<div class="navbar-collapse offcanvas-collapse for-mob" id="">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item"> <a class="nav-link" href="/">Home</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="/thermostats/">Thermostats</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="/apps/">Apps</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="/surveyor/">Surveyor</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="/thermostats/accessories/">Accessories</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="/case-studies/">Case Studies</a> </li><li class="nav-item"> <a class="nav-link" href="/buy/">Where to Buy</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="/support/">Support</a> </li>
+						<li class="nav-item"> <a class="nav-link" target="_blank" href="https://venstar.skyportcloud.com/">Skyport Login/Create Account</a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="video-section">
+		<div class="videoWrapper-home">
+			<video class="w-100 h-100" playsinline="playsinline" muted="muted" preload="yes" autoplay="autoplay" loop="loop">
+				<source src="video/VenStar.mp4" type="video/mp4"> </video>
+		</div>
+	</section>
+	<section class="wifi-thermo-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>WiFi Thermostats for Every Budget and Application</h2>
+					<p>There is a perfect one for everyone. Residential, Commercial and School Models</p> <a href="/thermostats/" class="lern-more-btn">Learn More »</a>
+					<div class="venstar-img"><img src="images/venstar-family-2021.png" class="img-fluid" alt="image"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="skyport-section" id="parallax1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="wifi-thermo-content">
+					<h2>Skyport Mobile</h2>
+					<p>Control your thermostat from across the couch, or across the world.</p> <a href="/skyport/mobile/" class="lern-more-btn">Learn More »</a> </div>
+			</div>
+		</div>
+	</section>
+	<section class="skyweb-section">
+		<div class="container-fluid p-0">
+			<div class="row">
+				<div class="col-lg-6 p-0">
+					<div class="skyweb-block mob-back-none" style="background: url(images/macbooknew-img.jpg) no-repeat;background-size: cover;">
+						<div class="skyweb-inn">
+							<h2>SkyWeb</h2>
+							<p>Venstar's Powerful Web App for Skyport Cloud Services Provides New Power to Monitor and Control.</p> <a href="/skyport/" class="lern-more-btn">Learn More »</a> </div>
+					</div>
+					<div class="for-mobile"><img src="images/macbooknew-img-mob.jpg" alt=""></div>
+				</div>
+				<div class="col-lg-6 p-0">
+					<div class="product-block">
+						<div class="product-inn">
+							<h2>Featured Product</h2>
+							<p>Easily pair the new VenNet Temperature/Humidity sensor to compatible thermostats with the push of a button.</p> <a href="/thermostats/accessories/vennet-temp-hum-sensor/" class="lern-more-btn">Learn More »</a> </div>
+						<div class="product-wifi-sen-img">
+							<div class="feature-video">
+								<video playsinline="playsinline" muted="muted" preload="yes" autoplay="autoplay" loop="loop" class="w-100 h-100">
+									<source src="video/vennet-sensor-loop.mp4" type="video/mp4"> </video>
+							</div>
+							<!--<img src="images/wifi-sensor-mini-img.png" alt="image" class="img-fluid">-->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 p-0">
+					<div class="survyeor-block">
+						<div class="survyeor-inn">
+							<h2>Surveyor</h2>
+							<p>Leading Energy Management System for small-box retail chains and other multi-location businesses.</p> <a href="/surveyor/" class="lern-more-btn">Learn More »</a> </div>
+						<div class="survyeor-img"><img src="images/surv-banner-img.png" alt="image" class="img-fluid"></div>
+					</div>
+				</div>
+				<div class="col-lg-6 p-0">
+					<div class="voice-control-block mob-back-none">
+						<div class="voice-inn mob-pos-none">
+							<h2>Voice Control</h2>
+							<p>Works with Google Assistant and Amazon Alexa.</p> <a href="/voicecontrol/" class="lern-more-btn">Learn More »</a> </div>
+					</div>
+					<div class="for-mobile"><img src="images/alexa-img.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="home" class="hero-slider owl-carousel owl-theme">
+		<div class="single-hs-item item-bg1">
+			<div class="d-table">
+				<div class="d-tablecell">
+					<div class="hero-text">
+						<div class="hero-img1"><img src="images/ceslogo-img.png" alt="image" class="img-fluid"></div>
+						<p class="ces-text">The Consumer Technology Association names Venstar's Explorer Mini Thermostat "Energy Efficient Product of the Year.</p>
+						<div class="hero-img2"><img src="images/Mini_front-img.png" alt="image" class="img-fluid"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="single-hs-item item-bg2">
+			<div class="d-table">
+				<div class="d-tablecell">
+					<div class="hero-text">
+						<div class="hero-img3"><img src="images/wired-img.png" alt="image" class="img-fluid"></div>
+						<p>"Replaces your boring analog thermostat with a big, colorful touchscreen. Companion app lets </p>
+						<p>you tweak the temperature from anywhere – and send text messages. Doubles as a small but attention-getting photo frame."</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="single-hs-item item-bg2">
+			<div class="container h-100">
+				<div class="row h-100">
+					<div class="col-12 col-12 col-md-8 col-lg-8 align-self-center">
+						<div class="hero-text w-100 position-static">
+							<div class="hero-img3 text-center slide-t101"><img src="images/t10logo.png" alt="image"></div>
+							<p>The Venstar ColorTouch T7850 is a good option if you are ready to upgrade your thermostat. It's attractive and easy to navigate.</p>
+						</div>
+					</div>
+					<div class="col-12 col-12 col-md-4 col-lg-4 align-self-center">
+						<div class="hero-img3"><img src="images/colortouch-img.png" alt="image" style="width:200px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="single-hs-item item-bg2">
+			<div class="container h-100">
+				<div class="row h-100">
+					<div class="col-12 col-12 col-md-8 col-lg-8 align-self-center">
+						<div class="hero-text w-100 position-static">
+							<p>The ColorTouch T7900 has a beautiful screen. It’s easy to read and looks great.</p>
+							<div class="hero-img3"><img class="home-gadlogo" src="images/gadlogo.png" alt="image"></div>
+						</div>
+					</div>
+					<div class="col-12 col-12 col-md-4 col-lg-4 align-self-center">
+						<div class="hero-img3"><img class="home-colortouch" src="images/colortouch-img.png" alt="image"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="single-hs-item item-bg2">
+			<div class="container h-100">
+				<div class="row h-100">
+					<div class="col-12 col-12 col-md-8 col-lg-8 align-self-center mx-auto">
+						<div class="hero-text w-100 position-static">
+							<div class="hero-img3"><img src="images/crlog.png" alt="image" style="width:250px;"></div>
+							<p>The ColorTouch has the novel ability to change the background “wallpaper” or act as a digital picture frame.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home-product-center pt-2 pb-3">
+		<div class="container">
+			<div class="product-content-home text-center"> <small>All product and company names and logos are trademarks™ or registered® trademarks of their respective holders.</small> </div>
+		</div>
+	</div>
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="footer-logo-section">
+						<div class="f-logo"><img src="images/f-logo.png" alt="image" class="img-fluid"></div>
+						<div class="social-media">
+							<ul>
+								<li>
+									<a href="https://www.facebook.com/venstarinc/"><img src="images/facebook.png" alt="" /></a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/channel/UCSdHhduk8bmrNshMPtI_K3g"><img src="images/youtube.png" alt="" /></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="f-nav-section">
+						<h3>MAIN NAVIGATION</h3>
+						<ul>
+							<li><a href="/">Home </a></li>
+							<li><a href="/thermostats/">Thermostats </a></li>
+							<li><a href="/surveyor/">Surveyor </a></li>
+							<li><a href="/skyport/">Skyport Cloud </a></li>
+							<li><a href="/apps/">Apps </a></li>
+							<li><a href="/thermostats/accessories/">Accessories </a></li>
+							<li><a href="/support/">Support </a></li>
+							<li><a href="/buy/">Where to Buy </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="f-nav-section">
+						<h3>COMPANY</h3>
+						<ul>
+							<li><a href="/company/">About Us </a></li>
+							<li><a href="/careers/">Careers </a></li>
+							<li><a target="_blank" href="https://developer.venstar.com/">Developers </a></li>
+							<li><a href="/case-studies/">Case Studies</a></li>
+							<li><a href="/press/">Press and Media </a></li>
+							<li><a href="/terms/">Terms of Service</a></li>
+							<li><a href="/eula/">Eula</a></li>
+							<li><a href="/privacy-policy/">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="f-contact-section">
+						<h3>ABOUT US</h3>
+						<ul>
+							<li><a style="cursor: pointer;" href="/contact/"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact Us</a></li>
+							<li><a href="javascript:;"><i class="fa fa-map-marker" aria-hidden="true"></i> Chatsworth, CA </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p>© 2023 Venstar Inc. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+	function myFunction(x) {
+		x.classList.toggle("change");
+	}
+	</script>
+</body>
+
+</html>

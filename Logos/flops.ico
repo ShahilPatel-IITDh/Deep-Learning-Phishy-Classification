@@ -1,0 +1,181 @@
+<!doctype html><html lang="en"><head><script>var UserStorage, AppConfigStorage;
+            AUTH_TOKEN = window.localStorage.getItem('token');
+            MAIN_TOKEN = window.localStorage.getItem('mainToken');
+            NO_CAPTCHA = false;
+            GA_ENABLED = null;</script><script src="/settings/env.js"></script><script>if ((typeof GA_ENABLED === 'boolean' && GA_ENABLED) || GA_ENABLED === 'true') {
+                const script = document.createElement('script');
+                script.async = true;
+                script.src = "https://www.googletagmanager.com/gtag/js?id=G-Y6QRCSS724";
+                document.head.append(script);
+            }
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Y6QRCSS724');</script><script>if((typeof GA_ENABLED === 'boolean' && GA_ENABLED) || GA_ENABLED === 'true'){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-M3H5N94')};</script><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="shortcut icon" href="/static/favicon.ico"><link rel="apple-touch-icon" href="/static/favicon.png"><link rel="canonical" href="https://serveroid.com/ru/welcome.html"><title>Serveroid</title><style>body {
+                margin: 0;
+                font-family: 'Arial', sans-serif;
+                line-height: 1.4;
+            }
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+
+            [data-theme="DARK"] .wrapper {
+                background-color: #101010;
+            }
+
+            .brand-loader {
+                position: relative;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            .brand-loader:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: 240px;
+                height: 100%;
+                transform: translateX(100%);
+                animation: shine-line 2.5s infinite linear;
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0px, #fff 30px,rgba(255, 255, 255, 0) 60px);
+            }
+
+            [data-theme="DARK"] .brand-loader:after {
+                background-image: linear-gradient(to right, rgba(18, 18, 18, 0) 0px, #101010 30px,rgba(18, 18, 18, 0) 60px);
+            }
+
+            .brand-loader__logo {
+                margin-bottom: 48px;
+                width: 95px;
+                height: 72px;
+                color: #DEDEDE;
+            }
+
+            [data-theme="DARK"] .brand-loader__logo {
+                color: #303030;
+            }
+
+            .brand-loader__bar {
+                height: 6px;
+                width: 240px;
+                margin: 0 auto;
+                margin-bottom: 16px;
+                border-radius: 20px;
+                background-color: #DEDEDE;
+            }
+
+            [data-theme="DARK"] .brand-loader__bar {
+                background-color: #303030;
+            }
+
+            .brand-loader__bar:last-child {
+                width: 160px;
+                margin-bottom: 0;
+            }
+
+            @keyframes shine-line {
+                0% { transform:translateX(-100%); }
+                100% { transform:translateX(100%); }
+            }
+
+            .main-error {
+                display: none;
+                max-width: 384px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .main-error_visible {
+                display: block;
+            }
+
+            .main-error__icon {
+                margin-bottom: 50px;
+                font-size: 180px;
+                line-height: 1;
+                color: #F2F2F2;
+            }
+
+            [data-theme="DARK"] .main-error__icon {
+                color: #303030;
+            }
+
+            .main-error__title {
+                margin-bottom: 20px;
+                font-size: 24px;
+                color: #000;
+            }
+
+            [data-theme="DARK"] .main-error__title {
+                color: #ececec;
+            }
+
+            .main-error__desc {
+                margin-bottom: 20px;
+                font-size: 14px;
+                line-height: 1.5;
+                color: #525252;
+            }
+
+            [data-theme="DARK"] .main-error__desc {
+                color: #9c9c9c;
+            }
+
+            .app_hidden {
+                display: none;
+            }
+
+            .app_error .main-error {
+                display: block;
+            }
+
+            .app_error .brand-loader {
+                display: none;
+            }</style><link href="/static/bundle.530.css" rel="stylesheet"></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3H5N94" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><noscript><div class="wrapper"><div class="main-error main-error_visible"><div class="main-error__icon">:(</div><div class="main-error__title">Ошибка загрузки страницы</div><div class="main-error__desc">Включите исполнение JavaScript в вашем браузере для использования приложения</div></div></div></noscript><div id="app" class="app_hidden"><div class="wrapper"><div class="brand-loader"><svg class="brand-loader__logo" width="95" height="72" viewBox="0 0 27 20" fill-rule="evenodd" fill="currentColor" clip-rule="evenodd"><path d="M16.3779 11.0875L16.6933 10.772L16.7236 10.7448C17.804 9.77444 18.48 8.3715 18.48 6.80864C18.48 3.88777 16.1121 1.51994 13.1913 1.51994C10.8868 1.51994 8.92664 2.99378 8.20189 5.05027C7.73455 4.96978 7.25402 4.92784 6.7637 4.92784C6.72423 4.92784 6.68483 4.92811 6.64549 4.92865C7.46136 2.08269 10.0831 -1.35862e-07 13.1913 0C16.9516 1.64368e-07 19.9999 3.04833 19.9999 6.80864C19.9999 8.82082 19.127 10.6291 17.7393 11.8756L17.4526 12.1622L16.3779 11.0875Z"/><path d="M15.2918 10.0014L15.6725 9.62068C16.4295 8.94068 16.9057 7.95415 16.9057 6.85639C16.9057 4.80494 15.2427 3.14191 13.1913 3.14191C11.6296 3.14191 10.293 4.10565 9.7438 5.47084C10.2239 5.65269 10.6829 5.8772 11.1164 6.13974C11.4134 5.27963 12.2302 4.66185 13.1913 4.66185C14.4033 4.66185 15.3858 5.64438 15.3858 6.85639C15.3858 7.50483 15.1065 8.08599 14.6568 8.4899L14.6265 8.51712L14.217 8.92661L15.2918 10.0014Z"/><path d="M10.7473 9.66159L11.235 10.1493L11.2345 10.1499L16.5514 15.4668L16.5523 15.4659L16.759 15.6725C17.439 16.4296 18.4255 16.9058 19.5233 16.9058C21.5747 16.9058 23.2377 15.2428 23.2377 13.1913C23.2377 11.6774 22.332 10.375 21.0329 9.79645C20.8469 10.2733 20.6187 10.729 20.3529 11.159C21.1536 11.4863 21.7178 12.2729 21.7178 13.1913C21.7178 14.4034 20.7353 15.3859 19.5233 15.3859C18.8748 15.3859 18.2937 15.1066 17.8897 14.6569L17.8625 14.6266L17.3697 14.1338L17.3688 14.1347L12.3599 9.12577L12.3605 9.12524L11.8476 8.61236C10.6021 7.24261 8.8058 6.38272 6.80864 6.38272C3.04833 6.38272 0 9.43105 0 13.1914C0 16.9517 3.04833 20 6.80864 20C8.82082 20 10.6291 19.1271 11.8756 17.7394L12.128 17.487L11.0532 16.4123L10.772 16.6934L10.7448 16.7237C9.77444 17.8041 8.3715 18.4801 6.80864 18.4801C3.88777 18.4801 1.51994 16.1122 1.51994 13.1914C1.51994 10.2705 3.88777 7.90266 6.80864 7.90266C8.3599 7.90266 9.75348 8.56859 10.723 9.63488L10.7473 9.66159Z"/><path d="M10.1989 11.2868L9.60541 10.6933C8.92595 9.946 7.94596 9.47688 6.85639 9.47688C4.80494 9.47688 3.14191 11.1399 3.14191 13.1914C3.14191 15.2428 4.80494 16.9058 6.85639 16.9058C7.95415 16.9058 8.94068 16.4296 9.62068 15.6726L9.96709 15.3261L8.89234 14.2514L8.51712 14.6266L8.4899 14.6569C8.08599 15.1066 7.50483 15.3859 6.85639 15.3859C5.64438 15.3859 4.66185 14.4034 4.66185 13.1914C4.66185 11.9793 5.64438 10.9968 6.85639 10.9968C7.50005 10.9968 8.0773 11.272 8.48084 11.7158L8.50513 11.7425L8.86615 12.1035L8.8656 12.1041L14.1825 17.421L14.1841 17.4194L14.5041 17.7394C15.7505 19.1271 17.5588 20 19.571 20C23.3313 20 26.3796 16.9517 26.3796 13.1913C26.3796 10.1394 24.3716 7.55648 21.6047 6.69163C21.6047 6.69556 21.6048 6.69949 21.6048 6.70342C21.6048 6.70777 21.6048 6.71212 21.6048 6.71648C21.6049 6.72461 21.6049 6.73275 21.6049 6.74089C21.6049 7.25729 21.5583 7.76282 21.4693 8.25353C23.4524 9.01638 24.8597 10.9395 24.8597 13.1913C24.8597 16.1122 22.4919 18.48 19.571 18.48C18.0081 18.48 16.6052 17.8041 15.6349 16.7237L15.6076 16.6934L15.2089 16.2947L15.2073 16.2962L10.1984 11.2873L10.1989 11.2868Z"/></svg><div class="brand-loader__bars"><div class="brand-loader__bar"></div><div class="brand-loader__bar"></div><div class="brand-loader__bar"></div></div></div><div class="main-error"><div class="main-error__icon">:(</div><div class="main-error__title">Ошибка загрузки страницы</div><div class="main-error__desc">Произошла ошибка загрузки страницы. Если она возникнет снова, попробуйте обновить браузер.</div></div></div></div><script>(function() {
+                var app = document.getElementById('app');
+                if (app) {
+                    app.classList.remove('app_hidden');
+                }
+
+                function showErrorMessage() {
+                    app.classList.add('app_error');
+                }
+
+                var bundlesSrcs = ["/static/app.bundle.530.js"];
+                for(var i = 0; i < bundlesSrcs.length; i++) {
+                    var scriptTag = document.createElement('script');
+                    scriptTag.src = bundlesSrcs[i];
+                    scriptTag.addEventListener('error', showErrorMessage);
+
+                    document.body.appendChild(scriptTag);
+                }
+
+                window.onerror = function() {
+                    showErrorMessage();
+                }
+            })();
+
+            (function() {
+                var LOCAL_STORAGE_THEME_KEY = '_4gtj8mliaz0mo';
+                var theme = 'light';
+
+                try {
+                    theme = window.localStorage.getItem(LOCAL_STORAGE_THEME_KEY);
+                } catch(e) {
+                    console.error(e);
+                }
+
+                document.body.dataset.theme = theme;
+            })();</script></body></html>

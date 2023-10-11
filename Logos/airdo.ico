@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>北海道発着の飛行機予約・空席照会｜AIRDO（エア・ドゥ）</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon-precomposed apple-touch-icon" href="/apple-touch-icon.png" >
+
+<meta name="description" content="【AIRDO公式サイト】北海道発着の飛行機予約はAIRDO（エア・ドゥ）！お得な北海道への格安航空券の予約や、時刻表、空席照会などをご提供しております。航空券の予約以外にもお得なホテルやレンタカープランもご紹介！">
+<meta name="keywords" content="AIRDO,エアドゥ,航空券,飛行機,北海道">
+
+<meta property="og:title" content="北海道発着の飛行機予約・空席照会｜AIRDO（エア・ドゥ）">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.airdo.jp/">
+<meta property="og:image" content="https://www.airdo.jp/common/images/ogp.webp">
+<meta property="og:site_name" content="AIRDO">
+<meta property="og:description" content="【AIRDO公式サイト】北海道発着の飛行機予約はAIRDO（エア・ドゥ）！お得な北海道への格安航空券の予約や、時刻表、空席照会などをご提供しております。航空券の予約以外にもお得なホテルやレンタカープランもご紹介！">
+
+<link rel="canonical" href="https://www.airdo.jp/">
+
+<link rel="alternate" hreflang="en" href="https://www.airdo.jp/en/">
+
+
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+
+
+<link rel="stylesheet" href="/common/js/fullcalendar/fullcalendar.css">
+<link rel="stylesheet" href="/common/js/fullcalendar/fullcalendar.print.css" media="print">
+<link rel="stylesheet" href="/common/js/remodal/remodal.css">
+<link rel="stylesheet" href="/common/js/remodal/remodal-default-theme.css">
+<link rel="stylesheet" href="/common/js/basictable/basictable.css" media="screen">
+<link rel="stylesheet" href="/common/js/slick/slick.css">
+<link rel="stylesheet" href="/common/js/slick/slick-theme.css">
+
+<script type="text/javascript" src="/common/js/jquery.js"></script>
+<script type="text/javascript" src="/common/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/common/js/jquery.matchHeight.js"></script>
+<script type="text/javascript" src="/common/js/moment.min.js"></script>
+<script type="text/javascript" src="/common/js/fullcalendar/fullcalendar.js"></script>
+<script type="text/javascript" src="/common/js/fullcalendar/locale-all.js"></script>
+<script type="text/javascript" src="/common/js/remodal/remodal.js"></script>
+<script type="text/javascript" src="/common/js/basictable/jquery.basictable.js"></script>
+<script type="text/javascript" src="/common/js/slick/slick.min.js"></script>
+<script type="text/javascript" src="/common/js/script.js?202205"></script>
+<script type="text/javascript" src="/common/js/validate.js"></script>
+
+
+<link rel="stylesheet" href="/common/css/import.css?200928" media="all">
+
+
+
+
+
+        <link rel="stylesheet" href="/common/js/vegas/vegas.min.css">
+        <script type="text/javascript" src="/common/js/vegas/vegas.min.js"></script>
+        <link rel="stylesheet" href="/css/top.css?200417" media="all">
+        <script type="text/javascript">
+            var slidesArr = [];
+            $(window).on('resize', function() {
+                if (device === 'pc') {
+                    slidesArr = [
+                        { src: '/images/main-img-20230915-01.webp' },
+                        { src: '/images/main-img-20231006-01.webp' },
+                        { src: '/images/main-img-20230908-02.webp' },
+                        { src: '/images/main-img-20230920-04.webp' },
+                        { src: '/images/main-img-20230113-02.webp' },
+                    ];
+                } else {
+                    slidesArr = [
+                        { src: '/images/main-img-20230915-01-sp.webp' },
+                        { src: '/images/main-img-20231006-01-sp.webp' },
+                        { src: '/images/main-img-20230908-02-sp.webp' },
+                        { src: '/images/main-img-20230920-04-sp.webp' },
+                        { src: '/images/main-img-20230113-02-sp.webp' },
+                    ];
+                }
+            }).trigger('resize');
+        </script>
+        <script type="text/javascript" src="/js/top.js?200805"></script>
+        <style>
+            @media screen and (min-width:768px) {
+            #main #visual .vegas-slide-inner,
+                .section-ticket{
+                    background-size: 1600px !important;
+                }
+                .section-newsrelease{
+                    background-size: 1790px !important;
+
+                }
+                .tooltip .tooltip-content {
+                    width: 271px;
+                    margin-left: -162px;
+                }
+            }
+
+            #main #visual .carousel-item .mv-lead.mv-leadfz20 {
+                font-size: 20px !important;
+            }
+            #main #visual .carousel-item .mv-lead.mv-leadfz30 {
+                font-size: 30px !important;
+            font-weight: bold;
+            }
+            #main #visual .carousel-item a .mv-lead.mv-leadfz30 + .mv-lead.mv-leadfz30 {
+                line-height: 1.25;
+            }
+
+            #main #visual .carousel-item .mv-title span.mv-leadfz-m {
+                font-size: 54px !important;
+            }
+            #main #visual .carousel-item a:hover {
+            text-decoration: none;
+            }
+
+
+            @media screen and (max-width: 767px){
+
+                #main #visual .carousel-item .mv-title span.mv-leadfz-m {
+                font-size: 16px !important;
+                }
+
+                #main #visual .carousel-item .mv-lead.mv-leadfz20 {
+                    width: 85%;
+                    font-size: 12px !important;
+                    line-height: 1.2;
+                }
+                #main #visual .carousel-item .mv-lead.mv-leadfz30 {
+                font-size: 18px !important;
+                }
+
+                #main #visual .carousel-item .mv-title span {
+                    font-size: 12px !important;
+                    line-height: 1.2;
+                }
+
+            #main #visual .carousel-item a .mv-lead.mv-leadfz30 {
+                top: 15%;
+            }
+            #main #visual .carousel-item a .mv-lead.mv-leadfz30 + .mv-lead.mv-leadfz30 {
+                top: 46%;
+                line-height: 1.5;
+            }
+
+            }
+
+            #column-flight .flight-tab .tab .tab-nav img{
+                vertical-align: middle;
+                margin-right: 0.8em;
+                position: relative;
+                top: -2px;
+            }
+
+            .hidden-sp #column-flight .flight-tab + .row img {
+                height: 30px;
+                margin: 0 15px 0 -15px;
+                vertical-align: middle;
+            }
+
+            .guide-content-title span {
+                display: block;
+                padding: 20px 10px 20px 8px;
+                line-height: 100%;
+            }
+
+            span.btn:before,
+            span.btn:after {
+            content: none;
+            }
+
+            #main .normal-info a.link-pdf:before {
+            content: none;
+            }
+
+            #main .flight-tab .tab .tab-nav li a{
+                font-size: 13px!important;
+            }
+
+            #main .flight-tab .tab .tab-nav .dl-horizontal-xs dt {
+                width: 3em;
+            }
+
+            #main .flight-tab .tab .tab-nav .dl-horizontal-xs dd {
+                width: calc(100% - 3em);
+            }
+
+
+            @media screen and (max-width: 767px){
+                #main .flight-banner a.flight-banner-list{
+                    padding: 0;
+                    background: none;
+                    border-bottom: none;
+                    color: #006699 !important;
+                }
+            }
+
+
+
+        </style>
+
+        
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K9BZDG9');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<body id="">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9BZDG9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+       <header role="banner">
+            <div class="container">
+
+                
+                
+                
+                    
+                    <div id="logo"><a href="/"><img loading="lazy" src="/common/images/logo.webp" alt="北海道の翼 AIRDO" class="hover"></a></div>
+                    
+                
+
+                
+                <div id="sub-nav">
+                    
+                        <ul class="sub-nav-lang-jp">
+                            <li class="color-white language hidden-sp sub-nav-lang-jp-h1"><h1>北海道の飛行機予約ならAIRDO</h1></li>
+                            <li class="hidden-sp"><a href="https://marche.airdo.jp/" target="_blank" class="link-blank icn-link-blank_white">公式オンラインショップ</a></li>
+                            <li class="hidden-sp"><a href="/tour/" id="header_dp1">ダイナミックパッケージ</a></li>
+                            <li class="hidden-logined"><a href="/ap/myairdo/cus101/cus101001">My AIRDO ログイン</a></li>
+                            <li class="visible-logined"><a href="/ap/myairdo/cus101/cus101001"><img loading="lazy" src="/common/images/logo-myadirdo-white-sm.webp" alt="My AIRDO" class="hover">マイページ</a></li>
+                            <li class="hidden-sp"><a href="/biz/">法人のお客様</a></li>
+                            <li class="select-language">
+                                <select>
+                                    <option selected>Language</option>
+                                    <option value="/" data-language="ja">日本語</option>
+                                    <option value="/en/" data-language="en">English</option>
+                                    <option value="/ko/" data-language="ko">한국어</option>
+                                    <option value="/zh-cn/" data-language="zh-cn">简体中文</option>
+                                    <option value="/zh-tw/" data-language="zh-tw">繁體中文</option>
+                                </select>
+                            </li>
+                        </ul>
+                        
+                </div>
+                
+            </div>
+            
+            
+            
+            <nav id="gnav">
+                <div class="hidden-sp" id="gnav-pc">
+                    <ul>
+                        <li class="gnav-trip"><a><span>旅行の計画・予約</span></a>
+                            <div class="gnav-menu">
+                                <div class="gnav-menu-inner">
+                                    <div class="gnav-menu-container">
+                                        <div class="row row-mg-md">
+                                            <div class="col-100">
+                                                <div class="menu">
+                                                    <div class="banner-reservation  text-right">
+                                                        <a href="/ap/rsv/book/search.html" class="link-box-blt box box-mg-sm">
+                                                            <p class="btn btn-yellow"><img loading="lazy" src="/common/images/flight-banner-icn-reserve.webp" width="24" alt="" class="mr-xs" style="vertical-align: bottom;">航空券の予約</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-33">
+                                                <div class="menu">
+                                                    <div class="gnav-title">
+                                                        <a href="/plan/">旅行の計画</a>
+                                                    </div>
+                                                    <ul>
+                                                        <li><a href="/plan/destinations/">運航路線・就航地</a></li>
+                                                        <li><a href="/plan/fare/">AIRDOのおトクな運賃</a></li>
+                                                        <li><a href="/ap/rsv/book/search.html">空席照会</a></li>
+                                                        <li><a href="/plan/timetable/">時刻表・サービスガイド</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-41">
+                                                <div class="menu">
+                                                    <div class="gnav-title">
+                                                        <a href="/reservation/">航空券の予約・購入方法</a>
+                                                    </div>
+                                                    <ul>
+                                                        <li><a href="/reservation/book/">航空券の利用にあたっての確認事項</a></li>
+                                                        <li><a href="/ap/rsv/reservation/search.html">予約確認</a></li>
+                                                        <li><a href="/reservation/guide/">はじめてご利用になる方へ</a></li>
+                                                        <li><a href="/reservation/payment/">購入・領収書のご案内</a></li>
+                                                        <li><a href="/reservation/refund/">予約変更・払い戻しのご案内</a></li>
+                                                        <li><a href="/reservation/book/cancel/">キャンセル待ちサービス</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-25">
+                                                <div class="menu">
+                                                    <div class="gnav-title">おトクなプラン</div>
+                                                    <ul>
+                                                        <li><a href="/tour/" id="header_dp2">ダイナミックパッケージ</a></li>
+                                                        <li><a href="/travel/hotel/hokkaido-sapporo-asahikawa/">ホテル宿泊</a></li>
+                                                        <li><a href="/travel/rent-a-car/">レンタカー</a></li>
+                                                        <li><a href="/travel/activity/">アクティビティ</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-100">
+                                                <div class="menu">
+                                                    <div class="banner-biz text-center">
+                                                        <a href="/biz/" class="btn btn-white fs-sm">毎度の経費申請が簡単でおトク！法人向け利用サービス
+                                                        <img loading="lazy" src="/common/images/logo-airdobiz.webp" width="104" alt="AIRDO Biz"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gnav-info"><a><span>空港案内・搭乗手続き</span></a>
+                            <div class="gnav-menu">
+                                <div class="gnav-menu-inner">
+                                    <div class="gnav-menu-container">
+                                        <div class="row">
+                                            <div class="col-66">
+                                                <div class="menu">
+                                                    <div class="gnav-title"><a href="/departure/">空港案内・搭乗手続き</a></div>
+                                                    <div class="row">
+                                                        <div class="col-50">
+                                                            <ul>
+                                                                <li><a href="/departure/checkin/">搭乗手続きのご案内</a></li>
+                                                                <li><a href="/departure/baggage/">手荷物のご案内</a></li>
+                                                                <li><a href="/departure/support/">お手伝いが必要なお客様へ</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-50">
+                                                            <ul>
+                                                            <li><a href="/departure/bording-information/">搭乗順のご案内</a></li>
+                                                            <li><a href="/departure/airport/">空港カウンター・アクセスのご案内</a></li>
+                                                            <li><a href="/departure/safety/">機内の環境・安全のご案内</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-33">
+                                                <div class="menu-banner">
+                                                    <ul>
+                                                        <li><a href="/flight-status/" class="btn btn-white w-100 fs-sm">発着案内・運航の見通し</a></li>
+                                                        <li><a href="/ap/rsv/reservation/search.html" class="btn btn-white w-100 fs-sm">予約確認・購入・座席指定<br>変更・解約</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gnav-service"><a><span>サービス・機材</span></a>
+                            <div class="gnav-menu">
+                                <div class="gnav-menu-inner">
+                                    <div class="gnav-menu-container">
+                                        <div class="row row-mg-md">
+                                            <div class="col-33">
+                                                <div class="banner-service-concept">
+                                                    <a href="/service/" class="link-box-blt"><div class="link-box-content">AIRDOの<br>サービス<br>コンセプト</div></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-33">
+                                                <div class="menu">
+                                                    <div class="gnav-title"><a href="/service/">サービス・機材</a></div>
+                                                    <ul>
+                                                        <li><a href="/service/meal/">ドリンク</a></li>
+                                                        <li><a href="/service/fleet/">使用機材・座席表</a></li>
+                                                        <li><a href="/service/audio/">機内オーディオ</a></li>
+                                                        <li><a href="/service/shop/">機内販売</a></li>
+                                                        <li><a href="/service/rapora/">機内誌rapora</a></li>
+                                                        <li><a href="/service/entertainment/">機内エンターテインメント</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-33">
+                                              <div class="menu">
+                                                  <div class="gnav-title"><a href="/myairdo/">MyAIRDOのご紹介</a></div>
+                                                  <ul>
+                                                      <li><a href="/myairdo/do-mile/">DOマイルのご案内</a></li>
+                                                      <li><a href="/myairdo/airdo-card/">AIRDOカード</a></li>
+                                                  </ul>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gnav-campaign"><a href="/campaign/"><span>キャンペーン</span></a></li>
+                        <li class="gnav-faq"><a><span>よくある質問・問合せ</span></a>
+                            <div class="gnav-menu">
+                                <div class="gnav-menu-inner">
+                                    <div class="gnav-menu-container">
+                                        <div class="row">
+                                            <div class="col-66">
+                                                <div class="menu">
+                                                    <div class="gnav-title"><a href="/support/">サポートTOP</a></div>
+                                                    <div class="gnav-title"><a href="/support/faq/">よくあるご質問</a></div>
+                                                    <div class="row">
+                                                        <div class="col-50">
+                                                            <ul>
+                                                                <li><a href="/support/faq/general/reservation/">予約・購入について</a></li>
+                                                                <li><a href="/support/faq/general/checkin/">搭乗手続きについて</a></li>
+                                                                <li><a href="/support/faq/general/baggage/">手荷物について</a></li>
+                                                                <li><a href="/support/faq/general/in-flight/">機内について</a></li>
+                                                                <li><a href="/support/faq/general/seat/">座席指定について</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-50">
+                                                            <ul>
+                                                                <li><a href="/support/faq/general/doumin/">道民会員について</a></li>
+                                                                <li><a href="/support/faq/my-airdo/">My AIRDOについて</a></li>
+                                                                <li><a href="/support/faq/my-airdo/airdo-card/">AIRDOカードについて</a></li>
+                                                                <li><a href="/support/faq/tour/">AIRDOダイナミック・パッケージについて</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-33">
+                                                <div class="menu">
+                                                    <div class="gnav-title"><a href="/support/inquiry/">各種お問い合わせ窓口</a></div>
+                                                    <div class="gnav-title"><a href="/support/feedback/">ご意見・ご要望窓口</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gnav-search">
+                            <a class="search-btn">
+                                <img loading="lazy" src="/common/images/icn-search.webp" alt="検索">
+                            </a>
+                            <div class="search-form">
+                                <form name="SS_searchForm" id="SS_searchForm" action="https://search.airdo.jp/search" method="get" enctype="application/x-www-form-urlencoded">
+                                    <input type="hidden" name="site" value="2EBG1KFF">
+                                    <input type="hidden" name="charset" value="UTF-8">
+                                    <input type="hidden" name="group" value="2">
+                                    <input type="hidden" name="design" value="7">
+                                    <input type="text" name="query" value="" id="SS_searchQuery" maxlength="100" placeholder="検索したいキーワードを入力してください">
+                                    <input type="submit" name="submit" value="検索" id="SS_searchSubmit">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hidden-pc" id="gnav-sp">
+                    <a href="" id="slide-menu-handle">
+                        <span id="slide-menu-line"></span>
+                    </a>
+                    <div id="slide-menu-content">
+                        <div class="box box-mg-sm mb-0 bd-0">
+                          <a href="/ap/rsv/book/search.html" class="btn btn-yellow"><img loading="lazy" src="/common/images/flight-banner-icn-reserve.webp" width="24" alt="" class="mr-xs" style="vertical-align: bottom;">航空券の予約</a>
+                        </div>
+                        <ul>
+                            <li><span>旅行の計画・予約</span>
+                                <ul>
+                                    <li><a href="/plan/">旅行の計画</a>
+                                        <ul>
+                                            <li><a href="/plan/destinations/">運航路線・就航地</a></li>
+                                            <li><a href="/plan/fare/">AIRDOのおトクな運賃</a></li>
+                                                                         <li><a href="/ap/rsv/book/search.html">空席照会</a></li>
+                                            <li><a href="/plan/timetable/">時刻表・サービスガイド</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/reservation/">航空券の予約・購入方法</a>
+                                        <ul>
+                                            <li><a href="/reservation/book/">航空券の利用にあたっての確認事項</a></li>
+                                            <li><a href="/ap/rsv/reservation/search.html">予約確認</a></li>
+                                            <li><a href="/reservation/guide/">はじめてご利用になる方へ</a></li>
+                                            <li><a href="/reservation/payment/">購入・領収書のご案内</a></li>
+                                            <li><a href="/reservation/refund/">予約変更・払い戻しのご案内</a></li>
+                                            <li><a href="/reservation/book/cancel/">キャンセル待ちサービス</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="menu-banner">
+                                            <div class="row row-mg-md">
+                                                <div class="col-100">
+                                                    <a href="/biz/" class="btn btn-white fs-sm">毎度の経費申請が簡単でおトク！<br>法人向け利用サービス<img loading="lazy" src="/common/images/logo-airdobiz.webp" width="104" alt="AIRDO Biz"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>おトクなプラン</span>
+                                        <ul>
+                                          <li><a href="/tour/" id="header_sp_dp1">ダイナミックパッケージ</a></li>
+                                          <li><a href="/travel/hotel/hokkaido-sapporo-asahikawa/">ホテル宿泊</a></li>
+                                          <li><a href="/travel/rent-a-car/">レンタカー</a></li>
+                                          <li><a href="/travel/activity/">アクティビティ</a></li>
+                                      </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>空港案内・搭乗手続き</span>
+                                <ul>
+                                    <li>
+                                        <a href="/departure/">空港案内・搭乗手続き</a>
+                                        <ul>
+                                            <li><a href="/departure/checkin/">搭乗手続きのご案内</a></li>
+                                            <li><a href="/departure/baggage/">手荷物のご案内</a></li>
+                                            <li><a href="/departure/support/">お手伝いが必要なお客様へ</a></li>
+                                            <li><a href="/departure/bording-information/">搭乗順のご案内</a></li>
+                                            <li><a href="/departure/airport/">空港カウンター・アクセスのご案内</a></li>
+                                            <li><a href="/departure/safety/">機内の環境・安全のご案内</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="menu-banner">
+                                            <div class="row row-mg-md">
+                                                <div class="col-100"><a href="/flight-status/" class="btn btn-white w-100 fs-xs">発着案内・運航の見通し</a></div>
+                                                <div class="col-100"><a href="/ap/rsv/reservation/search.html" class="btn btn-white w-100 fs-xs">予約確認・購入・座席指定<br>変更・解約</a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>サービス・機材</span>
+                                <ul>
+                                    <li>
+                                        <div class="menu-banner">
+                                            <div class="row row-mg-md">
+                                                <div class="col-100"><div class="banner-service-concept"><a href="/service/" class="link-box-blt"><div class="link-box-content">AIRDOの<br>サービス<br>コンセプト</div></a></div></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="/service/meal/">ドリンク</a></li>
+                                            <li><a href="/service/fleet/">使用機材・座席表</a></li>
+                                            <li><a href="/service/audio/">機内オーディオ</a></li>
+                                            <li><a href="/service/shop/">機内販売</a></li>
+                                            <li><a href="/service/rapora/">機内誌rapora</a></li>
+                                            <li><a href="/service/entertainment/">機内エンターテインメント</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/myairdo/">MyAIRDOのご紹介</a>
+                                        <ul>
+                                            <li><a href="/myairdo/do-mile/">DOマイルのご案内</a></li>
+
+                                            <li><a href="/myairdo/airdo-card/">AIRDOカード</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/campaign/">キャンペーン</a></li>
+                            <li><span>よくある質問・問合せ</span>
+                                <ul>
+                                    <li><a href="/support/">サポートTOP</a></li>
+                                    <li><a href="/support/faq/">よくあるご質問</a>
+                                        <ul>
+                                            <li><a href="/support/faq/general/reservation/">予約・購入について</a></li>
+                                            <li><a href="/support/faq/general/baggage/">手荷物について</a></li>
+                                            <li><a href="/support/faq/general/in-flight/">機内について</a></li>
+                                            <li><a href="/support/faq/general/seat/">座席指定について</a></li>
+                                            <li><a href="/support/faq/general/doumin/">道民会員について</a></li>
+                                            <li><a href="/support/faq/my-airdo/">My AIRDOについて</a></li>
+                                            <li><a href="/support/faq/my-airdo/airdo-card/">AIRDOカードについて</a></li>
+                                            <li><a href="/support/faq/tour/">AIRDOダイナミック・パッケージについて</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/support/inquiry/">各種お問い合わせ窓口</a></li>
+                                    <li><a href="/support/feedback/">ご意見・ご要望窓口</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/biz/">法人のお客様</a></li>
+                            <li><a href="/tour/" id="header_sp_dp2">ダイナミックパッケージ</a></li>
+                            <li><a href="/corporate/">AIRDOについて</a></li>
+                            <li><a href="https://marche.airdo.jp/" target="_blank" class="link-blank">公式オンラインショップ</a></li>
+                        </ul>
+                        <div class="search-form">
+                            <form name="SS_searchForm1" id="SS_searchForm1" action="https://search.airdo.jp/search" method="get" enctype="application/x-www-form-urlencoded">
+                                <input type="hidden" name="site" value="2EBG1KFF">
+                                <input type="hidden" name="charset" value="UTF-8">
+                                <input type="hidden" name="group" value="2">
+                                <input type="hidden" name="design" value="7">
+                                <input type="text" name="query" value="" id="SS_searchQuery1" maxlength="100" placeholder="検索ワード入力">
+                                <input type="submit" name="submit" value="検索" id="SS_searchSubmit">
+                            </form>
+                        </div>
+                        <div class="sub-nav-lang-jp-h1-sp"><h1>北海道の飛行機予約ならAIRDO</h1></div>
+                    </div>
+                </div>
+            </nav>
+
+            
+            
+        </header>
+
+
+        
+        <main role="main" id="content">
+            <noscript>
+        <div class="container">
+            <div class="imp">
+                
+                    <p>ご使用のブラウザは現在JavaScriptが無効になっています。<br>ページが正しく表示されない場合があるため、JavaScriptの設定を有効にしてください。</p>
+                
+            </div>
+        </div>
+    </noscript>
+
+            <div id="main"><!--    IEの文字崩れ防止策としてスタイルを追加  style="text-shadow:1px 1px 5px rgba(0,0,0,1)"   -->
+                <div id="visual">
+                    <noscript><div class="noscript-visual"></div></noscript>
+                    <div class="container">
+                        <div class="hidden-pc img"><img src="/common/images/main-img-transparent-sp.webp" loading="lazy" alt=""></div>
+                        <div class="carousel-item current"><a href="/information/two-wings/"><div style="width: 100%; height: calc( 100vw * 210 / 375 ); font-size: 0;">&nbsp;</div></a></div>
+                        <div class="carousel-item current"><a href="/tour/coupon3/"><div style="width: 100%; height: calc( 100vw * 210 / 375 ); font-size: 0;">&nbsp;</div></a></div>
+                        <div class="carousel-item current"><a href="/fare/special_sales/autumn_2023/"><div style="width: 100%; height: calc( 100vw * 210 / 375 ); font-size: 0;">&nbsp;</div></a></div>
+                        <div class="carousel-item current"><a href="/campaign/myairdo_marathon/"><div style="width: 100%; height: calc( 100vw * 210 / 375 ); font-size: 0;">&nbsp;</div></a></div>
+                        <div class="carousel-item current"><a href="/information/newstylecheck-in/index.html"><div style="width: 100%; height: calc( 100vw * 210 / 375 ); font-size: 0;">&nbsp;</div></a></div>
+                        <div id="carousel-nav"></div>
+                        <div id="carousel-arrows">
+                          <a class="prev" href="#"><img src="/common/images/icon-prev.webp" loading="lazy" alt="prev" width="20" height="40"></a>
+                          <a class="next" href="#"><img src="/common/images/icon-next.webp" loading="lazy" alt="next" width="20" height="40"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="section-flight">
+                    <div class="container w-over-sp">
+                            <div class="imp">
+                                <div class="row row-middle">
+                                    <div class="col-20 col-100-sp">
+                                        <p class="imp-title"><span>重要なお知らせ</span></p>
+                                    </div>
+                                    <div class="col-80 col-100-sp">
+                                        <div class="imp-content">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="normal-info">
+                                <div class="row row-middle">
+                                    <div class="col-10 col-100-sp">
+                                        <h2><span>お知らせ</span></h2>
+                                    </div>
+                                    <div class="col-90 col-100-sp">
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="hidden-sp">
+                        <div class="column">
+                            <div id="column-flight">
+                                <div class="flight-tab">
+                                    <div class="tab">
+                                        <ul class="tab-nav">
+                                            <li class="col-25">
+                                                <a data-tab="t1" class="current"><img src="/common/images/flight-banner-icn-reserve.webp" width="22" height="22" loading="lazy" alt="">航空券の予約</a>
+                                            </li>
+                                            <li class="col-25">
+                                                <a data-tab="t2">
+                                                    <dl class="dl-horizontal dl-horizontal-xs mb-0">
+                                                        <dt class="mb-0"><img src="/images/flight-banner-icn-online-checkin.webp" width="18" height="21" loading="lazy" alt="" style="margin-right: 0;"></dt>
+                                                        <dd class="mb-0">オンラインチェックイン<small class="fs-xs">（出発時刻24時間前～）</small></dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                            <li class="col-25"><a data-tab="t3"><img src="/common/images/flight-banner-icn-confirm.webp" width="22" height="15" loading="lazy" alt="">予約確認・購入・変更</a></li>
+                                            <li class="col-25">
+                                                <a data-tab="t4">
+                                                    <dl class="dl-horizontal dl-horizontal-xs mb-0">
+                                                        <dt class="mb-0"><img src="/images/flight-banner-icn-dp.webp" width="39" height="20" loading="lazy" alt=""></dt>
+                                                        <dd class="mb-0">ダイナミックパッケージ<small class="fs-xs">（航空券+宿泊）</small></dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="bg-gray">
+                                        <div class="tab-content" data-tab-content="t1">
+                                            <form class="flight-form flight-ticket-form" action="/ap/rsv/book/search" method="get">
+                                                <div class="form-content">
+                                                    <div class="flight-form-way">
+                                                        <div class="row">
+                                                            <div class="col col-100-sp">
+                                                                <div class="form-title">旅程</div>
+                                                            </div>
+                                                            <div class="col-22 col-auto-sp col-radio">
+                                                                <div class="form-group">
+                                                                    <label class="radio"><input type="radio" name="roundtrip" value="1" data-way="out-home" checked><span>往復</span></label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-22 col-auto-sp col-radio">
+                                                                <div class="form-group">
+                                                                    <label class="radio"><input type="radio" name="roundtrip" value="0" data-way="out"><span>片道</span></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flight-form-method">
+                                                        <div class="row">
+                                                            <div class="col col-100-sp">
+                                                                <div class="form-title">検索方法</div>
+                                                            </div>
+                                                            <div class="col-22 col-auto-sp col-radio">
+                                                                <div class="form-group">
+                                                                    <label class="radio"><input type="radio" name="destination" value="all" checked><span>すべての運賃</span></label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-22 col-auto-sp col-radio">
+                                                                <div class="form-group">
+                                                                    <label class="radio"><input type="radio" name="destination" value="recommended"><span>おすすめ運賃</span></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flight-form-place">
+                                                        <div class="row">
+                                                            <div class="col-45 col-100-sp">
+                                                                <div class="form-group">
+                                                                    <span class="form-title">出発地</span>
+                                                                    <div class="custom-select w-100-sp">
+                                                                        <select class="place-departure select-departure" name="from">
+                                                                            <option value="HND">東京（羽田）</option>
+                                                                            <option value="SPK" selected>札幌（新千歳）</option>
+                                                                            <option value="AKJ">旭川</option>
+                                                                            <option value="MMB">女満別</option>
+                                                                            <option value="KUH">釧路</option>
+                                                                            <option value="OBO">帯広</option>
+                                                                            <option value="HKD">函館</option>
+                                                                            <option value="SDJ">仙台</option>
+                                                                            <option value="NGO">名古屋（中部）</option>
+                                                                            <option value="UKB">神戸</option>
+                                                                            <option value="FUK">福岡</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-10 hidden-sp">
+                                                                <div class="text-center"><img src="/common/images/icn-out-home.webp" loading="lazy" alt="" class="icon-flight-way reverse-departure-arrival" width="16" height="16"></div>
+                                                            </div>
+                                                            <div class="col-45 col-100-sp">
+                                                                <div class="form-group">
+                                                                    <span class="form-title">到着地</span>
+                                                                    <div class="custom-select w-100-sp">
+                                                                        <select class="place-arrival select-arrival" name="to">
+                                                                            <option value="HND" selected>東京（羽田）</option>
+                                                                            <option value="SPK">札幌（新千歳）</option>
+                                                                            <option value="AKJ">旭川</option>
+                                                                            <option value="MMB">女満別</option>
+                                                                            <option value="KUH">釧路</option>
+                                                                            <option value="OBO">帯広</option>
+                                                                            <option value="HKD">函館</option>
+                                                                            <option value="SDJ">仙台</option>
+                                                                            <option value="NGO">名古屋（中部）</option>
+                                                                            <option value="UKB">神戸</option>
+                                                                            <option value="FUK">福岡</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flight-form-date">
+                                                        <div class="modal-flight-date-group">
+                                                            <div class="row">
+                                                                <div class="col-45 col-100-sp">
+                                                                    <div class="form-group">
+                                                                        <span class="form-title text-left-sp">行き</span>
+                                                                        <input type="text" name="" id="date-out" data-name="行き" data-remodal-target-id="modal-flight-form-date" data-remodal-handle="out" class="input-calendar w-100-sp">
+                                                                        <input type="hidden" name="departureDate" value="" class="data-out-value">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-10 hidden-sp">&nbsp;</div>
+                                                                <div class="col-45 col-100-sp">
+                                                                    <div class="form-group date-second">
+                                                                        <span class="form-title text-left-sp">帰り</span>
+                                                                        <input type="text" name="" id="date-home" data-name="帰り" data-remodal-target-id="modal-flight-form-date" data-remodal-handle="home" class="input-calendar w-100-sp">
+                                                                        <input type="hidden" name="returnDate" value="" class="data-home-value">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="remodal modal-flight-calendar" data-group="modal-flight-date-group" data-remodal-id="modal-flight-form-date" data-remodal-options="hashTracking: false">
+                                                                <div class="modal-header">
+                                                                    <h2>搭乗日（<span></span>）</h2>
+                                                                    <a data-remodal-action="close" class="modal-icon-close"></a>
+                                                                </div>
+                                                                <div class="modal-content">
+                                                                    <div class="modal-flight-calendar-content"></div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <div class="text-center"><a data-remodal-action="close" class="modal-btn-close">閉じる</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flight-form-headcount">
+                                                        <p class="text-center">搭乗当日の年齢で入力してください。一度に予約できるのは合計6席までです。</p>
+                                                        <div class="row">
+                                                            <div class="col-10 col-100-sp">
+                                                                <div class="form-title mt-xs">人数</div>
+                                                            </div>
+                                                            <div class="col-30 col-100-sp">
+                                                                <div class="form-group">
+                                                                    <span class="form-title">大人<br>（12歳以上）</span>
+                                                                    <span class="input-headcount">
+                                                                        <span class="ctrl-minus"></span><input type="number" name="adult" value="1" min="0" max="6" id="headcount-adult" readonly><span class="ctrl-plus"></span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-30 col-100-sp">
+                                                                <div class="form-group">
+                                                                    <span class="form-title">小児<br>（3-11歳）</span>
+                                                                    <span class="input-headcount">
+                                                                        <span class="ctrl-minus"></span><input type="number" name="child" value="0" min="0" max="6" id="headcount-child" readonly><span class="ctrl-plus"></span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-30 col-100-sp">
+                                                                <div class="form-group">
+                                                                    <span class="form-title">幼児<br>（0-2歳）</span>
+                                                                    <span class="input-headcount">
+                                                                        <span class="baby-ctrl-minus"></span><input type="number" name="infant" value="0" min="0" max="2" id="headcount-baby" readonly><span class="baby-ctrl-plus"></span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a href="/reservation/book/child/" target="_blank" class="link-blank">小児・幼児のご予約について</a></p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-footer">
+                                                    <div class="text-center">
+                                                        <button type="submit" id="ticket-search" class="btn btn-yellow fs-sm">検索する</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-content text-center" data-tab-content="t2">
+                                            <div class="flight-reserve">
+                                                <p>オンラインチェックインには確認番号が必要です。<br class="hidden-sp">
+                                                    あらかじめ確認番号（数字9桁）をご用意のうえお手続きください。<br class="hidden-sp">
+                                                    （確認番号が不明な方は<a href="/support/faq/general/checkin/q1.html" target="_blank" class="link-blank">こちら</a>）</p>
+                                                <p><a href="/departure/checkin/adoahp-to-anaasw/" target="_blank" class="btn btn-white">オンラインチェックイン<span class="fs-xxs">（出発時刻24時間前～）</span> </a></p>
+                                                </div>
+                                        </div>
+                                        <div class="tab-content" data-tab-content="t3">
+                                            <div class="flight-reserve">
+                                                <div class="row row-mg-md">
+                                                    <div class="col-33">
+                                                        <div class="box-content">
+                                                            <p>ご予約内容の確認、購入、座席指定2次元バーコードの取得ご予約便の変更、解約、払い戻しのお手続き</p>
+                                                        </div>
+                                                        <p><a href="/ap/rsv/reservation/search.html" class="btn btn-white w-100">予約確認</a></p>
+                                                    </div>
+                                                    <div class="col-33">
+                                                        <div class="box-content">
+                                                            <p>ご購入したチケットの領収書の表示<br>（購入日から15ヶ月可能です）</p>
+                                                        </div>
+                                                        <p class="mb-xs"><a href="/ap/rsv/receipt/search.html" class="btn btn-white w-100">Web領収書の表示</a></p>
+                                                        <p><a href="/reservation/payment/receipt/web-service/">領収書Web表示サービスについて</a></p>
+                                                    </div>
+                                                    <div class="col-33">
+                                                        <div class="box-content">
+                                                            <p>搭乗証明書の表示（ご搭乗翌日午後以降から可能です）</p>
+                                                        </div>
+                                                        <p><a href="/ap/myairdo/cus005/cus005001" class="btn btn-white w-100">搭乗証明書の表示</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content" data-tab-content="t4">
+                                            <!-- ツアーモジュール START -->
+                                            <link href="/tour/common/module_v2/css/module.tour.css" rel="stylesheet" media="all">
+                                            <link href="/tour/common/module_v2/css/module.tour.top.css" rel="stylesheet" media="all">
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/jquery-1.11.3.min.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/underscore-min.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/tour_module_numberOfPeopleParts.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/tour_module_popupCalendar.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/tour_module_airportListParts.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/tour_airport_list_JA_airdo.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/inttour_tourName_json_JA.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/tour_module_list_JA.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/inttour_module_list_JA.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/domtour_module_list_JA.js?200331"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/inttour2nd_module_list_JA.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/domtour2nd_module_list_JA.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/tour_module_common.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/inttour_module_common.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/domtour_module_common.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/tour2nd_module_common.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/tour2nd_module_main.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/tour2nd_module_tab.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/domtour2nd_module_tab.js"></script>
+                                            <script charset="UTF-8" src="/tour/common/module_v2/js/domtour2nd_module_dp.js"></script>
+                                            <!-- ツアーモジュール END -->
+
+                                            <!-- モジュールここから//////////////////////////////////////////////////// -->
+                                            <div class="d_moduleArea" id="module001"></div>
+
+                                            <script type="text/javascript">
+                                            (function($) {
+                                            $(function() {
+                                            $('#module001').tour2ndModule('setParams', {
+                                            // 表示制御スイッチ
+                                            common : {
+                                                // モジュール表示初期設定
+                                                m_defModuleType:'H'          // 縦表示('V') or 横表示('H')
+                                            //    ,m_defModulePosition:'L'        // 吹き出し表示位置※横表示の場合は不要
+                                                // 各モジュール出力スイッチ
+                                                // ※全部表示する場合はスイッチ設定不要
+                                                // 各モジュール出力スイッチ
+                                                ,m_defIsDispTabDomInt:false// 国内・海外タブ
+                                                ,m_defIsDispTabFuncDom:false// 国内ツアータブ
+                                                ,m_defIsDispTabFuncInt:false// 海外ツアータブ
+                                                ,m_defIsDispDomDp:true// 国内旅作
+                                                ,m_defIsDispDomPkg:false// 国内パッケージ
+                                                ,m_defIsDispDomHotel:false// 国内ホテルタブ表示スイッチ
+                                                ,m_defIsDispDomHotelBulk:false // 国内ホテル(３社一括)タブ表示スイッチ デフォルト値はmainに記述済
+                                                ,m_defIsDispDomCar:false// 国内レンタカータブ表示スイッチ
+                                                ,m_defIsDispDomTraffic:false// 国内観光タブ表示スイッチ
+                                                ,m_defIsDispDomBulk:false// 国内ツアータブ表示スイッチ
+                                                ,m_defIsDispIntDp:false// 海外旅作
+                                                ,m_defIsDispIntPkg:false// 海外パッケージ
+                                                ,m_defIsDispIntOption:false// 海外オプション
+                                                ,m_defCoopSiteCode:''// 提携先コード
+                                            //     ,m_defFormMethod:'post'// HTTPメソッド指定
+                                            },
+                                            tabDomInt : {
+                                                m_defInitTab : '1'            // 国内or海外タブ初期選択 '1'(国内ツアー) or '2'(海外ツアー)
+                                            },
+                                            tabFuncDom : {
+                                                m_defInitTab : '1'            // 国内ツアータブ初期選択 '1'(国内旅作) or '2'(海外パッケージ) or・・・
+                                            },
+                                            tabFuncInt : {
+                                                m_defInitTab : '1'            // 海外ツアータブ初期選択 '1'(海外旅作) or '2'(海外パッケージ) or '3'(ホテル)
+                                            },
+                                            //国内パッケージ
+                                            domtourPkg : {
+                                                m_defDateDep:'2018/11/01'     //出発日用
+                                            }
+
+                                            });
+
+                                            $('#module001').tourCommonModule('setTargetValue', {
+                                                // AdobeTarget
+                                                inttourDp : {
+                                                m_defAirportDep:undefined
+                                                },
+                                                inttourPkg : {
+                                                m_defAirportDep:undefined
+                                                },
+                                                domtourDp : {
+                                                m_defDepFlightAirportDep:undefined
+                                                }
+                                            });
+
+                                            $('#module001').tour2ndModule('secondModuleDisplay', {
+                                            // パラメータ
+                                            });
+                                            });
+                                            })($tour_module_jq);
+                                            </script>
+                                            <!-- ////////////////////////////////////////////////////モジュールここまで -->
+                                        </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-mg-md">
+                                    <div class="col-50">
+                                        <a href="/flight-status/" class="btn btn-white w-100 fs-sm"><img src="/common/images/flight-banner-icn-flight-02.webp" loading="lazy" alt="" width="30" height="30">発着案内・運航の見通し</a>
+                                    </div>
+                                    <div class="col-50">
+                                        <a href="/biz/" class="btn btn-white w-100 fs-sm"><img src="/images/flight-banner-icn-biz.webp" loading="lazy" alt="" width="30" height="30">法人のお客様はこちら</a>
+                                    </div>
+                                    <div class="col-33">
+                                        <a href="/travel/hotel/hokkaido-sapporo-asahikawa/" class="btn btn-white w-100 fs-sm"><img src="/images/flight-banner-icn-hotel.webp" loading="lazy" alt="" width="30" height="30">ホテル</a>
+                                    </div>
+                                    <div class="col-33">
+                                        <a href="/travel/rent-a-car/" class="btn btn-white w-100 fs-sm"><img src="/images/flight-banner-icn-rent-a-car.webp" loading="lazy" alt="" width="30" height="30">レンタカー</a>
+                                    </div>
+                                    <div class="col-33">
+                                        <a href="/travel/activity/" class="btn btn-white w-100 fs-sm"><img src="/images/flight-banner-icn-activity.webp" loading="lazy" alt="" width="30" height="30">アクティビティ</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="column-side">
+                                <div id="column-side">
+                                    <div class="guide hidden-logined">
+                                        <div class="guide-content">
+                                            <p class="guide-content-title"><span><img src="/common/images/logo-myairdo.webp" loading="lazy" alt="My AIRDO" width="177" height="46"></span></p>
+                                            <div class="tab">
+                                                <ul class="tab-nav">
+                                                    <li class="col-50"><a data-tab="t1">新規入会</a></li>
+                                                    <li class="col-50"><a data-tab="t2" class="current">会員ログイン</a></li>
+                                                </ul>
+                                                <div class="bg-white">
+                                                    <div class="tab-content guide-nonmember" data-tab-content="t1">
+                                                        <p class="fw-bold text-center">My AIRDO３つのポイント！</p>
+                                                        <dl>
+                                                            <dt>おトク</dt>
+                                                            <dd>ポイントを貯めて<br>特典航空券に変換</dd>
+                                                            <dt>便利</dt>
+                                                            <dd>予約や搭乗が<br>簡単・スムーズ</dd>
+                                                            <dt>さらに</dt>
+                                                            <dd>会員限定のお得情報の<br>紹介やキャンペーンも！</dd>
+                                                        </dl>
+                                                        <div class="text-center"><a href="/ap/myairdo/cus001/cus001001" class="btn btn-yellow w-100">新規入会はこちら</a></div>
+                                                    </div>
+                                                    <div class="tab-content guide-member" data-tab-content="t2">
+                                                        <form name="cus101001Form" action="/ap/myairdo/cus/login" method="post">
+                                                            <div class="form-group">
+                                                                <label for="loginid">My AIRDO ログインID</label>
+                                                                <span class="tooltip">
+                                                                <a class="tooltip-handle"><img src="/common/images/icn-q.webp" loading="lazy" alt="?" width="17" height="15"><span class="tooltip-arrow"></span></a>
+                                                                <div class="tooltip-content">
+                                                                    <p>メールアドレスまたは道民会員番号またはお客様番号</p>
+                                                                </div>
+                                                                </span>
+                                                                <input type="text" class="w-100" id="loginid" name="im_user">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="password">パスワード</label>
+                                                                <input type="password" class="w-100" id="password" placeholder="半角英数字" name="im_password">
+                                                            </div>
+                                                            <div class="form-footer">
+                                                                <div class="text-center">
+                                                                    <button type="submit" name="login" class="btn btn-yellow w-100">ログイン</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group text-center">
+                                                                <label class="checkbox"><input type="checkbox" name="im_cookie_check" value="1"><span>ログイン情報を保持する</span></label>
+                                                                <input type="hidden" name="_im_cookie_check" value="on">
+                                                                <p class="text-center">パスワードを忘れた方は<a href="/ap/myairdo/cus102/cus102001">こちら</a><br class="hidden-sp">ログインIDを忘れた方<a href="/support/faq/my-airdo/login/q1.html">こちら</a></p>
+                                                            </div>
+                                                            <input type="hidden" name="enterable" id="enterable" value="false">
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="user visible-logined">
+                                        <div class="user-content">
+                                            <div class="box-list mg-xs">
+                                                <div class="box box-mg-0">
+                                                    <p class="guide-content-title"><a href="/ap/myairdo/cus101/cus101001"><img src="/common/images/logo-myairdo.webp" loading="lazy" alt="My AIRDO" class="hover" width="177" height="46"></a></p>
+                                                </div>
+                                                <div class="box box-mg-xs user-member">
+                                                    <p class="text-left fs-xs mb-xs">お客様情報</p>
+                                                    <p class="text-right fs-xl"><span class="memberName"></span> <span class="fs-xs">様</span><br><span class="point"></span><span class="fs-xs"> ポイント</span></p>
+                                                </div>
+                                                <div class="box box-mg-xs user-reservation">
+                                                    <dl class="reserve">
+                                                        <dt>予約情報</dt>
+                                                        <dd>
+                                                            <div class="flight-box">
+                                                                <div class="inner">
+                                                                    <div class="row">
+                                                                        <div class="col-100">
+                                                                            <div class="date boardingDate"></div>
+                                                                        </div>
+                                                                        <div class="col-100">
+
+                                                                            <div class="flight-box-table">
+                                                                                <div class="cell"><span class="fs-lg depAp"></span><br><span class="depApName"></span><br><span class="fs-md depTime"></span></div>
+                                                                                <div class="cell"><div class="arrow"><img src="/common/images/icn-out.webp" loading="lazy" alt="" width="16" height="16"><br><span class="flightNo"></span></div></div>
+                                                                                <div class="cell"><span class="fs-lg arrAp"></span><br><span class="arrApName"></span><br><span class="fs-md arrTime"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="link"><a href="/ap/myairdo/cus109/cus109001" class="link-blt">詳細を見る</a></div>
+                                                            <a href="/departure/checkin/adoahp-to-anaasw/" target="_blank" class="btn btn-white mt-md mb-xs"><small class="fs-xxs">（出発時刻24時間前～）</small><br>オンラインチェックインはこちら<small class="icon"></small><span class="icon"></span></a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center fs-sm"><a href="/ap/myairdo/cus101/cus101002" class="btn btn-white">ログアウト</a></div>
+                                    </div>
+
+                                </div>
+                                <div class="column-banner mt-sm">
+                                    <a href="/myairdo/">
+                                        <figure class="hidden-sp"><img src="/images/myairdo-banner.webp" alt="" class="hover" width="280" height="156"></figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="hidden-pc">
+                            <div class="flight-banner">
+                                <div class="row row-middle">
+                                    <a href="/ap/rsv/book/search.html" class="col-100"><img src="/common/images/flight-banner-icn-reserve.webp" width="24" height="24" loading="lazy" alt=""><br>航空券の予約</a>
+                                    <a href="/ap/rsv/reservation/search.html" class="col-50" data-mh="mh1" style="display: flex; align-items: center; justify-content: center;"><div><img src="/common/images/flight-banner-icn-confirm.webp" width="24" height="17" loading="lazy" alt=""><br>予約確認 購入・変更</div></a>
+                                    <a href="/tour/" class="col-50" data-mh="mh1"><img src="/images/flight-banner-icn-dp.webp" width="50" height="25" loading="lazy" alt=""><br>ダイナミックパッケージ<br>（航空券＋宿泊）</a>
+                                    <a href="/departure/checkin/adoahp-to-anaasw/" target="_blank" class="col-100"><img src="/images/flight-banner-icn-online-checkin.webp" width="18" height="21" loading="lazy" alt=""><br>オンラインチェックイン（出発時刻24時間前～）<span class="fs-xs">※</span></a>
+                                    <ul class="list-note fs-xs mt-sm mr-sm ml-sm">
+                                        <li class="mb-0">オンラインチェックインには確認番号が必要です。あらかじめ確認番号をご用意のうえお手続きください。（確認番号が不明な方は<a href="/support/faq/general/checkin/q1.html" target="_blank" class="link-blank flight-banner-list fs-xs">こちら</a>）</li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <a href="/flight-status/" class="col-100" style="border-top: 1px solid #ccc;"><img src="/common/images/flight-banner-icn-flight.webp" width="24" height="15" loading="lazy" alt=""><br>発着案内・運航の見通し</a>
+                                    <a href="/ap/rsv/receipt/search.html" class="col-50"><img src="/common/images/flight-banner-icn-receipt.webp" width="20" height="20" loading="lazy" alt=""><br>Web領収書の表示</a>
+                                    <a href="/ap/myairdo/cus005/cus005001" class="col-50"><img src="/common/images/flight-banner-icn-certificate.webp" width="20" height="20" loading="lazy" alt=""><br>搭乗証明書の表示</a>
+                                </div>
+                            </div>
+                            <div class="login-area hidden-logined mb-md">
+                                <a href="/ap/myairdo/cus101/cus101001" class="mb-xs">
+                                    <div class="row row-nowrap row-middle row-center">
+                                        <div class="col">
+                                            <div class="text-right"><img src="/common/images/logo-myairdo.webp" width="55" height="14" loading="lazy" alt=""></div>
+                                        </div>
+                                        <div class="col">
+                                            <p class="link-blt login-area-title">My AIRDOへのログイン</p>
+                                            <p>ログインすると予約情報などが<br>スムーズにご確認いただけます。</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/ap/myairdo/cus001/cus001001">
+                                    <div class="row row-nowrap row-middle row-center">
+                                        <div class="col">
+                                            <div class="text-right"><img src="/common/images/logo-myairdo.webp" loading="lazy" alt="" width="55" height="14"></div>
+                                        </div>
+                                        <div class="col">
+                                            <p class="link-blt login-area-title">新規入会はこちら</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="user visible-logined">
+                                <div class="user-content">
+                                    <div class="box-list mg-xs">
+                                        <div class="box box-mg-0">
+                                            <p class="user-content-title"><a href=""><img src="/common/images/logo-myairdo.webp" loading="lazy" alt="My AIRDO" width="177" height="46"></a></p>
+                                        </div>
+                                        <div class="box box-mg-xs user-member">
+                                            <p class="text-left fs-xs mb-xs">お客様情報</p>
+                                            <p class="text-right fs-xl"><span class="memberName"></span> <span class="fs-xs">様</span><br><span class="point"></span><span class="fs-xs"> ポイント</span></p>
+                                        </div>
+                                        <div class="box box-mg-xs user-reservation">
+                                            <dl class="reserve">
+                                                <dt>予約情報</dt>
+                                                <dd>
+                                                    <div class="date boardingDate"></div>
+                                                    <div class="course">
+                                                        <div class="row row-nowrap row-between row-middle">
+                                                            <div class="col-35"><span class="fs-lg depAp"></span><br><span class="depApName"></span><br><span class="fs-md depTime"></span></div>
+                                                            <div class="col-30"><div class="arrow"><img src="/common/images/icn-out.webp" loading="lazy" alt="" width="16" height="16"><br><span class="flightNo"></span></div></div>
+                                                            <div class="col-35"><span class="fs-lg arrAp"></span><br><span class="arrApName"></span><br><span class="fs-md arrTime"></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="link"><a href="/ap/myairdo/cus109/cus109001" class="link-blt">詳細を見る</a></div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-banner">
+                        <a href="/myairdo/">
+                            <figure class="hidden-pc"><img src="/images/myairdo-banner-sp.webp" alt=""></figure>
+                        </a>
+                    </div>
+                </section>
+
+　　　　　　　　<section class="section-ticket">
+                    <div class="container">
+                        <h2>あなたにおススメの<br class="hidden-pc">おトクな運賃</h2>
+                        <div class="slider-ticket" id="recommend-ahp-plan">
+                            <div class="slider-ticket-item">
+                                <div class="ticket-area">
+                                    <h3><span class="fs-md">予約が"早いほど"おトク</span> <span class="fs-xl">AIRDOスペシャル</span></h3>
+                                    <p class="text-center fs-lg fw-bold mb-sm">11月の運賃例</p>
+                                    <a href="/ap/rsv/book/search?roundtrip=0&from=CTS&to=HND&adult=1&child=0&infant=0&destination=monthly&departureDate=2023-11-30" class="ticket-box rt-airdospecial75">
+                                        <div class="ticket-box-content">
+                                            <div class="ticket-item">
+                                            <img src="/images/ticket-img-02-20200417.webp" loading="lazy" alt="AIRDOスペシャル55" width="160" height="72" class="w-100-sp">
+                                            <p>AIRDOスペシャル55</p>
+                                            </div>
+                                            <div>
+                                                <div class="course"><span>札幌（新千歳）</span>→ <span>東京（羽田）</span></div>
+                                                <div class="ticket-lead">AIRDOスペシャル55　出発55日前までに予約</div>
+                                                <div class="price">&yen;9,660</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/ap/rsv/book/search?roundtrip=0&from=HND&to=CTS&adult=1&child=0&infant=0&destination=monthly&departureDate=2023-11-30" class="ticket-box rt-airdospecial75">
+                                        <div class="ticket-box-content">
+                                            <div class="ticket-item">
+                                            <img src="/images/ticket-img-02-20200417.webp" loading="lazy" alt="AIRDOスペシャル45" width="160" height="72" class="w-100-sp">
+                                            <p>AIRDOスペシャル45</p>
+                                            </div>
+                                            <div>
+                                                <div class="course"><span>東京（羽田）</span>→ <span>札幌（新千歳）</span></div>
+                                                <div class="ticket-lead">AIRDOスペシャル45　出発45日前までに予約</div>
+                                                <div class="price">&yen;8,000</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="fs-xs">※2023年10月6日現在、2023年11月ご搭乗分の運賃例です。<br>※別途、旅客施設使用料を加算させていただきます。</p>
+                                    <p class="text-center"><a href="/plan/fare/special/" class="btn btn-yellow btn-lg">AIRDOスペシャル運賃一覧</a></p>
+                                </div>
+                            </div>
+                            <div class="slider-ticket-item">
+                                <div class="ticket-area">
+                                    <h3><span class="fs-md">&quot;出発直前&quot;でもおトク</span>　<span class="fs-xl">DOバリュー</span></h3>
+                                    <p class="text-center fs-lg fw-bold mb-sm">10月の運賃例</p>
+                                    <a href="/ap/rsv/book/search?roundtrip=0&from=CTS&to=HND&adult=1&child=0&infant=0&destination=monthly&departureDate=2023-10-31" class="ticket-box rt-dovalue3">
+                                        <div class="ticket-box-content">
+                                            <div class="ticket-item">
+                                            <img src="/images/ticket-img-04-20200417.webp" loading="lazy" alt="DOバリュー 3" width="160" height="72" class="w-100-sp">
+                                            <p>DOバリュー3</p>
+                                            </div>
+                                            <div>
+                                            <div class="course"><span>札幌（新千歳）</span>→ <span>東京（羽田）</span></div>
+                                            <div class="ticket-lead">DOバリュー3 出発3日前までに予約</div>
+                                            <div class="price">&yen;14,800</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/ap/rsv/book/search?roundtrip=0&from=HND&to=CTS&adult=1&child=0&infant=0&destination=monthly&departureDate=2023-10-31" class="ticket-box rt-dovalue3">
+                                        <div class="ticket-box-content">
+                                            <div class="ticket-item">
+                                            <img src="/images/ticket-img-03-20200417.webp" loading="lazy" alt="DOバリュー 3" width="160" height="72" class="w-100-sp">
+                                            <p>DOバリュー3</p>
+                                            </div>
+                                            <div class="hideen-pc">
+                                            <div class="course"><span>東京（羽田）</span>→ <span>札幌（新千歳）</span></div>
+                                            <div class="ticket-lead">DOバリュー3 出発3日前までに予約</div>
+                                            <div class="price">&yen;15,300</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="fs-xs">※2023年10月6日現在、2023年10月ご搭乗分の運賃例です。<br>※別途、旅客施設使用料を加算させていただきます。</p>
+                                    <p class="text-center"><a href="/plan/fare/value/" class="btn btn-yellow btn-lg">DOバリュー運賃一覧</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-news">
+                    <div class="container">
+                        <h2>AIRDOからのお知らせ</h2>
+                        <div class="slider-news">
+                            <div class="slider-news-content">
+                                <div class="banner-area">
+                                    <a href="https://marche.airdo.jp/" class="link-block" target="_blank">
+                                        <div class="img"><img src="/images/marche.webp" loading="lazy" alt="AIRDO公式オンラインショップ" width="230" height="230"></div>
+                                        <p class="link-blt">AIRDO公式オンラインショップ</p>
+                                    </a>
+                                </div>
+                                <div class="banner-area" id="recommend-ahp-content">
+                                    <a href="/information/midnight_flight.html" class="link-block">
+                                        <div class="img"><img src="/images/topbnr-midnight_flight.webp" loading="lazy" alt="東京（羽田）―札幌（新千歳）線 深夜帯の利用でより便利に！" width="230" height="230"></div>
+                                        <p class="link-blt">東京（羽田）―札幌（新千歳）線 深夜帯の利用でより便利に！</p>
+                                    </a>
+                                </div>
+                                <div class="banner-area">
+                                    <a href="/information/rokonjet-hokkaido/" class="link-block">
+                                        <div class="img"><img src="/images/topbnr-rokonjet.webp" loading="lazy" alt="ロコンジェット北海道就航中！" width="230" height="230"></div>
+                                        <p class="link-blt">ロコンジェット北海道就航中！</p>
+                                    </a>
+                                </div>
+                                <div class="banner-area" id="recommend-ahp-content">
+                                    <a href="/myairdo/" class="link-block">
+                                        <div class="img"><img src="/images/news-img-01-03.webp" loading="lazy" alt="My AIRDOのご紹介 入会費・年会費無料！便利な会員サービス" width="230" height="230"></div>
+                                        <p class="link-blt">入会費・年会費無料！便利な会員サービス</p>
+                                    </a>
+                                </div>
+                                <div class="banner-area">
+                                    <a href="/information/two-wings/index.html" class="link-block">
+                                        <div class="img"><img src="/images/two-wings.webp" loading="lazy" alt="ふたつの翼で日本の空をもっと楽しもう" width="230" height="230"></div>
+                                        <p class="link-blt">ふたつの翼で日本の空をもっと楽しもう</p>
+                                    </a>
+                                </div>
+                                <div class="banner-area">
+                                    <a href="/information/newstylecheck-in/index.html" class="link-block">
+                                        <div class="img"><img src="/images/topbnr-2301-001.webp" loading="lazy" alt="2023年4月より搭乗スタイルが変わりました" width="230" height="230"></div>
+                                        <p class="link-blt">2023年4月より搭乗スタイルが変わりました</p>
+                                    </a>
+                                </div>
+                                <div class="banner-area">
+                                    <a href="/myairdo/airdo-card/" class="link-block">
+                                        <div class="img"><img src="/images/topbnr-2109-001.webp" loading="lazy" alt="ビジネスにも旅行にも！ポイントたまるAIRDOカード" width="230" height="230"></div>
+                                        <p class="link-blt">ビジネスにも旅行にも！ポイントたまるAIRDOカード</p>
+                                    </a>
+                                </div>
+                                <div class="banner-area">
+                                    <a href="/biz/" class="link-block">
+                                        <div class="img"><img src="/images/topbnr-1712-001.webp" loading="lazy" alt="専用のおトクな運賃で出張経費を削減" width="230" height="230"></div>
+                                        <p class="link-blt">専用のおトクな運賃で出張経費を削減</p>
+                                    </a>
+                                </div>
+                                <div class="banner-area" id="recommend-ahp-content">
+                                    <a href="/service/rapora/" class="link-block">
+                                        <div class="img"><img src="/images/news-img-rapora.webp" loading="lazy" alt="機内誌「rapora」をご自宅でもいかがでしょうか。" width="230" height="230"></div>
+                                        <p class="link-blt">機内誌「rapora」をご自宅でもいかがでしょうか。</p>
+                                    </a>
+                                </div>
+                                <div class="banner-area" id="recommend-ahp-content">
+                                    <a href="/corporate/csr/sora_no_gakko/" class="link-block">
+                                        <div class="img"><img src="/images/news-img-soranogakko.webp" loading="lazy" alt="「AIRDO航空教室」を絵本や紙芝居でお楽しみいただけます。" width="230" height="230"></div>
+                                        <p class="link-blt">「AIRDO航空教室」を絵本や紙芝居でお楽しみいただけます。</p>
+                                    </a>
+                                </div>
+                                <div class="banner-area">
+                                    <a href="http://yorimichi.airdo.jp/" class="link-block link-blank" target="_blank">
+                                        <div class="img"><img src="/images/topbnr-200228-004-sp.webp" loading="lazy" alt="「旅」「航空」「北海道」に関する情報をゆるく発信中！" width="230" height="230"></div>
+                                        <p class="link-blt">「旅」「航空」「北海道」に関する情報をゆるく発信中！</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-trip">
+                    <div class="container">
+                        <h2>AIRDOの空の旅</h2>
+                        <p class="text-center mb-lg">「北海道の翼」として、北海道と全国をつなぐ、快適な空の旅をお客さまに提供いたします。</p>
+                        <div class="row mb-xl">
+                            <div class="col-33 col-100-sp">
+                                <a href="/service/" class="link-box-img">
+                                    <img src="/images/trip-img-01.webp" width="360" height="360" loading="lazy" alt="北海道のおもてなし" class="w-100">
+                                    <div class="link-box-img-content">
+                                        <div class="title"><span class="link-blt-white">北海道のおもてなし</span></div>
+                                        <p class="text-center">こだわりの軽食やドリンクの他、<br>北海道ならではの各種サービスを<br>ご用意しております。</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-33 col-100-sp">
+                                <a href="/plan/destinations/" class="link-box-img">
+                                    <img src="/images/trip-img-02.webp" width="360" height="360" loading="lazy" alt="運航路線・就航地" class="w-100">
+                                    <div class="link-box-img-content">
+                                        <div class="title"><span class="link-blt-white">運航路線・就航地</span></div>
+                                        <p class="text-center">本州を結ぶ路線を運航や、<br>AIRDOが運航する各就航地の情報をご紹介します。</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-33 col-100-sp">
+                                <a href="/departure/safety/" class="link-box-img">
+                                    <img src="/images/trip-img-03.webp" width="360" height="360" loading="lazy" alt="機内安全・サービス" class="w-100">
+                                    <div class="link-box-img-content">
+                                        <div class="title"><span class="link-blt-white">機内安全・サービス</span></div>
+                                        <p class="text-center">機内安全、機内サービスなどをご紹介します。</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-infomation">
+                    <div class="container">
+                        <h2>搭乗手続きのご案内</h2>
+                        <p class="text-center mb-lg">ご搭乗時の各種お手続き・規則・サポート情報をご案内いたします。</p>
+                        <div class="banner-list">
+                            <div class="row row-mg-lg">
+                                <div class="col-25 col-50-sp">
+                                    <div class="img"><a href="/departure/checkin/flow/"><img src="/images/info-img-01.webp" width="240" height="152" loading="lazy" alt="搭乗手続きの流れ" class="hover w-100-sp"></a></div>
+                                    <p class="link-blt"><a href="/departure/checkin/flow/">搭乗手続きの流れ</a></p>
+                                </div>
+                                <div class="col-25 col-50-sp">
+                                    <div class="img"><a href="/departure/checkin/online-checkin/"><img src="/images/info-img-02.webp" width="240" height="152" loading="lazy" alt="オンラインチェックイン" class="hover w-100-sp"></a></div>
+                                    <p class="link-blt"><a href="/departure/checkin/online-checkin/">オンラインチェックイン</a></p>
+                                </div>
+                                <div class="col-25 col-50-sp">
+                                    <div class="img"><a href="/departure/baggage/"><img src="/images/info-img-03.webp" width="240" height="152" loading="lazy" alt="手荷物について" class="hover w-100-sp"></a></div>
+                                    <p class="link-blt"><a href="/departure/baggage/">手荷物について</a></p>
+                                </div>
+                                <div class="col-25 col-50-sp">
+                                    <div class="img"><a href="/departure/support/"><img src="/images/info-img-04.webp" width="240" height="152" loading="lazy" alt="お手伝いが必要な方" class="hover w-100-sp"></a></div>
+                                    <p class="link-blt"><a href="/departure/support/">お手伝いが必要な方</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-newsrelease">
+                    <div class="container">
+                        <h2>ニュースリリース</h2>
+                        <div class="box box-mg-xs">
+                        <ul>
+                            <li class="link-blt"><a href="/departure/checkin/online-checkin-howto/index.html">搭乗便出発時刻の24時間前から空港到着前までにオンラインチェックインをお済ませください。～操作手順はこちら～</a></li>
+                            <li class="link-blt"><a href="/departure/safety/safe-operation/#a2">緊急脱出時のお願い</a></li>
+                            <li class="link-blt"><a href="/news/2023/news-9480.html">【重要】弊社名を使用した不審なメールにご注意ください</a></li>
+                            <li class="link-blt"><a href="/news/2020/news-8161.html">【ご利用のお客様へ】機内におけるマスクの着用について。</a></li>
+                            <li class="link-blt"><a href="/news/2022/news-8682.html">航空法に基づく保安検査の義務化に関するお知らせ</a></li>
+                            <li class="link-blt"><a href="/news/2021/news-8438.html">【注意喚起】航空券比較サイトでの航空券購入について</a></li>
+                            <li class="link-blt"><a href="/news/2021/news-8454.html">クレジットカードの不正取引防止について</a></li>
+                            <li class="link-blt mb-0"><a href="/news/2019/news-7764.html">ご搭乗前の保安検査の受検について</a></li>
+                        </ul>
+                        </div>
+                        <dl class="list-date"></dl>
+                        <p class="text-right"><a href="/news/" class="link-blt">一覧を見る</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+
+    <footer role="contentinfo">
+    
+        <div class="container">
+            
+                
+                
+                <h2>AIRDOともっとつながる</h2>
+                <p class="text-center">ソーシャルメディアで様々な情報をお届けしております。</p>
+                <div class="nav-sns">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/airdo.jp" target="_blank">
+                                <img loading="lazy" src="/common/images/icn-sns-fb.webp" alt="Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://line.me/R/ti/p/%40airdo" target="_blank">
+                                <img loading="lazy" src="/common/images/icn-sns-ln.webp" alt="LINE" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC1ulyJlOkUQjSB3FyFksmhQ" target="_blank">
+                                <img loading="lazy" src="/common/images/icn-sns-yt.webp" alt="Youtube" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/airdo.hokkaido/" target="_blank">
+                                <img loading="lazy" src="/common/images/icn-sns-is.webp" alt="Instagram" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/airdo_hokkaido" target="_blank">
+                                <img loading="lazy" src="/common/images/icn-sns-tw.webp" alt="Twitter" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="link-wallpaper">
+                        <a href="/download/wallpaper/" class="btn btn-transparent-white w-sm">今月の壁紙</a>
+                    </div>
+                </div>
+                
+                <div class="footer-header">
+                    <div class="logo hidden-sp">
+                        <a href="/">
+                            <img loading="lazy" src="/common/images/logo.webp" alt="北海道の翼 AIRDO" />
+                        </a>
+                    </div>
+                    <div class="row row-center row-left-sp">
+                        <a href="/corporate/" class="col col-50-sp">AIRDOについて</a>
+                        <a href="/corporate/info/" class="col col-50-sp">会社情報</a>
+                        <a href="/corporate/safety/" class="col col-50-sp">安全報告書</a>
+                        <a href="/corporate/release/" class="col col-50-sp">プレスリリース</a>
+                        <a href="/corporate/recruit/" class="col col-50-sp">採用情報</a>
+                        <a href="/corporate/cs/" class="col col-50-sp">サービス向上への取り組み</a>
+                        <a href="/corporate/csr/" class="col col-50-sp">CSR活動</a>
+                        <a href="/corporate/brand/" class="col col-50-sp">ブランド</a>
+                    </div>
+                </div>
+                <div class="footer-body hidden-sp">
+                    <div class="row row-equal">
+                        <div class="col">
+                            <div class="footer-title">
+                                <a href="/plan/destinations/">運航路線・就航地</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-40">
+                                    <ul>
+                                        <li>
+                                            <a href="/plan/destinations/sapporo/">札幌</a>
+                                        </li>
+                                        <li>
+                                            <a href="/plan/destinations/asahikawa/">旭川</a>
+                                        </li>
+                                        <li>
+                                            <a href="/plan/destinations/memanbetsu/">女満別</a>
+                                        </li>
+                                        <li>
+                                            <a href="/plan/destinations/kushiro/">釧路</a>
+                                        </li>
+                                        <li>
+                                            <a href="/plan/destinations/obihiro/">帯広</a>
+                                        </li>
+                                        <li>
+                                            <a href="/plan/destinations/hakodate/">函館</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-40">
+                                    <ul>
+                                        <li>
+                                            <a href="/plan/destinations/sendai/">仙台</a>
+                                        </li>
+                                        <li>
+                                            <a href="/plan/destinations/tokyo/">東京</a>
+                                        </li>
+                                        <li>
+                                            <a href="/plan/destinations/nagoya/">名古屋</a>
+                                        </li>
+                                        <li>
+                                            <a href="/plan/destinations/kobe/">神戸</a>
+                                        </li>
+                                        <li>
+                                            <a href="/plan/destinations/fukuoka/">福岡</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-title">
+                                <a href="/plan/fare/">AIRDOのおトクな運賃</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer-title">
+                                <a href="/plan/timetable/">時刻表</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="/plan/timetable/#service_guide">サービスガイド</a>
+                                </li>
+                            </ul>
+                            <div class="footer-title">
+                                <a href="/reservation/">航空券の予約・購入</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="/reservation/guide/">はじめてご利用になる方へ</a>
+                                </li>
+                                <li>
+                                    <a href="/reservation/book/">航空券の利用にあたっての確認事項</a>
+                                </li>
+                                <li>
+                                    <a href="/reservation/payment/">購入・領収書のご案内</a>
+                                </li>
+                                <li>
+                                    <a href="/reservation/refund/">予約変更・払い戻しのご案内</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="footer-title">
+                                <a href="/departure/">空港案内・搭乗手続き</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="/departure/checkin/">搭乗手続きのご案内</a>
+                                </li>
+                                <li>
+                                    <a href="/departure/baggage/">手荷物のご案内</a>
+                                </li>
+                                <li>
+                                    <a href="/departure/support/">お手伝いが必要なお客様へ</a>
+                                </li>
+                                <li>
+                                    <a href="/departure/bording-information/">搭乗順のご案内</a>
+                                </li>
+                                <li>
+                                    <a href="/departure/airport/">空港カウンター・アクセスのご案内</a>
+                                </li>
+                                <li>
+                                    <a href="/departure/safety/">機内の環境・安全のご案内</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="footer-title">
+                                <a href="/service/">サービス・機材</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="/service/meal/">ドリンク</a>
+                                </li>
+                                <li>
+                                    <a href="/service/fleet/">使用機材・座席表</a>
+                                </li>
+                                <li>
+                                    <a href="/service/shop/">機内販売</a>
+                                </li>
+                            </ul>
+                            <div class="footer-title">
+                                <a href="https://marche.airdo.jp/" target="_blank" class="link-blank icn-link-blank_white">公式オンラインショップ</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            
+                            <div class="footer-title">
+                                <a href="/campaign/">キャンペーン</a>
+                            </div>
+                            
+                            <div class="footer-title">
+                                <a href="/myairdo/">My AIRDOのご紹介</a>
+                            </div>
+                            <div class="footer-title">
+                                <a href="/biz/">AIRDO Biz</a>
+                            </div>
+                            <div class="footer-title">
+                                <a href="/tour/" id="footer_dp1">ダイナミックパッケージ</a>
+                            </div>
+                            <div class="footer-title">
+                                <a href="/support/">サポート</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="/support/faq/">よくあるご質問</a>
+                                </li>
+                                <li>
+                                    <a href="/support/inquiry/">各種お問い合わせ窓口</a>
+                                </li>
+                                <li>
+                                    <a href="/support/feedback/">ご意見・ご要望窓口</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-footer">
+                    <ul class="ext">
+                        <li>
+                            <a href="/privacypolicy/">プライバシーポリシー</a>
+                        </li>
+                        <li>
+                            <a href="/external_transmission/">利用者情報の外部送信について</a>
+                        </li>
+                        <li>
+                            <a href="/myairdo/terms/">会員規約</a>
+                        </li>
+                        <li>
+                            <a href="/terms/">サイト利用規約</a>
+                        </li>
+                        <li>
+                            <a href="/corporate/info/conditions-of-carriage/">国内旅客運送約款</a>
+                        </li>
+                        <li>
+                            <a href="/corporate/info/conditions-of-cargo/">国内貨物運送約款</a>
+                        </li>
+                        <li>
+                            <a href="/corporate/info/conditions-of-internationalcharter/">国際貸切運送約款</a>
+                        </li>
+                        <li>
+                            <a href="/requirement/">推奨環境</a>
+                        </li>
+                        <li>
+                            <a href="/maintenance/">システムメンテナンス情報</a>
+                        </li>
+                        <li>
+                            <a href="/social-policy/">ソーシャルメディアポリシー</a>
+                        </li>
+                        <li>
+                            <a href="/sitemap/">サイトマップ</a>
+                        </li>
+                        <li>
+                            <a href="/cookiepolicy/">クッキーポリシー</a>
+                        </li>
+                    </ul>
+                    <div class="select-language hidden-sp">
+                        <select>
+                            <option selected>Language</option>
+                            <option value="/" data-language="ja">日本語</option>
+                            <option value="/en/" data-language="en">English</option>
+                            <option value="/ko/" data-language="ko">한국어</option>
+                            <option value="/zh-cn/" data-language="zh-cn">简体中文</option>
+                            <option value="/zh-tw/" data-language="zh-tw">繁體中文</option>
+                        </select>
+                    </div>
+                    <!-- div class="language hidden-sp text-right">日本語<span class="sepalate">｜</span><a href="/en/" data-lang="en">English</a></div -->
+                </div>
+                <div id="move-top" class="hidden-sp">
+                    <a>ページトップへ</a>
+                </div>
+                <p class="hidden-pc text-center fs-sm">
+                    <a href="#main">ページトップへ</a>
+                </p>
+
+            
+            <p class="copyright">Copyright &copy; AIRDO Co., Ltd. All rights reserved.</p>
+        </div>
+
+    
+  </footer>
+
+  <script src="//pro.syncsearch.jp/common/js/sync_suggest.js"></script> <script type="text/javascript">
+  SYNCSEARCH_SITE="2EBG1KFF";
+  
+  SYNCSEARCH_GROUP=2;
+  SYNCSEARCH_GROUP1=2;
+  
+
+  
+  </script>
+
+  </body>
+  </html>
