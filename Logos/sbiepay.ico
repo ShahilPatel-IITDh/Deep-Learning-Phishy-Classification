@@ -1,0 +1,101 @@
+
+
+
+
+
+ 
+
+
+
+
+
+<HTML>
+
+
+<HEAD>
+<TITLE>SBIePay - Browser Check</TITLE>
+<META Http-Equiv="Expires" Content="0"/>
+<META Http-Equiv="Cache-Control" Content="no-cache"/>
+<META Http-Equiv="Pragma" Content="no-cache"/>
+<meta name="verify-v1" content="ojyTqhdJGjF+9SstghkenrAlxGplIXGoav+X0oojPCU=" />
+<meta name="verify-v1" content="LfllcK6BR5dpqU3i4oNuHOR6fH2nCDRq9nUH8K0yyT8=" /> 
+<meta name="Referer" content="https://www.sbiepay.sbi" />
+<link rel="stylesheet" href="/stylesheet/stylesheet.css" type="text/css">
+
+<SCRIPT LANGUAGE="JavaScript">
+   browser_name = navigator.appName;
+browser_version = parseFloat(navigator.appVersion);
+
+if(browser_name == "Netscape" && browser_version < 4.7 )
+{
+	var browserVersion = "Your browser is  Netscape " + browser_version +". www.sbiepay.sbi has been optimised for best performance in browser version Netscape 4.7 and above.";
+	document.writeln("<FONT SIZE=2><B><center>"+browserVersion+"</center></b></font>");
+	document.writeln("<FONT SIZE=2><B><center><A Href=\"#\" onclick=\"window.open('http://home.netscape.com/download/index.html')\">Click here</A> to download the latest version for use as your browser:</center></b></font>");
+	document.writeln("<FONT SIZE=2><B><center>If you would still like to go ahead with your current browser, <A href='https://www.sbiepay.sbi/secure/home'\">please click here.</A> </center></b></font>");
+}
+else
+{
+	if(!navigator.javaEnabled())
+	{
+	//	alert("Java is not enabled in your browser. You shall not be able to view applets");
+	}
+	else if(!(navigator.appVersion.indexOf("U") == -1 || navigator.userAgent.indexOf("MSIE") == -1))
+	{
+		document.location.replace("128bit.html");
+	}
+
+	admin = /admin/ ;
+	merchant = /sbiepay/ ;
+	
+	if(admin.test(document.location))
+		document.location.href = 'https://www.sbiepay.sbi/secure/admin/aggAdminLogin';
+	else if(merchant.test(document.location))
+		document.location.href = 'https://www.sbiepay.sbi/secure/home';
+	else 
+		document.location.href = 'https://www.sbiepay.sbi/secure/home';
+}
+</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+<NOSCRIPT>
+<table width="95%" border="0" cellspacing="5" cellpadding="5" align="center">
+  <tr>
+    <td class="blackNormal"><font class="redBold"><b>Javascript is not enabled on your browser. To fully enjoy your experience, please enable it by following the instructions detailed below.</b></font><br><br>
+<B>Instructions to Enable JavaScript - </B><br><br>
+<B>For Netscape Navigator users:</B><br>
+<ul>
+  <li>Open your browser, click Options --> Network Preferences.</li>
+  <li>Next, click on the Languages tab and make sure that there is a check mark or an "X" in the box for Enable JavaScript.</li>
+  <li>Click OK for the browser to accept the changes.</li>
+</ul>
+<B>For Netscape Communicator users:</B><br>
+<ul>
+  <li>Open your browser, click Edit --> Preferences --> Advanced.</li>
+  <li>Next, make sure that there is a check mark in the Enable JavaScript box.</li>
+  <li>Click OK for the browser to accept the changes.</li>
+</ul>
+<br>
+<B>For Internet Explorer 4.x/5.x users:</B><br>
+<ul>
+  <li>Open your browser, click View --> Internet Options --> Security.</li>
+  <li>Next, select the Custom Security option and click on Settings. Scroll down until you see a reference to Active Scripting.</li>
+  <li>Ensure this option is enabled, click Apply and then OK for the browser to accept the changes.</li>
+</ul>
+<br>
+When you are finished, <a href="https://www.sbiepay.sbi/secure/home" class="redBold">click here</a> to return to the sbiepay homepage.</td>
+  </tr>
+</table>
+
+<table width="95%" border="0" cellspacing="5" cellpadding="0">
+  <tr> 
+    <td bgcolor="#3366CC" height="2"><spacer type="block" height="2"></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.sbiepay.sbi/secure/home"><img src="/images/bank_logo_0.jpg" alt="sbiepay" border="0"></a></td>
+  </tr>
+</table>
+</NOSCRIPT>
+</BODY>
+</HTML>
+

@@ -1,0 +1,219 @@
+  
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
+  <head>
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//metrics.honeycomb.net/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <title>Honeycomb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, target-densitydpi=160">
+    <link rel="apple-touch-icon-precomposed" href="/touch-icon-144.png"> 
+    <link rel="image_src" href="/touch-icon-144.png"> 
+    <link rel="shortcut icon" href="/touch-icon-144.png"> 
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link href="../assets/stylesheets/normalize.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../assets/stylesheets/application.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="../assets/javascripts/vendor/modernizr.custom.70131.js" type="text/javascript"></script>
+  </head>
+  
+  <body class="pages pages_index">
+    <div class="container">
+      <header class="header">
+  <div class="row inner">
+
+    <h1 class="logo four columns"><a href="/" title="Honeycomb">Honeycomb</a></h1>
+
+    <!-- Site Navigation -->
+
+    <nav class="main-nav eight columns">
+      <ul class="clearfix">
+        <li class="nav-services"><a href="/services/">Services</a></li>
+        <li class="nav-process"><a href="/process/">Process</a></li>
+        <li class="nav-security"><a href="/security/">Security</a></li>
+        <li class="nav-contact"><a href="/contact-us/">Contact Us</a></li>
+        <li class="nav-about"><a href="/about-us/">About Us</a></li>
+        <li class="nav-hive"><a href="/payment/">Payment</a></li>
+		 <li class="nav-hive"><a href="/privacy-policy/">Privacy Policy</a></li>
+      </ul>
+    </nav>
+
+    <!-- Button to toggle mobile nav. appears when resolution is <= 600px width -->
+
+    <nav class="mobile-nav eight columns">
+      <ul>
+        <li class="toggle-mobile-nav">
+          <a class="toggle-mobile" href="#" data-toggle="main-nav">Toggle Mobile Site Nav</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="row">
+
+      <!-- Mobile Site Navigation. HTML Should mirror site navigation. Is visible <= 600px width resolution after clicking .toggle-mobile  -->
+
+      <nav class="mobile-site-nav twelve columns" id="main-nav">
+        <ul class="clearfix">
+          <li class="nav-services"><a href="/services/">Services</a></li>
+          <li class="nav-process"><a href="/process/">Process</a></li>
+          <li class="nav-security"><a href="/security/">Security</a></li>
+          <li class="nav-contact"><a href="/contact-us/">Contact Us</a></li>
+          <li class="nav-about"><a href="/about-us/">About Us</a></li>
+          <li class="nav-hive"><a href="/payment/">Payment</a></li>
+		<li class="nav-hive"><a href="/privacy-policy/">Privacy Policy</a></li>
+        </ul>
+        <div class="nav-tab"></div>
+      </nav>
+    
+    </div>
+
+  </div>
+
+</header>
+
+      <div class="main" role="main">
+        
+
+<!-- Using a preloader to prevent hover states from flickering -->
+<div class="preloader"></div>
+
+<!-- hero headline. -->
+<section class="hero">
+  <div class="row">
+    <div class="intro twelve columns">
+      <hgroup>
+        <!-- Using fitText to resize headline text for responsive. see application.js -->
+        <h2 class="responsive-headline">Structured
+          <div class="responsive-subhead">
+            <span></span>
+            <em class="home-subhead">For You</em>
+            <span></span>
+          </div>
+        </h2>
+      </hgroup>
+    </div>
+  </div>
+
+  <div class="hex-down"></div> <!-- refers to being able to see the full hexagon at the top of the section -->
+</section>
+
+<section class="modules">
+  <div class="row">
+    <div class="module four columns">
+      <div class="module-outer">
+        <div class="uptime module-inner">
+          <img src="../assets/images/height-module.png" class="height" />
+        </div>
+      </div>
+    </div>
+    <div class="module four columns">
+      <div class="module-outer">
+        <div class="support module-inner">
+          <img src="../assets/images/height-module.png" class="height" />
+        </div>
+      </div>
+    </div>
+    <div class="module four columns">
+      <div class="module-outer">
+        <div class="security module-inner">
+          <img src="../assets/images/height-module.png" class="height" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns">
+      <!-- there is different content each time you hover over a specific module (uptime, support, security) -->
+      <p class="default">For over 15 years, Honeycomb Internet Services has provided fully customized hosting solutions for Fortune 500 companies, local small businesses, and everyone in between. And now there’s you.</p>
+      <p class="uptime-content">When we say "<em>100% uptime</em>," that’s a guarantee. We don't believe anyone should ever have their link to the outside world cut off as a result of something that could have been prevented.</p>
+      <p class="support-content">When you hire us, you really do hire "us." We’re here at all hours to support you at launch and every point afterward, including one-on-one guidance on building out your infrastructure.</p>
+      <p class="security-content">Security at Honeycomb isn't just a "set it and forget it" solution. We know it takes a combination of software, hardware, and good old-fashioned manpower to safeguard your site.</p>
+    </div>
+  </div>
+
+  <div class="hex-open"></div> <!-- shows an arrow with black background at the top of the section -->
+</section>     
+
+
+      </div>
+      <footer class="footer">
+  <div class="inner row">
+    <div class="connect four columns">
+      <!-- Link to Honeycomb Facebook Page -->
+      <div class="connect-social">
+        <a href="https://www.facebook.com/HoneycombInternet" target="_blank">Honeycomb Facbook Page</a>
+      </div>
+      <div class="connect-standard">
+        <h4>Send Us A Signal</h4>
+        <a href="tel:612-617-0007" class="phone">612-617-0007 </a><em> -or- </em>
+
+        <!-- Using Javascript to hide e-mail address -->
+        <script type="text/javascript" language="javascript">
+          <!--
+          // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+          // Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+          // This code is freeware provided these four comment lines remain intact
+          // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+          { coded = "blxJb@DMaJ7mMt8.aJ9"
+            key = "xNDfenmqMjIQyVHrsTkgKBZJatuEwFi75L2bU1PdRpCl9hG4Scvo6Y83A0zXWO"
+            shift=coded.length
+            link=""
+            for (i=0; i<coded.length; i++) {
+              if (key.indexOf(coded.charAt(i))==-1) {
+                ltr = coded.charAt(i)
+                link += (ltr)
+              }
+              else {     
+                ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                link += (key.charAt(ltr))
+              }
+            }
+          document.write("<a href='mailto:"+link+"'>E-MAIL US</a>")
+          }
+          //-->
+        </script><noscript>Sorry, you need Javascript on to email me.</noscript>
+      </div>
+    </div>
+
+    <div class="copyright eight columns">
+      Copyright &copy;2022 Honeycomb Internet Services, LLC. All Rights Reserved.
+    </div>
+  </div>
+
+  
+</footer>
+
+    </div>
+
+    <script src="../assets/javascripts/vendor/jquery-1.8.1.min.js" type="text/javascript"></script>
+    
+        <script src="../assets/javascripts/vendor/jquery.fittext.js" type="text/javascript"></script>
+
+    <script src="../assets/javascripts/application.min.js" type="text/javascript"></script>
+  </body>
+
+</html>

@@ -1,0 +1,150 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<title>Buffalo WebAccess</title>
+	<link href="/style.css" rel="stylesheet" type="text/css">
+	<script src="/js/xmlhttprequest.js" type="text/javascript"></script>
+	<script src="/js/clicked.js" type="text/javascript"></script>
+	<meta name="buffalonas.com" content="BUFFALO INC.">
+	<meta name="viewport" content="width=320px">
+
+	<script src="/js/jquery-3.6.4.min.js" type="text/javascript"></script>
+	<script src="/js/js.cookie-2.2.1.min.js" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript">
+		function After5Sec() {
+			document.getElementById('ERROR').innerHTML = '';
+			if (document.getElementById("input_name").value != "") {
+				document.index.submit();
+			}
+		}
+		function SetAfter5Sec() {
+			setTimeout('After5Sec();', 4000);
+		}
+		function sleep(waitMsec) {
+			var startMsec = new Date();
+			while (new Date() - startMsec < waitMsec);
+		}
+		function CheckPrivacyPolicy() {
+			if (document.getElementById("CHECK").checked == true) {
+				document.getElementById("CONNECT").disabled = "";
+			}
+			else {
+				document.getElementById("CONNECT").disabled = "disabled";
+			}
+		}
+		function OffPrivacyPolicy() {
+			document.getElementById("CHECK").checked = true;
+		}
+		function AddPrivacyPolicy() {
+			document.getElementById("CONNECT").disabled = "disabled";
+			document.getElementById("CHECK").checked = false;
+		}
+		function OnLinkClickPrivacy() {
+			document.cookie = 'webaxs_privacy=1.2; max-age=31536000;';   
+		}
+		function StatusPrivacy() {
+			if (document.getElementById("CHECK").checked == false) {
+				return false;
+			}
+			else {
+				document.cookie = 'webaxs_privacy=1.2; max-age=31536000;';   
+			}
+		}
+//		function OpenPrivacyPolicy() {
+//			open("https://86886.jp/legal/privacy/webaccess/index.html?lang=de-DE", "PrivacyPolicy");
+//		}
+//		function OnLinkClick() {
+//			//alert('Confirm');
+//			var result = confirm("Die Datenschutzrichtlinie für WebAccess wurde aktualisiert. Sie wird in einem Popup-Fenster geöffnet. Bitte lesen Sie die Richtlinie aufmerksam durch und klicken Sie anschließend auf [OK], um sie zu akzeptieren.");
+//			if (result) {
+//				//alert('Ok');
+//				document.cookie = 'webaxs_privacy=1.2; max-age=31536000;';   
+//			}
+//			else {
+//				//alert('Cancel');
+//				location.reload();
+//				return false;
+//			}
+//		}
+		function WarnDiagbox() {
+			sleep(1000);
+			alert("Der für WebAccess konfigurierte freigegebene Ordner hat keine festgelegten Zugriffsbeschränkungen. Konfigurieren Sie Zugriffsbeschränkungen für den Ordner, um den Zugriff durch nicht autorisierte Benutzer zu verhindern.");
+			   
+		}
+	</script>
+</head>
+
+<body onLoad='AddPrivacyPolicy();'>   
+<div id="pageBase">
+	<div id="header">
+		<div id="headerWeb">
+			<img src="/images/header_web.gif" alt="WebAccess" width="144" height="33" border="0">
+		</div>
+		<div id="headerBuf">
+			<img src="/images/header_buf.gif" alt="BUFFALO" width="83" height="33" border="0">
+		</div>
+	</div>
+
+	<div id="contentMain">
+		<div> </div>
+		<div class="content1">
+			Geben Sie Ihren BuffaloNAS.com-Namen ein.   
+		</div>
+
+		<div class="help">
+			<a href='https://buffalonas.com/manual/de/name.html'>Über den BuffaloNAS.com-Namen</a>
+		</div>
+
+		<form name='index' method='post' action='/index.php' class='accessForm' onSubmit='OnLinkClickPrivacy();'>   
+			<div class="content5">
+				<input style='width:220px;' type='text' name='name' id='input_name' value='favicon.ico'><br /><br />
+			</div>
+			<div class="content4">
+				<p style="color:red" id="ERROR">BuffaloNAS.com-Benutzername ist ungültig.</p>
+			</div>
+			<div class="content5">
+							</div>
+			<div class='content4'>   
+				<p>
+					Bevor Sie diese Website nutzen, lesen Sie bitte die Datenschutzrichtlinie und stimmen Sie ihr zu.<br />
+					<input type="checkbox" id="CHECK" value="1" onclick="CheckPrivacyPolicy();">&emsp;Ich habe die Datenschutzrichtlinie gelesen und stimme ihr zu.   
+				</p>
+			</div>
+			<div>
+				<input type="submit" id="CONNECT" value="Verbinden"><br /><br />
+			</div>
+		</form>
+
+		<div class="help">
+			<a href='https://buffalonas.com/manual/de/'>Nutzungshinweise</a><br /><br /><a href='https://buffalonas.com/confirm.php' onclick='return StatusPrivacy();'>Gültigen BuffaloNAS.com-Namen prüfen</a><br /><a href='https://buffalonas.com/remove.php' onclick='return StatusPrivacy();'>BuffaloNAS.com-Namen löschen</a>   
+		</div>
+
+		<div class="info" style="display:none">
+			<h3 class="info">Informationen</h3>
+			<p class="info">Buffalo hat einen wichtigen Hinweis zur Nutzung von WebAccess angekündigt. Klicken Sie auf den nachstehenden Link, um den gesamten Hinweis zu lesen.<br /><a href='https://www.buffalo.jp/news/important.html' target='_blank'>Wichtiger Hinweis</a><br /></p>
+		</div>
+
+		<hr>
+
+		<div class='help'>   
+			<iframe src="https://86886.jp/legal/privacy/webaccess/index.html?lang=de-DE" width="600" height="130"><a href="https://86886.jp/legal/privacy/webaccess/index.html?lang=de-DE" target="PrivacyPolicy">Datenschutzrichtlinie</a></iframe>
+		</div>
+
+		<div class="banner">
+		</div>
+	</div>
+
+	<div id="footer">
+		Copyright © 2012 Buffalo Inc.
+	</div>
+</div>
+<script src="/js/hideShowPassword.min.js"></script>
+<script>
+$('#password-1').hidePassword('focus', {toggle: {className: 'my-toggle'}});
+</script>
+<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=470847669" async></script></body>
+
+</html>

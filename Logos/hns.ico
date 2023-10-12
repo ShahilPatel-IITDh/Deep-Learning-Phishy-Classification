@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trend Micro Home Network Security</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  <link rel="stylesheet" type="text/css" href="css/failedpage.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/failedpage.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title">Home Network Security Test Website</div>
+    <div class="failed_image"></div>
+    <div class="failed_message">Test Website Not Blocked</div>
+    <div class="suggestion">
+      <p>To block the test website,</p>
+      <p>1. Connect to the same network as the online Station</p>
+      <p>2. Reload the page</p>
+      <p>Need help? <a href="https://gr.trendmicro.com/GREntry/NonPayment?Target=Diamond_iKB&PID=DM00&FunID=Help_Testing_Result">Tap here</a></p>
+    </div>
+    <div class="button-wrapper">
+      <button class="button" type="submit" onclick="location.reload()">Try Again</button>
+    </div>
+  </div>
+  <script language="javascript">
+    applyL10n();
+  </script>
+</body>
+</html>

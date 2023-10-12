@@ -1,0 +1,3173 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Include Page Designer Campaign Banner JavaScript and Styles only once here rather than at component level. -->
+<!-- There should only be one Campagin Banner added on a PD page. Multiple Banners is unsupported at the moment. -->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!--[if gt IE 9]><!-->
+<script>//common/scripts.isml</script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/js/main-react.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/js/campaignBanner.js">
+        </script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/js/T2Srecommend.js">
+        </script>
+<script type="text/javascript">undefined</script>
+<script type="text/javascript">undefined</script>
+<script type="text/javascript">undefined</script>
+<script type="text/javascript">
+window.addEventListener("DOMContentLoaded", function(){    
+    const swiperinsta = new Swiper('.insta-swiper-container', {
+        slidesPerView: 1.5,
+        centeredSlides:true,
+        spaceBetween: 15,
+        loop: true,
+        loopAdditionalSlides: 2,
+        grabCursor: true,
+        roundLengths : true,
+        pagination: {
+          el: ".swiper-pagination-insta",
+          clickable: true,
+        },	
+    });
+})
+</script>
+<script>window.Properties = {"form":{"regex":{"email":"^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$","orderNumber":"^[0-9]{8,10}$"},"error":{"required":"Ce champ est requis.","invalidEmail":"Merci de renseigner une adresse e-mail"},"orderTrack":{"error":{"missingNumber":"Le numéro de commande est requis.","invalidNumber":"Le numéro de commande est invalide."},"info":"Vous souhaitez accéder directement à une commande ?","emailLabel":"E-mail","numberLabel":"Numéro de commande","submitBtn":"<span>Suivre ma commande</span><span>ou</span><span>Déclarer un retour</span>"}}}</script>
+<!--<![endif]-->
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>E-Boutique Officielle CAROLL – Vêtements femme et accessoires de mode</title>
+<meta name="description" content="D&eacute;couvrez l'ensemble des derni&egrave;res collections de v&ecirc;tements et accessoires pour femmes de Caroll" />
+<meta name="keywords" content="Commerce Cloud Storefront Reference Architecture" />
+<link rel="shortcut icon" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw0f3dbeec/images/favicons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="57x57" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw6ddbf03b/images/favicons/apple-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwa87be8db/images/favicons/apple-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwdb3abe7e/images/favicons/apple-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw2e06e397/images/favicons/apple-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw94bace36/images/favicons/apple-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw59d3c1ff/images/favicons/apple-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwb693310d/images/favicons/apple-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw5f999c0b/images/favicons/apple-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw3c5c1efb/images/favicons/apple-icon-180x180.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw94bf034d/images/favicons/android-icon-48x48.png" />
+<link rel="icon" type="image/png" sizes="72x72" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwb21e3097/images/favicons/android-icon-72x72.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwf7ab2971/images/favicons/android-icon-96x96.png" />
+<link rel="icon" type="image/png" sizes="144x144" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw2616e450/images/favicons/android-icon-144x144.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwf20cb4a2/images/favicons/android-icon-192x192.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwf21f5432/images/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw73350695/images/favicons/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwb467a8f5/images/favicons/favicon-16x16.png" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/css/global.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/css/experience/components/commerceAssets/campaignBanner.css" />
+<style>
+html {
+  scroll-behavior: smooth;
+  font-size: 76.92%;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+
+.crl_s40_b1 {
+  width: 100%;
+}
+.crl_s40_b1 strong{
+  font-weight: 600;
+}
+
+.crl_s40_b1_main {
+  position: relative;
+    width: calc(100% + 60px);
+    margin: 10px -30px 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
+}
+.crl_s40_b1_main img, .crl_s40_b1_main picture {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+.crl_s40_b1_main a:focus, .crl_s40_b1_main a:active, .crl_s40_b1_main a:link, .crl_s40_b1_main a:visited {
+  text-decoration: none;
+}
+.crl_s40_b1_main p, .crl_s40_b1_main h1, .crl_s40_b1_main h2 {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.crl_s40_b1_bold {
+  font-weight: 700;
+}
+
+.crl_s40_b1_light {
+  font-weight: 300;
+}
+
+.crl_s40_b1_upper {
+  text-transform: uppercase;
+}
+
+.crl_s40_b1_sup {
+  font-size: 60%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+.crl_s40_b1_linkglob {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.crl_s40_b1_bg {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.crl_s40_b1_txt {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    width: 26%;
+    z-index: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.crl_s40_b1_txt_title {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.crl_s40_b1_txt_title img{
+    margin-bottom: 1.3vw;
+}
+
+.crl_s40_b1_txt_title .titre{
+      width: 100%;
+    /* left: 8.15625%; */
+    /* left: 6.646vw; */
+    top: 50%;
+    z-index: 10;
+    color: #fff;
+    font-size: 2vw;
+    text-align: left;
+	font-weight: 300;
+}
+
+.crl_s40_b1_txt .crl_s40_b1_cta {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.885vw;
+    font-weight: 400;
+    color: #fff;
+    margin: 10px 0px 20px;
+    text-align: left;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.crl_s40_b1_txt .crl_s40_b1_cta:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.crl_s40_b1_txt .crl_s40_b1_cta:hover:after {
+    animation-name: anim_underline_survol;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes anim_underline_survol {
+    0% { 
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    49.8% {
+        transform: translateX(105%);
+        opacity: 1;
+        }
+    49.9% {
+        transform: translateX(105%);
+        opacity: 0;
+    }
+    50.1% {
+        transform: translateX(-105%);
+        opacity: 0;        
+    }
+    50.2% {
+        transform: translateX(-105%);
+        opacity: 1;
+    }
+    100% { 
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.crl_s40_b1_txt_title {
+		position: relative;
+		width: 100%;
+		z-index: 1;
+	}
+    .crl_s40_b1_txt {
+        position: absolute;
+		top: 68%;
+		left: 9%;
+		width: 67%;
+		align-items: flex-start;
+    }
+
+    .crl_s40_b1_txt p {
+        font-size: clamp(1rem, 0.066rem + 3.795vw, 2.308rem);
+    }
+
+    .crl_s40_b1_txt .crl_s40_b1_cta {
+        font-size: 2.674vw;
+    }
+
+    .crl_s40_b1_txt_barre {
+        width: clamp(0.077rem, 0.022rem + 0.223vw, 0.154rem);
+        height: clamp(3.077rem, 0.879rem + 8.929vw, 6.154rem);
+    }
+	.crl_s40_b1_txt_title .titre{
+      	width: 100%;
+		/* left: 8.15625%; */
+		/* left: 6.646vw; */
+		top: 50%;
+		z-index: 10;
+		color: #fff;
+		font-size: 5vw;
+		text-align: left;
+	}
+
+	.crl_s40_b1_txt_title img{
+		margin-bottom: 4.3vw;
+	}
+}
+</style>
+<style>
+.s40_bloc3_entrees .absolute {
+    position: absolute;
+    }   
+.s40_bloc3_entrees img {
+    display: block;
+    width: 100%;
+    }   
+.s40_bloc3_entrees .desktop {
+    display: block;
+}    
+.s40_bloc3_entrees .mobile {
+    display: none;
+}    
+/* <(*o*)> */
+.s40_bloc3_entrees {
+/*    width: 91.666666666666667%;*/
+    width: calc(100% + 60px);
+    margin: 0 -30px 10px;
+	font-family:'Montserrat', Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    position: relative;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.s40_bloc3_entrees>div.desktop{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.s40_bloc3_entrees .entree {
+    position:relative;
+    overflow: hidden;
+    display: block;
+    width: 33.177083333333333%;
+}   
+/*
+.s40_bloc3_entrees .entree:first-of-type {
+    width: 33.177083333333333%;
+}  
+.s40_bloc3_entrees .entree:last-of-type {
+    width: 66.40625%;
+}   
+*/
+.s40_bloc3_entrees .entree p {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2.406vw;
+    font-weight:500;
+    text-align: left;
+    color: #ffffff;
+    bottom: 12.268998793727382%;
+    left: 3.646vw;
+    z-index: 1;
+}
+.s40_bloc3_entrees .entree .cta {
+    z-index: 1;
+    bottom: 6.134499396863691%;
+    left: 3.646vw;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.885vw;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: transparent;
+    outline: none;
+    padding: 0 0 .1vw;
+    text-align: left;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline;
+    width: auto;
+}
+
+
+@media screen and (min-width: 769px) {        
+    .s40_bloc3_entrees .entree img {
+        transition: transform .25s ease-in-out 0s;
+    }
+    .s40_bloc3_entrees .entree:hover img {
+        transform: scale(1.01);
+    }
+    
+    .s40_bloc3_entrees .entree .cta:after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        
+    }    
+  
+    .entree .cta:hover:after {
+        animation-name: anim_underline_survol;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes anim_underline_survol {
+        0% { 
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        49.8% {
+            transform: translateX(105%);
+            opacity: 1;
+        }
+        49.9% {
+            transform: translateX(105%);
+            opacity: 0;
+        }
+        50.1% {
+            transform: translateX(-105%);
+            opacity: 0;
+            
+        }
+        50.2% {
+            transform: translateX(-105%);
+            opacity: 1;
+        }
+        100% { 
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+}
+
+
+
+    
+@media screen and (max-width: 768px) {
+    .s40_bloc3_entrees {
+/*        margin:0 auto 10px;*/
+        flex-wrap: wrap;
+/*        width: 100%;*/
+        gap: 10px;
+    }
+    .s40_bloc3_entrees .desktop, .s40_bloc3_entrees>div.desktop {
+        display: none;
+    }    
+    .s40_bloc3_entrees .mobile {
+        display: block;
+    }
+    
+    .s40_bloc3_entrees .entree, .s40_bloc3_entrees .entree:first-of-type, .s40_bloc3_entrees .entree:last-of-type {
+        width: 100%;
+    }
+/*
+    .s40_bloc3_entrees .entree p {
+        margin: 0 auto .4em;
+        font-size: 6.810vw;
+        
+    }
+*/
+    
+    .s40_bloc3_entrees .entree p {
+        font-size: 7.022vw;
+        bottom: 12.246088193456615%;
+        left: 8.907vw;
+    }
+    .s40_bloc3_entrees .entree .cta {
+        bottom: 6.54551920341394%;
+        left: 8.907vw;
+        cursor: pointer;
+        font-size: 2.674vw;
+        background-color: transparent;
+        border-bottom: 1px solid #ffffff;
+        padding: 0 0 .1vw;
+    }
+
+
+    
+
+}   
+</style>
+<style>.crl_s40_b2 {
+  width:100%;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 76.92%;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+.crl_s40_b2_main a {
+        text-decoration: none !important;
+ }
+	
+.crl_s40_b2_main .espace_mobile {
+  display: none
+}
+	
+.crl_s40_b2_main {
+  position: relative;
+    width: calc(100% + 60px);
+    margin: 10px -30px 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
+}
+.crl_s40_b2_main img, .crl_s40_b2_main picture {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+.crl_s40_b2_main a:focus, .crl_s40_b2_main a:active, .crl_s40_b2_main a:link, .crl_s40_b2_main a:visited,}
+.crl_s40_b2_main a {
+  text-decoration: none;
+}
+.crl_s40_b2_main p, .crl_s40_b2_main h1, .crl_s40_b2_main h2 {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.crl_s40_b2_bold {
+  font-weight: 700;
+}
+
+.crl_s40_b2_light {
+  font-weight: 300;
+}
+
+.crl_s40_b2_upper {
+  text-transform: uppercase;
+}
+
+.crl_s40_b2_sup {
+  font-size: 60%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+.crl_s40_b2_linkglob {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.crl_s40_b2_bg {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.crl_s40_b2_txt {
+    position: absolute;
+    top: 79%;
+    
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.crl_s40_b2_txt_title {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.crl_s40_b2_txt_title .titre{
+      width: 100%;
+    /* left: 8.15625%; */
+    /* left: 6.646vw; */
+    top: 50%;
+    z-index: 10;
+    color: #000;
+    font-size: 2vw;
+    text-align: center;
+	font-weight: 550;
+}
+.crl_s40_b2_txt .crl_s40_b2_cta {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.885vw;
+    font-weight: 400;
+    color: #000000;
+    margin: 0px 10px 20px;
+    text-align: left;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.crl_s40_b2_txt .crl_s40_b2_cta:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.crl_s40_b2_txt .crl_s40_b2_cta:hover:after {
+    animation-name: anim_underline_survol;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes anim_underline_survol {
+    0% { 
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    49.8% {
+        transform: translateX(105%);
+        opacity: 1;
+        }
+    49.9% {
+        transform: translateX(105%);
+        opacity: 0;
+    }
+    50.1% {
+        transform: translateX(-105%);
+        opacity: 0;        
+    }
+    50.2% {
+        transform: translateX(-105%);
+        opacity: 1;
+    }
+    100% { 
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+
+	.crl_s40_b2_main {
+		width: calc(100% + 36px);
+		margin: 10px -18px 10px;
+	}
+	
+	.crl_s40_b2_main .espace_mobile {
+	  display: block
+	}
+	
+	.crl_s40_b2_txt_title {
+		position: relative;
+		width: 100%;
+		z-index: 1;
+	}
+    .crl_s40_b2_txt {
+        position: absolute;
+		top: 80%;
+		width: 100%;
+		gap: inherit;
+    }
+
+    .crl_s40_b2_txt p {
+        font-size: clamp(1rem, 0.066rem + 3.795vw, 2.308rem);
+    }
+
+    .crl_s40_b2_txt .crl_s40_b2_cta {
+        font-size: 2.674vw;
+		color: #000000;
+    }
+	.crl_s40_b2_txt .crl_s40_b2_cta:after {
+		background-color: #000000;
+	}
+    .crl_s40_b2_txt_barre {
+        width: clamp(0.077rem, 0.022rem + 0.223vw, 0.154rem);
+        height: clamp(3.077rem, 0.879rem + 8.929vw, 6.154rem);
+    }
+	
+	.crl_s40_b2_txt_title .titre{
+      	width: 100%;
+		/* left: 8.15625%; */
+		/* left: 6.646vw; */
+		top: 50%;
+		z-index: 10;
+		color: #000000;
+		font-size: 5vw;
+		text-align: center;
+	}
+
+}</style>
+<style>
+/* <(*o*)> */
+.s49_bloc_insta .absolute {
+    position: absolute;
+    }   
+.s49_bloc_insta img {
+    display: block;
+    width: 100%;
+    }   
+.s49_bloc_insta .desktop {
+    display: block;
+}    
+.s49_bloc_insta .mobile {
+    display: none;
+}    
+/* <(*o*)> */
+.s49_bloc_insta {
+    width: 69.726770642201835%;
+    margin:0 auto;
+	font-family:'Montserrat', Helvetica, Arial, sans-serif;
+    /*
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    */
+    overflow: hidden;
+    position: relative;
+}        
+/* <(*o*)> */
+.s49_bloc_insta .picto_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 112px;
+    margin: 30px auto 30px;
+}
+.s49_bloc_insta .picto_wrapper>a {
+/*    padding: 6px 25px;*/
+    padding: 6px 8px;
+    display: block;
+}
+/*
+.s49_bloc_insta .picto_wrapper>a:first-of-type {
+    border-right: 1px solid #d1aa65;
+}
+*/
+.s49_bloc_insta .picto_wrapper>a img {
+    width: 40px;
+}
+/* <(*o*)> */
+.s49_bloc_insta .desktop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+/*    padding: 0.921052631578947%;*/
+    padding: 8px;
+   /* background-color: #fafafa;*/
+}
+.s49_bloc_insta .desktop .entree {
+    width: 23.552631578947368%;
+}
+.s49_bloc_insta .entree {
+    position:relative;
+   overflow: hidden;
+}
+.s49_bloc_insta .desktop .entree img {
+    transition: transform .25s ease-in-out 0s;
+}
+.s49_bloc_insta .desktop .entree:hover img {
+    transform: scale(1.01);
+}
+/* <(*o*)> */  
+.insta-swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.insta-swiper-container .swiper-wrapper {
+    height: auto;
+}
+.insta-swiper-container .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+.insta-swiper-container .swiper-horizontal>.swiper-pagination-bullets, .insta-swiper-container .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-34px);
+    width: 68px;
+}
+.insta-swiper-container .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #d1aa65;
+}    
+  
+/* <(*o*)> */   
+    
+@media screen and (max-width: 990px) {
+    .s49_bloc_insta .desktop {
+        display: none;
+    }    
+    .s49_bloc_insta .mobile {
+        display: block;
+    }
+    .s49_bloc_insta {
+        width: 100%;
+    }
+}   
+</style>
+<meta name="google-site-verification" content="zMllVo3hbGgGIiT5xWtfCf3Yu2VwcX3B_ycGq9aZ4Xg" />
+<link rel="alternate" href="https://www.caroll.com/fr_fr/" hreflang="fr-FR" />
+<link rel="alternate" href="https://www.caroll.com/fr_ch/" hreflang="fr-CH" />
+<link rel="alternate" href="https://www.caroll.com/de_ch" hreflang="de-CH" />
+<link rel="alternate" href="https://www.caroll.com/es_es/" hreflang="es-ES" />
+<link rel="alternate" href="https://www.caroll.com/fr_be/" hreflang="fr-BE" />
+<link rel="alternate" href="https://www.caroll.com/nl_be" hreflang="nl-BE" />
+<link rel="alternate" href="https://www.caroll.com/it_it/" hreflang="it-IT" />
+<link rel="alternate" href="https://www.caroll.com/fr_lu/" hreflang="fr-LU" />
+<link rel="alternate" href="https://www.caroll.com/pt_pt/" hreflang="pt-PT" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/css/skin/skin.css" />
+<script type="text/javascript">
+    var pageContext = {"title":"Home page","type":"storefront","ns":"homepage"};
+//<![CDATA[
+    var tc_vars = JSON.parse('{"env_template":"homepage","env_work":"prod","env_brand":"crl","page_name":"e-boutique_officielle_caroll_–_vêtements_femme_et_accessoires_de_mode","page_cat1":"","page_cat2":"","page_cat3":"","page_cat4":""}');
+//]]>
+    var extendTc_vars = function () {
+        var extended = {};
+        var deep = false;
+        var i = 0;
+        var length = arguments.length;
+
+        if (Object.prototype.toString.call(arguments[0]) === '[object Boolean]') {
+            deep = arguments[0];
+            i++;
+        }
+
+        var merge = function (obj) {
+            for (var prop in obj) {
+                if (Object.prototype.hasOwnProperty.call(obj, prop)) {
+                    if (deep && Object.prototype.toString.call(obj[prop]) === '[object Object]') {
+                        extended[prop] = extend(true, extended[prop], obj[prop]);
+                    } else {
+                        extended[prop] = obj[prop];
+                    }
+                }
+            }
+        };
+
+        for (; i < length; i++) {
+            var obj = arguments[i];
+            merge(obj);
+        }
+
+        return extended;
+    };
+</script>
+<script type="text/javascript">
+    tc_vars = extendTc_vars(tc_vars, JSON.parse('{"env_language":"fr","env_country":"fr","env_channel":"desktop","env_currency":"eur","user_logged":"no"}'));
+    
+        var waitForDatalayer = function() {
+            if (typeof tc_vars !== "undefined") {
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.async = true;
+                script.id = 'tc_container';
+                script.src = '/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/v1696993838650/tagcommander/20230929/tc_Caroll_1.js'
+
+                var existingScript = document.getElementById(script.id);
+                if (existingScript) {
+                    existingScript.parentNode.removeChild(existingScript);
+                }
+
+                document.head.appendChild(script);
+            } else {
+                setTimeout(waitForDatalayer, 250);
+            }
+        };
+        waitForDatalayer();
+    
+    </script>
+<script type="application/javascript">
+        window.T2S_CONFIGURATION = {
+            RANKING_OPTION_ENABLED: true,
+            TRACKING_OPTION_ENABLED: false,
+            RECOMMENDATIONS_OPTION_ENABLED: true,
+            DEFAULT_SORTING_RULE_IF_EMPTY_COOKIE: 'Meilleures-ventes',
+            DEFAULT_SORTING_RULE_IF_FILLED_COOKIE: 'MERCH_MANUEL_CREATIONDATE_SKUCOVERAGE'
+        };
+    </script>
+<link rel="canonical" href="https://www.caroll.com/fr_fr/" />
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _analytics_enabled: "true",
+    _timeZone: "Europe/Paris",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    },
+    eventsIsEmpty: function() {
+        return 0 == dw.ac._events.length;
+    }
+};
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bcmj-CRL_FR_SFRA';
+CQuotient.realm = 'BCMJ';
+CQuotient.siteId = 'CRL_FR_SFRA';
+CQuotient.instanceType = 'prd';
+CQuotient.locale = 'fr_FR';
+CQuotient.fbPixelId = '__UNKNOWN__';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.cqeid='';
+CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
+/* Turn this on to test against Staging Einstein */
+/* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  var value = c.substring('cquid='.length,c.length);
+		  if (value) {
+		  	var split_value = value.split("|", 3);
+		  	if (split_value.length > 0) {
+			  CQuotient.cquid=split_value[0];
+		  	}
+		  	if (split_value.length > 1) {
+			  CQuotient.cqeid=split_value[1];
+		  	}
+		  	if (split_value.length > 2) {
+			  CQuotient.cqlid=split_value[2];
+		  	}
+		  }
+	  }
+	}
+}
+CQuotient.getCQCookieId = function () {
+	if(window.CQuotient.cqcid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqcid;
+};
+CQuotient.getCQUserId = function () {
+	if(window.CQuotient.cquid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cquid;
+};
+CQuotient.getCQHashedEmail = function () {
+	if(window.CQuotient.cqeid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqeid;
+};
+CQuotient.getCQHashedLogin = function () {
+	if(window.CQuotient.cqlid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqlid;
+};
+CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+try {
+	if (Object.prototype.toString.call(events) === "[object Array]") {
+		events.forEach(_trackASingleCQEvent);
+	} else {
+		CQuotient._trackASingleCQEvent(events);
+	}
+} catch(err) {}
+};
+CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+	if (event && event.id) {
+		if (event.type === dw.ac.EV_PRD_DETAIL) {
+			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+		} // not handling the other dw.ac.* events currently
+	}
+};
+CQuotient.trackViewProduct = function(/* Object */ cqParamData){
+	var cq_params = {};
+	cq_params.cookieId = CQuotient.getCQCookieId();
+	cq_params.userId = CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.product = cqParamData.product;
+	cq_params.realm = cqParamData.realm;
+	cq_params.siteId = cqParamData.siteId;
+	cq_params.instanceType = cqParamData.instanceType;
+	cq_params.locale = CQuotient.locale;
+	
+	if(CQuotient.sendActivity) {
+		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+	} else {
+		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+	}
+};
+/* ]]> */
+// -->
+</script>
+</head>
+<body>
+<div class="page" data-action="Default-Start" data-querystring>
+<header data-sticky-effect-enabled="true">
+
+<div class="experience-region experience-headerbanner"></div>
+<div class="header-banner slide-up d-none">
+<div id="content-banner" style="background-color:#00112e; padding: 10px 40px;">
+<span><a href="https://www.caroll.com/fr_fr/femme/caroll-days" style="color:#fff;display:block; text-align:center; font-size:14px;"><strong>CAROLL DAYS : Jusqu'à -40%* sur une sélection </strong></a>
+</span>
+<div class="button-close" style="display:block">
+<span class="bar" style="background-color:#fff;"></span>
+<span class="bar" style="background-color:#fff;"></span>
+</div>
+</div>
+<div class="close-button">
+<button type="button" class="close" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+</div>
+<nav role="navigation">
+<div class="header header-container">
+<div class="row bmnr-header">
+<div class="col-12">
+<div class="brand center">
+<h1>
+<a class="logo-home" href="/fr_fr/" title="Caroll logo">
+<img src="https://www.caroll.com/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dweb5467cb/images/logo.svg" alt="Caroll logo" loading="lazy">
+<span class="d-none">Caroll</span>
+</a>
+</h1>
+</div>
+<div class="navbar-header">
+<div class="pull-left">
+<button class="navbar-button btn open-nav" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<i class="icon-menu"></i>
+</button>
+<div class="menu-utility-left">
+<div class="search hidden-sm-down">
+<div class="site-search">
+<div class="header-search js-btn-open-search">
+<div class="header-search--icon">
+<i class="icon-search"></i>
+</div>
+<div class="header-search--text">
+<span>Recherche</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pull-right">
+<div class="menu-utility-right">
+<div class="store-selector hidden-sm-down text-center">
+<a href="https://www.caroll.com/fr_fr/nos-boutiques/" class="header-store-link">
+<i class="icon-location"></i>
+<span class="user-message menu-icon-label">Magasins</span>
+</a>
+<div class="popover popover-bottom not-connected popover-storelocator ">
+<div>
+<div>
+<h2 class="title">Nos magasins</h2>
+<div class="subtitle">Connectez-vous pour retrouver votre magasin favori</div>
+</div>
+<div class="omniconnect">
+<a class="btn btn-block btn-primary" href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show">Connectez-vous</a>
+</div>
+<div class="actions-separator">
+<div class="separator-line"></div>
+<span class="separator-or">Ou
+</span>
+</div>
+<a class="btn btn-block btn-secondary" href="https://www.caroll.com/fr_fr/nos-boutiques/">Trouver mon magasin</a>
+</div>
+</div>
+</div>
+<div class="user omniconnect">
+<a href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show" class="header-account-link" role="button" aria-label="Login to your account">
+<i class="icon-user"></i>
+<span class="user-message menu-icon-label"></span>
+</a>
+</div>
+<div class="minicart" data-action-url="/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Cart-MiniCartShow">
+<div class="minicart-total hide-link-med">
+<a class="minicart-link" href="https://www.caroll.com/fr_fr/Cart/" title="Cart 0 Items" aria-label="Cart 0 Items" aria-haspopup="true">
+<i class="icon-basket"></i>
+<span class="minicart-quantity">
+0
+</span>
+<span class="user-message menu-icon-label"></span>
+</a>
+</div>
+<div class="minicart-total hide-no-link">
+<i class="icon-basket"></i>
+<span class="minicart-quantity">
+0
+</span>
+</div>
+<div class="popover popover-bottom"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="main-menu">
+<div class="main-menu-wrapper">
+<div class="close-main-menu">
+<span>Fermer</span>
+<div class="icon-close-menu"></div>
+</div>
+<div class="burger-menu-header d-md-none">
+<div class="search-component">
+<div class="site-search">
+<div class="header-search js-btn-open-search">
+<div class="header-search--icon">
+<i class="icon-search"></i>
+</div>
+<div class="header-search--text">
+<span>Recherche</span>
+</div>
+</div>
+</div>
+</div>
+<div class="country-selector hidden-sm-down">
+<i class="icon-flag-fr"></i>
+</div>
+<div class="user-info user-info-no-authenticated omniconnect">
+<a href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show" class="mobile-user-info">
+<i class="icon-user"></i>
+<div class="user-message">Login</div>
+</a>
+</div>
+<div class="order-track-container" is-authenticated="false" csrf-token="d9c0-66YjjzwBBYOxEuE7GP3iGus7DnaDOLo8SSyIAZyJ11UGAO15ZCmJj3VPV5_pILBNGg3g7Q--Zry_S8VrNaYDhiq-howFhZSz5-BLZCkdda1cNgDD6aIZnNNZdcYtQZmzQPCV6SzZpzFnUDuZStyWYndAO7Eka7Fk_6QLm_FuSlOngo=" csrf-token-name="csrf_token" order-number-name="dwfrm_orderTrack_number" order-number-value email-name="dwfrm_orderTrack_email" email-value submit-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Order-TrackAjax">
+</div>
+<div class="minicart" data-action-url="/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Cart-MiniCartShow">
+<div class="minicart-total hide-link-med">
+<a class="minicart-link" href="https://www.caroll.com/fr_fr/Cart/" title="Cart 0 Items" aria-label="Cart 0 Items" aria-haspopup="true">
+<i class="icon-basket"></i>
+<span class="minicart-quantity">
+0
+</span>
+<span class="user-message menu-icon-label"></span>
+</a>
+</div>
+<div class="minicart-total hide-no-link">
+<i class="icon-basket"></i>
+<span class="minicart-quantity">
+0
+</span>
+</div>
+<div class="popover popover-bottom"></div>
+</div>
+</div>
+<div class="main-menu-nav-wrapper">
+<div class="main-menu-nav">
+<div class="menu-level top-level show" role="navigation">
+<ul class="menu-level-list" role="menu">
+<li class="list-item sub-level" role="presentation" style>
+<a href="/fr_fr/femme/caroll-days" id="caroll_days" role="menuitem" class="item-link">
+<span>
+<span style="color:#e74c3c;"><b>Caroll Days</b></span></span>
+</a>
+<div class="menu-level menu-level-last  threecolumnstwopushs">
+<div class="mobile-level-nav d-md-none">
+<button class="btn go-to-prev-level">
+<i class="icon-arrow-full-left"></i>
+<a href="/fr_fr/femme/caroll-days" id="caroll_days" role="menuitem" class="item-link">
+<span>
+<span style="color:#e74c3c;"><b>Caroll Days</b></span></span>
+</a>
+</button>
+<button data-href="/fr_fr/femme/caroll-days" class="btn go-to-category">
+Voir tout
+</button>
+</div>
+<ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="caroll_days">
+<div class="last-level-items">
+<div class="last-level-col">
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/nouvelles-demarques" id="carolldays_nouvelles_demarques" role="menuitem" class="item-link">
+<span>
+Nouvelles remises<span style="color:#E00A19;"><sup> NEW</sup></span></span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/pulls-et-gilets" id="caroll_days_pulls_gilets" role="menuitem" class="item-link">
+<span>
+Pulls et Gilets</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/pantalons" id="caroll_days_pantalons" role="menuitem" class="item-link">
+<span>
+Pantalons</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/manteaux-et-trenchs" id="caroll_days_manteaux" role="menuitem" class="item-link">
+<span>
+Manteaux et Trenchs</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/blouses-et-chemises" id="caroll_days_blouses_chemises" role="menuitem" class="item-link">
+<span>
+Blouses et Chemises</span>
+</a>
+</div>
+<div class="last-level-col">
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/robes" id="caroll_days_robes" role="menuitem" class="item-link">
+<span>
+Robes</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/vestes-et-blousons" id="caroll_days_vestes" role="menuitem" class="item-link">
+<span>
+Vestes et Blousons</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/jupes" id="caroll_days_jupes" role="menuitem" class="item-link">
+<span>
+Jupes</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/tops-et-t-shirts" id="caroll_days_tops_tshirts" role="menuitem" class="item-link">
+<span>
+Tops et T-shirts</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/sacs-et-accessoires" id="caroll_days_sacs_accessoires" role="menuitem" class="item-link">
+<span>
+Sacs et Accessoires</span>
+</a>
+</div>
+<div class="last-level-col">
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/selection-caroll-days-a--40-" id="carolldays_40" role="menuitem" class="item-link">
+<span>
+<span style="color:#e74c3c;"><b>Sélection à -40%</b></span></span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/selection-caroll-days-a--30-" id="carolldays_30" role="menuitem" class="item-link">
+<span>
+<span style="color:#e74c3c;"><b>Sélection à -30%</b></span></span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/caroll-days/selection-caroll-days-a--20-" id="carolldays_20" role="menuitem" class="item-link">
+<span>
+<span style="color:#e74c3c;"><b>Sélection à -20%</b></span></span>
+</a>
+</div>
+</div>
+<div class="last-level-pushs">
+<div class="pushs-template two-pushs">
+<div class="push-container">
+<div class="push-item">
+<p><a href="https://www.caroll.com/fr_fr/femme/caroll-days"><img alt height="205" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dwcef89f42/menu/Push_Menu_520x260FR_CD.jpg" title width="410" /></a></p>
+</div>
+</div>
+</div>
+</div>
+</ul>
+</div>
+</li>
+<li class="list-item" role="presentation" style>
+<a href="/fr_fr/femme/nouveautes" id="nouveautes" role="menuitem" class="item-link">
+<span>
+<span style="color:#0D1D2C;">Nouveautés</span></span>
+</a>
+</li>
+<li class="list-item sub-level" role="presentation" style>
+<a href="/fr_fr/femme/pret-a-porter" id="CF_010000" role="menuitem" class="item-link">
+<span>
+Prêt-à-porter</span>
+</a>
+<div class="menu-level menu-level-last  threecolumnstwopushs">
+<div class="mobile-level-nav d-md-none">
+<button class="btn go-to-prev-level">
+<i class="icon-arrow-full-left"></i>
+<a href="/fr_fr/femme/pret-a-porter" id="CF_010000" role="menuitem" class="item-link">
+<span>
+Prêt-à-porter</span>
+</a>
+</button>
+<button data-href="/fr_fr/femme/pret-a-porter" class="btn go-to-category">
+Voir tout
+</button>
+</div>
+<ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="CF_010000">
+<div class="last-level-items">
+<div class="last-level-col">
+<li class="list-item sub-level" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans" id="SCF_010600" role="menuitem" class="item-link">
+<span>
+Pantalons et Jeans</span>
+<i class="icon-arrow-full-right d-md-none"></i>
+</a>
+<div class="menu-level no-slide-level">
+<div class="mobile-level-nav d-md-none">
+<button class="btn go-to-prev-level">
+<i class="icon-arrow-full-left"></i>
+<a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans" id="SCF_010600" role="menuitem" class="item-link">
+<span>
+Pantalons et Jeans</span>
+</a>
+</button>
+<button data-href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans" class="btn go-to-category">
+Voir tout
+</button>
+</div>
+<ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_010600">
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans/pantalons" id="TPF_010601" role="menuitem" class="item-link">
+<span>
+Pantalons</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans/jeans" id="TPF_010602" role="menuitem" class="item-link">
+<span>
+Jeans</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans/shorts" id="TPF_010604" role="menuitem" class="item-link">
+<span>
+Shorts</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans/combinaisons" id="TPF_010603" role="menuitem" class="item-link">
+<span>
+Combinaisons</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="list-item sub-level" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/pulls-et-gilets" id="SCF_011000" role="menuitem" class="item-link">
+<span>
+Pulls et Gilets</span>
+<i class="icon-arrow-full-right d-md-none"></i>
+</a>
+<div class="menu-level no-slide-level">
+<div class="mobile-level-nav d-md-none">
+<button class="btn go-to-prev-level">
+<i class="icon-arrow-full-left"></i>
+<a href="/fr_fr/femme/pret-a-porter/pulls-et-gilets" id="SCF_011000" role="menuitem" class="item-link">
+<span>
+Pulls et Gilets</span>
+</a>
+</button>
+<button data-href="/fr_fr/femme/pret-a-porter/pulls-et-gilets" class="btn go-to-category">
+Voir tout
+</button>
+</div>
+<ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_011000">
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/pulls-et-gilets/pulls" id="TPF_011002" role="menuitem" class="item-link">
+<span>
+Pulls</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/pulls-et-gilets/gilets" id="TPF_011001" role="menuitem" class="item-link">
+<span>
+Gilets</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/pulls-et-gilets/ponchos" id="TPF_011003" role="menuitem" class="item-link">
+<span>
+Ponchos</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="list-item sub-level" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs" id="SCF_010900" role="menuitem" class="item-link">
+<span>
+Manteaux et Trenchs</span>
+<i class="icon-arrow-full-right d-md-none"></i>
+</a>
+<div class="menu-level no-slide-level">
+<div class="mobile-level-nav d-md-none">
+<button class="btn go-to-prev-level">
+<i class="icon-arrow-full-left"></i>
+<a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs" id="SCF_010900" role="menuitem" class="item-link">
+<span>
+Manteaux et Trenchs</span>
+</a>
+</button>
+<button data-href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs" class="btn go-to-category">
+Voir tout
+</button>
+</div>
+<ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_010900">
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs/manteaux" id="TPF_010901" role="menuitem" class="item-link">
+<span>
+Manteaux</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs/trenchs" id="TPF_010902" role="menuitem" class="item-link">
+<span>
+Trenchs</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs/parkas" id="TPF_010904" role="menuitem" class="item-link">
+<span>
+Parkas</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs/doudounes" id="TPF_010903" role="menuitem" class="item-link">
+<span>
+Doudounes</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs/fausses-fourrures" id="TPF_010905" role="menuitem" class="item-link">
+<span>
+Fausses fourrures</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</div>
+<div class="last-level-col">
+<li class="list-item sub-level" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/vestes-et-blousons" id="SCF_010800" role="menuitem" class="item-link">
+<span>
+Vestes et Blousons</span>
+<i class="icon-arrow-full-right d-md-none"></i>
+</a>
+<div class="menu-level no-slide-level">
+<div class="mobile-level-nav d-md-none">
+<button class="btn go-to-prev-level">
+<i class="icon-arrow-full-left"></i>
+<a href="/fr_fr/femme/pret-a-porter/vestes-et-blousons" id="SCF_010800" role="menuitem" class="item-link">
+<span>
+Vestes et Blousons</span>
+</a>
+</button>
+<button data-href="/fr_fr/femme/pret-a-porter/vestes-et-blousons" class="btn go-to-category">
+Voir tout
+</button>
+</div>
+<ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_010800">
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/vestes-et-blousons/vestes" id="TPF_010804" role="menuitem" class="item-link">
+<span>
+Vestes</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/vestes-et-blousons/blousons" id="TPF_010805" role="menuitem" class="item-link">
+<span>
+Blousons</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/vestes-et-blousons/blazers" id="TPF_010801" role="menuitem" class="item-link">
+<span>
+Blazers</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/tailleurs" id="tailleurs" role="menuitem" class="item-link">
+<span>
+Tailleurs</span>
+</a>
+<li class="list-item sub-level" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/blouses-et-chemises" id="SCF_010200" role="menuitem" class="item-link">
+<span>
+Blouses et Chemises</span>
+<i class="icon-arrow-full-right d-md-none"></i>
+</a>
+<div class="menu-level no-slide-level">
+<div class="mobile-level-nav d-md-none">
+<button class="btn go-to-prev-level">
+<i class="icon-arrow-full-left"></i>
+<a href="/fr_fr/femme/pret-a-porter/blouses-et-chemises" id="SCF_010200" role="menuitem" class="item-link">
+<span>
+Blouses et Chemises</span>
+</a>
+</button>
+<button data-href="/fr_fr/femme/pret-a-porter/blouses-et-chemises" class="btn go-to-category">
+Voir tout
+</button>
+</div>
+<ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_010200">
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/blouses-et-chemises/blouses" id="TPF_010201" role="menuitem" class="item-link">
+<span>
+Blouses</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/blouses-et-chemises/chemises" id="TPF_010202" role="menuitem" class="item-link">
+<span>
+Chemises</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/robes" id="SCF_010100" role="menuitem" class="item-link">
+<span>
+Robes</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/tops-et-t-shirts" id="SCF_010300" role="menuitem" class="item-link">
+<span>
+Tops et T-shirts</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/jupes" id="SCF_010400" role="menuitem" class="item-link">
+<span>
+Jupes</span>
+</a>
+</div>
+<div class="last-level-col">
+<li class="list-item sub-level" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/nos-selections" id="nos_selections" role="menuitem" class="item-link no-clickable">
+<span>
+Nos sélections</span>
+<i class="icon-arrow-full-right d-md-none"></i>
+</a>
+<div class="menu-level no-slide-level">
+<div class="mobile-level-nav d-md-none">
+<button class="btn go-to-prev-level">
+<i class="icon-arrow-full-left"></i>
+<a href="/fr_fr/femme/pret-a-porter/nos-selections" id="nos_selections" role="menuitem" class="item-link">
+<span>
+Nos sélections</span>
+</a>
+</button>
+<button data-href="/fr_fr/femme/pret-a-porter/nos-selections" class="btn go-to-category">
+Voir tout
+</button>
+</div>
+<ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="nos_selections">
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/nos-selections/nos-cachemires" id="cachemire" role="menuitem" class="item-link">
+<span>
+Nos Cachemires<span style="color:#E00A19;"><sup> NEW</sup></span></span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/nos-selections/at-work" id="caroll-at-work" role="menuitem" class="item-link">
+<span>
+At Work</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/nos-selections/denim" id="denim" role="menuitem" class="item-link">
+<span>
+Denim</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/nos-selections/soie" id="soie" role="menuitem" class="item-link">
+<span>
+Soie</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/nos-selections/collection-engagee" id="collection_engagee" role="menuitem" class="item-link">
+<span>
+Collection Engagée</span>
+</a>
+</li>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/pret-a-porter/nos-selections/nos-indispensables" id="nos_indispensables" role="menuitem" class="item-link">
+<span>
+Nos indispensables</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</div>
+</div>
+<div class="last-level-pushs">
+<div class="pushs-template two-pushs">
+<div class="push-container">
+<div class="push-item">
+<p><a href="https://www.caroll.com/fr_fr/femme/caroll-days"><img alt height="160" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dwcef89f42/menu/Push_Menu_520x260FR_CD.jpg" title width="320" /></a></p>
+</div>
+<div class="push-item">
+<p><a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/nos-selections/collection-engagee"><img alt height="160" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw6b167195/menu/Push_Menu_520x260OCTR.jpg" title width="320" /></a></p>
+</div>
+</div>
+</div>
+</div>
+</ul>
+</div>
+</li>
+<li class="list-item sub-level" role="presentation" style>
+<a href="/fr_fr/femme/sacs-et-accessoires" id="CF_020000" role="menuitem" class="item-link">
+<span>
+Sacs et Accessoires</span>
+</a>
+<div class="menu-level menu-level-last  twocolumnstwopushs">
+<div class="mobile-level-nav d-md-none">
+<button class="btn go-to-prev-level">
+<i class="icon-arrow-full-left"></i>
+<a href="/fr_fr/femme/sacs-et-accessoires" id="CF_020000" role="menuitem" class="item-link">
+<span>
+Sacs et Accessoires</span>
+</a>
+</button>
+<button data-href="/fr_fr/femme/sacs-et-accessoires" class="btn go-to-category">
+Voir tout
+</button>
+</div>
+<ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="CF_020000">
+<div class="last-level-items">
+<div class="last-level-col">
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/sacs-et-accessoires/sacs" id="SCF_020100" role="menuitem" class="item-link">
+<span>
+Sacs</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/sacs-et-accessoires/chaussures" id="SCF_020200" role="menuitem" class="item-link">
+<span>
+Chaussures</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/sacs-et-accessoires/foulards-et-echarpes" id="SCF_020500" role="menuitem" class="item-link">
+<span>
+Foulards et Echarpes</span>
+</a>
+</div>
+<div class="last-level-col">
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/sacs-et-accessoires/ceintures" id="SCF_020300" role="menuitem" class="item-link">
+<span>
+Ceintures</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/sacs-et-accessoires/bijoux" id="SCF_020400" role="menuitem" class="item-link">
+<span>
+Bijoux</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="/fr_fr/femme/sacs-et-accessoires/autres-accessoires" id="SCF_020600" role="menuitem" class="item-link">
+<span>
+Autres accessoires</span>
+</a>
+</div>
+<div class="last-level-col">
+</div>
+</div>
+<div class="last-level-pushs">
+<div class="pushs-template two-pushs">
+<div class="push-container">
+<div class="push-item">
+<p><a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/nos-selections/collection-engagee"><img alt height="160" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw6b167195/menu/Push_Menu_520x260OCTR.jpg" title width="320" /></a></p>
+</div>
+</div>
+</div>
+</div>
+</ul>
+</div>
+</li>
+<li class="list-item sub-level" role="presentation" style>
+<a href="https://www.caroll.com/fr_fr/lamarque.html" id="lamarque" role="menuitem" class="item-link">
+<span>
+La Marque</span>
+</a>
+<div class="menu-level menu-level-last  onecolumnfourpushs">
+<div class="mobile-level-nav d-md-none">
+<button class="btn go-to-prev-level">
+<i class="icon-arrow-full-left"></i>
+<a href="https://www.caroll.com/fr_fr/lamarque.html" id="lamarque" role="menuitem" class="item-link">
+<span>
+La Marque</span>
+</a>
+</button>
+<button data-href="https://www.caroll.com/fr_fr/lamarque.html" class="btn go-to-category">
+Voir tout
+</button>
+</div>
+<ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="lamarque">
+<div class="last-level-items">
+<div class="last-level-col">
+<li class="list-item" role="presentation">
+<a href="https://www.caroll.com/fr_fr/lamarque.html" id="la-marque-caroll" role="menuitem" class="item-link">
+<span>
+Notre univers</span>
+</a>
+<li class="list-item" role="presentation">
+<a href="https://www.caroll.com/fr_fr/caroll-associations.html" id="caroll-association" role="menuitem" class="item-link">
+<span>
+Caroll Soutient</span>
+</a>
+</div>
+<div class="last-level-col">
+</div>
+<div class="last-level-col">
+</div>
+</div>
+<div class="last-level-pushs">
+<div class="pushs-template four-push">
+<div class="push-container">
+<div class="push-item">
+<p><a href="https://www.caroll.com/fr_fr/lamarque.html"><img alt height="175" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dwfcab2486/menu/test-page-marque.png" title width="350" /></a></p>
+</div>
+<div class="push-item">
+<p><a href="https://www.caroll.com/fr_fr/caroll-associations.html"><img alt height="175" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw747c952a/test-page-marque-2.png" title width="350" /></a></p>
+</div>
+</div>
+</div>
+</div>
+</ul>
+</div>
+</li>
+</ul>
+<div class="mobile-menu-link d-md-none">
+<ul>
+<li>
+<a href="https://www.caroll.com/fr_fr/Cart/"><span class="icon icon-basket"></span> Panier</a>
+</li>
+<li>
+<a href="https://www.caroll.com/fr_fr/nos-boutiques/"><span class="icon icon-location"></span> Trouver ma boutique</a>
+</li>
+<li>
+<li class="footer-links-no-auth"><a href><span class="icon icon-user-no-auth"></span> Compte</a>
+</li>
+</ul>
+</div>
+<div class="user-info d-md-none">
+<div class="user-info user-info-no-authenticated omniconnect">
+<a href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show" class="mobile-user-info">
+<i class="icon-user"></i>
+<div class="user-message">Login</div>
+</a>
+</div>
+<div class="order-track-container" is-authenticated="false" csrf-token="nvxZWaaQnuDMBfEqtoI43ba4rtg2RwQgja79jEsEKOwxGC520F6rTnGYp3VBNFBdn8Ryg16nWwzNt4BNu_hTh4x35nMQFJS1zIWLOXNpc_nxjTOmJDETrAFAEBJlTsFSKz_7NZNm9gNHc07nYxzT4m3k4YjmxIGdG7Du96Dq5eEbqEYq_0E=" csrf-token-name="csrf_token" order-number-name="dwfrm_orderTrack_number" order-number-value email-name="dwfrm_orderTrack_email" email-value submit-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Order-TrackAjax">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="search-mobile header-container d-sm-none">
+<div class="site-search">
+<div class="header-search js-btn-open-search">
+<div class="header-search--icon">
+<i class="icon-search"></i>
+</div>
+<div class="header-search--text">
+<span>Recherche</span>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="search-form-container">
+<div class="search-form-wrapper" suggest="true">
+<span class="search-callout-message">
+Bonjour, que recherchez-vous ?
+</span>
+<form role="search" action="/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Search-Show" method="get" name="simpleSearch" class="search-form">
+<fieldset>
+<label class="visually-hidden" for="q">global.searchcatalog</label>
+<i class="icon-search"></i>
+<input type="text" id="q" name="q" value placeholder="Rechercher" data-urlattribute="/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/SearchServices-GetSuggestions" />
+<input type="hidden" name="lang" value />
+<button type="submit" class="btn simple-search-btn">Voir</button>
+<div class="last-search-terms">
+<ul class="last-search-terms-list">
+<li class="list-item label-item">
+<span>
+Vos derni&egrave;res recherches</span>
+<div class="delete-history">
+<span>
+Effacer
+</span>
+</div>
+</li>
+</ul>
+</div>
+</fieldset>
+</form>
+</div>
+<div class="slot-global-nohits">
+<div>
+<div class="nohits-keyword-tendance">
+<span>Nous vous recommandons :</span>
+<div class="nohits-keyword-container">
+<a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/manteaux-et-trenchs" class="keyword-item">Trench et manteaux</a>
+<a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/pantalons-et-jeans" class="keyword-item">Pantalons</a>
+<a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/pulls-et-gilets/ponchos" class="keyword-item">Poncho</a>
+<a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/robes" class="keyword-item">Robes</a>
+<a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/pulls-et-gilets" class="keyword-item">Pulls</a>
+<a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/vestes-et-blousons" class="keyword-item">Vestes</a>
+<a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/jupes" class="keyword-item">Jupes</a>
+</div>
+</div>
+</div>
+<div class="swiper nohits-slider-category init-swiper" swiper-loop="false" swiper-slides-per-view="2.5" swiper-slides-per-view--md="4" swiper-space-between="15" swiper-space-between--md="30"><span>Si vous ne trouvez pas ce que vous cherchez, laissez-nous vous aider !</span>
+<div class="swiper-wrapper nohits-slider-container"><a class="swiper-slide nohits-slide" href="https://www.caroll.com/fr_fr/femme/caroll-days" title="title"><img alt src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw8e9fb255/push_search/Push%20SearchFR_CD.jpg" title /> </a> <a class="swiper-slide nohits-slide" href="https://www.caroll.com/fr_fr/femme/pret-a-porter/nos-selections/collection-engagee" title="title"> <img alt src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw97fec3a5/push_search/Push%20SearchOCTR.jpg" title /> </a> <a class="swiper-slide nohits-slide" href="https://www.caroll.com/fr_fr/femme/pret-a-porter" title="title"> <img alt src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw72d230e5/push_search/PUSH_15%25%20NEWS%20LETTER_%20FR%20%28003%29.jpg" title /> </a></div>
+</div>
+</div>
+<button type="button" class="btn btn-link js-btn-close-search"><i class="icon-close" aria-hidden="true"></i></button>
+<div class="lazy-content-T2S" data-url="/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Target2Sell-GetRecommend?t2sContext=2000&amp;listProductsResult="></div>
+</div>
+<div role="main" id="maincontent">
+<div class="storepage" id="homepage">
+<div class="container">
+<div class="row">
+<div class=" col-12"><div class="experience-component experience-commerce_assets-html">
+<div class="crl_s40_b1_main">
+
+<div class="crl_s40_b1">
+<div class="crl_s40_b1_bg">
+<picture>
+<source srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/cover/home_05oct_b1.jpg" media="(min-width: 769px)">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/cover/home_05oct_b1_mob.jpg" alt>
+</picture>
+</div>
+<div class="crl_s40_b1_txt">
+<div class="crl_s40_b1_txt_title">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/cover/home_05oct_b1_wording.svg" alt="nouveautes">
+<p class="titre">Jusqu’à <strong>-40%*</strong><br>sur une sélection</p>
+</div>
+<a class="crl_s40_b1_cta" href="/fr_fr/femme/caroll-days" target="_self">d&eacute;couvrir la s&eacute;lection</a>
+<a class="crl_s40_b1_linkglob" href="/fr_fr/femme/caroll-days" target="_self"></a>
+</div>
+<a class="crl_s40_b1_linkglob" href="/fr_fr/femme/caroll-days" target="_self"></a>
+</div>
+</div></div><div class="experience-component experience-commerce_assets-html">
+<div class="s40_bloc3_entrees">
+<a href="/fr_fr/femme/caroll-days/pulls-et-gilets" class="entree entree1">
+<p class="absolute">Pulls<br>Jusqu’&agrave; -40%*</p>
+<div class="cta absolute">
+D&eacute;couvrir la s&eacute;lection
+</div>
+<picture>
+<source media="(max-width: 768px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/home_05oct_b2_01_mob.jpg">
+<source media="(min-width: 769px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/home_05oct_b2_01.jpg">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/home_05oct_b2_01.jpg" alt loading="lazy">
+</picture>
+</a>
+<a href="/fr_fr/femme/caroll-days/pantalons" class="entree entree2">
+<p class="absolute">Pantalons<br>Jusqu’&agrave; -40%*</p>
+<div class="cta absolute">
+D&eacute;couvrir la s&eacute;lection
+</div>
+<picture>
+<source media="(max-width: 768px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/home_05oct_b2_02_mob.jpg">
+<source media="(min-width: 769px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/home_05oct_b2_02.jpg">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/home_05oct_b2_02.jpg" alt loading="lazy">
+</picture>
+</a>
+<a href="/fr_fr/femme/caroll-days/blouses-et-chemises" class="entree entree3">
+<p class="absolute">Chemises<br>Jusqu’&agrave; -40%*</p>
+<div class="cta absolute">
+D&eacute;couvrir la s&eacute;lection
+</div>
+<picture>
+<source media="(max-width: 768px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/home_05oct_b2_03_mob.jpg">
+<source media="(min-width: 769px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/home_05oct_b2_03.jpg">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/home_05oct_b2_03.jpg" alt loading="lazy">
+</picture>
+</a>
+</div>
+</div><div class="experience-component experience-commerce_assets-html">
+<div class="crl_s40_b2_main">
+
+<div class="crl_s40_b2">
+<div class="crl_s40_b2_bg">
+<picture>
+<source srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/home_02oct_b2.jpg" media="(min-width: 769px)">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/home_02oct_b2_mob.jpg" alt>
+</picture>
+</div>
+<div class="crl_s40_b2_txt">
+<div class="crl_s40_b2_txt_title">
+<p class="titre">Caroll s’engage pour<br class="espace_mobile"> Octobre Rose</p>
+</div>
+<a class="crl_s40_b2_cta" href="/fr_fr/femme/pret-a-porter/nos-selections/collection-engagee" target="_self">D&eacute;couvrir le foulard</a>
+<a class="crl_s40_b2_linkglob" href="/fr_fr/femme/pret-a-porter/nos-selections/collection-engagee" target="_self"></a>
+</div>
+<a class="crl_s40_b2_linkglob" href="/fr_fr/femme/pret-a-porter/nos-selections/collection-engagee" target="_self"></a>
+</div>
+</div></div><div class="experience-component experience-commerce_assets-html">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.1/swiper-bundle.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.1/swiper-bundle.min.js"></script>
+<div class="s49_bloc_insta">
+<div class="picto_wrapper">
+<a href="https://www.instagram.com/carollparis/" target="_blank">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/pushinsta_picto_insta_v2.png">
+</a>
+<a href="https://www.facebook.com/carollparis" target="_blank">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/pushinsta_picto_fb_v2.png">
+</a>
+</div>
+<div class="desktop">
+<a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
+<picture>
+<source media="(min-width: 769px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_02oct_insta_01.jpg">
+<img src alt loading="lazy">
+</picture>
+</a>
+<a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
+<picture>
+<source media="(min-width: 769px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_02oct_insta_02.jpg">
+<img src alt loading="lazy">
+</picture>
+</a>
+<a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
+<picture>
+<source media="(min-width: 769px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_02oct_insta_03.jpg">
+<img src alt loading="lazy">
+</picture>
+</a>
+<a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
+<picture>
+<source media="(min-width: 769px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_02oct_insta_04.jpg">
+<img src alt loading="lazy">
+</picture>
+</a>
+</div>
+<div class="mobile">
+
+<div class="insta-swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<a href="https://www.instagram.com/carollparis/" class="entree entree1" target="_blank">
+<picture>
+<source media="(max-width: 768.98px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_02oct_insta_01.jpg">
+<img src alt>
+</picture>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="https://www.instagram.com/carollparis/" class="entree entree2" target="_blank">
+<picture>
+<source media="(max-width: 768.98px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_02oct_insta_02.jpg">
+<img src alt>
+</picture>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="https://www.instagram.com/carollparis/" class="entree entree3" target="_blank">
+<picture>
+<source media="(max-width: 768.98px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_02oct_insta_03.jpg">
+<img src alt>
+</picture>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="https://www.instagram.com/carollparis/" class="entree entree4" target="_blank">
+<picture>
+<source media="(max-width: 768.98px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_02oct_insta_04.jpg">
+<img src alt>
+</picture>
+</a>
+</div>
+</div>
+<div class="swiper-pagination-insta"></div>
+</div>
+
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+<div class="custom-carousel">
+<input type="hidden" name="sp" value="V3BNQH97QFBOXA-1000-45" />
+<input type="hidden" name="pID" value="1000" />
+<h2>Nos suggestions</h2>
+<div class="custom-carousel-swiper-wrapper">
+<div class="swiper init-swiper" swiper-slides-per-view--lg="5.0" centered-slides="true" swiper-space-between="0" swiper-navigation-outside="true">
+<div class="swiper-wrapper">
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzQwMDA0NDYxMDM3AgACVjRkZTZlOTNiLTQ2YTItNDlkOC05NWIxLWQ4NDIxY2QxZDg1NS0lN0IlN0QAAAJIZGNiODJkYTktNjgzZi0xMWVlLWI1NjUtMTg2NmRhYThmZDBi" data-url="https://www.caroll.com/fr_fr/chemise-jessica1-bleu-ciel-femme-35967740004461037.html">
+<div class="product-tile" data-pid="35967740004461037">
+<a class="link" href="/fr_fr/chemise-jessica1-bleu-ciel-femme-35967740004461037.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc774989f/chemise-jessica1-bleu-ciel-femme-vue1-35967740004461037.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc774989f/chemise-jessica1-bleu-ciel-femme-vue1-35967740004461037.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc774989f/chemise-jessica1-bleu-ciel-femme-vue1-35967740004461037.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc774989f/chemise-jessica1-bleu-ciel-femme-vue1-35967740004461037.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc774989f/chemise-jessica1-bleu-ciel-femme-vue1-35967740004461037.jpg?sw=400&amp;sh=598" alt="Chemise jessica1 bleu ciel femme" title="chemise jessica1 bleu ciel femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+Chemise jessica1 bleu ciel femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="45.00">
+45,00 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="75.00">
+<span class="sr-only">
+Price reduced from
+</span>
+75,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-40%">
+-40%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzQwMDAyNTMxMDE0AgICVjRkZTZlOTNiLTQ2YTItNDlkOC05NWIxLWQ4NDIxY2QxZDg1NS0lN0IlN0QAAAJIZGNiODJkYTktNjgzZi0xMWVlLWI1NjUtMTg2NmRhYThmZDBi" data-url="https://www.caroll.com/fr_fr/chemise-calissa-ivoire-femme-35967740002531014.html">
+<div class="product-tile" data-pid="35967740002531014">
+<a class="link" href="/fr_fr/chemise-calissa-ivoire-femme-35967740002531014.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwf2b81b82/chemise-calissa-ivoire-femme-vue1-35967740002531014.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwf2b81b82/chemise-calissa-ivoire-femme-vue1-35967740002531014.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwf2b81b82/chemise-calissa-ivoire-femme-vue1-35967740002531014.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwf2b81b82/chemise-calissa-ivoire-femme-vue1-35967740002531014.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwf2b81b82/chemise-calissa-ivoire-femme-vue1-35967740002531014.jpg?sw=400&amp;sh=598" alt="Chemise calissa ivoire femme" title="chemise calissa ivoire femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+Chemise calissa ivoire femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="48.00">
+48,00 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="80.00">
+<span class="sr-only">
+Price reduced from
+</span>
+80,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-40%">
+-40%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzQwMDA0ODAxMDIyAgQCVjRkZTZlOTNiLTQ2YTItNDlkOC05NWIxLWQ4NDIxY2QxZDg1NS0lN0IlN0QAAAJIZGNiODJkYTktNjgzZi0xMWVlLWI1NjUtMTg2NmRhYThmZDBi" data-url="https://www.caroll.com/fr_fr/pantalon-pgabin3-noir-femme-35967740004801022.html">
+<div class="product-tile" data-pid="35967740004801022">
+<a class="link" href="/fr_fr/pantalon-pgabin3-noir-femme-35967740004801022.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8f575e98/pantalon-pgabin3-noir-femme-vue1-35967740004801022.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8f575e98/pantalon-pgabin3-noir-femme-vue1-35967740004801022.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8f575e98/pantalon-pgabin3-noir-femme-vue1-35967740004801022.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8f575e98/pantalon-pgabin3-noir-femme-vue1-35967740004801022.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8f575e98/pantalon-pgabin3-noir-femme-vue1-35967740004801022.jpg?sw=400&amp;sh=598" alt="Pantalon pgabin3 noir femme" title="pantalon pgabin3 noir femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+Pantalon pgabin3 noir femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="63.00">
+63,00 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="90.00">
+<span class="sr-only">
+Price reduced from
+</span>
+90,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-30%">
+-30%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzQwMDA1OTkxMDQ3AgYCVjRkZTZlOTNiLTQ2YTItNDlkOC05NWIxLWQ4NDIxY2QxZDg1NS0lN0IlN0QAAAJIZGNiODJkYTktNjgzZi0xMWVlLWI1NjUtMTg2NmRhYThmZDBi" data-url="https://www.caroll.com/fr_fr/chemisier-cessy-bleu-marine-femme-35967740005991047.html">
+<div class="product-tile" data-pid="35967740005991047">
+<a class="link" href="/fr_fr/chemisier-cessy-bleu-marine-femme-35967740005991047.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw32f35dd5/chemisier-cessy-bleu-marine-femme-vue1-35967740005991047.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw32f35dd5/chemisier-cessy-bleu-marine-femme-vue1-35967740005991047.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw32f35dd5/chemisier-cessy-bleu-marine-femme-vue1-35967740005991047.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw32f35dd5/chemisier-cessy-bleu-marine-femme-vue1-35967740005991047.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw32f35dd5/chemisier-cessy-bleu-marine-femme-vue1-35967740005991047.jpg?sw=400&amp;sh=598" alt="Chemisier cessy bleu marine femme" title="chemisier cessy bleu marine femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+Chemisier cessy bleu marine femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="68.00">
+68,00 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="85.00">
+<span class="sr-only">
+Price reduced from
+</span>
+85,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-20%">
+-20%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzQwMDA1NTExMjAxAggCVjRkZTZlOTNiLTQ2YTItNDlkOC05NWIxLWQ4NDIxY2QxZDg1NS0lN0IlN0QAAAJIZGNiODJkYTktNjgzZi0xMWVlLWI1NjUtMTg2NmRhYThmZDBi" data-url="https://www.caroll.com/fr_fr/chemise-caby-bordeaux-femme-35967740005511201.html">
+<div class="product-tile" data-pid="35967740005511201">
+<a class="link" href="/fr_fr/chemise-caby-bordeaux-femme-35967740005511201.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8b4122d1/chemise-caby-bordeaux-femme-vue1-35967740005511201.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8b4122d1/chemise-caby-bordeaux-femme-vue1-35967740005511201.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8b4122d1/chemise-caby-bordeaux-femme-vue1-35967740005511201.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8b4122d1/chemise-caby-bordeaux-femme-vue1-35967740005511201.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8b4122d1/chemise-caby-bordeaux-femme-vue1-35967740005511201.jpg?sw=400&amp;sh=598" alt="Chemise caby bordeaux femme" title="chemise caby bordeaux femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+Chemise caby bordeaux femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="64.00">
+64,00 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="80.00">
+<span class="sr-only">
+Price reduced from
+</span>
+80,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-20%">
+-20%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzQwMDAyNDMxMDIyAgoCVjRkZTZlOTNiLTQ2YTItNDlkOC05NWIxLWQ4NDIxY2QxZDg1NS0lN0IlN0QAAAJIZGNiODJkYTktNjgzZi0xMWVlLWI1NjUtMTg2NmRhYThmZDBi" data-url="https://www.caroll.com/fr_fr/t-shirt-taude-noir-femme-35967740002431022.html">
+<div class="product-tile" data-pid="35967740002431022">
+<a class="link" href="/fr_fr/t-shirt-taude-noir-femme-35967740002431022.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc7b8fec6/t-shirt-taude-noir-femme-vue1-35967740002431022.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc7b8fec6/t-shirt-taude-noir-femme-vue1-35967740002431022.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc7b8fec6/t-shirt-taude-noir-femme-vue1-35967740002431022.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc7b8fec6/t-shirt-taude-noir-femme-vue1-35967740002431022.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc7b8fec6/t-shirt-taude-noir-femme-vue1-35967740002431022.jpg?sw=400&amp;sh=598" alt="T-shirt taude noir femme" title="t shirt taude noir femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+T-shirt taude noir femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="38.50">
+38,50 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="55.00">
+<span class="sr-only">
+Price reduced from
+</span>
+55,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-30%">
+-30%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-button-prev-navigation-outside"><i class="icon-arrow-left"></i></div>
+<div class="swiper-button-next-navigation-outside"><i class="icon-arrow-right"></i></div>
+</div>
+</div>
+</div>
+<footer id="footercontent">
+<div class="footer-newsletter-social">
+<div class="footer-container">
+<div class="footer-newsletter">
+<div class="footer-item">
+<span class="footer-item__title">
+<div class="newsletter-title-wrapper">
+<div class="icon-envelope"></div>
+<span class="footer-item__subtitle">
+Bénéficiez de <span>-15% sur votre coup de coeur</span> en vous inscrivant à notre newsletter</span>
+</div>
+</span>
+</div>
+<div class="form-group required">
+<label for="hpEmailSignUp" class="form-control-label">Votre e-mail</label>
+<input type="text" class="form-control" name="hpEmailSignUp" aria-label="Email" />
+<button type="button" class="btn btn-input subscribe-email" data-href="/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Newsletter-ShowAjax">Envoyer </button>
+</div>
+<div class="invalid-feedback" id="newsletter_footer_subscribe_error"></div>
+</div>
+<div class="footer-social">
+<div class="footer-item">
+<span class="footer-item__title">
+Suivez-nous
+<span class="footer-item__subtitle"></span>
+</span>
+</div>
+<div class="footer-social__links">
+<div class="content-asset">
+<ul>
+<li><a class="fa fa-instagram fa-3x" aria-label="Instagram" title="Instagram" href="https://www.instagram.com/carollparis/" target="_blank"></a></i></li>
+<li><a class="fa fa-facebook-square fa-3x" aria-label="Facebook" title="Facebook" href="https://www.facebook.com/carollparis/" target="_blank"></a></i></li>
+<li><a class="fa fa-pinterest-square fa-3x" " aria-label="Pinterest" title="Pinterest" href="https://www.pinterest.fr/CarollFr/" target="_blank"></a></i></li>
+</ul>
+</div> 
+</div>
+</div>
+</div>
+</div>
+<div class="content-asset">
+<div class="footer-reinssurance">
+<div class="footer-container container">
+<div class="footer-reinssurance__item">
+<h2 class="footer-item__title" datahref="1" style="text-align: center;"><a class="js_footer_reassurance_popin" datahref="1" href="javascript:void(0)">E-reservation</a></h2>
+<p class="footer-item__subtitle"><a class="js_footer_reassurance_popin" datahref="1" href="javascript:void(0)">R&eacute;servez vos articles sur le site et essayez les en boutique</a></p>
+</div>
+<div class="footer-reinssurance__item">
+<h2 class="footer-item__title" datahref="2" style="text-align: center;"><a class="js_footer_reassurance_popin" datahref="2" href="javascript:void(0)">Nos belles adresses</a></h2>
+<p class="footer-item__subtitle"><a class="js_footer_reassurance_popin" datahref="2" href="javascript:void(0)">Trouvez la boutique la plus proche de chez vous</a></p>
+</div>
+<div class="footer-reinssurance__item">
+<h2 class="footer-item__title" datahref="3" style="text-align: center;"><a class="js_footer_reassurance_popin" datahref="3" href="javascript:void(0)">30 jours</a></h2>
+<p class="footer-item__subtitle"><a class="js_footer_reassurance_popin" datahref="3" href="javascript:void(0)">Vous &ecirc;tes satisfaite ou rembours&eacute;e sous 30 jours</a></p>
+</div>
+<div class="footer-reinssurance__item">
+<h2 class="footer-item__title" datahref="4" style="text-align: center;"><a class="js_footer_reassurance_popin" datahref="4" href="javascript:void(0)">Livraisons</a></h2>
+<p class="footer-item__subtitle"><a class="js_footer_reassurance_popin" datahref="4" href="javascript:void(0)">Livraison gratuite en boutique et Retours offerts</a></p>
+</div>
+</div>
+</div>
+<style type="text/css">.reinssurance-banner-container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer-item__title h2 
+{text-align: center;}
+#footer_reassurance_popin_layout {
+    background: rgba(0, 0, 0, 0.4);     /* éclaircie ou fonce le layout noir derrière la pop in */
+    bottom: 0;
+    left: 0;
+    display:none;
+    overflow: auto;
+    position: fixed;
+    right:0;
+    z-index:100;
+    top: 0;
+}
+
+#footer_reassurance_popin_container {
+    display:none;
+    padding: 0px 10px 0px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 500px;                   /* taille maximum de la pop in en largeur */
+    max-height: 450px;                  /* taille maximum de la pop in en hauteur */
+    transform: translate(-50%, -50%);
+    background: #FCF9F2;
+    border-radius: 5px;
+    z-index: 110;
+    overflow: auto;
+}
+
+#footer_reassurance_popin_content {
+    position: relative;
+    background-color: #fefefe;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer_reassurance_popin_close {
+    color: #000000;
+    align-self: flex-end;               /* aligne la croix de fermeture à droite */
+    font-size: 50px;                    /* taille de la croix de la fermeture */
+    line-height: 50px;                  /* espacement entre le haut de la pop in et la croix de fermeture */
+}
+
+#footer_reassurance_popin_close:hover,
+#footer_reassurance_popin_close:focus {
+    color: #000000;                     /* quand la souris survole la croix de fermeture alors la croix change de couleur: choisir une couleur en hexadecimal */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#footer_reassurance_title_popin{
+    text-align: center;                 /* aligne le titre au milieu de la pop in */
+    margin: -10px 20px 0px;             /* monte ou descend le titre */
+    font-size: 15px;                    /* taille du titre */
+    padding-bottom: 10px;               /*marge en dessous du titre*/
+    color: var(--color-primary);
+}
+
+#footer_reassurance_ul_popin{
+    list-style-type: initial;           /* rajout des bullets */
+    padding-top: 10px;                  /* marge haute entre le titre et le premier paragraphe */
+    padding-inline-start: 15px;         /* marge de gauche où démarre le paragraphe */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;            /* aligne chaque paragraphe à gauche */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#footer_reassurance_popin_container .footer_reassurance_li{
+    display: list-item;                 /* affiche les bullets */
+    width: 100%;
+    margin:15px 0;                      /* marge interligne entre les paragraphes */
+    text-align: left;                   /* retour à la ligne à gauche */
+    flex-basis: 10px;
+    padding-bottom: 0px;
+}
+
+#footer_reassurance_lienEnSavoirPlus{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-self: center;                 /* aligne le lien au centre */
+    text-decoration: underline;         /*  surlignage du lien */
+    font-size: 12px;                /* taille du lien */
+}
+</style>
+<div id="footer_reassurance_popin_layout">&nbsp;</div>
+<div id="footer_reassurance_popin_container">
+<div id="footer_reassurance_popin_content"><span id="footer_reassurance_popin_close">&times;</span>
+<h3 id="footer_reassurance_title_popin">&nbsp;</h3>
+<ul id="footer_reassurance_ul_popin">
+</ul>
+<a href="#" id="footer_reassurance_lienEnSavoirPlus">En savoir plus</a></div>
+</div>
+<script>
+    var popinContainer = document.getElementById("footer_reassurance_popin_container");
+    var layoutPopin = document.getElementById("footer_reassurance_popin_layout");
+    var buttons = document.getElementsByClassName("js_footer_reassurance_popin");
+    var buttonClose = document.getElementById("footer_reassurance_popin_close");
+    var lienPopin = document.getElementById("footer_reassurance_lienEnSavoirPlus")
+    var h1 = document.getElementById("footer_reassurance_title_popin");
+    var ul = document.getElementById("footer_reassurance_ul_popin");
+    for (let i = 0, l = buttons.length; i < l; i++) {
+        buttons[i].addEventListener("click", (e) => displayPopIn(e));
+    }
+
+    const datasPopinContent = [
+        {
+            id: 1,
+            titre: "E-réservez et essayez en boutique",
+            paragraphes: [
+                "Réservez gratuitement vos articles sur caroll.com",
+                "En 2h, votre boutique vous informe de la disponibilité de vos articles et les met 2 jours de côté",
+                "Rendez-vous en boutique pour essayer votre article !"
+            ],
+            lien:"https://www.caroll.com/fr_fr/ereservation.html",
+        },
+        {
+            id: 2,
+            titre: "Trouvez un magasin ",
+            paragraphes: [
+                "Trouvez la boutique la plus proche de chez vous parmi nos 438 adresses!",
+                "Pour trouver le boutique le plus proche de chez vous, cliquez sur le lien En savoir plus. ",
+            ],
+            lien: "https://www.caroll.com/fr_fr/nos-boutiques/",
+        },
+        {
+            id: 3,
+            titre: "Retours gratuits",
+            paragraphes: [
+                "Vous avez 30 jours à partir de votre achat en boutique ou de la réception de votre commande en ligne pour changer d'avis.",
+                "Retournez vos achats gratuitement en boutique, en point relais ou en boîte aux lettres.",
+            ],
+            lien:"https://www.caroll.com/fr_fr/conditions-generales-vente#cgv-article7",
+        },
+        {
+            id: 4,
+            titre: "Livraison gratuite en magasin",
+            paragraphes: [
+                "Profitez de la livraison et du retour gratuit en boutique.",
+            ],
+            lien: "https://www.caroll.com/fr_fr/conditions-generales-vente#cgv-article6",
+        }
+    ];
+
+    displayPopIn = (e) => {
+        var datasPopin = datasPopinContent.find(el => {
+            if (e.target.classList.contains("js_footer_reassurance_popin")) {
+                return el.id == e.target.getAttribute("datahref");
+            } else {
+                return el.id == e.target.parentNode.getAttribute("datahref");
+            }
+        });
+
+        layoutPopin.style ="display: block";
+        h1.innerHTML = datasPopin.titre;
+
+        for(var i = 0; i < datasPopin.paragraphes.length; i++ ){
+            var paragraphe = datasPopin.paragraphes[i];
+            var li = document.createElement("li");
+            li.classList.add("footer_reassurance_li");
+            li.textContent= paragraphe;
+            ul.appendChild(li);
+        }
+
+        lienPopin.setAttribute("href", datasPopin.lien);
+        popinContainer.style ="display: block";
+        layoutPopin.addEventListener("click", (e) => disappearPopin(e));
+        buttonClose.addEventListener("click", (e) => disappearPopin(e));
+    }
+
+    disappearPopin = (e) => {
+        h1.innerHTML="";
+        ul.innerHTML="";
+        layoutPopin.style = "display : none";
+        popinContainer.style = "display : none";
+    }
+</script>
+</div> 
+<div class="content-asset">
+<div class="footer-links">
+<div class="footer-container container">
+<div class="footer-item collapsible-xs">
+<button class="title btn text-left btn-block d-sm-none footer-item__title" aria-expanded="false" aria-controls="collapsible-order">Nos services tout simplement</button>
+<h2 class="title d-none d-sm-block footer-item__title">Nos services
+<br>tout simplement</h2>
+<ul id="collapsible-order" class="menu-footer content">
+<li><a href="https://www.caroll.com/fr_fr/programmefidelite.html">Programme Fidélité</a>
+</li>
+<li><a href="https://www.caroll.com/fr_fr/ereservation.html">E-réservation</a>
+</li>
+<li><a href="https://www.caroll.com/fr_fr/cartescadeaux.html">Carte cadeau</a>
+</li>
+<li><a href="https://www.caroll.com/fr_fr/nos-boutiques/ ">Nos Boutiques</a>
+</li>
+<li><a href="https://www.caroll.com/fr_fr/nos-operations-commerciales-caroll.html">Nos Opérations Commerciales</a>
+</li>
+<li><a href="https://www.caroll.com/fr_fr/conditions-generales-vente#cgv-prix ">Paiement s&eacute;curis&eacute;</a>
+</li>
+<li><a href="https://www.caroll.com/fr_fr/scalapay.html#cgv-prix">Scalapay</a></li>
+</ul>
+</div>
+<div class="footer-item collapsible-xs">
+<button class="title btn text-left btn-block d-sm-none footer-item__title" aria-expanded="false" aria-controls="collapsible-services">Nous pouvons vous aider ?</button>
+<h2 class="title d-none d-sm-block footer-item__title">Nous pouvons
+<br>vous aider ?</h2>
+<ul id="collapsible-services" class="menu-footer content">
+<li><a href="https://www.caroll.com/fr_fr/aide/" rel="nofollow">Livraisons & Retours</a></li>
+<li><a href="https://www.caroll.com/fr_fr/aide/" rel="nofollow">FAQ</a></li>
+<li><a href="https://www.caroll.com/fr_fr/aide/" rel="nofollow">Nous contacter</a></li>
+<li><a href="https://www.caroll.com/fr_fr/jeux-et-offres-en-cours ">Offres en cours</a></li>
+<li><a href="https://www.caroll.com/fr_fr/conditions-generales-vente ">Conditions g&eacute;n&eacute;rales de vente</a></li>
+<li><a href="https://www.caroll.com/fr_fr/mentions-legales ">Mentions L&eacute;gales</a></li>
+<li><a href="https://www.caroll.com/fr_fr/charte-confidentialite">Politique de confidentialité</a></li>
+<li><a href="https://www.caroll.com/fr_fr/politique-cookies">Cookies</a></li>
+<li><a href="https://moderesponsable.groupe-beaumanoir.com/caroll" target="_blank"> Traçabilité et caractéristiques de nos produits</a></li>
+</ul>
+</div>
+<div class="footer-item collapsible-xs">
+<button class="title btn text-left btn-block d-sm-none footer-item__title" aria-expanded="false" aria-controls="collapsible-group">La marque Caroll de A à Z</button>
+<h2 class="title d-none d-sm-block footer-item__title">La marque Caroll
+<br>de A à Z</h2>
+<ul id="collapsible-group" class="menu-footer content">
+<li><a href="https://www.caroll.com/fr_fr/lamarque.html">La marque</a>
+</li>
+<li><a href="https://fr.linkedin.com/company/caroll" target="_recrutement" title="Recrutement">Nous rejoindre</a>
+</li>
+</ul>
+</div>
+<div class="footer-item collapsible-xs">
+<button class="title btn text-left btn-block d-sm-none footer-item__title" aria-expanded="false" aria-controls="collapsible-informations">Groupe Beaumanoir</button>
+<h2 class="title d-none d-sm-block footer-item__title align-text-bottom">Groupe Beaumanoir</h2>
+<ul id="collapsible-informations" class="menu-footer content">
+<li><a href="https://www.morgandetoi.fr/" rel="nofollow">Morgan</a>
+</li>
+<li><a href="https://www.cache-cache.fr/" rel="nofollow">Cache cache</a>
+</li>
+<li><a href="https://www.bonoboplanet.com" rel="nofollow">Bonobo</a>
+</li>
+<li><a href="https://www.breal.net/" rel="nofollow">Br&eacute;al</a>
+</li>
+<li><a href="https://www.vibs.com/" rel="nofollow">Vib's</a>
+</li>
+<li><a href="https://www.sarenza.com/" rel="nofollow">Sarenza</a>
+</li>
+<li><a href="https://www.groupe-beaumanoir.com/nos-offres/#page-search---index" target="_recrutement" title="Recrutement">Recrutement</a>
+</li>
+</ul>
+</div>
+<div class="footer-item collapsible-xs">
+<button class="title btn text-left btn-block d-sm-none footer-item__title" aria-expanded="false" aria-controls="collapsible-informations">Pays</button>
+<h2 class="title d-none d-sm-block footer-item__title align-text-bottom">Pays</h2>
+<ul class="menu-footer content" id="collapsible-informations">
+<li>
+<a class="countryswitcher" href="https://www.caroll.com/fr_ch/" data-updatecountry-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Countryswitcher-UpdateCountry?locale=fr_ch">Suisse (Fran&ccedil;ais)</a>
+</li>
+<li>
+<a class="countryswitcher" href="https://www.caroll.com/de_ch" data-updatecountry-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Countryswitcher-UpdateCountry?locale=de_ch">Schweiz (Deutsch)</a>
+</li>
+<li>
+<a class="countryswitcher" href="https://www.caroll.com/es_es/" data-updatecountry-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Countryswitcher-UpdateCountry?locale=es_es">Espa&ntilde;a (Espa&ntilde;ol)</a>
+</li>
+<li>
+<a class="countryswitcher" href="https://www.caroll.com/fr_be/" data-updatecountry-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Countryswitcher-UpdateCountry?locale=fr_be">Belgique (Fran&ccedil;ais)</a>
+</li>
+<li>
+<a class="countryswitcher" href="https://www.caroll.com/nl_be" data-updatecountry-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Countryswitcher-UpdateCountry?locale=nl_be">Belgi&euml; (Nederlands)</a>
+</li>
+<li>
+<a class="countryswitcher" href="https://www.caroll.com/fr_fr/" data-updatecountry-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Countryswitcher-UpdateCountry?locale=fr_fr">Fran&ccedil;ais (Fran&ccedil;ais)</a>
+</li>
+<li>
+<a class="countryswitcher" href="https://www.caroll.com/it_it/" data-updatecountry-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Countryswitcher-UpdateCountry?locale=it_it">Italia (Italiano)</a>
+</li>
+<li>
+<a class="countryswitcher" href="https://www.caroll.com/fr_lu/" data-updatecountry-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Countryswitcher-UpdateCountry?locale=fr_lu">Luxembourg (Fran&ccedil;ais)</a>
+</li>
+<li>
+<a class="countryswitcher" href="https://www.caroll.com/pt_pt/" data-updatecountry-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Countryswitcher-UpdateCountry?locale=pt_pt">Portugal (Portugu&ecirc;s)</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div> 
+<div class="content-asset">
+<div class="footer-copyright">
+<div class="footer-container container">
+<h2 class="col-12 footer-item__title">&copy; 2022 Caroll</h2>
+</div>
+</div>
+</div> 
+<div class="content-asset">
+<div class="footer-seo">
+<div class="footer-container">
+<div class="footer-item__subtitle">
+<h2><font size="-10">L&rsquo;esprit Caroll toujours pr&eacute;sent dans chaque collection de v&ecirc;tements pour femme</font></h2>
+<p><font size="-10">Pour ancrer son souhait d'habiller le plus grand nombre, les stylistes Caroll sont tous sp&eacute;cialis&eacute;s dans une cat&eacute;gorie pr&eacute;cise afin de proposer des v&ecirc;tements et accessoires travaill&eacute;s dans la maitrise de l'art. R&eacute;partis par p&ocirc;les dans lesquels nos designers sont experts, le vestiaire de la marque s'&eacute;tend du style casual et cocooning &agrave; des produits plus pointus, afin de vous suivre au quotidien et dans tous les &eacute;v&egrave;nements importants de vos vies.</font></p>
+<p><font size="-10">Le t-shirt &agrave; manches courtes et le t-shirt &agrave; manches longues, incontournables du dressing du quotidien, sont confectionn&eacute;s dans des jerseys de coton ou de viscose doux. Jerseys flamm&eacute;s, couleurs vives ou chin&eacute;es, col rond ou col V, choisissez une coupe droite et confortable ou une version cintr&eacute;e selon votre morphologie. Id&eacute;al et incontournable de la fameuse panoplie &laquo; jean/t-shirt &raquo;, le top en jersey se joue de fantaisies en arborant des imprim&eacute;s, des visuels plac&eacute;s iris&eacute;s ainsi que des galons volant&eacute;s pour vous offrir une silhouette f&eacute;minine et vous suivre dans vos journ&eacute;es de bureau ou lors d'un &eacute;v&eacute;nement habill&eacute;, assorti &agrave; une jupe mi-longue pliss&eacute;e soleil.</font></p>
+<p><font size="-10">La c&eacute;l&egrave;bre veste de tailleur se pare d'une coupe droite, fa&ccedil;on veste d'homme pour &eacute;pouser la tendance. Retrouvez-la dans ses coloris classiques : noir, marine ou beige, le blazer s'assortit &agrave; tous vos pantalons droits. Choisissez un imprim&eacute; carreaux Prince de Galles et une fermeture double boutonnage pour un look affirm&eacute;. A portez l&eacute;g&egrave;rement oversize sur un jean Flare taille haute &eacute;cru et des chaussures &agrave; talons.</font></p>
+<p><font size="-10">Intemporelle, la robe fleurie est la signature Caroll. Longue, courte ou midi elle se porte par tous les temps. En &eacute;t&eacute; dans une coupe portefeuille avec des sandales plates et un joli panier, en hiver, optez pour sa version voile, longue et dansante, avec des collants chauds, sous une doudoune confortable et r&eacute;confortante. Pour une tenue habill&eacute;e en soir&eacute;e, craquez pour des d&eacute;tails de dentelle et une taille appuy&eacute;e et accessoirisez-la d'une accumulation de bijoux et d'escarpins dor&eacute;s.</font></p>
+<p><font size="-10">D&eacute;couvrez notre gamme de cuir. Confectionn&eacute;s dans des peaux de qualit&eacute;s s&eacute;lectionn&eacute;es avec soin, nos sacs, chaussures et autre pardessus vous suivront au fil des ann&eacute;es. Des touch&eacute;s velours ou un cuir lisse, nos designers vous proposent des coloris s'adaptant &agrave; tout votre dressing. Optez pour un camel lumineux &agrave; la belle saison et pour un noir profond lors de vos journ&eacute;es hivernales. Pour &eacute;gayez vos tenues avec une touche de couleurs et d'originalit&eacute;, la marque suit la mode et vous offre une palette de teintes fraiches et pastels.</font></p>
+<p><font size="-10">Les bijoux tiennent une place de choix dans le vestiaire f&eacute;minin. Illuminez vos tenues avec une touche de brillance et f&eacute;minisez tous vos looks casual. Le bijou n'est plus r&eacute;serv&eacute; aux tenues habill&eacute;es et de c&eacute;r&eacute;monies. La mode est &agrave; l'accumulation de bijoux fins fa&ccedil;on bijoux de famille. Sur vos chemises blanches ou pulls amples en mohair, accordez les chaines et autre m&eacute;daillon et rehaussez le tout d'une touche color&eacute;e gr&acirc;ce &agrave; nos pendentifs en pierre naturelle. N'h&eacute;sitez plus entre m&eacute;tal dor&eacute; et argent&eacute;, osez le m&eacute;lange des deux. Un accessoire discret qui apportera une note tr&egrave;s en vogue &agrave; un style classique.Pour les plus sages craquez pour nos joncs martel&eacute;s, nos cr&eacute;oles revisit&eacute;es et nos sautoirs travaill&eacute;s.</font></p>
+<p><font size="-10">Retrouvez notre c&eacute;l&egrave;bre chino. Un basique d&eacute;contract&eacute; du vestiaire Caroll reconduit chaque saison dans des coloris en vogue, s'unissant &agrave; la perfection avec nos collections de blouses, tops, cardigans et accessoires. S'adaptant &agrave; tous les styles, le chino se porte aussi bien lors des beaux jours du printemps, dans une teinte claire comme un &eacute;cru, avec une chemise en voile fleurie et une paire de sandales en cuir, qu'en pleine saison hivernale avec une parka kaki doubl&eacute;e de fourrure chaude, une grosse &eacute;charpe torsad&eacute;e et des boots plates &agrave; lacets.</font></p>
+<h2><font size="-10">Une personnalit&eacute; affirm&eacute;e dans chaque v&ecirc;tement pour femme sign&eacute; Caroll</font></h2>
+<p><font size="-10">La femme Caroll est une femme vivant des journ&eacute;es &agrave; mille &agrave; l'heure. Une femme active, moderne, dans l'air du temps et qui aime suivre la tendance sans &ecirc;tre fashion addict, pr&eacute;f&eacute;rant trouver LA bonne pi&egrave;ce qui pourra s'adapter et &eacute;voluer au fil de son dressing. Gr&acirc;ce &agrave; nos pi&egrave;ces les plus pointues, s'inspirant des podiums, jouez avec la mode et cr&eacute;ez-vous des tenues uniques en les mixant aux bons basiques de votre garde-robe.</font></p>
+<p><font size="-10">Les cat&eacute;gories : <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/pulls-et-gilets">Pulls</a> <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/pantalons-et-jeans">Pantalons</a> <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/manteaux-et-trenchs">Manteaux</a> <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/blouses-et-chemises">Blouses &amp; Chemises</a> <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/robes">Robes</a> <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/vestes-et-blousons">Vestes</a> <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/jupes">Jupes</a> </font></p>
+</div>
+</div>
+</div>
+</div> 
+</footer>
+<button class="btn-scroll-top js-btn-scroll-top" title="global.top">
+<i class="icon-back-to-top"></i>
+</button>
+</div>
+<div class="error-messaging"></div>
+<div class="modal-background"></div>
+<div id="omniconnect-url" class="d-none" data-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show"></div>
+<div id="atc-dialog" class="dialog">
+<div class="atc-dialog-container">
+<i class="icon-close"></i>
+<div class="atc-dialog-text">
+<img loading="lazy" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw4852437e/images/checkbox-animated.svg" alt="checkicon" />
+<span>Votre produit a &eacute;t&eacute; ajout&eacute; au panier</span>
+</div>
+<div class="atc-dialog-buttons">
+<button class="btn btn-secondary btn-continue">Continuer votre shopping</button>
+<a href="/fr_fr/Cart/" class="btn btn-primary btn-purchase">Voir votre panier</a>
+</div>
+<div class="atc-dialog-reco hidden">
+</div>
+<div class="custom-carousel">
+<input type="hidden" name="sp" value="V3BNQH97QFBOXA-1000-45" />
+<input type="hidden" name="pID" value="1000" />
+<h2>Nos suggestions</h2>
+<div class="custom-carousel-swiper-wrapper">
+<div class="swiper init-swiper" swiper-slides-per-view--lg="5.0" centered-slides="true" swiper-space-between="0" swiper-navigation-outside="true">
+<div class="swiper-wrapper">
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzQwMDA0NDYxMDM3AgACVmFhNTUzNWNhLTIzZjQtNGVhNS05YzJiLWI5YzA1NDY1ZGFhZS0lN0IlN0QAAAJIZGNkNDQwNWItNjgzZi0xMWVlLTllMDctMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/chemise-jessica1-bleu-ciel-femme-35967740004461037.html">
+<div class="product-tile" data-pid="35967740004461037">
+<a class="link" href="/fr_fr/chemise-jessica1-bleu-ciel-femme-35967740004461037.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc774989f/chemise-jessica1-bleu-ciel-femme-vue1-35967740004461037.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc774989f/chemise-jessica1-bleu-ciel-femme-vue1-35967740004461037.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc774989f/chemise-jessica1-bleu-ciel-femme-vue1-35967740004461037.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc774989f/chemise-jessica1-bleu-ciel-femme-vue1-35967740004461037.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwc774989f/chemise-jessica1-bleu-ciel-femme-vue1-35967740004461037.jpg?sw=400&amp;sh=598" alt="Chemise jessica1 bleu ciel femme" title="chemise jessica1 bleu ciel femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+Chemise jessica1 bleu ciel femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="45.00">
+45,00 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="75.00">
+<span class="sr-only">
+Price reduced from
+</span>
+75,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-40%">
+-40%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzEzMTEwMDQxMDIyAgICVmFhNTUzNWNhLTIzZjQtNGVhNS05YzJiLWI5YzA1NDY1ZGFhZS0lN0IlN0QAAAJIZGNkNDQwNWItNjgzZi0xMWVlLTllMDctMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/trench-prague-b-noir-femme-35967713110041022.html">
+<div class="product-tile" data-pid="35967713110041022">
+<a class="link" href="/fr_fr/trench-prague-b-noir-femme-35967713110041022.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw0fea8c12/trench-prague-b-noir-femme-vue1-35967713110041022.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw0fea8c12/trench-prague-b-noir-femme-vue1-35967713110041022.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw0fea8c12/trench-prague-b-noir-femme-vue1-35967713110041022.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw0fea8c12/trench-prague-b-noir-femme-vue1-35967713110041022.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw0fea8c12/trench-prague-b-noir-femme-vue1-35967713110041022.jpg?sw=400&amp;sh=598" alt="trench prague b noir femme" title="trench prague b noir femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+trench prague b noir femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="119.00">
+119,00 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="170.00">
+<span class="sr-only">
+Price reduced from
+</span>
+170,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-30%">
+-30%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzQwMDA1OTkxMDQ3AgQCVmFhNTUzNWNhLTIzZjQtNGVhNS05YzJiLWI5YzA1NDY1ZGFhZS0lN0IlN0QAAAJIZGNkNDQwNWItNjgzZi0xMWVlLTllMDctMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/chemisier-cessy-bleu-marine-femme-35967740005991047.html">
+<div class="product-tile" data-pid="35967740005991047">
+<a class="link" href="/fr_fr/chemisier-cessy-bleu-marine-femme-35967740005991047.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw32f35dd5/chemisier-cessy-bleu-marine-femme-vue1-35967740005991047.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw32f35dd5/chemisier-cessy-bleu-marine-femme-vue1-35967740005991047.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw32f35dd5/chemisier-cessy-bleu-marine-femme-vue1-35967740005991047.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw32f35dd5/chemisier-cessy-bleu-marine-femme-vue1-35967740005991047.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw32f35dd5/chemisier-cessy-bleu-marine-femme-vue1-35967740005991047.jpg?sw=400&amp;sh=598" alt="Chemisier cessy bleu marine femme" title="chemisier cessy bleu marine femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+Chemisier cessy bleu marine femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="68.00">
+68,00 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="85.00">
+<span class="sr-only">
+Price reduced from
+</span>
+85,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-20%">
+-20%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzQwMDA0ODAxMDIyAgYCVmFhNTUzNWNhLTIzZjQtNGVhNS05YzJiLWI5YzA1NDY1ZGFhZS0lN0IlN0QAAAJIZGNkNDQwNWItNjgzZi0xMWVlLTllMDctMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/pantalon-pgabin3-noir-femme-35967740004801022.html">
+<div class="product-tile" data-pid="35967740004801022">
+<a class="link" href="/fr_fr/pantalon-pgabin3-noir-femme-35967740004801022.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8f575e98/pantalon-pgabin3-noir-femme-vue1-35967740004801022.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8f575e98/pantalon-pgabin3-noir-femme-vue1-35967740004801022.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8f575e98/pantalon-pgabin3-noir-femme-vue1-35967740004801022.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8f575e98/pantalon-pgabin3-noir-femme-vue1-35967740004801022.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw8f575e98/pantalon-pgabin3-noir-femme-vue1-35967740004801022.jpg?sw=400&amp;sh=598" alt="Pantalon pgabin3 noir femme" title="pantalon pgabin3 noir femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+Pantalon pgabin3 noir femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="63.00">
+63,00 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="90.00">
+<span class="sr-only">
+Price reduced from
+</span>
+90,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-30%">
+-30%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzEzMTEwMDExMDAxAggCVmFhNTUzNWNhLTIzZjQtNGVhNS05YzJiLWI5YzA1NDY1ZGFhZS0lN0IlN0QAAAJIZGNkNDQwNWItNjgzZi0xMWVlLTllMDctMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/trench-max-beige-femme-35967713110011001.html">
+<div class="product-tile" data-pid="35967713110011001">
+<a class="link" href="/fr_fr/trench-max-beige-femme-35967713110011001.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw9db1f442/trench-max-beige-femme-vue1-35967713110011001.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw9db1f442/trench-max-beige-femme-vue1-35967713110011001.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw9db1f442/trench-max-beige-femme-vue1-35967713110011001.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw9db1f442/trench-max-beige-femme-vue1-35967713110011001.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw9db1f442/trench-max-beige-femme-vue1-35967713110011001.jpg?sw=400&amp;sh=598" alt="trench max beige femme" title="trench max beige femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+trench max beige femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="119.00">
+119,00 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="170.00">
+<span class="sr-only">
+Price reduced from
+</span>
+170,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-30%">
+-30%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+<div class="second-picto">
+<span style="font-size:10px;" class="picto-nouveautes"><strong>nouveautés</strong></span>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzQwMDAyNTMxMDE0AgoCVmFhNTUzNWNhLTIzZjQtNGVhNS05YzJiLWI5YzA1NDY1ZGFhZS0lN0IlN0QAAAJIZGNkNDQwNWItNjgzZi0xMWVlLTllMDctMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/chemise-calissa-ivoire-femme-35967740002531014.html">
+<div class="product-tile" data-pid="35967740002531014">
+<a class="link" href="/fr_fr/chemise-calissa-ivoire-femme-35967740002531014.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwf2b81b82/chemise-calissa-ivoire-femme-vue1-35967740002531014.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwf2b81b82/chemise-calissa-ivoire-femme-vue1-35967740002531014.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwf2b81b82/chemise-calissa-ivoire-femme-vue1-35967740002531014.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwf2b81b82/chemise-calissa-ivoire-femme-vue1-35967740002531014.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwf2b81b82/chemise-calissa-ivoire-femme-vue1-35967740002531014.jpg?sw=400&amp;sh=598" alt="Chemise calissa ivoire femme" title="chemise calissa ivoire femme" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+Chemise calissa ivoire femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span id="price-sales-scalapay" class="value" content="48.00">
+48,00 &euro;
+</span>
+</span>
+<del>
+<span class="strike-through list">
+<span class="value" content="80.00">
+<span class="sr-only">
+Price reduced from
+</span>
+80,00 &euro;
+<span class="sr-only">
+to
+</span>
+</span>
+</span>
+</del>
+<span class="percent" title="Percent Price">
+<span class="value" content="-40%">
+-40%
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-button-prev-navigation-outside"><i class="icon-arrow-left"></i></div>
+<div class="swiper-button-next-navigation-outside"><i class="icon-arrow-right"></i></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+        (function() {
+            var _scs = [];
+            _scs.push(['app_key', "fcbf2d4d243e69bd5b7a36a8f3806f33"]);
+            (function(d, s, id, _scs) {
+                if (d.getElementById(id)) return;
+                var i, sc = d.createElement(s), sj = d.getElementsByTagName(s)[0];
+                sc.id = id; sc.async = true; sc.src = "https://api.socloz.com/v4/js/popup.js";
+                for (i = 0; i < _scs.length; i++) sc.setAttribute('data-socloz-'+_scs[i][0], _scs[i][1]);
+                sj.parentNode.insertBefore(sc, sj);
+            })(document, 'script', 'soclozjs', _scs);
+        })();
+    </script>
+<!--[if lt IE 10]>
+<script>//common/scripts.isml</script>
+
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/js/main-react.js"></script>
+
+
+    
+        <script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/js/campaignBanner.js"
+            
+            >
+        </script>
+    
+
+    
+        <script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/js/T2Srecommend.js"
+            
+            >
+        </script>
+    
+
+
+        <script type="text/javascript">undefined</script>
+
+        <script type="text/javascript">undefined</script>
+
+        <script type="text/javascript">undefined</script>
+
+        <script type="text/javascript">
+window.addEventListener("DOMContentLoaded", function(){    
+    const swiperinsta = new Swiper('.insta-swiper-container', {
+        slidesPerView: 1.5,
+        centeredSlides:true,
+        spaceBetween: 15,
+        loop: true,
+        loopAdditionalSlides: 2,
+        grabCursor: true,
+        roundLengths : true,
+        pagination: {
+          el: ".swiper-pagination-insta",
+          clickable: true,
+        },	
+    });
+})
+</script>
+
+
+
+
+<script>window.Properties = {"form":{"regex":{"email":"^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$","orderNumber":"^[0-9]{8,10}$"},"error":{"required":"Ce champ est requis.","invalidEmail":"Merci de renseigner une adresse e-mail"},"orderTrack":{"error":{"missingNumber":"Le numéro de commande est requis.","invalidNumber":"Le numéro de commande est invalide."},"info":"Vous souhaitez accéder directement à une commande ?","emailLabel":"E-mail","numberLabel":"Numéro de commande","submitBtn":"<span>Suivre ma commande</span><span>ou</span><span>Déclarer un retour</span>"}}}</script>
+<![endif]-->
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+function trackPage() {
+    try{
+        var trackingUrl = "https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/__Analytics-Start";
+        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+        if (typeof dw.ac == "undefined") {
+            dwAnalytics.trackPageView();
+        } else {
+            dw.ac.setDWAnalytics(dwAnalytics);
+        }
+    }catch(err) {};
+}
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+
+<script src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1696993838650/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
+<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
+</body>
+</html>

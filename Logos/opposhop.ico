@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head >
+    <link rel="preconnect dns-prefetch" href="//assorted.downloads.oppo.com">
+    <link rel="preconnect dns-prefetch" href="//dsfs.oppo.com">
+    <link rel="preconnect dns-prefetch" href="//msecfs.opposhop.cn">
+
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tab-highlight" content="no">
+
+    <title>OPPO 商城</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content="OPPO 商城是以潮流数码、生态产品销售为主营业务的电商平台，提供OPPO、一加等多品牌产品和服务"><meta data-n-head="ssr" data-hid="keywords" name="keywords" content="OPPO商城，OPPO官方商城，OnePlus官方商城，OPPO最新款手机在线订购, OnePlus最新款手机在线购买"><base href="/cn/web/"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/cn/web/favicon.ico"><link data-n-head="ssr" rel="stylesheet" type="text/css" href="https://dsfs.oppo.com/store/public/lib/@mdi/font/css/materialdesignicons.min.css"><style data-n-head="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="undefined">.v-application a { color: #f34141; }
+.v-application .primary {
+  background-color: #f34141 !important;
+  border-color: #f34141 !important;
+}
+.v-application .primary--text {
+  color: #f34141 !important;
+  caret-color: #f34141 !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: #ffd4c1 !important;
+  border-color: #ffd4c1 !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: #ffd4c1 !important;
+  caret-color: #ffd4c1 !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: #ffb7a6 !important;
+  border-color: #ffb7a6 !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: #ffb7a6 !important;
+  caret-color: #ffb7a6 !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: #ff9a8b !important;
+  border-color: #ff9a8b !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: #ff9a8b !important;
+  caret-color: #ff9a8b !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: #ff7d71 !important;
+  border-color: #ff7d71 !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: #ff7d71 !important;
+  caret-color: #ff7d71 !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: #ff6059 !important;
+  border-color: #ff6059 !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: #ff6059 !important;
+  caret-color: #ff6059 !important;
+}
+.v-application .primary.darken-1 {
+  background-color: #d31b2a !important;
+  border-color: #d31b2a !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: #d31b2a !important;
+  caret-color: #d31b2a !important;
+}
+.v-application .primary.darken-2 {
+  background-color: #b20015 !important;
+  border-color: #b20015 !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: #b20015 !important;
+  caret-color: #b20015 !important;
+}
+.v-application .primary.darken-3 {
+  background-color: #930000 !important;
+  border-color: #930000 !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: #930000 !important;
+  caret-color: #930000 !important;
+}
+.v-application .primary.darken-4 {
+  background-color: #750000 !important;
+  border-color: #750000 !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: #750000 !important;
+  caret-color: #750000 !important;
+}
+.v-application .secondary {
+  background-color: #424242 !important;
+  border-color: #424242 !important;
+}
+.v-application .secondary--text {
+  color: #424242 !important;
+  caret-color: #424242 !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: #c1c1c1 !important;
+  border-color: #c1c1c1 !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: #c1c1c1 !important;
+  caret-color: #c1c1c1 !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: #a6a6a6 !important;
+  border-color: #a6a6a6 !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: #a6a6a6 !important;
+  caret-color: #a6a6a6 !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: #8b8b8b !important;
+  border-color: #8b8b8b !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: #8b8b8b !important;
+  caret-color: #8b8b8b !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: #727272 !important;
+  border-color: #727272 !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: #727272 !important;
+  caret-color: #727272 !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: #595959 !important;
+  border-color: #595959 !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: #595959 !important;
+  caret-color: #595959 !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: #2c2c2c !important;
+  border-color: #2c2c2c !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: #2c2c2c !important;
+  caret-color: #2c2c2c !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: #171717 !important;
+  border-color: #171717 !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: #171717 !important;
+  caret-color: #171717 !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .accent {
+  background-color: #82b1ff !important;
+  border-color: #82b1ff !important;
+}
+.v-application .accent--text {
+  color: #82b1ff !important;
+  caret-color: #82b1ff !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: #f8ffff !important;
+  border-color: #f8ffff !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: #f8ffff !important;
+  caret-color: #f8ffff !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: #daffff !important;
+  border-color: #daffff !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: #daffff !important;
+  caret-color: #daffff !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: #bce8ff !important;
+  border-color: #bce8ff !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: #bce8ff !important;
+  caret-color: #bce8ff !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: #9fccff !important;
+  border-color: #9fccff !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: #9fccff !important;
+  caret-color: #9fccff !important;
+}
+.v-application .accent.darken-1 {
+  background-color: #6596e2 !important;
+  border-color: #6596e2 !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: #6596e2 !important;
+  caret-color: #6596e2 !important;
+}
+.v-application .accent.darken-2 {
+  background-color: #467dc6 !important;
+  border-color: #467dc6 !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: #467dc6 !important;
+  caret-color: #467dc6 !important;
+}
+.v-application .accent.darken-3 {
+  background-color: #2364aa !important;
+  border-color: #2364aa !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: #2364aa !important;
+  caret-color: #2364aa !important;
+}
+.v-application .accent.darken-4 {
+  background-color: #004c90 !important;
+  border-color: #004c90 !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: #004c90 !important;
+  caret-color: #004c90 !important;
+}
+.v-application .error {
+  background-color: #ff5252 !important;
+  border-color: #ff5252 !important;
+}
+.v-application .error--text {
+  color: #ff5252 !important;
+  caret-color: #ff5252 !important;
+}
+.v-application .error.lighten-5 {
+  background-color: #ffe4d5 !important;
+  border-color: #ffe4d5 !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: #ffe4d5 !important;
+  caret-color: #ffe4d5 !important;
+}
+.v-application .error.lighten-4 {
+  background-color: #ffc6b9 !important;
+  border-color: #ffc6b9 !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: #ffc6b9 !important;
+  caret-color: #ffc6b9 !important;
+}
+.v-application .error.lighten-3 {
+  background-color: #ffa99e !important;
+  border-color: #ffa99e !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: #ffa99e !important;
+  caret-color: #ffa99e !important;
+}
+.v-application .error.lighten-2 {
+  background-color: #ff8c84 !important;
+  border-color: #ff8c84 !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: #ff8c84 !important;
+  caret-color: #ff8c84 !important;
+}
+.v-application .error.lighten-1 {
+  background-color: #ff6f6a !important;
+  border-color: #ff6f6a !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: #ff6f6a !important;
+  caret-color: #ff6f6a !important;
+}
+.v-application .error.darken-1 {
+  background-color: #df323b !important;
+  border-color: #df323b !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: #df323b !important;
+  caret-color: #df323b !important;
+}
+.v-application .error.darken-2 {
+  background-color: #bf0025 !important;
+  border-color: #bf0025 !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: #bf0025 !important;
+  caret-color: #bf0025 !important;
+}
+.v-application .error.darken-3 {
+  background-color: #9f0010 !important;
+  border-color: #9f0010 !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: #9f0010 !important;
+  caret-color: #9f0010 !important;
+}
+.v-application .error.darken-4 {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: #800000 !important;
+  caret-color: #800000 !important;
+}
+.v-application .info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.v-application .info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.v-application .info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.v-application .info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.v-application .info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.v-application .info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.v-application .info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.v-application .info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.v-application .info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.v-application .info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.v-application .info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.v-application .success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.v-application .success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.v-application .success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.v-application .success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.v-application .success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.v-application .success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.v-application .success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.v-application .success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.v-application .success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.v-application .success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.v-application .success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.v-application .warning {
+  background-color: #fb8c00 !important;
+  border-color: #fb8c00 !important;
+}
+.v-application .warning--text {
+  color: #fb8c00 !important;
+  caret-color: #fb8c00 !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: #ffff9e !important;
+  border-color: #ffff9e !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: #ffff9e !important;
+  caret-color: #ffff9e !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: #fffb82 !important;
+  border-color: #fffb82 !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: #fffb82 !important;
+  caret-color: #fffb82 !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: #ffdf67 !important;
+  border-color: #ffdf67 !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: #ffdf67 !important;
+  caret-color: #ffdf67 !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: #ffc24b !important;
+  border-color: #ffc24b !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: #ffc24b !important;
+  caret-color: #ffc24b !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: #ffa72d !important;
+  border-color: #ffa72d !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: #ffa72d !important;
+  caret-color: #ffa72d !important;
+}
+.v-application .warning.darken-1 {
+  background-color: #db7200 !important;
+  border-color: #db7200 !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: #db7200 !important;
+  caret-color: #db7200 !important;
+}
+.v-application .warning.darken-2 {
+  background-color: #bb5900 !important;
+  border-color: #bb5900 !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: #bb5900 !important;
+  caret-color: #bb5900 !important;
+}
+.v-application .warning.darken-3 {
+  background-color: #9d4000 !important;
+  border-color: #9d4000 !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: #9d4000 !important;
+  caret-color: #9d4000 !important;
+}
+.v-application .warning.darken-4 {
+  background-color: #802700 !important;
+  border-color: #802700 !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: #802700 !important;
+  caret-color: #802700 !important;
+}</style><link rel="preload" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/1581b1b.js" as="script"><link rel="preload" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/182493f.js" as="script"><link rel="preload" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/css/ec5f27e.css" as="style"><link rel="preload" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/1ce17e6.js" as="script"><link rel="preload" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/afa21ee.js" as="script"><link rel="preload" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/css/14851e8.css" as="style"><link rel="preload" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/e093008.js" as="script"><link rel="preload" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/css/9f31807.css" as="style"><link rel="preload" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/81a78c4.js" as="script"><link rel="preload" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/css/a6e2781.css" as="style"><link rel="preload" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/fcf4195.js" as="script"><link rel="stylesheet" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/css/ec5f27e.css"><link rel="stylesheet" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/css/14851e8.css"><link rel="stylesheet" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/css/9f31807.css"><link rel="stylesheet" href="https://dsfs.oppo.com/oppo/shop-pc-v2/main/css/a6e2781.css">
+
+    <!-- Analytics -->
+    <script charset="UTF-8" src="https://dsfs.oppo.com/store/public/lib/sensors/1.23.4/sensorsdata.min.js"></script>
+    <script>function getCookie(e){var n,o=new RegExp("(^| )"+e+"=([^;]*)(;|$)");return(n=document.cookie.match(o))?unescape(n[2]):null}</script>
+    <script>var isProd=/.*\.opposhop\.cn/.test(location.origin)||/.*\.heytap\.com/.test(location.origin),sensors=window.sensorsDataAnalytic201505;sensors.init({server_url:"https://sa.opposhop.cn/sa?project="+(isProd?"production":"default"),web_url:"https://sa.oppoer.me/?project="+(isProd?"production":"default"),heatmap:{clickmap:"default",scroll_notice_map:"default",scroll_delay_time:1e3},show_log:!isProd}),sensors.registerPage({source_type:"504",s_channel:"h5_web",is_login:getCookie("is_login"),latest_utm_source:getCookie("utm_source"),latest_utm_medium:getCookie("utm_medium"),latest_utm_campaign:getCookie("utm_campaign"),latest_utm_term:getCookie("utm_term"),ssoid:getCookie("oppo_track_id")||"",us:getCookie("us"),um:getCookie("um"),uc:getCookie("uc"),ut:getCookie("ut")}),sensors.quick("autoTrack"),sensors.quick("isReady",(function(){if(!getCookie("sa_distinct_id")){var t=sensors.store.getDistinctId();/^\d+$/.test(t)&&setTimeout((function(){throw new Error("debug_distinct_id: getDistinctId:"+t)}),0),document.cookie="sa_distinct_id="+t+";domain="+document.domain.split(".").slice(-2).join(".")+";path=/"}}))</script>
+  </head>
+
+  <body >
+    <div data-server-rendered="true" id="__nuxt"><div id="__layout"><div data-app="true" id="app" class="v-application v-application--is-ltr theme--light"><div class="v-application--wrap"><header data-fetch-key="data-v-d8de0e46:0" class="v-sheet theme--light v-toolbar v-toolbar--flat v-app-bar v-app-bar--fixed" style="height:120px;margin-top:0px;transform:translateY(0px);left:0px;right:0px;background-color:#ffffff;border-color:#ffffff;z-index:99;border-bottom-color:rgb(0 0 0 / 6%);border-bottom-style:solid;border-bottom-width:1px;" data-v-d8de0e46><div class="v-toolbar__content" style="height:120px;"><div class="fill-height w-100" data-v-d8de0e46><div data-fetch-key="AppHeader:0" class="v-system-bar app-header theme--dark" style="height:36px;background-color:#222222;border-color:#222222;" data-v-d8de0e46><div class="container d-flex justify-space-between"><div class="app-header-left"><a href="https://www.oppo.com/cn/" target="_blank" class="mr-6" data-v-32c47e7c>OPPO 官网</a><a href="https://www.oneplus.com/cn" target="_blank" class="mr-6" data-v-32c47e7c>一加官网</a></div><!----></div></div> <div class="container d-flex align-center h-84" data-v-d8de0e46><h1 class="logo-h1" data-v-d8de0e46><a href="/cn/web/" aria-current="page" class="app-logo nuxt-link-exact-active nuxt-link-active" data-v-d8de0e46><img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/9c6f387.png" contain="" position="left center" alt="OPPO 商城" data-v-d8de0e46></a></h1> <div class="topic-wrap mr-4" style="max-width:540px;min-width:560px;" data-v-d8de0e46><div class="topics" data-v-d8de0e46><a href="https://www.opposhop.cn/cn/web/topic/700100.html" target="_blank" data-v-32c47e7c data-v-d8de0e46>OPPO专区</a></div><div class="topics" data-v-d8de0e46><a href="https://www.opposhop.cn/cn/web/topic/700200.html" target="_blank" data-v-32c47e7c data-v-d8de0e46>OnePlus专区</a></div><div class="topics" data-v-d8de0e46><a href="https://www.opposhop.cn/cn/web/topic/700400.html" target="_blank" data-v-32c47e7c data-v-d8de0e46>智能硬件</a></div><div class="topics" data-v-d8de0e46><a href="https://support.oppo.com/cn/" target="_blank" data-v-32c47e7c data-v-d8de0e46>服务</a></div></div> <div class="nav-search rounded-pill" data-v-d8de0e46><input type="text" placeholder="OPPO手机" class="text-truncate" data-v-d8de0e46><img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/1a74504.svg" height="16px" width="16px" class="search-icon" data-v-d8de0e46></div></div> <!----></div> <div class="popup" data-v-d8de0e46></div></div></header><div><main class="v-main" style="padding-top:120px;padding-right:0px;padding-bottom:0px;padding-left:0px;padding-bottom:88px;" data-v-07fba016><div class="v-main__wrap"><div class="app-banner" data-v-54573f88 data-v-07fba016><!----> <div class="d-flex justify-center app-banner-container" data-v-54573f88><div class="container" data-v-54573f88 data-v-54573f88><div class="menu-wrap" style="width:220px;" data-v-0675cec9 data-v-54573f88><div class="side-menu" data-v-0675cec9><ul class="side-menu-scroll" data-v-0675cec9><li class="side-menu-item" data-v-0675cec9><div class="d-flex align-center menu-content" data-v-0675cec9><!----><span class="text" data-v-0675cec9>热门推荐</span></div> <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/08fdac5.svg" height="12px" width="12px" data-v-0675cec9></li><li class="side-menu-item" data-v-0675cec9><div class="d-flex align-center menu-content" data-v-0675cec9><!----><span class="text" data-v-0675cec9>OPPO</span></div> <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/08fdac5.svg" height="12px" width="12px" data-v-0675cec9></li><li class="side-menu-item" data-v-0675cec9><div class="d-flex align-center menu-content" data-v-0675cec9><!----><span class="text" data-v-0675cec9>一加</span></div> <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/08fdac5.svg" height="12px" width="12px" data-v-0675cec9></li><li class="side-menu-item" data-v-0675cec9><div class="d-flex align-center menu-content" data-v-0675cec9><!----><span class="text" data-v-0675cec9>平板电脑</span></div> <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/08fdac5.svg" height="12px" width="12px" data-v-0675cec9></li><li class="side-menu-item" data-v-0675cec9><div class="d-flex align-center menu-content" data-v-0675cec9><!----><span class="text" data-v-0675cec9>智能耳机</span></div> <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/08fdac5.svg" height="12px" width="12px" data-v-0675cec9></li><li class="side-menu-item" data-v-0675cec9><div class="d-flex align-center menu-content" data-v-0675cec9><!----><span class="text" data-v-0675cec9>智能穿戴</span></div> <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/08fdac5.svg" height="12px" width="12px" data-v-0675cec9></li><li class="side-menu-item" data-v-0675cec9><div class="d-flex align-center menu-content" data-v-0675cec9><!----><span class="text" data-v-0675cec9>智能电视</span></div> <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/08fdac5.svg" height="12px" width="12px" data-v-0675cec9></li><li class="side-menu-item" data-v-0675cec9><div class="d-flex align-center menu-content" data-v-0675cec9><!----><span class="text" data-v-0675cec9>智美生活</span></div> <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/08fdac5.svg" height="12px" width="12px" data-v-0675cec9></li><li class="side-menu-item" data-v-0675cec9><div class="d-flex align-center menu-content" data-v-0675cec9><!----><span class="text" data-v-0675cec9>原装配件</span></div> <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/08fdac5.svg" height="12px" width="12px" data-v-0675cec9></li><li class="side-menu-item" data-v-0675cec9><div class="d-flex align-center menu-content" data-v-0675cec9><!----><span class="text" data-v-0675cec9>保障服务</span></div> <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/08fdac5.svg" height="12px" width="12px" data-v-0675cec9></li></ul></div> <div class="menu-panel" style="display:none;" data-v-0675cec9><div class="menu-panel-main" data-v-0675cec9></div></div></div></div></div></div> <div class="container" data-v-07fba016><div class="head-line" data-v-2026aa52 data-v-07fba016><div class="head-line-news" data-v-2026aa52><a href="https://www.opposhop.cn/cn/web/products/23373.html" target="_blank" title="OPPO Find X6" data-v-32c47e7c data-v-2026aa52><div aria-label="" height="90" class="v-image v-responsive theme--light" style="height:90px;" data-v-2026aa52><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:;background-position:center center;"></div><div class="v-responsive__content"></div></div></a></div> <div class="head-line-events" data-v-2026aa52><a href="/cn/web/coupons" class="head-line-events-item" data-v-32c47e7c data-v-2026aa52><div aria-label="领券中心" role="img" color="#DEE1E6" cover="" height="35" width="40" class="v-image v-responsive mb-2 theme--light" style="height:35px;width:40px;" data-v-2026aa52><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:;background-position:center center;"></div><div class="v-responsive__content"></div></div><span data-v-2026aa52>领券中心</span></a><a href="https://yihuan.oppo.com/static/index.html#/?channelId=1029710" target="_blank" class="head-line-events-item" data-v-32c47e7c data-v-2026aa52><div aria-label="以旧换新" role="img" color="#DEE1E6" cover="" height="35" width="40" class="v-image v-responsive mb-2 theme--light" style="height:35px;width:40px;" data-v-2026aa52><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:;background-position:center center;"></div><div class="v-responsive__content"></div></div><span data-v-32c47e7c data-v-2026aa52>以旧换新</span></a><a href="https://hd.opposhop.cn/bp/2f7bdbdf02aa458c?nightModelEnable=true" target="_blank" class="head-line-events-item" data-v-32c47e7c data-v-2026aa52><div aria-label="价保政策" role="img" color="#DEE1E6" cover="" height="35" width="40" class="v-image v-responsive mb-2 theme--light" style="height:35px;width:40px;" data-v-2026aa52><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:;background-position:center center;"></div><div class="v-responsive__content"></div></div><span data-v-32c47e7c data-v-2026aa52>价保政策</span></a><a href="https://hd.opposhop.cn/bp/5e449f0ce9fe500e?nightModelEnable=true&amp;utm_source=qiyegou&amp;utm_medium=qiyegou" target="_blank" class="head-line-events-item" data-v-32c47e7c data-v-2026aa52><div aria-label="企业购" role="img" color="#DEE1E6" cover="" height="35" width="40" class="v-image v-responsive mb-2 theme--light" style="height:35px;width:40px;" data-v-2026aa52><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:;background-position:center center;"></div><div class="v-responsive__content"></div></div><span data-v-32c47e7c data-v-2026aa52>企业购</span></a></div> <!----></div> <div class="row pt-8 pb-10 top-goods" data-v-07fba016></div> <!----> </div> <!----></div></main></div><footer data-fetch-key="data-v-824767e8:0" class="v-footer app-footer v-sheet theme--light" data-v-824767e8><div class="container" data-v-824767e8><div class="d-flex justify-space-around mb-10" data-v-824767e8><div class="d-flex flex-column align-center w" data-v-824767e8><img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/04210c8.svg" height="50px" width="50px" class="mb-2" data-v-824767e8><span data-v-824767e8>全国联保</span></div><div class="d-flex flex-column align-center w" data-v-824767e8><img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/4be7942.svg" height="50px" width="50px" class="mb-2" data-v-824767e8><span data-v-824767e8>7天无理由退货</span></div><div class="d-flex flex-column align-center w" data-v-824767e8><img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/eb8fa21.svg" height="50px" width="50px" class="mb-2" data-v-824767e8><span data-v-824767e8>官方换货保障</span></div><div class="d-flex flex-column align-center w" data-v-824767e8><img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/3839092.svg" height="50px" width="50px" class="mb-2" data-v-824767e8><span data-v-824767e8>满69元包邮</span></div><div class="d-flex flex-column align-center w" data-v-824767e8><img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/11324b1.svg" height="50px" width="50px" class="mb-2" data-v-824767e8><span data-v-824767e8>900+ 家售后网点</span></div></div> <hr role="separator" aria-orientation="horizontal" class="v-divider theme--light" data-v-824767e8> <div class="footer-content" data-v-824767e8><div class="footer-links" data-v-824767e8><div cols="2" class="footer-links-row d-flex flex-column" data-v-824767e8><div class="footer-content-title" data-v-824767e8>OPPO</div> <a href="https://www.opposhop.cn/cn/web/products/25167.html" target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Find N3 Flip</a><a href="https://www.opposhop.cn/cn/web/products/9371.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Find N2 Flip</a><a href="https://www.opposhop.cn/cn/web/products/23372.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Find X6 Pro</a><a href="https://www.opposhop.cn/cn/web/products/23373.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Find X6</a><a href="https://www.opposhop.cn/cn/web/products/23849.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Reno10 Pro+</a><a href="https://www.opposhop.cn/cn/web/products/23879.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Reno10 Pro</a><a href="https://www.opposhop.cn/cn/web/products/23863.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Reno10</a><a href="https://www.opposhop.cn/cn/web/products/24335.html" target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO K11</a><a href="https://www.opposhop.cn/cn/web/products/23820.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO K11x</a></div><div cols="2" class="footer-links-row d-flex flex-column" data-v-824767e8><div class="footer-content-title" data-v-824767e8>一加</div> <a href="https://www.opposhop.cn/cn/web/products/24521.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>一加 Ace 2 Pro</a><a href="https://www.opposhop.cn/cn/web/products/9645.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>一加 Ace 2</a><a href="https://www.opposhop.cn/cn/web/products/9861.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>一加 Ace 2V</a><a href="https://www.opposhop.cn/cn/web/products/9531.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>一加 11</a><a href="https://www.opposhop.cn/cn/web/products/7262.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>一加 Ace 竞速版</a><a href="https://www.opposhop.cn/cn/web/products/8288.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>一加 Ace Pro</a><a href="https://www.opposhop.cn/cn/web/products/9529.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>一加 Buds Pro 2</a><a href="https://www.opposhop.cn/cn/web/products/9684.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8> 一加 Buds Ace</a><a href="https://www.opposhop.cn/cn/web/products/6009.html " target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>一加 Buds Z2</a></div><div cols="2" class="footer-links-row d-flex flex-column" data-v-824767e8><div class="footer-content-title" data-v-824767e8>智能硬件</div> <a href="https://www.opposhop.cn/cn/web/products/25179.html?us=pc&amp;um=yedi" target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Watch 4 Pro</a><a href="https://www.opposhop.cn/cn/web/products/23405.html?us=pc&amp;um=yedi" target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Pad 2 </a><a href="https://www.opposhop.cn/cn/web/products/23359.html?us=pc&amp;um=yedi" target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8> OPPO Enco Free3</a><a href="https://www.opposhop.cn/cn/web/products/8384.html?us=pc&amp;um=yedi" target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Watch 3 </a><a href="https://www.opposhop.cn/cn/web/products/8364.html?us=pc&amp;um=yedi" target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Pad</a><a href="https://www.opposhop.cn/cn/web/products/8368.html?us=pc&amp;um=yedi" target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Pad Air</a><a href="https://www.opposhop.cn/cn/web/products/22875.html?us=pc&amp;um=yedi" target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Enco X2</a><a href="https://www.opposhop.cn/cn/web/products/9855.html?us=pc&amp;um=yedi" target="_blank" class="footer-content-link" data-v-32c47e7c data-v-824767e8>OPPO Enco Air3</a></div></div> <div class="hotline" data-v-824767e8><!----></div></div> <hr role="separator" aria-orientation="horizontal" class="v-divider theme--light" data-v-824767e8> <div class="site" data-v-824767e8><div class="site-copyright mb-4" data-v-824767e8><span data-v-824767e8>© 2004-2023 OPPO 版权所有</span><a href="https://beian.miit.gov.cn/" target="_blank" data-v-824767e8>粤ICP备14056724号</a> <!----><!----><!----><!----><!----><!----><!----><!----></div> <div class="site-copyright align-center d-flex" data-v-824767e8><img src="https://dsfs.oppo.com/oppo/images/common/police-25797632ad.png" height="24" width="24" class="mr-2" data-v-824767e8><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44190002001939" target="_blank" rel="nofollow" data-v-824767e8>粤公安网备 44190002001939号</a></div> <div class="site-follow" data-v-824767e8></div></div> <!----></div></footer><!----><div role="dialog" class="v-dialog__container" data-v-09505ad2><!----></div><div role="dialog" class="v-dialog__container" data-v-0c5f99b6><!----></div></div></div></div></div><script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,_,$,aa,ab,ac,ad,ae,af,ag,ah,ai,aj,ak,al,am,an,ao,ap){return {layout:"default",data:[{headData:{code:"homepage",title:"OPPO 商城",description:"OPPO 商城是以潮流数码、生态产品销售为主营业务的电商平台，提供OPPO、一加等多品牌产品和服务",keywords:"OPPO商城，OPPO官方商城，OnePlus官方商城，OPPO最新款手机在线订购, OnePlus最新款手机在线购买"},pageData:{menuList:[{title:x,code:y,url:b,child:[],categoryCode:y,name:x,mainPic:a,secondaryPic:a,version:z,status:d,efficientTime:z,weight:9999,refreshTime:e,searchPercent:a,searchCode:a,whiteDistinctId:a},{title:q,code:A,url:b,child:[],categoryCode:A,name:q,mainPic:a,secondaryPic:a,version:B,status:d,efficientTime:B,weight:2000,refreshTime:e,searchPercent:a,searchCode:a,whiteDistinctId:a},{title:r,code:C,url:b,child:[],categoryCode:C,name:r,mainPic:a,secondaryPic:a,version:D,status:d,efficientTime:D,weight:1500,refreshTime:e,searchPercent:a,searchCode:a,whiteDistinctId:a},{title:E,code:F,url:b,child:[],categoryCode:F,name:E,mainPic:a,secondaryPic:a,version:G,status:d,efficientTime:G,weight:1004,refreshTime:e,searchPercent:a,searchCode:a,whiteDistinctId:a},{title:H,code:I,url:b,child:[],categoryCode:I,name:H,mainPic:a,secondaryPic:a,version:J,status:d,efficientTime:J,weight:1002,refreshTime:e,searchPercent:a,searchCode:a,whiteDistinctId:a},{title:K,code:L,url:b,child:[],categoryCode:L,name:K,mainPic:a,secondaryPic:a,version:M,status:d,efficientTime:M,weight:1001,refreshTime:e,searchPercent:a,searchCode:a,whiteDistinctId:a},{title:N,code:O,url:b,child:[],categoryCode:O,name:N,mainPic:a,secondaryPic:a,version:P,status:d,efficientTime:P,weight:1000,refreshTime:e,searchPercent:a,searchCode:a,whiteDistinctId:a},{title:Q,code:R,url:b,child:[],categoryCode:R,name:Q,mainPic:a,secondaryPic:a,version:S,status:d,efficientTime:S,weight:999,refreshTime:e,searchPercent:a,searchCode:a,whiteDistinctId:a},{title:T,code:U,url:b,child:[],categoryCode:U,name:T,mainPic:a,secondaryPic:a,version:V,status:d,efficientTime:V,weight:996,refreshTime:e,searchPercent:a,searchCode:a,whiteDistinctId:a},{title:W,code:X,url:b,child:[],categoryCode:X,name:W,mainPic:a,secondaryPic:a,version:Y,status:d,efficientTime:Y,weight:989,refreshTime:e,searchPercent:a,searchCode:a,whiteDistinctId:a}],banner:[{id:"1439",name:"PC-首页-BANNER轮播",showName:c,seq:s,configKey:t,url:b,jsonUrl:b,moreText:b,iconTextColor:b,isShowButton:c,buttonDesc:b,buttonFontColor:b,buttonBackColor:b,rows:c,cols:c,maxProductNum:c,moduleCode:"700003",beginAt:a,endAt:a,startAt:a,productDetailss:[{id:"44393",skuId:c,goodsType:a,title:"OPPO手机 Find N3",secondTitle:b,thirdTitle:b,url:"https:\u002F\u002Fdsfs.oppo.com\u002Farchives\u002F202310\u002F202310110810396526965f0f9dd.png?_w_=5120&_h_=1192",jsonUrl:b,video:b,seq:250,configKeyLattice:c,latticeIndex:c,configProductType:j,goodsSpuId:a,goodsSpuName:a,isShowIcon:c,topIcon:b,cardType:d,backColor:b,liveInfoJson:a,businessInfoJson:a,priceInfo:a,price:a,originalPrice:a,categoryId:a,link:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F25460.html",isLogin:c,marketPrice:a,nameLabel:a,imageLabel:a,extendList:a,heytapInfo:a,activityList:a,placeholderLabel:a,vipDiscounts:a,nameLabelWidth:a,nameLabelHeight:a,pricePrefix:a,priceSuffix:a,goodsTopCategoryId:a,goodsTopCategoryName:a,goodsCategoryId:a,goodsCategoryName:a,skuName:a,cardInfoType:a,liveUrl:a,storage:a,seckill:a,rankInfo:a,businessLink:b,sellPoints:a,commentCount:a,commentRate:a,interenve:f,productDetailLabelss:[]},{id:"44338",skuId:c,goodsType:a,title:"OPPO手机 Find N3 Flip",secondTitle:b,thirdTitle:b,url:"https:\u002F\u002Fdsfs.oppo.com\u002Farchives\u002F202309\u002F202309271109396513a56399a37.jpg?_w_=5120&_h_=1192",jsonUrl:b,video:b,seq:240,configKeyLattice:c,latticeIndex:c,configProductType:j,goodsSpuId:a,goodsSpuName:a,isShowIcon:c,topIcon:b,cardType:d,backColor:b,liveInfoJson:a,businessInfoJson:a,priceInfo:a,price:a,originalPrice:a,categoryId:a,link:Z,isLogin:c,marketPrice:a,nameLabel:a,imageLabel:a,extendList:a,heytapInfo:a,activityList:a,placeholderLabel:a,vipDiscounts:a,nameLabelWidth:a,nameLabelHeight:a,pricePrefix:a,priceSuffix:a,goodsTopCategoryId:a,goodsTopCategoryName:a,goodsCategoryId:a,goodsCategoryName:a,skuName:a,cardInfoType:a,liveUrl:a,storage:a,seckill:a,rankInfo:a,businessLink:b,sellPoints:a,commentCount:a,commentRate:a,interenve:f,productDetailLabelss:[]},{id:"44286",skuId:c,goodsType:a,title:"IOT Watch 4 Pro",secondTitle:b,thirdTitle:b,url:"https:\u002F\u002Fdsfs.oppo.com\u002Farchives\u002F202309\u002F2023090710094164f938ddf01c4.jpg?_w_=5120&_h_=1192",jsonUrl:b,video:b,seq:230,configKeyLattice:c,latticeIndex:c,configProductType:j,goodsSpuId:a,goodsSpuName:a,isShowIcon:c,topIcon:b,cardType:d,backColor:b,liveInfoJson:a,businessInfoJson:a,priceInfo:a,price:a,originalPrice:a,categoryId:a,link:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F25179.html",isLogin:c,marketPrice:a,nameLabel:a,imageLabel:a,extendList:a,heytapInfo:a,activityList:a,placeholderLabel:a,vipDiscounts:a,nameLabelWidth:a,nameLabelHeight:a,pricePrefix:a,priceSuffix:a,goodsTopCategoryId:a,goodsTopCategoryName:a,goodsCategoryId:a,goodsCategoryName:a,skuName:a,cardInfoType:a,liveUrl:a,storage:a,seckill:a,rankInfo:a,businessLink:b,sellPoints:a,commentCount:a,commentRate:a,interenve:f,productDetailLabelss:[]},{id:"44119",skuId:c,goodsType:a,title:"一加手机 Ace2Pro",secondTitle:b,thirdTitle:b,url:"https:\u002F\u002Fdsfs.oppo.com\u002Farchives\u002F202308\u002F2023082303085164e5b4f702e47.jpg?_w_=5120&_h_=1192",jsonUrl:b,video:b,seq:220,configKeyLattice:c,latticeIndex:c,configProductType:j,goodsSpuId:a,goodsSpuName:a,isShowIcon:c,topIcon:b,cardType:d,backColor:b,liveInfoJson:a,businessInfoJson:a,priceInfo:a,price:a,originalPrice:a,categoryId:a,link:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F24518.html",isLogin:c,marketPrice:a,nameLabel:a,imageLabel:a,extendList:a,heytapInfo:a,activityList:a,placeholderLabel:a,vipDiscounts:a,nameLabelWidth:a,nameLabelHeight:a,pricePrefix:a,priceSuffix:a,goodsTopCategoryId:a,goodsTopCategoryName:a,goodsCategoryId:a,goodsCategoryName:a,skuName:a,cardInfoType:a,liveUrl:a,storage:a,seckill:a,rankInfo:a,businessLink:b,sellPoints:a,commentCount:a,commentRate:a,interenve:f,productDetailLabelss:[]},{id:"43924",skuId:c,goodsType:a,title:_,secondTitle:b,thirdTitle:b,url:"https:\u002F\u002Fdsfs.oppo.com\u002Farchives\u002F202306\u002F20230630020638649e7ce296a0e.jpg?_w_=5120&_h_=1192",jsonUrl:b,video:b,seq:210,configKeyLattice:c,latticeIndex:c,configProductType:j,goodsSpuId:a,goodsSpuName:a,isShowIcon:c,topIcon:b,cardType:d,backColor:b,liveInfoJson:a,businessInfoJson:a,priceInfo:a,price:a,originalPrice:a,categoryId:a,link:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F23868.html",isLogin:c,marketPrice:a,nameLabel:a,imageLabel:a,extendList:a,heytapInfo:a,activityList:a,placeholderLabel:a,vipDiscounts:a,nameLabelWidth:a,nameLabelHeight:a,pricePrefix:a,priceSuffix:a,goodsTopCategoryId:a,goodsTopCategoryName:a,goodsCategoryId:a,goodsCategoryName:a,skuName:a,cardInfoType:a,liveUrl:a,storage:a,seckill:a,rankInfo:a,businessLink:b,sellPoints:a,commentCount:a,commentRate:a,interenve:f,productDetailLabelss:[]},{id:"42384",skuId:c,goodsType:a,title:"OPPO Pad 2",secondTitle:b,thirdTitle:b,url:"https:\u002F\u002Fdsfs.oppo.com\u002Farchives\u002F202305\u002F202305310305516476fa3f2ca11.jpg?_w_=5120&_h_=1192",jsonUrl:b,video:b,seq:205,configKeyLattice:c,latticeIndex:c,configProductType:j,goodsSpuId:a,goodsSpuName:a,isShowIcon:c,topIcon:b,cardType:d,backColor:b,liveInfoJson:a,businessInfoJson:a,priceInfo:a,price:a,originalPrice:a,categoryId:a,link:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F23909.html",isLogin:c,marketPrice:a,nameLabel:a,imageLabel:a,extendList:a,heytapInfo:a,activityList:a,placeholderLabel:a,vipDiscounts:a,nameLabelWidth:a,nameLabelHeight:a,pricePrefix:a,priceSuffix:a,goodsTopCategoryId:a,goodsTopCategoryName:a,goodsCategoryId:a,goodsCategoryName:a,skuName:a,cardInfoType:a,liveUrl:a,storage:a,seckill:a,rankInfo:a,businessLink:b,sellPoints:a,commentCount:a,commentRate:a,interenve:f,productDetailLabelss:[]}],link:a,isLogin:a,moreLink:a,moreIsLogin:a,searchId:a}],modules:[{title:"热卖专区",showName:d,link:"700007"},{title:"双通栏运营位",showName:c,link:"700030"},{title:$,showName:c,link:"700008"},{title:aa,showName:d,link:"700009"},{title:"realme专区",showName:d,link:"700010"},{title:"智能好物",showName:d,link:"700011"}],headline:[{id:"1284",title:"领券中心",showName:d,url:"https:\u002F\u002Fdsfs.oppo.com\u002Farchives\u002F202105\u002F2021052007053560a6485b14f2d.png?_w_=160&_h_=160",jsonUrl:b,clickUrl:b,jsonClickUrl:b,beginAt:a,endAt:a,seq:80,labelDetailss:[],link:"\u002Fcoupons",isLogin:c,moduleCode:m,rows:c,cols:c,maxProductNum:c},{id:"1285",title:"以旧换新",showName:d,url:"https:\u002F\u002Fdsfs.oppo.com\u002Farchives\u002F202105\u002F2021052007051260a649ac9938c.png?_w_=160&_h_=160",jsonUrl:b,clickUrl:b,jsonClickUrl:b,beginAt:a,endAt:a,seq:70,labelDetailss:[],link:"https:\u002F\u002Fyihuan.oppo.com\u002Fstatic\u002Findex.html#\u002F?channelId=1029710",isLogin:c,moduleCode:m,rows:c,cols:c,maxProductNum:c},{id:"1287",title:"价保政策",showName:c,url:"https:\u002F\u002Fdsfs.oppo.com\u002Farchives\u002F202105\u002F2021052008053660a65c48885d6.png?_w_=160&_h_=160",jsonUrl:b,clickUrl:b,jsonClickUrl:b,beginAt:a,endAt:a,seq:u,labelDetailss:[],link:"https:\u002F\u002Fhd.opposhop.cn\u002Fbp\u002F2f7bdbdf02aa458c?nightModelEnable=true",isLogin:c,moduleCode:m,rows:c,cols:c,maxProductNum:c},{id:"1389",title:"企业购",showName:d,url:"https:\u002F\u002Fdsfs.oppo.com\u002Farchives\u002F202105\u002F2021052705052360af697f68e26.png?_w_=160&_h_=160",jsonUrl:b,clickUrl:b,jsonClickUrl:b,beginAt:a,endAt:a,seq:40,labelDetailss:[],link:"https:\u002F\u002Fhd.opposhop.cn\u002Fbp\u002F5e449f0ce9fe500e?nightModelEnable=true&utm_source=qiyegou&utm_medium=qiyegou",isLogin:c,moduleCode:m,rows:c,cols:c,maxProductNum:c}],headLineAd:[{id:"1440",name:"PC-首页-首屏广告位",showName:c,seq:4,configKey:t,url:b,jsonUrl:b,moreText:b,iconTextColor:b,isShowButton:c,buttonDesc:b,buttonFontColor:b,buttonBackColor:b,rows:c,cols:c,maxProductNum:c,moduleCode:"700013",beginAt:a,endAt:a,startAt:a,productDetailss:[{id:"39378",skuId:c,goodsType:a,title:ab,secondTitle:b,thirdTitle:b,url:"https:\u002F\u002Fdsfs.oppo.com\u002Farchives\u002F202308\u002F2023080105085964c8cd8b01d42.png?_w_=592&_h_=180",jsonUrl:b,video:b,seq:d,configKeyLattice:c,latticeIndex:c,configProductType:j,goodsSpuId:a,goodsSpuName:a,isShowIcon:c,topIcon:b,cardType:d,backColor:b,liveInfoJson:a,businessInfoJson:a,priceInfo:a,price:a,originalPrice:a,categoryId:a,link:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F23373.html",isLogin:c,marketPrice:a,nameLabel:a,imageLabel:a,extendList:a,heytapInfo:a,activityList:a,placeholderLabel:a,vipDiscounts:a,nameLabelWidth:a,nameLabelHeight:a,pricePrefix:a,priceSuffix:a,goodsTopCategoryId:a,goodsTopCategoryName:a,goodsCategoryId:a,goodsCategoryName:a,skuName:a,cardInfoType:a,liveUrl:a,storage:a,seckill:a,rankInfo:a,businessLink:b,sellPoints:a,commentCount:a,commentRate:a,interenve:f,productDetailLabelss:[]}],link:a,isLogin:a,moreLink:a,moreIsLogin:a,searchId:a}]}}],fetch:{"data-v-d8de0e46:0":{logoWhite:"https:\u002F\u002Fdsfs.oppo.com\u002Foppo\u002Fshop-pc-v2\u002Fmain\u002Fimg\u002F1a1432b.png",logoBlack:"https:\u002F\u002Fdsfs.oppo.com\u002Foppo\u002Fshop-pc-v2\u002Fmain\u002Fimg\u002F9c6f387.png",dialog:f,placeholder:"OPPO手机",topics:[{id:"1276",title:$,showName:c,url:b,jsonUrl:b,clickUrl:b,jsonClickUrl:b,beginAt:a,endAt:a,seq:ac,labelDetailss:[],link:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Ftopic\u002F700100.html",isLogin:c,moduleCode:n,rows:c,cols:c,maxProductNum:c},{id:"1277",title:aa,showName:c,url:b,jsonUrl:b,clickUrl:b,jsonClickUrl:b,beginAt:a,endAt:a,seq:90,labelDetailss:[],link:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Ftopic\u002F700200.html",isLogin:c,moduleCode:n,rows:c,cols:c,maxProductNum:c},{id:"1280",title:ad,showName:c,url:b,jsonUrl:b,clickUrl:b,jsonClickUrl:b,beginAt:a,endAt:a,seq:75,labelDetailss:[],link:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Ftopic\u002F700400.html",isLogin:c,moduleCode:n,rows:c,cols:c,maxProductNum:c},{id:"1281",title:ae,showName:c,url:b,jsonUrl:b,clickUrl:b,jsonClickUrl:b,beginAt:a,endAt:a,seq:u,labelDetailss:[],link:"https:\u002F\u002Fsupport.oppo.com\u002Fcn\u002F",isLogin:c,moduleCode:n,rows:c,cols:c,maxProductNum:c}],hoverTitle:b,module:[],modules:[],iconSrcs:["https:\u002F\u002Fdsfs.oppo.com\u002Foppo\u002Fshop-pc-v2\u002Fmain\u002Fimg\u002Fc502a41.svg","https:\u002F\u002Fdsfs.oppo.com\u002Foppo\u002Fshop-pc-v2\u002Fmain\u002Fimg\u002F1a74504.svg"],showMore:f,topicInMenu:[],hover:b,absolute:af},"AppHeader:0":{data:[{id:"1652",title:"OPPO 官网",showName:d,url:b,jsonUrl:b,clickUrl:b,jsonClickUrl:b,beginAt:a,endAt:a,seq:ac,labelDetailss:[],link:"https:\u002F\u002Fwww.oppo.com\u002Fcn\u002F",isLogin:c,moduleCode:ag,rows:c,cols:c,maxProductNum:c},{id:"1653",title:"一加官网",showName:d,url:b,jsonUrl:b,clickUrl:b,jsonClickUrl:b,beginAt:a,endAt:a,seq:u,labelDetailss:[],link:"https:\u002F\u002Fwww.oneplus.com\u002Fcn",isLogin:c,moduleCode:ag,rows:c,cols:c,maxProductNum:c}]},"data-v-824767e8:0":{floatBtn01:"https:\u002F\u002Fdsfs.oppo.com\u002Foppo\u002Fshop-pc-v2\u002Fmain\u002Fimg\u002Fb5d8f97.svg",showCookieTips:f,points:[{title:"全国联保",icon:"https:\u002F\u002Fdsfs.oppo.com\u002Foppo\u002Fshop-pc-v2\u002Fmain\u002Fimg\u002F04210c8.svg"},{title:"7天无理由退货",icon:"https:\u002F\u002Fdsfs.oppo.com\u002Foppo\u002Fshop-pc-v2\u002Fmain\u002Fimg\u002F4be7942.svg"},{title:"官方换货保障",icon:"https:\u002F\u002Fdsfs.oppo.com\u002Foppo\u002Fshop-pc-v2\u002Fmain\u002Fimg\u002Feb8fa21.svg"},{title:"满69元包邮",icon:"https:\u002F\u002Fdsfs.oppo.com\u002Foppo\u002Fshop-pc-v2\u002Fmain\u002Fimg\u002F3839092.svg"},{title:"900+ 家售后网点",icon:"https:\u002F\u002Fdsfs.oppo.com\u002Foppo\u002Fshop-pc-v2\u002Fmain\u002Fimg\u002F11324b1.svg"}],data:[{id:"1005",createdAt:k,updatedAt:v,parentId:c,name:q,url:b,sort:ah,children:[{id:"1006",createdAt:k,updatedAt:1695795449000,parentId:g,name:"OPPO Find N3 Flip",url:Z,sort:31,children:a},{id:"1032",createdAt:1619147406000,updatedAt:1695024107000,parentId:g,name:"OPPO Find N2 Flip",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F9371.html ",sort:30,children:a},{id:"1064",createdAt:ai,updatedAt:1679375970000,parentId:g,name:"OPPO Find X6 Pro",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F23372.html ",sort:27,children:a},{id:"1007",createdAt:k,updatedAt:ai,parentId:g,name:ab,url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F23373.html ",sort:t,children:a},{id:"1056",createdAt:w,updatedAt:o,parentId:g,name:_,url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F23849.html ",sort:aj,children:a},{id:"1055",createdAt:w,updatedAt:o,parentId:g,name:"OPPO Reno10 Pro",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F23879.html ",sort:ak,children:a},{id:"1054",createdAt:w,updatedAt:o,parentId:g,name:"OPPO Reno10",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F23863.html ",sort:18,children:a},{id:"1036",createdAt:1621926580000,updatedAt:1689649095000,parentId:g,name:"OPPO K11",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F24335.html",sort:al,children:a},{id:"1009",createdAt:k,updatedAt:o,parentId:g,name:"OPPO K11x",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F23820.html ",sort:ah,children:a}]},{id:"1011",createdAt:k,updatedAt:v,parentId:c,name:r,url:b,sort:e,children:[{id:"1067",createdAt:1691291597000,updatedAt:1694068855000,parentId:h,name:"一加 Ace 2 Pro",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F24521.html ",sort:16,children:a},{id:"1062",createdAt:1675047457000,updatedAt:1691995077000,parentId:h,name:"一加 Ace 2",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F9645.html ",sort:15,children:a},{id:"1063",createdAt:1677550313000,updatedAt:1690445796000,parentId:h,name:"一加 Ace 2V",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F9861.html ",sort:14,children:a},{id:"1061",createdAt:1672021321000,updatedAt:1692584073000,parentId:h,name:"一加 11",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F9531.html ",sort:am,children:a},{id:"1053",createdAt:1652855595000,updatedAt:1689153085000,parentId:h,name:"一加 Ace 竞速版",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F7262.html ",sort:11,children:a},{id:"1030",createdAt:1618804712000,updatedAt:1689843672000,parentId:h,name:"一加 Ace Pro",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F8288.html ",sort:al,children:a},{id:"1015",createdAt:k,updatedAt:1672297708000,parentId:h,name:"一加 Buds Pro 2",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F9529.html ",sort:s,children:a},{id:"1037",createdAt:1627294354000,updatedAt:1675049402000,parentId:h,name:" 一加 Buds Ace",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F9684.html ",sort:2,children:a},{id:"1039",createdAt:1634373385000,updatedAt:1641889582000,parentId:h,name:"一加 Buds Z2",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F6009.html ",sort:d,children:a}]},{id:"1045",createdAt:p,updatedAt:v,parentId:c,name:ad,url:b,sort:s,children:[{id:"1059",createdAt:l,updatedAt:1692807642000,parentId:i,name:"OPPO Watch 4 Pro",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F25179.html?us=pc&um=yedi",sort:25,children:a},{id:"1048",createdAt:p,updatedAt:an,parentId:i,name:"OPPO Pad 2 ",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F23405.html?us=pc&um=yedi",sort:aj,children:a},{id:"1058",createdAt:l,updatedAt:an,parentId:i,name:" OPPO Enco Free3",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F23359.html?us=pc&um=yedi",sort:ak,children:a},{id:"1057",createdAt:l,updatedAt:l,parentId:i,name:"OPPO Watch 3 ",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F8384.html?us=pc&um=yedi",sort:am,children:a},{id:"1046",createdAt:p,updatedAt:ao,parentId:i,name:"OPPO Pad",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F8364.html?us=pc&um=yedi",sort:9,children:a},{id:"1052",createdAt:1652408721000,updatedAt:ao,parentId:i,name:"OPPO Pad Air",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F8368.html?us=pc&um=yedi",sort:8,children:a},{id:"1047",createdAt:p,updatedAt:l,parentId:i,name:"OPPO Enco X2",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F22875.html?us=pc&um=yedi",sort:7,children:a},{id:"1049",createdAt:1645178449000,updatedAt:1676859265000,parentId:i,name:"OPPO Enco Air3",url:"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F9855.html?us=pc&um=yedi",sort:e,children:a}]}],urlList:[{name:" 隐私政策",url:"https:\u002F\u002Fwww.opposhop.cn\u002Flegal\u002Fprivacy\u002Fprivacy-policies.html"},{name:" 用户使用协议",url:"https:\u002F\u002Fwww.opposhop.cn\u002Flegal\u002Fprivacy\u002Fuser-agreement.html"},{name:" 资质证照",url:"https:\u002F\u002Fwww.opposhop.cn\u002Flegal\u002Fprivacy\u002Fshow-license.html"},{name:" 知识产权",url:"https:\u002F\u002Fwww.opposhop.cn\u002Flegal\u002Fprivacy\u002Fintellectual-property.html"}],content:[{title:"推荐机型",child:[{title:"R9s",to:b},{title:"R9 Plus",to:b},{title:"A59s",to:b},{title:"A57",to:b}]},{title:"在线购买",child:[{title:"手机",to:b},{title:"配件",to:b},{title:"购物指南",to:b},{title:"官方授权网店",to:b}]},{title:ae,child:[{title:"服务网点",to:b},{title:"零配件价格",to:b},{title:"云服务",to:b},{title:"建议反馈",to:b}]},{title:"关于我们",child:[{title:"关于OPPO",to:b},{title:"加入我们",to:b},{title:"采购相关",to:b},{title:"发布会回顾",to:b}]}]}},error:a,state:{num:c,pageData:{navs:[],searchHistory:[],viewHistory:[]},product:{skuDetail:{},color:a,config:a,skuInfo:{},referrerId:a,hasVideo:f,membershipLevel:a,isPriceduring:f,firstCategory:a,secondCategory:a,trackId:a,activityType:a,promotionType:"无"},types:{},user:{cookieData:a,userData:a,privacyAgreedList:[],isLogin:a},i18n:{routeParams:{}}},serverRendered:af,routePath:ap,config:{app:{basePath:"\u002Fcn\u002Fweb\u002F",assetsPath:ap,cdnURL:"https:\u002F\u002Fdsfs.oppo.com\u002Foppo\u002Fshop-pc-v2\u002Fmain\u002F"}}}}(null,"",0,1,5,false,1005,1011,1045,601,1603882013000,1659667428000,"700004","700002",1684490039000,1645178284000,"OPPO","一加",3,21,50,1645179795000,1653309551000,"热门推荐","003879",1692860993000,"003880",1697040000000,"003881",1695786026000,"平板电脑","003883",1693465273000,"智能耳机","003884",1695780000000,"智能穿戴","003885",1696817060000,"智能电视","003886",1696647647000,"智美生活","003887",1679385894000,"原装配件","003888",1693472743000,"保障服务","003895",1683703806000,"https:\u002F\u002Fwww.opposhop.cn\u002Fcn\u002Fweb\u002Fproducts\u002F25167.html","OPPO Reno10 Pro+","OPPO专区","OnePlus专区","OPPO Find X6",100,"智能硬件","服务",true,"700001",6,1679375312000,20,19,10,12,1678899308000,1673263222000,"\u002F"));</script><script src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/1581b1b.js" defer></script><script src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/fcf4195.js" defer></script><script src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/182493f.js" defer></script><script src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/1ce17e6.js" defer></script><script src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/afa21ee.js" defer></script><script src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/e093008.js" defer></script><script src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/81a78c4.js" defer></script>
+
+    <!-- OBus -->
+    <script charset="UTF-8" src="https://static-common.heytapdownload.com/otrack/otrack-latest.min.js"></script>
+    <script>window.otrack=new OTrack({app_id:"117500",app_key:"1360",region:"cn",env:location.origin.includes("opposhop")&&!location.origin.includes("prewww")?"prod":"pre",is_single_page_app:!1,heatmap:!0,pageview:{is_trigger_pageload:!0}}),otrack.setCustomHead({userId:getCookie("ssoid")})</script>
+  </body>
+  <script>function isSafari(){return/Safari/.test(navigator.userAgent)&&!/Chrome/.test(navigator.userAgent)}this.isSafari()&&document.querySelector("body").classList.add("is-safari-env")</script>
+</html>

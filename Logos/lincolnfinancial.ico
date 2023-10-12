@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <base href="/" />
+    <meta http-equiv="refresh" content="900;URL='https://www.lincolnfinancial.com/secure/login'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+   	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+    <link
+      rel="stylesheet"
+      href="https://idm.web.lfg.com/idm-login/styles.css"
+    />
+  </head>
+  <body>
+    <app-header></app-header>
+    <!-- Main content -->
+    <main role="main">
+      <!-- Breadcrumbs -->
+      <!-- Banner Component -->
+      <div class="u-global-container">
+        <!-- Content area 100% -->
+        <section class="content-wrapper">
+          <article class="main-content">
+            <section class="content-area">
+              <app-root></app-root>
+            </section>
+          </article>
+        </section>
+      </div>
+    </main>
+    <app-footer></app-footer>
+    <script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
+    <script>
+      var config = JSON.parse(
+        decodeURIComponent(escape(window.atob("eyJpY29uIjoiaHR0cHM6Ly93d3cubGZnLmNvbS9zdGF0aWMvd2NzL2xmZy1zdGF0aWMtZmlsZXMvYXNzZXRzL2ltYWdlcy9sZmctbG9nby1zdmctYnVyZ3VuZHkuc3ZnIiwiYXNzZXRzVXJsIjoiIiwiYXV0aDBEb21haW4iOiJhdXRoLmxpbmNvbG5maW5hbmNpYWwuY29tIiwiYXV0aDBUZW5hbnQiOiJsZmctZGlnaXRhbCIsImNsaWVudENvbmZpZ3VyYXRpb25CYXNlVXJsIjoiaHR0cHM6Ly9hdXRoLmxpbmNvbG5maW5hbmNpYWwuY29tLyIsImNhbGxiYWNrT25Mb2NhdGlvbkhhc2giOmZhbHNlLCJjYWxsYmFja1VSTCI6Imh0dHBzOi8vbGluY29sbmZpbmFuY2lhbC5jb20vc2VjdXJlL2xvZ2luL2NhbGxiYWNrIiwiY2RuIjoiaHR0cHM6Ly9jZG4uYXV0aDAuY29tLyIsImNsaWVudElEIjoidEJzZTZlaGJrVmpiN1VGQUdMY281MkhJR2JQTmRUalgiLCJkaWN0Ijp7InNpZ25pbiI6eyJ0aXRsZSI6IlNlY3VyZWRTaXRlcyJ9fSwiZXh0cmFQYXJhbXMiOnsicHJvdG9jb2wiOiJvYXV0aDIiLCJyZXNwb25zZV90eXBlIjoiY29kZSIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUiLCJub25jZSI6Im5jNnpUVmotS1l2djdCT0lqWEp6WHJOcjBkZFJNZUpEMFU4ZFVYSWFRUjgiLCJjb2RlX2NoYWxsZW5nZSI6Ino4SWdiZXJWWU5VZF9qcVJYekJvMDNQRU5Oa1A0aUVfZVlfY0tuY3hzYkkiLCJjb2RlX2NoYWxsZW5nZV9tZXRob2QiOiJTMjU2IiwiX2NzcmYiOiJmY1BjeUZZdC02SW13VXNjZEk4X2xwX0h2MC1xUWhLTXNuRE0iLCJfaW50c3RhdGUiOiJkZXByZWNhdGVkIiwic3RhdGUiOiJoS0ZvMlNCTWFXTTFVR0ZwTFhaWGRtUnBOa2xtVGkxM2JYaHdZa2RNTmxORU0zaG5US0Z1cFd4dloybHVvM1JwWk5rZ05uZGhWSGxUTlZoNFdVRlBiMGhKUkZNdGFucEpabWxEUjJOWWVVVnBVRVdqWTJsazJTQjBRbk5sTm1Wb1ltdFdhbUkzVlVaQlIweGpielV5U0VsSFlsQk9aRlJxV0EifSwiaW50ZXJuYWxPcHRpb25zIjp7InByb3RvY29sIjoib2F1dGgyIiwicmVzcG9uc2VfdHlwZSI6ImNvZGUiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIiwibm9uY2UiOiJuYzZ6VFZqLUtZdnY3Qk9JalhKelhyTnIwZGRSTWVKRDBVOGRVWElhUVI4IiwiY29kZV9jaGFsbGVuZ2UiOiJ6OElnYmVyVllOVWRfanFSWHpCbzAzUEVOTmtQNGlFX2VZX2NLbmN4c2JJIiwiY29kZV9jaGFsbGVuZ2VfbWV0aG9kIjoiUzI1NiIsIl9jc3JmIjoiZmNQY3lGWXQtNkltd1VzY2RJOF9scF9IdjAtcVFoS01zbkRNIiwiX2ludHN0YXRlIjoiZGVwcmVjYXRlZCIsInN0YXRlIjoiaEtGbzJTQk1hV00xVUdGcExYWlhkbVJwTmtsbVRpMTNiWGh3WWtkTU5sTkVNM2huVEtGdXBXeHZaMmx1bzNScFpOa2dObmRoVkhsVE5WaDRXVUZQYjBoSlJGTXRhbnBKWm1sRFIyTlllVVZwVUVXalkybGsyU0IwUW5ObE5tVm9ZbXRXYW1JM1ZVWkJSMHhqYnpVeVNFbEhZbEJPWkZScVdBIn0sIndpZGdldFVybCI6Imh0dHBzOi8vY2RuLmF1dGgwLmNvbS93Mi9hdXRoMC13aWRnZXQtNS4yLm1pbi5qcyIsImlzVGhpcmRQYXJ0eUNsaWVudCI6ZmFsc2UsImF1dGhvcml6YXRpb25TZXJ2ZXIiOnsidXJsIjoiaHR0cHM6Ly9hdXRoLmxpbmNvbG5maW5hbmNpYWwuY29tIiwiaXNzdWVyIjoiaHR0cHM6Ly9hdXRoLmxpbmNvbG5maW5hbmNpYWwuY29tLyJ9LCJjb2xvcnMiOnsicGFnZV9iYWNrZ3JvdW5kIjoiI2ZmZmZmZiIsInByaW1hcnkiOiIjYWMxMTJiIn19")))
+      );
+    </script>
+    <script type="text/javascript">
+      function getAnalyticsEnv() {
+        var host = window.location.host;
+        if (host.includes("-dev") || host.includes("localhost")) {
+          return "dev";
+        }
+        if (
+          host.includes("-test") ||
+          host.includes("-uat") ||
+          host.includes("-preprod")
+        ) {
+          return "qa";
+        }
+        return "prod";
+      }
+      (function (a, b, c, d) {
+        a =
+          "https://tags.tiqcdn.com/utag/lfg/lfgrwdbasic/" +
+          getAnalyticsEnv() +
+          "/utag.js";
+        b = document;
+        c = "script";
+        d = b.createElement(c);
+        d.src = a;
+        d.type = "text/java" + c;
+        d.async = true;
+        a = b.getElementsByTagName(c)[0];
+        a.parentNode.insertBefore(d, a);
+      })();
+      
+      
+    </script>
+    <script src="https://idm.web.lfg.com/idm-login/runtime.js" defer></script>
+    <script src="https://idm.web.lfg.com/idm-login/polyfills-es5.js" nomodule defer></script>
+    <script src="https://idm.web.lfg.com/idm-login/polyfills.js" defer></script>
+    <script src="https://idm.web.lfg.com/idm-login/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body onload="document.forms[0].submit()">
+        <noscript>
+            <p>
+                <strong>Note:</strong> Since your browser does not support JavaScript,
+                you must press the Continue button once to proceed.
+            </p>
+        </noscript>
+        
+        <form action="https://partners.subaru.com/oamfed/idp/samlv20" method="post">
+            <div>
+                <input type="hidden" name="SAMLRequest" value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c2FtbDJwOkF1dGhuUmVxdWVzdCB4bWxuczpzYW1sMnA9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDpwcm90b2NvbCIgQXNzZXJ0aW9uQ29uc3VtZXJTZXJ2aWNlVVJMPSJodHRwczovL3d3dy5zdWJhcnVuZXQuY29tL2FwaS9hdXRoLXNlcnZpY2VzL3NhbWwyL2xvZ2luL3NvYS1zbmV0IiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9wYXJ0bmVycy5zdWJhcnUuY29tL29hbWZlZC9pZHAvc2FtbHYyMCIgRm9yY2VBdXRobj0iZmFsc2UiIElEPSJBUlEwMmEyMThlLWI0ZDYtNGJmOC05ZTY2LTgxMWZkZDFhN2JjNCIgSXNQYXNzaXZlPSJmYWxzZSIgSXNzdWVJbnN0YW50PSIyMDIzLTEwLTEyVDA2OjE2OjM0LjU5N1oiIFByb3RvY29sQmluZGluZz0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmJpbmRpbmdzOkhUVFAtUE9TVCIgVmVyc2lvbj0iMi4wIj48c2FtbDI6SXNzdWVyIHhtbG5zOnNhbWwyPSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YXNzZXJ0aW9uIj5zdWJhcnVuZXQ8L3NhbWwyOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj4KPGRzOlNpZ25lZEluZm8+CjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIi8+CjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2Ii8+CjxkczpSZWZlcmVuY2UgVVJJPSIjQVJRMDJhMjE4ZS1iNGQ2LTRiZjgtOWU2Ni04MTFmZGQxYTdiYzQiPgo8ZHM6VHJhbnNmb3Jtcz4KPGRzOlRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNlbnZlbG9wZWQtc2lnbmF0dXJlIi8+CjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz4KPC9kczpUcmFuc2Zvcm1zPgo8ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxlbmMjc2hhMjU2Ii8+CjxkczpEaWdlc3RWYWx1ZT5Ndk5EejlSaGpleTFIWkRyY29idUN5dGw1TG9XaXJPZkU2c3ZRaUpBZ1VzPTwvZHM6RGlnZXN0VmFsdWU+CjwvZHM6UmVmZXJlbmNlPgo8L2RzOlNpZ25lZEluZm8+CjxkczpTaWduYXR1cmVWYWx1ZT4KS2RIK1Z4dER1cFdrQjlHZXkzdEVIY3BpRFJDbWxwYkovK1hpUXo4UmFwcnFsZUhrdkRPNis4K09LUGEwcmhGczV2clpwM2Y5cmNJYSYjMTM7CmJhRlRaNlJINXRVTEgzb3Zoa3h0SGZGRi9MTWdhMkl2emZwNGltcWtjTzlhYjV2WWQzSUZSMWRZUXBwUUx0S1BIbjloQ1d0Mi9HYVEmIzEzOwpuRHhPd2JDeG5EZm1KbWZGMFE4V1EvOHBUQkRrWkhBNjJJaWxzdy9oandOcWpzMlFTcDdUL3FQSGdOQWNJbkhjSVFlbDV6YWtPdWtIJiMxMzsKNW85bDJQdFp4NFE3NGh3YUc1SWJuNjJIcUJGN3h4bmVvRk9iN0l0dkxXWVYyOVdzN2dCSlp1WU41b3ArbUd1RXNjMUl4bzRjMURQNCYjMTM7Ck9sRlBOY1FveWF0ZjNHeHFaMldrbVIyL2dkalNKcHNCR1pGYk5BPT0KPC9kczpTaWduYXR1cmVWYWx1ZT4KPC9kczpTaWduYXR1cmU+PC9zYW1sMnA6QXV0aG5SZXF1ZXN0Pg=="/>
+                <input type="hidden" name="RelayState" value="http://www.subarunet.com/home/"/>
+            </div>
+            <noscript>
+                <div>
+                    <input type="submit" value="Continue"/>
+                </div>
+            </noscript>
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,1150 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>
+        
+            
+                Homepage | UKTV
+            
+        
+    </title>
+
+    
+        
+            <meta name="description" content="Multi-award winning media company with 7 channels: Dave, Gold, W, Drama, Alibi, Eden and Yesterday and on demand service UKTV Play" />
+            <meta property="og:description" content="Multi-award winning media company with 7 channels: Dave, Gold, W, Drama, Alibi, Eden and Yesterday and on demand service UKTV Play" />
+        
+        <meta name="keywords" content="network-homepage,homepage,network" />
+        <meta property="og:image" content="https://res.cloudinary.com/uktv/image/upload/v1513179435/zlrfbsasgmtrzjoqfo2n.jpg" />
+        <meta property="og:title" content="Homepage | UKTV" />
+        <meta property="og:url" content="https://network.uktv.co.uk/" />
+    
+
+    <meta name="google-site-verification" content="0M95EzmrXkGGITbuA3aER5tLr-oYqnqlAlml-SJFyWs" />
+    <meta name="msvalidate.01" content="0F77DD5032090B9F23FFAC093756658A" />
+
+    <!-- Schema Metadata for Name and Image -->
+    
+        <meta itemprop="name" content="UKTV" />
+    
+
+    
+        <meta itemprop="image" content="https://uktv-static.s3.amazonaws.com/fgprod/network/img/default_image.jpg" />
+    
+
+    
+        
+        
+
+        
+            <meta name="twitter:card" content="summary">
+            <meta name="twitter:site" content="@UKTV">
+            <meta name="twitter:creator" content="@UKTV">
+            <meta name="twitter:title" content="Homepage">
+            
+                <meta name="twitter:description" content="Imagine more.">
+            
+            <meta name="twitter:image" content="https://res.cloudinary.com/uktv/image/upload/h_720,q_80,w_1280/v1513179435/zlrfbsasgmtrzjoqfo2n.jpg">
+
+            
+        
+    
+
+    
+    
+        
+            <meta name="apple-itunes-app" content="app-id=596009592, affiliate-data=ct=website-smart-banner&pt=633719 "/>
+        
+    
+
+    
+        
+            <meta property="fb:app_id" content="220731151407495" />
+        
+    
+
+    <meta name="googlebot" content="NOODP">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <link rel="icon" type="image/png" href="https://uktv-static.s3.amazonaws.com/fgprod/network/img/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uktv-static.s3.amazonaws.com/fgprod/network/img/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://uktv-static.s3.amazonaws.com/fgprod/network/img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://uktv-static.s3.amazonaws.com/fgprod/network/img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="https://uktv-static.s3.amazonaws.com/fgprod/network/img/apple-touch-icon-57x57-precomposed.png">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    
+
+    <link rel="stylesheet" href="https://uktv-static.s3.amazonaws.com/fgprod/network/CACHE/css/output.ed2665f55cb9.css" type="text/css">
+
+    
+
+
+    <link rel="stylesheet" href="https://uktv-static.s3.amazonaws.com/fgprod/network/CACHE/css/output.ea50dcee4f66.css" type="text/css">
+
+    
+    
+
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="https://uktv-static.s3.amazonaws.com/fgprod/network/js/jquery_1.7.1.min.js" type="text/javascript"></script>
+    <script src="https://uktv-static.s3.amazonaws.com/fgprod/network/js/libraries-plugins/modernizr.js" type="text/javascript"></script>
+
+    
+
+    
+    
+
+<script type="text/javascript">
+
+var UKCMS = UKCMS || {};
+
+UKCMS.getAmazonVersion = function () {
+    // http://docs.aws.amazon.com/silk/latest/developerguide/detecting-silk-ua.html
+    var silkMatch = /(?:; ([^;)]+) Build\/.*)?\bSilk\/([0-9._-]+)\b(.*\bMobile Safari\b)?/.exec(navigator.userAgent);
+}
+
+UKCMS.getAndroidVersion = function (ua) {
+    ua = (ua || navigator.userAgent).toLowerCase();
+    var match = ua.match(/android\s([0-9\.]*)/);
+    return match ? match[1] : false;
+}
+
+UKCMS.getiOSVersion = function (ua) {
+    if (/iP(hone|od|ad)/.test(navigator.platform)) {
+        // supports iOS 2.0 and later: <http://bit.ly/TJjs1V>
+        var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+        return v ? [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)] : false;
+    } else {
+        return false;
+    }
+}
+
+UKCMS.SETTINGS = {
+    static_url: 'https://uktv-static.s3.amazonaws.com/fgprod/network/',
+    days_left_threshold: 3,
+    filter_api_base: '//eeee7491a9c34dd9b2f2daa63dc09b96-rest.thefilter.com',
+    is_play_portal: 'false',
+    is_vod_watch_page: '' === '' ? false : true,
+    itunes_app_url: 'https://itunes.apple.com/gb/app/dave/id596009592?mt=8',
+    google_play_app_url: '',
+    amazon_app_url: '',
+    primetime_start: parseInt('19', 10),
+    site: 'network',
+    site_name: 'network',
+    play_redirect_referrers: 'dave.*uktv|w.*uktv|yesterday.*uktv|drama.*uktv',
+    filter_platform: 'webplayer',
+    filter_version: '1',
+    display_predictive_search: 'False'.toLowerCase() === 'true',
+    display_tv_guide_program_info_on_click: 'True'.toLowerCase() === 'true',
+    req_login: ''.toLowerCase() === 'true',
+};
+
+UKCMS.META = {
+    UNIVERSAL : {
+        environment: '',
+        site_name: 'network',
+        version: '4.0'
+    },
+    USER : {
+        user_id: 'None',
+        gender: '',
+        age: ''
+    },
+    PAGE : {
+        title: 'Homepage',
+        slug: 'homepage',
+        item_type: 'hubpage',
+        channel: '',
+        brand_title: ''
+    },
+    VIDEO : {
+        hnum: '',
+        channel: ''
+    },
+    TV_GUIDE : {
+        title: '',
+        channel: '',
+        slug: ''
+    },
+    SEARCH: {
+        title: ''
+    },
+    P_PIN: {
+        title: ''
+    }
+};
+
+UKCMS.CLIENT = {
+    initialViewportWidth: $(window).width(),
+    is_iPad: /iPad/i.test(navigator.userAgent),
+    is_iOS: navigator.userAgent.indexOf('iPad') > -1 || navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPod') > -1,
+    is_iOS_version: UKCMS.getiOSVersion(),
+    is_android: UKCMS.getAndroidVersion() ? true : false,
+    is_amazon: UKCMS.getAmazonVersion() ? true : false,
+    is_android_version: UKCMS.getAndroidVersion(),
+    is_ie8orLower: $("html").hasClass("lt-ie9"),
+    is_ie9orLower: $("html").hasClass("lt-ie10"),
+    is_ie10orLower: $("html").hasClass("lt-ie11"),
+    is_winPhone: navigator.userAgent.indexOf('Windows Phone') > -1,
+    theBody: $('body'),
+    viewportWidth: $(window).width()
+};
+
+UKCMS.URLS = {
+    newsletter_signup: '/myuktv/newsletter-signup',
+    program_detail: '/tv-guide/detail/0', // 0 is a placeholder for the listing ID
+    user_profile: '/myprofile/',
+    play_site: 'https://uktvplay.co.uk'
+};
+
+UKCMS.RANDOM_THEMES = {
+    isEnabled: true,                  // Random Themes for use in 'js/random-themes.js'
+    usesSameBGGradient: false,        // does each random theme bg have its own gradient too?
+    excludeByBodyClass: [],           // pages to exclude from random themes, targeted by body class
+    numberOfThemes: 1                 // must correspond with number of images
+};
+
+UKCMS.EASTER_EGGS = {
+    canvas_takeovers: false
+};
+</script>
+
+<script type="text/javascript" src="https://uktv-static.s3.amazonaws.com/fgprod/network/js/site-variables.js"></script>
+
+
+    <script src="https://uktv-static.s3.amazonaws.com/fgprod/network/CACHE/js/output.e34d2c58f60c.js"></script>
+
+    
+
+    <!--[if lt IE 9]>
+        <script src="https://uktv-static.s3.amazonaws.com/fgprod/network/js/ie-fixes/respond.js"></script>
+    <![endif]-->
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+
+
+    <script src="https://uktv-static.s3.amazonaws.com/fgprod/network/CACHE/js/output.3a3783be086a.js"></script>
+
+    
+
+    
+        <script src="https://uktv-static.s3.amazonaws.com/fgprod/network/CACHE/js/output.6c0fd5b7cbbf.js"></script>
+    
+
+    
+        <script src="https://uktv-static.s3.amazonaws.com/fgprod/network/js/site-specific.js"></script>
+    
+
+
+    
+
+
+    
+
+    <!--[if lt IE 9]>
+    <script src="https://uktv-static.s3.amazonaws.com/fgprod/network/js/ie-fixes/ie-selector-fix.js"></script>
+    <![endif]-->
+
+    <script src="https://uktv-static.s3.amazonaws.com/fgprod/network/js/ios-ipad-iphone/ios-orientation-change-fix.js"></script>
+
+    
+
+    
+    
+    
+    
+</head>
+
+
+<body class="network     homepage  "
+      itemscope itemtype="http://schema.org/WebPage">
+
+    
+
+    <div class="full-wrapper">
+    
+        
+            
+                
+<div id="fb-root"></div>
+<!--Some facebook code requires the fb-root div -->
+<script src="https://uktv-static.s3.amazonaws.com/fgprod/network/django_facebook/js/facebook.js" type="text/javascript"></script>
+<script>
+    facebookAppId = '220731151407495';
+    facebookDefaultScope = ["email", "user_about_me", "user_birthday", "user_website"];
+    staticUrl = 'https://uktv-static.s3.amazonaws.com/fgprod/network/';
+    function facebookJSLoaded(){
+        FB.init({appId: facebookAppId, status: false, cookie: true, xfbml: true, oauth: true});
+    }
+    window.fbAsyncInit = facebookJSLoaded;
+    F = new facebookClass(facebookAppId);
+    F.load();
+</script>
+
+            
+        
+    
+
+    
+
+
+    
+        
+
+
+
+<div id="back-to-old-site" class="clearfix">
+    
+</div>
+<header id="head-wrap" class="head-wrap" role="banner">
+    <div class="container clearfix">
+        <!-- Leaderboard Ad -->
+        
+        <!-- An empty link for the back to top button in the footer -->
+        <a id="nav-top"></a>
+
+        <script>
+            // Remove the above '#leaderboard' if viewing on a low screen width
+            (function () {  // isolate var inside function
+                var viewportWidth = $(window).width();
+                if (viewportWidth < 720) {
+                    $('#leaderboard').remove();
+                }
+            })();
+        </script>
+
+        <div id="logo-wrap">
+            
+                <div id="logo">
+                    <a href="http://network.uktv.co.uk" title="Go to the UKTV homepage" aria-label="UKTV homepage" class="ir">UKTV</a>
+                </div>
+            
+        </div>
+
+        <!-- Sub Title for sites that don't display AD's -->
+        
+          
+            <h2 id="site-sub-title">
+                
+                    Imagine more.
+                
+            </h2>
+          
+        
+    </div>
+</header>
+
+<!-- NAV BAR
+     this container div retains height of 'nav-bar' to avoid content jumping when the nav-bar becomes 'sticky'
+     the height is applied by 'js/header/sticky-header.js' to match the current height of the nav-bar
+-->
+<div id="nav-placeholder" style="min-height: 50px">
+
+<!-- the nav bar: position:fixed is applied by 'js/header/sticky-header.js'
+     as a css class to make it sticky -->
+<div id="nav-bar">
+
+    <!-- we need this div because it lets it's children get absolutely
+         positioned when the NAV-BAR itself gets absolutely positioned -->
+    <div style="position: relative">
+        <div class="nav-wrap position-relative">
+
+            <a id="skip-btn" href="#main" title="Skip to main content">Skip to main content</a>
+            <a id="home-btn" class="home active" href="/" title="Return to the home page"><i class="icon-home icon"></i><span class="hide">Home</span></a>
+
+            
+            <a id="menu-btn" class="expand-menu" href="#" title="Open the main menu"><span class="text">Main Menu</span><i class="icon icon-menu"></i><span class="clear-float"></span></a>
+
+        </div><!-- /.nav-wrap -->
+
+        <nav id="main-nav" class="site-nav" role="navigation" aria-label="Primary Menu">
+            <ul>
+                
+                
+<li>
+    <a href="http://corporate.uktv.co.uk/" title="">
+    Corporate Site
+    </a>
+</li>
+
+<li>
+    <a href="http://pressoffice.uktv.co.uk/" title="">
+    Press Office
+    </a>
+</li>
+
+<li>
+    <a href="http://corporate.uktv.co.uk/about-uktv/" title="">
+    About UKTV
+    </a>
+</li>
+
+<li>
+    <a href="http://corporate.uktv.co.uk/working-at-uktv/" title="">
+    Careers
+    </a>
+</li>
+
+<li>
+    <a href="http://corporate.uktv.co.uk/about-uktv/article/contact-us/" title="">
+    Contact Us
+    </a>
+</li>
+
+<li>
+    <a href="http://network.uktv.co.uk/competitions/" title="">
+    Competitions
+    </a>
+</li>
+
+
+
+                
+            </ul>
+        </nav>
+
+        
+
+        
+        
+            
+                
+                    
+
+                
+            
+        
+
+    </div><!-- /.position-relative -->
+    <span class="clear-float"></span>
+</div><!-- /nav-bar -->
+</div><!-- /nav-placeholder -->
+
+
+
+<!--
+
+    Predictive Search Results Templates
+    -----------------------------------
+    This template is used by the predictive search Javascript to display search results as the user types,
+    the Javascript & CSS can be found in `predictive_search.js` and `predictive-search.less`
+
+ -->
+
+<script type="text/template" id="play_search_result_template">
+    <div class="pred-results <%= data.non_sticky_css_class %>">
+        <div class="pred-results-container">
+
+            <a id="pred-results-close" class="pred-results-close" href="#" title="Close these search results"><i class="icon icon-close"></i></a>
+
+            <% if (data.results) { %>
+                <ul class="results-list">
+                    <% _.each( data.results, function( item, index ){ %>
+                        <li class="play-pred-item">
+                            <a href="<%= item.link %><% if (item.is_collection) { %>&<% } else { %>?<% } %>=<%= encodeURIComponent(data.query) %>&type=predictive&i=<%= index %>">
+                                <span class="title"><i class="icon <% if (item.is_collection) { %>icon-collection<% } else { %>icon-tv<% } %>"></i> <%= item.title %></span>
+                                <span class="arrow"><span class="num-ep"><%= item.ep_count %></span> <i class="icon icon-right"></i></span>
+                            </a>
+                        </li>
+                    <% }); %>
+                </ul>
+
+                <h2 class="no-results-title">Click <i class="icon large icon-search"></i> for full search results</h2>
+            <% } %>
+
+            <% if (data.no_search) { %>
+                <h2 class="no-results-title">What do you fancy watching?</h2>
+            <% } %>
+
+            <% if (data.no_results) { %>
+                <!--<h2 class="no-results-title">Click <i class="icon large icon-search"></i> for full search results</h2>-->
+            <% } %>
+
+        </div>
+    </div>
+</script>
+
+
+<script type="text/template" id="search_result_template">
+    <div class="pred-results page-element <%= data.non_sticky_css_class %>">
+
+        <a href="#"></a>
+
+        <div class="container">
+
+            <a id="pred-results-close" class="pred-results-close" href="#" title="Close these search results"><i class="icon icon-close"></i></a>
+
+            <div class="row">
+                <div class="span6 section1">
+                    <h3 class="title pred-search-title shows">Shows</h3>
+                    <div class="pred-item-img-results">
+                    <% _.each( data.brands, function( item, index ){ %>
+                        <div class="pred-item-img item<%= index +1%> cascade-appear fade-in" style="transition-delay: <%= index * 200%>ms">
+                            <a href="<% if (item.vod_link) { %><%= item.vod_link %><% } else { %><%= item.link %><% } %>" title="<%= item.title %>" class="img-zoom result-img">
+                                <img src="<%= item.t_thumb %>" />
+                                <% if (item.vod_link) { %>
+                                <div class="bottom-inline-row">
+                                    <i class="icon-vod icon-large icon"></i>
+                                    <div class="text-display">Watch now</div>
+                                </div>
+                                <% } %>
+                            </a>
+                            <h5 class="teaser-title">
+
+                                <% if (item.vod_link) { %>
+                                    <i class="icon-vod small icon"></i>
+                                <% } else { %>
+                                    <i class="icon-brandpage small icon"></i>
+                                <% } %>
+
+                                <% if (item.vod_link) { %>
+                                    <a href="<%= item.vod_link %>" title="<%= item.title %>"><%= item.title %></a>
+                                <% } else { %>
+                                    <a href="<%= item.link %>" title="<%= item.title %>"><%= item.title %></a>
+                                <% } %>
+                            </h5>
+
+                            <span class="clear-float"></span>
+                        </div>
+
+                    <% }); %>
+                    </div>
+                </div>
+                <div class="span6 section2">
+                    <hr class="keyline"  />
+
+                    <h3 class="title pred-search-title other-categories">Other Categories</h3>
+
+                    <% if (data.other_results.length === 0) { %>
+                        <div class="pred-item">
+                            <p class="teaser-text">No more results found</p>
+                        </div>
+                    <% } %>
+
+                    <% _.each( data.other_results, function(item,index){ %>
+
+                        <!-- add div.col around first 4 results and div.col2 around the rest (for two col layout on large screens) -->
+                        <% if (item.index === 0) { %><div class="col1"><% } %>
+                        <% if (item.index === 4) { %></div><div class="col2"> <% } %>
+
+                        <div class="pred-item cascade-appear fade-in" style="transition-delay: <%= index * 75%>ms">
+                            <h5 class="teaser-title"><i class="icon-<%= item.c_type %> small icon"></i> <a href="<%= item.link %>"><%= item.title %></a></h5>
+                        </div>
+
+                        <% if (item.index === (data.other_results.length - 1)) { %> </div> <% } %>
+
+                    <% }); %>
+                </div>
+            </div><!-- /.row -->
+        </div>
+
+        <div class="show-all">
+            <nav class="btn-holder show-more center">
+                <a class="show-more-btn" href="<%= data.show_all_query %>" title="See all search results">
+                    <span class="text">Show all</span>
+                    <i class="icon-down"></i>
+                </a>
+            </nav>
+        </div>
+
+    </div>
+</script>
+
+    
+
+    <div id="total-wrapper">
+        
+
+    
+
+    
+        
+        
+    
+
+    <main id="main" role="main" class="container clearfix" >
+
+        <div id="hub_header">
+            
+            
+        </div>
+
+        
+            
+        
+
+        
+        
+
+        
+            
+
+
+
+
+    
+        
+
+            
+            <div class="widget  network-home-columns large-columns
+                       
+                       
+                       "
+                       >
+
+
+                
+    <header>
+        <h4 class="widget-title">
+            Imagined by UKTV
+        </h4>
+    </header>
+
+    
+    
+
+<aside class="channel-logos container">
+    
+    <nav class="all-site-links-big " id="">
+        <div class="channel-logos-70x70 simple-layout clearfix">
+          <div class="logo uktvplay"><a href="https://uktvplay.co.uk" title="UKTV Play">UKTV Play</a></div>
+          <div class="border"></div>
+          <ul class="list">
+            <li class="logo dave"><a href="https://uktvplay.co.uk/channel/dave" title="Dave">Dave</a></li>
+            <li class="logo drama"><a href="https://uktvplay.co.uk/channel/drama" title="Drama">Drama</a></li>
+            <li class="logo w"><a href="https://uktvplay.co.uk/channel/w" title="W">W</a></li>
+            <li class="logo yesterday"><a href="https://uktvplay.co.uk/channel/yesterday" title="Yesterday">Yesterday</a></li>
+          </ul>
+          <div class="border"></div>
+          <ul class="list">
+            <li class="logo alibi"><a href="https://alibi.uktv.co.uk" title="Alibi">Alibi</a></li>
+            <li class="logo eden"><a href="https://eden.uktv.co.uk" title="Eden">Eden</a></li>
+            <li class="logo gold"><a href="https://gold.uktv.co.uk" title="Gold">Gold</a></li>
+          </ul>
+
+            
+        </div>
+    </nav>
+</aside>
+
+
+
+                
+                <div class="sidebar-collapse in">
+
+                    
+                    <div class="widget-bg">
+                        
+
+                            
+                            
+
+                                
+                                
+
+                                    
+
+                                        <div class="row "
+                                             data-items-per-row="3">
+
+                                            
+                                                
+
+    <div class="spanOneThird">
+        <a href="http://corporate.uktv.co.uk/" title="Find out more about UKTV here" class="img-zoom">
+
+            <img data-url="https://res.cloudinary.com/uktv/image/upload/t_XX/v1560264641/jovila8ayqc7lm7o3c36.jpg" alt="Corporate Site" src="https://uktv-static.s3.amazonaws.com/fgprod/network/img/placeholder-16-by-9.png">
+
+            
+        </a>
+        <h5 class="teaser-title">
+            <a href="http://corporate.uktv.co.uk/" title="Corporate Site"><i class="icon-external"></i>Corporate Site</a>
+        </h5>
+        <p class="teaser">Find out more about UKTV here</p>
+    </div>
+
+
+                                            
+                                                
+
+    <div class="spanOneThird">
+        <a href="http://corporate.uktv.co.uk/commissioning/" title="Find out about the commissioning process and meet the team" class="img-zoom">
+
+            <img data-url="https://res.cloudinary.com/uktv/image/upload/t_XX/v1513179449/uxvtgxah3vvvxeoafl7r.jpg" alt="Commissioning" src="https://uktv-static.s3.amazonaws.com/fgprod/network/img/placeholder-16-by-9.png">
+
+            
+        </a>
+        <h5 class="teaser-title">
+            <a href="http://corporate.uktv.co.uk/commissioning/" title="Commissioning"><i class="icon-external"></i>Commissioning</a>
+        </h5>
+        <p class="teaser">Find out about the commissioning process and meet the team</p>
+    </div>
+
+
+                                            
+                                                
+
+    <div class="spanOneThird">
+        <a href="https://corporate.uktv.co.uk/working-at-uktv/" title="Find out what it&#x27;s like working at an award-winning TV company" class="img-zoom">
+
+            <img data-url="https://res.cloudinary.com/uktv/image/upload/t_XX/v1560264820/hrxq39xeww8tumcvbo4u.jpg" alt="Working at UKTV" src="https://uktv-static.s3.amazonaws.com/fgprod/network/img/placeholder-16-by-9.png">
+
+            
+        </a>
+        <h5 class="teaser-title">
+            <a href="https://corporate.uktv.co.uk/working-at-uktv/" title="Working at UKTV"><i class="icon-external"></i>Working at UKTV</a>
+        </h5>
+        <p class="teaser">Find out what it&#x27;s like working at an award-winning TV company</p>
+    </div>
+
+
+                                            
+
+                                        </div>
+
+                                    
+                                
+
+                            
+
+                                
+                                
+
+                                    
+
+                                        <div class="row "
+                                             data-items-per-row="3">
+
+                                            
+                                                
+
+    <div class="spanOneThird">
+        <a href="https://corporate.uktv.co.uk/about-uktv/" title="Learn more about who we are and what we do" class="img-zoom">
+
+            <img data-url="https://res.cloudinary.com/uktv/image/upload/t_XX/v1513179462/hvab7x6cunjewbm0dad7.jpg" alt="About UKTV" src="https://uktv-static.s3.amazonaws.com/fgprod/network/img/placeholder-16-by-9.png">
+
+            
+        </a>
+        <h5 class="teaser-title">
+            <a href="https://corporate.uktv.co.uk/about-uktv/" title="About UKTV"><i class="icon-external"></i>About UKTV</a>
+        </h5>
+        <p class="teaser">Learn more about who we are and what we do</p>
+    </div>
+
+
+                                            
+                                                
+
+    <div class="spanOneThird">
+        <a href="http://corporate.uktv.co.uk/news/" title="Read our latest press releases" class="img-zoom">
+
+            <img data-url="https://res.cloudinary.com/uktv/image/upload/t_XX/v1513179470/vzqqnflfakqohjz9ns6c.jpg" alt="News" src="https://uktv-static.s3.amazonaws.com/fgprod/network/img/placeholder-16-by-9.png">
+
+            
+        </a>
+        <h5 class="teaser-title">
+            <a href="http://corporate.uktv.co.uk/news/" title="News"><i class="icon-external"></i>News</a>
+        </h5>
+        <p class="teaser">Read our latest press releases</p>
+    </div>
+
+
+                                            
+                                                
+
+    <div class="spanOneThird">
+        <a href="http://corporate.uktv.co.uk/about-uktv/article/contact-us/" title="Find out how you can get in touch" class="img-zoom">
+
+            <img data-url="https://res.cloudinary.com/uktv/image/upload/t_XX/v1513179429/cxhx6loev99fgo5ion52.jpg" alt="Contact Us" src="https://uktv-static.s3.amazonaws.com/fgprod/network/img/placeholder-16-by-9.png">
+
+            
+        </a>
+        <h5 class="teaser-title">
+            <a href="http://corporate.uktv.co.uk/about-uktv/article/contact-us/" title="Contact Us"><i class="icon-external"></i>Contact Us</a>
+        </h5>
+        <p class="teaser">Find out how you can get in touch</p>
+    </div>
+
+
+                                            
+
+                                        </div>
+
+                                    
+                                
+
+                            
+
+                        
+
+                    </div>
+                    
+
+                    
+                    
+                        
+                    
+
+                </div>
+                
+            </div>
+            
+        
+    
+
+
+        
+
+        
+
+
+    </main>
+
+
+    </div>
+
+    
+        
+
+
+
+    
+
+<aside class="channel-logos container">
+    
+        <h2 class="channel-logos-title">Our channels, imagined by UKTV</h2>
+    
+    <nav class="all-site-links-big " id="">
+        <div class="channel-logos-70x70 simple-layout clearfix">
+          <div class="logo uktvplay"><a href="https://uktvplay.co.uk" title="UKTV Play">UKTV Play</a></div>
+          <div class="border"></div>
+          <ul class="list">
+            <li class="logo dave"><a href="https://uktvplay.co.uk/channel/dave" title="Dave">Dave</a></li>
+            <li class="logo drama"><a href="https://uktvplay.co.uk/channel/drama" title="Drama">Drama</a></li>
+            <li class="logo w"><a href="https://uktvplay.co.uk/channel/w" title="W">W</a></li>
+            <li class="logo yesterday"><a href="https://uktvplay.co.uk/channel/yesterday" title="Yesterday">Yesterday</a></li>
+          </ul>
+          <div class="border"></div>
+          <ul class="list">
+            <li class="logo alibi"><a href="https://alibi.uktv.co.uk" title="Alibi">Alibi</a></li>
+            <li class="logo eden"><a href="https://eden.uktv.co.uk" title="Eden">Eden</a></li>
+            <li class="logo gold"><a href="https://gold.uktv.co.uk" title="Gold">Gold</a></li>
+          </ul>
+
+            
+        </div>
+    </nav>
+</aside>
+
+
+
+<footer id="static-footer" role="contentinfo" class="margin-bottom">
+
+    <!-- static footer contents will go here -->
+    
+    <nav id="footer-menu" role="navigation" aria-label="Footer Primary Menu">
+        <ul id="footer-nav" class="clearfix container">
+            <li class="home-btn"><a href="/" title="Return to the home page"><i class="icon-home icon"></i><span class="hide">Home</span></a></li>
+            
+                <li>
+                    <a href="http://corporate.uktv.co.uk/" title="Corporate Site">
+                        Corporate Site
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="http://pressoffice.uktv.co.uk/" title="Press Office">
+                        Press Office
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="http://corporate.uktv.co.uk/about-uktv/" title="About UKTV">
+                        About UKTV
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="http://corporate.uktv.co.uk/working-at-uktv/" title="Careers">
+                        Careers
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="http://corporate.uktv.co.uk/about-uktv/article/contact-us/" title="Contact Us">
+                        Contact Us
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="http://network.uktv.co.uk/competitions/" title="Competitions">
+                        Competitions
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+
+
+
+    
+
+    <div class="footer-legal">
+        <nav class="container">
+            <ul class="footer-static-links clearfix">
+                <li>
+                    
+                        <a href="https://network.uktv.co.uk/article/privacy-policy/" target="_blank">Privacy Policy</a>
+                    
+                </li>
+                <li>
+                    
+                    <a href="https://network.uktv.co.uk/article/terms-and-conditions/" target="_blank">Terms &amp; Conditions</a>
+                    
+                </li>
+                <li>
+                    
+                        <a href="https://network.uktv.co.uk/article/cookie-notice/" target="_blank">Cookie Notice</a>
+                    
+                </li>
+                <li>
+                    
+                    <a href="https://network.uktv.co.uk/about-uktv/article/modern-slavery/" target="_blank">Modern Slavery Statement</a>
+                    
+                </li>
+                <li>
+                    
+                        <a href="https://corporate.uktv.co.uk/about-uktv/article/contact-us/" target="_blank">Contact Us</a>
+                    
+                </li>
+                
+                    <li>
+                        <a href="https://network.uktv.co.uk/article/help/" target="_blank">Help</a>
+                    </li>
+                    <li>
+                        <a href="https://corporate.uktv.co.uk" target="_blank">UKTV corporate site</a>
+                    </li>
+                    <li>
+                        <a href="https://uktvplay.co.uk/help/faqs" target="_blank">Parental Guidance</a>
+                    </li>
+                
+                
+                <li>
+                    <a href="https://corporate.uktv.co.uk/about-uktv/article/our-channels/" target="_blank">How to get UKTV</a>
+                </li>
+                
+                <li>
+                    <a href="https://corporate.uktv.co.uk/article/sitemap/" target="_blank">Sitemap</a>
+                </li>
+                <li>
+                  <a href="#nav-top">Back to top</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- DISPLAY_ALL_CHANNEL_LINKS_SMALL - set in site settings
+         e.g: config/sites/watch.py -->
+    
+
+</footer>
+
+    
+
+    
+        
+
+
+
+<footer id="site-footer">
+
+    <section class="footer-bar clearfix">
+
+        <div class="footer-buttons">
+
+            <p class="social-title">Subscribe to network:</p>
+
+            <ul class="footer-social-links social-links">
+                
+                
+                
+                    <li><a class="tw sprite" href="https://twitter.com/UKTV" title="Follow network on Twitter" target="_blank">network on Twitter</a></li>
+                
+                
+                
+                    <li><a class="yt sprite" href="http://www.youtube.com/c/uktv" title="Watch UKTV videos on YouTube" target="_blank">network on YouTube</a></li>
+                
+                
+            </ul>
+        </div>
+
+		
+			
+
+		
+
+		
+
+        
+        
+
+        <p class="imagined-by"><a href="http://uktv.co.uk" title="UKTV">Imagined by <span>UKTV</span></a></p>
+
+    </section>
+
+</footer>
+
+
+
+    
+
+    
+    <script type="text/javascript">
+    UKCMS.ADS = {
+        fw_vars: ""
+    }
+
+    if (UKCMS.VOD.user_age) {
+        if(UKCMS.ADS.fw_vars.length > 0){
+            UKCMS.ADS.fw_vars = UKCMS.ADS.fw_vars.concat("&age=" + UKCMS.VOD.user_age)
+        } else {
+             UKCMS.ADS.fw_vars = UKCMS.ADS.fw_vars.concat("age=" + UKCMS.VOD.user_age)
+        }
+    }
+    if (UKCMS.VOD.user_gender) {
+        if(UKCMS.ADS.fw_vars.length > 0){
+            UKCMS.ADS.fw_vars = UKCMS.ADS.fw_vars.concat("&gender=" + UKCMS.VOD.user_gender)
+        } else {
+            UKCMS.ADS.fw_vars = UKCMS.ADS.fw_vars.concat("gender=" + UKCMS.VOD.user_gender)
+        }
+    }
+
+    UKCMS.ADS.fw_network_id = "174057";
+    UKCMS.ADS.fw_network_hex = "2a7e9";
+    UKCMS.ADS.fw_profile = "174057:uktv_html5_live";
+
+
+    //This will create an async <script> to load the FreeWheel LinkTag2 js.
+    (function() {
+        var profilePath = "uktv_display";
+        window._fw_linktag_params = {
+            scan_delay : 0,
+            server : "https://2a7e9.v.fwmrm.net",
+            network_id : "174057",
+            profile : "g_js",
+            other_global_params : "csid=network/hubpage",
+            key_values :  UKCMS.ADS.fw_vars
+        };
+
+        var e = function(){
+            if(document.addEventListener) document.removeEventListener('DOMContentLoaded',e,false);
+            else window.detachEvent('onload',e);
+            window._fw_page_ready = true;
+        };
+        if(document.addEventListener) document.addEventListener('DOMContentLoaded',e,false);
+        else if(window.attachEvent) window.attachEvent('onload',e);
+
+        var lt = document.createElement('script');
+        lt.type = 'text/javascript';
+        lt.async = true;
+
+        lt.src = "https://mssl.fwmrm.net/p/"+ profilePath +"/LinkTag2.js";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lt, s);
+    })();
+</script>
+
+<script type="text/javascript">
+    function adsReload(){
+        $('img#_fw_cb_VPNT_1').remove();
+        $('img#_fw_cb_VPNT_2').remove();
+        $('img#_fw_cb_VPNT_3').remove();
+
+        var lt = document.createElement('script');
+        lt.type = 'text/javascript';
+        lt.async = true;
+
+        lt.src = "//mssl.fwmrm.net/p/uktv_display/LinkTag2.js";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lt, s);
+
+        window._fw_page_ready = true;
+    }
+</script>
+
+
+
+<script type="text/javascript"> function crtg_getCookie(a){var b,c,d,e=document.cookie.split(";");for(b=0;b<e.length;b++){c=e[b].substr(0,e[b].indexOf("="));d=e[b].substr(e[b].indexOf("=")+1);c=c.replace(/^\s+|\s+$/g,"");if(c==a){return unescape(d)}}return""}var crtg_nid="1065";var crtg_cookiename="cto2_channel4";var crtg_content=crtg_getCookie(crtg_cookiename);var crtg_rnd=Math.floor(Math.random()*99999999999);var crtg_url="//rtax.criteo.com/delivery/rta/rta.js?netid="+escape(crtg_nid);crtg_url+="&cookieName="+escape(crtg_cookiename);crtg_url+="&rnd="+crtg_rnd;crtg_url+="&varName=crtg_content";var crtg_script=document.createElement("script");crtg_script.type="text/javascript";crtg_script.src=crtg_url;crtg_script.async=true;if(document.getElementsByTagName("head").length>0)document.getElementsByTagName("head")[0].appendChild(crtg_script);else if(document.getElementsByTagName("body").length>0)document.getElementsByTagName("body")[0].appendChild(crtg_script) </script>
+
+
+    
+    <script type="text/javascript">
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1623692-23');
+    // Is logged in dimension
+    ga('set', 'dimension1', 'False');
+    // Ad Campaign IDs dimension
+    ga('set', 'dimension7', '');
+
+    
+        ga('send', 'pageview');
+    
+
+    
+
+    // Manual google analytics page view call
+    function gPageView(){
+        ga('send', 'pageview');
+    }
+
+    $(document).ready(function () {
+        $("a[uktv\\:track-link-group]").click(function(e){
+            ga('send', 'event', 'ClickTrack', $(this).attr('uktv:track-link-group'), $(this).attr('uktv:track-link-name'));
+        })
+    });
+
+</script>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+    <script src="https://uktv-static.s3.amazonaws.com/fgprod/network/js/twitter-bootstrap/tab.js"></script>
+    </div>
+
+    
+
+    
+</body>
+
+</html>

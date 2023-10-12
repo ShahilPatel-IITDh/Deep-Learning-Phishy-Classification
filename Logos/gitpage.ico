@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitPlac - Pages</title>
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+  <nav>
+    <div class="logo"></div>
+    <a href="https://gitplac.si/explore/projects">Browse repositories</a>
+    <a href="https://gitplac.si/gitplac/gitplac.gitpage.si/-/blob/master/public/pages.html">Page source</a>
+    <a href="https://gitplac.si/users/sign_in">Sign in</a>
+  </nav>
+  <content>
+    <div class="spacer"></div>
+    <div class="nav">
+      <a class="item" href="./index.html">Home</a>
+      <a class="item" href="./cicd.html">CI/CD</a>
+      <a class="item active" href="./pages.html">Pages</a>
+      <div class="item filler"></div>
+    </div>
+    <div class="container">
+      <h1>Pages</h1>
+      <p>
+        The <a href="https://docs.gitlab.com/ee/user/project/pages/">Gitlab pages</a> system provides the functionality of hosting static
+        web pages directly from your repositories. These can be dynamically generated on each change using <a href="./cicd.html">CI/CD</a>
+        system or static files in the repository itself.
+      </p>
+      <h2>Domains in use</h2>
+      <p>
+        The Pages platform uses domain <code>*.gitpage.si</code>. If the repository is located at <code>gitplac.si/fri-vss/zapiski-in-material</code>
+        then the public website can be accessed via <code>fri-vss.gitpage.si/zapiski-in-material</code>. You can read more about Pages addressing in
+        Gitlab's official <a href="https://docs.gitlab.com/ee/user/project/pages/getting_started_part_one.html">documentation</a>.
+      </p>
+    </div>
+  </content>
+</body>
+</html>

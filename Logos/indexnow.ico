@@ -1,0 +1,346 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | IndexNow.org </title>
+    <meta name="description" content="IndexNow enables webmasters, website owners to inform search engines about the latest content changes on their website. Helps search engines to maintain latest data about a website and redirect searchers to the fresh content. Webmasters/Website owners should use IndexNow to overcome crawl delays by the search engines, indexing their website content now. Helps search engines know immediately the "URLs that have changed, helping them prioritize crawl for these URLs and thereby limiting organic crawling and hence crawl load on servers.">
+    <meta name="google-site-verification" content="jhJQW3RT4QGSIi_iz_nRGud9FyV6dUleFkHG5vEcN9U" />
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "8v9ncypwmt");
+    </script>
+    <!-- Add bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Add custom css -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg navbar-light bg-light" style="min-height: 90px" id="pageHeader">
+        <div class="container col-md-8 col-lg-6">
+            <a class="navbar-brand" href="index">IndexNow.org</a>
+
+            <div class="navbar-collapse col-sm-10">
+                <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                    <li class="nav-item" style="margin-left: 0px; margin-right: 46px;">
+                        <a  class="nav-link active" aria-current="page" >
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 0px; margin-right: 46px;">
+                        <a 
+                            class="nav-link" href="documentation" >
+                            Documentation
+                        </a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 0px; margin-right: 46px;">
+                        <a 
+                            class="nav-link" href="faq" >
+                            FAQ
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        
+
+
+<div class="lang-dropdown">
+    <button onclick="handleDropdownClick()" class="dropbtn" id="langButton">EN</button>
+    <div id="languageDropdownMenu" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="languageInput" onkeyup="filterFunction()">
+        <div class="languageList" id="languageList">
+            <a tabindex=0 href="/index">
+                <div class="bigLanguageText">English (United States)</div>
+                <div class="smallLanguageText">English (United States)</div>
+            </a>
+            <a tabindex=0 href="/ar_sa/index">
+                <div class="bigLanguageText">Arabic</div>
+                <div class="smallLanguageText">العربية</div>
+            </a>
+            <a tabindex=0 href="/eu/index">
+                <div class="bigLanguageText">Basque</div>
+                <div class="smallLanguageText">euskara</div>
+            </a>
+            <a tabindex=0 href="/bg_bg/index">
+                <div class="bigLanguageText">Bulgarian</div>
+                <div class="smallLanguageText">български</div>
+            </a>
+            <a tabindex=0 href="/ca_es/index">
+                <div class="bigLanguageText">Catalan</div>
+                <div class="smallLanguageText">català</div>
+            </a>
+            <a tabindex=0 href="/zh_cn/index">
+                <div class="bigLanguageText">Chinese (Simplified) Legacy</div>
+                <div class="smallLanguageText">中文(简体) 旧版</div>
+            </a>
+            <a tabindex=0 href="/zh_tw/index">
+                <div class="bigLanguageText">Chinese (Traditional) Legacy</div>
+                <div class="smallLanguageText">中文(繁體) 舊版</div>
+            </a>
+            <a tabindex=0 href="/hr_hr/index">
+                <div class="bigLanguageText">Croatian</div>
+                <div class="smallLanguageText">hrvatski</div>
+            </a>
+            <a tabindex=0 href="/cs_cz/index">
+                <div class="bigLanguageText">Czech</div>
+                <div class="smallLanguageText">čeština</div>
+            </a>
+            <a tabindex=0 href="/da_dk/index">
+                <div class="bigLanguageText">Danish</div>
+                <div class="smallLanguageText">dansk</div>
+            </a>
+            <a tabindex=0 href="/nl_nl/index">
+                <div class="bigLanguageText">Dutch</div>
+                <div class="smallLanguageText">Nederlands</div>
+            </a>
+            <a tabindex=0 href="/en_gb/index">
+                <div class="bigLanguageText">English (United Kingdom)</div>
+                <div class="smallLanguageText">English (United Kingdom)</div>
+            </a>
+            <a tabindex=0 href="/et_ee/index">
+                <div class="bigLanguageText">Estonian</div>
+                <div class="smallLanguageText">eesti</div>
+            </a>
+            <a tabindex=0 href="/fi_fi/index">
+                <div class="bigLanguageText">Finnish</div>
+                <div class="smallLanguageText">suomi</div>
+            </a>
+            <a tabindex=0 href="/fr_fr/index">
+                <div class="bigLanguageText">French</div>
+                <div class="smallLanguageText">français</div>
+            </a>
+            <a tabindex=0 href="/gl_es/index">
+                <div class="bigLanguageText">Galician</div>
+                <div class="smallLanguageText">galego</div>
+            </a>
+            <a tabindex=0 href="/de_de/index">
+                <div class="bigLanguageText">German</div>
+                <div class="smallLanguageText">Deutsch</div>
+            </a>
+            <a tabindex=0 href="/el_gr/index">
+                <div class="bigLanguageText">Greek</div>
+                <div class="smallLanguageText">Ελληνικά</div>
+            </a>
+            <a tabindex=0 href="/he_il/index">
+                <div class="bigLanguageText">Hebrew</div>
+                <div class="smallLanguageText">עברית</div>
+            </a>
+            <a tabindex=0 href="/hi_in/index">
+                <div class="bigLanguageText">Hindi</div>
+                <div class="smallLanguageText">हिन्दी</div>
+            </a>
+            <a tabindex=0 href="/hu_hu/index">
+                <div class="bigLanguageText">Hungarian</div>
+                <div class="smallLanguageText">magyar</div>
+            </a>
+            <a tabindex=0 href="/is_is/index">
+                <div class="bigLanguageText">Icelandic</div>
+                <div class="smallLanguageText">íslenska</div>
+            </a>
+            <a tabindex=0 href="/it_it/index">
+                <div class="bigLanguageText">Italian</div>
+                <div class="smallLanguageText">italiano</div>
+            </a>
+            <a tabindex=0 href="/ja_jp/index">
+                <div class="bigLanguageText">Japanese</div>
+                <div class="smallLanguageText">日本語</div>
+            </a>
+            <a tabindex=0 href="/ko_kr/index">
+                <div class="bigLanguageText">Korean</div>
+                <div class="smallLanguageText">한국어</div>
+            </a>
+            <a tabindex=0 href="/lv_lv/index">
+                <div class="bigLanguageText">Latvian</div>
+                <div class="smallLanguageText">latviešu</div>
+            </a>
+            <a tabindex=0 href="/lt_lt/index">
+                <div class="bigLanguageText">Lithuanian</div>
+                <div class="smallLanguageText">lietuvių</div>
+            </a>
+            <a tabindex=0 href="/ms_my/index">
+                <div class="bigLanguageText">Malay</div>
+                <div class="smallLanguageText">Melayu</div>
+            </a>
+            <a tabindex=0 href="/nb_no/index">
+                <div class="bigLanguageText">Norwegian, Bokmål (Norway)</div>
+                <div class="smallLanguageText">norsk bokmål (Norge)</div>
+            </a>
+            <a tabindex=0 href="/pl_pl/index">
+                <div class="bigLanguageText">Polish</div>
+                <div class="smallLanguageText">polski</div>
+            </a>
+            <a tabindex=0 href="/pt_br/index">
+                <div class="bigLanguageText">Portuguese (Brazil)</div>
+                <div class="smallLanguageText">português (Brasil)</div>
+            </a>
+            <a tabindex=0 href="/pt_pt/index">
+                <div class="bigLanguageText">Portuguese (Portugal)</div>
+                <div class="smallLanguageText">português (Portugal)</div>
+            </a>
+            <a tabindex=0 href="/ro_ro/index">
+                <div class="bigLanguageText">Romanian</div>
+                <div class="smallLanguageText">română</div>
+            </a>
+            <a tabindex=0 href="/ru_ru/index">
+                <div class="bigLanguageText">Russian</div>
+                <div class="smallLanguageText">русский</div>
+            </a>
+            <a tabindex=0 href="/sr_cyrl_rs/index">
+                <div class="bigLanguageText">Serbian</div>
+                <div class="smallLanguageText">srpski</div>
+            </a>
+            <a tabindex=0 href="/sk_sk/index">
+                <div class="bigLanguageText">Slovak</div>
+                <div class="smallLanguageText">slovenčina</div>
+            </a>
+            <a tabindex=0 href="/sl_si/index">
+                <div class="bigLanguageText">Slovenian</div>
+                <div class="smallLanguageText">slovenščina</div>
+            </a>
+            <a tabindex=0 href="/es_es/index">
+                <div class="bigLanguageText">Spanish</div>
+                <div class="smallLanguageText">español</div>
+            </a>
+            <a tabindex=0 href="/sv_se/index">
+                <div class="bigLanguageText">Swedish</div>
+                <div class="smallLanguageText">svenska</div>
+            </a>
+            <a tabindex=0 href="/th_th/index">
+                <div class="bigLanguageText">Thai</div>
+                <div class="smallLanguageText">ไทย</div>
+            </a>
+            <a tabindex=0 href="/tr_tr/index">
+                <div class="bigLanguageText">Turkish</div>
+                <div class="smallLanguageText">Türkçe</div>
+            </a>
+            <a tabindex=0 href="/uk_ua/index">
+                <div class="bigLanguageText">Ukrainian</div>
+                <div class="smallLanguageText">українська</div>
+            </a>
+            <a tabindex=0 href="/vi_vn/index">
+                <div class="bigLanguageText">Vietnamese</div>
+                <div class="smallLanguageText">Tiếng Việt</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    function handleDropdownClick() {
+        document.getElementById("languageDropdownMenu").classList.toggle("show");
+        document.getElementById("languageInput").focus();
+    }
+
+    function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("languageInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("languageDropdownMenu");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                a[i].style.display = "";
+            } else {
+                a[i].style.display = "none";
+            }
+        }
+    }
+
+    function setLanguageCode() {
+        var downTriangleCode = "&#9660";
+
+        var langButton = document.getElementById("langButton");
+        langButton.innerHTML = getLanguageCode() + "&nbsp;" + downTriangleCode;
+    }
+
+    function getLanguageCode() {
+        var langCode = "EN";
+        var splitPath = (window.location.pathname).split("/");
+        if (splitPath.length > 2) {
+            var lcidSymbol = splitPath[1];
+            langCode = lcidSymbol.split("_")[0].toUpperCase();
+        }
+        return langCode;
+    }
+
+    var flag = 0;
+    window.addEventListener('click', function (event) {
+        var dropDownElem = document.getElementsByClassName("lang-dropdown")[0];
+        var langDropDownMenu = document.getElementById("languageDropdownMenu");
+        if (event.target != dropDownElem
+            && event.target.parentNode != dropDownElem
+            && flag % 2 != 0) {
+            if (langDropDownMenu.classList.contains("show")) {
+                langDropDownMenu.classList.remove("show");
+            }
+        }
+        flag += 1;
+    })
+
+    setLanguageCode();
+</script>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+<main class="container col-sm-12 col-md-8 col-lg-6">
+    <div>
+        <h1 class="page-title">
+            What is IndexNow?
+        </h1>
+        <p class="para">
+            IndexNow is an easy way for websites owners to instantly inform search engines about latest content changes on their website. In its simplest form, IndexNow is a simple ping so that search engines know that a URL and its content has been added, updated, or deleted, allowing search engines to quickly reflect this change in their search results.
+        </p>
+        <p class="para">
+            Without IndexNow, it can take days to weeks for search engines to discover that the content has changed, as search engines don’t crawl every URL often. With IndexNow, search engines know immediately the "URLs that have changed, helping them prioritize crawl for these URLs and thereby limiting organic crawling to discover new content."
+        </p>
+        <p class="para">
+            IndexNow is offered under the terms of the Attribution-ShareAlike Creative Commons License and has support from Microsoft Bing, Seznam.cz, Yandex.
+        </p>
+    </div>
+    <br/>
+    <br/>
+    <footer class="container col-md-6 fixed-bottom">
+        <div class="px-0" style="opacity: 1; background: #FFFFFF;">
+    <hr style="margin-top: 13px; margin-bottom: 13px;" />
+    <div class="footer">
+        <a href="terms" style="text-decoration: none;">Terms and Conditions</a>
+    </div>
+</div>
+
+    </footer>
+</main>
+
+
+</body>
+
+</html>

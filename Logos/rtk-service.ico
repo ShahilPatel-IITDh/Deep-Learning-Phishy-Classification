@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>ООО РТК-Сервис</title>
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="custom-font/fonts.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <!-- Bootsnav -->
+        <link rel="stylesheet" href="css/bootsnav.css">
+        <!-- Fancybox -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />	
+        <!-- Custom stylesheet -->
+        <link rel="stylesheet" href="css/custom.css" />
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <!-- Preloader -->
+
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--End off Preloader -->
+
+        <!-- Header -->
+        <header>
+            <!-- Top Navbar -->
+            <div class="top_nav">
+                <div class="container">
+                    <ul class="list-inline info">
+                        <li><a href="#"><span class="fa fa-phone"></span> +7 861 217 30 15</a></li>
+                        <li><a href="mailto:official@rtk-service.ru"><span class="fa fa-envelope"></span> official@rtk-service.ru</a></li>
+                        <li><a href="#"><span class="fa fa-clock-o"></span> Пн - Пт 9:00 - 18:00</a></li>
+                    </ul>
+                    <ul class="list-inline social_icon">
+                    <!--    <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                        <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                        <li><a href=""><span class="fa fa-behance"></span></a></li>
+                        <li><a href=""><span class="fa fa-dribbble"></span></a></li>
+                        <li><a href=""><span class="fa fa-linkedin"></span></a></li>
+                        <li><a href=""><span class="fa fa-youtube"></span></a></li> -->
+                    </ul>			
+                </div>
+            </div><!-- Top Navbar end -->
+
+            <!-- Navbar -->
+            <nav class="navbar bootsnav">
+                <!-- Top Search -->
+                <div class="top-search">
+                    <div class="container">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <!-- Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                      <!--      <li class="search"><a href="#"><i class="fa fa-search"></i></a></li> -->
+                        </ul>
+                    </div>
+                    <!-- Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href=""><img class="logo" src="images/logo.png" alt=""></a>
+                    </div>
+                    <!-- Navigation -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav menu">
+                            <!-- <li><a href="">Домой</a></li> -->                   
+                            <li><a href="#about">О нас</a></li>
+			    <li><a href="#why_us">Наши ИТ-проекты</a></li>
+                            <!--<li><a href="#services">Сервис</a></li>-->
+                            <li><a href="#portfolio">Партнеры</a></li>
+                            <li><a href="#contact_form">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>   
+            </nav><!-- Navbar end -->
+        </header><!-- Header end -->
+
+
+        <section id="home" class="home">
+            <!-- Carousel -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel-inner -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/slider_img.jpg" alt="Construction">
+                        <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>СЕРТИФИЦИРОВАННЫЕ ИНЖЕНЕРЫ</h3>
+                                <h1>СМР, ПНР, Эксплуатация</h1>
+                                <h1 class="second_heading">Профессионализм во всем</h1>
+                                <p>Мы - Компания, обладающая широким спектром компетенций, необходимых для качественной реализации высокотехнологичных проектов с учетом отраслевой специфики заказчиков</p>
+                                <a  class="btn know_btn" href="#about">О нас</a>
+                                <a  class="btn know_btn" href="#why_us">Наши ИТ-проекты</a>
+                                <a  class="btn know_btn" href="#portfolio">Наши партнеры</a>
+                            </div>					
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/slider_img2.jpg" alt="Construction">
+                        <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>ОПЫТНЫЕ АРХИТЕКТОРЫ</h3>
+                                <h1>Системная интеграция</h1>
+                                <h1 class="second_heading">Результат во всем</h1>
+                                <p>Решения в области инфокоммуникационных технологий, инженерной инфраструктуры, разработки приложений бизнеса и бизнес-консалтинга для крупных компаний</p>
+                                <a  class="btn know_btn" href="#about">О нас</a>
+                                <a  class="btn know_btn" href="#why_us">Наши ИТ-проекты</a>
+                                <a  class="btn know_btn" href="#portfolio">Наши партнеры</a>
+                            </div>					
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/slider_img3.jpg" alt="Construction">
+                        <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>КОМПЕТЕНТНЫЕ ЭКСПЕРТЫ</h3>
+                                <h1>Сервис и аутсорсинг</h1>
+                                <h1 class="second_heading">Качество во всем</h1>
+                                <p>Оптимизация систем, ИТ-функций и процессов с точки зрения операционной эффективности, прозрачности, минимизации затрат и рисков</p>
+                                <a  class="btn know_btn" href="#about">О нас</a>
+                                <a  class="btn know_btn" href="#why_us">Наши ИТ-проекты</a>
+                                <a  class="btn know_btn" href="#portfolio">Наши партнеры</a>
+                            </div>					
+                        </div>
+                    </div>
+                </div><!-- Carousel-inner end -->
+
+
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                    <span class="fa fa-angle-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div><!-- Carousel end-->
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="about_content">
+                            <h2>О нашей Компании</h2>
+                            <h3>Нацеленность на результат</h3>
+                            <p>РТК-Сервис - российский системный интегратор, работающий в России, странах СНГ и Европе - основан в 2016 г.</p>
+                            <p>Приоритетные направления деятельности - реализация крупных, социально-значимых проектов по внедрению и развитию инфокоммуникационной инфраструктуры, энергетических и инженерных систем, прикладных платформ масштаба крупного предприятия и отрасли. В число компетенций также входят ИТ-консалтинг, услуги сервиса и аутсорсинга.</p>
+                            <p>Наши заказчики - государственные структуры и крупнейшие компании ключевых отраслей экономики: операторы связи, финансовые организации, промышленные, торгово-энергетические, транспортные и торговые предприятия.</p>
+                            <!-- <a  class="btn know_btn">know more</a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-lg-offset-0">
+
+                        <div class="about_banner">
+                            <img src="images/about_bg.png" alt="" />
+                        </div> 
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- About end -->
+
+        <!-- Why us -->
+        <section id="why_us">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="head_title">
+                            <h2>Наши ИТ-проекты</h2>
+				<div class="about_content">
+                           	 	<p>Наша команда технических экспертов с многолетним опытом на российском рынке решает кейсы заказчика любой сложности по следующим видам деятельности:</p>
+					<p>1) Оказание консультационных и экспертных услуг в отношении телекоммуникационного и периферийного оборудования.</p>
+					<p>2) Проектирование информационно-телекоммуникационных систем, ИТ-инфраструктуры, ЦОД и облачных решений.</p>
+					<p>3) Комплексное обслуживание ИТ-инфраструктуры, организация удаленных методов работы и доступов к данным.</p>
+					<p>4) Проведение предпроектного обследования и реализация проектов по цифровой трансформации (в т.ч. монтажных и пусконаладочных работ).</p>
+					<p>5) Поставка ПАК и оборудования, оборудования ИТ-инфраструктуры, удобным для заказчика способом (опт, розница, лизинг, аренда).</p>
+					<p>6) Ремонт, обслуживание и постгарантийное обслуживание ПАК и оборудования, оборудования ИТ-инфраструктуры, телекоммуникационного оборудования.</p>
+				</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="why_us_item">
+                            <span class="fa fa-group"></span>
+                            <h4>Сервисная поддержка 24/7</h4>
+                            <!--<p>Мы - Команда</p>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="why_us_item">
+                            <span class="fa fa-leaf"></span>
+                            <h4>Решение «под ключ»</h4>
+                            <!--<p>Повышаем эффективность</p>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="why_us_item">
+                            <span class="fa fa-star"></span>
+                            <h4>Высокий уровень экспертизы </h4>
+                            <!--<p>Профессиональные услуги</p>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="why_us_item">
+                            <span class="fa fa-calendar-check-o"></span>
+                            <h4>Работа в установленный срок</h4>
+                            <!--<p>Всегда в срок</p>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Why us end -->
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <div class="container portfolio_area text-center">
+                <h2>Наши партнеры</h2>
+                <p></p>
+
+                <div id="filters">
+                    <button class="button is-checked" data-filter="*">Все</button>
+                    <button class="button" data-filter=".networks">Телекоммуникации</button>
+                    <button class="button" data-filter=".ups">Электропитание</button>
+                    <button class="button" data-filter=".server">Серверы и СХД</button>
+                    <button class="button" data-filter=".soft">Программное обеспечение</button>
+                </div>
+                <!-- Portfolio grid -->		
+                <div class="grid">
+
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item networks">
+                        <img alt="" src="images/cisco_partner_logo_whitebg.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/cisco_partner_logo_whitebg.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.cisco.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+                    <div class="grid-item soft networks">
+                        <img alt="" src="images/EcoRouter.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/EcoRouter.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.ecorouter.ru/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item ups">
+                        <img alt="" src="images/apc.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/apc.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.apc.com/"><span class="fa fa-link"></span></a>
+                        </div>   
+                    </div>
+
+                    <div class="grid-item networks">
+                        <img alt="" src="images/avaya.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/avaya.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.avaya.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item server">
+                        <img alt="" src="images/dell.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/dell.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.dell.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item networks">
+                        <img alt="" src="images/huawei.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/huawei.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.huawei.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item server">
+                        <img alt="" src="images/hitachi.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/hitachi.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.hitachivantara.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+<!--                    <div class="grid-item networks">
+                        <img alt="" src="images/juniper.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/juniper.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.juniper.net/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div> -->
+
+                    <div class="grid-item soft">
+                        <img alt="" src="images/microsoft.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/microsoft.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.microsoft.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item soft">
+                        <img alt="" src="images/vmware.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/vmware.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.vmware.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item ups">
+                        <img alt="" src="images/legrand.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/legrand.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://legrand.ru/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item ups">
+                        <img alt="" src="images/CyberPower.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/CyberPower.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.cyberpower.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item server">
+                        <img alt="" src="images/lenovo.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/lenovo.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.lenovo.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item server soft">
+                        <img alt="" src="images/ibm.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/ibm.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.ibm.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item server soft">
+                        <img alt="" src="images/hpe.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/hpe.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.hpe.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item server">
+                        <img alt="" src="images/fujitsu.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/fujitsu.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.fujitsu.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item networks server">
+                        <img alt="" src="images/brocade.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/brocade.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="http://www.brocade.ru/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item server">
+                        <img alt="" src="images/pure-storage.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/pure-storage.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.purestorage.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item server soft">
+                        <img alt="" src="images/yadro.png" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/yadro.png" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://oem.yadro.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item soft">
+                        <img alt="" src="images/symantec.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/symantec.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.nortonlifelock.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item soft">
+                        <img alt="" src="images/sap.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/sap.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.sap.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item soft">
+                        <img alt="" src="images/Veeam.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/Veeam.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.veeam.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item soft">
+                        <img alt="" src="images/citrix.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/citrix.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.citrix.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item soft">
+                        <img alt="" src="images/tableau.png" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/tableau.png" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.tableau.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item soft">
+                        <img alt="" src="images/ivanti.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/ivanti.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.ivanti.ru/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item server">
+                        <img alt="" src="images/netapp.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/netapp.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.netapp.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item soft">
+                        <img alt="" src="images/Veritas.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/Veritas.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.veritas.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item networks">
+                        <img alt="" src="images/nokia.png" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/nokia.png" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.nokia.com/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item soft">
+                        <img alt="" src="images/teradata.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="teradata.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.teradata.ru/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item ups">
+                        <img alt="" src="images/eaton.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="eaton.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="http://www.eaton.ru"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item soft">
+                        <img alt="" src="images/Kaspersky.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="Kaspersky.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.kaspersky.ru/"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item networks">
+                        <img alt="" src="images/ubiquiti.jpg" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="ubiquiti.jpg" data-fancybox-group="gallery"></a>
+                            <a target="_blank" href="https://www.ui.com"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                </div><!-- Portfolio grid end -->
+            </div>
+        </section><!-- Portfolio end -->
+
+        <!-- Dosc -->
+        <section id="services">
+            <div class="container">
+                <h2>Документы</h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="service_item">
+                            <!--<img src="images/service_img1.jpg" alt="Документы" />-->
+                            <h4>Положение о закупках товаров, работ, услуг </h4>
+                            
+                            <a href="docs/ПоЗ РТК-Сервис.docx" class="btn know_btn">Открыть</a>
+                        </div>	
+			<div class="service_item">
+                            <!--<img src="images/service_img1.jpg" alt="Документы" />-->
+                            <h4>Извещение и документация на размещение оферты на поставку продукции производства «Связьстройдеталь»</h4>
+                            
+                            <a href="docs/Извещение и документация на размещение оферты на поставку продукции производства «Связьстройдеталь».docx" class="btn know_btn">Открыть</a>
+                        </div>
+			<div class="service_item">
+                            <!--<img src="images/service_img1.jpg" alt="Документы" />-->
+                            <h4>Извещение и документация на размещение оферты о закупке</h4>
+                            
+                            <a href="docs/Извещение и документация на размещение оферты о закупке.docx" class="btn know_btn">Открыть</a>
+                        </div>
+                        <div class="service_item">
+                            <!--<img src="images/service_img1.jpg" alt="Документы" />-->
+                            <h4>Извещение и документация на размещение оферты о закупке АДЭС</h4>
+                            
+                            <a href="docs/Извещение и документация на размещение оферты о закупке АДЭС.docx" class="btn know_btn">Открыть</a>
+                        </div>
+                    </div>
+                        <div class="service_item">
+                        <!--<img src="images/service_img1.jpg" alt="Документы" />-->
+                        <h4>Кодекс деловой этики Поставщика</h4>
+                    
+                        <a href="docs/Кодекс деловой этики Поставщика.pdf" class="btn know_btn">Открыть</a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-4">
+                        <div class="service_item">
+                            <img src="images/service_img2.jpg" alt="Our Services" />
+                            <h3>RENOVATION</h3>
+                            <p></p>
+                            <a href="#services" class="btn know_btn">know more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service_item">
+                            <img src="images/service_img3.jpg" alt="Our Services" />
+                            <h3>ARCHITECTURE</h3>
+                            <p></p>
+                            <a href="#services" class="btn know_btn">know more</a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </section><!-- Docs -->
+		
+		
+		
+		
+        <!-- Footer -->
+        <section id="contact_form">
+        <footer>
+            <!-- Footer top -->
+            <div class="container footer_top">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-5">
+                        <div class="footer_item">
+                        <!--    <h4>О Компании</h4>-->
+                            <img class="logo" src="images/logo.png" alt="РТК-Сервис" />
+                            <p>Проектно-строительный интегратор ООО «РТК-Сервис» выполняет полный комплекс работ по строительству, проектированию и обслуживанию  волоконно-оптических линий связи и сопутствующей инфраструктуры.</p>
+			    <p> Все работы выполняются по международными стандартами на объектах любого уровня сложности. </p>
+<!--
+                            <ul class="list-inline footer_social_icon">
+                                <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                                <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                                <li><a href=""><span class="fa fa-youtube"></span></a></li>
+                                <li><a href=""><span class="fa fa-google-plus"></span></a></li>
+                                <li><a href=""><span class="fa fa-linkedin"></span></a></li>
+                            </ul> 
+-->
+                        </div>
+
+                    </div>
+                            
+                    <div class="col-lg-5 col-sm-3">
+                        <div class="footer_item">
+                            <h4>Наши контакты</h4>
+                            <ul class="list-unstyled footer_contact">
+                                <h5><li><a><span class="fa fa-play"></span>Юридический адрес</a></li></h5>
+                                <li><a target="_blank" href="https://yandex.ru/maps/213/moscow/house/ulitsa_dubovoy_roshchi_25k2s2/Z04YcAdkTEIDQFtvfXRweXlhbA==/?ll=37.605059%2C55.816748&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=16"><span class="fa fa-map-marker"></span>г. Москва, ул. Дубовой Рощи, д. 25, корп./стр. 2/2, комн.4</a></li>
+                                <h5><li><a><span class="fa fa-play"></span>Фактический адрес</a></li></h5>
+                                <li><a target="_blank" href="https://yandex.ru/maps/35/krasnodar/house/ulitsa_krasnykh_partizan_393/Z0EYfwJhTU0GQFpvfXx0c39hZg==/?ll=38.951481%2C45.052322&sll=38.951481%2C45.052322&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=16"><span class="fa fa-map-marker"></span>г. Краснодар, ул. Красных Партизан, 393</a></li>
+                                <li><a href="mailto:official@rtk-service.ru"><span class="fa fa-envelope"></span>official@rtk-service.ru</a></li>
+                                <li><a><span class="fa fa-mobile"></span><p>+7 861 217 30 15 <br /> </p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-12 col-sm-1">
+                        <div class="footer_item">
+ 			<h4 align="center">Наши офисы</h4>
+			</div>
+                    </div>
+
+
+                    <div class="col-lg-7 col-sm-6">
+                        <div class="footer_item">
+                            <ul class="list-unstyled footer_contact">
+                                <h5><li><a><span class="fa fa-play"></span>Проектный офис ЮГ</a></li></h5>
+                                <li><a target="_blank" href="https://yandex.ru/maps/35/krasnodar/house/ulitsa_krasnykh_partizan_393/Z0EYfwJhTU0GQFpvfXx0c39hZg==/?ll=38.951481%2C45.052322&sll=38.951481%2C45.052322&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=16"><span class="fa fa-map-marker"></span>г. Краснодар, ул. Красных Партизан, 393</a></li>
+                                <li><a href="mailto:official@rtk-service.ru"><span class="fa fa-envelope"></span>official@rtk-service.ru</a></li>
+                                <li><a><span class="fa fa-mobile"></span><p>+7 861 217 30 15 <br /> </p></a></li>
+
+                                <h5><li><a><span class="fa fa-play"></span>Проектный офис Волга</a></li></h5>
+                                <li><a target="_blank" href="https://yandex.ru/maps/47/nizhny-novgorod/house/ulitsa_sofyi_perovskoy_13/YEoYfgBnS00CQFtsfX9ydX9kZw==/?ll=43.877285%2C56.334373&sll=43.877285%2C56.334373&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=16"><span class="fa fa-map-marker"></span>г. Нижний Новгород, ул. Софьи Перовской, 13</a></li>
+                                <li><a><span class="fa fa-mobile"></span><p>+7 900 260 31 03<br /> </p></a></li>
+								
+                                <h5><li><a><span class="fa fa-play"></span>Проектный офис Центр</a></li></h5>
+                                <li><a target="_blank" href="https://yandex.ru/maps/193/voronezh/house/ulitsa_stepana_solodovnikova_4/Z0AYdAdmS0YDQFtrfXpydH1lbQ==/?ll=39.206234%2C51.635169&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=16"><span class="fa fa-map-marker"></span>г. Воронеж, ул.Степана Солодовникова, 4</a></li>
+
+                                <h5><li><a><span class="fa fa-play"></span>Проектный офис Дальний восток</a></li></h5>
+                                <li><a target="_blank" href="https://yandex.ru/maps/-/CCUW6IetxD"><span class="fa fa-map-marker"></span>г.Хабаровск ул. Лермонтова 3, лит.О</a></li>
+                                <li><a><span class="fa fa-mobile"></span><p>+7 900 260 35 06<br /> </p></a></li>	
+							
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-sm-6">
+                        <div class="footer_item">
+                            <ul class="list-unstyled footer_contact">
+                                <h5><li><a><span class="fa fa-play"></span>Проектный офис Северо-Запад</a></li></h5>
+                                <li><a target="_blank" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshoy_smolenskiy_prospekt_2/Z0kYcgVjSUEBQFtjfXVxcHxhZQ==/inside/?ll=30.423115%2C59.900011&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=16.29"><span class="fa fa-map-marker"></span>г. Санкт-Петербург, Большой Смоленский проспект, 2</a></li>
+                                <li><a><span class="fa fa-mobile"></span><p>+7 900 260 52 70<br /> </p></a></li>
+                                <h5><li><a><span class="fa fa-play"></span>Проектный офис Урал</a></li></h5>
+                                <li><a target="_blank" href="https://yandex.ru/maps/54/yekaterinburg/house/ulitsa_sheynkmana_9/YkkYcw9jTk0DQFtsfXR1cXRqYw==/?ll=60.583784%2C56.840897&sll=60.583784%2C56.840897&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=16"><span class="fa fa-map-marker"></span>г. Екатеринбург, ул. Шейнкмана, 9</a></li>
+                                <li><a><span class="fa fa-mobile"></span><p>+7 900 260 25 53<br /> </p></a></li>
+
+                                <h5><li><a><span class="fa fa-play"></span>Проектный офис Сибирь</a></li></h5>
+                                <li><a target="_blank" href="https://yandex.ru/maps/65/novosibirsk/house/ulitsa_kirova_46/bEsYfwRpS0YGQFtvfXxweXxmZQ==/?ll=82.939231%2C55.018051&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=16.72"><span class="fa fa-map-marker"></span>г. Новосибирск, ул. Кирова, 46</a></li>
+                                <li><a><span class="fa fa-mobile"></span><p>+7 900 260 33 07<br /> </p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+<!--
+                    <div class="col-lg-4 col-sm-5">
+                        <div class="footer_item">
+                            <h4>Наши офисы</h4>
+                            <ul class="list-unstyled footer_menu">
+                                <li><a href=""><span class="fa fa-play"></span> Our services</a>
+                                <li><a href=""><span class="fa fa-play"></span> Meet our team</a>
+                                <li><a href=""><span class="fa fa-play"></span> Forum</a>
+                                <li><a href=""><span class="fa fa-play"></span> Help center</a>
+                                <li><a href=""><span class="fa fa-play"></span> Contact Cekas</a>
+                                <li><a href=""><span class="fa fa-play"></span> Privacy Policy</a>
+                                <li><a href=""><span class="fa fa-play"></span> Cekas terms</a>
+                                <li><a href=""><span class="fa fa-play"></span> Site map</a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-7">
+                        <div class="footer_item">
+                            <h4>Latest post</h4>
+                            <ul class="list-unstyled post">
+                                <li><a href=""><span class="date">20 <small>AUG</small></span>  !!</a></li>
+                                <li><a href=""><span class="date">20 <small>AUG</small></span>  !!!</a></li>
+                                <li><a href=""><span class="date">20 <small>AUG</small></span>  !!!!</a></li>
+                                <li><a href=""><span class="date">20 <small>AUG</small></span>  !!!!!</a></li>
+                            </ul>
+                        </div>
+                    </div>
+-->
+
+
+                </div>
+            </div>
+	</section> <!--Portfolio end --><!-- Footer top end -->
+
+            <!-- Footer bottom -->
+            <!--<div class="footer_bottom text-center">
+                <p class="wow fadeInRight">
+                    Made with 
+                    <i class="fa fa-heart"></i>
+                    by 
+                    <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> 
+                    2020. All Rights Reserved
+                </p>
+            </div>--><!-- Footer bottom end -->
+        </footer><!-- Footer end -->
+
+        <!-- JavaScript -->
+        <script src="js/jquery-1.12.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Bootsnav js -->
+        <script src="js/bootsnav.js"></script>
+
+        <!-- JS Implementing Plugins -->
+        <script src="js/isotope.js"></script>
+        <script src="js/isotope-active.js"></script>
+        <script src="js/jquery.fancybox.js?v=2.1.5"></script>
+
+        <script src="js/jquery.scrollUp.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>	
+</html>	

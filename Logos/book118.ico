@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="renderer" content="webkit">
+    <link rel="search" type="application/opensearchdescription+xml" title="在线工具" href="https://www.book118.com/sitemap.xml">
+    <title>E书联盟</title>
+    <meta name="keywords" content="E书联盟,文档工具,PDF转Word,原创检测,论文查重,文档转换工具,内容非法检测,文档质量检测">
+    <meta name="description" content="E书联盟提供了文档网现有的技术、业务成果，提供了一系列在线文档工具,包含有在线PDF转换成Word转换器,内容非法检测,色情检测,宗教检测,政府公文检测,垃圾检测,文档原创度检测,文档重复检测, 标题重复检测,收录分析,排名分析,竞品分析,唯一性分析,长尾关键词推荐,文档需求挖掘,文档价格预测,智能定价,原创检测,侵权检测/通知删除,版权登记,区块链存证,论文查重,论文降重,批量去水印,洗文工具">
+    <link rel="stylesheet" href="/static/lib/css/common.css?v=20220610">
+    <link rel="stylesheet" type="text/css" href="/static/home/css/home.css?v=20220920">
+    <script type="text/javascript" src="/static/lib/js/util/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/lib/js/util/plugin/font.responsive.min.js"></script>
+    <script type="text/javascript" src="/static/lib/js/util/js/layer.js"></script>
+    <script type="text/javascript">document.domain = 'book118.com';</script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <div class="pc-header-wrapper">
+            <div class="logo">
+                <a href="https://www.book118.com" title="E书联盟"><img src="/static/images/logo.png" alt="E书联盟" title="E书联盟"></a>
+                <strong>book118技术及应用成果展</strong>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="请输入工具名称关键词">
+                <button type="button"><i class="icon icon-common icon-common-search"></i></button>
+                <ul class="search-text"></ul>
+            </div>
+            <div class="hot-search"><i class="icon icon-common icon-common-hot-search"></i><a href="javascript:;" title="排行榜">排行榜</a></div>
+            <div class="entry"><i class="icon icon-common icon-common-login"></i><a href="javascript:;" title="登录" class="c_login">登录</a></div>
+        </div>
+        <div class="mobile-header-wrapper clear">
+            <div class="logo"><a href="https://www.book118.com" title="E书联盟"><img src="/static/images/logo.png" alt="E书联盟" title="E书联盟"></a></div>
+            <div class="nav-btns">
+                <a href="javascript:;" title="排行榜"><i class="icon icon-common icon-common-hot-search"></i></a>
+                <a href="/home/Search/mindex.html" title="搜索"><i class="icon icon-common icon-common-search"></i></a>
+                <a href="javascript:;" data-tab="navigation" title="导航"><i class="icon icon-common icon-common-navigation-down"></i></a>
+                <ul class="mobile-nav-drop">
+                    <li class="item"><a href="https://www.book118.com" title="首页">首页</a></li>
+                    <li class="item"><a href="https://www.book118.com/index.html" title="旧版E书联盟">旧版E书联盟</a></li>
+                    <li class="item">
+                        <a data-tab="arrow" href="javascript:;" title="文档格式转化">文档格式转化<i class="icon icon-common icon-common-arrow-down"></i></a>
+                        <ul class="mobile-nav-drop-down">
+                            <li><a href="https://www.book118.com/tool/pdf2word/">免费pdf转word工具</a></li>
+                            <li><a href="https://www.book118.com/tool/word2pdf/">免费word转pdf工具</a></li>
+                            <li><a href="https://www.book118.com/tool/wdqsy/">word文档去水印</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a data-tab="arrow" href="javascript:;" title="内容质量检测">内容质量检测<i class="icon icon-common icon-common-arrow-down"></i></a>
+                        <ul class="mobile-nav-drop-down">
+                            <li><a href="https://www.book118.com/tool/nrsh/">内容审核系统</a></li>
+                            <li><a href="https://www.book118.com/tool/ycdjc/">原创度检测</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a data-tab="arrow" href="javascript:;" title="文档非法检测">文档非法检测<i class="icon icon-common icon-common-arrow-down"></i></a>
+                        <ul class="mobile-nav-drop-down">
+                            <li><a href="https://www.book118.com/tool/nrffjc/">内容非法检测</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a data-tab="arrow" href="javascript:;" title="优化推广">优化推广<i class="icon icon-common icon-common-arrow-down"></i></a>
+                        <ul class="mobile-nav-drop-down">
+                            <li><a href="https://www.book118.com/tool/btjsc/">标题生成</a></li>
+                            <li><a href="https://www.book118.com/tool/zytq/">摘要提取工具</a></li>
+                            <li><a href="https://www.book118.com/tool/bqsc/">标签生成工具</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a data-tab="arrow" href="javascript:;" title="内容合规审核">内容合规审核<i class="icon icon-common icon-common-arrow-down"></i></a>
+                        <ul class="mobile-nav-drop-down">
+                            <li><a href="https://www.book118.com/tool/zjjc/">宗教检测</a></li>
+                            <li><a href="https://www.book118.com/tool/sqjc/">涉黄检测</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a data-tab="arrow" href="javascript:;" title="其它小工具">其它小工具<i class="icon icon-common icon-common-arrow-down"></i></a>
+                        <ul class="mobile-nav-drop-down">
+                            <li><a href="https://www.book118.com/tool/wbdz/">文本对照</a></li>
+                            <li><a href="https://www.book118.com/tool/ft2jt/">繁简体转换器</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a data-tab="arrow" href="https://www.book118.com/tool/jgcl/" title="定价策略">定价策略</a>
+                    </li>
+                    <li class="item">
+                        <a data-tab="arrow" href="javascript:;" title="版权检测与保护">版权检测与保护<i class="icon icon-common icon-common-arrow-down"></i></a>
+                        <ul class="mobile-nav-drop-down">
+                            <li><a href="https://www.book118.com/tool/bqjc/">出版社电子书判断标准及检测下线</a></li>
+                            <li><a href="https://www.book118.com/tool/bqdj/">版权登记</a></li>
+                        </ul>
+                    </li>
+                    <li class="entry">
+                        <a href="https://openapi.book118.com/login/Login/mwebIndex?callback=https%3A%2F%2Fwww.book118.com%2Fuser%2FAccount%2Flogin" class="sign-in">登录</a>
+                        <a href="https://openapi.book118.com/login/Login/mwebIndex?callback=https%3A%2F%2Fwww.book118.com%2Fuser%2FAccount%2Flogin" class="register">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="nav">
+    <ul class="container">
+        <li class="nav-item"><a href="https://www.book118.com" title="首页" class="active">首页</a></li>
+        <li class="nav-item"><a href="https://www.book118.com/tool/pdf/"  title="文档格式转化">文档格式转化</a></li>
+        <li class="nav-item"><a href="https://www.book118.com/tool/zlkz/"  title="内容质量检测">内容质量检测</a></li>
+        <li class="nav-item"><a href="https://www.book118.com/tool/ffjc/"  title="文档非法检测">文档非法检测</a></li>
+        <li class="nav-item"><a href="https://www.book118.com/tool/yhtg/"  title="优化推广">优化推广</a></li>
+        <li class="nav-item"><a href="https://www.book118.com/tool/hgsh/"  title="内容合规审核">内容合规审核</a></li>
+        <li class="nav-item"><a href="https://www.book118.com/tool/gdgj/"  title="其它小工具">其它小工具</a></li>
+        <li class="nav-item"><a href="https://www.book118.com/tool/jgcl/"  title="定价策略">定价策略</a></li>
+        <li class="nav-item"><a href="https://www.book118.com/tool/jcbh/"  title="版权检测与保护">版权检测与保护</a></li>
+        <li class="prominent"><a href="https://www.book118.com/index.html" title="旧版E书联盟" target="_blank">旧版E书联盟</a></li>
+    </ul>
+</div>
+
+<div id="main">
+        <div class="container">
+        <div class="card banner">
+            <a href="https://max.book118.com/" target="_blank" title="原创力文档">原创力文档-超3亿文档内容服务，为 <strong>“知识强国、平等学习”</strong> 添砖加瓦</a>
+        </div>
+        <div class="card docs">
+            <div class="hd">
+                <div class="title">
+                    <h3>精选文档</h3>
+                    <div class="source">数据来源:<a href="https://max.book118.com/" target="_blank" title="原创力文档">原创力文档</a></div>
+                </div>
+                <div class="more">
+                    <a href="https://max.book118.com" title="更多文档" target="_blank">更多文档</a>
+                </div>
+            </div>
+            <ul class="main-list">
+                                <li>
+                    <a href="https://max.book118.com/html/2022/1021/8112016107005004.shtm" target="_blank" title="中学读书活动总结.docx">
+                        <span class="cover">
+                            <img src="//img.book118.com/sr1/M00/08/08/wKh2C2NRkd-IYyJ9AACRDtSa3XoAA6jTwFMsPAAAJEm091_128x180.png" alt="中学读书活动总结.docx">
+                        </span>
+                        <strong class="title">中学读书活动总结.docx</strong>
+                    </a>
+                </li>
+                                <li>
+                    <a href="https://max.book118.com/html/2023/0524/6135110213005133.shtm" target="_blank" title="客运公司2023年安全生产月活动总结.docx">
+                        <span class="cover">
+                            <img src="//img.book118.com/sr1/M00/15/15/wKh2AmRtvriIFy6oAABeB5tgppUAA_tAAAaFsUAAF4f420_128x180.png" alt="客运公司2023年安全生产月活动总结.docx">
+                        </span>
+                        <strong class="title">客运公司2023年安全生产月活动总结.docx</strong>
+                    </a>
+                </li>
+                                <li>
+                    <a href="https://max.book118.com/html/2023/1012/8024025007005141.shtm" target="_blank" title="GB/T 43088-2023微束分析　分析电子显微术　金属薄晶体试样中位错密度的测定方法.pdf">
+                        <span class="cover">
+                            <img src="//img.book118.com/sr2/M02/37/2D/wKh2E2UmxrCAKpNyAACLid8PBUw295_338x480.png" alt="GB/T 43088-2023微束分析　分析电子显微术　金属薄晶体试样中位错密度的测定方法.pdf">
+                        </span>
+                        <strong class="title">GB/T 43088-2023微束分析　分析电子显微术　金属薄晶体试样中位错密度的测定方法.pdf</strong>
+                    </a>
+                </li>
+                                <li>
+                    <a href="https://max.book118.com/html/2023/0524/5214141311010212.shtm" target="_blank" title="矿业公司2023年“安全生产月”活动方案.docx">
+                        <span class="cover">
+                            <img src="//img.book118.com/sr1/M00/15/15/wKh2AmRtvriIQ-nVAABIFqJvi9kAA_tAAAZMTYAAEgu855_128x180.png" alt="矿业公司2023年“安全生产月”活动方案.docx">
+                        </span>
+                        <strong class="title">矿业公司2023年“安全生产月”活动方案.docx</strong>
+                    </a>
+                </li>
+                                <li>
+                    <a href="https://max.book118.com/html/2023/0902/7130024136005152.shtm" target="_blank" title="走进“全新”信息社会课件.pptx">
+                        <span class="cover">
+                            <img src="//img.book118.com/sr2/M01/1A/00/wKh2AmTygTWAT7MuAAB3ISJYLDA716_146x206.jpg" alt="走进“全新”信息社会课件.pptx">
+                        </span>
+                        <strong class="title">走进“全新”信息社会课件.pptx</strong>
+                    </a>
+                </li>
+                                <li>
+                    <a href="https://max.book118.com/html/2022/1022/8075075140005004.shtm" target="_blank" title="低碳绿色出行演讲稿.docx">
+                        <span class="cover">
+                            <img src="//img.book118.com/sr1/M00/08/0C/wKh2C2NS4wKIQC0sAACUOe7QncsAA6k1ACzJhsAAJRR112_128x180.png" alt="低碳绿色出行演讲稿.docx">
+                        </span>
+                        <strong class="title">低碳绿色出行演讲稿.docx</strong>
+                    </a>
+                </li>
+                                <li>
+                    <a href="https://max.book118.com/html/2023/0828/8107031040005125.shtm" target="_blank" title="2023年一年级开笔礼校长讲话稿.docx">
+                        <span class="cover">
+                            <img src="//img.book118.com/sr2/M02/2B/19/wKh2E2TsJm6AJZM4AABRwctdHvs621_146x206.png" alt="2023年一年级开笔礼校长讲话稿.docx">
+                        </span>
+                        <strong class="title">2023年一年级开笔礼校长讲话稿.docx</strong>
+                    </a>
+                </li>
+                                <li>
+                    <a href="https://max.book118.com/html/2023/0613/8126020074005100.shtm" target="_blank" title="感受诗歌之美-《中国教育技术装备》(2010年14期).docx">
+                        <span class="cover">
+                            <img src="//img.book118.com/sr1/M00/16/39/wKh2AmSHuy-IJcQ0AABgNZkNRVQABAUNQFxyksAAGBN576_128x180.png" alt="感受诗歌之美-《中国教育技术装备》(2010年14期).docx">
+                        </span>
+                        <strong class="title">感受诗歌之美-《中国教育技术装备》(2010年14期).docx</strong>
+                    </a>
+                </li>
+                            </ul>
+            <ul class="list">
+                                <li><a href="https://max.book118.com/html/2023/0825/7005161102005150.shtm" target="_blank" title="两篇稿：主题教育“六个方面”检视问题清单及整改措施（2023年）.docx">• 两篇稿：主题教育“六个方面”检视问题清单及整改措施（2023年）.docx</a></li>
+                                <li><a href="https://max.book118.com/html/2023/0105/5233330102010042.shtm" target="_blank" title="《良好的量感,可以发展而来——以“长方体、正方体的体积”一课为例》-来源：小学教学·下半月数学（第2022003期）-河南教育报刊社.pdf">• 《良好的量感,可以发展而来——以“长方体、正方体的体积”一课为例》-来源：小学教学·下半月数学（第2022003期）-河南教育报刊社.pdf</a></li>
+                                <li><a href="https://max.book118.com/html/2023/0613/8125116074005100.shtm" target="_blank" title="建立有效的技术服务保障机制 充分发挥农远装备的作用-《中国教育技术装备》(2010年14期).docx">• 建立有效的技术服务保障机制 充分发挥农远装备的作用-《中国教育技术装备》(2010年14期).docx</a></li>
+                                <li><a href="https://max.book118.com/html/2023/0613/6222102140005144.shtm" target="_blank" title="职业学校计算机教学中学生参与意识的培养-《中国教育技术装备》(2010年14期).docx">• 职业学校计算机教学中学生参与意识的培养-《中国教育技术装备》(2010年14期).docx</a></li>
+                                <li><a href="https://max.book118.com/html/2022/1021/5243302241010004.shtm" target="_blank" title="中学生社会实践心得800字精选范文5篇.docx">• 中学生社会实践心得800字精选范文5篇.docx</a></li>
+                                <li><a href="https://max.book118.com/html/2023/0826/5311313232010314.shtm" target="_blank" title="【行业报告】众安保险&amp;众安科技+AIGC&amp;ChatGPT保险行业应用白皮书_市场营销策划_重点报告2.pptx">• 【行业报告】众安保险&amp;众安科技+AIGC&amp;ChatGPT保险行业应用白皮书_市场营销策划_重点报告2.pptx</a></li>
+                                <li><a href="https://max.book118.com/html/2022/1222/7116160106005025.shtm" target="_blank" title="《水·传承》-来源：作文与考试（高中版）（第2018030期）-吉林省青少年报刊总社.pdf">• 《水·传承》-来源：作文与考试（高中版）（第2018030期）-吉林省青少年报刊总社.pdf</a></li>
+                                <li><a href="https://max.book118.com/html/2023/0524/5214200311010212.shtm" target="_blank" title="煤炭化工企业2023年安全生产月活动总结.docx">• 煤炭化工企业2023年安全生产月活动总结.docx</a></li>
+                                <li><a href="https://max.book118.com/html/2023/0914/6234035033005230.shtm" target="_blank" title="2024届高考语文复习：《逃出大英博物馆》作文素材+课件20张.pptx">• 2024届高考语文复习：《逃出大英博物馆》作文素材+课件20张.pptx</a></li>
+                            </ul>
+            <div class="down-more">
+                <a href="https://max.book118.com/" title="更多文档" target="_blank">
+                    <span>更多文档</span>
+                    <i class="icon icon-common icon-common-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+        <div class="card docs">
+            <div class="hd">
+                <div class="title">
+                    <h3>推荐热点内容</h3>
+                </div>
+                <div class="more">
+                    <a href="https://max.book118.com" title="更多推荐 " target="_blank">更多推荐 </a>
+                </div>
+            </div>
+            <ul class="recommend-list">
+                                <li>
+                    <a href="https://max.book118.com/doclist/list-312.html" target="_blank" title="计算机">计算机</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-360.html" target="_blank" title="高等教育">高等教育</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-378.html" target="_blank" title="金融/投资/证券">金融/投资/证券</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-392.html" target="_blank" title="医药卫生">医药卫生</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-430.html" target="_blank" title="汽车/机械/制造">汽车/机械/制造</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-455.html" target="_blank" title="外语学习">外语学习</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-480.html" target="_blank" title="报告/分析">报告/分析</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-498.html" target="_blank" title="法律/法规/法学">法律/法规/法学</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-521.html" target="_blank" title="研究生考试">研究生考试</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-530.html" target="_blank" title="电子工程/通信技术">电子工程/通信技术</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-551.html" target="_blank" title="经济/贸易/财会">经济/贸易/财会</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-562.html" target="_blank" title="建筑/施工">建筑/施工</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-612.html" target="_blank" title="幼儿/小学教育">幼儿/小学教育</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-622.html" target="_blank" title="中学教育">中学教育</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-638.html" target="_blank" title="文学/历史/军事/艺术">文学/历史/军事/艺术</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-669.html" target="_blank" title="资格/认证考试">资格/认证考试</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-698.html" target="_blank" title="人力资源/企业管理">人力资源/企业管理</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-730.html" target="_blank" title="学术论文">学术论文</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-746.html" target="_blank" title="行业资料">行业资料</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-788.html" target="_blank" title="办公文档">办公文档</a>
+                </li>
+                               <li>
+                    <a href="https://max.book118.com/doclist/list-813.html" target="_blank" title="生活休闲">生活休闲</a>
+                </li>
+                           </ul>
+            <div class="down-more">
+                <a href="https://max.book118.com/" title="更多文档" target="_blank">
+                    <span>更多推荐</span>
+                    <i class="icon icon-common icon-common-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+                <div class="card">
+            <h3>文档格式转化</h3>
+            <ul class="cards list_card">
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/pdf2word/" title="在线PDF转换成Word，可以直接把PDF文件转换为DOCX文件，且最大限度保留原PDF文件的所有页面元素和排版，且支持OCR识别，把图片中文 字识别出来，提供修改和编辑。高效且迅速的将PDF转成Word。">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/07/3E/wKh2Al9XX7eIU3NsAAAEZgOW3TEAADHQAABdQIAAAR-426.png" alt="免费pdf转word工具" title="免费pdf转word工具">
+                            <strong class="tool-title">免费pdf转word工具</strong>
+                            <span class="tool-subtitle">在线PDF转换成Word，可以直接把PDF文件转换为DOCX文件，且最大限度保留原PDF文件的所有页面元素和排版，且支持OCR识别，把图片中文 字识别出来，提供修改和编辑。高效且迅速的将PDF转成Word。</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="19" title="收藏"></i>
+                </li>
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/word2pdf/" title="word转pdf在线版工具，点击上传word文档转换为pdf格式，针对doc、docx格式word文档均可转换为pdf，完美还原word排版及文字。">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/1E/1F/wKh2Al9pyyGIH8nJAAAEim6bDAMAAllEQH_-14AAASi720.png" alt="免费word转pdf工具" title="免费word转pdf工具">
+                            <strong class="tool-title">免费word转pdf工具</strong>
+                            <span class="tool-subtitle">word转pdf在线版工具，点击上传word文档转换为pdf格式，针对doc、docx格式word文档均可转换为pdf，完美还原word排版及文字。</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="21" title="收藏"></i>
+                </li>
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/wdqsy/" title="Word去水印工具可一键去除docx、doc类型word文档水印，去除眉和页脚并修复Word文档，最大限度保留原文件页面元素和排版，可以高效且迅速的将word文档水印去掉。">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/0E/01/wKh2Al-buvCIIHFIAAAFJQ9RKRYAAfJRAFg3EoAAAU9405.png" alt="word文档去水印" title="word文档去水印">
+                            <strong class="tool-title">word文档去水印</strong>
+                            <span class="tool-subtitle">Word去水印工具可一键去除docx、doc类型word文档水印，去除眉和页脚并修复Word文档，最大限度保留原文件页面元素和排版，可以高效且迅速的将word文档水印去掉。</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="23" title="收藏"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>内容质量检测</h3>
+            <ul class="cards list_card">
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/nrsh/" title="内容审核系统建立初衷是为企业建设一套完整的审核体系，预防出现内容非法，内容违规等情况，让企业可高效、安全的生产内容。内容审核系统适用于有大量内容输出生产的自媒体站点、小说平台、文库、贴吧、论坛、动态、日记等进行文本中涉黄、暴恐、毒品、赌博、枪支弹药等违法违禁、涉政、涉密、反动、不文明低俗等信息通过百万级非法关键词库进行匹配，精准无误的对非法内容进行检测筛除。">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/06/2D/wKh2Al-_SEiIS0vKAAAJJ7j_I8sAACn6AE-L7gAAAk_369.png" alt="内容审核系统" title="内容审核系统">
+                            <strong class="tool-title">内容审核系统</strong>
+                            <span class="tool-subtitle">内容审核系统建立初衷是为企业建设一套完整的审核体系，预防出现内容非法，内容违规等情况，让企业可高效、安全的生产内容。内容审核系统适用于有大量内容输出生产的自媒体站点、小说平台、文库、贴吧、论坛、动态、日记等进行文本中涉黄、暴恐、毒品、赌博、枪支弹药等违法违禁、涉政、涉密、反动、不文明低俗等信息通过百万级非法关键词库进行匹配，精准无误的对非法内容进行检测筛除。</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="24" title="收藏"></i>
+                </li>
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/ycdjc/" title="根据搜索引擎返回结果、智能判定文章原创度且进行原创度评分（有效规避文档侵权风险、降低人工审核成本）">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/1A/2C/wKh2Al8ReOaIREJBAAAFKW7dxkkAAkGBwH_-r8AAAVB813.png" alt="原创度检测" title="原创度检测">
+                            <strong class="tool-title">原创度检测</strong>
+                            <span class="tool-subtitle">根据搜索引擎返回结果、智能判定文章原创度且进行原创度评分（有效规避文档侵权风险、降低人工审核成本）</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="11" title="收藏"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>文档非法检测</h3>
+            <ul class="cards list_card">
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/nrffjc/" title="内容非法检测工具适用于有大量内容输出的自媒体站点、小说平台、文库、贴吧、论坛、动态、日记等进行文本中涉黄、暴恐、毒品、赌博、枪支弹药等违法违禁、涉政、涉密、反动、不文明低俗等信息通过百万级非法关键词库进行匹配，精准无误的对非法内容进行检测筛除。">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/17/0C/wKh2Al-NMz2ITNbKAAAFkSHZLKgAAJDtgAHR2YAAAWp541.png" alt="内容非法检测" title="内容非法检测">
+                            <strong class="tool-title">内容非法检测</strong>
+                            <span class="tool-subtitle">内容非法检测工具适用于有大量内容输出的自媒体站点、小说平台、文库、贴吧、论坛、动态、日记等进行文本中涉黄、暴恐、毒品、赌博、枪支弹药等违法违禁、涉政、涉密、反动、不文明低俗等信息通过百万级非法关键词库进行匹配，精准无误的对非法内容进行检测筛除。</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="22" title="收藏"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>优化推广</h3>
+            <ul class="cards list_card">
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/btjsc/" title="智能根据正文内容生成标题，迅速生成（直达内容核心语句，解决不知道写标题、如何根据内容概括成一句话标题的问题）">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/10/15/wKh2Al8pDw6IJ4fVAAAENLOhArIAAgDIwFceWEAAATk034.png" alt="标题生成" title="标题生成">
+                            <strong class="tool-title">标题生成</strong>
+                            <span class="tool-subtitle">智能根据正文内容生成标题，迅速生成（直达内容核心语句，解决不知道写标题、如何根据内容概括成一句话标题的问题）</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="13" title="收藏"></i>
+                </li>
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/zytq/" title="根据正文内容及标题提取、生成摘要（解决摘要杂乱、内容摘要与文档不符等问题）">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/0A/14/wKh2Al8n4XOIOq65AAAFKW7dxkkAAEB-QEuwI4AAAVB413.png" alt="摘要提取工具" title="摘要提取工具">
+                            <strong class="tool-title">摘要提取工具</strong>
+                            <span class="tool-subtitle">根据正文内容及标题提取、生成摘要（解决摘要杂乱、内容摘要与文档不符等问题）</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="16" title="收藏"></i>
+                </li>
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/bqsc/" title="根据正文内容及标题提取、生成文档标签（解决文档分类展现杂乱、用户订阅标签等问题）">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/0B/3E/wKh2Al8n4PSILTYAAAAEBgPTUCUAAErSAC3eOMAAATT631.png" alt="标签生成工具" title="标签生成工具">
+                            <strong class="tool-title">标签生成工具</strong>
+                            <span class="tool-subtitle">根据正文内容及标题提取、生成文档标签（解决文档分类展现杂乱、用户订阅标签等问题）</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="15" title="收藏"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>内容合规审核</h3>
+            <ul class="cards list_card">
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/zjjc/" title="根据规则和机器学习，智能检测出宗教内容，如果内容包含非法宗教内容将导致网站整改，重则永久关闭">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/2F/12/wKh2Al8RgLyIZwtXAAAFJG5xvGsAATJSgABtBsAAAU8076.png" alt="宗教检测" title="宗教检测">
+                            <strong class="tool-title">宗教检测</strong>
+                            <span class="tool-subtitle">根据规则和机器学习，智能检测出宗教内容，如果内容包含非法宗教内容将导致网站整改，重则永久关闭</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="14" title="收藏"></i>
+                </li>
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/sqjc/" title="智能检测文本是否为涉黄内容，如果内容包含涉黄内容将导致网站整改，重则永久关闭">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/13/04/wKh2Al8n4k2IIPWvAAAEqWLNKQ0AAhHVQG_efcAAATT199.png" alt="涉黄检测" title="涉黄检测">
+                            <strong class="tool-title">涉黄检测</strong>
+                            <span class="tool-subtitle">智能检测文本是否为涉黄内容，如果内容包含涉黄内容将导致网站整改，重则永久关闭</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="18" title="收藏"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>其它小工具</h3>
+            <ul class="cards list_card">
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/wbdz/" title="检测比较文本差异，快速找到不同之处。">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/12/3C/wKh2Al8RfASIVUa6AAADFIRsQ68AAHZcwAllg4AAAMs916.png" alt="文本对照" title="文本对照">
+                            <strong class="tool-title">文本对照</strong>
+                            <span class="tool-subtitle">检测比较文本差异，快速找到不同之处。</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="12" title="收藏"></i>
+                </li>
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/ft2jt/" title="将输入的文本内容转换成GB2312，GB18030两种编码的字符串（其中GB2312是GB18030子集），计算2种编码下字符串的差集，得到繁体字个数， 将繁体字数与总字数相比得到繁体字相比，比值大于20%判定为繁体文本。">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/05/1C/wKh2Al7PkWiIfkm1AAAGyUd2WYMAACIRQGIj0QAAAbh981.png" alt="繁简体转换器" title="繁简体转换器">
+                            <strong class="tool-title">繁简体转换器</strong>
+                            <span class="tool-subtitle">将输入的文本内容转换成GB2312，GB18030两种编码的字符串（其中GB2312是GB18030子集），计算2种编码下字符串的差集，得到繁体字个数， 将繁体字数与总字数相比得到繁体字相比，比值大于20%判定为繁体文本。</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="2" title="收藏"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>版权检测与保护</h3>
+            <ul class="cards list_card">
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/bqjc/" title="资源分享型网站在运营的过程中，免不了有些上传者分享上传电子书，访问量不高不说，也没有几个钱收入到账，很有可能被出版社被告，导致输了官司，落个臭名，还输了钱，得不偿失。若情形严重，还可能征信出问题。既得罪上传者，又得罪出版社，两方不讨好。如果你的文库网站，每天用户上传几万个文档以上，如果网站规模小，也不可能做到每条都去审核。因此，通过指定规则来判断什么是电子书，这个很关键。然后让程序来跑，就可以解决95%的问题。本检测工具正是因为此而生。准确检测准确率达到92%以上。">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/25/03/wKh2Al_pvEaIF58VAAAKJv0_KocAAoI3ACSBBYAAAo-961.png" alt="出版社电子书判断标准及检测下线" title="出版社电子书判断标准及检测下线">
+                            <strong class="tool-title">出版社电子书判断标准及检测下线</strong>
+                            <span class="tool-subtitle">资源分享型网站在运营的过程中，免不了有些上传者分享上传电子书，访问量不高不说，也没有几个钱收入到账，很有可能被出版社被告，导致输了官司，落个臭名，还输了钱，得不偿失。若情形严重，还可能征信出问题。既得罪上传者，又得罪出版社，两方不讨好。如果你的文库网站，每天用户上传几万个文档以上，如果网站规模小，也不可能做到每条都去审核。因此，通过指定规则来判断什么是电子书，这个很关键。然后让程序来跑，就可以解决95%的问题。本检测工具正是因为此而生。准确检测准确率达到92%以上。</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="25" title="收藏"></i>
+                </li>
+                <li class="card-item" data-more="more">
+                    <div class="tool">
+                        <a href="https://www.book118.com/tool/bqdj/" title="一个作品自诞生之日起就自然拥有了著作权也就是版权，不管登记不登记，一个作品的版权都受国家著作权法保护，可是登记和不登记的保护结果是不一样的。当遇到著作权纠纷时，没有登记的作品就要千方百计举证证明该作品是自己的.…本接口登记在线登记，与版权局直接打通接口，不失为作者或者网站的版权保护的神器(利器)。">
+                            <img class="tool-pic" src="//file-1.book118.com/sr1/M00/1B/01/wKh2Al_zxQ6IOODTAAALr4byBr8AAKjdwBwn1sAAAvH146.png" alt="版权登记" title="版权登记">
+                            <strong class="tool-title">版权登记</strong>
+                            <span class="tool-subtitle">一个作品自诞生之日起就自然拥有了著作权也就是版权，不管登记不登记，一个作品的版权都受国家著作权法保护，可是登记和不登记的保护结果是不一样的。当遇到著作权纠纷时，没有登记的作品就要千方百计举证证明该作品是自己的.…本接口登记在线登记，与版权局直接打通接口，不失为作者或者网站的版权保护的神器(利器)。</span>
+                        </a>
+                    </div>
+                    <i class="icon icon-common icon-common-not-collected collect-btn" data-menu-id="26" title="收藏"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--seo-->
+
+<div id="footer">
+    <div class="container">
+        <ul class="links clear">
+            <!-- <li>友情链接：</li> -->
+            <li><a href="https://max.book118.com/" title="原创力文档" target="_blank">原创力文档</a></li>
+            <li><a href="http://ask.book118.com/" title="悬赏问答网" target="_blank">悬赏问答网</a></li>
+            <li><a href="https://www.book118.com/" title="E书联盟" target="_blank">E书联盟</a></li>
+            <li><a href="http://www.zxxk.com/" title="学科网" target="_blank">学科网</a></li>
+            <li><a href="https://www.17k.com/" title="17K小说网" target="_blank">17K小说网</a></li>
+            <li><a href="https://ishare.iask.sina.com.cn/" title="爱问共享资料" target="_blank">爱问共享资料</a></li>
+        </ul>
+        <ul class="foot-nav clear">
+            <li class="f-left"><a href="/help/about/" title="关于我们" target="_blank">关于我们</a></li>
+            <li class="line"><em>|</em></li>
+            <li><a href="/help/contact/" title="联系我们" target="_blank">联系我们</a></li>
+            <li class="line"><em>|</em></li>
+            <li><a href="/help/business/" title="商务合作" target="_blank">商务合作</a></li>
+            <li class="line"><em>|</em></li>
+            <li><a href="/help/problem/" title="常见问题" target="_blank">常见问题</a></li>
+            <li class="line"><em>|</em></li>
+            <li><a href="/help/privacy/" title="隐私保护" target="_blank">隐私保护</a></li>
+            <li class="line"><em>|</em></li>
+            <li><a href="/help/terms/" title="服务条款" target="_blank">服务条款</a></li>
+        </ul>
+        <p class="copyrigh">
+            <img src="https://max.book118.com/statics/images/beian.png">公安局备案号：51011502000106 <em>|</em> 
+            工信部备案号：<a href="http://beian.miit.gov.cn" target="_blank" title="蜀ICP备08101938号-1">蜀ICP备08101938号-1</a> <em>|</em>  
+            ICP经营许可证/EDI许可证：<a href="https://max.book118.com/jyxkz.html" target="_blank" title="川B2-20180569">川B2-20180569</a> <em>|</em>  
+            <a href="https://max.book118.com/yyzz.html" title="公司营业执照" target="_blank">公司营业执照</a> <em>|</em>  
+            出版物经营许可证：<a href="https://max.book118.com/html/cbwxkz.html" target="_blank" title="成新出发高新字第046号">成新出发高新字第046号</a>
+        </p>
+        <p class="copyrigh">
+            ©2010-2023 www..book118.com E书联盟. All Rights Reserved 四川文动网络科技有限公司
+        </p>
+    </div>
+</div>
+<div id="aside">
+    <a href="https://support.qq.com/product/157452" class="feedback" title="反馈" target="_blank" rel="nofllow"> <i class="icon icon-common icon-common-side-fadeback"></i> </a>
+    <a href="tencent://Message/?Uin=3005403307&websiteName=q-zone.qq.com&Menu=yes" title="客服QQ" target="_blank"> <i class="icon icon-common icon-common-side-qq"></i> </a>
+    <a href="javascript:;" class="wx-qrcode" title="微信二维码"><i class="icon icon-common icon-common-side-wechat"></i><span><img src="" alt="微信二维码" title="微信二维码"></span></a>
+    <a href="javascript:;" class="to-top" id="to_top" title="返回顶部"> <i class="icon icon-common icon-common-side-backtoptop"></i></a>
+</div>
+
+<script type="text/javascript" src="/static/lib/js/util/util.js"></script>
+<script type="text/javascript" src="/static/lib/js/common.js?v=20200506"></script>
+<script type="text/javascript">
+    var lib_base = {};
+    lib_base.getUserInfo = '/user/Api/getUserInfo.html';
+    lib_base.searchresult = '/home/Search/index.html';
+    lib_base.collectionURL = '/user/Account/collect.html';
+    lib_base.autoCompletion = '/home/Search/autoCompletion.html';
+    lib_base.loginIframe = '/home/Index/loginIframe.html';
+    lib_base.openapi = '/open/login/login/popindex.html';
+    lib_base.logins = '/home/Index/openapiLogin.html';
+    lib_base.mLogins = 'https://openapi.book118.com/login/Login/mwebIndex?callback=https%3A%2F%2Fwww.book118.com%2Fuser%2FAccount%2Flogin';
+    lib_base.feedback = '/home/Api/feedback.html';
+    lib_base.side_wechat_qrcode = '//img.book118.com/sr1/M00/0D/2A/wKh2AmTtYyaIT822AABn8wDNr0oAAfAIQDMa_gAAGgL207.jpg';
+</script>
+<script type="text/javascript" src="//js.users.51.la/21784549.js"></script>
+
+<script type="text/javascript" src="/static/home/js/home.js?v=20200506"></script>
+
+</body>
+</html>

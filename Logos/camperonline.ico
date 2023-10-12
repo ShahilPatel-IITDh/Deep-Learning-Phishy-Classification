@@ -1,0 +1,1008 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- INCLUDO IL FILE CONTENENTE I BANNER DI CUI SI VOGLIONO CONTARE I CLICK -->
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+function SendMailUtente(xx) {
+	var fin, par, tit, url;
+	url = "http://forum.camperonline.it/pop_mail.asp?id="+ xx;
+	tit = "Inviamail";
+	par = "width=400,height=400"
+	fin = window.open(url, tit, par);
+	fin.focus();
+}
+//]]> 
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Description" content="Benvenuti camperisti! Questo sito � dedicato agli utilizzatori di veicoli ricreazionali" />
+<meta name="Keywords" content="camper, autocaravan, motorhome, motorcaravan, caravan, camping, campeggi, campeggio, pleinair, plein air, aree di sosta, aree, sosta, sosta camper, camper service, aree attrezzate, veicoli ricreazionali, veicoli ricreativi, itinerari, destinazioni, mete, vacanza, vacanze, viaggi, viaggio, fiere, expo, esposizioni, associazioni, club, mercato, costruttori veicoli ricreazionali, costruttori accessori, concessionari, noleggiatori, noleggio, cartine, stampa, trasporti, traghetti, camperisti, camperista, angolo del camperista, CB, GPS, trafori, meteo, traffico, turismo, camping car, camping-car, camping-cars, loisirs, tourisme, vacances, wohnmobil, reisemobil, freizeit, outdoor, promobil, caravansalon, GSM, cellulari, telefonia, biciclette, nautica, gommoni, antifurto, antifurti, car alarm, revisione, portabici, portacicli, pozzetto, scarico, escursioni, natura, verde, riserva, riserve, parco, parchi, ambiente, guida, guide, veranda, verande, Italia, Italie, Italy, Italien, recreational vehicles, recreational vehicle, campervan, trailer, vacation, campground, campsite, disposal point, motor van waste, roadbook" />
+<meta http-equiv="Author" name="Author" content="Paolo Bertino" />
+<script language="javascript" type="text/javascript">defaultStatus = "E-mail info@camperonline.it"; </script>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="/style1024.css?1" />
+<link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/style_print.css" media="print" type="text/css" />
+<script language="javascript" type="text/javascript" src="/_include.js"></script>
+<meta name="referrer" content="always" />
+</head>
+
+<body>
+
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Google analytics start -->
+<script>
+/*
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39214875-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+*/
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39214875-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Google analytics end -->
+
+<script>
+/**
+* Funzione che monitora un clic su un link in uscita in Analytics.
+* Questa funzione prende in considerazione e utilizza una stringa dell'URL valido
+* Come etichetta evento. L'impostazione del metodo di trasporto su 'beacon' consente l'invio dell'hit
+* utilizzando 'navigator.sendBeacon' in un browser che lo supporta.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+
+
+var trackOutboundLinkMappa = function(url) {
+   ga('send', 'event', 'outbound', 'mappa', url, {
+     'transport': 'beacon'
+   });
+}
+</script>
+
+
+
+<div id="paginas">
+<a name="top"></a>
+
+<!-- INCLUDO IL FILE CONTENENTE I BANNER DI CUI SI VOGLIONO CONTARE I CLICK -->
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[ 
+var requestLogin		= false;
+
+function loginInit(){
+	try
+	{
+		requestLogin = new XMLHttpRequest();
+	}
+	catch (trymicrosoft)
+	{
+		try
+		{
+			requestLogin = new ActiveXObject("Msxml2.XMLHTTP");
+		}
+		catch (othermicrosoft)
+		{
+			try
+			{
+				requestLogin = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			catch (failed)
+			{
+				requestLogin = false;
+			}  
+		}
+	}
+
+	if (!requestLogin)
+		alert("Error initializing XMLHttpRequest!");
+}
+
+
+function checkFormAccedi()
+{
+	var f = document.flogin2012;
+	var loginDati = true;
+	if (f.emailAccedi.value == "")
+	{
+		alert("Campo E-mail non compilato.");
+		f.emailAccedi.focus();
+		loginDati = false;
+		
+		//return false;
+	}
+	if (f.passwordAccedi.value == "")
+	{
+		alert("Campo password non compilato.");
+		f.passwordAccedi.focus();
+		//return false;
+		loginDati = false;
+	}
+	
+	if (loginDati == true)
+	{
+		loginInit();
+		
+		//attiva il div divAttesaLogin di attesa
+		document.getElementById("divAttesaLogin").style.visibility = 'visible';
+		
+		var col_user	= f.emailAccedi.value;
+		var col_pwd		= f.passwordAccedi.value;
+		var colsempre	= '';
+		var url_ritorno = f.returnUrl.value;
+		if (f.ricorda.checked == true)
+		{
+			colsempre = f.ricorda.value;
+		}
+		
+		var url = "https://www.camperonline.it/_gestioneLogin.asp";
+		//NS 20130131 - Sostituito carattere e commerciale
+		//var param = "azione=LoginCol&coluser="+ col_user +"&colpwd="+ col_pwd +"&colsempre="+ colsempre;
+		col_pwd = col_pwd.replace(/\%/g, "%25");
+		col_pwd = col_pwd.replace(/\+/g, "%2b");
+		col_pwd = col_pwd.replace(/\$/g, "%24");
+		col_pwd = col_pwd.replace(/\&/g, "%26");
+		col_pwd = col_pwd.replace(/\,/g, "%2c");
+		col_pwd = col_pwd.replace(/\//g, "%2f");
+		col_pwd = col_pwd.replace(/\:/g, "%3a");
+		col_pwd = col_pwd.replace(/\;/g, "%3b");
+		col_pwd = col_pwd.replace(/\?/g, "%3f");
+		col_pwd = col_pwd.replace(/\@/g, "%40");
+		col_pwd = col_pwd.replace(/\#/g, "%23");
+		col_pwd = col_pwd.replace(/\"/g, "%22");
+		col_pwd = col_pwd.replace(/\\/g, "%5c");
+		col_pwd = col_pwd.replace(/\|/g, "%7c");
+		col_pwd = col_pwd.replace(/\{/g, "%7b");
+		col_pwd = col_pwd.replace(/\}/g, "%7d");
+		col_pwd = col_pwd.replace(/\=/g, "%3d");
+		var param = "azione=LoginCol&coluser="+ col_user +"&colpwd="+ col_pwd +"&colsempre="+ colsempre+"&URL_RITORNO="+url_ritorno;
+		
+		param = param.replace(/ /g, "%20");
+		
+		requestLogin.open("POST", url, true);
+		//VD 20130516 - Tolto per un problema con chrome in fase di login
+		requestLogin.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		requestLogin.setRequestHeader("Content-length", param.length);
+		
+		console.log(param);
+		requestLogin.onreadystatechange = loginResponse;
+		requestLogin.send(param);
+	}
+}
+
+
+function checkLogout(cosa)
+{
+	loginInit();
+	var f = document.flogout2012;
+	var url_ritorno = f.returnUrlLog.value;
+	var url = "https://www.camperonline.it/_gestioneLogin.asp";
+	//NS 20130131 - Sostituito carattere e commerciale
+	//var param = "azione=LogoutCol&tmpCosa="+ cosa;
+	var param = "azione=LogoutCol&tmpCosa="+ cosa+"&URL_RITORNO="+url_ritorno;
+	
+	param = param.replace(/ /g, "%20");
+			
+	requestLogin.open("POST", url, true);
+	requestLogin.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	requestLogin.setRequestHeader("Content-length", param.length);
+	requestLogin.onreadystatechange = loginResponse;
+	requestLogin.send(param);
+	
+}
+
+function loginResponse()
+{
+	if (requestLogin.readyState == 4)
+	{
+		if (requestLogin.status == 200)
+		{
+			document.getElementById("divAttesaLogin").style.visibility = 'visible';
+			
+			var responseLogin = requestLogin.responseText;
+			var vettore	= responseLogin.split('###');
+			document.body.style.cursor = 'default';
+			
+			//alert("vettore="+ vettore);
+
+			for (var tt=0;tt<vettore.length;tt=tt+3)
+			{
+				var elem1	= vettore[tt+0];
+				var elem2	= vettore[tt+1];
+				
+				if (elem1 == 'logout')
+				{
+					switch (elem2)
+					{
+						case "logout":
+							//se il logout su COL ok --> manda al logout dei FORUM
+							var f = document.flogout2012;
+							
+							url_ritorno = vettore[tt+2];
+							
+							var url_mio = "https://forum.camperonline.it/login_remoto.php?URL_RITORNO="+url_ritorno+"&AZIONE=logout";
+							//alert(url_mio);
+							window.location.replace(url_mio);							
+							document.getElementById('accedili').className = 'off';
+							
+							break;
+						case "ok":
+							//utente cancellato correttamente
+							var f = document.flogout2012;
+							//alert("form submit");
+							f.action = "https://forum.camperonline.it/_gestioneLogin.asp?azione=LogoutRemoto";
+							f.submit();
+							alert("Utente cancellato correttamente");
+							
+							document.getElementById('accedili').className = 'off'
+							
+							break;
+							
+						case "Err":
+							//errori cancellazione utente
+							alert('Attenzione! Cancellazione utente non riuscita');
+							break;
+					}
+				}
+				else
+				{
+					
+					var utente = vettore[tt+2];
+					var hash = vettore[tt+3];
+					var email = vettore[tt+4];
+					//alert("mail="+email);
+					var ricorda = vettore[tt+5];
+					var url_ritorno = vettore[tt+6];
+					switch (elem1)
+					{
+						case "0":
+							//dati login errati
+							alert("Attenzione! I dati inseriti non sono corretti. Riprova");
+							document.getElementById("divAttesaLogin").style.visibility = 'hidden';
+							break;
+							
+						case "1":
+
+							//login corretto
+							//location.reload();
+							//document.getElementById("divAttesaLogin").style.visibility = 'hidden';
+							//var f = document.flogin2012;
+							var url_mio = "https://forum.camperonline.it/login_remoto.php?URL_RITORNO="+url_ritorno+"&AZIONE=login&HASH="+hash+"&UTENTE="+utente+"&EMAIL="+email+"&RICORDA="+ricorda;
+							//alert(url_mio);
+							window.location.replace(url_mio);
+							
+							document.getElementById('accedili').className = 'off'
+							break;
+						
+						case "2":
+							//registrazione non confermata
+							alert("Attenzione! Prima di effettuare il primo accesso devi"+
+							" confermare la registrazione.<br />Fai click sul link contenuto"+
+							" nell'e-mail di conferma che ti e\' stata inviata");
+							document.getElementById("divAttesaLogin").style.visibility = 'hidden';
+						break;	
+						
+						//case default:
+							//alert("Attenzione! Si sono verificati errori durante il login. Riprova");
+							//break;
+					}
+				}
+			}			
+		}
+	}	
+}
+
+function cambiastilediv(id)
+{
+	document.getElementById(id).className = 'on';
+	if (document.getElementById('accedili').className == 'on')
+	{
+		document.getElementById('accedili').className = 'off';
+	} else {
+		document.getElementById('accedili').className = 'on';
+	}
+}
+
+function goSubmitAccedi(e)
+{
+	evt = e || event;
+	var faiSubmit = false;
+	try
+	{
+		if (evt.keyCode == 13)
+			faiSubmit = true;
+	}
+	catch (err)
+	{
+	}
+	
+	if (faiSubmit)
+	{
+		//document.flogin2012.submit();
+		checkForm();
+	}	
+}
+//]]> 
+</script> 
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[ 
+//script per l'attivazione delle voci del menu
+var menu_arr= new Array();
+	menu_arr[0]='Strumenti'
+	menu_arr[1]='Acquisto'
+	menu_arr[2]='Viaggi'
+	menu_arr[3]='Sosta'
+	menu_arr[4]='Info'
+	menu_arr[5]='Bacheca'
+	menu_arr[6]='Forum'
+	menu_arr[7]='COL'
+	menu_arr[8]='Registrati'
+	menu_arr[9]='Accessori'
+ 	
+function spegnimenu()
+{
+	for (var i = 0; i<menu_arr.length; i++)
+	{
+		document.getElementById(menu_arr[i]).className = 'off';
+	}
+}
+
+function cambiastile(id)
+{
+	for (var i = 0; i<menu_arr.length; i++)
+	{
+		document.getElementById(menu_arr[i]).className = 'off';
+	}
+	document.getElementById(id).className = 'on';
+}
+
+
+function activa(Id,PaterID)
+{
+	if(document.getElementById && document.getElementsByTagName)
+	{
+		celle = document.getElementById("nav").getElementsByTagName("a");
+		for (i=0; i < celle.length; i++)
+			celle.item(i).className = "";
+	}
+	cambiastile(PaterID);
+	document.getElementById(Id).className="prova";
+}
+//]]> 
+</script>
+<div id="logindivn">
+
+
+<!-- frame per login -->
+
+<div id="divNav">
+<ul id="nav">
+<li><a class="home" title="Vai alla Pagina Home" href="https://www.camperonline.it/index.asp"><img src="https://www.camperonline.it/img-new/home.gif" border="0" alt="Vai alla home page di CamperOnLine.it" /></a></li>
+<li class="off"><a href="#" onclick="cambiastile('Camper')">Camper</a><div class="menu_forum"><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/camper-usati">Camper usati</a></td>
+</tr>
+</table><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/camper-nuovi" title="">Camper nuovi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/produttori/" title="">Produttori</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/listino/" title="Listino dei veicoli ricreazionali: cerca e confronta i modelli di camper, motorhome, profilati, semintegrali">Listino <img src="https://www.camperonline.it/img-new/euro-t.gif" alt="Listino" /></a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://magazine.camperonline.it/2011/01/03/cataloghi-prodotto/" title="Cataloghi ufficiali di camper, autocaravan, motorhome e caravan" target="_blank">Cataloghi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/operatori.asp" title="Caravan">Concessionari e rete vendita</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/van.asp" title="Van e furgonati, i camper puri">Van</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/caravan.asp" title="Le caravan">Caravan</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/fiere/" title="Fiere, esposizioni e manifestazioni per le vacanze ed il tempo libero">Fiere</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/noleggio-camper/" title="Trova il tuo camper a noleggio">Noleggio</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/rimessaggi-camper" title="Rimessaggi per camper, caravan, imbarcazioni">Rimessaggi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://magazine.camperonline.it/le-prove-di-camperonline/" title="I veicoli esaminati da CamperOnLine.it" target="_blank">Le prove di CamperOnLine</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/camper-provati-da-voi/" title="Camper, autocaravan, motorhome e caravan giudicati dai loro possessori">Provati da voi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/primo-acquisto-camper.php" title="Riflessioni che precedono l'acquisto di un veicolo ricreazionale">Primo acquisto</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/concessionari/gestione/" title="Accesso riservato agli operatori del settore">Area professionisti</a></td>
+</tr>
+</table>
+</div></li>
+<li class="off"><a href="#" onclick="cambiastile('Accessori')">Accessori</a><div class="menu_forum"><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/accessori/">Accessori e prodotti</a></td>
+</tr>
+</table><a href="https://www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20CSM&urlsito=http://www.campingsportmagenta.com/" title="Accessori e prodotti" class="menu_foto" target="_blank"><img src="https://www.camperonline.it/b/csm-accessori.jpg" alt="Accessori e prodotti" /></a><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/accessori/produttori" title="Produttori di accessori per camper e caravan">Produttori</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/accessori/antenne" title="Antenne TV per camper e caravan">Antenne TV</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/accessori/ammortizzatori" title="Sospensioni integrative e ammortizzatori">Ammortizzatori</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/accessori/gps" title="Navigatori satellitari">GPS</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/accessori/pneumatici" title="Pneumatici: elementi essenziali per la sicurezza di guida">Pneumatici</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/accessori/rimorchi" title="Carrelli e rimorchi">Rimorchi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/accessori/provati-accessori/" title="Accessori per camper giudicati dai loro utilizzatori">Provati da voi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/fai-da-te" title="Idee e suggerimenti per interventi e personalizzazioni sul proprio camper">Fai da te <img src="https://www.camperonline.it/img-new/faidate-t.gif" alt="Fai da te" /></a></td>
+</tr>
+</table>
+</div></li>
+<li class="off"><a href="#" onclick="cambiastile('Viaggi')">Viaggi</a><div class="menu_forum"><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/viaggi-in-camper/">Diari di viaggio in camper</a></td>
+</tr>
+</table><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/eventi/evento_lista.asp" title="Manifestazioni e appuntamenti da non perdere per chi viaggia in camper">Eventi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/photo_gallery/" title="Le gallerie di fotografie degli amici di CamperOnLine.it">Foto</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/checklist" title="Lista di controllo per non dimenticare nulla prima di un viaggio in camper">Check list</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/traghetti" title="Scegliere e prenotare il traghetto con open deck / camping on board">Traghetti <img src="https://www.camperonline.it/img-new/traghetti.gif" alt="Traghetti" /></a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/trasporti" title="Tunnel, autostrade, ponti, traghetti: vie di terra e di mare">Trasporti</a></td>
+</tr>
+</table>
+</div></li>
+<li class="off"><a href="#" onclick="cambiastile('Sosta')">Sosta</a><div class="menu_forum"><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/sosta-camper">Cerca Struttura</a></td>
+</tr>
+</table><a href="https://www.camperonline.it/_b.asp?B=58OOOOO@@@sosta-camper.asp" title="Cerca Struttura" class="menu_foto" target="_blank"><img src="https://www.camperonline.it/img-new/sosta.png" alt="Cerca Struttura" /></a><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/sosta-camper/aree-di-sosta/italia" title="Aree attrezzate per la sosta camper in Italia e in altri Paesi">Aree sosta camper</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/sosta-camper/campeggi/italia" title="Campeggi e villaggi turistici in Italia">Campeggi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/sosta-camper/agriturismi/italia" title="Gli agriturismo con spazi per la sosta camper">Agriturismi con sosta camper</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/sosta-camper/app-di-camperonline" title="l'app di CamperOnLine.it per iPhone, iPad e Android con i POI di COL per soste e assistenze">App Camperonline <img src="https://www.camperonline.it/img-new/icol.gif" alt="App Camperonline" /></a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/sosta-camper/10-consigli-per-la-sosta" title="I consigli per una vacanza in camper serena, rispettosa e consapevole">10 Consigli Utili per la sosta</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/aree-campeggi/gestisciArea/index.asp" title="Accesso riservato alle strutture ricettive">Area strutture</a></td>
+</tr>
+</table>
+</div></li>
+<li class="off"><a href="#" onclick="cambiastile('Forum')">Forum</a><div class="menu_forum"><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/">Tutti i forum</a></td>
+</tr>
+</table><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/viaggiare/aree-di-sosta-campeggi" title="Punti sosta: richieste, consigli, valutazioni e commenti">Sosta</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/viaggiare/gruppi" title="Per chi ama organizzarsi in gruppi omogenei di amici">Gruppi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/viaggiare/compagni-di-viaggio" title="Per cercare compagnia per i nostri prossimi viaggi in camper">Compagni</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/viaggiare/viaggi-in-Italia" title="Condivisione di esperienze, consigli, indicazioni, mete, destinazioni in Italia">Italia</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/viaggiare/viaggi-all-estero" title="Condivisione di esperienze, consigli, indicazioni, mete, destinazioni all'estero">Estero</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/tecnica/marchi" title="Lo spazio per chi possiede un modello o ama un marchio e desidera entrare in contatto con possessori che condividono la sua scelta. O per chi cerca opinioni e valutazioni.">Marchi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/tecnica/meccanica" title="Telai e motori dei veicoli ricreazionali: esperienze, migliorie, manutenzione, consumi, ...">Meccanica</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/tecnica/cellula-abitativa" title="Allestimenti, dotazioni, caratteristiche, interventi post-vendita, fai da te, ...">Cellula</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/tecnica/accessori" title="Antifurto, condizionatori, antenne, portamoto, inverter, ecc.: consigli, suggerimenti, valutazioni, fai da te, ...">Accessori</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/informarsi/fiere-ed-eventi" title="Manifestazioni, appuntamenti, segnalazioni: richieste ed indicazioni di pubblica utilit&agrave;">Eventi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/informarsi/normative" title="Leggi, norme, regolamenti, contravvenzioni, ricorsi, bolli, assicurazioni, pedaggi, ...">Leggi</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/informarsi/comportamenti" title="Caricare il veicolo, sostare, scaricare, viaggiare, usare il generatore, rispettare i vicini ed i residenti che ci ospitano, ...">Comportamenti</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/informarsi/disabilita" title="Il camper come strumento per le famiglie con esperienze di disabilit&agrave;">Disabili</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/informarsi/in-camper-per" title="Scopi e finalit&agrave; d'uso del nostro veicolo: praticare sport, lavoro, frequentare mercatini di collezionisti, praticare hobby come pescare, cercare funghi, seguire eventi sportivi, ecc.">In camper per</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/varie/altro-sui-camper" title="Altri temi delle vacanze all'aria aperta che non rientrano nei precedenti forum">Altro camper</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/varie/altro-non-sui-camper" title="Per chi ritiene utile proporre ai visitatori di CamperOnLine un argomento non strettamente attinente alle vacanze in camper">Altro</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/varie/extra" title="Spazio per gli appassionati di politica, società e affini - accesso da attivare nel proprio profil">Extra</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/faq-dei-forum" title="Domande ricorrenti">FAQ</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/regolamento" title="Regolamento">Regolamento <img src="https://www.camperonline.it/img-new/regolamento.gif" alt="Regolamento" /></a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/topic-attivi" title="Topic attivi">Topic attivi <img src="https://www.camperonline.it/img-new/topic.gif" alt="Topic attivi" /></a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/preferiti.php#an_forum" title="Preferiti">Preferiti <img src="https://www.camperonline.it/img-new/preferiti.gif" alt="Preferiti" /></a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/forum/search.php" title="Cerca per parola chiave, data o nome">Cerca <img src="https://www.camperonline.it/img-new/cercaforum.gif" alt="Cerca" /></a></td>
+</tr>
+</table>
+</div></li>
+<li class="off"><a href="#" onclick="cambiastile('Community')">Community</a><div class="menu_forum"><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/Registrazione/index.asp">Area utenti</a></td>
+</tr>
+</table><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/camperonfest/" title="CamperOnFest">CamperOnFest</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/convenzioni/index.asp" title="Convenzioni riservate alla Community di COL">Convenzioni <img src="https://www.camperonline.it/img-new/convenzioni.gif" alt="Convenzioni" /></a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/dovesiete.asp" title="Dove sono gli Amici di COL?">Amici</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/furti.asp" title="Per segnalare alla community il furto del proprio camper, affinchè tutti siamo informati e attenti">Furti</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/privacy" title="Informativa sulla privacy e GDPR">Informativa privacy e GDPR</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/lavoro.asp" title="Per cercare o offrire lavoro nel settore camper">Lavoro</a></td>
+</tr>
+</table>
+</div></li>
+<li class="off"><a href="#" onclick="cambiastile('COL')">COL</a><div class="menu_forum"><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/news">Le novit&#225;</a></td>
+</tr>
+</table><a href="https://www.camperonline.it/convenzioni/index.asp" title="Le novit&#225;" class="menu_foto" target="_blank"><img src="https://www.camperonline.it/img-new/col-bc.jpg" alt="Le novit&#225;" /></a><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/news" title="Le news di COL">News</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/newsletter.asp" title="La Newsletter di COL">Newsletter</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/pubblicita.asp" title="Per chi desidera proporre prodotti o servizi nella nostra vetrina">Pubblicit&agrave;</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/modulo-contatto.asp?tipo=info" title="Per comunicare allo Staff di COL">Contatto</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/live.asp" title="Una fotografia del sito in questo preciso momento, con numeri e presenze in diretta">Ora</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/rss_feed.asp" title="COL via RSS">RSS <img src="https://www.camperonline.it/top/rss-20.gif" alt="RSS" /></a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.camperonline.it/video" title="Video">Video</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.facebook.com/camperonline.it" title="FaceBook">FaceBook</a></td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.instagram.com/camperonline/" title="Instagram">Instagram</a></td>
+</tr>
+</table>
+</div></li>
+<li class="off"><a class="vocemenugiallo"target='_blank'  href="https://magazine.camperonline.it/" onclick="cambiastile('Magazine')">Magazine</a><div class="menu_forum"><table border="0" cellspacing="0" cellpadding="0" width="100%" class="menu_voci">
+</table>
+</div></li>
+<li class=off><a href="#" onclick="cambiastile" title="Index ITA"><img src="https://www.camperonline.it/top/it.gif" alt="ITA" style="padding: 2px 0px 0px 0px !important"></a><div class="menu_forum menuleft" style="width: 39px !important;"><table border ="0" cellspacing="0" width= "100%" class="menu_voci"><tboby><tr><td colspan="1" style="height : 21px"> <a href="/index-en.asp"  title="Index ENG"> <img src="https://www.camperonline.it/top/en.gif" alt="ENG" style="padding: 2px 5px 0px 4px;"></a></td></tr><tr><td colspan="1" style="height : 21px"> <a href="/index-fr.asp"  title="Index FRA"> <img src="https://www.camperonline.it/top/fr.gif" alt="FRA" style="padding: 2px 5px 0px 4px;"></a></td></tr><tr><td colspan="1" style="height : 21px"> <a href="/index-de.asp"  title="Index GER"> <img src="https://www.camperonline.it/top/de.gif" alt="GER" style="padding: 2px 5px 4px 4px;"></a></td></tr></tboby></table></div></li><li id="accedili" class="off" >
+<a href="#" onclick="cambiastilediv('accedi')">Accedi</a>
+<div id="accedi">
+<div id="divAttesaLogin" style="visibility: hidden;"><img src="https://www.camperonline.it/img-new/loading.gif" alt="Autenticazione in corso" /><br />Attendere...</div>
+<form method="post" action="#" name="flogin2012" id="flogin2012" onsubmit="checkFormAccedi();">
+<table border="0" cellspacing="2" cellpadding="0" width="100%">
+<tr><td><b>E-mail</b></td>
+<td><input type="hidden" name="cmdsubmit" id="cmdsubmit" value="Login" /><input type="hidden" name="returnUrl" id="returnUrl" value="http://www.camperonline.it/filenontrovato.asp" /><input name="emailAccedi" type="text" id="emailAccedi" /></td>
+</tr>
+<tr><td><b>Password</b></td>
+<td><input name="passwordAccedi" type="password" id="passwordAccedi" /></td></tr><tr><td><input type="checkbox" name="ricorda" id="ricorda" value="sempre" />Ricorda login</td>
+<td><a href="javascript:checkFormAccedi();" title="Accedi">Accedi</a></td></tr>
+<tr><td><a href="javascript:parent.location='/registrazione/forget_pwd.asp';" title="Alcuni aiuti per effettuare il login" >Help</a></td>
+<td><a href="javascript:parent.location='/registrazione/registrazione_form.asp';" title="Sei un nuovo utente? Registrati" >
+Nuovo utente</a></td></tr>
+</table>
+</form>
+</div>
+</li>
+<li class="off"><tr><td colspan="1" style="height : 25px"> <a href="https://www.camperonline.it/ricerca.asp" title="Search"><span class="fa fa-search" style="padding: 2px 0px 2px 0px;" ></span></a></td></tr></li></ul></div>
+
+</div>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="top">
+<tr><td id="logintd" colspan="4">
+<script language="javascript" type="text/javascript">
+//<![CDATA[ 
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+   if (!mobile) {  
+		var el = document.getElementById('logindivn'); 
+		el.className = 'ptop';
+		
+		var etd = document.getElementById('logintd'); 
+		etd.className = 'tdtop';
+   } 
+//]]> 
+</script>
+</td></tr>
+
+<tr>
+<td width="200">
+<script language="javascript" type="text/javascript">
+//<![CDATA[ 
+var Pic = new Array();
+var sito = new Array();
+var a=0;
+Pic[a]		='b/laika.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Laika:%20il%20punto%20di%20arrivo&urlsito=www.laika.it";
+Pic[a]		='b/al-ko.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Alko&urlsito=www.al-ko.it";
+Pic[a]		='b/transwe.jpg';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Transwe&urlsito=www.transwe.it";
+Pic[a]		='b/barberacaravan.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Barbera%20Caravan&urlsito=www.barberacaravan.it";
+Pic[a]		='b/beltrani.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Beltrani%20Caravan%20Market&urlsito=www.caravanmarket.com";
+Pic[a]		='b/campersereno.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=CamperSereno&urlsito=http://win.campersereno.it/wp-landing.asp?promolanding=Landingpage_Camperonline_newsletter&tipoapertura=camperonline";
+Pic[a]		='b/caravanbacci.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Caravanbacci&urlsito=www.caravanbacci.com";
+Pic[a]		='b/schiavolin.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Caravan%20Schiavolin&urlsito=www.caravanschiavolin.it";
+Pic[a]		='b/corbar.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Corbar%20Car%20S.r.l.&urlsito=www.corbar.it";
+Pic[a]		='b/dethleffs.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Dethleffs&urlsito=www.dethleffs.it";
+Pic[a]		='b/euro-vacanze.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Eurovacanze&urlsito=www.euro-vacanze.it";
+Pic[a]		='b/fustinoni.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Fustinoni Sport&urlsito=www.fustinonisport.it";
+Pic[a]		='b/giorgiogatti.jpg';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Gatti%20Giorgio&urlsito=www.giorgiogatti.com";
+Pic[a]		='b/laboratoriorio3.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Laboratorio%20Rio&urlsito=www.laboratoriorio.it";
+Pic[a]		='b/larcos.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Larcos&urlsito=www.larcos.it";
+Pic[a]		='b/lussocaravan.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Lusso%20Caravan&urlsito=www.lussocaravan.it";
+Pic[a]		='b/monzacamper.jpg';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Monza%20Camper&urlsito=www.monzacamper.it";
+Pic[a]		='b/nordaffari.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Nuova%20Nordaffari&urlsito=www.nordaffari.com";
+Pic[a]		='b/banoma.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Officina%20Meccanica%20Ammortizzatori&urlsito=www.ammortizzatorioma.it";
+Pic[a]		='b/padanasport.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Padana%20Sport&urlsito=www.padanasport.it";
+Pic[a]		='b/puntocamper.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Punto%20Camper&urlsito=www.puntocamper.it";
+Pic[a]		='b/romanocaravans.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Romano%20Caravans&urlsito=www.romanocaravans.it";
+Pic[a]		='b/soimex.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20So.Im.Ex.%20Caravan&urlsito=www.campersoimex.it";
+Pic[a]		='b/tecnoled.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Tecnoled&urlsito=www.tecnoled.it/";
+Pic[a]		='b/teleco.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Teleco&urlsito=www.camperonline.it/_b.asp?B=48OOOOO@@@accessori-cellula.asp";
+Pic[a]		='b/webasto.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Webasto%20Thermo%20e%20Comfort%20Italy%20S.r.l.&urlsito=www.camperonline.it/_b.asp?B=11OOOOO@@@accessori-cellula.asp";
+Pic[a]		='b/quiiltuo2.gif';
+sito[a++]	="www.camperonline.it/pubblicita.asp";
+Pic[a]		='b/knaus.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita il sito di Knaus&amp;urlsito=www.knaus.de";
+Pic[a]		='b/weinsberg.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita il sito di Weinsberg&amp;urlsito=www.weinsberg.com";
+Pic[a]		='b/thetford.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Thetford&urlsito=www.thetford-europe.com";
+Pic[a]		='b/banedicar.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Edicar&urlsito=www.edicar.it";
+Pic[a]		='b/cbe.jpg';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20CBE&urlsito=www.cbe.it";
+Pic[a]		='b/Leroicamper.jpg';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20CBE&urlsito=www.leroicamper.net";
+
+var p = Pic.length;
+
+// Genero numero casuale
+var k = Math.floor(Math.random()*p);
+k = k%p;
+
+var ss = "<a target='_blank' href='https://"+ sito[k] +"'>";
+ss += "<img border='0' width='200' height='76' align='center' src='https://www.camperonline.it/"+ Pic[k] +"' />";
+ss += "</a>";
+//alert(ss);
+document.write(ss);
+//]]> 
+</script>
+
+</td>
+<td align="center">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="75">&nbsp;</td>
+			<td class="center"><a href="https://www.camperonline.it" title="Camperonline Home Page"><img src="https://www.camperonline.it/logo/camperonline-v.png" border="0" title="CamperOnLine.it Home Page" alt="CamperOnLine.it Home Page" align="middle" hspace="1" /></a></td>
+			<td width="75" align="center">
+				<!--<a href="https://www.camperonline.it/index.asp" title="Italiano"><img src="https://www.camperonline.it/top/ita.gif" alt="Benvenuto!" border="0" style="padding: 0px 0px 5px 0px;" /></a>&nbsp;&nbsp;
+				<a href="https://www.camperonline.it/index-en.asp" title="English"><img src="https://www.camperonline.it/top/eng.gif" alt="Welcome!" border="0" style="padding: 0px 0px 5px 0px;" /></a><br />
+				<a href="https://www.camperonline.it/index-fr.asp" title="Francais"><img src="https://www.camperonline.it/top/fra.gif" alt="Bienvenue!" border="0" /></a>&nbsp;&nbsp;
+				<a href="https://www.camperonline.it/index-de.asp" title="Deutsch"><img src="https://www.camperonline.it/top/ger.gif" alt="Willkommen!" border="0" /></a> -->
+			</td>
+		</tr>
+		<!--<tr>-->
+			<!--<td align="center" valign="top" colspan="3">-->
+			<!--<td align="center" valign="top" colspan="3">-->
+				<!--<div style="height:30px; margin:auto;">-->
+				<!--<table>
+				
+				<tr>
+				<td>-->
+				<!-- Facebook -->
+				<!--<div style="height:20px; width:116px;" class="fb-like" data-href="https://www.facebook.com/camperonline.it" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+				</td>
+				
+				<td>-->
+				<!-- Twitter -->
+				<!--<a href="https://twitter.com/camperonline" class="twitter-follow-button" data-show-count="true" data-lang="it" data-show-screen-name="false" data-width="130px">Segui</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</td>
+				
+				<td>-->
+				<!-- Google Plus -->
+				<!--<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/109826975575068985240" data-rel="publisher"></div>-->
+				<!--<g:follow href="https://plus.google.com/+camperonline" data-annotation="bubble" data-height="20" data-rel="publisher"></g:follow>
+				</td>
+				
+				<td>-->
+				<!-- Youtube -->
+				<!--<script src="https://apis.google.com/js/platform.js"></script>
+				<div class="g-ytsubscribe" data-channel="CamperOnTube" data-layout="default" data-count="default"></div>
+				</td>
+				</tr>
+				
+				</table>-->
+				
+				<!--</div>-->
+				
+			<!--</td>
+		</tr>-->
+	</table>
+</td>
+<td width="200" align="right">
+<script language="javascript" type="text/javascript">
+//<![CDATA[ 
+var Pic = new Array();
+var sito = new Array();
+var a=0;
+Pic[a]		='b/laika.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Laika:%20il%20punto%20di%20arrivo&urlsito=www.laika.it";
+Pic[a]		='b/al-ko.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Alko&urlsito=www.al-ko.it";
+Pic[a]		='b/transwe.jpg';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Transwe&urlsito=www.transwe.it";
+Pic[a]		='b/barberacaravan.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Barbera%20Caravan&urlsito=www.barberacaravan.it";
+Pic[a]		='b/beltrani.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Beltrani%20Caravan%20Market&urlsito=www.caravanmarket.com";
+Pic[a]		='b/campersereno.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=CamperSereno&urlsito=http://win.campersereno.it/wp-landing.asp?promolanding=Landingpage_Camperonline_newsletter&tipoapertura=camperonline";
+Pic[a]		='b/caravanbacci.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Caravanbacci&urlsito=www.caravanbacci.com";
+Pic[a]		='b/schiavolin.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Caravan%20Schiavolin&urlsito=www.caravanschiavolin.it";
+Pic[a]		='b/corbar.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Corbar%20Car%20S.r.l.&urlsito=www.corbar.it";
+Pic[a]		='b/dethleffs.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Dethleffs&urlsito=www.dethleffs.it";
+Pic[a]		='b/euro-vacanze.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Eurovacanze&urlsito=www.euro-vacanze.it";
+Pic[a]		='b/fustinoni.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Fustinoni Sport&urlsito=www.fustinonisport.it";
+Pic[a]		='b/giorgiogatti.jpg';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Gatti%20Giorgio&urlsito=www.giorgiogatti.com";
+Pic[a]		='b/laboratoriorio3.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Laboratorio%20Rio&urlsito=www.laboratoriorio.it";
+Pic[a]		='b/larcos.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Larcos&urlsito=www.larcos.it";
+Pic[a]		='b/lussocaravan.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Lusso%20Caravan&urlsito=www.lussocaravan.it";
+Pic[a]		='b/monzacamper.jpg';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Monza%20Camper&urlsito=www.monzacamper.it";
+Pic[a]		='b/nordaffari.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Nuova%20Nordaffari&urlsito=www.nordaffari.com";
+Pic[a]		='b/banoma.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Officina%20Meccanica%20Ammortizzatori&urlsito=www.ammortizzatorioma.it";
+Pic[a]		='b/padanasport.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Padana%20Sport&urlsito=www.padanasport.it";
+Pic[a]		='b/puntocamper.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Punto%20Camper&urlsito=www.puntocamper.it";
+Pic[a]		='b/romanocaravans.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Romano%20Caravans&urlsito=www.romanocaravans.it";
+Pic[a]		='b/soimex.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20So.Im.Ex.%20Caravan&urlsito=www.campersoimex.it";
+Pic[a]		='b/tecnoled.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Tecnoled&urlsito=www.tecnoled.it/";
+Pic[a]		='b/teleco.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Teleco&urlsito=www.camperonline.it/_b.asp?B=48OOOOO@@@accessori-cellula.asp";
+Pic[a]		='b/webasto.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Webasto%20Thermo%20e%20Comfort%20Italy%20S.r.l.&urlsito=www.camperonline.it/_b.asp?B=11OOOOO@@@accessori-cellula.asp";
+Pic[a]		='b/quiiltuo2.gif';
+sito[a++]	="www.camperonline.it/pubblicita.asp";
+Pic[a]		='b/knaus.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita il sito di Knaus&amp;urlsito=www.knaus.de";
+Pic[a]		='b/weinsberg.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita il sito di Weinsberg&amp;urlsito=www.weinsberg.com";
+Pic[a]		='b/thetford.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Thetford&urlsito=www.thetford-europe.com";
+Pic[a]		='b/banedicar.gif';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Edicar&urlsito=www.edicar.it";
+Pic[a]		='b/cbe.jpg';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20CBE&urlsito=www.cbe.it";
+Pic[a]		='b/Leroicamper.jpg';
+sito[a++]	="www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20CBE&urlsito=www.leroicamper.net";
+
+var p = Pic.length;
+
+// Genero numero casuale
+var k = Math.floor(Math.random()*p);
+k = k%p;
+
+var ss = "<a target='_blank' href='https://"+ sito[k] +"'>";
+ss += "<img border='0' width='200' height='76' align='center' src='https://www.camperonline.it/"+ Pic[k] +"' />";
+ss += "</a>";
+//alert(ss);
+document.write(ss);
+//]]> 
+</script>
+
+</td>
+</tr>
+
+
+<tr>
+  <td colspan="3" align="center">
+<!--<a href="javascript:trackOutboundLink('CampingSportMagenta sottotestata','https://www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Camping%20Sport%20Magenta&urlsito=www.campingsportmagenta.com');"  title="Camping Sport Magenta">-->
+<a href="https://www.camperonline.it/_goToSite.asp?titolo=Visita%20il%20sito%20di%20Camping%20Sport%20Magenta&urlsito=www.campingsportmagenta.com" title="Camping Sport Magenta" target="_blank">
+
+    <img src="https://media.campingsportmagenta.com/CamperOnline/top1020_1.jpg?434801917" width="1010" height="50" border="0" align="middle" alt="Camping Sport Magenta" />
+
+  </a></td>
+</tr>
+
+
+</table>
+<table id="contenutiPagina" border="0" cellspacing="3" cellpadding="0" width="1024" align="center"><tr><td>
+<!--<TABLE border="0" CELLSPACING="0" CELLPADDING="8" width="100%">
+<tr><td>-->
+<!--
+<p align="center">&nbsp;</p>
+<p align="center"><img border="0" src="img/logo_trasp_h20.gif" alt="CamperOnLine.it"></p>
+<p align="center">&nbsp;</p>
+-->
+<p align="center"><font size="5" face="verdana" color="#008000"><b>ATTENZIONE</b><br />La pagina richiesta non � stata trovata.</font></p>
+<p align="center">Vai alla <a href="https://www.camperonline.it/benvenuto.asp">home page</a> oppure visita una delle sezioni:</p>
+<!--
+<p align="center">&nbsp;</p><font size="3" face="Verdana"></font>
+<p align="center"><hr width="500px" align="center" color="#008000"></p>
+<p align="center">&nbsp;</p>
+<p align="center"><font size="3" face="Verdana">I forum di CamperOnLine.it sono stati spostati qui:</font><br /><br /><a href="http://forum.camperonline.it/"><font size="3" face="Verdana">http://forum.camperonline.it</font></a></p>
+<p align="center">&nbsp;</p>
+<p align="center"><img border="0" src="img/logo_trasp_h20.gif" alt="CamperOnLine.it"></p>
+-->
+<table width="1024" border="0" cellpadding="0" cellspacing="0" align="center" id="end" class="end"><tr><td>
+</td></tr></table>
+<!-- Visualizzo mappa sito (menu completo) -->
+<table class="mappagiu" border="0" cellpadding="2" cellspacing="2" width="100%" bordercolor="#FFFFFF" align="center">
+	
+	<tr class="footer-testata">
+	<td><a href="https://www.camperonline.it/strumentivr.asp">CAMPER</a></td><td><a href="https://www.camperonline.it/accessori-camper.asp">ACCESSORI</a></td><td><a href="https://www.camperonline.it/viaggi-in-camper.asp">VIAGGI</a></td><td><a href="https://www.camperonline.it/sosta-camper.asp">SOSTA</a></td><td><a href="https://forum.camperonline.it">FORUM</a></td><td><a href="https://www.camperonline.it/Registrazione/index.asp">COMMUNITY</a></td><td><a href="https://www.camperonline.it/col.asp">COL</a></td><td><a href="https://magazine.camperonline.it/">MAGAZINE</a></td>
+	</tr>
+	
+	<tr>
+	<td valign="top"><ul class="puntata-footer"><li><a href="https://www.camperonline.it/camper-nuovi" title="">Camper nuovi</a></li><li><a href="https://www.camperonline.it/produttori/" title="">Produttori</a></li><li><a href="https://www.camperonline.it/listino/" title="Listino dei veicoli ricreazionali: cerca e confronta i modelli di camper, motorhome, profilati, semintegrali">Listino</a></li><li><a href="https://magazine.camperonline.it/2011/01/03/cataloghi-prodotto/" title="Cataloghi ufficiali di camper, autocaravan, motorhome e caravan" target="_blank">Cataloghi</a></li><li><a href="https://www.camperonline.it/operatori.asp" title="Caravan">Concessionari e rete vendita</a></li><li><a href="https://www.camperonline.it/van.asp" title="Van e furgonati, i camper puri">Van</a></li><li><a href="https://www.camperonline.it/caravan.asp" title="Le caravan">Caravan</a></li><li><a href="https://www.camperonline.it/fiere/" title="Fiere, esposizioni e manifestazioni per le vacanze ed il tempo libero">Fiere</a></li><li><a href="https://www.camperonline.it/noleggio-camper/" title="Trova il tuo camper a noleggio">Noleggio</a></li><li><a href="https://www.camperonline.it/rimessaggi-camper" title="Rimessaggi per camper, caravan, imbarcazioni">Rimessaggi</a></li><li><a href="https://magazine.camperonline.it/le-prove-di-camperonline/" title="I veicoli esaminati da CamperOnLine.it" target="_blank">Le prove di CamperOnLine</a></li><li><a href="https://www.camperonline.it/camper-provati-da-voi/" title="Camper, autocaravan, motorhome e caravan giudicati dai loro possessori">Provati da voi</a></li><li><a href="https://www.camperonline.it/primo-acquisto-camper.php" title="Riflessioni che precedono l'acquisto di un veicolo ricreazionale">Primo acquisto</a></li><li><a href="https://www.camperonline.it/concessionari/gestione/" title="Accesso riservato agli operatori del settore">Area professionisti</a></li></ul></td><td valign="top"><ul class="puntata-footer"><li><a href="https://www.camperonline.it/accessori/produttori" title="Produttori di accessori per camper e caravan">Produttori</a></li><li><a href="https://www.camperonline.it/accessori/antenne" title="Antenne TV per camper e caravan">Antenne TV</a></li><li><a href="https://www.camperonline.it/accessori/ammortizzatori" title="Sospensioni integrative e ammortizzatori">Ammortizzatori</a></li><li><a href="https://www.camperonline.it/accessori/gps" title="Navigatori satellitari">GPS</a></li><li><a href="https://www.camperonline.it/accessori/pneumatici" title="Pneumatici: elementi essenziali per la sicurezza di guida">Pneumatici</a></li><li><a href="https://www.camperonline.it/accessori/rimorchi" title="Carrelli e rimorchi">Rimorchi</a></li><li><a href="https://www.camperonline.it/accessori/provati-accessori/" title="Accessori per camper giudicati dai loro utilizzatori">Provati da voi</a></li><li><a href="https://www.camperonline.it/fai-da-te" title="Idee e suggerimenti per interventi e personalizzazioni sul proprio camper">Fai da te</a></li></ul></td><td valign="top"><ul class="puntata-footer"><li><a href="https://www.camperonline.it/eventi/evento_lista.asp" title="Manifestazioni e appuntamenti da non perdere per chi viaggia in camper">Eventi</a></li><li><a href="https://www.camperonline.it/photo_gallery/" title="Le gallerie di fotografie degli amici di CamperOnLine.it">Foto</a></li><li><a href="https://www.camperonline.it/checklist" title="Lista di controllo per non dimenticare nulla prima di un viaggio in camper">Check list</a></li><li><a href="https://www.camperonline.it/traghetti" title="Scegliere e prenotare il traghetto con open deck / camping on board">Traghetti</a></li><li><a href="https://www.camperonline.it/trasporti" title="Tunnel, autostrade, ponti, traghetti: vie di terra e di mare">Trasporti</a></li></ul></td><td valign="top"><ul class="puntata-footer"><li><a href="https://www.camperonline.it/sosta-camper/aree-di-sosta/italia" title="Aree attrezzate per la sosta camper in Italia e in altri Paesi">Aree sosta camper</a></li><li><a href="https://www.camperonline.it/sosta-camper/campeggi/italia" title="Campeggi e villaggi turistici in Italia">Campeggi</a></li><li><a href="https://www.camperonline.it/sosta-camper/agriturismi/italia" title="Gli agriturismo con spazi per la sosta camper">Agriturismi con sosta camper</a></li><li><a href="https://www.camperonline.it/sosta-camper/app-di-camperonline" title="l'app di CamperOnLine.it per iPhone, iPad e Android con i POI di COL per soste e assistenze">App Camperonline</a></li><li><a href="https://www.camperonline.it/sosta-camper/10-consigli-per-la-sosta" title="I consigli per una vacanza in camper serena, rispettosa e consapevole">10 Consigli Utili per la sosta</a></li><li><a href="https://www.camperonline.it/aree-campeggi/gestisciArea/index.asp" title="Accesso riservato alle strutture ricettive">Area strutture</a></li></ul></td><td valign="top"><ul class="puntata-footer"><li><a href="https://www.camperonline.it/forum/viaggiare/aree-di-sosta-campeggi" title="Punti sosta: richieste, consigli, valutazioni e commenti">Sosta</a></li><li><a href="https://www.camperonline.it/forum/viaggiare/gruppi" title="Per chi ama organizzarsi in gruppi omogenei di amici">Gruppi</a></li><li><a href="https://www.camperonline.it/forum/viaggiare/compagni-di-viaggio" title="Per cercare compagnia per i nostri prossimi viaggi in camper">Compagni</a></li><li><a href="https://www.camperonline.it/forum/viaggiare/viaggi-in-Italia" title="Condivisione di esperienze, consigli, indicazioni, mete, destinazioni in Italia">Italia</a></li><li><a href="https://www.camperonline.it/forum/viaggiare/viaggi-all-estero" title="Condivisione di esperienze, consigli, indicazioni, mete, destinazioni all'estero">Estero</a></li><li><a href="https://www.camperonline.it/forum/tecnica/marchi" title="Lo spazio per chi possiede un modello o ama un marchio e desidera entrare in contatto con possessori che condividono la sua scelta. O per chi cerca opinioni e valutazioni.">Marchi</a></li><li><a href="https://www.camperonline.it/forum/tecnica/meccanica" title="Telai e motori dei veicoli ricreazionali: esperienze, migliorie, manutenzione, consumi, ...">Meccanica</a></li><li><a href="https://www.camperonline.it/forum/tecnica/cellula-abitativa" title="Allestimenti, dotazioni, caratteristiche, interventi post-vendita, fai da te, ...">Cellula</a></li><li><a href="https://www.camperonline.it/forum/tecnica/accessori" title="Antifurto, condizionatori, antenne, portamoto, inverter, ecc.: consigli, suggerimenti, valutazioni, fai da te, ...">Accessori</a></li><li><a href="https://www.camperonline.it/forum/informarsi/fiere-ed-eventi" title="Manifestazioni, appuntamenti, segnalazioni: richieste ed indicazioni di pubblica utilit&agrave;">Eventi</a></li><li><a href="https://www.camperonline.it/forum/informarsi/normative" title="Leggi, norme, regolamenti, contravvenzioni, ricorsi, bolli, assicurazioni, pedaggi, ...">Leggi</a></li><li><a href="https://www.camperonline.it/forum/informarsi/comportamenti" title="Caricare il veicolo, sostare, scaricare, viaggiare, usare il generatore, rispettare i vicini ed i residenti che ci ospitano, ...">Comportamenti</a></li><li><a href="https://www.camperonline.it/forum/informarsi/disabilita" title="Il camper come strumento per le famiglie con esperienze di disabilit&agrave;">Disabili</a></li><li><a href="https://www.camperonline.it/forum/informarsi/in-camper-per" title="Scopi e finalit&agrave; d'uso del nostro veicolo: praticare sport, lavoro, frequentare mercatini di collezionisti, praticare hobby come pescare, cercare funghi, seguire eventi sportivi, ecc.">In camper per</a></li><li><a href="https://www.camperonline.it/forum/varie/altro-sui-camper" title="Altri temi delle vacanze all'aria aperta che non rientrano nei precedenti forum">Altro camper</a></li><li><a href="https://www.camperonline.it/forum/varie/altro-non-sui-camper" title="Per chi ritiene utile proporre ai visitatori di CamperOnLine un argomento non strettamente attinente alle vacanze in camper">Altro</a></li><li><a href="https://www.camperonline.it/forum/varie/extra" title="Spazio per gli appassionati di politica, società e affini - accesso da attivare nel proprio profil">Extra</a></li><li><a href="https://www.camperonline.it/forum/faq-dei-forum" title="Domande ricorrenti">FAQ</a></li><li><a href="https://www.camperonline.it/forum/regolamento" title="Regolamento">Regolamento</a></li><li><a href="https://www.camperonline.it/forum/topic-attivi" title="Topic attivi">Topic attivi</a></li><li><a href="https://www.camperonline.it/preferiti.php#an_forum" title="Preferiti">Preferiti</a></li><li><a href="https://www.camperonline.it/forum/search.php" title="Cerca per parola chiave, data o nome">Cerca</a></li></ul></td><td valign="top"><ul class="puntata-footer"><li><a href="https://www.camperonline.it/camperonfest/" title="CamperOnFest">CamperOnFest</a></li><li><a href="https://www.camperonline.it/convenzioni/index.asp" title="Convenzioni riservate alla Community di COL">Convenzioni</a></li><li><a href="https://www.camperonline.it/dovesiete.asp" title="Dove sono gli Amici di COL?">Amici</a></li><li><a href="https://www.camperonline.it/furti.asp" title="Per segnalare alla community il furto del proprio camper, affinchè tutti siamo informati e attenti">Furti</a></li><li><a href="https://www.camperonline.it/privacy" title="Informativa sulla privacy e GDPR">Informativa privacy e GDPR</a></li><li><a href="https://www.camperonline.it/lavoro.asp" title="Per cercare o offrire lavoro nel settore camper">Lavoro</a></li></ul></td><td valign="top"><ul class="puntata-footer"><li><a href="https://www.camperonline.it/news" title="Le news di COL">News</a></li><li><a href="https://www.camperonline.it/newsletter.asp" title="La Newsletter di COL">Newsletter</a></li><li><a href="https://www.camperonline.it/pubblicita.asp" title="Per chi desidera proporre prodotti o servizi nella nostra vetrina">Pubblicit&agrave;</a></li><li><a href="https://www.camperonline.it/modulo-contatto.asp?tipo=info" title="Per comunicare allo Staff di COL">Contatto</a></li><li><a href="https://www.camperonline.it/live.asp" title="Una fotografia del sito in questo preciso momento, con numeri e presenze in diretta">Ora</a></li><li><a href="https://www.camperonline.it/rss_feed.asp" title="COL via RSS">RSS</a></li><li><a href="https://www.camperonline.it/video" title="Video">Video</a></li><li><a href="https://www.facebook.com/camperonline.it" title="FaceBook">FaceBook</a></li><li><a href="https://www.instagram.com/camperonline/" title="Instagram">Instagram</a></li></ul></td><td valign="top"><ul class="puntata-footer"></ul></td>
+	<table width="100%" align="center">
+	<tr>
+	<td><a href="javascript:history.back()"><img src="https://www.camperonline.it/img/back.gif" border="0" onmouseover="window.status='Ritorno alla pagina precedente';return true" alt="Ritorno alla pagina precedente" /></a></td>
+	<td class="center">
+	<a href="https://magazine.camperonline.it" target="_blank"><img src="https://www.camperonline.it/img/logo/colmagazine.gif" hspace="24" border="0" onmouseover="window.status='COL Magazine: l\'approfondimento sui temi del camperista';return true" alt="COL Magazine, per approfondire i temi dei viaggi in camper"></a>
+	<a href='https://www.camperonline.it'><img src="https://www.camperonline.it/img/logobottom.gif" hspace="12" border="0" onmouseover="window.status='www.camperonline.it: tutte le informazioni in rete per i camperisti!';return true" alt="CamperOnLine.it, tutte le informazioni in rete per il turista pleinair" /></a>
+	<img src="https://www.camperonline.it/img/logo/camperonsale.gif" alt="Il tuo prossimo camper nuovo o usato ti sta aspettendo qui" hspace="20" border="0" usemap="#Map" onmouseover="window.status='Il tuo prossimo camper nuovo o usato ti sta aspettendo qui';return true" />
+	<map name="Map" id="Map">
+	<area shape="rect" coords="4,2,163,25" href="https://www.camperonsale.it" target="_blank" alt="CamperOnSale" />
+	<area shape="rect" coords="39,27,195,50" href="http://www.camperonrent.it" target="_blank" alt="CamperOnRent" />
+	</map>
+	<br clear="all" />
+	<script language="javascript" type="text/javascript">mostraData();</script>
+	</td>
+	<td align="right"><a href="#top"><img src="https://www.camperonline.it/img/up.gif" border="0" onmouseover="window.status='Ritorno all\'inizio di questa pagina';return true" alt="Ritorno all'inizio di questa pagina"></a></td>
+	</tr>
+	</table>
+	
+	</tr>
+	</table>
+	</td></tr></table>
+<!--</td></tr></table>	-->
+</body>
+</html>
+</body>
+</html>

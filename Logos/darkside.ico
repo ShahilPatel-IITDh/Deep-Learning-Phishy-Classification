@@ -1,0 +1,70 @@
+<svg height="300" width="300" viewBox="34 34 232 232"  xmlns="http://www.w3.org/2000/svg">
+
+      <defs>
+        <linearGradient id="heartcol" gradientUnits="objectBoundingBox" x1="0" y1="0.3" x2="1" y2="0.5">
+            <stop offset="0%" stop-color="#f68630"/>   
+            <stop offset="100%" stop-color="#d22559"/>   
+        </linearGradient>
+
+        <linearGradient id="stripefadecol" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#211633"/>   
+            <stop offset="20%" stop-color="#32204c"/>   
+            <stop offset="80%" stop-color="#32204c"/>   
+            <stop offset="100%" stop-color="#211633"/>   
+        </linearGradient>
+
+        <linearGradient id="gultillgron" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffd620"/>   
+            <stop offset="100%" stop-color="#90d73e"/>   
+        </linearGradient>
+        <linearGradient id="grontillbla" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="0">
+            <stop offset="0%" stop-color="#90d73e"/>   
+            <stop offset="100%" stop-color="#1cbafa"/>   
+        </linearGradient>
+        <linearGradient id="blatilllila" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#1cbafa"/>   
+            <stop offset="100%" stop-color="#8f39a1"/>   
+        </linearGradient>
+        <linearGradient id="lilatillrod" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0%" stop-color="#8f39a1"/>   
+            <stop offset="100%" stop-color="#ef1e40"/>   
+        </linearGradient>
+        <linearGradient id="rodtillorange" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#ef1e40"/>   
+            <stop offset="100%" stop-color="#feaf1c"/>   
+        </linearGradient>
+        <linearGradient id="orangetillgul" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#feaf1c"/>   
+            <stop offset="100%" stop-color="#ffd620"/>   
+        </linearGradient>
+      </defs>
+
+	<g id="stripesbackground">
+		<circle cx="150" cy="150" r="100" fill="#000000" />
+	</g>
+	<g id="stripes" transform="rotate(-45) translate(-152,65)" fill="url(#stripefadecol)">
+		<rect x="86" y="60" width="26" height="170"/>
+		<rect x="138" y="50" width="26" height="200"/>
+		<rect x="188" y="60" width="26" height="170"/>
+	</g>
+
+	<g id="heart"  transform="translate(150,195) scale(0.27) rotate(-135)">
+		<path 
+		d="M0 200 v-200 h200 
+		a100,100 90 0,1 0,200
+		a100,100 90 0,1 -200,0
+		z" fill="url(#heartcol)" />
+	</g>
+	
+
+	<g id="rainbowcircle" stroke-width="26" fill="none">
+		<path d="M248,150A98,98,0,0,1,198,236"		stroke="url(#gultillgron)"></path>
+		<path d="M199,235A98,98,0,0,1,99.5,234"		stroke="url(#grontillbla)"></path>
+		<path d="M101,235A98,98,0,0,1,52.0,148"		stroke="url(#blatilllila)"></path>
+		<path d="M52.0,150A98,98,0,0,1,102,64.3"	stroke="url(#lilatillrod)"></path>
+		<path d="M101,65.1A98,98,0,0,1,200,66.0"	stroke="url(#rodtillorange)"></path>
+		<path d="M199,65.1A98,98,0,0,1,248,152"		stroke="url(#orangetillgul)"></path>
+	</g>
+	
+
+</svg>

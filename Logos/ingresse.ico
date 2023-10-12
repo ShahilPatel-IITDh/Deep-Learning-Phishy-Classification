@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html data-ng-app="ingresse-site">
+<head>
+    <script>window.prerenderReady = false;</script>
+
+    <base href="/" data-ng-if="isProd" />
+    <meta charset="utf-8" />
+    <meta name="fragment" content="!" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Ingresse</title>
+
+    <meta
+        name="facebook-domain-verification"
+        content="bu5vkmwf00zllhxmwhgj13w2kp1t70"
+    />
+    <meta
+        name="google-site-verification"
+        content="KYHpiOQnPUkBFAfYMNphQ4uR1gs5odeda3dCRLl48W0"
+    />
+
+    <link rel="canonical" href="https://www.ingresse.com{{ Common.getLink() ? ('/' + Common.getLink()) : Common.getPath() }}" />
+
+    <meta name="description" content="{{ Common.getDescription(220) }}" />
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+
+    <!-- Search Robots -->
+    <meta name="robots"    content="{{ Common.seoRobots() }}" data-ng-if="Common.seoRobots()" />
+    <meta name="googlebot" content="{{ Common.seoRobots() }}" data-ng-if="Common.seoRobots()" />
+
+    <!-- Icons -->
+    <link rel="icon"                href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon"    href="/assets/images/apple-touch-icon.png" />
+    <link rel="android-touch-icon"  href="/assets/images/apple-touch-icon.png" />
+    <link rel="mask-icon"           href="/assets/images/apple-mask-icon.svg" color="#FCA311" />
+
+    <!-- Mobile Smartbanner -->
+    <link rel="icon" sizes="192x192" href="/assets/images/icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#FCA311" />
+    <meta name="apple-itunes-app" content="app-id=815359760, app-argument=ingresse://{{ Common.getAppPath() }}" data-ng-if="Common.isAppPath()" />
+    <meta name="google-play-app" content="app-id=com.ingresse.ticketbooth" />
+
+    <link rel="alternate" href="android-app://com.ingresse.ticketbooth/ingresse/{{ Common.getAppPath() }}" data-ng-if="Common.isAppPath()" />
+
+    <!-- Open Graph Data -->
+    <meta property="fb:app_id"              content="{{ Common.getFbAppId() }}" />
+    <meta property="og:title"               content="{{ Common.getTitle() }}" />
+    <meta property="og:type"                content="website" />
+    <meta property="og:site_name"           content="ingresse.com"/>
+    <meta property="og:description"         content="{{ Common.getDescription(220) }}" />
+    <meta property="og:image"               content="{{ Common.getBanner() }}" />
+    <meta property="og:image:secure_url"    content="{{ Common.getBanner() }}" />
+    <meta property="og:image:type"          content="image/jpeg" />
+    <meta property="og:image:width"         content="{{ Common.getId() ? '480' : (Common.superbanner ? '2000' : '1220') }}" />
+    <meta property="og:image:height"        content="{{ Common.getId() ? '640' : (Common.superbanner ? '694' : '1220') }}" />
+    <meta property="og:url"                 content="https://www.ingresse.com{{ Common.getLink() ? ('/' + Common.getLink()) : Common.getPath() }}" />
+
+    <!--Mobile Protocol -->
+    <meta property="al:ios:url" content="ingresse://{{ Common.getAppPath() }}" data-ng-if="Common.isAppPath()" />
+    <meta property="al:ios:app_store_id" content="815359760" data-ng-if="Common.isAppPath()" />
+    <meta property="al:ios:app_name" content="Ingresse" data-ng-if="Common.isAppPath()" />
+    <meta property="al:android:url" content="ingresse://{{ Common.getAppPath() }}" data-ng-if="Common.isAppPath()" />
+    <meta property="al:android:app_name" content="Ingresse" data-ng-if="Common.isAppPath()" />
+    <meta property="al:android:package" content="com.ingresse.ticketbooth" data-ng-if="Common.isAppPath()" />
+    <meta property="al:web:should_fallback" content="true" data-ng-if="Common.isAppPath()" />
+    <meta property="al:web:url" content="https://www.ingresse.com/{{ Common.getLink() }}" data-ng-if="Common.isAppPath()" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:app:country" content="BR" data-ng-if="Common.isAppPath()" />
+    <meta name="twitter:app:name:iphone" content="Ingresse" data-ng-if="Common.isAppPath()" />
+    <meta name="twitter:app:id:iphone" content="815359760" data-ng-if="Common.isAppPath()" />
+    <meta name="twitter:app:url:iphone" content="ingresse://{{ Common.getAppPath() }}" data-ng-if="Common.isAppPath()" />
+    <meta name="twitter:app:name:ipad" content="Ingresse" data-ng-if="Common.isAppPath()" />
+    <meta name="twitter:app:id:ipad" content="815359760" data-ng-if="Common.isAppPath()" />
+    <meta name="twitter:app:url:ipad" content="ingresse://{{ Common.getAppPath() }}" data-ng-if="Common.isAppPath()" />
+    <meta name="twitter:app:name:googleplay" content="Ingresse" data-ng-if="Common.isAppPath()" />
+    <meta name="twitter:app:id:googleplay" content="com.ingresse.ticketbooth" data-ng-if="Common.isAppPath()" />
+    <meta name="twitter:app:url:googleplay" content="ingresse://{{ Common.getAppPath(true) }}" data-ng-if="Common.isAppPath()" />
+
+    <link rel="stylesheet" href="/assets/vendor.css"/>
+
+    <link rel="stylesheet" href="https://cdn.ingresse.com/websdk/v7/styles/websdk.css" />
+    <link rel="stylesheet" href="https://embedstore.ingresse.com/ingresse-widget.css" />
+
+    <link rel="stylesheet" href="/assets/fonts.css"/>
+
+    <!-- cookies -->
+
+    <!-- <link rel="stylesheet" href="/assets/css/cookies.css" /> -->
+
+    <link rel="stylesheet" href="/assets/site.css" />
+
+    <!-- Ingresse Auth SDK Style -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.ingresse.com/auth/auth.min.css" />
+    <script type="text/javascript" src="https://cdn.ingresse.com/auth/auth.min.js"></script>
+
+    <!-- Ingresse Embedstore -->
+    <script async src="https://embedstore.ingresse.com/ingresse-widget.js"></script>
+
+    <!-- Ingresse Tools -->
+    <script async src="https://cdn.ingresse.com/tools/tools.umd.js"></script>
+
+    <!-- Ingresse Web Components -->
+    <script type="module" src="https://front.ingresse.com/wc/ing-wcs.esm.js"></script>
+    <!--
+    hml web components
+    <script type="module" src="https://front.ingresse.com/wc/homolog/ing-wcs.esm.js"></script>
+    -->
+
+    <!-- Activecampaign de monitoramento de jornada do lead/clienter -->
+    <script type="text/javascript">
+        (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+        vgo('setAccount', '651982545');
+        vgo('setTrackByDefault', true);
+        vgo('process');
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.6/underscore-min.js" integrity="sha512-2V49R8ndaagCOnwmj8QnbT1Gz/rie17UouD9Re5WxbzRVUGoftCu5IuqqtAM9+UC3fwfHCSJR1hkzNQh/2wdtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TGPTCDG');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <script src="https://cdn.siftscience.com/s.js"></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    </script>
+    <!-- END Facebook Pixel Code -->
+
+    <!-- Queue-It -->
+    <script
+        type="text/javascript"
+        src="https://static.queue-it.net/script/queueclient.min.js"
+    ></script>
+    <script
+        data-queueit-c ="ingresse"
+        type="text/javascript"
+        src="https://static.queue-it.net/script/queueconfigloader.min.js"
+    ></script>
+    <!-- END Queue-It -->
+
+    <!-- Hotjar Tracking Code for https://www.ingresse.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2926126,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!-- END Hotjar Tracking Code for https://www.ingresse.com -->
+
+    <style>
+        .box-cookies{
+            z-index:100000;
+            display:center;
+            width:100%;
+            position:fixed;
+            bottom:0;
+            left:0;
+            background-color:rgba(255,255,255,0.95);
+            padding:20px;
+            box-sizing:border-box;
+            box-shadow:0 0 7px rgb(0 0 0 / 50%);
+            align-items:center;
+        }
+        .hide{
+            display: none;
+        }
+        .link{
+            color:#EF6C00;
+            text-decoration: underline;
+        }
+        .msg-cookies{
+            width: auto;
+            margin: 0 0 -45px 15%;
+            line-height: 150%;
+            color: #637381;
+        }
+        .btn-cookies{
+            display: flex;
+            background:#EF6C00;
+            transition: 0.3s all ease;
+            -o-transition: 0.3s all ease;
+            -ms-transition:0.3s all ease;
+            -moz-transition:0.3s all ease;
+            -webkit-transition:0.3s all ease;
+            color:#ffffff;
+            text-shadow:0 1px 1px rgb(0 0 0 / 20%);
+            border-radius: 16px;
+            border: 0px solid rgba(0,0,0,0.1);
+            border-bottom-color: rgba(0,0,0,0.2);
+            font-size: 16px;
+            font-weight: 500;
+            padding: 6px 21px;
+            cursor: pointer;
+            line-height:28px;
+            width:113px;
+            float: right;
+            margin: 0 15% 0 0;
+        }
+        .btn-cookies:hover{
+            background-color: #CF5200;
+        }
+
+        @media (max-width: 1200px) {
+            .btn-cookies {
+                width: 100%;
+                margin: 0 0 0 0;
+                display: flex;
+                justify-content: center;
+
+            }
+            .msg-cookies{
+                width: 100%;
+                margin:0 0 20px 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TGPTCDG"
+            height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <loader></loader>
+
+    <superbanner></superbanner>
+
+    <main class="flex flex--column flex--stretch">
+
+        <navbar class="flex__item flex__item--navbar"
+                data-ng-hide="authPage"
+                data-ng-class="{
+                    'hidden-xs' : wallet,
+                    'flex__item--navbar--tickets' : ticket
+                }">
+        </navbar>
+
+        <div class="flex__item flex__item--start"
+             data-ng-view=""
+             data-ng-class="{
+                'flex__item--start--tickets' : ticket
+            }">
+        </div>
+
+        <site-footer class="flex__item flex__item--footer"
+                     data-ng-hide="authPage">
+        </site-footer>
+
+    </main>
+
+        <div class="box-cookies hide">
+            <p class="msg-cookies">A Ingresse utiliza estatísticas de visitas (cookies) para melhorar sua experiência de navegação.<br> Saiba mais em nossas <a class="link" href="https://sobre.ingresse.com/termos-de-privacidade">políticas de privacidade</a>.</p>
+            <div class="btn-cookies">Entendido</div>
+        </div>
+        <script>
+            if (!localStorage.getItem("ingresseCookies")) {
+                document.querySelector(".box-cookies").classList.remove('hide');
+            }
+
+            function acceptCookies() {
+                document.querySelector(".box-cookies").classList.add('hide');
+                localStorage.setItem("ingresseCookies", "accept");
+            };
+
+            var btnCookies = document.querySelector(".btn-cookies");
+
+            btnCookies.addEventListener("click", acceptCookies);
+
+        </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26110667-1"></script> -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        // gtag('config', 'UA-26110667-1');
+        gtag('config', 'AW-991958113');
+        gtag('config', 'G-6BNXL3KJ5Z');
+        gtag('set', {
+            'country': 'BR',
+            'currency': 'BRL'
+        });
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+    <script src="scripts/vendor.js"></script>
+
+    <!-- Ingresse Web SDK -->
+    <script src="https://cdn.ingresse.com/websdk/v7/scripts/websdk.js"></script>
+
+    <script src="scripts/scripts.js"></script>
+
+    <!--Smart Banner-->
+    <script type="text/javascript">
+        new SmartBanner({
+            daysHidden      : 15,   // days to hide banner after close button is clicked (defaults to 15)
+            daysReminder    : 90, // days to hide banner after "VIEW" button is clicked (defaults to 90)
+            appStoreLanguage: 'br', // language code for the App Store (defaults to us)
+            title           : 'Ingresse',
+            author          : 'Ingresse',
+            button          : 'Baixar',
+            store           : {
+                ios    : 'na App Store',
+                android: 'no Google Play'
+            },
+            price           : {
+                ios    : 'Grátis',
+                android: 'Grátis'
+            }
+        });
+    </script>
+
+    <script src="https://wchat.freshchat.com/js/widget.js"></script>
+
+    <script type="application/ld+json">
+        {
+            "@context"       : "http://schema.org",
+            "@type"          : "WebSite",
+            "url"            : "https://www.ingresse.com/",
+            "potentialAction": {
+                "@type"      : "SearchAction",
+                "target"     : "https://www.ingresse.com/busca/{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+ <!--[if IE 8 ]> <html class="ie8 lang="en-US""> <![endif]-->
+ <!--[if IE 9 ]> <html class="ie9 lang="en-US""> <![endif]-->
+ <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-US"> <!--<![endif]-->
+ <head>
+
+	<title>ARDC | Empowering the future of amateur radio and digital communications</title>
+
+	<meta charset="UTF-8" />
+	
+	<!--Load WP Head-->
+	
+	<meta name='robots' content='noindex, nofollow' />
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/160bd317928925698380277e/script.js"></script><link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="ARDC &raquo; Feed" href="https://www.ardc.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="ARDC &raquo; Comments Feed" href="https://www.ardc.net/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ardc.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://www.ardc.net/wp-includes/css/dist/block-library/style.min.css?ver=6.3.1' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--blue: #394056;--wp--preset--color--turquoise: #57bdcc;--wp--preset--color--grey: #d9d9d9;--wp--preset--color--orange: #e15e4c;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='update-urls-css' href='https://www.ardc.net/wp-content/plugins/update-urls/lite/dist/styles/plugin-name.css?ver=1.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.ardc.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='forward-fonts-css' href='//fonts.googleapis.com/css?family=Open+Sans%3Aregular%2Citalic%2C700|Roboto%3Aregular%2Citalic%2C700%26subset%3Dlatin%2C' type='text/css' media='screen' />
+<link rel='stylesheet' id='newsletter-css' href='https://www.ardc.net/wp-content/plugins/newsletter/style.css?ver=7.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='forward-main-css' href='https://www.ardc.net/wp-content/themes/forward/style.css?ver=1.2.8' type='text/css' media='screen' />
+<script type='text/javascript' src='https://www.ardc.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.ardc.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.ardc.net/wp-content/plugins/update-urls/lite/dist/scripts/plugin-name.js?ver=1.2.4' id='update-urls-js'></script>
+<script type='text/javascript' id='wpstg-global-js-extra'>
+/* <![CDATA[ */
+var wpstg = {"nonce":"fd23bdad19"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ardc.net/wp-content/plugins/wp-staging-pro/assets/js/dist/wpstg-blank-loader.js?ver=6.3.1' id='wpstg-global-js'></script>
+<link rel="https://api.w.org/" href="https://www.ardc.net/wp-json/" /><link rel="alternate" type="application/json" href="https://www.ardc.net/wp-json/wp/v2/pages/3012" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ardc.net/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.1" />
+<link rel="canonical" href="https://www.ardc.net/" />
+<link rel='shortlink' href='https://www.ardc.net/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.ardc.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ardc.net%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.ardc.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ardc.net%2F&#038;format=xml" />
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><meta name="generator" content="Forward Theme Version 1.2.8" />
+				
+				<link rel="shortcut icon" href="" type="image/x-icon" />
+				<link rel="apple-touch-icon-precomposed" href="" />
+				<link rel="icon" href="https://www.ardc.net/wp-content/uploads/cropped-symbol-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.ardc.net/wp-content/uploads/cropped-symbol-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.ardc.net/wp-content/uploads/cropped-symbol-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.ardc.net/wp-content/uploads/cropped-symbol-270x270.png" />
+
+<!-- Forward Custom Styles -->
+<style>
+
+		
+	body { 		
+		font-family: "Roboto"; 
+		font-size: px;
+				
+					
+					
+				
+																								
+			}
+	
+	h1.text-logo {
+		font-family: ""; 
+		font-size: px;
+	}
+	
+
+
+.page-template-full-width-template .header-search,
+.full-width-layout .header-search {
+	float: none;
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+	#navigation,
+	select.tinynav,
+	.flexnav li ul,
+	.flexnav li ul li a,
+	.flexnav li.current-menu-item ul li a {
+		background-color: #000000;
+	}
+	
+	
+	.flexnav li a,
+	.flexnav li a:visited,
+	.flexnav li ul li a  { 
+		font-family: "Roboto"; 
+		font-size: 18px;
+					color: #ffffff;
+				
+	}
+
+	.page-template-full-width-template .flexnav li a,
+	.page-template-full-width-template .flexnav li a:visited,
+	.page-template-full-width-template .flexnav li ul li a,
+	.full-width-layout .flexnav li a,
+	.full-width-layout .flexnav li a:visited,
+	.full-width-layout .flexnav li ul li a   {
+				
+	}
+	
+			.menu-button .touch-button .navicon { color: #ffffff;	}
+	
+		
+	.flexnav li a:hover,
+	.flexnav li.current-menu-item > a,
+	.flexnav li.current-menu-item ul li a:hover { 
+					color: #000000;
+							background-color: #b1e0df !important;
+				
+	}
+
+	.page-template-full-width-template .flexnav li a:hover,
+	.page-template-full-width-template .flexnav li.current-menu-item > a,
+	.page-template-full-width-template .flexnav li.current-menu-item ul li a:hover,
+	.full-width-layout .flexnav li a:hover,
+	.full-width-layout .flexnav li.current-menu-item > a,
+	.full-width-layout .flexnav li.current-menu-item ul li a:hover { 
+							background-color: #b1e0df !important;
+				
+	}	
+
+	.flexnav li ul, .flexnav li ul li a {
+			}
+	
+	.page-template-full-width-template .flexnav li ul,
+	.page-template-full-width-template .flexnav li ul li a,
+	.full-width-layout .flexnav li ul,
+	.full-width-layout .flexnav li ul li a {
+			}
+	
+	h1 { font-family: "Roboto"; font-size: 36px; }
+	h2 { font-family: "Roboto"; font-size: 30px; }
+	h3 { font-family: "Roboto"; font-size: 21px; }
+	h4 { font-family: "Roboto"; font-size: 18px; }
+	h5 { font-family: ""; font-size: 16px; }
+	h6 { font-family: ""; font-size: 14px; }
+
+	a, a:visited { color: #007c85; }
+
+	#footer { background-color: #000000; }
+
+	
+	.button,
+	a.button,
+	a:visited.button,
+	button.button,
+	input.button,
+	input[type="button"],
+	input[type="submit"],
+	#wrap a.tribe-events-button {
+		color: #000000;
+		background-color: #b1e0df;
+		
+	}
+
+	
+	.button:hover,
+	a:hover.button,
+	button:hover.button,
+	input:hover.button,
+	input:hover[type="button"],
+	input:hover[type="submit"]
+	#wrap a:hover.tribe-events-button {
+		color: ;
+		background-color: #ffffff;
+		
+	}
+	
+
+	h3.widget-title { 
+		font-family: "Roboto"; 
+		font-size: px;
+					color: #ffffff;
+						
+	}
+	
+	.widget {
+		font-family: "Roboto"; 
+		font-size: px;
+					color: #ffffff;
+							background-color: #000000;
+				
+	}
+	
+	#home-widgets h3.widget-title { 
+		font-family: "Roboto"; 
+		font-size: px;
+					color: #ffffff;
+							background-color: #000000;
+				
+	}
+	
+	#home-widgets .widget {
+		font-family: "Roboto"; 
+		font-size: px;
+					color: #ffffff;
+							background-color: #000000;
+				
+	}
+	
+	.widget a:hover { color: #000000; }
+	
+	#home-widgets .widget a, .widget a:visited { color: #000000; }
+	
+
+	.widget.attention-block .widget-title,
+	#home-widgets .widget.attention-block .widget-title { 
+		font-family: ""; 
+		font-size: px;
+				
+	}
+
+
+	/* Custom CSS */
+	h1.image-logo img {
+    width: 100%;
+}
+
+#logo {
+    width: 100%;
+}
+
+.wpcf7-form-control {
+    width: 100%;
+}
+
+.wpcf7-submit {
+    width: auto;
+}
+
+h5, h6 {
+    font-family: Roboto;
+}
+
+	
+		
+</style>
+	
+		<style type="text/css" id="wp-custom-css">
+			#home-widgets .widget a, .widget a:visited {
+    color: #B0E1DF;
+}
+
+#home-widgets .widget a.button, .widget a:visited {
+    color: #000000;
+}
+
+#home-widgets .widget h3 > a {
+	color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.groups-io-button {
+		width: 100%;
+		white-space: normal;
+		overflow-wrap: break-word;
+	}
+}
+
+.who-we-are .wp-caption p, .who-we-are .gallery-caption {
+	font-size: 16px;
+	font-style: normal;
+}
+
+.who-we-are-grid-container ul {
+	padding: 0;
+	margin: 0;
+}
+
+.who-we-are-grid-container li {
+	display: inline-block;
+	width: calc(48% - 10px);
+	margin: 5px;
+	box-sizing: border-box;
+}
+
+.committee-member-testimonial {
+	display: flex;
+	align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+	.who-we-are-grid-container li {
+		width: calc(100% - 10px);
+	}
+	.committee-member-testimonial {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.what-weve-been-up-to-grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.what-weve-been-up-to-grid > div {
+	margin: 8px;
+}
+
+.caption-item {
+	margin: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.caption-item img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+@media only screen and (max-width: 991px) {
+	#featuredposts-3.widget.featured-posts {
+	width: 100%;
+}
+}
+		</style>
+			
+	<!-- End WP Head -->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+
+<body class="home page-template page-template-page-home-template page-template-page-home-template-php page page-id-3012 unknown  boxed-layout preload">
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+<div id="wrap" class="clearfix">
+
+	<div id="header">
+		
+		<div id="header-content" class="clearfix">
+			
+		
+			<div id="logo">
+				
+								
+					<h1 class="image-logo"><a href="https://www.ardc.net/"><img src="https://www.ardc.net/wp-content/uploads/Website-Top-Banner2.svg"></a></h1>
+					
+								
+			</div><!-- #logo -->
+			
+						
+			
+			<div id="navigation" class="clearfix">
+				
+				<nav id="primary-site-navigation">
+					
+					<ul class="flexnav" id="header-menu">
+						<li id="menu-item-2984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2984"><a href="https://www.ardc.net/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-2987" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2987"><a href="https://www.ardc.net/about/mission/">Mission</a></li>
+	<li id="menu-item-2994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2994"><a href="https://www.ardc.net/about/values/">Values</a></li>
+	<li id="menu-item-2988" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2988"><a href="https://www.ardc.net/about/who-we-are/">Who We Are</a></li>
+	<li id="menu-item-3009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3009"><a href="https://www.ardc.net/about/careers-and-opportunities/">Careers and Opportunities</a></li>
+	<li id="menu-item-2999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2999"><a href="https://www.ardc.net/in-memoriam-brian-kantor-wb6cyt-1953-2019/">In Memoriam: Brian Kantor, WB6CYT (1953-2019)</a></li>
+	<li id="menu-item-5870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5870"><a href="https://www.ardc.net/about/committee-volunteer-positions-at-ardc/">Volunteer at ARDC</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3001"><a href="https://www.ardc.net/about/committee-volunteer-positions-at-ardc/grants-advisory-committee/">Grants Advisory Committee</a></li>
+		<li id="menu-item-3000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3000"><a href="https://www.ardc.net/about/committee-volunteer-positions-at-ardc/technical-advisory-committee/">Technical Advisory Committee</a></li>
+		<li id="menu-item-5869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5869"><a href="https://www.ardc.net/about/committee-volunteer-positions-at-ardc/grants-evaluation-team/">Grants Evaluation Team</a></li>
+		<li id="menu-item-5865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5865"><a href="https://www.ardc.net/about/committee-volunteer-positions-at-ardc/conduct-review-committee/">Conduct Review Committee</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2986"><a href="https://www.ardc.net/about/legal/">Legal &#038; Policy</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3008" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3008"><a href="https://www.ardc.net/about/legal/website-privacy-policy/">Website Privacy Policy</a></li>
+		<li id="menu-item-3007" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3007"><a href="https://www.ardc.net/about/legal/website-terms-of-use/">Website Terms of Use</a></li>
+		<li id="menu-item-3010" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3010"><a href="https://www.ardc.net/about/legal/code-of-conduct/">Code of Conduct</a></li>
+		<li id="menu-item-3011" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3011"><a href="https://www.ardc.net/about/legal/code-of-conduct-report-form/">Code of Conduct Report Form</a></li>
+		<li id="menu-item-4429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4429"><a href="https://www.ardc.net/about/legal/gift-acceptance-policy/">Gift Acceptance Policy</a></li>
+		<li id="menu-item-5547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5547"><a href="https://www.ardc.net/about/legal/advisory-committee-policy/">ARDC Policy for Advisory Committees</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2989"><a href="https://www.ardc.net/about/faq/">Frequently-Asked Questions (FAQs)</a></li>
+	<li id="menu-item-2998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2998"><a href="https://www.ardc.net/about/publications/">Publications</a></li>
+	<li id="menu-item-5993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5993"><a href="https://www.ardc.net/about/make-a-donation-to-ardc/">Make a Donation to ARDC</a></li>
+	<li id="menu-item-2985" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2985"><a href="https://www.ardc.net/about/contact/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-2991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2991"><a href="https://www.ardc.net/apply/">Apply for a Grant</a>
+<ul class="sub-menu">
+	<li id="menu-item-2995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2995"><a href="https://www.ardc.net/apply/grantmaking-categories-goals-2022/">Grantmaking Categories &#038; Goals</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5546" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5546"><a href="https://www.ardc.net/apply/grantmaking-categories-goals-2022/scholarships/">Scholarships</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5706"><a href="https://www.ardc.net/apply/grant-application-instructions-and-advice/">Application Instructions</a></li>
+	<li id="menu-item-2997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2997"><a href="https://www.ardc.net/apply/what-happens-after-you-get-an-ardc-grant/">What Happens After You Get an ARDC Grant?</a></li>
+	<li id="menu-item-2992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2992"><a href="https://www.ardc.net/apply/grants/">Awarded Grants</a></li>
+	<li id="menu-item-5939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5939"><a href="https://www.ardc.net/apply/media-kit/">Media Kit</a></li>
+</ul>
+</li>
+<li id="menu-item-2990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2990"><a href="https://www.ardc.net/news-and-updates/">News and Updates</a>
+<ul class="sub-menu">
+	<li id="menu-item-3003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3003"><a href="https://www.ardc.net/about/newsletter/">Newsletters</a></li>
+	<li id="menu-item-3005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3005"><a href="https://www.ardc.net/news-and-updates/press-releases/">Press Releases</a></li>
+	<li id="menu-item-3004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3004"><a href="https://www.ardc.net/news-and-updates/ardc-in-the-news/">ARDC in the News</a></li>
+</ul>
+</li>
+<li id="menu-item-3006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3006"><a href="https://www.ardc.net/44net/">44Net</a>
+<ul class="sub-menu">
+	<li id="menu-item-2630" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2630"><a target="_blank" rel="noopener" href="https://portal.ampr.org/">Portal</a></li>
+	<li id="menu-item-2631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2631"><a target="_blank" rel="noopener" href="https://wiki.ampr.org/">Wiki</a></li>
+	<li id="menu-item-2632" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2632"><a target="_blank" rel="noopener" href="https://mailman.ardc.net/mailman3/postorius/lists/44net.mailman.ampr.org/">44Net Mailing List</a></li>
+</ul>
+</li>
+<li id="menu-item-5826" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5826"><a href="https://www.ardc.net/ardc-community-resources/">Resources</a></li>
+					</ul>
+					
+				</nav>
+				
+									
+					<div class="header-search">
+					 		<form method="get" class="searchform" action="https://www.ardc.net/" role="search">
+		<input type="text" class="field" name="s" value="" id="s" placeholder="Search Here" />
+		<input type="submit" class="button" name="submit" id="search-submit" value="Search" />
+	</form>					 </div>
+					
+								
+								
+			</div><!-- #navigation -->
+
+			
+				
+		</div><!-- #header-content -->
+		
+	</div><!-- #header -->
+	
+	<div class="site-content">
+
+	<div class="flexslider shadow with-controls">
+	
+		<ul class="slides">
+						
+						
+				<li id="slide-1981" class="slide">
+				
+												
+							
+	
+							<a href="/apply/"><img width="1024" height="500" src="https://www.ardc.net/wp-content/uploads/Bridgerland-1-1024x768-1024x500.png" class="attachment-slide size-slide wp-post-image" alt="Kid soldering wire to a circuit board" decoding="async" fetchpriority="high" /></a>
+							
+							<div class="slide-box caption_left">
+								
+								<h2 class="slide-title">ARDC Helps Kids Succeed</h2>
+									
+								<p>ARDC makes grants that helps kids get involved in amateur radio, giving them experiences that will help them succeed in technical careers.</p>
+								
+																
+									<p><a href="/apply/" class="button">Apply for a grant</a></p>
+								
+															
+							</div>
+					
+											
+									
+				</li><!-- slide-1981 -->
+				
+						
+				<li id="slide-1987" class="slide">
+				
+												
+							
+	
+							<a href="/apply/"><img width="1108" height="500" src="https://www.ardc.net/wp-content/uploads/m17-project-hardware.png" class="attachment-slide size-slide wp-post-image" alt="Circuit boards for the M17 Project" decoding="async" srcset="https://www.ardc.net/wp-content/uploads/m17-project-hardware.png 1108w, https://www.ardc.net/wp-content/uploads/m17-project-hardware-300x135.png 300w, https://www.ardc.net/wp-content/uploads/m17-project-hardware-1024x462.png 1024w, https://www.ardc.net/wp-content/uploads/m17-project-hardware-150x68.png 150w, https://www.ardc.net/wp-content/uploads/m17-project-hardware-450x203.png 450w, https://www.ardc.net/wp-content/uploads/m17-project-hardware-600x271.png 600w" sizes="(max-width: 1108px) 100vw, 1108px" /></a>
+							
+							<div class="slide-box caption_left">
+								
+								<h2 class="slide-title">ARDC Funds Tech Projects</h2>
+									
+								<p>ARDC funds development projects that advance the state of the radio art. One such project is the M17 Project, which is advancing the state of the art in digital communications.</p>
+								
+																
+									<p><a href="/apply/" class="button">Apply for a grant</a></p>
+								
+															
+							</div>
+					
+											
+									
+				</li><!-- slide-1987 -->
+				
+						
+				<li id="slide-2185" class="slide">
+				
+												
+							
+	
+							<a href="/scholarships/"><img width="1000" height="439" src="https://www.ardc.net/wp-content/uploads/thank-you-note.jpg" class="attachment-slide size-slide wp-post-image" alt="Handwritten thank you note for scholarship" decoding="async" srcset="https://www.ardc.net/wp-content/uploads/thank-you-note.jpg 1000w, https://www.ardc.net/wp-content/uploads/thank-you-note-300x132.jpg 300w, https://www.ardc.net/wp-content/uploads/thank-you-note-150x66.jpg 150w, https://www.ardc.net/wp-content/uploads/thank-you-note-450x198.jpg 450w, https://www.ardc.net/wp-content/uploads/thank-you-note-600x263.jpg 600w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
+							
+							<div class="slide-box caption_left">
+								
+								<h2 class="slide-title">ARDC Scholarships</h2>
+									
+								<p>ARDC partners with organizations like ARRL, Society of Women Engineers, and universities that serve underserved groups to provide scholarships to students pursuing technical degrees. These scholarship programs make selections based on a mix of need and merit, and many students write to us to let us know that they would not be able to attend college without scholarship assistance.</p>
+								
+																
+									<p><a href="/scholarships/" class="button">Learn about scholarships</a></p>
+								
+															
+							</div>
+					
+											
+									
+				</li><!-- slide-2185 -->
+				
+						
+				<li id="slide-2005" class="slide">
+				
+												
+							
+	
+							<a href="https://wiki.ampr.org/wiki/Quickstart"><img width="1140" height="500" src="https://www.ardc.net/wp-content/uploads/44net-slide-1.png" class="attachment-slide size-slide wp-post-image" alt="Rows of binary code, reflecting Amateur Radio Digital Communications&#039; (ARDCs) management of 44Net" decoding="async" srcset="https://www.ardc.net/wp-content/uploads/44net-slide-1.png 1140w, https://www.ardc.net/wp-content/uploads/44net-slide-1-300x132.png 300w, https://www.ardc.net/wp-content/uploads/44net-slide-1-1024x449.png 1024w, https://www.ardc.net/wp-content/uploads/44net-slide-1-150x66.png 150w, https://www.ardc.net/wp-content/uploads/44net-slide-1-450x197.png 450w, https://www.ardc.net/wp-content/uploads/44net-slide-1-600x263.png 600w" sizes="(max-width: 1140px) 100vw, 1140px" /></a>
+							
+							<div class="slide-box caption_left">
+								
+								<h2 class="slide-title">ARDC Manages 44Net</h2>
+									
+								<p>44Net is shorthand for Internet network 44 (44.0.0.0/9, 44.128.0.0/10), also known as AMPRNet. Since its allocation to amateur radio in the mid-1980s, the network has been used by amateur radio operators to conduct scientific research and to experiment with digital communications over radio.</p>
+								
+																
+									<p><a href="https://wiki.ampr.org/wiki/Quickstart" class="button">Get started with 44Net</a></p>
+								
+															
+							</div>
+					
+											
+									
+				</li><!-- slide-2005 -->
+				
+					
+		</ul><!-- .slides -->
+		
+	</div><!-- .flexslider -->
+	
+		
+		<div id="home-widgets" class="clearfix">
+			
+			<div class="sizing"></div>
+			
+			<div id="featuredposts-3" class="widget featured-posts clearfix"><h3 class="widget-title">ARDC News</h3><article class="clearfix post-5876 post type-post status-publish format-standard hentry category-uncategorized">     				
+     					<a href="https://www.ardc.net/ardc-committee-recruitment-2024/" rel="bookmark"></a>	
+     					
+	     					
+	     			<h3><a href="https://www.ardc.net/ardc-committee-recruitment-2024/" title="ARDC Committee Recruitment 2024">ARDC Committee Recruitment 2024</a></h3>	     					
+     					
+     					<p>The deadline for applying for these positions is October 31, 2023. ARDC is now accepting applications from individuals interested in serving on our committees in 2024. Grants Advisory Committee (GAC) &#8211; reviews grant applications Technical Advisory Committee (TAC) &#8211; works on 44Net-related projects and policies Conduct Review Committee (CRC) &#8211; helps to evaluate Code of <a class="read-more" href="https://www.ardc.net/ardc-committee-recruitment-2024/">&#8230; Read More</a></p>
+</article>
+
+<article class="clearfix post-5746 post type-post status-publish format-standard hentry category-uncategorized tag-44net tag-groupsio">     				
+     					<a href="https://www.ardc.net/ardc-is-on-groups-io/" rel="bookmark"></a>	
+     					
+	     					
+	     			<h3><a href="https://www.ardc.net/ardc-is-on-groups-io/" title="ARDC is on Groups.io!">ARDC is on Groups.io!</a></h3>	     					
+     					
+     					<p>Ever since ARDC started making grants, our grantees have shown interest in finding ways to connect with one another. This interest was confirmed at our first ever online Grantee Gathering back in April of this year when 80 – yes 80! – of our grantees showed up. Meanwhile, we’d been learning from some surveys that <a class="read-more" href="https://www.ardc.net/ardc-is-on-groups-io/">&#8230; Read More</a></p>
+</article>
+
+<article class="clearfix post-5557 post type-post status-publish format-standard hentry category-uncategorized">     				
+     					<a href="https://www.ardc.net/ardc-is-hiring-grants-associate-temporary-part-time/" rel="bookmark"></a>	
+     					
+	     					
+	     			<h3><a href="https://www.ardc.net/ardc-is-hiring-grants-associate-temporary-part-time/" title="ARDC is Hiring: Grants Associate (temporary, part-time)">ARDC is Hiring: Grants Associate (temporary, part-time)</a></h3>	     					
+     					
+     					<p>ARDC is no longer accepting applications for this position. Overview Amateur Radio Digital Communications (ARDC) is a California-based private foundation with roots in amateur radio and the technology of internet communication. Our mission is to support, promote, and enhance digital communication and broader communication science and technology, to promote Amateur Radio, scientific research, experimentation, education, <a class="read-more" href="https://www.ardc.net/ardc-is-hiring-grants-associate-temporary-part-time/">&#8230; Read More</a></p>
+</article>
+
+</div><div id="custom_html-7" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><p><strong>Amateur Radio Digital Communications (ARDC)</strong> is a private foundation that exists to support amateur radio and digital communication science and technology. We do this through <a href="/apply/" style="color:#b1e0df">making grants</a> (including support for scholarship programs and research & development projects) and managing <a href="/44net/" style="color:#b1e0df">44Net</a>.</p>
+<p>For more information, email us anytime: <a href="mailto:contact@ardc.net" style="color:#b1e0df">contact@ardc.net</a>.</p></div></div><div id="custom_html-9" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><div align="center"><a href="/about/newsletter/" class="button">Sign up for our<br>newsletter</a></div></div></div><div id="custom_html-10" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><div align="center"><a href="https://ardc.groups.io/g/main/" target="_blank" class="button" rel="noopener">Join Our<br> Community Discussion <br>on Groups.io</a></div></div></div>		
+		</div><!-- #home-widgets -->
+	
+		
+	
+	</div><!-- .site-content -->
+	
+	<div id="footer">
+			
+				
+		<div id="footer-content" class="clearfix">
+			
+			<div id="footer-left">
+				
+								
+					<p><br><br><br>Copyright © 2011 - 2023, Amateur Radio Digital Communications</p>
+					
+				 
+			
+			</div><!-- #footer-left -->
+		
+			<div id="footer-right">
+				
+								
+					<p><a href="/about/legal/website-privacy-policy/" style="color:#b1e0df">Privacy Policy</a><br><a href="/about/legal/website-terms-of-use/" style="color:#b1e0df">Website Terms of Use</a><br><br><a href="https://www.facebook.com/ardc.73" target="_blank"><img src="/wp-content/uploads/facebook-icon.svg" width="12"></a>    <a href="https://twitter.com/ardc_73" target="_blank"><img src="/wp-content/uploads/twitter-icon.svg" width="30"></a>    <a href="https://www.linkedin.com/company/amateur-radio-digital-communications/?viewAsMember=true" target="_blank"><img src="/wp-content/uploads/linkedin-icon.svg" width="25"></a>   <a href="https://ardc.groups.io/g/main/" target="_blank"><img src="/wp-content/uploads/groupsio-icon.svg" width="25"></a>  <a href="https://vimeo.com/ardc73" target="_blank"><img src="/wp-content/uploads/vimeo-icon.svg" width="25"></a></p>
+				
+										
+			</div><!-- #footer-right -->
+			
+		</div><!-- #footer-content -->
+		
+	</div><!-- #footer -->
+
+</div><!-- #wrap -->
+
+<!-- Load wp_footer -->
+<script type='text/javascript' src='https://www.ardc.net/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.1' id='swv-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.ardc.net\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ardc.net/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.1' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://www.ardc.net/wp-content/themes/forward/js/flexslider.js' id='flexslider-js'></script>
+<script type='text/javascript' src='https://www.ardc.net/wp-content/themes/forward/js/nav.js' id='nav-js'></script>
+<script type='text/javascript' src='https://www.ardc.net/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://www.ardc.net/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+<script type='text/javascript' src='https://www.ardc.net/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b' id='jquery-masonry-js'></script>
+
+	<script>
+	
+	// Flexslider	
+		jQuery(window).load(function() {
+			jQuery('.flexslider').flexslider({
+				animation           :	"slide",
+				slideshow           :	true,
+				slideshowSpeed      :	10000,
+				controlNav          :	true,
+				directionNav        :   false,
+				prevText			:	"",
+				nextText			:	"", 
+				pauseOnAction       :   true,
+				pauseOnHover        :	true,
+				useCSS				:	true,
+				video				:	true,
+				smoothHeight		:	true
+			});
+		});
+	
+	// Superfish
+		jQuery(document).ready(function() {
+			jQuery('#header-menu').superfish({
+				cssArrows	: false,
+			});
+		});
+			
+	// TinyNav
+		 jQuery(function () {
+		 	jQuery('.flexnav').tinyNav({
+		 	  active: 'selected',
+		 	  header: 'Menu'
+		 	});
+		 });
+	
+	// Smooth Scrolling 
+		jQuery(function($) {
+		  $('a[href*="#"]:not([href="#"]):not([href="#tab-additional_information"]):not([href="#tab-description"]):not([href="#tab-reviews"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top - 100
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	
+	// Masonry for Homepage widgets
+		var $container = jQuery('#home-widgets');
+			$container.imagesLoaded(function(){
+			$container.masonry({
+				itemSelector	: '.widget',
+				//gutterWidth		: 30,
+				gutter			: 30,
+				columnWidth		: '.sizing'
+			});
+		});
+
+		
+	// Masonry for Bottom widgets
+		var $bottom = jQuery('#bottom-sidebar');
+			$bottom.imagesLoaded(function(){
+			$bottom.masonry({
+				itemSelector	: '.widget',
+				//gutterWidth		: 30,
+				gutter			: 30,
+				columnWidth		: '.sizing'
+			});
+		});
+		
+		
+		
+		
+	// Remove preload class for animation
+		jQuery(window).load(function() {
+			jQuery("body").removeClass("preload");
+		});
+			
+	</script>
+
+
+
+</body>
+</html>
+
+<!-- 72 queries. 0.243 seconds. -->

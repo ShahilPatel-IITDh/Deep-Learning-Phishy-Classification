@@ -1,0 +1,741 @@
+
+<!DOCTYPE HTML>
+<head>
+    
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WSHCJ9W');</script>
+<!-- End Google Tag Manager -->
+    
+    
+<title>Error 404 - Page not found!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="description" content="">
+<meta name="Keywords" content=""/>
+<meta name="author" content="Cyberfuel.com">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!--  -->
+<link type="text/css" rel="stylesheet" href="css/jquery_themes/redmond/jquery-ui-1.8.17.custom.css"/>
+<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+<!-- <script type="text/javascript"   src="js/jquery_ui/jquery-ui-1.8.17.custom.min.js"></script>
+<!--[if lt IE 7]>
+
+<link type="text/css" rel="stylesheet" href="css/ie6blocker/ie6blocker.css"/><![endif]-->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!--<link href="css/jquery-ui.css" rel="stylesheet">-->
+<!--normalize-->
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<!--CSS Custom -->
+<link href="css/modern-business.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="glyphicons_pro/css/glyphicons.css" rel="stylesheet">
+<!-- liquid-slider-content-->
+<link rel="stylesheet" href="js/liquidslider/css/liquid-slider.css">
+<link rel="stylesheet" href="js/liquidslider/css/animate.css">
+<!--fonts-->
+<link href="css/font-bistream-vera.css" rel="stylesheet">
+<link href="css/font-bonveno.css" rel="stylesheet">
+<link href="css/font-asap.css" rel="stylesheet">
+<!-- Begin glyphicons CSS file
+<link href="css/glyphicons.css" rel="stylesheet">-->
+<!-- End glyphicons CSS file -->
+<!-- Range Slider-->
+<link rel="stylesheet" href="css/price-slider/ion.rangeSlider.css"/>
+<link rel="stylesheet" href="css/price-slider/ion.rangeSlider.skinFlat.css"/>
+<script src="js//price-slider/ion.rangeSlider/ion.rangeSlider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet"/>
+<script>
+	if(typeof jQuery=='undefined'){
+		document.write(unescape('%3Cscript src="scripts/jquery-min.js" %3E%3C/script%3E'));
+	}
+</script>
+
+<script src="js/jquery.maskedinput.min.js"></script>
+<!--************LIBRERÍAS SWITCH****************-->
+<link href="js/switch-boostrap3/bootstrap-switch.css" rel="stylesheet">
+<script src="js/switch-boostrap3/bootstrap-switch.js"></script>
+<!--************LIBRERÍAS SWITCH****************-->
+ 
+
+<script>
+	$("[name='privacy']").bootstrapSwitch(); 
+	//---SWITCH---
+	$('.btn-toggle').click(function(){ 
+		$(this).find('.btn').toggleClass('active');
+		if($(this).find('.btn-primary').size()>0){
+			$(this).find('.btn').toggleClass('btn-primary');
+		}
+		if($(this).find('.btn-danger').size()>0){
+			$(this).find('.btn').toggleClass('btn-danger');
+		}
+		if($(this).find('.btn-success').size()>0){
+			$(this).find('.btn').toggleClass('btn-success');
+		}
+		if($(this).find('.btn-info').size()>0){
+			$(this).find('.btn').toggleClass('btn-info');
+		}
+		$(this).find('.btn').toggleClass('btn-default');
+	});
+</script>
+
+<!-- <link rel='stylesheet' type='text/css' href="js/jAlert-master/src/jAlert-v2.css"> -->
+<link rel='stylesheet' type='text/css' href="js/jAlert-master/src/jAlert-v3.css">
+<script src="js/redirect_cart.js"></script>
+<link rel='stylesheet' type='text/css' href="css/spinner.css">
+
+<link href='js/layers/style/ms-layers-style.css' rel='stylesheet' type='text/css'>
+<!-- google font Lato -->
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<!-- jQuery -->
+<!-- VALIDATE DOMAIN SCRIPT-->
+<script src="js/validate_domain.js"></script>
+<!-- Master Slider Skin -->
+<script type="text/javascript" language="javascript">
+	$(document).ready(function(e){
+		$('.example').tooltip();
+		$(window).scroll(function(){
+			if($(this).scrollTop()>400){
+				$('.scrollup').fadeIn();
+			}else{
+				$('.scrollup').fadeOut();
+			}
+		});
+		$('.scrollup').click(function(){
+			$("html, body").animate({scrollTop: 0}, 600);
+			return false;
+		});
+		$('a.ancla').click(function(e){
+			e.preventDefault();
+			enlace=$(this).attr('href');
+			$('html, body').animate({
+				scrollTop: $(enlace).offset().top
+			}, 1000);
+		});
+		$('.slider1').bxSlider({
+			slideWidth: 200,
+			minSlides: 2,
+			maxSlides: 5,
+			slideMargin: 10,
+			pager: false
+		});
+		$('#hosting-services').carousel({
+			interval: 1000
+		});
+		$("[rel='tooltip']").tooltip();
+		$('.thumbnail').hover(
+			function(){
+				$(this).find('.caption').slideDown(250); //.fadeIn(250)
+			},
+			function(){
+				$(this).find('.caption').slideUp(250); //.fadeOut(205)
+			}
+		);
+		//------------Click-menu------------------
+			(function($){
+				$(document).ready(function(){
+					$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event){
+						event.preventDefault();
+						event.stopPropagation();
+						$(this).parent().siblings().removeClass('open');
+						$(this).parent().toggleClass('open');
+					});
+				});
+			})(jQuery);
+		});
+	</script>
+
+		<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+		<script src="js/logo-cyber.js"></script>
+		<script>
+			var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+			function init(){
+				canvas=document.getElementById("canvas");
+				anim_container=document.getElementById("animation_container");
+				dom_overlay_container=document.getElementById("dom_overlay_container");
+				handleComplete();
+			}
+			function handleComplete(){
+				//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+				exportRoot=new lib.logocyber_animado2017html5();
+				stage=new createjs.Stage(canvas);
+				stage.addChild(exportRoot);
+				//Registers the "tick" event listener.
+				fnStartAnimation=function(){
+					createjs.Ticker.setFPS(lib.properties.fps);
+					createjs.Ticker.addEventListener("tick", stage);
+				}
+				//Code to support hidpi screens and responsive scaling.
+				function makeResponsive(isResp, respDim, isScale, scaleType){
+					var lastW, lastH, lastS=1;
+					window.addEventListener('resize', resizeCanvas);
+					resizeCanvas();
+					function resizeCanvas(){
+						var w=lib.properties.width, h=lib.properties.height;
+						var iw=window.innerWidth, ih=window.innerHeight;
+						var pRatio=window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;
+						if(isResp){
+							if((respDim=='width' && lastW==iw) || (respDim=='height' && lastH==ih)){
+								sRatio=lastS;
+							}
+							else if(!isScale){
+								if(iw<w || ih<h)
+									sRatio=Math.min(xRatio, yRatio);
+							}
+							else if(scaleType==1){
+								sRatio=Math.min(xRatio, yRatio);
+							}
+							else if(scaleType==2){
+								sRatio=Math.max(xRatio, yRatio);
+							}
+						}
+						canvas.width=w*pRatio*sRatio;
+						canvas.height=h*pRatio*sRatio;
+						canvas.style.width=dom_overlay_container.style.width=anim_container.style.width=w*sRatio+'px';
+						canvas.style.height=anim_container.style.height=dom_overlay_container.style.height=h*sRatio+'px';
+						stage.scaleX=pRatio*sRatio;
+						stage.scaleY=pRatio*sRatio;
+						lastW=iw;
+						lastH=ih;
+						lastS=sRatio;
+					}
+				}
+
+				makeResponsive(false, 'both', false, 1);
+				fnStartAnimation();
+			}
+		</script>
+    
+    
+
+
+    
+	
+	<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '549768032302875');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=549768032302875&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+	</head>
+
+	<body onload="init();">
+         
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-WSHCJ9W
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        
+	<link rel="stylesheet" type="text/css" media="screen, projection" href="jcart/css/jcart.css" />
+<script type="text/javascript" src="jcart/js/jcart.js"></script>
+<div id="jcart">	
+	<form method='post' action='checkout.php'>
+		<fieldset>
+			<input type='hidden' name='jcartToken' value='12d9b17a3dcfab83723546ecac71357c' />
+			<table border='1'>
+				<thead>
+					<tr>
+						<th colspan='3'>
+							<strong id='jcart-title'>CyberFuel Cart</strong> (0)
+						</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<th colspan='3'>
+							<input type='submit'  id='jcart-checkout' name='jcartCheckout' class='jcart-button' value='checkout' />
+							<span id='jcart-subtotal'>Subtotal: <strong>$0.00</strong></span>
+						</th>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr><td id='jcart-empty' colspan='3'>El carrito esta vacio!</td></tr>
+				</tbody>
+			</table>
+
+			<div id='jcart-buttons'>
+				<input type='submit'  name='jcartUpdateCart' value='update' class='jcart-button' />
+				<input type='submit'  name='jcartEmpty' value='empty' class='jcart-button' />
+			</div>
+		</fieldset>
+	</form>
+
+	<div id='jcart-tooltip'></div>
+</div>
+<script>
+	$('#jcart').hide();
+</script>
+<div class="container-top-first bg-blue-texture navbar-fixed-top-edited bg-white box-shadow-block" style="z-index:999940 !important">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  white">
+          <div class="row">	
+              <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
+            <li class="dropdown" style="display: inline; width: 50%;">
+                  <a href="#" class="dropdown-toggle " data-toggle="dropdown"><img src="../../images/icons/earth.png"> Idioma <b class="caret"></b></a>
+                  <ul class="dropdown-menu dropdown-menu_short" role="menu">
+                    <li><a href="index.php?language=en"><img src="images//icons/usa-flag.jpg" width="30"/> English</a> </li>
+                    <li class="divider"></li>
+                    <li><a href="index.php?language=es"><img src="images//icons/spain-icon.jpg" width="30"/> Espa&ntilde;ol</a> <span class="glyphicons glyphicons-ok-2 black ckeck"></span></li>
+                  </ul>
+                </li>
+               <li class="list-none " style="display: inline; width: 50%; padding-left: 15px"><a href="https://www.facebook.com/cyberfuel" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li class="list-none " style="display: inline; width: 50%; padding-left: 15px"><a href="https://www.instagram.com/cyberfuel_sa/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                   <li class="list-none " style="display: inline; padding-left: 15px">|<a style="text-decoration: none"  href="https://blog.cyberfuel.com/"> <strong> &nbsp;Blog</strong></a></li>
+            </div>
+             
+            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+            <ul class="btn-group  list-inline">
+                 
+                        	<li class="dropdown list-none">
+                  <a href="#" class="dropdown-toggle " data-toggle="dropdown"><span class="glyphicons glyphicons-headset"></span> Servicio al Cliente 24/7 desde: <b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="tel:+50622049494"><span class="glyphicons glyphicons-earphone"></span> Costa Rica: +506 2204-9494</a></li>
+                    <li class="divider"></li>
+                    <li><a href="tel:3059097248"><span class="glyphicons glyphicons-earphone"></span> US o Canada: (305) 909-7248</a></li>
+                    <li class="divider"></li>                                     
+                    <li><a href="/ticket/open.php?&lang=es_es" target="_blank"><span class="glyphicons glyphicons-edit"></span> Genere un Ticket</a></li>
+                    <li class="divider"></li>
+                    <li><a href="mailto:servicioalcliente@cyberfuel.com" target="_blank"><span class="glyphicons glyphicons-envelope"></span> V&iacute;a E-mail</a></li>
+					<li class="divider"></li>
+                    <li><a href="/contactenos" target="_blank"><span class="glyphicons glyphicons-edit"></span> Contáctenos</a></li>
+                  </ul>
+                </li>             
+                <li class="list-none">
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon-class"><a href="index.php?action=logon_start">Ingresar  </a></span> / <span class="glyphicon-class"><a href="index.php?action=nuevo_cliente">Registrarse </a> | </span>					<div class="btn-group">
+                     <a href="#" class="dropdown-toggle " data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        <span style="display:none" class="glyphicon-class" id="external-subtotal"></span>
+
+                        <span class="glyphicon-class" id="external-item-count"></span>
+                     </a>
+                                      </div>                    
+            	</li>            
+              </ul>
+              </div> 
+              </div>
+          </div>
+        </div>
+   </div>
+</div>
+
+<nav class="navbar navbar-inverse header-principal marginBottom-0 navbar-static-top" role="navigation">
+          <div class="container margin-top1">
+           <!--menu-responsive-->
+            <div class="navbar-header top-menu-devices" style="z-index:100000000">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+                <a class="navbar-brand img-responsive" href="index.php">	<!--<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:178px; height:60px">
+		<canvas id="canvas" width="178" height="60" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:178px; height:60px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>--> <img  style="padding-top: 10px" width="250" src="../../images/Logo-25.png" alt="Cyberfuel"> 
+                <span class="slogan">&iexcl;Su sitio web en manos de verdaderos expertos!</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->            
+            <div class="collapse navbar-collapse navbar-ex1-collapse spave-top12  bg-devices-menu menu-devices-styles">
+                <ul id="main-menu-items" class="nav navbar-nav navbar-right dashed-bottom font-responsive">
+                	<li>
+                        <a href="index.php" class="dropdown-toggle">Inicio</a>                        
+                    </li> 
+                    <li class="dropdown">
+                    	<a href="dominios-de-internet" class="dropdown-toggle" data-toggle="dropdown">Dominios de Internet<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        	<li><a href="dominios-de-internet-compra-registro">Compra/Registro</a></li>
+                            <li><a href="dominios-de-internet-transferencia">Transferencia</a></li>                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="hospedaje-web" class="dropdown-toggle" data-toggle="dropdown">Hospedaje WEB<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        	<li><a href="hospedaje-web">Planes de Hospedaje WEB</a></li>
+                            <!--<li><a href="hospedaje-web-wordpress">Planes WordPress</a></li>-->
+                            <li><a href="comercio-electronico">Comercio Electr&oacute;nico</a></li>
+                            <li><a href="filtro-de-correo-no-deseado">Filtro de Correo no deseado</a></li>
+                            <!--<li><a href="servicio-de-streaming-media">Streaming Media</a></li>-->
+                            <li><a href="certificado-de-seguridad-ssl">Certificado de Seguridad SSL</a></li>
+                            <li><a href="chat-en-vivo-live-help-messenger">Chat en Vivo - Live Help Messenger</a></li>
+                            <!--<li class="divider"></li>-->                                
+                            <!-- <li><a href="hospedaje-web-aplicaciones-web">Aplicaciones WEB</a></li> -->
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="servidores" class="dropdown-toggle" data-toggle="dropdown">Servidores en la Nube<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        	                            <li><a href="servidores-servidor-dinamico-en-la-nube">Servidor Din&aacute;mico en la nube</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="http://www.serverslodge.com/es/centro-de-datos-costa-rica.html" class="dropdown-toggle" target="_blank">Centro de Datos</a>
+                        <ul class="dropdown-menu">
+                        	<li><a href="centro-de-datos-infraestructura-rating-3">Infraestructura</a></li>
+                            <li><a href="centro-de-datos-colocation-por-unidad">Colocation por unidad</a></li>                            
+                            <li><a href="centro-de-datos-colocation-por-gabinete-o-jaula">Colocation por Gabinete o Jaula</a></li>
+                        </ul>
+                    </li>
+                    
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos<b class="caret"></b></a>                    
+                        <ul class="dropdown-menu">
+                        	<!--<li><a href="http://www.activalo.com" target="_blank">Activalo.com</a></li>-->
+                            <!--<li><a href="http://www.daycarecontrol.com" target="_blank">DayCareControl.com</a></li>-->                            
+                            <li><a href="http://www.factorajeelectronico.com" target="_blank">FactorajeElectr&oacute;nico.com</a></li>
+                            <li><a href="http://www.facturaprofesional.com" target="_blank">FacturaProfesional.com</a></li>
+                            <li><a href="http://www.comprobanteselectronicoscr.com"  target="_blank">ComprobantesElectronicosCR.com</a></li>
+                            <li><a href="http://www.serverslodge.com" target="_blank">Serverslodge.com</a></li>                            
+                            <li><a href="http://www.smsempresarial.com" target="_blank">SMSEmpresarial.com</a></li>
+                        </ul>     
+                    </li>
+                    <!--
+                     <li>
+                        <a href="promociones" class="dropdown-toggle">Promociones</a>                        
+                    </li>                    
+                    -->
+                </ul>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 float-right-responsive widest-responsive margin-top10">
+                	<div class="col-md-4">
+                    <form id="domain-search" name="domain-search" action="index.php?action=domain_search" method="post" onsubmit="return validaDomain()">
+                    	  <input id="in-domain" type="text" name="domain" class="form-control text-center" placeholder="Encuentra t&uacute; Dominio" required>
+                    </div>
+                    <div class="col-md-4">
+                    	<div class="extention-domain">        
+                            <select class="form-control" name="extension">
+                                     <option value="com">.com</option>
+                                     <option value="net">.net</option>
+                                     <option value="org">.org</option>
+                                     <option value="biz">.biz</option>
+                                     <option value="info">.info</option>
+                                     <option value="name">.name</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 margin-top-responsive">
+                    	<input type="submit" class="btn btn-sm btn-success center-block buttons-lm"value="Buscar dominio">
+                    </div>
+                     </form> 
+                </div>    
+            </div>
+
+           <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+    <!--
+    ||
+    ||  MODAL POP UP
+    ||
+    -->       
+        <div style="display:none;" id="test-modal" class="white-popup-block mfp-hide">
+            <h1>Modal dialog</h1>
+            <p>You won't be able to dismiss this by usual means (escape or
+                click button), but you can close it programatically based on
+                user choices or actions.</p>
+            <p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+        </div>	<!--main-slider-->
+	
+        
+       
+
+	<!--main-content-->
+	<div id="content">
+		<div class="section-colored text-center bg-blue-texture">
+  <div class="container center-970">
+    <div class="row "> 
+      <!--<div id="domain-search"></div>   ancla-->
+      <div class="col-lg-12">
+        <h2 class="white">Error 404 - Page not found!</h2>
+        The page you are trying to reach does not exist, or has been moved.<br>
+        Please use the menus or the search box to find what you are looking for.
+       </div>
+    </div>
+  </div>
+</div>	</div>
+	<!-- /.section-colored -->
+        
+
+	<a class="scrollup" data-utf="E219" data-prefix="glyphicons" data-type="" data-name="circle_arrow_top" href=""></a>
+	<div id="footer" class="section gray-footer">
+    <div class="container">
+        <hr>
+<footer>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <h5 class="blue-cyber"><strong>Acerca de Nosotros</strong></h5>
+          <ul>
+            <li><a href="acerca-de-cyberfuel">Acerca de Cyberfuel</a></li>
+            <li><a href="planes-para-revendedores">Planes para Revendedores</a></li>
+            <li><a href="planes-para-referidos">Planes de Referidos</a></li>
+            <li><a href="terminos-y-condiciones">T&eacute;rminos y Condiciones</a></li>
+            <li><a href="politica-de-privacidad">Pol&iacute;tica de privacidad</a></li>
+            <li><a href="politica-anti-spam">Pol&iacute;tica Anti-SPAM</a></li>
+		</ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <h5 class="blue-cyber"><strong>Centro de Asistencia</strong></h5>
+          <ul>
+          	<li><a href="contactenos">Cont&aacute;ctenos</a></li>
+            <li><a href="#" class="LiveHelpButton default">Chat en vivo</a></li>
+          	<li><a href="http://www.cyberfuel.com/ticket/open.php?&lang=es_es" target="_blank">Crear un Tiquete</a></li>
+            <li><a href="http://www.cyberfuel.com/ticket/view.php?&lang=es_es" target="_blank">Historial de un tiquete</a></li>
+            <li><a href="herramientas">Herramientas</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h5 class="blue-cyber"><strong>Recursos</strong></h5>
+          <ul>
+          	<li><a href="/cliente/" target="_blank">Mi Cuenta</a></li>
+            <li><a href="?action=nuevo_cliente">Registro de nuevo cliente</a></li>
+            <li><a href="index.php?action=to_checkout&step=4">Carrito de Compras</a></li>
+            <li><a href="mapa-del-sitio">Mapa del Sitio</a></li>
+          </ul>
+          <h5 class="blue-cyber"><strong>Aceptamos</strong></h5>
+          <img src="images/payment-methods/visa.png" alt="Visa" title="Visa">&nbsp;<img src="images/payment-methods/discover.png" alt="Discover" title="Discover">&nbsp;<img src="images/payment-methods/american.png" alt="American" title="American">&nbsp;<img src="images/payment-methods/jcb.png" alt="JCB" title="JCB">&nbsp;<img src="images/payment-methods/mastercard.png" alt="MasterCard" title="MasterCard">&nbsp;<img src="images/payment-methods/dinners.png" alt="Dinners" title="Dinners">&nbsp;<img src="images/payment-methods/paypal.png" alt="PayPal" title="PayPal">&nbsp;<img src="images/payment-methods/western-union.png" alt="Western Union" title="Western Union">
+        </div>
+      </div>
+</footer>
+    </div>
+    <!-- /.container -->
+    <div class="section bg-white">
+     <div class="container bg-white margin-top1">
+            <div class="row">
+             <div class="col-lg-12">
+                    <div class="slider1">
+                      <div class="slide "><img width="150px" height="100px" src="images/partners/certificado_l.png"></div>
+						<div class="slide"><img src="images/partners/logo-certificado.png"></div>
+						<div class="slide"><img style="width:100px;" src="images/partners/rate3.webp"></div>
+                        <div class="slide"><img style="width:100px;"  src="images/partners/dcos.webp"></div>
+						<div class="slide"><img src="images/partners/gs1.png"></div>
+                        <div class="slide"><img src="images/partners/Microsoft-Partner.png"></div>
+                        <div class="slide"><img src="images/partners/positivessl-icon.png"></div>
+                        <div class="slide"><img src="images/partners/comodo-secure-icon.png"></div>
+                        <div class="slide"><img src="images/partners/Odin_Partner-level_bronze2.png"></div>
+                        <div class="slide"><img src="images/partners/Vmware-Partner.png"></div>
+                        <div class="slide"><img src="images/partners/ipv6-ready.png"></div>
+                        
+                        <div class="slide"><img style="width:100px;" src="images/partners/Rated.webp"></div>
+                        <div class="slide"><img style="width:100px;" src="images/partners/PYME.webp"></div>
+                        <div class="slide"><img style="width:100px;" src="images/partners/azul.webp"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	<div class="container">
+		<div class="row">
+    <div class="col-xs-12 col-lg-6 txt-center label"><h5><img src="images/partners/ipv6-ready-small.png"><br>Contamos con IP versión 6<br></h5>
+	</div>
+			<div class="col-xs-12 col-lg-6 txt-center label"><h5><img style="width:50px; visibility: hidden;" src="images/partners/Rated.webp">Sus datos se encuentran seguros, almacenados en un Centro de Datos <br> con certificación internacional <a href="http://www.tia-942.org/datacenter/all/CRI/1/1/#tabs-1" target="_blank">Rate 3 / TIA-942</a><br></h5>
+	</div>
+
+			<div class="col-xs-12 text-center label"><h5>Cyberfuel.com - Todos los derechos reservados &copy; 2023</h5></div>
+			</div>
+	</div>
+</div>
+
+
+<!-- START chatstack.com Live Chat HTML Code -->
+<!--<script type="text/javascript">
+    var Chatstack = { server: 'app.cyberfuel.com' };
+    (function(d, undefined) {
+        // JavaScript
+        Chatstack.e = []; Chatstack.ready = function (c) { Chatstack.e.push(c); }
+        var b = d.createElement('script'); b.type = 'text/javascript'; b.async = true;
+        b.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + Chatstack.server + '/livehelp/scripts/js.min.js';
+        var s = d.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(b, s);
+    })(document);
+</script>-->
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://app.atencionprofesional.com/webchat/webchat.js" type="text/javascript"></script>
+                <script>
+            init_chat({
+                    "channel" : "7a8b7e3c-cec2-41a2-ac45-806759df9c9e",
+                    "label_name": "CHAT ATENCIÓN CYBERFUEL ",
+                    "welcome_message": "Hola, como podemos ayudarle?" ,
+                    "placeholder": "Enviar un mensaje",
+                    "colors": ['#F095FF','#F64848'],
+            });
+</script>
+<!-- END chatstack.com Live Chat HTML Code -->
+	<!-- JavaScript -->
+	<!--extra-script-->
+	<script src="js/jquery-1.10.2.js"></script>
+	<!-- SCRIPT PARA EL TOOLTIP-->
+	<script src='js/jquery-2.0.3.min.js'></script>
+	<script src='js/jquery.mobile.custom.min.js'></script>
+	<!-- END SCRIPT PARA EL TOOLTIP-->
+	<!-- DOCS PRA EL ESPERANDO DENTRO DEL SISTEMA-->
+	<link rel="stylesheet" href="css/jquery-ui-1.10.3.full.min.css"/>
+	<script src="js/jquery-ui-1.10.3.full.min.js"></script>
+	<!--  FORMA DE HACER EL LLAMADO
+	$(this).esperando();
+ -->
+
+<script type="text/javascript">
+jQuery(function($){
+    $("#progressbar").progressbar({
+        value: 100,
+        create: function( event, ui ) {
+            $(this).addClass('progress progress-striped active').children(0).addClass('progress-bar progress-bar-success');
+        }
+    });
+    
+    
+});
+
+jQuery.fn.esperando = function() {
+    var dialog = $( "#dialog-esperando" ).dialog({
+        modal: true,
+        title: '\xA0\xA0\xA0Procesando...',
+        closeOnEscape: false,
+        closeText: "hide"
+    });
+    $('.ui-dialog-titlebar-close').css('display','none');
+}
+jQuery.fn.cerrar = function(){
+    $("#dialog-esperando").dialog("close");
+    $("#dialog-esperando").dialog("destroy"); 
+}
+</script>
+<div id="dialog-esperando" style="display: none;">
+    <br/>
+    <p style="margin-left:14px; margin-right:10px; ">Espere un momento, mientras procesamos su petici&oacute;n</p>
+    <br/>
+    <div id="progressbar"></div>
+</div><!-- #dialog-esperando -->
+
+<style>
+.ui-progressbar {
+  background-color: #f5f5f5;
+  height: 22px;
+}
+.ui-progressbar .ui-progressbar-value {
+  margin: 0;
+}
+.ui-progressbar .ui-progressbar-value[class="progress-bar"] {
+  background-color: black;
+}
+ui-dialog{
+	width:600px !important;
+}
+/*ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable*/
+</style>	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/modern-business.js"></script>
+	<!-- Scripts liquidslide -->
+	<script src="js/liquidslider/examples/assets/prism.js"></script>
+	<script src="js/liquidslider/js/jquery.easing.1.3.js"></script>
+	<script src="js/liquidslider/js/jquery.touchSwipe.min.js"></script>
+	<script src="js/liquidslider/js/jquery.liquid-slider.min.js"></script>
+	</body><!--   <script type="text/javascript" src="js/jAlert-master/src/jAlert-v2.js"></script>-->
+	<script type="text/javascript" src="js/jAlert-master/src/jAlert-v3.js"></script>
+	<script type="text/javascript" src="js/jAlert-master/src/jAlert-functions.js"></script></html><!--<script src="js/bootstrap.min.js"></script>
+	-->
+	<script src="js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/wizard.js"></script><!-- CODIGO PARA EL CAPTCHA-->
+	<link rel="stylesheet" href="js/captcha/jquery.realperson.css">
+	<script type="text/javascript" src="js/captcha/jquery.realperson.js"></script>
+<script type="text/javascript">
+	// Formulario cotizacion
+	function getParameterByName(name){
+		name=name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex=new RegExp("[\\?&]"+name+"=([^&#]*)"),
+			results=regex.exec(location.search);
+		return results===null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+	var prodId=getParameterByName('formulario');
+	if(prodId=="servidor_dedicado"){
+		$("#server_dedicado").css("display", "block");
+	}else if(prodId=="servidor_unidad"){
+		$("#col_unidad").css("display", "block");
+	}
+	else if(prodId=="servidor_jaula"){
+		$("#col_gabinete").css("display", "block");
+	}
+	$(function(){
+		$('#defaultReal').realperson();
+		$.fn.cambia_espacio=function(id){
+			switch(id){
+				case 'Jaula':
+					$('#pregunta_gabinete').show();
+					break;
+				default:
+					$('#pregunta_gabinete').hide();
+					break;
+			}
+		}
+	});
+</script>
+<script type="text/javascript">
+	$('#main-slider').liquidSlider();
+	$('.question').popover();
+	// If you need to access the internal property or methods, use this:
+	// var api = $.data( $('#slider-id')[0], 'liquidSlider');
+</script>
+<script>
+	</script>
+<script>
+	var error_cedula_taked='La C&eacute;dula ya existe en nuestro sistema';
+	var error_correo_taked='El correo ya existe en nuestro sistema.';
+	var select_juridico_title='Nombre de la Empresa';
+	var select_fisico_title='Nombre';
+	var text_firstname_reg='Debe introducir su nombre.';
+	var text_lastname_reg='Debe introducir su apellido.';
+	var text_email_reg='Debe introducir un email válido.';
+	var text_id_number_reg='Debe introducir su cedula.';
+	var text_tel_2_reg='El número de teléfono introducido no es correcto.';
+	var text_tel_1_reg='El número de teléfono introducido no es correcto.';
+	var text_state='La provincia es necesaria.';
+	var text_address_1='Ingrese su dirección.';
+	var text_firstname_cobro='Debe introducir su nombre.';
+	var text_lastname_cobro='Debe introducir su apellido.';
+	var text_email_cobro='Debe introducir un email válido.';
+	var text_tel_1_cobro='El número de teléfono introducido no es correcto.';
+	var text_firstname_admin='Debe introducir su nombre.';
+	var text_lastname_admin='Debe introducir su apellido.';
+	var text_email_admin='Debe introducir un email válido.';
+	var text_tel_1_admin='El número de teléfono introducido no es correcto.';
+	var text_select_type_cliente='Por favor, selecciona un tipo de cliente.';
+	var correoInvalido='Por favor,Revisa tu correo personal, no es una dirección válida.'
+</script>
+<!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5513004-1', 'auto');
+  ga('send', 'pageview');
+
+</script>-->
