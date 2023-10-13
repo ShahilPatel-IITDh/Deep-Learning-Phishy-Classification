@@ -19,8 +19,10 @@ def detect_input_box(screenshot_file_path):
     # Use Tesseract OCR to extract text from the screenshot
     extracted_text = pytesseract.image_to_string(thresholded_screenshot)
 
-    # Check if the extracted text contains keywords indicating input boxes
-    keywords = ["username", "Username", "USERNAME","password", "Password" ,"email", "Email", "e-mail", "E-mail","input", "Input", "textbox", "form", "signin", "Signin", "sign-in", "Sign-in", "login", "Login", "log-in", "Log-in"]
+    # Check if the extracted text contains keywords indicating input boxes (languages included: English, German, Spanish, Arabic, Hindi, French, Portuguese, Italian, Finnish, Swedish, Persian, Indonesian)
+    keywords = ["username", "Benutzername", "Nombre de usuario", "اسم المستخدم", "उपयोगकर्ता नाम", "Nom d'utilisateur", "Nome de usuário", "Nome utente", 
+                "Käyttäjänimi", "Användarnamn", "نام کاربری", "Nama pengguna", "password", "Passwort" ,"Contraseña", " كلمة المرور" ,"पासवर्ड", "Mot de passe", "Senha", "Salasana" , "Lösenord" "رمز عبور", "Kata sandi", "email", "e-mail", "Correo electrónico", "البريد الإلكتروني", "ईमेल", "Courriel", "Sähköposti", "E-post", "ایمیل", "Surel", "input", "Eingabe", "Entrada", "إدخال", "इनपुट", "Entrée", "Inserimento", "Inmatning", "ورودی", "Masukan", "textbox", "Textfeld", "Cuadro de texto", "مربع نص", "टेक्स्टबॉक्स", "Zone de texte", "Caixa de texto", "Casella di testo", "Tekstilaatikko", "Textfältm", "جعبه متن", "Kotak teks", "form", "Formular", "Formulario", "نموذج", "फॉर्म", "Formulaire", "Formulário", "Formulare", "Lomake", "Formulär", "فرم", "Formulir", "signin", "sign-in", "Anmelden", "Iniciar sesión", "تسجيل الدخول", "साइन इन", "Se connecter", "Entrar", "Accedi", "Kirjaudu sisään", "Logga in", "ورود", "Masuk", "login", "log-in", "Einloggen", "लॉग इन", "Connexion", "Accesso", "Kirjautuminen", "Inloggning"]
+
 
     for keyword in keywords:
         if keyword in extracted_text.lower():
