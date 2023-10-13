@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="3D human anatomy, 3D anatomy software, 3D anatomy and physiology, virtual body, human anatomy, virtual human, virtual anatomy, human API, virtual human body, 3d body map, 3d heart, human visualization platform, human body model, anatomy and physiology, BioDigital">
+		<meta name="author" content="BioDigital">
+		<meta name="copyright" content="BioDigital 2021">
+		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,500|Roboto:500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+    <link rel="stylesheet" href="/styles/tailwind.css">
+    <link rel="stylesheet" href="/styles/vendors/swiper-bundle.min.css" />
+
+		<!-- Plausible -->
+		<script defer data-domain="biodigital.com" src="https://plausible.io/js/plausible.js"></script>
+
+		<!-- Pagemap - For showing image in Google results -->
+		<!--
+		<PageMap>
+			<DataObject type="thumbnail">
+				<Attribute name="src" value="https://d8m06gjwz59rp.cloudfront.net/assets/_1200x630_crop_center-center_82_none/BioDigital-Human-Body-Platform.jpg?mtime=1663346774"/>
+				<Attribute name="width" value="1200"/>
+				<Attribute name="height" value="630"/>
+			</DataObject>
+		</PageMap>
+		-->
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PSMJ279');</script>
+		<!-- End Google Tag Manager -->
+	<title>BioDigital | Interactive 3D Anatomy - Disease Platform</title><meta name="generator" content="SEOmatic">
+<meta name="keywords" content="Human anatomy,3d anatomy,human body,medical animation,medical device training,remote medical training,3d disease,body map,ar anatomy,vr anatomy">
+<meta name="description" content="The BioDigital Human is the first cloud based virtual model of the human body - 3D human anatomy, disease and treatment, all in interactive 3D.">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="robots" content="all">
+<meta content="BioDigitalHuman" property="fb:profile_id">
+<meta content="en_US" property="og:locale">
+<meta content="BioDigital" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="Interactive 3D Anatomy - Disease Platform" property="og:title">
+<meta content="The BioDigital Human is the first cloud based virtual model of the human body - 3D human anatomy, disease and treatment, all in interactive 3D." property="og:description">
+<meta content="https://d8m06gjwz59rp.cloudfront.net/assets/_1200x630_crop_center-center_82_none/BioDigital-Human-Body-Platform.jpg?mtime=1663346774" property="og:image">
+<meta content="1200" property="og:image:width">
+<meta content="630" property="og:image:height">
+<meta content="The BioDigital Human is cloud-based &amp; device-agnostic and allows you to explore human anatomy, disease, conditions, &amp; more on Apple, Android, and Oculus." property="og:image:alt">
+<meta content="https://www.instagram.com/biodigital.human/" property="og:see_also">
+<meta content="https://www.youtube.com/c/BioDigital" property="og:see_also">
+<meta content="https://www.linkedin.com/company/biodigital" property="og:see_also">
+<meta content="https://en.wikipedia.org/wiki/BioDigital" property="og:see_also">
+<meta content="https://www.facebook.com/BioDigitalHuman/" property="og:see_also">
+<meta content="https://twitter.com/biodigitalhuman" property="og:see_also">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@biodigitalhuman">
+<meta name="twitter:creator" content="@biodigitalhuman">
+<meta name="twitter:title" content="Interactive 3D Anatomy - Disease Platform">
+<meta name="twitter:description" content="The BioDigital Human is the first cloud based virtual model of the human body - 3D human anatomy, disease and treatment, all in interactive 3D.">
+<meta name="twitter:image" content="https://d8m06gjwz59rp.cloudfront.net/assets/_800x418_crop_center-center_82_none/BioDigital-Human-Body-Platform.jpg?mtime=1663346774">
+<meta name="twitter:image:width" content="558">
+<meta name="twitter:image:height" content="418">
+<meta name="twitter:image:alt" content="The BioDigital Human is cloud-based &amp; device-agnostic and allows you to explore human anatomy, disease, conditions, &amp; more on Apple, Android, and Oculus.">
+<link href="http://10.100.0.185:33115" rel="home"></head>
+
+	<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSMJ279" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+		<main class="text-base">
+			<header class="sticky w-full shadow-md top-0 bg-white z-50">
+				<!-- Sticky Header -->
+				<div class="w-full max-w-screen-xl flex justify-between items-center mx-auto px-6 py-3 lg:px-10">
+          			<!-- Logo -->
+					<div class="">
+						<a class="no-underline" href="/">
+							<img src="/images/logo-biodigital.svg" alt="Biodigital">
+						</a>
+					</div>
+ 
+					<div class="flex justify-between items-center">
+						<!--  Navigation -->
+<section class="hidden mx-8 lg:flex lg:items-center relative">
+    <span class="h-full relative menu">
+              <div class="button button-md button-text" data-id="menu-trigger">
+        PRODUCT <img data-id="menu-trigger-arrow" src="/images/icon-angle-down.svg" class="ml-1 inline-block fill-current" style="width: 12px" loading="lazy">
+      </div>
+
+      <div class="absolute top-10 py-2 border border-gray-200 bg-white rounded z-10 shadow-lg w-60" data-id="menu">
+                              <a href="/product/the-biodigital-human" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">The BioDigital Human</a>
+                                        <a href="/product/human-studio" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Human Studio</a>
+                                        <a href="/product/mobile-apps" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Mobile Apps</a>
+                                        <a href="/product/virtual-reality" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Virtual Reality</a>
+                                        <a href="/product/developer-toolkits" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Developer Toolkits</a>
+                                        <a href="/product/3d-visualization-services" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">3D Visualization Services</a>
+                        </div>
+      </span>
+    <span class="h-full relative menu">
+              <div class="button button-md button-text" data-id="menu-trigger">
+        CUSTOMERS <img data-id="menu-trigger-arrow" src="/images/icon-angle-down.svg" class="ml-1 inline-block fill-current" style="width: 12px" loading="lazy">
+      </div>
+
+      <div class="absolute top-10 py-2 border border-gray-200 bg-white rounded z-10 shadow-lg w-60" data-id="menu">
+                              <a href="/customers/consumer-health" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Consumer Health</a>
+                                        <a href="/customers/all#publisher-ed-tech" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Ed Tech &amp; Publisher</a>
+                                        <a href="/customers/all#digital-health" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Digital Health</a>
+                                        <a href="/customers/med-device" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Medical Device</a>
+                                        <a href="/customers/pharma" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Pharma</a>
+                                        <a href="/customers/for-schools" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Schools</a>
+                        </div>
+      </span>
+    <span class="h-full relative menu">
+              <div class="button button-md button-text" data-id="menu-trigger">
+        RESOURCES <img data-id="menu-trigger-arrow" src="/images/icon-angle-down.svg" class="ml-1 inline-block fill-current" style="width: 12px" loading="lazy">
+      </div>
+
+      <div class="absolute top-10 py-2 border border-gray-200 bg-white rounded z-10 shadow-lg w-60" data-id="menu">
+                              <a href="/customers/customer-stories" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Customer Stories</a>
+                                        <a href="https://developer.biodigital.com/" target="_blank" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Developer Portal</a>
+                                        <a href="https://support.biodigital.com/hc/en-us" target="_blank" data-id="menu-link-trigger" class="block text-sm font-medium text-gray-700 no-underline px-6 py-4 hover:bg-gray-100 hover:text-black hover:no-underline">Help Center</a>
+                        </div>
+      </span>
+  
+</section>
+						<!-- Buttons -->
+						<section class="hidden sm:flex">
+							<a class="button button-md button-outline mr-4" href="https://human.biodigital.com" data-id="include-session-params" data-event-category="Header" data-event-action="Clicked Login" data-event-label="">Login</a>
+							<a class="button button-md button-red" href="/contact" data-event-category="Header" data-event-action="Clicked CTA" data-event-label="Contact">Contact</a>
+						</section>
+
+						<!-- Menu Icon -->
+						<div id="menu" class="sm:ml-5 lg:hidden" onclick="menuClick()">
+							<button class="py-4 focus:outline-none">
+								<img src="/images/icon-menu-bars.svg" alt="Menu">
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!--  Navigation Drawer -->
+<nav id="navigation-drawer" class="hidden h-0 py-4">
+  <div>
+        <div class="menu">
+                    <div class="button button-md button-text block text-left focus:outline-none" data-id="menu-trigger">
+          PRODUCT
+          <img src="/images/icon-angle-down.svg" data-id="menu-trigger-arrow" class="ml-1 inline-block fill-current" style="width: 12px" loading="lazy">
+        </div>
+
+        <div class="hidden" data-id="menu">
+                                    <a href="/product/the-biodigital-human" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">The BioDigital Human</a>
+                                                <a href="/product/human-studio" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Human Studio</a>
+                                                <a href="/product/mobile-apps" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Mobile Apps</a>
+                                                <a href="/product/virtual-reality" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Virtual Reality</a>
+                                                <a href="/product/developer-toolkits" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Developer Toolkits</a>
+                                                <a href="/product/3d-visualization-services" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">3D Visualization Services</a>
+                              </div>
+          </div>
+        <div class="menu">
+                    <div class="button button-md button-text block text-left focus:outline-none" data-id="menu-trigger">
+          CUSTOMERS
+          <img src="/images/icon-angle-down.svg" data-id="menu-trigger-arrow" class="ml-1 inline-block fill-current" style="width: 12px" loading="lazy">
+        </div>
+
+        <div class="hidden" data-id="menu">
+                                    <a href="/customers/consumer-health" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Consumer Health</a>
+                                                <a href="/customers/all#publisher-ed-tech" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Ed Tech &amp; Publisher</a>
+                                                <a href="/customers/all#digital-health" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Digital Health</a>
+                                                <a href="/customers/med-device" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Medical Device</a>
+                                                <a href="/customers/pharma" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Pharma</a>
+                                                <a href="/customers/for-schools" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Schools</a>
+                              </div>
+          </div>
+        <div class="menu">
+                    <div class="button button-md button-text block text-left focus:outline-none" data-id="menu-trigger">
+          RESOURCES
+          <img src="/images/icon-angle-down.svg" data-id="menu-trigger-arrow" class="ml-1 inline-block fill-current" style="width: 12px" loading="lazy">
+        </div>
+
+        <div class="hidden" data-id="menu">
+                                    <a href="/customers/customer-stories" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Customer Stories</a>
+                                                <a href="https://developer.biodigital.com/" target="_blank" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Developer Portal</a>
+                                                <a href="https://support.biodigital.com/hc/en-us" target="_blank" data-id="menu-link-trigger" class="block text-sm text-gray-700 no-underline p-4 pl-10 hover:bg-gray-100 hover:text-black hover:no-underline">Help Center</a>
+                              </div>
+          </div>
+      </div>
+
+  <!-- Buttons -->
+  <section class="px-6 py-4">
+    <a class="button button-md button-outline block w-1/2 mb-6" href="https://human.biodigital.com" data-id="include-session-params" data-event-category="Header" data-event-action="Clicked Login" data-event-label="">Login</a>
+    <a class="button button-md button-red block w-1/2" href="/contact" data-event-category="Header" data-event-action="Clicked CTA" data-event-label="Contact">Contact</a>
+  </section>
+</nav>
+
+
+			</header>
+
+										
+<section class="bg-no-repeat bg-cover bg-right-top" style="background-color:#142034; background-image:url('https://d8m06gjwz59rp.cloudfront.net/assets/hero-dark-gradient-with-mesh.png');">
+
+    <div class="layout py-12">
+      <div class="lg:flex lg:flex-column">
+        <!-- Text -->
+        <div class="text-center max-w-screen-md mx-auto lg:text-left lg:w-1/2 my-4">
+            <h1 class="text-white text-shadow headline-lg mb-6">Powering the World&#039;s Understanding of the Human Body</h1>
+            <p class="text-white text-shadow body-lg">
+              The BioDigital Human is an interactive 3D software platform for visualizing anatomy, disease, and treatment.
+            </p>
+
+          <!-- Hero Buttons -->
+          <div class="mt-12 flex flex-col items-center lg:items-start xl:flex-row">
+                                                     <a class="button button-lg button-red w-3/4 mb-6 xl:w-auto xl:mr-4" href="/contact" data-event-category="Hero" data-event-action="Clicked CTA" data-event-label="Business - Request Demo">Business - Request Demo</a>
+                           
+                                                                    <a class="button button-lg button-white w-3/4 mb-6 xl:w-auto xl:mr-4" href="https://human.biodigital.com/login/create?ref={{ref}}&amp;utm_source={{utm_source}}&amp;utm_campaign={{utm_campaign}}&amp;utm_medium={{utm_medium}}&amp;utm_content={{utm_content}}&amp;utm_term={{utm_term}}" data-event-category="Hero" data-event-action="Clicked CTA" data-event-label="Individuals - Start Now">Individuals - Start Now</a>
+              
+                                  </div>
+
+        </div>
+
+        <!-- Image -->
+        <div class="lg:w-1/2">
+                    <img class="my-4 max-w-2xl max-h w-full mx-auto px-2" src="https://d8m06gjwz59rp.cloudfront.net/assets/biodigital-multi-device.png" title="" alt="title="" loading="lazy">
+                  </div>
+      </div>
+
+</section>
+										<!-- Image Strip -->
+
+
+
+<div class="bg-gray-50 text-gray-600">
+  <section class="mx-auto w-full max-w-screen-xl p-4">
+        
+    <div class="mx-auto w-full max-w-screen-xl justify-evenly flex flex-wrap items-center">
+              <div class="p-3 w-1/2 lg:w-1/6">
+        
+                    
+                                <img src="https://d8m06gjwz59rp.cloudfront.net/assets/logo-wolters-kluwer.svg" class="m-auto" loading="lazy" alt="Logo wolters kluwer">
+                    
+          
+                            </div>
+
+              <div class="p-3 w-1/2 lg:w-1/6">
+        
+                    
+                                <img src="https://d8m06gjwz59rp.cloudfront.net/assets/logo-american-cancer-society.svg" class="m-auto" loading="lazy" alt="American Cancer Society Logo">
+                    
+          
+                            </div>
+
+              <div class="p-3 w-1/2 lg:w-1/6">
+        
+                    
+                                <img src="https://d8m06gjwz59rp.cloudfront.net/assets/logo-novartis.svg" class="m-auto" loading="lazy" alt="Novartis Logo">
+                    
+          
+                            </div>
+
+              <div class="p-3 w-1/2 lg:w-1/6">
+        
+                    
+                                <img src="https://d8m06gjwz59rp.cloudfront.net/assets/logo-j-and-j.svg" class="m-auto" loading="lazy" alt="J&amp;J Logo">
+                    
+          
+                            </div>
+
+              <div class="p-3 w-1/2 lg:w-1/6">
+        
+                    
+                                <img src="https://d8m06gjwz59rp.cloudfront.net/assets/logo-nyu.svg" class="m-auto" loading="lazy" alt="NYU School of Medicine Logo">
+                    
+          
+                            </div>
+
+              <div class="p-3 w-1/2 lg:w-1/6">
+        
+                    
+                                <img src="https://d8m06gjwz59rp.cloudfront.net/assets/logo-eclinicalworks.svg" class="m-auto" loading="lazy" alt="eClinicalWorks Logo">
+                    
+          
+                            </div>
+
+          </div>
+  <section>
+</div>
+										
+
+
+
+
+
+  
+
+
+
+<div class="bg-white text-gray-900">
+  <section class="layout">
+
+         
+    <div class="flex place-content-center mb-12">
+      
+      <h2 class="headline-sm text-center max-w-screen-md">
+        Our software makes health information visual, simple, and engaging.
+      </h2>
+    </div>
+    
+    <div class="flex flex-col justify-center lg:flex-row items-stretch">
+            <div class="w-11/12 mx-auto lg:px-10 lg:w-1/2">
+        <div class="flex flex-col justify-center ">
+          
+                    
+                    
+                              <div class="my-4">
+                          <div class="flex items-start mb-10 last:m-0">
+                                                  <img src="https://d8m06gjwz59rp.cloudfront.net/assets/icon-interactive.svg" class="flex-none w-12 mr-6" alt="Icon interactive">
+                
+                <div>
+                  <h4 class="text-md font-semibold">Interactive 3D Visualizations</h4>
+                  <p class="mt-1">Interactive 3D is a proven way to increase comprehension and speed in anatomy, disease, and treatment education.</p>
+                </div>
+              </div>
+                          <div class="flex items-start mb-10 last:m-0">
+                                                  <img src="https://d8m06gjwz59rp.cloudfront.net/assets/icon-scalable.svg" class="flex-none w-12 mr-6" alt="Icon scalable">
+                
+                <div>
+                  <h4 class="text-md font-semibold">Scalable Content Creation and Management</h4>
+                  <p class="mt-1">Create and manage interactive visualizations to use across all your digital channels, at a fraction of the traditional cost.</p>
+                </div>
+              </div>
+                          <div class="flex items-start mb-10 last:m-0">
+                                                  <img src="https://d8m06gjwz59rp.cloudfront.net/assets/icon-customizable.svg" class="flex-none w-12 mr-6" alt="Icon customizable">
+                
+                <div>
+                  <h4 class="text-md font-semibold">Highly Customizable Visualizations</h4>
+                  <p class="mt-1">Create custom visualizations using Human Studio, or work with our professional services team to visualize specific conditions and treatments.</p>
+                </div>
+              </div>
+                          <div class="flex items-start mb-10 last:m-0">
+                                                  <img src="https://d8m06gjwz59rp.cloudfront.net/assets/icon-embeddable.svg" class="flex-none w-12 mr-6" alt="Icon embeddable">
+                
+                <div>
+                  <h4 class="text-md font-semibold">Easy to Integrate into any Digital Platform</h4>
+                  <p class="mt-1">Embed interactive 3D visualizations into any LMS or digital solution for a seamless end user experience.</p>
+                </div>
+              </div>
+                      </div>
+          
+          <!-- Buttons -->
+          
+        </div>
+      </div>
+
+                    <!-- iframe -->
+        <div class="w-11/12 mx-auto lg:w-1/2 pt-8 lg:p-0" style="min-width: 300px; min-height: 420px">
+          <iframe data-viewer-src="https://human.biodigital.com/tiny-viewer/?be=4IX9&amp;ui-info=false&amp;ui-search=false&amp;ui-undo=true&amp;ui-fullscreen=true&amp;ui-nav=true&amp;ui-tools=true&amp;ui-help=true&amp;ui-chapter-list=false&amp;ui-label-list=true&amp;ui-anatomy-descriptions=false&amp;ui-tutorial=false&amp;ui-loader=circle&amp;ui-whiteboard=false&amp;ui-layers=false&amp;ui-anatomy-labels=true&amp;auto-load=false&amp;disable-scroll=true&amp;load-rotate=10&amp;dk=0cee566e934542c2920e47214e317818fd61ae4e" style="width: 100%; height: 100%; min-height: 420px;" loading="lazy" class="shadow-lg"></iframe>
+        </div>
+            
+    </div>
+  </section>
+</div>  
+										<!-- Image Strip -->
+
+      
+
+<div class="bg-blue-900 text-gray-400">
+  <section class="mx-auto w-full max-w-screen-xl py-8">
+        
+    <div class="mx-auto w-full max-w-screen-xl justify-evenly flex flex-wrap items-start">
+              <div class="p-8 lg:w-1/3">
+        
+                                <a class="default" href="https://www.nytimes.com/2012/01/08/business/the-human-anatomy-animated-with-3-d-technology.html" target="_blank">
+          
+                                <img src="https://d8m06gjwz59rp.cloudfront.net/assets/logo-new-york-times-white.svg" class="m-auto" loading="lazy" alt="Logo new york times white">
+                    
+                      </a>
+          
+                                <div class="pt-4 mx-auto text-sm text-center max-w-xs">&quot;... the virtual body as the health equivalent of Google Maps.&quot;</div>
+                  </div>
+
+              <div class="p-8 lg:w-1/3">
+        
+                                <a class="default" href="https://abcnews.go.com/Health/virtual-reality-body-transforming-innovations/story?id=16134453" target="_blank">
+          
+                                <img src="https://d8m06gjwz59rp.cloudfront.net/assets/logo-abc-news-white.svg" class="m-auto" loading="lazy" alt="Logo abc news white">
+                    
+                      </a>
+          
+                                <div class="pt-4 mx-auto text-sm text-center max-w-xs">&quot;Think: Google Earth meets the human body.&quot;</div>
+                  </div>
+
+              <div class="p-8 lg:w-1/3">
+        
+                                <a class="default" href="https://www.wired.com/2012/04/biodigital-human/" target="_blank">
+          
+                                <img src="https://d8m06gjwz59rp.cloudfront.net/assets/logo-wired-white.svg" class="m-auto" loading="lazy" alt="Logo wired white">
+                    
+                      </a>
+          
+                                <div class="pt-4 mx-auto text-sm text-center max-w-xs">&quot;A Digital Revolution for Studying Human Anatomy.&quot;</div>
+                  </div>
+
+          </div>
+  <section>
+</div>
+										
+
+
+  
+
+
+
+
+
+
+<div class="bg-white text-gray-900">
+  <section class="layout">
+
+         
+    <div class="flex place-content-center mb-12">
+      
+      <h2 class="headline-sm text-center max-w-screen-md">
+        Interactive 3D experiences - now accessible on any device, anywhere, anytime.
+      </h2>
+    </div>
+    
+    <div class="flex flex-col justify-center lg:flex-row-reverse items-center">
+            <div class="w-11/12 mx-auto lg:px-10 lg:w-1/2">
+        <div class="flex flex-col justify-center ">
+          
+                    
+                     
+          <div class="mb-3 document">
+            <p>BioDigital's market leading platform powers immersive content across any device - enabling the most engaging education for our customers.</p><br />
+<p>For the first time organizations can quickly make their health, medical and life science education more immersive using BioDigital’s software. Interactive 3D models of human anatomy, physiology, disease and treatments can be tailored for specific learning, then embedded directly within a curriculum or any type education material.</p><br />
+<p><br /></p>
+          </div>
+          
+                    
+          <!-- Buttons -->
+          
+        </div>
+      </div>
+
+                        <div class="w-11/12 mx-auto lg:w-1/2 pt-8 lg:p-0">
+        <img class="max-w-2xl max-h w-full mx-auto lg:inline" src="https://d8m06gjwz59rp.cloudfront.net/assets/interactive-3D-anatomy-devices-biodigital.jpg" title="" alt="title="" loading="lazy">
+      </div>
+            
+    </div>
+  </section>
+</div>  
+										<!-- Cards -->
+
+        
+
+
+<section class="bg-gray-100 text-black">
+	<div class="mx-auto max-w-screen-xl layout">
+    		<h2 class="headline-sm mx-auto text-center pb-10 w-4/5">Outcomes That Matter.</h2>
+    
+		<div class="grid sm:px-10 gap-12 grid-col-1 sm:grid-cols-2 xl:px-0 xl:grid-cols-4 xl:gap-8">
+							<div class="text-center p-8 rounded-lg shadow-lg bg-white">
+        
+          					<p class="uppercase font-semibold">REACH</p>
+          
+          					<p class="text-3xl font-bold my-5">4,000,000+</p>
+          
+          					<img class="mb-5 mx-auto w-14" src="https://d8m06gjwz59rp.cloudfront.net/assets/icon-users.svg" alt="" loading="lazy">
+          
+          <p>Over <strong>4 million</strong> students, teachers, clinicians, and professionals use BioDigital to understand their health.<br /></p>
+
+          
+          				</div>
+							<div class="text-center p-8 rounded-lg shadow-lg bg-white">
+        
+          					<p class="uppercase font-semibold">MAPPED</p>
+          
+          					<p class="text-3xl font-bold my-5">600+</p>
+          
+          					<img class="mb-5 mx-auto w-14" src="https://d8m06gjwz59rp.cloudfront.net/assets/icon-mapped.svg" alt="" loading="lazy">
+          
+          <p>We've mapped over <strong>600 health conditions</strong> to date, and continue to add more each month.<br /></p>
+
+          
+          				</div>
+							<div class="text-center p-8 rounded-lg shadow-lg bg-white">
+        
+          					<p class="uppercase font-semibold">IMPACT</p>
+          
+          					<p class="text-3xl font-bold my-5">100,000,000+</p>
+          
+          					<img class="mb-5 mx-auto w-14" src="https://d8m06gjwz59rp.cloudfront.net/assets/icon-conversation.svg" alt="" loading="lazy">
+          
+          <p>BioDigital powered over <strong>100 million health conversations</strong> last year alone.<br /></p>
+
+          
+          				</div>
+							<div class="text-center p-8 rounded-lg shadow-lg bg-white">
+        
+          					<p class="uppercase font-semibold">RESULTS</p>
+          
+          					<p class="text-3xl font-bold my-5">96%</p>
+          
+          					<img class="mb-5 mx-auto w-14" src="https://d8m06gjwz59rp.cloudfront.net/assets/icon-understand.svg" alt="" loading="lazy">
+          
+          <p><strong>96% of users</strong> agree BioDigital visualization software helped them better understand information presented.<br /></p>
+
+          
+          				</div>
+					</div>
+	</div>
+</section>
+
+										
+
+
+      
+
+
+
+
+
+
+
+<section class="overflow-hidden relative min-h-600 bg-no-repeat bg-cover sm:block bg-center" style="background-color:#142034; background-image:url('https://d8m06gjwz59rp.cloudfront.net/assets/biodigital-human-augmented-reality.jpg')">
+
+    
+    <div class="absolute inset-0 flex items-center bg-gradient-to-r from-gray-900 ">
+    <div class="layout py-0 md:-mt-28">
+
+      <!-- Hero Content -->
+      <div class="text-center sm:text-left">
+        <!-- Hero Text -->
+        <div class="text-white text-shadow">
+          <h1 class="headline-lg mx-0 mb-6 max-w-2xl lg:max-w-4xl">Powering the Next Generation <br />
+of health applications.</h1>
+          <p class="body-md max-w-lg lg:max-w-xl">
+            WEB, MOBILE, VIRTUAL AND AUGMENTED REALITY<br />
+<br />
+Companies worldwide rely on BioDigital&#039;s virtual body platform and toolkits to transform the way they train, educate, and communicate complex science.
+          </p>
+        </div>
+
+        <!-- Hero Buttons -->
+        <div class="mt-12 lg:flex">
+                                                      <a class="button button-lg button-white w-full mb-6 xs:w-3/4 md:w-auto md:mr-6 md:mb-0" href="/contact" data-event-category="Hero" data-event-action="Clicked CTA" data-event-label="Learn More">Learn More</a>
+                                         
+                                </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+										<!-- Call to Action Banner -->
+
+
+	
+<section class="bg-gray-50 text-gray-900">
+	<div class="layout pb-16 lg:pb-24">
+		<div class="text-center">
+			
+							<div class="mb-10">
+														<h3 class="headline-sm">Interested in learning more?</h3>
+																<p class="text-base mt-5 mb-12 max-w-prose mx-auto">Request a demo or create an account.</p>
+												</div>
+			
+						<div class="flex flex-col items-flex-start justify-center md:flex-row divide-y divide-gray-400 md:divide-x md:divide-y-0">
+								<div class="w-full flex flex-col items-center justify-center px-12 pb-10 last:pt-10 last:pb-0 md:py-0 md:last:py-0">	
+
+										
+															
+										<div class="w-full flex flex-col md:flex-row items-center justify-center">
+						
+																								<a class="button button-lg button-red w-full xs:w-3/4 sm:w-1/2 md:w-auto" href="/contact">Business - Request Demo</a>	
+						
+																	</div>
+				</div>
+								<div class="w-full flex flex-col items-center justify-center px-12 pb-10 last:pt-10 last:pb-0 md:py-0 md:last:py-0">	
+
+										
+															
+										<div class="w-full flex flex-col md:flex-row items-center justify-center">
+						
+																									
+													<a class="button button-lg button-outline w-full xs:w-3/4 sm:w-1/2 md:w-auto" href="https://human.biodigital.com/login/create?ref={{ref}}&amp;utm_source={{utm_source}}&amp;utm_campaign={{utm_campaign}}&amp;utm_medium={{utm_medium}}&amp;utm_content={{utm_content}}&amp;utm_term={{utm_term}}">Individuals - Start Now</a>	
+						
+																	</div>
+				</div>
+							</div>
+		</div>
+	</div>
+</section>
+
+				
+										
+      							
+			<footer class="w-full py-12 border-t border-gray-50">
+				<section class="mx-auto max-w-screen-xl px-8 flex flex-col md:flex-row-reverse md:justify-between">
+					<article class="block md:flex">
+													<div class="md:ml-12 lg:ml-24" onclick="collapse(this)">
+								<div class="block relative py-4 md:py-0 uppercase tracking-wide">
+									<p class="text-xs font-bold font-sans uppercase">Product</p>
+									<i class="material-icons text-lg absolute md:invisible" style="font-family:'Material Icons'; line-height:1; right:10px; top:0; padding:16px 0;">expand_more</i>
+								</div>
+								<div class="footer_content pl-4 pb-6 hidden md:pt-6 md:pl-0 md:pb-0 md:inline-block md:text-sm">
+																			<a class="block mb-3 footer-link" href="/product/the-biodigital-human">The BioDigital Human</a>
+																			<a class="block mb-3 footer-link" href="/product/human-studio">Human Studio</a>
+																			<a class="block mb-3 footer-link" href="https://itunes.apple.com/us/app/biodigital-human-anatomy-health/id771825569">iOS Mobile App</a>
+																			<a class="block mb-3 footer-link" href="https://play.google.com/store/apps/details?id=com.biodigitalhuman.humanAndroid&amp;hl=en_US&amp;gl=US">Android Mobile App</a>
+																	</div>
+							</div>
+													<div class="md:ml-12 lg:ml-24" onclick="collapse(this)">
+								<div class="block relative py-4 md:py-0 uppercase tracking-wide">
+									<p class="text-xs font-bold font-sans uppercase">LEARN MORE</p>
+									<i class="material-icons text-lg absolute md:invisible" style="font-family:'Material Icons'; line-height:1; right:10px; top:0; padding:16px 0;">expand_more</i>
+								</div>
+								<div class="footer_content pl-4 pb-6 hidden md:pt-6 md:pl-0 md:pb-0 md:inline-block md:text-sm">
+																			<a class="block mb-3 footer-link" href="https://human.biodigital.com/?ref=www.biodigital.com">Launch Human</a>
+																			<a class="block mb-3 footer-link" href="/customers/all">Customers</a>
+																			<a class="block mb-3 footer-link" href="https://developer.biodigital.com/">Developers</a>
+																			<a class="block mb-3 footer-link" href="/contact">Request Demo</a>
+																	</div>
+							</div>
+													<div class="md:ml-12 lg:ml-24" onclick="collapse(this)">
+								<div class="block relative py-4 md:py-0 uppercase tracking-wide">
+									<p class="text-xs font-bold font-sans uppercase">Company</p>
+									<i class="material-icons text-lg absolute md:invisible" style="font-family:'Material Icons'; line-height:1; right:10px; top:0; padding:16px 0;">expand_more</i>
+								</div>
+								<div class="footer_content pl-4 pb-6 hidden md:pt-6 md:pl-0 md:pb-0 md:inline-block md:text-sm">
+																			<a class="block mb-3 footer-link" href="/about">About</a>
+																			<a class="block mb-3 footer-link" href="/careers">Careers</a>
+																			<a class="block mb-3 footer-link" href="/contact">Contact</a>
+																	</div>
+							</div>
+													<div class="md:ml-12 lg:ml-24" onclick="collapse(this)">
+								<div class="block relative py-4 md:py-0 uppercase tracking-wide">
+									<p class="text-xs font-bold font-sans uppercase">Resources</p>
+									<i class="material-icons text-lg absolute md:invisible" style="font-family:'Material Icons'; line-height:1; right:10px; top:0; padding:16px 0;">expand_more</i>
+								</div>
+								<div class="footer_content pl-4 pb-6 hidden md:pt-6 md:pl-0 md:pb-0 md:inline-block md:text-sm">
+																			<a class="block mb-3 footer-link" href="/terms">Terms of Service</a>
+																			<a class="block mb-3 footer-link" href="/privacy">Privacy Policy</a>
+																			<a class="block mb-3 footer-link" href="https://support.biodigital.com/">Help Center</a>
+																	</div>
+							</div>
+											</article>
+					<article class="relative text-center py-8 md:text-left md:py-0 ">
+						<div class="block">
+							<img src="/images/logo-biodigital.svg" alt="BioDigital" width="140" class="mx-auto block md:m-0">
+						</div>
+						<div class="mt-4 text-xs">
+						<a class="footer-link" href="https://goo.gl/maps/MHjfRwdnT4TAPKHw8" target="_blank">
+							594 Broadway Suite 601<br>
+							New York, NY 10012
+						</a>
+						</div>
+						<div class="flex flex-row p-6 items-center justify-center md:py-6 md:px-0 md:justify-start">
+							<a class="mr-4" href="https://twitter.com/biodigitalhuman" target="_blank">
+								<img src="/images/icon-social-twitter.svg" alt="Twitter">
+							</a>
+							<a class="mr-4" href="https://www.youtube.com/c/BioDigital" target="_blank">
+								<img src="/images/icon-social-youtube.svg" alt="YouTube">
+							</a>
+							<a class="mr-4" href="https://www.facebook.com/BioDigitalHuman" target="_blank">
+								<img src="/images/icon-social-facebook.svg" alt="Facebook">
+							</a>
+							<a class="mr-4" href="https://www.instagram.com/biodigital.human/" target="_blank">
+								<img src="/images/icon-social-instagram.svg" alt="Instagram">
+							</a>
+						</div>
+						<div class="text-tiny pt-2">
+							© BioDigital, Inc. All rights reserved.
+						</div>
+					</article>
+				</section>
+			</footer>
+		</main>
+
+		<script src="/javascript/vendors/swiper-bundle.min.js"></script>
+		<script src="/javascript/vendors/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+		<script src="/javascript/iframe.js"></script>
+		<script src="/javascript/main.js"></script>
+		<script src="/javascript/form.js"></script>
+		<script src="/javascript/menu.js"></script>
+		
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<script type="application/ld+json">{"@context":"http://schema.org","@graph":[{"@type":"Corporation","description":"The BioDigital Human is the first cloud based virtual model of the human body - 3D human anatomy, disease and treatment, all in interactive 3D.","image":{"@type":"ImageObject","url":"https://d8m06gjwz59rp.cloudfront.net/assets/_1200x630_crop_center-center_82_none/BioDigital-Human-Body-Platform.jpg?mtime=1663346774"},"name":"Interactive 3D Anatomy - Disease Platform"},{"@id":"www.biodigital.com#identity","@type":"MedicalEntity","description":"The BioDigital Human is a virtual 3D body that brings to life anatomy, health conditions and treatments in an interactive Web-based software platform.","image":{"@type":"ImageObject","height":"38","url":"http://localhost:8888/uploads/biodigital-logo.svg","width":"220"},"name":"BioDigital","sameAs":["https://twitter.com/biodigitalhuman","https://www.facebook.com/BioDigitalHuman/","https://en.wikipedia.org/wiki/BioDigital","https://www.linkedin.com/company/biodigital","https://www.youtube.com/c/BioDigital","https://www.instagram.com/biodigital.human/"],"url":"http://10.100.0.185:33115/www.biodigital.com"},{"@id":"www.biodigital.com#creator","@type":"MedicalEntity","description":"The BioDigital Human is a virtual 3D body that brings to life anatomy, health conditions and treatments in an interactive Web-based software platform.","image":{"@type":"ImageObject","height":"38","url":"http://localhost:8888/uploads/biodigital-logo.svg","width":"220"},"name":"BioDigital","url":"http://10.100.0.185:33115/www.biodigital.com"},{"@type":"BreadcrumbList","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","item":"http://10.100.0.185:33115","name":"Home","position":1}],"name":"Breadcrumbs"}]}</script></body>
+</html>
+

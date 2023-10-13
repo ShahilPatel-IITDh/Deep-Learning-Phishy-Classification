@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>B&#252;rgerservice</title>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link href="/bundles/styles?v=vekrED7Xo0hLWOOxKV-lfaaNuRKzeYN362skDkrUoUU1" rel="stylesheet"/>
+
+
+    <!-- Session CSS -->
+    <link href="/Home/SessionCss" rel="stylesheet" type="text/css" />
+
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="fyxvNFVrU" async></script>
+
+    <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+</head>
+<body>
+
+<form action="/Search" id="searchForm" method="post"><nav class="navbar navbar-default navbar-fixed-top">
+    <div class="row" id="header">
+        <div class="col-xs-12 col-sm-4" style="padding-right: 0px; padding-left: 0px;">
+            <a class="navbarItem" href="/" title="Zur Startseite von BAYERN.RECHT">
+                <img src="/Images/logo_bayern-recht.png" class="img-responsive pull-left hidden-xs" alt="Logo Bayern.Recht" />
+            </a>
+        </div>
+        <div id="portalLogo" class="col-xs-12 col-sm-8" style="padding-right: 0px; padding-left: 0px;">
+            <img src="/Images/logo_bayern.png" class="img-responsive pull-right hidden-xs" alt="Logo Bayern" />
+            <img src="/Images/logo_xs_bayern.png" class="img-responsive pull-right visible-xs" alt="Logo Bayern" />
+        </div>
+    </div>
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <ul class="nav navbar-nav col-xs-8 col-sm-4 col-lg-3">
+        <li>
+                <span class="navbarItem active" title="Startseite von BAYERN.RECHT"><span style="font-size: 20px; color: lightgray" class="glyphicon glyphicon-home"></span><span class="sr-only">Startseite von BAYERN.RECHT</span></span>
+        </li>
+        <li>
+                <a at-target="lastSearch" class="navbarItem" href="/Search" title="Zur Trefferliste der letzten Suche"><span style="font-size: 20px" class="glyphicon glyphicon-list"></span><span class="sr-only">Zur Trefferliste der letzten Suche</span></a>
+        </li>
+    </ul>
+
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="col-sm-5 col-lg-6" id="searchPanelDiv">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div style="padding:0px">
+                <div class="navbar-form">
+  <div at-target="searchSuggestInputGroup" class="input-group">
+    <input at-target="searchPanelBox" autocomplete="off" class="form-control" id="searchPanelBox" name="SearchFields.Content" aria-label="Suche" placeholder="Suche" title="Geben Sie die zu suchenden Begriffe wie Schlagworte, Aktenzeichen, Zitate in beliebiger Reihenfolge ein..." type="text" 
+           value="">
+    <div style="width: 85px" class="input-group-btn">
+      <button at-target="searchPanelBoxClearer" id="searchPanelBoxClearer" title="Suche zurücksetzen" class="btn btn-default" type="button"><i class="glyphicon glyphicon-trash"></i><span class="sr-only">Suche zurücksetzen</span></button>
+      <button at-target="searchPanelBoxSubmit" class="btn btn-default" title="Suche ausführen" type="submit" style="padding: 3px 14px"><i style="font-size: 21px" class="glyphicon glyphicon-search"></i><span class="sr-only">Suche ausführen</span></button>
+    </div>
+  </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+</nav>
+        <div class="container">
+            <div class="row">
+                
+<div id="navigation" role="navigation" class="col-sm-4 col-lg-3">
+    <h1 class="sr-only">Navigation</h1>
+    <div id="facets" class="nav">
+    <div class="panel-group">
+        
+        <div class="panel panel-default">
+    <div class="panel-heading  ">
+        <div class="panel-title" title="Vorschriften (2754)">
+            <img src="/Images/hitlist_gesetz.png" alt="gesetz" />
+                <a href="/Search/Filter/DOKTYP/norm" class="panel-group-item navPanelHeading">Vorschriften <span class="facet-count">(2754)</span></a>
+        </div>
+    </div>
+    <div id="rechtsvorschriften" class="panel-collapse collapse in documentNavigationType">
+        <div class="panel-body">
+            <div class="tree">
+                <ul class="list-group">
+                    <li class="list-group-item node-tree   " data-level="1" data-nodeid="2" data-docid="NORMTYP-ges" data-fieldname="NORMTYP" data-fieldvalue="ges" data-parent="" data-root="" data-count="240" title="Gesetze (240)">
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a href="/Search/Filter/NORMTYP/ges">Gesetze <span class="facet-count">(240)</span></a></li>
+<li class="list-group-item node-tree   " data-level="1" data-nodeid="1" data-docid="NORMTYP-rv" data-fieldname="NORMTYP" data-fieldvalue="rv" data-parent="" data-root="" data-count="514" title="Rechtsverordnungen (514)">
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a href="/Search/Filter/NORMTYP/rv">Rechtsverordnungen <span class="facet-count">(514)</span></a></li>
+<li class="list-group-item node-tree   " data-level="1" data-nodeid="0" data-docid="NORMTYP-vv" data-fieldname="NORMTYP" data-fieldvalue="vv" data-parent="" data-root="" data-count="1801" title="Verwaltungsvorschriften (1801)">
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a href="/Search/Filter/NORMTYP/vv">Verwaltungsvorschriften <span class="facet-count">(1801)</span></a></li>
+<li class="list-group-item node-tree   " data-level="1" data-nodeid="3" data-docid="NORMTYP-vertr" data-fieldname="NORMTYP" data-fieldvalue="vertr" data-parent="" data-root="" data-count="199" title="Vertr&#228;ge, sonstige Rechtsquellen (199)">
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a href="/Search/Filter/NORMTYP/vertr">Vertr&#228;ge, sonstige Rechtsquellen <span class="facet-count">(199)</span></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="panel panel-default">
+    <div class="panel-heading  ">
+        <div class="panel-title" title="Gerichtsentscheidungen (31795)">
+            <img src="/Images/hitlist_rechtsprechung.png" alt="rechtsprechung" />
+                <a href="/Search/Filter/DOKTYP/rspr" class="panel-group-item navPanelHeading">Gerichtsentscheidungen <span class="facet-count">(31795)</span></a>
+        </div>
+    </div>
+    <div id="gerichtsentscheidungen" class="panel-collapse collapse in documentNavigationType">
+        <div class="panel-body">
+            <div class="tree">
+                <ul class="list-group">
+                    <li class="list-group-item node-tree collapsed  " data-level="1" data-nodeid="0" data-docid="LEVEL1RSPRTREENODE-Verfassungsgerichtsbarkeit" data-fieldname="LEVEL1RSPRTREENODE" data-fieldvalue="Verfassungsgerichtsbarkeit" data-parent="" data-root="" data-count="203" title="Verfassungsgerichtsbarkeit (203)">
+
+<span class="icon" role="button" style=""><i tabindex="0" class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a href="/Search/Filter/LEVEL1RSPRTREENODE/Verfassungsgerichtsbarkeit">Verfassungsgerichtsbarkeit <span class="facet-count">(203)</span></a></li>
+<li class="list-group-item node-tree collapsed  " data-level="1" data-nodeid="1" data-docid="LEVEL1RSPRTREENODE-Ordentliche Gerichtsbarkeit" data-fieldname="LEVEL1RSPRTREENODE" data-fieldvalue="Ordentliche Gerichtsbarkeit" data-parent="" data-root="" data-count="8606" title="Ordentliche Gerichtsbarkeit (8606)">
+
+<span class="icon" role="button" style=""><i tabindex="0" class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a href="/Search/Filter/LEVEL1RSPRTREENODE/Ordentliche%20Gerichtsbarkeit">Ordentliche Gerichtsbarkeit <span class="facet-count">(8606)</span></a></li>
+<li class="list-group-item node-tree collapsed  " data-level="1" data-nodeid="2" data-docid="LEVEL1RSPRTREENODE-Verwaltungsgerichtsbarkeit" data-fieldname="LEVEL1RSPRTREENODE" data-fieldvalue="Verwaltungsgerichtsbarkeit" data-parent="" data-root="" data-count="19894" title="Verwaltungsgerichtsbarkeit (19894)">
+
+<span class="icon" role="button" style=""><i tabindex="0" class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a href="/Search/Filter/LEVEL1RSPRTREENODE/Verwaltungsgerichtsbarkeit">Verwaltungsgerichtsbarkeit <span class="facet-count">(19894)</span></a></li>
+<li class="list-group-item node-tree collapsed  " data-level="1" data-nodeid="3" data-docid="LEVEL1RSPRTREENODE-Finanzgerichtsbarkeit" data-fieldname="LEVEL1RSPRTREENODE" data-fieldvalue="Finanzgerichtsbarkeit" data-parent="" data-root="" data-count="584" title="Finanzgerichtsbarkeit (584)">
+
+<span class="icon" role="button" style=""><i tabindex="0" class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a href="/Search/Filter/LEVEL1RSPRTREENODE/Finanzgerichtsbarkeit">Finanzgerichtsbarkeit <span class="facet-count">(584)</span></a></li>
+<li class="list-group-item node-tree collapsed  " data-level="1" data-nodeid="4" data-docid="LEVEL1RSPRTREENODE-Arbeitsgerichtsbarkeit" data-fieldname="LEVEL1RSPRTREENODE" data-fieldvalue="Arbeitsgerichtsbarkeit" data-parent="" data-root="" data-count="663" title="Arbeitsgerichtsbarkeit (663)">
+
+<span class="icon" role="button" style=""><i tabindex="0" class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a href="/Search/Filter/LEVEL1RSPRTREENODE/Arbeitsgerichtsbarkeit">Arbeitsgerichtsbarkeit <span class="facet-count">(663)</span></a></li>
+<li class="list-group-item node-tree collapsed  " data-level="1" data-nodeid="5" data-docid="LEVEL1RSPRTREENODE-Schiedsgerichtsbarkeit" data-fieldname="LEVEL1RSPRTREENODE" data-fieldvalue="Schiedsgerichtsbarkeit" data-parent="" data-root="" data-count="1" title="Schiedsgerichtsbarkeit (1)">
+
+<span class="icon" role="button" style=""><i tabindex="0" class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a href="/Search/Filter/LEVEL1RSPRTREENODE/Schiedsgerichtsbarkeit">Schiedsgerichtsbarkeit <span class="facet-count">(1)</span></a></li>
+<li class="list-group-item node-tree collapsed  " data-level="1" data-nodeid="6" data-docid="LEVEL1RSPRTREENODE-Sozialgerichtsbarkeit" data-fieldname="LEVEL1RSPRTREENODE" data-fieldvalue="Sozialgerichtsbarkeit" data-parent="" data-root="" data-count="1818" title="Sozialgerichtsbarkeit (1818)">
+
+<span class="icon" role="button" style=""><i tabindex="0" class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a href="/Search/Filter/LEVEL1RSPRTREENODE/Sozialgerichtsbarkeit">Sozialgerichtsbarkeit <span class="facet-count">(1818)</span></a></li>
+<li class="list-group-item node-tree collapsed  " data-level="1" data-nodeid="7" data-docid="LEVEL1RSPRTREENODE-Sonstige Gerichte" data-fieldname="LEVEL1RSPRTREENODE" data-fieldvalue="Sonstige Gerichte" data-parent="" data-root="" data-count="26" title="Sonstige Gerichte (26)">
+
+<span class="icon" role="button" style=""><i tabindex="0" class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a href="/Search/Filter/LEVEL1RSPRTREENODE/Sonstige%20Gerichte">Sonstige Gerichte <span class="facet-count">(26)</span></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="panel panel-default">
+    <div class="panel-heading inactive">
+        <div class="panel-title" title="RSS-Feed Gerichtsentscheidungen">
+            <img src="/Images/rss-icon.png" alt="rss" style="float:left" />
+            <span style="display:inline-block; margin-top:1px; margin-left: 3px;">
+                RSS-Feed Gerichtsentscheidungen
+            </span>
+        </div>
+    </div>
+    <div id="rss" class="panel-collapse collapse in documentNavigationType">
+        <div class="panel-body" style=" padding-bottom: 8px">
+            <span style="padding-left:25px; font-size: 90%">
+                <a href="/Content/Document/Rss">Abonnieren Sie hier!</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+        <div class="panel panel-default">
+    <div class="panel-heading inactive">
+        <div class="panel-title" title="Fortführungsnachweise">
+            <img src="/Images/ffn.png" alt="ffn" style="float:left" />
+            <span style="display:inline-block; margin-top:2px; margin-left: 3px;">
+                Fortführungsnachweise
+            </span>
+        </div>
+    </div>
+    <div id="ffn" class="panel-collapse collapse in documentNavigationType">
+        <div class="panel-body" style="padding-bottom: 8px; padding-left:25px;">
+            <div>
+                <span style="font-size: 90%">
+                    <a href="/Content/Document/ffn">Rechtsvorschriften</a>
+                </span>
+            </div>
+            <div>
+                <span style="font-size: 90%">
+                    <a href="/Content/Document/ffn-mbl">Verwaltungsvorschriften (BayMBl.)</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+</div>
+<div role="main" class="col-sm-8 col-lg-9" style="padding:0px">
+    <h1 class="sr-only">Startseite</h1>
+    <div id="home">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="/Search/Filter/DOKTYP/norm" title="zur Suche nach Vorschriften">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Vorschriften finden
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <img class="img-responsive" src="/Images/startseite_ges.jpg" alt="Vorschriften finden" />
+                            </div>
+                            <p class="home-tile-text">
+                                In der Datenbank BAYERN.RECHT können Sie alle bayerischen Gesetze und Verordnungen sowie die Verwaltungsvorschriften aus den Amtsblättern in der aktuellen Fassung schnell und komfortabel recherchieren.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="/Search/Filter/DOKTYP/rspr" title="zur Suche nach Gerichtsentscheidungen">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Gerichtsentscheidungen finden
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <img class="img-responsive" src="/Images/startseite_ents.jpg" alt="Gerichtsentscheidungen finden" />
+                            </div>
+                            <p class="home-tile-text">
+                                In unserer Rechtsprechungsdatenbank finden Sie alle aktuellen wichtigen Entscheidungen bayerischer Gerichte – von den Arbeitsgerichten bis zu den Zivilgerichten.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="https://www.verkuendung-bayern.de/" title="zur Verkündungsplattform Bayern">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Verkündungsplattform Bayern
+                        </div>
+                        <div class="panel-body">
+                            <div class="center-block">
+                                <img class="img-responsive" src="/Images/startseite_verk.jpg" alt="Verkündungsplattform Bayern" />
+                            </div>
+                            <p class="home-tile-text">
+                                Auf der Verkündungsplattform Bayern finden Sie die elektronischen Fassungen des Bayerischen Gesetz- und Verordnungsblattes (GVBl.) sowie aller Amtsblätter der bayerischen Ministerien.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="/Content/Document/Nutzungshinweise" title="zu den Nutzungshinweisen">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Hinweise zur Nutzung
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <img class="img-responsive" src="/Images/startseite_hinweise.jpg" alt="Hinweise zur Nutzung" />
+                            </div>
+                            <p class="home-tile-text">
+                                Allgemeine und rechtliche Hinweise zur Nutzung des Bürgerservice BAYERN.RECHT.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+
+            <div class="row footer">
+    <ul>
+        <li class="col-sm-3">
+            <a href="http://www.bayern.de" target="_blank">Bayern.de</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="http://www.freistaat.bayern/" target="_blank">BayernPortal</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="/Content/Document/Datenschutz">Datenschutz</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="/Content/Document/Impressum">Impressum</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="/Content/Document/Barrierefreiheit">Barrierefreiheit</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="/Content/Document/Hilfe">Hilfe</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="http://www.bayern.de/service/bayern-direkt-2/" target="_blank">Kontakt</a>
+        </li>
+        <li class="col-sm-3">
+            <button class="btn btn-link" id="adjustFontsize" type="button"><span style="font-size: 55%" class="glyphicon glyphicon-font" title="Schriftgröße"></span><span style="font-size: 90%" class="glyphicon glyphicon-font" title="Schriftgröße"></span><span class="sr-only">Schriftgröße</span></button>
+          <div id="adjustFontsizePopover" style="display: none">
+            <ul id="fontsize-list" class="popover-list">
+              <li><a id="btn-fontsize-small" href="/?fontsize=small"><span>A</span></a></li>
+              <li><a id="btn-fontsize-normal" href="/?fontsize=middle"><span>A</span></a></li>
+              <li><a id="btn-fontsize-large" href="/?fontsize=large"><span>A</span></a></li>
+            </ul>
+          </div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <a href="/?contrast=change" title="Kontrastwechsel"><span style="font-size: 120%" class="glyphicon glyphicon-adjust"></span><span class="sr-only">Kontrastwechsel</span></a>
+        </li>
+    </ul>
+</div>
+        </div>
+</form>
+    <!-- Piwik -->
+<script type="text/plain" data-usercentrics="Matomo">
+        var _paq = _paq || [];
+        const regex = /-(?!bayern\.de)/g;
+        _paq.push(['setCustomUrl', location.href.replace(regex,'/') + '/']);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        _paq.push(['setTrackerUrl', 'https://beck.matomo.cloud/matomo.php']);
+        _paq.push(['setSiteId', 4]);
+
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://beck.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+</script>
+<!-- End Piwik Code -->
+
+
+    <!-- Javascript -->
+    <script src="/bundles/jquery?v=JVBM4Dk7eZ-fjWvmxvoCeVR5MAt_3YXn4K7MRdHsuR81"></script>
+
+    
+
+    <script src="/bundles/Scripts?v=uFTGjQvIZHFVD2k1xmm6cAURg_pmFjXDz3WdnRYPhaY1"></script>
+
+</body>
+</html>

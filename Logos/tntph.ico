@@ -1,0 +1,251 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Error - TNT - It's a Tropa Thing</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="icon" type="image/ico" href="/Assets/images/tnt.ico">
+    <link rel="stylesheet" href="/Assets/css/lato-font.css">
+    <link rel="stylesheet" href="/Assets/css/tnt-core-master.min.css">
+    <style>
+        #main {
+            background: #afdbf8 url(/Assets/images/main_bg.png) center no-repeat;
+            background-size: cover;
+            padding: 15px;
+            height: 450px;
+        }
+        #message {
+            font-family: "Lato", sans-serif;
+            line-height: 1.5;
+            text-align: center;
+            margin: auto;
+            max-width: 515px;
+            padding-left: 300px;            
+            padding-top: 150px;
+        }
+        #message a {
+            color: #ff8e28;
+            text-decoration: none;
+        }
+        #message h1, #message h2 , #message p {
+            color: #363276;
+        }
+        #message h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin: 0 0 15px;
+            line-height: 1;
+        }
+        #message h2, #message p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+        #message h2 {
+            font-size: 40px;
+            margin: 0 0 15px;
+        }
+        @media (max-width:991px) {
+            #main {
+                height: 350px;
+            }
+            #message {
+                padding-left: 250px;
+                padding-top: 100px;
+            }
+        }
+        @media (max-width:767px) {
+            #main {
+                background-image: none;
+                height: auto;
+            }
+            #message {
+                max-width: 100%;
+                padding: 60px 0;
+            }
+            #message h1 {
+                font-size: 50px;
+            }
+            #message h2 {
+                font-size: 30px;
+            }
+            #message p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body id="tnt">
+    <header id="core-header">
+        <section id="universalHeader">
+            <div class="container">
+                <span>Other Sites:</span>
+                <div class="brand-select">
+                    <select id="SwitchSite" aria-labelledby="SwitchSite">
+                        <option selected="selected">Personal</option>
+                        <option>Enterprise</option>
+                    </select>
+                </div>
+                <div class="brand-menu">
+                    <a href="https://pldthome.com/"></a>
+                    <a href="https://smart.com.ph/"></a>
+                    <a href="https://suncellular.com.ph/"></a>
+                    <a href="https://tntph.com/" class="active"></a>
+                </div>
+            </div>
+        </section>
+        <section id="mainHeader">
+            <div class="container">
+                <div class="hamburger">
+                    <button id="mobile-btn"></button>
+                </div>
+                <div class="main-logo">
+                    <a href="https://tntph.com/">
+                        <img src="/Assets/images/_core/tnt-logo.png" alt="TNT" />
+                        <h1>TNT</h1>
+                    </a>
+                </div>
+                <div id="menu-nav" class="main-menu">
+                    <ul id="corp-menu">
+                        <li>
+                            <a href="javascript:void(0)">Products</a>
+                            <button class="drop"></button>
+                            <div class="sub">
+                                <ul class="container">
+                                    <li><a href="https://tntph.com/pages/sim-load-phone">Sim, Load, and Phones</a></li>
+                                    <li><a href="https://tntph.com/pages/lteupgrade">Upgrade Sim</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Promos</a>
+                            <button class="drop"></button>
+                            <div class="sub">
+                                <ul class="container">
+                                    <li><a href="https://tntph.com/pages/limited-time-promos">Limited Time Only</a></li>
+                                    <li><a href="https://tntph.com/pages/surfsaya">Surfsaya</a></li>
+                                    <li><a href="https://tntph.com/pages/giga">Giga</a></li>
+                                    <li><a href="https://tntph.com/pages/other-promos">Other Promos</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Rewards</a>
+                            <button class="drop"></button>
+                            <div class="sub">
+                                <ul class="container">
+                                    <li><a href="https://tntph.com/pages/mvp-rewards">MVP Rewards</a></li>
+                                    <li><a href="https://tntph.com/pages/contests-and-more">Contests, Prizes, and More</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side-nav">
+                    <div id="sso-btn">
+                        <a>
+                            <span>MyAccount</span>
+                        </a>
+                        <div id="sso-menu">
+                            <div class="auth">
+                                <a href="javascript:void(0)" class="btn">My Account</a>
+                                <a href="javascript:void(0)">Sign Out</a>
+                            </div>
+                            <div class="hide-auth">
+                                <a href="javascript:void(0)" class="btn">Sign In</a>
+                                <span>New user? </span><a href="javascript:void(0)">Click Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <div id="main">
+        <div id="message">
+            <h1>KaTropa!</h1>
+            <p>
+                Alam naming excited din kayo makisaya sa mga bago nating mga pakulo. Tambay ka muna with us sa <a href="https://www.facebook.com/TNTph">fb.com/TNTph</a> para maging updated sa mga bagong promos.
+                <a href="javascript:history.go(-1)">Go back to previous page</a>.
+            </p>
+        </div>
+    </div>
+    <footer id="core-footer">
+        <div class="container">
+            <section id="topMenu" class="extend">
+                <div class="social">
+                    <img src="/Assets/images/_core/tnt-logo.png" alt="TNT">
+                    <p>Smart Communications Inc. is the Philippines leading wireless Provider.</p>
+                    <div class="social-links">
+                        <a class="fb" href="https://facebook.com/TNTph">
+                            <span>Facebook</span>
+                        </a>
+                        <a class="tw" href="http://twitter.com/tntph">
+                            <span>Twitter</span>
+                        </a>
+                        <a class="in" href="http://instagram.com/tntph">
+                            <span>Instagram</span>
+                        </a>
+                        <a class="yt" href="https://www.youtube.com/user/talkntexttv">
+                            <span>Youtube</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="shortcuts">
+                    <div>
+                        <ul>
+                            <li><span>Products</span></li>
+                            <li><a href="https://tntph.com/pages/sim-load-phone">Sim, Load, and Phones</a></li>
+                            <li><a href="https://tntph.com/pages/lteupgrade">Upgrade Sim</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><span>Promos</span></li>
+                            <li><a href="https://tntph.com/pages/limited-time-promos">Limited Time Only</a></li>
+                            <li><a href="https://tntph.com/pages/surfsaya">Surfsaya</a></li>
+                            <li><a href="https://tntph.com/pages/giga">Giga</a></li>
+                            <li><a href="https://tntph.com/pages/other-promos">Other Promos</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><span>Rewards</span></li>
+                            <li><a href="https://tntph.com/pages/mvp-rewards">MVP Rewards</a></li>
+                            <li><a href="https://tntph.com/pages/contests-and-more">Contests, Prizes, and More</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><span>Contact Us</span></li>
+                            <li><span>via Phone &#40;02&#41;8888-1111</span></li>
+                            <li><span>via Mobile &#40;&#42;888 toll free&#41;</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="bottomMenu">
+                <div class="copr"><span>&copy; TNT</span></div>
+                <div class="shortcuts">
+                    <a href="https://smart.com.ph/about/careers">Careers</a>
+                    <a href="http://tntph.com/network">Network Finder</a>
+                    <a href="http://tntph.com/terms-and-conditions">Terms of Use</a>
+                    <a href="http://tntph.com/privacy-policy">Privacy Policy</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!--Scripts-->
+    <script type="text/javascript" src="/Assets/js/jquery-v3.5.1.min.js"></script>
+    <script type="text/javascript" src="/Assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/Assets/js/tnt-core-master.js"></script>
+    <script>Core.Account(false)</script>
+</body>
+</html>

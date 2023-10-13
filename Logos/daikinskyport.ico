@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" id="test">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Daikin Thermostats</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="img/icons/favicon.ico"/>
+    <link href="Montserrat.css" rel="stylesheet">
+    <link href="LibreFranklin.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/Scrollify-master/jquery.scrollify.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>-->
+    <script src="js/jquery-mousewheel-master/jquery.mousewheel.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/resize.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/mobile.js"></script>
+    <!--<script src="js/scroll.js"></script>-->
+    <script>
+      var scrollifyEnabled = false;
+      $(function () {
+        if (window.innerWidth > 768) {
+          $.scrollify({
+            section: '.home-page',
+            interstitialSection: '',
+            sectionName: 'section-name',
+            easing: 'easeOutCubic',
+            scrollSpeed: 600,
+            offset: 0,
+            scrollbars: false,
+            standardScrollElements: '',
+            setHeights: false,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll: true,
+            before: function (e) {
+              switch (e) {
+                case 0:
+                  $('img#firstMainDot').attr({
+                    src: 'img/icons/DotActive.svg',
+                    class: 'activeDot'
+                  });
+                  $('img#secondMainDot, img#thirdMainDot, img#fourthMainDot, img#fifthMainDot').attr({
+                    src: 'img/icons/DotUnActive.svg',
+                    class: 'unactiveDot'
+                  });
+                  break;
+                case 1:
+                  $('img#firstMainDot, img#thirdMainDot, img#fourthMainDot, img#fifthMainDot').attr({
+                    src: 'img/icons/DotUnActive.svg',
+                    class: 'unactiveDot'
+                  });
+                  $('img#secondMainDot').attr({
+                    src: 'img/icons/DotActive.svg',
+                    class: 'activeDot'
+                  });
+                  break;
+                case 2:
+                  $('img#firstMainDot, img#secondMainDot, img#thirdMainDot, img#fifthMainDot').attr({
+                    src: 'img/icons/DotUnActive.svg',
+                    class: 'unactiveDot'
+                  });
+                  $('img#fourthMainDot').attr({
+                    src: 'img/icons/DotActive.svg',
+                    class: 'activeDot'
+                  });
+                  break;
+                case 3:
+                  $('img#firstMainDot, img#secondMainDot, img#fourthMainDot, img#fifthMainDot').attr({
+                    src: 'img/icons/DotUnActive.svg',
+                    class: 'unactiveDot'
+                  });
+                  $('img#thirdMainDot').attr({
+                    src: 'img/icons/DotActive.svg',
+                    class: 'activeDot'
+                  });
+                  break;
+                case 4:
+                  $('img#firstMainDot, img#secondMainDot, img#thirdMainDot, img#fourthMainDot').attr({
+                    src: 'img/icons/DotUnActive.svg',
+                    class: 'unactiveDot'
+                  });
+                  $('img#fifthMainDot').attr({
+                    src: 'img/icons/DotActive.svg',
+                    class: 'activeDot'
+                  });
+                  break;
+                default:
+                  break;
+              }
+            },
+            after: function () {
+            },
+            afterResize: function () {
+              if (window.innerWidth < 768) {
+                location.reload();
+              }
+            },
+            afterRender: function () {
+              scrollifyEnabled = true;
+            }
+          });
+        } else {
+          // $.scrollify({
+          //   section: '.container-mobile',
+          //   interstitialSection: '',
+          //   easing: 'easeOutCubic',
+          //   scrollSpeed: 600,
+          //   offset: 0,
+          //   scrollbars: false,
+          //   standardScrollElements: '',
+          //   setHeights: true,
+          //   overflowScroll: true,
+          //   updateHash: true,
+          //   touchScroll: true,
+          // });
+        }
+      });
+
+      function debounce(func, wait, immediate) {
+        var timeout;
+        return function () {
+          var context = this,
+            args = arguments;
+          var later = function () {
+            timeout = null;
+            if (!immediate) {
+              func.apply(context, args);
+            }
+          };
+          var callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+          if (callNow) {
+            func.apply(context, args);
+          }
+        };
+      }
+
+      function redirect(event) {
+        event.preventDefault();
+        window.location = event.currentTarget.getAttribute('href');
+      }
+
+      $(window).resize(debounce(function () {
+        var width = $(this).width();
+        if (width > 768 && !scrollifyEnabled) {
+          $.scrollify({
+            section: '.home-page',
+            interstitialSection: '1',
+            easing: 'easeOutCubic',
+            scrollSpeed: 600,
+            offset: 0,
+            scrollbars: false,
+            standardScrollElements: '',
+            setHeights: false,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll: true,
+            before: function (e) {
+              switch (e) {
+                case 0:
+                  $('img#firstMainDot').attr({
+                    src: 'img/icons/DotActive.svg',
+                    class: 'activeDot'
+                  });
+                  $('img#secondMainDot, img#thirdMainDot, img#fourthMainDot, img#fifthMainDot').attr({
+                    src: 'img/icons/DotUnActive.svg',
+                    class: 'unactiveDot'
+                  });
+                  break;
+                case 1:
+                  $('img#firstMainDot, img#thirdMainDot, img#fourthMainDot, img#fifthMainDot').attr({
+                    src: 'img/icons/DotUnActive.svg',
+                    class: 'unactiveDot'
+                  });
+                  $('img#secondMainDot').attr({
+                    src: 'img/icons/DotActive.svg',
+                    class: 'activeDot'
+                  });
+                  break;
+                case 2:
+                  $('img#firstMainDot, img#secondMainDot, img#thirdMainDot, img#fifthMainDot').attr({
+                    src: 'img/icons/DotUnActive.svg',
+                    class: 'unactiveDot'
+                  });
+                  $('img#fourthMainDot').attr({
+                    src: 'img/icons/DotActive.svg',
+                    class: 'activeDot'
+                  });
+                  break;
+                case 3:
+                  $('img#firstMainDot, img#secondMainDot, img#fourthMainDot, img#fifthMainDot').attr({
+                    src: 'img/icons/DotUnActive.svg',
+                    class: 'unactiveDot'
+                  });
+                  $('img#thirdMainDot').attr({
+                    src: 'img/icons/DotActive.svg',
+                    class: 'activeDot'
+                  });
+                  break;
+                case 4:
+                  $('img#firstMainDot, img#secondMainDot, img#thirdMainDot, img#fourthMainDot').attr({
+                    src: 'img/icons/DotUnActive.svg',
+                    class: 'unactiveDot'
+                  });
+                  $('img#fifthMainDot').attr({
+                    src: 'img/icons/DotActive.svg',
+                    class: 'activeDot'
+                  });
+                  break;
+                default:
+                  break;
+              }
+            },
+            after: function () {
+            },
+            afterResize: function () {
+              if (window.innerWidth < 768) {
+                location.reload();
+              }
+            },
+            afterRender: function () {
+              scrollifyEnabled = true;
+            }
+          });
+        }
+      }, 50));
+
+      $(window).trigger('resize');
+    </script>
+</head>
+
+<body>
+<section id="mainSection" data-section-name="home">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a href="index.html"><img class="logo" src="img/logo.png"></a></div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown"
+                           role="button">TouchScreen Series <span class="caret"></span></a>
+                        <ul class="dropdown-menu menu-desktop">
+                            <li>
+                                <a href="TouchScreenSeries.html#overview">Overview</a>
+                            </li>
+                            <li>
+                                <a href="TouchScreenSeries.html#models">TouchScreen Models</a>
+                            </li>
+                            <li>
+                                <a href="TouchScreenSeries.html#desktopApp">TouchScreen Desktop App</a>
+                            </li>
+                            <li>
+                                <a href="TouchScreenSeries.html#accessories">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="TouchScreenSeries.html#manuals">Manuals</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown"
+                           role="button">Premium Series <span class="caret"></span></a>
+                        <ul class="dropdown-menu menu-desktop">
+                            <li>
+                                <a href="PremiumSeries.html#overview" onclick="redirectReload(event)">Overview</a>
+                            </li>
+                            <li>
+                                <a href="PremiumSeries.html#residential" onclick="redirectReload(event)">Residential Models</a>
+                            </li>
+                            <li>
+                                <a href="PremiumSeries.html#commercial" onclick="redirectReload(event)">Commercial Models</a>
+                            </li>
+                            <li>
+                                <a href="PremiumSeries.html#accessories" onclick="redirectReload(event)">Accessories</a>
+                            </li>
+
+                            <li>
+                                <a href="PremiumSeries.html#manuals" onclick="redirectReload(event)">Manuals</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown"
+                           role="button">Premium Mini Series <span class="caret"></span></a>
+                        <ul class="dropdown-menu menu-desktop">
+                            <li>
+                                <a href="PremiumMiniSeries.html#overview" onclick="redirectReload(event)">Overview</a>
+                            </li>
+                            <li>
+                                <a href="PremiumMiniSeries.html#models" onclick="redirectReload(event)">Premium Mini
+                                    Models</a>
+                            </li>
+                            <li>
+                                <a href="PremiumMiniSeries.html#ConfiguratorApp" onclick="redirectReload(event)">Configurator
+                                    App</a>
+                            </li>
+                            <li>
+                                <a href="PremiumMiniSeries.html#manuals" onclick="redirectReload(event)">Manuals</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown mini">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown"
+                           role="button">Value Series <span class="caret"></span></a>
+                        <ul class="dropdown-menu menu-desktop">
+                            <li>
+                                <a href="ValueSeries.html#overview" onclick="redirectReload(event)">Overview</a>
+                            </li>
+                            <li>
+                                <a href="ValueSeries.html#manuals" onclick="redirectReload(event)">Manuals</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="dotsMain" class="dots-main">
+        <div>
+            <img id="firstMainDot" src="img/icons/DotActive.svg" class="activeDot"/>
+        </div>
+        <div>
+            <img id="secondMainDot" src="img/icons/DotUnActive.svg" class="unactive"/>
+        </div>
+        <div>
+            <img id="fourthMainDot" src="img/icons/DotUnActive.svg" class="unactive"/>
+        </div>
+        <div>
+            <img id="thirdMainDot" src="img/icons/DotUnActive.svg" class="unactive"/>
+        </div>
+        <div>
+            <img id="fifthMainDot" src="img/icons/DotUnActive.svg" class="unactive"/>
+        </div>
+    </div>
+    <section class="home-page" id="main">
+        <div class="first-container" style="height:100%">
+            <div class="col-xs-12 col-md-12" id="home">
+                <div class="h1home" id="h1">
+        <span id="h1home">Introducing the all new<br>
+            Daikin Thermostats</span>
+                </div>
+                <div class="h2home">
+            <span id="h2home">The new line of Daikin thermostats offers industry leading features, designs, and quality for all of your HVAC control needs,
+                        <br>from the competitively priced Value Series to the feature-rich TouchScreen Series to IECC2015 and Title 24 code compliance, we have what you need!</span>
+                    <div class="homebutton">
+                        <button id="homebutton"><span class="textbutton">LEARN MORE</span></button>
+                        <a href="http://daikin.skyportcloud.com/">
+                            <button id="skyportbutton"><span class="textbutton skyporttxt" style="color: #1bb5ff">SIGN IN</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thermsblock">
+            <div class="divtherm firsttherm" id="thirdtherm"><img class="imgtherm firstimg"
+                                                                  src="img/ValueSeriesThermostat.png">
+            </div>
+            <div class="divtherm secondtherm" id="secondtherm"><img class="imgtherm secondimg"
+                                                                    src="img/commercial.png">
+            </div>
+            <div class="divtherm thirdtherm" id="firsttherm"><img class="imgtherm thirdimg"
+                                                                  src="img/ColorTouch.png">
+            </div>
+            <div class="divtherm fourththerm" id="fourththerm"><img class="imgtherm fourthimg"
+                                                                    src="img/eMini-Residential.png">
+            </div>
+            <div class="divtherm fifththerm" id="thirdtherm"><img class="imgtherm fifthimg"
+                                                                  src="img/ValueSeriesThermostat.png">
+            </div>
+        </div>
+    </section>
+    <section class="home-page" id="touch-screen">
+        <div style="flex: 1"></div>
+        <div class="thermostat-container">
+            <div style="min-width: 27vw">
+                <img id="firstimage" src="img/ColorTouch.png">
+            </div>
+            <div class="text-container">
+                <h2 class="h2block">TouchScreen</h2>
+                <div class="texttherm">
+                    Introducing the new residential and commercial TouchScreen series thermostats with built in WiFi and
+                    high resolution, full-color touchscreen displays.
+                    Available with humidification and advanced dehumidification features including reheat and variable
+                    speed fan control with compatible HVAC systems.
+                    Also compatible with wired and (coming soon) wireless remote sensor control and averaging.
+                </div>
+                <a href="TouchScreenSeries.html">
+                    <button class="thermostatbutton"><span class="textbutton">LEARN MORE</span></button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="home-page" id="premium-series">
+        <div style="flex: 1"></div>
+        <div class="thermostat-container">
+            <div style="min-width: 27vw">
+                <img id="secondimage" src="img/commercial.png">
+            </div>
+            <div class="text-container">
+                <h2 class="h2block">Premium Series</h2>
+                <div class="texttherm">
+                    Introducing the new residential and commercial Premium series thermostats with optional WiFi and
+                    with IECC2015 and Title 24 compliant models.
+                    Available with humidification and advanced dehumidification features including reheat and variable
+                    speed fan control with compatible HVAC systems.
+                    Other models include wired and (coming soon) wireless remote sensor control and averaging, as well
+                    as Light Activation control for Occupied schedules.
+                </div>
+                <a href="PremiumSeries.html">
+                    <button class="thermostatbutton"><span class="textbutton">LEARN MORE</span></button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="home-page" id="premium-mini">
+        <div style="flex: 1"></div>
+        <div class="thermostat-container">
+            <div style="min-width: 27vw">
+                <img id="fourthimage" src="img/eMini-Residential.png">
+            </div>
+            <div class="text-container">
+                <h2 class="h2block">Premium Mini Series</h2>
+                <div class="texttherm">
+                    The all new residential and commercial Premium Mini thermostats with built in WiFi—the lowest cost
+                    WiFi thermostat with 7-day programmability and two stages of heating and cooling.
+                    The perfect thermostat for residential new construction and multi-site commercial customers!
+                    Coming Soon: wireless remote sensors for temperature control and averaging.
+                </div>
+                <a href="PremiumMiniSeries.html">
+                    <button class="thermostatbutton"><span class="textbutton">LEARN MORE</span></button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="home-page" id="value-series">
+        <div style="flex: 1"></div>
+        <div class="thermostat-container">
+            <div style="min-width: 27vw">
+                <img id="thirdimage" src="img/ValueSeriesThermostat.png">
+            </div>
+            <div class="text-container">
+                <h2 class="h2block">Value Series</h2>
+                <div class="withdots">
+                    <div class="texttherm">
+                        The perfect entry level thermostat for residential apartments and homes.
+                        Extremely simple to operate, featuring a large, easy to read backlit digital display.
+                        Available for heat pump and gas/electric systems, with programmable and non-programmable models
+                    </div>
+                </div>
+                <a href="ValueSeries.html">
+                    <button class="thermostatbutton"><span class="textbutton">LEARN MORE</span></button>
+                </a>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="container-mobile" id="first-container-mobile">
+    <div id="hiddenDiv" style="position: absolute; bottom: 0"></div>
+    <nav id="nav-bar" class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#collapseMenu"
+                        aria-expanded="false" id="collapseButton">
+                    <div id="navbar-hamburger">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                    <div id="navbar-close" class="hidden">
+                        <img src="img/icons/cancel.svg"/>
+                    </div>
+                </button>
+                <a href="index.html"><img class="logo" src="img/logo.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="collapseMenu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                           data-toggle="dropdown" role="button">TouchScreen
+                            Series<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="TouchScreenSeries.html#overviewMob">Overview</a>
+                            </li>
+                            <li>
+                                <a href="TouchScreenSeries.html#modelsMob">TouchScreen Models</a>
+                            </li>
+                            <li>
+                                <a href="TouchScreenSeries.html#desktopAppMob">TouchScreen Desktop App</a>
+                            </li>
+                            <li>
+                                <a href="TouchScreenSeries.html#accessoriesMob">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="TouchScreenSeries.html#manualsMob">Manuals</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" role="button">Premium Series<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="PremiumSeries.html#overviewMob" onclick="redirectReload(event)">Overview</a>
+                            </li>
+                            <li>
+                                <a href="PremiumSeries.html#residentialMob" onclick="redirectReload(event)">Residential
+                                    Models</a>
+                            </li>
+                            <li>
+                                <a href="PremiumSeries.html#commercialMob" onclick="redirectReload(event)">Commercial
+                                    Models</a>
+                            </li>
+                            <li>
+                                <a href="PremiumSeries.html#accessoriesMob"
+                                   onclick="redirectReload(event)">Accessories</a>
+                            </li>
+
+                            <li>
+                                <a href="PremiumSeries.html#manualsMob" onclick="redirectReload(event)">Manuals</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown mini">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                           data-toggle="dropdown" role="button">Premium Mini Series<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="PremiumMiniSeries.html#overviewMob"
+                                   onclick="redirectReload(event)">Overview</a>
+                            </li>
+                            <li>
+                                <a href="PremiumMiniSeries.html#modelsMob" onclick="redirectReload(event)">Premium Mini
+                                    Models</a>
+                            </li>
+                            <li>
+                                <a href="PremiumMiniSeries.html#ConfiguratorAppMob" onclick="redirectReload(event)">Configurator
+                                    App</a>
+                            </li>
+                            <li>
+                                <a href="PremiumMiniSeries.html#manualsMob" onclick="redirectReload(event)">Manuals</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="lastMenuChild" class="dropdown mini">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                           data-toggle="dropdown" role="button">Value Series<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="ValueSeries.html#overviewMob"
+                                   onclick="redirectReload(event)">Overview</a>
+                            </li>
+                            <li>
+                                <a href="ValueSeries.html#manualsMob" onclick="redirectReload(event)">Manuals</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="img/ColorTouch.png" class="mobile-nav-img">
+            </div>
+        </div>
+    </nav>
+    <div class="container-mobile-home">
+        <div class="h1mobile">Introducing the all new Daikin Thermostats</div>
+        <div style="display:flex;">
+            <div class="h2mobile">The new line of Daikin thermostats offers industry leading features, designs, and
+                quality for all of your HVAC control needs,
+                from the competitively priced Value Series to the feature-rich TouchScreen Series to IECC2015 and Title
+                24 code compliance, we have what you need!
+            </div>
+        </div>
+        <div>
+            <button class="homebuttonmobile" id="homebuttonmob"><span class="textbuttonmobile">LEARN MORE</span>
+
+            </button>
+            <button class="homebuttonmobile skyport" id="homebuttonmob"><a
+                    href="http://daikin.skyportcloud.com/"><span class="textbuttonmobile"
+                                                                 style="color: #1bb5ff">SIGN IN</span></a></button>
+        </div>
+        <div class="img-mobile-container">
+            <div class="image-mobile"><img src="./img/mobile-main.png" style="width: inherit;"/></div>
+        </div>
+
+    </div>
+</section>
+<section class="container-mobile" id="second-container-mobile">
+    <div class="thermostat-page-mobile">
+        <img class="thermostat-size touch-mobile" width="75%" src="img/ColorTouch.png">
+        <div style="padding-left: 10px">
+            <div class="thermostathead">
+                TouchScreen Series
+            </div>
+            <div style="display:flex;">
+                <div class="thermostattext">
+                    Introducing the new residential and commercial TouchScreen series thermostats with built in WiFi and
+                    high resolution, full-color touchscreen displays.
+                    Available with humidification and advanced dehumidification features including reheat and variable
+                    speed fan control with compatible HVAC systems.
+                    Also compatible with wired and (coming soon) wireless remote sensor control and averaging.
+                </div>
+            </div>
+            <div>
+                <a href="TouchScreenSeries.html">
+                    <button class="homebuttonmobile"><span class="textbuttonmobile">LEARN MORE</span></button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-mobile" id="third-container-mobile">
+    <div class="thermostat-page-mobile">
+        <img class="thermostat-size" width="75%" src="img/commercial.png">
+
+        <div class="thermostathead">
+            Premium Series
+        </div>
+        <div style="display:flex;">
+            <div class="thermostattext">
+                Introducing the new residential and commercial Premium series thermostats with optional WiFi and with
+                IECC2015 and Title 24 compliant models.
+                Available with humidification and advanced dehumidification features including reheat and variable speed
+                fan control with compatible HVAC systems.
+                Other models include wired and (coming soon) wireless remote sensor control and averaging, as well as
+                Light Activation control for Occupied schedules.
+            </div>
+        </div>
+        <div>
+            <a href="PremiumSeries.html">
+                <button class="homebuttonmobile"><span class="textbuttonmobile">LEARN MORE</span></button>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="container-mobile" id="fifth-container-mobile">
+    <div class="thermostat-page-mobile">
+        <img class="thermostat-size" width="75%" src="img/eMini-Residential.png">
+
+        <div class="thermostathead">
+            Premium Mini
+        </div>
+        <div style="display:flex;">
+            <div class="thermostattext">
+                The all new residential and commercial Premium Mini thermostats with built in WiFi—the lowest cost WiFi
+                thermostat with 7-day programmability and two stages of heating and cooling.
+                The perfect thermostat for residential new construction and multi-site commercial customers!
+                Coming Soon: wireless remote sensors for temperature control and averaging.
+            </div>
+        </div>
+        <div>
+            <a href="PremiumMiniSeries.html">
+                <button class="homebuttonmobile"><span class="textbuttonmobile">LEARN MORE</span></button>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="container-mobile" id="fourth-container-mobile">
+    <div class="thermostat-page-mobile">
+        <img class="thermostat-size" width="75%" src="img/ValueSeriesThermostat.png">
+
+        <div class="thermostathead">
+            Value Series
+        </div>
+        <div style="display:flex;">
+            <div class="thermostattext">
+                The perfect entry level thermostat for residential apartments and homes.
+                Extremely simple to operate, featuring a large, easy to read backlit digital display.
+                Available for heat pump and gas/electric systems, with programmable and non-programmable models
+            </div>
+        </div>
+        <div>
+            <a href="ValueSeries.html">
+                <button class="homebuttonmobile"><span class="textbuttonmobile">LEARN MORE</span></button>
+            </a>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

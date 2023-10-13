@@ -1,0 +1,244 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" /><link rel="shortcut icon" href="/favicons/jun88.ico" /><meta name="referrer" content="origin" /><meta name="google" content="notranslate" /><title>Jun88 Trang chủ chính thức Jun88.com</title><meta http-equiv="x-dns-prefetch-control" content="on" /><link rel="preconnect" href="https://img.gashinzo.com" /><link rel="dns-prefetch" href="https://img.gashinzo.com" /><link rel="preconnect" href="https://api.jun8808.com" /><link rel="dns-prefetch" href="https://api.jun8808.com" /><script async src="https://www.googletagmanager.com/gtag/js?id=G-HBNENR6EGG"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-HBNENR6EGG');</script><style>body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    display: none;
+  }
+
+  .app-loading-custom {
+    position: fixed;
+    background-color: #e4e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: #666;
+    font-family: -apple-system-font, Helvetica Neue, PingFang SC, STHeitiSC-Light, Arial, sans-serif;
+    z-index: 99999999;
+
+    > div {
+      min-height: 200px;
+      > h2 {
+        margin: 0.83em 0;
+      }
+
+      > p {
+        margin: 1em 0;
+      }
+    }
+    .brand-img-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100px;
+      width: 70vw;
+      max-width: 600px;
+    }
+  }
+
+  .app-loading, .app-loading-custom {
+    transition: opacity 0.5s;
+  }
+
+  .app-loading.hide {
+    opacity: 0;
+  }
+
+  .app-loading,
+  .app-failure {
+    position: fixed;
+    background-color: #212534;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: -apple-system-font, Helvetica Neue, PingFang SC, STHeitiSC-Light, Arial, sans-serif;
+    z-index: 99999999;
+  }
+  .app-loading .loading-icon,
+  .app-failure .loading-icon {
+    width: 30px;
+  }
+  .loading-cont {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    font-size: 19px;
+    opacity: 0.6;
+    min-height: 30px;
+  }
+  .app-loading .logo,
+  .app-failure .logo {
+    width: 80%;
+    max-width: 300px;
+  }
+  .app-failure h1 {
+    width: 100%;
+    color: #efefef;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .app-failure .cont {
+    padding: 0 20px;
+  }
+  .app-failure .cont span {
+    font-size: 14px;
+  }
+  .app-failure li {
+    margin: 10px 0;
+  }
+  .app-failure .btn-refresh {
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    line-height: 42px;
+    width: 120px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #888;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  .app-failure .cont span.version-hash {
+    font-size: 12px;
+  }
+  @property --rotate {
+    syntax: '<angle>';
+    initial-value: 132deg;
+    inherits: false;
+  }
+  :root {
+    --card-height: 65vh;
+    --card-width: 70vw;
+  }
+  .main-cont {
+    box-sizing: border-box;
+    background: rgba(25, 28, 41, 0.95);
+    width: var(--card-width);
+    height: var(--card-height);
+    max-width: 600px;
+    padding: 3px;
+    position: relative;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-cont .brand .loading-msg {
+    padding: 0 5px;
+    margin: 0.3em 0 0.83em 0;
+  }
+  .main-cont .brand .loading-msg,
+  .main-cont .brand .loading-msg b {
+    font-weight: normal;
+    line-height: 1.4;
+    font-size: 19px;
+  }
+  .main-cont .brand {
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    .brand-img-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100px;
+      width: 70vw;
+      max-width: 600px;
+    }
+  }
+  .main-cont .brand .loading-msg {
+    width: 100%;
+  }
+  .main-cont .brand .loading-msg b + span {
+    display: none;
+  }
+  .main-cont::before {
+    content: '';
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    border-radius: 13px;
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -3px;
+    left: -3px;
+    animation: light-spin 4.5s linear infinite;
+  }
+
+  .main-cont::after {
+    position: absolute;
+    content: '';
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: light-spin 4.5s linear infinite;
+  }
+
+  @keyframes light-spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }</style><script defer="defer" src="/static/js/runtimechunk~main.f8847eac.js"></script><script defer="defer" src="/static/js/r16.c61c72ca.js"></script><script defer="defer" src="/static/js/main.5fc000f9.js"></script><link href="/static/media/iconmps.fa43e34d..ttf" rel="preload" as="font" crossorigin><link href="/static/stylesheets/main.5fc000f9.css" rel="stylesheet"><meta name="apple-mobile-web-app-title" content="Jun88.com" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" /><meta name="theme-color" content="#EFEFEF" /><link rel="apple-touch-icon" sizes="512x512" href="/icon_512x512.ee957fa976598338747012a0f5932eb3.png" /><link rel="apple-touch-icon" sizes="384x384" href="/icon_384x384.2337ad0378a782e6aaf7f716093ff19f.png" /><link rel="apple-touch-icon" sizes="192x192" href="/icon_192x192.3707468a26773db927163e0d1d1f6c7f.png" /><link rel="apple-touch-icon" sizes="152x152" href="/icon_152x152.66e478c9da4307bb599f13f7968ae725.png" /><link rel="apple-touch-icon" sizes="144x144" href="/icon_144x144.4c3c96012f27a8f6288f981e557e2bbb.png" /><link rel="apple-touch-icon" sizes="128x128" href="/icon_128x128.851ae33cf8984193d9b0ccf9ff4b8858.png" /><link rel="apple-touch-icon" sizes="72x72" href="/icon_72x72.c5b8c90714fa9834e672bab7574c2beb.png" /><link rel="apple-touch-icon" sizes="96x96" href="/icon_96x96.082a8097841f5989c3656be89d9427ad.png" /><link rel="manifest" href="/manifest.ab2ab1f32999f7701d52ddb4293b0f31.json" /></head><body><div id="root"></div><div class="app-loading-custom"><div class="app-loading-main"></div></div><style>.app-loading-custom {
+          display: flex;
+          align-items: center;
+          justify-content: cetner;
+          background: #93d6f1
+            url(https://img.gashinzo.com/img/static/jun88/loading-pc-bg.jpg)
+            center/cover no-repeat;
+        }
+        .app-loading-main {
+          width: 90%;
+          height: 86%;
+          background: url(https://img.gashinzo.com/img/static/jun88/loading-pc-main.png)
+            center/contain no-repeat;
+        }
+        @media (max-width: 768px) {
+          .app-loading-custom {
+            background-image: url(https://img.gashinzo.com/img/static/jun88/loading-h5-bg.jpg);
+            background-position: center bottom;
+          }
+          .app-loading-main {
+            width: 95%;
+            background-image: url(https://img.gashinzo.com/img/static/jun88/loading-h5-main.png);
+          }
+        }</style><div id="modal-root"></div><script>/* REPLACE START */
+      /* REPLACE END */</script><script>// setTimeout(function () {
+      //   if (!window.appIsMounted) {
+      //     document.getElementById('root').innerHTML = '<div class="app-failure"><h1>Connector break</h1><div class="cont">Page cannot be accessed. Please confirm the following conditions:<ul><li>Operating system too old </br><span>(iOS 10.0+/Android 5.0+ supported)</span></li><li>Browser version too old or SSL connection error</br><span>(Recommend Chrome 50+)</span></li><li>Good network environment</li><span class="version-hash">"62238935e6cf581e1879bbf72d3563b8e18a4a23"</span></ul></div><a href="/" class="btn-refresh">Refresh</a></div>';
+      //   }
+      // }, 15000);</script><div class="version-hash" style="display:none;">"62238935e6cf581e1879bbf72d3563b8e18a4a23"</div><script>(function(){var js = "window['__CF$cv$params']={r:'814f53208f5cf43d',t:'MTY5NzExMzUxOC4zMjYwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"814f53208f5cf43d","version":"2023.8.0","b":1,"token":"ea539fa18cf74ff5b2df25cdd39ed8de","si":100}' crossorigin="anonymous"></script>
+</body></html>

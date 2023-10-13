@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DrayDDNS | DrayTek</title>
+<link rel="shortcut icon" href="/assets/images/2018.ico">
+
+<link rel="stylesheet" href="/assets/2022_theme/css/normalize.css?modified=20221116">
+
+<link rel="stylesheet" href="/assets/2022_theme/css/animate.css?modified=20221116">
+
+<link rel="stylesheet" href="/assets/2022_theme/css/bootstrap.min.css?modified=20221116">
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/assets/2022_theme/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="/assets/2022_theme/css/base.css?modified=20221116">
+<link rel="stylesheet" href="/assets/2022_theme/css/component.css?modified=20221116">
+<link rel="stylesheet" href="/assets/2022_theme/css/menu.css?modified=20221116">
+<link rel="stylesheet" href="/assets/2022_theme/css/animation-svg-icon.css?modified=20221116">
+<link rel="stylesheet" href="/assets/2022_theme/css/timeline.css">
+<link rel="stylesheet" href="/assets/2022_theme/css/video-banner.css">
+
+<link rel="stylesheet" href="/assets/css/fontawesome.css?modified=20221116">
+
+<script src="/assets/2022_theme/js/modernizr-2.6.2.min.js"></script>
+
+<link rel="stylesheet" href="/assets/2022_theme/css/owl.carousel.min.css?modified=20221116">
+<link rel="stylesheet" href="/assets/2022_theme/css/owl.theme.default.css?modified=20221116">
+<script src="/assets/2022_theme/js/owl.carousel.min.js"></script>
+<meta name="google-site-verification" content="P5AVp5W9klrvzkhV9eM6ReTtkig_TMhBBcqEB0aAd2w" />
+<script async="true" src="https://www.googletagmanager.com/gtag/js?id=UA-130621813-1"></script>
+
+<link rel="stylesheet" href="/assets/2022_theme/css/magnific-popup.css">
+<script src="/assets/2022_theme/jquery.magnific-popup.min.js"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6Q7XTNKXJR');
+    </script>
+<script>
+	    if(location.hostname == 'www.draytek.com.tw'){
+	        location.replace(`https://www.draytek.com${location.pathname}`)
+	    }
+	</script>
+<style>
+        .item-slogan {
+            background-size: auto 700px;
+            background-position: 60% bottom;
+            background-image: url(/assets/2022_theme/images/2022_banner1.png);
+            background-repeat: no-repeat;
+        }
+        
+        .item-slogan .banner-item-content {
+            height: inherit;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .item-slogan .banner-item-content h1 {
+            font-size: 3.8rem;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+        }
+        
+        @media (max-width: 990px) {
+            .item-slogan {
+                background-size: auto 70%;
+                background-position: right center;
+            }
+            .item-slogan .banner-item-content {
+                justify-content: start;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .owl-stage-outer {
+                width: 100%!important;
+            }
+            .item-slogan {
+                background-size: auto 60%;
+                background-position: 90% 10%;
+            }
+            .item-slogan .banner-item-content h1 {
+                align-items: end;
+            }
+        }
+        
+        @media (max-width: 414px) {
+            .item-slogan {
+                background-size: auto 50%;
+                background-position: 90% 5%;
+            }
+        }
+        
+        .item-wifi6 {
+            background-image: url(/assets/images/products/2866/2866ax_right_H1125.png), url(/assets/images/products/2927/2927ax_left_H1125.png);
+            background-repeat: no-repeat, no-repeat;
+            background-position: -50px bottom, 110% bottom;
+            background-size: 36% auto;
+        }
+        
+        .item-wifi6 .banner-item-content {
+            top: 40%;
+            transform: translateY(-50%);
+        }
+        
+        .item-wifi6 .banner-item-content img {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 990px) {
+            .item-wifi6 {
+                background-repeat: no-repeat, no-repeat;
+		        background-size: 50% auto;
+		        background-position:-30% 50%, 130% 50%;
+		    }
+		    .item-wifi6 .banner-item-content img {
+		    	width: 40%;
+		    }
+        }
+        
+        @media (max-width: 800px) {
+            .item-wifi6 {
+                background-repeat: no-repeat, no-repeat;
+                background-size: 70% auto;
+                background-position: -140% 95%, 220% 0;
+            }
+        }
+        .item-app {
+            background-image: url(/assets/images/cover/management_app_banner.png);
+            background-repeat: no-repeat;
+            background-size: auto 550px;
+            background-position: 85% center;
+        }
+        .item-app .banner-item-content {
+		    height: inherit; 
+		    display:flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+		.item-app .banner-item-content h1 {
+		    font-size: 3.8rem; 
+		    display: flex;
+		    align-items:center;
+		    vertical-align: middle;
+		}
+		.item-app .btn {
+		    text-align: center;
+		    display: block;
+		    width: fit-content;
+		    margin-top:24px;
+		}
+		@media (max-width: 990px) {
+		    .item-app .banner-item-content {
+		        align-items: flex-start;
+		        text-align: center;
+		        margin-top:24px;
+		    }
+		    .item-app {
+		        background-size: auto 350px;
+		        background-position: center 85%;
+		    }
+		    .item-app .banner-item-content h1 {
+		        font-size: 3rem; 
+		    }
+		    .item-app .btn {
+		        margin:16px auto;
+		    }
+        }
+        
+      
+		.detail_906 .banner__intro h1{
+			margin-bottom: 32px;
+		}
+		.detail_906 .btn {
+	    text-align: center;
+	    display: block;
+	    width: fit-content;
+	    
+	}
+    @media screen and (min-width: 1024px){
+	    	.detail_906 .banner__intro.title {
+	    		top: 50%;
+	    		transform: translateY(-50%);
+			    bottom: auto;
+			}
+			
+    }
+    @media (max-width: 768px) {
+    	.detail_906 .btn {
+				    transform: translateX(-50%);
+   				 left: 50%;
+			}
+    }
+
+
+    .item-q2121x {
+            background-image: url(/assets/images/cover/Q2121_index_banner.png);
+            background-repeat: no-repeat;
+            background-size: auto 800px;
+            background-position: 75% bottom;
+        }
+        .item-q2121x .banner-item-content {
+		    height: inherit; 
+		    display:flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+		.item-q2121x .banner-item-content h1 {
+		    font-size: 3.8rem; 
+		    display: flex;
+		    align-items:center;
+		    vertical-align: middle;
+		}
+		.item-q2121x .btn {
+		    text-align: center;
+		    display: block;
+		    width: fit-content;
+		    margin-top:24px;
+		}
+		@media (max-width: 990px) {
+		    .item-q2121x .banner-item-content {
+		        align-items: flex-start;
+		        text-align: center;
+		        margin-top:65px;
+		    }
+		    .item-q2121x {
+		        background-size: auto 450px;
+		        background-position: center 85%;
+		    }
+		    .item-q2121x .banner-item-content h1 {
+		        font-size: 3rem; 
+		    }
+		    .item-q2121x .btn {
+		        margin:16px auto;
+		    }
+    }
+    
+/* URL Reputation banner 樣式 */
+
+.item-url {
+	background-position: 85% -300px;
+	background-size: auto 850px;
+	background-image: url(/assets/2022_theme/images/index_url_reputation.webp);
+	background-repeat: no-repeat;
+}
+.item-url .btn {
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin-top: 24px;
+}
+.item-url .banner-item-content {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.item-url .banner-item-content h1 {
+    font-size: 3.8rem;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.item-url img {
+	max-width: 110px;
+  margin: 30px 30px 0 0;
+}
+@media (max-width: 990px) {
+	.item-url {
+    background-size: auto 90%;
+		background-position: right -100%;
+  }
+  .item-url .banner-item-content {
+      justify-content: start;
+  }
+  .item-url .banner-item-content h1 {
+    font-size: 3rem;
+	}
+}
+@media (max-width: 860px) {
+	.item-url {
+    background-size: auto 80%;
+		background-position: right -100%;
+  }
+}
+@media (max-width: 600px) {
+	.item-url {
+		background-size: auto 85%;
+		background-position: 90% -210%;
+	}
+	.item-url .banner-item-content h1 {
+		align-items:end ;
+		font-size: 2.5rem;
+	}
+	.item-url .banner-item-content {
+	    justify-content: center;
+	    margin-top: 130px;
+	    flex-direction: column;
+	    margin-left: 0;
+	}
+	.item-url img {
+		max-width: 80px;
+		margin: 30px 0 0 0;
+	}
+	.item-url .btn {
+		margin:0 auto;
+	}
+}
+@media (max-width: 414px) {
+	.item-url {
+		background-position: 9% -210%;
+		background-size: auto 85%;
+	}
+}
+
+/* URL Reputation banner 樣式 結束*/
+        
+        .star {
+            position: absolute;
+            bottom: 30%;
+            font-size: 24px;
+            color: red;
+        }
+        
+        .star-ps {
+            bottom: 40%;
+        }
+        
+        .star-ps2 {
+            top: 10%;
+        }
+        
+        .star img {
+            max-width: 50%;
+            height: auto;
+        }
+        body{
+            overflow-x:hidden;
+        }
+        input[type=checkbox]{
+            opacity:1!important;
+        }
+        
+    </style>
+
+<script>
+        switch(location.pathname){
+            case '/solutions/mesh/':
+                location.replace("/solutions/wireless-solution/")
+            break
+        }
+    </script>
+<link rel="stylesheet" href="/assets/components/markdowneditor/css/github-markdown.css" type="text/css" />
+<link rel="stylesheet" href="/assets/components/markdowneditor/css/highlight.css" type="text/css" />
+<script type="text/javascript" src="/assets/components/markdowneditor/js/highlight.pack.js"></script>
+<link rel="stylesheet" href="/assets/components/markdowneditor/css/cards.css" type="text/css" />
+</head>
+<body>
+<div class="wrapper">
+<link rel="stylesheet" href="/assets/2022_theme/css/component.css?modified=202209301818">
+<link rel="stylesheet" href="/assets/2022_theme/css/menu.css?modified=202209301818">
+
+<link href="/assets/2022_theme/css/sm-core-css.css" rel="stylesheet" type="text/css" />
+<link href="/assets/2022_theme/css/sm-blue.css?modified=202302031300" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/assets/2022_theme/jquery.smartmenus.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  $(document).ready(function(){
+
+if ($(window).width() < 1180 && $(window).load()) {
+        $("#mb-menu").show();
+    }
+
+    if($(window).load()){
+        if ($(window).width() < 1180) {
+        $("#mb-menu").show();
+        }
+    }
+
+$(window).resize(function() {
+    if ($(window).width() < 1180 && $(window).load()) {
+        $("#mb-menu").show();
+    }
+    else{
+        $("#mb-menu").hide();
+    }
+
+    if($(window).load()){
+        if ($(window).width() < 1180) {
+        $("#mb-menu").show();
+        }
+    }
+    else{
+        $("#mb-menu").hide();
+    }
+
+});});
+</script>
+<script language="javascript">
+window.addEventListener("resize",()=>{
+    
+    if(window.innerWidth<1180){
+        document.getElementById("mb-menu").style.display = "inline-block"
+        document.getElementById("popup-menu").style.display = "none"
+    }else{
+        document.getElementById("mb-menu").style.display = "none"
+        document.getElementById("popup-menu").style.display = "flex"
+    }
+})
+</script>
+<nav class="navbar u-clearfix" id="topNav">
+<div class="main-menu">
+<div class="navbar__logo">
+<a href="/" class="logo__image">
+<img src="/assets/2022_theme/images/logo.svg">
+</a>
+</div>
+<div class="nav navbar__nav">
+
+
+<div id="popup-menu" class="responsive-popup menu--horizontal">
+<ul id="main-content-menu" class="menu u-clearfix  clearfix">
+<li class="menu-list firstCollapse">
+<a class="menu__item" href="/products">Products</a>
+<ul class="dropdown navdiv" style="width: 800px; /*left: 50px;*/">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-12">
+<li class="root_title"><a href="/products/">Product Homepage</a></li>
+<li class="secondCollapse">
+Routers<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+<li class="hover"><a href="/products/vpn-routers/">VPN Routers </a></li>
+<li class="hover"><a href="/products/load-balancing-routers/">Load Balancing Routers</a></li>
+<li class="hover"><a href="/products/dsl-routers/">DSL Modem Routers</a></li>
+<li class="hover"><a href="/products/lte-routers/">LTE Routers</a></li>
+<li class="hover"><a href="/products/fiber-routers/">Fiber Routers</a></li>
+<li class="hover"><a href="/products/vigor2927/">Vigor2927 Series</a></li>
+<li class="hover"><a href="/products/vigor2866/">Vigor2866 Series</a></li>
+<li class="hover"><a href="/products/routers/">All Routers</a></li>
+<li class="hover">
+<a id="router-compare" class="compare-page" href="/products/router-matrix">Router Matrix &nbsp;<i class="icon-thumbnail"></i></a>
+</li>
+</ul>
+</li>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12">
+<li class="secondCollapse">
+Access Points<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+<li class="hover"><a href="/products/vigorap-1060c/">VigorAP 1060C</a></li>
+<li class="hover"><a href="/products/vigorap-906/">VigorAP 906</a></li>
+<li class="hover"><a href="/products/access-points/">All Access Points</a></li>
+<li class="hover">
+<a id="ap-compare" class="compare-page" href="/products/ap-matrix">AP Matrix &nbsp;<i class="icon-thumbnail"></i></a>
+</li>
+</ul>
+</li>
+<li class="secondCollapse">
+Switches<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+<li class="hover"><a href="/products/vigorswitch-g1080/">VigorSwitch G1080</a></li>
+<li class="hover"><a href="/products/poe-switches/">PoE Switches</a></li>
+<li class="hover"><a href="/products/switches/">All Switches</a></li>
+<li class="hover">
+<a id="switch-compare" class="compare-page" href="/products/switch-matrix">Switch Matrix &nbsp;<i class="icon-thumbnail"></i></a>
+</li>
+</ul>
+</li>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12">
+<li class="secondCollapse">
+Software / Tools<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+<li class="hover"><a href="/products/vigoracs-3/">VigorACS 3</a></li>
+
+<li class="hover"><a href="/products/vigorconnect/">VigorConnect</a></li>
+<li class="hover"><a href="/products/smart-vpn-client/">Smart VPN Client</a></li>
+<li class="hover"><a href="/products/draytek-network-management-app/">DrayTek Network Management Apps</a></li>
+<li class="hover"><a href="/products/vigorsms/">VigorSMS APP</a></li>
+<li class="hover">
+
+<a href="/support/resources/others">All Utilities &nbsp;<i class="icon-maintenance"></i></a>
+</li>
+</ul>
+</li>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12">
+<li class="secondCollapse">
+Security<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+
+<li class="hover"><a href="/products/draytek-url-reputation/">DrayTek URL Reputation</a></li>
+</ul>
+</li>
+<li class="secondCollapse">
+Accessories<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+
+<li class="hover"><a href="/products/rack-mount-bracket">Rack Mount Bracket</a></li>
+<li class="hover"><a href="/products/accessories/">All Accessories</a></li>
+</ul>
+</li>
+
+<li class="hover">
+<a href="/products/databook/">Databook 2023 &nbsp;<i class="icon-paper"></i></a>
+</li>
+</div>
+</div>
+</ul>
+</li>
+<li class="menu-list firstCollapse">
+<a class="menu__item" href="/solutions">Solutions</a>
+<ul class="dropdown navdiv" style="width: 530px; /*left: 120px;*/">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-12">
+<li class="root_title"><a href="/solutions/">Solution Homepage</a></li>
+<li class="secondCollapse">
+Internet Gateway<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+<li class="hover"><a href="/solutions/vpn/">VPN</a></li>
+<li class="hover"><a href="/solutions/ssl-vpn/">SSL VPN</a></li>
+<li class="hover"><a href="/solutions/vpn-matcher/">VPN Matcher</a></li>
+<li class="hover"><a href="/solutions/load-balancing/">WAN Load-Balancing</a></li>
+<li class="hover"><a href="/solutions/drayddns/">DrayDDNS</a></li>
+<li class="hover"><a href="/solutions/hotspot-web-portal/">Hotspot Web Portal</a></li>
+<li class="hover"><a href="/solutions/wireless-wan/">Wireless WAN</a></li>
+<li class="hover"><a style="white-space: nowrap;" href="/solutions/working-from-home-vpn-solutions/">Work from Home Solution</a></li>
+</ul>
+</li>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12">
+<li class="secondCollapse">
+Wireless<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+<li class="hover"><a href="/solutions/assisted-roaming/">Assisted Wi-Fi Roaming</a></li>
+<li class="hover"><a href="/solutions/wireless-solution/">Wireless Solution</a></li>
+</ul>
+</li>
+<li class="secondCollapse">
+Switch<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+<li class="hover"><a href="/solutions/openflow-vigorswitch/">OpenFlow VigorSwitch</a></li>
+</ul>
+</li>
+<li class="secondCollapse">
+Central Management<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+<li class="hover"><a href="/solutions/apm/">AP Management (APM)</a></li>
+<li class="hover"><a href="/solutions/swm/">Switch Management (SWM)</a></li>
+</ul>
+</li>
+<li class="hover"><a href="/solutions/case-studies/">Customer Success Stories</a></li>
+</div>
+</div>
+</ul>
+</li>
+<li class="menu-list firstCollapse">
+<a class="menu__item" href="/support">Support</a>
+<ul class="dropdown navdiv" style="width: 400px;/*left: 170px;*/">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-12">
+<li class="root_title"><a href="/support/">Support Homepage</a></li>
+<li class="secondCollapse">
+Downloads<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+
+<li class="hover"><a href="/support/resources/routers#version">Latest Firmwares</a></li>
+
+
+<li class="hover"><a href="/support/resources/routers#user">Manuals</a></li>
+<li class="hover"><a href="/products/smart-vpn-client/">Smart VPN Client</a></li>
+<li class="hover"><a href="/support/resources">Resource Center</a></li>
+<li class="hover"><a href="https://www.draytek.com.tw/ftp/" target="_blank">DrayTek FTP</a></li>
+</ul>
+</li>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12">
+<li class="secondCollapse">
+Tech Support<i class="fas fa-angle-right fasrotate"></i>
+<ul class="navdiv">
+<li class="hover"><a href="/support/faq/">FAQs</a></li>
+<li class="hover"><a href="/support/knowledge-base/">Knowledge Base</a></li>
+<li class="hover">
+<a href="/support/contact/">
+Submit a Ticket &nbsp;
+<i class="icon-mail"></i>
+</a>
+</li>
+<li class="hover"><a href="/products/live-demo/">Live Demo &nbsp;<i class="icon-computer"></i></a></li>
+<li class="hover"><a href="/warranty/">Warranty Info</a></li>
+</ul>
+</li>
+</div>
+</div>
+</ul>
+</li>
+<li class="menu-list firstCollapse">
+<a class="menu__item" href="/about/about-draytek/">About</a>
+<ul class="dropdown navdiv">
+<li class="hover"><a href="/about/about-draytek/">About DrayTek</a></li>
+<li class="hover"><a href="/about/why-vigor-router/">Why Vigor Router</a></li>
+<li class="hover"><a href="/about/partners/">Authorized Partners</a></li>
+<li class="hover"><a href="/about/contact-us/">Contact Us</a></li>
+<li class="hover"><a href="/about/newsroom/2023">Newsroom</a></li>
+<li class="hover"><a href="/about/security-advisory/">Security Advisory</a></li>
+<li class="hover"><a href="/about/secure-development-lifecycle/">DrayTek SDL</a></li>
+<li class="hover"><a href="/about/gpl-software-notice/">GPL Software Notice</a></li>
+</ul>
+</li>
+<li class="menu-list firstCollapse"><a class="menu__item" href="/about/partners">Partners</a></li>
+<li class="menu-list firstCollapse"><a class="menu__item" href="https://myvigor.draytek.com/">MyVigor</a></li>
+</ul>
+<ul class="menu u-clearfix  clearfix">
+<li class="nav__search">
+<form class="sisea-search-form" action="/search" method="get" autocomplete="off">
+<fieldset>
+<label for="query"></label>
+<input type="text" name="query" id="query" value autocomplete="on" placeholder="Search product" onchange="if (!window.__cfRLUnblockHandlers) return false; trim(this.value)">
+<button type="submit" value="Search"><i class="fa fa-search"></i></button>
+</fieldset>
+</form>
+<script type="text/javascript">
+                            function trim(x) {
+                                document.getElementById("search").value = x.trim();
+                            }
+                        </script>
+</li>
+
+<li>
+<div class="dropdown nav-lang">
+<button type="button" class="lang dropdown-toggle" data-toggle="dropdown" aria-expanded="false"></button>
+<div class="lang-item dropdown-menu">
+<a class="dropdown-item" href="/">Global/EN</a>
+<a class="dropdown-item" href="/zh">台灣/繁中</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+
+
+<div class="main-nav" role="navigation" id="mb-menu">
+
+<input id="main-menu-state" type="checkbox" />
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span>
+</label>
+
+<ul id="main-menu" class="sm sm-blue">
+<li class="nav__search">
+<form class="sisea-search-form" action="/search" method="get" autocomplete="off">
+<fieldset>
+<label for="query"></label>
+<input type="text" name="query" id="query" value autocomplete="on" placeholder="Search product" onchange="if (!window.__cfRLUnblockHandlers) return false; trim(this.value)">
+<button type="submit" value="Search"><i class="fa fa-search"></i></button>
+</fieldset>
+</form>
+<script type="text/javascript">
+                                function trim(x) {
+                                    document.getElementById("search").value = x.trim();
+                                }
+                            </script>
+</li>
+<li><a href="/">Home</a></li>
+<li><a href="/products">Products</a>
+<ul>
+<li>
+<a href="/routers/">Routers</a>
+<ul>
+<li class="hover"><a href="/products/vpn-routers/">VPN Routers </a></li>
+<li class="hover"><a href="/products/load-balancing-routers/">Load Balancing Routers</a></li>
+<li class="hover"><a href="/products/dsl-routers/">DSL Modem Routers</a></li>
+<li class="hover"><a href="/products/lte-routers/">LTE Routers</a></li>
+<li class="hover"><a href="/products/fiber-routers/">Fiber Routers</a></li>
+<li class="hover"><a href="/products/vigor2927/">Vigor2927 Series</a></li>
+<li class="hover"><a href="/products/vigor2866/">Vigor2866 Series</a></li>
+<li class="hover"><a href="/products/routers/">All Routers</a></li>
+<li class="hover"><a id="router-compare" href="/router-compare">Router Matrix &nbsp;<i class="icon-thumbnail" aria-hidden="true"></i></a></li>
+</ul>
+</li>
+<li>
+<a href="/access-points/">Access Points</a>
+<ul>
+<li class="hover"><a href="/products/vigorap-1060c/">VigorAP 1060C</a></li>
+<li class="hover"><a href="/products/vigorap-903/">VigorAP 903</a></li>
+<li class="hover"><a href="/products/access-points/">All Access Points</a></li>
+<li class="hover">
+<a id="ap-compare" href="/ap-compare">AP Matrix &nbsp;<i class="icon-thumbnail" aria-hidden="true"></i></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/switches/">Switches</a>
+<ul>
+<li class="hover"><a href="/products/vigorswitch-g1080/">VigorSwitch G1080</a></li>
+<li class="hover"><a href="/products/poe-switches/">PoE Switches</a></li>
+<li class="hover"><a href="/products/switches/">All Switches</a></li>
+<li class="hover">
+<a id="switch-compare" class="compare-page" href="/products/switch-matrix">Switch Matrix &nbsp;<i class="icon-thumbnail"></i></a>
+</li>
+</ul>
+</li>
+<li>
+<a href>Software / Tools</a>
+<ul>
+<li class="hover"><a href="/products/vigoracs-3/">VigorACS 3</a></li>
+<li class="hover"><a href="/products/vigorconnect/">VigorConnect</a></li>
+<li class="hover"><a href="/products/smart-vpn-client/">Smart VPN Client</a></li>
+<li class="hover"><a href="/products/draytek-network-management-app/">DrayTek Network Management Apps</a></li>
+<li class="hover"><a href="/products/vigorsms/">VigorSMS APP</a></li>
+<li class="hover">
+<a href="/support/resources/others">All Utilities &nbsp;<i class="icon-maintenance"></i></a>
+</li>
+</ul>
+</li>
+<li>
+<a href>Security</a>
+<ul>
+<li class="hover"><a href="/products/draytek-url-reputation/">DrayTek URL Reputation</a></li>
+</ul>
+</li>
+<li>
+<a href="/accessories/">Accessories</a>
+<ul>
+<li class="hover"><a href="/products/rack-mount-bracket">Rack Mount Bracket</a></li>
+<li class="hover"><a href="/products/accessories/">All Accessories</a></li>
+</ul>
+</li>
+<li class="hover"><a href="/products/databook/">Databook 2023 &nbsp;<i class="icon-paper"></i></a></li>
+</ul>
+</li>
+<li>
+<a href="/solutions">Solutions</a>
+<ul>
+<li>
+<a href="#">Internet Gateway</a>
+<ul>
+<li class="hover"><a href="/solutions/vpn/">VPN</a></li>
+<li class="hover"><a href="/solutions/ssl-vpn/">SSL VPN</a></li>
+<li class="hover"><a href="/solutions/vpn-matcher/">VPN Matcher</a></li>
+<li class="hover"><a href="/solutions/load-balancing/">WAN Load-Balancing</a></li>
+<li class="hover"><a href="/solutions/drayddns/">DrayDDNS</a></li>
+<li class="hover"><a href="/solutions/hotspot-web-portal/">Hotspot Web Portal</a></li>
+<li class="hover"><a href="/solutions/wireless-wan/">Wireless WAN</a></li>
+<li class="hover"><a style="white-space: nowrap;" href="/solutions/working-from-home-vpn-solutions/">Work from Home Solution</a></li>
+</ul>
+</li>
+<li>
+<a href="#">Wireless</a>
+<ul>
+<li class="hover"><a href="/solutions/assisted-roaming/">Assisted Wi-Fi Roaming</a></li>
+<li class="hover"><a href="/solutions/mesh/">Wireless Solution</a></li>
+</ul>
+</li>
+<li>
+<a href="#">Switch</a>
+<ul>
+<li class="hover"><a href="/solutions/openflow-vigorswitch/">OpenFlow VigorSwitch</a></li>
+</ul>
+</li>
+<li>
+<a href="#">Central Management</a>
+<ul>
+<li class="hover"><a href="/solutions/apm/">AP Management (APM)</a></li>
+<li class="hover"><a href="/solutions/swm/">Switch Management (SWM)</a></li>
+<li class="hover"><a href="/solutions/case-studies/">Customer Success Stories</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="/support">Support</a>
+<ul>
+<li>
+<a href>Downloads</a>
+<ul>
+<li class="hover"><a href="/support/resources/routers#version">Latest Firmwares</a></li>
+<li class="hover"><a href="/support/resources/router#user">Manuals</a></li>
+<li class="hover"><a href="/products/smart-vpn-client/">Smart VPN Client</a></li>
+<li class="hover"><a href="/support/resources">Resource Center</a></li>
+<li class="hover"><a href="https://www.draytek.com.tw/ftp/" target="_blank">DrayTek FTP</a></li>
+</ul>
+</li>
+<li>
+<a href>Tech Support</a>
+<ul>
+<li class="hover"><a href="/support/faq/">FAQs</a></li>
+<li class="hover"><a href="/support/knowledge-base/">Knowledge Base</a></li>
+<li class="hover"><a href="/support/contact/">Submit a Ticket &nbsp;<i class="icon-mail"></i></a></li>
+<li class="hover"><a href="/products/live-demo/">Live Demo</a></li>
+<li class="hover"><a href="/warranty/">Warranty Info</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/about/about-draytek/">About</a>
+<ul>
+<li class="hover"><a href="/about/about-draytek/">About DrayTek</a></li>
+<li class="hover"><a href="/about/why-vigor-router/">Why Vigor Router</a></li>
+<li class="hover"><a href="/about/partners/">Authorized Partners</a></li>
+<li class="hover"><a href="/about/contact-us/">Contact Us</a></li>
+<li class="hover"><a href="/about/newsroom/2023">Newsroom</a></li>
+<li class="hover"><a href="/about/security-advisory/">Security Advisory</a></li>
+<li class="hover"><a href="/about/secure-development-lifecycle/">DrayTek SDL</a></li>
+<li class="hover"><a href="/about/gpl-software-notice/">GPL Software Notice</a></li>
+</ul>
+</li>
+<li><a href="/about/partners">Partners</a></li>
+<li><a href="https://myvigor.draytek.com/">MyVigor</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+</nav>
+<script>
+    let pthname = location.pathname
+    Array.from(document.getElementsByClassName("menu__item")).map((itm)=>{
+        if(pthname.indexOf(itm.getAttribute("href"))>-1){
+            itm.classList.add("active")
+        }
+    })
+    function open_collapse(t){
+        console.log(window.innerWidth)
+        if(window.innerWidth<780){
+            if(t.className.indexOf("active")>-1){
+                t.classList.remove("active")
+            }else{
+                t.classList.add("active")
+            }
+        }
+    }
+    
+    //document.getElementById("base-2018").getElementsByClassName("lang")[0].addEventListener("click",(e)=>{
+    //    if(document.getElementById("base-2018").getElementsByClassName("lang-item")[0].className.indexOf("show")==-1){
+    //        document.getElementById("base-2018").getElementsByClassName("lang-item")[0].classList.add("show")
+    //    }else{
+    //        document.getElementById("base-2018").getElementsByClassName("lang-item")[0].classList.remove("show")
+    //    }
+    //})
+    //window.addEventListener("click",()=>{
+    //    if(document.getElementById("base-2018").getElementsByClassName("lang-item")[0].className.indexOf("show")>-1){
+    //        document.getElementById("base-2018").getElementsByClassName("lang-item")[0].classList.remove("show")
+    //    }
+    //})
+    (()=>{
+        let width = 1920
+        window.addEventListener("load",()=>{
+            width = window.innerWidth
+        })
+        window.addEventListener("resize",()=>{
+            width = window.innerWidth
+        })
+        function showCompare(){
+            if(width<500){
+                document.getElementById("router-compare").setAttribute("href","/router-compare")
+            }else{
+                document.getElementById("router-compare").setAttribute("href","/products/router-matrix")
+            }
+        }
+    })()
+</script>
+<style>
+#base-2018 .tab{
+    /** 當產品頁使用新版css 時 tab 標籤會跑版*/
+    width:100%;
+}
+#base-2018 .products-item .top{
+    padding:10px 0;
+}
+#base-2018 .nav__search{
+    padding:10px 0;
+}
+#base-2018 .menu{
+    margin-right:25px;
+}
+#base-2018 .menu li{
+    margin-left:0px;
+    text-transform:unset;
+}
+#base-2018 .homepage{
+    margin-top:62px;
+}
+.wrapper .homepage{
+    margin-top:0px;
+}
+#base-2018 .jumbotron{
+    background-color:unset;
+    max-height:unset;
+    padding-bottom:8vh;
+}
+#base-2018 .jumbotron .title{
+    font-weight:500;
+    font-size:18px;
+}
+#base-2018 .nav-lang .lang.dropdown-toggle{
+    height:60px;
+}
+#base-2018 .nav-lang .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+}
+#base-2018 .nav-lang .dropdown-menu .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+#base-2018 .main-menu .login-btn{
+    align-items:center!important;
+    height:42px!important;
+}
+#base-2018 .navbar__logo{
+    margin:0;
+}
+.cursor-pointer{
+    cursor:pointer;
+}
+@media screen and (max-width:780px){
+    #main-content-menu{
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+}
+.menu-list a.menu__item{
+    width:fit-content;
+}
+.menu-list.active .dropdown.navdiv{
+    display: block;
+    position: inherit;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.nav__search .sisea-search-form button{
+    display:flex;
+    align-items:center;
+}
+.dropdown.navdiv li a{
+   /*  padding-left: 16px; */
+}
+.dropdown.navdiv li a:hover{
+    /* background: #ef5568;
+    color: #fff; */
+}
+li.secondCollapse{
+    color:#EF5568;
+}
+li.secondCollapse .navdiv li{
+    /* color:#2a2a2a; */
+}
+.menu li ul li {
+    color:none;
+}
+/* 瀏覽器寬度小於1180px選單css */
+@media (max-width: 1180px) {
+    .navbar__logo .logo__image {
+        display: inline;
+        line-height: 56px;
+        margin: 0;
+        z-index: 99;
+    }
+    .responsive-popup {
+        transition:none!important;
+        -webkit-transition: none!important;
+    }
+}
+</style>
+
+<script type="text/javascript">//<![CDATA[
+
+
+// SmartMenus init
+$(function() {
+  $('#main-menu').smartmenus({
+    subMenusSubOffsetX: 1,
+    subMenusSubOffsetY: -8
+  });
+});
+
+// SmartMenus mobile menu toggle button
+$(function() {
+  var $mainMenuState = $('#main-menu-state');
+  if ($mainMenuState.length) {
+    // animate mobile menu
+    $mainMenuState.change(function(e) {
+      var $menu = $('#main-menu');
+      if (this.checked) {
+        $menu.hide().slideDown(250, function() { $menu.css('display', ''); });
+      } else {
+        $menu.show().slideUp(250, function() { $menu.css('display', ''); });
+      }
+    });
+    // hide mobile menu beforeunload
+    $(window).bind('beforeunload unload resize', function() {
+      if ($mainMenuState[0].checked) {
+        $mainMenuState[0].click();
+      }
+    });
+  }
+});
+
+
+  //]]></script>
+<div class="homepage">
+<div class="jumbotron solutions-banner solutions-inner-banner">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 banner" style>
+<div class="animate-box title fadeInUp animated" style="justify-content: space-between;width: 100%;">
+<div style="width:50%">
+<a class="color--red breadcrumb" href="/solutions/">Solutions</a>
+<h1>DrayDDNS</h1>
+<p style="text-transform: initial;">The free Dynamic DNS service included in all DrayTek routers
+</div>
+<div class="img_block" style="margin: 0 30px;">
+<img src="/assets/2022_theme/images/solutions/solutions_bubble_DrayDDNS.png" alt style="width:270px">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><div class="container">
+<div class="row ftrs">
+<div class="col-md-4 u-text-center">
+<img src="/assets/images/solutions/remote_access_easy.svg">
+<h4 data-langkey="resource__4653_0">Making Remote Access Easy</h4>
+<p>No Static IP? No problem. Use a hostname of your choice to access the router and provide easy-to-remember VPN server settings.</p>
+</div>
+<div class="col-md-4 u-text-center">
+<img src="/assets/images/solutions/multiple_a_records.svg" style="margin-top: -20px;margin-bottom:20px;height: 180px;">
+<h4 data-langkey="resource__4653_1">Multiple A Records</h4>
+<p data-langkey="resource__4653_2">You can have multiple IP addresses for your DrayDDNS domain. Multi-WAN router will update all WAN IPs automatically.</p>
+</div>
+<div class="col-md-4 u-text-center">
+<img src="/assets/images/solutions/zero_cost.svg" style="height: 160px; margin:10px 0">
+<h4 data-langkey="resource__4653_3">Zero Cost</h4>
+<p>Each DrayTek router can apply for one DrayDDNS hostname. It's free, and you only need to renew once a year.</p></div>
+</div>
+</div></section>
+<section class="bg-color--light-grey"><div class="container">
+
+<img class="u-push-right u-pl-40 u-pr-40" style="max-width: 250px;margin-top: 25px;" src="/assets/images/solutions/obtain_a_trusted.svg">
+<div><h3 data-langkey="resource__4653_4">Obtain a Trusted Certificate for Your Hostname Painlessly</h3>
+<p>Since firmware version 3.9.0, DrayTek routers add the support for Let's Encrypt - the open certificate authority. By turning on the service, the router will interact with Let's Encrypt and automatically obtain a browser-trusted SSL/TLS certificate for your DrayDDNS hostname, which can provide a more secure connection for your VPN and hotspot clients.</p>
+</div>
+</div></section>
+<section style="padding: 8vh 0;">
+<div class="container">
+<div class="row">
+<div class="col-md-5" style="display: flex;flex-direction: column;justify-content: center;">
+<img src="/assets/2022_theme/images/knowledge_base_banner.svg" alt="book icon" class="u-center-block u-mt-16" style="max-width:150px;">
+<h4 class="u-text-center">Knowledge Base Articles</h4>
+</div>
+<div class="col-md-7 list">
+<ul>
+<li><a href="/support/knowledge-base/5168"><span data-langkey="resource__4653_6">Activate DrayDDNS Service for a Free Hostname</span></a></li>
+<li><a href="/support/knowledge-base/5136">Use Let's Encrypt Certificate for your DDNS Domain</a></li>
+<li><a href="/support/knowledge-base/5725"><span data-langkey="resource__4653_7">How to fix the connection not private error when using HTTPS Captive Portal for Hotspot</span></a></li>
+<li><a href="/support/knowledge-base/5702">IKEv2 VPN with EAP Authentication from Windows to Vigor Router by using Let's Encrypt</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+<style>
+
+.jumbotron h2{
+margin-top: 0px;
+letter-spacing: 0.05em;
+line-height: 18px;
+}
+
+.homepage section {
+padding: 8vh 0;
+}
+.ftrs img{
+max-width: 250px;
+height: 180px;
+}
+.ftrs .col-md-4{
+padding: 24px 32px;
+}
+.list {
+  line-height: 3.4rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+</style>
+<script type="application/ld+json">
+	{"@context": "http://schema.org","@type": "BreadcrumbList",
+    "itemListElement": [{
+                        "@type": "ListItem","position": 1,
+				"item": {"@type": "WebSite","@id": "https://www.draytek.com/","name": "Home" }
+                        },{
+                            "@type": "ListItem","position": 2,
+				"item": {"@type": "WebPage","@id": "https://www.draytek.com/solutions/","name": "Solutions"}
+                        },{
+                            "@type": "ListItem","position": 3,
+                                "item": {"@type": "WebPage","@id": "https://www.draytek.com/solutions/language-editor/","name": "DrayDDNS"}
+                        }]
+    }
+</script> <footer>
+<div id="gotop">
+<i class="fas fa-level-up-alt"></i>
+</div>
+<style>
+.hideUp{
+	display:none;
+}
+#gotop{
+	position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 5vh;
+    right: 2vh;
+    background: #91919199;
+    border-radius: 15px;z-index:20;cursor: pointer;
+}
+#gotop .fas{
+	color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 12px 16px;
+	}
+</style>
+<script>
+	/*判斷螢幕捲動方向*/
+	var gotop = document.getElementById("gotop");
+	var lastScrollY = 0;
+	window.addEventListener('scroll', function(){
+		  var st = this.scrollY;
+		  gotop.classList.remove('hideUp');
+		  // 判斷是向上捲動，而且捲軸超過 200px
+		  if( st < lastScrollY) {
+		    gotop.classList.add('hideUp');
+		  }
+		  else{
+		    gotop.classList.remove('hideUp');
+		  }
+		  lastScrollY = st;
+	});
+	gotop.onclick = function(){removehideup();}
+	function removehideup(){
+		gotop.classList.add("hideUp");
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>
+<div id="footer" class="footer copyright-area">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-12 footer-resources">
+<div class="row">
+<div class="col-lg-7  col-md-8  col-sm-12 resources-contect">
+<div class="row u-mb-24">
+<div class="col-lg-4 col-md-4 col-sm-6">
+<h5>Products</h5>
+<ul>
+<li>
+<a href="/products/vpn-routers/">VPN Routers</a>
+</li>
+<li>
+<a href="/products/load-balancing-routers/">Load Balancing Routers</a>
+</li>
+<li>
+<a href="/products/dsl-routers/">DSL Modem Routers</a>
+</li>
+<li>
+<a href="/products/lte-routers/">LTE Routers</a>
+</li>
+<li>
+<a href="/products/access-points/">Access Points</a>
+</li>
+<li>
+<a href="/products/poe-switches/">PoE Switches</a>
+</li>
+<li>
+<a href="/support/resources/others">All Utilities</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6">
+<h5>Resources</h5>
+<ul>
+<li>
+<a href="/products/live-demo/">Product Live Demo</a>
+</li>
+<li>
+<a href="/support/resources/routers#version">Latest Firmwares</a>
+</li>
+<li>
+<a href="/support/faq/">FAQs</a>
+</li>
+<li>
+<a href="/support/knowledge-base/">Knowledge Base</a>
+</li>
+<li>
+<a href="/support/resources/routers#user">Manuals</a>
+</li>
+<li>
+<a href="/support/contact/">Submit a Ticket</a>
+</li>
+<li>
+<a href="/warranty/">Warranty Info</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6">
+<h5>About</h5>
+<ul>
+<li>
+<a href="/about/about-draytek/">About DrayTek</a>
+</li>
+<li>
+<a href="/about/why-vigor-router/">Why Vigor Router ?</a>
+</li>
+<li>
+<a href="/about/partners/">Authorized Partners</a>
+</li>
+<li>
+<a href="/about/contact-us/">Contact Us</a>
+</li>
+<li>
+<a href="/about/newsroom/2023/">Newsroom</a>
+</li>
+<li>
+<a href="/about/security-advisory/">Security Advisory</a>
+</li>
+<li>
+<a href="/about/secure-development-lifecycle/">DrayTek SDL</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-5 col-md-4 col-sm-12">
+<div>
+<ul class="social">
+<li>
+<a href="https://www.facebook.com/DrayTek.HQ" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 24 24">
+<path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z">
+</path>
+</svg>
+</a>
+</li>
+<li>
+<a href="http://www.linkedin.com/company/101492" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+<path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z">
+</path>
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/DrayTekMarketing" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+<g id="surface1">
+<path style=" " d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z ">
+</path>
+</g>
+</svg>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/DrayTek_HQ" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 16 16">
+<path d="M16,2.536c-0.583,0.259-1.185,0.431-1.842,0.512l-0.006-0.011c0.678-0.406,1.161-1.033,1.406-1.8 c-0.634,0.376-1.337,0.649-2.085,0.797c-0.599-0.638-1.452-1.037-2.396-1.037c-1.813,0-3.283,1.47-3.283,3.283 c0,0.257,0.029,0.508,0.085,0.748C5.151,4.89,2.733,3.583,1.113,1.597C0.831,2.082,0.669,2.646,0.669,3.248 c0,1.139,0.579,2.143,1.46,2.732C1.591,5.962,1.085,5.815,0.643,5.569c0,0.014,0,0.027,0,0.041c0,1.591,1.131,2.917,2.633,3.219 C3.001,8.904,2.711,8.944,2.411,8.944c-0.211,0-0.417-0.021-0.617-0.059c0.418,1.304,1.63,2.253,3.067,2.28 c-1.123,0.881-2.539,1.405-4.077,1.405c-0.265,0-0.526-0.015-0.783-0.046C1.453,13.456,3.178,14,5.032,14 c6.038,0,9.339-5.002,9.339-9.34c0-0.142-0.003-0.284-0.009-0.425C15.003,3.772,15.56,3.194,16,2.536z">
+</path>
+</svg>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12 copyright-content">
+<div class="copyright">
+<p>© 2023 Copyright DrayTek Corp.</p>
+</div>
+<div class="copyright privacy">
+<ul>
+<li> <a href="/sitemap.html">Sitemap</a></li>
+<li> <a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+<li> <a href="/policy">Privacy</a></li>
+</ul>
+</div>
+<div class="copyright">
+<div id="footer-lang" class="dropdown">
+<button type="button" class="lang dropdown-toggle" data-toggle="dropdown" aria-expanded="false" onclick="collapseLangDropdown()">
+EN
+</button>
+<div id="footer-lang-dropdown" class="lang-item dropdown-menu">
+<a class="dropdown-item" href="/">EN</a>
+<a class="dropdown-item" href="/zh">台灣/繁中</a>
+</div>
+</div>
+<style>
+              #footer-lang .lang-item {
+                top: -150%;
+              }
+
+              #footer-lang .lang-item.active {
+                display: block;
+              }
+            </style>
+<script>
+              function collapseLangDropdown() {
+                let langDropdown = document.getElementById("footer-lang-dropdown")
+                if (langDropdown.className.indexOf("active") > -1) {
+                  langDropdown.classList.remove("active")
+                } else {
+                  langDropdown.classList.add("active")
+                }
+              }
+            </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cookie">
+<h6>DrayTek website uses cookies.</h6>
+<p>By continuing to browse this website, it means your agree to our cookie usage policy. To find out more about the
+cookies we use, see our <a href="/policy">Privacy Policy</a></p>
+<button class="btn btn--outline btn--md">Accept</button>
+</div>
+<script>
+    //cookie
+    const
+        cookieAcceptStr = "cookie=accept",
+        cookieAry = document.cookie.split("; "),
+        cookieContent = document.querySelector(".cookie");
+    cookieContent.querySelector("a").style.textDecoration = "underline";
+    if (cookieAry.indexOf(cookieAcceptStr)==-1) {
+        cookieContent.style.display = "block";
+        cookieContent.querySelector("button").onclick = function () {
+            document.cookie = `${cookieAcceptStr}; max-age = ${60 * 60 * 24 * 30}; path=/;`
+            cookieContent.remove();
+        };
+    }
+</script>
+<style>
+    .cookie {
+        bottom: 0;
+        position: fixed;
+        background: #2f313ddd;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        z-index: 20;
+        color: white;
+        padding: 20px;
+        display: none;
+    }
+
+    .cookie p,
+    .cookie p a {
+        color: white;
+    }
+</style>
+</footer>
+<script>
+  Array.from(document.querySelectorAll("a[href]")).map((itm) => {
+    let href = itm.getAttribute("href")
+    if (href.indexOf("www.draytek.com.tw/ftp") > -1) {
+      href = href.replace("www.draytek.com.tw/ftp", "fw.draytek.com.tw")
+    }
+    itm.setAttribute("href", href)
+  })
+
+</script>
+<style>
+  .wrapper-2 {
+    margin-bottom: unset;
+    padding-bottom: 5em;
+  }
+  
+</style>
+</div>
+<style>
+        .jumbotron .simplesearch fieldset button.btn{
+            border-radius:unset!important;
+        }
+        .jumbotron .simplesearch fieldset button.btn .fa.fa-search{
+            color:#fff;
+        }
+    </style>
+<style>
+        .owl-theme .item {
+            min-height: 10rem;
+            padding: 2rem;
+        }
+        .owl-theme .item p {
+            margin: 20px 0 0 0;
+            line-height: 2rem;
+        }
+        .owl-carousel .item h4 {
+            font-weight: 400;
+            font-size: 1.4375rem;
+            margin-top: 0rem;
+        }
+        .owl-theme .owl-nav {
+            display: none;
+        }
+        .owl-dots {
+            margin-top: 30px;
+        }
+        .owl-theme .owl-dots .owl-dot.active span,
+        .owl-theme .owl-dots .owl-dot:hover span {
+            background: #ef5568;
+        }
+        .owl-theme .owl-dots .owl-dot span {
+            background: #ececec;
+        }
+        .bottom [onclick*="AddToCompare"]{
+            display:none;
+        }
+    </style>
+
+
+
+
+<script src="/assets/2022_theme/js/jquery.easing.1.3.js"></script>
+
+<script src="/assets/2022_theme/js/jquery.waypoints.min.js"></script>
+
+<script src="/assets/2022_theme/js/main.js"></script>
+
+<script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('#topNav').addClass('is-sticky');
+                } else {
+                    $('#topNav').removeClass('is-sticky');
+                }
+            });
+        });
+        //cookie
+        
+        
+        // 輪播
+        $(".owl-carousel").owlCarousel({
+            loop: true, // 循環播放
+            margin: 10, // 外距 10px
+            nav: true, // 顯示點點
+            responsive: {
+                0: {
+                    items: 1 // 螢幕大小為 0~600 顯示 1 個項目
+                },
+                600: {
+                    items: 1 // 螢幕大小為 600~1000 顯示 1 個項目
+                },
+                1000: {
+                    items: 1 // 螢幕大小為 1000 以上 顯示 1 個項目
+                }
+            }
+        });
+    </script>
+
+<script>
+        $(document).ready(function() {
+            $(function() {
+                $("#app-mobile-menu-trigger").click(function() {
+                    $(".main-menu").toggleClass("mobile-menu-activating mobile-menu-active", 1000);
+                    return false;
+                });
+            });
+        });
+    </script>
+<script>
+        $(function() {
+            $("#app-mobile-menu-trigger").click(function() {
+                $(".menu--horizontal").toggleClass("mobile-menu-view", 1000);
+                return false;
+            });
+        });
+    </script>
+<script id="rendered-js">
+        //$('#carouselFade').carousel();
+        $('#carousel-demo').carousel({
+            interval: 3000 //changes the speed
+        })
+    </script>
+
+<script src="/assets/2022_theme/js/scr_script.js"></script>
+<script>
+              (function(w, d){
+               var id='embedly-platform', n = 'script';
+               if (!d.getElementById(id)){
+                 w.embedly = w.embedly || function() {(w.embedly.q = w.embedly.q || []).push(arguments);};
+                 var e = d.createElement(n); e.id = id; e.async=1;
+                 e.src = ('https:' === document.location.protocol ? 'https' : 'http') + '://cdn.embedly.com/widgets/platform.js';
+                 var s = d.getElementsByTagName(n)[0];
+                 s.parentNode.insertBefore(e, s);
+               }
+              })(window, document);
+            </script>
+</body>
+</html>

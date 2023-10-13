@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#e60028" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src https://*.fr.world.socgen https://*.sgmarkets.com https://api.privacy-center.org https://*.signalr.net wss://*.signalr.net https://cdn.qumucloud.com; font-src 'self' https://fonts.gstatic.com https://*.sgmarkets.com https://cdn.qumucloud.com; frame-src 'self' https://*.fr.world.socgen https://*.sgmarkets.com https://cdn.qumucloud.com https://socgen.qumucloud.com; img-src 'self' data: https://*.fr.world.socgen https://*.sgmarkets.com https://sdk.privacy-center.org https://api.privacy-center.org https://cdn.qumucloud.com https://socgen.qumucloud.com; script-src 'self' 'unsafe-eval' 'sha256-HMqjuTpZoMg56sl4DLx2z0dGyYYoZovL+8O/R8kcZsA=' 'sha256-sLSK7xlSEK5nUim0bPATjGkUFJzMczTnPrcpd2uwbwM=' 'unsafe-hashes' https://*.fr.world.socgen https://*.sgmarkets.com https://cdnjs.cloudflare.com https://sdk.privacy-center.org https://api.privacy-center.org https://code.jquery.com https://stackpath.bootstrapcdn.com https://cdn.qumucloud.com https://socgen.qumucloud.com; style-src 'self' 'unsafe-inline' https://*.fr.world.socgen https://*.sgmarkets.com https://fonts.googleapis.com https://cdn.qumucloud.com https://socgen.qumucloud.com; manifest-src https://*.sgmarkets.com/myservices/manifest.json;" />
+    <link rel="preload" as="font" href="https://shared.sgmarkets.com/sg-bootstrap/v4/4.1.4/fonts/Inter/Inter-Regular.woff2?v=3.11" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="https://shared.sgmarkets.com/sg-bootstrap/v4/4.1.4/fonts/Inter/Inter-Medium.woff2?v=3.11" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="https://shared.sgmarkets.com/sg-bootstrap/v4/4.1.4/fonts/Inter/Inter-MediumItalic.woff2?v=3.11" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="https://shared.sgmarkets.com/sg-bootstrap/v4/4.1.4/fonts/Inter/Inter-Medium.woff2?v=3.11" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="https://shared.sgmarkets.com/sg-bootstrap/v4/4.1.4/fonts/Inter/Inter-Regular.woff2?v=3.11" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="https://shared.sgmarkets.com/sg-bootstrap/v4/4.1.4/fonts/Inter/Inter-Bold.woff2?v=3.11" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="https://shared.sgmarkets.com/sg-bootstrap/v4/4.1.4/fonts/Inter/Inter-Light-BETA.woff2?v=3.11" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="https://shared.sgmarkets.com/sg-bootstrap/v4/4.1.4/fonts/Inter/Inter-ExtraBold.woff2?v=3.11" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="https://shared.sgmarkets.com/sg-bootstrap/v4/4.1.4/fonts/Inter/Inter-SemiBold.woff2?v=3.11" type="font/woff2" crossorigin="anonymous" />
+    <title>SG Markets</title>
+    <base href="/" />
+    <link rel="stylesheet" href="https://shared.sgmarkets.com/sg-bootstrap/v4/4.1.4/sg-bootstrap-standard.min.css" media="all" />
+    <link rel="android-touch-icon" href="/assets/images/sgmarkets.ico" />
+
+    <link href="/assets/images/sgmarkets.ico" rel="icon" type="image/x-icon" />
+
+    <!-- Define default configuration -->
+    <script>
+      function isProduction() {
+        return window.location.hostname === 'www.sgmarkets.com' || window.location.hostname === 'www-preview.sgmarkets.com';
+      }
+
+      // used to redirect https://www.sgmarket.com url to https://www.sgmarkets.com
+      if (window.location.hostname === 'www.sgmarket.com')
+      {
+        window.location.replace("https://www.sgmarkets.com");
+      }
+
+      window.tracking_config = {
+        piwikTrackerUrl: isProduction() ? 'https://t-log.sgmarkets.com/' : 'https://sg-analytics-uat.fr.world.socgen/piwik/',
+        piwikSiteId: isProduction() ? '170' : '877539670',
+      };
+
+      window.SGWTWidgetConfiguration = {
+        environment: isProduction() ? 'production' : 'homologation',
+      };
+
+      function loadWidget(name) {
+        const prefix = isProduction() ? 'https://sgwt-cdn-widgets.sgmarkets.com/widgets' : 'https://sgwt-widgets-dev.sgmarkets.com/widgets';
+        const url = prefix + '/' + name;
+
+        load_script(url, null);
+      }
+
+      function load_script(url, integrity) {
+        var new_script = document.createElement('script');
+        new_script.type = 'text/javascript';
+        new_script.src = url;
+        new_script.async = false;
+        new_script.rel = 'preload';
+        new_script.defer = true;
+        if (integrity) {
+          new_script.crossOrigin = 'anonymous';
+          new_script.integrity = integrity;
+        }
+
+        document.getElementsByTagName('head')[0].appendChild(new_script);
+      }
+
+      loadWidget('sgwt-widget-polyfills/sgwt-widget-polyfill-webcomponent.js');
+      load_script('https://code.jquery.com/jquery-3.2.1.slim.min.js', 'sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN');
+      load_script('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', 'sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q');
+      load_script('https://shared.sgmarkets.com/sg-bootstrap/v4/4.1.4/sg-bootstrap.min.js');
+      loadWidget("sgwt-connect/v4/sgwt-connect.js");
+      loadWidget('sgwt-account-center/v4/sgwt-account-center.js');
+      loadWidget('sgwt-help-center/v4/sgwt-help-center.js');
+      loadWidget('sgwt-mini-footer/v4/sgwt-mini-footer.js');
+      loadWidget('sgwt-splash-screen/v4/sgwt-splash-screen.js');
+      loadWidget('sgwt-web-analytics/v4/sgwt-web-analytics.js');
+      load_script('https://shared.sgmarkets.com/sg-link/protocolcheck.js');
+    </script>
+  </head>
+
+  <body>
+    <sg-app></sg-app>
+    <sgwt-connect></sgwt-connect>
+  <script type="text/javascript" src="runtime.7135e6175cd9cc160d0c.js"></script><script type="text/javascript" src="polyfills.c7d8d156791157eea386.js"></script><script type="text/javascript" src="styles.2675c68e617c0264c4ed.js"></script><script type="text/javascript" src="main.2e7da60e77bc8c58865b.js"></script></body>
+
+  <!-- Piwik -->
+  <script type="text/javascript">
+    const element = document.createElement("sgwt-web-analytics");
+    element.setAttribute("site-id", window.tracking_config.piwikSiteId);
+    element.setAttribute("base-url", window.tracking_config.piwikTrackerUrl);
+    document.body.appendChild(element);
+  </script>
+</html>

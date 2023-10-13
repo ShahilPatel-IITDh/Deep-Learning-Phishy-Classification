@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+ <meta charset="utf-8" />
+ <title>熱烈中華食堂日高屋 | 株式会社 ハイデイ日高</title>
+ <meta name="description" content="熱烈中華食堂日高屋のウェブサイトです。豊富なメニューと店舗情報を掲載中。" />
+ <!-- ▼ ogp -->
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="熱烈中華食堂日高屋 | 株式会社 ハイデイ日高">
+ <meta property="og:description" content="熱烈中華食堂日高屋のウェブサイトです。豊富なメニューと店舗情報を掲載中。">
+ <meta property="og:image" content="https://hidakaya.hiday.co.jp/img/ogp.png">
+ <meta property="og:image:alt" content="熱烈中華食堂日高屋">
+ <meta property="og:url" content="https://hidakaya.hiday.co.jp/">
+ <meta property="og:site_name" content="熱烈中華食堂日高屋">
+ <!-- ▲ ogp -->
+ <link rel="shortcut icon" href="img/favicon.ico" />
+ <link rel="stylesheet" href="css/index.css" type="text/css" media="all" />
+ <link rel="stylesheet" href="css/add.css" type="text/css" media="all" />
+ <link rel="stylesheet" href="css/slick.css" type="text/css" media="all" />
+ <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+ <script src="js/jquery.min.js"></script>
+ <script src="lib/element.js"></script>
+</script>
+</head>
+
+<script type="text/javascript">
+var gLang = "ja";
+var ret = 0;
+ret = location.href.indexOf("/en/");
+if(0 <= ret){
+	gLang = "en";
+}
+ret = location.href.indexOf("/zh/");
+if(0 <= ret){
+	gLang = "zh";
+}
+ret = location.href.indexOf("/vi/");
+if(0 <= ret){
+	gLang = "vi";
+}
+//-->
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+// キャッシュを防ぐ為、後ろに日付を連結
+var date = new Date();
+var gServerJsonUrl = "/json/server.json";
+gServerJsonUrl += "?" + date;
+var gServerActiveFlg = "1";
+var gMaintenanceMsg = "大変申し訳有りませんが、システムメンテナンス中の為本機能は利用出来ません。";
+$(function() {
+	$.getJSON(gServerJsonUrl, function(server_mode) {
+		if((typeof server_mode == "undefined")){
+			return;
+		}
+		if((typeof server_mode.server_active_flg != "undefined") && (server_mode.server_active_flg != null) && (server_mode.server_active_flg != "")){
+			gServerActiveFlg = server_mode.server_active_flg;
+		}
+		return;
+	});
+});
+
+/*]]>*/
+</script>
+
+
+<body class="page_index service_hidaka jp">
+ <div id="wrapper"><!-- #BeginLibraryItem "/Library/header.lbi" -->
+<header>
+	<div id="header">
+		<p class="sitelogo"> <a href="index.html"><img src="img/sitelogo.png" alt="熱烈中華食堂日高屋 | 株式会社 ハイデイ日高"></a>
+		</p>
+
+		<!-- /.sitelogo -->
+		<div id="menubox"><a id="menuButton" href="#"><span></span><span></span><span></span></a></div>
+		<aside>
+			<nav class="gnav">
+				<ul>
+					<li class="gnav_menu"><a href="javascript:void(0);" onclick="goMenu01();"><span><img
+									src="img/icon_menu.png" alt="メニュー"></span>メニュー</a></li>
+					<script type="text/javascript">
+						function goMenu01(
+						) {
+							if (gServerActiveFlg != "1") {
+								alert(gMaintenanceMsg);
+								return;
+							}
+							var url = "/hits/" + gLang + "/menu/";
+							location.href = url;
+							return;
+						}
+					</script>
+					<li class="gnav_shop"><a href="javascript:void(0);" onclick="goShop01();"><span><img
+									src="img/icon_shop.png" alt="店舗検索"></span>店舗検索</a></li>
+					<script type="text/javascript">
+						function goShop01(
+						) {
+							if (gServerActiveFlg != "1") {
+								alert(gMaintenanceMsg);
+								return;
+							}
+							var url = "/hits/" + gLang + "/shop/";
+							location.href = url;
+							return;
+						}
+					</script>
+					<li class="gnav_scene"><a href="scene/index.html"><span><img src="img/icon_beer.png"
+									alt="メニュー"></span>ちょい飲み</a></li>
+					<li class="gnav_point"><a href="point/index.html"><span><img src="img/icon_chef.png"
+									alt="メニュー"></span>こだわり</a></li>
+					<li class="gnav_ir"><a href="http://www.hiday.co.jp/ir/" target="_blank"><span><img
+									src="img/icon_ir.png" alt="IR情報"></span>IR情報</a></li>
+				</ul>
+			</nav>
+			<!-- /.gnav -->
+			<nav class="langnav">
+				<ul>
+					<li class="lang_jp"><a href="index.html">JP</a></li>
+					<li class="lang_en"><a href="country/en.html">EN</a></li>
+					<li class="lang_zh"><a href="country/zh.html">ZH</a></li>
+					<li class="lang_vi"><a href="country/vi.html">VI</a></li>
+				</ul>
+			</nav>
+			<!-- /.langnav -->
+		</aside>
+		<nav class="formatnav">
+			<ul>
+				<li class="fmn01"><a href="hits/index.html"><img src="img/fmlogo_hidakaya.png" alt="日高屋"></a></li>
+				<li class="fmn02"><a href="service/yakitorihidaka.html"><img src="img/fmlogo_yakitori.png"
+							alt="焼鳥日高"></a></li>
+				<li class="fmn03"><a href="service/rairaiken.html"><img src="img/fmlogo_rairaiken.png"
+							alt="来来軒"></a></li>
+				<li class="fmn04"><a href="service/others.html"><img src="img/fmlogo_others.png" alt="その他店舗"></a>
+				</li>
+			</ul>
+		</nav>
+		<!-- /.formatnav -->
+		<p class="quickbtn"><a href="javascript:void(0);">クイック検索</a></p>
+		<div class="quickarea">
+			<div class="cont_m">
+				<div class="cont_shop">
+					<p class="q_tit">店舗検索</p>
+					<div class="search">
+						<figure><img src="Library/img/q_shop.jpg" alt="店舗検索"></figure>
+						<section>
+							<form method="get" id="id_shop_hashtag_search_form" onsubmit="
+				if(gServerActiveFlg != '1'){
+					alert(gMaintenanceMsg);
+					return false;
+				}
+				// １件もチェックされていなければ検索しない
+				var fRet = checkShopCheck();
+				if(fRet == false){
+					alert('タグを選択して下さい。');
+					return false;
+				}
+				return true;
+							">
+								<p class="keytit">人気のキーワード</p>
+								<nav class="tag_search01">
+									<ul>
+										<script th:inline="javascript">
+											/*<![CDATA[*/
+											// キャッシュを防ぐ為、後ろに日付を連結
+											var date = new Date();
+
+											var gQuickShopJsonUrl = "/" + gLang + "/json/quick_shop.json";
+											gQuickShopJsonUrl += "?" + date;
+
+											var gQuickMenuJsonUrl = "/" + gLang + "/json/quick_menu.json";
+											gQuickMenuJsonUrl += "?" + date;
+
+											var gShopHashtagSearchUrl = "/hits/" + gLang + "/shop/99/hashtag.html";
+											$("#id_shop_hashtag_search_form").prop("action", gShopHashtagSearchUrl);
+
+											$(function () {
+												$.getJSON(gQuickShopJsonUrl, function (quick_menu) {
+													for (var i in quick_menu) {
+														var tagId = "shopRefa" + i;
+														var h = '<li>' + '<input type="checkbox" class="check_box" id="' + tagId + '" name="refa" value="' + quick_menu[i].refa_value + '">' + '<label class="label" for="' + tagId + '">#<span>' + quick_menu[i].tag_nm + '</span></label>' + '</li>';
+														$(".quickarea .cont_shop ul").append(h);
+													}
+												});
+											});
+
+											function checkShopCheck(
+											) {
+												for (var loop = 0; loop < 100; loop++) {
+													var tagId = "shopRefa" + loop;
+													var checked = $("#" + tagId).prop("checked");
+													if (checked == true) {
+														return true;
+													}
+												}
+												return false;
+											}
+
+											/*]]>*/
+										</script>
+									</ul>
+
+									<p class="btn06"><a href="javascript:void(0);"
+											onclick="$('#id_shop_hashtag_search').click();">ハッシュタグで絞り込み</a></p>
+									<button type="submit" style="display:none;"
+										id="id_shop_hashtag_search">ハッシュタグで絞り込み</button>
+
+								</nav>
+							</form>
+						</section>
+					</div>
+					<!-- /.search -->
+				</div>
+				<!-- /.cont_shop -->
+				<div class="cont_menu">
+					<p class="q_tit">メニュー検索</p>
+
+					<div class="search">
+						<figure><img src="Library/img/q_menu.jpg" alt="メニュー検索"></figure>
+						<section>
+
+							<form method="get" id="id_menu_hashtag_search_form" onsubmit="
+				if(gServerActiveFlg != '1'){
+					alert(gMaintenanceMsg);
+					return false;
+				}
+				// １件もチェックされていなければ検索しない
+				var fRet = checkMenuCheck();
+				if(fRet == false){
+					alert('タグを選択して下さい。');
+					return false;
+				}
+				return true;
+							">
+
+								<p class="keytit">人気のキーワード</p>
+								<nav class="tag_search01">
+									<ul>
+										<script>
+											var gMenuHashtagSearchUrl = "/hits/" + gLang + "/menu/99/search_result.html";
+											$("#id_menu_hashtag_search_form").prop("action", gMenuHashtagSearchUrl);
+											$(function () {
+												$.getJSON(gQuickMenuJsonUrl, function (quick_menu) {
+													for (var i in quick_menu) {
+														var tagId = "menuRefa" + i;
+														var h = '<li>' + '<input type="checkbox" class="check_box" id="' + tagId + '" name="refa" value="' + quick_menu[i].refa_value + '">' + '<label class="label" for="' + tagId + '">#<span>' + quick_menu[i].tag_nm + '</span></label>' + '</li>';
+														$(".quickarea .cont_menu ul").append(h);
+													}
+												});
+											});
+											function checkMenuCheck(
+											) {
+												for (var loop = 0; loop < 100; loop++) {
+													var tagId = "menuRefa" + loop;
+													var checked = $("#" + tagId).prop("checked");
+													if (checked == true) {
+														return true;
+													}
+												}
+												return false;
+											}
+
+										</script>
+									</ul>
+									<p class="btn06"><a href="javascript:void(0);"
+											onclick="$('#id_menu_hashtag_search').click();">ハッシュタグで絞り込み</a></p>
+									<button type="submit" style="display:none;"
+										id="id_menu_hashtag_search">ハッシュタグで絞り込み</button>
+								</nav>
+							</form>
+						</section>
+					</div>
+					<!-- /.search -->
+				</div>
+				<!-- /.cont_menu -->
+			</div>
+			<!-- /.cont_m -->
+			<p class="q_close"><a href="javascript:void(0);">✕</a></p>
+		</div>
+		<!-- /.quickarea -->
+	</div>
+	<!-- /#header -->
+</header><!-- #EndLibraryItem --><div class="container">
+   <div class="slider topslider">
+    <div class="center">
+
+     <!-- <div><a href="/scene/"><img src="img/index/slide_img01.jpg" alt=""></a></div> -->
+
+     <!--
+     <div><a href="https://hidakaya.hiday.co.jp/hits/ja/menu/1/detail/801.html"><img src="img/index/slide_img09.jpg" alt=""></a></div>
+      <div><a href="/hits/ja/menu/1/index.html"><img src="img/index/slide_img05.jpg" alt=""></a></div> -->
+
+     <!-- <div><a href="/hits/ja/menu/1/index.html"><img src="img/index/slide_img07.jpg" alt=""></a></div> -->
+
+     <div><a href="/hits/ja/menu/1/index.html"><img src="img/index/slide_img06.jpg" alt=""></a></div>
+
+     <div><a href="/hits/ja/shop/1/index.html"><img src="img/index/slide_img03.jpg" alt=""></a></div>
+     <div><a href="https://takeout.epark.jp/contents/brand/eparktakeout-hidakaya/"><img src="img/index/slide_img04.jpg" alt=""></a></div>
+     <!-- <div><a href="javascript:void(0);" onclick="goTakeoutMenu01();"><img src="img/index/slide_img04.jpg" alt=""></a></div> -->
+
+
+    </div>
+   </div>
+   <!-- /.slider -->
+
+
+
+
+<script type="text/javascript">
+function goTakeoutMenu01(
+){
+	if(gServerActiveFlg != "1"){
+		alert(gMaintenanceMsg);
+		return;
+	}
+	var url = "/hits/" + gLang + "/menu/1/list/5.html";
+	location.href = url;
+	return;
+}
+//-->
+</script>
+
+
+
+
+   <nav class="tnav cont_m">
+    <ul>
+     <li class="tnav_menu">
+      <a href="javascript:void(0);" onclick="goMenu02();">
+
+
+<script type="text/javascript">
+function goMenu02(
+){
+	if(gServerActiveFlg != "1"){
+		alert(gMaintenanceMsg);
+		return;
+	}
+	var url = "/hits/" + gLang + "/menu/";
+	location.href = url;
+	return;
+}
+</script>
+
+
+       <h2>メニュー表</h2>
+      </a>
+     </li>
+     <li class="tnav_shop">
+      <a href="javascript:void(0);" onclick="goShop02();">
+
+
+<script type="text/javascript">
+function goShop02(
+){
+	if(gServerActiveFlg != "1"){
+		alert(gMaintenanceMsg);
+		return;
+	}
+	var url = "/hits/" + gLang + "/shop/";
+	location.href = url;
+	return;
+}
+</script>
+
+
+       <h2>店舗を探す</h2>
+      </a>
+     </li>
+     <li class="tnav_scene">
+      <a href="scene/index.html">
+       <h2>シーンで選ぶ</h2>
+      </a>
+     </li>
+     <li class="tnav_takeout">
+      <a href="https://takeout.epark.jp/contents/brand/eparktakeout-hidakaya/">
+       <h2>お持ち帰り</h2>
+      </a>
+     </li>
+    </ul>
+   </nav>
+
+   <div class="pickup_area">
+    <div class="cont_m">
+      <div class="to_bnr" style="margin-top: -25px;">
+        <h4><div class="inner animate__animated animate__flash">テイクアウト・宅配<br/><span style="font-weight:900;">↓↓</span>こちらから<span style="font-weight:900;">↓↓</span></div></h4>
+        <ul>
+          <li><a href="https://takeout.epark.jp/contents/brand/eparktakeout-hidakaya/" target="_blank"><img src="img/index/tobnr_epark.png" alt="EPARK テイクアウト"></a></li>
+          <li><a href="https://oem.demae-can.com/sp_hidakaya" target="_blank"><img src="img/index/tobnr_demaecan.png" alt="Demae-can"></a></li>
+          <li><a href="https://www.rakuten.co.jp/haidei/" target="_blank"><img src="img/index/tobnr_rakuten.png" alt="日高屋楽天市場店"></a></li>
+        </ul>
+      </div>
+      </div>
+   </div>
+
+   <div class="movie_area">
+    <div class="cont_m">
+     <h2 class="tit01"style="text-align:left;">MOVIE</h2>
+     <div class="thumbnail">
+      <div id="player07"></div>
+      <div id="player06"></div>
+      <div id="player01"></div>
+      <div id="player02"></div>
+    <!--  <div id="player03"></div>
+       <div id="player04"></div>
+      <div id="player05"></div> -->
+     </div>
+     <div class="thumbnail-thumb">
+      <div><img src="img/index/video_thumb07.jpg" alt=""></div>
+      <div><img src="img/index/video_thumb06.jpg" alt=""></div>      
+      <div><img src="img/index/video_thumb01.jpg" alt=""></div>
+      <div><img src="img/index/video_thumb02.jpg" alt=""></div>
+     <!-- <div><img src="img/index/video_thumb03.jpg" alt=""></div>
+       <div><img src="img/index/video_thumb04.jpg" alt=""></div>
+      <div><img src="img/index/video_thumb05.jpg" alt=""></div> -->
+     </div>
+    </div>
+    <!-- /.cont_m -->
+   </div>
+   <!-- /.movie_area -->
+   <div class="news_area cont_m">
+    <h3 class="tit01"style="text-align:left;">新着情報</h3>
+
+<!--
+PC：５行
+iPad7：５行
+スマホ：５行
+-->
+<style type="text/css">
+
+  /* PC用のCSSはメディアクエリの外に記述する */
+  .newsbody {
+    max-height:300px;
+    overflow-y:auto;
+  }
+  
+  @media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット用） */
+  
+    .newsbody {
+      max-height:420px;
+      overflow-y:auto;
+    }
+  
+  }
+  @media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+  
+    .newsbody {
+      max-height:330px;
+      overflow-y:auto;
+    }
+  
+  }
+  
+  </style>
+
+    <div class="newsbody"></div>
+    <!-- /.newsbody -->
+    <script>
+var gNewsJsonUrl = "json/news.json";
+// キャッシュを防ぐ為、後ろに日付を連結
+var date = new Date();
+gNewsJsonUrl += "?" + date;
+
+
+    $(function() {
+     $.getJSON(gNewsJsonUrl, function(top_news) {
+      for (var i in top_news) {
+
+		var dateStr = top_news[i].display_date_from;
+		dateStr = dateStr.replace(/\//g,".");
+
+
+
+
+		var tempStr = "";
+		var tempVal = 0;
+
+		var nowDate = new Date();
+		var nowDateStr = "";
+		nowDateStr += "" + nowDate.getFullYear();
+
+		tempStr = "0" + (nowDate.getMonth() + 1);
+		tempVal = tempStr.length - 2;
+		tempStr = tempStr.substr(tempVal,tempVal + 2);
+		nowDateStr += tempStr;
+
+		tempStr = "0" + nowDate.getDate();
+		tempVal = tempStr.length - 2;
+		tempStr = tempStr.substr(tempVal,tempVal + 2);
+		nowDateStr += tempStr;
+
+		nowDateVal = nowDateStr * 1;
+
+		var displayDateFrom = top_news[i].display_date_from;
+		
+		if(displayDateFrom != ""){
+			tempStr = displayDateFrom.replace(/\//g,"");
+			tempVal = tempStr * 1;
+			
+			if(nowDateVal < tempVal){
+				// まだ開始日に達していない
+				continue;
+			}
+		}
+		var displayDateTo = top_news[i].display_date_to;
+		if(displayDateTo != ""){
+			tempStr = displayDateTo.replace(/\//g,"");
+			tempVal = tempStr * 1;
+			
+			if(tempVal < nowDateVal){
+				// もう終了日を過ぎている
+				continue;
+			}
+		}
+
+
+
+
+		var newsKbn = top_news[i].news_kbn;
+		var newsKbnStr = "";
+		switch(newsKbn){
+		case "1":
+			// 商品情報	1
+			newsKbnStr = "商品情報";
+			break;
+		case "2":
+			newsKbnStr = "店舗情報";
+			break;
+		case "9":
+			newsKbnStr = "その他";
+			break;
+		default:
+			newsKbnStr = "その他";
+			break;
+		}
+
+		var newsLink = "oshirase.html?" + top_news[i].news_id;
+
+//       var h = '<dl>' + '<dt>' + '<span class="date">' + top_news[i].date + '</span>' + '<span class="newscat">' + top_news[i].cat + '</span>' + '</dt>' + '<dd>' + '<a href="' + top_news[i].link + '">' + top_news[i].title + '</a>' + '</dd>' + '</dl>';
+//       $(".newsbody").append(h);
+
+
+       var h = '';
+       h += '<dl>' + '<dt>' + '\n';
+       h += '<span class="date">' + dateStr + '</span>' + '\n';
+       h += '<span class="newscat">' + newsKbnStr + '</span>' + '\n';
+       h += '</dt>' + '<dd>' + '\n';
+       h += '<a href="' + newsLink + '">' + top_news[i].news_title + '</a>' + '</dd>' + '</dl>';
+       $(".newsbody").append(h);
+
+
+      }
+     });
+    });
+    </script>
+
+<!--
+     <a href="news/">もっと見る</a>
+-->
+
+
+    </p>
+    <!-- /.morebtn -->
+   </div>
+   <!-- /.news_area -->
+
+   <!-- <div class="pickup_area">
+    <div class="cont_m">
+     <h3 class="tit01"style="text-align:left;">PICK UP</h3>
+     <div class="multiple poster">
+      <div><a href="/hits/ja/menu/1/list/3.html"><img src="img/index/pubnr19.jpg" alt=""></a></div>
+      <div><a href="/hits/ja/menu/1/detail/8.html"><img src="img/index/pubnr20.jpg" alt=""></a></div>
+      <div><a href="/hits/ja/menu/1/index.html"><img src="img/index/pubnr18.jpg" alt=""></a></div>
+      <div><a href="/hits/ja/menu/1/detail/11.html"><img src="img/index/pubnr21.jpg" alt=""></a></div>
+      <div><a href="/hits/ja/menu/1/detail/61.html"><img src="img/index/pubnr22.jpg" alt=""></a></div>
+      <div><a href="/hits/ja/menu/1/index.html"><img src="img/index/pubnr18.jpg" alt=""></a></div>
+     </div>
+    </div>
+   </div> -->
+   
+   <!-- /.pickup_area -->
+   <div class="fbnr_area cont_m">
+    <ul class="">
+     <li>
+      <div class="redbox" style="text-align: center; vertical-align: middle;">
+        <a href="https://hidakaya-job.jp/"><img src="img/index/saiyou_03.jpg" alt="パート・アルバイト募集"style="text-align: center; vertical-align: middle;"></a>
+        <br/>
+        <a href="https://hidakaya-job.jp/list/ds_8001451101/" class="btn-open" target="_blank">オープニングスタッフ募集！</a>
+      </div>
+      <div class="redbox" style="text-align: center; vertical-align: middle;">
+        <a href="https://recruit.hiday.co.jp/" target="_blank"><img src="img/index/saiyou_04.jpg" alt="社員募集"style="text-align: center; vertical-align: middle;"></a>
+      </div>        
+    </li>
+    <div>
+     <li><a href="scene/index.html"><img src="img/index/bnr_choinomi.jpg" alt="ちょい飲み日高" style="height:450px;"></a></li>
+    </div>
+    </ul>
+    <!-- /.fbnr -->
+   </div>
+   <!-- /.fbnr -->
+
+  <div class="pickup_area">
+    <div class="cont_m" style="width:380px;">
+      <h3 class="tit01"style="text-align:left;">日高屋公式アカウント</h3>
+      <div style="text-align:center;">
+        <a class="twitter-timeline" data-lang="ja" data-height="1000" data-width ="380"
+          href="https://twitter.com/hidakaya_tweet?ref_src=twsrc%5Etfw">Tweets by tokyo_bousai</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  <!-- /.container --><!-- #BeginLibraryItem "/Library/footer.lbi" --><p class="pagetop"><a href="#"><img src="img/totop.png" alt="TOPへ戻る" title="TOPへ戻る"></a></p>
+<div class="f_food_menu">
+ <div class="cont_m">
+  <ul class="bottom">
+   <li> <a href="javascript:void(0);" onclick="goMenu02();"> 
+    <script type="text/javascript">
+						function goMenu02(
+						) {
+							if (gServerActiveFlg != "1") {
+								alert(gMaintenanceMsg);
+								return;
+							}
+							var url = "/hits/" + gLang + "/menu/";
+							location.href = url;
+							return;
+						}
+					</script>
+    <dl>
+     <dt><img src="img/fbnr04.jpg" alt="メニュー"></dt>
+     <dd>メニュー</dd>
+    </dl>
+    </a> </li>
+   <li> <a href="javascript:void(0);" onclick="goShop03();"> 
+    <script type="text/javascript">
+						function goShop03(
+						) {
+							if (gServerActiveFlg != "1") {
+								alert(gMaintenanceMsg);
+								return;
+							}
+							var url = "/hits/" + gLang + "/shop/";
+							location.href = url;
+							return;
+						}
+					</script>
+    <dl>
+     <dt><img src="img/fbnr05.jpg" alt="店舗情報"></dt>
+     <dd>店舗情報</dd>
+    </dl>
+    </a> </li>
+  </ul>
+  <ul class="top">
+   <li> <a href="javascript:void(0);" onclick="goOrigin();"> 
+    <script type="text/javascript">
+						function goOrigin(
+						) {
+							if (gServerActiveFlg != "1") {
+								alert(gMaintenanceMsg);
+								return;
+							}
+							var url = "/hits/" + gLang + "/menu/origin.html";
+							location.href = url;
+							return;
+						}
+//-->
+					</script>
+    <dl>
+     <dt><img src="img/fbnr01.jpg" alt="原産地情報"></dt>
+     <dd>原産地情報</dd>
+    </dl>
+    </a> </li>
+   <li> <a href="javascript:void(0);" onclick="goAllergy();"> 
+    <script type="text/javascript">
+						function goAllergy(
+						) {
+							if (gServerActiveFlg != "1") {
+								alert(gMaintenanceMsg);
+								return;
+							}
+							var url = "/hits/" + gLang + "/menu/allergy.html";
+							location.href = url;
+							return;
+						}
+//-->
+					</script>
+    <dl>
+     <dt><img src="img/fbnr02.jpg" alt="アレルギー情報"></dt>
+     <dd>アレルギー情報</dd>
+    </dl>
+    </a> </li>
+   <li> <a href="javascript:void(0);" onclick="goEnergy();"> 
+    <script type="text/javascript">
+						function goEnergy(
+						) {
+							if (gServerActiveFlg != "1") {
+								alert(gMaintenanceMsg);
+								return;
+							}
+							var url = "/hits/" + gLang + "/menu/energy.html";
+							location.href = url;
+							return;
+						}
+//-->
+					</script>
+    <dl>
+     <dt><img src="img/fbnr03.jpg" alt="エネルギー表"></dt>
+     <dd>主要商品エネルギー表</dd>
+    </dl>
+    </a> </li>
+   <li><a href="co/index.html">
+    <dl>
+     <dt><img src="img/fbnr_co.jpg" alt="会社概要"></dt>
+     <dd>会社概要</dd>
+    </dl>
+    </a> </li>
+   <li><a href="http://www.hiday.co.jp/ir/" target="_blank">
+    <dl>
+     <dt><img src="img/fbnr_ir.jpg" alt="IR情報"></dt>
+     <dd>投資家向けIR情報</dd>
+    </dl>
+    </a> </li>
+   <li><a href="co/safe.html">
+    <dl>
+     <dt><img src="img/fbnr_safe.jpg" alt="安心･安全･環境への取り組み"></dt>
+     <dd>安心･安全･環境への取り組み</dd>
+    </dl>
+    </a> </li>
+  </ul>
+ </div>
+ <!-- /.cont_m --> 
+</div>
+<!-- /.f_food_menu -->
+<footer>
+ <div id="footer">
+  <div style="background-color: white; text-align: center; margin-top: -10px;"> <font color="#ec3636" style="background-color: white; font-size: 20px; font-weight: bold;"> 日高屋グループ </font> </div>
+  <div class="kakomi-maru" style="margin-top: -17px;"><span class="title-maru"></span>
+   <ul class="stores" style="margin-bottom: -1px;">
+    <li><img src="img/storelogo_hidakaya.png" alt="日高屋"></li>
+    <li><img src="img/storelogo_rairaiken.png" alt="来来軒"></li>
+    <li><img src="img/storelogo_yakitori.png" alt="焼鳥日高"></li>
+    <li><img src="img/storelogo_shinshin.png" alt="真心"></li>
+    <!-- <li><img src="../img/storelogo_ramen.png" alt="らーめん日高"></li> -->
+    <li><img src="img/storelogo_chuka.png" alt="中華一番"></li>
+    <li><img src="img/storelogo_taishuhidaka.png" alt="大衆酒場HIDAKA"></li>
+    <br />
+    <li><img src="img/storelogo_taishuhidaka2.png" alt="大衆酒場日高"></li>
+    <li><img src="img/storelogo_soba.png" alt="中華そば神寄"></li>
+   </ul>
+  </div>
+  <!-- /.store -->
+  <nav class="fnav">
+   <ul class="menu01">
+    <li><a href="javascript:void(0);" onclick="goMenu03();">メニュー</a></li>
+    <script type="text/javascript">
+					function goMenu03(
+					) {
+						if (gServerActiveFlg != "1") {
+							alert(gMaintenanceMsg);
+							return;
+						}
+						var url = "/hits/" + gLang + "/menu/";
+						location.href = url;
+						return;
+					}
+				</script>
+    <li><a href="javascript:void(0);" onclick="goShop03();">店舗検索</a></li>
+    <script type="text/javascript">
+					function goShop03(
+					) {
+						if (gServerActiveFlg != "1") {
+							alert(gMaintenanceMsg);
+							return;
+						}
+						var url = "/hits/" + gLang + "/shop/";
+						location.href = url;
+						return;
+					}
+				</script>
+    <li><a href="scene/index.html">ちょいのみ日高</a></li>
+    <li><a href="point/index.html">こだわり</a></li>
+    <li><a href="kitchen/index.html">おいしさの秘密</a></li>
+    <li><a href="http://www.hiday.co.jp/ir/" target="_blank">IR情報<span class="foreign"></span></a></li>
+   </ul>
+   <!-- /.menu01 -->
+   <ul class="menu02">
+    <li class="head"><a href="co/index.html">会社情報</a></li>
+    <li><a href="co/index.html">会社概要</a></li>
+    <li><a href="co/message.html">代表メッセージ</a></li>
+    <li><a href="co/idea.html">経営理念</a></li>
+    <li><a href="co/history.html">沿革</a></li>
+    <li><a href="co/chain.html">業態紹介</a></li>
+    <li><a href="co/model.html">ビジネスモデル</a></li>
+    <li><a href="co/grow.html">成長戦略</a></li>
+    <li><a href="co/women.html">女性活躍推進行動計画</a></li>
+    <li><a href="co/safe.html">安心･安全･環境への取り組み</a></li>
+    <li><a href="co/chart.html">組織図</a></li>
+   </ul>
+   <!-- /.menu01 -->
+   <ul class="menu03">
+    <li class="head"><a href="recruit/index.html">採用情報</a></li>
+    <li><a href="https://recruit.hiday.co.jp/" target="_blank">採用サイト</a><span class="foreign"></span></li>
+    <li><a href="https://hidakaya-job.jp/" target="_blank">パート・アルバイト<br class="sp_none" />
+     採用情報</a><span class="foreign"></span></li>
+   </ul>
+   <!-- /.menu01 -->
+   <ul class="menu04">
+    <li><a href="javascript:void(0);" onclick="goOtoiawase01();">お問い合わせ</a></li>
+    <script th:inline="javascript">
+					function goOtoiawase01(
+					) {
+						if (gServerActiveFlg != "1") {
+							alert(gMaintenanceMsg);
+							return;
+						}
+						var url = "/hits/" + gLang + "/other/otoiawase.html";
+						location.href = url;
+						return;
+					}
+				</script>
+    <li><a href="javascript:void(0);" onclick="goOtoiawase02();">法人のお客様向け窓口</a></li>
+    <script th:inline="javascript">
+					function goOtoiawase02(
+					) {
+						if (gServerActiveFlg != "1") {
+							alert(gMaintenanceMsg);
+							return;
+						}
+						var url = "/hits/" + gLang + "/other/hojinmadoguchi.html";
+						location.href = url;
+						return;
+					}
+				</script>
+    <li><a href="info/agent.html">物件募集</a></li>
+    <li><a href="info/policy.html">プライバシーポリシー</a></li>
+    <li><a href="info/new_security.html">セキュリティポリシー</a></li>
+    <li><a href="info/sitemap.html">サイトマップ</a></li>
+    <li class="pc_none"><a href="co/index.html">会社情報</a></li>
+    <li><a href="https://hidakaya.hiday.co.jp/friend/login.html">F社員向けページ</a></li>
+    <li><a href="info/gyouza_yakikata.html">餃子の焼き方</a></li>
+    <li><a href="info/attention.html">お客様各位（店内でのお願い）</a></li>
+    <li><a href="info/photo.html">店内での撮影について</a></li>
+   </ul>
+   <!-- /.menu01 --> 
+  </nav>
+  <!-- /.fnav -->
+  <ul class="fbnrs">
+   <li><a href="info/agent.html"><img src="img/bnr_property.png" alt="物件情報を募集しています"></a></li>
+  </ul>
+  <ul class="f_sns">
+   <li class="fb"><a href="https://www.facebook.com/%E6%97%A5%E9%AB%98%E5%B1%8B-214452025242271/"
+					target="_blank"><img src="img/icon_fb_j.png" alt="facebook日本語版" title="facebook日本語版"></a></li>
+   <li class="fb"><a href="https://www.facebook.com/hidakayavietnam" target="_blank"><img
+						src="img/icon_fb_v.png" alt="facebook Vietnam" title="facebook Vietnam"></a></li>
+   <li class="tw"><a href="https://twitter.com/hidakaya_tweet" target="_blank"><img src="img/icon_tw.png"
+						alt="twitter"></a></li>
+   <li class="yt"><a href="https://www.youtube.com/channel/UCfvEYhFp1MyC8ZqQtBoULiQ" target="_blank"><img
+						src="img/icon_yt.png" alt="youtube"></a></li>
+  </ul>
+  <div class="right">
+   <p class="company"><img src="img/company_logo.png" alt="株式会社ハイデイ日高"></p>
+   <p class="copy"><small>Copyright HIDAY HIDAKA Corp.All Rights Reserved.</small></p>
+  </div>
+  <!-- /.right --> 
+ </div>
+ <!-- /#footer --> 
+</footer>
+<!-- #EndLibraryItem --></div>
+ <!-- /#wrapper -->
+ <script src="js/common.js"></script>
+ <script src="js/index.js"></script>
+ <script src="js/slick.js"></script>
+ <script>
+ $('.center').slick({
+  infinite: true,
+  dots: false,
+  centerMode: true,
+  centerPadding: '250px',
+  autoplay: true,
+  responsive: [{
+   breakpoint: 1000,
+   settings: {
+    centerPadding: '100px',
+   }
+  }, {
+   breakpoint: 480,
+   settings: {
+    centerPadding: '30px',
+   }
+  }]
+ });
+ $('.thumbnail').slick({
+  infinite: true,
+  arrows: false,
+  fade: true,
+  draggable: true
+ });
+ $('.thumbnail-thumb').slick({
+  infinite: true,
+  slidesToShow: 5,
+  focusOnSelect: true,
+  asNavFor: '.thumbnail',
+ });
+ $('.multiple').slick({
+  autoplay: true,
+  infinite: true,
+  dots: false,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  responsive: [{
+   breakpoint: 768,
+   settings: {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+   }
+  }, {
+   breakpoint: 480,
+   settings: {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+   }
+  }]
+ });
+
+ </script>
+ <script>
+ var tag = document.createElement('script');
+ tag.src = "https://www.youtube.com/iframe_api";
+ var firstScriptTag = document.getElementsByTagName('script')[0];
+ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+ var player;
+
+ function onYouTubeIframeAPIReady() {
+  player01 = new YT.Player('player01', { videoId: 'P3U45FZ9KcI', });
+  player02 = new YT.Player('player02', { videoId: 'qZu6VCE59wY', });
+  player03 = new YT.Player('player03', { videoId: 'PygmPrdJKgs', });
+  player04 = new YT.Player('player04', { videoId: 'sZIbLPR-SR0', });
+  player05 = new YT.Player('player05', { videoId: 'Lg6ejSPEPa8', });
+  player06 = new YT.Player('player06', { videoId: 'U8L3oIbw-rI', });
+  player06 = new YT.Player('player07', { videoId: 'zmPZz-7BDFk', });
+ }
+
+ function stopVideo() {
+  player01.stopVideo();
+  player02.stopVideo();
+  player03.stopVideo();
+  player04.stopVideo();
+  player05.stopVideo();
+  player06.stopVideo();
+  player07.stopVideo();
+ }
+ $('.thumbnail-thumb div').click(function() {
+  stopVideo();
+ });
+ </script>
+</body>
+
+</html>
+<script type="text/javascript">
+$(function() {
+
+/*
+ * iPhone/iPodTouchのchrome/safariでは、スライダーが画面を操作するまで表示されない為、
+ * onloadイベントにて以下イベントを発行する。
+ */
+	$('.center').slick("resize");
+});
+
+
+</script>

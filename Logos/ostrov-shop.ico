@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ошибка!</title>
+    <style>
+        body {
+            font-family: Arial;
+            height: 100%;
+            overflow: hidden;
+        }
+        .container {
+            margin: auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .block-1 {
+            max-width: 310px;
+            color: #4b407f;
+            font-weight: 600;
+            margin: 0 auto;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        .container .block-2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .container .block-2 img {
+            width: 900px;
+        }
+        .container .block-3 {
+            max-width: 291px;
+            color: #4b407f;
+            font-weight: 600;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+        .container .block-3 a {
+            text-decoration: none;
+            color: #4b407f;
+            font-weight: 600;
+        }
+        .container .block-3 a:hover {
+            opacity: 0.8;
+        }
+        @media (max-height: 880px) {
+            .container .block-2 img {
+                width: 600px;
+            }
+        }
+        @media (max-width: 1200px) {
+            .container .block-2 img {
+                width: 800px;
+            }
+            .container .block-2 {
+                margin: 0;
+            }
+        }
+        @media (max-width: 991px) {
+            .container .block-2 img {
+                width: 700px;
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                height: 100%;
+                padding-top: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .container .block-2 img {
+                width: 500px;
+            }
+        }
+        @media (max-width: 550px) {
+            .container .block-2 img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="block-1">
+        К сожалению, доступ к сайту из Вашей страны не возможен.
+    </div>
+    <div class="block-2">
+        <img src="423.svg" alt="img">
+    </div>
+    <div class="block-3">
+        Если у Вас возникли вопросы, мы с удовольствием ответим на них по номеру <a href="tel:+375296863737">+375 29 686 37 37</a><br>или email
+        <a href="mailto:call@ostrov-shop.by">call@ostrov-shop.by</a>
+    </div>
+</div>
+
+</body>
+</html>

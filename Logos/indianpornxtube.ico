@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="icon" href="
+">
+
+
+<style>
+	.post-thumbnail {
+		padding-bottom: 56.25%;
+	}
+	.post-thumbnail .wpst-trailer,
+	.post-thumbnail img {
+		object-fit: fill;
+	}
+
+	.video-debounce-bar {
+		background: #FF3565!important;
+	}
+
+			@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+			
+			button,
+		.button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"],
+		.label,
+		.label:visited,
+		.pagination ul li a,
+		.widget_categories ul li a,
+		.comment-reply-link,
+		a.tag-cloud-link,
+		.template-actors li a {
+			background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 70%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62b2b2b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+			-moz-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+			-webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+			-o-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+			box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="search"],
+		input[type="number"],
+		input[type="tel"],
+		input[type="range"],
+		input[type="date"],
+		input[type="month"],
+		input[type="week"],
+		input[type="time"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="color"],
+		select,
+		textarea,
+		.wp-editor-container {
+			-moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), 0 0 5px black inset;
+			-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), 0 0 5px black inset;
+			-o-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), 0 0 5px black inset;
+			box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), 0 0 5px black inset;
+		}
+		#site-navigation {
+			background: #222222;
+			background: -moz-linear-gradient(top, #222222 0%, #333333 50%, #222222 51%, #151515 100%);
+			background: -webkit-linear-gradient(top, #222222 0%,#333333 50%,#222222 51%,#151515 100%);
+			background: linear-gradient(to bottom, #222222 0%,#333333 50%,#222222 51%,#151515 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#151515',GradientType=0 );
+			-moz-box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.12);
+			-webkit-box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.12);
+			-o-box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.12);
+			box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.12);
+		}
+		#site-navigation > ul > li:hover > a,
+		#site-navigation ul li.current-menu-item a {
+			background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 70%);
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%);
+			background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62b2b2b', endColorstr='#00000000',GradientType=0 );
+			-moz-box-shadow: inset 0px 0px 2px 0px #000000;
+			-webkit-box-shadow: inset 0px 0px 2px 0px #000000;
+			-o-box-shadow: inset 0px 0px 2px 0px #000000;
+			box-shadow: inset 0px 0px 2px 0px #000000;
+			filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=2);
+		}
+		.rating-bar,
+		.categories-list .thumb-block .entry-header,
+		.actors-list .thumb-block .entry-header,
+		#filters .filters-select,
+		#filters .filters-options {
+			background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 70%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			-moz-box-shadow: inset 0px 0px 2px 0px #000000;
+			-webkit-box-shadow: inset 0px 0px 2px 0px #000000;
+			-o-box-shadow: inset 0px 0px 2px 0px #000000;
+			box-shadow: inset 0px 0px 2px 0px #000000;
+			filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=2);
+		}
+		.breadcrumbs-area {
+			background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 70%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		}
+	
+	.site-title a {
+		font-family: Open Sans;
+		font-size: 36px;
+	}
+	.site-branding .logo img {
+		max-width: 300px;
+		max-height: 120px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	a,
+	.site-title a i,
+	.thumb-block:hover .rating-bar i,
+	.categories-list .thumb-block:hover .entry-header .cat-title:before,
+	.required,
+	.like #more:hover i,
+	.dislike #less:hover i,
+	.top-bar i:hover,
+	.main-navigation .menu-item-has-children > a:after,
+	.menu-toggle i,
+	.main-navigation.toggled li:hover > a,
+	.main-navigation.toggled li.focus > a,
+	.main-navigation.toggled li.current_page_item > a,
+	.main-navigation.toggled li.current-menu-item > a,
+	#filters .filters-select:after,
+	.morelink i,
+	.top-bar .membership a i,
+	.thumb-block:hover .photos-count i {
+		color: #FF3565;
+	}
+	button,
+	.button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.label,
+	.pagination ul li a.current,
+	.pagination ul li a:hover,
+	body #filters .label.secondary.active,
+	.label.secondary:hover,
+	.main-navigation li:hover > a,
+	.main-navigation li.focus > a,
+	.main-navigation li.current_page_item > a,
+	.main-navigation li.current-menu-item > a,
+	.widget_categories ul li a:hover,
+	.comment-reply-link,
+	a.tag-cloud-link:hover,
+	.template-actors li a:hover {
+		border-color: #FF3565!important;
+		background-color: #FF3565!important;
+	}
+	.rating-bar-meter,
+	.vjs-play-progress,
+	#filters .filters-options span:hover,
+	.bx-wrapper .bx-controls-direction a,
+	.top-bar .social-share a:hover,
+	.thumb-block:hover span.hd-video,
+	.featured-carousel .slide a:hover span.hd-video,
+	.appContainer .ctaButton {
+		background-color: #FF3565!important;
+	}
+	#video-tabs button.tab-link.active,
+	.title-block,
+	.widget-title,
+	.page-title,
+	.page .entry-title,
+	.comments-title,
+	.comment-reply-title,
+	.morelink:hover {
+		border-color: #FF3565!important;
+	}
+
+	/* Small desktops ----------- */
+	@media only screen  and (min-width : 64.001em) and (max-width : 84em) {
+		#main .thumb-block {
+			width: 25%!important;
+		}
+	}
+
+	/* Desktops and laptops ----------- */
+	@media only screen  and (min-width : 84.001em) {
+		#main .thumb-block {
+			width: 25%!important;
+		}
+	}
+
+</style>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PM60GTYBXR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PM60GTYBXR');
+</script>
+
+<meta name="google-site-verification" content="hGBx6iN5tC6fZv6Fn9-rIXBXV9sNxJq35v_f_uHx9Bo" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<title>Indian Porn Videos - Free indian xxx, desi xvideos, xnxx tamil videos</title>
+<meta name="description" content="Best Free Indian porn tube site of Indian bhabhi, indian aunty, desi women and girls. In this site you watch xxx indian porn, tamilsexvideo,indian bf video,indian mms,xxx mms,xnxx indian,desi mms of college teen,bangla xxx,xxxindian,indiansex,xxx hindi bf,hindi audio sex, tamilsex and many more desi xvideos." />
+<link rel="canonical" href="https://indianpornxtube.com/" />
+<link rel="next" href="https://indianpornxtube.com/page/2/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Indianpornxtube" />
+<meta property="og:description" content="Best Free Indian porn tube site of Indian bhabhi, indian aunty, desi women and girls. In this site you watch xxx indian porn, tamilsexvideo,indian bf video,indian mms,xxx mms,xnxx indian,desi mms of college teen,bangla xxx,xxxindian,indiansex,xxx hindi bf,hindi audio sex, tamilsex and many more desi xvideos." />
+<meta property="og:url" content="https://indianpornxtube.com/" />
+<meta property="og:site_name" content="Indianpornxtube" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://indianpornxtube.com/","url":"https://indianpornxtube.com/","name":"Indian Porn Videos - Free indian xxx, desi xvideos, xnxx tamil videos","isPartOf":{"@id":"https://indianpornxtube.com/#website"},"about":{"@id":"https://indianpornxtube.com/#/schema/person/b069e64376a823a92d94ed4d6b2fa26d"},"description":"Best Free Indian porn tube site of Indian bhabhi, indian aunty, desi women and girls. In this site you watch xxx indian porn, tamilsexvideo,indian bf video,indian mms,xxx mms,xnxx indian,desi mms of college teen,bangla xxx,xxxindian,indiansex,xxx hindi bf,hindi audio sex, tamilsex and many more desi xvideos.","breadcrumb":{"@id":"https://indianpornxtube.com/#breadcrumb"},"inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://indianpornxtube.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://indianpornxtube.com/#website","url":"https://indianpornxtube.com/","name":"Indianpornxtube","description":"Indian Porn Videos - Free indian xxx, desi xvideos, xnxx tamil videos","publisher":{"@id":"https://indianpornxtube.com/#/schema/person/b069e64376a823a92d94ed4d6b2fa26d"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://indianpornxtube.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":["Person","Organization"],"@id":"https://indianpornxtube.com/#/schema/person/b069e64376a823a92d94ed4d6b2fa26d","name":"indianpornxtube","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://indianpornxtube.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/c77fde43a6a250ab0ac6bcc8bd865fa0?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/c77fde43a6a250ab0ac6bcc8bd865fa0?s=96&d=mm&r=g","caption":"indianpornxtube"},"logo":{"@id":"https://indianpornxtube.com/#/schema/person/image/"}}]}</script>
+
+<link rel="alternate" type="application/rss+xml" title="Indianpornxtube &raquo; Feed" href="https://indianpornxtube.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Indianpornxtube &raquo; Comments Feed" href="https://indianpornxtube.com/comments/feed/" />
+<link rel="stylesheet" id="wp-block-library-css" href="https://indianpornxtube.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.1" type="text/css" media="all" />
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="https://indianpornxtube.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.1" type="text/css" media="all" />
+<link rel="stylesheet" id="ivory-search-styles-css" href="https://indianpornxtube.com/wp-content/plugins/add-search-to-menu/public/css/ivory-search.min.css?ver=5.5.2" type="text/css" media="all" />
+<link rel="stylesheet" id="wpst-font-awesome-css" href="https://indianpornxtube.com/wp-content/themes/retrotube/assets/stylesheets/font-awesome/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all" />
+<link rel="stylesheet" id="wpst-style-css" href="https://indianpornxtube.com/wp-content/themes/retrotube/style.css?ver=1.7.2.1691761126" type="text/css" media="all" />
+<script type="text/javascript" src="https://indianpornxtube.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://indianpornxtube.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://indianpornxtube.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://indianpornxtube.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.1" />
+<script data-cfasync="false" type="text/javascript" src="//fpgedsewst.com/aas/r45d/vki/1969702/cfa45e99.js"></script> <script>
+			document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );
+		</script>
+<style>
+			.no-js img.lazyload { display: none; }
+			figure.wp-block-image img.lazyloading { min-width: 150px; }
+							.lazyload, .lazyloading { opacity: 0; }
+				.lazyloaded {
+					opacity: 1;
+					transition: opacity 400ms;
+					transition-delay: 0ms;
+				}
+					</style>
+</head>
+<body class="home blog wp-embed-responsive retrotube hfeed">
+<div id="page">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<header id="masthead" class="site-header" role="banner">
+<div class="site-branding row">
+<div class="logo">
+<h1 class="site-title"><a href="https://indianpornxtube.com/" rel="home">
+<i class="fa fa-play-circle"></i> Indianpornxtube</a></h1>
+<p class="site-description">
+Indian Porn Videos &#8211; Free indian xxx, desi xvideos, xnxx tamil videos</p>
+</div>
+<div class="header-search ">
+<form method="get" id="searchform" action="https://indianpornxtube.com/">
+<input class="input-group-field" value="Search..." name="s" id="s" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" type="text" />
+<input class="button fa-input" type="submit" id="searchsubmit" value="&#xf002;" />
+</form>
+</div> </div>
+<nav id="site-navigation" class="main-navigation
+		" role="navigation">
+<div id="head-mobile"></div>
+<div class="button-nav"></div>
+<ul id="menu-main-menu" class="row"><li id="menu-item-11" class="home-icon menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-11"><a href="https://indianpornxtube.com" aria-current="page">Home</a></li>
+<li id="menu-item-12" class="cat-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="https://indianpornxtube.com/categories/">Categories</a></li>
+<li id="menu-item-13" class="tag-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="https://indianpornxtube.com/tags/">Tags</a></li>
+<li id="menu-item-14" class="star-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="https://indianpornxtube.com/actors/">Actors</a></li>
+<li id="menu-item-8747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8747"><a href="https://hentay.co/">hentay</a></li>
+<li id="menu-item-11630" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11630"><a href="https://aagmaal.to/">aagmaal</a></li>
+</ul> </nav>
+<div class="clear"></div>
+<div class="happy-header-mobile">
+<script data-cfasync="false" type="text/javascript" src="//hhbypdoecp.com/lv/esnk/1971891/code.js" async id="__clb-1971891"></script> </div>
+</header>
+<div id="content" class="site-content row">
+<div id="primary" class="content-area ">
+<main id="main" class="site-main " role="main">
+<header class="page-header">
+<h2 class="widget-title">Latest videos</h2>
+<div id="filters">
+<div class="filters-select"><i class="fa fa-filter"></i> <div class="filters-options">
+<span><a class="active" href="/?filter=latest">Latest videos</a></span>
+<span><a class href="/?filter=most-viewed">Most viewed videos</a></span> <span><a class href="/?filter=longest">Longest videos</a></span>
+<span><a class href="/?filter=popular">Popular videos</a></span>
+<span><a class href="/?filter=random">Random videos</a></span>
+</div>
+</div>
+</div>
+</header>
+<div class="videos-list">
+<article data-video-uid="1" data-post-id="12697" class="loop-video thumb-block full-width post-12697 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx tag-hindi-xxx-video tag-new-2023-porn-web-series tag-prime-play tag-prime-play-app tag-prime-play-web-series tag-prime-play-xxx tag-prime-play-xxx-video tag-prime-play-xxx-web-series tag-primeplay tag-primeplay-hindi-adult-short-film tag-primeplay-hindi-porn-web-series tag-primeplay-hindi-web-series tag-primeplay-hot-short-film tag-primeplay-porn-film tag-primeplay-short-film tag-primeplay-video-download tag-primeplay-web-series tag-primeplay-xxx-short-film tag-primeplay-xxx-web-series tag-web-series tag-xxx tag-xxx-web-series post_format-post-format-video">
+<a href="https://indianpornxtube.com/putala-s01e02-2023-primeplay-hindi-hot-web-series/" title="Putala S01E02 2023 Primeplay Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Putala-S01E02-2023-Primeplay-Hindi-Hot-Web-Series.jpg" alt="Putala S01E02 2023 Primeplay Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 323</span> <span class="duration"><i class="fa fa-clock-o"></i>19:36</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:0%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0%</span></div> <header class="entry-header">
+<span>Putala S01E02 2023 Primeplay Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+<article data-video-uid="2" data-post-id="12694" class="loop-video thumb-block full-width post-12694 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx-video tag-new-2023-porn-web-series tag-new-rabbit-movies-xxx-video tag-rabbit tag-rabbit-app tag-rabbit-movie tag-rabbit-movies tag-rabbit-movies-adult-web-series tag-rabbit-movies-app tag-rabbit-movies-hindi-hot-web-series tag-rabbit-movies-hindi-sex-video tag-rabbit-movies-hot-web-series tag-rabbit-movies-new-web-series tag-rabbit-movies-official tag-rabbit-movies-porn-movies tag-rabbit-movies-sex-video tag-rabbit-movies-sex-web-series tag-rabbit-webseries post_format-post-format-video">
+<a href="https://indianpornxtube.com/andhe-ka-danda-s01e02-2023-rabbit-movies-hindi-hot-web-series/" title="Andhe Ka Danda S01E02 2023 Rabbit Movies Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Andhe-Ka-Danda-S01E02-2023-Rabbit-Movies-Hindi-Hot-Web-Series.jpg" alt="Andhe Ka Danda S01E02 2023 Rabbit Movies Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 144</span> <span class="duration"><i class="fa fa-clock-o"></i>22:31</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:0%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>0%</span></div> <header class="entry-header">
+<span>Andhe Ka Danda S01E02 2023 Rabbit Movies Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+<article data-video-uid="3" data-post-id="12691" class="loop-video thumb-block full-width post-12691 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx tag-hindi-xxx-video tag-new-2023-porn-web-series tag-prime-shots tag-prime-shots-hindi-hot-film tag-prime-shots-hot-short-film tag-prime-shots-hot-video tag-prime-shots-hot-web-series tag-prime-shots-originals tag-prime-shots-originals-hot-video tag-prime-shots-porn-video tag-prime-shots-porn-web-series tag-prime-shots-short-video tag-primeshots tag-primeshots-hindi-hot-short-film tag-primeshots-hot-video tag-primeshots-porn-video tag-primeshots-sex-video tag-primeshots-uncut-web-series tag-primeshots-xvideo tag-primeshots-xxx-video tag-web-series tag-xxx tag-xxx-web-series post_format-post-format-video">
+<a href="https://indianpornxtube.com/viagra-s01e03-2023-primeshots-hindi-hot-web-series/" title="Viagra S01E03 2023 Primeshots Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Viagra-S01E03-2023-Primeshots-Hindi-Hot-Web-Series.jpg" alt="Viagra S01E03 2023 Primeshots Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 164</span> <span class="duration"><i class="fa fa-clock-o"></i>20:20</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:100%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>100%</span></div> <header class="entry-header">
+<span>Viagra S01E03 2023 Primeshots Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+<article data-video-uid="4" data-post-id="12687" class="loop-video thumb-block full-width post-12687 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-free-ullu-xxx tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx tag-hindi-xxx-video tag-hot-ullu-web-series-tamil tag-new-2023-porn-web-series tag-ullu tag-ullu-app tag-ullu-hindi-full-movie-2021-new tag-ullu-hot-series tag-ullu-hot-video tag-ullu-hot-web-series tag-ullu-hot-webseries tag-ullu-hot-xxx tag-ullu-new-web-series tag-ullu-new-web-series-2021 tag-ullu-original tag-ullu-originals tag-ullu-originals-cast tag-ullu-originals-web tag-ullu-porn tag-ullu-porn-video tag-ullu-porn-web-series tag-ullu-sex tag-ullu-sex-video tag-ullu-sex-web-series tag-ullu-trending-video tag-ullu-video tag-ullu-videos tag-ullu-web-series tag-ullu-web-series-2021 tag-ullu-web-series-2022 tag-ullu-xxx tag-ullu-xxx-video tag-web-series tag-web-series-ullu tag-xxx tag-xxx-web-series post_format-post-format-video">
+<a href="https://indianpornxtube.com/maa-ka-naka-p02e07-2023-ullu-originals-hindi-hot-web-series/" title="Maa Ka Naka P02E07 2023 Ullu Originals Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Maa-Ka-Naka-P02E07-2023-Ullu-Originals-Hindi-Hot-Web-Series.jpg" alt="Maa Ka Naka P02E07 2023 Ullu Originals Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 3K</span> <span class="duration"><i class="fa fa-clock-o"></i>23:23</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:87%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>87%</span></div> <header class="entry-header">
+<span>Maa Ka Naka P02E07 2023 Ullu Originals Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+<article data-video-uid="5" data-post-id="12684" class="loop-video thumb-block full-width post-12684 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-free-ullu-xxx tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx tag-hindi-xxx-video tag-hot-ullu-web-series-tamil tag-new-2023-porn-web-series tag-ullu tag-ullu-app tag-ullu-hindi-full-movie-2021-new tag-ullu-hot-series tag-ullu-hot-video tag-ullu-hot-web-series tag-ullu-hot-webseries tag-ullu-hot-xxx tag-ullu-new-web-series tag-ullu-new-web-series-2021 tag-ullu-original tag-ullu-originals tag-ullu-originals-cast tag-ullu-originals-web tag-ullu-porn tag-ullu-porn-video tag-ullu-porn-web-series tag-ullu-sex tag-ullu-sex-video tag-ullu-sex-web-series tag-ullu-trending-video tag-ullu-video tag-ullu-videos tag-ullu-web-series tag-ullu-web-series-2021 tag-ullu-web-series-2022 tag-ullu-xxx tag-ullu-xxx-video tag-web-series tag-web-series-ullu tag-xxx tag-xxx-web-series post_format-post-format-video">
+<a href="https://indianpornxtube.com/maa-ka-naka-p02e08-2023-ullu-originals-hindi-hot-web-series/" title="Maa Ka Naka P02E08 2023 Ullu Originals Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Maa-Ka-Naka-P02E08-2023-Ullu-Originals-Hindi-Hot-Web-Series.jpg" alt="Maa Ka Naka P02E08 2023 Ullu Originals Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 5K</span> <span class="duration"><i class="fa fa-clock-o"></i>28:55</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:78%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>78%</span></div> <header class="entry-header">
+<span>Maa Ka Naka P02E08 2023 Ullu Originals Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+<article data-video-uid="6" data-post-id="12681" class="loop-video thumb-block full-width post-12681 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-free-ullu-xxx tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx tag-hindi-xxx-video tag-hot-ullu-web-series-tamil tag-new-2023-porn-web-series tag-ullu tag-ullu-app tag-ullu-hindi-full-movie-2021-new tag-ullu-hot-series tag-ullu-hot-video tag-ullu-hot-web-series tag-ullu-hot-webseries tag-ullu-hot-xxx tag-ullu-new-web-series tag-ullu-new-web-series-2021 tag-ullu-original tag-ullu-originals tag-ullu-originals-cast tag-ullu-originals-web tag-ullu-porn tag-ullu-porn-video tag-ullu-porn-web-series tag-ullu-sex tag-ullu-sex-video tag-ullu-sex-web-series tag-ullu-trending-video tag-ullu-video tag-ullu-videos tag-ullu-web-series tag-ullu-web-series-2021 tag-ullu-web-series-2022 tag-ullu-xxx tag-ullu-xxx-video tag-web-series tag-web-series-ullu tag-xxx tag-xxx-web-series post_format-post-format-video">
+<a href="https://indianpornxtube.com/maa-ka-naka-p02e09-2023-ullu-originals-hindi-hot-web-series/" title="Maa Ka Naka P02E09 2023 Ullu Originals Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Maa-Ka-Naka-P02E09-2023-Ullu-Originals-Hindi-Hot-Web-Series.jpg" alt="Maa Ka Naka P02E09 2023 Ullu Originals Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 2K</span> <span class="duration"><i class="fa fa-clock-o"></i>21:46</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:80%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>80%</span></div> <header class="entry-header">
+<span>Maa Ka Naka P02E09 2023 Ullu Originals Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+<article data-video-uid="7" data-post-id="12678" class="loop-video thumb-block full-width post-12678 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx-video tag-new-2023-porn-web-series tag-woow-originals tag-woow-originals-adult-video tag-woow-originals-hindi-sex-film tag-woow-originals-hot-short-film tag-woow-originals-hot-video tag-woow-originals-porn-film tag-woow-originals-porn-web-series tag-woow-originals-sex-video tag-woow-originals-web-series post_format-post-format-video">
+<a href="https://indianpornxtube.com/vashikaran-s02e01-2023-woow-originals-hindi-hot-web-series/" title="Vashikaran S02E01 2023 Woow Originals Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Vashikaran-S02E01-2023-Woow-Originals-Hindi-Hot-Web-Series.jpg" alt="Vashikaran S02E01 2023 Woow Originals Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 5K</span> <span class="duration"><i class="fa fa-clock-o"></i>27:43</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:87%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>87%</span></div> <header class="entry-header">
+<span>Vashikaran S02E01 2023 Woow Originals Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+<article data-video-uid="8" data-post-id="12675" class="loop-video thumb-block full-width post-12675 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx-video tag-new-2023-porn-web-series tag-woow-originals tag-woow-originals-adult-video tag-woow-originals-hindi-sex-film tag-woow-originals-hot-short-film tag-woow-originals-hot-video tag-woow-originals-porn-film tag-woow-originals-porn-web-series tag-woow-originals-sex-video tag-woow-originals-web-series post_format-post-format-video">
+<a href="https://indianpornxtube.com/vashikaran-s02e02-2023-woow-originals-hindi-hot-web-series/" title="Vashikaran S02E02 2023 Woow Originals Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Vashikaran-S02E02-2023-Woow-Originals-Hindi-Hot-Web-Series.jpg" alt="Vashikaran S02E02 2023 Woow Originals Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 3K</span> <span class="duration"><i class="fa fa-clock-o"></i>28:27</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:100%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>100%</span></div> <header class="entry-header">
+<span>Vashikaran S02E02 2023 Woow Originals Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+<article data-video-uid="9" data-post-id="12672" class="loop-video thumb-block full-width post-12672 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx-video tag-new-2023-porn-web-series tag-woow-originals tag-woow-originals-adult-video tag-woow-originals-hindi-sex-film tag-woow-originals-hot-short-film tag-woow-originals-hot-video tag-woow-originals-porn-film tag-woow-originals-porn-web-series tag-woow-originals-sex-video tag-woow-originals-web-series post_format-post-format-video">
+<a href="https://indianpornxtube.com/vashikaran-s02e03-2023-woow-originals-hindi-hot-web-series/" title="Vashikaran S02E03 2023 Woow Originals Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Vashikaran-S02E03-2023-Woow-Originals-Hindi-Hot-Web-Series.jpg" alt="Vashikaran S02E03 2023 Woow Originals Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 1K</span> <span class="duration"><i class="fa fa-clock-o"></i>17:56</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:100%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>100%</span></div> <header class="entry-header">
+<span>Vashikaran S02E03 2023 Woow Originals Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+<article data-video-uid="10" data-post-id="12669" class="loop-video thumb-block full-width post-12669 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx-video tag-new-2023-porn-web-series tag-woow-originals tag-woow-originals-adult-video tag-woow-originals-hindi-sex-film tag-woow-originals-hot-short-film tag-woow-originals-hot-video tag-woow-originals-porn-film tag-woow-originals-porn-web-series tag-woow-originals-sex-video tag-woow-originals-web-series post_format-post-format-video">
+<a href="https://indianpornxtube.com/vashikaran-s02e04-2023-woow-originals-hindi-hot-web-series/" title="Vashikaran S02E04 2023 Woow Originals Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Vashikaran-S02E04-2023-Woow-Originals-Hindi-Hot-Web-Series.jpg" alt="Vashikaran S02E04 2023 Woow Originals Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 3K</span> <span class="duration"><i class="fa fa-clock-o"></i>25:40</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:85%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>85%</span></div> <header class="entry-header">
+<span>Vashikaran S02E04 2023 Woow Originals Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+<article data-video-uid="11" data-post-id="12666" class="loop-video thumb-block full-width post-12666 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-free-ullu-xxx tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx tag-hindi-xxx-video tag-hot-ullu-web-series-tamil tag-new-2023-porn-web-series tag-ullu tag-ullu-app tag-ullu-hindi-full-movie-2021-new tag-ullu-hot-series tag-ullu-hot-video tag-ullu-hot-web-series tag-ullu-hot-webseries tag-ullu-hot-xxx tag-ullu-new-web-series tag-ullu-new-web-series-2021 tag-ullu-original tag-ullu-originals tag-ullu-originals-cast tag-ullu-originals-web tag-ullu-porn tag-ullu-porn-video tag-ullu-porn-web-series tag-ullu-sex tag-ullu-sex-video tag-ullu-sex-web-series tag-ullu-trending-video tag-ullu-video tag-ullu-videos tag-ullu-web-series tag-ullu-web-series-2021 tag-ullu-web-series-2022 tag-ullu-xxx tag-ullu-xxx-video tag-web-series tag-web-series-ullu tag-xxx tag-xxx-web-series post_format-post-format-video">
+<a href="https://indianpornxtube.com/maa-ka-naka-p02e10-2023-ullu-originals-hindi-hot-web-series/" title="Maa Ka Naka P02E10 2023 Ullu Originals Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Maa-Ka-Naka-P02E10-2023-Ullu-Originals-Hindi-Hot-Web-Series.jpg" alt="Maa Ka Naka P02E10 2023 Ullu Originals Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 6K</span> <span class="duration"><i class="fa fa-clock-o"></i>25:22</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:81%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>81%</span></div> <header class="entry-header">
+<span>Maa Ka Naka P02E10 2023 Ullu Originals Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+<article data-video-uid="12" data-post-id="12663" class="loop-video thumb-block full-width post-12663 post type-post status-publish format-video has-post-thumbnail hentry category-hot-web-series tag-2022-hindi-hot-short-porn-movies tag-2022-hindi-sex-video tag-2022-hindi-sex-web-series tag-2022-hindi-uncut-hot-web-series tag-2023-hindi-porn-web-series tag-2023-hindi-sex-web-series tag-2023-hindi-xxx-web-series tag-hindi-desi-sex-video tag-hindi-hot-movies tag-hindi-hot-sex-video tag-hindi-hot-short-film tag-hindi-hot-shot-porn-movies-2021 tag-hindi-hot-web-series tag-hindi-hot-web-series-2023 tag-hindi-hot-x-xxx-video tag-hindi-hot-xxx tag-hindi-porn-movie tag-hindi-porn-movies tag-hindi-porn-web-series tag-hindi-sex-film tag-hindi-sex-video tag-hindi-sex-web-series tag-hindi-short-film tag-hindi-uncut-porn tag-hindi-uncut-porn-video tag-hindi-uncut-sex tag-hindi-uncut-xxx tag-hindi-web-series tag-hindi-xxx tag-hindi-xxx-video tag-new-2023-porn-web-series tag-prime-shots tag-prime-shots-hindi-hot-film tag-prime-shots-hot-short-film tag-prime-shots-hot-video tag-prime-shots-hot-web-series tag-prime-shots-originals tag-prime-shots-originals-hot-video tag-prime-shots-porn-video tag-prime-shots-porn-web-series tag-prime-shots-short-video tag-primeshots tag-primeshots-hindi-hot-short-film tag-primeshots-hot-video tag-primeshots-porn-video tag-primeshots-sex-video tag-primeshots-uncut-web-series tag-primeshots-xvideo tag-primeshots-xxx-video tag-web-series tag-xxx tag-xxx-web-series post_format-post-format-video">
+<a href="https://indianpornxtube.com/viagra-s01e02-2023-primeshots-hindi-hot-web-series/" title="Viagra S01E02 2023 Primeshots Hindi Hot Web Series">
+<div class="post-thumbnail">
+<div class="post-thumbnail-container"><img width="300" height="168.75" data-src="https://indianpornxtube.com/wp-content/uploads/2023/10/Viagra-S01E02-2023-Primeshots-Hindi-Hot-Web-Series.jpg" alt="Viagra S01E02 2023 Primeshots Hindi Hot Web Series"></div> <span class="hd-video">HD</span> <span class="views"><i class="fa fa-eye"></i> 2K</span> <span class="duration"><i class="fa fa-clock-o"></i>20:15</span> </div>
+<div class="rating-bar"><div class="rating-bar-meter" style="width:100%"></div><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>100%</span></div> <header class="entry-header">
+<span>Viagra S01E02 2023 Primeshots Hindi Hot Web Series</span>
+</header>
+</a>
+</article>
+</div>
+<div class="pagination"><ul><li><a class="current">1</a></li><li><a href="https://indianpornxtube.com/page/2/" class="inactive">2</a></li><li><a href="https://indianpornxtube.com/page/3/" class="inactive">3</a></li><li><a href="https://indianpornxtube.com/page/4/" class="inactive">4</a></li><li><a href="https://indianpornxtube.com/page/5/" class="inactive">5</a></li><li><a href="https://indianpornxtube.com/page/2/">Next</a></li><li><a href="https://indianpornxtube.com/page/301/">Last</a></li></ul></div>
+<div class="clear"></div>
+</main>
+</div>
+</div>
+<footer id="colophon" class="site-footer
+" role="contentinfo">
+<div class="row">
+<div class="happy-footer-mobile">
+<script data-cfasync="false" type="text/javascript" src="//hhbypdoecp.com/lv/esnk/1973220/code.js" async id="__clb-1973220"></script> </div>
+<div class="clear"></div>
+<div class="footer-menu-container">
+<div class="menu-new-container"><ul id="menu-new" class="menu"><li id="menu-item-2317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2317"><a href="https://indianpornxtube.com/dmca/">Dmca</a></li>
+<li id="menu-item-10171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10171"><a href="https://indianpornxtube.com/18-u-s-c-2257/">18 U.S.C. 2257</a></li>
+<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-2318"><a rel="privacy-policy" href="https://indianpornxtube.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="https://indianpornxtube.com/contact-us/">Contact us</a></li>
+<li id="menu-item-5669" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5669"><a href="https://tamilsexscandals.com/tamil-scandals/">Tamil Scandals</a></li>
+<li id="menu-item-10299" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10299"><a href="https://xnxx2.tv/">xnxx2</a></li>
+<li id="menu-item-10407" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10407"><a href="https://www.hotindiansexxx.com/">hotindiansexx</a></li>
+<li id="menu-item-10767" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10767"><a rel="nofollow" href="https://thepornmap.com/list/best-indian-porn-sites/">The Porn Map</a></li>
+<li id="menu-item-11310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11310"><a href="https://indianwebporn.com/">Indianwebporn</a></li>
+</ul></div> </div>
+<div class="site-info">
+<p style="text-align: left;">Best indian porn video,indian sex videos & desi XXX porn on indianpornxtube. Indianpornxtube.com is the Largest best indian sex video,indian porn videos,indiansex,free porn,xxx video,xxx hindi,indiansex,bikini & desi sex mms. Here at Indianpornxtube porntube we offer you hottest free indian desi aunty sex,Indian bhabhi sex, indian college teen, best hindi pussy fuck and hottest indian milfs you ever seen. We updated site with daily indian porn videos so, keep coming back daily and enjoying everything that Indianpornxtube.com has to offer.the best indian porn tube site!</p>
+<p style="text-align: left;">Notice: All xxx videos on this site are embeded from other porn sites. we carefully select videos from top porn sites like pornhub,Xnxx,xvideos,xHamster,Redtube,YouPorn,hqporner e.t.c. Thanks for visiting our site :)</p> </div>
+</div>
+</footer>
+</div>
+<a class="button" href="#" id="back-to-top" title="Back to top"><i class="fa fa-chevron-up"></i></a>
+<div style="display: none;">
+<a href="https://www.indianporn365.net/tag/indianporn" title="indianporn">indianporn</a>
+</div>
+<div style="display: none;">
+<a href="https://indianxnxxtube.com" title="indianxnxxtube.com">indianxnxxtube.com</a>
+</div>
+<div style="display: none;">
+<a href="https://nhentaihaven.com/" title="nhentaihaven">nhentaihaven</a>
+</div>
+<div style="display: none;">
+<a href="https://gaypornvideos.org/" title="gaypornvideos">gaypornvideos</a>
+</div> <div class="modal fade wpst-user-modal" id="wpst-user-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog" data-active-tab>
+<div class="modal-content">
+<div class="modal-body">
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-remove"></i></a>
+
+<div class="wpst-register">
+<div class="alert alert-danger">Registration is disabled.</div>
+</div>
+
+<div class="wpst-login">
+<h3>Login to Indianpornxtube</h3>
+<form id="wpst_login_form" action="https://indianpornxtube.com/" method="post">
+<div class="form-field">
+<label>Username</label>
+<input class="form-control input-lg required" name="wpst_user_login" type="text" />
+</div>
+<div class="form-field">
+<label for="wpst_user_pass">Password</label>
+<input class="form-control input-lg required" name="wpst_user_pass" id="wpst_user_pass" type="password" />
+</div>
+<div class="form-field lost-password">
+<input type="hidden" name="action" value="wpst_login_member" />
+<button class="btn btn-theme btn-lg" data-loading-text="Loading..." type="submit">Login</button> <a class="alignright" href="#wpst-reset-password">Lost Password?</a>
+</div>
+<input type="hidden" id="login-security" name="login-security" value="cd39363770" /><input type="hidden" name="_wp_http_referer" value="/" /> </form>
+<div class="wpst-errors"></div>
+</div>
+
+<div class="wpst-reset-password">
+<h3>Reset Password</h3>
+<p>Enter the username or e-mail you used in your profile. A password reset link will be sent to you by email.</p>
+<form id="wpst_reset_password_form" action="https://indianpornxtube.com/" method="post">
+<div class="form-field">
+<label for="wpst_user_or_email">Username or E-mail</label>
+<input class="form-control input-lg required" name="wpst_user_or_email" id="wpst_user_or_email" type="text" />
+</div>
+<div class="form-field">
+<input type="hidden" name="action" value="wpst_reset_password" />
+<button class="btn btn-theme btn-lg" data-loading-text="Loading..." type="submit">Get new password</button>
+</div>
+<input type="hidden" id="password-security" name="password-security" value="cd39363770" /><input type="hidden" name="_wp_http_referer" value="/" /> </form>
+<div class="wpst-errors"></div>
+</div>
+<div class="wpst-loading">
+<p><i class="fa fa-refresh fa-spin"></i><br>Loading...</p>
+</div>
+</div>
+<div class="modal-footer">
+<span class="wpst-register-footer">Don&#039;t have an account? <a href="#wpst-register">Sign up</a></span>
+<span class="wpst-login-footer">Already have an account? <a href="#wpst-login">Login</a></span>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="https://indianpornxtube.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.1" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/indianpornxtube.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://indianpornxtube.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.1" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://indianpornxtube.com/wp-content/themes/retrotube/assets/js/navigation.js?ver=1.0.0" id="wpst-navigation-js"></script>
+<script type="text/javascript" src="https://indianpornxtube.com/wp-content/themes/retrotube/assets/js/jquery.bxslider.min.js?ver=4.2.15" id="wpst-carousel-js"></script>
+<script type="text/javascript" src="https://indianpornxtube.com/wp-content/themes/retrotube/assets/js/jquery.touchSwipe.min.js?ver=1.6.18" id="wpst-touchswipe-js"></script>
+<script type="text/javascript" src="https://indianpornxtube.com/wp-content/themes/retrotube/assets/js/lazyload.js?ver=1.0.0" id="wpst-lazyload-js"></script>
+<script type="text/javascript" id="wpst-main-js-extra">
+/* <![CDATA[ */
+var wpst_ajax_var = {"url":"https:\/\/indianpornxtube.com\/wp-admin\/admin-ajax.php","nonce":"545c5a085f","ctpl_installed":"1","is_mobile":"1"};
+var objectL10nMain = {"readmore":"Read more","close":"Close"};
+var options = {"thumbnails_ratio":"16\/9","enable_views_system":"on","enable_rating_system":"on"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://indianpornxtube.com/wp-content/themes/retrotube/assets/js/main.js?ver=1.7.2.1691761126" id="wpst-main-js"></script>
+<script type="text/javascript" src="https://indianpornxtube.com/wp-content/themes/retrotube/assets/js/skip-link-focus-fix.js?ver=1.0.0" id="wpst-skip-link-focus-fix-js"></script>
+<script type="text/javascript" src="https://indianpornxtube.com/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.14.2" id="smush-lazy-load-js"></script>
+<script type="text/javascript" id="ivory-search-scripts-js-extra">
+/* <![CDATA[ */
+var IvorySearchVars = {"is_analytics_enabled":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://indianpornxtube.com/wp-content/plugins/add-search-to-menu/public/js/ivory-search.min.js?ver=5.5.2" id="ivory-search-scripts-js"></script>
+
+
+<script data-cfasync="false" type="text/javascript" src="//fnbauniukvi.com/i/npage/1969793/code.js" async></script>
+<script>
+(function(jrxzy){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = jrxzy || {};
+s.src = "//zylytavo.com/clDn9.6Tb/2c5GlHSbWjQW9IN-DZYb1ONSDrMvx/Noyd0O0wN_jaUi0/M_zjEa4G";
+l.parentNode.insertBefore(s, l);
+})({})
+</script>
+<script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>
+<ins class="eas6a97888e" data-zoneid="5021368"></ins>
+<script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
+</body>
+</html>

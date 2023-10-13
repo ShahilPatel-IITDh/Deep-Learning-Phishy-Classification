@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Prohibited Visit</title>
+    <!-- <link rel="stylesheet" href="/static/css/403en.min.css" /> -->
+    <!-- prettier-ignore -->
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #04ccfc;
+      background: -moz-linear-gradient(left, #04ccfc 1%, #377fd7 100%);
+      background: -webkit-linear-gradient(left, #04ccfc 1%, #377fd7 100%);
+      background: linear-gradient(to right, #04ccfc 1%, #377fd7 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#04ccfc', endColorstr='#377fd7', GradientType=1);
+      background: url("/static/images/bg-403-pc.png") center center no-repeat;
+      background-size: cover
+    }
+
+    .bj403 {
+      text-align: center;
+      margin: 0 auto
+    }
+
+    .logo_403 {
+      margin: 5vh auto 0
+    }
+
+    .logo_403_img {
+      height: 78px;
+      opacity: 0;
+    }
+
+    .images_403 {
+      /* margin: 3vh auto 0 */
+    }
+
+    .images_403 img {
+      height: 47vh;
+      margin: 0 auto
+    }
+
+    .prohibit_line {
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      margin-top: 4vh;
+      align-items: center
+    }
+
+    .pl_1 {
+      width: 2vw;
+      border-top: 1px solid #999
+    }
+
+    .pl_font {
+      text-align: center;
+      color: #333;
+      font-size: 2.6vh;
+      font-weight: bold;
+      margin-top: -2vh;
+      margin: 0 1vw 0 1vw;
+      font-family: Helvetica-Bold, Helvetica
+    }
+
+    .pl_2 {
+      width: 2vw;
+      border-top: 1px solid #999
+    }
+
+    .into-list {
+      margin-top: 2vh
+    }
+
+    .bj403 p {
+      text-align: center;
+      font-size: 1.6vh;
+      font-family: Helvetica;
+      color: #666666;
+      clear: both
+    }
+
+    .contacts {
+      display: flex;
+      justify-content: center;
+      margin-top: 6vh;
+    }
+
+    .contact-item {
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-item-text {
+      text-align: center;
+      font-size: 16px;
+      font-family: Helvetica;
+      color: #666666;
+      clear: both;
+      margin-top: 10px
+    }
+
+    .contact-item-text-link {
+      text-decoration: none;
+    }
+
+    .contact-item-text-link:visited {
+      color: #0760D4;
+    } 
+
+    .contacts-img {
+      width: 81px;
+      height: 80px;
+      
+    }
+
+    @media (max-width: 1280px) {
+      .logo_403 {
+        margin: 2vh auto 0
+      }
+
+      .contacts {
+        margin-top: 2vh;
+      }
+
+      .logo_403_img {
+        height: 58px
+      }
+
+      .images_403 img {
+        height: 40vh;
+      }
+    }
+
+    @media (max-width: 1020px) {
+      .logo_403 {
+        margin: 2vh auto 0
+      }
+
+      .contacts {
+        margin-top: 6vh;
+      }
+
+      .logo_403_img {
+        height: 78px
+      }
+
+      .images_403 img {
+        height: 47vh;
+      }
+    }
+
+    @media (max-width: 516px) {
+
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden
+      }
+
+      body {
+        background-image: url("/static/images/bg-403-mb.png")
+      }
+
+      .page {
+        padding: 0 20px
+      }
+
+      .logo_403 {
+        margin-top: 20px
+      }
+
+      .logo_403 .logo_403_img {
+        width: calc(166 / 375 * 100%);
+        height: auto
+      }
+
+      .images_403 {
+        margin-top: 30px
+      }
+
+      .images_403 img {
+        width: calc(275 / 375 * 100%);
+        margin: 0 auto;
+        display: block;
+        height: auto
+      }
+
+      .prohibit_line {
+        margin-top: 40px;
+        width: 100%
+      }
+
+      .prohibit_line .pl_font {
+        margin-left: 20px;
+        margin-right: 20px
+      }
+
+      .prohibit_line .line {
+        width: 39px
+      }
+
+      .prohibit_line>* {
+        height: 100%
+      }
+
+      .bj403 p {
+        margin: 20px auto 0;
+        line-height: 20px;
+        font-size: 14px;
+        margin-top: 0
+      }
+
+      .bj403 p+p {
+        margin-top: 10px
+      }
+
+      .cs_btn {
+        font-size: 16px;
+        height: 42px;
+        margin-top: 30px
+      }
+
+      .contacts {
+        display: flex;
+        margin-top: 36px;
+      }
+
+      .contact-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-item-text {
+        text-align: center;
+        font-size: 12px;
+        font-family: Helvetica;
+        color: #666666;
+        clear: both;
+        margin-top: 6px
+      }
+
+      .contacts-img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  </style>
+    <!-- <script type="text/javascript" src="/static/data/configjs.js"></script> -->
+  </head>
+
+  <body class="body">
+    <div class="bj403 app page">
+      <div class="logo_403">
+        <img class="logo_403_img" src="/staticResource/platform/logo.svg" alt="logo" />
+      </div>
+      <div class="images_403">
+        <img src="/static/images/img_403.png" />
+      </div>
+      <div class="prohibit_line line-wrap">
+        <div class="pl_1 line"></div>
+        <div class="pl_font text">PROHIBITED VISIT</div>
+        <div class="pl_2 line"></div>
+      </div>
+      <div class="into-list">
+        <p>Due to local regulatory, accessing our website from your location is prohibited.</p>
+        <p>We regret any inconvenience caused.</p>
+        <p>If you have any questions please contact us.</p>
+      </div>
+
+      <!-- <a id="cs_btn" class="cs_btn" target="_blank" href="https://chat.okbet.com/Chat/Chat?lang=en&userID=&userName=">
+      CUSTOMER SERVICE
+    </a> -->
+      <div class="contacts">
+        <div class="contact-item">
+          <img src="/static/images/icon-service.png" class="contacts-img" />
+          <span class="contact-item-text">
+            <a
+              class="contact-item-text-link"
+              target="_blank"
+              id="cs_btn"
+              href="https://chat.okbet.com/Chat/Chat?lang=en&userID=&userName="
+            >
+              Customer Service
+            </a>
+          </span>
+        </div>
+        <div class="contact-item">
+          <img src="/static/images/icon-phone.png" class="contacts-img" />
+          <span class="contact-item-text" id="phone"></span>
+        </div>
+        <div class="contact-item">
+          <img src="/static/images/icon-mail.png" class="contacts-img" />
+          <span class="contact-item-text" id="email"></span>
+        </div>
+      </div>
+
+      <!-- <p>
+            如有疑问，请联系<a href="javascript:BBOnlineService();">在线客服</a>
+        </p> -->
+    </div>
+    <!--  <script type="text/javascript">
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+        if (arr = document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+
+    function BBOnlineService() {
+        var agentFlag = getCookie("agent");
+        if (typeof(CONFIG_MAP) == 'undefined' || !CONFIG_MAP.zxkfUrl) {
+            alert("客服未配置，请联系管理员");
+            return;
+        }
+        var zxkfUrl = CONFIG_MAP["zxkfUrl"];
+        var agentZxkfUrl = CONFIG_MAP["agentZxkfUrl"];
+
+        if (agentFlag && agentFlag == 1 && agentZxkfUrl) { //代理专属客服
+            zxkfUrl = agentZxkfUrl;
+        }
+
+        window.open(zxkfUrl, 'Service', "width=1039,height=728,status=no,scrollbars=no");
+    }
+    </script> -->
+
+    <script>
+      // update logo
+      function updateLogo() {
+        const logo = document.querySelector('.logo_403_img')
+        logo.src = `/staticResource/platform//logo.svg?${new Date().getTime()}`
+        logo.style.opacity = 1;
+      }
+      updateLogo()
+
+      window.onload = function () {
+        /* Add your logic here */
+        const init = async () => {
+          var xhttp = new XMLHttpRequest()
+          try {
+            const response = await fetch('/api/front/index/config.json')
+            const data = await response.json()
+            const config = data.t
+
+            document.getElementById('cs_btn').href =
+              config?.customerServiceUrl || 'https://chat.okbet.com/Chat/Chat?lang=en&userID=&userName='
+            document.getElementById('phone').innerHTML = config?.mainPhone || '+639386788888'
+            document.getElementById('email').innerHTML = config?.mainEmail || 'kyc@okbet.com'
+          } catch (error) {
+            console.log('error', error)
+            document.getElementById('phone').innerHTML = '+639386788888'
+            document.getElementById('email').innerHTML = 'kyc@okbet.com'
+          }
+        }
+        init()
+      }
+    </script>
+  </body>
+</html>

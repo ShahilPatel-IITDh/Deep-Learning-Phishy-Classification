@@ -1,0 +1,116 @@
+<!-- Application Version: SPHX.CUL.2023.08.01.VICTOR.1.10.22 -->
+<!-- Application Environment: production -->
+<!-- Application Build Hash: e8ead6265525ecb3a629f84ee4037744e33473e0 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MyRCL Home Portal | Authentication</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css?v=07065720231013">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/desktop.css?v=07065720231013">
+    <link rel="stylesheet" type="text/css" href="/css/mobile.css?v=07065720231013">
+    <link rel="stylesheet" type="text/css" href="/css/tablet.css?v=07065720231013">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <script charset="UTF-8" type="text/javascript">
+        window["adrum-start-time"] = new Date().getTime();
+        (function( config ) {​​​​​​
+            config.appKey           = "AD-AAB-ABC-VZT";
+            config.adrumExtUrlHttp  = "http://cdn.appdynamics.com";
+            config.adrumExtUrlHttps = "https://cdn.appdynamics.com";
+            config.beaconUrlHttp    = "http://pdx-col.eum-appdynamics.com";
+            config.beaconUrlHttps   = "https://pdx-col.eum-appdynamics.com";
+            config.resTiming        = {​​​​​​ "bufSize" : 200, "clearResTimingOnBeaconSend" : true }​​​​​​;
+            config.maxUrlLength     = 512;
+        }​​​​​​)( window["adrum-config"] || ( window["adrum-config"] = {​​​​​​}​​​​​​ ) );
+    </script>
+    <script src="//cdn.appdynamics.com/adrum/adrum-20.9.0.3268.js"></script>
+    <script type="text/javascript">
+        var baseUrl = "";
+        var easeRedirectUrlPH = "https://ease.myrclhome.com/portal-login";
+        var easeRedirectUrlIN = "http://rhlpatmart601.na.rccl.com:14200/portal-login";
+    </script>
+</head>
+<body>
+    <div class='login-form-container'>
+        <div class='form-box'>
+            <div class='banner'>
+                <img src='/images/login-banner.png?v=07065720231013' />
+            </div>
+            <div id="ribbon-container">
+                <a id="ribbon">WELCOME!</a>
+            </div>
+            <div class='error-container'>
+            </div>
+            <div class='main-form'>
+                <form action="/authenticate" method="POST">
+                    <div class='segment'>
+                        <span class='icon float-left'>
+                            <img src='/images/icon-human.png' />
+                        </span>
+                        <input type='text' name='UserName' class='float-left' placeholder='User Name/E-mail' />
+                    </div>
+                    <div class='segment'>
+                        <span class='icon float-left'>
+                            <img src='/images/icon-password.png' />
+                        </span>
+                        <input type='password' name='Password' class='float-left' placeholder='Password' autocomplete="off" />
+                    </div>
+                    <div class='segment-submit'>
+                        <input type='hidden' name='CorrelationID' id='CorrelationID' value='e66093596cf465d0-831c936d29b3a2f8-c76c81c549ffdedd-f424e3464ced3f8e' />
+                        <input type='submit' value='Log In' />
+                    </div>
+                </form>
+            </div>
+            <div class='auxilliary'>
+                <p class='forgot-password'>
+                    <a href='/retrieve_password'>Did you <strong>forget your password?</strong></a>
+                </p>
+            </div>
+            <div class='registration'>
+                <label class='float-left'>Are you a new applicant?</label>
+                <a class='float-left' href='/apply-now'>Enter Here</a>
+            </div>
+        </div>
+    </div>
+<div class='sub-footer-container'>
+    <p>
+        For technical assistance, please click <a href="/hr-service-desk">here.</a>
+    </p>
+        <p>
+        Not sure how to log in? <a href="/watch-tutorial">Click here to watch a tutorial.</a>
+    </p>
+        <ul>
+        <li>
+            <a href="/royal-caribbean-international">
+                ROYAL CARIBBEAN INTERNATIONAL
+            </a>
+        </li>
+        <li>
+            <span class='desktop-separator'>&#x25cf;</span>
+            <span class='mobile-separator'>&#x25C6;</span>
+        </li>
+        <li>
+            <a href="/celebrity-cruises">
+                CELEBRITY CRUISES
+            </a>
+        </li>
+        <li>
+            <span class='desktop-separator'>&#x25cf;</span>
+            <span class='mobile-separator'>&#x25C6;</span>
+        </li>
+        <li>
+            <a href="/silversea">
+                SILVERSEA CRUISES
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

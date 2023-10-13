@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html>
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Jaguar Network AS30781</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="/build/css/jn.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'><script type="text/javascript" src="/build/js/external.min.js"></script>
+    <script type="text/javascript" src="/build/js/internal.min.js"></script>
+
+    <link rel="shortcut icon" href="/assets/img/favicon-freepro.png">
+
+  </head>
+  <body id="body">
+    <div class="global-wrapper container-fluid text-center no-padding">
+      <header class="text-right jn-whitestraps d-none d-md-block">
+        <ul class="header-menu1">
+          <li>
+            <a href="http://www.jaguar-network.com" target="_blank" class="btn link btn-sm">
+              <span class="fo fo-fw fo-globe"></span>
+              jaguar-network.com
+            </a>
+          </li>
+          <li>
+            <a href="http://extranet.jaguar-network.com" target="_blank" class="btn link btn-sm">
+              <span class="fo fo-fw fo-share-alt"></span>
+              Extranet
+            </a>
+          </li>
+                  </ul>
+      </header>
+      <div class="align-items-center" id="headDesk">
+        <nav class="navbar navbar-dark navbar-expand-md navtop" id="nav-id">
+          <div class="container">
+            <div class="row navcontent">
+              <button aria-controls="navbarsNavDesk" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-left burger-button-top" data-target="#navbarsNavDesk" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="/"><img alt="Jaguar networks" src="/assets/img/logo-freepro.png"></a>
+
+              <div class="collapse navbar-collapse" id="navbarsNavDesk">
+
+                <ul class="navbar-nav mr-auto">
+
+                  <li class="nav-item menu-li home" id="home">
+                    <a href="/" class="nav-link">
+                      <i class="fo fo-fw fo-home"></i>About AS30781</a>
+                  </li>
+
+                  <li class="nav-item dropdown menu-li policies" id="policies">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-link" id="navbarDropdownMenuPolicies">
+                      <i class="fo fo-list" aria-hidden="true"></i>
+                      Policies
+                    </a>
+
+                    <div aria-labelledby="navbarDropdownMenuPolicies" class="dropdown-menu menu-show borderpolicies" id="dropPolicies">
+                      <div class="row div-to-get">
+                        <div class="col-sm-12 no-pad-left header-product-offers">
+                          <a class="dropdown-item" href="/routing-policy/">
+                            <i class="fo fo-fw fo-angle-right"></i>
+                            Routing Policy<br>
+                            <!-- <div class="border\-left"></div>
+                            <div class="border\-right"></div> -->
+                          </a>
+                          <a class="dropdown-item" href="/peering-policy/">
+                            <i class="fo fo-fw fo-angle-right"></i>
+                            Peering Policy<br>
+                            <!-- <div class="border\-left"></div>
+                            <div class="border\-right"></div> -->
+                          </a>
+                          <a class="dropdown-item" href="/bgp-policy/">
+                            <i class="fo fo-fw fo-angle-right"></i>
+                            BGP Policy<br>
+                            <!-- <div class="border\-left"></div>
+                            <div class="border\-right"></div> -->
+                          </a>
+                          <a class="dropdown-item" href="/peering-request/">
+                            <i class="fo fo-fw fo-angle-right"></i>
+                            Peering Request<br>
+                            <!-- <div class="border\-left"></div>
+                            <div class="border\-right"></div> -->
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown menu-li toolbox" id="toolbox">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-link">
+                      <i class="fo fo-jn-cog" aria-hidden="true"></i>
+                      Toolbox</a>
+
+                    <div aria-labelledby="navbarDropdownMenuToolbox" class="dropdown-menu menu-show bordertoolbox" id="dropToolbox">
+                      <div class="row div-to-get">
+                        <div class="col-sm-12 no-pad-left header-product-offers">
+                          <a class="dropdown-item" href="/nettools/ping/">
+                            <i class="fo fo-fw fo-angle-right"></i>
+                            Ping<br>
+                            <!-- <div class="border\-left"></div>
+                            <div class="border\-right"></div> -->
+                          </a>
+                          <a class="dropdown-item" href="/nettools/traceroute/">
+                            <i class="fo fo-fw fo-angle-right"></i>
+                            Traceroute<br>
+                            <!-- <div class="border\-left"></div>
+                            <div class="border\-right"></div> -->
+                          </a>
+                          <a class="dropdown-item" href="/nettools/looking_glass/">
+                            <i class="fo fo-fw fo-angle-right"></i>
+                            Looking Glass<br>
+                            <!-- <div class="border\-left"></div>
+                            <div class="border\-right"></div> -->
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="nav-item menu-li contact" id="contact">
+                    <a href="/contact/" class="nav-link">
+                      <i class="fo fo-fw fo-email"></i>Contact</a>
+                  </li>
+
+                  <li class="nav-item menu-li d-block d-md-none">
+                    <div class="row">
+                      <div class="col">
+                        <a href="http://www.jaguar-network.com" target="_blank" class="btn link btn-sm replace-whitestraps">
+                          <span class="fo fo-fw fo-globe"></span>
+                          jaguar-network.com
+                        </a>
+                      </div>
+                      <div class="col">
+                        <a href="http://extranet.jaguar-network.com" target="_blank" class="btn link btn-sm replace-whitestraps">
+                          <span class="fo fo-fw fo-share-alt"></span>
+                          Extranet
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+<!-- content -->
+<div id="wrapper">
+    <!-- Page Content -->
+      
+<section id="top-page-header" class="with-head-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 text-left">
+        <h1>AS30781.net</h1>
+        <p>
+            Created in 2001 Jaguar Network is an hosting  and telecomunication operator company specialized in Cloud, Datacenter, Network through fiber and Voice over IP. We help our clients to adapt and face the multiple challenges on a fast moving market, to realize a profit growth with low IT costs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="home-content-wrapper">
+  <div class="container text-left">
+    <div class="row">
+      <div class="col-lg-12">
+          <h2>Network Information</h2>
+          <h3 class="popHeader">Datacenters</h3>
+          <table class="table table-hover" id="pop-table">
+            <tbody class="theader">
+              <tr>
+                <th class="pt-text">Jaguar Network services provided on these points of presence :</th>
+                <th class="pt-check-head pt-ip"><span class="inner"><span class="sub-inner">Transit</span></span></th>
+                <th class="pt-check-head pt-mpls"><span class="inner"><span class="sub-inner">Transport</span></span></th>
+                <th class="pt-check-head pt-housing"><span class="inner"><span class="sub-inner">Colocation</span></span></th>
+                <th class="pt-check-head pt-ip"><span class="inner"><span class="sub-inner">Cloud Connect</span></span></th>
+                <th class="pt-check-head pt-mpls"><span class="inner"><span class="sub-inner">Cloud JN</span></span></th>
+
+              </tr>
+            </tbody>
+
+                          <tbody>
+                <tr class="pt-separator">
+                  <th></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+                <tr class="pt-country">
+                  <th><span ><span class="pt-flag pt-flag-fr"></span>France</span></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+              </tbody>
+                              <tbody>
+                                    <tr>
+                    <th>Annecy</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">ACY01</span> Annecy Cran Gevrier</strong>
+                        <span class="pt-addr">
+                          3 Esplanade Augustin Aussedat, Les Papeteries - Image Factory, 74960 Cran Gevrier
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Aix en Provence</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">AIX01</span> </strong>
+                        <span class="pt-addr">
+                          35 chemin Albert Guigou, Complexe sportif de la Pioline, 13290 Aix En Provence
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Chambery</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">BDL01</span> </strong>
+                        <span class="pt-addr">
+                          51 RUE DE LA REPUBLIQUE BARBERAZ, CPRO, 73000 Barberaz
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Bordeaux</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">BDX01</span> SFR Netcenter Bordeaux</strong>
+                        <span class="pt-addr">
+                          1 Rue Docteur Gabriel Perri, 33300 Bordeaux
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">BDX02</span> TDF Bouliac</strong>
+                        <span class="pt-addr">
+                          Avenue du Domaine de Vialle, 33270 Bouliac
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">BDX03</span> Equinix BX1</strong>
+                        <span class="pt-addr">
+                          39 Rue de Strasbourg, 33520 Bruges
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>La Ciotat</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">CIO01</span> ASP Serveur</strong>
+                        <span class="pt-addr">
+                          785 Voie Antiope, ZA Athélia III, 13600 La Ciotat
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Grenoble</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">GRE01</span> Grenoble SFR</strong>
+                        <span class="pt-addr">
+                          93 Rue du Général Mangin, 38000 Grenoble
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">GRE02</span> EOLAS Grenoble</strong>
+                        <span class="pt-addr">
+                          73 Rue du Général Mangin, 38100 Grenoble
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">GRE03</span> Cogent Grenoble</strong>
+                        <span class="pt-addr">
+                          33 rue Joseph Chanrion, Cogent Communications, Inc., 38000 Grenoble
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Lille</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">LIL01</span> CIV Alternative DataCenter 1</strong>
+                        <span class="pt-addr">
+                          1681 Rue des Saules, PA du Mélantois, 59262 Sainghin En Melantois
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">LIL02</span> CIV Alternative Datacenter 2</strong>
+                        <span class="pt-addr">
+                          486 Avenue Augusta Ada King, ZAC du Parc des rives de l’Escaut, 59410 Anzin
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Lyon</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">LYO01</span> SFR Netcenter Venissieux</strong>
+                        <span class="pt-addr">
+                          6 - 8 Rue Georges Marrane, 69200 Venissieux
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">LYO02</span> DCforData Limonest</strong>
+                        <span class="pt-addr">
+                          1 Rue des Vergers, ZA TECHLID, 69760 Limonest
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">LYO03</span> Rock</strong>
+                        <span class="pt-addr">
+                          BIOPARC 60, Avenue Rockfeller, 69008 Lyon 08
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">LYO04</span> IN2P3</strong>
+                        <span class="pt-addr">
+                          21 avenue Pierre de Coubertin, 69100 Villeurbanne
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">LYO05</span> SYNAAPS</strong>
+                        <span class="pt-addr">
+                          49 avenue Albert Einstein - BP12074, Business Geografic SynAApS - Datacenter A, 69603 Villeurbanne Cedex
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Marseille</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">MAR01</span> Interxion MRS1</strong>
+                        <span class="pt-addr">
+                          40 Avenue Roger Salengro, 13003 Marseille 03
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">MAR02</span> MRS01 Jaguar Network Datacenter</strong>
+                        <span class="pt-addr">
+                          71 Avenue André Roussin, BP 50067, 13016 Marseille 16
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">MAR03</span> Interxion MRS2</strong>
+                        <span class="pt-addr">
+                          Enceinte Portuaire, Porte 4, Bâtiment MRS2, 13015 Marseille 15
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Montpellier</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">MPL01</span> SFR PoP Montpellier</strong>
+                        <span class="pt-addr">
+                          488 Avenue de Villeneuve Angoulême, 34000 Montpellier
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Nantes</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">NAN01</span> Etix Nantes 2</strong>
+                        <span class="pt-addr">
+                          14 Rue Vega, ZAC de la Haute Farêt, 44470 Carquefou
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">NAN02</span> SFR Netcenter Nantes</strong>
+                        <span class="pt-addr">
+                          Rue Félix Eboué Rezé, 44000 Nantes
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">NAN03</span> Etix Nantes 1</strong>
+                        <span class="pt-addr">
+                          2 impasse Joséphine Baker, Etix Nantes#1-B, 44800 St Herblain
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Nice</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">NCE01</span> GTT</strong>
+                        <span class="pt-addr">
+                          23 Auguste Verola, Hibiscus Park, 06200 Nice
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Paris</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">PAR01</span> Telehouse Europe 2 Paris</strong>
+                        <span class="pt-addr">
+                          137 Boulevard Voltaire, 75011 Paris 11
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">PAR02</span> Equinix PA2-PA3 Saint-Denis</strong>
+                        <span class="pt-addr">
+                          114 Rue Ambroise Croizat, 93200 St Denis
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">PAR03</span> Interxion PAR2 Aubervilliers</strong>
+                        <span class="pt-addr">
+                          20 - 22 Rue des Gardinoux, 93300 Aubervilliers
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">PAR04</span> Interxion PAR5 Saint Denis</strong>
+                        <span class="pt-addr">
+                          11 - 13 Avenue des Arts et Métiers, 93200 St Denis
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">PAR05</span> Interxion PAR1 Aubervilliers</strong>
+                        <span class="pt-addr">
+                          45 Avenue Victor Hugo, Bâtiment 260, 93300 Aubervilliers
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">PAR06</span> Iliad DC2</strong>
+                        <span class="pt-addr">
+                          29 Rue Edith Cavell, 94400 Vitry Sur Seine
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">PAR07</span> Equinix PA6 Condorcet (ex Telecity)</strong>
+                        <span class="pt-addr">
+                          10 Rue Waldeck Rochet, 93300 Aubervilliers
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">PAR08</span> Equinix PA7 Courbevoie (ex Telecity)</strong>
+                        <span class="pt-addr">
+                          130 - 136 Boulevard de Verdun, 92400 Courbevoie
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">PAR09</span> Telehouse 3 Magny les Hameaux</strong>
+                        <span class="pt-addr">
+                          1 Rue Pablo Picasso, 78114 Magny Les Hameaux
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">PAR11</span> Global Switch</strong>
+                        <span class="pt-addr">
+                          7-9 Rue Petit, 92582 Clichy
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Rennes</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">REN01</span> SFR Netcenter Rennes</strong>
+                        <span class="pt-addr">
+                          La Baraque, Netcenter SFR, 35510 Cesson Sevigne
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">REN02</span> TDF Proxicenter Rennes</strong>
+                        <span class="pt-addr">
+                          2 Rue du Clos Courtel, TDF PROXICENTER, 35510 Cesson Sevigne
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Sophia Antipolis</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">SOP01</span> Cogent Datacenter Antibes</strong>
+                        <span class="pt-addr">
+                          282 Route des Cistes, 06160 Antibes
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">SOP02</span> Euclyde Antibes</strong>
+                        <span class="pt-addr">
+                          49 Rue Emile Hugues, ZI des Trois Moulins, 06600 Antibes
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Strasbourg</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">STR01</span> SFR Netcenter Strasbourg</strong>
+                        <span class="pt-addr">
+                          1 Rue du Havre, 67100 Strasbourg
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Toulon</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">TLN01</span> Toulon THD83 Ollioules</strong>
+                        <span class="pt-addr">
+                          Chemin Lagoubran, 83190 Ollioules
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Toulouse</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">TLS01</span> Cogent Datacenter Toulouse</strong>
+                        <span class="pt-addr">
+                          125 Bis Chemin du Sang de Serp, 31000 Toulouse
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                                        <tbody>
+                <tr class="pt-separator">
+                  <th></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+                <tr class="pt-country">
+                  <th><span ><span class="pt-flag pt-flag-nl"></span>Netherlands</span></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+              </tbody>
+                              <tbody>
+                                    <tr>
+                    <th>Amsterdam</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">AMS01</span> Amsterdam Nikhef Housing Facility</strong>
+                        <span class="pt-addr">
+                          Science Park 105, 1098 XG Amsterdam
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                                        <tbody>
+                <tr class="pt-separator">
+                  <th></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+                <tr class="pt-country">
+                  <th><span ><span class="pt-flag pt-flag-be"></span>Belgium</span></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+              </tbody>
+                              <tbody>
+                                    <tr>
+                    <th>Bruxelles</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">BXL01</span> Bruxelles AXS / VERIXI</strong>
+                        <span class="pt-addr">
+                          Zaventem Excelsiorlaan 15, 1930 Zaventem
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                                        <tbody>
+                <tr class="pt-separator">
+                  <th></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+                <tr class="pt-country">
+                  <th><span ><span class="pt-flag pt-flag-de"></span>Germany</span></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+              </tbody>
+                              <tbody>
+                                    <tr>
+                    <th>Frankfurt</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">FRA01</span> Frankfurt Equinix FR5 (Former Ancotel)</strong>
+                        <span class="pt-addr">
+                          Kleyerstraße 88-90, 60311 Frankfurt
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                                        <tbody>
+                <tr class="pt-separator">
+                  <th></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+                <tr class="pt-country">
+                  <th><span ><span class="pt-flag pt-flag-ch"></span>Switzerland</span></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+              </tbody>
+                              <tbody>
+                                    <tr>
+                    <th>Geneva</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">GVA01</span> Equinix GV1 Geneva</strong>
+                        <span class="pt-addr">
+                          6 Rue de la Confédération, 1024 Geneve
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                              <tbody>
+                                    <tr class="pt-separator">
+                    <th></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+                                    <tr>
+                    <th>Zurich</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">ZRH01</span> Equinix ZH4 Zurich</strong>
+                        <span class="pt-addr">
+                          Josefstrasse 225, 8005 Zurich
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                                        <tbody>
+                <tr class="pt-separator">
+                  <th></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+                <tr class="pt-country">
+                  <th><span ><span class="pt-flag pt-flag-uk"></span>United Kingdom</span></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                  <th class="pt-check pt-housing"></th>
+                  <th class="pt-check pt-ip"></th>
+                  <th class="pt-check pt-mpls"></th>
+                </tr>
+              </tbody>
+                              <tbody>
+                                    <tr>
+                    <th>London</th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                    <th class="pt-check pt-housing"></th>
+                    <th class="pt-check pt-ip"></th>
+                    <th class="pt-check pt-mpls"></th>
+                  </tr>
+
+                                      <tr>
+                      <td>
+                        <strong class="with-id"><span class="pop-id-badge badge badge-pill badge-primary">LON01</span> London Telehouse North Docklands</strong>
+                        <span class="pt-addr">
+                          Docklands North, Coriander Avenue, E14 2AA London E14
+                                                  </span>
+                      </td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"><i class="fo fo-check" aria-hidden="true"></i></td>
+                      <td class="pt-check pt-housing"></td>
+                      <td class="pt-check pt-ip"><i class="fo fo-check" aria-hidden="true"></i></i></td>
+                      <td class="pt-check pt-mpls"></td>
+                    </tr>
+                  
+                </tbody>
+                                    </table>
+
+          <h3>AS Technical Informations</h3>
+          <p>AS Number : AS30781</p>
+
+          <h3>Contacts</h3>
+          <p>
+            NOC email : noc AT as30781 DOT net<br /> Abuse email : abuse AT as30781 DOT net<br /> Peering email : peering AT as30781 DOT net
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    if ($(window).scrollTop() < 10) {
+      $('#nav-id').addClass('topped');
+    }
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() < 10) {
+        $('#nav-id').addClass('topped');
+      }
+      else {
+        $('#nav-id').removeClass('topped');
+      }
+    });
+
+    if ($("#pop-table").height()+390 > $(window).scrollTop() && $(window).scrollTop() > 390) {
+      $('.theader').addClass('theader-fixed');
+    }
+    $(window).on('scroll', function () {
+      if ($("#pop-table").height()+390 > $(window).scrollTop() && $(window).scrollTop() > 390) {
+        $('.theader').addClass('theader-fixed');
+      }
+      else {
+        $('.theader').removeClass('theader-fixed');
+      }
+    });
+
+    if(navigator.userAgent.toLowerCase().indexOf('firefox') !== -1) {
+      $("#pop-table.table tbody th").css("padding-left", "2px");
+    }
+  });
+
+
+</script>
+
+    <!-- /#page-content-wrapper -->
+</div>
+
+<footer id="bottom-page-footer">
+  <div class="container">
+    <div class="row alternateDark">
+      <div class="col-md-6">
+        <h5 id="jn-logo-footer" class="jn-logo">
+          <!--Jaguar Network-->
+        </h5>
+      </div>
+            <div class="col-md-6">
+        <h5>
+          Contact us</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="" class="vente-phone">
+              <span class="fo fo-fw fo-phone"></span>France : 0811 656 111</a>
+          </li>
+          <li>
+            <a href="" class="vente-phone">
+              <span class="fo fo-fw fo-phone"></span>Suisse : 0840 656 111</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-12 text-center">
+        <em>Copyright © 2001 - <span class="current_year"></span> Free Pro </em><br/><br/>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+  //Best hacks :)
+  $year = (new Date()).getFullYear() ;
+  $('.current_year').after($year).remove() ;
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 220 220">
+    <style>
+        .logo { fill: #5b7073; }
+    </style>
+    <defs>
+        <mask id="holes">
+            <rect width="100%" height="100%" fill="white"/>
+            <circle cx="50" cy="50" r="15" fill="black"></circle>
+            <circle cx="170" cy="50" r="15" fill="black"></circle>
+            <circle cx="50" cy="170" r="15" fill="black"></circle>
+            <circle cx="170" cy="170" r="15" fill="black"></circle>
+        </mask>
+    </defs>
+    <circle cx="50" cy="50" r="50" class="logo" mask="url(#holes)"></circle>
+    <circle cx="170" cy="50" r="50" class="logo" mask="url(#holes)"></circle>
+    <circle cx="50" cy="170" r="50" class="logo" mask="url(#holes)"></circle>
+    <circle cx="170" cy="170" r="50" class="logo" mask="url(#holes)"></circle>
+    <polygon points="80,60 60,80 140,160 160,140" class="logo"></polygon>
+</svg>

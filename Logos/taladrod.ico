@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+
+<title>ซื้อขายรถบ้าน เร็วกว่า.ถูกกว่า.ดีกว่า</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="subject" content="รถมือสอง" />
+<meta name="description" content="ซื้อขายรถบ้านที่ตลาดรถดอทคอม จบด้วยรอยยิ้ม เร็วกว่าถูกกว่าดีกว่า" />
+<meta name="keywords" content="รวดเร็ว,ปลอดภัย,ไม่เหมือนใคร,รถมือสอง,รถบ้าน,เจ้าของขายเอง, ซื้อรถ, ขายรถ,  ซื้อขายรถ, used car " /> 
+<meta name="ahrefs-site-verification" content="a9014de476ba58a31711a80f45ae9430ebf69a9b52558c178405e813f5ea70b5" />
+
+<link rel="shortcut icon" href="../img/tlr.ico" />
+
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "ตลาดรถดอทคอม ซื้อขายรถบ้าน เร็วกว่า.ถูกกว่า.ดีกว่า",
+        "url": "http://www.taladrod.com",
+        "sameAs" : [
+            "https://www.facebook.com/taladroddotcom"
+         ],
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "เลขที่ 183 อาคารรีเจ้นท์ เฮ้าส์ ชั้น 10 ถนนราชดำริ แขวงลุมพินี เขตปทุมวัน กรุงเทพมหานคร",
+        "addressRegion": "BK",
+        "postalCode": "10330",
+        "addressCountry": "TH"
+       }
+    }
+    </script>
+<style type="text/css" media="screen">
+@import url("../_incFile/layout.css?v=4.3.1");
+
+</style>
+<link href='../_incFile/font.css' rel='stylesheet' type='text/css' />
+<!--[if lt IE 7]>
+<style media="screen" type="text/css">
+#outer_layout{
+    height:100%;
+}
+</style>
+<![endif]-->
+
+
+
+
+<script type="text/javascript" src="../JS/tlrscp.js"></script>
+<script type="text/javascript" src="../js/select/jquery.min.js"></script>
+<script type="text/javascript">
+var tlr_domain = ";domain=taladrod.com"
+
+ $(function(){
+    if($("#a_online").html()!=""){
+        setCookie("a_online",$("#a_online").html());
+    }else{
+        $("#a_online").html(getCookie("a_online"));
+    }
+   
+         if($("#a_newc").html()!="null")
+            setCookie("a_newc",$("#a_newc").html());
+    
+ });
+ </script>
+ 
+<script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
+<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.1.js"></script>
+<link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox-1.3.1.css" media="screen" />
+<script type="text/javascript" src="../js/ipic.js?v=1.1"></script>
+
+
+<meta property="og:title" content="ซื้อขายรถบ้าน เร็วกว่า.ถูกกว่า.ดีกว่า จบด้วยรอยยิ้ม" />
+<meta property="og:site_name" content="TaladRod.com" />
+<meta property="og:description" content="ตลาดรถดอทคอม แหล่งซื้อขายรถมือสอง รถบ้านลงขายฟรี ฝากขายรถได้ ค้นหารถได้หลากหลายรูปแบบ และมีบริการทุกอย่างเกี่ยวกับรถ One Stop Service จบที่เดียว หนึ่งเดียวในประเทศไทย" />
+<meta property="og:type" content="product" />
+
+    
+    <script type="text/javascript" src="../_incFile/MMT.js?v=66101307.v1.1"></script>
+    <script type="text/javascript">
+        function isSelected(val1, val2) {
+            if (val1 == val2)
+                return " selected";
+            return "";
+        }
+        function setMake(idx, sM) {
+            var c = $('#Make' + idx);
+            c.html("<option value='0' " + isSelected(sM, '0') + ">----  เลือกยี่ห้อ  ----</option>");
+            var aM = eval("MK.split(',')");
+            for (var i = 0; i < aM.length; i += 2) {
+                c.append("<option value='" + aM[i] + "' " + isSelected(sM, aM[i] == "0" ? "-1" : aM[i]) + ">" + aM[i + 1] + "</option>");
+            }
+
+            setModel(idx, '0');
+        }
+
+        function setModel(idx, sM) {
+            var c = $('#Model' + idx);
+            var mkid = $('#Make' + idx).val();
+            c.html("<option value='0' " + isSelected(sM, '0') + ">----  เลือกรุ่น  ----</option>");
+            if (mkid == "0") {
+                c.prop("disabled", true);
+            } else {
+                var aM = eval("MD['" + mkid + "'].split(',')");
+                for (var i = 0; i < aM.length; i += 2) {
+                    c.append("<option value='" + aM[i] + "' " + isSelected(sM, aM[i] == "0" ? "-1" : aM[i]) + ">" + aM[i + 1] + "</option>");
+                }
+                c.prop("disabled", false);
+
+            }
+            setBGo();
+        }
+        function bPopGo(url) {
+            if ($("#ModelB").val() == "0") return;
+            var sQ = '?mk=' + $("#MakeB").val();
+            sQ += '&md=' + $("#ModelB").val();
+            location = url + sQ;
+        }
+        function setBGo() {
+            $("#bBGo").prop("disabled", $("#ModelB").val() == "0");
+        }
+
+        function popUpMM(title, url) {
+            var t = '';
+            t += "<div style='width:250px;height:150px;'><div  style='margin:10px 10px 0 20px;'>" + title + "<table style='margin-top:10px'><tr valign=top><td align=right>";
+            t += "<select style='width:130px;font-size:16px' id='MakeB' name='MakeB' onchange=\"setModel('B','0')\">";
+            t += "<option value='0'>---- เลือกยี่ห้อ   ----</option>";
+            t += "</select>";
+            t += "</td>";
+            t += "<td rowspan=2>";
+            t += "<input type=button id=bBGo onclick=\"bPopGo('" + url + "')\" style='height:50px;width:70px;font-size:16px' value='Go' />";
+            t += "</td>";
+            t += "</tr>";
+            t += "<tr><td>";
+            t += "<select style='width:130px;;font-size:16px' id='ModelB' name='ModelB' disabled onchange=\"setBGo()\">";
+            t += "<option value='0'>---- เลือกรุ่น  ----</option>";
+            t += "</select><br />";
+            t += "</td></tr></table></div></div>";
+
+            $.fancybox(t, {
+                'width': 300,
+                'height': 400,
+                'autoScale': false,
+                'transitionIn': 'none',
+                'transitionOut': 'none',
+                'onComplete': function () {
+                    setMake("B", '0');
+                    setBGo();
+                }
+            });
+        }
+    </script>
+    <style>
+	.hotModel{
+		display:none;
+}
+</style>
+
+ </head>
+<body>
+<div id="outer_layout">
+  <!--layout starts here-->
+  <div id="layout">
+  <div id="header">
+<div class="logo"><a href="../home/"><img src="../img/logo.svg" height="75" alt="taladrod logo" /></a></div>
+
+  <div class="top_right">
+  
+    <a href='../Acc/SignIn.aspx'>เข้าสู่ระบบ</a> &nbsp;
+     
+    </div>
+    <br style='clear:right' />
+ <div id=head_right>
+    
+ </div>
+</div>
+
+ <br style='clear:both' />
+
+<div id="header1">
+<div id=RT_Time>07:00<br />
+<span id=RT_Date>Friday,October 13</span>
+
+</div>
+
+  <div class=box_hd>รถใหม่วันนี้ <br /><a id=a_newc href='../isch/schc.aspx?fno:new'>247</a></div>
+  <div class=box_hd>รถทั้งเว็บ <br /><a>17,060</a></div>
+  <div class=box_hd>ผู้ชมใน 24ชม.<br /><a></a></div>
+  <div class=box_hd>Online<br /><a id=a_onlinex></a></div>
+
+
+
+</div>
+ <br style='clear:both' />
+
+
+
+<!--
+<center>
+
+<div style='width:1000px;'>
+<a href='../../w50/Home'><img src='../img/bn/bnNewWeb5x100.png' /></a></div>
+
+</center>
+
+<center>
+<div style='width:1000px;'>
+<a href='javascript:openQrModal()'><img src='/m40/tme/bnTME.png?v=1.6' /></a>
+</div>
+</center>
+-->
+
+<!--
+<center>
+<img src="../img/bn/bnKEdesktopApp3.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="Compact" title="Compact" href="https://m.taladrod.com/landing2/main.aspx" coords="5,4,683,397" shape="rect">
+    <area target="_blank" alt="iOs" title="iOs" href="https://apps.apple.com/th/app/taladrod/id6445945391" coords="714,327,831,367" shape="rect">
+    <area target="_blank" alt="Android" title="Android" href="https://play.google.com/store/apps/details?id=com.taladrod.mobile" coords="841,327,973,368" shape="rect">
+</map>
+
+</center>
+-->
+
+<!--div style='background-color:#EFECB7;text-align:center'>ประกาศ ตลาดรถดอทคอม ปิดปรับปรุงเว็บ วันอาทิตย์ที่ 1 ก.ย. 10:00-11:30 น. </div-->
+<div id="header2">
+
+
+<!--Hm BOx-->
+<!--div class=hmImg onclick='location="../tClub/TClubIntro.aspx"'>&nbsp;</div-->
+<div class=hmImg>&nbsp;</div>
+<div class=hmBox1>&nbsp;</div>
+<div class=hmBox><a href='../iCar/MktMmt.aspx'><img src='../Img/bmMKTt.png' title='ความเคลื่อนไหวในตลาด' alt='ความเคลื่อนไหวในตลาด' width=80></a></div>
+<div class=hmBox><a href='../isch/schc.aspx?fno:Deal'><img src='../Img/bmSOFt.png'  title='ราคาพิเศษ' alt='ราคาพิเศษ' width=80></a></div>
+<div class=hmBox><a href='../isch/schc.aspx?fno:new'><img src='../Img/bmNewt.png' title='ดูรถมาใหม่' alt='ดูรถมาใหม่' width=80></a></div>
+<div class=hmBox><a href='../isch/schc.aspx?fno:none'><img src='../Img/bmScht.png' title='ค้นหารถ' alt='ค้นหารถ' width=80></a></div>
+<div class=hmBox><a href='../iMem/Select.aspx'><img src='../Img/bmPostG.png'  title='ลงประกาศขาย' alt='ลงประกาศขาย' width=80></a></div>
+<div class=hmBox><a href='../iMem2/BookMarks.aspx'><img src='../Img/bmBkMt.png'  title='Bookmarks' alt='Bookmarks' width=80></a></div>
+</div>
+
+
+
+
+<style>
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2000; /* Sit on top */
+   top:0;left:0;
+  width: 100%; 
+  height: 100%; ; 
+  overflow: hidden;
+ background: rgba(0,0,0,0.4);
+  
+}
+
+/* Modal Content */
+.modal-content {
+ background: rgba(0,0,0,0.0);
+  margin: auto;
+  padding: 20px;
+  width: 400px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+	display:none;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<script>
+$(function(){
+	var modal = document.getElementById("qrModal");
+	var btn = document.getElementById("myBtn");
+	var span = document.getElementsByClassName("close")[0];
+
+	span.onclick = function() {
+ 	 	modal.style.display = "none";
+	}
+
+	window.onclick = function(event) {
+  		if (event.target == modal) {
+    			
+  		}
+		modal.style.display = "none";
+	}	
+});
+
+function openQrModal(){
+	$("#qrModal").show();
+}
+</script>
+
+<!-- The Modal -->
+<div id="qrModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><img src='../../m40/tme/Popup_QR_to_Mobile.png' width=100% /></p>
+  </div>
+
+</div
+  <!--body_container starts-->
+  <!--include file="../_incFile/_SchNmBox.asp-->
+  <div id="body_container">
+   <h1 class="hotModel">ซื้อขายรถบ้าน ตลาดรถดอทคอม</h1>
+
+  <div id=ads_1>
+  <img src='../img/iHmAD.png?V2' class="grays" width="1000" usemap="#area1" alt='บริการของตลาดรถ' />
+  <div style='position:relative;top:-95px;text-align:right;margin-right:50px;font-size:24px;color:#aaa;cursor:pointer;z-index:99'>HotLine <span style='font-size:30px'>086-329-8278</span></div>
+  </div>
+
+   
+
+  <map id="area1" name="area1">
+    <area shape="rect" coords="550,520,1000,700" href="../TClub/tFin50.aspx" alt="บริการของตลาดรถ" />
+   </map>
+  
+ <div style='position:absolute;margin-top:-440px;margin-left:50px;z-index:1000'>
+  
+ <style>
+	img.CRImg{
+		padding: 10;
+		border-radius: 3%;
+		opacity: 0.85;
+		width: 100%;
+		max-height: 210px;
+		object-fit: cover;
+	}
+	
+</style>
+
+
+
+
+<div style='position:absolute;z-index:100;margin-left:670px;margin-top:10px'>
+<a href='../TClub/tFin50CR.aspx' style='text-decoration:none'>
+<table width=225px>
+<tr><td colspan=2><img class=CRImg src='../../w40/ImgCR/CRef0241.jpg'></td></tr>
+</table>
+</a>
+</div>
+<script language=javascript>var __cids_HL = [{cid:2715453,img:"https://imgc1.taladrod.com/c/cidx/011/780/10_1T.jpg"},{cid:2725085,img:"https://imgc1.taladrod.com/c/cidx/011/882/59_1T.jpg"},{cid:2728970,img:"https://imgc1.taladrod.com/c/cidx/011/923/70_1T.jpg"},{cid:2728955,img:"https://imgc1.taladrod.com/c/cidx/011/922/55_1T.jpg"},{cid:2728953,img:"https://imgc1.taladrod.com/c/cidx/011/923/49_1T.jpg"},{cid:2728986,img:"https://imgc1.taladrod.com/c/cidx/011/923/85_1T.jpg"},{cid:2728983,img:"https://imgc1.taladrod.com/c/cidx/011/923/83_1T.jpg"},{cid:2729004,img:"https://imgc1.taladrod.com/c/cidx/011/924/05_1T.jpg"},{cid:2729001,img:"https://imgc1.taladrod.com/c/cidx/011/924/04_1T.jpg"},{cid:2729010,img:"https://imgc1.taladrod.com/c/cidx/011/924/10_1T.jpg"},{cid:2728935,img:"https://imgc1.taladrod.com/c/cidx/011/921/93_1T.jpg"},{cid:2728976,img:"https://imgc1.taladrod.com/c/cidx/011/922/89_1T.jpg"},{cid:2728877,img:"https://imgc1.taladrod.com/c/cidx/011/921/51_1T.jpg"},{cid:2728839,img:"https://imgc1.taladrod.com/c/cidx/011/922/35_1T.jpg"},{cid:2728444,img:"https://imgc1.taladrod.com/c/cidx/011/918/33_1T.jpg"},{cid:2728894,img:"https://imgc1.taladrod.com/c/cidx/011/915/41_1T.jpg"},{cid:2728884,img:"https://imgc1.taladrod.com/c/cidx/011/922/79_1T.jpg"},{cid:2728900,img:"https://imgc1.taladrod.com/c/cidx/011/922/94_1T.jpg"},{cid:2727727,img:"https://imgc1.taladrod.com/c/cidx/011/910/95_1T.jpg"},{cid:2728761,img:"https://imgc1.taladrod.com/c/cidx/011/921/50_1T.jpg"},{cid:2728897,img:"https://imgc1.taladrod.com/c/cidx/011/922/18_1T.jpg"},{cid:2728313,img:"https://imgc1.taladrod.com/c/cidx/011/914/80_1T.jpg"},{cid:2728076,img:"https://imgc1.taladrod.com/c/cidx/011/914/46_1T.jpg"},{cid:2728235,img:"https://imgc1.taladrod.com/c/cidx/011/916/05_1T.jpg"},{cid:2728757,img:"https://imgc1.taladrod.com/c/cidx/011/921/45_1T.jpg"},{cid:2728015,img:"https://imgc1.taladrod.com/c/cidx/011/912/58_1T.jpg"},{cid:2727545,img:"https://imgc1.taladrod.com/c/cidx/011/908/77_1T.jpg"},{cid:2727673,img:"https://imgc1.taladrod.com/c/cidx/011/910/20_1T.jpg"},{cid:2727103,img:"https://imgc1.taladrod.com/c/cidx/011/904/06_1T.jpg"},{cid:2728291,img:"https://imgc1.taladrod.com/c/cidx/011/916/66_1T.jpg"},{cid:2727752,img:"https://imgc1.taladrod.com/c/cidx/011/911/13_1T.jpg"},{cid:2728770,img:"https://imgc1.taladrod.com/c/cidx/011/921/61_1T.jpg"},{cid:2728453,img:"https://imgc1.taladrod.com/c/cidx/011/918/49_1T.jpg"},{cid:2728529,img:"https://imgc1.taladrod.com/c/cidx/011/919/10_1T.jpg"},{cid:2727948,img:"https://imgc1.taladrod.com/c/cidx/011/899/83_1T.jpg"},{cid:2727687,img:"https://imgc1.taladrod.com/c/cidx/011/910/40_1T.jpg"},{cid:2728017,img:"https://imgc1.taladrod.com/c/cidx/011/912/06_1T.jpg"},{cid:2727422,img:"https://imgc1.taladrod.com/c/cidx/011/907/45_1T.jpg"},{cid:2727497,img:"https://imgc1.taladrod.com/c/cidx/011/908/10_1T.jpg"}];</script>
+
+<table id=TbCHL cellspacing=2>
+
+<tr align=center><td colspan=2 rowspan=2><div id=cEv_1></div></td>
+<td colspan=2><div id=cEv_2></div></td>
+</tr>
+<tr align=center><td colspan=2><div id=cEv_3></div></td></tr>
+<tr align=center><td><div id=cEv_4></div></td><td><div id=cEv_5></div></td>
+        <td><div id=cEv_6></div></td>
+        </tr>
+    </table>
+
+
+    <script language=javascript>
+
+        var dispCHiL_timeout = null;
+        function dispCHiL(x) {
+            if (dispCHiL_timeout) clearTimeout(dispCHiL_timeout);
+            var hmidx = 0;
+            var ck_cibev = getCookie("TLR_CHiL");
+            if (!ck_cibev) {
+                ck_cibev = "0,0,0,0";
+            }
+            var ck_cibevs = ck_cibev.split(',');
+
+            hmidx = parseInt(ck_cibevs[0]);
+            if (x && x < 0) {
+                hmidx -= 7;
+                if (hmidx < 0)
+                    hmidx = 0;
+            }
+            if (hmidx > 60) {
+                hmidx = 0;
+            }
+
+            var cids = __cids_HL;
+            $("#cEv_1").hide();
+            $("#cEv_2").hide();
+            $("#cEv_3").hide();
+            $("#cEv_4").hide();
+            $("#cEv_5").hide();
+            $("#cEv_6").hide();
+            
+            $("#cEv_1").html(getCidHLHtml(cids[hmidx % cids.length], 300));
+            $("#cEv_2").html(getCidHLHtml(cids[(hmidx + 1) % cids.length], 146));
+            $("#cEv_3").html(getCidHLHtml(cids[(hmidx + 2) % cids.length], 146));
+            $("#cEv_4").html(getCidHLHtml(cids[(hmidx + 3) % cids.length], 146));
+            $("#cEv_5").html(getCidHLHtml(cids[(hmidx + 4) % cids.length], 148));
+
+            $("#cEv_6").html(getCidHLHtml(cids[(hmidx + 5) % cids.length], 146));
+           
+            $("#cEv_1").fadeIn("slow");
+            $("#cEv_2").fadeIn("slow");
+            $("#cEv_3").fadeIn("slow");
+            $("#cEv_4").fadeIn("slow");
+            $("#cEv_5").fadeIn("slow");
+            $("#cEv_6").fadeIn("slow");
+            ck_cibevs[0] = (hmidx + 6) + "";
+
+
+            $("#TbCHL img").css("opacity", "0.60");
+            $("#TbCHL img").css("filter", "alpha(opacity=60)");
+            $("#TbCHL img").attr("onmouseover", "this.style.opacity=1;");
+            $("#TbCHL img").attr("onmouseout", "this.style.opacity=0.6;");
+
+            setCookieHr("TLR_CHiL", ck_cibevs.join(","));
+            dispCHiL_timeout = setTimeout(dispCHiL, 30 * 1000);
+        }
+        function getCidHLHtml(car,wd){
+            var img=car.img;
+            if(wd>320)
+                img=img.replace("_1T","_1");
+            if(wd>100 && wd<=320)
+                img=img.replace("_1T","_1T3");
+            return "<div style='width:"+wd+"px;height:"+(wd/4*3)+"px;overflow:hidden;'><a href='../iCar/CarDet.aspx?cid="+car.cid+"'><img alt='รถไฮไลท์' src='"+img+"' style='width:"+wd+"px' "+(wd>300?"onload=adjImgSize(this,"+wd+")":"")+" /></a>";
+         }
+         function adjImgSize(c,wd){
+            var hg=wd/4*3;
+            var owd = c.width;
+            var ohg = c.height;
+            if(ohg<hg && ohg*owd>0){
+                c.style.height=hg+"px";
+                c.style.width=(hg/ohg*owd)+"px";
+            }
+        }
+        function setCookieHr(c_name, value) {
+            var exdate = new Date();
+            var time = exdate.getTime();
+            time += 5 * 60 * 1000;
+            exdate.setTime(time);
+            document.cookie = c_name + "=" + escape(value) + ";expires=" + exdate.toGMTString() + ";path=/" + tlr_domain;
+        }
+         $(function () {
+             dispCHiL();
+         });
+</script>
+  </div>
+
+
+    <table width='100%' style='margin-top:0px;'><tr><td width="60%" valign="bottom">
+    <a href='../isch/schc.aspx?fno:new'><img src='../img/bPostB.png' alt='รถมาใหม่' /></a> &nbsp;  &nbsp; 
+    <a href='../iMem/Select.aspx'><img src='../img/bPostS.png' alt='ประกาศขายรถ' /></a></td>
+    <td align="right" width="40%">
+     <a href='../isch/schc.aspx?fno:none'><img src='../img/ic_advsch.png' alt='ค้นหารถ' /></a><br>
+
+	<!--table width=250px><tr><td>
+	< --a href='https://www.tisco.co.th/th/whatsnew/sellcar-closeaccount.html'><img src='https://www.tisco.co.th/content/tisco-bank/th/whatsnew/sellcar-closeaccount/_jcr_content/root/responsivegrid/core_columnctrl_1845842138/col_0/image.img.jpg/1633329993183.jpg' width=100%></a><br-- >
+	<a href='../isch/schck.aspx?fno:tkk' style='color:gray;opacity:0.80;'><img src='../img/p/logoTKKbo.png' width=100/> หารถคุ้มคาร์ &raquo;</a>
+	</td></tr></table><br -->
+   
+    <a href='../iCar/MktMmt.aspx'><img src='../img/bMSum.png' style="margin-bottom:4px;opacity:0.7;filter:alpha(opacity=70)" alt='ภาพรวมตลาด' /></a><br />
+    <a href='../iCar/Gal1Prc.aspx'><img src='../img/b1PrcO.png' style="margin-bottom:25px;opacity:0.8;filter:alpha(opacity=80)" alt='รุ่นเก๋าราคาเดียว' /></a><br />
+
+    <a href='../iCar/SchMktPrcMK.aspx?mk=0&md=0'><img src='../img/bMPrc.png' style="opacity:1;filter:alpha(opacity=100)" alt='ราคากลางรถมือสอง' /></a><br />
+    <a href="javascript:popUpMM('ถูกที่สุดในเว็บ','../iCar/SchLowPrc.aspx')"><img style="margin-bottom:25px;" src='../img/bLPrc.png' alt='ถูกที่สุดในเว็บ' /></a><br />
+
+    <a href='../isch/schc.aspx?fno:Hot'><img src='../img/bMHot.png' style="opacity:0.7;filter:alpha(opacity=70)" alt='รถยอดนิยม' /></a><br />
+    <a href='../iCar/GalC.aspx'><img src='../img/bMCat.png' style="opacity:0.7;filter:alpha(opacity=70)" alt='show room' /></a><br />
+    <br /><br /><br />
+    
+    <!--a href='../isch/schc.aspx?fno:SOLD'><img src='../img/bMSold.png' style="opacity:0.7;filter:alpha(opacity=70)"/></a-->
+    </td></tr></table>
+
+     <br /><br /><br />
+     <br />
+  </div>
+ 
+   <!--body_container ends-->
+
+  <br /> 
+   <!--layout ends here-->
+   <script type="text/javascript">       var page = "Pg_Home4";</script>
+   
+<!--footer starts-->
+  <div id="outer_footer">
+    <div id="inner_footer">
+      <div id="footer" style="height:120px;overflow-y:hidden;padding-top:0px">
+        <table width="100%"><tr  valign="top"><td width='50%' align="center" style="color:#ccc">
+            ตลาดรถดอทคอม <br />คุณเพียงตกลงราคา เราทำที่เหลือให้จนจบ<br />
+       <p><a href='../TClub/tFinIntro.aspx' style="color:#808080">เร็วกว่า.ถูกกว่า.ดีกว่า<br />โทร 02-251-0602, &nbsp;แฟกซ์ 02-251-0603</a>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G7YXR9MHCD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G7YXR9MHCD');
+</script></p> 
+
+		
+		
+		</td><td width='50%'>
+    
+		<span style='font-size:11px'><br /></span>
+        <a href='../Home/Privacy.aspx' style='font-size:11px' target="_blank">Privacy Policy</a> &nbsp; 
+        <a href='../Home/Terms.aspx'  style='font-size:11px'  target="_blank">Terms of Service</a> 
+		</td></tr></table>
+      </div>
+      
+ <br />&nbsp;
+
+ 
+    </div>
+  </div>
+
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "149920141739042", // Facebook page ID
+            line: "//line.me/ti/p/@taladrod.com", // Line QR code URL
+            company_logo_url: "//static.getbutton.io/img/flag.png", // URL of company logo (png, jpg, gif)
+            greeting_message: "Hello, how may we help you? Just send us a message now to get assistance.", // Text of greeting message
+            call_to_action: "ติดต่อเจ้าหน้าที่ ตลาดรถดอทคอม", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "facebook,line", // Order of buttons
+            ga: true, // Google Analytics enabled
+            branding: false, // Show branding string
+            mobile: true, // Mobile version enabled
+            desktop: true, // Desktop version enabled
+            greeting: false, // Greeting message enabled
+            shift_vertical: 0, // Vertical position, px
+            shift_horizontal: 0, // Horizontal position, px
+            domain: "taladrod.com", // site domain
+            key: "8xzAQGatS9u4jDLgUk7VFQ", // pro-widget key
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+    <!-- Cookie Consent -->
+<div class="cookie-banner" style="display: none">
+        <p>โปรดศึกษาและยอมรับนโยบายข้อมูลส่วนบุคคลก่อนเริ่มใช้งาน <a target="_blank" href="https://www.taladrod.com/w40/home/pdpa.aspx">อ่านเพิ่มเติมได้ที่นี่</a></p>
+        <button class="close_ck">ยอมรับ</button>
+    </div>
+
+<style>
+        .cookie-banner {
+            position: fixed;
+            bottom: 25px;
+            left: 20px;
+            right: 0px;
+            width: 375px;
+            padding: 5px 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #eee;
+            border-radius: 5px;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .close_ck {
+            height: 40px;
+            width: 80px;
+            background-color: #777!important;
+            border: none;
+            color: white;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        $(function () {
+            if (localStorage.getItem("cookieSeen") != "shown") {
+                $(".cookie-banner").delay(2000).fadeIn();
+                
+            };
+            $(".close_ck").click(function () {
+                $(".cookie-banner").fadeOut();
+	   localStorage.setItem("cookieSeen", "shown")
+            })
+        });
+    </script>
+<!-- /Cookie Consent -->
+<!--footer ends-->
+   </div>
+  </div>
+</body>
+</html>

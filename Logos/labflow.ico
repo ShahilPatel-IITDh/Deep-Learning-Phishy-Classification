@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Labflow</title>
+    <meta charset="UTF-8" />
+    
+
+    <!--
+      The path to the following icons will be dynamically changed based on the build number
+    -->
+    <link id="apple-touch-icon" rel="apple-touch-icon" sizes="180x180" href="/app/LF-20200811-174439/images/favicons/apple-touch-icon.png" />
+    <link id="icon-32" rel="icon" type="image/png" sizes="32x32" href="/app/LF-20200811-174439/images/favicons/favicon-32x32.png" />
+    <link id="icon-16" rel="icon" type="image/png" sizes="16x16" href="/app/LF-20200811-174439/images/favicons/favicon-16x16.png" />
+    <link id="icon-manifest" rel="manifest" href="/app/LF-20200811-174439/images/favicons/site.webmanifest">
+    <link id="mask-icon" rel="mask-icon" href="/app/images/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    
+    <meta name="msapplication-TileColor" content="#da532c" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+
+    <script src="https://static.filestackapi.com/transforms-ui/1.x.x/transforms.umd.min.js"></script>
+    <link rel="stylesheet" href="https://static.filestackapi.com/transforms-ui/1.x.x/transforms.css" />
+
+</head>
+<body class="mdc-typography" env="local">
+  <img src='/app/LF-20200811-174439/images/loading-icon.gif' style="display:none;" alt='Waiting for content to load'/>
+  <style>
+    /* The Modal (background) */
+    .browser-modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    /* Modal Content/Box */
+    .browser-modal-content {
+      background-color: #fefefe;
+      margin: 0 auto;
+      border: 1px solid #888;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .browser-modal-body {
+      width: 80%;
+      margin-bottom: 40px;
+    }
+
+    .browser-modal-close:hover,
+    .browser-modal-close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+  <div id="browser-my-modal" class="browser-modal">
+    <div class="browser-modal-content">
+      <div class="browser-modal-close" style="align-self: flex-end; font-size: 40px; padding: 10px 20px 0 0">&times;</div>
+      <div class="browser-modal-body">
+        <h2 style="margin-top: 0px">Unsupported Browser Warning</h2>
+        <p>You could experience issues with your current browser.</p>
+        <p>We support up to date versions of Firefox, Chrome, Edge, Safari, and Mobile Browsers. Please update your browser or change to a supported browser.</p>
+      </div>
+    </div>
+  </div>
+  <div id="app-bar-container"></div>
+  <div id="react-root"></div>
+  <div id="error-message"></div>
+  <div id="snackbar-root"></div>
+  <div id="menu-root" style="position:absolute;"></div>
+  <div id="overflow-root" style="position:absolute;"></div>
+  <div id="floating-ui-root"></div>
+  <div id="working-overlay-root"></div>
+  <noscript>
+    <div style="background-image: url('https://cdn.labflow.com/app/LF-20200811-174439/images/background-lab-40.jpg');background-size: cover;width: 105%;height: 120vh;margin: -8px;position: fixed;top: 0;left: 0;">
+      <div style="background-color: #FFF; width: 50%; margin-left: auto; margin-right: auto; height: 120vh; display: flex; align-items: center; flex-direction: column;">
+      <img src="https://labflow.com/app/images/beaker-spill.svg" style="width: 250px; margin: 30px 0">
+        <br />
+      <h2 style="font-family: Roboto;">Enable JavaScript</h2>
+      <br />
+      <section style="font-family: Roboto;">
+        Please enable JavaScript in your browser to use Labflow.
+      </section>
+      </div>
+    </div>
+  </noscript>
+  <script type="text/javascript">
+    const messages = [];
+    function isLocalStorageAvailable (){
+      try {
+        if (window && window.localStorage && typeof window.localStorage !== 'undefined') {
+          window.localStorage.setItem('local_storage_test', 'yes');
+            if (window.localStorage.getItem('local_storage_test') === 'yes') {
+              window.localStorage.removeItem('local_storage_test');
+              return true
+              } else {
+                return false
+              }
+
+        } else {
+            return false
+        }
+      } catch(e) {
+        return false
+      }
+    }
+    if(!!document.getElementById('error-message')){
+      let cookiesEnabled = true
+      try {
+        cookiesEnabled = navigator.cookieEnabled
+      } catch (err) {
+        cookiesEnabled = false
+      }
+      if(!cookiesEnabled) messages.push('Cookies enabled in your browser.')
+      if(!isLocalStorageAvailable()) messages.push('Local storage enabled in your browser.')
+      let indexedDB = true
+      try {
+        indexedDB = window.indexedDB
+      } catch (err) {
+        indexedDB = false
+      }
+      if (!indexedDB) messages.push("Use a browser that supports IndexDB.");
+      if(messages.length > 0){
+        document.getElementById('react-root').remove();
+        var div = document.createElement('div');
+
+        div.innerHTML = `
+        <div style="background-image: url('./images/background-lab-40.jpg'); background-size: cover; width: 105%; height: 100vh; margin: -8px;">
+          <div style="background-color: #FFF; width: 50%; margin-left: auto; margin-right: auto; height: 100vh; display: flex; align-items: center; flex-direction: column;">
+          <img src="https://labflow.com/app/images/beaker-spill.svg" style="width: 250px; margin: 30px 0">
+            <br />
+          <h2 style="font-family: Roboto;">Something went wrong.</h2>
+          <br />
+          <section style="font-family: Roboto; display: flex; align-items: center; flex-direction: column;">
+            <p style="font-family: Roboto;">For Labflow to work properly you will need:</p>
+            <ul style="list-style-type: none">
+            ${messages.map(m => `<li>⚠️ ${m}</li>`).join('')}
+            </ul>
+          </section>
+          </div>
+        </div>
+        `;
+        document.getElementById('error-message').appendChild(div);
+      } else {
+        document.getElementById('error-message').remove();
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    if(!!document.getElementById('browser-my-modal')){
+      const supportedBrowserRegex = /((CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS)[ +]+(13[_\.]2|13[_\.]([3-9]|\d{2,})|(1[4-9]|[2-9]\d|\d{3,})[_\.]\d+)(?:[_\.]\d+)?)|(Edge\/(83(?:\.0)?|83(?:\.([1-9]|\d{2,}))?|(8[4-9]|9\d|\d{3,})(?:\.\d+)?))|((Chromium|Chrome)\/(83\.0|83\.([1-9]|\d{2,})|(8[4-9]|9\d|\d{3,})\.\d+)(?:\.\d+)?)|(Version\/(13\.0|13\.([1-9]|\d{2,})|(1[4-9]|[2-9]\d|\d{3,})\.\d+)(?:\.\d+)? Safari\/)|(Firefox\/(68\.0|68\.([1-9]|\d{2,})|(69|[7-9]\d|\d{3,})\.\d+|77\.0|77\.([1-9]|\d{2,})|(7[8-9]|[8-9]\d|\d{3,})\.\d+)\.\d+)|(Firefox\/(68\.0|68\.([1-9]|\d{2,})|(69|[7-9]\d|\d{3,})\.\d+|77\.0|77\.([1-9]|\d{2,})|(7[8-9]|[8-9]\d|\d{3,})\.\d+)(pre|[ab]\d+[a-z]*)?)/;
+      if (!supportedBrowserRegex.test(navigator.userAgent)) {
+      // Get the modal
+      let modal = document.getElementById("browser-my-modal");
+
+      // Get the button that opens the modal
+
+      // Get the <span> element that closes the modal
+      let span = document.getElementsByClassName("browser-modal-close")[0];
+
+      modal.style.display = "block";
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      } else {
+        document.getElementById('browser-my-modal').remove();
+      }
+    }
+  </script>
+</body>
+  <script type="text/javascript" src="/app/bootstrap/lib.js"></script>
+  <script type="text/javascript" src="/app/bootstrap/main.js"></script>
+</html>
