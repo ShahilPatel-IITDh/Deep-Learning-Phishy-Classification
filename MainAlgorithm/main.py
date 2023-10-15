@@ -1,5 +1,6 @@
 import os
 import csv
+import time
 from urllib.parse import urlsplit
 
 # Import the screenshotCapture function from screenshotCapture.py which will be used to capture the full-page screenshot
@@ -21,7 +22,7 @@ from searchEngine import google_search
 from getLogo import scrape_favicon
 
 # Check the logo similarity
-# from logoSimilarity import detect_logo_similarity
+from logoSimilarity import detect_logo_similarity
 
 inputCSV_File = os.path.join('..', 'URL_For_Testing', 'phishTankDatabase.csv')
 screenShotDir = os.path.join('screenshots')
@@ -71,7 +72,9 @@ if __name__ == "__main__":
             # Remove the whitespace from the URL
             url = row[1].strip()
 
-            url = "https://rception04.wixsite.com/messagerievocale"
+            # url = "https://www.bing.com/"
+
+            url = "https://bitly.com/"
 
             print(url)
 
@@ -237,28 +240,31 @@ if __name__ == "__main__":
                 with open(reportFile, 'a') as file:
                     file.write(f"Favicon not found\n")
 
-            logoDatabase = os.path.join('..', 'SampleLogos')
+            logoDatabase = os.path.join('..', 'Top_Logos')
 
             # ------------------------------------------------ Logo similarity detection ------------------------------------------ #
 
+            time.sleep(2)
+            print(f"Logo file: {logoFile}")
+
             # Check if the logo file exists before running logo similarity detection
-            # if os.path.isfile(logoFile):
+            if os.path.isfile(logoFile):
                 
-            #     # Run logo similarity detection code if the file exists
+                # Run logo similarity detection code if the file exists
 
-            #     similarLogos = detect_logo_similarity(logoFile, logoDatabase)
+                similarLogos = detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile)
 
-            #     if not similarLogos:  # Check if the dictionary is empty
-            #         print("Logo similarity not detected.")
+                if not similarLogos:  # Check if the dictionary is empty
+                    print("Logo similarity not detected.")
 
-            #     else:
-            #         print("Logo similarity detected:")
-            #         for logo, similarity in similarLogos.items():
-            #             with open(f"{input_domain_name}.txt", 'a') as file:
-            #                 file.write(f"Logo: {logo}, Similarity Score: {similarity:.2f}%\n")
+                else:
+                    print("Logo similarity detected:")
+                    for logo, similarity in similarLogos.items():
+                        with open(reportFile, 'a') as file:
+                            file.write(f"Logo: {logo}, Similarity Score: {similarity:.2f}%\n")
 
-            # else:
-            #     print(f"Logo doesn't exist for: {input_domain_name}")
+            else:
+                print(f"Logo doesn't exist for: {input_domain_name}")
 
 
             #------------------------------------------------- Counters for code checking ----------------------------------------------#
