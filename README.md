@@ -31,6 +31,9 @@ This repository is to store the code to fetch the Logos of Legitimate domains, a
 │   ├── scrappingCode.py (Code to fetch the URLs from PhishTank and store the URLs in a CSV file which can be used for testing our algorithm)
 │   ├── phishTankDatabase.csv (CSV file containing the URLs fetched from PhishTank)
 
+├── GetAverage_Icon_height_width.py (Code to get the average height and width of the logos of the legitimate domains)
 
+├── topLogo_fetching.py (Code to copy the Logos of top 300 legitimate domains from the Logos folder to a new folder) 
+(will be used to testing the model on small dataset)
 
 ```
