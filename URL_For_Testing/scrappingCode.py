@@ -37,7 +37,7 @@ driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().
 driver.maximize_window()
 
 # Loop through all the pages
-for page in range(0, 1):
+for page in range(0, 2):
 
     # Send a GET request to the webpage and get the HTML content
     # URL for confirmed Legitimate URLs
