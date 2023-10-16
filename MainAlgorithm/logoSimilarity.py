@@ -29,10 +29,11 @@ def mse_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
     img2 = cv2.resize(img2, (min_width, min_height))
 
     mse = ((img1 - img2) ** 2).mean()
-
-    if mse < 0.25:
-        with open (reportFile, 'a') as f:
-            f.write(f"Similarity with and {image2_ICO_path} are similar with an MSE score of {mse:.2f}\n")
+    
+    # # Lower the MSE more is the Logo similarity
+    # if mse < 0.85:
+    #     with open (reportFile, 'a') as f:
+    #         f.write(f"Similarity with and {image2_ICO_path} are similar with an MSE score of {mse:.2f}\n")
 
     return mse
 
