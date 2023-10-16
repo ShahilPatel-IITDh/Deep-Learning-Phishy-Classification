@@ -7,6 +7,10 @@ import skimage
 from skimage import io, color, img_as_ubyte
 from skimage.metrics import structural_similarity as compare_ssim
 
+import tensorflow as tf
+import numpy as np
+from PIL import Image
+
 def resizeImages(img1, img2):
     # Resize the input images to the lowest resolution
     min_height = min(img1.shape[0], img2.shape[0])
@@ -17,6 +21,20 @@ def resizeImages(img1, img2):
 
     return img1, img2
 
+def preprocess_image(image_path):
+    # Load the image, convert to RGB, and resize to (224, 224)
+    img = Image.open(image_path)
+    img = img.convert('RGB')
+    img = img.resize((85, 85))
+
+    # Convert to a NumPy array and preprocess for ResNet-50
+    img = tf.keras.preprocessing.image.img_to_array(img)
+    img = tf.keras.applications.resnet50.preprocess_input(img)
+    
+    # Expand dimensions to match the shape (1, 224, 224, 3)
+    img = np.expand_dims(img, axis=0)
+
+    return img
 
 def mse_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
 
@@ -88,7 +106,11 @@ def psnr_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
     max_pixel_value = 255.0
 
     # Calculate PSNR
-    psnr = 10 * np.log10((max_pixel_value ** 2) / mse)
+    if mse!=0:
+        psnr = 10 * np.log10((max_pixel_value ** 2) / mse)
+
+    else:
+        psnr = 100
 
     if psnr >= 75:
         with open (reportFile, 'a') as f:
@@ -127,6 +149,70 @@ def histogram_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
 
     return similarity
 
+
+def template_matching(image_path1, image_path2, reportFile, image2_ICO_path):
+    image1 = cv2.imread(image_path1)
+    image2 = cv2.imread(image_path2)
+
+    if image1 is None or image2 is None:
+        return None
+    
+    img1, img2 = resizeImages(image1, image2)
+
+    # Match the template in the main image using the cv2.TM_CCOEFF_NORMED method
+    result = cv2.matchTemplate(image1, image2, cv2.TM_CCOEFF_NORMED)
+
+    threshold = 0.8 
+
+    # Find all locations where the match exceeds the threshold
+    locations = np.where(result >= threshold)
+    locations = list(zip(*locations[::-1]))  # Reverse the coordinates
+
+    # Calculate and return the similarity scores for each match
+    similarity_scores = [result[loc[::-1]] for loc in locations]
+
+    return similarity_scores
+
+
+def CNN_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
+    # Load a pre-trained ResNet-50 model (without the top classification layer)
+    base_model = tf.keras.applications.ResNet50(weights='imagenet', include_top=False)
+
+    # Define input layers for the two images
+    input_a = tf.keras.layers.Input(shape=(85, 85, 3))
+    input_b = tf.keras.layers.Input(shape=(85, 85, 3))
+
+    # Use the same base model for both inputs
+    embedding_a = base_model(input_a)
+    embedding_b = base_model(input_b)
+
+    # Compute L2 distance between the two embeddings
+    distance = tf.keras.layers.Lambda(lambda embeddings: tf.norm(embeddings[0] - embeddings[1], ord='euclidean', axis=1), 
+                      output_shape=(1,))(inputs=[embedding_a, embedding_b])
+
+    # Create a model that takes two input images and calculates the distance
+    siamese_model = tf.keras.models.Model(inputs=[input_a, input_b], outputs=distance)
+
+    # Load and preprocess the two images
+    img1 = preprocess_image(image_path1)
+    img2 = preprocess_image(image_path2)
+
+    # Calculate the distance (difference) between the two images
+    difference = siamese_model.predict([img1, img2])
+
+    if difference.size == 1:
+        similarity_percentage = difference.item()
+
+    else:
+        # Handle the case where difference contains multiple similarity values
+        average_similarity = difference.mean()  # Calculate the average similarity
+        similarity_percentage = average_similarity.item()  # Convert to a scalar
+
+    if similarity_percentage >= 0.75:
+        with open (reportFile, 'a') as f:
+            f.write(f"similarity score with {image2_ICO_path} according to CNN: {similarity_percentage:.2f}\n")
+
+    return similarity_percentage
 
 # ------------------------------------- This Function is the entry point of this module ------------------------------------- #
 
@@ -181,16 +267,26 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
 
         """ 2. Structural Similarity Index (SSIM) """
 
-        similarity = ssim_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
+        # similarity = ssim_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
 
         """ 3. Peak Signal-to-Noise Ratio (PSNR) """
 
-        similarity = psnr_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
+        PSNR = psnr_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
+
+        # similarity = PSNR
 
         """ 4. Histogram-based Similarity """
 
         # Performs very bad
         # similarity = histogram_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
+
+        """ 5. Template Matching """ # (Used to get the exact matching location), (threshold = 0.8, change it according to analysis)
+        # similarity = template_matching(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
+
+        """ 6. CNNs """
+
+        similarity = CNN_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
+
 
         if similarity is not None and similarity >= 75:
             similar_logos[filename] = similarity  # Store the filename and similarity score in the dictionary
