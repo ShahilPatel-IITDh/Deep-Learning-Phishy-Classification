@@ -177,8 +177,9 @@ def template_matching(image_path1, image_path2, reportFile, image2_ICO_path):
 def CNN_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
     # Load a pre-trained ResNet-50 model (without the top classification layer)
 
-    # Pre-trained models (ResNet-50, ResNet-101, ResNet-152; VGG-16/19; )
-    base_model = tf.keras.applications.ResNet50(weights='imagenet', include_top=False)
+    # Pre-trained models (ResNet-50, ResNet-101, ResNet-152; VGG-16/19;  InceptionV3, InceptionResNetV2; DenseNet-121, DenseNet-169, )
+    # base_model = tf.keras.applications.ResNet50(weights='imagenet', include_top=False)
+    base_model = tf.keras.applications.VGG19(weights='imagenet', include_top=False)
 
     # Define input layers for the two images
     input_a = tf.keras.layers.Input(shape=(85, 85, 3))
