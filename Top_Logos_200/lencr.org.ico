@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html
+	dir="ltr"
+	lang="en-US">
+	
+	
+	
+		<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>lencr.org -  Let&#39;s Encrypt</title>
+    <meta name="description" content="What&amp;rsquo;s lencr.org? lencr.org is a domain name owned by Let&amp;rsquo;s Encrypt. We use it to host data that is referenced inside the certificates we issue.
+Why is my computer fetching this data? Is it malicious? No, the data on lencr.org is never malicious. When a device connects to lencr.org, it&amp;rsquo;s because client software on that device (like a web browser or an app) connected to another site, saw a Let&amp;rsquo;s Encrypt certificate, and is trying to verify that it&amp;rsquo;s valid.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@letsencrypt">
+    <meta name="twitter:title" content="lencr.org">
+    <meta name="twitter:url" content="https://letsencrypt.org/docs/lencr.org/">
+    <meta name="twitter:description" content="What&amp;rsquo;s lencr.org? lencr.org is a domain name owned by Let&amp;rsquo;s Encrypt. We use it to host data that is referenced inside the certificates we issue.
+Why is my computer fetching this data? Is it malicious? No, the data on lencr.org is never malicious. When a device connects to lencr.org, it&amp;rsquo;s because client software on that device (like a web browser or an app) connected to another site, saw a Let&amp;rsquo;s Encrypt certificate, and is trying to verify that it&amp;rsquo;s valid.">
+    <meta name="twitter:image:src" content="https://letsencrypt.org/images/le-logo-twitter-noalpha.png">
+    <meta name="og:image" content="https://letsencrypt.org/images/LetsEncrypt-SocialShare.png">
+
+    
+    <link rel="stylesheet" href="/css/main.min.c0be43db7dafc5dec6b0f72882a95c97ea4431cc0b5e4aa0ffc0e20e69225a43c11a4fbcbc70f8b6e7f399656c72db7c7dda2483a4fafaac80a16b2d29ee1cdf.css" integrity="sha512-wL5D232vxd7GsPcogqlcl&#43;pEMcwLXkqg/8DiDmkiWkPBGk&#43;8vHD4tufzmWVsctt8fdokg6T6&#43;qyAoWstKe4c3w==">
+
+    <link rel="stylesheet" href="/fontawesome-free-5.12.1-web/css/all.min.css" />
+    
+    <link rel="canonical" href="/docs/lencr.org/">
+    
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Let&#39;s Encrypt Blog Feed" />
+    
+    
+</head>
+
+	
+	<body>
+		
+<header class="site-header">
+  <a id="skiplink" href="#main-content">Skip navigation links</a>
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/images/letsencrypt-logo-horizontal.svg" alt="Let's Encrypt"></a>
+
+    <span id="menuIcon">
+      <i class="fas fa-bars"></i>
+    </span>
+    <nav class="site-nav" id="menu">
+      <div class="pure-menu pure-menu-horizontal custom-can-transform">
+        <ul class="pure-menu-list">
+          
+          <li class="pure-menu-item">
+            <a href="/docs/" class="pure-menu-link" tabindex="0">Documentation</a>
+            
+          </li>
+          
+          <li class="pure-menu-item">
+            <a href="https://community.letsencrypt.org/" class="pure-menu-link" tabindex="0">Get Help</a>
+            
+          </li>
+          
+          <li class="pure-menu-item pure-menu-has-children">
+            <a href="#" class="pure-menu-link" tabindex="0">Donate</a>
+            
+            <ul class="pure-menu-children">
+              
+              <li class="pure-menu-item">
+                <a href="/donate/" class="pure-menu-link">Make a Donation</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="https://www.abetterinternet.org/sponsor/" class="pure-menu-link">Become a Sponsor</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="/sponsors/" class="pure-menu-link">Current Sponsors and Funders</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="/getinvolved/" class="pure-menu-link">Get Involved</a>
+              </li>
+              
+            </ul>
+            
+          </li>
+          
+          <li class="pure-menu-item pure-menu-has-children">
+            <a href="#" class="pure-menu-link" tabindex="0">About Us</a>
+            
+            <ul class="pure-menu-children">
+              
+              <li class="pure-menu-item">
+                <a href="/about/" class="pure-menu-link">Let&#39;s Encrypt</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="https://www.abetterinternet.org/about/" class="pure-menu-link">Internet Security Research Group (ISRG)</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="/docs/dst-root-ca-x3-expiration-september-2021/" class="pure-menu-link">DST Root CA X3 Expiration (September 2021)</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="/docs/faq/" class="pure-menu-link">Frequently Asked Questions (FAQ)</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="/repository/" class="pure-menu-link">Policy and Legal Repository</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="https://letsencrypt.status.io/" class="pure-menu-link">Service Status</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="/stats/" class="pure-menu-link">Statistics</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="https://www.abetterinternet.org/careers/" class="pure-menu-link">Careers</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="/contact/" class="pure-menu-link">Contact</a>
+              </li>
+              
+              <li class="pure-menu-item">
+                <a href="/blog/" class="pure-menu-link">Blog</a>
+              </li>
+              
+            </ul>
+            
+          </li>
+          
+          
+          
+          
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          
+          
+          <li class="pure-menu-item pure-menu-has-children">
+            <a href="#" class="pure-menu-link" tabindex="0">Languages <img src="/images/language-icon128px-black.png" class="inline-icon" alt="" aria-hidden="true"></a>
+            <ul class="pure-menu-children menu-for-languages">
+              
+              
+              <li class="pure-menu-item">
+                <a href="/docs/lencr.org/" lang="en-US" hreflang="en-US" class="pure-menu-link">✓ English</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/el/docs/lencr.org/" lang="el" hreflang="el" class="pure-menu-link">Greek</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/th/docs/lencr.org/" lang="th" hreflang="th" class="pure-menu-link">Thai</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/ca/docs/lencr.org/" lang="ca" hreflang="ca" class="pure-menu-link">Català</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/cs/docs/lencr.org/" lang="cs-CZ" hreflang="cs-CZ" class="pure-menu-link">Čeština</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/pl/docs/lencr.org/" lang="pl" hreflang="pl" class="pure-menu-link">Polish</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/ta/docs/lencr.org/" lang="ta" hreflang="ta" class="pure-menu-link">Tamil</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/da/docs/lencr.org/" lang="da" hreflang="da" class="pure-menu-link">Dansk</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/de/docs/lencr.org/" lang="de-DE" hreflang="de-DE" class="pure-menu-link">Deutsch</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/es/docs/lencr.org/" lang="es-US" hreflang="es-US" class="pure-menu-link">Español</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/fi/docs/lencr.org/" lang="fi" hreflang="fi" class="pure-menu-link">Suomi</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/fr/docs/lencr.org/" lang="fr-FR" hreflang="fr-FR" class="pure-menu-link">Français</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/he/docs/lencr.org/" lang="he" hreflang="he" class="pure-menu-link">עברית</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/hu/docs/lencr.org/" lang="hu" hreflang="hu" class="pure-menu-link">Hungarian</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/id/docs/lencr.org/" lang="id-ID" hreflang="id-ID" class="pure-menu-link">Bahasa Indonesia</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/it/docs/lencr.org/" lang="it-IT" hreflang="it-IT" class="pure-menu-link">Italiano</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/ja/docs/lencr.org/" lang="ja" hreflang="ja" class="pure-menu-link">日本語</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/ko/docs/lencr.org/" lang="ko-KR" hreflang="ko-KR" class="pure-menu-link">한국어</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/pt-br/docs/lencr.org/" lang="pt-BR" hreflang="pt-BR" class="pure-menu-link">Português do Brasil</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/ru/docs/lencr.org/" lang="ru-RU" hreflang="ru-RU" class="pure-menu-link">Русский</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/si/docs/lencr.org/" lang="si" hreflang="si" class="pure-menu-link">සිංහල</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/sr/docs/lencr.org/" lang="sr" hreflang="sr" class="pure-menu-link">Srpski</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/sv/docs/lencr.org/" lang="sv" hreflang="sv" class="pure-menu-link">Svenska</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/uk/docs/lencr.org/" lang="uk-UA" hreflang="uk-UA" class="pure-menu-link">Українська</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/vi/docs/lencr.org/" lang="vi-VN" hreflang="vi-VN" class="pure-menu-link">Tiếng Việt</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/zh-cn/docs/lencr.org/" lang="zh-Hans-CN" hreflang="zh-Hans-CN" class="pure-menu-link">简体中文</a>
+              </li>
+              
+              
+              <li class="pure-menu-item">
+                <a href="/zh-tw/docs/lencr.org/" lang="zh-Hant-TW" hreflang="zh-Hant-TW" class="pure-menu-link">繁體中文</a>
+              </li>
+              
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="site-banner">
+  <a href="https://abetterinternet.org/tenth-anniversary">ISRG celebrates 10 years of helping build a brighter Internet →</a>
+</div>
+<div id="main-content"></div>
+
+
+		
+
+<div class="hero slim" style="background-image: url('/images/1.jpg');">
+<div class="container">
+	<h1>lencr.org</h1>
+</div>
+</div>
+
+<div class="page-content">
+	<div class="wrapper">
+
+
+
+  
+
+  
+    
+      <p data-langswitch="el" style="display:none">
+        <a lang="el" hreflang="el" href="/el/docs/lencr.org/">
+        
+          View in Greek
+        
+        </a>
+      </p>
+      
+    
+  
+    
+      <p data-langswitch="th" style="display:none">
+        <a lang="th" hreflang="th" href="/th/docs/lencr.org/">
+        
+          View in Thai
+        
+        </a>
+      </p>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <p data-langswitch="da" style="display:none">
+        <a lang="da" hreflang="da" href="/da/docs/lencr.org/">
+        
+          Se på Dansk
+        
+        </a>
+      </p>
+      
+    
+  
+    
+      <p data-langswitch="de-DE" style="display:none">
+        <a lang="de-DE" hreflang="de-DE" href="/de/docs/lencr.org/">
+        
+          Auf Deutsch ansehen
+        
+        </a>
+      </p>
+      
+    
+  
+    
+  
+    
+  
+    
+      <p data-langswitch="fr-FR" style="display:none">
+        <a lang="fr-FR" hreflang="fr-FR" href="/fr/docs/lencr.org/">
+        
+          Voir en Français
+        
+        </a>
+      </p>
+      
+    
+  
+    
+      <p data-langswitch="he" style="display:none">
+        <a lang="he" hreflang="he" href="/he/docs/lencr.org/">
+        
+          לעבור לעברית
+        
+        </a>
+      </p>
+      
+    
+  
+    
+      <p data-langswitch="hu" style="display:none">
+        <a lang="hu" hreflang="hu" href="/hu/docs/lencr.org/">
+        
+          Megtekintés magyar nyelven
+        
+        </a>
+      </p>
+      
+    
+  
+    
+  
+    
+      <p data-langswitch="it-IT" style="display:none">
+        <a lang="it-IT" hreflang="it-IT" href="/it/docs/lencr.org/">
+        
+          Visualizza in italiano
+        
+        </a>
+      </p>
+      
+    
+  
+    
+      <p data-langswitch="ja" style="display:none">
+        <a lang="ja" hreflang="ja" href="/ja/docs/lencr.org/">
+        
+          日本語で表示する
+        
+        </a>
+      </p>
+      
+    
+  
+    
+      <p data-langswitch="ko-KR" style="display:none">
+        <a lang="ko-KR" hreflang="ko-KR" href="/ko/docs/lencr.org/">
+        
+          한국어로 보기
+        
+        </a>
+      </p>
+      
+    
+  
+    
+  
+    
+      <p data-langswitch="ru-RU" style="display:none">
+        <a lang="ru-RU" hreflang="ru-RU" href="/ru/docs/lencr.org/">
+        
+          Просмотреть на русском
+        
+        </a>
+      </p>
+      
+    
+  
+    
+      <p data-langswitch="si" style="display:none">
+        <a lang="si" hreflang="si" href="/si/docs/lencr.org/">
+        
+          සිංහලෙන් දකින්න
+        
+        </a>
+      </p>
+      
+    
+  
+    
+  
+    
+  
+    
+      <p data-langswitch="uk-UA" style="display:none">
+        <a lang="uk-UA" hreflang="uk-UA" href="/uk/docs/lencr.org/">
+        
+          Переглянути українською
+        
+        </a>
+      </p>
+      
+    
+  
+    
+  
+    
+      <p data-langswitch="zh-Hans-CN" style="display:none">
+        <a lang="zh-Hans-CN" hreflang="zh-Hans-CN" href="/zh-cn/docs/lencr.org/">
+        
+          使用简体中文阅读本网页。
+        
+        </a>
+      </p>
+      
+    
+  
+    
+  
+
+<script src="/js/i18n.js" defer async></script>
+
+
+
+<p>
+
+    
+    Last updated: <time datetime="2022-09-30">Sep 30, 2022</time>
+
+
+ | <a href="/docs">See all Documentation</a>
+</p>
+
+
+
+
+
+<h1 id="what-s-lencr-org">What&rsquo;s <code>lencr.org</code>?</h1>
+<p><code>lencr.org</code> is a domain name owned by Let&rsquo;s Encrypt. We use it to host data
+that is referenced inside the certificates we issue.</p>
+<h1 id="why-is-my-computer-fetching-this-data-is-it-malicious">Why is my computer fetching this data? Is it malicious?</h1>
+<p>No, the data on <code>lencr.org</code> is never malicious. When a device connects to
+<code>lencr.org</code>, it&rsquo;s because client software on that device (like a web browser or
+an app) connected to another site, saw a Let&rsquo;s Encrypt certificate, and is
+trying to verify that it&rsquo;s valid. This is routine for many clients.</p>
+<p>We can&rsquo;t speak to whether the <em>other site</em> being connected to is malicious. If
+you&rsquo;re investigating network activity that seems unusual, then you may want to
+focus on the connection that started just before the connection to <code>lencr.org</code>.</p>
+<p>The pattern of clients' connections to <code>lencr.org</code> might look unusual or
+intermittent. Clients might never retrieve this data; only retrieve subsets of
+it; or &ldquo;cache&rdquo; some data for efficiency, so they&rsquo;ll only access it sometimes
+(the first time they need it, and when the data may have expired).</p>
+<h1 id="what-exactly-is-this-data-for">What exactly is this data for?</h1>
+<p>When client software (like a web browser or an app) connects to a site, and that
+site presents a certificate, the client should verify that the certificate is
+authentic and valid. This data helps clients do that in several ways.</p>
+<ul>
+<li>
+<p>Under <code>o.lencr.org</code>, we provide Online Certificate Status Protocol (OCSP) data.
+A client may use this data to confirm whether an individual unexpired
+certificate that we issued is still valid, or was revoked. (This is only for
+&ldquo;end-entity&rdquo; or &ldquo;leaf&rdquo; certificates, which we&rsquo;ve issued to subscribers from one
+of our intermediate certificates.)</p>
+</li>
+<li>
+<p>Under <code>c.lencr.org</code>, we provide Certificate Revocation Lists (CRLs) listing
+all the unexpired certificates that we issued and later revoked.</p>
+</li>
+<li>
+<p>Under <code>i.lencr.org</code>, we provide copies of our intermediate &ldquo;issuer&rdquo;
+certificates, which are either signed by one of our root certificates or
+&ldquo;cross-signed&rdquo; by another Certificate Authority (CA). A client may use this
+data to confirm the &ldquo;chain of trust&rdquo; from the end-entity certificate it&rsquo;s
+verifying, via one or more intermediate steps, to a root CA certificate that it
+recognizes and trusts.</p>
+</li>
+</ul>
+<h1 id="why-are-connections-to-o-lencr-org-over-insecure-http">Why are connections to <code>o.lencr.org</code> over insecure HTTP?</h1>
+<p>OCSP responses are always served over HTTP. If they were served over HTTPS,
+there would be an &ldquo;infinite loop&rdquo; problem: in order to verify the OCSP server&rsquo;s
+certificate, the client would have to use OCSP.</p>
+<p>The OCSP response itself is timestamped and cryptographically signed, so the
+anti-tampering properties of TLS aren&rsquo;t needed in this case.</p>
+<h1 id="why-lencr-org">Why &ldquo;<code>lencr.org</code>&rdquo;?</h1>
+<p>We used to use longer URLs like <code>http://ocsp.int-x3.letsencrypt.org/</code>. However,
+when we issued our <a href='https://letsencrypt.org/2020/09/17/new-root-and-intermediates'>new root and intermediate certificates</a>, we wanted to
+make them as small as possible. Every HTTPS connection on the web (billions per
+day) has to send a copy of a certificate, so every byte matters. We chose
+<code>lencr.org</code> because of its similarity with our name: <strong>L</strong>et&rsquo;s <strong>ENCR</strong>ypt. We
+pronounce it much like the fictional region of <a href="https://wiki.lspace.org/Lancre">Lancre</a> in Terry Pratchett&rsquo;s
+<em>Discworld</em> novels.</p>
+</div>
+</div>
+		
+
+
+<footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-2">
+        <p>  Let's Encrypt is a free, automated, and open certificate
+  authority brought to you by the nonprofit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+</p>
+        <p>
+          <span itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">548 Market St, PMB 77519</span>,
+            <span itemprop="addressLocality">San Francisco</span>,
+            <span itemprop="addressRegion">CA</span>
+            <span itemprop="postalCode">94104-5401</span>,
+            <span itemprop="addressCountry">USA</span>
+          </span>
+        </p>
+        <p>Send all mail or inquiries to:</p>
+        <p>
+          <span itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">PO Box 18666</span>,
+            <span itemprop="addressLocality">Minneapolis</span>,
+            <span itemprop="addressRegion">MN</span>
+            <span itemprop="postalCode">55418-0666</span>,
+            <span itemprop="addressCountry">USA</span>
+          </span>
+        </p>
+      </div>
+
+      <div class="footer-col  footer-col-1">
+        <ul class="social-media-list">
+          
+          <li>
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/letsencrypt">
+              <span class="username">GitHub</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+            <a href="https://twitter.com/letsencrypt">
+              <span class="username">Twitter</span>
+            </a>
+          </li>
+         
+          
+          <li>
+            <i class="fab fa-mastodon" aria-hidden="true"></i>
+            <a rel="me" href="https://infosec.exchange/@letsencrypt">
+              <span class="username">Mastodon</span>
+            </a>
+          </li>
+         
+        </ul>
+        View our <a href="/privacy/">privacy policy</a>.<br>
+View our <a href="https://www.abetterinternet.org/trademarks">trademark policy</a>.
+
+      </div>
+
+      <div class="footer-col footer-newsletter-col  footer-col-3">
+        <h6>Subscribe to our Newsletter</h6>
+        <iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<script src="/js/main.9c0b9add2dc0db21de0f695103830dbde01e31d77fa9a2db9ac3c1b9e09e4806f2e0d9a7281b06461b2e162a3560c605b038169b42ff376b4cd28cc71203c8f0.js" integrity="sha512-nAua3S3A2yHeD2lRA4MNveAeMdd/qaLbmsPBueCeSAby4NmnKBsGRhsuFio1YMYFsDgWm0L/N2tM0ozHEgPI8A=="></script>
+
+	</body>
+</html>
