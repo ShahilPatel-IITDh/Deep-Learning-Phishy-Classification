@@ -7,6 +7,10 @@ import logging
 
 logging.basicConfig(filename='faviconErrors.log', level=logging.ERROR)
 
+
+# Define the list of allowed favicon formats
+allowed_formats = ['.png', '.ico', '.jpeg', '.jpg', '.svg']
+
 def scrape_favicon(URL, faviconFile, domain):
     headers = {
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
@@ -47,35 +51,52 @@ def scrape_favicon(URL, faviconFile, domain):
             if favicon_response.status_code == 200:
                 favicon_content = favicon_response.content
 
-                # Remove any extension from the domain name
-                filename, _ = os.path.splitext(domain)
-
-                with open(faviconFile, 'wb') as f:
-                    f.write(favicon_content)
-        else:
-            faviconURL = URL + '/favicon.ico'
-            print(domain, " ", faviconURL)
-
-            try:
-                # Send an HTTP GET request to the Google favicon URL
-                response = requests.get(faviconURL)
-
-                # Check if the request was successful
-                if response.status_code == 200:
-                    # Get the content of the favicon
-                    favicon_content = response.content
-
-                    # Save the favicon image to a file
-                    with open(faviconFile, 'wb') as file:
-                        file.write(favicon_content)
-
-                    return True
+                _, extension = os.path.splitext(domain)
                 
-                else:
-                    return False
+                if extension.lower() not in allowed_formats:
+                    extension = '.ico'
+                
+                with open(faviconFile+extension, 'wb') as f:
+                    f.write(favicon_content)
+                
+                return True
+            
+        else:
+            # If no favicon link was found, try some common locations
+            possible_favicon_locations = ['/favicon.ico', '/images/favicon.ico', '/img/favicon.ico', '/assets/favicon.ico']
 
-            except requests.exceptions.RequestException as e:
-                logging.error(f"RequestException for {URL}. Error: {str(e)}")
+            for location in possible_favicon_locations:
+                faviconURL = urljoin(URL, location)
+                print(domain, " ", faviconURL)
+
+                try:
+                    # Send an HTTP GET request to the Google favicon URL
+                    response = requests.get(faviconURL)
+
+                    # Check if the request was successful
+                    if response.status_code == 200:
+                        # Get the content of the favicon
+                        favicon_content = response.content
+
+                        # Save the favicon image to a file
+                        with open(faviconFile, 'wb') as file:
+                            file.write(favicon_content)
+
+                        _, extension = os.path.splitext(domain)
+                        
+                        if extension.lower() not in allowed_formats:
+                            extension = '.ico'
+                        
+                        with open(faviconFile + extension, 'wb') as file:
+                            file.write(favicon_content)
+
+                        return True
+                    
+                    else:
+                        return False
+
+                except requests.exceptions.RequestException as e:
+                    logging.error(f"RequestException for {URL}. Error: {str(e)}")
 
     except Exception as e:
         logging.error(f"Error processing {URL}. Error: {str(e)}")
