@@ -15,7 +15,7 @@ def google_search(domain, search_terms, reportFile):
 
 
     # Initialize ChromeDriver with ChromeDriverManager
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), chrome_options=chrome_options)
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
     
     search_string = " ".join(search_terms)
 

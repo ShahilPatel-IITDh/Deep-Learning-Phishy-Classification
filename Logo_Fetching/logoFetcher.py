@@ -118,7 +118,7 @@ if __name__ == '__main__':
 
     # Iterate through each row in the CSV
     for index, row in df.iterrows():
-        if counter == 200:
+        if counter == 1000:
             break
 
         # Access the 2nd column using iloc (Also there are leading and trailing spaces in the domain name so remove them)
