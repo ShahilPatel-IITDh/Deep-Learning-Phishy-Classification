@@ -176,6 +176,8 @@ def template_matching(image_path1, image_path2, reportFile, image2_ICO_path):
 
 def CNN_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
     # Load a pre-trained ResNet-50 model (without the top classification layer)
+
+    # Pre-trained models (ResNet-50, ResNet-101, ResNet-152; VGG-16/19; )
     base_model = tf.keras.applications.ResNet50(weights='imagenet', include_top=False)
 
     # Define input layers for the two images
@@ -205,10 +207,10 @@ def CNN_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
 
     else:
         # Handle the case where difference contains multiple similarity values
-        average_similarity = difference.mean()  # Calculate the average similarity
-        similarity_percentage = average_similarity.item()  # Convert to a scalar
+        average_difference = difference.mean()  # Calculate the average similarity
+        similarity_percentage = (1 - average_difference) * 100
 
-    if similarity_percentage >= 0.75:
+    if similarity_percentage >= 75:
         with open (reportFile, 'a') as f:
             f.write(f"similarity score with {image2_ICO_path} according to CNN: {similarity_percentage:.2f}\n")
 
@@ -229,7 +231,7 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
         image1_ICO = Image.open(logoFile)
 
         # Convert the .ico image to another format (e.g., .png)
-        image1_PNG_path = f"output_PNGs/{input_domain_name}.png"
+        image1_PNG_path = f"input_PNGs/{input_domain_name}.png"
         image1_ICO.convert('RGB').save(image1_PNG_path, format='PNG')
         
     except Exception as e:
