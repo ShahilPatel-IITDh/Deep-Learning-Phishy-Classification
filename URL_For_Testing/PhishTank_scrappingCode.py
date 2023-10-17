@@ -18,8 +18,7 @@ if not os.path.isfile(csvFile):
     with open(csvFile, "w", newline="") as outputFile:
         writer = csv.writer(outputFile)
         # Write the header of the CSV file
-        writer.writerow(["Phish ID", "URL"])
-
+        writer.writerow(["URL"])
 
 # Set up Chrome options
 chrome_options = Options()
@@ -37,7 +36,7 @@ driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().
 driver.maximize_window()
 
 # Loop through all the pages
-for page in range(0, 2):
+for page in range(0, 3):
 
     # Send a GET request to the webpage and get the HTML content
     # URL for confirmed Legitimate URLs
@@ -87,7 +86,7 @@ for page in range(0, 2):
 
                 with open(csvFile, "a", newline="") as outputFile:
                     writer = csv.writer(outputFile)
-                    writer.writerow([phish_id ,url]) 
+                    writer.writerow([url]) 
 
                 # print url to check if the code is working fine till this point or not, if not then at which URL is it failing
                 print(url)
