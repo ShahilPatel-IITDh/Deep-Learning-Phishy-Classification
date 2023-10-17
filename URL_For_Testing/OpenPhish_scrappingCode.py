@@ -3,7 +3,7 @@ import csv
 
 openPhish_url = "https://openphish.com/feed.txt"
 
-line_limit = 100000  # Set the number of lines you want to retrieve
+line_limit = 50  # Set the number of lines you want to retrieve
 output_CSV = "Open-Phish-Database.csv"  # Name of the output CSV file
 
 try:
