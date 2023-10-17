@@ -75,7 +75,7 @@ if __name__ == "__main__":
             # Remove the whitespace from the URL
             url = row[1].strip()
 
-            url = "https://www.bloomberg.com/asia"
+            url = "https://gravatar.com/"
 
             print(url)
 
@@ -246,7 +246,7 @@ if __name__ == "__main__":
                     with open(reportFile, 'a') as file:
                         file.write(f"Favicon not found\n")
 
-            logoDatabase = os.path.join('..', 'Top_Logos')
+            logoDatabase = os.path.join('..', 'Top_Logos_200')
 
             # ------------------------------------------------ Logo similarity detection ------------------------------------------ #
 

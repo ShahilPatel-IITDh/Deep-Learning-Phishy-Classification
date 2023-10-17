@@ -3,6 +3,7 @@ import PIL
 import cv2
 import numpy as np
 import os
+import time
 import skimage
 from skimage import io, color, img_as_ubyte
 from skimage.metrics import structural_similarity as compare_ssim
@@ -213,7 +214,7 @@ def CNN_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
 
     if similarity_percentage >= 75:
         with open (reportFile, 'a') as f:
-            f.write(f"similarity score with {image2_ICO_path} according to CNN: {similarity_percentage:.2f}\n")
+            f.write(f"similarity score with {image2_ICO_path} according to CNN (architecture-VGG19): {similarity_percentage:.2f}\n")
 
     return similarity_percentage
 
@@ -221,10 +222,13 @@ def CNN_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
 
 def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile):
 
+    start = time.time()
+
+
     print(f"The Logo file in detect_logo_similarity is {logoFile}")
     similar_logos = {}  # Dictionary to store similar logos
 
-    os.makedirs("output_PNGs", exist_ok=True)
+    os.makedirs("input_PNGs", exist_ok=True)
     os.makedirs("Database_PNGs", exist_ok=True)
 
     try:
@@ -263,9 +267,9 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
         # Call the similarity functions 
 
         """ 1. Mean Squared Error (MSE) """
-        mse = mse_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
+        # mse = mse_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
         # similarity%
-        similarity = (1-mse)*100
+        # similarity = (1-mse)*100
 
 
         """ 2. Structural Similarity Index (SSIM) """
@@ -274,7 +278,7 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
 
         """ 3. Peak Signal-to-Noise Ratio (PSNR) """
 
-        PSNR = psnr_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
+        # PSNR = psnr_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
 
         # similarity = PSNR
 
@@ -294,4 +298,11 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
         if similarity is not None and similarity >= 75:
             similar_logos[filename] = similarity  # Store the filename and similarity score in the dictionary
         
+    end = time.time()
+
+    timeTaken = end - start
+
+    with open(reportFile, 'a') as f:
+        f.write(f"Time taken to find similar logos in a database of 200 Logos and VGG19 architecture: {timeTaken:.2f} seconds\n")
+
     return similar_logos
