@@ -27,7 +27,7 @@ from logoSimilarity import detect_logo_similarity
 # Import the module which checks the difference between the input domain name and the domain name of the website
 from domainName_Difference import check_Domain_similarity 
 
-inputCSV_File = os.path.join('..', 'URL_For_Testing', 'phishTankDatabase.csv')
+inputCSV_File = os.path.join('..', 'URL_For_Testing', 'merged_URLs.csv')
 screenShotDir = os.path.join('screenshots')
 faviconDir = os.path.join('favicons')
 
@@ -75,7 +75,7 @@ if __name__ == "__main__":
             # Remove the whitespace from the URL
             url = row[1].strip()
 
-            url = "https://gravatar.com/"
+            # url = "https://gravatar.com/"
 
             print(url)
 
