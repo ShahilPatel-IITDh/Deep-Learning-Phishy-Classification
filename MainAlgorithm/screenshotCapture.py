@@ -34,6 +34,8 @@ def capture_full_page_screenshot(url, screenshotFile):
     try:
         driver.get(url)
 
+        time.sleep(10)
+
         # Handle WebDriverException (e.g., net::ERR_NAME_NOT_RESOLVED)
         if "ERR_NAME_NOT_RESOLVED" in driver.page_source:
             print(f"Error: {url} could not be resolved. Skipping...")
