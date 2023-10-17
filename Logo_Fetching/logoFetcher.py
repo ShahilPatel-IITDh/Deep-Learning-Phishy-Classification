@@ -92,6 +92,7 @@ def scrape_Favicon(URL, Favicons_Directory, domain):
                         file.write(favicon_content)
 
                     return True
+                
                 else:
                     return False
 
@@ -106,6 +107,8 @@ def scrape_Favicon(URL, Favicons_Directory, domain):
     return False
 
 if __name__ == '__main__':
+
+    successfull_Scrapes = 0
     # Initialize a set to keep track of visited domains
     visited_domains = set()
 
@@ -118,7 +121,7 @@ if __name__ == '__main__':
 
     # Iterate through each row in the CSV
     for index, row in df.iterrows():
-        if counter == 220:
+        if counter == 520:
             break
 
         # Access the 2nd column using iloc (Also there are leading and trailing spaces in the domain name so remove them)
@@ -135,9 +138,14 @@ if __name__ == '__main__':
 
         # Run the scrape_favicon function
         found_favicon = scrape_Favicon(url, logos_dir, domain)
+        
+        if found_favicon:
+            successfull_Scrapes += 1
 
         # Add the domain to the visited set to avoid duplicate requests
         visited_domains.add(domain)
         print(f"Counter: {counter}\n")
+    
+    print(f"Successfully scrapped {successfull_Scrapes} favicons.\n")
 
     print("Finished downloading favicons.")
