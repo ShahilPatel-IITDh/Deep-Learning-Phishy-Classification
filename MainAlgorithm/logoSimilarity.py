@@ -38,6 +38,32 @@ def preprocess_image(image_path):
 
 
 def CNN_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
+
+    """
+    Calculate image similarity using a Siamese CNN model based on VGG19 architecture.
+
+    Parameters:
+    - image_path1 (str): The file path to the first image.
+    - image_path2 (str): The file path to the second image.
+    - reportFile (str): The file path to the report where the similarity score will be saved.
+    - image2_ICO_path (str): The path to the ICO image for reference in the report.
+
+    Returns:
+    - similarity_percentage (float): The similarity percentage between the two input images.
+
+    Description:
+    This function uses a Siamese Convolutional Neural Network (CNN) to measure the similarity between two input images.
+    It uses a pre-trained VGG19 model for feature extraction and calculates the Euclidean distance between the embeddings of
+    the two input images. Smaller the euclidean distance, higher the similarity between the two images.
+
+    The similarity score is then calculated based on the distance, and a report is generated if the similarity percentage
+    is greater than or equal to 75%. The report includes the image2_ICO_path and the calculated similarity score.
+
+    Note: The choice of using the VGG19 architecture is arbitrary and you can use other pre-trained models based on your
+    specific requirements.
+
+    """
+     
     # Load a pre-trained ResNet-50 model (without the top classification layer)
 
     # Pre-trained models (ResNet-50, ResNet-101, ResNet-152; VGG-16/19;  InceptionV3, InceptionResNetV2; DenseNet-121, DenseNet-169, )
@@ -111,13 +137,21 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
     for filename in os.listdir(logoDatabase):
         image2_ICO_path = os.path.join(logoDatabase, filename)
 
+
         try:
             # Load the ICO image using PIL
             image2_ICO = Image.open(image2_ICO_path)
 
             # Convert the .ico image to another format (e.g., .png)
             image2_PNG_path = f'Database_PNGs/{filename}.png'  # Use a different path for each image
-            image2_ICO.convert('RGB').save(image2_PNG_path, format='PNG')
+
+            # If the PNG image exists already then no need to convert it again
+            if os.exists(image2_PNG_path):
+                continue
+
+            # Else convert the .ico file to .png format
+            else:
+                image2_ICO.convert('RGB').save(image2_PNG_path, format='PNG')
 
         except Exception as e:
             print(f"Skipping {filename} due to {e}.")
