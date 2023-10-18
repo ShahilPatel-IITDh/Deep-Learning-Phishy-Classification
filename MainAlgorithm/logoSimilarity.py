@@ -34,6 +34,8 @@ def preprocess_image(image_path):
     # Expand dimensions to match the shape (1, 224, 224, 3)
     img = np.expand_dims(img, axis=0)
 
+    return img
+
 
 def CNN_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
     # Load a pre-trained ResNet-50 model (without the top classification layer)
