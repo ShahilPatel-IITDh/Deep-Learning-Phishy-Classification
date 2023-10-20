@@ -9,6 +9,8 @@ import time
 
 def google_search(domain, search_terms, reportFile):
 
+    print("Code entered the google_search function")
+
     chrome_options = Options()
     chrome_options.add_argument('--headless')  # Enable headless mode
     chrome_options.add_argument('--disable-gpu')  # Disable GPU to prevent issues
@@ -50,5 +52,7 @@ def google_search(domain, search_terms, reportFile):
 
     # Close the Chrome WebDriver
     driver.quit()
+
+    print("Code is about to exit the google_search function")
 
     return top_urls

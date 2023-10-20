@@ -5,6 +5,9 @@ import numpy as np
 import pytesseract
 
 def detect_input_box(screenshot_file_path):
+
+    print("Code entered the detect_input_box function")
+
     # Load the screenshot using OpenCV
     screenshot = cv2.imread(screenshot_file_path)
 
@@ -23,6 +26,8 @@ def detect_input_box(screenshot_file_path):
     keywords = ["username", "Benutzername", "Nombre de usuario", "اسم المستخدم", "उपयोगकर्ता नाम", "Nom d'utilisateur", "Nome de usuário", "Nome utente", 
                 "Käyttäjänimi", "Användarnamn", "نام کاربری", "Nama pengguna", "password", "Passwort" ,"Contraseña", " كلمة المرور" ,"पासवर्ड", "Mot de passe", "Senha", "Salasana" , "Lösenord" "رمز عبور", "Kata sandi", "email", "e-mail", "Correo electrónico", "البريد الإلكتروني", "ईमेल", "Courriel", "Sähköposti", "E-post", "ایمیل", "Surel", "input", "Eingabe", "Entrada", "إدخال", "इनपुट", "Entrée", "Inserimento", "Inmatning", "ورودی", "Masukan", "textbox", "Textfeld", "Cuadro de texto", "مربع نص", "टेक्स्टबॉक्स", "Zone de texte", "Caixa de texto", "Casella di testo", "Tekstilaatikko", "Textfältm", "جعبه متن", "Kotak teks", "form", "Formular", "Formulario", "نموذج", "फॉर्म", "Formulaire", "Formulário", "Formulare", "Lomake", "Formulär", "فرم", "Formulir", "signin", "sign-in", "Anmelden", "Iniciar sesión", "تسجيل الدخول", "साइन इन", "Se connecter", "Entrar", "Accedi", "Kirjaudu sisään", "Logga in", "ورود", "Masuk", "login", "log-in", "Einloggen", "लॉग इन", "Connexion", "Accesso", "Kirjautuminen", "Inloggning", "phone", "otp", "pin", "card", "cvv", "account"]
 
+
+    print("Code is about to exit the detect_input_box function")
 
     for keyword in keywords:
         if keyword in extracted_text.lower():
