@@ -12,6 +12,9 @@ logging.basicConfig(filename='faviconErrors.log', level=logging.ERROR)
 allowed_formats = ['.png', '.ico', '.jpeg', '.jpg', '.svg']
 
 def scrape_favicon(URL, faviconFile, domain):
+
+    print("Code entered the scrape_favicon function")
+
     headers = {
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
     }
@@ -89,14 +92,20 @@ def scrape_favicon(URL, faviconFile, domain):
                         
                         with open(faviconFile + extension, 'wb') as file:
                             file.write(favicon_content)
+                        
+                        print("Code is about to exit the scrape_favicon function")
 
                         return True
                     
                     else:
+
+                        print("Code is about to exit the scrape_favicon function")
                         return False
 
                 except requests.exceptions.RequestException as e:
                     logging.error(f"RequestException for {URL}. Error: {str(e)}")
+                    print("Code is about to exit the scrape_favicon function")
 
     except Exception as e:
         logging.error(f"Error processing {URL}. Error: {str(e)}")
+        print("Code is about to exit the scrape_favicon function")

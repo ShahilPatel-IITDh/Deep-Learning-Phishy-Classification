@@ -73,13 +73,13 @@ if __name__ == "__main__":
             
             counter += 1
 
-            # if counter == 2:
-            #     break
+            if counter == 2:
+                break
 
             # Remove the whitespace from the URL
             url = row[0].strip()
 
-            # url = "https://gravatar.com/"
+            url = "https://gravatar.com/"
 
             print(url)
 

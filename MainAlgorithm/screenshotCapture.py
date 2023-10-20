@@ -17,6 +17,8 @@ logging.basicConfig(filename='ScreenshotError.log', level=logging.ERROR)
 
 def capture_full_page_screenshot(url, screenshotFile):
 
+    print("code entered the screenshot capture function")
+
     # Set up Chrome options
     chrome_options = Options()
     # Run Chrome in headless mode
@@ -30,6 +32,8 @@ def capture_full_page_screenshot(url, screenshotFile):
 
     # Install and Initialize WebDriver using webdriver_manager (This will not require pre-downloading the chrome driver)
     driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()), options=chrome_options)
+
+    print("driver initialized")
     
     try:
         driver.get(url)
@@ -47,18 +51,8 @@ def capture_full_page_screenshot(url, screenshotFile):
         # Set the initial viewport height
         viewport_height = driver.execute_script("return window.innerHeight")
 
-        # Calculate the number of viewport captures needed
-        num_captures = (page_height + viewport_height - 1) // viewport_height
-
         # Capture and stitch the screenshots
         screenshots = []
-
-        # for i in range(num_captures):
-        #     screenshot = driver.get_screenshot_as_png()
-        #     screenshots.append(Image.open(io.BytesIO(screenshot)))
-        #     driver.execute_script(f"window.scrollTo(0, {viewport_height * (i + 1)});")
-
-        #     time.sleep(2)
 
         for i in range(0, page_height, viewport_height):
             driver.execute_script(f"window.scrollTo(0, {i});")
@@ -83,8 +77,11 @@ def capture_full_page_screenshot(url, screenshotFile):
     except Exception as e:
         # Log other exceptions
         logging.error(f"Exception while processing URL: {url}. Error: {str(e)}")
+
     finally:
         driver.quit()
+
+    print("Code exited the screenshot capture function")
 
 # Example usage:
 # if __name__ == "__main__":

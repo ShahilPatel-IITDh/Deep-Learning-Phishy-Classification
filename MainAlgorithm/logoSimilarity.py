@@ -110,7 +110,6 @@ def CNN_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
 
 def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile):
 
-
     print(f"The Logo file in detect_logo_similarity is {logoFile}")
     similar_logos = {}  # Dictionary to store similar logos
 

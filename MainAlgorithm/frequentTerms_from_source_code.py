@@ -4,6 +4,9 @@ from collections import Counter
 import re
 
 def get_top_terms_from_website(url):
+
+    print("Code entered the get_top_terms_from_website function")
+
     try:
         # Send a GET request to the website
         response = requests.get(url)
@@ -28,10 +31,14 @@ def get_top_terms_from_website(url):
             # Extract only the terms (ignore the counts)
             top_terms = [term for term, count in top_terms]
 
+            print("Code is about to exit the get_top_terms_from_website function")
+
             return top_terms
 
     except Exception as e:
         print(f"An error occurred: {str(e)}")
+
+        print("Code is about to exit the get_top_terms_from_website function")
         return []
 
 # if __name__ == "__main__":

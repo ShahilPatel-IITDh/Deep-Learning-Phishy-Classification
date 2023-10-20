@@ -24,6 +24,9 @@ def preprocess_image(image_path):
     return processed_image
 
 def extract_top_terms_from_screenshot(domain_name, screenshot_path):
+
+    print("Code entered the extract_top_terms_from_screenshot function")
+    
     # Preprocess the image
     processed_image = preprocess_image(screenshot_path)
 
@@ -41,6 +44,8 @@ def extract_top_terms_from_screenshot(domain_name, screenshot_path):
 
     # Extract only the terms (ignore the counts)
     top_terms = [term for term, count in top_terms]
+
+    print("Code is about to exit the extract_top_terms_from_screenshot function")
 
     return top_terms
 
