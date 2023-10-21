@@ -10,6 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from PIL import Image
 import io
 import logging
+import chromedriver_autoinstaller
 
 # Configure logging
 logging.basicConfig(filename='ScreenshotError.log', level=logging.ERROR)
@@ -20,7 +21,10 @@ def capture_full_page_screenshot(url, screenshotFile):
     print("code entered the screenshot capture function")
 
     # Set up Chrome options
-    chrome_options = Options()
+    # chrome_options = Options()
+    
+    chrome_options = webdriver.ChromeOptions()
+    
     # Run Chrome in headless mode
     chrome_options.add_argument("--headless") 
     # Disable the GPU 
@@ -31,7 +35,11 @@ def capture_full_page_screenshot(url, screenshotFile):
     chrome_options.add_argument("--disable-dev-shm-usage")
 
     # Install and Initialize WebDriver using webdriver_manager (This will not require pre-downloading the chrome driver)
-    driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()), options=chrome_options)
+    # driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()), options=chrome_options)
+
+    chromedriver_autoinstaller.install()
+
+    driver = webdriver.Chrome(options=chrome_options)
 
     print("driver initialized")
     

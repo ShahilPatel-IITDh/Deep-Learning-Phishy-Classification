@@ -6,18 +6,29 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 import time
+import chromedriver_autoinstaller
 
 def google_search(domain, search_terms, reportFile):
 
     print("Code entered the google_search function")
-
-    chrome_options = Options()
-    chrome_options.add_argument('--headless')  # Enable headless mode
-    chrome_options.add_argument('--disable-gpu')  # Disable GPU to prevent issues
-
+    
+    chrome_options = webdriver.ChromeOptions()
+    
+    # Run Chrome in headless mode
+    chrome_options.add_argument("--headless") 
+    # Disable the GPU 
+    chrome_options.add_argument("--disable-gpu")
+    # Disable the sandbox
+    chrome_options.add_argument("--no-sandbox")
+    # Disable the DevShmUsage
+    chrome_options.add_argument("--disable-dev-shm-usage")
 
     # Initialize ChromeDriver with ChromeDriverManager
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+    # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+
+    chromedriver_autoinstaller.install()
+
+    driver = webdriver.Chrome(options=chrome_options)
     
     search_string = " ".join(search_terms)
 

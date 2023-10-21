@@ -31,7 +31,7 @@ inputCSV_File = os.path.join('..', 'URL_For_Testing', 'merged_URLs.csv')
 screenShotDir = os.path.join('screenshots')
 faviconDir = os.path.join('favicons')
 
-report = os.path.join('..', 'report-100-phishy')
+report = os.path.join('..', 'report')
 
 
 # Create the directory if it doesn't exist
