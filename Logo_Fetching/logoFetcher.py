@@ -10,7 +10,7 @@ headers = {
 }
 
 # Create the Logos directory if it doesn't exist in the Logo_fetching directory
-logos_dir = os.path.join('..', 'Top_Logos_200')
+logos_dir = os.path.join('..', 'Top_Logos_1000')
 outputs = os.path.join('..', 'outputs')
 
 # Make the directory to store Logos if it doesn't exist
@@ -39,7 +39,7 @@ def scrape_Favicon(URL, Favicons_Directory, domain):
         soup = BeautifulSoup(response.content, 'html.parser')
 
         # List of favicon link types to check
-        favicon_link_types = ['icon', 'apple-touch-icon', 'shortcut icon', 'mask-icon', 'fluid-icon', 'manifest', 'yandex-tableau-widget', 'apple-touch-startup-image', 'apple-touch-icon-precomposed', 'ICON', 'SHORTCUT ICON', 'APPLE-TOUCH-ICON', 'MANIFEST', 'MASK-ICON']
+        favicon_link_types = ['icon', 'apple-touch-icon', 'shortcut icon', 'mask-icon', 'fluid-icon', 'manifest', 'yandex-tableau-widget', 'apple-touch-startup-image', 'apple-touch-icon-precomposed', 'ICON', 'SHORTCUT ICON', 'APPLE-TOUCH-ICON', 'MANIFEST', 'MASK-ICON', 'FLUID-ICON']
 
         # Find the favicon URL
         favicon_URL = None
@@ -121,7 +121,7 @@ if __name__ == '__main__':
 
     # Iterate through each row in the CSV
     for index, row in df.iterrows():
-        if counter == 520:
+        if counter == 2000:
             break
 
         # Access the 2nd column using iloc (Also there are leading and trailing spaces in the domain name so remove them)
