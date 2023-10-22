@@ -150,6 +150,7 @@ if __name__ == "__main__":
                     file.write(f"Top 5 most occurring terms from screenshot: {top_terms_from_screenshot}\n")
             
             else:
+                top_terms_from_screenshot = [] #Initialize it as an empty list.
                 with open(reportFile, 'a') as file:
                     file.write(f"Screenshot doesn't exist for so frequent terms not found: {input_domain_name}\n")
 
