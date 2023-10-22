@@ -72,8 +72,8 @@ if __name__ == "__main__":
             
             counter += 1
 
-            # if counter == 2:
-            #     break
+            if counter == 20:
+                break
 
             # Remove the whitespace from the URL
             url = row[0].strip()
@@ -276,11 +276,7 @@ if __name__ == "__main__":
 
                         # As the similarity is detected, we will now check if the domains are same or not, if not then it will add negative score, else positive score
                         print("Logo similarity detected:")
-                        for logo, mse in similarLogos.items():
-                            # percentageSimilarity = 100*(1-mse)
-                            # with open(reportFile, 'a') as file:
-                            #     file.write(f"Similar to: {logo}, Similarity Score: {percentageSimilarity:.2f}%\n")
-                            
+                        for logo, mse in similarLogos.items():                            
                             # Check the difference in the input domain name and the logo name (limited to 3 decimal places)
                             domainSimilarity = round(check_Domain_similarity(input_domain_name, logo), 3)
 
