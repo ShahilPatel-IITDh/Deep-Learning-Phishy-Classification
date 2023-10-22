@@ -31,8 +31,7 @@ inputCSV_File = os.path.join('..', 'URL_For_Testing', 'merged_URLs.csv')
 screenShotDir = os.path.join('screenshots')
 faviconDir = os.path.join('favicons')
 
-report = os.path.join('..', 'report')
-
+report = os.path.join('..', 'report-for-100-Phishy-on-200-Logos')
 
 # Create the directory if it doesn't exist
 if not os.path.exists(screenShotDir):
@@ -73,13 +72,13 @@ if __name__ == "__main__":
             
             counter += 1
 
-            if counter == 2:
-                break
+            # if counter == 2:
+            #     break
 
             # Remove the whitespace from the URL
             url = row[0].strip()
 
-            url = "https://gravatar.com/"
+            # url = "https://gravatar.com/"
 
             print(url)
 
