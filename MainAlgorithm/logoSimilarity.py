@@ -136,7 +136,6 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
     for filename in os.listdir(logoDatabase):
         image2_ICO_path = os.path.join(logoDatabase, filename)
 
-
         try:
             # Load the ICO image using PIL
             image2_ICO = Image.open(image2_ICO_path)
@@ -144,13 +143,7 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
             # Convert the .ico image to another format (e.g., .png)
             image2_PNG_path = f'Database_PNGs/{filename}.png'  # Use a different path for each image
 
-            # If the PNG image exists already then no need to convert it again
-            if os.exists(image2_PNG_path):
-                continue
-
-            # Else convert the .ico file to .png format
-            else:
-                image2_ICO.convert('RGB').save(image2_PNG_path, format='PNG')
+            image2_ICO.convert('RGB').save(image2_PNG_path, format='PNG')
 
         except Exception as e:
             print(f"Skipping {filename} due to {e}.")
