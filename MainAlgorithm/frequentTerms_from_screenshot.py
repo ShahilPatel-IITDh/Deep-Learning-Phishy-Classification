@@ -5,6 +5,10 @@ import numpy as np
 from collections import Counter
 import re
 
+# Define a list of common stopwords
+stopwords = ["a", "an", "the", "me", "you", "we", "they", "it", "he", "she", "is", "am", "are", "was", "were", "his", "her", "your"]
+
+
 def preprocess_image(image_path):
     # Open the image using OpenCV
     img = cv2.imread(image_path)
@@ -36,6 +40,9 @@ def extract_top_terms_from_screenshot(domain_name, screenshot_path):
     # Tokenize the extracted text by words, removing non-alphabetical characters and numbers
     words = re.findall(r'\b[a-zA-Z]+\b', text.lower())
 
+    # Filter out stopwords from the list of words
+    words = [word for word in words if word not in stopwords]
+
     # Count the occurrences of each word
     word_counts = Counter(words)
 
@@ -48,10 +55,3 @@ def extract_top_terms_from_screenshot(domain_name, screenshot_path):
     print("Code is about to exit the extract_top_terms_from_screenshot function")
 
     return top_terms
-
-# Example usage:
-# if __name__ == "__main__":
-#     domain_name = "example.com"
-#     screenshot_path = "path_to_your_screenshot.png"
-#     top_terms = extract_top_terms_from_screenshot(domain_name, screenshot_path)
-#     print(f"Top 5 most occurring terms for {domain_name}:", top_terms)
