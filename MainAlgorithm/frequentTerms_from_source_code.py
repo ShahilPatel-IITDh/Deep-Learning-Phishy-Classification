@@ -3,6 +3,9 @@ from bs4 import BeautifulSoup
 from collections import Counter
 import re
 
+# Define a list of common stopwords
+stopwords = ["a", "an", "the", "me", "you", "we", "they", "it", "he", "she", "is", "am", "are", "was", "were", "his", "her", "your"]
+
 def get_top_terms_from_website(url):
 
     print("Code entered the get_top_terms_from_website function")
@@ -22,6 +25,9 @@ def get_top_terms_from_website(url):
             # Tokenize the extracted text by words and remove non-alphabetical characters
             words = re.findall(r'\b[a-zA-Z]+\b', text.lower())
 
+            # Filter out stopwords from the list of words
+            words = [word for word in words if word not in stopwords]
+
             # Count the occurrences of each word
             word_counts = Counter(words)
 
@@ -40,8 +46,3 @@ def get_top_terms_from_website(url):
 
         print("Code is about to exit the get_top_terms_from_website function")
         return []
-
-# if __name__ == "__main__":
-#     url = "https://example.com"  # Replace with the URL of the website you want to analyze
-#     top_terms = get_top_terms_from_website(url)
-#     print("Top 5 most occurring terms in the website's source code (excluding HTML tags):", top_terms)
