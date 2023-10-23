@@ -6,7 +6,7 @@ from collections import Counter
 import re
 
 # Define a list of common stopwords
-stopwords = ["a", "an", "the", "me", "you", "we", "they", "it", "he", "she", "is", "am", "are", "was", "were", "his", "her", "your"]
+stopwords = ["a", "an", "the", "me", "you", "we", "they", "it", "he", "she", "is", "am", "are", "was", "were", "his", "her", "your", "and", "also", "or", "not", "ours", "our", "their", "this", "that", "these", "mine", "in", "on", "at", "by", "for", "with", "about", "as", "if", "of", "from", "to", "up", "down", "under", "over", "between", "through", "after", "before", "while", "throughout", "since", "during", "until", "unless", "although", "because", "unless", "without", "throughout", "above", "below", "inside", "outside", "between", "among", "around", "before", "after", "along", "beside", "beneath", "across", "against", "toward", "besides", "into", "onto", "underneath", "upon", "within", "beyond", "inside", "outside", "near", "around"]
 
 
 def preprocess_image(image_path):
@@ -29,7 +29,8 @@ def preprocess_image(image_path):
 
 def extract_top_terms_from_screenshot(domain_name, screenshot_path):
 
-    print("Code entered the extract_top_terms_from_screenshot function")
+    print("--Code entered the extract_top_terms_from_screenshot function")
+    print("|")
     
     # Preprocess the image
     processed_image = preprocess_image(screenshot_path)
@@ -52,6 +53,7 @@ def extract_top_terms_from_screenshot(domain_name, screenshot_path):
     # Extract only the terms (ignore the counts)
     top_terms = [term for term, count in top_terms]
 
-    print("Code is about to exit the extract_top_terms_from_screenshot function")
+    print("|")
+    print("--Code is about to exit the extract_top_terms_from_screenshot function\n")
 
     return top_terms
