@@ -1,3 +1,4 @@
+from urllib.parse import urlparse
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -66,12 +67,21 @@ def google_search(domain, search_terms, reportFile):
         os.makedirs(search_result_screenshot_directory)
 
     # Extract the top 3 URLs
+    top_domains = []
     top_urls = []
+
     for result in search_results[:3]:
         link = result.find_element(By.CSS_SELECTOR, "a")
         url = link.get_attribute("href")
         top_urls.append(url)
 
+        # Parse the URL
+        parsed_url = urlparse(url)
+
+        # Extract the domain
+        domain = parsed_url.netloc
+
+        top_domains.append(domain)
 
     # Close the Chrome WebDriver
     driver.quit()
@@ -80,14 +90,15 @@ def google_search(domain, search_terms, reportFile):
     print("--Code is about to exit the google_search function\n")
 
     url_counter = 1
+
     for url in top_urls:
         # Define the screenshot filename based on the URL
-        screenshotFile = os.path.join(search_result_screenshot_directory, f"{url}-search-result-{url_counter}.png")
+        screenshotFile = os.path.join(search_result_screenshot_directory, f"{url}-search_result_{url_counter}.png")
 
-        print("The search result's images are being saved")
-        
+        print(domain)
+
         # Call the capture_full_page_screenshot function
         capture_full_page_screenshot(url, screenshotFile)
         url_counter += 1
 
-    return top_urls
+    return top_domains
