@@ -28,10 +28,12 @@ from logoSimilarity import detect_logo_similarity
 from domainName_Difference import check_Domain_similarity 
 
 inputCSV_File = os.path.join('..', 'URL_For_Testing', 'merged_URLs.csv')
-screenShotDir = os.path.join('screenshots')
-faviconDir = os.path.join('favicons')
+screenShotDir = os.path.join('screenshots-10')
+faviconDir = os.path.join('favicons-10')
 
-report = os.path.join('..', 'report-for-100-Phishy-on-200-Logos')
+# report = os.path.join('..', 'report-for-100-Phishy-on-200-Logos')
+
+report = os.path.join('..', 'report-for-testing-10-Logos')
 
 # Create the directory if it doesn't exist
 if not os.path.exists(screenShotDir):
@@ -49,6 +51,13 @@ notFoundInputBox = 0
 screenshotNotPresent = 0
 faviconsFound = 0
 faviconsNotFound = 0
+
+# Weighted Score
+# 1. Input Box Detection: 33
+# 2. Logo Similarity: 34
+# 3. Domain Name dissimilarity from search engine and input domain : 33
+
+score = 0
 
 def filter_valid_lists(lists):
     return [lst for lst in lists if lst is not None and len(lst) > 0]
@@ -72,13 +81,13 @@ if __name__ == "__main__":
             
             counter += 1
 
-            if counter == 20:
+            if counter == 2:
                 break
 
             # Remove the whitespace from the URL
             url = row[0].strip()
 
-            # url = "https://gravatar.com/"
+            url = "https://www.roku.com/intl?next=/&source=www.roku.com"
 
             print(url)
 
@@ -99,7 +108,7 @@ if __name__ == "__main__":
             if input_domain_name.startswith("https."):
                 input_domain_name = input_domain_name[6:]
 
-            print("Domain name: ", input_domain_name)
+            print("Input Domain Name: ", input_domain_name)
             
             # Final report file for the URL
             reportFile = os.path.join(report, f"{input_domain_name}.txt")
@@ -121,16 +130,19 @@ if __name__ == "__main__":
                 result = detect_input_box(screenshotFile)
 
                 if result == -1:
+                    score += -33
                     foundInputBox += 1
                     with open (reportFile, 'w') as file:
                         file.write(f"Input box detected in screenshot\n")
 
                 else:
+                    score += 33
                     notFoundInputBox += 1
                     with open (reportFile, 'w') as file:
                         file.write(f"Input box not detected in screenshot\n")
             
             else:
+                score += 0
                 screenshotNotPresent += 1
                 with open (reportFile, 'w') as file:
                     file.write(f"screenshot doesn't exist.\n")
@@ -174,6 +186,8 @@ if __name__ == "__main__":
             # Filter and combine valid lists
             valid_lists = filter_valid_lists([top_terms_from_screenshot, top_terms_from_source_code])
 
+            # valid_lists = filter_valid_lists([top_terms_from_source_code])
+
             if valid_lists:
                 # Concatenate and create a set to remove duplicates
                 unique_terms_set = set(item for sublist in valid_lists for item in sublist)
@@ -190,43 +204,69 @@ if __name__ == "__main__":
 
             # ------------------------------- Searching domain + frequent terms on search engine --------------------------------------- #
 
-            topURLs = google_search(input_domain_name, top_terms, reportFile)
+            topDomains = google_search(input_domain_name, top_terms, reportFile)
 
             # print(f"Top URLs for {input_domain_name}:", topURLs)   
 
             unique_domains = set()
 
-            for urls in topURLs:
-                parsed_url = urlsplit(url)
+            for domain in topDomains:
+                # parsed_url = urlsplit(url)
 
-                # Extract the domain name from the netloc component
-                domain_name = parsed_url.netloc
+                # # Extract the domain name from the netloc component
+                # domain_name = parsed_url.netloc
 
                 # Remove "www." if present at the beginning
-                if domain_name.startswith("www."):
-                    domain_name = domain_name[4:]
+                if domain.startswith("www."):
+                    domain = domain[4:]
                 
-                if domain_name.startswith("http.www."):
-                    domain_name = domain_name[10:]
+                if domain.startswith("http.www."):
+                    domain = domain[10:]
                 
-                if domain_name.startswith("https."):
-                    domain_name = domain_name[6:]
+                if domain.startswith("https."):
+                    domain = domain[6:]
                 
                 # Add the domain name to the set
-                unique_domains.add(domain_name)
+                print(f"after-processing-{domain}")
+                unique_domains.add(domain)
             
             with open(reportFile, 'a') as file:
                 file.write(f"Unique domains: {unique_domains}\n")
 
+            if unique_domains is None:
+                score += 0
 
             # Check if the input_domain_name is in the list of domains obtained from the search engine
-            if input_domain_name in unique_domains:
+            # if input_domain_name in unique_domains:
+            #     score += 33
+            #     with open(reportFile, 'a') as file:
+            #         file.write(f"{input_domain_name} is in the list of unique domains.\n")
+
+            # else:
+            #     score += -33
+            #     with open(reportFile, 'a') as file:
+            #         file.write(f"{input_domain_name} is not in the list of unique domains.\n")
+
+            # Checking if the input_domain as string is present in any string of the unique_domains list
+            stringFound = False
+
+            # Iterate over the unique_domains set
+            for domain in unique_domains:
+                if input_domain_name in domain:
+                    stringFound = True
+                    break  # Exit the loop early if a match is found
+
+            if stringFound:
+                # Do something if the input domain is found in the set
+                score += 33
                 with open(reportFile, 'a') as file:
                     file.write(f"{input_domain_name} is in the list of unique domains.\n")
-
+                
             else:
+                score += -33
                 with open(reportFile, 'a') as file:
                     file.write(f"{input_domain_name} is not in the list of unique domains.\n")
+
             
             # ---------------------------------------------------- Favicon scraping ---------------------------------------------------- #
             
@@ -250,7 +290,7 @@ if __name__ == "__main__":
                     with open(reportFile, 'a') as file:
                         file.write(f"Favicon not found\n")
 
-            logoDatabase = os.path.join('..', 'Top_Logos_200')
+            logoDatabase = os.path.join('..', 'Logos-10')
 
             # ------------------------------------------------ Logo similarity detection ------------------------------------------ #
 
@@ -269,6 +309,7 @@ if __name__ == "__main__":
 
                     if not similarLogos:  # Check if the dictionary is empty
                         print("Logo similarity not detected.")
+                        score += 0
                         with open (reportFile, 'a') as file:
                             file.write(f"Logo similarity not detected.\n")
 
@@ -280,14 +321,35 @@ if __name__ == "__main__":
                             # Check the difference in the input domain name and the logo name (limited to 3 decimal places)
                             domainSimilarity = round(check_Domain_similarity(input_domain_name, logo), 3)
 
+                            if domainSimilarity < 0.60:
+                                score += -34
+                            
+                            else:
+                                score += 34
+
                             with open(reportFile, 'a') as file:
                                 file.write(f"Domain Similarity with {logo}: {domainSimilarity}%\n")
+                else:
+                    score+=0
 
             end = time.time()
 
             timeTaken = end - start
+
+            # The final score can vary from -100 to 100
             
             with open(reportFile, 'a') as file:
+                file.write(f"The weighted score is {score}")
+
+                if score < 33:
+                    file.write(f" and the website is Phishy\n")
+                
+                elif score >= 33 and score <= 66:
+                    file.write(f" and the website is Suspicious\n")
+                
+                elif score>66:
+                    file.write(f" and the website is Legitimate\n")
+
                 file.write(f"Time taken to process the URL: {timeTaken:.2f} seconds\n")
                 file.write(f"----------------------------------\n")
 
