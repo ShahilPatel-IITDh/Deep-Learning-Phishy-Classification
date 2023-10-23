@@ -18,7 +18,8 @@ logging.basicConfig(filename='ScreenshotError.log', level=logging.ERROR)
 
 def capture_full_page_screenshot(url, screenshotFile):
 
-    print("code entered the screenshot capture function")
+    print("--code entered the screenshot capture function")
+    print("|")
 
     # Set up Chrome options
     # chrome_options = Options()
@@ -35,11 +36,11 @@ def capture_full_page_screenshot(url, screenshotFile):
     chrome_options.add_argument("--disable-dev-shm-usage")
 
     # Install and Initialize WebDriver using webdriver_manager (This will not require pre-downloading the chrome driver)
-    # driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()), options=chrome_options)
+    driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()), options=chrome_options)
 
-    chromedriver_autoinstaller.install()
+    # chromedriver_autoinstaller.install()
 
-    driver = webdriver.Chrome(options=chrome_options)
+    # driver = webdriver.Chrome(options=chrome_options)
 
     print("driver initialized")
     
@@ -89,7 +90,8 @@ def capture_full_page_screenshot(url, screenshotFile):
     finally:
         driver.quit()
 
-    print("Code exited the screenshot capture function")
+    print("|")
+    print("--Code exited the screenshot capture function\n")
 
 # Example usage:
 # if __name__ == "__main__":

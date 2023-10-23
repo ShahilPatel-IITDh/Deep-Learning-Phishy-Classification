@@ -7,11 +7,17 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 import time
 import chromedriver_autoinstaller
+import os
+
+
+# Import the screenshotCapture function from screenshotCapture.py which will be used to capture the full-page screenshot
+from screenshotCapture import capture_full_page_screenshot
 
 def google_search(domain, search_terms, reportFile):
 
-    print("Code entered the google_search function")
-    
+    print("--Code entered the google_search function")
+    print("|")
+
     chrome_options = webdriver.ChromeOptions()
     
     # Run Chrome in headless mode
@@ -24,11 +30,11 @@ def google_search(domain, search_terms, reportFile):
     chrome_options.add_argument("--disable-dev-shm-usage")
 
     # Initialize ChromeDriver with ChromeDriverManager
-    # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
-    chromedriver_autoinstaller.install()
+    # chromedriver_autoinstaller.install()
 
-    driver = webdriver.Chrome(options=chrome_options)
+    # driver = webdriver.Chrome(options=chrome_options)
     
     search_string = " ".join(search_terms)
 
@@ -54,6 +60,11 @@ def google_search(domain, search_terms, reportFile):
 
     time.sleep(20)
 
+    search_result_screenshot_directory = "search_result_screenshots"
+
+    if not os.path.exists(search_result_screenshot_directory):
+        os.makedirs(search_result_screenshot_directory)
+
     # Extract the top 3 URLs
     top_urls = []
     for result in search_results[:3]:
@@ -61,9 +72,22 @@ def google_search(domain, search_terms, reportFile):
         url = link.get_attribute("href")
         top_urls.append(url)
 
+
     # Close the Chrome WebDriver
     driver.quit()
 
-    print("Code is about to exit the google_search function")
+    print("|")
+    print("--Code is about to exit the google_search function\n")
+
+    url_counter = 1
+    for url in top_urls:
+        # Define the screenshot filename based on the URL
+        screenshotFile = os.path.join(search_result_screenshot_directory, f"{url}-search-result-{url_counter}.png")
+
+        print("The search result's images are being saved")
+        
+        # Call the capture_full_page_screenshot function
+        capture_full_page_screenshot(url, screenshotFile)
+        url_counter += 1
 
     return top_urls

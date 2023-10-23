@@ -113,15 +113,15 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
     print(f"The Logo file in detect_logo_similarity is {logoFile}")
     similar_logos = {}  # Dictionary to store similar logos
 
-    os.makedirs("input_PNGs", exist_ok=True)
-    os.makedirs("Database_PNGs", exist_ok=True)
+    os.makedirs("input_PNGs-10", exist_ok=True)
+    os.makedirs("Database_PNGs-10", exist_ok=True)
 
     try:
         #  Convert the logoFile to a valid image
         image1_ICO = Image.open(logoFile)
 
         # Convert the .ico image to another format (e.g., .png)
-        image1_PNG_path = f"input_PNGs/{input_domain_name}.png"
+        image1_PNG_path = f"input_PNGs-10/{input_domain_name}.png"
         image1_ICO.convert('RGB').save(image1_PNG_path, format='PNG')
         
     except Exception as e:
@@ -135,15 +135,19 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
     # Load the input image
     for filename in os.listdir(logoDatabase):
         image2_ICO_path = os.path.join(logoDatabase, filename)
-
+        
         try:
             # Load the ICO image using PIL
             image2_ICO = Image.open(image2_ICO_path)
 
             # Convert the .ico image to another format (e.g., .png)
-            image2_PNG_path = f'Database_PNGs/{filename}.png'  # Use a different path for each image
-
-            image2_ICO.convert('RGB').save(image2_PNG_path, format='PNG')
+            image2_PNG_path = f'Database_PNGs-10/{filename}.png'  # Use a different path for each image
+            
+            if os.path.isfile(image2_PNG_path):
+                continue
+            
+            else:
+                image2_ICO.convert('RGB').save(image2_PNG_path, format='PNG')
 
         except Exception as e:
             print(f"Skipping {filename} due to {e}.")
