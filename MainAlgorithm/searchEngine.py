@@ -31,11 +31,11 @@ def google_search(domain, search_terms, reportFile):
     chrome_options.add_argument("--disable-dev-shm-usage")
 
     # Initialize ChromeDriver with ChromeDriverManager
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+    # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
-    # chromedriver_autoinstaller.install()
+    chromedriver_autoinstaller.install()
 
-    # driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     
     search_string = " ".join(search_terms)
 

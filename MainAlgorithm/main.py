@@ -87,7 +87,8 @@ if __name__ == "__main__":
             # Remove the whitespace from the URL
             url = row[0].strip()
 
-            url = "https://www.roku.com/intl?next=/&source=www.roku.com"
+            # url = "https://www.roku.com/intl?next=/&source=www.roku.com"
+            url = "https://www.w3schools.com/howto/howto_website_static.asp"
 
             print(url)
 
@@ -124,117 +125,117 @@ if __name__ == "__main__":
             # ---------------------------------------------------- UI detection ---------------------------------------------------- # 
 
             # Check if the output file exists before running UI detection
-            if os.path.isfile(screenshotFile):
+            # if os.path.isfile(screenshotFile):
                 
-                # Run UI detection code if the file exists
-                result = detect_input_box(screenshotFile)
+            #     # Run UI detection code if the file exists
+            #     result = detect_input_box(screenshotFile)
 
-                if result == -1:
-                    score += -33
-                    foundInputBox += 1
-                    with open (reportFile, 'w') as file:
-                        file.write(f"Input box detected in screenshot\n")
+            #     if result == -1:
+            #         score += -33
+            #         foundInputBox += 1
+            #         with open (reportFile, 'w') as file:
+            #             file.write(f"Input box detected in screenshot\n")
 
-                else:
-                    score += 33
-                    notFoundInputBox += 1
-                    with open (reportFile, 'w') as file:
-                        file.write(f"Input box not detected in screenshot\n")
+            #     else:
+            #         score += 33
+            #         notFoundInputBox += 1
+            #         with open (reportFile, 'w') as file:
+            #             file.write(f"Input box not detected in screenshot\n")
             
-            else:
-                score += 0
-                screenshotNotPresent += 1
-                with open (reportFile, 'w') as file:
-                    file.write(f"screenshot doesn't exist.\n")
+            # else:
+            #     score += 0
+            #     screenshotNotPresent += 1
+            #     with open (reportFile, 'w') as file:
+            #         file.write(f"screenshot doesn't exist.\n")
 
             
             # ---------------------------------------------------- Frequent terms extraction ------------------------------------------- #
             
             # ----------------------------------------  From Screenshot ------------------------------------------ #
 
-            # Check if the output file exists before running frequent terms extraction
-            if os.path.isfile(screenshotFile):
+            # # Check if the output file exists before running frequent terms extraction
+            # if os.path.isfile(screenshotFile):
                     
-                # Run frequent terms extraction code if the file exists
-                top_terms_from_screenshot = extract_top_terms_from_screenshot(input_domain_name, screenshotFile)
+            #     # Run frequent terms extraction code if the file exists
+            #     top_terms_from_screenshot = extract_top_terms_from_screenshot(input_domain_name, screenshotFile)
 
-                with open(reportFile, 'a') as file:
-                    file.write(f"Top 5 most occurring terms from screenshot: {top_terms_from_screenshot}\n")
+            #     with open(reportFile, 'a') as file:
+            #         file.write(f"Top 5 most occurring terms from screenshot: {top_terms_from_screenshot}\n")
             
-            else:
-                top_terms_from_screenshot = [] #Initialize it as an empty list.
-                with open(reportFile, 'a') as file:
-                    file.write(f"Screenshot doesn't exist for so frequent terms not found: {input_domain_name}\n")
+            # else:
+            #     top_terms_from_screenshot = [] #Initialize it as an empty list.
+            #     with open(reportFile, 'a') as file:
+            #         file.write(f"Screenshot doesn't exist for so frequent terms not found: {input_domain_name}\n")
 
             
             # -----------------------------------------  From Source Code ------------------------------------------ #
 
-            top_terms_from_source_code = get_top_terms_from_website(url)
+            # top_terms_from_source_code = get_top_terms_from_website(url)
 
-            if top_terms_from_source_code is None:
-                with open (reportFile, 'a') as file:
-                    file.write("No terms found, website not working!!\n")
+            # if top_terms_from_source_code is None:
+            #     with open (reportFile, 'a') as file:
+            #         file.write("No terms found, website not working!!\n")
             
-            else:
-                with open (reportFile, 'a') as file:
-                    file.write(f"Top 5 most occurring terms in the website's source code: {top_terms_from_source_code}\n")
+            # else:
+            #     with open (reportFile, 'a') as file:
+            #         file.write(f"Top 5 most occurring terms in the website's source code: {top_terms_from_source_code}\n")
 
             
-            # Final list of the top most occurring terms
-            # Function to remove None and empty lists
+            # # Final list of the top most occurring terms
+            # # Function to remove None and empty lists
 
-            # Filter and combine valid lists
-            valid_lists = filter_valid_lists([top_terms_from_screenshot, top_terms_from_source_code])
+            # # Filter and combine valid lists
+            # valid_lists = filter_valid_lists([top_terms_from_screenshot, top_terms_from_source_code])
 
-            # valid_lists = filter_valid_lists([top_terms_from_source_code])
+            # # valid_lists = filter_valid_lists([top_terms_from_source_code])
 
-            if valid_lists:
-                # Concatenate and create a set to remove duplicates
-                unique_terms_set = set(item for sublist in valid_lists for item in sublist)
+            # if valid_lists:
+            #     # Concatenate and create a set to remove duplicates
+            #     unique_terms_set = set(item for sublist in valid_lists for item in sublist)
 
-                # Convert the set back to a list
-                top_terms = list(unique_terms_set)
+            #     # Convert the set back to a list
+            #     top_terms = list(unique_terms_set)
 
-            else:
-                top_terms = []
+            # else:
+            #     top_terms = []
 
-            with open (reportFile, 'a') as file:
-                file.write(f"final list of most occurring terms is: {top_terms}\n")
+            # with open (reportFile, 'a') as file:
+            #     file.write(f"final list of most occurring terms is: {top_terms}\n")
 
 
             # ------------------------------- Searching domain + frequent terms on search engine --------------------------------------- #
 
-            topDomains = google_search(input_domain_name, top_terms, reportFile)
+            # topDomains = google_search(input_domain_name, top_terms, reportFile)
 
-            # print(f"Top URLs for {input_domain_name}:", topURLs)   
+            # # print(f"Top URLs for {input_domain_name}:", topURLs)   
 
-            unique_domains = set()
+            # unique_domains = set()
 
-            for domain in topDomains:
-                # parsed_url = urlsplit(url)
+            # for domain in topDomains:
+            #     # parsed_url = urlsplit(url)
 
-                # # Extract the domain name from the netloc component
-                # domain_name = parsed_url.netloc
+            #     # # Extract the domain name from the netloc component
+            #     # domain_name = parsed_url.netloc
 
-                # Remove "www." if present at the beginning
-                if domain.startswith("www."):
-                    domain = domain[4:]
+            #     # Remove "www." if present at the beginning
+            #     if domain.startswith("www."):
+            #         domain = domain[4:]
                 
-                if domain.startswith("http.www."):
-                    domain = domain[10:]
+            #     if domain.startswith("http.www."):
+            #         domain = domain[10:]
                 
-                if domain.startswith("https."):
-                    domain = domain[6:]
+            #     if domain.startswith("https."):
+            #         domain = domain[6:]
                 
-                # Add the domain name to the set
-                print(f"after-processing-{domain}")
-                unique_domains.add(domain)
+            #     # Add the domain name to the set
+            #     print(f"after-processing-{domain}")
+            #     unique_domains.add(domain)
             
-            with open(reportFile, 'a') as file:
-                file.write(f"Unique domains: {unique_domains}\n")
+            # with open(reportFile, 'a') as file:
+            #     file.write(f"Unique domains: {unique_domains}\n")
 
-            if unique_domains is None:
-                score += 0
+            # if unique_domains is None:
+            #     score += 0
 
             # Check if the input_domain_name is in the list of domains obtained from the search engine
             # if input_domain_name in unique_domains:
@@ -248,89 +249,89 @@ if __name__ == "__main__":
             #         file.write(f"{input_domain_name} is not in the list of unique domains.\n")
 
             # Checking if the input_domain as string is present in any string of the unique_domains list
-            stringFound = False
+            # stringFound = False
 
-            # Iterate over the unique_domains set
-            for domain in unique_domains:
-                if input_domain_name in domain:
-                    stringFound = True
-                    break  # Exit the loop early if a match is found
+            # # Iterate over the unique_domains set
+            # for domain in unique_domains:
+            #     if input_domain_name in domain:
+            #         stringFound = True
+            #         break  # Exit the loop early if a match is found
 
-            if stringFound:
-                # Do something if the input domain is found in the set
-                score += 33
-                with open(reportFile, 'a') as file:
-                    file.write(f"{input_domain_name} is in the list of unique domains.\n")
+            # if stringFound:
+            #     # Do something if the input domain is found in the set
+            #     score += 33
+            #     with open(reportFile, 'a') as file:
+            #         file.write(f"{input_domain_name} is in the list of unique domains.\n")
                 
-            else:
-                score += -33
-                with open(reportFile, 'a') as file:
-                    file.write(f"{input_domain_name} is not in the list of unique domains.\n")
+            # else:
+            #     score += -33
+            #     with open(reportFile, 'a') as file:
+            #         file.write(f"{input_domain_name} is not in the list of unique domains.\n")
 
             
             # ---------------------------------------------------- Favicon scraping ---------------------------------------------------- #
             
-            logoFile = os.path.join(faviconDir, f"{input_domain_name}")
+            # logoFile = os.path.join(faviconDir, f"{input_domain_name}")
 
-            # print(f"logoFile will be {logoFile}")
+            # # print(f"logoFile will be {logoFile}")
 
-            scrape_favicon(url, logoFile, input_domain_name)
+            # scrape_favicon(url, logoFile, input_domain_name)
 
-            extensions = ['.ico', '.png', '.jpeg', '.jpg', '.svg']
+            # extensions = ['.ico', '.png', '.jpeg', '.jpg', '.svg']
 
-            for ext in extensions:
-                if os.path.isfile(logoFile+ext):
-                    faviconsFound += 1
-                    with open(reportFile, 'a') as file:
-                        file.write(f"Favicon found\n")
-                    break
+            # for ext in extensions:
+            #     if os.path.isfile(logoFile+ext):
+            #         faviconsFound += 1
+            #         with open(reportFile, 'a') as file:
+            #             file.write(f"Favicon found\n")
+            #         break
                 
-                else:
-                    faviconsNotFound += 1
-                    with open(reportFile, 'a') as file:
-                        file.write(f"Favicon not found\n")
+            #     else:
+            #         faviconsNotFound += 1
+            #         with open(reportFile, 'a') as file:
+            #             file.write(f"Favicon not found\n")
 
-            logoDatabase = os.path.join('..', 'Logos-10')
+            # logoDatabase = os.path.join('..', 'Logos-10')
 
             # ------------------------------------------------ Logo similarity detection ------------------------------------------ #
 
-            time.sleep(2)
-            print(f"Logo file: {logoFile}")
+            # time.sleep(2)
+            # print(f"Logo file: {logoFile}")
 
-            # Check if the logo file exists before running logo similarity detection
-            for ext in extensions:
+            # # Check if the logo file exists before running logo similarity detection
+            # for ext in extensions:
 
-                if os.path.isfile(logoFile+ext):
+            #     if os.path.isfile(logoFile+ext):
 
-                    print(f"Testing for {logoFile+ext}")
+            #         print(f"Testing for {logoFile+ext}")
                     
-                    # Run logo similarity detection code if the file exists
-                    similarLogos = detect_logo_similarity(input_domain_name, logoFile+ext, logoDatabase, reportFile)
+            #         # Run logo similarity detection code if the file exists
+            #         similarLogos = detect_logo_similarity(input_domain_name, logoFile+ext, logoDatabase, reportFile)
 
-                    if not similarLogos:  # Check if the dictionary is empty
-                        print("Logo similarity not detected.")
-                        score += 0
-                        with open (reportFile, 'a') as file:
-                            file.write(f"Logo similarity not detected.\n")
+            #         if not similarLogos:  # Check if the dictionary is empty
+            #             print("Logo similarity not detected.")
+            #             score += 0
+            #             with open (reportFile, 'a') as file:
+            #                 file.write(f"Logo similarity not detected.\n")
 
-                    else:
+            #         else:
 
-                        # As the similarity is detected, we will now check if the domains are same or not, if not then it will add negative score, else positive score
-                        print("Logo similarity detected:")
-                        for logo, mse in similarLogos.items():                            
-                            # Check the difference in the input domain name and the logo name (limited to 3 decimal places)
-                            domainSimilarity = round(check_Domain_similarity(input_domain_name, logo), 3)
+            #             # As the similarity is detected, we will now check if the domains are same or not, if not then it will add negative score, else positive score
+            #             print("Logo similarity detected:")
+            #             for logo, mse in similarLogos.items():                            
+            #                 # Check the difference in the input domain name and the logo name (limited to 3 decimal places)
+            #                 domainSimilarity = round(check_Domain_similarity(input_domain_name, logo), 3)
 
-                            if domainSimilarity < 0.60:
-                                score += -34
+            #                 if domainSimilarity < 0.60:
+            #                     score += -34
                             
-                            else:
-                                score += 34
+            #                 else:
+            #                     score += 34
 
-                            with open(reportFile, 'a') as file:
-                                file.write(f"Domain Similarity with {logo}: {domainSimilarity}%\n")
-                else:
-                    score+=0
+            #                 with open(reportFile, 'a') as file:
+            #                     file.write(f"Domain Similarity with {logo}: {domainSimilarity}%\n")
+            #     else:
+            #         score+=0
 
             end = time.time()
 

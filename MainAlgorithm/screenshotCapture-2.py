@@ -1,19 +1,49 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from PIL import Image
 import time
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import WebDriverException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from PIL import Image
 import io
 import logging
+import chromedriver_autoinstaller
+
+# Configure logging
+logging.basicConfig(filename='ScreenshotError.log', level=logging.ERROR)
+
 
 def capture_full_page_screenshot(url, screenshotFile):
-    # Set up Chrome options for headless mode
-    chrome_options = Options()
-    chrome_options.add_argument('--headless')
-    
-    # Initialize the web driver with Chrome options
-    driver = webdriver.Chrome(options=chrome_options)
 
+    print("--code entered the screenshot capture function")
+    print("|")
+
+    # Set up Chrome options
+    # chrome_options = Options()
+    
+    chrome_options = webdriver.ChromeOptions()
+    
+    # Run Chrome in headless mode
+    chrome_options.add_argument("--headless") 
+    # Disable the GPU 
+    chrome_options.add_argument("--disable-gpu")
+    # Disable the sandbox
+    chrome_options.add_argument("--no-sandbox")
+    # Disable the DevShmUsage
+    chrome_options.add_argument("--disable-dev-shm-usage")
+
+    # Install and Initialize WebDriver using webdriver_manager (This will not require pre-downloading the chrome driver)
+    driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()), options=chrome_options)
+
+    # chromedriver_autoinstaller.install()
+
+    # driver = webdriver.Chrome(options=chrome_options)
+
+    print("driver initialized")
+    
     try:
         driver.get(url)
 
@@ -39,9 +69,9 @@ def capture_full_page_screenshot(url, screenshotFile):
             screenshot = driver.get_screenshot_as_png()
             screenshots.append(Image.open(io.BytesIO(screenshot)))
 
-        # Stitch the screenshots vertically
-        full_page_screenshot = Image.new("RGB", (screenshots[0].width, page_height))
-        y_offset = 0
+            # Stitch the screenshots vertically
+            full_page_screenshot = Image.new("RGB", (screenshots[0].width, page_height))
+            y_offset = 0
 
         for screenshot in screenshots:
             full_page_screenshot.paste(screenshot, (0, y_offset))
@@ -59,3 +89,6 @@ def capture_full_page_screenshot(url, screenshotFile):
 
     finally:
         driver.quit()
+
+    print("|")
+    print("--Code exited the screenshot capture function\n")
