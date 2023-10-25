@@ -19,8 +19,9 @@ def google_search(domain, search_terms, reportFile):
     print("--Code entered the google_search function")
     print("|")
 
-    chrome_options = webdriver.ChromeOptions()
+    # chrome_options = webdriver.ChromeOptions()
     
+    chrome_options = Options()
     # Run Chrome in headless mode
     chrome_options.add_argument("--headless") 
     # Disable the GPU 
@@ -33,8 +34,12 @@ def google_search(domain, search_terms, reportFile):
     # Initialize ChromeDriver with ChromeDriverManager
     # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
-    chromedriver_autoinstaller.install()
+    # chromedriver_autoinstaller.install()
 
+    # driver = webdriver.Chrome(options=chrome_options)
+
+    
+    # Initialize the web driver with Chrome options
     driver = webdriver.Chrome(options=chrome_options)
     
     search_string = " ".join(search_terms)
