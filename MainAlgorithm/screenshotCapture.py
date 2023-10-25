@@ -7,9 +7,15 @@ import io
 import logging
 
 def capture_full_page_screenshot(url, screenshotFile):
-    # Set up Chrome options for headless mode
     chrome_options = Options()
+    # Set up Chrome options for headless mode
     chrome_options.add_argument('--headless')
+    # Disable the GPU 
+    chrome_options.add_argument("--disable-gpu")
+    # Disable the sandbox
+    chrome_options.add_argument("--no-sandbox")
+    # Disable the DevShmUsage
+    chrome_options.add_argument("--disable-dev-shm-usage")
     
     # Initialize the web driver with Chrome options
     driver = webdriver.Chrome(options=chrome_options)
