@@ -28,7 +28,7 @@ from logoSimilarity import detect_logo_similarity
 from domainName_Difference import check_Domain_similarity 
 
 inputCSV_File = os.path.join('..', 'URL_For_Testing', 'merged_URLs.csv')
-screenShotDir = os.path.join('screenshots-10')
+screenShotDir = os.path.join('screenshots')
 faviconDir = os.path.join('favicons-10')
 
 # report = os.path.join('..', 'report-for-100-Phishy-on-200-Logos')
@@ -87,8 +87,8 @@ if __name__ == "__main__":
             # Remove the whitespace from the URL
             url = row[0].strip()
 
-            # url = "https://www.roku.com/intl?next=/&source=www.roku.com"
-            url = "https://www.w3schools.com/howto/howto_website_static.asp"
+            url = "https://www.roku.com/intl?next=/&source=www.roku.com"
+            # url = "https://www.w3schools.com/howto/howto_website_static.asp"
 
             print(url)
 
@@ -153,89 +153,89 @@ if __name__ == "__main__":
             
             # ----------------------------------------  From Screenshot ------------------------------------------ #
 
-            # # Check if the output file exists before running frequent terms extraction
-            # if os.path.isfile(screenshotFile):
+            # Check if the output file exists before running frequent terms extraction
+            if os.path.isfile(screenshotFile):
                     
-            #     # Run frequent terms extraction code if the file exists
-            #     top_terms_from_screenshot = extract_top_terms_from_screenshot(input_domain_name, screenshotFile)
+                # Run frequent terms extraction code if the file exists
+                top_terms_from_screenshot = extract_top_terms_from_screenshot(input_domain_name, screenshotFile)
 
-            #     with open(reportFile, 'a') as file:
-            #         file.write(f"Top 5 most occurring terms from screenshot: {top_terms_from_screenshot}\n")
+                with open(reportFile, 'a') as file:
+                    file.write(f"Top 5 most occurring terms from screenshot: {top_terms_from_screenshot}\n")
             
-            # else:
-            #     top_terms_from_screenshot = [] #Initialize it as an empty list.
-            #     with open(reportFile, 'a') as file:
-            #         file.write(f"Screenshot doesn't exist for so frequent terms not found: {input_domain_name}\n")
+            else:
+                top_terms_from_screenshot = [] #Initialize it as an empty list.
+                with open(reportFile, 'a') as file:
+                    file.write(f"Screenshot doesn't exist for so frequent terms not found: {input_domain_name}\n")
 
             
             # -----------------------------------------  From Source Code ------------------------------------------ #
 
-            # top_terms_from_source_code = get_top_terms_from_website(url)
+            top_terms_from_source_code = get_top_terms_from_website(url)
 
-            # if top_terms_from_source_code is None:
-            #     with open (reportFile, 'a') as file:
-            #         file.write("No terms found, website not working!!\n")
+            if top_terms_from_source_code is None:
+                with open (reportFile, 'a') as file:
+                    file.write("No terms found, website not working!!\n")
             
-            # else:
-            #     with open (reportFile, 'a') as file:
-            #         file.write(f"Top 5 most occurring terms in the website's source code: {top_terms_from_source_code}\n")
+            else:
+                with open (reportFile, 'a') as file:
+                    file.write(f"Top 5 most occurring terms in the website's source code: {top_terms_from_source_code}\n")
 
             
-            # # Final list of the top most occurring terms
-            # # Function to remove None and empty lists
+            # Final list of the top most occurring terms
+            # Function to remove None and empty lists
 
-            # # Filter and combine valid lists
-            # valid_lists = filter_valid_lists([top_terms_from_screenshot, top_terms_from_source_code])
+            # Filter and combine valid lists
+            valid_lists = filter_valid_lists([top_terms_from_screenshot, top_terms_from_source_code])
 
-            # # valid_lists = filter_valid_lists([top_terms_from_source_code])
+            # valid_lists = filter_valid_lists([top_terms_from_source_code])
 
-            # if valid_lists:
-            #     # Concatenate and create a set to remove duplicates
-            #     unique_terms_set = set(item for sublist in valid_lists for item in sublist)
+            if valid_lists:
+                # Concatenate and create a set to remove duplicates
+                unique_terms_set = set(item for sublist in valid_lists for item in sublist)
 
-            #     # Convert the set back to a list
-            #     top_terms = list(unique_terms_set)
+                # Convert the set back to a list
+                top_terms = list(unique_terms_set)
 
-            # else:
-            #     top_terms = []
+            else:
+                top_terms = []
 
-            # with open (reportFile, 'a') as file:
-            #     file.write(f"final list of most occurring terms is: {top_terms}\n")
+            with open (reportFile, 'a') as file:
+                file.write(f"final list of most occurring terms is: {top_terms}\n")
 
 
             # ------------------------------- Searching domain + frequent terms on search engine --------------------------------------- #
 
-            # topDomains = google_search(input_domain_name, top_terms, reportFile)
+            topDomains = google_search(input_domain_name, top_terms, reportFile)
 
-            # # print(f"Top URLs for {input_domain_name}:", topURLs)   
+            # print(f"Top URLs for {input_domain_name}:", topURLs)   
 
-            # unique_domains = set()
+            unique_domains = set()
 
-            # for domain in topDomains:
-            #     # parsed_url = urlsplit(url)
+            for domain in topDomains:
+                # parsed_url = urlsplit(url)
 
-            #     # # Extract the domain name from the netloc component
-            #     # domain_name = parsed_url.netloc
+                # # Extract the domain name from the netloc component
+                # domain_name = parsed_url.netloc
 
-            #     # Remove "www." if present at the beginning
-            #     if domain.startswith("www."):
-            #         domain = domain[4:]
+                # Remove "www." if present at the beginning
+                if domain.startswith("www."):
+                    domain = domain[4:]
                 
-            #     if domain.startswith("http.www."):
-            #         domain = domain[10:]
+                if domain.startswith("http.www."):
+                    domain = domain[10:]
                 
-            #     if domain.startswith("https."):
-            #         domain = domain[6:]
+                if domain.startswith("https."):
+                    domain = domain[6:]
                 
-            #     # Add the domain name to the set
-            #     print(f"after-processing-{domain}")
-            #     unique_domains.add(domain)
+                # Add the domain name to the set
+                print(f"after-processing-{domain}")
+                unique_domains.add(domain)
             
-            # with open(reportFile, 'a') as file:
-            #     file.write(f"Unique domains: {unique_domains}\n")
+            with open(reportFile, 'a') as file:
+                file.write(f"Unique domains: {unique_domains}\n")
 
-            # if unique_domains is None:
-            #     score += 0
+            if unique_domains is None:
+                score += 0
 
             # Check if the input_domain_name is in the list of domains obtained from the search engine
             # if input_domain_name in unique_domains:
@@ -249,24 +249,24 @@ if __name__ == "__main__":
             #         file.write(f"{input_domain_name} is not in the list of unique domains.\n")
 
             # Checking if the input_domain as string is present in any string of the unique_domains list
-            # stringFound = False
+            stringFound = False
 
-            # # Iterate over the unique_domains set
-            # for domain in unique_domains:
-            #     if input_domain_name in domain:
-            #         stringFound = True
-            #         break  # Exit the loop early if a match is found
+            # Iterate over the unique_domains set
+            for domain in unique_domains:
+                if input_domain_name in domain:
+                    stringFound = True
+                    break  # Exit the loop early if a match is found
 
-            # if stringFound:
-            #     # Do something if the input domain is found in the set
-            #     score += 33
-            #     with open(reportFile, 'a') as file:
-            #         file.write(f"{input_domain_name} is in the list of unique domains.\n")
+            if stringFound:
+                # Do something if the input domain is found in the set
+                score += 33
+                with open(reportFile, 'a') as file:
+                    file.write(f"{input_domain_name} is in the list of unique domains.\n")
                 
-            # else:
-            #     score += -33
-            #     with open(reportFile, 'a') as file:
-            #         file.write(f"{input_domain_name} is not in the list of unique domains.\n")
+            else:
+                score += -33
+                with open(reportFile, 'a') as file:
+                    file.write(f"{input_domain_name} is not in the list of unique domains.\n")
 
             
             # ---------------------------------------------------- Favicon scraping ---------------------------------------------------- #
@@ -332,6 +332,9 @@ if __name__ == "__main__":
             #                     file.write(f"Domain Similarity with {logo}: {domainSimilarity}%\n")
             #     else:
             #         score+=0
+
+            
+            # ------------------------------------------------ End of the Algorithm ------------------------------------------ #
 
             end = time.time()
 
