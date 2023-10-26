@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 import time
-import chromedriver_autoinstaller
+# import chromedriver_autoinstaller
 import os
 
 
@@ -41,6 +41,7 @@ def google_search(domain, search_terms, reportFile):
     
     # Initialize the web driver with Chrome options
     driver = webdriver.Chrome(options=chrome_options)
+
     
     search_string = " ".join(search_terms)
 
@@ -64,12 +65,12 @@ def google_search(domain, search_terms, reportFile):
     # Find the search result elements (links)
     search_results = driver.find_elements(By.CSS_SELECTOR, ".tF2Cxc")
 
-    time.sleep(20)
+    # time.sleep(5)
 
-    search_result_screenshot_directory = "search_result_screenshots"
+    # search_result_screenshot_directory = "search_result_screenshots"
 
-    if not os.path.exists(search_result_screenshot_directory):
-        os.makedirs(search_result_screenshot_directory)
+    # if not os.path.exists(search_result_screenshot_directory):
+    #     os.makedirs(search_result_screenshot_directory)
 
     # Extract the top 3 URLs
     top_domains = []
@@ -96,14 +97,14 @@ def google_search(domain, search_terms, reportFile):
 
     url_counter = 1
 
-    for url in top_urls:
-        # Define the screenshot filename based on the URL
-        screenshotFile = os.path.join(search_result_screenshot_directory, f"{url}-search_result_{url_counter}.png")
+    # for url in top_urls:
+    #     # Define the screenshot filename based on the URL
+    #     screenshotFile = os.path.join(search_result_screenshot_directory, f"{url}_search_result.png")
 
-        print(domain)
+    #     print(url)
 
-        # Call the capture_full_page_screenshot function
-        capture_full_page_screenshot(url, screenshotFile)
-        url_counter += 1
+    #     # Call the capture_full_page_screenshot function
+    #     capture_full_page_screenshot(url, screenshotFile)
+    #     url_counter += 1
 
     return top_domains
