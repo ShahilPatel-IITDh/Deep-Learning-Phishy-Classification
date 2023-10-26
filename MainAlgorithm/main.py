@@ -29,11 +29,11 @@ from domainName_Difference import check_Domain_similarity
 
 inputCSV_File = os.path.join('..', 'URL_For_Testing', 'merged_URLs.csv')
 screenShotDir = os.path.join('screenshots')
-faviconDir = os.path.join('favicons-10')
+faviconDir = os.path.join('favicons-1000')
 
 # report = os.path.join('..', 'report-for-100-Phishy-on-200-Logos')
 
-report = os.path.join('..', 'report-for-testing-10-Logos')
+report = os.path.join('..', 'report-for-testing-on-1000-Logos')
 
 # Create the directory if it doesn't exist
 if not os.path.exists(screenShotDir):
@@ -81,13 +81,13 @@ if __name__ == "__main__":
             
             counter += 1
 
-            if counter == 2:
-                break
+            # if counter == 2:
+            #     break
 
             # Remove the whitespace from the URL
             url = row[0].strip()
 
-            url = "https://www.roku.com/intl?next=/&source=www.roku.com"
+            # url = "https://www.roku.com/intl?next=/&source=www.roku.com"
             # url = "https://www.w3schools.com/howto/howto_website_static.asp"
 
             print(url)
@@ -125,28 +125,28 @@ if __name__ == "__main__":
             # ---------------------------------------------------- UI detection ---------------------------------------------------- # 
 
             # Check if the output file exists before running UI detection
-            # if os.path.isfile(screenshotFile):
+            if os.path.isfile(screenshotFile):
                 
-            #     # Run UI detection code if the file exists
-            #     result = detect_input_box(screenshotFile)
+                # Run UI detection code if the file exists
+                result = detect_input_box(screenshotFile)
 
-            #     if result == -1:
-            #         score += -33
-            #         foundInputBox += 1
-            #         with open (reportFile, 'w') as file:
-            #             file.write(f"Input box detected in screenshot\n")
+                if result == -1:
+                    score += -33
+                    foundInputBox += 1
+                    with open (reportFile, 'w') as file:
+                        file.write(f"Input box detected in screenshot\n")
 
-            #     else:
-            #         score += 33
-            #         notFoundInputBox += 1
-            #         with open (reportFile, 'w') as file:
-            #             file.write(f"Input box not detected in screenshot\n")
+                else:
+                    score += 33
+                    notFoundInputBox += 1
+                    with open (reportFile, 'w') as file:
+                        file.write(f"Input box not detected in screenshot\n")
             
-            # else:
-            #     score += 0
-            #     screenshotNotPresent += 1
-            #     with open (reportFile, 'w') as file:
-            #         file.write(f"screenshot doesn't exist.\n")
+            else:
+                score += 0
+                screenshotNotPresent += 1
+                with open (reportFile, 'w') as file:
+                    file.write(f"screenshot doesn't exist.\n")
 
             
             # ---------------------------------------------------- Frequent terms extraction ------------------------------------------- #
@@ -271,67 +271,67 @@ if __name__ == "__main__":
             
             # ---------------------------------------------------- Favicon scraping ---------------------------------------------------- #
             
-            # logoFile = os.path.join(faviconDir, f"{input_domain_name}")
+            logoFile = os.path.join(faviconDir, f"{input_domain_name}")
 
-            # # print(f"logoFile will be {logoFile}")
+            # print(f"logoFile will be {logoFile}")
 
-            # scrape_favicon(url, logoFile, input_domain_name)
+            scrape_favicon(url, logoFile, input_domain_name)
 
-            # extensions = ['.ico', '.png', '.jpeg', '.jpg', '.svg']
+            extensions = ['.ico', '.png', '.jpeg', '.jpg', '.svg']
 
-            # for ext in extensions:
-            #     if os.path.isfile(logoFile+ext):
-            #         faviconsFound += 1
-            #         with open(reportFile, 'a') as file:
-            #             file.write(f"Favicon found\n")
-            #         break
+            for ext in extensions:
+                if os.path.isfile(logoFile+ext):
+                    faviconsFound += 1
+                    with open(reportFile, 'a') as file:
+                        file.write(f"Favicon found\n")
+                    break
                 
-            #     else:
-            #         faviconsNotFound += 1
-            #         with open(reportFile, 'a') as file:
-            #             file.write(f"Favicon not found\n")
+                else:
+                    faviconsNotFound += 1
+                    with open(reportFile, 'a') as file:
+                        file.write(f"Favicon not found\n")
 
-            # logoDatabase = os.path.join('..', 'Logos-10')
+            logoDatabase = os.path.join('..', 'Logos-10')
 
             # ------------------------------------------------ Logo similarity detection ------------------------------------------ #
 
-            # time.sleep(2)
-            # print(f"Logo file: {logoFile}")
+            time.sleep(2)
+            print(f"Logo file: {logoFile}")
 
-            # # Check if the logo file exists before running logo similarity detection
-            # for ext in extensions:
+            # Check if the logo file exists before running logo similarity detection
+            for ext in extensions:
 
-            #     if os.path.isfile(logoFile+ext):
+                if os.path.isfile(logoFile+ext):
 
-            #         print(f"Testing for {logoFile+ext}")
+                    print(f"Testing for {logoFile+ext}")
                     
-            #         # Run logo similarity detection code if the file exists
-            #         similarLogos = detect_logo_similarity(input_domain_name, logoFile+ext, logoDatabase, reportFile)
+                    # Run logo similarity detection code if the file exists
+                    similarLogos = detect_logo_similarity(input_domain_name, logoFile+ext, logoDatabase, reportFile)
 
-            #         if not similarLogos:  # Check if the dictionary is empty
-            #             print("Logo similarity not detected.")
-            #             score += 0
-            #             with open (reportFile, 'a') as file:
-            #                 file.write(f"Logo similarity not detected.\n")
+                    if not similarLogos:  # Check if the dictionary is empty
+                        print("Logo similarity not detected.")
+                        score += 0
+                        with open (reportFile, 'a') as file:
+                            file.write(f"Logo similarity not detected.\n")
 
-            #         else:
+                    else:
 
-            #             # As the similarity is detected, we will now check if the domains are same or not, if not then it will add negative score, else positive score
-            #             print("Logo similarity detected:")
-            #             for logo, mse in similarLogos.items():                            
-            #                 # Check the difference in the input domain name and the logo name (limited to 3 decimal places)
-            #                 domainSimilarity = round(check_Domain_similarity(input_domain_name, logo), 3)
+                        # As the similarity is detected, we will now check if the domains are same or not, if not then it will add negative score, else positive score
+                        print("Logo similarity detected:")
+                        for logo, mse in similarLogos.items():                            
+                            # Check the difference in the input domain name and the logo name (limited to 3 decimal places)
+                            domainSimilarity = round(check_Domain_similarity(input_domain_name, logo), 3)
 
-            #                 if domainSimilarity < 0.60:
-            #                     score += -34
+                            if domainSimilarity < 0.60:
+                                score += -34
                             
-            #                 else:
-            #                     score += 34
+                            else:
+                                score += 34
 
-            #                 with open(reportFile, 'a') as file:
-            #                     file.write(f"Domain Similarity with {logo}: {domainSimilarity}%\n")
-            #     else:
-            #         score+=0
+                            with open(reportFile, 'a') as file:
+                                file.write(f"Domain Similarity with {logo}: {domainSimilarity}%\n")
+                else:
+                    score+=0
 
             
             # ------------------------------------------------ End of the Algorithm ------------------------------------------ #
