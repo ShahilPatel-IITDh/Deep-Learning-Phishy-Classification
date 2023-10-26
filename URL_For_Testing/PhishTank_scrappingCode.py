@@ -20,19 +20,21 @@ if not os.path.isfile(csvFile):
         # Write the header of the CSV file
         writer.writerow(["URL"])
 
-# Set up Chrome options
 chrome_options = Options()
-# Run Chrome in headless mode
-chrome_options.add_argument("--headless") 
+# Set up Chrome options for headless mode
+chrome_options.add_argument('--headless')
 # Disable the GPU 
-chrome_options.add_argument("--disable-gpu")
+# chrome_options.add_argument("--disable-gpu")
 # Disable the sandbox
-chrome_options.add_argument("--no-sandbox")
+# chrome_options.add_argument("--no-sandbox")
 # Disable the DevShmUsage
-chrome_options.add_argument("--disable-dev-shm-usage")
+# chrome_options.add_argument("--disable-dev-shm-usage")
+    
+# Initialize the web driver with Chrome options
+driver = webdriver.Chrome(options=chrome_options)
 
 # Install and Initialize WebDriver using webdriver_manager (This will not require to pre-download the chrome driver)
-driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()), options=chrome_options)
+# driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()), options=chrome_options)
 driver.maximize_window()
 
 # Loop through all the pages
