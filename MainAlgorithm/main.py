@@ -57,8 +57,6 @@ faviconsNotFound = 0
 # 2. Logo Similarity: 34
 # 3. Domain Name dissimilarity from search engine and input domain : 33
 
-score = 0
-
 def filter_valid_lists(lists):
     return [lst for lst in lists if lst is not None and len(lst) > 0]
 
@@ -76,6 +74,7 @@ if __name__ == "__main__":
         for row in reader:
 
             # get time taken to process each URL (end-to-end)
+            score = 0
 
             start = time.time()
             
@@ -248,25 +247,26 @@ if __name__ == "__main__":
             #     with open(reportFile, 'a') as file:
             #         file.write(f"{input_domain_name} is not in the list of unique domains.\n")
 
-            # Checking if the input_domain as string is present in any string of the unique_domains list
-            stringFound = False
-
-            # Iterate over the unique_domains set
-            for domain in unique_domains:
-                if input_domain_name in domain:
-                    stringFound = True
-                    break  # Exit the loop early if a match is found
-
-            if stringFound:
-                # Do something if the input domain is found in the set
-                score += 33
-                with open(reportFile, 'a') as file:
-                    file.write(f"{input_domain_name} is in the list of unique domains.\n")
-                
             else:
-                score += -33
-                with open(reportFile, 'a') as file:
-                    file.write(f"{input_domain_name} is not in the list of unique domains.\n")
+                # Checking if the input_domain as string is present in any string of the unique_domains list
+                stringFound = False
+
+                # Iterate over the unique_domains set
+                for domain in unique_domains:
+                    if input_domain_name in domain:
+                        stringFound = True
+                        break  # Exit the loop early if a match is found
+
+                if stringFound:
+                    # Do something if the input domain is found in the set
+                    score += 33
+                    with open(reportFile, 'a') as file:
+                        file.write(f"{input_domain_name} is in the list of unique domains.\n")
+                    
+                else:
+                    score += -33
+                    with open(reportFile, 'a') as file:
+                        file.write(f"{input_domain_name} is not in the list of unique domains.\n")
 
             
             # ---------------------------------------------------- Favicon scraping ---------------------------------------------------- #
@@ -291,7 +291,7 @@ if __name__ == "__main__":
                     with open(reportFile, 'a') as file:
                         file.write(f"Favicon not found\n")
 
-            logoDatabase = os.path.join('..', 'Logos-10')
+            logoDatabase = os.path.join('..', 'Top_Logos_1000')
 
             # ------------------------------------------------ Logo similarity detection ------------------------------------------ #
 
