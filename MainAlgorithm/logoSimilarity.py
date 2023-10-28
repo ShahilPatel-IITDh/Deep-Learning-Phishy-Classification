@@ -4,12 +4,9 @@ import cv2
 import numpy as np
 import os
 import skimage
-from skimage import io, color, img_as_ubyte
-from skimage.metrics import structural_similarity as compare_ssim
-
+from skimage import io, color, img_as_ubyte, transform
+from skimage.metrics import structural_similarity as ssim
 import tensorflow as tf
-import numpy as np
-from PIL import Image
 
 def resizeImages(img1, img2):
     # Resize the input images to the lowest resolution
@@ -37,7 +34,7 @@ def preprocess_image(image_path):
     return img
 
 
-def CNN_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
+def structural_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
 
     """
     Calculate image similarity using a Siamese CNN model based on VGG19 architecture.
@@ -68,43 +65,72 @@ def CNN_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
 
     # Pre-trained models (ResNet-50, ResNet-101, ResNet-152; VGG-16/19;  InceptionV3, InceptionResNetV2; DenseNet-121, DenseNet-169, )
     # base_model = tf.keras.applications.ResNet50(weights='imagenet', include_top=False)
-    base_model = tf.keras.applications.VGG19(weights='imagenet', include_top=False)
+    # base_model = tf.keras.applications.VGG19(weights='imagenet', include_top=False)
 
-    # Define input layers for the two images
-    input_a = tf.keras.layers.Input(shape=(85, 85, 3))
-    input_b = tf.keras.layers.Input(shape=(85, 85, 3))
+    # base_model = tf.keras.applications.ResNet101V2(weights='imagenet', include_top=False)
 
-    # Use the same base model for both inputs
-    embedding_a = base_model(input_a)
-    embedding_b = base_model(input_b)
 
-    # Compute L2 distance between the two embeddings
-    distance = tf.keras.layers.Lambda(lambda embeddings: tf.norm(embeddings[0] - embeddings[1], ord='euclidean', axis=1), 
-                      output_shape=(1,))(inputs=[embedding_a, embedding_b])
+    # img1 = preprocess_image(image_path1)
+    # img2 = preprocess_image(image_path2)
 
-    # Create a model that takes two input images and calculates the distance
-    siamese_model = tf.keras.models.Model(inputs=[input_a, input_b], outputs=distance)
+    # # Get feature vectors from the base model
+    # features1 = base_model.predict(img1)
+    # features2 = base_model.predict(img2)
 
-    # Load and preprocess the two images
-    img1 = preprocess_image(image_path1)
-    img2 = preprocess_image(image_path2)
+    # # Reshape the feature vectors
+    # features1 = features1.reshape(features1.shape[0], -1)
+    # features2 = features2.reshape(features2.shape[0], -1)
 
-    # Calculate the distance (difference) between the two images
-    difference = siamese_model.predict([img1, img2])
+    # # Normalize the feature vectors
+    # features1 /= np.linalg.norm(features1, axis=1)[:, np.newaxis]
+    # features2 /= np.linalg.norm(features2, axis=1)[:, np.newaxis]
 
-    if difference.size == 1:
-        similarity_percentage = difference.item()
+    # # Calculate the similarity score (cosine similarity)
+    # similarity = np.dot(features1, features2.T)
 
-    else:
-        # Handle the case where difference contains multiple similarity values
-        average_difference = difference.mean()  # Calculate the average similarity
-        similarity_percentage = (1 - average_difference) * 100
+    # # Scale the similarity score to the 0-100 range
+    # similarity_percent = (similarity + 1) * 50
 
-    if similarity_percentage >= 75:
+    # # Ensure the score is within the 0-100 range
+    # similarity_percent = max(0, min(similarity_percent, 100))
+
+    #  # Convert to integer
+    # similarity_percent = int(similarity_percent)
+
+    # if similarity_percent >= 96:
+    #     with open (reportFile, 'a') as f:
+    #         f.write(f"similarity score with {image2_ICO_path} according to CNN (architecture-VGG19): {similarity_percent:.2f}\n")
+
+    # return similarity_percent
+
+    # Load the images
+    image1 = io.imread(image_path1)
+    image2 = io.imread(image_path2)
+
+    # Convert images to grayscale if they are not already
+    if image1.shape[-1] > 1:
+        image1 = color.rgb2gray(image1)
+    if image2.shape[-1] > 1:
+        image2 = color.rgb2gray(image2)
+
+    # Resize the images to the same shape (e.g., 224x224)
+    # You can choose your desired target size
+    target_shape = (224, 224)
+    image1 = transform.resize(image1, target_shape)
+    image2 = transform.resize(image2, target_shape)
+
+    # Ensure pixel values are in the range [0, 1]
+    image1 = image1 / image1.max()
+    image2 = image2 / image2.max()
+
+    # Calculate SSIM between the two images
+    similarity = ssim(image1, image2, data_range=1.0)
+
+    if similarity >= 75:
         with open (reportFile, 'a') as f:
-            f.write(f"similarity score with {image2_ICO_path} according to CNN (architecture-VGG19): {similarity_percentage:.2f}\n")
+            f.write(f"similarity score with {image2_ICO_path} according to CNN (architecture-VGG19): {similarity:.2f}\n")
 
-    return similarity_percentage
+    return similarity*100
 
 # ------------------------------------- This Function is the entry point of this module ------------------------------------- #
 
@@ -113,16 +139,19 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
     print(f"The Logo file in detect_logo_similarity is {logoFile}")
     similar_logos = {}  # Dictionary to store similar logos
 
-    os.makedirs("input_PNGs-10", exist_ok=True)
-    os.makedirs("Database_PNGs-10", exist_ok=True)
+    os.makedirs("input_PNGs-1000", exist_ok=True)
+    os.makedirs("Database_PNGs-1000", exist_ok=True)
 
     try:
         #  Convert the logoFile to a valid image
-        image1_ICO = Image.open(logoFile)
+        with Image.open(logoFile) as img:
+            # Convert to RGB mode (required for saving as PNG)
+            img = img.convert("RGB")
 
-        # Convert the .ico image to another format (e.g., .png)
-        image1_PNG_path = f"input_PNGs-10/{input_domain_name}.png"
-        image1_ICO.convert('RGB').save(image1_PNG_path, format='PNG')
+            image1_PNG_path = f"input_PNGs-1000/{input_domain_name}.png"
+
+            # Save the image as a PNG file
+            img.save(image1_PNG_path, 'PNG')
         
     except Exception as e:
         print(f"Skipping {input_domain_name} due to {e}.")
@@ -130,10 +159,12 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
 
     # Ensure the folder path exists
     if not os.path.exists(logoDatabase) or not os.path.isdir(logoDatabase):
+        print("LogoDatabase folder does not exist.")
         return {}
     
     # Load the input image
     for filename in os.listdir(logoDatabase):
+        print(f"Processing {filename} in Logo Database...")
         image2_ICO_path = os.path.join(logoDatabase, filename)
         
         try:
@@ -141,26 +172,36 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
             image2_ICO = Image.open(image2_ICO_path)
 
             # Convert the .ico image to another format (e.g., .png)
-            image2_PNG_path = f'Database_PNGs-10/{filename}.png'  # Use a different path for each image
+            image2_PNG_path = f'Database_PNGs-1000/{filename}.png'  # Use a different path for each image
             
             if os.path.isfile(image2_PNG_path):
+                # If the image has already been converted, then check it's similarrity with the input image
+
+                # Call the similarity functions 
+                """ 1. CNNs ()"""
+
+                similarity = structural_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
+
+                if similarity is not None and similarity >= 75:
+                    similar_logos[filename] = similarity  # Store the filename and similarity score in the dictionary
+
                 continue
             
             else:
                 image2_ICO.convert('RGB').save(image2_PNG_path, format='PNG')
+                
+                # Convert the image and then feed the image to the image similarity functions
+                # Call the similarity functions 
+                """ 1. CNNs ()"""
+
+                similarity = structural_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
+
+                if similarity is not None and similarity >= 96:
+                    similar_logos[filename] = similarity  # Store the filename and similarity score in the dictionary
+                    
 
         except Exception as e:
             print(f"Skipping {filename} due to {e}.")
             continue  # Skip this image
-    
-
-        # Call the similarity functions 
-        """ 1. CNNs ()"""
-
-        similarity = CNN_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
-
-
-        if similarity is not None and similarity >= 75:
-            similar_logos[filename] = similarity  # Store the filename and similarity score in the dictionary
 
     return similar_logos
