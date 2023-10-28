@@ -20,6 +20,9 @@ def capture_full_page_screenshot(url, screenshotFile):
     # Initialize the web driver with Chrome options
     driver = webdriver.Chrome(options=chrome_options)
 
+    print("--code entered the screenshot capture function")
+    print("|")
+
     try:
         driver.get(url)
 
@@ -65,3 +68,7 @@ def capture_full_page_screenshot(url, screenshotFile):
 
     finally:
         driver.quit()
+    
+
+    print("|")
+    print("--Code exited the screenshot capture function\n")
