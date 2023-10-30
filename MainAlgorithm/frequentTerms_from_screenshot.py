@@ -1,3 +1,45 @@
+"""
+Top Terms Extraction from Screenshot Documentation
+
+This Python code is used to extract the top terms (words) from a screenshot of a webpage or document.
+The code preprocesses the image, extracts text using Tesseract OCR, tokenizes the text, filters out stopwords,
+and returns the top 5 most common terms in the extracted text.
+
+Usage:
+To use this script, call the 'extract_top_terms_from_screenshot' function with the following parameters:
+- domain_name: The domain name associated with the screenshot (optional).
+- screenshot_path: The file path of the screenshot image.
+
+Example:
+top_terms = extract_top_terms_from_screenshot("example.com", "screenshot.png")
+
+Dependencies:
+- Python 3.x
+- The 'pytesseract' library for optical character recognition.
+- The 'PIL' (Pillow) library for image processing.
+- The 'cv2' (OpenCV) library for image manipulation.
+- The 'numpy' library for numerical operations.
+- The 'collections' library for counting word occurrences.
+- The 're' module for regular expression matching.
+
+Functions:
+1. preprocess_image(image_path)
+    - image_path: The path of the image to be preprocessed.
+    - Returns: A preprocessed PIL image with enhanced text.
+
+2. extract_top_terms_from_screenshot(domain_name, screenshot_path)
+    - domain_name: The domain name associated with the screenshot (optional).
+    - screenshot_path: The file path of the screenshot image.
+    - Returns: A list of the top 5 most common terms (words) in the screenshot.
+
+The code performs several image processing steps, OCR text extraction, and term analysis to identify the most common terms
+in the screenshot text. The results are returned as a list of top terms.
+
+Note:
+- Ensure that the required libraries are installed before using this script.
+- The 'stopwords' list can be customized to include or exclude specific words that you want to filter out from the text.
+"""
+
 import pytesseract
 from PIL import Image
 import cv2
@@ -10,6 +52,15 @@ stopwords = ["a", "an", "the", "me", "you", "we", "they", "it", "he", "she", "is
 
 
 def preprocess_image(image_path):
+    
+    """
+    Preprocess the input image for text extraction.
+
+    :param image_path: The path of the image to be preprocessed.
+    
+    :return: A preprocessed PIL image with enhanced text.
+    """
+
     # Open the image using OpenCV
     img = cv2.imread(image_path)
 
@@ -28,6 +79,15 @@ def preprocess_image(image_path):
     return processed_image
 
 def extract_top_terms_from_screenshot(domain_name, screenshot_path):
+
+    """
+    Extract the top 5 terms from a screenshot using OCR and text analysis.
+
+    :param domain_name: The domain name associated with the screenshot (optional).
+    :param screenshot_path: The file path of the screenshot image.
+
+    :return: A list of the top 5 most common terms (words) in the screenshot.
+    """
 
     print("--Code entered the extract_top_terms_from_screenshot function")
     print("|")

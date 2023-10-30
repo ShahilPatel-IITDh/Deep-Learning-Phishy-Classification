@@ -1,3 +1,37 @@
+"""
+Top Terms Extraction from Website Documentation
+
+This Python code is used to extract the top terms (words) from the text content of a website. It sends a GET request to
+the specified URL, retrieves the web page's HTML content, and extracts text, excluding HTML tags. The extracted text is then
+tokenized into words, filtered to remove stopwords, and the most common terms are identified and returned.
+
+Usage:
+To use this script, call the 'get_top_terms_from_website' function with the following parameter:
+- url: The URL of the website from which you want to extract top terms.
+
+Example:
+top_terms = get_top_terms_from_website("https://example.com")
+
+Dependencies:
+- Python 3.x
+- The 'requests' library for sending HTTP requests.
+- The 'BeautifulSoup' library for parsing HTML content.
+- The 'collections' library for counting word occurrences.
+- The 're' module for regular expression matching.
+
+Functions:
+1. get_top_terms_from_website(url)
+    - url: The URL of the website to extract top terms from.
+    - Returns: A list of the top 5 most common terms (words) in the website's text content.
+
+The code sends a GET request to the specified URL, extracts text from the HTML content, tokenizes it, removes stopwords,
+counts word occurrences, and identifies the top terms. The results are returned as a list of the top terms.
+
+Note:
+- Ensure that the required libraries are installed before using this script.
+- The 'stopwords' list can be customized to include or exclude specific words that you want to filter out from the text.
+"""
+
 import requests
 from bs4 import BeautifulSoup
 from collections import Counter
@@ -7,6 +41,14 @@ import re
 stopwords = ["a", "an", "the", "me", "you", "we", "they", "it", "he", "she", "is", "am", "are", "was", "were", "his", "her", "your", "and", "also", "or", "not", "ours", "our", "their", "this", "that", "these", "mine", "in", "on", "at", "by", "for", "with", "about", "as", "if", "of", "from", "to", "up", "down", "under", "over", "between", "through", "after", "before", "while", "throughout", "since", "during", "until", "unless", "although", "because", "unless", "without", "throughout", "above", "below", "inside", "outside", "between", "among", "around", "before", "after", "along", "beside", "beneath", "across", "against", "toward", "besides", "into", "onto", "underneath", "upon", "within", "beyond", "inside", "outside", "near", "around"]
 
 def get_top_terms_from_website(url):
+
+    """
+    Extract the top 5 terms from the text content of a website.
+
+    :param url: The URL of the website to extract top terms from.
+
+    :return: A list of the top 5 most common terms (words) in the website's text content.
+    """
 
     print("--Code entered the get_top_terms_from_website function")
     print("|")

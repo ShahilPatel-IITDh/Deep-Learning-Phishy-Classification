@@ -8,30 +8,30 @@ from skimage import io, color, img_as_ubyte, transform
 from skimage.metrics import structural_similarity as ssim
 import tensorflow as tf
 
-def resizeImages(img1, img2):
-    # Resize the input images to the lowest resolution
-    min_height = min(img1.shape[0], img2.shape[0])
-    min_width = min(img1.shape[1], img2.shape[1])
+# def resizeImages(img1, img2):
+#     # Resize the input images to the lowest resolution
+#     min_height = min(img1.shape[0], img2.shape[0])
+#     min_width = min(img1.shape[1], img2.shape[1])
 
-    img1 = cv2.resize(img1, (min_width, min_height))
-    img2 = cv2.resize(img2, (min_width, min_height))
+#     img1 = cv2.resize(img1, (min_width, min_height))
+#     img2 = cv2.resize(img2, (min_width, min_height))
 
-    return img1, img2
+#     return img1, img2
 
-def preprocess_image(image_path):
-    # Load the image, convert to RGB, and resize to (224, 224)
-    img = Image.open(image_path)
-    img = img.convert('RGB')
-    img = img.resize((85, 85))
+# def preprocess_image(image_path):
+#     # Load the image, convert to RGB, and resize to (224, 224)
+#     img = Image.open(image_path)
+#     img = img.convert('RGB')
+#     img = img.resize((85, 85))
 
-    # Convert to a NumPy array and preprocess for ResNet-50
-    img = tf.keras.preprocessing.image.img_to_array(img)
-    img = tf.keras.applications.resnet50.preprocess_input(img)
+#     # Convert to a NumPy array and preprocess for ResNet-50
+#     img = tf.keras.preprocessing.image.img_to_array(img)
+#     img = tf.keras.applications.resnet50.preprocess_input(img)
     
-    # Expand dimensions to match the shape (1, 224, 224, 3)
-    img = np.expand_dims(img, axis=0)
+#     # Expand dimensions to match the shape (1, 224, 224, 3)
+#     img = np.expand_dims(img, axis=0)
 
-    return img
+#     return img
 
 
 def structural_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
@@ -102,6 +102,31 @@ def structural_similarity(image_path1, image_path2, reportFile, image2_ICO_path)
     #         f.write(f"similarity score with {image2_ICO_path} according to CNN (architecture-VGG19): {similarity_percent:.2f}\n")
 
     # return similarity_percent
+
+    # ------------------------------------- Structural Similarity detection  ------------------------------------- #
+
+    """
+    This code is used to calculate the structural similarity between two images. It follows a series of steps
+    to preprocess and compare two images. The primary goal is to check whether the images are similar based on
+    the Structural Similarity Index (SSIM).
+
+    Usage:
+    1. Load the images from specified file paths.
+    2. Convert the images to grayscale if they are not already.
+    3. Resize both images to a target shape (default is 224x224).
+    4. Normalize the pixel values of the images to be in the range [0, 1].
+    5. Calculate the SSIM (Structural Similarity Index) between the two images.
+    6. If the similarity is greater than or equal to 75, it is written in the report.
+
+    Parameters:
+    - `image_path1`: File path to the first image.
+    - `image_path2`: File path to the second image.
+    - `reportFile`: File to write the similarity report.
+    - `image2_ICO_path`: Path to the second image for reporting purposes.
+
+    Returns:
+    - `similarity_percent`: The similarity score as a percentage.
+    """
 
     # Load the images
     image1 = io.imread(image_path1)

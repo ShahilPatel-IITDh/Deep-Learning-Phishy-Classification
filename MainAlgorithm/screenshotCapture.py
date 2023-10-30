@@ -1,3 +1,34 @@
+"""
+Full Page Screenshot Capture Function Documentation
+
+This Python code defines a function for capturing a full-page screenshot of a web page using Selenium and Chrome. It operates in headless mode, meaning it runs in the background without a visible browser window. The captured screenshot is stitched together from multiple viewport screenshots to create a full-page image.
+
+Usage:
+1. Import this function into your Python script.
+2. Provide the URL of the web page you want to capture and the path where you want to save the screenshot.
+3. Call the function `capture_full_page_screenshot(url, screenshotFile)`.
+
+Dependencies:
+- Python 3.x
+- The 'selenium' library for web automation.
+- The 'PIL' (Python Imaging Library) library for working with images.
+- The 'time' module for timing and delays.
+- The 'logging' module for error logging.
+
+Function:
+capture_full_page_screenshot(url, screenshotFile)
+- Captures a full-page screenshot of a web page.
+- Parameters:
+  - url: The URL of the web page to be captured.
+  - screenshotFile: The file path where the full-page screenshot will be saved.
+- The function uses a headless Chrome browser with specific options to load the web page and capture screenshots of each viewport.
+- It handles exceptions, including 'WebDriverException' and generic exceptions, by logging them.
+- Finally, it quits the browser instance.
+- The resulting full-page screenshot is saved as an image.
+
+This documentation provides information about how to use the `capture_full_page_screenshot` function to capture full-page screenshots of web pages. It also specifies the function's dependencies and usage instructions, ensuring that users can utilize it effectively for web scraping or testing tasks.
+"""
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from PIL import Image

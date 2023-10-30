@@ -1,3 +1,47 @@
+"""
+Favicon Scraper Documentation
+
+This Python code is a script that scrapes and downloads a website's favicon (shortcut icon) from the given URL.
+The favicon is typically a small image that represents a website and is displayed in a web browser's address bar,
+tabs, and bookmarks. The script attempts to locate and download the favicon from various possible sources, including
+HTML metadata and common default paths.
+
+Usage:
+To use this script, call the 'scrape_favicon' function with the following parameters:
+- URL: The URL of the website from which the favicon is to be scraped.
+- faviconFile: The file path where the downloaded favicon will be saved.
+- domain: The domain name of the website.
+
+Example:
+scrape_favicon("https://example.com", "example_favicon", "example.com")
+
+Dependencies:
+- Python 3.x
+- The 'os' module
+- The 'requests' library for making HTTP requests.
+- The 'BeautifulSoup' library for parsing HTML content.
+- The 'urllib.parse' module for URL parsing.
+- Logging functionality for error handling.
+
+Functions:
+1. scrape_favicon(URL, faviconFile, domain)
+    - URL: The URL of the website from which to scrape the favicon.
+    - faviconFile: The path where the downloaded favicon will be saved.
+    - domain: The domain name of the website.
+    - Returns: True if the favicon was successfully downloaded, otherwise False.
+
+The script fetches the web page content, parses it to locate the favicon URL in the HTML metadata (rel='icon'; 'apple-touch-icon'; 'shortcut icon'; 'mask-icon'; 'fluid-icon'; 'manifest'; 'yandex-tableau-widget'; 'apple-touch-startup-image'; 'apple-touch-icon-precomposed'; 'ICON'; 'SHORTCUT ICON'; 'APPLE-TOUCH-ICON'; 'MANIFEST'; 'MASK-ICON'),
+downloads the favicon, and saves it to the specified file. If the favicon is not found in the HTML metadata, it attempts
+to download it from common default locations like "/favicon.ico".
+
+Additionally, if the file extension of the domain name does not match any of the allowed favicon formats (e.g., .png, .ico),
+it defaults to .ico format.
+
+Note:
+- Ensure that the required libraries are installed before using this script.
+- Logging is used for error handling and can be configured using the 'logging' library settings.
+"""
+
 import os
 import requests
 from bs4 import BeautifulSoup
@@ -12,6 +56,16 @@ logging.basicConfig(filename='faviconErrors.log', level=logging.ERROR)
 allowed_formats = ['.png', '.ico', '.jpeg', '.jpg', '.svg']
 
 def scrape_favicon(URL, faviconFile, domain):
+
+    """
+    Scrape the favicon from a given website URL and save it to a file.
+
+    :param URL: The URL of the website to scrape the favicon from.
+    :param faviconFile: The file path where the downloaded favicon will be saved.
+    :param domain: The domain name of the website.
+
+    :return: True if the favicon was successfully downloaded, otherwise False.
+    """
 
     print("--Code entered the scrape_favicon function")
     print("|")
