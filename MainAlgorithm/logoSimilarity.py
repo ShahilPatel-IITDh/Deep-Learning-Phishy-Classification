@@ -153,7 +153,7 @@ def structural_similarity(image_path1, image_path2, reportFile, image2_ICO_path)
 
     if similarity >= 75:
         with open (reportFile, 'a') as f:
-            f.write(f"similarity score with {image2_ICO_path} according to CNN (architecture-VGG19): {similarity:.2f}\n")
+            f.write(f"similarity score with {image2_ICO_path} according to SSIM: {similarity:.2f}\n")
 
     return similarity*100
 
