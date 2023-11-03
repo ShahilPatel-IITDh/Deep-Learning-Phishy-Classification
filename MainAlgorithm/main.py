@@ -2,6 +2,7 @@ import os
 import csv
 import time
 from urllib.parse import urlsplit
+import re
 
 # Import the screenshotCapture function from screenshotCapture.py which will be used to capture the full-page screenshot
 from screenshotCapture import capture_full_page_screenshot
@@ -27,9 +28,9 @@ from logoSimilarity import detect_logo_similarity
 # Import the module which checks the difference between the input domain name and the domain name of the website
 from domainName_Difference import check_Domain_similarity 
 
-inputCSV_File = os.path.join('..', 'URL_For_Testing', 'merged_URLs.csv')
-screenShotDir = os.path.join('screenshots-test')
-faviconDir = os.path.join('favicons-1000-test')
+# inputCSV_File = os.path.join('..', 'URL_For_Testing', 'merged_URLs.csv')
+screenShotDir = os.path.join('screenshots')
+faviconDir = os.path.join('favicons-1000')
 
 # report = os.path.join('..', 'report-for-100-Phishy-on-200-Logos')
 
@@ -52,6 +53,18 @@ counter = 0
 # 2. Logo Similarity: 34
 # 3. Domain Name dissimilarity from search engine and input domain : 33
 
+def domainExtractor(url):
+    # Define a regular expression pattern to match common URLs
+    url_pattern = r'(https?://)?(www\d?\.)?(?P<domain>[\w-]+)\.(?P<tld>[\w.]+)'
+    
+    match = re.match(url_pattern, url)
+    
+    if match:
+        domain = match.group('domain')
+        return domain
+    else:
+        return url  # Return the original URL if the pattern doesn't match
+
 def filter_valid_lists(lists):
     return [lst for lst in lists if lst is not None and len(lst) > 0]
 
@@ -62,21 +75,8 @@ def process_url(url, score):
     print(f"URL to be processed is: {url}")
 
     # ---------------------------------------------------- Domain name extraction --------------------------------------------- #
-
-    parsed_url = urlsplit(url)
-
     # Extract the domain name from the netloc component
-    input_domain_name = parsed_url.netloc
-
-    # Remove "www." if present at the beginning
-    if input_domain_name.startswith("www."):
-        input_domain_name = input_domain_name[4:]
-            
-    if input_domain_name.startswith("http.www."):
-        input_domain_name = input_domain_name[10:]
-            
-    if input_domain_name.startswith("https."):
-        input_domain_name = input_domain_name[6:]
+    input_domain_name = domainExtractor(url)
 
     print("Input Domain Name: ", input_domain_name)
             
@@ -100,19 +100,19 @@ def process_url(url, score):
         result = detect_input_box(screenshotFile)
 
         if result == -1:
-            score += -30
+            score += -18
             with open (reportFile, 'w') as file:
-                file.write(f"Input box detected in screenshot\n")
+                file.write(f"Input box detected in screenshot: {score}\n")
 
         else:
-            score += 30
+            score += 18
             with open (reportFile, 'w') as file:
-                file.write(f"Input box not detected in screenshot\n")
+                file.write(f"Input box not detected in screenshot: {score}\n")
             
     else:
-        score += -30
+        score += -18
         with open (reportFile, 'w') as file:
-            file.write(f"screenshot doesn't exist.\n")
+            file.write(f"screenshot doesn't exist: {score}\n")
 
             
     # ---------------------------------------------------- Frequent terms extraction ------------------------------------------- #
@@ -178,41 +178,19 @@ def process_url(url, score):
     unique_domains = set()
 
     for domain in topDomains:
-        # parsed_url = urlsplit(url)
+        domain = domainExtractor(domain)
 
-        # # Extract the domain name from the netloc component
-        # domain_name = parsed_url.netloc
-
-        # Remove "www." if present at the beginning
-        if domain.startswith("www."):
-            domain = domain[4:]
-                
-        if domain.startswith("http.www."):
-            domain = domain[10:]
-                
-        if domain.startswith("https."):
-            domain = domain[6:]
-                
         # Add the domain name to the set
-        # print(f"after-processing-{domain}")
         unique_domains.add(domain)
             
     with open(reportFile, 'a') as file:
         file.write(f"Unique domains: {unique_domains}\n")
 
     if unique_domains is None:
-        score += -30
+        score += -65
 
-        # Check if the input_domain_name is in the list of domains obtained from the search engine
-        # if input_domain_name in unique_domains:
-        #     score += 33
-        #     with open(reportFile, 'a') as file:
-        #         file.write(f"{input_domain_name} is in the list of unique domains.\n")
-
-        # else:
-        #     score += -33
-        #     with open(reportFile, 'a') as file:
-        #         file.write(f"{input_domain_name} is not in the list of unique domains.\n")
+        with open(reportFile, 'a') as file:
+            file.write(f"Unique domains not found.: {score}\n")
 
     else:
         # Checking if the input_domain as string is present in any string of the unique_domains list
@@ -226,14 +204,14 @@ def process_url(url, score):
 
         if stringFound:
             # Do something if the input domain is found in the set
-            score += 30
+            score += 65
             with open(reportFile, 'a') as file:
-                file.write(f"{input_domain_name} is in the list of unique domains.\n")
+                file.write(f"{input_domain_name} is in the list of unique domains (+65): {score}\n")
                     
         else:
-            score += -30
+            score += -65
             with open(reportFile, 'a') as file:
-                file.write(f"{input_domain_name} is not in the list of unique domains.\n")
+                file.write(f"{input_domain_name} is not in the list of unique domains (-65): {score}\n")
 
             
     # ---------------------------------------------------- Favicon scraping ---------------------------------------------------- #
@@ -246,17 +224,6 @@ def process_url(url, score):
 
     extensions = ['.ico', '.png', '.jpeg', '.jpg', '.svg']
 
-    for ext in extensions:
-        if os.path.isfile(logoFile+ext):
-            with open(reportFile, 'a') as file:
-                score += 20
-                file.write(f"Favicon found\n")
-                break
-                
-        else:
-            with open(reportFile, 'a') as file:
-                file.write(f"Favicon not found\n")
-
     logoDatabase = os.path.join('..', 'Top_Logos_1000')
 
     # ------------------------------------------------ Logo similarity detection ------------------------------------------ #
@@ -265,10 +232,12 @@ def process_url(url, score):
     print(f"Logo file: {logoFile}")
 
     # Check if the logo file exists before running logo similarity detection
+
+    allScoresList = []
     for ext in extensions:
 
         if os.path.isfile(logoFile+ext):
-            print(f"Testing for {logoFile+ext}")
+            # print(f"Testing for {logoFile+ext}")
                     
             # Run logo similarity detection code if the file exists
             similarLogos = detect_logo_similarity(input_domain_name, logoFile+ext, logoDatabase, reportFile)
@@ -276,30 +245,46 @@ def process_url(url, score):
             if not similarLogos:  # Check if the dictionary is empty
                 print("Logo similarity not detected.")
                 # There may be a case where the a logo is not found in the database but the site is legitimate, so we will add a positive score
-                score += 20
+                score += 0
+                allScoresList.append(score)
                 with open (reportFile, 'a') as file:
-                    file.write(f"Logo similarity not detected.\n")
+                    file.write(f"Logo similarity not detected (+0): {score}\n")
+                
+                break
 
             else:
                 # As the similarity is detected, we will now check if the domains are same or not, if not then it will add negative score, else positive score
                 print("Logo similarity detected:")
                 for logo, mse in similarLogos.items():                            
                     # Check the difference in the input domain name and the logo name (limited to 3 decimal places)
-                    domainSimilarity = round(check_Domain_similarity(input_domain_name, logo), 3)
+
+                    logoDomain = logo[:-4]
+                    domainSimilarity = round(check_Domain_similarity(input_domain_name, logoDomain), 3)
 
                     if domainSimilarity < 0.70:
-                        score += -30
+                        score += -17
+                        allScoresList.append(score)
                             
                     else:
-                        score += 30
+                        score += 17
+                        allScoresList.append(score)
 
                     with open(reportFile, 'a') as file:
-                        file.write(f"Domain Similarity with {logo}: {domainSimilarity}%\n")
+                        file.write(f"Domain Similarity with {logo}: {domainSimilarity}%; score =  {score}\n")
+                    
+            # break
 
         # Most of the phishing websites don't have any logos, so we will add a negative score if the logo is not found
         else:
-            score+= -30
+            score+= -17
+            allScoresList.append(score)
+            with open (reportFile, 'a') as file:
+                file.write(f"Logo not found (-17): {score}\n")
 
+    with open(reportFile, 'a') as file:
+        file.write(f"allScoresList is: {allScoresList}\n")
+        
+    score = max(allScoresList)
             
     # ------------------------------------------------ End of the Algorithm ------------------------------------------ #
 
@@ -312,10 +297,10 @@ def process_url(url, score):
     with open(reportFile, 'a') as file:
         file.write(f"The weighted score is {score}")
 
-        if score <= 0:
+        if score <= 45:
             file.write(f" and the website is Phishy\n")
                 
-        elif score > 0 and score < 15:
+        elif score > 45 and score < 64:
             file.write(f" and the website is Suspicious\n")
                 
         else:
