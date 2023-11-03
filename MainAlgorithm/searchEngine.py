@@ -48,6 +48,7 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 import time
+
 # import chromedriver_autoinstaller
 import os
 from fake_useragent import UserAgent
@@ -74,7 +75,7 @@ def google_search(domain, search_terms, reportFile):
     
     chrome_options = Options()
     # Run Chrome in headless mode
-    # chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless")
     # Disable the GPU 
     chrome_options.add_argument("--disable-gpu")
     # Disable the sandbox
@@ -92,13 +93,13 @@ def google_search(domain, search_terms, reportFile):
     # Create a UserAgent object to generate a random user agent
     ua = UserAgent()
     user_agent = ua.random
-    with open(reportFile, 'a') as file:
-        file.write(f"user agent = f{user_agent}")
+    # with open(reportFile, 'a') as file:
+        # file.write(f"user agent = f{user_agent}")
     
     # Set the user agent in the ChromeOptions
-    # chrome_options.add_argument(f"user-agent={user_agent}")
+    chrome_options.add_argument(f"user-agent={user_agent}")
     
-    chrome_options.add_argument(f"user-agent = Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36")
+    # chrome_options.add_argument(f"user-agent = Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36")
     
     # Initialize the web driver with Chrome options
     driver = webdriver.Chrome(options=chrome_options)
@@ -130,7 +131,7 @@ def google_search(domain, search_terms, reportFile):
     top_domains = []
     top_urls = []
 
-    for result in search_results[:3]:
+    for result in search_results[:10]:
         link = result.find_element(By.CSS_SELECTOR, "a")
         url = link.get_attribute("href")
         top_urls.append(url)
