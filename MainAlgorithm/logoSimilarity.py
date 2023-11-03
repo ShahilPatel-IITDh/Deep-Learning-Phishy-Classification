@@ -1,12 +1,12 @@
 from PIL import Image
-import PIL
-import cv2
+# import PIL
+# import cv2
 import numpy as np
 import os
 import skimage
 from skimage import io, color, img_as_ubyte, transform
 from skimage.metrics import structural_similarity as ssim
-import tensorflow as tf
+# import tensorflow as tf
 
 # def resizeImages(img1, img2):
 #     # Resize the input images to the lowest resolution
@@ -161,7 +161,7 @@ def structural_similarity(image_path1, image_path2, reportFile, image2_ICO_path)
 
 def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile):
 
-    print(f"The Logo file in detect_logo_similarity is {logoFile}")
+    # print(f"The Logo file in detect_logo_similarity is {logoFile}")
     similar_logos = {}  # Dictionary to store similar logos
 
     os.makedirs("input_PNGs-1000", exist_ok=True)
@@ -179,17 +179,17 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
             img.save(image1_PNG_path, 'PNG')
         
     except Exception as e:
-        print(f"Skipping {input_domain_name} due to {e}.")
+        # print(f"Skipping {input_domain_name} due to {e}.")
         return  # Skip this image
 
     # Ensure the folder path exists
     if not os.path.exists(logoDatabase) or not os.path.isdir(logoDatabase):
-        print("LogoDatabase folder does not exist.")
+        # print("LogoDatabase folder does not exist.")
         return {}
     
     # Load the input image
     for filename in os.listdir(logoDatabase):
-        print(f"Processing {filename} in Logo Database...")
+        # print(f"Processing {filename} in Logo Database...")
         image2_ICO_path = os.path.join(logoDatabase, filename)
         
         try:
@@ -226,7 +226,7 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
                     
 
         except Exception as e:
-            print(f"Skipping {filename} due to {e}.")
+            # print(f"Skipping {filename} due to {e}.")
             continue  # Skip this image
 
     return similar_logos
