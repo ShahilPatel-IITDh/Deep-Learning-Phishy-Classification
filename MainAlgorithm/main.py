@@ -29,12 +29,12 @@ from logoSimilarity import detect_logo_similarity
 from domainName_Difference import check_Domain_similarity 
 
 # inputCSV_File = os.path.join('..', 'URL_For_Testing', 'merged_URLs.csv')
-screenShotDir = os.path.join('screenshots')
-faviconDir = os.path.join('favicons-1000')
+screenShotDir = os.path.join('screenshots-openphish-100')
+faviconDir = os.path.join('favicons-openphish-100')
 
 # report = os.path.join('..', 'report-for-100-Phishy-on-200-Logos')
 
-report = os.path.join('..', 'report-for-testing-on-1000-Logos-test')
+report = os.path.join('..', 'reports-openphish-100')
 
 # Create the directory if it doesn't exist
 if not os.path.exists(screenShotDir):
@@ -255,7 +255,7 @@ def process_url(url, score):
             else:
                 # As the similarity is detected, we will now check if the domains are same or not, if not then it will add negative score, else positive score
                 print("Logo similarity detected:")
-                for logo, mse in similarLogos.items():                            
+                for logo, _ in similarLogos.items():                            
                     # Check the difference in the input domain name and the logo name (limited to 3 decimal places)
 
                     logoDomain = logo[:-4]
@@ -332,7 +332,6 @@ if __name__ == "__main__":
         
         with open(csv_file_path, 'r') as file:
             reader = csv.reader(file)
-            next(reader)  # Skip the header row
             
             for row in reader:
                 url = row[0].strip()
