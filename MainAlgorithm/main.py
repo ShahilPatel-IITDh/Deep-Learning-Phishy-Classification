@@ -46,7 +46,7 @@ if not os.path.exists(faviconDir):
 if not os.path.exists(report):
     os.makedirs(report)
 
-counter = 0
+counter = 1
 
 # Weighted Score
 # 1. Input Box Detection: 33
@@ -313,6 +313,8 @@ def process_url(url, score):
 
     print(f"{counter}")
     print("----------------------------------\n")
+
+    counter+=1
 
 if __name__ == "__main__":    
     
