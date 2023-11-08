@@ -64,7 +64,7 @@ def calculate_average_image_dimensions(folder_path):
     return average_width, average_height, errorCount
 
 # Provide the folder path containing images
-folder_path = "/home/administrator/Desktop/Deep-Learning-Phishy-Classification/Logos"
+folder_path = "/home/administrator/Desktop/Deep-Learning-Phishy-Classification/Top_Logos_1000"
 
 average_dimensions = calculate_average_image_dimensions(folder_path)
 
