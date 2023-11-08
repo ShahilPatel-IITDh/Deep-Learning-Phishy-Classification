@@ -1,37 +1,9 @@
 from PIL import Image
-# import PIL
-# import cv2
-import numpy as np
 import os
 import skimage
 from skimage import io, color, img_as_ubyte, transform
 from skimage.metrics import structural_similarity as ssim
-# import tensorflow as tf
 
-# def resizeImages(img1, img2):
-#     # Resize the input images to the lowest resolution
-#     min_height = min(img1.shape[0], img2.shape[0])
-#     min_width = min(img1.shape[1], img2.shape[1])
-
-#     img1 = cv2.resize(img1, (min_width, min_height))
-#     img2 = cv2.resize(img2, (min_width, min_height))
-
-#     return img1, img2
-
-# def preprocess_image(image_path):
-#     # Load the image, convert to RGB, and resize to (224, 224)
-#     img = Image.open(image_path)
-#     img = img.convert('RGB')
-#     img = img.resize((85, 85))
-
-#     # Convert to a NumPy array and preprocess for ResNet-50
-#     img = tf.keras.preprocessing.image.img_to_array(img)
-#     img = tf.keras.applications.resnet50.preprocess_input(img)
-    
-#     # Expand dimensions to match the shape (1, 224, 224, 3)
-#     img = np.expand_dims(img, axis=0)
-
-#     return img
 
 
 def structural_similarity(image_path1, image_path2, reportFile, image2_ICO_path):
@@ -138,9 +110,8 @@ def structural_similarity(image_path1, image_path2, reportFile, image2_ICO_path)
     if image2.shape[-1] > 1:
         image2 = color.rgb2gray(image2)
 
-    # Resize the images to the same shape (e.g., 224x224)
-    # You can choose your desired target size
-    target_shape = (224, 224)
+    # Resize the images to the same shape (Here we took 75x75 as the average shape of the favicons present in the database is 68 x 68 so we took a little bigger size)
+    target_shape = (75, 75)
     image1 = transform.resize(image1, target_shape)
     image2 = transform.resize(image2, target_shape)
 
@@ -164,8 +135,8 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
     # print(f"The Logo file in detect_logo_similarity is {logoFile}")
     similar_logos = {}  # Dictionary to store similar logos
 
-    os.makedirs("input_PNGs-1000", exist_ok=True)
-    os.makedirs("Database_PNGs-1000", exist_ok=True)
+    os.makedirs("Input-PNGs-openphish-100", exist_ok=True)
+    os.makedirs("Database-PNGs-openphish-100", exist_ok=True)
 
     try:
         #  Convert the logoFile to a valid image
@@ -173,7 +144,7 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
             # Convert to RGB mode (required for saving as PNG)
             img = img.convert("RGB")
 
-            image1_PNG_path = f"input_PNGs-1000/{input_domain_name}.png"
+            image1_PNG_path = f"Input-PNGs-openphish-100/{input_domain_name}.png"
 
             # Save the image as a PNG file
             img.save(image1_PNG_path, 'PNG')
@@ -197,13 +168,15 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
             image2_ICO = Image.open(image2_ICO_path)
 
             # Convert the .ico image to another format (e.g., .png)
-            image2_PNG_path = f'Database_PNGs-1000/{filename}.png'  # Use a different path for each image
+            image2_PNG_path = f'Database-PNGs-openphish-100/{filename}.png'  # Use a different path for each image
             
             if os.path.isfile(image2_PNG_path):
                 # If the image has already been converted, then check it's similarrity with the input image
 
                 # Call the similarity functions 
-                """ 1. CNNs ()"""
+                # """ 1. CNNs ()"""
+
+                """2. SSIM (Structural Similarity Index)"""
 
                 similarity = structural_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
 
@@ -217,8 +190,9 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
                 
                 # Convert the image and then feed the image to the image similarity functions
                 # Call the similarity functions 
-                """ 1. CNNs ()"""
+                # """ 1. CNNs ()"""
 
+                """2. SSIM (Structural Similarity Index)"""
                 similarity = structural_similarity(image1_PNG_path, image2_PNG_path, reportFile, image2_ICO_path)
 
                 if similarity is not None and similarity >= 96:
@@ -226,7 +200,6 @@ def detect_logo_similarity(input_domain_name, logoFile, logoDatabase, reportFile
                     
 
         except Exception as e:
-            # print(f"Skipping {filename} due to {e}.")
             continue  # Skip this image
 
     return similar_logos
