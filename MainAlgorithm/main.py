@@ -327,7 +327,7 @@ if __name__ == "__main__":
         process_url(url, 0)
     
     elif input_type == 'c':
-        # Process URLs from a CSV file
+        # Process URLs from a CSV file (Remove any headers from the CSV file, the first row's first column should contain the URL)
         csv_file_path = input("Enter the path of the CSV file: ").strip()
         
         with open(csv_file_path, 'r') as file:
