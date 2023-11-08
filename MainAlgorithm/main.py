@@ -62,6 +62,7 @@ def domainExtractor(url):
     if match:
         domain = match.group('domain')
         return domain
+    
     else:
         return url  # Return the original URL if the pattern doesn't match
 
@@ -81,11 +82,11 @@ def process_url(url, score):
     print("Input Domain Name: ", input_domain_name)
             
     # Final report file for the URL
-    reportFile = os.path.join(report, f"{input_domain_name}.txt")
+    reportFile = os.path.join(report, f"{url}.txt")
 
     # ---------------------------------------------------- Screen Shot Capturing ---------------------------------------------------- # 
 
-    screenshotFile = os.path.join(screenShotDir, f"{input_domain_name}.png")
+    screenshotFile = os.path.join(screenShotDir, f"{url}.png")
     # print("The name of Screenshot file will be: ", screenshotFile)
 
     # Capture the full-page screenshot
