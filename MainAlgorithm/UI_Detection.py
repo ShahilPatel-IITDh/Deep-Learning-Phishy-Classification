@@ -37,6 +37,7 @@ Note:
 import cv2
 import numpy as np
 import pytesseract
+from PIL import Image
 
 def detect_input_box(screenshot_file_path):
 
@@ -58,12 +59,18 @@ def detect_input_box(screenshot_file_path):
     grayscale_screenshot = cv2.cvtColor(screenshot, cv2.COLOR_BGR2GRAY)
 
     # Apply image processing (e.g., thresholding) to highlight potential input boxes
-    _, thresholded_screenshot = cv2.threshold(grayscale_screenshot, 200, 255, cv2.THRESH_BINARY)
+    _, thresholded_screenshot = cv2.threshold(grayscale_screenshot, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+
+    # Invert the colors to make text black on a white background
+    inverted = cv2.bitwise_not(thresholded_screenshot)
+
+    # Convert back to a PIL image
+    processed_image = Image.fromarray(inverted)
 
     # For quick and simple checking use the code below
         
     # Use Tesseract OCR to extract text from the screenshot
-    extracted_text = pytesseract.image_to_string(thresholded_screenshot)
+    extracted_text = pytesseract.image_to_string(processed_image)
 
     # Check if the extracted text contains keywords indicating input boxes (languages included: English, German, Spanish, Arabic, Hindi, French, Portuguese, Italian, Finnish, Swedish, Persian, Indonesian)
     keywords = ["username", "Benutzername", "Nombre de usuario", "اسم المستخدم", "उपयोगकर्ता नाम", "Nom d'utilisateur", "Nome de usuário", "Nome utente", 
