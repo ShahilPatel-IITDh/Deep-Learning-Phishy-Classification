@@ -82,11 +82,11 @@ def process_url(url, score):
     print("Input Domain Name: ", input_domain_name)
             
     # Final report file for the URL
-    reportFile = os.path.join(report, f"{url}.txt")
+    reportFile = os.path.join(report, f"{input_domain_name}.txt")
 
     # ---------------------------------------------------- Screen Shot Capturing ---------------------------------------------------- # 
 
-    screenshotFile = os.path.join(screenShotDir, f"{url}.png")
+    screenshotFile = os.path.join(screenShotDir, f"{input_domain_name}.png")
     # print("The name of Screenshot file will be: ", screenshotFile)
 
     # Capture the full-page screenshot
@@ -259,7 +259,8 @@ def process_url(url, score):
                 for logo, _ in similarLogos.items():                            
                     # Check the difference in the input domain name and the logo name (limited to 3 decimal places)
 
-                    logoDomain = logo[:-4]
+                    # logoDomain = logo[:-4]
+                    logoDomain = domainExtractor(logo)
                     domainSimilarity = round(check_Domain_similarity(input_domain_name, logoDomain), 3)
 
                     if domainSimilarity < 0.70:
@@ -298,10 +299,10 @@ def process_url(url, score):
     with open(reportFile, 'a') as file:
         file.write(f"The weighted score is {score}")
 
-        if score <= 45:
+        if score <= 25:
             file.write(f" and the website is Phishy\n")
                 
-        elif score > 45 and score < 64:
+        elif score > 25 and score < 45:
             file.write(f" and the website is Suspicious\n")
                 
         else:
